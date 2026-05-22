@@ -1,0 +1,40 @@
+{
+  "fields": [
+    {
+      "name": "n_participants",
+      "description": "Total number of human participants enrolled in the study.",
+      "type": "number",
+      "required": true
+    },
+    {
+      "name": "mean_age",
+      "description": "Mean age of participants at baseline.",
+      "type": "number",
+      "unit": "years",
+      "target_unit": "years"
+    },
+    {
+      "name": "study_design",
+      "description": "Overall study design.",
+      "type": "enum",
+      "allowed_values": [
+        "randomized_controlled_trial",
+        "cohort",
+        "case_control",
+        "cross_sectional",
+        "case_series",
+        "meta_analysis"
+      ]
+    },
+    {
+      "name": "sample_type",
+      "description": "Type of biological sample collected.",
+      "type": "string"
+    },
+    {
+      "name": "country",
+      "description": "Country or countries where participants were recruited.",
+      "type": "list"
+    }
+  ]
+}

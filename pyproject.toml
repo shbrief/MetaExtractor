@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "metaextractor"
+version = "0.1.0"
+description = "LLM-backed biomedical metadata extractor with verbatim provenance and no fabrication"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "OmicsMLRepo" }]
+dependencies = [
+    "anthropic>=0.40.0",
+    "pydantic>=2.6",
+]
+
+[project.optional-dependencies]
+pdf = ["pypdf>=4.0"]
+linkml = ["PyYAML>=6.0"]
+supplementary = ["openpyxl>=3.1", "pypdf>=4.0"]
+dev = ["pytest>=8", "ruff>=0.5", "PyYAML>=6.0", "openpyxl>=3.1", "pypdf>=4.0"]
+
+[project.scripts]
+metaextract = "metaextractor.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+metaextractor = ["py.typed"]
