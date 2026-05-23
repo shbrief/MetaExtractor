@@ -66,7 +66,9 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--paper-id", default=None, help="Identifier (PMID, PMCID, or DOI). Used as the paper_id and, when --paper is omitted, to fetch the text.")
     parser.add_argument("--no-supplementary", dest="include_supplementary",
                         action="store_false", default=True,
-                        help="Skip the Europe PMC supplementary-materials fetch (default is to include xlsx/csv/tsv/pdf supplementary files when fetching by PMID/PMCID).")
+                        help="Skip the auto supplementary-materials fetch (JATS URLs + Europe PMC ZIP). Does not affect --supplementary.")
+    parser.add_argument("--supplementary", nargs="+", type=Path, default=None, metavar="PATH",
+                        help="One or more local supplementary files (xlsx/csv/tsv/pdf/txt) to include alongside the paper. Orthogonal to --no-supplementary; combine if you want only local files.")
     parser.add_argument("--out", type=Path, default=None, help="Write JSON result to file (default stdout).")
     parser.add_argument("--csv", type=Path, default=None, help="Also write a flat CSV (row per record).")
     parser.add_argument("--csv-provenance", action="store_true",
@@ -99,6 +101,17 @@ def main(argv: list[str] | None = None) -> int:
                 print(f"[supplementary skipped: {name} — {why}]", file=sys.stderr)
     else:
         parser.error("either --paper or --paper-id (PMID/PMCID) is required")
+
+    if args.supplementary:
+        from metaextractor.supplementary import supplementary_from_local
+        local = supplementary_from_local(args.supplementary)
+        if local.text:
+            paper_text = f"{paper_text}\n\n{local.text}"
+        if local.included:
+            print(f"[supplementary (local) included ({len(local.included)}): "
+                  f"{', '.join(local.included)}]", file=sys.stderr)
+        for name, why in local.skipped:
+            print(f"[supplementary (local) skipped: {name} — {why}]", file=sys.stderr)
 
     schema_obj = _load_schema(args.schema, class_name=args.linkml_class)
 

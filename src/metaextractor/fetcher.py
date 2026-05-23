@@ -16,7 +16,9 @@ from dataclasses import dataclass
 from xml.etree import ElementTree as ET
 
 EUTILS = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils"
+PMC_BIN = "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC{bare}/bin/{name}"
 USER_AGENT = "metaextractor/0.1 (+https://github.com/OmicsMLRepo)"
+XLINK_HREF = "{http://www.w3.org/1999/xlink}href"
 
 
 class FetchError(RuntimeError):
@@ -31,6 +33,12 @@ class FetchedPaper:
     pmcid: str | None
     supplementary_included: list[str] | None = None
     supplementary_skipped: list[tuple[str, str]] | None = None
+
+
+@dataclass
+class _PmcFullText:
+    text: str
+    supplementary_hrefs: list[tuple[str, str]]  # (filename, absolute_url)
 
 
 def _normalize_id(raw: str) -> tuple[str, str]:
@@ -76,7 +84,45 @@ def _flatten_xml(elem: ET.Element) -> str:
     return re.sub(r"\s+", " ", text)
 
 
-def _fetch_pmc_fulltext(pmcid: str) -> str | None:
+def _extract_supplementary_hrefs(article: ET.Element, pmcid: str) -> list[tuple[str, str]]:
+    """Find supplementary-material elements and return (filename, absolute_url) tuples.
+
+    Looks at <supplementary-material> and <inline-supplementary-material>. The
+    file href is on the element itself or on a nested <media> child. Relative
+    hrefs are resolved against the PMC bin/ directory for the article.
+    """
+    bare = pmcid.upper().removeprefix("PMC")
+    out: list[tuple[str, str]] = []
+    seen: set[str] = set()
+    for tag in ("supplementary-material", "inline-supplementary-material"):
+        for elem in article.iter(tag):
+            href = elem.get(XLINK_HREF)
+            if not href:
+                media = elem.find("media")
+                if media is not None:
+                    href = media.get(XLINK_HREF)
+            if not href:
+                continue
+            if href.startswith(("http://", "https://")):
+                url = href
+                name = href.rsplit("/", 1)[-1] or href
+            else:
+                name = href.split("/")[-1]
+                if "." not in name:
+                    # JATS sometimes drops the extension; PMC bin/ resolution
+                    # needs one, so just append .pdf as a best guess only when
+                    # the element type hints at it. Otherwise skip.
+                    continue
+                url = PMC_BIN.format(bare=bare, name=name)
+            key = name.lower()
+            if key in seen:
+                continue
+            seen.add(key)
+            out.append((name, url))
+    return out
+
+
+def _fetch_pmc_fulltext(pmcid: str) -> _PmcFullText | None:
     url = f"{EUTILS}/efetch.fcgi?" + urllib.parse.urlencode(
         {"db": "pmc", "id": pmcid, "retmode": "xml"}
     )
@@ -101,7 +147,12 @@ def _fetch_pmc_fulltext(pmcid: str) -> str | None:
     body = article.find(".//body")
     if body is not None:
         sections.append("BODY: " + _flatten_xml(body))
-    return "\n\n".join(sections) if sections else None
+    if not sections:
+        return None
+    return _PmcFullText(
+        text="\n\n".join(sections),
+        supplementary_hrefs=_extract_supplementary_hrefs(article, pmcid),
+    )
 
 
 def _fetch_pubmed_abstract(pmid: str) -> str:
@@ -139,20 +190,23 @@ def fetch_paper(identifier: str, include_supplementary: bool = True) -> FetchedP
     kind, bare = _normalize_id(identifier)
     pmcid: str | None = None
     pmid_used: str | None = None
+    pmc: _PmcFullText | None = None
     text: str | None = None
 
     if kind == "pmcid":
         pmcid = bare
-        text = _fetch_pmc_fulltext(bare)
-        if not text:
+        pmc = _fetch_pmc_fulltext(bare)
+        if pmc is None:
             raise FetchError(f"PMC returned no full text for PMC{bare}")
+        text = pmc.text
         source = "pmc_fulltext"
     else:
         pmid_used = bare
         pmcid = _pmid_to_pmcid(bare)
         if pmcid:
-            text = _fetch_pmc_fulltext(pmcid)
-        if text:
+            pmc = _fetch_pmc_fulltext(pmcid)
+        if pmc is not None:
+            text = pmc.text
             source = "pmc_fulltext"
         else:
             text = _fetch_pubmed_abstract(bare)
@@ -162,7 +216,8 @@ def fetch_paper(identifier: str, include_supplementary: bool = True) -> FetchedP
 
     if include_supplementary and pmcid:
         from metaextractor.supplementary import fetch_supplementary
-        supp = fetch_supplementary(pmcid)
+        jats_hrefs = pmc.supplementary_hrefs if pmc is not None else None
+        supp = fetch_supplementary(pmcid, jats_hrefs=jats_hrefs)
         paper.supplementary_included = supp.included
         paper.supplementary_skipped = supp.skipped
         if supp.text:
