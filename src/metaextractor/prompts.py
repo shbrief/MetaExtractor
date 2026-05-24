@@ -8,7 +8,10 @@ INPUTS YOU RECEIVE
 1. <paper> ... </paper>  — full text or specified sections of a paper
 2. <schema> ... </schema> — a JSON object listing fields to extract.
    Each field has: name, description, type (string|number|enum|boolean|
-   list), allowed_values (for enums), unit (optional), and required (bool).
+   list), allowed_values (for enums), value_descriptions (optional;
+   maps each allowed value to a short explanation and/or an ontology
+   CURIE — use it to disambiguate between similar-looking enum keys),
+   unit (optional), and required (bool).
 
 CORE RULES
 - Extract only what the <paper> supports. Never use outside knowledge,

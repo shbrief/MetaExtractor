@@ -13,6 +13,7 @@ class Field(BaseModel):
     description: str
     type: FieldType
     allowed_values: list[str] | None = None
+    value_descriptions: dict[str, str] | None = None
     unit: str | None = None
     target_unit: str | None = None
     required: bool = False

@@ -7,7 +7,9 @@ Mapping:
   slot.description           -> field.description
   slot.range == integer|float -> "number"
   slot.range == boolean      -> "boolean"
-  slot.range == <name>_enum  -> "enum" + allowed_values from enums[<name>_enum]
+  slot.range == <name>_enum  -> "enum" + allowed_values (keys) and
+                                value_descriptions ({key: "description (meaning)"})
+                                from enums[<name>_enum].permissible_values
   slot.range == string|<other>|<missing> -> "string"
   slot.multivalued == True   -> "list"   (overrides scalar typing)
   slot.required              -> field.required
@@ -32,14 +34,53 @@ def is_linkml_schema(data: dict[str, Any]) -> bool:
     return isinstance(data, dict) and any(k in data for k in ("classes", "slots", "enums"))
 
 
-def _enum_values(enums: dict[str, Any], enum_name: str) -> list[str]:
+def _enum_values(
+    enums: dict[str, Any], enum_name: str
+) -> tuple[list[str], dict[str, str]]:
+    """Return (keys, key -> "description (meaning)") for an enum.
+
+    The descriptions map is sparse: only keys whose permissible_value carries
+    a `description` and/or `meaning` appear. Empty when the enum lists bare
+    keys only — which is the common case for hand-authored LinkML.
+    """
     enum_def = enums.get(enum_name) or {}
     pv = enum_def.get("permissible_values") or {}
+    keys: list[str] = []
+    descs: dict[str, str] = {}
     if isinstance(pv, dict):
-        return [str(k) for k in pv.keys()]
-    if isinstance(pv, list):
-        return [str(v) if not isinstance(v, dict) else str(v.get("text", v)) for v in pv]
-    return []
+        for k, v in pv.items():
+            key = str(k)
+            keys.append(key)
+            label = _pv_label(v)
+            if label:
+                descs[key] = label
+    elif isinstance(pv, list):
+        for v in pv:
+            if isinstance(v, dict):
+                key = str(v.get("text") or v.get("name") or v)
+                keys.append(key)
+                label = _pv_label(v)
+                if label:
+                    descs[key] = label
+            else:
+                keys.append(str(v))
+    return keys, descs
+
+
+def _pv_label(pv: Any) -> str:
+    """Format a permissible_value's description and meaning into one string.
+
+    Returns "" when nothing extra is available (bare keys, None, etc.).
+    """
+    if not isinstance(pv, dict):
+        return ""
+    desc = (pv.get("description") or pv.get("title") or "").strip()
+    meaning = (pv.get("meaning") or "").strip()
+    if desc and meaning:
+        return f"{desc} ({meaning})"
+    if meaning:
+        return f"({meaning})"
+    return desc
 
 
 def _slot_to_field(name: str, slot: dict[str, Any], enums: dict[str, Any]) -> Field:
@@ -47,10 +88,12 @@ def _slot_to_field(name: str, slot: dict[str, Any], enums: dict[str, Any]) -> Fi
     range_ = slot.get("range")
     multivalued = bool(slot.get("multivalued"))
     allowed_values: list[str] | None = None
+    value_descriptions: dict[str, str] | None = None
 
     if range_ in enums:
         ftype = "enum"
-        allowed_values = _enum_values(enums, range_)
+        allowed_values, vdescs = _enum_values(enums, range_)
+        value_descriptions = vdescs or None
     elif isinstance(range_, str) and range_ in LINKML_NUMERIC:
         ftype = "number"
     elif isinstance(range_, str) and range_ in LINKML_BOOL:
@@ -61,12 +104,14 @@ def _slot_to_field(name: str, slot: dict[str, Any], enums: dict[str, Any]) -> Fi
     if multivalued:
         ftype = "list"
         allowed_values = None
+        value_descriptions = None
 
     return Field(
         name=name,
         description=desc,
         type=ftype,  # type: ignore[arg-type]
         allowed_values=allowed_values,
+        value_descriptions=value_descriptions,
         unit=slot.get("unit") or slot.get("ucum_unit"),
         required=bool(slot.get("required", False)),
     )
