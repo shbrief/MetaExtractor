@@ -12,9 +12,22 @@ import os
 from anthropic import Anthropic
 from pydantic import ValidationError
 
+from metaextractor.column_mapper import (
+    ColumnMapping,
+    apply_mapping,
+    join_tables,
+    map_columns,
+)
 from metaextractor.output import ExtractionResult
 from metaextractor.prompts import SYSTEM_PROMPT, build_user_content
 from metaextractor.schema import Field, Schema
+from metaextractor.table_plan import (
+    PlanExecutionError,
+    PlanProposalError,
+    execute_plan,
+    is_feature_matrix,
+    propose_plan,
+)
 
 DEFAULT_MODEL = "claude-sonnet-4-6"
 DEFAULT_MAX_TOKENS = 16384
@@ -109,12 +122,27 @@ class MetaExtractor:
         paper_text: str,
         schema: Schema | dict | list,
         paper_id: str | None = None,
+        tables: list | None = None,
     ) -> ExtractionResult:
+        """Extract metadata from paper prose + optional structured tables.
+
+        When ``tables`` is non-empty, the LLM only handles prose-derived
+        fields and is told nothing about per-sample structure: samples
+        come from the deterministic column-map + join pipeline. The LLM
+        sample-discovery pass is skipped entirely in that mode.
+        """
         schema_obj = schema if isinstance(schema, Schema) else Schema.from_dict(schema)
         self.last_usage = {k: 0 for k in self.last_usage}
 
+        # Deterministic table path: produce sample rows from structured tables,
+        # then run the LLM only for prose-derived study-level fields.
+        det_samples: list[dict] | None = None
+        det_warnings: list[str] = []
+        if tables:
+            det_samples, det_warnings = self._build_samples_from_tables(tables, schema_obj)
+
         sample_ids: list[str] | None = None
-        if self.sample_discovery and "--- SUPPLEMENTARY FILE:" in paper_text:
+        if self.sample_discovery and det_samples is None and "--- SUPPLEMENTARY FILE:" in paper_text:
             sample_ids = self._discover_sample_ids(paper_text, paper_id)
 
         if len(schema_obj.fields) <= self.batch_size:
@@ -124,20 +152,33 @@ class MetaExtractor:
                     0, f"Sample discovery identified {len(sample_ids)} samples; "
                        f"per-batch extraction was constrained to these IDs."
                 )
-            return result
+        else:
+            batches = [
+                Schema(fields=schema_obj.fields[i : i + self.batch_size])
+                for i in range(0, len(schema_obj.fields), self.batch_size)
+            ]
+            results = [self._extract_one(paper_text, b, paper_id, sample_ids) for b in batches]
+            result = _merge_results(results, sample_ids=sample_ids)
+            if sample_ids:
+                result.extraction_warnings.insert(
+                    0, f"Sample discovery identified {len(sample_ids)} samples; "
+                       f"per-batch extraction was constrained to these IDs."
+                )
 
-        batches = [
-            Schema(fields=schema_obj.fields[i : i + self.batch_size])
-            for i in range(0, len(schema_obj.fields), self.batch_size)
-        ]
-        results = [self._extract_one(paper_text, b, paper_id, sample_ids) for b in batches]
-        merged = _merge_results(results, sample_ids=sample_ids)
-        if sample_ids:
-            merged.extraction_warnings.insert(
-                0, f"Sample discovery identified {len(sample_ids)} samples; "
-                   f"per-batch extraction was constrained to these IDs."
-            )
-        return merged
+        if det_samples is not None:
+            result.granularity = "sample_level"
+            result.samples = det_samples
+            for w in det_warnings:
+                result.extraction_warnings.append(w)
+
+        if result.granularity == "sample_level" and result.samples and result.fields:
+            n = _fan_out_fields_to_samples(result)
+            if n:
+                result.extraction_warnings.append(
+                    f"Fanned out {n} cell(s) of study/subgroup-level field values "
+                    f"into per-sample rows."
+                )
+        return result
 
     def _discover_sample_ids(
         self, paper_text: str, paper_id: str | None
@@ -220,6 +261,90 @@ class MetaExtractor:
             raise ExtractionError(
                 f"Model output failed schema validation: {e}", raw_response=raw
             ) from e
+
+    def _build_samples_from_tables(
+        self,
+        tables: list,
+        schema: Schema,
+    ) -> tuple[list[dict], list[str]]:
+        """Table → sample-rows pipeline.
+
+        Per table:
+          1. Skip if it's a feature × samples matrix (taxa/genome × samples)
+             — these would otherwise pollute per-sample output with one row
+             per feature.
+          2. Ask the LLM to propose a structural plan (multi-row header
+             merge + optional long-format melt) and execute it. The plan
+             never touches cell values. On plan failure, fall back to the
+             default row-0-header parse.
+          3. Lexical-map the resulting columns to schema field names.
+
+        Then left-join across all kept tables on shared canonical keys.
+        """
+        if not tables:
+            return [], []
+        schema_field_names = [f.name for f in schema.fields]
+        warnings: list[str] = []
+        mapped_tables: list[tuple[str, list[dict]]] = []
+
+        for t in tables:
+            if is_feature_matrix(t):
+                warnings.append(
+                    f"Table {t.name!r}: skipped as feature × samples matrix "
+                    f"({len(t.raw_rows)} rows × {len(t.columns)} cols)."
+                )
+                continue
+
+            transformed: list = None  # type: ignore[assignment]
+            try:
+                plan, usage = propose_plan(self.client, self.model, t, schema_field_names)
+                _accumulate_usage(self.last_usage, usage)
+                transformed = execute_plan(t, plan)
+                warnings.append(
+                    f"Table {t.name!r}: plan applied "
+                    f"(header_rows={plan.header_rows}, "
+                    f"melt={'yes' if plan.melt else 'no'}, "
+                    f"out_rows={len(transformed.rows)})."
+                )
+            except (PlanProposalError, PlanExecutionError) as e:
+                if isinstance(e, PlanProposalError) and e.usage:
+                    _accumulate_usage(self.last_usage, e.usage)
+                warnings.append(
+                    f"Table {t.name!r}: plan path failed ({type(e).__name__}: {e}); "
+                    f"falling back to row-0-header parse."
+                )
+                transformed = t
+
+            m: ColumnMapping = map_columns(transformed.columns, schema_field_names)
+            renamed = apply_mapping(transformed.rows, m)
+            mapped_tables.append((transformed.name, renamed))
+            if m.collisions:
+                for src, tgt in m.collisions:
+                    warnings.append(
+                        f"Table {transformed.name!r}: column {src!r} collided with another "
+                        f"header already mapped to schema field {tgt!r}; left unmapped."
+                    )
+            if m.unmapped:
+                warnings.append(
+                    f"Table {transformed.name!r}: {len(m.unmapped)} column(s) passed "
+                    f"through under original names (schema didn't match): {m.unmapped[:5]}"
+                    + ("..." if len(m.unmapped) > 5 else "")
+                )
+
+        if not mapped_tables:
+            return [], warnings
+
+        merged, jplan = join_tables(mapped_tables)
+        for j in jplan.joins:
+            warnings.append(
+                f"Joined table {j['right']!r} into {jplan.primary!r} on key "
+                f"{j['key']!r} (overlap {j['overlap']}, {j['kept_rows']} rows matched)."
+            )
+        for s in jplan.skipped:
+            warnings.append(
+                f"Did not join table {s['right']!r} into {jplan.primary!r}: {s['reason']}."
+            )
+        return merged, warnings
 
 
 def _merge_results(
@@ -306,6 +431,95 @@ def _merge_results(
     )
 
 
+def _accumulate_usage(target: dict[str, int], source: dict[str, int]) -> None:
+    """Add per-call usage numbers into a running tally."""
+    for k, v in source.items():
+        target[k] = target.get(k, 0) + (v or 0)
+
+
+def _normalize_subgroup(label: str) -> str:
+    """Compare subgroup labels case- and plural-insensitively.
+
+    Matches "mothers" (LLM subgroup) to "Mother" (table sample_type) and
+    similar variants. Conservative — only strips a trailing 's'.
+    """
+    s = label.strip().lower()
+    if s.endswith("s") and len(s) > 1:
+        s = s[:-1]
+    return s
+
+
+def _stringify_field_value(v: Any) -> str:
+    """Render a study/subgroup field value for insertion into a sample row."""
+    if v is None:
+        return ""
+    if isinstance(v, list):
+        return "; ".join(str(x) for x in v)
+    return str(v)
+
+
+def _fan_out_fields_to_samples(result: ExtractionResult) -> int:
+    """Propagate study-level and subgroup-level field values into each sample.
+
+    Per-sample values already present (from the supplementary-table path)
+    take precedence — they're more specific than the LLM's prose-derived
+    study/subgroup assignments. For each unfilled field on a sample:
+
+      - If the sample's subgroup can be identified (by matching one of its
+        string values against ``result.subgroups`` with plural- and case-
+        insensitive comparison) AND the field has a value for that
+        subgroup, that value is written.
+      - Otherwise the field's study-level value is written, when present
+        and not ``not_reported``.
+
+    Returns the number of (sample, field) cells written.
+    """
+    if not result.samples or not result.fields:
+        return 0
+
+    subgroup_norm: dict[str, str] = {
+        _normalize_subgroup(s): s for s in (result.subgroups or [])
+    }
+
+    def _sample_subgroup(sample: dict) -> str | None:
+        for v in sample.values():
+            if isinstance(v, str):
+                norm = _normalize_subgroup(v)
+                if norm in subgroup_norm:
+                    return subgroup_norm[norm]
+        return None
+
+    def _is_nr(v: Any) -> bool:
+        """A value counts as not-reported when it is empty, None, or any
+        case-variant of the literal 'not_reported' / 'not reported' token."""
+        if v is None:
+            return True
+        if isinstance(v, (list, dict)):
+            return not v
+        if isinstance(v, str):
+            s = v.strip().lower().replace(" ", "_")
+            return s in ("", "not_reported")
+        return False
+
+    n_written = 0
+    for sample in result.samples:
+        sg = _sample_subgroup(sample)
+        for fname, field in result.fields.items():
+            if not _is_nr(sample.get(fname)):
+                continue
+            value: str | None = None
+            if sg and field.by_subgroup and sg in field.by_subgroup:
+                v = field.by_subgroup[sg]
+                if not _is_nr(v):
+                    value = _stringify_field_value(v)
+            if value is None and not _is_nr(field.value):
+                value = _stringify_field_value(field.value)
+            if value is not None:
+                sample[fname] = value
+                n_written += 1
+    return n_written
+
+
 def estimate_cost_usd(usage: dict[str, int], model: str) -> dict[str, float]:
     """Estimate USD cost for a usage dict (input/output/cache tokens)."""
     rates = PRICING_USD_PER_MTOK.get(model)
@@ -330,10 +544,11 @@ def extract(
     schema: Schema | dict | list,
     *,
     paper_id: str | None = None,
+    tables: list | None = None,
     model: str = DEFAULT_MODEL,
     api_key: str | None = None,
 ) -> ExtractionResult:
     """Convenience one-shot wrapper."""
     return MetaExtractor(model=model, api_key=api_key).extract(
-        paper_text=paper_text, schema=schema, paper_id=paper_id
+        paper_text=paper_text, schema=schema, paper_id=paper_id, tables=tables
     )

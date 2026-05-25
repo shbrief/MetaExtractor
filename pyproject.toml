@@ -18,8 +18,8 @@ dependencies = [
 [project.optional-dependencies]
 pdf = ["pypdf>=4.0"]
 linkml = ["PyYAML>=6.0"]
-supplementary = ["openpyxl>=3.1", "pypdf>=4.0"]
-dev = ["pytest>=8", "ruff>=0.5", "PyYAML>=6.0", "openpyxl>=3.1", "pypdf>=4.0"]
+supplementary = ["openpyxl>=3.1", "pdfplumber>=0.11", "pypdf>=4.0"]
+dev = ["pytest>=8", "ruff>=0.5", "PyYAML>=6.0", "openpyxl>=3.1", "pdfplumber>=0.11", "pypdf>=4.0", "rapidfuzz>=3.6"]
 
 [project.scripts]
 metaextract = "metaextractor.cli:main"

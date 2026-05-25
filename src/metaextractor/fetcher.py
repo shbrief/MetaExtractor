@@ -12,7 +12,7 @@ from __future__ import annotations
 import re
 import urllib.parse
 import urllib.request
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 from xml.etree import ElementTree as ET
 
 EUTILS = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils"
@@ -33,6 +33,11 @@ class FetchedPaper:
     pmcid: str | None
     supplementary_included: list[str] | None = None
     supplementary_skipped: list[tuple[str, str]] | None = None
+    # Structured tables (xlsx sheets / csv / tsv / PDF table regions) parsed
+    # from supplementary files. Carried separately so the deterministic
+    # table path can consume them without re-parsing, and so the LLM
+    # prompt only sees prose.
+    supplementary_tables: list = field(default_factory=list)
 
 
 @dataclass
@@ -220,6 +225,7 @@ def fetch_paper(identifier: str, include_supplementary: bool = True) -> FetchedP
         supp = fetch_supplementary(pmcid, jats_hrefs=jats_hrefs)
         paper.supplementary_included = supp.included
         paper.supplementary_skipped = supp.skipped
+        paper.supplementary_tables = list(supp.tables)
         if supp.text:
             paper.text = f"{paper.text}\n\n{supp.text}"
     return paper

@@ -83,6 +83,7 @@ def main(argv: list[str] | None = None) -> int:
                         help="Skip the +1 discovery call that enumerates sample IDs before per-batch field extraction (only relevant when supplementary tables are included).")
     args = parser.parse_args(argv)
 
+    tables: list = []
     if args.paper:
         paper_text = _read_paper(args.paper)
     elif args.paper_id:
@@ -92,10 +93,14 @@ def main(argv: list[str] | None = None) -> int:
             print(f"ERROR: fetch failed: {e}", file=sys.stderr)
             return 2
         paper_text = fetched.text
+        tables.extend(fetched.supplementary_tables or [])
         print(f"[fetched {fetched.source} for {args.paper_id}]", file=sys.stderr)
         if fetched.supplementary_included:
             print(f"[supplementary included ({len(fetched.supplementary_included)}): "
                   f"{', '.join(fetched.supplementary_included)}]", file=sys.stderr)
+        if fetched.supplementary_tables:
+            print(f"[supplementary tables parsed: {len(fetched.supplementary_tables)} "
+                  f"(deterministic path; LLM will not see them)]", file=sys.stderr)
         if fetched.supplementary_skipped:
             for name, why in fetched.supplementary_skipped:
                 print(f"[supplementary skipped: {name} — {why}]", file=sys.stderr)
@@ -107,9 +112,13 @@ def main(argv: list[str] | None = None) -> int:
         local = supplementary_from_local(args.supplementary)
         if local.text:
             paper_text = f"{paper_text}\n\n{local.text}"
+        tables.extend(local.tables)
         if local.included:
             print(f"[supplementary (local) included ({len(local.included)}): "
                   f"{', '.join(local.included)}]", file=sys.stderr)
+        if local.tables:
+            print(f"[supplementary (local) tables parsed: {len(local.tables)} "
+                  f"(deterministic path; LLM will not see them)]", file=sys.stderr)
         for name, why in local.skipped:
             print(f"[supplementary (local) skipped: {name} — {why}]", file=sys.stderr)
 
@@ -122,7 +131,9 @@ def main(argv: list[str] | None = None) -> int:
         sample_discovery=args.sample_discovery,
     )
     try:
-        result = extractor.extract(paper_text, schema_obj, paper_id=args.paper_id)
+        result = extractor.extract(
+            paper_text, schema_obj, paper_id=args.paper_id, tables=tables or None
+        )
     except ExtractionError as e:
         print(f"ERROR: {e}", file=sys.stderr)
         if e.raw_response:
