@@ -72,8 +72,16 @@ def _pmid_to_pmcid(pmid: str) -> str | None:
         {"dbfrom": "pubmed", "db": "pmc", "id": pmid, "retmode": "xml"}
     )
     root = ET.fromstring(_http_get(url))
-    link = root.find(".//LinkSetDb/Link/Id")
-    return link.text if link is not None and link.text else None
+    # Only the ``pubmed_pmc`` link names the article's own PMC mirror. Other
+    # link names (e.g. ``pubmed_pmc_refs``) point to articles the paper cites
+    # — picking the first one would silently fetch the wrong paper.
+    for lsd in root.findall(".//LinkSetDb"):
+        if (lsd.findtext("LinkName") or "").strip() != "pubmed_pmc":
+            continue
+        link = lsd.find("Link/Id")
+        if link is not None and link.text:
+            return link.text
+    return None
 
 
 def _flatten_xml(elem: ET.Element) -> str:
