@@ -70,11 +70,21 @@ _SAMPLE_ID_RE = re.compile(r"^[A-Za-z0-9]+([_-][A-Za-z0-9]+)+$")
 
 
 def _sample_id_signal(headers: list[str]) -> float:
-    """Fraction of (post-col-0) headers that look like sample IDs."""
+    """Fraction of (post-col-0) headers that look like sample IDs.
+
+    Requires at least one digit in the header — without this guard,
+    snake_case schema field names like ``donor_id`` / ``bristol_stool_scale``
+    trip the alphanumeric-joined-by-``_`` pattern just as readily as
+    real sample IDs (which essentially always carry digits, e.g.
+    ``SRR12345``, ``S00A4-0001``, ``PD_1``).
+    """
     candidates = [h for h in headers[1:] if h]
     if not candidates:
         return 0.0
-    hits = sum(1 for h in candidates if _SAMPLE_ID_RE.match(h))
+    hits = sum(
+        1 for h in candidates
+        if _SAMPLE_ID_RE.match(h) and any(c.isdigit() for c in h)
+    )
     return hits / len(candidates)
 
 
@@ -459,12 +469,23 @@ def propose_plan(
         f"First {min(n_rows, len(table.raw_rows))} rows (TSV, row index in column 0):\n\n"
         f"{grid}\n"
     )
-    msg = client.messages.create(
-        model=model,
-        max_tokens=max_tokens,
-        system=_PROPOSE_SYSTEM,
-        messages=[{"role": "user", "content": user}],
-    )
+    try:
+        msg = client.messages.create(
+            model=model,
+            max_tokens=max_tokens,
+            system=_PROPOSE_SYSTEM,
+            messages=[{"role": "user", "content": user}],
+        )
+    except Exception as e:
+        # Covers auth errors (TypeError from missing API key), network
+        # failures, rate-limit errors, etc. — anything that means we
+        # cannot get a plan from the LLM.  The caller falls back to the
+        # default row-0-header parse.
+        raise PlanProposalError(
+            f"LLM call failed: {type(e).__name__}: {e}",
+            raw_response=None,
+            usage={},
+        ) from e
     raw = "".join(b.text for b in msg.content if b.type == "text").strip()
     u = msg.usage
     usage = {
