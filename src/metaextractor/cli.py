@@ -68,7 +68,7 @@ def main(argv: list[str] | None = None) -> int:
                         action="store_false", default=True,
                         help="Skip the auto supplementary-materials fetch (JATS URLs + Europe PMC ZIP). Does not affect --supplementary.")
     parser.add_argument("--supplementary", nargs="+", type=Path, default=None, metavar="PATH",
-                        help="One or more local supplementary files (xlsx/csv/tsv/pdf/txt) to include alongside the paper. Orthogonal to --no-supplementary; combine if you want only local files.")
+                        help="One or more local supplementary files (xlsx/csv/tsv/pdf/txt) to include alongside the paper. Directories are expanded to all supported files inside (non-recursive). Orthogonal to --no-supplementary; combine if you want only local files.")
     parser.add_argument("--out", type=Path, default=None, help="Write JSON result to file (default stdout).")
     parser.add_argument("--csv", type=Path, default=None, help="Also write a flat CSV (row per record).")
     parser.add_argument("--csv-provenance", action="store_true",
@@ -95,6 +95,14 @@ def main(argv: list[str] | None = None) -> int:
         paper_text = fetched.text
         tables.extend(fetched.supplementary_tables or [])
         print(f"[fetched {fetched.source} for {args.paper_id}]", file=sys.stderr)
+        if fetched.source == "pubmed_abstract":
+            print(
+                "[note: no PMC fulltext for this paper — only the PubMed "
+                "abstract was retrieved, and no supplementary materials were "
+                "fetched automatically. Pass --supplementary PATH [PATH ...] "
+                "to include locally-downloaded supplementary files.]",
+                file=sys.stderr,
+            )
         if fetched.supplementary_included:
             print(f"[supplementary included ({len(fetched.supplementary_included)}): "
                   f"{', '.join(fetched.supplementary_included)}]", file=sys.stderr)
@@ -108,8 +116,31 @@ def main(argv: list[str] | None = None) -> int:
         parser.error("either --paper or --paper-id (PMID/PMCID) is required")
 
     if args.supplementary:
-        from metaextractor.supplementary import supplementary_from_local
-        local = supplementary_from_local(args.supplementary)
+        from metaextractor.supplementary import (
+            SKIP_EXTS,
+            TEXT_EXTS,
+            supplementary_from_local,
+        )
+        _SUPP_EXTS = TEXT_EXTS | {".xlsx", ".pdf"}
+        expanded: list[Path] = []
+        for p in args.supplementary:
+            if p.is_dir():
+                children = sorted(
+                    c for c in p.iterdir()
+                    if c.is_file()
+                    and c.suffix.lower() in _SUPP_EXTS
+                    and c.suffix.lower() not in SKIP_EXTS
+                )
+                if not children:
+                    print(
+                        f"[supplementary (local) skipped: {p} — directory "
+                        f"contained no supported files (xlsx/csv/tsv/pdf/txt)]",
+                        file=sys.stderr,
+                    )
+                expanded.extend(children)
+            else:
+                expanded.append(p)
+        local = supplementary_from_local(expanded)
         if local.text:
             paper_text = f"{paper_text}\n\n{local.text}"
         tables.extend(local.tables)
