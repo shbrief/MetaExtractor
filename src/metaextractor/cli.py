@@ -3,6 +3,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 import sys
 from pathlib import Path
 
@@ -39,6 +40,33 @@ def _load_schema(path: Path, class_name: str | None = None) -> Schema:
     if is_linkml_schema(data):
         return linkml_to_schema(data, class_name=class_name)
     return Schema.from_dict(data)
+
+
+def _resolve_api_key(value: str | None) -> str | None:
+    """Resolve an --api-key value. Supports:
+    - ``env:VARNAME`` — read from the given environment variable
+    - ``file:PATH`` — read the first non-empty line of the file
+    - any other value — treated as a literal key
+    - ``None`` — fall back to the ``ANTHROPIC_API_KEY`` environment variable
+    """
+    if value is None:
+        return None
+    if value.startswith("env:"):
+        name = value[4:]
+        key = os.environ.get(name)
+        if not key:
+            raise SystemExit(f"--api-key env:{name}: environment variable is not set or empty")
+        return key
+    if value.startswith("file:"):
+        path = Path(value[5:]).expanduser()
+        if not path.is_file():
+            raise SystemExit(f"--api-key file:{path}: file not found")
+        for line in path.read_text(encoding="utf-8").splitlines():
+            stripped = line.strip()
+            if stripped:
+                return stripped
+        raise SystemExit(f"--api-key file:{path}: file is empty")
+    return value
 
 
 def _read_paper(path: Path) -> str:
@@ -78,6 +106,10 @@ def main(argv: list[str] | None = None) -> int:
                         help=f"Per-batch response cap (default {DEFAULT_MAX_TOKENS}).")
     parser.add_argument("--batch-size", type=int, default=DEFAULT_BATCH_SIZE,
                         help=f"Auto-batch schemas larger than this many fields (default {DEFAULT_BATCH_SIZE}).")
+    parser.add_argument("--api-key", default=None, metavar="VALUE",
+                        help="Anthropic API key. Accepts a literal key, 'env:VARNAME' to read "
+                             "from an environment variable, or 'file:PATH' to read from a file. "
+                             "Defaults to the ANTHROPIC_API_KEY environment variable.")
     parser.add_argument("--no-sample-discovery", dest="sample_discovery", action="store_false",
                         default=True,
                         help="Skip the +1 discovery call that enumerates sample IDs before per-batch field extraction (only relevant when supplementary tables are included).")
@@ -160,6 +192,7 @@ def main(argv: list[str] | None = None) -> int:
         max_tokens=args.max_tokens,
         batch_size=args.batch_size,
         sample_discovery=args.sample_discovery,
+        api_key=_resolve_api_key(args.api_key),
     )
     try:
         result = extractor.extract(
