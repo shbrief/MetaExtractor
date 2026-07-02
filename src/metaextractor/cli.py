@@ -10,6 +10,7 @@ from pathlib import Path
 from metaextractor.extractor import (
     DEFAULT_BATCH_SIZE,
     DEFAULT_MAX_TOKENS,
+    DEFAULT_MIN_TABLE_RELEVANCE,
     DEFAULT_MODEL,
     ExtractionError,
     MetaExtractor,
@@ -42,15 +43,26 @@ def _load_schema(path: Path, class_name: str | None = None) -> Schema:
     return Schema.from_dict(data)
 
 
-def _resolve_api_key(value: str | None) -> str | None:
+_DEFAULT_API_KEY_ENV_VARS = ("ANTHROPIC_API_KEY", "CLAUDE_API_KEY")
+
+
+def _resolve_api_key(value: str | None) -> str:
     """Resolve an --api-key value. Supports:
     - ``env:VARNAME`` — read from the given environment variable
     - ``file:PATH`` — read the first non-empty line of the file
     - any other value — treated as a literal key
-    - ``None`` — fall back to the ``ANTHROPIC_API_KEY`` environment variable
+    - ``None`` — auto-discover from environment variables, checking
+      ``ANTHROPIC_API_KEY`` then ``CLAUDE_API_KEY``
     """
     if value is None:
-        return None
+        for name in _DEFAULT_API_KEY_ENV_VARS:
+            key = os.environ.get(name)
+            if key:
+                return key
+        raise SystemExit(
+            "No API key found. Set the ANTHROPIC_API_KEY environment variable, "
+            "or pass --api-key VALUE (accepts a literal key, 'env:VARNAME', or 'file:PATH')."
+        )
     if value.startswith("env:"):
         name = value[4:]
         key = os.environ.get(name)
@@ -109,11 +121,19 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--api-key", default=None, metavar="VALUE",
                         help="Anthropic API key. Accepts a literal key, 'env:VARNAME' to read "
                              "from an environment variable, or 'file:PATH' to read from a file. "
-                             "Defaults to the ANTHROPIC_API_KEY environment variable.")
+                             "If omitted, auto-discovers from ANTHROPIC_API_KEY or CLAUDE_API_KEY.")
     parser.add_argument("--no-sample-discovery", dest="sample_discovery", action="store_false",
                         default=True,
                         help="Skip the +1 discovery call that enumerates sample IDs before per-batch field extraction (only relevant when supplementary tables are included).")
+    parser.add_argument("--min-table-relevance", type=float, default=DEFAULT_MIN_TABLE_RELEVANCE,
+                        metavar="0-1",
+                        help=f"Deterministic relevance gate for supplementary tables (default "
+                             f"{DEFAULT_MIN_TABLE_RELEVANCE}). Tables scoring below this against the "
+                             f"schema are skipped before the LLM plan step; measurement/feature "
+                             f"matrices are always skipped. Set 0 to keep all non-matrix tables.")
     args = parser.parse_args(argv)
+
+    api_key = _resolve_api_key(args.api_key)
 
     tables: list = []
     if args.paper:
@@ -192,7 +212,8 @@ def main(argv: list[str] | None = None) -> int:
         max_tokens=args.max_tokens,
         batch_size=args.batch_size,
         sample_discovery=args.sample_discovery,
-        api_key=_resolve_api_key(args.api_key),
+        api_key=api_key,
+        min_table_relevance=args.min_table_relevance,
     )
     try:
         result = extractor.extract(
@@ -204,6 +225,15 @@ def main(argv: list[str] | None = None) -> int:
             print("--- raw model response ---", file=sys.stderr)
             print(e.raw_response, file=sys.stderr)
         return 2
+
+    if result.table_selection:
+        kept = sum(1 for s in result.table_selection if s.selected)
+        print(f"[table selection: {kept} kept / {len(result.table_selection)} scored "
+              f"(gate={args.min_table_relevance})]", file=sys.stderr)
+        for s in result.table_selection:
+            tag = "kept" if s.selected else ("matrix" if s.is_matrix else "low-relevance")
+            why = "; ".join(s.reasons) or "no schema-matching columns"
+            print(f"[  {s.name}: {tag} (score={s.score:.2f}) — {why}]", file=sys.stderr)
 
     payload = result.model_dump_json(indent=2)
     if args.out:

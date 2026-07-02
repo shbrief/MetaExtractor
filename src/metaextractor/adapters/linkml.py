@@ -84,16 +84,24 @@ def _pv_label(pv: Any) -> str:
 
 
 def _slot_to_field(name: str, slot: dict[str, Any], enums: dict[str, Any]) -> Field:
-    desc = (slot.get("description") or "").strip() or name
+    raw_desc = slot.get("description")
+    desc = (raw_desc.strip() if isinstance(raw_desc, str) else "") or name
     range_ = slot.get("range")
     multivalued = bool(slot.get("multivalued"))
     allowed_values: list[str] | None = None
     value_descriptions: dict[str, str] | None = None
 
     if range_ in enums:
-        ftype = "enum"
         allowed_values, vdescs = _enum_values(enums, range_)
-        value_descriptions = vdescs or None
+        if allowed_values:
+            ftype = "enum"
+            value_descriptions = vdescs or None
+        else:
+            # Dynamic enum (LinkML `reachable_from` / ontology subtree) with no
+            # static permissible_values — nothing to enumerate, so treat it as
+            # free text rather than emitting an invalid empty-allowed_values enum.
+            ftype = "string"
+            allowed_values = None
     elif isinstance(range_, str) and range_ in LINKML_NUMERIC:
         ftype = "number"
     elif isinstance(range_, str) and range_ in LINKML_BOOL:

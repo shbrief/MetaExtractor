@@ -18,20 +18,21 @@ from metaextractor.column_mapper import (
     join_tables,
     map_columns,
 )
-from metaextractor.output import ExtractionResult
+from metaextractor.output import ExtractionResult, TableSelection
 from metaextractor.prompts import SYSTEM_PROMPT, build_user_content
 from metaextractor.schema import Field, Schema
 from metaextractor.table_plan import (
     PlanExecutionError,
     PlanProposalError,
     execute_plan,
-    is_feature_matrix,
     propose_plan,
 )
+from metaextractor.table_select import score_table
 
 DEFAULT_MODEL = "claude-sonnet-4-6"
 DEFAULT_MAX_TOKENS = 16384
 DEFAULT_BATCH_SIZE = 30
+DEFAULT_MIN_TABLE_RELEVANCE = 0.15
 
 # USD per 1M tokens. Cache read / write follow Anthropic's standard 5m
 # ephemeral multipliers (0.1x / 1.25x of base input). Update as needed.
@@ -103,12 +104,14 @@ class MetaExtractor:
         batch_size: int = DEFAULT_BATCH_SIZE,
         sample_discovery: bool = True,
         api_key: str | None = None,
+        min_table_relevance: float = DEFAULT_MIN_TABLE_RELEVANCE,
     ):
         self.client = client or Anthropic(api_key=api_key or os.environ.get("ANTHROPIC_API_KEY"))
         self.model = model
         self.max_tokens = max_tokens
         self.batch_size = batch_size
         self.sample_discovery = sample_discovery
+        self.min_table_relevance = min_table_relevance
         self.last_usage: dict[str, int] = {
             "input_tokens": 0,
             "cache_creation_input_tokens": 0,
@@ -138,8 +141,11 @@ class MetaExtractor:
         # then run the LLM only for prose-derived study-level fields.
         det_samples: list[dict] | None = None
         det_warnings: list[str] = []
+        det_selections: list[TableSelection] = []
         if tables:
-            det_samples, det_warnings = self._build_samples_from_tables(tables, schema_obj)
+            det_samples, det_warnings, det_selections = self._build_samples_from_tables(
+                tables, schema_obj
+            )
 
         sample_ids: list[str] | None = None
         if self.sample_discovery and det_samples is None and "--- SUPPLEMENTARY FILE:" in paper_text:
@@ -168,6 +174,7 @@ class MetaExtractor:
         if det_samples is not None:
             result.granularity = "sample_level"
             result.samples = det_samples
+            result.table_selection = det_selections
             for w in det_warnings:
                 result.extraction_warnings.append(w)
 
@@ -266,7 +273,7 @@ class MetaExtractor:
         self,
         tables: list,
         schema: Schema,
-    ) -> tuple[list[dict], list[str]]:
+    ) -> tuple[list[dict], list[str], list[TableSelection]]:
         """Table → sample-rows pipeline.
 
         Per table:
@@ -282,18 +289,46 @@ class MetaExtractor:
         Then left-join across all kept tables on shared canonical keys.
         """
         if not tables:
-            return [], []
+            return [], [], []
         schema_field_names = [f.name for f in schema.fields]
         warnings: list[str] = []
-        mapped_tables: list[tuple[str, list[dict]]] = []
+        selections: list[TableSelection] = []
+        # (name, rows, relevance): relevance is retained so the join can anchor
+        # on the most schema-relevant sample table (see the sort before join_tables).
+        scored_tables: list[tuple[str, list[dict], float]] = []
 
         for t in tables:
-            if is_feature_matrix(t):
+            rel = score_table(t, schema)
+            if rel.is_matrix:
+                detail = rel.reasons[0] if rel.reasons else "feature × samples matrix"
                 warnings.append(
-                    f"Table {t.name!r}: skipped as feature × samples matrix "
-                    f"({len(t.raw_rows)} rows × {len(t.columns)} cols)."
+                    f"Table {t.name!r}: skipped as measurement matrix "
+                    f"({len(t.raw_rows)} rows × {len(t.columns)} cols; {detail})."
                 )
+                selections.append(TableSelection(
+                    name=t.name, selected=False, score=rel.score, is_matrix=True,
+                    matched_fields=rel.matched_fields, reasons=rel.reasons,
+                ))
                 continue
+            if rel.score < self.min_table_relevance:
+                detail = "; ".join(rel.reasons) or "no schema-matching columns"
+                warnings.append(
+                    f"Table {t.name!r}: skipped, low schema relevance "
+                    f"(score={rel.score:.2f} < {self.min_table_relevance:.2f}; {detail})."
+                )
+                selections.append(TableSelection(
+                    name=t.name, selected=False, score=rel.score,
+                    matched_fields=rel.matched_fields, reasons=rel.reasons,
+                ))
+                continue
+            warnings.append(
+                f"Table {t.name!r}: selected (relevance={rel.score:.2f}; matched "
+                f"{len(rel.matched_fields)}/{len(schema.fields)} schema fields)."
+            )
+            selections.append(TableSelection(
+                name=t.name, selected=True, score=rel.score,
+                matched_fields=rel.matched_fields, reasons=rel.reasons,
+            ))
 
             transformed: list = None  # type: ignore[assignment]
             try:
@@ -317,7 +352,7 @@ class MetaExtractor:
 
             m: ColumnMapping = map_columns(transformed.columns, schema_field_names)
             renamed = apply_mapping(transformed.rows, m)
-            mapped_tables.append((transformed.name, renamed))
+            scored_tables.append((transformed.name, renamed, rel.score))
             if m.collisions:
                 for src, tgt in m.collisions:
                     warnings.append(
@@ -331,9 +366,16 @@ class MetaExtractor:
                     + ("..." if len(m.unmapped) > 5 else "")
                 )
 
-        if not mapped_tables:
-            return [], warnings
+        if not scored_tables:
+            return [], warnings, selections
 
+        # Anchor the join on the most schema-relevant table so the emitted sample
+        # count reflects the best per-sample manifest — not whichever table came
+        # first in file order, which for meta-analyses can be a giant public-repo
+        # dump (e.g. 9k rows) rather than the study's own samples. Sort is stable,
+        # so equal-relevance tables keep their original order.
+        scored_tables.sort(key=lambda x: x[2], reverse=True)
+        mapped_tables = [(name, rows) for name, rows, _ in scored_tables]
         merged, jplan = join_tables(mapped_tables)
         for j in jplan.joins:
             warnings.append(
@@ -344,7 +386,7 @@ class MetaExtractor:
             warnings.append(
                 f"Did not join table {s['right']!r} into {jplan.primary!r}: {s['reason']}."
             )
-        return merged, warnings
+        return merged, warnings, selections
 
 
 def _merge_results(
