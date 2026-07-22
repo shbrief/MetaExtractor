@@ -1,0 +1,514 @@
+{
+  "models": {
+    "sonnet": {
+      "counts": {
+        "Bengtsson-PalmeJ_2015": {
+          "gold": 70,
+          "runs": [
+            0,
+            0,
+            0
+          ],
+          "src": [
+            "pmc_fulltext",
+            "pmc_fulltext",
+            "pmc_fulltext"
+          ],
+          "status": [
+            "ok",
+            "ok",
+            "ok"
+          ]
+        },
+        "TettAJ_2019_b": {
+          "gold": 44,
+          "runs": [
+            50,
+            50,
+            50
+          ],
+          "src": [
+            "pmc_fulltext",
+            "pmc_fulltext",
+            "pmc_fulltext"
+          ],
+          "status": [
+            "ok",
+            "ok",
+            "ok"
+          ]
+        },
+        "LiJ_2017": {
+          "gold": 196,
+          "runs": [
+            6,
+            6,
+            6
+          ],
+          "src": [
+            "pmc_fulltext",
+            "pmc_fulltext",
+            "pmc_fulltext"
+          ],
+          "status": [
+            "ok",
+            "ok",
+            "ok"
+          ]
+        },
+        "NayakRR_2021": {
+          "gold": 34,
+          "runs": [
+            0,
+            0,
+            0
+          ],
+          "src": [
+            "pmc_fulltext",
+            "pmc_fulltext",
+            "pmc_fulltext"
+          ],
+          "status": [
+            "ok",
+            "ok",
+            "ok"
+          ]
+        },
+        "PasolliE_2019": {
+          "gold": 112,
+          "runs": [
+            112,
+            112,
+            112
+          ],
+          "src": [
+            "pmc_fulltext",
+            "pmc_fulltext",
+            "pmc_fulltext"
+          ],
+          "status": [
+            "ok",
+            "ok",
+            "ok"
+          ]
+        },
+        "Heitz-BuschartA_2016": {
+          "gold": 53,
+          "runs": [
+            0,
+            0,
+            0
+          ],
+          "src": [
+            "pubmed_abstract",
+            "pubmed_abstract",
+            "pubmed_abstract"
+          ],
+          "status": [
+            "ok",
+            "ok",
+            "ok"
+          ]
+        },
+        "FanY_2023": {
+          "gold": 147,
+          "runs": [
+            319,
+            510,
+            510
+          ],
+          "src": [
+            "pmc_fulltext",
+            "pmc_fulltext",
+            "pmc_fulltext"
+          ],
+          "status": [
+            "ok",
+            "ok",
+            "ok"
+          ]
+        },
+        "QinJ_2012": {
+          "gold": 363,
+          "runs": [
+            0,
+            0,
+            0
+          ],
+          "src": [
+            "pubmed_abstract",
+            "pubmed_abstract",
+            "pubmed_abstract"
+          ],
+          "status": [
+            "ok",
+            "ok",
+            "ok"
+          ]
+        },
+        "ContevilleLC_2019": {
+          "gold": 15,
+          "runs": [
+            0,
+            0,
+            0
+          ],
+          "src": [
+            "pmc_fulltext",
+            "pmc_fulltext",
+            "pmc_fulltext"
+          ],
+          "status": [
+            "ok",
+            "ok",
+            "ok"
+          ]
+        },
+        "LiSS_2016": {
+          "gold": 55,
+          "runs": [
+            0,
+            0,
+            0
+          ],
+          "src": [
+            "pubmed_abstract",
+            "pubmed_abstract",
+            "pubmed_abstract"
+          ],
+          "status": [
+            "ok",
+            "ok",
+            "ok"
+          ]
+        }
+      },
+      "headline": {
+        "P": [
+          0.999256229081443,
+          0.9927536231884058,
+          0.999288256227758
+        ],
+        "R": [
+          0.5902628177509694,
+          0.5788453252908229,
+          0.6049116760017234
+        ],
+        "F1": [
+          0.740340448527425,
+          0.7330514254535534,
+          0.753623188405797
+        ],
+        "vacc": [
+          0.6788239672497208,
+          0.6667883211678832,
+          0.6915954415954416
+        ],
+        "fp": [
+          2,
+          2,
+          20
+        ],
+        "per_run": [
+          {
+            "run": 1,
+            "P": 0.999288256227758,
+            "R": 0.6049116760017234,
+            "F1": 0.753623188405797,
+            "vacc": 0.6915954415954416,
+            "cells": {
+              "tn": 355,
+              "tp_correct": 1942,
+              "tp_wrong": 866,
+              "fn": 1834,
+              "fp": 2
+            }
+          },
+          {
+            "run": 2,
+            "P": 0.999256229081443,
+            "R": 0.5788453252908229,
+            "F1": 0.7330514254535534,
+            "vacc": 0.6788239672497208,
+            "cells": {
+              "tn": 355,
+              "tp_correct": 1824,
+              "tp_wrong": 863,
+              "fn": 1955,
+              "fp": 2
+            }
+          },
+          {
+            "run": 3,
+            "P": 0.9927536231884058,
+            "R": 0.5902628177509694,
+            "F1": 0.740340448527425,
+            "vacc": 0.6667883211678832,
+            "cells": {
+              "tn": 337,
+              "tp_correct": 1827,
+              "tp_wrong": 913,
+              "fn": 1902,
+              "fp": 20
+            }
+          }
+        ]
+      }
+    },
+    "haiku": {
+      "counts": {
+        "Bengtsson-PalmeJ_2015": {
+          "gold": 70,
+          "runs": [
+            0,
+            0,
+            0
+          ],
+          "src": [
+            "pmc_fulltext",
+            "pmc_fulltext",
+            "pubmed_abstract"
+          ],
+          "status": [
+            "ok",
+            "ok",
+            "ok"
+          ]
+        },
+        "TettAJ_2019_b": {
+          "gold": 44,
+          "runs": [
+            50,
+            50,
+            50
+          ],
+          "src": [
+            "pmc_fulltext",
+            "pmc_fulltext",
+            "pmc_fulltext"
+          ],
+          "status": [
+            "ok",
+            "ok",
+            "ok"
+          ]
+        },
+        "LiJ_2017": {
+          "gold": 196,
+          "runs": [
+            1448,
+            1448,
+            1448
+          ],
+          "src": [
+            "pmc_fulltext",
+            "pmc_fulltext",
+            "pmc_fulltext"
+          ],
+          "status": [
+            "ok",
+            "ok",
+            "ok"
+          ]
+        },
+        "NayakRR_2021": {
+          "gold": 34,
+          "runs": [
+            6,
+            0,
+            9
+          ],
+          "src": [
+            "pmc_fulltext",
+            "pmc_fulltext",
+            "pmc_fulltext"
+          ],
+          "status": [
+            "ok",
+            "ok",
+            "ok"
+          ]
+        },
+        "PasolliE_2019": {
+          "gold": 112,
+          "runs": [
+            112,
+            112,
+            112
+          ],
+          "src": [
+            "pmc_fulltext",
+            "pmc_fulltext",
+            "pmc_fulltext"
+          ],
+          "status": [
+            "ok",
+            "ok",
+            "ok"
+          ]
+        },
+        "Heitz-BuschartA_2016": {
+          "gold": 53,
+          "runs": [
+            0,
+            0,
+            0
+          ],
+          "src": [
+            "pubmed_abstract",
+            "pubmed_abstract",
+            "pubmed_abstract"
+          ],
+          "status": [
+            "ok",
+            "ok",
+            "ok"
+          ]
+        },
+        "FanY_2023": {
+          "gold": 147,
+          "runs": [
+            319,
+            319,
+            319
+          ],
+          "src": [
+            "pmc_fulltext",
+            "pmc_fulltext",
+            "pmc_fulltext"
+          ],
+          "status": [
+            "ok",
+            "ok",
+            "ok"
+          ]
+        },
+        "QinJ_2012": {
+          "gold": 363,
+          "runs": [
+            0,
+            0,
+            0
+          ],
+          "src": [
+            "pubmed_abstract",
+            "pubmed_abstract",
+            "pubmed_abstract"
+          ],
+          "status": [
+            "ok",
+            "ok",
+            "ok"
+          ]
+        },
+        "ContevilleLC_2019": {
+          "gold": 15,
+          "runs": [
+            1,
+            0,
+            15
+          ],
+          "src": [
+            "pmc_fulltext",
+            "pmc_fulltext",
+            "pmc_fulltext"
+          ],
+          "status": [
+            "ok",
+            "ok",
+            "ok"
+          ]
+        },
+        "LiSS_2016": {
+          "gold": 55,
+          "runs": [
+            0,
+            0,
+            0
+          ],
+          "src": [
+            "pubmed_abstract",
+            "pubmed_abstract",
+            "pubmed_abstract"
+          ],
+          "status": [
+            "ok",
+            "ok",
+            "ok"
+          ]
+        }
+      },
+      "headline": {
+        "P": [
+          0.8871834228702993,
+          0.8846380223660977,
+          0.8879589119269545
+        ],
+        "R": [
+          0.6194267515923567,
+          0.6175020542317173,
+          0.6268130676426732
+        ],
+        "F1": [
+          0.7297740952083172,
+          0.7273167190902492,
+          0.7346095797918818
+        ],
+        "vacc": [
+          0.5381319622964867,
+          0.5149221453287197,
+          0.5528942115768463
+        ],
+        "fp": [
+          588,
+          588,
+          589
+        ],
+        "per_run": [
+          {
+            "run": 1,
+            "P": 0.8871834228702993,
+            "R": 0.6268130676426732,
+            "F1": 0.7346095797918818,
+            "vacc": 0.5149221453287197,
+            "cells": {
+              "tn": 341,
+              "tp_correct": 2381,
+              "tp_wrong": 2243,
+              "fn": 2753,
+              "fp": 588
+            }
+          },
+          {
+            "run": 2,
+            "P": 0.8846380223660977,
+            "R": 0.6175020542317173,
+            "F1": 0.7273167190902492,
+            "vacc": 0.5528942115768463,
+            "cells": {
+              "tn": 339,
+              "tp_correct": 2493,
+              "tp_wrong": 2016,
+              "fn": 2793,
+              "fp": 588
+            }
+          },
+          {
+            "run": 3,
+            "P": 0.8879589119269545,
+            "R": 0.6194267515923567,
+            "F1": 0.7297740952083172,
+            "vacc": 0.5381319622964867,
+            "cells": {
+              "tn": 368,
+              "tp_correct": 2512,
+              "tp_wrong": 2156,
+              "fn": 2868,
+              "fp": 589
+            }
+          }
+        ]
+      }
+    }
+  }
+}

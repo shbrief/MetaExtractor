@@ -1,0 +1,14 @@
+query,ref_match,stage,match1,match1_score,match1_code
+Benzodiazepine,Not Found,1.0,Not Found,1.0,
+Methotrexate,Not Found,1.0,Not Found,1.0,
+Selective serotonin reuptake inhibitor,Not Found,1.0,Not Found,1.0,
+Antipsychotic,Not Found,2.0,Antipsychotic Agent,0.9811,NCIT:C29710
+Antipsychotics,Not Found,2.0,Antipsychotic Agent,0.9517,NCIT:C29710
+Benzodiazepines,Not Found,2.0,Benzodiazepine,1.0000,NCIT:C1012
+Cognitive behavioral therapy,Not Found,2.5,Cytembena,0.5682,NCIT:C1360
+Fecal Microbiota Transplantation,Not Found,2.5,Fecal Microbiota Transplantation Capsule,0.8082,NCIT:C168520
+Fecal microbiota transplantation,Not Found,2.5,Fecal Microbiota Transplantation Capsule,0.8082,NCIT:C168520
+Methotrexate (MTX),Not Found,2.0,Methotrexate,0.9605,NCIT:C642
+Not treated (antihypertensive-naïve),Not Found,2.5,Antihypertensive Agent,0.6105,NCIT:C270
+Selective serotonin re-uptake inhibitors,Not Found,2.0,Selective Serotonin Reuptake Inhibitor,0.9076,NCIT:C94725
+fecal microbiota transplantation,Not Found,2.5,Fecal Microbiota Transplantation Capsule,0.8082,NCIT:C168520

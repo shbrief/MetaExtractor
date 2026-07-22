@@ -1,0 +1,112 @@
+[
+  {
+    "study": "Bengtsson-PalmeJ_2015",
+    "pmid": "26259788",
+    "n_samples": 70,
+    "gold_tsv": "/Users/sehyunoh/Projects/cMD_architecture/curatedMetagenomicDataCuration/inst/curated/Bengtsson-PalmeJ_2015/Bengtsson-PalmeJ_2015_sample.tsv",
+    "sample_ids_head": [
+      "TRAVELRES1",
+      "TRAVELRES10",
+      "TRAVELRES11"
+    ]
+  },
+  {
+    "study": "TettAJ_2019_b",
+    "pmid": "31607556",
+    "n_samples": 44,
+    "gold_tsv": "/Users/sehyunoh/Projects/cMD_architecture/curatedMetagenomicDataCuration/inst/curated/TettAJ_2019_b/TettAJ_2019_b_sample.tsv",
+    "sample_ids_head": [
+      "C16-20005-GH",
+      "C16-20006-GH",
+      "C16-20007-GH"
+    ]
+  },
+  {
+    "study": "LiJ_2017",
+    "pmid": "28143587",
+    "n_samples": 196,
+    "gold_tsv": "/Users/sehyunoh/Projects/cMD_architecture/curatedMetagenomicDataCuration/inst/curated/LiJ_2017/LiJ_2017_sample.tsv",
+    "sample_ids_head": [
+      "H1F413846",
+      "H1F512951",
+      "H1F513817"
+    ]
+  },
+  {
+    "study": "NayakRR_2021",
+    "pmid": "33440172",
+    "n_samples": 34,
+    "gold_tsv": "/Users/sehyunoh/Projects/cMD_architecture/curatedMetagenomicDataCuration/inst/curated/NayakRR_2021/NayakRR_2021_sample.tsv",
+    "sample_ids_head": [
+      "NYU_RA_347C",
+      "NYU_RA_215C",
+      "NYU_RA_88B"
+    ]
+  },
+  {
+    "study": "PasolliE_2019",
+    "pmid": "30661755",
+    "n_samples": 112,
+    "gold_tsv": "/Users/sehyunoh/Projects/cMD_architecture/curatedMetagenomicDataCuration/inst/curated/PasolliE_2019/PasolliE_2019_sample.tsv",
+    "sample_ids_head": [
+      "A01_02_1FE",
+      "A02_01_1FE",
+      "A03_01_1FE"
+    ]
+  },
+  {
+    "study": "Heitz-BuschartA_2016",
+    "pmid": "27723761",
+    "n_samples": 53,
+    "gold_tsv": "/Users/sehyunoh/Projects/cMD_architecture/curatedMetagenomicDataCuration/inst/curated/Heitz-BuschartA_2016/Heitz-BuschartA_2016_sample.tsv",
+    "sample_ids_head": [
+      "M01.1-V1-stool",
+      "M01.1-V2-stool",
+      "M01.1-V3-stool"
+    ]
+  },
+  {
+    "study": "FanY_2023",
+    "pmid": "37069399",
+    "n_samples": 147,
+    "gold_tsv": "/Users/sehyunoh/Projects/cMD_architecture/curatedMetagenomicDataCuration/inst/curated/FanY_2023/FanY_2023_sample.tsv",
+    "sample_ids_head": [
+      "DKAN_01",
+      "DKAN_02",
+      "DKAN_03"
+    ]
+  },
+  {
+    "study": "QinJ_2012",
+    "pmid": "23023125",
+    "n_samples": 363,
+    "gold_tsv": "/Users/sehyunoh/Projects/cMD_architecture/curatedMetagenomicDataCuration/inst/curated/QinJ_2012/QinJ_2012_sample.tsv",
+    "sample_ids_head": [
+      "CON-001",
+      "CON-002",
+      "CON-003"
+    ]
+  },
+  {
+    "study": "ContevilleLC_2019",
+    "pmid": "31417531",
+    "n_samples": 15,
+    "gold_tsv": "/Users/sehyunoh/Projects/cMD_architecture/curatedMetagenomicDataCuration/inst/curated/ContevilleLC_2019/ContevilleLC_2019_sample.tsv",
+    "sample_ids_head": [
+      "Y1",
+      "Y2",
+      "Y3"
+    ]
+  },
+  {
+    "study": "LiSS_2016",
+    "pmid": "27126044",
+    "n_samples": 55,
+    "gold_tsv": "/Users/sehyunoh/Projects/cMD_architecture/curatedMetagenomicDataCuration/inst/curated/LiSS_2016/LiSS_2016_sample.tsv",
+    "sample_ids_head": [
+      "FAT_006-22-0-0",
+      "FAT_006-22-14-0",
+      "FAT_006-22-2-0"
+    ]
+  }
+]

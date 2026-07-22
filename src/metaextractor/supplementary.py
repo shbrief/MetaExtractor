@@ -31,12 +31,19 @@ from typing import Any
 
 EUROPEPMC_SUPP = "https://www.ebi.ac.uk/europepmc/webservices/rest/{pmcid}/supplementaryFiles"
 PMC_S3_LIST = "https://pmc-oa-opendata.s3.amazonaws.com/?list-type=2&prefix={prefix}&delimiter=/"
+PMC_S3_KEYS = "https://pmc-oa-opendata.s3.amazonaws.com/?list-type=2&prefix={prefix}"
 PMC_S3_FILE = "https://pmc-oa-opendata.s3.amazonaws.com/{key}"
 S3_NS = "{http://s3.amazonaws.com/doc/2006-03-01/}"
 USER_AGENT = "metaextractor/0.1 (+https://github.com/OmicsMLRepo)"
 
 TEXT_EXTS = {".csv", ".tsv", ".txt"}
 SKIP_EXTS = {".eps", ".gif", ".jpg", ".jpeg", ".png", ".tif", ".tiff", ".svg"}
+# Data-table extensions used to filter a *broad* S3 directory listing down to the
+# supplementary files that drive per-sample enumeration, when no JATS hrefs name
+# them explicitly (e.g. the article body came from Europe PMC, not NCBI). Narrow
+# on purpose: a bare listing also returns the main article PDF/XML/images, which
+# must not be pulled in as "supplementary".
+SUPP_TABLE_EXTS = {".xlsx", ".csv", ".tsv"}
 
 
 @dataclass
@@ -270,6 +277,34 @@ def _latest_s3_version_prefix(bare: str) -> str | None:
     return max(versions)[1]
 
 
+def _list_s3_files(version_prefix: str) -> list[str]:
+    """List data-table basenames directly under an S3 version prefix
+    (e.g. ``PMC5264247.1``), filtered to ``SUPP_TABLE_EXTS``.
+
+    This recovers the enumeration-driving supplementary tables when the JATS
+    hrefs are unavailable — e.g. the article body was fetched from Europe PMC
+    rather than NCBI, so no ``<supplementary-material>`` hrefs were parsed. The
+    filter keeps the listing from pulling the main article PDF/XML/images.
+    """
+    url = PMC_S3_KEYS.format(prefix=f"{version_prefix}/")
+    try:
+        root = ET.fromstring(_http_get(url))
+    except Exception:
+        return []
+    names: list[str] = []
+    seen: set[str] = set()
+    for key in root.findall(f"{S3_NS}Contents/{S3_NS}Key"):
+        if key.text is None:
+            continue
+        base = key.text.rsplit("/", 1)[-1]
+        ext = ("." + base.rsplit(".", 1)[-1].lower()) if "." in base else ""
+        if ext not in SUPP_TABLE_EXTS or base.lower() in seen:
+            continue
+        seen.add(base.lower())
+        names.append(base)
+    return names
+
+
 def fetch_supplementary(
     pmcid: str,
     jats_hrefs: list[tuple[str, str]] | None = None,
@@ -291,33 +326,38 @@ def fetch_supplementary(
     skipped: list[tuple[str, str]] = []
     seen: set[str] = set()
 
-    # Source 1: PMC AWS S3, addressed by JATS-declared filenames.
-    if jats_hrefs:
-        version_prefix = _latest_s3_version_prefix(bare)
-        if version_prefix is None and jats_hrefs:
-            skipped.append((f"PMC{bare}", "s3: no version prefix found in pmc-oa-opendata"))
-        elif version_prefix is not None:
-            for name, _orig_url in jats_hrefs:
-                key = name.lower()
-                if key in seen:
-                    continue
-                ext = ("." + name.rsplit(".", 1)[-1].lower()) if "." in name else ""
-                if ext in SKIP_EXTS:
-                    skipped.append((name, f"image-only ({ext})"))
-                    seen.add(key)
-                    continue
-                s3_url = PMC_S3_FILE.format(key=f"{version_prefix}/{name}")
-                try:
-                    blob = _http_get(s3_url)
-                    file_tables, prose = _file_to_parts(name, "s3", blob)
-                except Exception as e:
-                    skipped.append((name, f"s3: {type(e).__name__}: {e}"))
-                    continue
-                tables.extend(file_tables)
-                if prose.strip():
-                    blocks.append(_block(name, "s3", prose))
-                included.append(name)
+    # Source 1: PMC AWS S3. Filenames come from the JATS ``<supplementary-material>``
+    # hrefs when available; otherwise we list the S3 version prefix directly, so the
+    # supplementary tables are recovered even when the body was fetched from Europe
+    # PMC (no JATS hrefs) rather than NCBI. This makes the full-text fallback strictly
+    # additive: falling back for prose never costs the enumeration-driving tables.
+    version_prefix = _latest_s3_version_prefix(bare)
+    if jats_hrefs and version_prefix is None:
+        skipped.append((f"PMC{bare}", "s3: no version prefix found in pmc-oa-opendata"))
+    if version_prefix is not None:
+        s3_names = [name for name, _orig_url in jats_hrefs] if jats_hrefs \
+            else _list_s3_files(version_prefix)
+        for name in s3_names:
+            key = name.lower()
+            if key in seen:
+                continue
+            ext = ("." + name.rsplit(".", 1)[-1].lower()) if "." in name else ""
+            if ext in SKIP_EXTS:
+                skipped.append((name, f"image-only ({ext})"))
                 seen.add(key)
+                continue
+            s3_url = PMC_S3_FILE.format(key=f"{version_prefix}/{name}")
+            try:
+                blob = _http_get(s3_url)
+                file_tables, prose = _file_to_parts(name, "s3", blob)
+            except Exception as e:
+                skipped.append((name, f"s3: {type(e).__name__}: {e}"))
+                continue
+            tables.extend(file_tables)
+            if prose.strip():
+                blocks.append(_block(name, "s3", prose))
+            included.append(name)
+            seen.add(key)
 
     # Source 2: Europe PMC supplementaryFiles ZIP.
     europepmc_url = EUROPEPMC_SUPP.format(pmcid=f"PMC{bare}")

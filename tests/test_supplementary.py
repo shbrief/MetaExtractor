@@ -2,11 +2,57 @@
 import csv
 import io
 import pytest
+from metaextractor import supplementary as supp
 from metaextractor.supplementary import (
     Table,
     _csv_to_tables,
+    _list_s3_files,
     _rows_to_table,
+    fetch_supplementary,
 )
+
+_S3_NS = 'xmlns="http://s3.amazonaws.com/doc/2006-03-01/"'
+
+
+def _s3_versions_xml() -> bytes:
+    return (f"<ListBucketResult {_S3_NS}>"
+            "<CommonPrefixes><Prefix>PMC123.1/</Prefix></CommonPrefixes>"
+            "</ListBucketResult>").encode()
+
+
+def _s3_keys_xml() -> bytes:
+    # A data table plus the main article PDF/XML that must be filtered out.
+    return (f"<ListBucketResult {_S3_NS}>"
+            "<Contents><Key>PMC123.1/TableS1.csv</Key></Contents>"
+            "<Contents><Key>PMC123.1/PMC123.1.pdf</Key></Contents>"
+            "<Contents><Key>PMC123.1/PMC123.1.nxml</Key></Contents>"
+            "</ListBucketResult>").encode()
+
+
+class TestS3ListingFallback:
+    """When no JATS hrefs are supplied (body came from Europe PMC), supplementary
+    tables are still recovered by listing the S3 version prefix directly."""
+
+    def test_list_s3_files_filters_to_data_tables(self, monkeypatch):
+        monkeypatch.setattr(supp, "_http_get", lambda url, timeout=60.0: _s3_keys_xml())
+        assert _list_s3_files("PMC123.1") == ["TableS1.csv"]  # pdf/nxml filtered out
+
+    def test_fetch_supplementary_recovers_tables_without_jats_hrefs(self, monkeypatch):
+        def router(url: str, timeout: float = 60.0) -> bytes:
+            if "delimiter=/" in url:               # version-prefix listing
+                return _s3_versions_xml()
+            if "prefix=PMC123.1/" in url:          # keys under the version prefix
+                return _s3_keys_xml()
+            if url.endswith("TableS1.csv"):        # the file itself
+                return b"sample_id,age\nS1,30\nS2,40\n"
+            if "supplementaryFiles" in url:        # Europe PMC ZIP: none
+                return b"not a zip"
+            raise AssertionError(f"unexpected URL: {url}")
+
+        monkeypatch.setattr(supp, "_http_get", router)
+        result = fetch_supplementary("PMC123", jats_hrefs=None)
+        assert "TableS1.csv" in result.included
+        assert result.tables and result.tables[0].columns[:2] == ["sample_id", "age"]
 
 
 # ---------------------------------------------------------------------------

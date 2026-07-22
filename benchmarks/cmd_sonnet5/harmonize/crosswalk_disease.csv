@@ -1,0 +1,13 @@
+query,ref_match,stage,match1,match1_score,match1_code
+Anorexia Nervosa,Not Found,1.0,Not Found,1.0,
+Anorexia nervosa,Not Found,1.0,Not Found,1.0,
+Healthy,Not Found,1.0,Not Found,1.0,
+Hypertension,Not Found,1.0,Not Found,1.0,
+Metabolic Syndrome,Not Found,1.0,Not Found,1.0,
+Metabolic syndrome,Not Found,1.0,Not Found,1.0,
+Rheumatoid Arthritis,Not Found,1.0,Not Found,1.0,
+Type 1 Diabetes Mellitus,Not Found,1.0,Not Found,1.0,
+Type 2 Diabetes Mellitus,Not Found,1.0,Not Found,1.0,
+healthy,Not Found,1.0,Not Found,1.0,
+Pre-hypertension,Not Found,2.5,Essential Hypertension,0.8140,NCIT:C3478
+type 2 diabetes,Not Found,2.0,Type 2 Diabetes Mellitus,0.9827,NCIT:C26747

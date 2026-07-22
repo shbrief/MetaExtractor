@@ -1,0 +1,16 @@
+query,ref_match,stage,match1,match1_score,match1_code
+Borderline Hypertension,Not Found,1.0,Not Found,1.0,
+Celiac Disease,Not Found,1.0,Not Found,1.0,
+Cytomegaloviral Infection,Not Found,1.0,Not Found,1.0,
+Gestational Diabetes,Not Found,1.0,Not Found,1.0,
+Healthy,Not Found,1.0,Not Found,1.0,
+Hepatitis,Not Found,1.0,Not Found,1.0,
+Hypertension,Not Found,1.0,Not Found,1.0,
+Irritable Bowel Syndrome,Not Found,1.0,Not Found,1.0,
+Metabolic Syndrome,Not Found,1.0,Not Found,1.0,
+Type 1 Diabetes Mellitus,Not Found,1.0,Not Found,1.0,
+Type 2 Diabetes Mellitus,Not Found,1.0,Not Found,1.0,
+anorexia,Not Found,1.0,Not Found,1.0,
+healthy,Not Found,1.0,Not Found,1.0,
+Fecal Microbiota Transplantation,Not Found,2.5,Bacterial Colonization,0.5688,NCIT:C171138
+RA,Not Found,2.5,Rheumatoid Arthritis,1.0000,NCIT:C2884

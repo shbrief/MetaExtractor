@@ -1,0 +1,7 @@
+model,field,tp,base_acc,agree_acc,correct_acc,n_gold_id
+Sonnet5,disease,309,0.505,0.751,1.0,162
+Haiku,disease,506,0.31,0.709,1.0,352
+Sonnet5,body_site,309,0.638,1.0,1.0,162
+Haiku,body_site,462,0.758,1.0,1.0,308
+Sonnet5,treatment,147,0.0,0.184,,0
+Haiku,treatment,153,0.0,0.203,,0

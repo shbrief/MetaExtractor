@@ -1,0 +1,18 @@
+# Python
+__pycache__/
+*.pyc
+*.egg-info/
+.DS_Store
+
+# Benchmark generated data & backups — regenerable via benchmarks/cmd_sonnet5/*.py,
+# too large for git (raw per-sample dumps ~150 MB; disease corpus ~82 MB). The compact
+# aggregates (AGGREGATE.md, aggregate.json, harmonize/*.csv, REPORT.md summaries) are
+# committed instead.
+benchmarks/cmd_sonnet5/out/
+benchmarks/cmd_sonnet5/out_haiku/
+benchmarks/cmd_sonnet5/out_ms/
+benchmarks/cmd_sonnet5/out_ms.pre_fetchfix/
+benchmarks/cmd_sonnet5/out*.pre_q2_*/
+benchmarks/cmd_sonnet5/harmonize/disease_corpus_v041.csv
+benchmarks/cmd_sonnet5/harmonize/*_cache/
+*.log

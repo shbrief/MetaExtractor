@@ -1,0 +1,8 @@
+query,ref_match,stage,match1,match1_score,match1_code
+feces,Not Found,1.0,Not Found,1.0,
+milk,Not Found,1.0,Not Found,1.0,
+nasal cavity,Not Found,1.0,Not Found,1.0,
+oral cavity,Not Found,1.0,Not Found,1.0,
+skin epidermis,Not Found,1.0,Not Found,1.0,
+vagina,Not Found,1.0,Not Found,1.0,
+Stool,Not Found,2.5,feces,1.0000,UBERON:0001988
