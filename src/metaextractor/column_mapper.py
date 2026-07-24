@@ -81,6 +81,13 @@ DEFAULT_ALIASES: dict[str, str] = {
     "sequencing": "sequencing_platform",
     "platform": "sequencing_platform",
     "sequencer": "sequencing_platform",
+    # SRA/ENA run-manifest column. Map the specific model (e.g. "Illumina HiSeq
+    # 2000"), which is what cMD's sequencing_platform curates — not the generic
+    # instrument_platform ("ILLUMINA"), which would win the collision by header
+    # order and yield a less specific value.
+    "instrument": "sequencing_platform",
+    "instrument_model": "sequencing_platform",
+    "instrumentmodel": "sequencing_platform",
     "treatmentname": "treatment",
     "smoking": "smoker",
     "smoking_status": "smoker",

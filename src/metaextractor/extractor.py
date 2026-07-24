@@ -21,9 +21,11 @@ from metaextractor.column_mapper import (
 from metaextractor.output import ExtractionResult, TableSelection
 from metaextractor.prompts import SYSTEM_PROMPT, build_user_content
 from metaextractor.schema import Field, Schema
+from metaextractor.supplementary import Table
 from metaextractor.table_plan import (
     PlanExecutionError,
     PlanProposalError,
+    TablePlan,
     execute_plan,
     propose_plan,
 )
@@ -335,6 +337,9 @@ class MetaExtractor:
                 plan, usage = propose_plan(self.client, self.model, t, schema_field_names)
                 _accumulate_usage(self.last_usage, usage)
                 transformed = execute_plan(t, plan)
+                _reconcile_dropped_schema_columns(
+                    t, plan, transformed, schema_field_names, warnings
+                )
                 warnings.append(
                     f"Table {t.name!r}: plan applied "
                     f"(header_rows={plan.header_rows}, "
@@ -387,6 +392,65 @@ class MetaExtractor:
                 f"Did not join table {s['right']!r} into {jplan.primary!r}: {s['reason']}."
             )
         return merged, warnings, selections
+
+
+def _reconcile_dropped_schema_columns(
+    raw: Table,
+    plan: TablePlan,
+    transformed: Table,
+    schema_field_names: list[str],
+    warnings: list[str],
+) -> None:
+    """Re-attach raw columns the LLM plan dropped that map to a schema field.
+
+    ``execute_plan`` builds its output columns solely from the plan's
+    ``id_columns``, so a raw column that lexically or via alias resolves to a
+    schema field the plan didn't keep (e.g. an SRA/ENA manifest's
+    ``instrument_model`` → ``sequencing_platform``) is lost *before*
+    ``map_columns`` ever sees it. For a flat, single-header, un-melted table
+    the executor emits exactly one output row per surviving raw data row, in
+    order, so such a column can be spliced back by position and picked up by
+    the subsequent ``map_columns`` pass under its original header.
+
+    Mutates ``transformed`` in place. No-op for melted or multi-row-header
+    plans, where the raw-row↔output-row correspondence is not 1:1.
+    """
+    if plan.melt is not None or len(plan.header_rows) != 1:
+        return
+    covered = set(map_columns(transformed.columns, schema_field_names).mapped.values())
+    raw_map = map_columns(raw.columns, schema_field_names).mapped
+    # schema fields the raw table carries but the plan dropped
+    missing = {src: tgt for src, tgt in raw_map.items() if tgt not in covered}
+    if not missing:
+        return
+    n_cols = max((len(r) for r in raw.raw_rows), default=0)
+    drop_row_set = set(plan.drop_rows)
+    kept = [
+        ri for ri in range(plan.data_starts_at, len(raw.raw_rows))
+        if ri not in drop_row_set
+    ]
+    if len(kept) != len(transformed.rows):
+        return  # row alignment not guaranteed; bail rather than misattribute
+    added: list[str] = []
+    for src, tgt in missing.items():
+        if src in transformed.columns:
+            continue
+        try:
+            col_idx = raw.columns.index(src)
+        except ValueError:
+            continue
+        if col_idx >= n_cols:
+            continue
+        for k, out_row in enumerate(transformed.rows):
+            row = raw.raw_rows[kept[k]]
+            out_row[src] = row[col_idx] if col_idx < len(row) else ""
+        transformed.columns.append(src)
+        added.append(f"{src}→{tgt}")
+    if added:
+        warnings.append(
+            f"Table {transformed.name!r}: re-attached plan-dropped schema "
+            f"column(s) {', '.join(added)} for downstream mapping."
+        )
 
 
 def _merge_results(
