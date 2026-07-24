@@ -337,6 +337,7 @@ def evaluate(
     unit_fields: Mapping[str, str] | None = None,
     unit_to_years: Mapping[str, float] = DEFAULT_UNIT_TO_YEARS,
     skip_fields: set[str] | None = None,
+    count_missing_gold_as_fn: bool = False,
 ) -> EvaluationResult:
     """Compare an extraction result against gold rows aligned by position.
 
@@ -366,6 +367,19 @@ def evaluate(
     skip_fields:
         Field names to skip entirely (e.g. constructed identifiers whose
         formats are not directly comparable to gold).
+    count_missing_gold_as_fn:
+        By default the positional join scores only the overlap
+        ``min(n_extracted, n_gold)``, so gold rows the extraction never
+        produced (an under- or un-enumerated study) are silently excluded
+        from the denominator rather than penalized. When ``True``, scoring
+        ranges over *all* gold rows: each gold row with no corresponding
+        extracted sample contributes a cell per field, counted as ``FN``
+        where gold reported a value and ``TN`` where it did not. This yields
+        a **coverage-aware recall** that reflects per-sample enumeration
+        coverage. Precision/FP are unaffected — a missing (phantom) sample
+        asserts nothing, so it can only add ``FN``/``TN``, never ``FP``.
+        Study-level fan-out is *not* applied to phantom rows: a sample the
+        extraction never enumerated is treated as reporting nothing.
     """
     data = extraction.model_dump() if isinstance(extraction, ExtractionResult) else dict(extraction)
     samples: list[dict[str, Any]] = list(data.get("samples", []))
@@ -373,10 +387,11 @@ def evaluate(
     skip_fields = skip_fields or set()
     unit_fields = unit_fields or {}
 
-    n = min(len(samples), len(gold_rows))
-    if len(samples) != len(gold_rows):
-        # Caller still receives a result for the overlap, but flag it.
-        pass  # informational; surfaced via per_cell length
+    n_overlap = min(len(samples), len(gold_rows))
+    # Default: score only the overlap (positional join). With
+    # ``count_missing_gold_as_fn`` we range over every gold row so that
+    # un/under-enumerated samples count as FN rather than being dropped.
+    n = len(gold_rows) if count_missing_gold_as_fn else n_overlap
 
     per_field: dict[str, FieldMetrics] = {f: FieldMetrics(label=f) for f in field_map}
     per_cell: list[CellResult] = []
@@ -384,18 +399,23 @@ def evaluate(
     by_conf: dict[str, FieldMetrics] = defaultdict(lambda: FieldMetrics(label=""))
 
     for i in range(n):
-        sample = samples[i]
+        # ``sample is None`` marks a phantom row: a gold sample the extraction
+        # never enumerated (only reachable when count_missing_gold_as_fn=True).
+        # It reports nothing — no study-level fan-out — so every gold-reported
+        # cell becomes FN.
+        sample = samples[i] if i < len(samples) else None
         gold = gold_rows[i]
         for ef, gf in field_map.items():
             if ef in skip_fields:
                 continue
-            ev = _per_sample_value(study_fields, sample, ef)
+            ev = _per_sample_value(study_fields, sample, ef) if sample is not None else None
             gv = gold.get(gf)
 
             kw: dict[str, Any] = {}
             if ef in unit_fields:
                 ucol = unit_fields[ef]
-                ext_u = sample.get(ucol) if isinstance(sample.get(ucol), str) else None
+                sv = sample.get(ucol) if sample is not None else None
+                ext_u = sv if isinstance(sv, str) else None
                 gold_u = gold.get(ucol)
                 if gold_u in (None, "NA", ""):
                     gold_u = None
@@ -408,7 +428,7 @@ def evaluate(
             per_field[ef].add(decision)
             per_cell.append(CellResult(
                 sample_idx=i,
-                ext_sample_id=_as_str(sample.get("sample_id")),
+                ext_sample_id=_as_str(sample.get("sample_id")) if sample is not None else None,
                 gold_sample_id=_as_str(gold.get("sample_id")),
                 field=ef,
                 extracted=ev,

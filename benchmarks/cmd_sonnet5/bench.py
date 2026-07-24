@@ -203,12 +203,21 @@ def cmd_eval(args: argparse.Namespace) -> None:
             ft = field_totals.setdefault(k, dict(tn=0, tp_correct=0, tp_wrong=0, fn=0, fp=0))
             ft["tn"] += fm.tn; ft["tp_correct"] += fm.tp_correct; ft["tp_wrong"] += fm.tp_wrong
             ft["fn"] += fm.fn; ft["fp"] += fm.fp
+        # Coverage-aware recall: score over ALL gold rows (un/under-enumerated
+        # samples count as FN, not dropped). Only meaningful for the positional
+        # join — the accession-aligned pass already restricts to matched gold.
+        content_coverage = None
+        if not (args.align_key and args.align_key in gold_cols):
+            res_cov = evaluate(extraction=ext, gold_rows=gold, field_map=fmap,
+                               unit_fields=ufields, count_missing_gold_as_fn=True)
+            content_coverage = agg_over(res_cov.per_field, content_keys)
         per_study.append({
             "study": study, "pmid": m["pmid"],
             "n_gold": len(gold), "n_extracted": n_ext,
             "sample_align": align_note or ("match" if n_ext == len(gold)
                                            else f"MISMATCH ({n_ext} vs {len(gold)})"),
             "content": agg_over(res.per_field, content_keys),
+            "content_coverage": content_coverage,
             "meta": agg_over(res.per_field, meta_keys),
             "n_content_fields": len(content_keys),
             "faithfulness": {
@@ -250,6 +259,21 @@ def write_report(outdir: Path, per_study: list[dict], field_totals: dict) -> Non
              f"value-accuracy-on-attempted **{_fmt(v)}**")
     L.append(f"- cells: TN={cagg['tn']} TPc={cagg['tp_correct']} TPw={cagg['tp_wrong']} "
              f"FN={cagg['fn']} FP={cagg['fp']}\n")
+    # Coverage-aware recall: counts gold rows the extraction never enumerated as FN.
+    ccov = dict(tn=0, tp_correct=0, tp_wrong=0, fn=0, fp=0)
+    have_cov = False
+    for s in per_study:
+        cc = s.get("content_coverage")
+        if cc:
+            have_cov = True
+            for k in ccov:
+                ccov[k] += cc[k]
+    if have_cov:
+        _, rcov, _, _ = _prf(ccov)
+        L.append(f"- **Coverage-aware recall {_fmt(rcov)}** — recall when un/under-enumerated "
+                 f"gold rows are counted as FN rather than dropped. The positional recall "
+                 f"above ({_fmt(r)}) scores only the overlap `min(n_extracted, n_gold)`, so "
+                 f"samples a study never enumerated do not enter the denominator.\n")
     # per study
     L.append("## Per study\n")
     L.append("| study | pmid | gold n | ext n | align | content P | R | F1 | val-acc |")

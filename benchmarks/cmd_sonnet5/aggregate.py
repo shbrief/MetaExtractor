@@ -10,10 +10,14 @@ from __future__ import annotations
 import json
 import re
 import statistics as st
+import sys
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
-MS = HERE / "out_ms"
+# Optional first CLI arg selects the output tree (e.g. out_ms_refined); default out_ms.
+MS = Path(sys.argv[1]) if len(sys.argv) > 1 and not sys.argv[1].startswith("-") else HERE / "out_ms"
+if not MS.is_absolute():
+    MS = HERE / MS
 MODELS = ["sonnet", "haiku"]
 RUNS = 3
 ORDER = ["Bengtsson-PalmeJ_2015", "TettAJ_2019_b", "LiJ_2017", "NayakRR_2021",
@@ -30,12 +34,13 @@ def _prf(a: dict):
     return P, R, F, V
 
 
-def _content_agg(per_study: list[dict]) -> dict:
+def _content_agg(per_study: list[dict], key: str = "content") -> dict:
     c = dict(tn=0, tp_correct=0, tp_wrong=0, fn=0, fp=0)
     for s in per_study:
-        if "content" in s:
+        block = s.get(key)
+        if block:
             for k in c:
-                c[k] += s["content"][k]
+                c[k] += block[k]
     return c
 
 
@@ -89,18 +94,25 @@ def load_counts(model: str):
 
 def headline_dist(model: str):
     """Per-run content P/R/F1/vacc across the RUNS repeats -> (median,min,max) each."""
-    Ps, Rs, Fs, Vs, fps = [], [], [], [], []
+    Ps, Rs, Fs, Vs, fps, Rcovs = [], [], [], [], [], []
     per_run = []
     for k in range(1, RUNS + 1):
         sj = _run_dir(model, k) / "summary.json"
         if not sj.exists():
             continue
-        c = _content_agg(json.loads(sj.read_text())["per_study"])
+        ps = json.loads(sj.read_text())["per_study"]
+        c = _content_agg(ps)
         P, R, F, V = _prf(c)
+        # Coverage-aware recall (un/under-enumerated gold rows counted as FN);
+        # None on older summaries that predate the content_coverage block.
+        ccov = _content_agg(ps, "content_coverage")
+        _, Rcov, _, _ = _prf(ccov)
         Ps.append(P); Rs.append(R); Fs.append(F); Vs.append(V); fps.append(c["fp"])
-        per_run.append({"run": k, "P": P, "R": R, "F1": F, "vacc": V, "cells": c})
+        Rcovs.append(Rcov)
+        per_run.append({"run": k, "P": P, "R": R, "F1": F, "vacc": V,
+                        "R_cov": Rcov, "cells": c})
     return {"P": _rng(Ps), "R": _rng(Rs), "F1": _rng(Fs), "vacc": _rng(Vs),
-            "fp": _rng(fps), "per_run": per_run}
+            "fp": _rng(fps), "R_cov": _rng(Rcovs), "per_run": per_run}
 
 
 def main() -> None:
@@ -120,10 +132,14 @@ def main() -> None:
         pr = hd["per_run"]
         L.append("Headline content metrics per repeat (median [min–max] across "
                  f"{len(pr)} run(s)):\n")
-        for key in ("P", "R", "F1", "vacc", "fp"):
+        for key in ("P", "R", "F1", "vacc", "fp", "R_cov"):
             med, lo, hi = hd[key]
+            if key == "R_cov" and med is None:
+                continue  # older summaries without the content_coverage block
             nd = 0 if key == "fp" else 3
-            L.append(f"- **{key}**: {_fmt(med, nd)} [{_fmt(lo, nd)}–{_fmt(hi, nd)}]")
+            label = ("R_cov (coverage-aware recall; un/under-enumerated gold rows "
+                     "counted as FN)") if key == "R_cov" else key
+            L.append(f"- **{label}**: {_fmt(med, nd)} [{_fmt(lo, nd)}–{_fmt(hi, nd)}]")
         L.append("\n### Per-study sample enumeration across repeats\n")
         L.append("| study | gold | run1 | run2 | run3 | median | range | fetch src |")
         L.append("|---|--:|--:|--:|--:|--:|--:|---|")
