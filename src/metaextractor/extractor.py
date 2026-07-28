@@ -187,6 +187,15 @@ class MetaExtractor:
                     f"Fanned out {n} cell(s) of study/subgroup-level field values "
                     f"into per-sample rows."
                 )
+
+        # Enforce the schema's per-subject age_min/age_max rule (runs after
+        # fan-out so any propagated cohort range is corrected too).
+        n_age = _normalize_age_bounds(result)
+        if n_age:
+            result.extraction_warnings.append(
+                f"Normalized {n_age} age_min/age_max cell(s) to the schema "
+                f"age-bound rule (per-subject age, else age_group definition)."
+            )
         return result
 
     def _discover_sample_ids(
@@ -662,6 +671,94 @@ def _fan_out_fields_to_samples(result: ExtractionResult) -> int:
                 sample[fname] = value
                 n_written += 1
     return n_written
+
+
+# Canonical age-group bounds in YEARS, from the cMD schema's age_group
+# definitions and confirmed against the curated gold (the dominant age_min !=
+# age_max "group-definition" rows across 101 curated studies). Newborn (< 1
+# month) is intentionally omitted: it is defined in sub-year units and never
+# appears as a group-definition row in the gold, so we leave it untouched.
+AGE_GROUP_BOUNDS: dict[str, tuple[float, float]] = {
+    "Infant":     (0.0, 2.0),
+    "Child":      (2.0, 11.0),
+    "Adolescent": (11.0, 18.0),
+    "Adult":      (18.0, 65.0),
+    "Elderly":    (65.0, 130.0),
+}
+
+
+def _fmt_age(x: float) -> str:
+    """Whole numbers render as ints ('18'); fractional values keep the float."""
+    return str(int(x)) if float(x).is_integer() else str(x)
+
+
+def _age_num(v: Any) -> float | None:
+    """Scalar age -> float, or None if missing / not_reported / non-numeric."""
+    if v is None:
+        return None
+    s = str(v).strip()
+    if s.lower().replace(" ", "_") in ("", "not_reported", "na", "nan"):
+        return None
+    try:
+        return float(s)
+    except ValueError:
+        return None
+
+
+def _normalize_age_bounds(result: ExtractionResult) -> int:
+    """Enforce the schema's age_min/age_max semantics on every record.
+
+    Per the cMD schema, age_min/age_max are per-subject bounds, not a cohort
+    range: when a specific age is known they equal that age; when only
+    age_group is known they are the *definition* of that group (Adult ->
+    18/65), never a range quoted in prose. This deterministically repairs the
+    common LLM error of dropping a reported cohort range (e.g. "Subjects were
+    23 to 34 years old") into age_min/age_max.
+
+    Rules per record (study-level ``fields`` and each sample):
+      * specific age present -> fill any missing age_min/age_max with it
+        (existing values are left alone);
+      * else age_group in AGE_GROUP_BOUNDS -> set age_min/age_max to the
+        group's defining bounds, overwriting a non-conformant range.
+
+    Returns the number of age_min/age_max cells rewritten.
+    """
+    def _fix(get, set_) -> int:
+        spec = _age_num(get("age"))
+        if spec is None:
+            spec = _age_num(get("age_years"))
+        g = get("age_group")
+        group = g.strip() if isinstance(g, str) else None
+        written = 0
+        if spec is not None:
+            for b in ("age_min", "age_max"):
+                if _age_num(get(b)) is None and set_(b, _fmt_age(spec)):
+                    written += 1
+        elif group in AGE_GROUP_BOUNDS:
+            lo, hi = AGE_GROUP_BOUNDS[group]
+            for b, want in (("age_min", _fmt_age(lo)), ("age_max", _fmt_age(hi))):
+                if str(get(b) or "").strip() != want and set_(b, want):
+                    written += 1
+        return written
+
+    def _field_get(name):
+        fr = result.fields.get(name)
+        return None if fr is None else fr.value
+
+    def _field_set(name, val) -> bool:
+        fr = result.fields.get(name)
+        if fr is None:  # don't fabricate study-level fields the model never emitted
+            return False
+        fr.value = val
+        fr.extraction_type = "derived"
+        note = "age_min/age_max set from schema age-bound rule"
+        fr.notes = f"{fr.notes} [{note}]" if fr.notes else f"[{note}]"
+        return True
+
+    n = _fix(_field_get, _field_set)
+    for s in result.samples:
+        n += _fix(s.get, lambda k, v, s=s: (s.__setitem__(k, v), True)[1])
+    return n
 
 
 def estimate_cost_usd(usage: dict[str, int], model: str) -> dict[str, float]:
