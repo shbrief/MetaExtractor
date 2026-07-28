@@ -52,11 +52,21 @@ def test_http_get_raises_on_non_retryable(monkeypatch):
     with pytest.raises(urllib.error.HTTPError):
         fetcher._http_get("https://example/x")
 
+# A realistically-structured body: canonical section headings make it score as a
+# clearly-good body (so the best-of ladder stops without escalating).
+_SECS = (
+    b"<sec><title>Introduction</title><p>NCBI full body sentence.</p></sec>"
+    b"<sec><title>Materials and Methods</title><p>Methods paragraph.</p></sec>"
+    b"<sec><title>Results</title><p>Results paragraph.</p></sec>"
+    b"<sec><title>Discussion</title><p>Discussion paragraph.</p></sec>"
+    b"<sec><title>Conclusion</title><p>Conclusion paragraph.</p></sec>"
+    b"<sec><title>Data availability</title><p>Data are available.</p></sec>"
+)
 PMC_WITH_BODY = (
     b"<pmc-articleset><article><front><article-meta><title-group>"
     b"<article-title>The Title</article-title></title-group>"
     b"<abstract><p>the abstract</p></abstract></article-meta></front>"
-    b"<body><sec><p>NCBI full body sentence.</p></sec></body></article></pmc-articleset>"
+    b"<body>" + _SECS + b"</body></article></pmc-articleset>"
 )
 PMC_ABSTRACT_ONLY = (
     b"<pmc-articleset><article><front><article-meta><title-group>"
@@ -67,7 +77,12 @@ EPMC_WITH_BODY = (  # Europe PMC returns <article> as the root, not wrapped
     b"<article><front><article-meta><title-group>"
     b"<article-title>The Title</article-title></title-group>"
     b"<abstract><p>the abstract</p></abstract></article-meta></front>"
-    b"<body><sec><p>Europe PMC body sentence.</p></sec></body></article>"
+    b"<body>"
+    b"<sec><title>Introduction</title><p>Europe PMC body sentence.</p></sec>"
+    b"<sec><title>Methods</title><p>Methods paragraph.</p></sec>"
+    b"<sec><title>Results</title><p>Results paragraph.</p></sec>"
+    b"<sec><title>Discussion</title><p>Discussion paragraph.</p></sec>"
+    b"</body></article>"
 )
 ELINK_PMC = (
     b"<eLinkResult><LinkSet><LinkSetDb><LinkName>pubmed_pmc</LinkName>"
@@ -146,6 +161,7 @@ def test_falls_back_to_europepmc_when_pmc_abstract_only(monkeypatch):
     monkeypatch.setattr(fetcher, "_http_get", _router({
         "elink.fcgi": ELINK_PMC,
         "db=pmc": PMC_ABSTRACT_ONLY,
+        "db=pubmed": PUBMED_ABS,       # abstract floor fetched when PMC has no body
         "fullTextXML": EPMC_WITH_BODY,
     }))
     p = fetcher.fetch_paper("123", include_supplementary=False)
@@ -172,6 +188,7 @@ def test_degrades_to_abstract_when_no_fulltext(monkeypatch):
         "elink.fcgi": ELINK_NONE,
         "db=pubmed": PUBMED_ABS,
         "search": b'{"resultList":{"result":[]}}',  # DOI has no EPMC full text
+        "unpaywall": b'{"best_oa_location":null,"oa_locations":[]}',  # no OA PDF
     }))
     p = fetcher.fetch_paper("123", include_supplementary=False)
     assert p.source == "pubmed_abstract"

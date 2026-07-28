@@ -8,7 +8,13 @@ the LLM is never left with an abstract when full text is reachable):
      fall back to the Europe PMC ``fullTextXML`` endpoint, which frequently
      carries the body when NCBI does not — including bioRxiv/medRxiv and other
      preprints indexed by Europe PMC (resolved by DOI when there is no PMCID).
-  4. Otherwise, efetch the PubMed abstract (title + abstract + journal). The CLI
+  4. If the article is a non-Open-Access PMC record (abstract-only XML) but
+     Europe PMC serves a free rendered PDF, fetch and text-extract that PDF —
+     it carries the body the XML endpoints withhold.
+  5. Otherwise, ask Unpaywall for any OA location (publisher free PDF, or an
+     institutional/subject repository like Zenodo) and text-extract that PDF —
+     this reaches OA articles with no PMC record at all.
+  6. Otherwise, efetch the PubMed abstract (title + abstract + journal). The CLI
      then advises passing a locally-downloaded publisher PDF via ``--paper``.
 
 Supplementary tables are always carried separately and never inlined into the
@@ -45,7 +51,8 @@ class FetchError(RuntimeError):
 @dataclass
 class FetchedPaper:
     text: str
-    source: str  # "pmc_fulltext" | "europepmc_fulltext" | "pubmed_abstract"
+    # "pmc_fulltext" | "europepmc_fulltext" | "europepmc_pdf" | "unpaywall_pdf" | "pubmed_abstract"
+    source: str
     pmid: str | None
     pmcid: str | None
     # False when only an abstract could be retrieved (no article <body>). The CLI
@@ -58,6 +65,11 @@ class FetchedPaper:
     # table path can consume them without re-parsing, and so the LLM
     # prompt only sees prose.
     supplementary_tables: list = field(default_factory=list)
+    # Provenance for an auto-fetched SRA/ENA run manifest (see sra_manifest):
+    # a short "ena:<project> (N runs)" string when one was resolved and fetched,
+    # else None. Warnings record ambiguous/failed resolution.
+    sra_manifest_source: str | None = None
+    sra_manifest_warnings: list[str] = field(default_factory=list)
 
 
 @dataclass
@@ -298,6 +310,93 @@ def _fetch_europepmc_by_doi(doi: str) -> tuple[_PmcFullText | None, str | None]:
     return _parse_jats_article(data, epmc_id.split("/")[-1]), None
 
 
+def _fetch_europepmc_pdf(pmcid: str | None) -> str | None:
+    """Full text from Europe PMC's free *rendered PDF*, for non-Open-Access PMC
+    articles whose machine-readable XML (NCBI efetch, EPMC ``fullTextXML``) is
+    abstract-only.
+
+    Many PMC articles are indexed but **not** in the Open Access subset: their
+    JATS body is withheld, so both XML endpoints return only title+abstract,
+    yet Europe PMC still serves a free human-readable PDF at
+    ``europepmc.org/articles/PMC<id>?pdf=render``. That PDF carries the full
+    body — including the data-availability accession that drives the SRA/ENA
+    manifest fetch. Returns extracted text, or None when there is no PMCID, no
+    free PDF (the URL returns HTML, not ``%PDF``), or pypdf is unavailable.
+    """
+    if not pmcid:
+        return None
+    bare = pmcid.upper().removeprefix("PMC")
+    url = f"https://europepmc.org/articles/PMC{bare}?pdf=render"
+    try:
+        data = _http_get(url, timeout=90)
+    except Exception:
+        return None
+    return _pdf_bytes_to_text(data)  # None if an HTML landing page / no pypdf
+
+
+UNPAYWALL = "https://api.unpaywall.org/v2/{doi}?email={email}"
+UNPAYWALL_EMAIL = "metaextractor@users.noreply.github.com"
+
+
+def _pdf_bytes_to_text(data: bytes) -> str | None:
+    """Extract text from PDF bytes with pypdf, or None if not a PDF / no pypdf."""
+    if data[:4] != b"%PDF":
+        return None
+    try:
+        import io
+
+        from pypdf import PdfReader
+
+        text = "\n".join(page.extract_text() or "" for page in PdfReader(io.BytesIO(data)).pages)
+    except Exception:
+        return None
+    text = text.strip()
+    return text or None
+
+
+def _fetch_oa_pdf_via_unpaywall(doi: str | None) -> str | None:
+    """Full text from any Open Access location Unpaywall knows for ``doi``.
+
+    NCBI PMC and Europe PMC only cover PMC-deposited articles; many papers are
+    OA at the **publisher** (e.g. a free Nature Microbiology PDF) or in an
+    **institutional/subject repository** (Zenodo, university archives) with no
+    PMC record at all. Unpaywall aggregates those locations; we fetch the first
+    that yields a real PDF and text-extract it. Returns None when there is no
+    DOI, no OA PDF location, or pypdf is unavailable.
+    """
+    if not doi:
+        return None
+    try:
+        import json
+
+        url = UNPAYWALL.format(doi=urllib.parse.quote(doi), email=UNPAYWALL_EMAIL)
+        rec = json.loads(_http_get(url, timeout=30))
+    except Exception:
+        return None
+    locations: list[dict] = []
+    best = rec.get("best_oa_location")
+    if best:
+        locations.append(best)
+    locations += rec.get("oa_locations") or []
+    seen: set[str] = set()
+    for loc in locations:
+        pdf_url = loc.get("url_for_pdf")
+        if not pdf_url:
+            u = loc.get("url") or ""
+            pdf_url = u if u.lower().endswith(".pdf") else None
+        if not pdf_url or pdf_url in seen:
+            continue
+        seen.add(pdf_url)
+        try:
+            data = _http_get(pdf_url, timeout=90)
+        except Exception:
+            continue
+        text = _pdf_bytes_to_text(data)
+        if text:
+            return text
+    return None
+
+
 def _fetch_pubmed_abstract(pmid: str) -> tuple[str, str | None]:
     """Return ``(abstract_text, doi)``. The DOI (when present) lets the fetch
     ladder try a Europe PMC full-text lookup for preprints with no PMCID."""
@@ -330,78 +429,163 @@ def _fetch_pubmed_abstract(pmid: str) -> tuple[str, str | None]:
     return text, doi
 
 
-def fetch_paper(identifier: str, include_supplementary: bool = True) -> FetchedPaper:
+# Canonical article section headings. Their presence signals real narrative
+# structure; a stub body or an extracted reference-list/abundance-table hits few.
+_SECTION_HEADINGS = (
+    "introduction", "background", "materials and methods", "methods",
+    "results", "discussion", "conclusion", "data availability",
+    "availability of data", "acknowledg", "references",
+)
+# Lines that look like a taxonomy lineage or a genome-accession matrix row — the
+# bulk of a phylogeny/abundance table dumped into extracted text (the junk that
+# would otherwise win a naive length contest).
+_JUNK_LINE_RE = re.compile(r"[kpcofgs]__[A-Za-z0-9_]+|\b(?:GC[AF]_|NZ_|NC_)\d")
+_REFERENCES_RE = re.compile(
+    r"\n\s*(?:references|bibliography|literature cited)\s*\n", re.IGNORECASE)
+
+# Score at/above which a candidate *body* is "clearly good" — stop escalating to
+# costlier rungs (EPMC XML/PDF, Unpaywall) once one clears this. A well-structured
+# real article body clears it easily; an abstract-only stub does not.
+_GOOD_FULLTEXT_SCORE = 1.5
+
+
+def _strip_references(text: str) -> str:
+    """Drop the reference/bibliography tail, for *scoring* only.
+
+    A long citation list inflates the length signal without adding narrative.
+    Cuts at the *last* standalone references/bibliography heading, provided it is
+    past the first 20% of the document (so a pathological early match can't gut
+    the paper). The regex only matches the word alone on its own line, so an
+    in-body phrase like "references the ENA" won't trigger it."""
+    starts = [m.start() for m in _REFERENCES_RE.finditer(text)]
+    if starts and starts[-1] > len(text) * 0.2:
+        return text[:starts[-1]]
+    return text
+
+
+def _score_fulltext(text: str, source: str) -> float:
+    """Heuristic article-narrative quality, for choosing among candidate texts.
+
+    Combines section **structure** (#4), a taxonomy/matrix **junk penalty**
+    (#5), and a **source prior** with a *saturating* length term (#6), on the
+    reference-stripped narrative. Deliberately not a length contest: a long
+    reference list or abundance table scores low on structure and high on junk,
+    so it can't win on bulk alone."""
+    if not text or not text.strip():
+        return 0.0
+    narrative = _strip_references(text)
+    low = narrative.lower()
+    hits = sum(1 for h in _SECTION_HEADINGS if h in low)          # #4
+    structure = min(hits, 6) / 6.0
+    lines = [ln for ln in narrative.splitlines() if ln.strip()]
+    junk = (sum(1 for ln in lines if _JUNK_LINE_RE.search(ln)) / len(lines)  # #5
+            ) if lines else 0.0
+    length = min(len(narrative), 20000) / 20000.0                 # #6 (saturating)
+    prior = 0.3 if source in ("pmc_fulltext", "europepmc_fulltext") else 0.0
+    return 2.0 * structure + 1.5 * length + prior - 2.0 * junk
+
+
+def fetch_paper(
+    identifier: str,
+    include_supplementary: bool = True,
+    include_sra_manifest: bool = True,
+    sra_project: str | None = None,
+) -> FetchedPaper:
     """Fetch full text (PMC) or abstract (PubMed) for a PMID/PMCID.
 
     When ``include_supplementary`` is True and a PMCID is available, also
     download supplementary files (xlsx/csv/tsv/pdf/txt) from Europe PMC
     and append them to the paper text under ``--- SUPPLEMENTARY FILE: ---``
     headers.
+
+    When ``include_sra_manifest`` is True, resolve the study's own SRA/ENA
+    project from its data-availability accessions (or use ``sra_project`` when
+    given) and fetch its per-sample run manifest as an additional table. This
+    supplies a per-sample manifest for studies whose article body/supplements
+    carry none — the dominant recall limiter — without a manual download.
     """
     kind, bare = _normalize_id(identifier)
     pmcid: str | None = None
     pmid_used: str | None = None
     pmc: _PmcFullText | None = None
-    text: str | None = None
-    source = "pubmed_abstract"
+    doi: str | None = None
     # Supplementary hrefs come from NCBI's JATS <supplementary-material> elements.
-    # The Europe PMC full-text fallback (below) can replace ``pmc`` for the *body*,
-    # but its JATS does not expose the PMC bin/S3 hrefs — so we capture NCBI's hrefs
-    # here and never let the body fallback discard them (they drive per-sample
-    # enumeration). If NCBI returned nothing at all, an empty list lets
-    # fetch_supplementary recover the files by listing the S3 prefix directly.
+    # A body fallback can replace the chosen text, but its JATS does not expose
+    # the PMC bin/S3 hrefs — so we capture NCBI's here and never let a fallback
+    # discard them (they drive per-sample enumeration).
     ncbi_supp_hrefs: list[tuple[str, str]] = []
 
-    def _europepmc_body(pmc_id: str) -> _PmcFullText | None:
-        """Europe PMC fallback, used only when it actually yields a body."""
-        epmc = _fetch_europepmc_fulltext(pmc_id)
-        return epmc if epmc is not None and epmc.has_body else None
+    # Best-of, not first-of: each rung contributes a (source, text, is_body)
+    # candidate and we keep the highest-scoring narrative (see _score_fulltext),
+    # so a thin/tabular body from an early rung no longer terminates the search
+    # before a richer source is reached. Costlier rungs are attempted only while
+    # no candidate is yet "clearly good", preserving the single-fetch common case.
+    candidates: list[tuple[str, str, bool]] = []
+
+    def _add(src: str, txt: str | None, is_body: bool) -> None:
+        if txt and txt.strip():
+            candidates.append((src, txt, is_body))
+
+    def _best_body_score() -> float:
+        # Only *body* candidates gate escalation — an abstract, however clean,
+        # must never stop the search or outrank a real body.
+        return max((_score_fulltext(c[1], c[0]) for c in candidates if c[2]),
+                   default=-1.0)
 
     if kind == "pmcid":
         pmcid = bare
         pmc = _fetch_pmc_fulltext(bare)
-        source = "pmc_fulltext"
         if pmc is not None:
             ncbi_supp_hrefs = pmc.supplementary_hrefs
-        if pmc is None or not pmc.has_body:
-            epmc = _europepmc_body(bare)
-            if epmc is not None:
-                pmc, source = epmc, "europepmc_fulltext"
-        if pmc is None:
-            raise FetchError(f"PMC returned no full text for PMC{bare}")
-        text = pmc.text
+            _add("pmc_fulltext", pmc.text, pmc.has_body)
     else:
         pmid_used = bare
         pmcid = _pmid_to_pmcid(bare)
         if pmcid:
             pmc = _fetch_pmc_fulltext(pmcid)
-            source = "pmc_fulltext"
             if pmc is not None:
                 ncbi_supp_hrefs = pmc.supplementary_hrefs
-            if pmc is None or not pmc.has_body:
-                epmc = _europepmc_body(pmcid)
-                if epmc is not None:
-                    pmc, source = epmc, "europepmc_fulltext"
-        # No PMCID, or PMC/Europe-PMC gave only an abstract: get the PubMed
-        # abstract (and its DOI) and try a DOI-based Europe PMC full-text lookup,
-        # which reaches bioRxiv/medRxiv and other preprints with no PMCID.
-        if pmc is None or not pmc.has_body:
+                _add("pmc_fulltext", pmc.text, pmc.has_body)
+        # Fetch the abstract (+DOI) as an identity/floor candidate whenever NCBI
+        # didn't already give a clearly-good body.
+        if _best_body_score() < _GOOD_FULLTEXT_SCORE:
             abstract_text, doi = _fetch_pubmed_abstract(bare)
-            epmc, epmc_pmcid = _fetch_europepmc_by_doi(doi) if doi else (None, None)
-            if epmc is not None and epmc.has_body:
-                pmc, source = epmc, "europepmc_fulltext"
-                # A DOI that resolves to a PMC article gives us a PMCID even when
-                # elink didn't — capture it so supplementary tables are still fetched.
-                if epmc_pmcid and not pmcid:
-                    pmcid = epmc_pmcid
-                text = pmc.text
-            else:
-                text = pmc.text if pmc is not None else abstract_text
-                source = "pmc_fulltext" if (pmc is not None and pmcid) else "pubmed_abstract"
-        else:
-            text = pmc.text
+            _add("pubmed_abstract", abstract_text, False)
 
-    has_body = pmc is not None and pmc.has_body
+    # Escalate through richer/costlier rungs only while no *body* is clearly good.
+    if _best_body_score() < _GOOD_FULLTEXT_SCORE and pmcid:
+        epmc = _fetch_europepmc_fulltext(pmcid)
+        if epmc is not None and epmc.has_body:
+            _add("europepmc_fulltext", epmc.text, True)
+    if _best_body_score() < _GOOD_FULLTEXT_SCORE and doi:
+        epmc2, epmc_pmcid = _fetch_europepmc_by_doi(doi)
+        if epmc2 is not None and epmc2.has_body:
+            _add("europepmc_fulltext", epmc2.text, True)
+            # A DOI that resolves to a PMC article gives us a PMCID even when
+            # elink didn't — capture it so supplementary tables are still fetched.
+            if epmc_pmcid and not pmcid:
+                pmcid = epmc_pmcid
+    if _best_body_score() < _GOOD_FULLTEXT_SCORE:
+        pdf_text = _fetch_europepmc_pdf(pmcid)  # non-OA PMC free rendered PDF
+        if pdf_text and len(pdf_text) > 1000:
+            _add("europepmc_pdf", pdf_text, True)
+    if _best_body_score() < _GOOD_FULLTEXT_SCORE and doi:
+        up_text = _fetch_oa_pdf_via_unpaywall(doi)  # publisher/repository OA
+        if up_text and len(up_text) > 1000:
+            _add("unpaywall_pdf", up_text, True)
+
+    if not candidates:
+        raise FetchError(
+            f"No text could be retrieved for {identifier}"
+            + (f" (PMC{pmcid})" if pmcid else "")
+        )
+    # Prefer the best-scoring real body; fall back to the abstract only when no
+    # body was found anywhere.
+    bodies = [c for c in candidates if c[2]]
+    source, text, has_body = max(
+        bodies or candidates, key=lambda c: _score_fulltext(c[1], c[0])
+    )
+
     paper = FetchedPaper(
         text=text, source=source, pmid=pmid_used, pmcid=pmcid, has_body=has_body
     )
@@ -418,4 +602,15 @@ def fetch_paper(identifier: str, include_supplementary: bool = True) -> FetchedP
         paper.supplementary_tables = list(supp.tables)
         if supp.text:
             paper.text = f"{paper.text}\n\n{supp.text}"
+
+    if include_sra_manifest or sra_project:
+        from metaextractor.sra_manifest import manifest_for_paper
+
+        # Resolve from the full paper text (body + any appended supplementary
+        # prose), where the data-availability accession usually lives.
+        mres = manifest_for_paper(paper.text, explicit_project=sra_project)
+        paper.sra_manifest_warnings = list(mres.warnings)
+        if mres.table is not None:
+            paper.supplementary_tables.append(mres.table)
+            paper.sra_manifest_source = mres.source
     return paper

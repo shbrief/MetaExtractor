@@ -59,6 +59,10 @@ DEFAULT_ALIASES: dict[str, str] = {
     "sraaccession": "ncbi_accession",
     "bioproject": "ncbi_accession",
     "bioproject_id": "ncbi_accession",
+    # SRA/ENA run-manifest run identifier (e.g. ENA `run_accession`, NCBI `Run`).
+    "run": "ncbi_accession",
+    "run_accession": "ncbi_accession",
+    "runaccession": "ncbi_accession",
     "pmid_id": "pmid",
     "pubmed_id": "pmid",
     "pubmedid": "pmid",

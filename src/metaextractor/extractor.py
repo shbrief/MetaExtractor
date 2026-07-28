@@ -276,7 +276,45 @@ class MetaExtractor:
         tables: list,
         schema: Schema,
     ) -> tuple[list[dict], list[str], list[TableSelection]]:
-        """Table → sample-rows pipeline.
+        """Build per-sample rows from tables, using any SRA/ENA run manifest
+        (``source == "ena"``) strictly as a **fallback**.
+
+        The auto-fetched run manifest is a per-sample source of last resort: it
+        must never compete with — and possibly hijack the join anchor from — a
+        study's own supplementary per-sample table (which would perturb studies
+        that already enumerate correctly). So the article's own tables are
+        processed first; the manifest is used only if they yield no sample rows.
+        """
+        if not tables:
+            return [], [], []
+        manifest_tables = [t for t in tables if getattr(t, "source", None) == "ena"]
+        own_tables = [t for t in tables if getattr(t, "source", None) != "ena"]
+
+        samples, warnings, selections = self._samples_from_table_set(own_tables, schema)
+        if samples:
+            if manifest_tables:
+                warnings.append(
+                    f"SRA/ENA run manifest not used: the article's own tables already "
+                    f"produced {len(samples)} sample row(s)."
+                )
+            return samples, warnings, selections
+        if manifest_tables:
+            warnings.append(
+                "No per-sample rows from the article's own tables; falling back to "
+                f"the SRA/ENA run manifest ({len(manifest_tables)} table(s))."
+            )
+            m_samples, m_warnings, m_selections = self._samples_from_table_set(
+                manifest_tables, schema
+            )
+            return m_samples, warnings + m_warnings, selections + m_selections
+        return samples, warnings, selections
+
+    def _samples_from_table_set(
+        self,
+        tables: list,
+        schema: Schema,
+    ) -> tuple[list[dict], list[str], list[TableSelection]]:
+        """Table → sample-rows pipeline for one set of tables.
 
         Per table:
           1. Skip if it's a feature × samples matrix (taxa/genome × samples)
