@@ -1,0 +1,228 @@
+paper_id,GI_symptom_severity,age,age_group,age_unit,ancestry,antibiotics_current_use,bmi,body_site,collection_timestamp,description,disease,donor_id,feces_phenotype_value,location,paired,pmid,sample_id,sex,smoker,study_name,subject_id,target_condition
+PMID:36691982,,65,Elderly,years,White,No,23.05362654,feces,2019-02-05,PD Patient,PD,BC002158,5,SC,1,36691982,PD_1,male,Yes,TBC,PD.1,Yes
+PMID:36691982,,65,Elderly,years,White,No,24.32,feces,2017-05-18,Population Control,PC,BC000113,4,CO,No,36691982,PD_1_PC,male,"Yes, tried at least one cigarette before",TBC,PD.1.PC,No
+PMID:36691982,,69,Elderly,years,White,No,24.02832031,feces,2019-02-07,Household Control,HC,BC002157,3,SC,1,36691982,PD_1_HC,female,No,TBC,PD.1.HC,No
+PMID:36691982,,69,Elderly,years,White,No,23.6252888,feces,2019-02-13,PD Patient,PD,BC002159,2,CO,2,36691982,PD_2,male,Yes,TBC,PD.2,Yes
+PMID:36691982,,47,Elderly,years,White,No,24.44636678,feces,2017-03-02,Population Control,PC,BC000706,4,OH,No,36691982,PD_2_PC,male,"Yes, tried at least one cigarette before",TBC,PD.2.PC,No
+PMID:36691982,,69,Elderly,years,White,No,30.85388889,feces,2019-02-07,Household Control,HC,BC002160,4,CO,2,36691982,PD_2_HC,female,No,TBC,PD.2.HC,No
+PMID:36691982,,54,Elderly,years,not provided,not provided,28.72681359,feces,2019-02-26,PD Patient,PD,BC002161,2,TN,3,36691982,PD_3,female,not provided,TBC,PD.3,Yes
+PMID:36691982,,54,Elderly,years,White,No,28.06861216,feces,2017-10-31,Population Control,PC,BC001247,6,CO,No,36691982,PD_3_PC,female,Never smoked a cigarette before,TBC,PD.3.PC,No
+PMID:36691982,,56,Elderly,years,not provided,not provided,not provided,feces,2019-02-26,Household Control,HC,BC002162,4,TN,3,36691982,PD_3_HC,male,not provided,TBC,PD.3.HC,No
+PMID:36691982,,91,Elderly,years,White,No,22.59412305,feces,2019-03-06,PD Patient,PD,BC002168,3,CO,4,36691982,PD_4,male,No,TBC,PD.4,Yes
+PMID:36691982,,68,Elderly,years,White,No,24.05881043,feces,2017-10-25,Population Control,PC,BC000944,2,CO,No,36691982,PD_4_PC,male,Never smoked a cigarette before,TBC,PD.4.PC,No
+PMID:36691982,,83,Elderly,years,White,No,21.9458897,feces,2019-02-13,Household Control,HC,BC002167,2,CO,4,36691982,PD_4_HC,female,Yes,TBC,PD.4.HC,No
+PMID:36691982,,76,Elderly,years,White,No,27.97653061,feces,2019-02-08,PD Patient,PD,BC002170,4,CO,5,36691982,PD_5,male,Yes,TBC,PD.5,Yes
+PMID:36691982,,55,Elderly,years,White,No,29.3877551,feces,2016-09-13,Population Control,PC,BC000531,not provided,NC,No,36691982,PD_5_PC,male,Never smoked a cigarette before,TBC,PD.5.PC,No
+PMID:36691982,,67,Elderly,years,White,No,23.73444192,feces,2019-02-13,PD Patient,PD,BC002172,2,CO,6,36691982,PD_6,female,Yes,TBC,PD.6,Yes
+PMID:36691982,,62,Elderly,years,White,No,20.10887574,feces,2017-07-11,Population Control,PC,BC001237,3,CA,No,36691982,PD_6_PC,female,"Yes, tried at least one cigarette before",TBC,PD.6.PC,No
+PMID:36691982,,77,Elderly,years,not provided,not provided,not provided,feces,2019-02-21,Household Control,HC,BC002173,5,CO,6,36691982,PD_6_HC,male,not provided,TBC,PD.6.HC,No
+PMID:36691982,,76,Elderly,years,not provided,not provided,not provided,feces,2019-02-27,PD Patient,PD,BC002174,2,CO,7,36691982,PD_7,male,not provided,TBC,PD.7,Yes
+PMID:36691982,,43,Elderly,years,White,No,23.61111111,feces,2017-07-12,Population Control,PC,BC001077,4,GA,No,36691982,PD_7_PC,male,"Yes, tried at least one cigarette before",TBC,PD.7.PC,No
+PMID:36691982,,56,Elderly,years,White,No,24.27378035,feces,2019-03-07,PD Patient,PD,BC002176,3,CO,8,36691982,PD_8,female,Yes,TBC,PD.8,Yes
+PMID:36691982,,54,Elderly,years,White,No,23.63636364,feces,2017-05-18,Population Control,PC,BC001292,5,CO,No,36691982,PD_8_PC,female,"Yes, tried at least one cigarette before",TBC,PD.8.PC,No
+PMID:36691982,,58,Elderly,years,not provided,not provided,not provided,feces,2019-03-08,Household Control,HC,BC002177,4,CO,8,36691982,PD_8_HC,male,not provided,TBC,PD.8.HC,No
+PMID:36691982,,72,Elderly,years,White,No,23.8691609,feces,2019-02-12,PD Patient,PD,BC002188,6,CO,9,36691982,PD_9,male,Yes,TBC,PD.9,Yes
+PMID:36691982,,46,Elderly,years,White,No,20.71017655,feces,2017-11-08,Population Control,PC,BC000728,3,CO,No,36691982,PD_9_PC,male,"Yes, tried at least one cigarette before",TBC,PD.9.PC,No
+PMID:36691982,,65,Elderly,years,White,No,25.8398307,feces,2019-02-12,Household Control,HC,BC002189,4,CO,9,36691982,PD_9_HC,female,Yes,TBC,PD.9.HC,No
+PMID:36691982,,49,Elderly,years,White,No,24.69214876,feces,2019-03-06,PD Patient,PD,BC002213,4,CO,10,36691982,PD_10,female,No,TBC,PD.10,Yes
+PMID:36691982,,48,Elderly,years,White,No,20.4244898,feces,2017-12-07,Population Control,PC,BC001122,6,CO,No,36691982,PD_10_PC,female,Never smoked a cigarette before,TBC,PD.10.PC,No
+PMID:36691982,,52,Elderly,years,not provided,not provided,not provided,feces,2019-03-06,Household Control,HC,BC002190,4,CO,10,36691982,PD_10_HC,male,not provided,TBC,PD.10.HC,No
+PMID:36691982,,54,Elderly,years,not provided,No,22.5,feces,2019-03-06,PD Patient,PD,BC002192,4,CO,11,36691982,PD_11,female,No,TBC,PD.11,Yes
+PMID:36691982,,43,Elderly,years,White,No,24.91349481,feces,2017-07-11,Population Control,PC,BC001233,4,CO,No,36691982,PD_11_PC,male,"Yes, tried at least one cigarette before",TBC,PD.11.PC,No
+PMID:36691982,,59,Elderly,years,White,No,33.44723183,feces,2019-03-07,Household Control,HC,BC002204,5,CO,11,36691982,PD_11_HC,male,Yes,TBC,PD.11.HC,No
+PMID:36691982,,68,Elderly,years,White,No,23.95759625,feces,2019-05-15,PD Patient,PD,BC002270,4,CO,12,36691982,PD_12,female,Yes,TBC,PD.12,Yes
+PMID:36691982,,65,Elderly,years,White,No,21.0430839,feces,2017-11-09,Population Control,PC,BC000574,6,CA,No,36691982,PD_12_PC,female,Never smoked a cigarette before,TBC,PD.12.PC,No
+PMID:36691982,,70,Elderly,years,not provided,No,23.3,feces,2019-02-26,Household Control,HC,BC002203,5,CO,12,36691982,PD_12_HC,male,No,TBC,PD.12.HC,No
+PMID:36691982,,77,Elderly,years,White,No,34.43265306,feces,2019-02-26,PD Patient,PD,BC002197,5,CO,13,36691982,PD_13,male,Yes,TBC,PD.13,Yes
+PMID:36691982,,72,Elderly,years,White,No,31.42233684,feces,2017-03-07,Population Control,PC,BC000836,3,CA,No,36691982,PD_13_PC,male,"Yes, tried at least one cigarette before",TBC,PD.13.PC,No
+PMID:36691982,,70,Elderly,years,White,No,31.92690311,feces,2019-02-26,Household Control,HC,BC002201,4,CO,13,36691982,PD_13_HC,female,Yes,TBC,PD.13.HC,No
+PMID:36691982,,73,Elderly,years,White,No,23.49075518,feces,2019-03-19,PD Patient,PD,BC002208,2,CO,14,36691982,PD_14,male,Yes,TBC,PD.14,Yes
+PMID:36691982,,57,Elderly,years,White,No,24.95274102,feces,2017-06-23,Population Control,PC,BC001003,6,CO,No,36691982,PD_14_PC,male,Never smoked a cigarette before,TBC,PD.14.PC,No
+PMID:36691982,,73,Elderly,years,not provided,not provided,not provided,feces,2019-03-19,Household Control,HC,BC002222,5,CO,14,36691982,PD_14_HC,female,not provided,TBC,PD.14.HC,No
+PMID:36691982,,not provided,Elderly,years,not provided,No,19.75130073,feces,2019-02-26,PD Patient,PD,BC002212,5,CO,15,36691982,PD_15,female,not provided,TBC,PD.15,Yes
+PMID:36691982,,56,Elderly,years,White,No,23.47107438,feces,2017-03-15,Population Control,PC,BC000865,4,CO,No,36691982,PD_15_PC,female,Never smoked a cigarette before,TBC,PD.15.PC,No
+PMID:36691982,,72,Elderly,years,White,No,26.6057526,feces,2019-02-26,Household Control,HC,BC002211,3,CO,15,36691982,PD_15_HC,male,No,TBC,PD.15.HC,No
+PMID:36691982,,58,Elderly,years,White,No,23.01031541,feces,2019-04-17,PD Patient,PD,BC002223,2,WY,16,36691982,PD_16,male,Yes,TBC,PD.16,Yes
+PMID:36691982,,60,Elderly,years,White,No,22.04081633,feces,2017-03-14,Population Control,PC,BC000867,2,CO,No,36691982,PD_16_PC,male,"Yes, tried at least one cigarette before",TBC,PD.16.PC,No
+PMID:36691982,,58,Elderly,years,not provided,No,34.94201183,feces,2019-02-27,Household Control,HC,BC002205,4,WY,16,36691982,PD_16_HC,female,No,TBC,PD.16.HC,No
+PMID:36691982,,69,Elderly,years,White,No,24.30839002,feces,2017-06-29,Population Control,PC,BC001609,4,SC,No,36691982,PD_17_PC,female,"Yes, tried at least one cigarette before",TBC,PD.17.PC,No
+PMID:36691982,,74,Elderly,years,not provided,not provided,not provided,feces,2019-03-05,Household Control,HC,BC002218,4,CO,17,36691982,PD_17_HC,male,not provided,TBC,PD.17.HC,No
+PMID:36691982,,75,Elderly,years,White,No,20.08172982,feces,2019-04-03,PD Patient,PD,BC002226,4,CO,18,36691982,PD_18,male,Yes,TBC,PD.18,Yes
+PMID:36691982,,61,Elderly,years,White,No,19.37347286,feces,2017-05-19,Population Control,PC,BC000126,4,CO,No,36691982,PD_18_PC,male,Yes,TBC,PD.18.PC,No
+PMID:36691982,,62,Elderly,years,not provided,not provided,not provided,feces,2019-04-02,Household Control,HC,BC002241,3,CO,18,36691982,PD_18_HC,female,not provided,TBC,PD.18.HC,No
+PMID:36691982,,70,Elderly,years,White,No,29.83410494,feces,2019-03-19,PD Patient,PD,BC002228,3,CO,19,36691982,PD_19,male,No,TBC,PD.19,Yes
+PMID:36691982,,67,Elderly,years,White,No,26.61625709,feces,2017-06-30,Population Control,PC,BC000968,4,ND,No,36691982,PD_19_PC,male,Never smoked a cigarette before,TBC,PD.19.PC,No
+PMID:36691982,,67,Elderly,years,not provided,not provided,not provided,feces,2019-03-19,Household Control,HC,BC002238,5,CO,19,36691982,PD_19_HC,female,not provided,TBC,PD.19.HC,No
+PMID:36691982,,71,Elderly,years,not provided,not provided,not provided,feces,2019-04-02,PD Patient,PD,BC002247,2,CO,20,36691982,PD_20,female,not provided,TBC,PD.20,Yes
+PMID:36691982,,55,Elderly,years,White,No,19.93846154,feces,2016-12-08,Population Control,PC,BC000673,4,CA,No,36691982,PD_20_PC,female,"Yes, tried at least one cigarette before",TBC,PD.20.PC,No
+PMID:36691982,,81,Elderly,years,not provided,not provided,not provided,feces,2019-04-03,Household Control,HC,BC002248,4,CO,20,36691982,PD_20_HC,male,not provided,TBC,PD.20.HC,No
+PMID:36691982,,61,Elderly,years,White,No,23.75,feces,2019-04-26,PD Patient,PD,BC002259,3,CO,21,36691982,PD_21,male,Yes,TBC,PD.21,Yes
+PMID:36691982,,45,Elderly,years,White,No,23.0449827,feces,2017-05-18,Population Control,PC,BC000121,4,CO,No,36691982,PD_21_PC,male,"Yes, tried at least one cigarette before",TBC,PD.21.PC,No
+PMID:36691982,,57,Elderly,years,White,No,23.73444192,feces,2019-05-02,Household Control,HC,BC002258,4,CO,21,36691982,PD_21_HC,female,Yes,TBC,PD.21.HC,No
+PMID:36691982,,74,Elderly,years,White,No,26.21415974,feces,2019-06-06,PD Patient,PD,BC002275,4,IL,22,36691982,PD_22,male,Yes,TBC,PD.22,Yes
+PMID:36691982,,56,Elderly,years,White,No,26.44897959,feces,2016-12-06,Population Control,PC,BC000204,not provided,CO,No,36691982,PD_22_PC,male,Never smoked a cigarette before,TBC,PD.22.PC,No
+PMID:36691982,,74,Elderly,years,not provided,No,26.6,feces,2019-06-07,Household Control,HC,BC002276,4,IL,22,36691982,PD_22_HC,male,Yes,TBC,PD.22.HC,No
+PMID:36691982,,57,Elderly,years,White,No,21.33683793,feces,2019-05-29,PD Patient,PD,BC002286,4,CA,23,36691982,PD_23,male,Yes,TBC,PD.23,Yes
+PMID:36691982,,48,Elderly,years,White,No,24.86077077,feces,2017-05-18,Population Control,PC,BC000118,4,CO,No,36691982,PD_23_PC,male,Never smoked a cigarette before,TBC,PD.23.PC,No
+PMID:36691982,,55,Elderly,years,White,No,22.46272189,feces,2019-05-29,Household Control,HC,BC002294,4,CA,23,36691982,PD_23_HC,female,Yes,TBC,PD.23.HC,No
+PMID:36691982,,77,Elderly,years,White,No,32.99795918,feces,2017-02-24,PD Patient,PD,BC000226,5,WY,24,36691982,PD_24,male,No,TBC,PD.24,Yes
+PMID:36691982,,49,Elderly,years,White,No,31.94444444,feces,2016-12-15,Population Control,PC,BC000705,4,CA,No,36691982,PD_24_PC,male,"Yes, tried at least one cigarette before",TBC,PD.24.PC,No
+PMID:36691982,,77,Elderly,years,White,No,26.3096458,feces,2017-02-28,PD Patient,PD,BC000231,2,WY,25,36691982,PD_25,male,Yes,TBC,PD.25,Yes
+PMID:36691982,,65,Elderly,years,"White, Greek",No,25.84271717,feces,2018-02-08,Population Control,PC,BC001599,4,GA,No,36691982,PD_25_PC,male,Yes,TBC,PD.25.PC,No
+PMID:36691982,,73,Elderly,years,White,No,24.20798898,feces,2017-02-28,Household Control,HC,BC000227,6,WY,25,36691982,PD_25_HC,female,Yes,TBC,PD.25.HC,No
+PMID:36691982,,68,Elderly,years,White,No,25.84558824,feces,2017-03-17,PD Patient,PD,BC000243,1,TX,26,36691982,PD_26,male,No,TBC,PD.26,Yes
+PMID:36691982,,62,Elderly,years,White,No,25.7268846,feces,2017-11-14,Population Control,PC,BC000716,5,OH,No,36691982,PD_26_PC,male,Yes,TBC,PD.26.PC,No
+PMID:36691982,,60,Elderly,years,White,No,20.81887052,feces,2017-03-09,Household Control,HC,BC000244,1,TX,26,36691982,PD_26_HC,female,Yes,TBC,PD.26.HC,No
+PMID:36691982,,76,Elderly,years,not provided,not provided,not provided,feces,2018-08-08,PD Patient,PD,BC002091,3,CO,27,36691982,PD_27,female,not provided,TBC,PD.27,Yes
+PMID:36691982,,55,Elderly,years,White,No,21.97265625,feces,2017-07-12,Population Control,PC,BC001119,4,WA,No,36691982,PD_27_PC,female,"Yes, tried at least one cigarette before",TBC,PD.27.PC,No
+PMID:36691982,,80,Elderly,years,White,No,25.05680552,feces,2018-08-08,Household Control,HC,BC002092,5,CO,27,36691982,PD_27_HC,male,Yes,TBC,PD.27.HC,No
+PMID:36691982,,73,Elderly,years,White,No,19.93383743,feces,2019-07-30,PD Patient,PD,BC002285,5,DC,28,36691982,PD_28,male,Yes,TBC,PD.28,Yes
+PMID:36691982,,58,Elderly,years,White,No,17.152,feces,2017-04-25,Population Control,PC,BC000911,6,CO,No,36691982,PD_28_PC,male,Never smoked a cigarette before,TBC,PD.28.PC,No
+PMID:36691982,,71,Elderly,years,not provided,not provided,not provided,feces,2019-07-30,Household Control,HC,BC002284,5,DC,28,36691982,PD_28_HC,female,not provided,TBC,PD.28.HC,No
+PMID:36691982,,70,Elderly,years,White,No,23.17016602,feces,2019-06-20,PD Patient,PD,BC002295,5,AZ,29,36691982,PD_29,female,No,TBC,PD.29,Yes
+PMID:36691982,,66,Elderly,years,White,No,22.15384615,feces,2017-07-28,Population Control,PC,BC001270,4,CO,No,36691982,PD_29_PC,female,"Yes, tried at least one cigarette before",TBC,PD.29.PC,No
+PMID:36691982,,70,Elderly,years,not provided,No,26.6,feces,2019-07-11,Household Control,HC,BC002296,1,AZ,29,36691982,PD_29_HC,male,Yes,TBC,PD.29.HC,No
+PMID:36691982,,55,Elderly,years,White,No,24.79717813,feces,2019-03-06,PD Patient,PD,BC002180,4,CO,No,36691982,PD_30,female,No,TBC,PD.30,Yes
+PMID:36691982,,53,Elderly,years,White,No,22.15384615,feces,2016-12-01,Population Control,PC,BC000733,6,CO,No,36691982,PD_30_PC,female,"Yes, tried at least one cigarette before",TBC,PD.30.PC,No
+PMID:36691982,,48,Elderly,years,White,No,19.57562932,feces,2019-03-21,PD Patient,PD,BC002185,4,CO,No,36691982,PD_31,female,Yes,TBC,PD.31,Yes
+PMID:36691982,,47,Elderly,years,White,No,21.2568278,feces,2017-09-22,Population Control,PC,BC001492,4,TX,No,36691982,PD_31_PC,female,Yes,TBC,PD.31.PC,No
+PMID:36691982,,57,Elderly,years,White,No,24.85394586,feces,2019-03-13,PD Patient,PD,BC002209,3,CA,No,36691982,PD_32,female,Yes,TBC,PD.32,Yes
+PMID:36691982,,55,Elderly,years,White,No,21.54006243,feces,2017-03-24,Population Control,PC,BC000877,3,CO,No,36691982,PD_32_PC,female,Never smoked a cigarette before,TBC,PD.32.PC,No
+PMID:36691982,,56,Elderly,years,White,No,26.62248521,feces,2019-05-08,PD Patient,PD,BC002263,4,MO,No,36691982,PD_33,female,Yes,TBC,PD.33,Yes
+PMID:36691982,,53,Elderly,years,White,No,25.39171598,feces,2017-08-11,Population Control,PC,BC001433,5,CO,No,36691982,PD_33_PC,female,Never smoked a cigarette before,TBC,PD.33.PC,No
+PMID:36691982,,54,Elderly,years,White,No,24.27411265,feces,2019-05-31,PD Patient,PD,BC002288,4,CA,No,36691982,PD_34,male,Yes,TBC,PD.34,Yes
+PMID:36691982,,45,Elderly,years,White,No,24.1349481,feces,2017-01-12,Population Control,PC,BC000218,4,CO,No,36691982,PD_34_PC,male,Never smoked a cigarette before,TBC,PD.34.PC,No
+PMID:36691982,,59,Elderly,years,White,No,19.8377425,feces,2017-03-29,PD Patient,PD,BC000289,4,CO,No,36691982,PD_35,female,No,TBC,PD.35,Yes
+PMID:36691982,,58,Elderly,years,White,No,19.47970864,feces,2017-04-14,Population Control,PC,BC000886,4,WA,No,36691982,PD_35_PC,female,"Yes, tried at least one cigarette before",TBC,PD.35.PC,No
+PMID:36691982,,50,Elderly,years,White,No,16.94559229,feces,2018-05-17,PD Patient,PD,BC001965,5,IN,No,36691982,PD_36,female,Yes,TBC,PD.36,Yes
+PMID:36691982,,44,Elderly,years,White,No,16.13329503,feces,2017-03-02,Population Control,PC,BC000793,3,NY,No,36691982,PD_36_PC,female,"Yes, tried at least one cigarette before",TBC,PD.36.PC,No
+PMID:36691982,,79,Elderly,years,not provided,No,23.22464809,feces,2016-11-30,PD Patient,PD,BC000606,1,CO,No,36691982,PD_37,female,No,TBC,PD.37,Yes
+PMID:36691982,,64,Elderly,years,White,No,24.12698413,feces,2017-07-06,Population Control,PC,BC001058,6,OR,No,36691982,PD_37_PC,female,"Yes, tried at least one cigarette before",TBC,PD.37.PC,No
+PMID:36691982,,49,Elderly,years,not provided,not provided,27.31674018,feces,2017-11-29,PD Patient,PD,BC001542,5,WA,No,36691982,PD_38,female,not provided,TBC,PD.38,Yes
+PMID:36691982,,40,Elderly,years,White,No,29.82248521,feces,2017-11-09,Population Control,PC,BC001181,5,CO,No,36691982,PD_38_PC,female,"Yes, tried at least one cigarette before",TBC,PD.38.PC,No
+PMID:36691982,,62,Elderly,years,not provided,not provided,21.74070069,feces,2017-12-12,PD Patient,PD,BC001557,4,NJ,No,36691982,PD_39,female,not provided,TBC,PD.39,Yes
+PMID:36691982,,56,Elderly,years,White,No,21.65289256,feces,2017-07-19,Population Control,PC,BC001189,6,GA,No,36691982,PD_39_PC,female,"Yes, tried at least one cigarette before",TBC,PD.39.PC,No
+PMID:36691982,,71,Elderly,years,White,No,18.39807163,feces,2017-06-20,PD Patient,PD,BC001392,4,CO,No,36691982,PD_40,female,Yes,TBC,PD.40,Yes
+PMID:36691982,,58,Elderly,years,White,No,21.30612245,feces,2017-08-01,Population Control,PC,BC001121,4,CO,No,36691982,PD_40_PC,female,Never smoked a cigarette before,TBC,PD.40.PC,No
+PMID:36691982,,69,Elderly,years,White,No,19.36639118,feces,2016-09-29,PD Patient,PD,BC000512,3,CO,No,36691982,PD_41,female,Yes,TBC,PD.41,Yes
+PMID:36691982,,58,Elderly,years,White,No,21.40589569,feces,2017-04-12,Population Control,PC,BC001102,4,WA,No,36691982,PD_41_PC,female,"Yes, tried at least one cigarette before",TBC,PD.41.PC,No
+PMID:36691982,,80,Elderly,years,White,No,19.93383743,feces,2019-03-22,PD Patient,PD,BC002191,2,CA,No,36691982,PD_42,male,Yes,TBC,PD.42,Yes
+PMID:36691982,,57,Elderly,years,White,No,26.14965398,feces,2017-03-24,PD Patient,PD,BC000288,2,CO,No,36691982,PD_43,male,Yes,TBC,PD.43,Yes
+PMID:36691982,,65,Elderly,years,White,No,20.54054054,feces,2017-04-21,PD Patient,PD,BC000264,3,CO,No,36691982,PD_44,male,No,TBC,PD.44,Yes
+PMID:36691982,,63,Elderly,years,not provided,not provided,26.57844991,feces,2017-10-18,PD Patient,PD,BC001516,4,CO,No,36691982,PD_45,male,not provided,TBC,PD.45,Yes
+PMID:36691982,,65,Elderly,years,not provided,not provided,25.05810547,feces,2017-11-15,PD Patient,PD,BC001536,4,CO,No,36691982,PD_46,male,not provided,TBC,PD.46,Yes
+PMID:36691982,,68,Elderly,years,White,No,25.69250158,feces,2018-04-18,PD Patient,PD,BC001915,3,CO,No,36691982,PD_48,male,Yes,TBC,PD.48,Yes
+PMID:36691982,not provided,66,Elderly,,White,No,33.41,feces,not provided,Population Control,PC,211468,not provided,IL,No,36691982,PC_55,female,,Rush,PC.55,No
+PMID:36691982,not provided,65,Elderly,,White,No,32.73,feces,not provided,Population Control,PC,216592,not provided,IL,No,36691982,PC_57,male,,Rush,PC.57,No
+PMID:36691982,not provided,65,Elderly,,White,No,29.87,feces,not provided,Population Control,PC,216674,not provided,IL,No,36691982,PC_58,male,,Rush,PC.58,No
+PMID:36691982,not provided,66,Elderly,,White,No,30.9,feces,not provided,Population Control,PC,222286,not provided,IL,No,36691982,PC_56,female,,Rush,PC.56,No
+PMID:36691982,not provided,65,Elderly,,White,No,39.17,feces,not provided,Population Control,PC,223850,not provided,IL,No,36691982,PC_43,female,,Rush,PC.43,No
+PMID:36691982,not provided,69,Elderly,,White,No,34.39,feces,not provided,Population Control,PC,224013,not provided,IL,No,36691982,PC_77,male,,Rush,PC.77,No
+PMID:36691982,not provided,70,Elderly,,White,No,34.85,feces,not provided,Population Control,PC,224084,not provided,IL,No,36691982,PC_84,male,,Rush,PC.84,No
+PMID:36691982,not provided,65,Elderly,,White,No,29.59,feces,not provided,Population Control,PC,225392,not provided,IL,No,36691982,PC_44,female,,Rush,PC.44,No
+PMID:36691982,not provided,69,Elderly,,White,No,44.42,feces,not provided,Population Control,PC,225938,not provided,IL,No,36691982,PC_78,male,,Rush,PC.78,No
+PMID:36691982,not provided,69,Elderly,,White,No,33.34,feces,not provided,Population Control,PC,226735,not provided,IL,No,36691982,PC_80,male,,Rush,PC.80,No
+PMID:36691982,not provided,65,Elderly,,White,No,28.18,feces,not provided,Population Control,PC,229234,not provided,IL,No,36691982,PC_45,female,,Rush,PC.45,No
+PMID:36691982,not provided,65,Elderly,,White,No,32.79,feces,not provided,Population Control,PC,234187,not provided,IL,No,36691982,PC_46,female,,Rush,PC.46,No
+PMID:36691982,not provided,70,Elderly,,White,No,33.05,feces,not provided,Population Control,PC,236618,not provided,IL,No,36691982,PC_85,male,,Rush,PC.85,No
+PMID:36691982,not provided,65,Elderly,,White,No,46.74,feces,not provided,Population Control,PC,237957,not provided,IL,No,36691982,PC_47,female,,Rush,PC.47,No
+PMID:36691982,not provided,70,Elderly,,White,No,33.75,feces,not provided,Population Control,PC,246142,not provided,IL,No,36691982,PC_86,male,,Rush,PC.86,No
+PMID:36691982,not provided,65,Elderly,,White,No,44.54,feces,not provided,Population Control,PC,247804,not provided,IL,No,36691982,PC_48,female,,Rush,PC.48,No
+PMID:36691982,not provided,69,Elderly,,White,No,42.82,feces,not provided,Population Control,PC,256330,not provided,IL,No,36691982,PC_81,male,,Rush,PC.81,No
+PMID:36691982,not provided,66,Elderly,,White,No,38.56,feces,not provided,Population Control,PC,258882,not provided,IL,No,36691982,PC_64,male,,Rush,PC.64,No
+PMID:36691982,not provided,69,Elderly,,White,No,33.12,feces,not provided,Population Control,PC,260172,not provided,IL,No,36691982,PC_82,male,,Rush,PC.82,No
+PMID:36691982,not provided,64,Elderly,,White,No,25.5,feces,not provided,Population Control,PC,260880,not provided,IL,No,36691982,PC_42,female,,Rush,PC.42,No
+PMID:36691982,not provided,65,Elderly,,White,No,35,feces,not provided,Population Control,PC,261852,not provided,IL,No,36691982,PC_49,female,,Rush,PC.49,No
+PMID:36691982,not provided,67,Elderly,,White,No,29.35,feces,not provided,Population Control,PC,262082,not provided,IL,No,36691982,PC_70,male,,Rush,PC.70,No
+PMID:36691982,not provided,65,Elderly,,White,No,29.49,feces,not provided,Population Control,PC,266242,not provided,IL,No,36691982,PC_50,female,,Rush,PC.50,No
+PMID:36691982,not provided,70,Elderly,,White,No,30.24,feces,not provided,Population Control,PC,267750,not provided,IL,No,36691982,PC_88,male,,Rush,PC.88,No
+PMID:36691982,not provided,65,Elderly,,White,No,50.2,feces,not provided,Population Control,PC,268483,not provided,IL,No,36691982,PC_61,male,,Rush,PC.61,No
+PMID:36691982,not provided,66,Elderly,,White,No,40.51,feces,not provided,Population Control,PC,269057,not provided,IL,No,36691982,PC_65,male,,Rush,PC.65,No
+PMID:36691982,not provided,65,Elderly,,White,No,29.49,feces,not provided,Population Control,PC,272288,not provided,IL,No,36691982,PC_51,female,,Rush,PC.51,No
+PMID:36691982,not provided,66,Elderly,,White,No,33.16,feces,not provided,Population Control,PC,273615,not provided,IL,No,36691982,PC_66,male,,Rush,PC.66,No
+PMID:36691982,not provided,67,Elderly,,White,No,42.53,feces,not provided,Population Control,PC,276480,not provided,IL,No,36691982,PC_71,male,,Rush,PC.71,No
+PMID:36691982,not provided,66,Elderly,,White,No,34.97,feces,not provided,Population Control,PC,280953,not provided,IL,No,36691982,PC_67,male,,Rush,PC.67,No
+PMID:36691982,not provided,69,Elderly,,White,No,40.08,feces,not provided,Population Control,PC,281439,not provided,IL,No,36691982,PC_83,male,,Rush,PC.83,No
+PMID:36691982,not provided,65,Elderly,,White,No,42,feces,not provided,Population Control,PC,281954,not provided,IL,No,36691982,PC_62,male,,Rush,PC.62,No
+PMID:36691982,not provided,70,Elderly,,White,No,47.78,feces,not provided,Population Control,PC,282477,not provided,IL,No,36691982,PC_90,male,,Rush,PC.90,No
+PMID:36691982,not provided,65,Elderly,,White,No,36.97,feces,not provided,Population Control,PC,283352,not provided,IL,No,36691982,PC_52,female,,Rush,PC.52,No
+PMID:36691982,not provided,65,Elderly,,White,No,53.6,feces,not provided,Population Control,PC,284114,not provided,IL,No,36691982,PC_53,female,,Rush,PC.53,No
+PMID:36691982,not provided,68,Elderly,,White,No,40.32,feces,not provided,Population Control,PC,286786,not provided,IL,No,36691982,PC_75,male,,Rush,PC.75,No
+PMID:36691982,not provided,67,Elderly,,White,No,32.02,feces,not provided,Population Control,PC,286888,not provided,IL,No,36691982,PC_73,male,,Rush,PC.73,No
+PMID:36691982,not provided,65,Elderly,,White,No,32.25,feces,not provided,Population Control,PC,288804,not provided,IL,No,36691982,PC_63,male,,Rush,PC.63,No
+PMID:36691982,not provided,68,Elderly,,White,No,39.71,feces,not provided,Population Control,PC,291051,not provided,IL,No,36691982,PC_76,male,,Rush,PC.76,No
+PMID:36691982,not provided,65,Elderly,,White,No,29.75,feces,not provided,Population Control,PC,291080,not provided,IL,No,36691982,PC_54,female,,Rush,PC.54,No
+PMID:36691982,not provided,67,Elderly,,White,No,39.01,feces,not provided,Population Control,PC,291328,not provided,IL,No,36691982,PC_74,male,,Rush,PC.74,No
+PMID:36691982,not provided,66,Elderly,,White,No,31.42,feces,not provided,Population Control,PC,297202,not provided,IL,No,36691982,PC_68,male,,Rush,PC.68,No
+PMID:36691982,not provided,52,Elderly,,White,No,33.9,feces,1/10/18,PD Patient,PD,PDC001,not provided,IL,No,36691982,PD_60,male,,Rush,PD.60,Yes
+PMID:36691982,not provided,67,Elderly,,White,No,25.4,feces,2/14/18,PD Patient,PD,PDC002,not provided,IL,No,36691982,PD_61,male,,Rush,PD.61,Yes
+PMID:36691982,not provided,68,Elderly,,White,No,22.6,feces,2/15/18,PD Patient,PD,PDC003,not provided,IL,35,36691982,PD_62,male,,Rush,PD.62,Yes
+PMID:36691982,not provided,66,Elderly,,White,No,20.1,feces,2/18/18,Household Control,HC,PDC004,not provided,IL,35,36691982,HC_35,female,,Rush,HC.35,No
+PMID:36691982,not provided,63,Elderly,,White,No,27.4,feces,2/19/18,Household Control,HC,PDC006,not provided,IL,36,36691982,HC_36,male,,Rush,HC.36,No
+PMID:36691982,48,60,Elderly,,White,No,26.8,feces,3/1/18,PD Patient,PD,PDC007,4,IL,No,36691982,PD_64,male,,Rush,PD.64,Yes
+PMID:36691982,56,57,Elderly,,White,No,19.6,feces,12/8/17,PD Patient,PD,PDC008,1,IL,37,36691982,PD_65,female,,Rush,PD.65,Yes
+PMID:36691982,not provided,61,Elderly,,White,No,25.8,feces,3/9/18,Household Control,HC,PDC009,not provided,IL,37,36691982,HC_37,male,,Rush,HC.37,No
+PMID:36691982,not provided,54,Elderly,,White,No,25.8,feces,6/21/19,PD Patient,PD,PDC010,not provided,IL,38,36691982,PD_66,male,,Rush,PD.66,Yes
+PMID:36691982,not provided,53,Elderly,,White,No,25.1,feces,not provided,Household Control,HC,PDC011,not provided,IL,38,36691982,HC_38,female,,Rush,HC.38,No
+PMID:36691982,not provided,60,Elderly,,White,not provided,23.9,feces,not provided,PD Patient,PD,PDC012,not provided,IL,39,36691982,PD_67,female,,Rush,PD.67,Yes
+PMID:36691982,not provided,57,Elderly,,White,No,35.3,feces,not provided,Household Control,HC,PDC013,not provided,IL,39,36691982,HC_39,male,,Rush,HC.39,No
+PMID:36691982,64,59,Elderly,,White,not provided,26.6,feces,5/7/18,PD Patient,PD,PDC014,2,IL,40,36691982,PD_68,male,,Rush,PD.68,Yes
+PMID:36691982,48,60,Elderly,,White,not provided,30.6,feces,5/24/18,PD Patient,PD,PDC015,1,IL,No,36691982,PD_69,male,,Rush,PD.69,Yes
+PMID:36691982,not provided,45,Elderly,,White,No,20.9,feces,1/3/19,PD Patient,PD,PDC016,not provided,IL,No,36691982,PD_70,female,,Rush,PD.70,Yes
+PMID:36691982,26,57,Elderly,,White,not provided,28.6,feces,6/28/18,PD Patient,PD,PDC017,2,IL,No,36691982,PD_71,male,,Rush,PD.71,Yes
+PMID:36691982,not provided,59,Elderly,,White,No,20.8,feces,6/18/18,PD Patient,PD,PDC018,not provided,IL,No,36691982,PD_72,female,,Rush,PD.72,Yes
+PMID:36691982,35,57,Elderly,,White,No,21.1,feces,not provided,Household Control,HC,PDC019,2,IL,40,36691982,HC_40,female,,Rush,HC.40,No
+PMID:36691982,not provided,68,Elderly,,White,No,38.3,feces,not provided,Household Control,HC,PDC020,not provided,IL,41,36691982,HC_41,female,,Rush,HC.41,No
+PMID:36691982,65,72,Elderly,,White,not provided,25.3,feces,not provided,PD Patient,PD,PDC021,3,IL,41,36691982,PD_73,male,,Rush,PD.73,Yes
+PMID:36691982,not provided,61,Elderly,,White,not provided,28.8,feces,1/30/18,PD Patient,PD,PDC022,not provided,IL,42,36691982,PD_74,male,,Rush,PD.74,Yes
+PMID:36691982,29,59,Elderly,,White,No,28.3,feces,not provided,Household Control,HC,PDC023,3,IL,42,36691982,HC_42,female,,Rush,HC.42,No
+PMID:36691982,58,62,Elderly,,White,not provided,26.6,feces,2/23/18,PD Patient,PD,PDC024,3,IL,43,36691982,PD_75,female,,Rush,PD.75,Yes
+PMID:36691982,not provided,62,Elderly,,White,No,30.5,feces,not provided,Household Control,HC,PDC025,not provided,IL,43,36691982,HC_43,male,,Rush,HC.43,No
+PMID:36691982,24,59,Elderly,,White,No,26.5,feces,4/3/19,PD Patient,PD,PDC026,2,IL,44,36691982,PD_76,male,,Rush,PD.76,Yes
+PMID:36691982,13,58,Elderly,,White,No,20.3,feces,not provided,Household Control,HC,PDC027,3,IL,44,36691982,HC_44,female,,Rush,HC.44,No
+PMID:36691982,not provided,50,Elderly,,White,not provided,20.8,feces,2/26/18,PD Patient,PD,PDC028,not provided,IL,45,36691982,PD_77,male,,Rush,PD.77,Yes
+PMID:36691982,not provided,49,Elderly,,White,No,32.3,feces,not provided,Household Control,HC,PDC029,not provided,IL,45,36691982,HC_45,female,,Rush,HC.45,No
+PMID:36691982,not provided,65,Elderly,,White,No,24.4,feces,1/10/12,PD Patient,PD,PDC030,not provided,IL,No,36691982,PD_78,male,,Rush,PD.78,Yes
+PMID:36691982,3,63,Elderly,,White,No,31.2,feces,11/1/18,PD Patient,PD,PDC032,not provided,IL,No,36691982,PD_79,male,,Rush,PD.79,Yes
+PMID:36691982,14,71,Elderly,,White,No,27.32,feces,8/10/19,PD Patient,PD,PDC033,1,IL,46,36691982,PD_80,male,,Rush,PD.80,Yes
+PMID:36691982,0,70,Elderly,,White,No,35.1,feces,not provided,Household Control,HC,PDC034,5,IL,46,36691982,HC_46,female,,Rush,HC.46,No
+PMID:36691982,32,81,Elderly,,White,No,31.57,feces,3/25/19,PD Patient,PD,PDC035,3,IL,47,36691982,PD_81,male,,Rush,PD.81,Yes
+PMID:36691982,4,72,Elderly,,White,No,not collected,feces,not provided,Household Control,HC,PDC036,3,IL,47,36691982,HC_47,female,,Rush,HC.47,No
+PMID:36691982,19,55,Elderly,,White,No,27.25,feces,4/17/19,PD Patient,PD,PDC037,3,IL,48,36691982,PD_82,female,,Rush,PD.82,Yes
+PMID:36691982,16,56,Elderly,,White,No,not collected,feces,not provided,Household Control,HC,PDC038,4,IL,48,36691982,HC_48,male,,Rush,HC.48,No
+PMID:36691982,54,69,Elderly,,White,No,34.91,feces,4/29/19,PD Patient,PD,PDC039,6,IL,49,36691982,PD_83,male,,Rush,PD.83,Yes
+PMID:36691982,66,67,Elderly,,White,No,32,feces,not provided,Household Control,HC,PDC040,6,IL,49,36691982,HC_49,male,,Rush,HC.49,No
+PMID:36691982,8,67,Elderly,,White,No,21.39,feces,5/15/19,PD Patient,PD,PDC041,6,IL,50,36691982,PD_84,female,,Rush,PD.84,Yes
+PMID:36691982,116,64,Elderly,,White,No,not collected,feces,not provided,Household Control,HC,PDC042,2,IL,50,36691982,HC_50,male,,Rush,HC.50,No
+PMID:36691982,18,72,Elderly,,Black_or_African_American,No,not collected,feces,not provided,Household Control,HC,PDC044,6,IL,51,36691982,HC_51,male,,Rush,HC.51,No
+PMID:36691982,14,67,Elderly,,White,No,30.8,feces,1/28/19,PD Patient,PD,PDC046,3,IL,52,36691982,PD_86,male,,Rush,PD.86,Yes
+PMID:36691982,127,not collected,Elderly,,not provided,No,not collected,feces,not provided,Household Control,HC,PDC047,4,IL,52,36691982,HC_52,female,,Rush,HC.52,No
+PMID:36691982,53,62,Elderly,,White,No,22.37,feces,6/18/19,PD Patient,PD,PDC048,2,IL,53,36691982,PD_87,male,,Rush,PD.87,Yes
+PMID:36691982,12,60,Elderly,,White,No,not collected,feces,not provided,Household Control,HC,PDC049,4,IL,53,36691982,HC_53,female,,Rush,HC.53,No
+PMID:36691982,131,79,Elderly,,White,No,28.7,feces,7/1/19,PD Patient,PD,PDC050,2,IL,54,36691982,PD_88,male,,Rush,PD.88,Yes
+PMID:36691982,7,75,Elderly,,not provided,No,not collected,feces,not provided,Household Control,HC,PDC051,4,IL,54,36691982,HC_54,female,,Rush,HC.54,No
+PMID:36691982,17,58,Elderly,,White,No,47.97,feces,7/1/19,PD Patient,PD,PDC052,2,IL,55,36691982,PD_89,female,,Rush,PD.89,Yes
+PMID:36691982,34,61,Elderly,,White,No,22.5,feces,not provided,Household Control,HC,PDC053,6,IL,55,36691982,HC_55,male,,Rush,HC.55,No
+PMID:36691982,41,67,Elderly,,White,No,26.79,feces,4/22/19,PD Patient,PD,PDC054,4,IL,56,36691982,PD_90,male,,Rush,PD.90,Yes
+PMID:36691982,37,63,Elderly,,White,No,32.4,feces,not provided,Household Control,HC,PDC055,5,IL,56,36691982,HC_56,female,,Rush,HC.56,No
+PMID:36691982,39,78,Elderly,,White,No,24.33,feces,9/5/19,PD Patient,PD,PDC056,5,IL,57,36691982,PD_91,male,,Rush,PD.91,Yes
+PMID:36691982,12,77,Elderly,,White,No,24.7,feces,not provided,Household Control,HC,PDC057,2,IL,57,36691982,HC_57,female,,Rush,HC.57,No
+PMID:36691982,127,77,Elderly,,White,No,20.43,feces,12/4/19,PD Patient,PD,PDC058,6,IL,58,36691982,PD_92,female,,Rush,PD.92,Yes
+PMID:36691982,9,81,Elderly,,White,No,25.8,feces,not provided,Household Control,HC,PDC059,6,IL,58,36691982,HC_58,male,,Rush,HC.58,No
+PMID:36691982,49,64,Elderly,,White,No,22.46,feces,7/22/19,PD Patient,PD,PDC060,1,IL,No,36691982,PD_93,male,,Rush,PD.93,Yes
+PMID:36691982,106,61,Elderly,,White,No,20.8,feces,7/23/19,PD Patient,PD,PDC061,2,IL,No,36691982,PD_94,female,,Rush,PD.94,Yes
+PMID:36691982,77,59,Elderly,,White,No,27.8,feces,1/8/20,PD Patient,PD,PDC062,3,IL,59,36691982,PD_95,male,,Rush,PD.95,Yes
+PMID:36691982,62,60,Elderly,,White,No,not collected,feces,not provided,Household Control,HC,PDC063,6,IL,59,36691982,HC_59,male,,Rush,HC.59,No
+PMID:36691982,not provided,57,Elderly,,White,No,23.1,feces,5/18/18,PD Patient,PD,PDL001,not provided,IL,No,36691982,PD_49,male,,Rush,PD.49,Yes
+PMID:36691982,21,68,Elderly,,White,No,21.6,feces,2/21/19,PD Patient,PD,PDL004,2,IL,No,36691982,PD_50,male,,Rush,PD.50,Yes
+PMID:36691982,36,66,Elderly,,White,No,28.6,feces,9/23/19,PD Patient,PD,PDL005,3,IL,No,36691982,PD_51,male,,Rush,PD.51,Yes
+PMID:36691982,22,63,Elderly,,White,No,26.9,feces,3/13/19,PD Patient,PD,PDL009,not provided,IL,30,36691982,PD_52,male,,Rush,PD.52,Yes
+PMID:36691982,34,62,Elderly,,White,No,29.1,feces,not provided,Household Control,HC,PDL010,not provided,IL,30,36691982,HC_30,female,,Rush,HC.30,No
+PMID:36691982,16,65,Elderly,,White,No,41.44,feces,9/4/19,PD Patient,PD,PDL012,not provided,IL,No,36691982,PD_53,female,,Rush,PD.53,Yes
+PMID:36691982,8,61,Elderly,,White,not provided,21.5,feces,3/20/19,PD Patient,PD,PDL013,6,IL,31,36691982,PD_54,male,,Rush,PD.54,Yes
+PMID:36691982,not provided,60,Elderly,,White,No,21,feces,not provided,Household Control,HC,PDL014,not provided,IL,31,36691982,HC_31,female,,Rush,HC.31,No
+PMID:36691982,not provided,80,Elderly,,White,No,28.7,feces,3/19/19,PD Patient,PD,PDL015,not provided,IL,32,36691982,PD_55,male,,Rush,PD.55,Yes
+PMID:36691982,31,79,Elderly,,White,No,20.6,feces,not provided,Household Control,HC,PDL016,not provided,IL,32,36691982,HC_32,female,,Rush,HC.32,No
+PMID:36691982,not provided,76,Elderly,,White,No,28.2,feces,not provided,Household Control,HC,PDL018,not provided,IL,33,36691982,HC_33,male,,Rush,HC.33,No
+PMID:36691982,64,78,Elderly,,White,No,20.12,feces,3/14/19,PD Patient,PD,PDL019,not provided,IL,No,36691982,PD_57,female,,Rush,PD.57,Yes
+PMID:36691982,6,49,Elderly,,White,No,not collected,feces,not provided,Household Control,HC,PDL026,not provided,IL,34,36691982,HC_34,female,,Rush,HC.34,No

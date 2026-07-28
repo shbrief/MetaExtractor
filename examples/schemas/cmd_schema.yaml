@@ -1,0 +1,685 @@
+schema_info:
+  name: curatedMetagenomicData_metadata_schema
+  version: 1.0.0
+  description: Metadata schema for curatedMetagenomicData package
+  last_updated: '2026-05-23'
+age:
+  col_name: age
+  col_class: integer
+  uniqueness: non-unique
+  required: no
+  multiple_values: no
+  description: Participant age in the unit specified by `age_unit`.
+  validation:
+    pattern: '[0-9]+'
+age_group:
+  col_name: age_group
+  col_class: character
+  uniqueness: non-unique
+  required: no
+  multiple_values: no
+  description: 'Age group classification: Newborn (< 1 month/28 days), Infant (>=
+    1 month & < 2 yrs), Child (>= 2 yrs & < 11 yrs), Adolescent (>= 11 yrs & < 18
+    yrs), Adult (>= 18 yrs & < 65 yrs), Elderly (>= 65 yrs) Static ontology IDs: NCIT:C16731;
+    NCIT:C27956; NCIT:C16423; NCIT:C27954; NCIT:C17600; NCIT:C16268. Type: static.'
+  validation:
+    allowed_values:
+    - Newborn
+    - Infant
+    - Child
+    - Adolescent
+    - Adult
+    - Elderly
+age_unit:
+  col_name: age_unit
+  col_class: character
+  uniqueness: non-unique
+  required: no
+  multiple_values: no
+  description: 'Unit used to report `age`. Static ontology IDs: NCIT:C25301; NCIT:C29844;
+    NCIT:C29846; NCIT:C29848. Type: static.'
+  validation:
+    allowed_values:
+    - Day
+    - Week
+    - Month
+    - Year
+ancestry:
+  col_name: ancestry
+  col_class: character
+  uniqueness: non-unique
+  required: no
+  multiple_values: no
+  description: 'Broad ancestry category (children of HANCESTRO:0004). Lookup seed
+    ontology IDs: HANCESTRO:0004. Type: looked_up. Looked up: Yes. Includes child
+    terms: Yes. Existing-dataset-only values now: Conditional (Yes only when lookup
+    falls back to curated existing dataset values)'
+  ontology:
+    roots: HANCESTRO:0004
+    property: children
+antibiotics_current_use:
+  col_name: antibiotics_current_use
+  col_class: character
+  uniqueness: non-unique
+  required: no
+  multiple_values: no
+  description: Whether the participant is currently using antibiotics.
+  validation:
+    allowed_values:
+    - 'Yes'
+    - 'No'
+antibiotics_exclusion_period:
+  col_name: antibiotics_exclusion_period
+  col_class: double
+  uniqueness: non-unique
+  required: no
+  multiple_values: no
+  description: Minimum washout period from antibiotic use required by study criteria.
+  validation:
+    pattern: '[0-9]+\.?[0-9]*'
+antibiotics_exclusion_period_unit:
+  col_name: antibiotics_exclusion_period_unit
+  col_class: character
+  uniqueness: non-unique
+  required: no
+  multiple_values: no
+  description: 'Unit used for `antibiotics_exclusion_period`. Static ontology IDs:
+    NCIT:C25301; NCIT:C29844; NCIT:C29846. Type: static.'
+  validation:
+    allowed_values:
+    - Day
+    - Week
+    - Month
+biomarker_name:
+  col_name: biomarker_name
+  col_class: character
+  uniqueness: non-unique
+  required: no
+  multiple_values: yes
+  description: A measurable and quantifiable characteristic or substance that serves
+    as an indicator of a biological state, condition, or process within an organism.
+  validation:
+    delimiter: ;
+biomarker_unit:
+  col_name: biomarker_unit
+  col_class: character
+  uniqueness: non-unique
+  required: no
+  multiple_values: yes
+  description: Unit for biomarker
+  validation:
+    delimiter: ;
+biomarker_value:
+  col_name: biomarker_value
+  col_class: numeric
+  uniqueness: non-unique
+  required: no
+  multiple_values: yes
+  description: Value for biomarker
+  validation:
+    pattern: '[0-9]+\.?[0-9]*'
+    delimiter: ;
+bmi:
+  col_name: bmi
+  col_class: double
+  uniqueness: non-unique
+  required: no
+  multiple_values: no
+  description: Body mass index (BMI; EFO:0004340) calculated as weight (kg) divided
+    by height squared (m²).
+  validation:
+    pattern: '[0-9]+\.?[0-9]*'
+body_site:
+  col_name: body_site
+  col_class: character
+  uniqueness: non-unique
+  required: yes
+  multiple_values: no
+  description: 'Anatomical body site from which the sample was collected. Static ontology
+    IDs: UBERON:0001988; UBERON:0000167; UBERON:0001003; UBERON:0000996; UBERON:0001707;
+    UBERON:0001913. Type: static.'
+  validation:
+    allowed_values:
+    - feces
+    - oral cavity
+    - skin epidermis
+    - vagina
+    - nasal cavity
+    - milk
+control:
+  col_name: control
+  col_class: character
+  uniqueness: non-unique
+  required: yes
+  multiple_values: no
+  description: 'Case-control role of the sample in the study. Static ontology IDs:
+    NCIT:C142703; NCIT:C49152; NCIT:C69062. Type: static.'
+  validation:
+    allowed_values:
+    - Study Control
+    - Case
+    - Not Used
+country:
+  col_name: country
+  col_class: character
+  uniqueness: non-unique
+  required: no
+  multiple_values: no
+  description: 'Country where the participant resides and/or the sample was collected.
+    Lookup seed ontology IDs: NCIT:C25464. Type: looked_up. Looked up: Yes. Includes
+    child terms: Yes. Existing-dataset-only values now: Conditional (Yes only when
+    lookup falls back to curated existing dataset values)'
+  ontology:
+    roots: NCIT:C25464
+    property: descendant
+days_from_first_collection:
+  col_name: days_from_first_collection
+  col_class: integer
+  uniqueness: non-unique
+  required: no
+  multiple_values: no
+  description: Days elapsed since the first collection time point in longitudinal
+    studies.
+  validation:
+    pattern: '[0-9]+'
+dietary_restriction:
+  col_name: dietary_restriction
+  col_class: character
+  uniqueness: non-unique
+  required: no
+  multiple_values: no
+  description: Dietary regime (partial match to SNOMED:182922004 or SNOMED:162536008)
+  validation:
+    allowed_values:
+    - omnivore
+    - low_gluten
+    - high_gluten
+    - gluten_free
+    - vegetarian
+    - vegan
+    - pescatarian
+    - high_fiber
+    - low_fiber
+    - paleo
+    - equal_protein_fat_carbs
+    - high_complex_carbs
+disease:
+  col_name: disease
+  col_class: character
+  uniqueness: non-unique
+  required: no
+  multiple_values: yes
+  description: 'Reported disease or condition term(s) for the participant; use Healthy
+    when no target condition is detected. Lookup seed ontology IDs: NCIT:C7057; EFO:0000408.
+    Type: looked_up. Looked up: Yes. Includes child terms: Yes. Existing-dataset-only
+    values now: Conditional (Yes only when lookup falls back to curated existing dataset
+    values)'
+  validation:
+    delimiter: ;
+  ontology:
+    roots:
+    - NCIT:C7057
+    - EFO:0000408
+    property: descendant
+dna_extraction_kit:
+  col_name: dna_extraction_kit
+  col_class: character
+  uniqueness: non-unique
+  required: no
+  multiple_values: no
+  description: Name of the DNA extraction kit or protocol used.
+  validation:
+    allowed_values:
+    - Qiagen
+    - Gnome
+    - MoBio
+    - MPBio
+    - NorgenBiotek
+    - Illuminakit
+    - Maxwell_LEV
+    - PSP_Spin_Stool
+    - Tiangen
+    - PowerSoil
+    - Chemagen
+    - other
+    - PowerSoilPro
+    - ZR_Fecal_DNA_MiniPrep
+    - KAMA_Hyper_Prep
+    - thermo_fisher
+    - QIAamp
+ecog_performance_status:
+  col_name: ecog_performance_status
+  col_class: character
+  uniqueness: non-unique
+  required: no
+  multiple_values: no
+  description: 'A performance status scale designed to assess disease progression
+    and its affect on the daily living abilities of the patient. (NCIT:C105721) Static
+    ontology IDs: NCIT:C105722; NCIT:C105723; NCIT:C105724; NCIT:C105725; NCIT:C105726;
+    NCIT:C105727; NCIT:C105728. Type: static.'
+  validation:
+    allowed_values:
+    - ECOG Performance Status 0
+    - ECOG Performance Status 1
+    - ECOG Performance Status 2
+    - ECOG Performance Status 2 or Higher
+    - ECOG Performance Status 3
+    - ECOG Performance Status 4
+    - ECOG Performance Status 5
+family:
+  col_name: family
+  col_class: character
+  uniqueness: non-unique
+  required: no
+  multiple_values: no
+  description: Family identifier when multiple related participants are included.
+  validation:
+    pattern: .+
+family_role:
+  col_name: family_role
+  col_class: character
+  uniqueness: non-unique
+  required: no
+  multiple_values: no
+  description: Participant role within the family (for family-based sampling).
+  validation:
+    allowed_values:
+    - child
+    - mother
+    - father
+feces_phenotype:
+  col_name: feces_phenotype
+  col_class: character
+  uniqueness: non-unique
+  required: no
+  multiple_values: yes
+  description: 'Stool-related phenotype or clinical measurement type. Static ontology
+    IDs: SNOMED:443172007; NCIT:C82005; NCIT:C191036. Type: static.'
+  validation:
+    allowed_values:
+    - Bristol stool form score (observable entity)
+    - Calprotectin Measurement
+    - Harvey-Bradshaw Index Clinical Classification
+    delimiter: <;>
+feces_phenotype_value:
+  col_name: feces_phenotype_value
+  col_class: character
+  uniqueness: non-unique
+  required: no
+  multiple_values: yes
+  description: Value(s) corresponding to `feces_phenotype` measurements.
+  validation:
+    pattern: ^\d+(\.\d+)?$
+    delimiter: <;>
+fmt_id:
+  col_name: fmt_id
+  col_class: character
+  uniqueness: non-unique
+  required: no
+  multiple_values: yes
+  description: Study-specific identifier assigned to FMT participants.
+  validation:
+    pattern: .+
+    delimiter: ;
+fmt_role:
+  col_name: fmt_role
+  col_class: character
+  uniqueness: non-unique
+  required: no
+  multiple_values: no
+  description: Role in fecal microbiota transplantation (donor or recipient before/after
+    procedure).
+  validation:
+    allowed_values:
+    - Recipient (after procedure)
+    - Recipient (before procedure)
+    - Donor
+hla:
+  col_name: hla
+  col_class: character
+  uniqueness: non-unique
+  required: no
+  multiple_values: yes
+  description: 'Human leukocyte antigen (HLA) typing information. Lookup seed ontology
+    IDs: MRO:0001676. Type: looked_up. Looked up: Yes. Includes child terms: Yes.
+    Existing-dataset-only values now: Conditional (Yes only when lookup falls back
+    to curated existing dataset values)'
+  validation:
+    delimiter: ;
+  ontology:
+    roots: MRO:0001676
+    property: descendant
+lifestyle:
+  col_name: lifestyle
+  col_class: character
+  uniqueness: non-unique
+  required: no
+  multiple_values: no
+  description: Lifestyle category (primarily used for traditional or non-westernized
+    populations).
+  validation:
+    allowed_values:
+    - Hunter-gatherer
+    - Agriculturalist
+    - Agropastoralist
+    - Pastoralist
+    - Fisher
+location:
+  col_name: location
+  col_class: character
+  uniqueness: non-unique
+  required: no
+  multiple_values: no
+  description: Free-text additional location detail (for example city or region).
+  validation:
+    pattern: .+
+ncbi_accession:
+  col_name: ncbi_accession
+  col_class: character
+  uniqueness: non-unique
+  required: no
+  multiple_values: no
+  description: NCBI SRA/ENA accession(s) associated with the sample or run.
+  validation:
+    pattern: '[ES]R[SR][0-9]+'
+neonatal_birth_weight:
+  col_name: neonatal_birth_weight
+  col_class: numeric
+  uniqueness: non-unique
+  required: no
+  multiple_values: no
+  description: Birth weight (EFO:0004344) recorded in grams.
+  validation:
+    pattern: ^[1-9]\d*(\.\d+)?$
+neonatal_delivery_procedure:
+  col_name: neonatal_delivery_procedure
+  col_class: character
+  uniqueness: non-unique
+  required: no
+  multiple_values: no
+  description: 'Delivery method at birth (NCIT:C81179). Static ontology IDs: NCIT:C114141;
+    NCIT:C92772; NCIT:C46088; NCIT:C81303. Type: static.'
+  validation:
+    allowed_values:
+    - Elective Cesarean Delivery
+    - Emergency Cesarean Delivery
+    - Cesarean Section
+    - Vaginal Delivery
+neonatal_feeding_method:
+  col_name: neonatal_feeding_method
+  col_class: character
+  uniqueness: non-unique
+  required: no
+  multiple_values: yes
+  description: Infant feeding method(s) during early life.
+  validation:
+    allowed_values:
+    - Mixed Feeding
+    - Exclusively Breastfeeding
+    - Exclusively Formula Feeding
+    - No Breastfeeding
+    delimiter: ;
+neonatal_gestational_age:
+  col_name: neonatal_gestational_age
+  col_class: numeric
+  uniqueness: non-unique
+  required: no
+  multiple_values: no
+  description: Gestational age at birth (EFO:0005112) in weeks.
+  validation:
+    pattern: ^[1-9]\d*(\.\d+)?$
+neonatal_preterm_birth:
+  col_name: neonatal_preterm_birth
+  col_class: character
+  uniqueness: non-unique
+  required: no
+  multiple_values: no
+  description: 'Birth when a fetus is less than 37 weeks and 0 days gestational age
+    (NCIT:C92861). Static ontology IDs: NCIT:C92861; NCIT:C114093. Type: static.'
+  validation:
+    allowed_values:
+    - Preterm Birth
+    - Term Birth
+obgyn_birth_control:
+  col_name: obgyn_birth_control
+  col_class: character
+  uniqueness: non-unique
+  required: no
+  multiple_values: no
+  description: Whether oral contraceptive birth control is currently used.
+  validation:
+    allowed_values:
+    - 'Yes'
+    - 'No'
+obgyn_lactating:
+  col_name: obgyn_lactating
+  col_class: character
+  uniqueness: non-unique
+  required: no
+  multiple_values: no
+  description: An indication that the subject is currently producing milk. (NCIT:C82463)
+  validation:
+    allowed_values:
+    - 'Yes'
+    - 'No'
+obgyn_menopause:
+  col_name: obgyn_menopause
+  col_class: character
+  uniqueness: non-unique
+  required: no
+  multiple_values: no
+  description: 'Menopausal status of the participant. Lookup seed ontology IDs: NCIT:C106541.
+    Type: looked_up. Looked up: Yes. Includes child terms: Yes. Existing-dataset-only
+    values now: Conditional (Yes only when lookup falls back to curated existing dataset
+    values)'
+  ontology:
+    roots: NCIT:C106541
+    property: descendant
+obgyn_pregnancy:
+  col_name: obgyn_pregnancy
+  col_class: character
+  uniqueness: non-unique
+  required: no
+  multiple_values: no
+  description: 'Current pregnancy status of the participant. Static ontology IDs:
+    NCIT:C124295; NCIT:C82475. Type: static.'
+  validation:
+    allowed_values:
+    - Pregnant
+    - Not Pregnant
+pmid:
+  col_name: pmid
+  col_class: integer
+  uniqueness: non-unique
+  required: no
+  multiple_values: no
+  description: PubMed identifier of the primary publication for the study.
+  validation:
+    pattern: '[0-9]{8}'
+probing_pocket_depth:
+  col_name: probing_pocket_depth
+  col_class: character
+  uniqueness: non-unique
+  required: no
+  multiple_values: yes
+  description: 'Tooth surface/region where periodontal pocket depth was measured.
+    Static ontology IDs: FMA:64849; FMA:55649; FMA:55647; FMA:55650. Type: static.'
+  validation:
+    allowed_values:
+    - Buccal surface
+    - Distal surface of tooth
+    - Lingual surface of tooth
+    - Mesial surface of tooth
+    delimiter: <;>
+probing_pocket_depth_value:
+  col_name: probing_pocket_depth_value
+  col_class: character
+  uniqueness: non-unique
+  required: no
+  multiple_values: yes
+  description: Numeric probing depth measurement corresponding to `probing_pocket_depth`.
+  validation:
+    pattern: ^\d+(\.\d+)?$
+    delimiter: <;>
+sample_id:
+  col_name: sample_id
+  col_class: character
+  uniqueness: unique
+  required: yes
+  multiple_values: no
+  description: Unique identifier for a biospecimen/sample.
+  validation:
+    pattern: '[0-9a-zA-Z]\S+'
+sequencing_platform:
+  col_name: sequencing_platform
+  col_class: character
+  uniqueness: non-unique
+  required: yes
+  multiple_values: no
+  description: Sequencing platform/instrument used to generate the data.
+  validation:
+    allowed_values:
+    - IlluminaHiSeq
+    - IlluminaMiSeq
+    - IlluminaNextSeq
+    - IlluminaNovaSeq
+    - IonProton
+    - BGISeq
+sex:
+  col_name: sex
+  col_class: character
+  uniqueness: non-unique
+  required: no
+  multiple_values: no
+  description: 'Biological sex of the subject Static ontology IDs: NCIT:C16576; NCIT:C20197.
+    Type: static.'
+  validation:
+    allowed_values:
+    - Female
+    - Male
+smoker:
+  col_name: smoker
+  col_class: character
+  uniqueness: non-unique
+  required: no
+  multiple_values: yes
+  description: 'Tobacco smoking status/history; use `Non-smoker (finding)` only when
+    past smoking history is unavailable. Static ontology IDs: SNOMED:77176002; SNOMED:8392000;
+    SNOMED:8517006; SNOMED:266919005. Type: static.'
+  validation:
+    allowed_values:
+    - Smoker (finding)
+    - Non-smoker (finding)
+    - Ex-smoker (finding)
+    - Never smoked tobacco (finding)
+    delimiter: ;
+study_name:
+  col_name: study_name
+  col_class: character
+  uniqueness: non-unique
+  required: yes
+  multiple_values: no
+  description: Canonical study identifier (for example EinsteinA_YYYY).
+  validation:
+    pattern: '[a-zA-Z-]+_[0-9]{4}|[a-zA-Z-]+_[0-9]{4}[a-zA-Z-]+|[a-zA-Z-]+_[0-9]{4}_[a-zA-Z-]+|[a-zA-Z-]+_[0-9]{4}_[a-zA-Z0-9]+'
+subcohort:
+  col_name: subcohort
+  col_class: character
+  uniqueness: non-unique
+  required: no
+  multiple_values: no
+  description: Identifier for a subset of the study cohort.
+  validation:
+    pattern: '[0-9a-zA-Z]\S+'
+subject_id:
+  col_name: subject_id
+  col_class: character
+  uniqueness: non-unique
+  required: yes
+  multiple_values: no
+  description: Unique identifier for a participant within a study. Values may be non-unique
+    e.g. when there are repeated measures for a participant.
+  validation:
+    pattern: '[0-9a-zA-Z]\S+'
+target_condition:
+  col_name: target_condition
+  col_class: character
+  uniqueness: non-unique
+  required: yes
+  multiple_values: yes
+  description: 'Primary phenotype(s) or condition(s) investigated in the study. Lookup
+    seed ontology IDs: NCIT:C7057; EFO:0000408. Type: looked_up. Looked up: Yes. Includes
+    child terms: Yes. Existing-dataset-only values now: Conditional (Yes only when
+    lookup falls back to curated existing dataset values)'
+  validation:
+    delimiter: ;
+  ontology:
+    roots:
+    - NCIT:C7057
+    - EFO:0000408
+    property: descendant
+treatment:
+  col_name: treatment
+  col_class: character
+  uniqueness: non-unique
+  required: no
+  multiple_values: yes
+  description: 'Treatment(s) or medication(s) administered to the participant. Static
+    ontology IDs: NCIT:C41132. Lookup seed ontology IDs: NCIT:C1908. Type: static
+    + looked_up. Looked up: Yes. Includes child terms: Yes. Existing-dataset-only
+    values now: Conditional (Yes only when lookup falls back to curated existing dataset
+    values)'
+  validation:
+    delimiter: ;
+  ontology:
+    roots: NCIT:C1908
+    property: descendant
+tumor_staging_ajcc:
+  col_name: tumor_staging_ajcc
+  col_class: character
+  uniqueness: non-unique
+  required: no
+  multiple_values: no
+  description: American Joint Committee on Cancer (tumor staging) (SNOMED:258236004).
+    A system to describe the amount and spread of cancer in a patient's body
+  validation:
+    allowed_values:
+    - '0'
+    - I
+    - II
+    - III
+    - IV
+    - I/II
+    - III/IV
+tumor_staging_tnm:
+  col_name: tumor_staging_tnm
+  col_class: character
+  uniqueness: non-unique
+  required: no
+  multiple_values: no
+  description: Tumor-node-metastasis (TNM) tumor staging system (tumor staging) (SNOMED:254293002).A
+    system to describe the amount and spread of cancer in a patient's body
+  validation:
+    pattern: T[X1-4]N[X0-3]M[X0-1]|pTis|Tis
+westernized:
+  col_name: westernized
+  col_class: character
+  uniqueness: non-unique
+  required: no
+  multiple_values: no
+  description: Whether the participant is classified as westernized.
+  validation:
+    allowed_values:
+    - 'Yes'
+    - 'No'
+zigosity:
+  col_name: zigosity
+  col_class: character
+  uniqueness: non-unique
+  required: no
+  multiple_values: no
+  description: Twin zygosity status.
+  validation:
+    allowed_values:
+    - monozygotic
+    - dizygotic

@@ -1,0 +1,601 @@
+sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	decision
+0		MV_FEI1_t1Q14	subject_id	not_reported	MV_FEI1	FN
+0		MV_FEI1_t1Q14	age_group	Adult	Infant	TP_wrong
+0		MV_FEI1_t1Q14	age_max		0.246575342465753	FN
+0		MV_FEI1_t1Q14	age_min		0.246575342465753	FN
+0		MV_FEI1_t1Q14	age_years		NA	TN
+0		MV_FEI1_t1Q14	age	not_reported	NA	TN
+0		MV_FEI1_t1Q14	age_unit	Month	NA	FP
+0		MV_FEI1_t1Q14	body_site	feces; milk	feces	TP_wrong
+0		MV_FEI1_t1Q14	control	not_reported	Study Control	FN
+0		MV_FEI1_t1Q14	country	not_reported	Italy	FN
+0		MV_FEI1_t1Q14	curator		Paolo_Manghi	FN
+0		MV_FEI1_t1Q14	disease	Healthy	Healthy	TP_correct
+0		MV_FEI1_t1Q14	dna_extraction_kit	QIAamp	Qiagen	TP_wrong
+0		MV_FEI1_t1Q14	ncbi_accession	PRJNA339914	SRR4052021	TP_wrong
+0		MV_FEI1_t1Q14	obgyn_lactating	Yes	No	TP_wrong
+0		MV_FEI1_t1Q14	obgyn_pregnancy	not_reported	Not Pregnant	FN
+0		MV_FEI1_t1Q14	pmid	28144631	28144631	TP_correct
+0		MV_FEI1_t1Q14	sequencing_platform	IlluminaHiSeq	IlluminaHiSeq	TP_correct
+0		MV_FEI1_t1Q14	sex	F	Female	TP_wrong
+0		MV_FEI1_t1Q14	westernized	not_reported	Yes	FN
+0		MV_FEI1_t1Q14	target_condition	vertical microbiome transmission; infant gut microbiome development	Intestinal Flora	TP_wrong
+0		MV_FEI1_t1Q14	study_name	AsnicarF_2017	AsnicarF_2017	TP_correct
+0		MV_FEI1_t1Q14	biomarker_name	not_reported	NA	TN
+0		MV_FEI1_t1Q14	biomarker_unit	not_reported	NA	TN
+0		MV_FEI1_t1Q14	biomarker_value	not_reported	NA	TN
+1		MV_FEI2_t1Q14	subject_id	not_reported	MV_FEI2	FN
+1		MV_FEI2_t1Q14	age_group	Infant	Infant	TP_correct
+1		MV_FEI2_t1Q14	age_max		0.246575342465753	FN
+1		MV_FEI2_t1Q14	age_min		0.246575342465753	FN
+1		MV_FEI2_t1Q14	age_years		NA	TN
+1		MV_FEI2_t1Q14	age	not_reported	NA	TN
+1		MV_FEI2_t1Q14	age_unit	Month	NA	FP
+1		MV_FEI2_t1Q14	body_site	feces	feces	TP_correct
+1		MV_FEI2_t1Q14	control	not_reported	Study Control	FN
+1		MV_FEI2_t1Q14	country	not_reported	Italy	FN
+1		MV_FEI2_t1Q14	curator		Paolo_Manghi	FN
+1		MV_FEI2_t1Q14	disease	Healthy	Healthy	TP_correct
+1		MV_FEI2_t1Q14	dna_extraction_kit	QIAamp	Qiagen	TP_wrong
+1		MV_FEI2_t1Q14	ncbi_accession	PRJNA339914	SRR4052022	TP_wrong
+1		MV_FEI2_t1Q14	obgyn_lactating	Yes	No	TP_wrong
+1		MV_FEI2_t1Q14	obgyn_pregnancy	not_reported	Not Pregnant	FN
+1		MV_FEI2_t1Q14	pmid	28144631	28144631	TP_correct
+1		MV_FEI2_t1Q14	sequencing_platform	IlluminaHiSeq	IlluminaHiSeq	TP_correct
+1		MV_FEI2_t1Q14	sex	F	Male	TP_wrong
+1		MV_FEI2_t1Q14	westernized	not_reported	Yes	FN
+1		MV_FEI2_t1Q14	target_condition	vertical microbiome transmission; infant gut microbiome development	Intestinal Flora	TP_wrong
+1		MV_FEI2_t1Q14	study_name	AsnicarF_2017	AsnicarF_2017	TP_correct
+1		MV_FEI2_t1Q14	biomarker_name	not_reported	NA	TN
+1		MV_FEI2_t1Q14	biomarker_unit	not_reported	NA	TN
+1		MV_FEI2_t1Q14	biomarker_value	not_reported	NA	TN
+2		MV_FEI3_t1Q14	subject_id	not_reported	MV_FEI3	FN
+2		MV_FEI3_t1Q14	age_group	not_reported	Infant	FN
+2		MV_FEI3_t1Q14	age_max		0.246575342465753	FN
+2		MV_FEI3_t1Q14	age_min		0.246575342465753	FN
+2		MV_FEI3_t1Q14	age_years		NA	TN
+2		MV_FEI3_t1Q14	age	not_reported	NA	TN
+2		MV_FEI3_t1Q14	age_unit	Month	NA	FP
+2		MV_FEI3_t1Q14	body_site	not_reported	feces	FN
+2		MV_FEI3_t1Q14	control	not_reported	Study Control	FN
+2		MV_FEI3_t1Q14	country	not_reported	Italy	FN
+2		MV_FEI3_t1Q14	curator		Paolo_Manghi	FN
+2		MV_FEI3_t1Q14	disease	Healthy	Healthy	TP_correct
+2		MV_FEI3_t1Q14	dna_extraction_kit	QIAamp	Qiagen	TP_wrong
+2		MV_FEI3_t1Q14	ncbi_accession	PRJNA339914	SRR4052033	TP_wrong
+2		MV_FEI3_t1Q14	obgyn_lactating	Yes	No	TP_wrong
+2		MV_FEI3_t1Q14	obgyn_pregnancy	not_reported	Not Pregnant	FN
+2		MV_FEI3_t1Q14	pmid	28144631	28144631	TP_correct
+2		MV_FEI3_t1Q14	sequencing_platform	IlluminaHiSeq	IlluminaHiSeq	TP_correct
+2		MV_FEI3_t1Q14	sex	F	Male	TP_wrong
+2		MV_FEI3_t1Q14	westernized	not_reported	Yes	FN
+2		MV_FEI3_t1Q14	target_condition	vertical microbiome transmission; infant gut microbiome development	Intestinal Flora	TP_wrong
+2		MV_FEI3_t1Q14	study_name	AsnicarF_2017	AsnicarF_2017	TP_correct
+2		MV_FEI3_t1Q14	biomarker_name	not_reported	NA	TN
+2		MV_FEI3_t1Q14	biomarker_unit	not_reported	NA	TN
+2		MV_FEI3_t1Q14	biomarker_value	not_reported	NA	TN
+3		MV_FEI4_t1Q14	subject_id	not_reported	MV_FEI4	FN
+3		MV_FEI4_t1Q14	age_group	Adult	Infant	TP_wrong
+3		MV_FEI4_t1Q14	age_max		1	FN
+3		MV_FEI4_t1Q14	age_min		1	FN
+3		MV_FEI4_t1Q14	age_years		NA	TN
+3		MV_FEI4_t1Q14	age	not_reported	NA	TN
+3		MV_FEI4_t1Q14	age_unit	Month	NA	FP
+3		MV_FEI4_t1Q14	body_site	feces; milk	feces	TP_wrong
+3		MV_FEI4_t1Q14	control	not_reported	Study Control	FN
+3		MV_FEI4_t1Q14	country	not_reported	Italy	FN
+3		MV_FEI4_t1Q14	curator		Paolo_Manghi	FN
+3		MV_FEI4_t1Q14	disease	Healthy	Healthy	TP_correct
+3		MV_FEI4_t1Q14	dna_extraction_kit	QIAamp	Qiagen	TP_wrong
+3		MV_FEI4_t1Q14	ncbi_accession	PRJNA339914	SRR4052038	TP_wrong
+3		MV_FEI4_t1Q14	obgyn_lactating	Yes	No	TP_wrong
+3		MV_FEI4_t1Q14	obgyn_pregnancy	not_reported	Not Pregnant	FN
+3		MV_FEI4_t1Q14	pmid	28144631	28144631	TP_correct
+3		MV_FEI4_t1Q14	sequencing_platform	IlluminaHiSeq	IlluminaHiSeq	TP_correct
+3		MV_FEI4_t1Q14	sex	M	Male	TP_wrong
+3		MV_FEI4_t1Q14	westernized	not_reported	Yes	FN
+3		MV_FEI4_t1Q14	target_condition	vertical microbiome transmission; infant gut microbiome development	Intestinal Flora	TP_wrong
+3		MV_FEI4_t1Q14	study_name	AsnicarF_2017	AsnicarF_2017	TP_correct
+3		MV_FEI4_t1Q14	biomarker_name	not_reported	NA	TN
+3		MV_FEI4_t1Q14	biomarker_unit	not_reported	NA	TN
+3		MV_FEI4_t1Q14	biomarker_value	not_reported	NA	TN
+4		MV_FEI4_t2Q15	subject_id	not_reported	MV_FEI4	FN
+4		MV_FEI4_t2Q15	age_group	Infant	Infant	TP_correct
+4		MV_FEI4_t2Q15	age_max		1	FN
+4		MV_FEI4_t2Q15	age_min		1	FN
+4		MV_FEI4_t2Q15	age_years		NA	TN
+4		MV_FEI4_t2Q15	age	not_reported	NA	TN
+4		MV_FEI4_t2Q15	age_unit	Month	NA	FP
+4		MV_FEI4_t2Q15	body_site	feces	feces	TP_correct
+4		MV_FEI4_t2Q15	control	not_reported	Study Control	FN
+4		MV_FEI4_t2Q15	country	not_reported	Italy	FN
+4		MV_FEI4_t2Q15	curator		Paolo_Manghi	FN
+4		MV_FEI4_t2Q15	disease	Healthy	Healthy	TP_correct
+4		MV_FEI4_t2Q15	dna_extraction_kit	QIAamp	Qiagen	TP_wrong
+4		MV_FEI4_t2Q15	ncbi_accession	PRJNA339914	SRR4052039	TP_wrong
+4		MV_FEI4_t2Q15	obgyn_lactating	Yes	No	TP_wrong
+4		MV_FEI4_t2Q15	obgyn_pregnancy	not_reported	Not Pregnant	FN
+4		MV_FEI4_t2Q15	pmid	28144631	28144631	TP_correct
+4		MV_FEI4_t2Q15	sequencing_platform	IlluminaHiSeq	IlluminaHiSeq	TP_correct
+4		MV_FEI4_t2Q15	sex	M	Male	TP_wrong
+4		MV_FEI4_t2Q15	westernized	not_reported	Yes	FN
+4		MV_FEI4_t2Q15	target_condition	vertical microbiome transmission; infant gut microbiome development	Intestinal Flora	TP_wrong
+4		MV_FEI4_t2Q15	study_name	AsnicarF_2017	AsnicarF_2017	TP_correct
+4		MV_FEI4_t2Q15	biomarker_name	not_reported	NA	TN
+4		MV_FEI4_t2Q15	biomarker_unit	not_reported	NA	TN
+4		MV_FEI4_t2Q15	biomarker_value	not_reported	NA	TN
+5		MV_FEI5_t1Q14	subject_id	not_reported	MV_FEI5	FN
+5		MV_FEI5_t1Q14	age_group	not_reported	Infant	FN
+5		MV_FEI5_t1Q14	age_max		1	FN
+5		MV_FEI5_t1Q14	age_min		1	FN
+5		MV_FEI5_t1Q14	age_years		NA	TN
+5		MV_FEI5_t1Q14	age	not_reported	NA	TN
+5		MV_FEI5_t1Q14	age_unit	Month	NA	FP
+5		MV_FEI5_t1Q14	body_site	not_reported	feces	FN
+5		MV_FEI5_t1Q14	control	not_reported	Study Control	FN
+5		MV_FEI5_t1Q14	country	not_reported	Italy	FN
+5		MV_FEI5_t1Q14	curator		Paolo_Manghi	FN
+5		MV_FEI5_t1Q14	disease	Healthy	Healthy	TP_correct
+5		MV_FEI5_t1Q14	dna_extraction_kit	QIAamp	Qiagen	TP_wrong
+5		MV_FEI5_t1Q14	ncbi_accession	PRJNA339914	SRR4052040	TP_wrong
+5		MV_FEI5_t1Q14	obgyn_lactating	Yes	No	TP_wrong
+5		MV_FEI5_t1Q14	obgyn_pregnancy	not_reported	Not Pregnant	FN
+5		MV_FEI5_t1Q14	pmid	28144631	28144631	TP_correct
+5		MV_FEI5_t1Q14	sequencing_platform	IlluminaHiSeq	IlluminaHiSeq	TP_correct
+5		MV_FEI5_t1Q14	sex	M	Male	TP_wrong
+5		MV_FEI5_t1Q14	westernized	not_reported	Yes	FN
+5		MV_FEI5_t1Q14	target_condition	vertical microbiome transmission; infant gut microbiome development	Intestinal Flora	TP_wrong
+5		MV_FEI5_t1Q14	study_name	AsnicarF_2017	AsnicarF_2017	TP_correct
+5		MV_FEI5_t1Q14	biomarker_name	not_reported	NA	TN
+5		MV_FEI5_t1Q14	biomarker_unit	not_reported	NA	TN
+5		MV_FEI5_t1Q14	biomarker_value	not_reported	NA	TN
+6		MV_FEI5_t2Q14	subject_id	not_reported	MV_FEI5	FN
+6		MV_FEI5_t2Q14	age_group	Adult	Infant	TP_wrong
+6		MV_FEI5_t2Q14	age_max		1	FN
+6		MV_FEI5_t2Q14	age_min		1	FN
+6		MV_FEI5_t2Q14	age_years		NA	TN
+6		MV_FEI5_t2Q14	age	not_reported	NA	TN
+6		MV_FEI5_t2Q14	age_unit	Month	NA	FP
+6		MV_FEI5_t2Q14	body_site	feces; milk	feces	TP_wrong
+6		MV_FEI5_t2Q14	control	not_reported	Study Control	FN
+6		MV_FEI5_t2Q14	country	not_reported	Italy	FN
+6		MV_FEI5_t2Q14	curator		Paolo_Manghi	FN
+6		MV_FEI5_t2Q14	disease	Healthy	Healthy	TP_correct
+6		MV_FEI5_t2Q14	dna_extraction_kit	QIAamp	Qiagen	TP_wrong
+6		MV_FEI5_t2Q14	ncbi_accession	PRJNA339914	SRR4052041	TP_wrong
+6		MV_FEI5_t2Q14	obgyn_lactating	Yes	No	TP_wrong
+6		MV_FEI5_t2Q14	obgyn_pregnancy	not_reported	Not Pregnant	FN
+6		MV_FEI5_t2Q14	pmid	28144631	28144631	TP_correct
+6		MV_FEI5_t2Q14	sequencing_platform	IlluminaHiSeq	IlluminaHiSeq	TP_correct
+6		MV_FEI5_t2Q14	sex	M	Male	TP_wrong
+6		MV_FEI5_t2Q14	westernized	not_reported	Yes	FN
+6		MV_FEI5_t2Q14	target_condition	vertical microbiome transmission; infant gut microbiome development	Intestinal Flora	TP_wrong
+6		MV_FEI5_t2Q14	study_name	AsnicarF_2017	AsnicarF_2017	TP_correct
+6		MV_FEI5_t2Q14	biomarker_name	not_reported	NA	TN
+6		MV_FEI5_t2Q14	biomarker_unit	not_reported	NA	TN
+6		MV_FEI5_t2Q14	biomarker_value	not_reported	NA	TN
+7		MV_FEI5_t3Q15	subject_id	not_reported	MV_FEI5	FN
+7		MV_FEI5_t3Q15	age_group	Infant	Infant	TP_correct
+7		MV_FEI5_t3Q15	age_max		1	FN
+7		MV_FEI5_t3Q15	age_min		1	FN
+7		MV_FEI5_t3Q15	age_years		NA	TN
+7		MV_FEI5_t3Q15	age	not_reported	NA	TN
+7		MV_FEI5_t3Q15	age_unit	Month	NA	FP
+7		MV_FEI5_t3Q15	body_site	feces	feces	TP_correct
+7		MV_FEI5_t3Q15	control	not_reported	Study Control	FN
+7		MV_FEI5_t3Q15	country	not_reported	Italy	FN
+7		MV_FEI5_t3Q15	curator		Paolo_Manghi	FN
+7		MV_FEI5_t3Q15	disease	Healthy	Healthy	TP_correct
+7		MV_FEI5_t3Q15	dna_extraction_kit	QIAamp	Qiagen	TP_wrong
+7		MV_FEI5_t3Q15	ncbi_accession	PRJNA339914	SRR4052042	TP_wrong
+7		MV_FEI5_t3Q15	obgyn_lactating	Yes	No	TP_wrong
+7		MV_FEI5_t3Q15	obgyn_pregnancy	not_reported	Not Pregnant	FN
+7		MV_FEI5_t3Q15	pmid	28144631	28144631	TP_correct
+7		MV_FEI5_t3Q15	sequencing_platform	IlluminaHiSeq	IlluminaHiSeq	TP_correct
+7		MV_FEI5_t3Q15	sex	M	Male	TP_wrong
+7		MV_FEI5_t3Q15	westernized	not_reported	Yes	FN
+7		MV_FEI5_t3Q15	target_condition	vertical microbiome transmission; infant gut microbiome development	Intestinal Flora	TP_wrong
+7		MV_FEI5_t3Q15	study_name	AsnicarF_2017	AsnicarF_2017	TP_correct
+7		MV_FEI5_t3Q15	biomarker_name	not_reported	NA	TN
+7		MV_FEI5_t3Q15	biomarker_unit	not_reported	NA	TN
+7		MV_FEI5_t3Q15	biomarker_value	not_reported	NA	TN
+8		MV_FEM1_t1Q14	subject_id	not_reported	MV_FEM1	FN
+8		MV_FEM1_t1Q14	age_group	not_reported	Adult	FN
+8		MV_FEM1_t1Q14	age_max		65	FN
+8		MV_FEM1_t1Q14	age_min		18	FN
+8		MV_FEM1_t1Q14	age_years		NA	TN
+8		MV_FEM1_t1Q14	age	not_reported	NA	TN
+8		MV_FEM1_t1Q14	age_unit	Month	NA	FP
+8		MV_FEM1_t1Q14	body_site	not_reported	feces	FN
+8		MV_FEM1_t1Q14	control	not_reported	Study Control	FN
+8		MV_FEM1_t1Q14	country	not_reported	Italy	FN
+8		MV_FEM1_t1Q14	curator		Paolo_Manghi	FN
+8		MV_FEM1_t1Q14	disease	Healthy	Healthy	TP_correct
+8		MV_FEM1_t1Q14	dna_extraction_kit	QIAamp	Qiagen	TP_wrong
+8		MV_FEM1_t1Q14	ncbi_accession	PRJNA339914	SRR4052043	TP_wrong
+8		MV_FEM1_t1Q14	obgyn_lactating	Yes	Yes	TP_correct
+8		MV_FEM1_t1Q14	obgyn_pregnancy	not_reported	Not Pregnant	FN
+8		MV_FEM1_t1Q14	pmid	28144631	28144631	TP_correct
+8		MV_FEM1_t1Q14	sequencing_platform	IlluminaHiSeq	IlluminaHiSeq	TP_correct
+8		MV_FEM1_t1Q14	sex	M	Female	TP_wrong
+8		MV_FEM1_t1Q14	westernized	not_reported	Yes	FN
+8		MV_FEM1_t1Q14	target_condition	vertical microbiome transmission; infant gut microbiome development	Intestinal Flora	TP_wrong
+8		MV_FEM1_t1Q14	study_name	AsnicarF_2017	AsnicarF_2017	TP_correct
+8		MV_FEM1_t1Q14	biomarker_name	not_reported	NA	TN
+8		MV_FEM1_t1Q14	biomarker_unit	not_reported	NA	TN
+8		MV_FEM1_t1Q14	biomarker_value	not_reported	NA	TN
+9		MV_FEM2_t1Q14	subject_id	not_reported	MV_FEM2	FN
+9		MV_FEM2_t1Q14	age_group	Adult	Adult	TP_correct
+9		MV_FEM2_t1Q14	age_max		65	FN
+9		MV_FEM2_t1Q14	age_min		18	FN
+9		MV_FEM2_t1Q14	age_years		NA	TN
+9		MV_FEM2_t1Q14	age	not_reported	NA	TN
+9		MV_FEM2_t1Q14	age_unit	Month	NA	FP
+9		MV_FEM2_t1Q14	body_site	feces; milk	feces	TP_wrong
+9		MV_FEM2_t1Q14	control	not_reported	Study Control	FN
+9		MV_FEM2_t1Q14	country	not_reported	Italy	FN
+9		MV_FEM2_t1Q14	curator		Paolo_Manghi	FN
+9		MV_FEM2_t1Q14	disease	Healthy	Healthy	TP_correct
+9		MV_FEM2_t1Q14	dna_extraction_kit	QIAamp	Qiagen	TP_wrong
+9		MV_FEM2_t1Q14	ncbi_accession	PRJNA339914	SRR4052044	TP_wrong
+9		MV_FEM2_t1Q14	obgyn_lactating	Yes	Yes	TP_correct
+9		MV_FEM2_t1Q14	obgyn_pregnancy	not_reported	Not Pregnant	FN
+9		MV_FEM2_t1Q14	pmid	28144631	28144631	TP_correct
+9		MV_FEM2_t1Q14	sequencing_platform	IlluminaHiSeq	IlluminaHiSeq	TP_correct
+9		MV_FEM2_t1Q14	sex	M	Female	TP_wrong
+9		MV_FEM2_t1Q14	westernized	not_reported	Yes	FN
+9		MV_FEM2_t1Q14	target_condition	vertical microbiome transmission; infant gut microbiome development	Intestinal Flora	TP_wrong
+9		MV_FEM2_t1Q14	study_name	AsnicarF_2017	AsnicarF_2017	TP_correct
+9		MV_FEM2_t1Q14	biomarker_name	not_reported	NA	TN
+9		MV_FEM2_t1Q14	biomarker_unit	not_reported	NA	TN
+9		MV_FEM2_t1Q14	biomarker_value	not_reported	NA	TN
+10		MV_FEM3_t1Q14	subject_id	not_reported	MV_FEM3	FN
+10		MV_FEM3_t1Q14	age_group	Infant	Adult	TP_wrong
+10		MV_FEM3_t1Q14	age_max		65	FN
+10		MV_FEM3_t1Q14	age_min		18	FN
+10		MV_FEM3_t1Q14	age_years		NA	TN
+10		MV_FEM3_t1Q14	age	not_reported	NA	TN
+10		MV_FEM3_t1Q14	age_unit	Month	NA	FP
+10		MV_FEM3_t1Q14	body_site	feces	feces	TP_correct
+10		MV_FEM3_t1Q14	control	not_reported	Study Control	FN
+10		MV_FEM3_t1Q14	country	not_reported	Italy	FN
+10		MV_FEM3_t1Q14	curator		Paolo_Manghi	FN
+10		MV_FEM3_t1Q14	disease	Healthy	Healthy	TP_correct
+10		MV_FEM3_t1Q14	dna_extraction_kit	QIAamp	Qiagen	TP_wrong
+10		MV_FEM3_t1Q14	ncbi_accession	PRJNA339914	SRR4052023	TP_wrong
+10		MV_FEM3_t1Q14	obgyn_lactating	Yes	Yes	TP_correct
+10		MV_FEM3_t1Q14	obgyn_pregnancy	not_reported	Not Pregnant	FN
+10		MV_FEM3_t1Q14	pmid	28144631	28144631	TP_correct
+10		MV_FEM3_t1Q14	sequencing_platform	IlluminaHiSeq	IlluminaHiSeq	TP_correct
+10		MV_FEM3_t1Q14	sex	M	Female	TP_wrong
+10		MV_FEM3_t1Q14	westernized	not_reported	Yes	FN
+10		MV_FEM3_t1Q14	target_condition	vertical microbiome transmission; infant gut microbiome development	Intestinal Flora	TP_wrong
+10		MV_FEM3_t1Q14	study_name	AsnicarF_2017	AsnicarF_2017	TP_correct
+10		MV_FEM3_t1Q14	biomarker_name	not_reported	NA	TN
+10		MV_FEM3_t1Q14	biomarker_unit	not_reported	NA	TN
+10		MV_FEM3_t1Q14	biomarker_value	not_reported	NA	TN
+11		MV_FEM4_t1Q14	subject_id	not_reported	MV_FEM4	FN
+11		MV_FEM4_t1Q14	age_group	not_reported	Adult	FN
+11		MV_FEM4_t1Q14	age_max		65	FN
+11		MV_FEM4_t1Q14	age_min		18	FN
+11		MV_FEM4_t1Q14	age_years		NA	TN
+11		MV_FEM4_t1Q14	age	not_reported	NA	TN
+11		MV_FEM4_t1Q14	age_unit	Month	NA	FP
+11		MV_FEM4_t1Q14	body_site	not_reported	feces	FN
+11		MV_FEM4_t1Q14	control	not_reported	Study Control	FN
+11		MV_FEM4_t1Q14	country	not_reported	Italy	FN
+11		MV_FEM4_t1Q14	curator		Paolo_Manghi	FN
+11		MV_FEM4_t1Q14	disease	Healthy	Healthy	TP_correct
+11		MV_FEM4_t1Q14	dna_extraction_kit	QIAamp	Qiagen	TP_wrong
+11		MV_FEM4_t1Q14	ncbi_accession	PRJNA339914	SRR4052024	TP_wrong
+11		MV_FEM4_t1Q14	obgyn_lactating	Yes	Yes	TP_correct
+11		MV_FEM4_t1Q14	obgyn_pregnancy	not_reported	Not Pregnant	FN
+11		MV_FEM4_t1Q14	pmid	28144631	28144631	TP_correct
+11		MV_FEM4_t1Q14	sequencing_platform	IlluminaHiSeq	IlluminaHiSeq	TP_correct
+11		MV_FEM4_t1Q14	sex	M	Female	TP_wrong
+11		MV_FEM4_t1Q14	westernized	not_reported	Yes	FN
+11		MV_FEM4_t1Q14	target_condition	vertical microbiome transmission; infant gut microbiome development	Intestinal Flora	TP_wrong
+11		MV_FEM4_t1Q14	study_name	AsnicarF_2017	AsnicarF_2017	TP_correct
+11		MV_FEM4_t1Q14	biomarker_name	not_reported	NA	TN
+11		MV_FEM4_t1Q14	biomarker_unit	not_reported	NA	TN
+11		MV_FEM4_t1Q14	biomarker_value	not_reported	NA	TN
+12		MV_FEM4_t2Q15	subject_id	not_reported	MV_FEM4	FN
+12		MV_FEM4_t2Q15	age_group	Adult	Adult	TP_correct
+12		MV_FEM4_t2Q15	age_max		65	FN
+12		MV_FEM4_t2Q15	age_min		18	FN
+12		MV_FEM4_t2Q15	age_years		NA	TN
+12		MV_FEM4_t2Q15	age	not_reported	NA	TN
+12		MV_FEM4_t2Q15	age_unit	Month	NA	FP
+12		MV_FEM4_t2Q15	body_site	feces; milk	feces	TP_wrong
+12		MV_FEM4_t2Q15	control	not_reported	Study Control	FN
+12		MV_FEM4_t2Q15	country	not_reported	Italy	FN
+12		MV_FEM4_t2Q15	curator		Paolo_Manghi	FN
+12		MV_FEM4_t2Q15	disease	Healthy	Healthy	TP_correct
+12		MV_FEM4_t2Q15	dna_extraction_kit	QIAamp	Qiagen	TP_wrong
+12		MV_FEM4_t2Q15	ncbi_accession	PRJNA339914	SRR4052025	TP_wrong
+12		MV_FEM4_t2Q15	obgyn_lactating	Yes	Yes	TP_correct
+12		MV_FEM4_t2Q15	obgyn_pregnancy	not_reported	Not Pregnant	FN
+12		MV_FEM4_t2Q15	pmid	28144631	28144631	TP_correct
+12		MV_FEM4_t2Q15	sequencing_platform	IlluminaHiSeq	IlluminaHiSeq	TP_correct
+12		MV_FEM4_t2Q15	sex	M	Female	TP_wrong
+12		MV_FEM4_t2Q15	westernized	not_reported	Yes	FN
+12		MV_FEM4_t2Q15	target_condition	vertical microbiome transmission; infant gut microbiome development	Intestinal Flora	TP_wrong
+12		MV_FEM4_t2Q15	study_name	AsnicarF_2017	AsnicarF_2017	TP_correct
+12		MV_FEM4_t2Q15	biomarker_name	not_reported	NA	TN
+12		MV_FEM4_t2Q15	biomarker_unit	not_reported	NA	TN
+12		MV_FEM4_t2Q15	biomarker_value	not_reported	NA	TN
+13		MV_FEM5_t1Q14	subject_id	not_reported	MV_FEM5	FN
+13		MV_FEM5_t1Q14	age_group	Infant	Adult	TP_wrong
+13		MV_FEM5_t1Q14	age_max		65	FN
+13		MV_FEM5_t1Q14	age_min		18	FN
+13		MV_FEM5_t1Q14	age_years		NA	TN
+13		MV_FEM5_t1Q14	age	not_reported	NA	TN
+13		MV_FEM5_t1Q14	age_unit	Month	NA	FP
+13		MV_FEM5_t1Q14	body_site	feces	feces	TP_correct
+13		MV_FEM5_t1Q14	control	not_reported	Study Control	FN
+13		MV_FEM5_t1Q14	country	not_reported	Italy	FN
+13		MV_FEM5_t1Q14	curator		Paolo_Manghi	FN
+13		MV_FEM5_t1Q14	disease	Healthy	Healthy	TP_correct
+13		MV_FEM5_t1Q14	dna_extraction_kit	QIAamp	Qiagen	TP_wrong
+13		MV_FEM5_t1Q14	ncbi_accession	PRJNA339914	SRR4052026	TP_wrong
+13		MV_FEM5_t1Q14	obgyn_lactating	Yes	Yes	TP_correct
+13		MV_FEM5_t1Q14	obgyn_pregnancy	not_reported	Not Pregnant	FN
+13		MV_FEM5_t1Q14	pmid	28144631	28144631	TP_correct
+13		MV_FEM5_t1Q14	sequencing_platform	IlluminaHiSeq	IlluminaHiSeq	TP_correct
+13		MV_FEM5_t1Q14	sex	M	Female	TP_wrong
+13		MV_FEM5_t1Q14	westernized	not_reported	Yes	FN
+13		MV_FEM5_t1Q14	target_condition	vertical microbiome transmission; infant gut microbiome development	Intestinal Flora	TP_wrong
+13		MV_FEM5_t1Q14	study_name	AsnicarF_2017	AsnicarF_2017	TP_correct
+13		MV_FEM5_t1Q14	biomarker_name	not_reported	NA	TN
+13		MV_FEM5_t1Q14	biomarker_unit	not_reported	NA	TN
+13		MV_FEM5_t1Q14	biomarker_value	not_reported	NA	TN
+14		MV_FEM5_t2Q14	subject_id	not_reported	MV_FEM5	FN
+14		MV_FEM5_t2Q14	age_group	not_reported	Adult	FN
+14		MV_FEM5_t2Q14	age_max		65	FN
+14		MV_FEM5_t2Q14	age_min		18	FN
+14		MV_FEM5_t2Q14	age_years		NA	TN
+14		MV_FEM5_t2Q14	age	not_reported	NA	TN
+14		MV_FEM5_t2Q14	age_unit	Month	NA	FP
+14		MV_FEM5_t2Q14	body_site	not_reported	feces	FN
+14		MV_FEM5_t2Q14	control	not_reported	Study Control	FN
+14		MV_FEM5_t2Q14	country	not_reported	Italy	FN
+14		MV_FEM5_t2Q14	curator		Paolo_Manghi	FN
+14		MV_FEM5_t2Q14	disease	Healthy	Healthy	TP_correct
+14		MV_FEM5_t2Q14	dna_extraction_kit	QIAamp	Qiagen	TP_wrong
+14		MV_FEM5_t2Q14	ncbi_accession	PRJNA339914	SRR4052027	TP_wrong
+14		MV_FEM5_t2Q14	obgyn_lactating	Yes	Yes	TP_correct
+14		MV_FEM5_t2Q14	obgyn_pregnancy	not_reported	Not Pregnant	FN
+14		MV_FEM5_t2Q14	pmid	28144631	28144631	TP_correct
+14		MV_FEM5_t2Q14	sequencing_platform	IlluminaHiSeq	IlluminaHiSeq	TP_correct
+14		MV_FEM5_t2Q14	sex	M	Female	TP_wrong
+14		MV_FEM5_t2Q14	westernized	not_reported	Yes	FN
+14		MV_FEM5_t2Q14	target_condition	vertical microbiome transmission; infant gut microbiome development	Intestinal Flora	TP_wrong
+14		MV_FEM5_t2Q14	study_name	AsnicarF_2017	AsnicarF_2017	TP_correct
+14		MV_FEM5_t2Q14	biomarker_name	not_reported	NA	TN
+14		MV_FEM5_t2Q14	biomarker_unit	not_reported	NA	TN
+14		MV_FEM5_t2Q14	biomarker_value	not_reported	NA	TN
+15		MV_FEM5_t3Q15	subject_id	not_reported	MV_FEM5	FN
+15		MV_FEM5_t3Q15	age_group	Adult	Adult	TP_correct
+15		MV_FEM5_t3Q15	age_max		65	FN
+15		MV_FEM5_t3Q15	age_min		18	FN
+15		MV_FEM5_t3Q15	age_years		NA	TN
+15		MV_FEM5_t3Q15	age	not_reported	NA	TN
+15		MV_FEM5_t3Q15	age_unit	Month	NA	FP
+15		MV_FEM5_t3Q15	body_site	feces; milk	feces	TP_wrong
+15		MV_FEM5_t3Q15	control	not_reported	Study Control	FN
+15		MV_FEM5_t3Q15	country	not_reported	Italy	FN
+15		MV_FEM5_t3Q15	curator		Paolo_Manghi	FN
+15		MV_FEM5_t3Q15	disease	Healthy	Healthy	TP_correct
+15		MV_FEM5_t3Q15	dna_extraction_kit	QIAamp	Qiagen	TP_wrong
+15		MV_FEM5_t3Q15	ncbi_accession	PRJNA339914	SRR4052028	TP_wrong
+15		MV_FEM5_t3Q15	obgyn_lactating	Yes	Yes	TP_correct
+15		MV_FEM5_t3Q15	obgyn_pregnancy	not_reported	Not Pregnant	FN
+15		MV_FEM5_t3Q15	pmid	28144631	28144631	TP_correct
+15		MV_FEM5_t3Q15	sequencing_platform	IlluminaHiSeq	IlluminaHiSeq	TP_correct
+15		MV_FEM5_t3Q15	sex	M	Female	TP_wrong
+15		MV_FEM5_t3Q15	westernized	not_reported	Yes	FN
+15		MV_FEM5_t3Q15	target_condition	vertical microbiome transmission; infant gut microbiome development	Intestinal Flora	TP_wrong
+15		MV_FEM5_t3Q15	study_name	AsnicarF_2017	AsnicarF_2017	TP_correct
+15		MV_FEM5_t3Q15	biomarker_name	not_reported	NA	TN
+15		MV_FEM5_t3Q15	biomarker_unit	not_reported	NA	TN
+15		MV_FEM5_t3Q15	biomarker_value	not_reported	NA	TN
+16		MV_MIM1_t1M14	subject_id	not_reported	MV_MIM1	FN
+16		MV_MIM1_t1M14	age_group	Infant	Adult	TP_wrong
+16		MV_MIM1_t1M14	age_max		65	FN
+16		MV_MIM1_t1M14	age_min		18	FN
+16		MV_MIM1_t1M14	age_years		NA	TN
+16		MV_MIM1_t1M14	age	not_reported	NA	TN
+16		MV_MIM1_t1M14	age_unit	Month	NA	FP
+16		MV_MIM1_t1M14	body_site	feces	milk	TP_wrong
+16		MV_MIM1_t1M14	control	not_reported	Study Control	FN
+16		MV_MIM1_t1M14	country	not_reported	Italy	FN
+16		MV_MIM1_t1M14	curator		Paolo_Manghi	FN
+16		MV_MIM1_t1M14	disease	Healthy	Healthy	TP_correct
+16		MV_MIM1_t1M14	dna_extraction_kit	QIAamp	MoBio	TP_wrong
+16		MV_MIM1_t1M14	ncbi_accession	PRJNA339914	SRR4052029	TP_wrong
+16		MV_MIM1_t1M14	obgyn_lactating	Yes	Yes	TP_correct
+16		MV_MIM1_t1M14	obgyn_pregnancy	not_reported	Not Pregnant	FN
+16		MV_MIM1_t1M14	pmid	28144631	28144631	TP_correct
+16		MV_MIM1_t1M14	sequencing_platform	IlluminaHiSeq	IlluminaHiSeq	TP_correct
+16		MV_MIM1_t1M14	sex	M	Female	TP_wrong
+16		MV_MIM1_t1M14	westernized	not_reported	Yes	FN
+16		MV_MIM1_t1M14	target_condition	vertical microbiome transmission; infant gut microbiome development	Intestinal Flora	TP_wrong
+16		MV_MIM1_t1M14	study_name	AsnicarF_2017	AsnicarF_2017	TP_correct
+16		MV_MIM1_t1M14	biomarker_name	not_reported	NA	TN
+16		MV_MIM1_t1M14	biomarker_unit	not_reported	NA	TN
+16		MV_MIM1_t1M14	biomarker_value	not_reported	NA	TN
+17		MV_MIM2_t1M14	subject_id	not_reported	MV_MIM2	FN
+17		MV_MIM2_t1M14	age_group	not_reported	Adult	FN
+17		MV_MIM2_t1M14	age_max		65	FN
+17		MV_MIM2_t1M14	age_min		18	FN
+17		MV_MIM2_t1M14	age_years		NA	TN
+17		MV_MIM2_t1M14	age	not_reported	NA	TN
+17		MV_MIM2_t1M14	age_unit	Month	NA	FP
+17		MV_MIM2_t1M14	body_site	not_reported	milk	FN
+17		MV_MIM2_t1M14	control	not_reported	Study Control	FN
+17		MV_MIM2_t1M14	country	not_reported	Italy	FN
+17		MV_MIM2_t1M14	curator		Paolo_Manghi	FN
+17		MV_MIM2_t1M14	disease	Healthy	Healthy	TP_correct
+17		MV_MIM2_t1M14	dna_extraction_kit	QIAamp	MoBio	TP_wrong
+17		MV_MIM2_t1M14	ncbi_accession	PRJNA339914	SRR4052030	TP_wrong
+17		MV_MIM2_t1M14	obgyn_lactating	Yes	Yes	TP_correct
+17		MV_MIM2_t1M14	obgyn_pregnancy	not_reported	Not Pregnant	FN
+17		MV_MIM2_t1M14	pmid	28144631	28144631	TP_correct
+17		MV_MIM2_t1M14	sequencing_platform	IlluminaHiSeq	IlluminaHiSeq	TP_correct
+17		MV_MIM2_t1M14	sex	M	Female	TP_wrong
+17		MV_MIM2_t1M14	westernized	not_reported	Yes	FN
+17		MV_MIM2_t1M14	target_condition	vertical microbiome transmission; infant gut microbiome development	Intestinal Flora	TP_wrong
+17		MV_MIM2_t1M14	study_name	AsnicarF_2017	AsnicarF_2017	TP_correct
+17		MV_MIM2_t1M14	biomarker_name	not_reported	NA	TN
+17		MV_MIM2_t1M14	biomarker_unit	not_reported	NA	TN
+17		MV_MIM2_t1M14	biomarker_value	not_reported	NA	TN
+18		MV_MIM3_t1M14	subject_id	not_reported	MV_MIM3	FN
+18		MV_MIM3_t1M14	age_group	Adult	Adult	TP_correct
+18		MV_MIM3_t1M14	age_max		65	FN
+18		MV_MIM3_t1M14	age_min		18	FN
+18		MV_MIM3_t1M14	age_years		NA	TN
+18		MV_MIM3_t1M14	age	not_reported	NA	TN
+18		MV_MIM3_t1M14	age_unit	Month	NA	FP
+18		MV_MIM3_t1M14	body_site	feces; milk	milk	TP_wrong
+18		MV_MIM3_t1M14	control	not_reported	Study Control	FN
+18		MV_MIM3_t1M14	country	not_reported	Italy	FN
+18		MV_MIM3_t1M14	curator		Paolo_Manghi	FN
+18		MV_MIM3_t1M14	disease	Healthy	Healthy	TP_correct
+18		MV_MIM3_t1M14	dna_extraction_kit	QIAamp	MoBio	TP_wrong
+18		MV_MIM3_t1M14	ncbi_accession	PRJNA339914	SRR4052031	TP_wrong
+18		MV_MIM3_t1M14	obgyn_lactating	Yes	Yes	TP_correct
+18		MV_MIM3_t1M14	obgyn_pregnancy	not_reported	Not Pregnant	FN
+18		MV_MIM3_t1M14	pmid	28144631	28144631	TP_correct
+18		MV_MIM3_t1M14	sequencing_platform	IlluminaHiSeq	IlluminaHiSeq	TP_correct
+18		MV_MIM3_t1M14	sex	M	Female	TP_wrong
+18		MV_MIM3_t1M14	westernized	not_reported	Yes	FN
+18		MV_MIM3_t1M14	target_condition	vertical microbiome transmission; infant gut microbiome development	Intestinal Flora	TP_wrong
+18		MV_MIM3_t1M14	study_name	AsnicarF_2017	AsnicarF_2017	TP_correct
+18		MV_MIM3_t1M14	biomarker_name	not_reported	NA	TN
+18		MV_MIM3_t1M14	biomarker_unit	not_reported	NA	TN
+18		MV_MIM3_t1M14	biomarker_value	not_reported	NA	TN
+19		MV_MIM4_t1M14	subject_id	not_reported	MV_MIM4	FN
+19		MV_MIM4_t1M14	age_group	Infant	Adult	TP_wrong
+19		MV_MIM4_t1M14	age_max		65	FN
+19		MV_MIM4_t1M14	age_min		18	FN
+19		MV_MIM4_t1M14	age_years		NA	TN
+19		MV_MIM4_t1M14	age	not_reported	NA	TN
+19		MV_MIM4_t1M14	age_unit	Month	NA	FP
+19		MV_MIM4_t1M14	body_site	feces	milk	TP_wrong
+19		MV_MIM4_t1M14	control	not_reported	Study Control	FN
+19		MV_MIM4_t1M14	country	not_reported	Italy	FN
+19		MV_MIM4_t1M14	curator		Paolo_Manghi	FN
+19		MV_MIM4_t1M14	disease	Healthy	Healthy	TP_correct
+19		MV_MIM4_t1M14	dna_extraction_kit	QIAamp	MoBio	TP_wrong
+19		MV_MIM4_t1M14	ncbi_accession	PRJNA339914	SRR4052032	TP_wrong
+19		MV_MIM4_t1M14	obgyn_lactating	Yes	Yes	TP_correct
+19		MV_MIM4_t1M14	obgyn_pregnancy	not_reported	Not Pregnant	FN
+19		MV_MIM4_t1M14	pmid	28144631	28144631	TP_correct
+19		MV_MIM4_t1M14	sequencing_platform	IlluminaHiSeq	IlluminaHiSeq	TP_correct
+19		MV_MIM4_t1M14	sex	M	Female	TP_wrong
+19		MV_MIM4_t1M14	westernized	not_reported	Yes	FN
+19		MV_MIM4_t1M14	target_condition	vertical microbiome transmission; infant gut microbiome development	Intestinal Flora	TP_wrong
+19		MV_MIM4_t1M14	study_name	AsnicarF_2017	AsnicarF_2017	TP_correct
+19		MV_MIM4_t1M14	biomarker_name	not_reported	NA	TN
+19		MV_MIM4_t1M14	biomarker_unit	not_reported	NA	TN
+19		MV_MIM4_t1M14	biomarker_value	not_reported	NA	TN
+20		MV_MIM4_t2F15	subject_id	not_reported	MV_MIM4	FN
+20		MV_MIM4_t2F15	age_group	not_reported	Adult	FN
+20		MV_MIM4_t2F15	age_max		65	FN
+20		MV_MIM4_t2F15	age_min		18	FN
+20		MV_MIM4_t2F15	age_years		NA	TN
+20		MV_MIM4_t2F15	age	not_reported	NA	TN
+20		MV_MIM4_t2F15	age_unit	Month	NA	FP
+20		MV_MIM4_t2F15	body_site	not_reported	milk	FN
+20		MV_MIM4_t2F15	control	not_reported	Study Control	FN
+20		MV_MIM4_t2F15	country	not_reported	Italy	FN
+20		MV_MIM4_t2F15	curator		Paolo_Manghi	FN
+20		MV_MIM4_t2F15	disease	Healthy	Healthy	TP_correct
+20		MV_MIM4_t2F15	dna_extraction_kit	QIAamp	MoBio	TP_wrong
+20		MV_MIM4_t2F15	ncbi_accession	PRJNA339914	SRR4052034	TP_wrong
+20		MV_MIM4_t2F15	obgyn_lactating	Yes	Yes	TP_correct
+20		MV_MIM4_t2F15	obgyn_pregnancy	not_reported	Not Pregnant	FN
+20		MV_MIM4_t2F15	pmid	28144631	28144631	TP_correct
+20		MV_MIM4_t2F15	sequencing_platform	IlluminaHiSeq	IlluminaHiSeq	TP_correct
+20		MV_MIM4_t2F15	sex	M	Female	TP_wrong
+20		MV_MIM4_t2F15	westernized	not_reported	Yes	FN
+20		MV_MIM4_t2F15	target_condition	vertical microbiome transmission; infant gut microbiome development	Intestinal Flora	TP_wrong
+20		MV_MIM4_t2F15	study_name	AsnicarF_2017	AsnicarF_2017	TP_correct
+20		MV_MIM4_t2F15	biomarker_name	not_reported	NA	TN
+20		MV_MIM4_t2F15	biomarker_unit	not_reported	NA	TN
+20		MV_MIM4_t2F15	biomarker_value	not_reported	NA	TN
+21		MV_MIM5_t1M14	subject_id	not_reported	MV_MIM5	FN
+21		MV_MIM5_t1M14	age_group	Adult	Adult	TP_correct
+21		MV_MIM5_t1M14	age_max		65	FN
+21		MV_MIM5_t1M14	age_min		18	FN
+21		MV_MIM5_t1M14	age_years		NA	TN
+21		MV_MIM5_t1M14	age	not_reported	NA	TN
+21		MV_MIM5_t1M14	age_unit	Month	NA	FP
+21		MV_MIM5_t1M14	body_site	feces; milk	milk	TP_wrong
+21		MV_MIM5_t1M14	control	not_reported	Study Control	FN
+21		MV_MIM5_t1M14	country	not_reported	Italy	FN
+21		MV_MIM5_t1M14	curator		Paolo_Manghi	FN
+21		MV_MIM5_t1M14	disease	Healthy	Healthy	TP_correct
+21		MV_MIM5_t1M14	dna_extraction_kit	QIAamp	MoBio	TP_wrong
+21		MV_MIM5_t1M14	ncbi_accession	PRJNA339914	SRR4052035	TP_wrong
+21		MV_MIM5_t1M14	obgyn_lactating	Yes	Yes	TP_correct
+21		MV_MIM5_t1M14	obgyn_pregnancy	not_reported	Not Pregnant	FN
+21		MV_MIM5_t1M14	pmid	28144631	28144631	TP_correct
+21		MV_MIM5_t1M14	sequencing_platform	IlluminaHiSeq	IlluminaHiSeq	TP_correct
+21		MV_MIM5_t1M14	sex	M	Female	TP_wrong
+21		MV_MIM5_t1M14	westernized	not_reported	Yes	FN
+21		MV_MIM5_t1M14	target_condition	vertical microbiome transmission; infant gut microbiome development	Intestinal Flora	TP_wrong
+21		MV_MIM5_t1M14	study_name	AsnicarF_2017	AsnicarF_2017	TP_correct
+21		MV_MIM5_t1M14	biomarker_name	not_reported	NA	TN
+21		MV_MIM5_t1M14	biomarker_unit	not_reported	NA	TN
+21		MV_MIM5_t1M14	biomarker_value	not_reported	NA	TN
+22		MV_MIM5_t2M14	subject_id	not_reported	MV_MIM5	FN
+22		MV_MIM5_t2M14	age_group	Infant	Adult	TP_wrong
+22		MV_MIM5_t2M14	age_max		65	FN
+22		MV_MIM5_t2M14	age_min		18	FN
+22		MV_MIM5_t2M14	age_years		NA	TN
+22		MV_MIM5_t2M14	age	not_reported	NA	TN
+22		MV_MIM5_t2M14	age_unit	Month	NA	FP
+22		MV_MIM5_t2M14	body_site	feces	milk	TP_wrong
+22		MV_MIM5_t2M14	control	not_reported	Study Control	FN
+22		MV_MIM5_t2M14	country	not_reported	Italy	FN
+22		MV_MIM5_t2M14	curator		Paolo_Manghi	FN
+22		MV_MIM5_t2M14	disease	Healthy	Healthy	TP_correct
+22		MV_MIM5_t2M14	dna_extraction_kit	QIAamp	MoBio	TP_wrong
+22		MV_MIM5_t2M14	ncbi_accession	PRJNA339914	SRR4052036	TP_wrong
+22		MV_MIM5_t2M14	obgyn_lactating	Yes	Yes	TP_correct
+22		MV_MIM5_t2M14	obgyn_pregnancy	not_reported	Not Pregnant	FN
+22		MV_MIM5_t2M14	pmid	28144631	28144631	TP_correct
+22		MV_MIM5_t2M14	sequencing_platform	IlluminaHiSeq	IlluminaHiSeq	TP_correct
+22		MV_MIM5_t2M14	sex	M	Female	TP_wrong
+22		MV_MIM5_t2M14	westernized	not_reported	Yes	FN
+22		MV_MIM5_t2M14	target_condition	vertical microbiome transmission; infant gut microbiome development	Intestinal Flora	TP_wrong
+22		MV_MIM5_t2M14	study_name	AsnicarF_2017	AsnicarF_2017	TP_correct
+22		MV_MIM5_t2M14	biomarker_name	not_reported	NA	TN
+22		MV_MIM5_t2M14	biomarker_unit	not_reported	NA	TN
+22		MV_MIM5_t2M14	biomarker_value	not_reported	NA	TN
+23		MV_MIM5_t3F15	subject_id	not_reported	MV_MIM5	FN
+23		MV_MIM5_t3F15	age_group	not_reported	Adult	FN
+23		MV_MIM5_t3F15	age_max		65	FN
+23		MV_MIM5_t3F15	age_min		18	FN
+23		MV_MIM5_t3F15	age_years		NA	TN
+23		MV_MIM5_t3F15	age	not_reported	NA	TN
+23		MV_MIM5_t3F15	age_unit	Month	NA	FP
+23		MV_MIM5_t3F15	body_site	not_reported	milk	FN
+23		MV_MIM5_t3F15	control	not_reported	Study Control	FN
+23		MV_MIM5_t3F15	country	not_reported	Italy	FN
+23		MV_MIM5_t3F15	curator		Paolo_Manghi	FN
+23		MV_MIM5_t3F15	disease	Healthy	Healthy	TP_correct
+23		MV_MIM5_t3F15	dna_extraction_kit	QIAamp	MoBio	TP_wrong
+23		MV_MIM5_t3F15	ncbi_accession	PRJNA339914	SRR4052037	TP_wrong
+23		MV_MIM5_t3F15	obgyn_lactating	Yes	Yes	TP_correct
+23		MV_MIM5_t3F15	obgyn_pregnancy	not_reported	Not Pregnant	FN
+23		MV_MIM5_t3F15	pmid	28144631	28144631	TP_correct
+23		MV_MIM5_t3F15	sequencing_platform	IlluminaHiSeq	IlluminaHiSeq	TP_correct
+23		MV_MIM5_t3F15	sex	M	Female	TP_wrong
+23		MV_MIM5_t3F15	westernized	not_reported	Yes	FN
+23		MV_MIM5_t3F15	target_condition	vertical microbiome transmission; infant gut microbiome development	Intestinal Flora	TP_wrong
+23		MV_MIM5_t3F15	study_name	AsnicarF_2017	AsnicarF_2017	TP_correct
+23		MV_MIM5_t3F15	biomarker_name	not_reported	NA	TN
+23		MV_MIM5_t3F15	biomarker_unit	not_reported	NA	TN
+23		MV_MIM5_t3F15	biomarker_value	not_reported	NA	TN

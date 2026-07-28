@@ -1,0 +1,41 @@
+---
+title: "Quick start"
+format: html
+editor: visual
+---
+
+```{r}
+library(OmicsMLRepoCuration)
+```
+
+```{r}
+syncSchema(schema_dir = "~/OmicsMLRepo/MetaExtractor/examples/schemas")
+```
+
+```{bash}
+metaextract --paper-id PMID:28144631 \
+  --schema ~/OmicsMLRepo/MetaExtractor/examples/schemas/cmd_schema_linkml.yaml \
+  --csv ~/OmicsMLRepo/MetaExtractor/examples/outputs/sample_meta_28144631.csv
+```
+
+```{r}
+gold <- readr::read_csv("~/Microbiome/curatedMetagenomicDataCuration/inst/curated/AsnicarF_2017/AsnicarF_2017_sample.tsv")
+```
+
+## BoktorJC_2023
+
+```{bash}
+metaextract --paper-id PMID:36691982 \
+  --schema ~/OmicsMLRepo/MetaExtractor/examples/schemas/cmd_schema_linkml.yaml \
+  --supplementary ~/OmicsMLRepo/MetaExtractor/examples/data/mds29300-sup-0017-TableS10.csv \
+  --csv ~/OmicsMLRepo/MetaExtractor/examples/outputs/BoktorJC_2023_sample.csv
+```
+
+## HallAB_2017
+
+```{bash}
+metaextract --paper-id PMID:29183332 \
+  --schema ~/OmicsMLRepo/MetaExtractor/examples/schemas/cmd_schema_linkml.yaml \
+  --csv ~/OmicsMLRepo/MetaExtractor/examples/outputs/HallAB_2017_sample.csv \
+  --api-key ~/OmicsMLRepo/MetaHarmonizerEval/vignettes/keys/sm_corpus_diversification
+```

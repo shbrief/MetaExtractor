@@ -16,3 +16,11 @@ benchmarks/cmd_sonnet5/out*.pre_q2_*/
 benchmarks/cmd_sonnet5/harmonize/disease_corpus_v041.csv
 benchmarks/cmd_sonnet5/harmonize/*_cache/
 *.log
+.Rproj.user
+
+# build artifacts / strays
+*.html
+result.csv
+result.json
+.DS_Store
+.Rproj.user
