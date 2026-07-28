@@ -2,8 +2,6 @@
 from __future__ import annotations
 
 import argparse
-import json
-import os
 import sys
 from pathlib import Path
 
@@ -23,62 +21,23 @@ from metaextractor.writers import to_csv
 
 def _load_schema(path: Path, class_name: str | None = None) -> Schema:
     """Load a schema file. Auto-detects JSON vs YAML and LinkML vs native."""
-    text = path.read_text(encoding="utf-8")
-    suffix = path.suffix.lower()
-    if suffix in {".yaml", ".yml"}:
-        try:
-            import yaml
-        except ImportError as e:
-            raise SystemExit(
-                "YAML schema requires the 'linkml' extra: pip install 'metaextractor[linkml]'"
-            ) from e
-        data = yaml.safe_load(text)
-    else:
-        data = json.loads(text)
+    from metaextractor.schema_loader import SchemaLoadError, load_schema_file
 
-    from metaextractor.adapters.linkml import is_linkml_schema, linkml_to_schema
-
-    if is_linkml_schema(data):
-        return linkml_to_schema(data, class_name=class_name)
-    return Schema.from_dict(data)
-
-
-_DEFAULT_API_KEY_ENV_VARS = ("ANTHROPIC_API_KEY", "CLAUDE_API_KEY")
+    try:
+        return load_schema_file(path, class_name=class_name)
+    except SchemaLoadError as e:
+        raise SystemExit(str(e)) from e
 
 
 def _resolve_api_key(value: str | None) -> str:
-    """Resolve an --api-key value. Supports:
-    - ``env:VARNAME`` — read from the given environment variable
-    - ``file:PATH`` — read the first non-empty line of the file
-    - any other value — treated as a literal key
-    - ``None`` — auto-discover from environment variables, checking
-      ``ANTHROPIC_API_KEY`` then ``CLAUDE_API_KEY``
-    """
-    if value is None:
-        for name in _DEFAULT_API_KEY_ENV_VARS:
-            key = os.environ.get(name)
-            if key:
-                return key
-        raise SystemExit(
-            "No API key found. Set the ANTHROPIC_API_KEY environment variable, "
-            "or pass --api-key VALUE (accepts a literal key, 'env:VARNAME', or 'file:PATH')."
-        )
-    if value.startswith("env:"):
-        name = value[4:]
-        key = os.environ.get(name)
-        if not key:
-            raise SystemExit(f"--api-key env:{name}: environment variable is not set or empty")
-        return key
-    if value.startswith("file:"):
-        path = Path(value[5:]).expanduser()
-        if not path.is_file():
-            raise SystemExit(f"--api-key file:{path}: file not found")
-        for line in path.read_text(encoding="utf-8").splitlines():
-            stripped = line.strip()
-            if stripped:
-                return stripped
-        raise SystemExit(f"--api-key file:{path}: file is empty")
-    return value
+    """Resolve an --api-key value. Supports a literal key, ``env:VARNAME``,
+    ``file:PATH``, or auto-discovery from ANTHROPIC_API_KEY / CLAUDE_API_KEY."""
+    from metaextractor.keys import ApiKeyError, resolve_api_key
+
+    try:
+        return resolve_api_key(value)
+    except ApiKeyError as e:
+        raise SystemExit(f"--api-key: {e}") from e
 
 
 def _read_paper(path: Path) -> str:
@@ -109,6 +68,11 @@ def main(argv: list[str] | None = None) -> int:
                         help="Skip the auto supplementary-materials fetch (JATS URLs + Europe PMC ZIP). Does not affect --supplementary.")
     parser.add_argument("--supplementary", nargs="+", type=Path, default=None, metavar="PATH",
                         help="One or more local supplementary files (xlsx/csv/tsv/pdf/txt) to include alongside the paper. Directories are expanded to all supported files inside (non-recursive). Orthogonal to --no-supplementary; combine if you want only local files.")
+    parser.add_argument("--no-sra-manifest", dest="include_sra_manifest",
+                        action="store_false", default=True,
+                        help="Skip the auto SRA/ENA per-sample run-manifest fetch (resolves the study's own project from its data-availability accessions and pulls the ENA read_run manifest). Only applies on the --paper-id fetch path.")
+    parser.add_argument("--sra-project", default=None, metavar="PRJXXXXXX",
+                        help="Explicit SRA/ENA project accession (e.g. PRJEB7369) to fetch the run manifest from, bypassing text resolution. Authoritative when you know the study's project.")
     parser.add_argument("--out", type=Path, default=None, help="Write JSON result to file (default stdout).")
     parser.add_argument("--csv", type=Path, default=None, help="Also write a flat CSV (row per record).")
     parser.add_argument("--csv-provenance", action="store_true",
@@ -140,19 +104,26 @@ def main(argv: list[str] | None = None) -> int:
         paper_text = _read_paper(args.paper)
     elif args.paper_id:
         try:
-            fetched = fetch_paper(args.paper_id, include_supplementary=args.include_supplementary)
+            fetched = fetch_paper(
+                args.paper_id,
+                include_supplementary=args.include_supplementary,
+                include_sra_manifest=args.include_sra_manifest,
+                sra_project=args.sra_project,
+            )
         except FetchError as e:
             print(f"ERROR: fetch failed: {e}", file=sys.stderr)
             return 2
         paper_text = fetched.text
         tables.extend(fetched.supplementary_tables or [])
         print(f"[fetched {fetched.source} for {args.paper_id}]", file=sys.stderr)
-        if fetched.source == "pubmed_abstract":
+        if not fetched.has_body:
             print(
-                "[note: no PMC fulltext for this paper — only the PubMed "
-                "abstract was retrieved, and no supplementary materials were "
-                "fetched automatically. Pass --supplementary PATH [PATH ...] "
-                "to include locally-downloaded supplementary files.]",
+                "[note: no article body was reachable for this paper — only an "
+                "abstract was retrieved (NCBI PMC and Europe PMC full text were "
+                "unavailable). For full text, download the publisher/bioRxiv PDF "
+                "and pass it with --paper FILE.pdf (optionally keeping --paper-id "
+                "for the identifier). Pass --supplementary PATH [PATH ...] to add "
+                "locally-downloaded supplementary files.]",
                 file=sys.stderr,
             )
         if fetched.supplementary_included:
@@ -161,6 +132,11 @@ def main(argv: list[str] | None = None) -> int:
         if fetched.supplementary_tables:
             print(f"[supplementary tables parsed: {len(fetched.supplementary_tables)} "
                   f"(deterministic path; LLM will not see them)]", file=sys.stderr)
+        if fetched.sra_manifest_source:
+            print(f"[SRA/ENA run manifest: {fetched.sra_manifest_source} "
+                  f"(deterministic path)]", file=sys.stderr)
+        for w in (fetched.sra_manifest_warnings or []):
+            print(f"[SRA/ENA manifest: {w}]", file=sys.stderr)
         if fetched.supplementary_skipped:
             for name, why in fetched.supplementary_skipped:
                 print(f"[supplementary skipped: {name} — {why}]", file=sys.stderr)

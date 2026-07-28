@@ -28,4 +28,4 @@ metaextract = "metaextractor.cli:main"
 where = ["src"]
 
 [tool.setuptools.package-data]
-metaextractor = ["py.typed"]
+metaextractor = ["py.typed", "schemas/*.json", "schemas/*.yaml", "schemas/*.yml"]
