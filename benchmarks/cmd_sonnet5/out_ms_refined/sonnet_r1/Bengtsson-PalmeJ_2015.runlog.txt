@@ -1,0 +1,14 @@
+cmd: metaextract --paper-id 26259788 --schema /Users/sehyunoh/OmicsMLRepo/MetaExtractor/benchmarks/cmd_sonnet5/cmd.clean.linkml.yaml --model claude-sonnet-5 --out /Users/sehyunoh/OmicsMLRepo/MetaExtractor/benchmarks/cmd_sonnet5/out_ms_refined/sonnet_r1/Bengtsson-PalmeJ_2015.json --csv /Users/sehyunoh/OmicsMLRepo/MetaExtractor/benchmarks/cmd_sonnet5/out_ms_refined/sonnet_r1/Bengtsson-PalmeJ_2015.csv --csv-provenance
+status: ok
+elapsed_s: 197.9
+--- stderr ---
+[fetched europepmc_pdf for 26259788]
+[supplementary tables parsed: 1 (deterministic path; LLM will not see them)]
+[SRA/ENA run manifest: ena:PRJEB7369 (70 runs) (deterministic path)]
+[supplementary skipped: (europepmc zip) — response was not a valid ZIP]
+[table selection: 1 kept / 1 scored (gate=0.15)]
+[  PRJEB7369_ena_manifest.tsv: kept (score=0.47) — key-like column 'run_accession']
+[wrote CSV: /Users/sehyunoh/OmicsMLRepo/MetaExtractor/benchmarks/cmd_sonnet5/out_ms_refined/sonnet_r1/Bengtsson-PalmeJ_2015.csv]
+[usage: 4 call(s); input=13,078, cache_write=20,489, cache_read=44,689, output=21,891]
+[cost: no pricing entry for claude-sonnet-5]
+

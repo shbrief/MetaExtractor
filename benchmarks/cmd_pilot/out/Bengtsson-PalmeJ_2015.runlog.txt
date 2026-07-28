@@ -1,0 +1,12 @@
+cmd: metaextract --paper-id 26259788 --schema /private/tmp/claude-501/-Users-sehyunoh-OmicsMLRepo-metacurator/d59c5ae1-0f71-458d-a430-59f0885f03e3/scratchpad/cmd.clean.linkml.yaml --model claude-haiku-4-5 --out out/Bengtsson-PalmeJ_2015.json --csv out/Bengtsson-PalmeJ_2015.csv --csv-provenance
+returncode: 0
+elapsed_s: 52.6
+--- stderr ---
+[fetched pmc_fulltext for 26259788]
+[supplementary skipped: (europepmc zip) — response was not a valid ZIP]
+[wrote CSV: out/Bengtsson-PalmeJ_2015.csv]
+[usage: 3 call(s); input=11,336, cache_write=0, cache_read=0, output=8,918]
+[cost: $0.0559 (input $0.0113 + cache_w $0.0000 + cache_r $0.0000 + output $0.0446)]
+
+--- stdout(head) ---
+

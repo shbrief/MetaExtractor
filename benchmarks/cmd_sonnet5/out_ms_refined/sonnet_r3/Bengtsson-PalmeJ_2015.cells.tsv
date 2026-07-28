@@ -1,0 +1,1751 @@
+sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	decision
+0	SAMEA2784453	TRAVELRES1	study_name	not_reported	Bengtsson-PalmeJ_2015	FN
+0	SAMEA2784453	TRAVELRES1	subject_id	TRAVELRES6	TRAVELRES1_2	TP_wrong
+0	SAMEA2784453	TRAVELRES1	sample_id	SAMEA2784453	TRAVELRES1	TP_wrong
+0	SAMEA2784453	TRAVELRES1	curator	not_reported	Valentina_Giunchiglia,Paolo_Manghi,Marisa_Metzger	FN
+0	SAMEA2784453	TRAVELRES1	pmid	not_reported	26259788	FN
+0	SAMEA2784453	TRAVELRES1	target_condition	not_reported	Intestinal Flora	FN
+0	SAMEA2784453	TRAVELRES1	control	not_reported	Study Control	FN
+0	SAMEA2784453	TRAVELRES1	country	Sweden	Sweden	TP_correct
+0	SAMEA2784453	TRAVELRES1	body_site	feces	feces	TP_correct
+0	SAMEA2784453	TRAVELRES1	days_from_first_collection	not_reported	0	FN
+0	SAMEA2784453	TRAVELRES1	westernized	not_reported	Yes	FN
+0	SAMEA2784453	TRAVELRES1	dna_extraction_kit	not_reported	Qiagen	FN
+0	SAMEA2784453	TRAVELRES1	ncbi_accession	ERR636354	ERR636349	TP_wrong
+0	SAMEA2784453	TRAVELRES1	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	TP_wrong
+0	SAMEA2784453	TRAVELRES1	age	not_reported	25	FN
+0	SAMEA2784453	TRAVELRES1	age_group	Adult	Adult	TP_correct
+0	SAMEA2784453	TRAVELRES1	age_unit	Year	Year	TP_correct
+0	SAMEA2784453	TRAVELRES1	sex	not_reported	Female	FN
+0	SAMEA2784453	TRAVELRES1	age_min	23	25	TP_wrong
+0	SAMEA2784453	TRAVELRES1	age_max	34	25	TP_wrong
+0	SAMEA2784453	TRAVELRES1	age_years	not_reported	25	FN
+0	SAMEA2784453	TRAVELRES1	antibiotics_current_use	No	No	TP_correct
+0	SAMEA2784453	TRAVELRES1	disease	Healthy	Healthy	TP_correct
+0	SAMEA2784453	TRAVELRES1	uncurated_metadata	35 Swedish students (17 to Central Africa, 18 to Indian peninsula); Subjects were 23 to 34 years old, gender distribution 74% females (26/35); Median travel duration was 34 days (range 14 to 150); 69% of subjects had travelers' diarrhea during their trip; 12/18 (67%) travelers to Indian peninsula acquired ESBL-producing E. coli after return; none from Africa; All E. coli ESBL isolates carried the CTX-M-15 gene; Proteobacteria abundance increased in 25/35 students after travel	Not applicable	TP_wrong
+0	SAMEA2784453	TRAVELRES1	host_species	Human	Homo sapiens	TP_wrong
+1	SAMEA2784458	TRAVELRES10	study_name	not_reported	Bengtsson-PalmeJ_2015	FN
+1	SAMEA2784458	TRAVELRES10	subject_id	TRAVELRES11	TRAVELRES9_10	TP_wrong
+1	SAMEA2784458	TRAVELRES10	sample_id	SAMEA2784458	TRAVELRES10	TP_wrong
+1	SAMEA2784458	TRAVELRES10	curator	not_reported	Valentina_Giunchiglia,Paolo_Manghi,Marisa_Metzger	FN
+1	SAMEA2784458	TRAVELRES10	pmid	not_reported	26259788	FN
+1	SAMEA2784458	TRAVELRES10	target_condition	not_reported	Intestinal Flora	FN
+1	SAMEA2784458	TRAVELRES10	control	not_reported	Study Control	FN
+1	SAMEA2784458	TRAVELRES10	country	Sweden	Sweden	TP_correct
+1	SAMEA2784458	TRAVELRES10	body_site	feces	feces	TP_correct
+1	SAMEA2784458	TRAVELRES10	days_from_first_collection	not_reported	77	FN
+1	SAMEA2784458	TRAVELRES10	westernized	not_reported	Yes	FN
+1	SAMEA2784458	TRAVELRES10	dna_extraction_kit	not_reported	Qiagen	FN
+1	SAMEA2784458	TRAVELRES10	ncbi_accession	ERR636359	ERR636358	TP_wrong
+1	SAMEA2784458	TRAVELRES10	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	TP_wrong
+1	SAMEA2784458	TRAVELRES10	age	not_reported	34	FN
+1	SAMEA2784458	TRAVELRES10	age_group	Adult	Adult	TP_correct
+1	SAMEA2784458	TRAVELRES10	age_unit	Year	Year	TP_correct
+1	SAMEA2784458	TRAVELRES10	sex	not_reported	Female	FN
+1	SAMEA2784458	TRAVELRES10	age_min	23	34	TP_wrong
+1	SAMEA2784458	TRAVELRES10	age_max	34	34	TP_correct
+1	SAMEA2784458	TRAVELRES10	age_years	not_reported	34	FN
+1	SAMEA2784458	TRAVELRES10	antibiotics_current_use	No	No	TP_correct
+1	SAMEA2784458	TRAVELRES10	disease	Healthy	Healthy	TP_correct
+1	SAMEA2784458	TRAVELRES10	uncurated_metadata	35 Swedish students (17 to Central Africa, 18 to Indian peninsula); Subjects were 23 to 34 years old, gender distribution 74% females (26/35); Median travel duration was 34 days (range 14 to 150); 69% of subjects had travelers' diarrhea during their trip; 12/18 (67%) travelers to Indian peninsula acquired ESBL-producing E. coli after return; none from Africa; All E. coli ESBL isolates carried the CTX-M-15 gene; Proteobacteria abundance increased in 25/35 students after travel	travel_destination:LKA	TP_wrong
+1	SAMEA2784458	TRAVELRES10	host_species	Human	Homo sapiens	TP_wrong
+2	SAMEA2784462	TRAVELRES11	study_name	not_reported	Bengtsson-PalmeJ_2015	FN
+2	SAMEA2784462	TRAVELRES11	subject_id	TRAVELRES15	TRAVELRES11_12	TP_wrong
+2	SAMEA2784462	TRAVELRES11	sample_id	SAMEA2784462	TRAVELRES11	TP_wrong
+2	SAMEA2784462	TRAVELRES11	curator	not_reported	Valentina_Giunchiglia,Paolo_Manghi,Marisa_Metzger	FN
+2	SAMEA2784462	TRAVELRES11	pmid	not_reported	26259788	FN
+2	SAMEA2784462	TRAVELRES11	target_condition	not_reported	Intestinal Flora	FN
+2	SAMEA2784462	TRAVELRES11	control	not_reported	Study Control	FN
+2	SAMEA2784462	TRAVELRES11	country	Sweden	Sweden	TP_correct
+2	SAMEA2784462	TRAVELRES11	body_site	feces	feces	TP_correct
+2	SAMEA2784462	TRAVELRES11	days_from_first_collection	not_reported	0	FN
+2	SAMEA2784462	TRAVELRES11	westernized	not_reported	Yes	FN
+2	SAMEA2784462	TRAVELRES11	dna_extraction_kit	not_reported	Qiagen	FN
+2	SAMEA2784462	TRAVELRES11	ncbi_accession	ERR636363	ERR636359	TP_wrong
+2	SAMEA2784462	TRAVELRES11	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	TP_wrong
+2	SAMEA2784462	TRAVELRES11	age	not_reported	22	FN
+2	SAMEA2784462	TRAVELRES11	age_group	Adult	Adult	TP_correct
+2	SAMEA2784462	TRAVELRES11	age_unit	Year	Year	TP_correct
+2	SAMEA2784462	TRAVELRES11	sex	not_reported	Female	FN
+2	SAMEA2784462	TRAVELRES11	age_min	23	22	TP_correct
+2	SAMEA2784462	TRAVELRES11	age_max	34	22	TP_wrong
+2	SAMEA2784462	TRAVELRES11	age_years	not_reported	22	FN
+2	SAMEA2784462	TRAVELRES11	antibiotics_current_use	No	No	TP_correct
+2	SAMEA2784462	TRAVELRES11	disease	Healthy	Healthy	TP_correct
+2	SAMEA2784462	TRAVELRES11	uncurated_metadata	35 Swedish students (17 to Central Africa, 18 to Indian peninsula); Subjects were 23 to 34 years old, gender distribution 74% females (26/35); Median travel duration was 34 days (range 14 to 150); 69% of subjects had travelers' diarrhea during their trip; 12/18 (67%) travelers to Indian peninsula acquired ESBL-producing E. coli after return; none from Africa; All E. coli ESBL isolates carried the CTX-M-15 gene; Proteobacteria abundance increased in 25/35 students after travel	Not applicable	TP_wrong
+2	SAMEA2784462	TRAVELRES11	host_species	Human	Homo sapiens	TP_wrong
+3	SAMEA2784464	TRAVELRES12	study_name	not_reported	Bengtsson-PalmeJ_2015	FN
+3	SAMEA2784464	TRAVELRES12	subject_id	TRAVELRES17	TRAVELRES11_12	TP_wrong
+3	SAMEA2784464	TRAVELRES12	sample_id	SAMEA2784464	TRAVELRES12	TP_wrong
+3	SAMEA2784464	TRAVELRES12	curator	not_reported	Valentina_Giunchiglia,Paolo_Manghi,Marisa_Metzger	FN
+3	SAMEA2784464	TRAVELRES12	pmid	not_reported	26259788	FN
+3	SAMEA2784464	TRAVELRES12	target_condition	not_reported	Intestinal Flora	FN
+3	SAMEA2784464	TRAVELRES12	control	not_reported	Study Control	FN
+3	SAMEA2784464	TRAVELRES12	country	Sweden	Sweden	TP_correct
+3	SAMEA2784464	TRAVELRES12	body_site	feces	feces	TP_correct
+3	SAMEA2784464	TRAVELRES12	days_from_first_collection	not_reported	170	FN
+3	SAMEA2784464	TRAVELRES12	westernized	not_reported	Yes	FN
+3	SAMEA2784464	TRAVELRES12	dna_extraction_kit	not_reported	Qiagen	FN
+3	SAMEA2784464	TRAVELRES12	ncbi_accession	ERR636365	ERR636360	TP_wrong
+3	SAMEA2784464	TRAVELRES12	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	TP_wrong
+3	SAMEA2784464	TRAVELRES12	age	not_reported	22	FN
+3	SAMEA2784464	TRAVELRES12	age_group	Adult	Adult	TP_correct
+3	SAMEA2784464	TRAVELRES12	age_unit	Year	Year	TP_correct
+3	SAMEA2784464	TRAVELRES12	sex	not_reported	Female	FN
+3	SAMEA2784464	TRAVELRES12	age_min	23	22	TP_correct
+3	SAMEA2784464	TRAVELRES12	age_max	34	22	TP_wrong
+3	SAMEA2784464	TRAVELRES12	age_years	not_reported	22	FN
+3	SAMEA2784464	TRAVELRES12	antibiotics_current_use	No	No	TP_correct
+3	SAMEA2784464	TRAVELRES12	disease	Healthy	Healthy	TP_correct
+3	SAMEA2784464	TRAVELRES12	uncurated_metadata	35 Swedish students (17 to Central Africa, 18 to Indian peninsula); Subjects were 23 to 34 years old, gender distribution 74% females (26/35); Median travel duration was 34 days (range 14 to 150); 69% of subjects had travelers' diarrhea during their trip; 12/18 (67%) travelers to Indian peninsula acquired ESBL-producing E. coli after return; none from Africa; All E. coli ESBL isolates carried the CTX-M-15 gene; Proteobacteria abundance increased in 25/35 students after travel	travel_destination:IND	TP_wrong
+3	SAMEA2784464	TRAVELRES12	host_species	Human	Homo sapiens	TP_wrong
+4	SAMEA2784467	TRAVELRES13	study_name	not_reported	Bengtsson-PalmeJ_2015	FN
+4	SAMEA2784467	TRAVELRES13	subject_id	TRAVELRES20	TRAVELRES13_14	TP_wrong
+4	SAMEA2784467	TRAVELRES13	sample_id	SAMEA2784467	TRAVELRES13	TP_wrong
+4	SAMEA2784467	TRAVELRES13	curator	not_reported	Valentina_Giunchiglia,Paolo_Manghi,Marisa_Metzger	FN
+4	SAMEA2784467	TRAVELRES13	pmid	not_reported	26259788	FN
+4	SAMEA2784467	TRAVELRES13	target_condition	not_reported	Intestinal Flora	FN
+4	SAMEA2784467	TRAVELRES13	control	not_reported	Study Control	FN
+4	SAMEA2784467	TRAVELRES13	country	Sweden	Sweden	TP_correct
+4	SAMEA2784467	TRAVELRES13	body_site	feces	feces	TP_correct
+4	SAMEA2784467	TRAVELRES13	days_from_first_collection	not_reported	0	FN
+4	SAMEA2784467	TRAVELRES13	westernized	not_reported	Yes	FN
+4	SAMEA2784467	TRAVELRES13	dna_extraction_kit	not_reported	Qiagen	FN
+4	SAMEA2784467	TRAVELRES13	ncbi_accession	ERR636368	ERR636361	TP_wrong
+4	SAMEA2784467	TRAVELRES13	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	TP_wrong
+4	SAMEA2784467	TRAVELRES13	age	not_reported	23	FN
+4	SAMEA2784467	TRAVELRES13	age_group	Adult	Adult	TP_correct
+4	SAMEA2784467	TRAVELRES13	age_unit	Year	Year	TP_correct
+4	SAMEA2784467	TRAVELRES13	sex	not_reported	Female	FN
+4	SAMEA2784467	TRAVELRES13	age_min	23	23	TP_correct
+4	SAMEA2784467	TRAVELRES13	age_max	34	23	TP_wrong
+4	SAMEA2784467	TRAVELRES13	age_years	not_reported	23	FN
+4	SAMEA2784467	TRAVELRES13	antibiotics_current_use	No	No	TP_correct
+4	SAMEA2784467	TRAVELRES13	disease	Healthy	Healthy	TP_correct
+4	SAMEA2784467	TRAVELRES13	uncurated_metadata	35 Swedish students (17 to Central Africa, 18 to Indian peninsula); Subjects were 23 to 34 years old, gender distribution 74% females (26/35); Median travel duration was 34 days (range 14 to 150); 69% of subjects had travelers' diarrhea during their trip; 12/18 (67%) travelers to Indian peninsula acquired ESBL-producing E. coli after return; none from Africa; All E. coli ESBL isolates carried the CTX-M-15 gene; Proteobacteria abundance increased in 25/35 students after travel	Not applicable	TP_wrong
+4	SAMEA2784467	TRAVELRES13	host_species	Human	Homo sapiens	TP_wrong
+5	SAMEA2784470	TRAVELRES14	study_name	not_reported	Bengtsson-PalmeJ_2015	FN
+5	SAMEA2784470	TRAVELRES14	subject_id	TRAVELRES23	TRAVELRES13_14	TP_wrong
+5	SAMEA2784470	TRAVELRES14	sample_id	SAMEA2784470	TRAVELRES14	TP_wrong
+5	SAMEA2784470	TRAVELRES14	curator	not_reported	Valentina_Giunchiglia,Paolo_Manghi,Marisa_Metzger	FN
+5	SAMEA2784470	TRAVELRES14	pmid	not_reported	26259788	FN
+5	SAMEA2784470	TRAVELRES14	target_condition	not_reported	Intestinal Flora	FN
+5	SAMEA2784470	TRAVELRES14	control	not_reported	Study Control	FN
+5	SAMEA2784470	TRAVELRES14	country	Sweden	Sweden	TP_correct
+5	SAMEA2784470	TRAVELRES14	body_site	feces	feces	TP_correct
+5	SAMEA2784470	TRAVELRES14	days_from_first_collection	not_reported	141	FN
+5	SAMEA2784470	TRAVELRES14	westernized	not_reported	Yes	FN
+5	SAMEA2784470	TRAVELRES14	dna_extraction_kit	not_reported	Qiagen	FN
+5	SAMEA2784470	TRAVELRES14	ncbi_accession	ERR636371	ERR636362	TP_wrong
+5	SAMEA2784470	TRAVELRES14	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	TP_wrong
+5	SAMEA2784470	TRAVELRES14	age	not_reported	23	FN
+5	SAMEA2784470	TRAVELRES14	age_group	Adult	Adult	TP_correct
+5	SAMEA2784470	TRAVELRES14	age_unit	Year	Year	TP_correct
+5	SAMEA2784470	TRAVELRES14	sex	not_reported	Female	FN
+5	SAMEA2784470	TRAVELRES14	age_min	23	23	TP_correct
+5	SAMEA2784470	TRAVELRES14	age_max	34	23	TP_wrong
+5	SAMEA2784470	TRAVELRES14	age_years	not_reported	23	FN
+5	SAMEA2784470	TRAVELRES14	antibiotics_current_use	No	No	TP_correct
+5	SAMEA2784470	TRAVELRES14	disease	Healthy	Healthy	TP_correct
+5	SAMEA2784470	TRAVELRES14	uncurated_metadata	35 Swedish students (17 to Central Africa, 18 to Indian peninsula); Subjects were 23 to 34 years old, gender distribution 74% females (26/35); Median travel duration was 34 days (range 14 to 150); 69% of subjects had travelers' diarrhea during their trip; 12/18 (67%) travelers to Indian peninsula acquired ESBL-producing E. coli after return; none from Africa; All E. coli ESBL isolates carried the CTX-M-15 gene; Proteobacteria abundance increased in 25/35 students after travel	travel_destination:CMR	TP_wrong
+5	SAMEA2784470	TRAVELRES14	host_species	Human	Homo sapiens	TP_wrong
+6	SAMEA2784474	TRAVELRES15	study_name	not_reported	Bengtsson-PalmeJ_2015	FN
+6	SAMEA2784474	TRAVELRES15	subject_id	TRAVELRES27	TRAVELRES15_16	TP_wrong
+6	SAMEA2784474	TRAVELRES15	sample_id	SAMEA2784474	TRAVELRES15	TP_wrong
+6	SAMEA2784474	TRAVELRES15	curator	not_reported	Valentina_Giunchiglia,Paolo_Manghi,Marisa_Metzger	FN
+6	SAMEA2784474	TRAVELRES15	pmid	not_reported	26259788	FN
+6	SAMEA2784474	TRAVELRES15	target_condition	not_reported	Intestinal Flora	FN
+6	SAMEA2784474	TRAVELRES15	control	not_reported	Study Control	FN
+6	SAMEA2784474	TRAVELRES15	country	Sweden	Sweden	TP_correct
+6	SAMEA2784474	TRAVELRES15	body_site	feces	feces	TP_correct
+6	SAMEA2784474	TRAVELRES15	days_from_first_collection	not_reported	0	FN
+6	SAMEA2784474	TRAVELRES15	westernized	not_reported	Yes	FN
+6	SAMEA2784474	TRAVELRES15	dna_extraction_kit	not_reported	Qiagen	FN
+6	SAMEA2784474	TRAVELRES15	ncbi_accession	ERR636375	ERR636363	TP_wrong
+6	SAMEA2784474	TRAVELRES15	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	TP_wrong
+6	SAMEA2784474	TRAVELRES15	age	not_reported	23	FN
+6	SAMEA2784474	TRAVELRES15	age_group	Adult	Adult	TP_correct
+6	SAMEA2784474	TRAVELRES15	age_unit	Year	Year	TP_correct
+6	SAMEA2784474	TRAVELRES15	sex	not_reported	Female	FN
+6	SAMEA2784474	TRAVELRES15	age_min	23	23	TP_correct
+6	SAMEA2784474	TRAVELRES15	age_max	34	23	TP_wrong
+6	SAMEA2784474	TRAVELRES15	age_years	not_reported	23	FN
+6	SAMEA2784474	TRAVELRES15	antibiotics_current_use	No	No	TP_correct
+6	SAMEA2784474	TRAVELRES15	disease	Healthy	Healthy	TP_correct
+6	SAMEA2784474	TRAVELRES15	uncurated_metadata	35 Swedish students (17 to Central Africa, 18 to Indian peninsula); Subjects were 23 to 34 years old, gender distribution 74% females (26/35); Median travel duration was 34 days (range 14 to 150); 69% of subjects had travelers' diarrhea during their trip; 12/18 (67%) travelers to Indian peninsula acquired ESBL-producing E. coli after return; none from Africa; All E. coli ESBL isolates carried the CTX-M-15 gene; Proteobacteria abundance increased in 25/35 students after travel	Not applicable	TP_wrong
+6	SAMEA2784474	TRAVELRES15	host_species	Human	Homo sapiens	TP_wrong
+7	SAMEA2784475	TRAVELRES16	study_name	not_reported	Bengtsson-PalmeJ_2015	FN
+7	SAMEA2784475	TRAVELRES16	subject_id	TRAVELRES28	TRAVELRES15_16	TP_wrong
+7	SAMEA2784475	TRAVELRES16	sample_id	SAMEA2784475	TRAVELRES16	TP_wrong
+7	SAMEA2784475	TRAVELRES16	curator	not_reported	Valentina_Giunchiglia,Paolo_Manghi,Marisa_Metzger	FN
+7	SAMEA2784475	TRAVELRES16	pmid	not_reported	26259788	FN
+7	SAMEA2784475	TRAVELRES16	target_condition	not_reported	Intestinal Flora	FN
+7	SAMEA2784475	TRAVELRES16	control	not_reported	Study Control	FN
+7	SAMEA2784475	TRAVELRES16	country	Sweden	Sweden	TP_correct
+7	SAMEA2784475	TRAVELRES16	body_site	feces	feces	TP_correct
+7	SAMEA2784475	TRAVELRES16	days_from_first_collection	not_reported	124	FN
+7	SAMEA2784475	TRAVELRES16	westernized	not_reported	Yes	FN
+7	SAMEA2784475	TRAVELRES16	dna_extraction_kit	not_reported	Qiagen	FN
+7	SAMEA2784475	TRAVELRES16	ncbi_accession	ERR636376	ERR636364	TP_wrong
+7	SAMEA2784475	TRAVELRES16	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	TP_wrong
+7	SAMEA2784475	TRAVELRES16	age	not_reported	23	FN
+7	SAMEA2784475	TRAVELRES16	age_group	Adult	Adult	TP_correct
+7	SAMEA2784475	TRAVELRES16	age_unit	Year	Year	TP_correct
+7	SAMEA2784475	TRAVELRES16	sex	not_reported	Female	FN
+7	SAMEA2784475	TRAVELRES16	age_min	23	23	TP_correct
+7	SAMEA2784475	TRAVELRES16	age_max	34	23	TP_wrong
+7	SAMEA2784475	TRAVELRES16	age_years	not_reported	23	FN
+7	SAMEA2784475	TRAVELRES16	antibiotics_current_use	No	No	TP_correct
+7	SAMEA2784475	TRAVELRES16	disease	Healthy	Healthy	TP_correct
+7	SAMEA2784475	TRAVELRES16	uncurated_metadata	35 Swedish students (17 to Central Africa, 18 to Indian peninsula); Subjects were 23 to 34 years old, gender distribution 74% females (26/35); Median travel duration was 34 days (range 14 to 150); 69% of subjects had travelers' diarrhea during their trip; 12/18 (67%) travelers to Indian peninsula acquired ESBL-producing E. coli after return; none from Africa; All E. coli ESBL isolates carried the CTX-M-15 gene; Proteobacteria abundance increased in 25/35 students after travel	travel_destination:IND	TP_wrong
+7	SAMEA2784475	TRAVELRES16	host_species	Human	Homo sapiens	TP_wrong
+8	SAMEA2784480	TRAVELRES17	study_name	not_reported	Bengtsson-PalmeJ_2015	FN
+8	SAMEA2784480	TRAVELRES17	subject_id	TRAVELRES33	TRAVELRES17_18	TP_wrong
+8	SAMEA2784480	TRAVELRES17	sample_id	SAMEA2784480	TRAVELRES17	TP_wrong
+8	SAMEA2784480	TRAVELRES17	curator	not_reported	Valentina_Giunchiglia,Paolo_Manghi,Marisa_Metzger	FN
+8	SAMEA2784480	TRAVELRES17	pmid	not_reported	26259788	FN
+8	SAMEA2784480	TRAVELRES17	target_condition	not_reported	Intestinal Flora	FN
+8	SAMEA2784480	TRAVELRES17	control	not_reported	Study Control	FN
+8	SAMEA2784480	TRAVELRES17	country	Sweden	Sweden	TP_correct
+8	SAMEA2784480	TRAVELRES17	body_site	feces	feces	TP_correct
+8	SAMEA2784480	TRAVELRES17	days_from_first_collection	not_reported	0	FN
+8	SAMEA2784480	TRAVELRES17	westernized	not_reported	Yes	FN
+8	SAMEA2784480	TRAVELRES17	dna_extraction_kit	not_reported	Qiagen	FN
+8	SAMEA2784480	TRAVELRES17	ncbi_accession	ERR636381	ERR636365	TP_wrong
+8	SAMEA2784480	TRAVELRES17	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	TP_wrong
+8	SAMEA2784480	TRAVELRES17	age	not_reported	24	FN
+8	SAMEA2784480	TRAVELRES17	age_group	Adult	Adult	TP_correct
+8	SAMEA2784480	TRAVELRES17	age_unit	Year	Year	TP_correct
+8	SAMEA2784480	TRAVELRES17	sex	not_reported	Male	FN
+8	SAMEA2784480	TRAVELRES17	age_min	23	24	TP_correct
+8	SAMEA2784480	TRAVELRES17	age_max	34	24	TP_wrong
+8	SAMEA2784480	TRAVELRES17	age_years	not_reported	24	FN
+8	SAMEA2784480	TRAVELRES17	antibiotics_current_use	No	No	TP_correct
+8	SAMEA2784480	TRAVELRES17	disease	Healthy	Healthy	TP_correct
+8	SAMEA2784480	TRAVELRES17	uncurated_metadata	35 Swedish students (17 to Central Africa, 18 to Indian peninsula); Subjects were 23 to 34 years old, gender distribution 74% females (26/35); Median travel duration was 34 days (range 14 to 150); 69% of subjects had travelers' diarrhea during their trip; 12/18 (67%) travelers to Indian peninsula acquired ESBL-producing E. coli after return; none from Africa; All E. coli ESBL isolates carried the CTX-M-15 gene; Proteobacteria abundance increased in 25/35 students after travel	Not applicable	TP_wrong
+8	SAMEA2784480	TRAVELRES17	host_species	Human	Homo sapiens	TP_wrong
+9	SAMEA2784449	TRAVELRES18	study_name	not_reported	Bengtsson-PalmeJ_2015	FN
+9	SAMEA2784449	TRAVELRES18	subject_id	TRAVELRES2	TRAVELRES17_18	TP_wrong
+9	SAMEA2784449	TRAVELRES18	sample_id	SAMEA2784449	TRAVELRES18	TP_wrong
+9	SAMEA2784449	TRAVELRES18	curator	not_reported	Valentina_Giunchiglia,Paolo_Manghi,Marisa_Metzger	FN
+9	SAMEA2784449	TRAVELRES18	pmid	not_reported	26259788	FN
+9	SAMEA2784449	TRAVELRES18	target_condition	not_reported	Intestinal Flora	FN
+9	SAMEA2784449	TRAVELRES18	control	not_reported	Study Control	FN
+9	SAMEA2784449	TRAVELRES18	country	Sweden	Sweden	TP_correct
+9	SAMEA2784449	TRAVELRES18	body_site	feces	feces	TP_correct
+9	SAMEA2784449	TRAVELRES18	days_from_first_collection	not_reported	43	FN
+9	SAMEA2784449	TRAVELRES18	westernized	not_reported	Yes	FN
+9	SAMEA2784449	TRAVELRES18	dna_extraction_kit	not_reported	Qiagen	FN
+9	SAMEA2784449	TRAVELRES18	ncbi_accession	ERR636350	ERR636366	TP_wrong
+9	SAMEA2784449	TRAVELRES18	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	TP_wrong
+9	SAMEA2784449	TRAVELRES18	age	not_reported	24	FN
+9	SAMEA2784449	TRAVELRES18	age_group	Adult	Adult	TP_correct
+9	SAMEA2784449	TRAVELRES18	age_unit	Year	Year	TP_correct
+9	SAMEA2784449	TRAVELRES18	sex	not_reported	Male	FN
+9	SAMEA2784449	TRAVELRES18	age_min	23	24	TP_correct
+9	SAMEA2784449	TRAVELRES18	age_max	34	24	TP_wrong
+9	SAMEA2784449	TRAVELRES18	age_years	not_reported	24	FN
+9	SAMEA2784449	TRAVELRES18	antibiotics_current_use	No	No	TP_correct
+9	SAMEA2784449	TRAVELRES18	disease	Healthy	Healthy	TP_correct
+9	SAMEA2784449	TRAVELRES18	uncurated_metadata	35 Swedish students (17 to Central Africa, 18 to Indian peninsula); Subjects were 23 to 34 years old, gender distribution 74% females (26/35); Median travel duration was 34 days (range 14 to 150); 69% of subjects had travelers' diarrhea during their trip; 12/18 (67%) travelers to Indian peninsula acquired ESBL-producing E. coli after return; none from Africa; All E. coli ESBL isolates carried the CTX-M-15 gene; Proteobacteria abundance increased in 25/35 students after travel	travel_destination:IND	TP_wrong
+9	SAMEA2784449	TRAVELRES18	host_species	Human	Homo sapiens	TP_wrong
+10	SAMEA2784450	TRAVELRES19	study_name	not_reported	Bengtsson-PalmeJ_2015	FN
+10	SAMEA2784450	TRAVELRES19	subject_id	TRAVELRES3	TRAVELRES19_20	TP_wrong
+10	SAMEA2784450	TRAVELRES19	sample_id	SAMEA2784450	TRAVELRES19	TP_wrong
+10	SAMEA2784450	TRAVELRES19	curator	not_reported	Valentina_Giunchiglia,Paolo_Manghi,Marisa_Metzger	FN
+10	SAMEA2784450	TRAVELRES19	pmid	not_reported	26259788	FN
+10	SAMEA2784450	TRAVELRES19	target_condition	not_reported	Intestinal Flora	FN
+10	SAMEA2784450	TRAVELRES19	control	not_reported	Study Control	FN
+10	SAMEA2784450	TRAVELRES19	country	Sweden	Sweden	TP_correct
+10	SAMEA2784450	TRAVELRES19	body_site	feces	feces	TP_correct
+10	SAMEA2784450	TRAVELRES19	days_from_first_collection	not_reported	0	FN
+10	SAMEA2784450	TRAVELRES19	westernized	not_reported	Yes	FN
+10	SAMEA2784450	TRAVELRES19	dna_extraction_kit	not_reported	Qiagen	FN
+10	SAMEA2784450	TRAVELRES19	ncbi_accession	ERR636351	ERR636367	TP_wrong
+10	SAMEA2784450	TRAVELRES19	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	TP_wrong
+10	SAMEA2784450	TRAVELRES19	age	not_reported	26	FN
+10	SAMEA2784450	TRAVELRES19	age_group	Adult	Adult	TP_correct
+10	SAMEA2784450	TRAVELRES19	age_unit	Year	Year	TP_correct
+10	SAMEA2784450	TRAVELRES19	sex	not_reported	Female	FN
+10	SAMEA2784450	TRAVELRES19	age_min	23	26	TP_wrong
+10	SAMEA2784450	TRAVELRES19	age_max	34	26	TP_wrong
+10	SAMEA2784450	TRAVELRES19	age_years	not_reported	26	FN
+10	SAMEA2784450	TRAVELRES19	antibiotics_current_use	No	No	TP_correct
+10	SAMEA2784450	TRAVELRES19	disease	Healthy	Healthy	TP_correct
+10	SAMEA2784450	TRAVELRES19	uncurated_metadata	35 Swedish students (17 to Central Africa, 18 to Indian peninsula); Subjects were 23 to 34 years old, gender distribution 74% females (26/35); Median travel duration was 34 days (range 14 to 150); 69% of subjects had travelers' diarrhea during their trip; 12/18 (67%) travelers to Indian peninsula acquired ESBL-producing E. coli after return; none from Africa; All E. coli ESBL isolates carried the CTX-M-15 gene; Proteobacteria abundance increased in 25/35 students after travel	Not applicable	TP_wrong
+10	SAMEA2784450	TRAVELRES19	host_species	Human	Homo sapiens	TP_wrong
+11	SAMEA2784481	TRAVELRES2	study_name	not_reported	Bengtsson-PalmeJ_2015	FN
+11	SAMEA2784481	TRAVELRES2	subject_id	TRAVELRES34	TRAVELRES1_2	TP_wrong
+11	SAMEA2784481	TRAVELRES2	sample_id	SAMEA2784481	TRAVELRES2	TP_wrong
+11	SAMEA2784481	TRAVELRES2	curator	not_reported	Valentina_Giunchiglia,Paolo_Manghi,Marisa_Metzger	FN
+11	SAMEA2784481	TRAVELRES2	pmid	not_reported	26259788	FN
+11	SAMEA2784481	TRAVELRES2	target_condition	not_reported	Intestinal Flora	FN
+11	SAMEA2784481	TRAVELRES2	control	not_reported	Study Control	FN
+11	SAMEA2784481	TRAVELRES2	country	Sweden	Sweden	TP_correct
+11	SAMEA2784481	TRAVELRES2	body_site	feces	feces	TP_correct
+11	SAMEA2784481	TRAVELRES2	days_from_first_collection	not_reported	49	FN
+11	SAMEA2784481	TRAVELRES2	westernized	not_reported	Yes	FN
+11	SAMEA2784481	TRAVELRES2	dna_extraction_kit	not_reported	Qiagen	FN
+11	SAMEA2784481	TRAVELRES2	ncbi_accession	ERR636382	ERR636350	TP_wrong
+11	SAMEA2784481	TRAVELRES2	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	TP_wrong
+11	SAMEA2784481	TRAVELRES2	age	not_reported	25	FN
+11	SAMEA2784481	TRAVELRES2	age_group	Adult	Adult	TP_correct
+11	SAMEA2784481	TRAVELRES2	age_unit	Year	Year	TP_correct
+11	SAMEA2784481	TRAVELRES2	sex	not_reported	Female	FN
+11	SAMEA2784481	TRAVELRES2	age_min	23	25	TP_wrong
+11	SAMEA2784481	TRAVELRES2	age_max	34	25	TP_wrong
+11	SAMEA2784481	TRAVELRES2	age_years	not_reported	25	FN
+11	SAMEA2784481	TRAVELRES2	antibiotics_current_use	No	No	TP_correct
+11	SAMEA2784481	TRAVELRES2	disease	Healthy	Healthy	TP_correct
+11	SAMEA2784481	TRAVELRES2	uncurated_metadata	35 Swedish students (17 to Central Africa, 18 to Indian peninsula); Subjects were 23 to 34 years old, gender distribution 74% females (26/35); Median travel duration was 34 days (range 14 to 150); 69% of subjects had travelers' diarrhea during their trip; 12/18 (67%) travelers to Indian peninsula acquired ESBL-producing E. coli after return; none from Africa; All E. coli ESBL isolates carried the CTX-M-15 gene; Proteobacteria abundance increased in 25/35 students after travel	travel_destination:RWA	TP_wrong
+11	SAMEA2784481	TRAVELRES2	host_species	Human	Homo sapiens	TP_wrong
+12	SAMEA2784486	TRAVELRES20	study_name	not_reported	Bengtsson-PalmeJ_2015	FN
+12	SAMEA2784486	TRAVELRES20	subject_id	TRAVELRES39	TRAVELRES19_20	TP_wrong
+12	SAMEA2784486	TRAVELRES20	sample_id	SAMEA2784486	TRAVELRES20	TP_wrong
+12	SAMEA2784486	TRAVELRES20	curator	not_reported	Valentina_Giunchiglia,Paolo_Manghi,Marisa_Metzger	FN
+12	SAMEA2784486	TRAVELRES20	pmid	not_reported	26259788	FN
+12	SAMEA2784486	TRAVELRES20	target_condition	not_reported	Intestinal Flora	FN
+12	SAMEA2784486	TRAVELRES20	control	not_reported	Study Control	FN
+12	SAMEA2784486	TRAVELRES20	country	Sweden	Sweden	TP_correct
+12	SAMEA2784486	TRAVELRES20	body_site	feces	feces	TP_correct
+12	SAMEA2784486	TRAVELRES20	days_from_first_collection	not_reported	69	FN
+12	SAMEA2784486	TRAVELRES20	westernized	not_reported	Yes	FN
+12	SAMEA2784486	TRAVELRES20	dna_extraction_kit	not_reported	Qiagen	FN
+12	SAMEA2784486	TRAVELRES20	ncbi_accession	ERR636387	ERR636368	TP_wrong
+12	SAMEA2784486	TRAVELRES20	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	TP_wrong
+12	SAMEA2784486	TRAVELRES20	age	not_reported	26	FN
+12	SAMEA2784486	TRAVELRES20	age_group	Adult	Adult	TP_correct
+12	SAMEA2784486	TRAVELRES20	age_unit	Year	Year	TP_correct
+12	SAMEA2784486	TRAVELRES20	sex	not_reported	Female	FN
+12	SAMEA2784486	TRAVELRES20	age_min	23	26	TP_wrong
+12	SAMEA2784486	TRAVELRES20	age_max	34	26	TP_wrong
+12	SAMEA2784486	TRAVELRES20	age_years	not_reported	26	FN
+12	SAMEA2784486	TRAVELRES20	antibiotics_current_use	No	No	TP_correct
+12	SAMEA2784486	TRAVELRES20	disease	Healthy	Healthy	TP_correct
+12	SAMEA2784486	TRAVELRES20	uncurated_metadata	35 Swedish students (17 to Central Africa, 18 to Indian peninsula); Subjects were 23 to 34 years old, gender distribution 74% females (26/35); Median travel duration was 34 days (range 14 to 150); 69% of subjects had travelers' diarrhea during their trip; 12/18 (67%) travelers to Indian peninsula acquired ESBL-producing E. coli after return; none from Africa; All E. coli ESBL isolates carried the CTX-M-15 gene; Proteobacteria abundance increased in 25/35 students after travel	travel_destination:IND	TP_wrong
+12	SAMEA2784486	TRAVELRES20	host_species	Human	Homo sapiens	TP_wrong
+13	SAMEA2784451	TRAVELRES21	study_name	not_reported	Bengtsson-PalmeJ_2015	FN
+13	SAMEA2784451	TRAVELRES21	subject_id	TRAVELRES4	TRAVELRES21_22	TP_wrong
+13	SAMEA2784451	TRAVELRES21	sample_id	SAMEA2784451	TRAVELRES21	TP_wrong
+13	SAMEA2784451	TRAVELRES21	curator	not_reported	Valentina_Giunchiglia,Paolo_Manghi,Marisa_Metzger	FN
+13	SAMEA2784451	TRAVELRES21	pmid	not_reported	26259788	FN
+13	SAMEA2784451	TRAVELRES21	target_condition	not_reported	Intestinal Flora	FN
+13	SAMEA2784451	TRAVELRES21	control	not_reported	Study Control	FN
+13	SAMEA2784451	TRAVELRES21	country	Sweden	Sweden	TP_correct
+13	SAMEA2784451	TRAVELRES21	body_site	feces	feces	TP_correct
+13	SAMEA2784451	TRAVELRES21	days_from_first_collection	not_reported	0	FN
+13	SAMEA2784451	TRAVELRES21	westernized	not_reported	Yes	FN
+13	SAMEA2784451	TRAVELRES21	dna_extraction_kit	not_reported	Qiagen	FN
+13	SAMEA2784451	TRAVELRES21	ncbi_accession	ERR636352	ERR636369	TP_wrong
+13	SAMEA2784451	TRAVELRES21	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	TP_wrong
+13	SAMEA2784451	TRAVELRES21	age	not_reported	24	FN
+13	SAMEA2784451	TRAVELRES21	age_group	Adult	Adult	TP_correct
+13	SAMEA2784451	TRAVELRES21	age_unit	Year	Year	TP_correct
+13	SAMEA2784451	TRAVELRES21	sex	not_reported	Female	FN
+13	SAMEA2784451	TRAVELRES21	age_min	23	24	TP_correct
+13	SAMEA2784451	TRAVELRES21	age_max	34	24	TP_wrong
+13	SAMEA2784451	TRAVELRES21	age_years	not_reported	24	FN
+13	SAMEA2784451	TRAVELRES21	antibiotics_current_use	No	No	TP_correct
+13	SAMEA2784451	TRAVELRES21	disease	Healthy	Healthy	TP_correct
+13	SAMEA2784451	TRAVELRES21	uncurated_metadata	35 Swedish students (17 to Central Africa, 18 to Indian peninsula); Subjects were 23 to 34 years old, gender distribution 74% females (26/35); Median travel duration was 34 days (range 14 to 150); 69% of subjects had travelers' diarrhea during their trip; 12/18 (67%) travelers to Indian peninsula acquired ESBL-producing E. coli after return; none from Africa; All E. coli ESBL isolates carried the CTX-M-15 gene; Proteobacteria abundance increased in 25/35 students after travel	Not applicable	TP_wrong
+13	SAMEA2784451	TRAVELRES21	host_species	Human	Homo sapiens	TP_wrong
+14	SAMEA2784456	TRAVELRES22	study_name	not_reported	Bengtsson-PalmeJ_2015	FN
+14	SAMEA2784456	TRAVELRES22	subject_id	TRAVELRES9	TRAVELRES21_22	TP_wrong
+14	SAMEA2784456	TRAVELRES22	sample_id	SAMEA2784456	TRAVELRES22	TP_wrong
+14	SAMEA2784456	TRAVELRES22	curator	not_reported	Valentina_Giunchiglia,Paolo_Manghi,Marisa_Metzger	FN
+14	SAMEA2784456	TRAVELRES22	pmid	not_reported	26259788	FN
+14	SAMEA2784456	TRAVELRES22	target_condition	not_reported	Intestinal Flora	FN
+14	SAMEA2784456	TRAVELRES22	control	not_reported	Study Control	FN
+14	SAMEA2784456	TRAVELRES22	country	Sweden	Sweden	TP_correct
+14	SAMEA2784456	TRAVELRES22	body_site	feces	feces	TP_correct
+14	SAMEA2784456	TRAVELRES22	days_from_first_collection	not_reported	52	FN
+14	SAMEA2784456	TRAVELRES22	westernized	not_reported	Yes	FN
+14	SAMEA2784456	TRAVELRES22	dna_extraction_kit	not_reported	Qiagen	FN
+14	SAMEA2784456	TRAVELRES22	ncbi_accession	ERR636357	ERR636370	TP_wrong
+14	SAMEA2784456	TRAVELRES22	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	TP_wrong
+14	SAMEA2784456	TRAVELRES22	age	not_reported	24	FN
+14	SAMEA2784456	TRAVELRES22	age_group	Adult	Adult	TP_correct
+14	SAMEA2784456	TRAVELRES22	age_unit	Year	Year	TP_correct
+14	SAMEA2784456	TRAVELRES22	sex	not_reported	Female	FN
+14	SAMEA2784456	TRAVELRES22	age_min	23	24	TP_correct
+14	SAMEA2784456	TRAVELRES22	age_max	34	24	TP_wrong
+14	SAMEA2784456	TRAVELRES22	age_years	not_reported	24	FN
+14	SAMEA2784456	TRAVELRES22	antibiotics_current_use	No	No	TP_correct
+14	SAMEA2784456	TRAVELRES22	disease	Healthy	Healthy	TP_correct
+14	SAMEA2784456	TRAVELRES22	uncurated_metadata	35 Swedish students (17 to Central Africa, 18 to Indian peninsula); Subjects were 23 to 34 years old, gender distribution 74% females (26/35); Median travel duration was 34 days (range 14 to 150); 69% of subjects had travelers' diarrhea during their trip; 12/18 (67%) travelers to Indian peninsula acquired ESBL-producing E. coli after return; none from Africa; All E. coli ESBL isolates carried the CTX-M-15 gene; Proteobacteria abundance increased in 25/35 students after travel	travel_destination:TZA	TP_wrong
+14	SAMEA2784456	TRAVELRES22	host_species	Human	Homo sapiens	TP_wrong
+15	SAMEA2784487	TRAVELRES23	study_name	not_reported	Bengtsson-PalmeJ_2015	FN
+15	SAMEA2784487	TRAVELRES23	subject_id	TRAVELRES40	TRAVELRES23_24	TP_wrong
+15	SAMEA2784487	TRAVELRES23	sample_id	SAMEA2784487	TRAVELRES23	TP_wrong
+15	SAMEA2784487	TRAVELRES23	curator	not_reported	Valentina_Giunchiglia,Paolo_Manghi,Marisa_Metzger	FN
+15	SAMEA2784487	TRAVELRES23	pmid	not_reported	26259788	FN
+15	SAMEA2784487	TRAVELRES23	target_condition	not_reported	Intestinal Flora	FN
+15	SAMEA2784487	TRAVELRES23	control	not_reported	Study Control	FN
+15	SAMEA2784487	TRAVELRES23	country	Sweden	Sweden	TP_correct
+15	SAMEA2784487	TRAVELRES23	body_site	feces	feces	TP_correct
+15	SAMEA2784487	TRAVELRES23	days_from_first_collection	not_reported	0	FN
+15	SAMEA2784487	TRAVELRES23	westernized	not_reported	Yes	FN
+15	SAMEA2784487	TRAVELRES23	dna_extraction_kit	not_reported	Qiagen	FN
+15	SAMEA2784487	TRAVELRES23	ncbi_accession	ERR636388	ERR636371	TP_wrong
+15	SAMEA2784487	TRAVELRES23	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	TP_wrong
+15	SAMEA2784487	TRAVELRES23	age	not_reported	24	FN
+15	SAMEA2784487	TRAVELRES23	age_group	Adult	Adult	TP_correct
+15	SAMEA2784487	TRAVELRES23	age_unit	Year	Year	TP_correct
+15	SAMEA2784487	TRAVELRES23	sex	not_reported	Female	FN
+15	SAMEA2784487	TRAVELRES23	age_min	23	24	TP_correct
+15	SAMEA2784487	TRAVELRES23	age_max	34	24	TP_wrong
+15	SAMEA2784487	TRAVELRES23	age_years	not_reported	24	FN
+15	SAMEA2784487	TRAVELRES23	antibiotics_current_use	No	No	TP_correct
+15	SAMEA2784487	TRAVELRES23	disease	Healthy	Healthy	TP_correct
+15	SAMEA2784487	TRAVELRES23	uncurated_metadata	35 Swedish students (17 to Central Africa, 18 to Indian peninsula); Subjects were 23 to 34 years old, gender distribution 74% females (26/35); Median travel duration was 34 days (range 14 to 150); 69% of subjects had travelers' diarrhea during their trip; 12/18 (67%) travelers to Indian peninsula acquired ESBL-producing E. coli after return; none from Africa; All E. coli ESBL isolates carried the CTX-M-15 gene; Proteobacteria abundance increased in 25/35 students after travel	Not applicable	TP_wrong
+15	SAMEA2784487	TRAVELRES23	host_species	Human	Homo sapiens	TP_wrong
+16	SAMEA2784489	TRAVELRES24	study_name	not_reported	Bengtsson-PalmeJ_2015	FN
+16	SAMEA2784489	TRAVELRES24	subject_id	TRAVELRES42	TRAVELRES23_24	TP_wrong
+16	SAMEA2784489	TRAVELRES24	sample_id	SAMEA2784489	TRAVELRES24	TP_wrong
+16	SAMEA2784489	TRAVELRES24	curator	not_reported	Valentina_Giunchiglia,Paolo_Manghi,Marisa_Metzger	FN
+16	SAMEA2784489	TRAVELRES24	pmid	not_reported	26259788	FN
+16	SAMEA2784489	TRAVELRES24	target_condition	not_reported	Intestinal Flora	FN
+16	SAMEA2784489	TRAVELRES24	control	not_reported	Study Control	FN
+16	SAMEA2784489	TRAVELRES24	country	Sweden	Sweden	TP_correct
+16	SAMEA2784489	TRAVELRES24	body_site	feces	feces	TP_correct
+16	SAMEA2784489	TRAVELRES24	days_from_first_collection	not_reported	99	FN
+16	SAMEA2784489	TRAVELRES24	westernized	not_reported	Yes	FN
+16	SAMEA2784489	TRAVELRES24	dna_extraction_kit	not_reported	Qiagen	FN
+16	SAMEA2784489	TRAVELRES24	ncbi_accession	ERR636390	ERR636372	TP_wrong
+16	SAMEA2784489	TRAVELRES24	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	TP_wrong
+16	SAMEA2784489	TRAVELRES24	age	not_reported	24	FN
+16	SAMEA2784489	TRAVELRES24	age_group	Adult	Adult	TP_correct
+16	SAMEA2784489	TRAVELRES24	age_unit	Year	Year	TP_correct
+16	SAMEA2784489	TRAVELRES24	sex	not_reported	Female	FN
+16	SAMEA2784489	TRAVELRES24	age_min	23	24	TP_correct
+16	SAMEA2784489	TRAVELRES24	age_max	34	24	TP_wrong
+16	SAMEA2784489	TRAVELRES24	age_years	not_reported	24	FN
+16	SAMEA2784489	TRAVELRES24	antibiotics_current_use	No	No	TP_correct
+16	SAMEA2784489	TRAVELRES24	disease	Healthy	Healthy	TP_correct
+16	SAMEA2784489	TRAVELRES24	uncurated_metadata	35 Swedish students (17 to Central Africa, 18 to Indian peninsula); Subjects were 23 to 34 years old, gender distribution 74% females (26/35); Median travel duration was 34 days (range 14 to 150); 69% of subjects had travelers' diarrhea during their trip; 12/18 (67%) travelers to Indian peninsula acquired ESBL-producing E. coli after return; none from Africa; All E. coli ESBL isolates carried the CTX-M-15 gene; Proteobacteria abundance increased in 25/35 students after travel	travel_destination:ETH	TP_wrong
+16	SAMEA2784489	TRAVELRES24	host_species	Human	Homo sapiens	TP_wrong
+17	SAMEA2784465	TRAVELRES25	study_name	not_reported	Bengtsson-PalmeJ_2015	FN
+17	SAMEA2784465	TRAVELRES25	subject_id	TRAVELRES18	TRAVELRES25_26	TP_wrong
+17	SAMEA2784465	TRAVELRES25	sample_id	SAMEA2784465	TRAVELRES25	TP_wrong
+17	SAMEA2784465	TRAVELRES25	curator	not_reported	Valentina_Giunchiglia,Paolo_Manghi,Marisa_Metzger	FN
+17	SAMEA2784465	TRAVELRES25	pmid	not_reported	26259788	FN
+17	SAMEA2784465	TRAVELRES25	target_condition	not_reported	Intestinal Flora	FN
+17	SAMEA2784465	TRAVELRES25	control	not_reported	Study Control	FN
+17	SAMEA2784465	TRAVELRES25	country	Sweden	Sweden	TP_correct
+17	SAMEA2784465	TRAVELRES25	body_site	feces	feces	TP_correct
+17	SAMEA2784465	TRAVELRES25	days_from_first_collection	not_reported	0	FN
+17	SAMEA2784465	TRAVELRES25	westernized	not_reported	Yes	FN
+17	SAMEA2784465	TRAVELRES25	dna_extraction_kit	not_reported	Qiagen	FN
+17	SAMEA2784465	TRAVELRES25	ncbi_accession	ERR636366	ERR636373	TP_wrong
+17	SAMEA2784465	TRAVELRES25	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	TP_wrong
+17	SAMEA2784465	TRAVELRES25	age	not_reported	25	FN
+17	SAMEA2784465	TRAVELRES25	age_group	Adult	Adult	TP_correct
+17	SAMEA2784465	TRAVELRES25	age_unit	Year	Year	TP_correct
+17	SAMEA2784465	TRAVELRES25	sex	not_reported	Female	FN
+17	SAMEA2784465	TRAVELRES25	age_min	23	25	TP_wrong
+17	SAMEA2784465	TRAVELRES25	age_max	34	25	TP_wrong
+17	SAMEA2784465	TRAVELRES25	age_years	not_reported	25	FN
+17	SAMEA2784465	TRAVELRES25	antibiotics_current_use	No	No	TP_correct
+17	SAMEA2784465	TRAVELRES25	disease	Healthy	Healthy	TP_correct
+17	SAMEA2784465	TRAVELRES25	uncurated_metadata	35 Swedish students (17 to Central Africa, 18 to Indian peninsula); Subjects were 23 to 34 years old, gender distribution 74% females (26/35); Median travel duration was 34 days (range 14 to 150); 69% of subjects had travelers' diarrhea during their trip; 12/18 (67%) travelers to Indian peninsula acquired ESBL-producing E. coli after return; none from Africa; All E. coli ESBL isolates carried the CTX-M-15 gene; Proteobacteria abundance increased in 25/35 students after travel	Not applicable	TP_wrong
+17	SAMEA2784465	TRAVELRES25	host_species	Human	Homo sapiens	TP_wrong
+18	SAMEA2784468	TRAVELRES26	study_name	not_reported	Bengtsson-PalmeJ_2015	FN
+18	SAMEA2784468	TRAVELRES26	subject_id	TRAVELRES21	TRAVELRES25_26	TP_wrong
+18	SAMEA2784468	TRAVELRES26	sample_id	SAMEA2784468	TRAVELRES26	TP_wrong
+18	SAMEA2784468	TRAVELRES26	curator	not_reported	Valentina_Giunchiglia,Paolo_Manghi,Marisa_Metzger	FN
+18	SAMEA2784468	TRAVELRES26	pmid	not_reported	26259788	FN
+18	SAMEA2784468	TRAVELRES26	target_condition	not_reported	Intestinal Flora	FN
+18	SAMEA2784468	TRAVELRES26	control	not_reported	Study Control	FN
+18	SAMEA2784468	TRAVELRES26	country	Sweden	Sweden	TP_correct
+18	SAMEA2784468	TRAVELRES26	body_site	feces	feces	TP_correct
+18	SAMEA2784468	TRAVELRES26	days_from_first_collection	not_reported	58	FN
+18	SAMEA2784468	TRAVELRES26	westernized	not_reported	Yes	FN
+18	SAMEA2784468	TRAVELRES26	dna_extraction_kit	not_reported	Qiagen	FN
+18	SAMEA2784468	TRAVELRES26	ncbi_accession	ERR636369	ERR636374	TP_wrong
+18	SAMEA2784468	TRAVELRES26	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	TP_wrong
+18	SAMEA2784468	TRAVELRES26	age	not_reported	25	FN
+18	SAMEA2784468	TRAVELRES26	age_group	Adult	Adult	TP_correct
+18	SAMEA2784468	TRAVELRES26	age_unit	Year	Year	TP_correct
+18	SAMEA2784468	TRAVELRES26	sex	not_reported	Female	FN
+18	SAMEA2784468	TRAVELRES26	age_min	23	25	TP_wrong
+18	SAMEA2784468	TRAVELRES26	age_max	34	25	TP_wrong
+18	SAMEA2784468	TRAVELRES26	age_years	not_reported	25	FN
+18	SAMEA2784468	TRAVELRES26	antibiotics_current_use	No	No	TP_correct
+18	SAMEA2784468	TRAVELRES26	disease	Healthy	Healthy	TP_correct
+18	SAMEA2784468	TRAVELRES26	uncurated_metadata	35 Swedish students (17 to Central Africa, 18 to Indian peninsula); Subjects were 23 to 34 years old, gender distribution 74% females (26/35); Median travel duration was 34 days (range 14 to 150); 69% of subjects had travelers' diarrhea during their trip; 12/18 (67%) travelers to Indian peninsula acquired ESBL-producing E. coli after return; none from Africa; All E. coli ESBL isolates carried the CTX-M-15 gene; Proteobacteria abundance increased in 25/35 students after travel	travel_destination:IND	TP_wrong
+18	SAMEA2784468	TRAVELRES26	host_species	Human	Homo sapiens	TP_wrong
+19	SAMEA2784491	TRAVELRES27	study_name	not_reported	Bengtsson-PalmeJ_2015	FN
+19	SAMEA2784491	TRAVELRES27	subject_id	TRAVELRES44	TRAVELRES27_28	TP_wrong
+19	SAMEA2784491	TRAVELRES27	sample_id	SAMEA2784491	TRAVELRES27	TP_wrong
+19	SAMEA2784491	TRAVELRES27	curator	not_reported	Valentina_Giunchiglia,Paolo_Manghi,Marisa_Metzger	FN
+19	SAMEA2784491	TRAVELRES27	pmid	not_reported	26259788	FN
+19	SAMEA2784491	TRAVELRES27	target_condition	not_reported	Intestinal Flora	FN
+19	SAMEA2784491	TRAVELRES27	control	not_reported	Study Control	FN
+19	SAMEA2784491	TRAVELRES27	country	Sweden	Sweden	TP_correct
+19	SAMEA2784491	TRAVELRES27	body_site	feces	feces	TP_correct
+19	SAMEA2784491	TRAVELRES27	days_from_first_collection	not_reported	0	FN
+19	SAMEA2784491	TRAVELRES27	westernized	not_reported	Yes	FN
+19	SAMEA2784491	TRAVELRES27	dna_extraction_kit	not_reported	Qiagen	FN
+19	SAMEA2784491	TRAVELRES27	ncbi_accession	ERR636392	ERR636375	TP_wrong
+19	SAMEA2784491	TRAVELRES27	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	TP_wrong
+19	SAMEA2784491	TRAVELRES27	age	not_reported	25	FN
+19	SAMEA2784491	TRAVELRES27	age_group	Adult	Adult	TP_correct
+19	SAMEA2784491	TRAVELRES27	age_unit	Year	Year	TP_correct
+19	SAMEA2784491	TRAVELRES27	sex	not_reported	Male	FN
+19	SAMEA2784491	TRAVELRES27	age_min	23	25	TP_wrong
+19	SAMEA2784491	TRAVELRES27	age_max	34	25	TP_wrong
+19	SAMEA2784491	TRAVELRES27	age_years	not_reported	25	FN
+19	SAMEA2784491	TRAVELRES27	antibiotics_current_use	No	No	TP_correct
+19	SAMEA2784491	TRAVELRES27	disease	Healthy	Healthy	TP_correct
+19	SAMEA2784491	TRAVELRES27	uncurated_metadata	35 Swedish students (17 to Central Africa, 18 to Indian peninsula); Subjects were 23 to 34 years old, gender distribution 74% females (26/35); Median travel duration was 34 days (range 14 to 150); 69% of subjects had travelers' diarrhea during their trip; 12/18 (67%) travelers to Indian peninsula acquired ESBL-producing E. coli after return; none from Africa; All E. coli ESBL isolates carried the CTX-M-15 gene; Proteobacteria abundance increased in 25/35 students after travel	Not applicable	TP_wrong
+19	SAMEA2784491	TRAVELRES27	host_species	Human	Homo sapiens	TP_wrong
+20	SAMEA2784493	TRAVELRES28	study_name	not_reported	Bengtsson-PalmeJ_2015	FN
+20	SAMEA2784493	TRAVELRES28	subject_id	TRAVELRES46	TRAVELRES27_28	TP_wrong
+20	SAMEA2784493	TRAVELRES28	sample_id	SAMEA2784493	TRAVELRES28	TP_wrong
+20	SAMEA2784493	TRAVELRES28	curator	not_reported	Valentina_Giunchiglia,Paolo_Manghi,Marisa_Metzger	FN
+20	SAMEA2784493	TRAVELRES28	pmid	not_reported	26259788	FN
+20	SAMEA2784493	TRAVELRES28	target_condition	not_reported	Intestinal Flora	FN
+20	SAMEA2784493	TRAVELRES28	control	not_reported	Study Control	FN
+20	SAMEA2784493	TRAVELRES28	country	Sweden	Sweden	TP_correct
+20	SAMEA2784493	TRAVELRES28	body_site	feces	feces	TP_correct
+20	SAMEA2784493	TRAVELRES28	days_from_first_collection	not_reported	97	FN
+20	SAMEA2784493	TRAVELRES28	westernized	not_reported	Yes	FN
+20	SAMEA2784493	TRAVELRES28	dna_extraction_kit	not_reported	Qiagen	FN
+20	SAMEA2784493	TRAVELRES28	ncbi_accession	ERR636394	ERR636376	TP_wrong
+20	SAMEA2784493	TRAVELRES28	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	TP_wrong
+20	SAMEA2784493	TRAVELRES28	age	not_reported	25	FN
+20	SAMEA2784493	TRAVELRES28	age_group	Adult	Adult	TP_correct
+20	SAMEA2784493	TRAVELRES28	age_unit	Year	Year	TP_correct
+20	SAMEA2784493	TRAVELRES28	sex	not_reported	Male	FN
+20	SAMEA2784493	TRAVELRES28	age_min	23	25	TP_wrong
+20	SAMEA2784493	TRAVELRES28	age_max	34	25	TP_wrong
+20	SAMEA2784493	TRAVELRES28	age_years	not_reported	25	FN
+20	SAMEA2784493	TRAVELRES28	antibiotics_current_use	No	No	TP_correct
+20	SAMEA2784493	TRAVELRES28	disease	Healthy	Healthy	TP_correct
+20	SAMEA2784493	TRAVELRES28	uncurated_metadata	35 Swedish students (17 to Central Africa, 18 to Indian peninsula); Subjects were 23 to 34 years old, gender distribution 74% females (26/35); Median travel duration was 34 days (range 14 to 150); 69% of subjects had travelers' diarrhea during their trip; 12/18 (67%) travelers to Indian peninsula acquired ESBL-producing E. coli after return; none from Africa; All E. coli ESBL isolates carried the CTX-M-15 gene; Proteobacteria abundance increased in 25/35 students after travel	travel_destination:TZA	TP_wrong
+20	SAMEA2784493	TRAVELRES28	host_species	Human	Homo sapiens	TP_wrong
+21	SAMEA2784471	TRAVELRES29	study_name	not_reported	Bengtsson-PalmeJ_2015	FN
+21	SAMEA2784471	TRAVELRES29	subject_id	TRAVELRES24	TRAVELRES29_30	TP_wrong
+21	SAMEA2784471	TRAVELRES29	sample_id	SAMEA2784471	TRAVELRES29	TP_wrong
+21	SAMEA2784471	TRAVELRES29	curator	not_reported	Valentina_Giunchiglia,Paolo_Manghi,Marisa_Metzger	FN
+21	SAMEA2784471	TRAVELRES29	pmid	not_reported	26259788	FN
+21	SAMEA2784471	TRAVELRES29	target_condition	not_reported	Intestinal Flora	FN
+21	SAMEA2784471	TRAVELRES29	control	not_reported	Study Control	FN
+21	SAMEA2784471	TRAVELRES29	country	Sweden	Sweden	TP_correct
+21	SAMEA2784471	TRAVELRES29	body_site	feces	feces	TP_correct
+21	SAMEA2784471	TRAVELRES29	days_from_first_collection	not_reported	0	FN
+21	SAMEA2784471	TRAVELRES29	westernized	not_reported	Yes	FN
+21	SAMEA2784471	TRAVELRES29	dna_extraction_kit	not_reported	Qiagen	FN
+21	SAMEA2784471	TRAVELRES29	ncbi_accession	ERR636372	ERR636377	TP_wrong
+21	SAMEA2784471	TRAVELRES29	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	TP_wrong
+21	SAMEA2784471	TRAVELRES29	age	not_reported	24	FN
+21	SAMEA2784471	TRAVELRES29	age_group	Adult	Adult	TP_correct
+21	SAMEA2784471	TRAVELRES29	age_unit	Year	Year	TP_correct
+21	SAMEA2784471	TRAVELRES29	sex	not_reported	Male	FN
+21	SAMEA2784471	TRAVELRES29	age_min	23	24	TP_correct
+21	SAMEA2784471	TRAVELRES29	age_max	34	24	TP_wrong
+21	SAMEA2784471	TRAVELRES29	age_years	not_reported	24	FN
+21	SAMEA2784471	TRAVELRES29	antibiotics_current_use	No	No	TP_correct
+21	SAMEA2784471	TRAVELRES29	disease	Healthy	Healthy	TP_correct
+21	SAMEA2784471	TRAVELRES29	uncurated_metadata	35 Swedish students (17 to Central Africa, 18 to Indian peninsula); Subjects were 23 to 34 years old, gender distribution 74% females (26/35); Median travel duration was 34 days (range 14 to 150); 69% of subjects had travelers' diarrhea during their trip; 12/18 (67%) travelers to Indian peninsula acquired ESBL-producing E. coli after return; none from Africa; All E. coli ESBL isolates carried the CTX-M-15 gene; Proteobacteria abundance increased in 25/35 students after travel	Not applicable	TP_wrong
+21	SAMEA2784471	TRAVELRES29	host_species	Human	Homo sapiens	TP_wrong
+22	SAMEA2784472	TRAVELRES3	study_name	not_reported	Bengtsson-PalmeJ_2015	FN
+22	SAMEA2784472	TRAVELRES3	subject_id	TRAVELRES25	TRAVELRES3_4	TP_wrong
+22	SAMEA2784472	TRAVELRES3	sample_id	SAMEA2784472	TRAVELRES3	TP_wrong
+22	SAMEA2784472	TRAVELRES3	curator	not_reported	Valentina_Giunchiglia,Paolo_Manghi,Marisa_Metzger	FN
+22	SAMEA2784472	TRAVELRES3	pmid	not_reported	26259788	FN
+22	SAMEA2784472	TRAVELRES3	target_condition	not_reported	Intestinal Flora	FN
+22	SAMEA2784472	TRAVELRES3	control	not_reported	Study Control	FN
+22	SAMEA2784472	TRAVELRES3	country	Sweden	Sweden	TP_correct
+22	SAMEA2784472	TRAVELRES3	body_site	feces	feces	TP_correct
+22	SAMEA2784472	TRAVELRES3	days_from_first_collection	not_reported	0	FN
+22	SAMEA2784472	TRAVELRES3	westernized	not_reported	Yes	FN
+22	SAMEA2784472	TRAVELRES3	dna_extraction_kit	not_reported	Qiagen	FN
+22	SAMEA2784472	TRAVELRES3	ncbi_accession	ERR636373	ERR636351	TP_wrong
+22	SAMEA2784472	TRAVELRES3	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	TP_wrong
+22	SAMEA2784472	TRAVELRES3	age	not_reported	25	FN
+22	SAMEA2784472	TRAVELRES3	age_group	Adult	Adult	TP_correct
+22	SAMEA2784472	TRAVELRES3	age_unit	Year	Year	TP_correct
+22	SAMEA2784472	TRAVELRES3	sex	not_reported	Female	FN
+22	SAMEA2784472	TRAVELRES3	age_min	23	25	TP_wrong
+22	SAMEA2784472	TRAVELRES3	age_max	34	25	TP_wrong
+22	SAMEA2784472	TRAVELRES3	age_years	not_reported	25	FN
+22	SAMEA2784472	TRAVELRES3	antibiotics_current_use	No	No	TP_correct
+22	SAMEA2784472	TRAVELRES3	disease	Healthy	Healthy	TP_correct
+22	SAMEA2784472	TRAVELRES3	uncurated_metadata	35 Swedish students (17 to Central Africa, 18 to Indian peninsula); Subjects were 23 to 34 years old, gender distribution 74% females (26/35); Median travel duration was 34 days (range 14 to 150); 69% of subjects had travelers' diarrhea during their trip; 12/18 (67%) travelers to Indian peninsula acquired ESBL-producing E. coli after return; none from Africa; All E. coli ESBL isolates carried the CTX-M-15 gene; Proteobacteria abundance increased in 25/35 students after travel	Not applicable	TP_wrong
+22	SAMEA2784472	TRAVELRES3	host_species	Human	Homo sapiens	TP_wrong
+23	SAMEA2784496	TRAVELRES30	study_name	not_reported	Bengtsson-PalmeJ_2015	FN
+23	SAMEA2784496	TRAVELRES30	subject_id	TRAVELRES49	TRAVELRES29_30	TP_wrong
+23	SAMEA2784496	TRAVELRES30	sample_id	SAMEA2784496	TRAVELRES30	TP_wrong
+23	SAMEA2784496	TRAVELRES30	curator	not_reported	Valentina_Giunchiglia,Paolo_Manghi,Marisa_Metzger	FN
+23	SAMEA2784496	TRAVELRES30	pmid	not_reported	26259788	FN
+23	SAMEA2784496	TRAVELRES30	target_condition	not_reported	Intestinal Flora	FN
+23	SAMEA2784496	TRAVELRES30	control	not_reported	Study Control	FN
+23	SAMEA2784496	TRAVELRES30	country	Sweden	Sweden	TP_correct
+23	SAMEA2784496	TRAVELRES30	body_site	feces	feces	TP_correct
+23	SAMEA2784496	TRAVELRES30	days_from_first_collection	not_reported	68	FN
+23	SAMEA2784496	TRAVELRES30	westernized	not_reported	Yes	FN
+23	SAMEA2784496	TRAVELRES30	dna_extraction_kit	not_reported	Qiagen	FN
+23	SAMEA2784496	TRAVELRES30	ncbi_accession	ERR636397	ERR636378	TP_wrong
+23	SAMEA2784496	TRAVELRES30	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	TP_wrong
+23	SAMEA2784496	TRAVELRES30	age	not_reported	24	FN
+23	SAMEA2784496	TRAVELRES30	age_group	Adult	Adult	TP_correct
+23	SAMEA2784496	TRAVELRES30	age_unit	Year	Year	TP_correct
+23	SAMEA2784496	TRAVELRES30	sex	not_reported	Male	FN
+23	SAMEA2784496	TRAVELRES30	age_min	23	24	TP_correct
+23	SAMEA2784496	TRAVELRES30	age_max	34	24	TP_wrong
+23	SAMEA2784496	TRAVELRES30	age_years	not_reported	24	FN
+23	SAMEA2784496	TRAVELRES30	antibiotics_current_use	No	No	TP_correct
+23	SAMEA2784496	TRAVELRES30	disease	Healthy	Healthy	TP_correct
+23	SAMEA2784496	TRAVELRES30	uncurated_metadata	35 Swedish students (17 to Central Africa, 18 to Indian peninsula); Subjects were 23 to 34 years old, gender distribution 74% females (26/35); Median travel duration was 34 days (range 14 to 150); 69% of subjects had travelers' diarrhea during their trip; 12/18 (67%) travelers to Indian peninsula acquired ESBL-producing E. coli after return; none from Africa; All E. coli ESBL isolates carried the CTX-M-15 gene; Proteobacteria abundance increased in 25/35 students after travel	travel_destination:IND	TP_wrong
+23	SAMEA2784496	TRAVELRES30	host_species	Human	Homo sapiens	TP_wrong
+24	SAMEA2784473	TRAVELRES31	study_name	not_reported	Bengtsson-PalmeJ_2015	FN
+24	SAMEA2784473	TRAVELRES31	subject_id	TRAVELRES26	TRAVELRES31_32	TP_wrong
+24	SAMEA2784473	TRAVELRES31	sample_id	SAMEA2784473	TRAVELRES31	TP_wrong
+24	SAMEA2784473	TRAVELRES31	curator	not_reported	Valentina_Giunchiglia,Paolo_Manghi,Marisa_Metzger	FN
+24	SAMEA2784473	TRAVELRES31	pmid	not_reported	26259788	FN
+24	SAMEA2784473	TRAVELRES31	target_condition	not_reported	Intestinal Flora	FN
+24	SAMEA2784473	TRAVELRES31	control	not_reported	Study Control	FN
+24	SAMEA2784473	TRAVELRES31	country	Sweden	Sweden	TP_correct
+24	SAMEA2784473	TRAVELRES31	body_site	feces	feces	TP_correct
+24	SAMEA2784473	TRAVELRES31	days_from_first_collection	not_reported	0	FN
+24	SAMEA2784473	TRAVELRES31	westernized	not_reported	Yes	FN
+24	SAMEA2784473	TRAVELRES31	dna_extraction_kit	not_reported	Qiagen	FN
+24	SAMEA2784473	TRAVELRES31	ncbi_accession	ERR636374	ERR636379	TP_wrong
+24	SAMEA2784473	TRAVELRES31	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	TP_wrong
+24	SAMEA2784473	TRAVELRES31	age	not_reported	27	FN
+24	SAMEA2784473	TRAVELRES31	age_group	Adult	Adult	TP_correct
+24	SAMEA2784473	TRAVELRES31	age_unit	Year	Year	TP_correct
+24	SAMEA2784473	TRAVELRES31	sex	not_reported	Female	FN
+24	SAMEA2784473	TRAVELRES31	age_min	23	27	TP_wrong
+24	SAMEA2784473	TRAVELRES31	age_max	34	27	TP_wrong
+24	SAMEA2784473	TRAVELRES31	age_years	not_reported	27	FN
+24	SAMEA2784473	TRAVELRES31	antibiotics_current_use	No	No	TP_correct
+24	SAMEA2784473	TRAVELRES31	disease	Healthy	Healthy	TP_correct
+24	SAMEA2784473	TRAVELRES31	uncurated_metadata	35 Swedish students (17 to Central Africa, 18 to Indian peninsula); Subjects were 23 to 34 years old, gender distribution 74% females (26/35); Median travel duration was 34 days (range 14 to 150); 69% of subjects had travelers' diarrhea during their trip; 12/18 (67%) travelers to Indian peninsula acquired ESBL-producing E. coli after return; none from Africa; All E. coli ESBL isolates carried the CTX-M-15 gene; Proteobacteria abundance increased in 25/35 students after travel	Not applicable	TP_wrong
+24	SAMEA2784473	TRAVELRES31	host_species	Human	Homo sapiens	TP_wrong
+25	SAMEA2784506	TRAVELRES32	study_name	not_reported	Bengtsson-PalmeJ_2015	FN
+25	SAMEA2784506	TRAVELRES32	subject_id	TRAVELRES59	TRAVELRES31_32	TP_wrong
+25	SAMEA2784506	TRAVELRES32	sample_id	SAMEA2784506	TRAVELRES32	TP_wrong
+25	SAMEA2784506	TRAVELRES32	curator	not_reported	Valentina_Giunchiglia,Paolo_Manghi,Marisa_Metzger	FN
+25	SAMEA2784506	TRAVELRES32	pmid	not_reported	26259788	FN
+25	SAMEA2784506	TRAVELRES32	target_condition	not_reported	Intestinal Flora	FN
+25	SAMEA2784506	TRAVELRES32	control	not_reported	Study Control	FN
+25	SAMEA2784506	TRAVELRES32	country	Sweden	Sweden	TP_correct
+25	SAMEA2784506	TRAVELRES32	body_site	feces	feces	TP_correct
+25	SAMEA2784506	TRAVELRES32	days_from_first_collection	not_reported	69	FN
+25	SAMEA2784506	TRAVELRES32	westernized	not_reported	Yes	FN
+25	SAMEA2784506	TRAVELRES32	dna_extraction_kit	not_reported	Qiagen	FN
+25	SAMEA2784506	TRAVELRES32	ncbi_accession	ERR636407	ERR636380	TP_wrong
+25	SAMEA2784506	TRAVELRES32	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	TP_wrong
+25	SAMEA2784506	TRAVELRES32	age	not_reported	27	FN
+25	SAMEA2784506	TRAVELRES32	age_group	Adult	Adult	TP_correct
+25	SAMEA2784506	TRAVELRES32	age_unit	Year	Year	TP_correct
+25	SAMEA2784506	TRAVELRES32	sex	not_reported	Female	FN
+25	SAMEA2784506	TRAVELRES32	age_min	23	27	TP_wrong
+25	SAMEA2784506	TRAVELRES32	age_max	34	27	TP_wrong
+25	SAMEA2784506	TRAVELRES32	age_years	not_reported	27	FN
+25	SAMEA2784506	TRAVELRES32	antibiotics_current_use	No	No	TP_correct
+25	SAMEA2784506	TRAVELRES32	disease	Healthy	Healthy	TP_correct
+25	SAMEA2784506	TRAVELRES32	uncurated_metadata	35 Swedish students (17 to Central Africa, 18 to Indian peninsula); Subjects were 23 to 34 years old, gender distribution 74% females (26/35); Median travel duration was 34 days (range 14 to 150); 69% of subjects had travelers' diarrhea during their trip; 12/18 (67%) travelers to Indian peninsula acquired ESBL-producing E. coli after return; none from Africa; All E. coli ESBL isolates carried the CTX-M-15 gene; Proteobacteria abundance increased in 25/35 students after travel	travel_destination:IND	TP_wrong
+25	SAMEA2784506	TRAVELRES32	host_species	Human	Homo sapiens	TP_wrong
+26	SAMEA2784477	TRAVELRES33	study_name	not_reported	Bengtsson-PalmeJ_2015	FN
+26	SAMEA2784477	TRAVELRES33	subject_id	TRAVELRES30	TRAVELRES33_34	TP_wrong
+26	SAMEA2784477	TRAVELRES33	sample_id	SAMEA2784477	TRAVELRES33	TP_wrong
+26	SAMEA2784477	TRAVELRES33	curator	not_reported	Valentina_Giunchiglia,Paolo_Manghi,Marisa_Metzger	FN
+26	SAMEA2784477	TRAVELRES33	pmid	not_reported	26259788	FN
+26	SAMEA2784477	TRAVELRES33	target_condition	not_reported	Intestinal Flora	FN
+26	SAMEA2784477	TRAVELRES33	control	not_reported	Study Control	FN
+26	SAMEA2784477	TRAVELRES33	country	Sweden	Sweden	TP_correct
+26	SAMEA2784477	TRAVELRES33	body_site	feces	feces	TP_correct
+26	SAMEA2784477	TRAVELRES33	days_from_first_collection	not_reported	0	FN
+26	SAMEA2784477	TRAVELRES33	westernized	not_reported	Yes	FN
+26	SAMEA2784477	TRAVELRES33	dna_extraction_kit	not_reported	Qiagen	FN
+26	SAMEA2784477	TRAVELRES33	ncbi_accession	ERR636378	ERR636381	TP_wrong
+26	SAMEA2784477	TRAVELRES33	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	TP_wrong
+26	SAMEA2784477	TRAVELRES33	age	not_reported	28	FN
+26	SAMEA2784477	TRAVELRES33	age_group	Adult	Adult	TP_correct
+26	SAMEA2784477	TRAVELRES33	age_unit	Year	Year	TP_correct
+26	SAMEA2784477	TRAVELRES33	sex	not_reported	Female	FN
+26	SAMEA2784477	TRAVELRES33	age_min	23	28	TP_wrong
+26	SAMEA2784477	TRAVELRES33	age_max	34	28	TP_wrong
+26	SAMEA2784477	TRAVELRES33	age_years	not_reported	28	FN
+26	SAMEA2784477	TRAVELRES33	antibiotics_current_use	No	No	TP_correct
+26	SAMEA2784477	TRAVELRES33	disease	Healthy	Healthy	TP_correct
+26	SAMEA2784477	TRAVELRES33	uncurated_metadata	35 Swedish students (17 to Central Africa, 18 to Indian peninsula); Subjects were 23 to 34 years old, gender distribution 74% females (26/35); Median travel duration was 34 days (range 14 to 150); 69% of subjects had travelers' diarrhea during their trip; 12/18 (67%) travelers to Indian peninsula acquired ESBL-producing E. coli after return; none from Africa; All E. coli ESBL isolates carried the CTX-M-15 gene; Proteobacteria abundance increased in 25/35 students after travel	Not applicable	TP_wrong
+26	SAMEA2784477	TRAVELRES33	host_species	Human	Homo sapiens	TP_wrong
+27	SAMEA2784509	TRAVELRES34	study_name	not_reported	Bengtsson-PalmeJ_2015	FN
+27	SAMEA2784509	TRAVELRES34	subject_id	TRAVELRES62	TRAVELRES33_34	TP_wrong
+27	SAMEA2784509	TRAVELRES34	sample_id	SAMEA2784509	TRAVELRES34	TP_wrong
+27	SAMEA2784509	TRAVELRES34	curator	not_reported	Valentina_Giunchiglia,Paolo_Manghi,Marisa_Metzger	FN
+27	SAMEA2784509	TRAVELRES34	pmid	not_reported	26259788	FN
+27	SAMEA2784509	TRAVELRES34	target_condition	not_reported	Intestinal Flora	FN
+27	SAMEA2784509	TRAVELRES34	control	not_reported	Study Control	FN
+27	SAMEA2784509	TRAVELRES34	country	Sweden	Sweden	TP_correct
+27	SAMEA2784509	TRAVELRES34	body_site	feces	feces	TP_correct
+27	SAMEA2784509	TRAVELRES34	days_from_first_collection	not_reported	97	FN
+27	SAMEA2784509	TRAVELRES34	westernized	not_reported	Yes	FN
+27	SAMEA2784509	TRAVELRES34	dna_extraction_kit	not_reported	Qiagen	FN
+27	SAMEA2784509	TRAVELRES34	ncbi_accession	ERR636410	ERR636382	TP_wrong
+27	SAMEA2784509	TRAVELRES34	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	TP_wrong
+27	SAMEA2784509	TRAVELRES34	age	not_reported	28	FN
+27	SAMEA2784509	TRAVELRES34	age_group	Adult	Adult	TP_correct
+27	SAMEA2784509	TRAVELRES34	age_unit	Year	Year	TP_correct
+27	SAMEA2784509	TRAVELRES34	sex	not_reported	Female	FN
+27	SAMEA2784509	TRAVELRES34	age_min	23	28	TP_wrong
+27	SAMEA2784509	TRAVELRES34	age_max	34	28	TP_wrong
+27	SAMEA2784509	TRAVELRES34	age_years	not_reported	28	FN
+27	SAMEA2784509	TRAVELRES34	antibiotics_current_use	No	No	TP_correct
+27	SAMEA2784509	TRAVELRES34	disease	Healthy	Healthy	TP_correct
+27	SAMEA2784509	TRAVELRES34	uncurated_metadata	35 Swedish students (17 to Central Africa, 18 to Indian peninsula); Subjects were 23 to 34 years old, gender distribution 74% females (26/35); Median travel duration was 34 days (range 14 to 150); 69% of subjects had travelers' diarrhea during their trip; 12/18 (67%) travelers to Indian peninsula acquired ESBL-producing E. coli after return; none from Africa; All E. coli ESBL isolates carried the CTX-M-15 gene; Proteobacteria abundance increased in 25/35 students after travel	travel_destination:IND	TP_wrong
+27	SAMEA2784509	TRAVELRES34	host_species	Human	Homo sapiens	TP_wrong
+28	SAMEA2784485	TRAVELRES35	study_name	not_reported	Bengtsson-PalmeJ_2015	FN
+28	SAMEA2784485	TRAVELRES35	subject_id	TRAVELRES38	TRAVELRES35_36	TP_wrong
+28	SAMEA2784485	TRAVELRES35	sample_id	SAMEA2784485	TRAVELRES35	TP_wrong
+28	SAMEA2784485	TRAVELRES35	curator	not_reported	Valentina_Giunchiglia,Paolo_Manghi,Marisa_Metzger	FN
+28	SAMEA2784485	TRAVELRES35	pmid	not_reported	26259788	FN
+28	SAMEA2784485	TRAVELRES35	target_condition	not_reported	Intestinal Flora	FN
+28	SAMEA2784485	TRAVELRES35	control	not_reported	Study Control	FN
+28	SAMEA2784485	TRAVELRES35	country	Sweden	Sweden	TP_correct
+28	SAMEA2784485	TRAVELRES35	body_site	feces	feces	TP_correct
+28	SAMEA2784485	TRAVELRES35	days_from_first_collection	not_reported	0	FN
+28	SAMEA2784485	TRAVELRES35	westernized	not_reported	Yes	FN
+28	SAMEA2784485	TRAVELRES35	dna_extraction_kit	not_reported	Qiagen	FN
+28	SAMEA2784485	TRAVELRES35	ncbi_accession	ERR636386	ERR636383	TP_wrong
+28	SAMEA2784485	TRAVELRES35	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	TP_wrong
+28	SAMEA2784485	TRAVELRES35	age	not_reported	25	FN
+28	SAMEA2784485	TRAVELRES35	age_group	Adult	Adult	TP_correct
+28	SAMEA2784485	TRAVELRES35	age_unit	Year	Year	TP_correct
+28	SAMEA2784485	TRAVELRES35	sex	not_reported	Male	FN
+28	SAMEA2784485	TRAVELRES35	age_min	23	25	TP_wrong
+28	SAMEA2784485	TRAVELRES35	age_max	34	25	TP_wrong
+28	SAMEA2784485	TRAVELRES35	age_years	not_reported	25	FN
+28	SAMEA2784485	TRAVELRES35	antibiotics_current_use	No	No	TP_correct
+28	SAMEA2784485	TRAVELRES35	disease	Healthy	Healthy	TP_correct
+28	SAMEA2784485	TRAVELRES35	uncurated_metadata	35 Swedish students (17 to Central Africa, 18 to Indian peninsula); Subjects were 23 to 34 years old, gender distribution 74% females (26/35); Median travel duration was 34 days (range 14 to 150); 69% of subjects had travelers' diarrhea during their trip; 12/18 (67%) travelers to Indian peninsula acquired ESBL-producing E. coli after return; none from Africa; All E. coli ESBL isolates carried the CTX-M-15 gene; Proteobacteria abundance increased in 25/35 students after travel	Not applicable	TP_wrong
+28	SAMEA2784485	TRAVELRES35	host_species	Human	Homo sapiens	TP_wrong
+29	SAMEA2784510	TRAVELRES36	study_name	not_reported	Bengtsson-PalmeJ_2015	FN
+29	SAMEA2784510	TRAVELRES36	subject_id	TRAVELRES63	TRAVELRES35_36	TP_wrong
+29	SAMEA2784510	TRAVELRES36	sample_id	SAMEA2784510	TRAVELRES36	TP_wrong
+29	SAMEA2784510	TRAVELRES36	curator	not_reported	Valentina_Giunchiglia,Paolo_Manghi,Marisa_Metzger	FN
+29	SAMEA2784510	TRAVELRES36	pmid	not_reported	26259788	FN
+29	SAMEA2784510	TRAVELRES36	target_condition	not_reported	Intestinal Flora	FN
+29	SAMEA2784510	TRAVELRES36	control	not_reported	Study Control	FN
+29	SAMEA2784510	TRAVELRES36	country	Sweden	Sweden	TP_correct
+29	SAMEA2784510	TRAVELRES36	body_site	feces	feces	TP_correct
+29	SAMEA2784510	TRAVELRES36	days_from_first_collection	not_reported	71	FN
+29	SAMEA2784510	TRAVELRES36	westernized	not_reported	Yes	FN
+29	SAMEA2784510	TRAVELRES36	dna_extraction_kit	not_reported	Qiagen	FN
+29	SAMEA2784510	TRAVELRES36	ncbi_accession	ERR636411	ERR636384	TP_wrong
+29	SAMEA2784510	TRAVELRES36	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	TP_wrong
+29	SAMEA2784510	TRAVELRES36	age	not_reported	25	FN
+29	SAMEA2784510	TRAVELRES36	age_group	Adult	Adult	TP_correct
+29	SAMEA2784510	TRAVELRES36	age_unit	Year	Year	TP_correct
+29	SAMEA2784510	TRAVELRES36	sex	not_reported	Male	FN
+29	SAMEA2784510	TRAVELRES36	age_min	23	25	TP_wrong
+29	SAMEA2784510	TRAVELRES36	age_max	34	25	TP_wrong
+29	SAMEA2784510	TRAVELRES36	age_years	not_reported	25	FN
+29	SAMEA2784510	TRAVELRES36	antibiotics_current_use	No	No	TP_correct
+29	SAMEA2784510	TRAVELRES36	disease	Healthy	Healthy	TP_correct
+29	SAMEA2784510	TRAVELRES36	uncurated_metadata	35 Swedish students (17 to Central Africa, 18 to Indian peninsula); Subjects were 23 to 34 years old, gender distribution 74% females (26/35); Median travel duration was 34 days (range 14 to 150); 69% of subjects had travelers' diarrhea during their trip; 12/18 (67%) travelers to Indian peninsula acquired ESBL-producing E. coli after return; none from Africa; All E. coli ESBL isolates carried the CTX-M-15 gene; Proteobacteria abundance increased in 25/35 students after travel	travel_destination:CMR	TP_wrong
+29	SAMEA2784510	TRAVELRES36	host_species	Human	Homo sapiens	TP_wrong
+30	SAMEA2784512	TRAVELRES37	study_name	not_reported	Bengtsson-PalmeJ_2015	FN
+30	SAMEA2784512	TRAVELRES37	subject_id	TRAVELRES65	TRAVELRES37_38	TP_wrong
+30	SAMEA2784512	TRAVELRES37	sample_id	SAMEA2784512	TRAVELRES37	TP_wrong
+30	SAMEA2784512	TRAVELRES37	curator	not_reported	Valentina_Giunchiglia,Paolo_Manghi,Marisa_Metzger	FN
+30	SAMEA2784512	TRAVELRES37	pmid	not_reported	26259788	FN
+30	SAMEA2784512	TRAVELRES37	target_condition	not_reported	Intestinal Flora	FN
+30	SAMEA2784512	TRAVELRES37	control	not_reported	Study Control	FN
+30	SAMEA2784512	TRAVELRES37	country	Sweden	Sweden	TP_correct
+30	SAMEA2784512	TRAVELRES37	body_site	feces	feces	TP_correct
+30	SAMEA2784512	TRAVELRES37	days_from_first_collection	not_reported	0	FN
+30	SAMEA2784512	TRAVELRES37	westernized	not_reported	Yes	FN
+30	SAMEA2784512	TRAVELRES37	dna_extraction_kit	not_reported	Qiagen	FN
+30	SAMEA2784512	TRAVELRES37	ncbi_accession	ERR636413	ERR636385	TP_wrong
+30	SAMEA2784512	TRAVELRES37	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	TP_wrong
+30	SAMEA2784512	TRAVELRES37	age	not_reported	28	FN
+30	SAMEA2784512	TRAVELRES37	age_group	Adult	Adult	TP_correct
+30	SAMEA2784512	TRAVELRES37	age_unit	Year	Year	TP_correct
+30	SAMEA2784512	TRAVELRES37	sex	not_reported	Male	FN
+30	SAMEA2784512	TRAVELRES37	age_min	23	28	TP_wrong
+30	SAMEA2784512	TRAVELRES37	age_max	34	28	TP_wrong
+30	SAMEA2784512	TRAVELRES37	age_years	not_reported	28	FN
+30	SAMEA2784512	TRAVELRES37	antibiotics_current_use	No	No	TP_correct
+30	SAMEA2784512	TRAVELRES37	disease	Healthy	Healthy	TP_correct
+30	SAMEA2784512	TRAVELRES37	uncurated_metadata	35 Swedish students (17 to Central Africa, 18 to Indian peninsula); Subjects were 23 to 34 years old, gender distribution 74% females (26/35); Median travel duration was 34 days (range 14 to 150); 69% of subjects had travelers' diarrhea during their trip; 12/18 (67%) travelers to Indian peninsula acquired ESBL-producing E. coli after return; none from Africa; All E. coli ESBL isolates carried the CTX-M-15 gene; Proteobacteria abundance increased in 25/35 students after travel	Not applicable	TP_wrong
+30	SAMEA2784512	TRAVELRES37	host_species	Human	Homo sapiens	TP_wrong
+31	SAMEA2784488	TRAVELRES38	study_name	not_reported	Bengtsson-PalmeJ_2015	FN
+31	SAMEA2784488	TRAVELRES38	subject_id	TRAVELRES41	TRAVELRES37_38	TP_wrong
+31	SAMEA2784488	TRAVELRES38	sample_id	SAMEA2784488	TRAVELRES38	TP_wrong
+31	SAMEA2784488	TRAVELRES38	curator	not_reported	Valentina_Giunchiglia,Paolo_Manghi,Marisa_Metzger	FN
+31	SAMEA2784488	TRAVELRES38	pmid	not_reported	26259788	FN
+31	SAMEA2784488	TRAVELRES38	target_condition	not_reported	Intestinal Flora	FN
+31	SAMEA2784488	TRAVELRES38	control	not_reported	Study Control	FN
+31	SAMEA2784488	TRAVELRES38	country	Sweden	Sweden	TP_correct
+31	SAMEA2784488	TRAVELRES38	body_site	feces	feces	TP_correct
+31	SAMEA2784488	TRAVELRES38	days_from_first_collection	not_reported	71	FN
+31	SAMEA2784488	TRAVELRES38	westernized	not_reported	Yes	FN
+31	SAMEA2784488	TRAVELRES38	dna_extraction_kit	not_reported	Qiagen	FN
+31	SAMEA2784488	TRAVELRES38	ncbi_accession	ERR636389	ERR636386	TP_wrong
+31	SAMEA2784488	TRAVELRES38	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	TP_wrong
+31	SAMEA2784488	TRAVELRES38	age	not_reported	28	FN
+31	SAMEA2784488	TRAVELRES38	age_group	Adult	Adult	TP_correct
+31	SAMEA2784488	TRAVELRES38	age_unit	Year	Year	TP_correct
+31	SAMEA2784488	TRAVELRES38	sex	not_reported	Male	FN
+31	SAMEA2784488	TRAVELRES38	age_min	23	28	TP_wrong
+31	SAMEA2784488	TRAVELRES38	age_max	34	28	TP_wrong
+31	SAMEA2784488	TRAVELRES38	age_years	not_reported	28	FN
+31	SAMEA2784488	TRAVELRES38	antibiotics_current_use	No	No	TP_correct
+31	SAMEA2784488	TRAVELRES38	disease	Healthy	Healthy	TP_correct
+31	SAMEA2784488	TRAVELRES38	uncurated_metadata	35 Swedish students (17 to Central Africa, 18 to Indian peninsula); Subjects were 23 to 34 years old, gender distribution 74% females (26/35); Median travel duration was 34 days (range 14 to 150); 69% of subjects had travelers' diarrhea during their trip; 12/18 (67%) travelers to Indian peninsula acquired ESBL-producing E. coli after return; none from Africa; All E. coli ESBL isolates carried the CTX-M-15 gene; Proteobacteria abundance increased in 25/35 students after travel	travel_destination:CMR	TP_wrong
+31	SAMEA2784488	TRAVELRES38	host_species	Human	Homo sapiens	TP_wrong
+32	SAMEA2784492	TRAVELRES39	study_name	not_reported	Bengtsson-PalmeJ_2015	FN
+32	SAMEA2784492	TRAVELRES39	subject_id	TRAVELRES45	TRAVELRES39_40	TP_wrong
+32	SAMEA2784492	TRAVELRES39	sample_id	SAMEA2784492	TRAVELRES39	TP_wrong
+32	SAMEA2784492	TRAVELRES39	curator	not_reported	Valentina_Giunchiglia,Paolo_Manghi,Marisa_Metzger	FN
+32	SAMEA2784492	TRAVELRES39	pmid	not_reported	26259788	FN
+32	SAMEA2784492	TRAVELRES39	target_condition	not_reported	Intestinal Flora	FN
+32	SAMEA2784492	TRAVELRES39	control	not_reported	Study Control	FN
+32	SAMEA2784492	TRAVELRES39	country	Sweden	Sweden	TP_correct
+32	SAMEA2784492	TRAVELRES39	body_site	feces	feces	TP_correct
+32	SAMEA2784492	TRAVELRES39	days_from_first_collection	not_reported	0	FN
+32	SAMEA2784492	TRAVELRES39	westernized	not_reported	Yes	FN
+32	SAMEA2784492	TRAVELRES39	dna_extraction_kit	not_reported	Qiagen	FN
+32	SAMEA2784492	TRAVELRES39	ncbi_accession	ERR636393	ERR636387	TP_wrong
+32	SAMEA2784492	TRAVELRES39	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	TP_wrong
+32	SAMEA2784492	TRAVELRES39	age	not_reported	23	FN
+32	SAMEA2784492	TRAVELRES39	age_group	Adult	Adult	TP_correct
+32	SAMEA2784492	TRAVELRES39	age_unit	Year	Year	TP_correct
+32	SAMEA2784492	TRAVELRES39	sex	not_reported	Female	FN
+32	SAMEA2784492	TRAVELRES39	age_min	23	23	TP_correct
+32	SAMEA2784492	TRAVELRES39	age_max	34	23	TP_wrong
+32	SAMEA2784492	TRAVELRES39	age_years	not_reported	23	FN
+32	SAMEA2784492	TRAVELRES39	antibiotics_current_use	No	No	TP_correct
+32	SAMEA2784492	TRAVELRES39	disease	Healthy	Healthy	TP_correct
+32	SAMEA2784492	TRAVELRES39	uncurated_metadata	35 Swedish students (17 to Central Africa, 18 to Indian peninsula); Subjects were 23 to 34 years old, gender distribution 74% females (26/35); Median travel duration was 34 days (range 14 to 150); 69% of subjects had travelers' diarrhea during their trip; 12/18 (67%) travelers to Indian peninsula acquired ESBL-producing E. coli after return; none from Africa; All E. coli ESBL isolates carried the CTX-M-15 gene; Proteobacteria abundance increased in 25/35 students after travel	Not applicable	TP_wrong
+32	SAMEA2784492	TRAVELRES39	host_species	Human	Homo sapiens	TP_wrong
+33	SAMEA2784515	TRAVELRES4	study_name	not_reported	Bengtsson-PalmeJ_2015	FN
+33	SAMEA2784515	TRAVELRES4	subject_id	TRAVELRES68	TRAVELRES3_4	TP_wrong
+33	SAMEA2784515	TRAVELRES4	sample_id	SAMEA2784515	TRAVELRES4	TP_wrong
+33	SAMEA2784515	TRAVELRES4	curator	not_reported	Valentina_Giunchiglia,Paolo_Manghi,Marisa_Metzger	FN
+33	SAMEA2784515	TRAVELRES4	pmid	not_reported	26259788	FN
+33	SAMEA2784515	TRAVELRES4	target_condition	not_reported	Intestinal Flora	FN
+33	SAMEA2784515	TRAVELRES4	control	not_reported	Study Control	FN
+33	SAMEA2784515	TRAVELRES4	country	Sweden	Sweden	TP_correct
+33	SAMEA2784515	TRAVELRES4	body_site	feces	feces	TP_correct
+33	SAMEA2784515	TRAVELRES4	days_from_first_collection	not_reported	97	FN
+33	SAMEA2784515	TRAVELRES4	westernized	not_reported	Yes	FN
+33	SAMEA2784515	TRAVELRES4	dna_extraction_kit	not_reported	Qiagen	FN
+33	SAMEA2784515	TRAVELRES4	ncbi_accession	ERR636416	ERR636352	TP_wrong
+33	SAMEA2784515	TRAVELRES4	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	TP_wrong
+33	SAMEA2784515	TRAVELRES4	age	not_reported	25	FN
+33	SAMEA2784515	TRAVELRES4	age_group	Adult	Adult	TP_correct
+33	SAMEA2784515	TRAVELRES4	age_unit	Year	Year	TP_correct
+33	SAMEA2784515	TRAVELRES4	sex	not_reported	Female	FN
+33	SAMEA2784515	TRAVELRES4	age_min	23	25	TP_wrong
+33	SAMEA2784515	TRAVELRES4	age_max	34	25	TP_wrong
+33	SAMEA2784515	TRAVELRES4	age_years	not_reported	25	FN
+33	SAMEA2784515	TRAVELRES4	antibiotics_current_use	No	No	TP_correct
+33	SAMEA2784515	TRAVELRES4	disease	Healthy	Healthy	TP_correct
+33	SAMEA2784515	TRAVELRES4	uncurated_metadata	35 Swedish students (17 to Central Africa, 18 to Indian peninsula); Subjects were 23 to 34 years old, gender distribution 74% females (26/35); Median travel duration was 34 days (range 14 to 150); 69% of subjects had travelers' diarrhea during their trip; 12/18 (67%) travelers to Indian peninsula acquired ESBL-producing E. coli after return; none from Africa; All E. coli ESBL isolates carried the CTX-M-15 gene; Proteobacteria abundance increased in 25/35 students after travel	travel_destination:RWA	TP_wrong
+33	SAMEA2784515	TRAVELRES4	host_species	Human	Homo sapiens	TP_wrong
+34	SAMEA2784494	TRAVELRES40	study_name	not_reported	Bengtsson-PalmeJ_2015	FN
+34	SAMEA2784494	TRAVELRES40	subject_id	TRAVELRES47	TRAVELRES39_40	TP_wrong
+34	SAMEA2784494	TRAVELRES40	sample_id	SAMEA2784494	TRAVELRES40	TP_wrong
+34	SAMEA2784494	TRAVELRES40	curator	not_reported	Valentina_Giunchiglia,Paolo_Manghi,Marisa_Metzger	FN
+34	SAMEA2784494	TRAVELRES40	pmid	not_reported	26259788	FN
+34	SAMEA2784494	TRAVELRES40	target_condition	not_reported	Intestinal Flora	FN
+34	SAMEA2784494	TRAVELRES40	control	not_reported	Study Control	FN
+34	SAMEA2784494	TRAVELRES40	country	Sweden	Sweden	TP_correct
+34	SAMEA2784494	TRAVELRES40	body_site	feces	feces	TP_correct
+34	SAMEA2784494	TRAVELRES40	days_from_first_collection	not_reported	149	FN
+34	SAMEA2784494	TRAVELRES40	westernized	not_reported	Yes	FN
+34	SAMEA2784494	TRAVELRES40	dna_extraction_kit	not_reported	Qiagen	FN
+34	SAMEA2784494	TRAVELRES40	ncbi_accession	ERR636395	ERR636388	TP_wrong
+34	SAMEA2784494	TRAVELRES40	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	TP_wrong
+34	SAMEA2784494	TRAVELRES40	age	not_reported	23	FN
+34	SAMEA2784494	TRAVELRES40	age_group	Adult	Adult	TP_correct
+34	SAMEA2784494	TRAVELRES40	age_unit	Year	Year	TP_correct
+34	SAMEA2784494	TRAVELRES40	sex	not_reported	Female	FN
+34	SAMEA2784494	TRAVELRES40	age_min	23	23	TP_correct
+34	SAMEA2784494	TRAVELRES40	age_max	34	23	TP_wrong
+34	SAMEA2784494	TRAVELRES40	age_years	not_reported	23	FN
+34	SAMEA2784494	TRAVELRES40	antibiotics_current_use	No	No	TP_correct
+34	SAMEA2784494	TRAVELRES40	disease	Healthy	Healthy	TP_correct
+34	SAMEA2784494	TRAVELRES40	uncurated_metadata	35 Swedish students (17 to Central Africa, 18 to Indian peninsula); Subjects were 23 to 34 years old, gender distribution 74% females (26/35); Median travel duration was 34 days (range 14 to 150); 69% of subjects had travelers' diarrhea during their trip; 12/18 (67%) travelers to Indian peninsula acquired ESBL-producing E. coli after return; none from Africa; All E. coli ESBL isolates carried the CTX-M-15 gene; Proteobacteria abundance increased in 25/35 students after travel	travel_destination:CMR	TP_wrong
+34	SAMEA2784494	TRAVELRES40	host_species	Human	Homo sapiens	TP_wrong
+35	SAMEA2784499	TRAVELRES41	study_name	not_reported	Bengtsson-PalmeJ_2015	FN
+35	SAMEA2784499	TRAVELRES41	subject_id	TRAVELRES52	TRAVELRES41_42	TP_wrong
+35	SAMEA2784499	TRAVELRES41	sample_id	SAMEA2784499	TRAVELRES41	TP_wrong
+35	SAMEA2784499	TRAVELRES41	curator	not_reported	Valentina_Giunchiglia,Paolo_Manghi,Marisa_Metzger	FN
+35	SAMEA2784499	TRAVELRES41	pmid	not_reported	26259788	FN
+35	SAMEA2784499	TRAVELRES41	target_condition	not_reported	Intestinal Flora	FN
+35	SAMEA2784499	TRAVELRES41	control	not_reported	Study Control	FN
+35	SAMEA2784499	TRAVELRES41	country	Sweden	Sweden	TP_correct
+35	SAMEA2784499	TRAVELRES41	body_site	feces	feces	TP_correct
+35	SAMEA2784499	TRAVELRES41	days_from_first_collection	not_reported	0	FN
+35	SAMEA2784499	TRAVELRES41	westernized	not_reported	Yes	FN
+35	SAMEA2784499	TRAVELRES41	dna_extraction_kit	not_reported	Qiagen	FN
+35	SAMEA2784499	TRAVELRES41	ncbi_accession	ERR636400	ERR636389	TP_wrong
+35	SAMEA2784499	TRAVELRES41	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	TP_wrong
+35	SAMEA2784499	TRAVELRES41	age	not_reported	25	FN
+35	SAMEA2784499	TRAVELRES41	age_group	Adult	Adult	TP_correct
+35	SAMEA2784499	TRAVELRES41	age_unit	Year	Year	TP_correct
+35	SAMEA2784499	TRAVELRES41	sex	not_reported	Female	FN
+35	SAMEA2784499	TRAVELRES41	age_min	23	25	TP_wrong
+35	SAMEA2784499	TRAVELRES41	age_max	34	25	TP_wrong
+35	SAMEA2784499	TRAVELRES41	age_years	not_reported	25	FN
+35	SAMEA2784499	TRAVELRES41	antibiotics_current_use	No	No	TP_correct
+35	SAMEA2784499	TRAVELRES41	disease	Healthy	Healthy	TP_correct
+35	SAMEA2784499	TRAVELRES41	uncurated_metadata	35 Swedish students (17 to Central Africa, 18 to Indian peninsula); Subjects were 23 to 34 years old, gender distribution 74% females (26/35); Median travel duration was 34 days (range 14 to 150); 69% of subjects had travelers' diarrhea during their trip; 12/18 (67%) travelers to Indian peninsula acquired ESBL-producing E. coli after return; none from Africa; All E. coli ESBL isolates carried the CTX-M-15 gene; Proteobacteria abundance increased in 25/35 students after travel	Not applicable	TP_wrong
+35	SAMEA2784499	TRAVELRES41	host_species	Human	Homo sapiens	TP_wrong
+36	SAMEA2784500	TRAVELRES42	study_name	not_reported	Bengtsson-PalmeJ_2015	FN
+36	SAMEA2784500	TRAVELRES42	subject_id	TRAVELRES53	TRAVELRES41_42	TP_wrong
+36	SAMEA2784500	TRAVELRES42	sample_id	SAMEA2784500	TRAVELRES42	TP_wrong
+36	SAMEA2784500	TRAVELRES42	curator	not_reported	Valentina_Giunchiglia,Paolo_Manghi,Marisa_Metzger	FN
+36	SAMEA2784500	TRAVELRES42	pmid	not_reported	26259788	FN
+36	SAMEA2784500	TRAVELRES42	target_condition	not_reported	Intestinal Flora	FN
+36	SAMEA2784500	TRAVELRES42	control	not_reported	Study Control	FN
+36	SAMEA2784500	TRAVELRES42	country	Sweden	Sweden	TP_correct
+36	SAMEA2784500	TRAVELRES42	body_site	feces	feces	TP_correct
+36	SAMEA2784500	TRAVELRES42	days_from_first_collection	not_reported	96	FN
+36	SAMEA2784500	TRAVELRES42	westernized	not_reported	Yes	FN
+36	SAMEA2784500	TRAVELRES42	dna_extraction_kit	not_reported	Qiagen	FN
+36	SAMEA2784500	TRAVELRES42	ncbi_accession	ERR636401	ERR636390	TP_wrong
+36	SAMEA2784500	TRAVELRES42	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	TP_wrong
+36	SAMEA2784500	TRAVELRES42	age	not_reported	25	FN
+36	SAMEA2784500	TRAVELRES42	age_group	Adult	Adult	TP_correct
+36	SAMEA2784500	TRAVELRES42	age_unit	Year	Year	TP_correct
+36	SAMEA2784500	TRAVELRES42	sex	not_reported	Female	FN
+36	SAMEA2784500	TRAVELRES42	age_min	23	25	TP_wrong
+36	SAMEA2784500	TRAVELRES42	age_max	34	25	TP_wrong
+36	SAMEA2784500	TRAVELRES42	age_years	not_reported	25	FN
+36	SAMEA2784500	TRAVELRES42	antibiotics_current_use	No	No	TP_correct
+36	SAMEA2784500	TRAVELRES42	disease	Healthy	Healthy	TP_correct
+36	SAMEA2784500	TRAVELRES42	uncurated_metadata	35 Swedish students (17 to Central Africa, 18 to Indian peninsula); Subjects were 23 to 34 years old, gender distribution 74% females (26/35); Median travel duration was 34 days (range 14 to 150); 69% of subjects had travelers' diarrhea during their trip; 12/18 (67%) travelers to Indian peninsula acquired ESBL-producing E. coli after return; none from Africa; All E. coli ESBL isolates carried the CTX-M-15 gene; Proteobacteria abundance increased in 25/35 students after travel	travel_destination:IND	TP_wrong
+36	SAMEA2784500	TRAVELRES42	host_species	Human	Homo sapiens	TP_wrong
+37	SAMEA2784501	TRAVELRES43	study_name	not_reported	Bengtsson-PalmeJ_2015	FN
+37	SAMEA2784501	TRAVELRES43	subject_id	TRAVELRES54	TRAVELRES43_44	TP_wrong
+37	SAMEA2784501	TRAVELRES43	sample_id	SAMEA2784501	TRAVELRES43	TP_wrong
+37	SAMEA2784501	TRAVELRES43	curator	not_reported	Valentina_Giunchiglia,Paolo_Manghi,Marisa_Metzger	FN
+37	SAMEA2784501	TRAVELRES43	pmid	not_reported	26259788	FN
+37	SAMEA2784501	TRAVELRES43	target_condition	not_reported	Intestinal Flora	FN
+37	SAMEA2784501	TRAVELRES43	control	not_reported	Study Control	FN
+37	SAMEA2784501	TRAVELRES43	country	Sweden	Sweden	TP_correct
+37	SAMEA2784501	TRAVELRES43	body_site	feces	feces	TP_correct
+37	SAMEA2784501	TRAVELRES43	days_from_first_collection	not_reported	0	FN
+37	SAMEA2784501	TRAVELRES43	westernized	not_reported	Yes	FN
+37	SAMEA2784501	TRAVELRES43	dna_extraction_kit	not_reported	Qiagen	FN
+37	SAMEA2784501	TRAVELRES43	ncbi_accession	ERR636402	ERR636391	TP_wrong
+37	SAMEA2784501	TRAVELRES43	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	TP_wrong
+37	SAMEA2784501	TRAVELRES43	age	not_reported	23	FN
+37	SAMEA2784501	TRAVELRES43	age_group	Adult	Adult	TP_correct
+37	SAMEA2784501	TRAVELRES43	age_unit	Year	Year	TP_correct
+37	SAMEA2784501	TRAVELRES43	sex	not_reported	Male	FN
+37	SAMEA2784501	TRAVELRES43	age_min	23	23	TP_correct
+37	SAMEA2784501	TRAVELRES43	age_max	34	23	TP_wrong
+37	SAMEA2784501	TRAVELRES43	age_years	not_reported	23	FN
+37	SAMEA2784501	TRAVELRES43	antibiotics_current_use	No	No	TP_correct
+37	SAMEA2784501	TRAVELRES43	disease	Healthy	Healthy	TP_correct
+37	SAMEA2784501	TRAVELRES43	uncurated_metadata	35 Swedish students (17 to Central Africa, 18 to Indian peninsula); Subjects were 23 to 34 years old, gender distribution 74% females (26/35); Median travel duration was 34 days (range 14 to 150); 69% of subjects had travelers' diarrhea during their trip; 12/18 (67%) travelers to Indian peninsula acquired ESBL-producing E. coli after return; none from Africa; All E. coli ESBL isolates carried the CTX-M-15 gene; Proteobacteria abundance increased in 25/35 students after travel	Not applicable	TP_wrong
+37	SAMEA2784501	TRAVELRES43	host_species	Human	Homo sapiens	TP_wrong
+38	SAMEA2784502	TRAVELRES44	study_name	not_reported	Bengtsson-PalmeJ_2015	FN
+38	SAMEA2784502	TRAVELRES44	subject_id	TRAVELRES55	TRAVELRES43_44	TP_wrong
+38	SAMEA2784502	TRAVELRES44	sample_id	SAMEA2784502	TRAVELRES44	TP_wrong
+38	SAMEA2784502	TRAVELRES44	curator	not_reported	Valentina_Giunchiglia,Paolo_Manghi,Marisa_Metzger	FN
+38	SAMEA2784502	TRAVELRES44	pmid	not_reported	26259788	FN
+38	SAMEA2784502	TRAVELRES44	target_condition	not_reported	Intestinal Flora	FN
+38	SAMEA2784502	TRAVELRES44	control	not_reported	Study Control	FN
+38	SAMEA2784502	TRAVELRES44	country	Sweden	Sweden	TP_correct
+38	SAMEA2784502	TRAVELRES44	body_site	feces	feces	TP_correct
+38	SAMEA2784502	TRAVELRES44	days_from_first_collection	not_reported	127	FN
+38	SAMEA2784502	TRAVELRES44	westernized	not_reported	Yes	FN
+38	SAMEA2784502	TRAVELRES44	dna_extraction_kit	not_reported	Qiagen	FN
+38	SAMEA2784502	TRAVELRES44	ncbi_accession	ERR636403	ERR636392	TP_wrong
+38	SAMEA2784502	TRAVELRES44	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	TP_wrong
+38	SAMEA2784502	TRAVELRES44	age	not_reported	23	FN
+38	SAMEA2784502	TRAVELRES44	age_group	Adult	Adult	TP_correct
+38	SAMEA2784502	TRAVELRES44	age_unit	Year	Year	TP_correct
+38	SAMEA2784502	TRAVELRES44	sex	not_reported	Male	FN
+38	SAMEA2784502	TRAVELRES44	age_min	23	23	TP_correct
+38	SAMEA2784502	TRAVELRES44	age_max	34	23	TP_wrong
+38	SAMEA2784502	TRAVELRES44	age_years	not_reported	23	FN
+38	SAMEA2784502	TRAVELRES44	antibiotics_current_use	No	No	TP_correct
+38	SAMEA2784502	TRAVELRES44	disease	Healthy	Healthy	TP_correct
+38	SAMEA2784502	TRAVELRES44	uncurated_metadata	35 Swedish students (17 to Central Africa, 18 to Indian peninsula); Subjects were 23 to 34 years old, gender distribution 74% females (26/35); Median travel duration was 34 days (range 14 to 150); 69% of subjects had travelers' diarrhea during their trip; 12/18 (67%) travelers to Indian peninsula acquired ESBL-producing E. coli after return; none from Africa; All E. coli ESBL isolates carried the CTX-M-15 gene; Proteobacteria abundance increased in 25/35 students after travel	travel_destination:IND	TP_wrong
+38	SAMEA2784502	TRAVELRES44	host_species	Human	Homo sapiens	TP_wrong
+39	SAMEA2784503	TRAVELRES45	study_name	not_reported	Bengtsson-PalmeJ_2015	FN
+39	SAMEA2784503	TRAVELRES45	subject_id	TRAVELRES56	TRAVELRES45_46	TP_wrong
+39	SAMEA2784503	TRAVELRES45	sample_id	SAMEA2784503	TRAVELRES45	TP_wrong
+39	SAMEA2784503	TRAVELRES45	curator	not_reported	Valentina_Giunchiglia,Paolo_Manghi,Marisa_Metzger	FN
+39	SAMEA2784503	TRAVELRES45	pmid	not_reported	26259788	FN
+39	SAMEA2784503	TRAVELRES45	target_condition	not_reported	Intestinal Flora	FN
+39	SAMEA2784503	TRAVELRES45	control	not_reported	Study Control	FN
+39	SAMEA2784503	TRAVELRES45	country	Sweden	Sweden	TP_correct
+39	SAMEA2784503	TRAVELRES45	body_site	feces	feces	TP_correct
+39	SAMEA2784503	TRAVELRES45	days_from_first_collection	not_reported	0	FN
+39	SAMEA2784503	TRAVELRES45	westernized	not_reported	Yes	FN
+39	SAMEA2784503	TRAVELRES45	dna_extraction_kit	not_reported	Qiagen	FN
+39	SAMEA2784503	TRAVELRES45	ncbi_accession	ERR636404	ERR636393	TP_wrong
+39	SAMEA2784503	TRAVELRES45	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	TP_wrong
+39	SAMEA2784503	TRAVELRES45	age	not_reported	29	FN
+39	SAMEA2784503	TRAVELRES45	age_group	Adult	Adult	TP_correct
+39	SAMEA2784503	TRAVELRES45	age_unit	Year	Year	TP_correct
+39	SAMEA2784503	TRAVELRES45	sex	not_reported	Female	FN
+39	SAMEA2784503	TRAVELRES45	age_min	23	29	TP_wrong
+39	SAMEA2784503	TRAVELRES45	age_max	34	29	TP_wrong
+39	SAMEA2784503	TRAVELRES45	age_years	not_reported	29	FN
+39	SAMEA2784503	TRAVELRES45	antibiotics_current_use	No	No	TP_correct
+39	SAMEA2784503	TRAVELRES45	disease	Healthy	Healthy	TP_correct
+39	SAMEA2784503	TRAVELRES45	uncurated_metadata	35 Swedish students (17 to Central Africa, 18 to Indian peninsula); Subjects were 23 to 34 years old, gender distribution 74% females (26/35); Median travel duration was 34 days (range 14 to 150); 69% of subjects had travelers' diarrhea during their trip; 12/18 (67%) travelers to Indian peninsula acquired ESBL-producing E. coli after return; none from Africa; All E. coli ESBL isolates carried the CTX-M-15 gene; Proteobacteria abundance increased in 25/35 students after travel	Not applicable	TP_wrong
+39	SAMEA2784503	TRAVELRES45	host_species	Human	Homo sapiens	TP_wrong
+40	SAMEA2784505	TRAVELRES46	study_name	not_reported	Bengtsson-PalmeJ_2015	FN
+40	SAMEA2784505	TRAVELRES46	subject_id	TRAVELRES58	TRAVELRES45_46	TP_wrong
+40	SAMEA2784505	TRAVELRES46	sample_id	SAMEA2784505	TRAVELRES46	TP_wrong
+40	SAMEA2784505	TRAVELRES46	curator	not_reported	Valentina_Giunchiglia,Paolo_Manghi,Marisa_Metzger	FN
+40	SAMEA2784505	TRAVELRES46	pmid	not_reported	26259788	FN
+40	SAMEA2784505	TRAVELRES46	target_condition	not_reported	Intestinal Flora	FN
+40	SAMEA2784505	TRAVELRES46	control	not_reported	Study Control	FN
+40	SAMEA2784505	TRAVELRES46	country	Sweden	Sweden	TP_correct
+40	SAMEA2784505	TRAVELRES46	body_site	feces	feces	TP_correct
+40	SAMEA2784505	TRAVELRES46	days_from_first_collection	not_reported	41	FN
+40	SAMEA2784505	TRAVELRES46	westernized	not_reported	Yes	FN
+40	SAMEA2784505	TRAVELRES46	dna_extraction_kit	not_reported	Qiagen	FN
+40	SAMEA2784505	TRAVELRES46	ncbi_accession	ERR636406	ERR636394	TP_wrong
+40	SAMEA2784505	TRAVELRES46	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	TP_wrong
+40	SAMEA2784505	TRAVELRES46	age	not_reported	29	FN
+40	SAMEA2784505	TRAVELRES46	age_group	Adult	Adult	TP_correct
+40	SAMEA2784505	TRAVELRES46	age_unit	Year	Year	TP_correct
+40	SAMEA2784505	TRAVELRES46	sex	not_reported	Female	FN
+40	SAMEA2784505	TRAVELRES46	age_min	23	29	TP_wrong
+40	SAMEA2784505	TRAVELRES46	age_max	34	29	TP_wrong
+40	SAMEA2784505	TRAVELRES46	age_years	not_reported	29	FN
+40	SAMEA2784505	TRAVELRES46	antibiotics_current_use	No	No	TP_correct
+40	SAMEA2784505	TRAVELRES46	disease	Healthy	Healthy	TP_correct
+40	SAMEA2784505	TRAVELRES46	uncurated_metadata	35 Swedish students (17 to Central Africa, 18 to Indian peninsula); Subjects were 23 to 34 years old, gender distribution 74% females (26/35); Median travel duration was 34 days (range 14 to 150); 69% of subjects had travelers' diarrhea during their trip; 12/18 (67%) travelers to Indian peninsula acquired ESBL-producing E. coli after return; none from Africa; All E. coli ESBL isolates carried the CTX-M-15 gene; Proteobacteria abundance increased in 25/35 students after travel	travel_destination:IND	TP_wrong
+40	SAMEA2784505	TRAVELRES46	host_species	Human	Homo sapiens	TP_wrong
+41	SAMEA2784511	TRAVELRES47	study_name	not_reported	Bengtsson-PalmeJ_2015	FN
+41	SAMEA2784511	TRAVELRES47	subject_id	TRAVELRES64	TRAVELRES47_48	TP_wrong
+41	SAMEA2784511	TRAVELRES47	sample_id	SAMEA2784511	TRAVELRES47	TP_wrong
+41	SAMEA2784511	TRAVELRES47	curator	not_reported	Valentina_Giunchiglia,Paolo_Manghi,Marisa_Metzger	FN
+41	SAMEA2784511	TRAVELRES47	pmid	not_reported	26259788	FN
+41	SAMEA2784511	TRAVELRES47	target_condition	not_reported	Intestinal Flora	FN
+41	SAMEA2784511	TRAVELRES47	control	not_reported	Study Control	FN
+41	SAMEA2784511	TRAVELRES47	country	Sweden	Sweden	TP_correct
+41	SAMEA2784511	TRAVELRES47	body_site	feces	feces	TP_correct
+41	SAMEA2784511	TRAVELRES47	days_from_first_collection	not_reported	0	FN
+41	SAMEA2784511	TRAVELRES47	westernized	not_reported	Yes	FN
+41	SAMEA2784511	TRAVELRES47	dna_extraction_kit	not_reported	Qiagen	FN
+41	SAMEA2784511	TRAVELRES47	ncbi_accession	ERR636412	ERR636395	TP_wrong
+41	SAMEA2784511	TRAVELRES47	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	TP_wrong
+41	SAMEA2784511	TRAVELRES47	age	not_reported	28	FN
+41	SAMEA2784511	TRAVELRES47	age_group	Adult	Adult	TP_correct
+41	SAMEA2784511	TRAVELRES47	age_unit	Year	Year	TP_correct
+41	SAMEA2784511	TRAVELRES47	sex	not_reported	Female	FN
+41	SAMEA2784511	TRAVELRES47	age_min	23	28	TP_wrong
+41	SAMEA2784511	TRAVELRES47	age_max	34	28	TP_wrong
+41	SAMEA2784511	TRAVELRES47	age_years	not_reported	28	FN
+41	SAMEA2784511	TRAVELRES47	antibiotics_current_use	No	No	TP_correct
+41	SAMEA2784511	TRAVELRES47	disease	Healthy	Healthy	TP_correct
+41	SAMEA2784511	TRAVELRES47	uncurated_metadata	35 Swedish students (17 to Central Africa, 18 to Indian peninsula); Subjects were 23 to 34 years old, gender distribution 74% females (26/35); Median travel duration was 34 days (range 14 to 150); 69% of subjects had travelers' diarrhea during their trip; 12/18 (67%) travelers to Indian peninsula acquired ESBL-producing E. coli after return; none from Africa; All E. coli ESBL isolates carried the CTX-M-15 gene; Proteobacteria abundance increased in 25/35 students after travel	Not applicable	TP_wrong
+41	SAMEA2784511	TRAVELRES47	host_species	Human	Homo sapiens	TP_wrong
+42	SAMEA2784448	TRAVELRES48	study_name	not_reported	Bengtsson-PalmeJ_2015	FN
+42	SAMEA2784448	TRAVELRES48	subject_id	TRAVELRES1	TRAVELRES47_48	TP_wrong
+42	SAMEA2784448	TRAVELRES48	sample_id	SAMEA2784448	TRAVELRES48	TP_wrong
+42	SAMEA2784448	TRAVELRES48	curator	not_reported	Valentina_Giunchiglia,Paolo_Manghi,Marisa_Metzger	FN
+42	SAMEA2784448	TRAVELRES48	pmid	not_reported	26259788	FN
+42	SAMEA2784448	TRAVELRES48	target_condition	not_reported	Intestinal Flora	FN
+42	SAMEA2784448	TRAVELRES48	control	not_reported	Study Control	FN
+42	SAMEA2784448	TRAVELRES48	country	Sweden	Sweden	TP_correct
+42	SAMEA2784448	TRAVELRES48	body_site	feces	feces	TP_correct
+42	SAMEA2784448	TRAVELRES48	days_from_first_collection	not_reported	161	FN
+42	SAMEA2784448	TRAVELRES48	westernized	not_reported	Yes	FN
+42	SAMEA2784448	TRAVELRES48	dna_extraction_kit	not_reported	Qiagen	FN
+42	SAMEA2784448	TRAVELRES48	ncbi_accession	ERR636349	ERR636396	TP_wrong
+42	SAMEA2784448	TRAVELRES48	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	TP_wrong
+42	SAMEA2784448	TRAVELRES48	age	not_reported	28	FN
+42	SAMEA2784448	TRAVELRES48	age_group	Adult	Adult	TP_correct
+42	SAMEA2784448	TRAVELRES48	age_unit	Year	Year	TP_correct
+42	SAMEA2784448	TRAVELRES48	sex	not_reported	Female	FN
+42	SAMEA2784448	TRAVELRES48	age_min	23	28	TP_wrong
+42	SAMEA2784448	TRAVELRES48	age_max	34	28	TP_wrong
+42	SAMEA2784448	TRAVELRES48	age_years	not_reported	28	FN
+42	SAMEA2784448	TRAVELRES48	antibiotics_current_use	No	No	TP_correct
+42	SAMEA2784448	TRAVELRES48	disease	Healthy	Healthy	TP_correct
+42	SAMEA2784448	TRAVELRES48	uncurated_metadata	35 Swedish students (17 to Central Africa, 18 to Indian peninsula); Subjects were 23 to 34 years old, gender distribution 74% females (26/35); Median travel duration was 34 days (range 14 to 150); 69% of subjects had travelers' diarrhea during their trip; 12/18 (67%) travelers to Indian peninsula acquired ESBL-producing E. coli after return; none from Africa; All E. coli ESBL isolates carried the CTX-M-15 gene; Proteobacteria abundance increased in 25/35 students after travel	travel_destination:ETH	TP_wrong
+42	SAMEA2784448	TRAVELRES48	host_species	Human	Homo sapiens	TP_wrong
+43	SAMEA2784514	TRAVELRES49	study_name	not_reported	Bengtsson-PalmeJ_2015	FN
+43	SAMEA2784514	TRAVELRES49	subject_id	TRAVELRES67	TRAVELRES49_50	TP_wrong
+43	SAMEA2784514	TRAVELRES49	sample_id	SAMEA2784514	TRAVELRES49	TP_wrong
+43	SAMEA2784514	TRAVELRES49	curator	not_reported	Valentina_Giunchiglia,Paolo_Manghi,Marisa_Metzger	FN
+43	SAMEA2784514	TRAVELRES49	pmid	not_reported	26259788	FN
+43	SAMEA2784514	TRAVELRES49	target_condition	not_reported	Intestinal Flora	FN
+43	SAMEA2784514	TRAVELRES49	control	not_reported	Study Control	FN
+43	SAMEA2784514	TRAVELRES49	country	Sweden	Sweden	TP_correct
+43	SAMEA2784514	TRAVELRES49	body_site	feces	feces	TP_correct
+43	SAMEA2784514	TRAVELRES49	days_from_first_collection	not_reported	0	FN
+43	SAMEA2784514	TRAVELRES49	westernized	not_reported	Yes	FN
+43	SAMEA2784514	TRAVELRES49	dna_extraction_kit	not_reported	Qiagen	FN
+43	SAMEA2784514	TRAVELRES49	ncbi_accession	ERR636415	ERR636397	TP_wrong
+43	SAMEA2784514	TRAVELRES49	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	TP_wrong
+43	SAMEA2784514	TRAVELRES49	age	not_reported	28	FN
+43	SAMEA2784514	TRAVELRES49	age_group	Adult	Adult	TP_correct
+43	SAMEA2784514	TRAVELRES49	age_unit	Year	Year	TP_correct
+43	SAMEA2784514	TRAVELRES49	sex	not_reported	Male	FN
+43	SAMEA2784514	TRAVELRES49	age_min	23	28	TP_wrong
+43	SAMEA2784514	TRAVELRES49	age_max	34	28	TP_wrong
+43	SAMEA2784514	TRAVELRES49	age_years	not_reported	28	FN
+43	SAMEA2784514	TRAVELRES49	antibiotics_current_use	No	No	TP_correct
+43	SAMEA2784514	TRAVELRES49	disease	Healthy	Healthy	TP_correct
+43	SAMEA2784514	TRAVELRES49	uncurated_metadata	35 Swedish students (17 to Central Africa, 18 to Indian peninsula); Subjects were 23 to 34 years old, gender distribution 74% females (26/35); Median travel duration was 34 days (range 14 to 150); 69% of subjects had travelers' diarrhea during their trip; 12/18 (67%) travelers to Indian peninsula acquired ESBL-producing E. coli after return; none from Africa; All E. coli ESBL isolates carried the CTX-M-15 gene; Proteobacteria abundance increased in 25/35 students after travel	Not applicable	TP_wrong
+43	SAMEA2784514	TRAVELRES49	host_species	Human	Homo sapiens	TP_wrong
+44	SAMEA2784516	TRAVELRES5	study_name	not_reported	Bengtsson-PalmeJ_2015	FN
+44	SAMEA2784516	TRAVELRES5	subject_id	TRAVELRES69	TRAVELRES5_6	TP_wrong
+44	SAMEA2784516	TRAVELRES5	sample_id	SAMEA2784516	TRAVELRES5	TP_wrong
+44	SAMEA2784516	TRAVELRES5	curator	not_reported	Valentina_Giunchiglia,Paolo_Manghi,Marisa_Metzger	FN
+44	SAMEA2784516	TRAVELRES5	pmid	not_reported	26259788	FN
+44	SAMEA2784516	TRAVELRES5	target_condition	not_reported	Intestinal Flora	FN
+44	SAMEA2784516	TRAVELRES5	control	not_reported	Study Control	FN
+44	SAMEA2784516	TRAVELRES5	country	Sweden	Sweden	TP_correct
+44	SAMEA2784516	TRAVELRES5	body_site	feces	feces	TP_correct
+44	SAMEA2784516	TRAVELRES5	days_from_first_collection	not_reported	0	FN
+44	SAMEA2784516	TRAVELRES5	westernized	not_reported	Yes	FN
+44	SAMEA2784516	TRAVELRES5	dna_extraction_kit	not_reported	Qiagen	FN
+44	SAMEA2784516	TRAVELRES5	ncbi_accession	ERR636417	ERR636353	TP_wrong
+44	SAMEA2784516	TRAVELRES5	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	TP_wrong
+44	SAMEA2784516	TRAVELRES5	age	not_reported	26	FN
+44	SAMEA2784516	TRAVELRES5	age_group	Adult	Adult	TP_correct
+44	SAMEA2784516	TRAVELRES5	age_unit	Year	Year	TP_correct
+44	SAMEA2784516	TRAVELRES5	sex	not_reported	Female	FN
+44	SAMEA2784516	TRAVELRES5	age_min	23	26	TP_wrong
+44	SAMEA2784516	TRAVELRES5	age_max	34	26	TP_wrong
+44	SAMEA2784516	TRAVELRES5	age_years	not_reported	26	FN
+44	SAMEA2784516	TRAVELRES5	antibiotics_current_use	No	No	TP_correct
+44	SAMEA2784516	TRAVELRES5	disease	Healthy	Healthy	TP_correct
+44	SAMEA2784516	TRAVELRES5	uncurated_metadata	35 Swedish students (17 to Central Africa, 18 to Indian peninsula); Subjects were 23 to 34 years old, gender distribution 74% females (26/35); Median travel duration was 34 days (range 14 to 150); 69% of subjects had travelers' diarrhea during their trip; 12/18 (67%) travelers to Indian peninsula acquired ESBL-producing E. coli after return; none from Africa; All E. coli ESBL isolates carried the CTX-M-15 gene; Proteobacteria abundance increased in 25/35 students after travel	Not applicable	TP_wrong
+44	SAMEA2784516	TRAVELRES5	host_species	Human	Homo sapiens	TP_wrong
+45	SAMEA2784452	TRAVELRES50	study_name	not_reported	Bengtsson-PalmeJ_2015	FN
+45	SAMEA2784452	TRAVELRES50	subject_id	TRAVELRES5	TRAVELRES49_50	TP_wrong
+45	SAMEA2784452	TRAVELRES50	sample_id	SAMEA2784452	TRAVELRES50	TP_wrong
+45	SAMEA2784452	TRAVELRES50	curator	not_reported	Valentina_Giunchiglia,Paolo_Manghi,Marisa_Metzger	FN
+45	SAMEA2784452	TRAVELRES50	pmid	not_reported	26259788	FN
+45	SAMEA2784452	TRAVELRES50	target_condition	not_reported	Intestinal Flora	FN
+45	SAMEA2784452	TRAVELRES50	control	not_reported	Study Control	FN
+45	SAMEA2784452	TRAVELRES50	country	Sweden	Sweden	TP_correct
+45	SAMEA2784452	TRAVELRES50	body_site	feces	feces	TP_correct
+45	SAMEA2784452	TRAVELRES50	days_from_first_collection	not_reported	22	FN
+45	SAMEA2784452	TRAVELRES50	westernized	not_reported	Yes	FN
+45	SAMEA2784452	TRAVELRES50	dna_extraction_kit	not_reported	Qiagen	FN
+45	SAMEA2784452	TRAVELRES50	ncbi_accession	ERR636353	ERR636398	TP_wrong
+45	SAMEA2784452	TRAVELRES50	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	TP_wrong
+45	SAMEA2784452	TRAVELRES50	age	not_reported	28	FN
+45	SAMEA2784452	TRAVELRES50	age_group	Adult	Adult	TP_correct
+45	SAMEA2784452	TRAVELRES50	age_unit	Year	Year	TP_correct
+45	SAMEA2784452	TRAVELRES50	sex	not_reported	Male	FN
+45	SAMEA2784452	TRAVELRES50	age_min	23	28	TP_wrong
+45	SAMEA2784452	TRAVELRES50	age_max	34	28	TP_wrong
+45	SAMEA2784452	TRAVELRES50	age_years	not_reported	28	FN
+45	SAMEA2784452	TRAVELRES50	antibiotics_current_use	No	No	TP_correct
+45	SAMEA2784452	TRAVELRES50	disease	Healthy	Healthy	TP_correct
+45	SAMEA2784452	TRAVELRES50	uncurated_metadata	35 Swedish students (17 to Central Africa, 18 to Indian peninsula); Subjects were 23 to 34 years old, gender distribution 74% females (26/35); Median travel duration was 34 days (range 14 to 150); 69% of subjects had travelers' diarrhea during their trip; 12/18 (67%) travelers to Indian peninsula acquired ESBL-producing E. coli after return; none from Africa; All E. coli ESBL isolates carried the CTX-M-15 gene; Proteobacteria abundance increased in 25/35 students after travel	travel_destination:NPL	TP_wrong
+45	SAMEA2784452	TRAVELRES50	host_species	Human	Homo sapiens	TP_wrong
+46	SAMEA2784454	TRAVELRES51	study_name	not_reported	Bengtsson-PalmeJ_2015	FN
+46	SAMEA2784454	TRAVELRES51	subject_id	TRAVELRES7	TRAVELRES51_52	TP_wrong
+46	SAMEA2784454	TRAVELRES51	sample_id	SAMEA2784454	TRAVELRES51	TP_wrong
+46	SAMEA2784454	TRAVELRES51	curator	not_reported	Valentina_Giunchiglia,Paolo_Manghi,Marisa_Metzger	FN
+46	SAMEA2784454	TRAVELRES51	pmid	not_reported	26259788	FN
+46	SAMEA2784454	TRAVELRES51	target_condition	not_reported	Intestinal Flora	FN
+46	SAMEA2784454	TRAVELRES51	control	not_reported	Study Control	FN
+46	SAMEA2784454	TRAVELRES51	country	Sweden	Sweden	TP_correct
+46	SAMEA2784454	TRAVELRES51	body_site	feces	feces	TP_correct
+46	SAMEA2784454	TRAVELRES51	days_from_first_collection	not_reported	0	FN
+46	SAMEA2784454	TRAVELRES51	westernized	not_reported	Yes	FN
+46	SAMEA2784454	TRAVELRES51	dna_extraction_kit	not_reported	Qiagen	FN
+46	SAMEA2784454	TRAVELRES51	ncbi_accession	ERR636355	ERR636399	TP_wrong
+46	SAMEA2784454	TRAVELRES51	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	TP_wrong
+46	SAMEA2784454	TRAVELRES51	age	not_reported	29	FN
+46	SAMEA2784454	TRAVELRES51	age_group	Adult	Adult	TP_correct
+46	SAMEA2784454	TRAVELRES51	age_unit	Year	Year	TP_correct
+46	SAMEA2784454	TRAVELRES51	sex	not_reported	Female	FN
+46	SAMEA2784454	TRAVELRES51	age_min	23	29	TP_wrong
+46	SAMEA2784454	TRAVELRES51	age_max	34	29	TP_wrong
+46	SAMEA2784454	TRAVELRES51	age_years	not_reported	29	FN
+46	SAMEA2784454	TRAVELRES51	antibiotics_current_use	No	No	TP_correct
+46	SAMEA2784454	TRAVELRES51	disease	Healthy	Healthy	TP_correct
+46	SAMEA2784454	TRAVELRES51	uncurated_metadata	35 Swedish students (17 to Central Africa, 18 to Indian peninsula); Subjects were 23 to 34 years old, gender distribution 74% females (26/35); Median travel duration was 34 days (range 14 to 150); 69% of subjects had travelers' diarrhea during their trip; 12/18 (67%) travelers to Indian peninsula acquired ESBL-producing E. coli after return; none from Africa; All E. coli ESBL isolates carried the CTX-M-15 gene; Proteobacteria abundance increased in 25/35 students after travel	Not applicable	TP_wrong
+46	SAMEA2784454	TRAVELRES51	host_species	Human	Homo sapiens	TP_wrong
+47	SAMEA2784455	TRAVELRES52	study_name	not_reported	Bengtsson-PalmeJ_2015	FN
+47	SAMEA2784455	TRAVELRES52	subject_id	TRAVELRES8	TRAVELRES51_52	TP_wrong
+47	SAMEA2784455	TRAVELRES52	sample_id	SAMEA2784455	TRAVELRES52	TP_wrong
+47	SAMEA2784455	TRAVELRES52	curator	not_reported	Valentina_Giunchiglia,Paolo_Manghi,Marisa_Metzger	FN
+47	SAMEA2784455	TRAVELRES52	pmid	not_reported	26259788	FN
+47	SAMEA2784455	TRAVELRES52	target_condition	not_reported	Intestinal Flora	FN
+47	SAMEA2784455	TRAVELRES52	control	not_reported	Study Control	FN
+47	SAMEA2784455	TRAVELRES52	country	Sweden	Sweden	TP_correct
+47	SAMEA2784455	TRAVELRES52	body_site	feces	feces	TP_correct
+47	SAMEA2784455	TRAVELRES52	days_from_first_collection	not_reported	22	FN
+47	SAMEA2784455	TRAVELRES52	westernized	not_reported	Yes	FN
+47	SAMEA2784455	TRAVELRES52	dna_extraction_kit	not_reported	Qiagen	FN
+47	SAMEA2784455	TRAVELRES52	ncbi_accession	ERR636356	ERR636400	TP_wrong
+47	SAMEA2784455	TRAVELRES52	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	TP_wrong
+47	SAMEA2784455	TRAVELRES52	age	not_reported	29	FN
+47	SAMEA2784455	TRAVELRES52	age_group	Adult	Adult	TP_correct
+47	SAMEA2784455	TRAVELRES52	age_unit	Year	Year	TP_correct
+47	SAMEA2784455	TRAVELRES52	sex	not_reported	Female	FN
+47	SAMEA2784455	TRAVELRES52	age_min	23	29	TP_wrong
+47	SAMEA2784455	TRAVELRES52	age_max	34	29	TP_wrong
+47	SAMEA2784455	TRAVELRES52	age_years	not_reported	29	FN
+47	SAMEA2784455	TRAVELRES52	antibiotics_current_use	No	No	TP_correct
+47	SAMEA2784455	TRAVELRES52	disease	Healthy	Healthy	TP_correct
+47	SAMEA2784455	TRAVELRES52	uncurated_metadata	35 Swedish students (17 to Central Africa, 18 to Indian peninsula); Subjects were 23 to 34 years old, gender distribution 74% females (26/35); Median travel duration was 34 days (range 14 to 150); 69% of subjects had travelers' diarrhea during their trip; 12/18 (67%) travelers to Indian peninsula acquired ESBL-producing E. coli after return; none from Africa; All E. coli ESBL isolates carried the CTX-M-15 gene; Proteobacteria abundance increased in 25/35 students after travel	travel_destination:NPL	TP_wrong
+47	SAMEA2784455	TRAVELRES52	host_species	Human	Homo sapiens	TP_wrong
+48	SAMEA2784457	TRAVELRES53	study_name	not_reported	Bengtsson-PalmeJ_2015	FN
+48	SAMEA2784457	TRAVELRES53	subject_id	TRAVELRES10	TRAVELRES53_54	TP_wrong
+48	SAMEA2784457	TRAVELRES53	sample_id	SAMEA2784457	TRAVELRES53	TP_wrong
+48	SAMEA2784457	TRAVELRES53	curator	not_reported	Valentina_Giunchiglia,Paolo_Manghi,Marisa_Metzger	FN
+48	SAMEA2784457	TRAVELRES53	pmid	not_reported	26259788	FN
+48	SAMEA2784457	TRAVELRES53	target_condition	not_reported	Intestinal Flora	FN
+48	SAMEA2784457	TRAVELRES53	control	not_reported	Study Control	FN
+48	SAMEA2784457	TRAVELRES53	country	Sweden	Sweden	TP_correct
+48	SAMEA2784457	TRAVELRES53	body_site	feces	feces	TP_correct
+48	SAMEA2784457	TRAVELRES53	days_from_first_collection	not_reported	0	FN
+48	SAMEA2784457	TRAVELRES53	westernized	not_reported	Yes	FN
+48	SAMEA2784457	TRAVELRES53	dna_extraction_kit	not_reported	Qiagen	FN
+48	SAMEA2784457	TRAVELRES53	ncbi_accession	ERR636358	ERR636401	TP_wrong
+48	SAMEA2784457	TRAVELRES53	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	TP_wrong
+48	SAMEA2784457	TRAVELRES53	age	not_reported	24	FN
+48	SAMEA2784457	TRAVELRES53	age_group	Adult	Adult	TP_correct
+48	SAMEA2784457	TRAVELRES53	age_unit	Year	Year	TP_correct
+48	SAMEA2784457	TRAVELRES53	sex	not_reported	Female	FN
+48	SAMEA2784457	TRAVELRES53	age_min	23	24	TP_correct
+48	SAMEA2784457	TRAVELRES53	age_max	34	24	TP_wrong
+48	SAMEA2784457	TRAVELRES53	age_years	not_reported	24	FN
+48	SAMEA2784457	TRAVELRES53	antibiotics_current_use	No	No	TP_correct
+48	SAMEA2784457	TRAVELRES53	disease	Healthy	Healthy	TP_correct
+48	SAMEA2784457	TRAVELRES53	uncurated_metadata	35 Swedish students (17 to Central Africa, 18 to Indian peninsula); Subjects were 23 to 34 years old, gender distribution 74% females (26/35); Median travel duration was 34 days (range 14 to 150); 69% of subjects had travelers' diarrhea during their trip; 12/18 (67%) travelers to Indian peninsula acquired ESBL-producing E. coli after return; none from Africa; All E. coli ESBL isolates carried the CTX-M-15 gene; Proteobacteria abundance increased in 25/35 students after travel	Not applicable	TP_wrong
+48	SAMEA2784457	TRAVELRES53	host_species	Human	Homo sapiens	TP_wrong
+49	SAMEA2784459	TRAVELRES54	study_name	not_reported	Bengtsson-PalmeJ_2015	FN
+49	SAMEA2784459	TRAVELRES54	subject_id	TRAVELRES12	TRAVELRES53_54	TP_wrong
+49	SAMEA2784459	TRAVELRES54	sample_id	SAMEA2784459	TRAVELRES54	TP_wrong
+49	SAMEA2784459	TRAVELRES54	curator	not_reported	Valentina_Giunchiglia,Paolo_Manghi,Marisa_Metzger	FN
+49	SAMEA2784459	TRAVELRES54	pmid	not_reported	26259788	FN
+49	SAMEA2784459	TRAVELRES54	target_condition	not_reported	Intestinal Flora	FN
+49	SAMEA2784459	TRAVELRES54	control	not_reported	Study Control	FN
+49	SAMEA2784459	TRAVELRES54	country	Sweden	Sweden	TP_correct
+49	SAMEA2784459	TRAVELRES54	body_site	feces	feces	TP_correct
+49	SAMEA2784459	TRAVELRES54	days_from_first_collection	not_reported	58	FN
+49	SAMEA2784459	TRAVELRES54	westernized	not_reported	Yes	FN
+49	SAMEA2784459	TRAVELRES54	dna_extraction_kit	not_reported	Qiagen	FN
+49	SAMEA2784459	TRAVELRES54	ncbi_accession	ERR636360	ERR636402	TP_wrong
+49	SAMEA2784459	TRAVELRES54	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	TP_wrong
+49	SAMEA2784459	TRAVELRES54	age	not_reported	24	FN
+49	SAMEA2784459	TRAVELRES54	age_group	Adult	Adult	TP_correct
+49	SAMEA2784459	TRAVELRES54	age_unit	Year	Year	TP_correct
+49	SAMEA2784459	TRAVELRES54	sex	not_reported	Female	FN
+49	SAMEA2784459	TRAVELRES54	age_min	23	24	TP_correct
+49	SAMEA2784459	TRAVELRES54	age_max	34	24	TP_wrong
+49	SAMEA2784459	TRAVELRES54	age_years	not_reported	24	FN
+49	SAMEA2784459	TRAVELRES54	antibiotics_current_use	No	No	TP_correct
+49	SAMEA2784459	TRAVELRES54	disease	Healthy	Healthy	TP_correct
+49	SAMEA2784459	TRAVELRES54	uncurated_metadata	35 Swedish students (17 to Central Africa, 18 to Indian peninsula); Subjects were 23 to 34 years old, gender distribution 74% females (26/35); Median travel duration was 34 days (range 14 to 150); 69% of subjects had travelers' diarrhea during their trip; 12/18 (67%) travelers to Indian peninsula acquired ESBL-producing E. coli after return; none from Africa; All E. coli ESBL isolates carried the CTX-M-15 gene; Proteobacteria abundance increased in 25/35 students after travel	travel_destination:LKA	TP_wrong
+49	SAMEA2784459	TRAVELRES54	host_species	Human	Homo sapiens	TP_wrong
+50	SAMEA2784460	TRAVELRES55	study_name	not_reported	Bengtsson-PalmeJ_2015	FN
+50	SAMEA2784460	TRAVELRES55	subject_id	TRAVELRES13	TRAVELRES55_56	TP_wrong
+50	SAMEA2784460	TRAVELRES55	sample_id	SAMEA2784460	TRAVELRES55	TP_wrong
+50	SAMEA2784460	TRAVELRES55	curator	not_reported	Valentina_Giunchiglia,Paolo_Manghi,Marisa_Metzger	FN
+50	SAMEA2784460	TRAVELRES55	pmid	not_reported	26259788	FN
+50	SAMEA2784460	TRAVELRES55	target_condition	not_reported	Intestinal Flora	FN
+50	SAMEA2784460	TRAVELRES55	control	not_reported	Study Control	FN
+50	SAMEA2784460	TRAVELRES55	country	Sweden	Sweden	TP_correct
+50	SAMEA2784460	TRAVELRES55	body_site	feces	feces	TP_correct
+50	SAMEA2784460	TRAVELRES55	days_from_first_collection	not_reported	0	FN
+50	SAMEA2784460	TRAVELRES55	westernized	not_reported	Yes	FN
+50	SAMEA2784460	TRAVELRES55	dna_extraction_kit	not_reported	Qiagen	FN
+50	SAMEA2784460	TRAVELRES55	ncbi_accession	ERR636361	ERR636403	TP_wrong
+50	SAMEA2784460	TRAVELRES55	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	TP_wrong
+50	SAMEA2784460	TRAVELRES55	age	not_reported	23	FN
+50	SAMEA2784460	TRAVELRES55	age_group	Adult	Adult	TP_correct
+50	SAMEA2784460	TRAVELRES55	age_unit	Year	Year	TP_correct
+50	SAMEA2784460	TRAVELRES55	sex	not_reported	Female	FN
+50	SAMEA2784460	TRAVELRES55	age_min	23	23	TP_correct
+50	SAMEA2784460	TRAVELRES55	age_max	34	23	TP_wrong
+50	SAMEA2784460	TRAVELRES55	age_years	not_reported	23	FN
+50	SAMEA2784460	TRAVELRES55	antibiotics_current_use	No	No	TP_correct
+50	SAMEA2784460	TRAVELRES55	disease	Healthy	Healthy	TP_correct
+50	SAMEA2784460	TRAVELRES55	uncurated_metadata	35 Swedish students (17 to Central Africa, 18 to Indian peninsula); Subjects were 23 to 34 years old, gender distribution 74% females (26/35); Median travel duration was 34 days (range 14 to 150); 69% of subjects had travelers' diarrhea during their trip; 12/18 (67%) travelers to Indian peninsula acquired ESBL-producing E. coli after return; none from Africa; All E. coli ESBL isolates carried the CTX-M-15 gene; Proteobacteria abundance increased in 25/35 students after travel	Not applicable	TP_wrong
+50	SAMEA2784460	TRAVELRES55	host_species	Human	Homo sapiens	TP_wrong
+51	SAMEA2784461	TRAVELRES56	study_name	not_reported	Bengtsson-PalmeJ_2015	FN
+51	SAMEA2784461	TRAVELRES56	subject_id	TRAVELRES14	TRAVELRES55_56	TP_wrong
+51	SAMEA2784461	TRAVELRES56	sample_id	SAMEA2784461	TRAVELRES56	TP_wrong
+51	SAMEA2784461	TRAVELRES56	curator	not_reported	Valentina_Giunchiglia,Paolo_Manghi,Marisa_Metzger	FN
+51	SAMEA2784461	TRAVELRES56	pmid	not_reported	26259788	FN
+51	SAMEA2784461	TRAVELRES56	target_condition	not_reported	Intestinal Flora	FN
+51	SAMEA2784461	TRAVELRES56	control	not_reported	Study Control	FN
+51	SAMEA2784461	TRAVELRES56	country	Sweden	Sweden	TP_correct
+51	SAMEA2784461	TRAVELRES56	body_site	feces	feces	TP_correct
+51	SAMEA2784461	TRAVELRES56	days_from_first_collection	not_reported	141	FN
+51	SAMEA2784461	TRAVELRES56	westernized	not_reported	Yes	FN
+51	SAMEA2784461	TRAVELRES56	dna_extraction_kit	not_reported	Qiagen	FN
+51	SAMEA2784461	TRAVELRES56	ncbi_accession	ERR636362	ERR636404	TP_wrong
+51	SAMEA2784461	TRAVELRES56	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	TP_wrong
+51	SAMEA2784461	TRAVELRES56	age	not_reported	23	FN
+51	SAMEA2784461	TRAVELRES56	age_group	Adult	Adult	TP_correct
+51	SAMEA2784461	TRAVELRES56	age_unit	Year	Year	TP_correct
+51	SAMEA2784461	TRAVELRES56	sex	not_reported	Female	FN
+51	SAMEA2784461	TRAVELRES56	age_min	23	23	TP_correct
+51	SAMEA2784461	TRAVELRES56	age_max	34	23	TP_wrong
+51	SAMEA2784461	TRAVELRES56	age_years	not_reported	23	FN
+51	SAMEA2784461	TRAVELRES56	antibiotics_current_use	No	No	TP_correct
+51	SAMEA2784461	TRAVELRES56	disease	Healthy	Healthy	TP_correct
+51	SAMEA2784461	TRAVELRES56	uncurated_metadata	35 Swedish students (17 to Central Africa, 18 to Indian peninsula); Subjects were 23 to 34 years old, gender distribution 74% females (26/35); Median travel duration was 34 days (range 14 to 150); 69% of subjects had travelers' diarrhea during their trip; 12/18 (67%) travelers to Indian peninsula acquired ESBL-producing E. coli after return; none from Africa; All E. coli ESBL isolates carried the CTX-M-15 gene; Proteobacteria abundance increased in 25/35 students after travel	travel_destination:IND	TP_wrong
+51	SAMEA2784461	TRAVELRES56	host_species	Human	Homo sapiens	TP_wrong
+52	SAMEA2784463	TRAVELRES57	study_name	not_reported	Bengtsson-PalmeJ_2015	FN
+52	SAMEA2784463	TRAVELRES57	subject_id	TRAVELRES16	TRAVELRES57_58	TP_wrong
+52	SAMEA2784463	TRAVELRES57	sample_id	SAMEA2784463	TRAVELRES57	TP_wrong
+52	SAMEA2784463	TRAVELRES57	curator	not_reported	Valentina_Giunchiglia,Paolo_Manghi,Marisa_Metzger	FN
+52	SAMEA2784463	TRAVELRES57	pmid	not_reported	26259788	FN
+52	SAMEA2784463	TRAVELRES57	target_condition	not_reported	Intestinal Flora	FN
+52	SAMEA2784463	TRAVELRES57	control	not_reported	Study Control	FN
+52	SAMEA2784463	TRAVELRES57	country	Sweden	Sweden	TP_correct
+52	SAMEA2784463	TRAVELRES57	body_site	feces	feces	TP_correct
+52	SAMEA2784463	TRAVELRES57	days_from_first_collection	not_reported	0	FN
+52	SAMEA2784463	TRAVELRES57	westernized	not_reported	Yes	FN
+52	SAMEA2784463	TRAVELRES57	dna_extraction_kit	not_reported	Qiagen	FN
+52	SAMEA2784463	TRAVELRES57	ncbi_accession	ERR636364	ERR636405	TP_wrong
+52	SAMEA2784463	TRAVELRES57	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	TP_wrong
+52	SAMEA2784463	TRAVELRES57	age	not_reported	24	FN
+52	SAMEA2784463	TRAVELRES57	age_group	Adult	Adult	TP_correct
+52	SAMEA2784463	TRAVELRES57	age_unit	Year	Year	TP_correct
+52	SAMEA2784463	TRAVELRES57	sex	not_reported	Female	FN
+52	SAMEA2784463	TRAVELRES57	age_min	23	24	TP_correct
+52	SAMEA2784463	TRAVELRES57	age_max	34	24	TP_wrong
+52	SAMEA2784463	TRAVELRES57	age_years	not_reported	24	FN
+52	SAMEA2784463	TRAVELRES57	antibiotics_current_use	No	No	TP_correct
+52	SAMEA2784463	TRAVELRES57	disease	Healthy	Healthy	TP_correct
+52	SAMEA2784463	TRAVELRES57	uncurated_metadata	35 Swedish students (17 to Central Africa, 18 to Indian peninsula); Subjects were 23 to 34 years old, gender distribution 74% females (26/35); Median travel duration was 34 days (range 14 to 150); 69% of subjects had travelers' diarrhea during their trip; 12/18 (67%) travelers to Indian peninsula acquired ESBL-producing E. coli after return; none from Africa; All E. coli ESBL isolates carried the CTX-M-15 gene; Proteobacteria abundance increased in 25/35 students after travel	Not applicable	TP_wrong
+52	SAMEA2784463	TRAVELRES57	host_species	Human	Homo sapiens	TP_wrong
+53	SAMEA2784466	TRAVELRES58	study_name	not_reported	Bengtsson-PalmeJ_2015	FN
+53	SAMEA2784466	TRAVELRES58	subject_id	TRAVELRES19	TRAVELRES57_58	TP_wrong
+53	SAMEA2784466	TRAVELRES58	sample_id	SAMEA2784466	TRAVELRES58	TP_wrong
+53	SAMEA2784466	TRAVELRES58	curator	not_reported	Valentina_Giunchiglia,Paolo_Manghi,Marisa_Metzger	FN
+53	SAMEA2784466	TRAVELRES58	pmid	not_reported	26259788	FN
+53	SAMEA2784466	TRAVELRES58	target_condition	not_reported	Intestinal Flora	FN
+53	SAMEA2784466	TRAVELRES58	control	not_reported	Study Control	FN
+53	SAMEA2784466	TRAVELRES58	country	Sweden	Sweden	TP_correct
+53	SAMEA2784466	TRAVELRES58	body_site	feces	feces	TP_correct
+53	SAMEA2784466	TRAVELRES58	days_from_first_collection	not_reported	71	FN
+53	SAMEA2784466	TRAVELRES58	westernized	not_reported	Yes	FN
+53	SAMEA2784466	TRAVELRES58	dna_extraction_kit	not_reported	Qiagen	FN
+53	SAMEA2784466	TRAVELRES58	ncbi_accession	ERR636367	ERR636406	TP_wrong
+53	SAMEA2784466	TRAVELRES58	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	TP_wrong
+53	SAMEA2784466	TRAVELRES58	age	not_reported	24	FN
+53	SAMEA2784466	TRAVELRES58	age_group	Adult	Adult	TP_correct
+53	SAMEA2784466	TRAVELRES58	age_unit	Year	Year	TP_correct
+53	SAMEA2784466	TRAVELRES58	sex	not_reported	Female	FN
+53	SAMEA2784466	TRAVELRES58	age_min	23	24	TP_correct
+53	SAMEA2784466	TRAVELRES58	age_max	34	24	TP_wrong
+53	SAMEA2784466	TRAVELRES58	age_years	not_reported	24	FN
+53	SAMEA2784466	TRAVELRES58	antibiotics_current_use	No	No	TP_correct
+53	SAMEA2784466	TRAVELRES58	disease	Healthy	Healthy	TP_correct
+53	SAMEA2784466	TRAVELRES58	uncurated_metadata	35 Swedish students (17 to Central Africa, 18 to Indian peninsula); Subjects were 23 to 34 years old, gender distribution 74% females (26/35); Median travel duration was 34 days (range 14 to 150); 69% of subjects had travelers' diarrhea during their trip; 12/18 (67%) travelers to Indian peninsula acquired ESBL-producing E. coli after return; none from Africa; All E. coli ESBL isolates carried the CTX-M-15 gene; Proteobacteria abundance increased in 25/35 students after travel	travel_destination:CMR	TP_wrong
+53	SAMEA2784466	TRAVELRES58	host_species	Human	Homo sapiens	TP_wrong
+54	SAMEA2784469	TRAVELRES59	study_name	not_reported	Bengtsson-PalmeJ_2015	FN
+54	SAMEA2784469	TRAVELRES59	subject_id	TRAVELRES22	TRAVELRES59_60	TP_wrong
+54	SAMEA2784469	TRAVELRES59	sample_id	SAMEA2784469	TRAVELRES59	TP_wrong
+54	SAMEA2784469	TRAVELRES59	curator	not_reported	Valentina_Giunchiglia,Paolo_Manghi,Marisa_Metzger	FN
+54	SAMEA2784469	TRAVELRES59	pmid	not_reported	26259788	FN
+54	SAMEA2784469	TRAVELRES59	target_condition	not_reported	Intestinal Flora	FN
+54	SAMEA2784469	TRAVELRES59	control	not_reported	Study Control	FN
+54	SAMEA2784469	TRAVELRES59	country	Sweden	Sweden	TP_correct
+54	SAMEA2784469	TRAVELRES59	body_site	feces	feces	TP_correct
+54	SAMEA2784469	TRAVELRES59	days_from_first_collection	not_reported	0	FN
+54	SAMEA2784469	TRAVELRES59	westernized	not_reported	Yes	FN
+54	SAMEA2784469	TRAVELRES59	dna_extraction_kit	not_reported	Qiagen	FN
+54	SAMEA2784469	TRAVELRES59	ncbi_accession	ERR636370	ERR636407	TP_wrong
+54	SAMEA2784469	TRAVELRES59	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	TP_wrong
+54	SAMEA2784469	TRAVELRES59	age	not_reported	25	FN
+54	SAMEA2784469	TRAVELRES59	age_group	Adult	Adult	TP_correct
+54	SAMEA2784469	TRAVELRES59	age_unit	Year	Year	TP_correct
+54	SAMEA2784469	TRAVELRES59	sex	not_reported	Female	FN
+54	SAMEA2784469	TRAVELRES59	age_min	23	25	TP_wrong
+54	SAMEA2784469	TRAVELRES59	age_max	34	25	TP_wrong
+54	SAMEA2784469	TRAVELRES59	age_years	not_reported	25	FN
+54	SAMEA2784469	TRAVELRES59	antibiotics_current_use	No	No	TP_correct
+54	SAMEA2784469	TRAVELRES59	disease	Healthy	Healthy	TP_correct
+54	SAMEA2784469	TRAVELRES59	uncurated_metadata	35 Swedish students (17 to Central Africa, 18 to Indian peninsula); Subjects were 23 to 34 years old, gender distribution 74% females (26/35); Median travel duration was 34 days (range 14 to 150); 69% of subjects had travelers' diarrhea during their trip; 12/18 (67%) travelers to Indian peninsula acquired ESBL-producing E. coli after return; none from Africa; All E. coli ESBL isolates carried the CTX-M-15 gene; Proteobacteria abundance increased in 25/35 students after travel	Not applicable	TP_wrong
+54	SAMEA2784469	TRAVELRES59	host_species	Human	Homo sapiens	TP_wrong
+55	SAMEA2784476	TRAVELRES6	study_name	not_reported	Bengtsson-PalmeJ_2015	FN
+55	SAMEA2784476	TRAVELRES6	subject_id	TRAVELRES29	TRAVELRES5_6	TP_wrong
+55	SAMEA2784476	TRAVELRES6	sample_id	SAMEA2784476	TRAVELRES6	TP_wrong
+55	SAMEA2784476	TRAVELRES6	curator	not_reported	Valentina_Giunchiglia,Paolo_Manghi,Marisa_Metzger	FN
+55	SAMEA2784476	TRAVELRES6	pmid	not_reported	26259788	FN
+55	SAMEA2784476	TRAVELRES6	target_condition	not_reported	Intestinal Flora	FN
+55	SAMEA2784476	TRAVELRES6	control	not_reported	Study Control	FN
+55	SAMEA2784476	TRAVELRES6	country	Sweden	Sweden	TP_correct
+55	SAMEA2784476	TRAVELRES6	body_site	feces	feces	TP_correct
+55	SAMEA2784476	TRAVELRES6	days_from_first_collection	not_reported	64	FN
+55	SAMEA2784476	TRAVELRES6	westernized	not_reported	Yes	FN
+55	SAMEA2784476	TRAVELRES6	dna_extraction_kit	not_reported	Qiagen	FN
+55	SAMEA2784476	TRAVELRES6	ncbi_accession	ERR636377	ERR636354	TP_wrong
+55	SAMEA2784476	TRAVELRES6	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	TP_wrong
+55	SAMEA2784476	TRAVELRES6	age	not_reported	26	FN
+55	SAMEA2784476	TRAVELRES6	age_group	Adult	Adult	TP_correct
+55	SAMEA2784476	TRAVELRES6	age_unit	Year	Year	TP_correct
+55	SAMEA2784476	TRAVELRES6	sex	not_reported	Female	FN
+55	SAMEA2784476	TRAVELRES6	age_min	23	26	TP_wrong
+55	SAMEA2784476	TRAVELRES6	age_max	34	26	TP_wrong
+55	SAMEA2784476	TRAVELRES6	age_years	not_reported	26	FN
+55	SAMEA2784476	TRAVELRES6	antibiotics_current_use	No	No	TP_correct
+55	SAMEA2784476	TRAVELRES6	disease	Healthy	Healthy	TP_correct
+55	SAMEA2784476	TRAVELRES6	uncurated_metadata	35 Swedish students (17 to Central Africa, 18 to Indian peninsula); Subjects were 23 to 34 years old, gender distribution 74% females (26/35); Median travel duration was 34 days (range 14 to 150); 69% of subjects had travelers' diarrhea during their trip; 12/18 (67%) travelers to Indian peninsula acquired ESBL-producing E. coli after return; none from Africa; All E. coli ESBL isolates carried the CTX-M-15 gene; Proteobacteria abundance increased in 25/35 students after travel	travel_destination:RWA	TP_wrong
+55	SAMEA2784476	TRAVELRES6	host_species	Human	Homo sapiens	TP_wrong
+56	SAMEA2784478	TRAVELRES60	study_name	not_reported	Bengtsson-PalmeJ_2015	FN
+56	SAMEA2784478	TRAVELRES60	subject_id	TRAVELRES31	TRAVELRES59_60	TP_wrong
+56	SAMEA2784478	TRAVELRES60	sample_id	SAMEA2784478	TRAVELRES60	TP_wrong
+56	SAMEA2784478	TRAVELRES60	curator	not_reported	Valentina_Giunchiglia,Paolo_Manghi,Marisa_Metzger	FN
+56	SAMEA2784478	TRAVELRES60	pmid	not_reported	26259788	FN
+56	SAMEA2784478	TRAVELRES60	target_condition	not_reported	Intestinal Flora	FN
+56	SAMEA2784478	TRAVELRES60	control	not_reported	Study Control	FN
+56	SAMEA2784478	TRAVELRES60	country	Sweden	Sweden	TP_correct
+56	SAMEA2784478	TRAVELRES60	body_site	feces	feces	TP_correct
+56	SAMEA2784478	TRAVELRES60	days_from_first_collection	not_reported	72	FN
+56	SAMEA2784478	TRAVELRES60	westernized	not_reported	Yes	FN
+56	SAMEA2784478	TRAVELRES60	dna_extraction_kit	not_reported	Qiagen	FN
+56	SAMEA2784478	TRAVELRES60	ncbi_accession	ERR636379	ERR636408	TP_wrong
+56	SAMEA2784478	TRAVELRES60	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	TP_wrong
+56	SAMEA2784478	TRAVELRES60	age	not_reported	25	FN
+56	SAMEA2784478	TRAVELRES60	age_group	Adult	Adult	TP_correct
+56	SAMEA2784478	TRAVELRES60	age_unit	Year	Year	TP_correct
+56	SAMEA2784478	TRAVELRES60	sex	not_reported	Female	FN
+56	SAMEA2784478	TRAVELRES60	age_min	23	25	TP_wrong
+56	SAMEA2784478	TRAVELRES60	age_max	34	25	TP_wrong
+56	SAMEA2784478	TRAVELRES60	age_years	not_reported	25	FN
+56	SAMEA2784478	TRAVELRES60	antibiotics_current_use	No	No	TP_correct
+56	SAMEA2784478	TRAVELRES60	disease	Healthy	Healthy	TP_correct
+56	SAMEA2784478	TRAVELRES60	uncurated_metadata	35 Swedish students (17 to Central Africa, 18 to Indian peninsula); Subjects were 23 to 34 years old, gender distribution 74% females (26/35); Median travel duration was 34 days (range 14 to 150); 69% of subjects had travelers' diarrhea during their trip; 12/18 (67%) travelers to Indian peninsula acquired ESBL-producing E. coli after return; none from Africa; All E. coli ESBL isolates carried the CTX-M-15 gene; Proteobacteria abundance increased in 25/35 students after travel	travel_destination:CMR	TP_wrong
+56	SAMEA2784478	TRAVELRES60	host_species	Human	Homo sapiens	TP_wrong
+57	SAMEA2784479	TRAVELRES61	study_name	not_reported	Bengtsson-PalmeJ_2015	FN
+57	SAMEA2784479	TRAVELRES61	subject_id	TRAVELRES32	TRAVELRES61_62	TP_wrong
+57	SAMEA2784479	TRAVELRES61	sample_id	SAMEA2784479	TRAVELRES61	TP_wrong
+57	SAMEA2784479	TRAVELRES61	curator	not_reported	Valentina_Giunchiglia,Paolo_Manghi,Marisa_Metzger	FN
+57	SAMEA2784479	TRAVELRES61	pmid	not_reported	26259788	FN
+57	SAMEA2784479	TRAVELRES61	target_condition	not_reported	Intestinal Flora	FN
+57	SAMEA2784479	TRAVELRES61	control	not_reported	Study Control	FN
+57	SAMEA2784479	TRAVELRES61	country	Sweden	Sweden	TP_correct
+57	SAMEA2784479	TRAVELRES61	body_site	feces	feces	TP_correct
+57	SAMEA2784479	TRAVELRES61	days_from_first_collection	not_reported	0	FN
+57	SAMEA2784479	TRAVELRES61	westernized	not_reported	Yes	FN
+57	SAMEA2784479	TRAVELRES61	dna_extraction_kit	not_reported	Qiagen	FN
+57	SAMEA2784479	TRAVELRES61	ncbi_accession	ERR636380	ERR636409	TP_wrong
+57	SAMEA2784479	TRAVELRES61	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	TP_wrong
+57	SAMEA2784479	TRAVELRES61	age	not_reported	26	FN
+57	SAMEA2784479	TRAVELRES61	age_group	Adult	Adult	TP_correct
+57	SAMEA2784479	TRAVELRES61	age_unit	Year	Year	TP_correct
+57	SAMEA2784479	TRAVELRES61	sex	not_reported	Male	FN
+57	SAMEA2784479	TRAVELRES61	age_min	23	26	TP_wrong
+57	SAMEA2784479	TRAVELRES61	age_max	34	26	TP_wrong
+57	SAMEA2784479	TRAVELRES61	age_years	not_reported	26	FN
+57	SAMEA2784479	TRAVELRES61	antibiotics_current_use	No	No	TP_correct
+57	SAMEA2784479	TRAVELRES61	disease	Healthy	Healthy	TP_correct
+57	SAMEA2784479	TRAVELRES61	uncurated_metadata	35 Swedish students (17 to Central Africa, 18 to Indian peninsula); Subjects were 23 to 34 years old, gender distribution 74% females (26/35); Median travel duration was 34 days (range 14 to 150); 69% of subjects had travelers' diarrhea during their trip; 12/18 (67%) travelers to Indian peninsula acquired ESBL-producing E. coli after return; none from Africa; All E. coli ESBL isolates carried the CTX-M-15 gene; Proteobacteria abundance increased in 25/35 students after travel	Not applicable	TP_wrong
+57	SAMEA2784479	TRAVELRES61	host_species	Human	Homo sapiens	TP_wrong
+58	SAMEA2784482	TRAVELRES62	study_name	not_reported	Bengtsson-PalmeJ_2015	FN
+58	SAMEA2784482	TRAVELRES62	subject_id	TRAVELRES35	TRAVELRES61_62	TP_wrong
+58	SAMEA2784482	TRAVELRES62	sample_id	SAMEA2784482	TRAVELRES62	TP_wrong
+58	SAMEA2784482	TRAVELRES62	curator	not_reported	Valentina_Giunchiglia,Paolo_Manghi,Marisa_Metzger	FN
+58	SAMEA2784482	TRAVELRES62	pmid	not_reported	26259788	FN
+58	SAMEA2784482	TRAVELRES62	target_condition	not_reported	Intestinal Flora	FN
+58	SAMEA2784482	TRAVELRES62	control	not_reported	Study Control	FN
+58	SAMEA2784482	TRAVELRES62	country	Sweden	Sweden	TP_correct
+58	SAMEA2784482	TRAVELRES62	body_site	feces	feces	TP_correct
+58	SAMEA2784482	TRAVELRES62	days_from_first_collection	not_reported	69	FN
+58	SAMEA2784482	TRAVELRES62	westernized	not_reported	Yes	FN
+58	SAMEA2784482	TRAVELRES62	dna_extraction_kit	not_reported	Qiagen	FN
+58	SAMEA2784482	TRAVELRES62	ncbi_accession	ERR636383	ERR636410	TP_wrong
+58	SAMEA2784482	TRAVELRES62	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	TP_wrong
+58	SAMEA2784482	TRAVELRES62	age	not_reported	26	FN
+58	SAMEA2784482	TRAVELRES62	age_group	Adult	Adult	TP_correct
+58	SAMEA2784482	TRAVELRES62	age_unit	Year	Year	TP_correct
+58	SAMEA2784482	TRAVELRES62	sex	not_reported	Male	FN
+58	SAMEA2784482	TRAVELRES62	age_min	23	26	TP_wrong
+58	SAMEA2784482	TRAVELRES62	age_max	34	26	TP_wrong
+58	SAMEA2784482	TRAVELRES62	age_years	not_reported	26	FN
+58	SAMEA2784482	TRAVELRES62	antibiotics_current_use	No	No	TP_correct
+58	SAMEA2784482	TRAVELRES62	disease	Healthy	Healthy	TP_correct
+58	SAMEA2784482	TRAVELRES62	uncurated_metadata	35 Swedish students (17 to Central Africa, 18 to Indian peninsula); Subjects were 23 to 34 years old, gender distribution 74% females (26/35); Median travel duration was 34 days (range 14 to 150); 69% of subjects had travelers' diarrhea during their trip; 12/18 (67%) travelers to Indian peninsula acquired ESBL-producing E. coli after return; none from Africa; All E. coli ESBL isolates carried the CTX-M-15 gene; Proteobacteria abundance increased in 25/35 students after travel	travel_destination:IND	TP_wrong
+58	SAMEA2784482	TRAVELRES62	host_species	Human	Homo sapiens	TP_wrong
+59	SAMEA2784483	TRAVELRES63	study_name	not_reported	Bengtsson-PalmeJ_2015	FN
+59	SAMEA2784483	TRAVELRES63	subject_id	TRAVELRES36	TRAVELRES63_64	TP_wrong
+59	SAMEA2784483	TRAVELRES63	sample_id	SAMEA2784483	TRAVELRES63	TP_wrong
+59	SAMEA2784483	TRAVELRES63	curator	not_reported	Valentina_Giunchiglia,Paolo_Manghi,Marisa_Metzger	FN
+59	SAMEA2784483	TRAVELRES63	pmid	not_reported	26259788	FN
+59	SAMEA2784483	TRAVELRES63	target_condition	not_reported	Intestinal Flora	FN
+59	SAMEA2784483	TRAVELRES63	control	not_reported	Study Control	FN
+59	SAMEA2784483	TRAVELRES63	country	Sweden	Sweden	TP_correct
+59	SAMEA2784483	TRAVELRES63	body_site	feces	feces	TP_correct
+59	SAMEA2784483	TRAVELRES63	days_from_first_collection	not_reported	0	FN
+59	SAMEA2784483	TRAVELRES63	westernized	not_reported	Yes	FN
+59	SAMEA2784483	TRAVELRES63	dna_extraction_kit	not_reported	Qiagen	FN
+59	SAMEA2784483	TRAVELRES63	ncbi_accession	ERR636384	ERR636411	TP_wrong
+59	SAMEA2784483	TRAVELRES63	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	TP_wrong
+59	SAMEA2784483	TRAVELRES63	age	not_reported	25	FN
+59	SAMEA2784483	TRAVELRES63	age_group	Adult	Adult	TP_correct
+59	SAMEA2784483	TRAVELRES63	age_unit	Year	Year	TP_correct
+59	SAMEA2784483	TRAVELRES63	sex	not_reported	Female	FN
+59	SAMEA2784483	TRAVELRES63	age_min	23	25	TP_wrong
+59	SAMEA2784483	TRAVELRES63	age_max	34	25	TP_wrong
+59	SAMEA2784483	TRAVELRES63	age_years	not_reported	25	FN
+59	SAMEA2784483	TRAVELRES63	antibiotics_current_use	No	No	TP_correct
+59	SAMEA2784483	TRAVELRES63	disease	Healthy	Healthy	TP_correct
+59	SAMEA2784483	TRAVELRES63	uncurated_metadata	35 Swedish students (17 to Central Africa, 18 to Indian peninsula); Subjects were 23 to 34 years old, gender distribution 74% females (26/35); Median travel duration was 34 days (range 14 to 150); 69% of subjects had travelers' diarrhea during their trip; 12/18 (67%) travelers to Indian peninsula acquired ESBL-producing E. coli after return; none from Africa; All E. coli ESBL isolates carried the CTX-M-15 gene; Proteobacteria abundance increased in 25/35 students after travel	Not applicable	TP_wrong
+59	SAMEA2784483	TRAVELRES63	host_species	Human	Homo sapiens	TP_wrong
+60	SAMEA2784484	TRAVELRES64	study_name	not_reported	Bengtsson-PalmeJ_2015	FN
+60	SAMEA2784484	TRAVELRES64	subject_id	TRAVELRES37	TRAVELRES63_64	TP_wrong
+60	SAMEA2784484	TRAVELRES64	sample_id	SAMEA2784484	TRAVELRES64	TP_wrong
+60	SAMEA2784484	TRAVELRES64	curator	not_reported	Valentina_Giunchiglia,Paolo_Manghi,Marisa_Metzger	FN
+60	SAMEA2784484	TRAVELRES64	pmid	not_reported	26259788	FN
+60	SAMEA2784484	TRAVELRES64	target_condition	not_reported	Intestinal Flora	FN
+60	SAMEA2784484	TRAVELRES64	control	not_reported	Study Control	FN
+60	SAMEA2784484	TRAVELRES64	country	Sweden	Sweden	TP_correct
+60	SAMEA2784484	TRAVELRES64	body_site	feces	feces	TP_correct
+60	SAMEA2784484	TRAVELRES64	days_from_first_collection	not_reported	91	FN
+60	SAMEA2784484	TRAVELRES64	westernized	not_reported	Yes	FN
+60	SAMEA2784484	TRAVELRES64	dna_extraction_kit	not_reported	Qiagen	FN
+60	SAMEA2784484	TRAVELRES64	ncbi_accession	ERR636385	ERR636412	TP_wrong
+60	SAMEA2784484	TRAVELRES64	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	TP_wrong
+60	SAMEA2784484	TRAVELRES64	age	not_reported	25	FN
+60	SAMEA2784484	TRAVELRES64	age_group	Adult	Adult	TP_correct
+60	SAMEA2784484	TRAVELRES64	age_unit	Year	Year	TP_correct
+60	SAMEA2784484	TRAVELRES64	sex	not_reported	Female	FN
+60	SAMEA2784484	TRAVELRES64	age_min	23	25	TP_wrong
+60	SAMEA2784484	TRAVELRES64	age_max	34	25	TP_wrong
+60	SAMEA2784484	TRAVELRES64	age_years	not_reported	25	FN
+60	SAMEA2784484	TRAVELRES64	antibiotics_current_use	No	No	TP_correct
+60	SAMEA2784484	TRAVELRES64	disease	Healthy	Healthy	TP_correct
+60	SAMEA2784484	TRAVELRES64	uncurated_metadata	35 Swedish students (17 to Central Africa, 18 to Indian peninsula); Subjects were 23 to 34 years old, gender distribution 74% females (26/35); Median travel duration was 34 days (range 14 to 150); 69% of subjects had travelers' diarrhea during their trip; 12/18 (67%) travelers to Indian peninsula acquired ESBL-producing E. coli after return; none from Africa; All E. coli ESBL isolates carried the CTX-M-15 gene; Proteobacteria abundance increased in 25/35 students after travel	travel_destination:CMR	TP_wrong
+60	SAMEA2784484	TRAVELRES64	host_species	Human	Homo sapiens	TP_wrong
+61	SAMEA2784490	TRAVELRES65	study_name	not_reported	Bengtsson-PalmeJ_2015	FN
+61	SAMEA2784490	TRAVELRES65	subject_id	TRAVELRES43	TRAVELRES65_66	TP_wrong
+61	SAMEA2784490	TRAVELRES65	sample_id	SAMEA2784490	TRAVELRES65	TP_wrong
+61	SAMEA2784490	TRAVELRES65	curator	not_reported	Valentina_Giunchiglia,Paolo_Manghi,Marisa_Metzger	FN
+61	SAMEA2784490	TRAVELRES65	pmid	not_reported	26259788	FN
+61	SAMEA2784490	TRAVELRES65	target_condition	not_reported	Intestinal Flora	FN
+61	SAMEA2784490	TRAVELRES65	control	not_reported	Study Control	FN
+61	SAMEA2784490	TRAVELRES65	country	Sweden	Sweden	TP_correct
+61	SAMEA2784490	TRAVELRES65	body_site	feces	feces	TP_correct
+61	SAMEA2784490	TRAVELRES65	days_from_first_collection	not_reported	0	FN
+61	SAMEA2784490	TRAVELRES65	westernized	not_reported	Yes	FN
+61	SAMEA2784490	TRAVELRES65	dna_extraction_kit	not_reported	Qiagen	FN
+61	SAMEA2784490	TRAVELRES65	ncbi_accession	ERR636391	ERR636413	TP_wrong
+61	SAMEA2784490	TRAVELRES65	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	TP_wrong
+61	SAMEA2784490	TRAVELRES65	age	not_reported	28	FN
+61	SAMEA2784490	TRAVELRES65	age_group	Adult	Adult	TP_correct
+61	SAMEA2784490	TRAVELRES65	age_unit	Year	Year	TP_correct
+61	SAMEA2784490	TRAVELRES65	sex	not_reported	Female	FN
+61	SAMEA2784490	TRAVELRES65	age_min	23	28	TP_wrong
+61	SAMEA2784490	TRAVELRES65	age_max	34	28	TP_wrong
+61	SAMEA2784490	TRAVELRES65	age_years	not_reported	28	FN
+61	SAMEA2784490	TRAVELRES65	antibiotics_current_use	No	No	TP_correct
+61	SAMEA2784490	TRAVELRES65	disease	Healthy	Healthy	TP_correct
+61	SAMEA2784490	TRAVELRES65	uncurated_metadata	35 Swedish students (17 to Central Africa, 18 to Indian peninsula); Subjects were 23 to 34 years old, gender distribution 74% females (26/35); Median travel duration was 34 days (range 14 to 150); 69% of subjects had travelers' diarrhea during their trip; 12/18 (67%) travelers to Indian peninsula acquired ESBL-producing E. coli after return; none from Africa; All E. coli ESBL isolates carried the CTX-M-15 gene; Proteobacteria abundance increased in 25/35 students after travel	Not applicable	TP_wrong
+61	SAMEA2784490	TRAVELRES65	host_species	Human	Homo sapiens	TP_wrong
+62	SAMEA2784495	TRAVELRES66	study_name	not_reported	Bengtsson-PalmeJ_2015	FN
+62	SAMEA2784495	TRAVELRES66	subject_id	TRAVELRES48	TRAVELRES65_66	TP_wrong
+62	SAMEA2784495	TRAVELRES66	sample_id	SAMEA2784495	TRAVELRES66	TP_wrong
+62	SAMEA2784495	TRAVELRES66	curator	not_reported	Valentina_Giunchiglia,Paolo_Manghi,Marisa_Metzger	FN
+62	SAMEA2784495	TRAVELRES66	pmid	not_reported	26259788	FN
+62	SAMEA2784495	TRAVELRES66	target_condition	not_reported	Intestinal Flora	FN
+62	SAMEA2784495	TRAVELRES66	control	not_reported	Study Control	FN
+62	SAMEA2784495	TRAVELRES66	country	Sweden	Sweden	TP_correct
+62	SAMEA2784495	TRAVELRES66	body_site	feces	feces	TP_correct
+62	SAMEA2784495	TRAVELRES66	days_from_first_collection	not_reported	77	FN
+62	SAMEA2784495	TRAVELRES66	westernized	not_reported	Yes	FN
+62	SAMEA2784495	TRAVELRES66	dna_extraction_kit	not_reported	Qiagen	FN
+62	SAMEA2784495	TRAVELRES66	ncbi_accession	ERR636396	ERR636414	TP_wrong
+62	SAMEA2784495	TRAVELRES66	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	TP_wrong
+62	SAMEA2784495	TRAVELRES66	age	not_reported	28	FN
+62	SAMEA2784495	TRAVELRES66	age_group	Adult	Adult	TP_correct
+62	SAMEA2784495	TRAVELRES66	age_unit	Year	Year	TP_correct
+62	SAMEA2784495	TRAVELRES66	sex	not_reported	Female	FN
+62	SAMEA2784495	TRAVELRES66	age_min	23	28	TP_wrong
+62	SAMEA2784495	TRAVELRES66	age_max	34	28	TP_wrong
+62	SAMEA2784495	TRAVELRES66	age_years	not_reported	28	FN
+62	SAMEA2784495	TRAVELRES66	antibiotics_current_use	No	No	TP_correct
+62	SAMEA2784495	TRAVELRES66	disease	Healthy	Healthy	TP_correct
+62	SAMEA2784495	TRAVELRES66	uncurated_metadata	35 Swedish students (17 to Central Africa, 18 to Indian peninsula); Subjects were 23 to 34 years old, gender distribution 74% females (26/35); Median travel duration was 34 days (range 14 to 150); 69% of subjects had travelers' diarrhea during their trip; 12/18 (67%) travelers to Indian peninsula acquired ESBL-producing E. coli after return; none from Africa; All E. coli ESBL isolates carried the CTX-M-15 gene; Proteobacteria abundance increased in 25/35 students after travel	travel_destination:CMR	TP_wrong
+62	SAMEA2784495	TRAVELRES66	host_species	Human	Homo sapiens	TP_wrong
+63	SAMEA2784497	TRAVELRES67	study_name	not_reported	Bengtsson-PalmeJ_2015	FN
+63	SAMEA2784497	TRAVELRES67	subject_id	TRAVELRES50	TRAVELRES67_68	TP_wrong
+63	SAMEA2784497	TRAVELRES67	sample_id	SAMEA2784497	TRAVELRES67	TP_wrong
+63	SAMEA2784497	TRAVELRES67	curator	not_reported	Valentina_Giunchiglia,Paolo_Manghi,Marisa_Metzger	FN
+63	SAMEA2784497	TRAVELRES67	pmid	not_reported	26259788	FN
+63	SAMEA2784497	TRAVELRES67	target_condition	not_reported	Intestinal Flora	FN
+63	SAMEA2784497	TRAVELRES67	control	not_reported	Study Control	FN
+63	SAMEA2784497	TRAVELRES67	country	Sweden	Sweden	TP_correct
+63	SAMEA2784497	TRAVELRES67	body_site	feces	feces	TP_correct
+63	SAMEA2784497	TRAVELRES67	days_from_first_collection	not_reported	0	FN
+63	SAMEA2784497	TRAVELRES67	westernized	not_reported	Yes	FN
+63	SAMEA2784497	TRAVELRES67	dna_extraction_kit	not_reported	Qiagen	FN
+63	SAMEA2784497	TRAVELRES67	ncbi_accession	ERR636398	ERR636415	TP_wrong
+63	SAMEA2784497	TRAVELRES67	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	TP_wrong
+63	SAMEA2784497	TRAVELRES67	age	not_reported	25	FN
+63	SAMEA2784497	TRAVELRES67	age_group	Adult	Adult	TP_correct
+63	SAMEA2784497	TRAVELRES67	age_unit	Year	Year	TP_correct
+63	SAMEA2784497	TRAVELRES67	sex	not_reported	Male	FN
+63	SAMEA2784497	TRAVELRES67	age_min	23	25	TP_wrong
+63	SAMEA2784497	TRAVELRES67	age_max	34	25	TP_wrong
+63	SAMEA2784497	TRAVELRES67	age_years	not_reported	25	FN
+63	SAMEA2784497	TRAVELRES67	antibiotics_current_use	No	No	TP_correct
+63	SAMEA2784497	TRAVELRES67	disease	Healthy	Healthy	TP_correct
+63	SAMEA2784497	TRAVELRES67	uncurated_metadata	35 Swedish students (17 to Central Africa, 18 to Indian peninsula); Subjects were 23 to 34 years old, gender distribution 74% females (26/35); Median travel duration was 34 days (range 14 to 150); 69% of subjects had travelers' diarrhea during their trip; 12/18 (67%) travelers to Indian peninsula acquired ESBL-producing E. coli after return; none from Africa; All E. coli ESBL isolates carried the CTX-M-15 gene; Proteobacteria abundance increased in 25/35 students after travel	Not applicable	TP_wrong
+63	SAMEA2784497	TRAVELRES67	host_species	Human	Homo sapiens	TP_wrong
+64	SAMEA2784498	TRAVELRES68	study_name	not_reported	Bengtsson-PalmeJ_2015	FN
+64	SAMEA2784498	TRAVELRES68	subject_id	TRAVELRES51	TRAVELRES67_68	TP_wrong
+64	SAMEA2784498	TRAVELRES68	sample_id	SAMEA2784498	TRAVELRES68	TP_wrong
+64	SAMEA2784498	TRAVELRES68	curator	not_reported	Valentina_Giunchiglia,Paolo_Manghi,Marisa_Metzger	FN
+64	SAMEA2784498	TRAVELRES68	pmid	not_reported	26259788	FN
+64	SAMEA2784498	TRAVELRES68	target_condition	not_reported	Intestinal Flora	FN
+64	SAMEA2784498	TRAVELRES68	control	not_reported	Study Control	FN
+64	SAMEA2784498	TRAVELRES68	country	Sweden	Sweden	TP_correct
+64	SAMEA2784498	TRAVELRES68	body_site	feces	feces	TP_correct
+64	SAMEA2784498	TRAVELRES68	days_from_first_collection	not_reported	57	FN
+64	SAMEA2784498	TRAVELRES68	westernized	not_reported	Yes	FN
+64	SAMEA2784498	TRAVELRES68	dna_extraction_kit	not_reported	Qiagen	FN
+64	SAMEA2784498	TRAVELRES68	ncbi_accession	ERR636399	ERR636416	TP_wrong
+64	SAMEA2784498	TRAVELRES68	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	TP_wrong
+64	SAMEA2784498	TRAVELRES68	age	not_reported	25	FN
+64	SAMEA2784498	TRAVELRES68	age_group	Adult	Adult	TP_correct
+64	SAMEA2784498	TRAVELRES68	age_unit	Year	Year	TP_correct
+64	SAMEA2784498	TRAVELRES68	sex	not_reported	Male	FN
+64	SAMEA2784498	TRAVELRES68	age_min	23	25	TP_wrong
+64	SAMEA2784498	TRAVELRES68	age_max	34	25	TP_wrong
+64	SAMEA2784498	TRAVELRES68	age_years	not_reported	25	FN
+64	SAMEA2784498	TRAVELRES68	antibiotics_current_use	No	No	TP_correct
+64	SAMEA2784498	TRAVELRES68	disease	Healthy	Healthy	TP_correct
+64	SAMEA2784498	TRAVELRES68	uncurated_metadata	35 Swedish students (17 to Central Africa, 18 to Indian peninsula); Subjects were 23 to 34 years old, gender distribution 74% females (26/35); Median travel duration was 34 days (range 14 to 150); 69% of subjects had travelers' diarrhea during their trip; 12/18 (67%) travelers to Indian peninsula acquired ESBL-producing E. coli after return; none from Africa; All E. coli ESBL isolates carried the CTX-M-15 gene; Proteobacteria abundance increased in 25/35 students after travel	travel_destination:CMR	TP_wrong
+64	SAMEA2784498	TRAVELRES68	host_species	Human	Homo sapiens	TP_wrong
+65	SAMEA2784504	TRAVELRES69	study_name	not_reported	Bengtsson-PalmeJ_2015	FN
+65	SAMEA2784504	TRAVELRES69	subject_id	TRAVELRES57	TRAVELRES69_70	TP_wrong
+65	SAMEA2784504	TRAVELRES69	sample_id	SAMEA2784504	TRAVELRES69	TP_wrong
+65	SAMEA2784504	TRAVELRES69	curator	not_reported	Valentina_Giunchiglia,Paolo_Manghi,Marisa_Metzger	FN
+65	SAMEA2784504	TRAVELRES69	pmid	not_reported	26259788	FN
+65	SAMEA2784504	TRAVELRES69	target_condition	not_reported	Intestinal Flora	FN
+65	SAMEA2784504	TRAVELRES69	control	not_reported	Study Control	FN
+65	SAMEA2784504	TRAVELRES69	country	Sweden	Sweden	TP_correct
+65	SAMEA2784504	TRAVELRES69	body_site	feces	feces	TP_correct
+65	SAMEA2784504	TRAVELRES69	days_from_first_collection	not_reported	83	FN
+65	SAMEA2784504	TRAVELRES69	westernized	not_reported	Yes	FN
+65	SAMEA2784504	TRAVELRES69	dna_extraction_kit	not_reported	Qiagen	FN
+65	SAMEA2784504	TRAVELRES69	ncbi_accession	ERR636405	ERR636417	TP_wrong
+65	SAMEA2784504	TRAVELRES69	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	TP_wrong
+65	SAMEA2784504	TRAVELRES69	age	not_reported	28	FN
+65	SAMEA2784504	TRAVELRES69	age_group	Adult	Adult	TP_correct
+65	SAMEA2784504	TRAVELRES69	age_unit	Year	Year	TP_correct
+65	SAMEA2784504	TRAVELRES69	sex	not_reported	Female	FN
+65	SAMEA2784504	TRAVELRES69	age_min	23	28	TP_wrong
+65	SAMEA2784504	TRAVELRES69	age_max	34	28	TP_wrong
+65	SAMEA2784504	TRAVELRES69	age_years	not_reported	28	FN
+65	SAMEA2784504	TRAVELRES69	antibiotics_current_use	No	No	TP_correct
+65	SAMEA2784504	TRAVELRES69	disease	Healthy	Healthy	TP_correct
+65	SAMEA2784504	TRAVELRES69	uncurated_metadata	35 Swedish students (17 to Central Africa, 18 to Indian peninsula); Subjects were 23 to 34 years old, gender distribution 74% females (26/35); Median travel duration was 34 days (range 14 to 150); 69% of subjects had travelers' diarrhea during their trip; 12/18 (67%) travelers to Indian peninsula acquired ESBL-producing E. coli after return; none from Africa; All E. coli ESBL isolates carried the CTX-M-15 gene; Proteobacteria abundance increased in 25/35 students after travel	travel_destination:KEN	TP_wrong
+65	SAMEA2784504	TRAVELRES69	host_species	Human	Homo sapiens	TP_wrong
+66	SAMEA2784507	TRAVELRES7	study_name	not_reported	Bengtsson-PalmeJ_2015	FN
+66	SAMEA2784507	TRAVELRES7	subject_id	TRAVELRES60	TRAVELRES7_8	TP_wrong
+66	SAMEA2784507	TRAVELRES7	sample_id	SAMEA2784507	TRAVELRES7	TP_wrong
+66	SAMEA2784507	TRAVELRES7	curator	not_reported	Valentina_Giunchiglia,Paolo_Manghi,Marisa_Metzger	FN
+66	SAMEA2784507	TRAVELRES7	pmid	not_reported	26259788	FN
+66	SAMEA2784507	TRAVELRES7	target_condition	not_reported	Intestinal Flora	FN
+66	SAMEA2784507	TRAVELRES7	control	not_reported	Study Control	FN
+66	SAMEA2784507	TRAVELRES7	country	Sweden	Sweden	TP_correct
+66	SAMEA2784507	TRAVELRES7	body_site	feces	feces	TP_correct
+66	SAMEA2784507	TRAVELRES7	days_from_first_collection	not_reported	0	FN
+66	SAMEA2784507	TRAVELRES7	westernized	not_reported	Yes	FN
+66	SAMEA2784507	TRAVELRES7	dna_extraction_kit	not_reported	Qiagen	FN
+66	SAMEA2784507	TRAVELRES7	ncbi_accession	ERR636408	ERR636355	TP_wrong
+66	SAMEA2784507	TRAVELRES7	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	TP_wrong
+66	SAMEA2784507	TRAVELRES7	age	not_reported	23	FN
+66	SAMEA2784507	TRAVELRES7	age_group	Adult	Adult	TP_correct
+66	SAMEA2784507	TRAVELRES7	age_unit	Year	Year	TP_correct
+66	SAMEA2784507	TRAVELRES7	sex	not_reported	Female	FN
+66	SAMEA2784507	TRAVELRES7	age_min	23	23	TP_correct
+66	SAMEA2784507	TRAVELRES7	age_max	34	23	TP_wrong
+66	SAMEA2784507	TRAVELRES7	age_years	not_reported	23	FN
+66	SAMEA2784507	TRAVELRES7	antibiotics_current_use	No	No	TP_correct
+66	SAMEA2784507	TRAVELRES7	disease	Healthy	Healthy	TP_correct
+66	SAMEA2784507	TRAVELRES7	uncurated_metadata	35 Swedish students (17 to Central Africa, 18 to Indian peninsula); Subjects were 23 to 34 years old, gender distribution 74% females (26/35); Median travel duration was 34 days (range 14 to 150); 69% of subjects had travelers' diarrhea during their trip; 12/18 (67%) travelers to Indian peninsula acquired ESBL-producing E. coli after return; none from Africa; All E. coli ESBL isolates carried the CTX-M-15 gene; Proteobacteria abundance increased in 25/35 students after travel	Not applicable	TP_wrong
+66	SAMEA2784507	TRAVELRES7	host_species	Human	Homo sapiens	TP_wrong
+67	SAMEA2784508	TRAVELRES70	study_name	not_reported	Bengtsson-PalmeJ_2015	FN
+67	SAMEA2784508	TRAVELRES70	subject_id	TRAVELRES61	TRAVELRES69_70	TP_wrong
+67	SAMEA2784508	TRAVELRES70	sample_id	SAMEA2784508	TRAVELRES70	TP_wrong
+67	SAMEA2784508	TRAVELRES70	curator	not_reported	Valentina_Giunchiglia,Paolo_Manghi,Marisa_Metzger	FN
+67	SAMEA2784508	TRAVELRES70	pmid	not_reported	26259788	FN
+67	SAMEA2784508	TRAVELRES70	target_condition	not_reported	Intestinal Flora	FN
+67	SAMEA2784508	TRAVELRES70	control	not_reported	Study Control	FN
+67	SAMEA2784508	TRAVELRES70	country	Sweden	Sweden	TP_correct
+67	SAMEA2784508	TRAVELRES70	body_site	feces	feces	TP_correct
+67	SAMEA2784508	TRAVELRES70	days_from_first_collection	not_reported	0	FN
+67	SAMEA2784508	TRAVELRES70	westernized	not_reported	Yes	FN
+67	SAMEA2784508	TRAVELRES70	dna_extraction_kit	not_reported	Qiagen	FN
+67	SAMEA2784508	TRAVELRES70	ncbi_accession	ERR636409	ERR636418	TP_wrong
+67	SAMEA2784508	TRAVELRES70	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	TP_wrong
+67	SAMEA2784508	TRAVELRES70	age	not_reported	28	FN
+67	SAMEA2784508	TRAVELRES70	age_group	Adult	Adult	TP_correct
+67	SAMEA2784508	TRAVELRES70	age_unit	Year	Year	TP_correct
+67	SAMEA2784508	TRAVELRES70	sex	not_reported	Female	FN
+67	SAMEA2784508	TRAVELRES70	age_min	23	28	TP_wrong
+67	SAMEA2784508	TRAVELRES70	age_max	34	28	TP_wrong
+67	SAMEA2784508	TRAVELRES70	age_years	not_reported	28	FN
+67	SAMEA2784508	TRAVELRES70	antibiotics_current_use	No	No	TP_correct
+67	SAMEA2784508	TRAVELRES70	disease	Healthy	Healthy	TP_correct
+67	SAMEA2784508	TRAVELRES70	uncurated_metadata	35 Swedish students (17 to Central Africa, 18 to Indian peninsula); Subjects were 23 to 34 years old, gender distribution 74% females (26/35); Median travel duration was 34 days (range 14 to 150); 69% of subjects had travelers' diarrhea during their trip; 12/18 (67%) travelers to Indian peninsula acquired ESBL-producing E. coli after return; none from Africa; All E. coli ESBL isolates carried the CTX-M-15 gene; Proteobacteria abundance increased in 25/35 students after travel	Not applicable	TP_wrong
+67	SAMEA2784508	TRAVELRES70	host_species	Human	Homo sapiens	TP_wrong
+68	SAMEA2784513	TRAVELRES8	study_name	not_reported	Bengtsson-PalmeJ_2015	FN
+68	SAMEA2784513	TRAVELRES8	subject_id	TRAVELRES66	TRAVELRES7_8	TP_wrong
+68	SAMEA2784513	TRAVELRES8	sample_id	SAMEA2784513	TRAVELRES8	TP_wrong
+68	SAMEA2784513	TRAVELRES8	curator	not_reported	Valentina_Giunchiglia,Paolo_Manghi,Marisa_Metzger	FN
+68	SAMEA2784513	TRAVELRES8	pmid	not_reported	26259788	FN
+68	SAMEA2784513	TRAVELRES8	target_condition	not_reported	Intestinal Flora	FN
+68	SAMEA2784513	TRAVELRES8	control	not_reported	Study Control	FN
+68	SAMEA2784513	TRAVELRES8	country	Sweden	Sweden	TP_correct
+68	SAMEA2784513	TRAVELRES8	body_site	feces	feces	TP_correct
+68	SAMEA2784513	TRAVELRES8	days_from_first_collection	not_reported	203	FN
+68	SAMEA2784513	TRAVELRES8	westernized	not_reported	Yes	FN
+68	SAMEA2784513	TRAVELRES8	dna_extraction_kit	not_reported	Qiagen	FN
+68	SAMEA2784513	TRAVELRES8	ncbi_accession	ERR636414	ERR636356	TP_wrong
+68	SAMEA2784513	TRAVELRES8	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	TP_wrong
+68	SAMEA2784513	TRAVELRES8	age	not_reported	23	FN
+68	SAMEA2784513	TRAVELRES8	age_group	Adult	Adult	TP_correct
+68	SAMEA2784513	TRAVELRES8	age_unit	Year	Year	TP_correct
+68	SAMEA2784513	TRAVELRES8	sex	not_reported	Female	FN
+68	SAMEA2784513	TRAVELRES8	age_min	23	23	TP_correct
+68	SAMEA2784513	TRAVELRES8	age_max	34	23	TP_wrong
+68	SAMEA2784513	TRAVELRES8	age_years	not_reported	23	FN
+68	SAMEA2784513	TRAVELRES8	antibiotics_current_use	No	No	TP_correct
+68	SAMEA2784513	TRAVELRES8	disease	Healthy	Healthy	TP_correct
+68	SAMEA2784513	TRAVELRES8	uncurated_metadata	35 Swedish students (17 to Central Africa, 18 to Indian peninsula); Subjects were 23 to 34 years old, gender distribution 74% females (26/35); Median travel duration was 34 days (range 14 to 150); 69% of subjects had travelers' diarrhea during their trip; 12/18 (67%) travelers to Indian peninsula acquired ESBL-producing E. coli after return; none from Africa; All E. coli ESBL isolates carried the CTX-M-15 gene; Proteobacteria abundance increased in 25/35 students after travel	travel_destination:IND	TP_wrong
+68	SAMEA2784513	TRAVELRES8	host_species	Human	Homo sapiens	TP_wrong
+69	SAMEA2784517	TRAVELRES9	study_name	not_reported	Bengtsson-PalmeJ_2015	FN
+69	SAMEA2784517	TRAVELRES9	subject_id	TRAVELRES70	TRAVELRES9_10	TP_wrong
+69	SAMEA2784517	TRAVELRES9	sample_id	SAMEA2784517	TRAVELRES9	TP_wrong
+69	SAMEA2784517	TRAVELRES9	curator	not_reported	Valentina_Giunchiglia,Paolo_Manghi,Marisa_Metzger	FN
+69	SAMEA2784517	TRAVELRES9	pmid	not_reported	26259788	FN
+69	SAMEA2784517	TRAVELRES9	target_condition	not_reported	Intestinal Flora	FN
+69	SAMEA2784517	TRAVELRES9	control	not_reported	Study Control	FN
+69	SAMEA2784517	TRAVELRES9	country	Sweden	Sweden	TP_correct
+69	SAMEA2784517	TRAVELRES9	body_site	feces	feces	TP_correct
+69	SAMEA2784517	TRAVELRES9	days_from_first_collection	not_reported	0	FN
+69	SAMEA2784517	TRAVELRES9	westernized	not_reported	Yes	FN
+69	SAMEA2784517	TRAVELRES9	dna_extraction_kit	not_reported	Qiagen	FN
+69	SAMEA2784517	TRAVELRES9	ncbi_accession	ERR636418	ERR636357	TP_wrong
+69	SAMEA2784517	TRAVELRES9	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	TP_wrong
+69	SAMEA2784517	TRAVELRES9	age	not_reported	34	FN
+69	SAMEA2784517	TRAVELRES9	age_group	Adult	Adult	TP_correct
+69	SAMEA2784517	TRAVELRES9	age_unit	Year	Year	TP_correct
+69	SAMEA2784517	TRAVELRES9	sex	not_reported	Female	FN
+69	SAMEA2784517	TRAVELRES9	age_min	23	34	TP_wrong
+69	SAMEA2784517	TRAVELRES9	age_max	34	34	TP_correct
+69	SAMEA2784517	TRAVELRES9	age_years	not_reported	34	FN
+69	SAMEA2784517	TRAVELRES9	antibiotics_current_use	No	No	TP_correct
+69	SAMEA2784517	TRAVELRES9	disease	Healthy	Healthy	TP_correct
+69	SAMEA2784517	TRAVELRES9	uncurated_metadata	35 Swedish students (17 to Central Africa, 18 to Indian peninsula); Subjects were 23 to 34 years old, gender distribution 74% females (26/35); Median travel duration was 34 days (range 14 to 150); 69% of subjects had travelers' diarrhea during their trip; 12/18 (67%) travelers to Indian peninsula acquired ESBL-producing E. coli after return; none from Africa; All E. coli ESBL isolates carried the CTX-M-15 gene; Proteobacteria abundance increased in 25/35 students after travel	Not applicable	TP_wrong
+69	SAMEA2784517	TRAVELRES9	host_species	Human	Homo sapiens	TP_wrong

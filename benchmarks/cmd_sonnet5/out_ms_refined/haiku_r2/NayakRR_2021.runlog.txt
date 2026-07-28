@@ -1,0 +1,22 @@
+cmd: metaextract --paper-id 33440172 --schema /Users/sehyunoh/OmicsMLRepo/MetaExtractor/benchmarks/cmd_sonnet5/cmd.clean.linkml.yaml --model claude-haiku-4-5 --out /Users/sehyunoh/OmicsMLRepo/MetaExtractor/benchmarks/cmd_sonnet5/out_ms_refined/haiku_r2/NayakRR_2021.json --csv /Users/sehyunoh/OmicsMLRepo/MetaExtractor/benchmarks/cmd_sonnet5/out_ms_refined/haiku_r2/NayakRR_2021.csv --csv-provenance
+status: ok
+elapsed_s: 75.6
+--- stderr ---
+[fetched pmc_fulltext for 33440172]
+[supplementary tables parsed: 1 (deterministic path; LLM will not see them)]
+[SRA/ENA run manifest: ena:PRJNA656577 (434 runs) (deterministic path)]
+[supplementary skipped: NIHMS1655935-supplement-1.pdf — s3: HTTPError: HTTP Error 404: Not Found]
+[supplementary skipped: NIHMS1655935-supplement-3.xlsx — s3: HTTPError: HTTP Error 404: Not Found]
+[supplementary skipped: NIHMS1655935-supplement-4.xlsx — s3: HTTPError: HTTP Error 404: Not Found]
+[supplementary skipped: NIHMS1655935-supplement-5.xlsx — s3: HTTPError: HTTP Error 404: Not Found]
+[supplementary skipped: NIHMS1655935-supplement-6.xlsx — s3: HTTPError: HTTP Error 404: Not Found]
+[supplementary skipped: NIHMS1655935-supplement-7.xlsx — s3: HTTPError: HTTP Error 404: Not Found]
+[supplementary skipped: NIHMS1655935-supplement-8.xlsx — s3: HTTPError: HTTP Error 404: Not Found]
+[supplementary skipped: NIHMS1655935-supplement-9.xlsx — s3: HTTPError: HTTP Error 404: Not Found]
+[supplementary skipped: (europepmc zip) — response was not a valid ZIP]
+[table selection: 1 kept / 1 scored (gate=0.15)]
+[  PRJNA656577_ena_manifest.tsv: kept (score=0.47) — key-like column 'run_accession']
+[wrote CSV: /Users/sehyunoh/OmicsMLRepo/MetaExtractor/benchmarks/cmd_sonnet5/out_ms_refined/haiku_r2/NayakRR_2021.csv]
+[usage: 4 call(s); input=10,828, cache_write=23,577, cache_read=47,154, output=11,190]
+[cost: $0.1010 (input $0.0108 + cache_w $0.0295 + cache_r $0.0047 + output $0.0559)]
+

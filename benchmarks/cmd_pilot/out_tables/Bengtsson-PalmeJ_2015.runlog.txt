@@ -1,0 +1,13 @@
+cmd: metaextract --paper-id 26259788 --schema /private/tmp/claude-501/-Users-sehyunoh-OmicsMLRepo-metacurator/d59c5ae1-0f71-458d-a430-59f0885f03e3/scratchpad/cmd.clean.linkml.yaml --model claude-haiku-4-5 --supplementary /Users/sehyunoh/Projects/cMD_architecture/curatedMetagenomicDataCuration/inst/curated/Bengtsson-PalmeJ_2015/Bengtsson-PalmeJ_2015_sra_meta.tsv --no-supplementary --out out_tables/Bengtsson-PalmeJ_2015.json --csv out_tables/Bengtsson-PalmeJ_2015.csv --csv-provenance
+returncode: 0
+elapsed_s: 54.6
+--- stderr ---
+[fetched pmc_fulltext for 26259788]
+[supplementary (local) included (1): /Users/sehyunoh/Projects/cMD_architecture/curatedMetagenomicDataCuration/inst/curated/Bengtsson-PalmeJ_2015/Bengtsson-PalmeJ_2015_sra_meta.tsv]
+[supplementary (local) tables parsed: 1 (deterministic path; LLM will not see them)]
+[table selection: 1 kept / 1 scored (gate=0.15)]
+[  Bengtsson-PalmeJ_2015_sra_meta.tsv: kept (score=0.48) — key-like column 'sra_run_ids'; westernized: values match enum in 'full_metadata.Tumor' (100%); antibiotics_current_use: values match enum in 'full_metadata.Tumor' (100%); disease_response_orr: values match enum in 'full_metadata.Tumor' (100%); disease_response_pfs: values match enum in 'full_metadata.Tumor' (100%); obgyn_birth_control: values match enum in 'full_metadata.Tumor' (100%); obgyn_lactating: values match enum in 'full_metadata.Tumor' (100%); tumor_staging_ajcc: values match enum in 'full_metadata.InsertSize' (100%)]
+[wrote CSV: out_tables/Bengtsson-PalmeJ_2015.csv]
+[usage: 4 call(s); input=19,202, cache_write=0, cache_read=0, output=9,192]
+[cost: $0.0652 (input $0.0192 + cache_w $0.0000 + cache_r $0.0000 + output $0.0460)]
+

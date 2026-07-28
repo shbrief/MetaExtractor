@@ -1,0 +1,2647 @@
+sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	decision
+0	msp_0015	DKAN_01	study_name	AN_microbiota_2023	FanY_2023	TP_wrong
+0	msp_0015	DKAN_01	subject_id		DKAN_01	FN
+0	msp_0015	DKAN_01	sample_id	msp_0015	DKAN_01	TP_wrong
+0	msp_0015	DKAN_01	curator		Linda_Cova	FN
+0	msp_0015	DKAN_01	pmid	37069399	37069399	TP_correct
+0	msp_0015	DKAN_01	country	Denmark	Denmark	TP_correct
+0	msp_0015	DKAN_01	body_site	feces	feces	TP_correct
+0	msp_0015	DKAN_01	ncbi_accession		ERR10906203;ERR10906205;ERR10906206;ERR10906204	FN
+0	msp_0015	DKAN_01	sequencing_platform	IonProton	IonProton	TP_correct
+0	msp_0015	DKAN_01	age		16	FN
+0	msp_0015	DKAN_01	age_group		schoolage	FN
+0	msp_0015	DKAN_01	sex	Female	Female	TP_correct
+0	msp_0015	DKAN_01	antibiotics_current_use	No	No	TP_correct
+0	msp_0015	DKAN_01	bmi	not_reported	18.1	FN
+0	msp_0015	DKAN_01	disease	Anorexia Nervosa	anorexia	TP_wrong
+0	msp_0015	DKAN_01	smoker	not_reported	Non-smoker (finding)	FN
+0	msp_0015	DKAN_01	treatment	selective serotonin re-uptake inhibitors; antipsychotics; benzodiazepines	no	TP_wrong
+0	msp_0015	DKAN_01	host_species	Homo sapiens and Mus musculus	Homo sapiens	TP_wrong
+1	msp_0015	DKAN_02	study_name	AN_microbiota_2023	FanY_2023	TP_wrong
+1	msp_0015	DKAN_02	subject_id		DKAN_02	FN
+1	msp_0015	DKAN_02	sample_id	msp_0015	DKAN_02	TP_wrong
+1	msp_0015	DKAN_02	curator		Linda_Cova	FN
+1	msp_0015	DKAN_02	pmid	37069399	37069399	TP_correct
+1	msp_0015	DKAN_02	country	Denmark	Denmark	TP_correct
+1	msp_0015	DKAN_02	body_site	feces	feces	TP_correct
+1	msp_0015	DKAN_02	ncbi_accession		ERR10906207;ERR10906208;ERR10906209;ERR10906210	FN
+1	msp_0015	DKAN_02	sequencing_platform	IonProton	IonProton	TP_correct
+1	msp_0015	DKAN_02	age		26	FN
+1	msp_0015	DKAN_02	age_group		adult	FN
+1	msp_0015	DKAN_02	sex	Female	Female	TP_correct
+1	msp_0015	DKAN_02	antibiotics_current_use	No	No	TP_correct
+1	msp_0015	DKAN_02	bmi	not_reported	16.9	FN
+1	msp_0015	DKAN_02	disease	Anorexia Nervosa	anorexia	TP_wrong
+1	msp_0015	DKAN_02	smoker	not_reported	Smoker (finding)	FN
+1	msp_0015	DKAN_02	treatment	selective serotonin re-uptake inhibitors; antipsychotics; benzodiazepines	no	TP_wrong
+1	msp_0015	DKAN_02	host_species	Homo sapiens and Mus musculus	Homo sapiens	TP_wrong
+2	msp_0015	DKAN_03	study_name	AN_microbiota_2023	FanY_2023	TP_wrong
+2	msp_0015	DKAN_03	subject_id		DKAN_03	FN
+2	msp_0015	DKAN_03	sample_id	msp_0015	DKAN_03	TP_wrong
+2	msp_0015	DKAN_03	curator		Linda_Cova	FN
+2	msp_0015	DKAN_03	pmid	37069399	37069399	TP_correct
+2	msp_0015	DKAN_03	country	Denmark	Denmark	TP_correct
+2	msp_0015	DKAN_03	body_site	feces	feces	TP_correct
+2	msp_0015	DKAN_03	ncbi_accession		ERR10906211;ERR10906212;ERR10906213;ERR10906214	FN
+2	msp_0015	DKAN_03	sequencing_platform	IonProton	IonProton	TP_correct
+2	msp_0015	DKAN_03	age		24	FN
+2	msp_0015	DKAN_03	age_group		adult	FN
+2	msp_0015	DKAN_03	sex	Female	Female	TP_correct
+2	msp_0015	DKAN_03	antibiotics_current_use	No	No	TP_correct
+2	msp_0015	DKAN_03	bmi	not_reported	19.0	FN
+2	msp_0015	DKAN_03	disease	Anorexia Nervosa	anorexia	TP_wrong
+2	msp_0015	DKAN_03	smoker	not_reported	Non-smoker (finding)	FN
+2	msp_0015	DKAN_03	treatment	selective serotonin re-uptake inhibitors; antipsychotics; benzodiazepines	no	TP_wrong
+2	msp_0015	DKAN_03	host_species	Homo sapiens and Mus musculus	Homo sapiens	TP_wrong
+3	msp_0015	DKAN_04	study_name	AN_microbiota_2023	FanY_2023	TP_wrong
+3	msp_0015	DKAN_04	subject_id		DKAN_04	FN
+3	msp_0015	DKAN_04	sample_id	msp_0015	DKAN_04	TP_wrong
+3	msp_0015	DKAN_04	curator		Linda_Cova	FN
+3	msp_0015	DKAN_04	pmid	37069399	37069399	TP_correct
+3	msp_0015	DKAN_04	country	Denmark	Denmark	TP_correct
+3	msp_0015	DKAN_04	body_site	feces	feces	TP_correct
+3	msp_0015	DKAN_04	ncbi_accession		ERR10906215;ERR10906216;ERR10906217;ERR10906218	FN
+3	msp_0015	DKAN_04	sequencing_platform	IonProton	IonProton	TP_correct
+3	msp_0015	DKAN_04	age		23	FN
+3	msp_0015	DKAN_04	age_group		adult	FN
+3	msp_0015	DKAN_04	sex	Female	Female	TP_correct
+3	msp_0015	DKAN_04	antibiotics_current_use	No	No	TP_correct
+3	msp_0015	DKAN_04	bmi	not_reported	19.0	FN
+3	msp_0015	DKAN_04	disease	Anorexia Nervosa	anorexia	TP_wrong
+3	msp_0015	DKAN_04	smoker	not_reported	Non-smoker (finding)	FN
+3	msp_0015	DKAN_04	treatment	selective serotonin re-uptake inhibitors; antipsychotics; benzodiazepines	no	TP_wrong
+3	msp_0015	DKAN_04	host_species	Homo sapiens and Mus musculus	Homo sapiens	TP_wrong
+4	msp_0015	DKAN_05	study_name	AN_microbiota_2023	FanY_2023	TP_wrong
+4	msp_0015	DKAN_05	subject_id		DKAN_05	FN
+4	msp_0015	DKAN_05	sample_id	msp_0015	DKAN_05	TP_wrong
+4	msp_0015	DKAN_05	curator		Linda_Cova	FN
+4	msp_0015	DKAN_05	pmid	37069399	37069399	TP_correct
+4	msp_0015	DKAN_05	country	Denmark	Denmark	TP_correct
+4	msp_0015	DKAN_05	body_site	feces	feces	TP_correct
+4	msp_0015	DKAN_05	ncbi_accession		ERR10906219;ERR10906220;ERR10906221;ERR10906222	FN
+4	msp_0015	DKAN_05	sequencing_platform	IonProton	IonProton	TP_correct
+4	msp_0015	DKAN_05	age		18	FN
+4	msp_0015	DKAN_05	age_group		schoolage	FN
+4	msp_0015	DKAN_05	sex	Female	Female	TP_correct
+4	msp_0015	DKAN_05	antibiotics_current_use	No	No	TP_correct
+4	msp_0015	DKAN_05	bmi	not_reported	13.8	FN
+4	msp_0015	DKAN_05	disease	Anorexia Nervosa	anorexia	TP_wrong
+4	msp_0015	DKAN_05	smoker	not_reported	Smoker (finding)	FN
+4	msp_0015	DKAN_05	treatment	selective serotonin re-uptake inhibitors; antipsychotics; benzodiazepines	ssri	TP_wrong
+4	msp_0015	DKAN_05	host_species	Homo sapiens and Mus musculus	Homo sapiens	TP_wrong
+5	msp_0015	DKAN_06	study_name	AN_microbiota_2023	FanY_2023	TP_wrong
+5	msp_0015	DKAN_06	subject_id		DKAN_06	FN
+5	msp_0015	DKAN_06	sample_id	msp_0015	DKAN_06	TP_wrong
+5	msp_0015	DKAN_06	curator		Linda_Cova	FN
+5	msp_0015	DKAN_06	pmid	37069399	37069399	TP_correct
+5	msp_0015	DKAN_06	country	Denmark	Denmark	TP_correct
+5	msp_0015	DKAN_06	body_site	feces	feces	TP_correct
+5	msp_0015	DKAN_06	ncbi_accession		ERR10906223;ERR10906224;ERR10906225;ERR10906226	FN
+5	msp_0015	DKAN_06	sequencing_platform	IonProton	IonProton	TP_correct
+5	msp_0015	DKAN_06	age		21	FN
+5	msp_0015	DKAN_06	age_group		adult	FN
+5	msp_0015	DKAN_06	sex	Female	Female	TP_correct
+5	msp_0015	DKAN_06	antibiotics_current_use	No	No	TP_correct
+5	msp_0015	DKAN_06	bmi	not_reported	22.0	FN
+5	msp_0015	DKAN_06	disease	Anorexia Nervosa	healthy	TP_wrong
+5	msp_0015	DKAN_06	smoker	not_reported	Non-smoker (finding)	FN
+5	msp_0015	DKAN_06	treatment	selective serotonin re-uptake inhibitors; antipsychotics; benzodiazepines	no	TP_wrong
+5	msp_0015	DKAN_06	host_species	Homo sapiens and Mus musculus	Homo sapiens	TP_wrong
+6	msp_0015	DKAN_07	study_name	AN_microbiota_2023	FanY_2023	TP_wrong
+6	msp_0015	DKAN_07	subject_id		DKAN_07	FN
+6	msp_0015	DKAN_07	sample_id	msp_0015	DKAN_07	TP_wrong
+6	msp_0015	DKAN_07	curator		Linda_Cova	FN
+6	msp_0015	DKAN_07	pmid	37069399	37069399	TP_correct
+6	msp_0015	DKAN_07	country	Denmark	Denmark	TP_correct
+6	msp_0015	DKAN_07	body_site	feces	feces	TP_correct
+6	msp_0015	DKAN_07	ncbi_accession		ERR10906227;ERR10906228;ERR10906229;ERR10906230	FN
+6	msp_0015	DKAN_07	sequencing_platform	IonProton	IonProton	TP_correct
+6	msp_0015	DKAN_07	age		22	FN
+6	msp_0015	DKAN_07	age_group		adult	FN
+6	msp_0015	DKAN_07	sex	Female	Female	TP_correct
+6	msp_0015	DKAN_07	antibiotics_current_use	No	No	TP_correct
+6	msp_0015	DKAN_07	bmi	not_reported	22.0	FN
+6	msp_0015	DKAN_07	disease	Anorexia Nervosa	healthy	TP_wrong
+6	msp_0015	DKAN_07	smoker	not_reported	Non-smoker (finding)	FN
+6	msp_0015	DKAN_07	treatment	selective serotonin re-uptake inhibitors; antipsychotics; benzodiazepines	no	TP_wrong
+6	msp_0015	DKAN_07	host_species	Homo sapiens and Mus musculus	Homo sapiens	TP_wrong
+7	msp_0017	DKAN_08	study_name	AN_microbiota_2023	FanY_2023	TP_wrong
+7	msp_0017	DKAN_08	subject_id		DKAN_08	FN
+7	msp_0017	DKAN_08	sample_id	msp_0017	DKAN_08	TP_wrong
+7	msp_0017	DKAN_08	curator		Linda_Cova	FN
+7	msp_0017	DKAN_08	pmid	37069399	37069399	TP_correct
+7	msp_0017	DKAN_08	country	Denmark	Denmark	TP_correct
+7	msp_0017	DKAN_08	body_site	feces	feces	TP_correct
+7	msp_0017	DKAN_08	ncbi_accession		ERR10906231;ERR10906232;ERR10906233;ERR10906234	FN
+7	msp_0017	DKAN_08	sequencing_platform	IonProton	IonProton	TP_correct
+7	msp_0017	DKAN_08	age		22	FN
+7	msp_0017	DKAN_08	age_group		adult	FN
+7	msp_0017	DKAN_08	sex	Female	Female	TP_correct
+7	msp_0017	DKAN_08	antibiotics_current_use	No	No	TP_correct
+7	msp_0017	DKAN_08	bmi	not_reported	18.5	FN
+7	msp_0017	DKAN_08	disease	Anorexia Nervosa	healthy	TP_wrong
+7	msp_0017	DKAN_08	smoker	not_reported	Smoker (finding)	FN
+7	msp_0017	DKAN_08	treatment	selective serotonin re-uptake inhibitors; antipsychotics; benzodiazepines	no	TP_wrong
+7	msp_0017	DKAN_08	host_species	Homo sapiens and Mus musculus	Homo sapiens	TP_wrong
+8	msp_0017	DKAN_09	study_name	AN_microbiota_2023	FanY_2023	TP_wrong
+8	msp_0017	DKAN_09	subject_id		DKAN_09	FN
+8	msp_0017	DKAN_09	sample_id	msp_0017	DKAN_09	TP_wrong
+8	msp_0017	DKAN_09	curator		Linda_Cova	FN
+8	msp_0017	DKAN_09	pmid	37069399	37069399	TP_correct
+8	msp_0017	DKAN_09	country	Denmark	Denmark	TP_correct
+8	msp_0017	DKAN_09	body_site	feces	feces	TP_correct
+8	msp_0017	DKAN_09	ncbi_accession		ERR10906235;ERR10906236;ERR10906237;ERR10906238	FN
+8	msp_0017	DKAN_09	sequencing_platform	IonProton	IonProton	TP_correct
+8	msp_0017	DKAN_09	age		17	FN
+8	msp_0017	DKAN_09	age_group		schoolage	FN
+8	msp_0017	DKAN_09	sex	Female	Female	TP_correct
+8	msp_0017	DKAN_09	antibiotics_current_use	No	No	TP_correct
+8	msp_0017	DKAN_09	bmi	not_reported	18.8	FN
+8	msp_0017	DKAN_09	disease	Anorexia Nervosa	healthy	TP_wrong
+8	msp_0017	DKAN_09	smoker	not_reported	Smoker (finding)	FN
+8	msp_0017	DKAN_09	treatment	selective serotonin re-uptake inhibitors; antipsychotics; benzodiazepines	no	TP_wrong
+8	msp_0017	DKAN_09	host_species	Homo sapiens and Mus musculus	Homo sapiens	TP_wrong
+9	msp_0017	DKAN_10	study_name	AN_microbiota_2023	FanY_2023	TP_wrong
+9	msp_0017	DKAN_10	subject_id		DKAN_10	FN
+9	msp_0017	DKAN_10	sample_id	msp_0017	DKAN_10	TP_wrong
+9	msp_0017	DKAN_10	curator		Linda_Cova	FN
+9	msp_0017	DKAN_10	pmid	37069399	37069399	TP_correct
+9	msp_0017	DKAN_10	country	Denmark	Denmark	TP_correct
+9	msp_0017	DKAN_10	body_site	feces	feces	TP_correct
+9	msp_0017	DKAN_10	ncbi_accession		ERR10906239;ERR10906240;ERR10906241;ERR10906242	FN
+9	msp_0017	DKAN_10	sequencing_platform	IonProton	IonProton	TP_correct
+9	msp_0017	DKAN_10	age		18	FN
+9	msp_0017	DKAN_10	age_group		schoolage	FN
+9	msp_0017	DKAN_10	sex	Female	Female	TP_correct
+9	msp_0017	DKAN_10	antibiotics_current_use	No	No	TP_correct
+9	msp_0017	DKAN_10	bmi	not_reported	18.9	FN
+9	msp_0017	DKAN_10	disease	Anorexia Nervosa	healthy	TP_wrong
+9	msp_0017	DKAN_10	smoker	not_reported	Non-smoker (finding)	FN
+9	msp_0017	DKAN_10	treatment	selective serotonin re-uptake inhibitors; antipsychotics; benzodiazepines	no	TP_wrong
+9	msp_0017	DKAN_10	host_species	Homo sapiens and Mus musculus	Homo sapiens	TP_wrong
+10	msp_0017	DKAN_100	study_name	AN_microbiota_2023	FanY_2023	TP_wrong
+10	msp_0017	DKAN_100	subject_id		DKAN_100	FN
+10	msp_0017	DKAN_100	sample_id	msp_0017	DKAN_100	TP_wrong
+10	msp_0017	DKAN_100	curator		Linda_Cova	FN
+10	msp_0017	DKAN_100	pmid	37069399	37069399	TP_correct
+10	msp_0017	DKAN_100	country	Denmark	Denmark	TP_correct
+10	msp_0017	DKAN_100	body_site	feces	feces	TP_correct
+10	msp_0017	DKAN_100	ncbi_accession		ERR10906243;ERR10906244;ERR10906245;ERR10906246	FN
+10	msp_0017	DKAN_100	sequencing_platform	IonProton	IonProton	TP_correct
+10	msp_0017	DKAN_100	age		21	FN
+10	msp_0017	DKAN_100	age_group		adult	FN
+10	msp_0017	DKAN_100	sex	Female	Female	TP_correct
+10	msp_0017	DKAN_100	antibiotics_current_use	No	No	TP_correct
+10	msp_0017	DKAN_100	bmi	not_reported	19.8	FN
+10	msp_0017	DKAN_100	disease	Anorexia Nervosa	healthy	TP_wrong
+10	msp_0017	DKAN_100	smoker	not_reported	Non-smoker (finding)	FN
+10	msp_0017	DKAN_100	treatment	selective serotonin re-uptake inhibitors; antipsychotics; benzodiazepines	no	TP_wrong
+10	msp_0017	DKAN_100	host_species	Homo sapiens and Mus musculus	Homo sapiens	TP_wrong
+11	msp_0017	DKAN_101	study_name	AN_microbiota_2023	FanY_2023	TP_wrong
+11	msp_0017	DKAN_101	subject_id		DKAN_101	FN
+11	msp_0017	DKAN_101	sample_id	msp_0017	DKAN_101	TP_wrong
+11	msp_0017	DKAN_101	curator		Linda_Cova	FN
+11	msp_0017	DKAN_101	pmid	37069399	37069399	TP_correct
+11	msp_0017	DKAN_101	country	Denmark	Denmark	TP_correct
+11	msp_0017	DKAN_101	body_site	feces	feces	TP_correct
+11	msp_0017	DKAN_101	ncbi_accession		ERR10906247;ERR10906248;ERR10906249;ERR10906250	FN
+11	msp_0017	DKAN_101	sequencing_platform	IonProton	IonProton	TP_correct
+11	msp_0017	DKAN_101	age		33	FN
+11	msp_0017	DKAN_101	age_group		adult	FN
+11	msp_0017	DKAN_101	sex	Female	Female	TP_correct
+11	msp_0017	DKAN_101	antibiotics_current_use	No	No	TP_correct
+11	msp_0017	DKAN_101	bmi	not_reported	17.3	FN
+11	msp_0017	DKAN_101	disease	Anorexia Nervosa	anorexia	TP_wrong
+11	msp_0017	DKAN_101	smoker	not_reported	Non-smoker (finding)	FN
+11	msp_0017	DKAN_101	treatment	selective serotonin re-uptake inhibitors; antipsychotics; benzodiazepines	ssri	TP_wrong
+11	msp_0017	DKAN_101	host_species	Homo sapiens and Mus musculus	Homo sapiens	TP_wrong
+12	msp_0017	DKAN_102	study_name	AN_microbiota_2023	FanY_2023	TP_wrong
+12	msp_0017	DKAN_102	subject_id		DKAN_102	FN
+12	msp_0017	DKAN_102	sample_id	msp_0017	DKAN_102	TP_wrong
+12	msp_0017	DKAN_102	curator		Linda_Cova	FN
+12	msp_0017	DKAN_102	pmid	37069399	37069399	TP_correct
+12	msp_0017	DKAN_102	country	Denmark	Denmark	TP_correct
+12	msp_0017	DKAN_102	body_site	feces	feces	TP_correct
+12	msp_0017	DKAN_102	ncbi_accession		ERR10906251;ERR10906252;ERR10906253;ERR10906254	FN
+12	msp_0017	DKAN_102	sequencing_platform	IonProton	IonProton	TP_correct
+12	msp_0017	DKAN_102	age		23	FN
+12	msp_0017	DKAN_102	age_group		adult	FN
+12	msp_0017	DKAN_102	sex	Female	Female	TP_correct
+12	msp_0017	DKAN_102	antibiotics_current_use	No	No	TP_correct
+12	msp_0017	DKAN_102	bmi	not_reported	16.8	FN
+12	msp_0017	DKAN_102	disease	Anorexia Nervosa	anorexia	TP_wrong
+12	msp_0017	DKAN_102	smoker	not_reported	Non-smoker (finding)	FN
+12	msp_0017	DKAN_102	treatment	selective serotonin re-uptake inhibitors; antipsychotics; benzodiazepines	ssri;antipsychotics	TP_wrong
+12	msp_0017	DKAN_102	host_species	Homo sapiens and Mus musculus	Homo sapiens	TP_wrong
+13	msp_0017	DKAN_103	study_name	AN_microbiota_2023	FanY_2023	TP_wrong
+13	msp_0017	DKAN_103	subject_id		DKAN_103	FN
+13	msp_0017	DKAN_103	sample_id	msp_0017	DKAN_103	TP_wrong
+13	msp_0017	DKAN_103	curator		Linda_Cova	FN
+13	msp_0017	DKAN_103	pmid	37069399	37069399	TP_correct
+13	msp_0017	DKAN_103	country	Denmark	Denmark	TP_correct
+13	msp_0017	DKAN_103	body_site	feces	feces	TP_correct
+13	msp_0017	DKAN_103	ncbi_accession		ERR10906255;ERR10906256;ERR10906257;ERR10906258	FN
+13	msp_0017	DKAN_103	sequencing_platform	IonProton	IonProton	TP_correct
+13	msp_0017	DKAN_103	age		22	FN
+13	msp_0017	DKAN_103	age_group		adult	FN
+13	msp_0017	DKAN_103	sex	Female	Female	TP_correct
+13	msp_0017	DKAN_103	antibiotics_current_use	No	No	TP_correct
+13	msp_0017	DKAN_103	bmi	not_reported	24.0	FN
+13	msp_0017	DKAN_103	disease	Anorexia Nervosa	healthy	TP_wrong
+13	msp_0017	DKAN_103	smoker	not_reported	Non-smoker (finding)	FN
+13	msp_0017	DKAN_103	treatment	selective serotonin re-uptake inhibitors; antipsychotics; benzodiazepines	no	TP_wrong
+13	msp_0017	DKAN_103	host_species	Homo sapiens and Mus musculus	Homo sapiens	TP_wrong
+14	msp_0050	DKAN_104	study_name	AN_microbiota_2023	FanY_2023	TP_wrong
+14	msp_0050	DKAN_104	subject_id		DKAN_104	FN
+14	msp_0050	DKAN_104	sample_id	msp_0050	DKAN_104	TP_wrong
+14	msp_0050	DKAN_104	curator		Linda_Cova	FN
+14	msp_0050	DKAN_104	pmid	37069399	37069399	TP_correct
+14	msp_0050	DKAN_104	country	Denmark	Denmark	TP_correct
+14	msp_0050	DKAN_104	body_site	feces	feces	TP_correct
+14	msp_0050	DKAN_104	ncbi_accession		ERR10906259;ERR10906260;ERR10906261;ERR10906262	FN
+14	msp_0050	DKAN_104	sequencing_platform	IonProton	IonProton	TP_correct
+14	msp_0050	DKAN_104	age		18	FN
+14	msp_0050	DKAN_104	age_group		schoolage	FN
+14	msp_0050	DKAN_104	sex	Female	Female	TP_correct
+14	msp_0050	DKAN_104	antibiotics_current_use	No	No	TP_correct
+14	msp_0050	DKAN_104	bmi	not_reported	12.9	FN
+14	msp_0050	DKAN_104	disease	Anorexia Nervosa	anorexia	TP_wrong
+14	msp_0050	DKAN_104	smoker	not_reported	Smoker (finding)	FN
+14	msp_0050	DKAN_104	treatment	selective serotonin re-uptake inhibitors; antipsychotics; benzodiazepines	no	TP_wrong
+14	msp_0050	DKAN_104	host_species	Homo sapiens and Mus musculus	Homo sapiens	TP_wrong
+15	msp_0050	DKAN_105	study_name	AN_microbiota_2023	FanY_2023	TP_wrong
+15	msp_0050	DKAN_105	subject_id		DKAN_105	FN
+15	msp_0050	DKAN_105	sample_id	msp_0050	DKAN_105	TP_wrong
+15	msp_0050	DKAN_105	curator		Linda_Cova	FN
+15	msp_0050	DKAN_105	pmid	37069399	37069399	TP_correct
+15	msp_0050	DKAN_105	country	Denmark	Denmark	TP_correct
+15	msp_0050	DKAN_105	body_site	feces	feces	TP_correct
+15	msp_0050	DKAN_105	ncbi_accession		ERR10906263;ERR10906264	FN
+15	msp_0050	DKAN_105	sequencing_platform	IonProton	IonProton	TP_correct
+15	msp_0050	DKAN_105	age		16	FN
+15	msp_0050	DKAN_105	age_group		schoolage	FN
+15	msp_0050	DKAN_105	sex	Female	Female	TP_correct
+15	msp_0050	DKAN_105	antibiotics_current_use	No	No	TP_correct
+15	msp_0050	DKAN_105	bmi	not_reported	24.2	FN
+15	msp_0050	DKAN_105	disease	Anorexia Nervosa	healthy	TP_wrong
+15	msp_0050	DKAN_105	smoker	not_reported	Non-smoker (finding)	FN
+15	msp_0050	DKAN_105	treatment	selective serotonin re-uptake inhibitors; antipsychotics; benzodiazepines	no	TP_wrong
+15	msp_0050	DKAN_105	host_species	Homo sapiens and Mus musculus	Homo sapiens	TP_wrong
+16	msp_0050	DKAN_106	study_name	AN_microbiota_2023	FanY_2023	TP_wrong
+16	msp_0050	DKAN_106	subject_id		DKAN_106	FN
+16	msp_0050	DKAN_106	sample_id	msp_0050	DKAN_106	TP_wrong
+16	msp_0050	DKAN_106	curator		Linda_Cova	FN
+16	msp_0050	DKAN_106	pmid	37069399	37069399	TP_correct
+16	msp_0050	DKAN_106	country	Denmark	Denmark	TP_correct
+16	msp_0050	DKAN_106	body_site	feces	feces	TP_correct
+16	msp_0050	DKAN_106	ncbi_accession		ERR10906265;ERR10906266	FN
+16	msp_0050	DKAN_106	sequencing_platform	IonProton	IonProton	TP_correct
+16	msp_0050	DKAN_106	age		23	FN
+16	msp_0050	DKAN_106	age_group		adult	FN
+16	msp_0050	DKAN_106	sex	Female	Female	TP_correct
+16	msp_0050	DKAN_106	antibiotics_current_use	No	No	TP_correct
+16	msp_0050	DKAN_106	bmi	not_reported	20.3	FN
+16	msp_0050	DKAN_106	disease	Anorexia Nervosa	healthy	TP_wrong
+16	msp_0050	DKAN_106	smoker	not_reported	Non-smoker (finding)	FN
+16	msp_0050	DKAN_106	treatment	selective serotonin re-uptake inhibitors; antipsychotics; benzodiazepines	no	TP_wrong
+16	msp_0050	DKAN_106	host_species	Homo sapiens and Mus musculus	Homo sapiens	TP_wrong
+17	msp_0050	DKAN_107	study_name	AN_microbiota_2023	FanY_2023	TP_wrong
+17	msp_0050	DKAN_107	subject_id		DKAN_107	FN
+17	msp_0050	DKAN_107	sample_id	msp_0050	DKAN_107	TP_wrong
+17	msp_0050	DKAN_107	curator		Linda_Cova	FN
+17	msp_0050	DKAN_107	pmid	37069399	37069399	TP_correct
+17	msp_0050	DKAN_107	country	Denmark	Denmark	TP_correct
+17	msp_0050	DKAN_107	body_site	feces	feces	TP_correct
+17	msp_0050	DKAN_107	ncbi_accession		ERR10906267;ERR10906268	FN
+17	msp_0050	DKAN_107	sequencing_platform	IonProton	IonProton	TP_correct
+17	msp_0050	DKAN_107	age		22	FN
+17	msp_0050	DKAN_107	age_group		adult	FN
+17	msp_0050	DKAN_107	sex	Female	Female	TP_correct
+17	msp_0050	DKAN_107	antibiotics_current_use	No	No	TP_correct
+17	msp_0050	DKAN_107	bmi	not_reported	21.1	FN
+17	msp_0050	DKAN_107	disease	Anorexia Nervosa	healthy	TP_wrong
+17	msp_0050	DKAN_107	smoker	not_reported	Non-smoker (finding)	FN
+17	msp_0050	DKAN_107	treatment	selective serotonin re-uptake inhibitors; antipsychotics; benzodiazepines	no	TP_wrong
+17	msp_0050	DKAN_107	host_species	Homo sapiens and Mus musculus	Homo sapiens	TP_wrong
+18	msp_0050	DKAN_108	study_name	AN_microbiota_2023	FanY_2023	TP_wrong
+18	msp_0050	DKAN_108	subject_id		DKAN_108	FN
+18	msp_0050	DKAN_108	sample_id	msp_0050	DKAN_108	TP_wrong
+18	msp_0050	DKAN_108	curator		Linda_Cova	FN
+18	msp_0050	DKAN_108	pmid	37069399	37069399	TP_correct
+18	msp_0050	DKAN_108	country	Denmark	Denmark	TP_correct
+18	msp_0050	DKAN_108	body_site	feces	feces	TP_correct
+18	msp_0050	DKAN_108	ncbi_accession		ERR10906269;ERR10906270	FN
+18	msp_0050	DKAN_108	sequencing_platform	IonProton	IonProton	TP_correct
+18	msp_0050	DKAN_108	age		22	FN
+18	msp_0050	DKAN_108	age_group		adult	FN
+18	msp_0050	DKAN_108	sex	Female	Female	TP_correct
+18	msp_0050	DKAN_108	antibiotics_current_use	No	No	TP_correct
+18	msp_0050	DKAN_108	bmi	not_reported	20.5	FN
+18	msp_0050	DKAN_108	disease	Anorexia Nervosa	healthy	TP_wrong
+18	msp_0050	DKAN_108	smoker	not_reported	Non-smoker (finding)	FN
+18	msp_0050	DKAN_108	treatment	selective serotonin re-uptake inhibitors; antipsychotics; benzodiazepines	no	TP_wrong
+18	msp_0050	DKAN_108	host_species	Homo sapiens and Mus musculus	Homo sapiens	TP_wrong
+19	msp_0050	DKAN_109	study_name	AN_microbiota_2023	FanY_2023	TP_wrong
+19	msp_0050	DKAN_109	subject_id		DKAN_109	FN
+19	msp_0050	DKAN_109	sample_id	msp_0050	DKAN_109	TP_wrong
+19	msp_0050	DKAN_109	curator		Linda_Cova	FN
+19	msp_0050	DKAN_109	pmid	37069399	37069399	TP_correct
+19	msp_0050	DKAN_109	country	Denmark	Denmark	TP_correct
+19	msp_0050	DKAN_109	body_site	feces	feces	TP_correct
+19	msp_0050	DKAN_109	ncbi_accession		ERR10906271;ERR10906272	FN
+19	msp_0050	DKAN_109	sequencing_platform	IonProton	IonProton	TP_correct
+19	msp_0050	DKAN_109	age		22	FN
+19	msp_0050	DKAN_109	age_group		adult	FN
+19	msp_0050	DKAN_109	sex	Female	Female	TP_correct
+19	msp_0050	DKAN_109	antibiotics_current_use	No	No	TP_correct
+19	msp_0050	DKAN_109	bmi	not_reported	24.1	FN
+19	msp_0050	DKAN_109	disease	Anorexia Nervosa	healthy	TP_wrong
+19	msp_0050	DKAN_109	smoker	not_reported	Non-smoker (finding)	FN
+19	msp_0050	DKAN_109	treatment	selective serotonin re-uptake inhibitors; antipsychotics; benzodiazepines	no	TP_wrong
+19	msp_0050	DKAN_109	host_species	Homo sapiens and Mus musculus	Homo sapiens	TP_wrong
+20	msp_0050	DKAN_11	study_name	AN_microbiota_2023	FanY_2023	TP_wrong
+20	msp_0050	DKAN_11	subject_id		DKAN_11	FN
+20	msp_0050	DKAN_11	sample_id	msp_0050	DKAN_11	TP_wrong
+20	msp_0050	DKAN_11	curator		Linda_Cova	FN
+20	msp_0050	DKAN_11	pmid	37069399	37069399	TP_correct
+20	msp_0050	DKAN_11	country	Denmark	Denmark	TP_correct
+20	msp_0050	DKAN_11	body_site	feces	feces	TP_correct
+20	msp_0050	DKAN_11	ncbi_accession		ERR10906273;ERR10906274;ERR10906275;ERR10906276	FN
+20	msp_0050	DKAN_11	sequencing_platform	IonProton	IonProton	TP_correct
+20	msp_0050	DKAN_11	age		19	FN
+20	msp_0050	DKAN_11	age_group		adult	FN
+20	msp_0050	DKAN_11	sex	Female	Female	TP_correct
+20	msp_0050	DKAN_11	antibiotics_current_use	No	No	TP_correct
+20	msp_0050	DKAN_11	bmi	not_reported	19.6	FN
+20	msp_0050	DKAN_11	disease	Anorexia Nervosa	healthy	TP_wrong
+20	msp_0050	DKAN_11	smoker	not_reported	Smoker (finding)	FN
+20	msp_0050	DKAN_11	treatment	selective serotonin re-uptake inhibitors; antipsychotics; benzodiazepines	no	TP_wrong
+20	msp_0050	DKAN_11	host_species	Homo sapiens and Mus musculus	Homo sapiens	TP_wrong
+21	msp_0068	DKAN_110	study_name	AN_microbiota_2023	FanY_2023	TP_wrong
+21	msp_0068	DKAN_110	subject_id		DKAN_110	FN
+21	msp_0068	DKAN_110	sample_id	msp_0068	DKAN_110	TP_wrong
+21	msp_0068	DKAN_110	curator		Linda_Cova	FN
+21	msp_0068	DKAN_110	pmid	37069399	37069399	TP_correct
+21	msp_0068	DKAN_110	country	Denmark	Denmark	TP_correct
+21	msp_0068	DKAN_110	body_site	feces	feces	TP_correct
+21	msp_0068	DKAN_110	ncbi_accession		ERR10906277;ERR10906278;ERR10906279;ERR10906280;ERR10906281	FN
+21	msp_0068	DKAN_110	sequencing_platform	IonProton	IonProton	TP_correct
+21	msp_0068	DKAN_110	age		21	FN
+21	msp_0068	DKAN_110	age_group		adult	FN
+21	msp_0068	DKAN_110	sex	Female	Female	TP_correct
+21	msp_0068	DKAN_110	antibiotics_current_use	No	No	TP_correct
+21	msp_0068	DKAN_110	bmi	not_reported	21.2	FN
+21	msp_0068	DKAN_110	disease	Anorexia Nervosa	healthy	TP_wrong
+21	msp_0068	DKAN_110	smoker	not_reported	Non-smoker (finding)	FN
+21	msp_0068	DKAN_110	treatment	selective serotonin re-uptake inhibitors; antipsychotics; benzodiazepines	no	TP_wrong
+21	msp_0068	DKAN_110	host_species	Homo sapiens and Mus musculus	Homo sapiens	TP_wrong
+22	msp_0068	DKAN_111	study_name	AN_microbiota_2023	FanY_2023	TP_wrong
+22	msp_0068	DKAN_111	subject_id		DKAN_111	FN
+22	msp_0068	DKAN_111	sample_id	msp_0068	DKAN_111	TP_wrong
+22	msp_0068	DKAN_111	curator		Linda_Cova	FN
+22	msp_0068	DKAN_111	pmid	37069399	37069399	TP_correct
+22	msp_0068	DKAN_111	country	Denmark	Denmark	TP_correct
+22	msp_0068	DKAN_111	body_site	feces	feces	TP_correct
+22	msp_0068	DKAN_111	ncbi_accession		ERR10906282;ERR10906283;ERR10906284;ERR10906285	FN
+22	msp_0068	DKAN_111	sequencing_platform	IonProton	IonProton	TP_correct
+22	msp_0068	DKAN_111	age		24	FN
+22	msp_0068	DKAN_111	age_group		adult	FN
+22	msp_0068	DKAN_111	sex	Female	Female	TP_correct
+22	msp_0068	DKAN_111	antibiotics_current_use	No	No	TP_correct
+22	msp_0068	DKAN_111	bmi	not_reported	19.1	FN
+22	msp_0068	DKAN_111	disease	Anorexia Nervosa	healthy	TP_wrong
+22	msp_0068	DKAN_111	smoker	not_reported	Non-smoker (finding)	FN
+22	msp_0068	DKAN_111	treatment	selective serotonin re-uptake inhibitors; antipsychotics; benzodiazepines	no	TP_wrong
+22	msp_0068	DKAN_111	host_species	Homo sapiens and Mus musculus	Homo sapiens	TP_wrong
+23	msp_0068	DKAN_112	study_name	AN_microbiota_2023	FanY_2023	TP_wrong
+23	msp_0068	DKAN_112	subject_id		DKAN_112	FN
+23	msp_0068	DKAN_112	sample_id	msp_0068	DKAN_112	TP_wrong
+23	msp_0068	DKAN_112	curator		Linda_Cova	FN
+23	msp_0068	DKAN_112	pmid	37069399	37069399	TP_correct
+23	msp_0068	DKAN_112	country	Denmark	Denmark	TP_correct
+23	msp_0068	DKAN_112	body_site	feces	feces	TP_correct
+23	msp_0068	DKAN_112	ncbi_accession		ERR10906286;ERR10906287;ERR10906288;ERR10906289;ERR10906290	FN
+23	msp_0068	DKAN_112	sequencing_platform	IonProton	IonProton	TP_correct
+23	msp_0068	DKAN_112	age		25	FN
+23	msp_0068	DKAN_112	age_group		adult	FN
+23	msp_0068	DKAN_112	sex	Female	Female	TP_correct
+23	msp_0068	DKAN_112	antibiotics_current_use	No	No	TP_correct
+23	msp_0068	DKAN_112	bmi	not_reported	23.7	FN
+23	msp_0068	DKAN_112	disease	Anorexia Nervosa	healthy	TP_wrong
+23	msp_0068	DKAN_112	smoker	not_reported	Non-smoker (finding)	FN
+23	msp_0068	DKAN_112	treatment	selective serotonin re-uptake inhibitors; antipsychotics; benzodiazepines	no	TP_wrong
+23	msp_0068	DKAN_112	host_species	Homo sapiens and Mus musculus	Homo sapiens	TP_wrong
+24	msp_0068	DKAN_113	study_name	AN_microbiota_2023	FanY_2023	TP_wrong
+24	msp_0068	DKAN_113	subject_id		DKAN_113	FN
+24	msp_0068	DKAN_113	sample_id	msp_0068	DKAN_113	TP_wrong
+24	msp_0068	DKAN_113	curator		Linda_Cova	FN
+24	msp_0068	DKAN_113	pmid	37069399	37069399	TP_correct
+24	msp_0068	DKAN_113	country	Denmark	Denmark	TP_correct
+24	msp_0068	DKAN_113	body_site	feces	feces	TP_correct
+24	msp_0068	DKAN_113	ncbi_accession		ERR10906291;ERR10906292;ERR10906293;ERR10906294	FN
+24	msp_0068	DKAN_113	sequencing_platform	IonProton	IonProton	TP_correct
+24	msp_0068	DKAN_113	age		21	FN
+24	msp_0068	DKAN_113	age_group		adult	FN
+24	msp_0068	DKAN_113	sex	Female	Female	TP_correct
+24	msp_0068	DKAN_113	antibiotics_current_use	No	No	TP_correct
+24	msp_0068	DKAN_113	bmi	not_reported	21.6	FN
+24	msp_0068	DKAN_113	disease	Anorexia Nervosa	healthy	TP_wrong
+24	msp_0068	DKAN_113	smoker	not_reported	Non-smoker (finding)	FN
+24	msp_0068	DKAN_113	treatment	selective serotonin re-uptake inhibitors; antipsychotics; benzodiazepines	no	TP_wrong
+24	msp_0068	DKAN_113	host_species	Homo sapiens and Mus musculus	Homo sapiens	TP_wrong
+25	msp_0068	DKAN_114	study_name	AN_microbiota_2023	FanY_2023	TP_wrong
+25	msp_0068	DKAN_114	subject_id		DKAN_114	FN
+25	msp_0068	DKAN_114	sample_id	msp_0068	DKAN_114	TP_wrong
+25	msp_0068	DKAN_114	curator		Linda_Cova	FN
+25	msp_0068	DKAN_114	pmid	37069399	37069399	TP_correct
+25	msp_0068	DKAN_114	country	Denmark	Denmark	TP_correct
+25	msp_0068	DKAN_114	body_site	feces	feces	TP_correct
+25	msp_0068	DKAN_114	ncbi_accession		ERR10906295;ERR10906296;ERR10906297;ERR10906298;ERR10906299	FN
+25	msp_0068	DKAN_114	sequencing_platform	IonProton	IonProton	TP_correct
+25	msp_0068	DKAN_114	age		22	FN
+25	msp_0068	DKAN_114	age_group		adult	FN
+25	msp_0068	DKAN_114	sex	Female	Female	TP_correct
+25	msp_0068	DKAN_114	antibiotics_current_use	No	No	TP_correct
+25	msp_0068	DKAN_114	bmi	not_reported	22.4	FN
+25	msp_0068	DKAN_114	disease	Anorexia Nervosa	healthy	TP_wrong
+25	msp_0068	DKAN_114	smoker	not_reported	Non-smoker (finding)	FN
+25	msp_0068	DKAN_114	treatment	selective serotonin re-uptake inhibitors; antipsychotics; benzodiazepines	no	TP_wrong
+25	msp_0068	DKAN_114	host_species	Homo sapiens and Mus musculus	Homo sapiens	TP_wrong
+26	msp_0068	DKAN_115	study_name	AN_microbiota_2023	FanY_2023	TP_wrong
+26	msp_0068	DKAN_115	subject_id		DKAN_115	FN
+26	msp_0068	DKAN_115	sample_id	msp_0068	DKAN_115	TP_wrong
+26	msp_0068	DKAN_115	curator		Linda_Cova	FN
+26	msp_0068	DKAN_115	pmid	37069399	37069399	TP_correct
+26	msp_0068	DKAN_115	country	Denmark	Denmark	TP_correct
+26	msp_0068	DKAN_115	body_site	feces	feces	TP_correct
+26	msp_0068	DKAN_115	ncbi_accession		ERR10906300;ERR10906301;ERR10906302;ERR10906303;ERR10906304	FN
+26	msp_0068	DKAN_115	sequencing_platform	IonProton	IonProton	TP_correct
+26	msp_0068	DKAN_115	age		30	FN
+26	msp_0068	DKAN_115	age_group		adult	FN
+26	msp_0068	DKAN_115	sex	Female	Female	TP_correct
+26	msp_0068	DKAN_115	antibiotics_current_use	No	No	TP_correct
+26	msp_0068	DKAN_115	bmi	not_reported	21.1	FN
+26	msp_0068	DKAN_115	disease	Anorexia Nervosa	healthy	TP_wrong
+26	msp_0068	DKAN_115	smoker	not_reported	Non-smoker (finding)	FN
+26	msp_0068	DKAN_115	treatment	selective serotonin re-uptake inhibitors; antipsychotics; benzodiazepines	no	TP_wrong
+26	msp_0068	DKAN_115	host_species	Homo sapiens and Mus musculus	Homo sapiens	TP_wrong
+27	msp_0068	DKAN_116	study_name	AN_microbiota_2023	FanY_2023	TP_wrong
+27	msp_0068	DKAN_116	subject_id		DKAN_116	FN
+27	msp_0068	DKAN_116	sample_id	msp_0068	DKAN_116	TP_wrong
+27	msp_0068	DKAN_116	curator		Linda_Cova	FN
+27	msp_0068	DKAN_116	pmid	37069399	37069399	TP_correct
+27	msp_0068	DKAN_116	country	Denmark	Denmark	TP_correct
+27	msp_0068	DKAN_116	body_site	feces	feces	TP_correct
+27	msp_0068	DKAN_116	ncbi_accession		ERR10906305;ERR10906306;ERR10906307;ERR10906308;ERR10906309	FN
+27	msp_0068	DKAN_116	sequencing_platform	IonProton	IonProton	TP_correct
+27	msp_0068	DKAN_116	age		26	FN
+27	msp_0068	DKAN_116	age_group		adult	FN
+27	msp_0068	DKAN_116	sex	Female	Female	TP_correct
+27	msp_0068	DKAN_116	antibiotics_current_use	No	No	TP_correct
+27	msp_0068	DKAN_116	bmi	not_reported	20.9	FN
+27	msp_0068	DKAN_116	disease	Anorexia Nervosa	healthy	TP_wrong
+27	msp_0068	DKAN_116	smoker	not_reported	Non-smoker (finding)	FN
+27	msp_0068	DKAN_116	treatment	selective serotonin re-uptake inhibitors; antipsychotics; benzodiazepines	no	TP_wrong
+27	msp_0068	DKAN_116	host_species	Homo sapiens and Mus musculus	Homo sapiens	TP_wrong
+28	msp_0072	DKAN_117	study_name	AN_microbiota_2023	FanY_2023	TP_wrong
+28	msp_0072	DKAN_117	subject_id		DKAN_117	FN
+28	msp_0072	DKAN_117	sample_id	msp_0072	DKAN_117	TP_wrong
+28	msp_0072	DKAN_117	curator		Linda_Cova	FN
+28	msp_0072	DKAN_117	pmid	37069399	37069399	TP_correct
+28	msp_0072	DKAN_117	country	Denmark	Denmark	TP_correct
+28	msp_0072	DKAN_117	body_site	feces	feces	TP_correct
+28	msp_0072	DKAN_117	ncbi_accession		ERR10906310;ERR10906311;ERR10906312;ERR10906313	FN
+28	msp_0072	DKAN_117	sequencing_platform	IonProton	IonProton	TP_correct
+28	msp_0072	DKAN_117	age		21	FN
+28	msp_0072	DKAN_117	age_group		adult	FN
+28	msp_0072	DKAN_117	sex	Female	Female	TP_correct
+28	msp_0072	DKAN_117	antibiotics_current_use	No	No	TP_correct
+28	msp_0072	DKAN_117	bmi	not_reported	15.2	FN
+28	msp_0072	DKAN_117	disease	Anorexia Nervosa	anorexia	TP_wrong
+28	msp_0072	DKAN_117	smoker	not_reported	Smoker (finding)	FN
+28	msp_0072	DKAN_117	treatment	selective serotonin re-uptake inhibitors; antipsychotics; benzodiazepines	ssri;antipsychotics	TP_wrong
+28	msp_0072	DKAN_117	host_species	Homo sapiens and Mus musculus	Homo sapiens	TP_wrong
+29	msp_0072	DKAN_118	study_name	AN_microbiota_2023	FanY_2023	TP_wrong
+29	msp_0072	DKAN_118	subject_id		DKAN_118	FN
+29	msp_0072	DKAN_118	sample_id	msp_0072	DKAN_118	TP_wrong
+29	msp_0072	DKAN_118	curator		Linda_Cova	FN
+29	msp_0072	DKAN_118	pmid	37069399	37069399	TP_correct
+29	msp_0072	DKAN_118	country	Denmark	Denmark	TP_correct
+29	msp_0072	DKAN_118	body_site	feces	feces	TP_correct
+29	msp_0072	DKAN_118	ncbi_accession		ERR10906314;ERR10906315;ERR10906316;ERR10906317	FN
+29	msp_0072	DKAN_118	sequencing_platform	IonProton	IonProton	TP_correct
+29	msp_0072	DKAN_118	age		22	FN
+29	msp_0072	DKAN_118	age_group		adult	FN
+29	msp_0072	DKAN_118	sex	Female	Female	TP_correct
+29	msp_0072	DKAN_118	antibiotics_current_use	No	No	TP_correct
+29	msp_0072	DKAN_118	bmi	not_reported	21.5	FN
+29	msp_0072	DKAN_118	disease	Anorexia Nervosa	healthy	TP_wrong
+29	msp_0072	DKAN_118	smoker	not_reported	Non-smoker (finding)	FN
+29	msp_0072	DKAN_118	treatment	selective serotonin re-uptake inhibitors; antipsychotics; benzodiazepines	no	TP_wrong
+29	msp_0072	DKAN_118	host_species	Homo sapiens and Mus musculus	Homo sapiens	TP_wrong
+30	msp_0072	DKAN_119	study_name	AN_microbiota_2023	FanY_2023	TP_wrong
+30	msp_0072	DKAN_119	subject_id		DKAN_119	FN
+30	msp_0072	DKAN_119	sample_id	msp_0072	DKAN_119	TP_wrong
+30	msp_0072	DKAN_119	curator		Linda_Cova	FN
+30	msp_0072	DKAN_119	pmid	37069399	37069399	TP_correct
+30	msp_0072	DKAN_119	country	Denmark	Denmark	TP_correct
+30	msp_0072	DKAN_119	body_site	feces	feces	TP_correct
+30	msp_0072	DKAN_119	ncbi_accession		ERR10906318;ERR10906319;ERR10906320;ERR10906321;ERR10906322	FN
+30	msp_0072	DKAN_119	sequencing_platform	IonProton	IonProton	TP_correct
+30	msp_0072	DKAN_119	age		24	FN
+30	msp_0072	DKAN_119	age_group		adult	FN
+30	msp_0072	DKAN_119	sex	Female	Female	TP_correct
+30	msp_0072	DKAN_119	antibiotics_current_use	No	No	TP_correct
+30	msp_0072	DKAN_119	bmi	not_reported	12.4	FN
+30	msp_0072	DKAN_119	disease	Anorexia Nervosa	anorexia	TP_wrong
+30	msp_0072	DKAN_119	smoker	not_reported	Non-smoker (finding)	FN
+30	msp_0072	DKAN_119	treatment	selective serotonin re-uptake inhibitors; antipsychotics; benzodiazepines	no	TP_wrong
+30	msp_0072	DKAN_119	host_species	Homo sapiens and Mus musculus	Homo sapiens	TP_wrong
+31	msp_0072	DKAN_12	study_name	AN_microbiota_2023	FanY_2023	TP_wrong
+31	msp_0072	DKAN_12	subject_id		DKAN_12	FN
+31	msp_0072	DKAN_12	sample_id	msp_0072	DKAN_12	TP_wrong
+31	msp_0072	DKAN_12	curator		Linda_Cova	FN
+31	msp_0072	DKAN_12	pmid	37069399	37069399	TP_correct
+31	msp_0072	DKAN_12	country	Denmark	Denmark	TP_correct
+31	msp_0072	DKAN_12	body_site	feces	feces	TP_correct
+31	msp_0072	DKAN_12	ncbi_accession		ERR10906323;ERR10906324;ERR10906325;ERR10906326	FN
+31	msp_0072	DKAN_12	sequencing_platform	IonProton	IonProton	TP_correct
+31	msp_0072	DKAN_12	age		27	FN
+31	msp_0072	DKAN_12	age_group		adult	FN
+31	msp_0072	DKAN_12	sex	Female	Female	TP_correct
+31	msp_0072	DKAN_12	antibiotics_current_use	No	No	TP_correct
+31	msp_0072	DKAN_12	bmi	not_reported	20.8	FN
+31	msp_0072	DKAN_12	disease	Anorexia Nervosa	healthy	TP_wrong
+31	msp_0072	DKAN_12	smoker	not_reported	Non-smoker (finding)	FN
+31	msp_0072	DKAN_12	treatment	selective serotonin re-uptake inhibitors; antipsychotics; benzodiazepines	no	TP_wrong
+31	msp_0072	DKAN_12	host_species	Homo sapiens and Mus musculus	Homo sapiens	TP_wrong
+32	msp_0072	DKAN_120	study_name	AN_microbiota_2023	FanY_2023	TP_wrong
+32	msp_0072	DKAN_120	subject_id		DKAN_120	FN
+32	msp_0072	DKAN_120	sample_id	msp_0072	DKAN_120	TP_wrong
+32	msp_0072	DKAN_120	curator		Linda_Cova	FN
+32	msp_0072	DKAN_120	pmid	37069399	37069399	TP_correct
+32	msp_0072	DKAN_120	country	Denmark	Denmark	TP_correct
+32	msp_0072	DKAN_120	body_site	feces	feces	TP_correct
+32	msp_0072	DKAN_120	ncbi_accession		ERR10906327;ERR10906328;ERR10906329;ERR10906330	FN
+32	msp_0072	DKAN_120	sequencing_platform	IonProton	IonProton	TP_correct
+32	msp_0072	DKAN_120	age		18	FN
+32	msp_0072	DKAN_120	age_group		schoolage	FN
+32	msp_0072	DKAN_120	sex	Female	Female	TP_correct
+32	msp_0072	DKAN_120	antibiotics_current_use	No	No	TP_correct
+32	msp_0072	DKAN_120	bmi	not_reported	23.6	FN
+32	msp_0072	DKAN_120	disease	Anorexia Nervosa	healthy	TP_wrong
+32	msp_0072	DKAN_120	smoker	not_reported	Non-smoker (finding)	FN
+32	msp_0072	DKAN_120	treatment	selective serotonin re-uptake inhibitors; antipsychotics; benzodiazepines	no	TP_wrong
+32	msp_0072	DKAN_120	host_species	Homo sapiens and Mus musculus	Homo sapiens	TP_wrong
+33	msp_0072	DKAN_121	study_name	AN_microbiota_2023	FanY_2023	TP_wrong
+33	msp_0072	DKAN_121	subject_id		DKAN_121	FN
+33	msp_0072	DKAN_121	sample_id	msp_0072	DKAN_121	TP_wrong
+33	msp_0072	DKAN_121	curator		Linda_Cova	FN
+33	msp_0072	DKAN_121	pmid	37069399	37069399	TP_correct
+33	msp_0072	DKAN_121	country	Denmark	Denmark	TP_correct
+33	msp_0072	DKAN_121	body_site	feces	feces	TP_correct
+33	msp_0072	DKAN_121	ncbi_accession		ERR10906331;ERR10906332;ERR10906333;ERR10906334	FN
+33	msp_0072	DKAN_121	sequencing_platform	IonProton	IonProton	TP_correct
+33	msp_0072	DKAN_121	age		25	FN
+33	msp_0072	DKAN_121	age_group		adult	FN
+33	msp_0072	DKAN_121	sex	Female	Female	TP_correct
+33	msp_0072	DKAN_121	antibiotics_current_use	No	No	TP_correct
+33	msp_0072	DKAN_121	bmi	not_reported	20.0	FN
+33	msp_0072	DKAN_121	disease	Anorexia Nervosa	healthy	TP_wrong
+33	msp_0072	DKAN_121	smoker	not_reported	Non-smoker (finding)	FN
+33	msp_0072	DKAN_121	treatment	selective serotonin re-uptake inhibitors; antipsychotics; benzodiazepines	no	TP_wrong
+33	msp_0072	DKAN_121	host_species	Homo sapiens and Mus musculus	Homo sapiens	TP_wrong
+34	msp_0072	DKAN_122	study_name	AN_microbiota_2023	FanY_2023	TP_wrong
+34	msp_0072	DKAN_122	subject_id		DKAN_122	FN
+34	msp_0072	DKAN_122	sample_id	msp_0072	DKAN_122	TP_wrong
+34	msp_0072	DKAN_122	curator		Linda_Cova	FN
+34	msp_0072	DKAN_122	pmid	37069399	37069399	TP_correct
+34	msp_0072	DKAN_122	country	Denmark	Denmark	TP_correct
+34	msp_0072	DKAN_122	body_site	feces	feces	TP_correct
+34	msp_0072	DKAN_122	ncbi_accession		ERR10906335;ERR10906336;ERR10906337;ERR10906338	FN
+34	msp_0072	DKAN_122	sequencing_platform	IonProton	IonProton	TP_correct
+34	msp_0072	DKAN_122	age		25	FN
+34	msp_0072	DKAN_122	age_group		adult	FN
+34	msp_0072	DKAN_122	sex	Female	Female	TP_correct
+34	msp_0072	DKAN_122	antibiotics_current_use	No	No	TP_correct
+34	msp_0072	DKAN_122	bmi	not_reported	23.7	FN
+34	msp_0072	DKAN_122	disease	Anorexia Nervosa	healthy	TP_wrong
+34	msp_0072	DKAN_122	smoker	not_reported	Non-smoker (finding)	FN
+34	msp_0072	DKAN_122	treatment	selective serotonin re-uptake inhibitors; antipsychotics; benzodiazepines	no	TP_wrong
+34	msp_0072	DKAN_122	host_species	Homo sapiens and Mus musculus	Homo sapiens	TP_wrong
+35	msp_0086	DKAN_123	study_name	AN_microbiota_2023	FanY_2023	TP_wrong
+35	msp_0086	DKAN_123	subject_id		DKAN_123	FN
+35	msp_0086	DKAN_123	sample_id	msp_0086	DKAN_123	TP_wrong
+35	msp_0086	DKAN_123	curator		Linda_Cova	FN
+35	msp_0086	DKAN_123	pmid	37069399	37069399	TP_correct
+35	msp_0086	DKAN_123	country	Denmark	Denmark	TP_correct
+35	msp_0086	DKAN_123	body_site	feces	feces	TP_correct
+35	msp_0086	DKAN_123	ncbi_accession		ERR10906339;ERR10906340;ERR10906341;ERR10906342;ERR10906343	FN
+35	msp_0086	DKAN_123	sequencing_platform	IonProton	IonProton	TP_correct
+35	msp_0086	DKAN_123	age		19	FN
+35	msp_0086	DKAN_123	age_group		adult	FN
+35	msp_0086	DKAN_123	sex	Female	Female	TP_correct
+35	msp_0086	DKAN_123	antibiotics_current_use	No	No	TP_correct
+35	msp_0086	DKAN_123	bmi	not_reported	24.5	FN
+35	msp_0086	DKAN_123	disease	Anorexia Nervosa	healthy	TP_wrong
+35	msp_0086	DKAN_123	smoker	not_reported	Non-smoker (finding)	FN
+35	msp_0086	DKAN_123	treatment	selective serotonin re-uptake inhibitors; antipsychotics; benzodiazepines	no	TP_wrong
+35	msp_0086	DKAN_123	host_species	Homo sapiens and Mus musculus	Homo sapiens	TP_wrong
+36	msp_0086	DKAN_124	study_name	AN_microbiota_2023	FanY_2023	TP_wrong
+36	msp_0086	DKAN_124	subject_id		DKAN_124	FN
+36	msp_0086	DKAN_124	sample_id	msp_0086	DKAN_124	TP_wrong
+36	msp_0086	DKAN_124	curator		Linda_Cova	FN
+36	msp_0086	DKAN_124	pmid	37069399	37069399	TP_correct
+36	msp_0086	DKAN_124	country	Denmark	Denmark	TP_correct
+36	msp_0086	DKAN_124	body_site	feces	feces	TP_correct
+36	msp_0086	DKAN_124	ncbi_accession		ERR10906344;ERR10906345;ERR10906346;ERR10906347	FN
+36	msp_0086	DKAN_124	sequencing_platform	IonProton	IonProton	TP_correct
+36	msp_0086	DKAN_124	age		23	FN
+36	msp_0086	DKAN_124	age_group		adult	FN
+36	msp_0086	DKAN_124	sex	Female	Female	TP_correct
+36	msp_0086	DKAN_124	antibiotics_current_use	No	No	TP_correct
+36	msp_0086	DKAN_124	bmi	not_reported	23.4	FN
+36	msp_0086	DKAN_124	disease	Anorexia Nervosa	healthy	TP_wrong
+36	msp_0086	DKAN_124	smoker	not_reported	Non-smoker (finding)	FN
+36	msp_0086	DKAN_124	treatment	selective serotonin re-uptake inhibitors; antipsychotics; benzodiazepines	no	TP_wrong
+36	msp_0086	DKAN_124	host_species	Homo sapiens and Mus musculus	Homo sapiens	TP_wrong
+37	msp_0086	DKAN_125	study_name	AN_microbiota_2023	FanY_2023	TP_wrong
+37	msp_0086	DKAN_125	subject_id		DKAN_125	FN
+37	msp_0086	DKAN_125	sample_id	msp_0086	DKAN_125	TP_wrong
+37	msp_0086	DKAN_125	curator		Linda_Cova	FN
+37	msp_0086	DKAN_125	pmid	37069399	37069399	TP_correct
+37	msp_0086	DKAN_125	country	Denmark	Denmark	TP_correct
+37	msp_0086	DKAN_125	body_site	feces	feces	TP_correct
+37	msp_0086	DKAN_125	ncbi_accession		ERR10906348;ERR10906349;ERR10906350;ERR10906351	FN
+37	msp_0086	DKAN_125	sequencing_platform	IonProton	IonProton	TP_correct
+37	msp_0086	DKAN_125	age		26	FN
+37	msp_0086	DKAN_125	age_group		adult	FN
+37	msp_0086	DKAN_125	sex	Female	Female	TP_correct
+37	msp_0086	DKAN_125	antibiotics_current_use	No	No	TP_correct
+37	msp_0086	DKAN_125	bmi	not_reported	23.4	FN
+37	msp_0086	DKAN_125	disease	Anorexia Nervosa	healthy	TP_wrong
+37	msp_0086	DKAN_125	smoker	not_reported	Non-smoker (finding)	FN
+37	msp_0086	DKAN_125	treatment	selective serotonin re-uptake inhibitors; antipsychotics; benzodiazepines	no	TP_wrong
+37	msp_0086	DKAN_125	host_species	Homo sapiens and Mus musculus	Homo sapiens	TP_wrong
+38	msp_0086	DKAN_126	study_name	AN_microbiota_2023	FanY_2023	TP_wrong
+38	msp_0086	DKAN_126	subject_id		DKAN_126	FN
+38	msp_0086	DKAN_126	sample_id	msp_0086	DKAN_126	TP_wrong
+38	msp_0086	DKAN_126	curator		Linda_Cova	FN
+38	msp_0086	DKAN_126	pmid	37069399	37069399	TP_correct
+38	msp_0086	DKAN_126	country	Denmark	Denmark	TP_correct
+38	msp_0086	DKAN_126	body_site	feces	feces	TP_correct
+38	msp_0086	DKAN_126	ncbi_accession		ERR10906352;ERR10906353;ERR10906354;ERR10906355;ERR10906356	FN
+38	msp_0086	DKAN_126	sequencing_platform	IonProton	IonProton	TP_correct
+38	msp_0086	DKAN_126	age		25	FN
+38	msp_0086	DKAN_126	age_group		adult	FN
+38	msp_0086	DKAN_126	sex	Female	Female	TP_correct
+38	msp_0086	DKAN_126	antibiotics_current_use	No	No	TP_correct
+38	msp_0086	DKAN_126	bmi	not_reported	15.6	FN
+38	msp_0086	DKAN_126	disease	Anorexia Nervosa	anorexia	TP_wrong
+38	msp_0086	DKAN_126	smoker	not_reported	Non-smoker (finding)	FN
+38	msp_0086	DKAN_126	treatment	selective serotonin re-uptake inhibitors; antipsychotics; benzodiazepines	ssri	TP_wrong
+38	msp_0086	DKAN_126	host_species	Homo sapiens and Mus musculus	Homo sapiens	TP_wrong
+39	msp_0086	DKAN_127	study_name	AN_microbiota_2023	FanY_2023	TP_wrong
+39	msp_0086	DKAN_127	subject_id		DKAN_127	FN
+39	msp_0086	DKAN_127	sample_id	msp_0086	DKAN_127	TP_wrong
+39	msp_0086	DKAN_127	curator		Linda_Cova	FN
+39	msp_0086	DKAN_127	pmid	37069399	37069399	TP_correct
+39	msp_0086	DKAN_127	country	Denmark	Denmark	TP_correct
+39	msp_0086	DKAN_127	body_site	feces	feces	TP_correct
+39	msp_0086	DKAN_127	ncbi_accession		ERR10906357;ERR10906358;ERR10906359;ERR10906360;ERR10906361	FN
+39	msp_0086	DKAN_127	sequencing_platform	IonProton	IonProton	TP_correct
+39	msp_0086	DKAN_127	age		21	FN
+39	msp_0086	DKAN_127	age_group		adult	FN
+39	msp_0086	DKAN_127	sex	Female	Female	TP_correct
+39	msp_0086	DKAN_127	antibiotics_current_use	No	No	TP_correct
+39	msp_0086	DKAN_127	bmi	not_reported	21.6	FN
+39	msp_0086	DKAN_127	disease	Anorexia Nervosa	healthy	TP_wrong
+39	msp_0086	DKAN_127	smoker	not_reported	Non-smoker (finding)	FN
+39	msp_0086	DKAN_127	treatment	selective serotonin re-uptake inhibitors; antipsychotics; benzodiazepines	no	TP_wrong
+39	msp_0086	DKAN_127	host_species	Homo sapiens and Mus musculus	Homo sapiens	TP_wrong
+40	msp_0086	DKAN_128	study_name	AN_microbiota_2023	FanY_2023	TP_wrong
+40	msp_0086	DKAN_128	subject_id		DKAN_128	FN
+40	msp_0086	DKAN_128	sample_id	msp_0086	DKAN_128	TP_wrong
+40	msp_0086	DKAN_128	curator		Linda_Cova	FN
+40	msp_0086	DKAN_128	pmid	37069399	37069399	TP_correct
+40	msp_0086	DKAN_128	country	Denmark	Denmark	TP_correct
+40	msp_0086	DKAN_128	body_site	feces	feces	TP_correct
+40	msp_0086	DKAN_128	ncbi_accession		ERR10906362;ERR10906363;ERR10906364;ERR10906365;ERR10906366	FN
+40	msp_0086	DKAN_128	sequencing_platform	IonProton	IonProton	TP_correct
+40	msp_0086	DKAN_128	age		22	FN
+40	msp_0086	DKAN_128	age_group		adult	FN
+40	msp_0086	DKAN_128	sex	Female	Female	TP_correct
+40	msp_0086	DKAN_128	antibiotics_current_use	No	No	TP_correct
+40	msp_0086	DKAN_128	bmi	not_reported	21.8	FN
+40	msp_0086	DKAN_128	disease	Anorexia Nervosa	healthy	TP_wrong
+40	msp_0086	DKAN_128	smoker	not_reported	Smoker (finding)	FN
+40	msp_0086	DKAN_128	treatment	selective serotonin re-uptake inhibitors; antipsychotics; benzodiazepines	no	TP_wrong
+40	msp_0086	DKAN_128	host_species	Homo sapiens and Mus musculus	Homo sapiens	TP_wrong
+41	msp_0086	DKAN_129	study_name	AN_microbiota_2023	FanY_2023	TP_wrong
+41	msp_0086	DKAN_129	subject_id		DKAN_129	FN
+41	msp_0086	DKAN_129	sample_id	msp_0086	DKAN_129	TP_wrong
+41	msp_0086	DKAN_129	curator		Linda_Cova	FN
+41	msp_0086	DKAN_129	pmid	37069399	37069399	TP_correct
+41	msp_0086	DKAN_129	country	Denmark	Denmark	TP_correct
+41	msp_0086	DKAN_129	body_site	feces	feces	TP_correct
+41	msp_0086	DKAN_129	ncbi_accession		ERR10906367;ERR10906368;ERR10906369;ERR10906370	FN
+41	msp_0086	DKAN_129	sequencing_platform	IonProton	IonProton	TP_correct
+41	msp_0086	DKAN_129	age		17	FN
+41	msp_0086	DKAN_129	age_group		schoolage	FN
+41	msp_0086	DKAN_129	sex	Female	Female	TP_correct
+41	msp_0086	DKAN_129	antibiotics_current_use	No	No	TP_correct
+41	msp_0086	DKAN_129	bmi	not_reported	14.6	FN
+41	msp_0086	DKAN_129	disease	Anorexia Nervosa	anorexia	TP_wrong
+41	msp_0086	DKAN_129	smoker	not_reported	Non-smoker (finding)	FN
+41	msp_0086	DKAN_129	treatment	selective serotonin re-uptake inhibitors; antipsychotics; benzodiazepines	no	TP_wrong
+41	msp_0086	DKAN_129	host_species	Homo sapiens and Mus musculus	Homo sapiens	TP_wrong
+42	msp_0125	DKAN_13	study_name	AN_microbiota_2023	FanY_2023	TP_wrong
+42	msp_0125	DKAN_13	subject_id		DKAN_13	FN
+42	msp_0125	DKAN_13	sample_id	msp_0125	DKAN_13	TP_wrong
+42	msp_0125	DKAN_13	curator		Linda_Cova	FN
+42	msp_0125	DKAN_13	pmid	37069399	37069399	TP_correct
+42	msp_0125	DKAN_13	country	Denmark	Denmark	TP_correct
+42	msp_0125	DKAN_13	body_site	feces	feces	TP_correct
+42	msp_0125	DKAN_13	ncbi_accession		ERR10906371;ERR10906372;ERR10906373;ERR10906374	FN
+42	msp_0125	DKAN_13	sequencing_platform	IonProton	IonProton	TP_correct
+42	msp_0125	DKAN_13	age		26	FN
+42	msp_0125	DKAN_13	age_group		adult	FN
+42	msp_0125	DKAN_13	sex	Female	Female	TP_correct
+42	msp_0125	DKAN_13	antibiotics_current_use	No	No	TP_correct
+42	msp_0125	DKAN_13	bmi	not_reported	19.2	FN
+42	msp_0125	DKAN_13	disease	Anorexia Nervosa	healthy	TP_wrong
+42	msp_0125	DKAN_13	smoker	not_reported	Non-smoker (finding)	FN
+42	msp_0125	DKAN_13	treatment	selective serotonin re-uptake inhibitors; antipsychotics; benzodiazepines	no	TP_wrong
+42	msp_0125	DKAN_13	host_species	Homo sapiens and Mus musculus	Homo sapiens	TP_wrong
+43	msp_0125	DKAN_130	study_name	AN_microbiota_2023	FanY_2023	TP_wrong
+43	msp_0125	DKAN_130	subject_id		DKAN_130	FN
+43	msp_0125	DKAN_130	sample_id	msp_0125	DKAN_130	TP_wrong
+43	msp_0125	DKAN_130	curator		Linda_Cova	FN
+43	msp_0125	DKAN_130	pmid	37069399	37069399	TP_correct
+43	msp_0125	DKAN_130	country	Denmark	Denmark	TP_correct
+43	msp_0125	DKAN_130	body_site	feces	feces	TP_correct
+43	msp_0125	DKAN_130	ncbi_accession		ERR10906375;ERR10906376;ERR10906377;ERR10906378	FN
+43	msp_0125	DKAN_130	sequencing_platform	IonProton	IonProton	TP_correct
+43	msp_0125	DKAN_130	age		20	FN
+43	msp_0125	DKAN_130	age_group		adult	FN
+43	msp_0125	DKAN_130	sex	Female	Female	TP_correct
+43	msp_0125	DKAN_130	antibiotics_current_use	No	No	TP_correct
+43	msp_0125	DKAN_130	bmi	not_reported	12.8	FN
+43	msp_0125	DKAN_130	disease	Anorexia Nervosa	anorexia	TP_wrong
+43	msp_0125	DKAN_130	smoker	not_reported	Non-smoker (finding)	FN
+43	msp_0125	DKAN_130	treatment	selective serotonin re-uptake inhibitors; antipsychotics; benzodiazepines	no	TP_wrong
+43	msp_0125	DKAN_130	host_species	Homo sapiens and Mus musculus	Homo sapiens	TP_wrong
+44	msp_0125	DKAN_131	study_name	AN_microbiota_2023	FanY_2023	TP_wrong
+44	msp_0125	DKAN_131	subject_id		DKAN_131	FN
+44	msp_0125	DKAN_131	sample_id	msp_0125	DKAN_131	TP_wrong
+44	msp_0125	DKAN_131	curator		Linda_Cova	FN
+44	msp_0125	DKAN_131	pmid	37069399	37069399	TP_correct
+44	msp_0125	DKAN_131	country	Denmark	Denmark	TP_correct
+44	msp_0125	DKAN_131	body_site	feces	feces	TP_correct
+44	msp_0125	DKAN_131	ncbi_accession		ERR10906379;ERR10906380;ERR10906381;ERR10906382;ERR10906383	FN
+44	msp_0125	DKAN_131	sequencing_platform	IonProton	IonProton	TP_correct
+44	msp_0125	DKAN_131	age		22	FN
+44	msp_0125	DKAN_131	age_group		adult	FN
+44	msp_0125	DKAN_131	sex	Female	Female	TP_correct
+44	msp_0125	DKAN_131	antibiotics_current_use	No	No	TP_correct
+44	msp_0125	DKAN_131	bmi	not_reported	18.9	FN
+44	msp_0125	DKAN_131	disease	Anorexia Nervosa	healthy	TP_wrong
+44	msp_0125	DKAN_131	smoker	not_reported	Non-smoker (finding)	FN
+44	msp_0125	DKAN_131	treatment	selective serotonin re-uptake inhibitors; antipsychotics; benzodiazepines	no	TP_wrong
+44	msp_0125	DKAN_131	host_species	Homo sapiens and Mus musculus	Homo sapiens	TP_wrong
+45	msp_0125	DKAN_132	study_name	AN_microbiota_2023	FanY_2023	TP_wrong
+45	msp_0125	DKAN_132	subject_id		DKAN_132	FN
+45	msp_0125	DKAN_132	sample_id	msp_0125	DKAN_132	TP_wrong
+45	msp_0125	DKAN_132	curator		Linda_Cova	FN
+45	msp_0125	DKAN_132	pmid	37069399	37069399	TP_correct
+45	msp_0125	DKAN_132	country	Denmark	Denmark	TP_correct
+45	msp_0125	DKAN_132	body_site	feces	feces	TP_correct
+45	msp_0125	DKAN_132	ncbi_accession		ERR10906384;ERR10906385;ERR10906386;ERR10906387	FN
+45	msp_0125	DKAN_132	sequencing_platform	IonProton	IonProton	TP_correct
+45	msp_0125	DKAN_132	age		25	FN
+45	msp_0125	DKAN_132	age_group		adult	FN
+45	msp_0125	DKAN_132	sex	Female	Female	TP_correct
+45	msp_0125	DKAN_132	antibiotics_current_use	No	No	TP_correct
+45	msp_0125	DKAN_132	bmi	not_reported	23.3	FN
+45	msp_0125	DKAN_132	disease	Anorexia Nervosa	healthy	TP_wrong
+45	msp_0125	DKAN_132	smoker	not_reported	Non-smoker (finding)	FN
+45	msp_0125	DKAN_132	treatment	selective serotonin re-uptake inhibitors; antipsychotics; benzodiazepines	no	TP_wrong
+45	msp_0125	DKAN_132	host_species	Homo sapiens and Mus musculus	Homo sapiens	TP_wrong
+46	msp_0125	DKAN_133	study_name	AN_microbiota_2023	FanY_2023	TP_wrong
+46	msp_0125	DKAN_133	subject_id		DKAN_133	FN
+46	msp_0125	DKAN_133	sample_id	msp_0125	DKAN_133	TP_wrong
+46	msp_0125	DKAN_133	curator		Linda_Cova	FN
+46	msp_0125	DKAN_133	pmid	37069399	37069399	TP_correct
+46	msp_0125	DKAN_133	country	Denmark	Denmark	TP_correct
+46	msp_0125	DKAN_133	body_site	feces	feces	TP_correct
+46	msp_0125	DKAN_133	ncbi_accession		ERR10906388;ERR10906389;ERR10906390;ERR10906391	FN
+46	msp_0125	DKAN_133	sequencing_platform	IonProton	IonProton	TP_correct
+46	msp_0125	DKAN_133	age		20	FN
+46	msp_0125	DKAN_133	age_group		adult	FN
+46	msp_0125	DKAN_133	sex	Female	Female	TP_correct
+46	msp_0125	DKAN_133	antibiotics_current_use	No	No	TP_correct
+46	msp_0125	DKAN_133	bmi	not_reported	22.6	FN
+46	msp_0125	DKAN_133	disease	Anorexia Nervosa	healthy	TP_wrong
+46	msp_0125	DKAN_133	smoker	not_reported	Non-smoker (finding)	FN
+46	msp_0125	DKAN_133	treatment	selective serotonin re-uptake inhibitors; antipsychotics; benzodiazepines	no	TP_wrong
+46	msp_0125	DKAN_133	host_species	Homo sapiens and Mus musculus	Homo sapiens	TP_wrong
+47	msp_0125	DKAN_134	study_name	AN_microbiota_2023	FanY_2023	TP_wrong
+47	msp_0125	DKAN_134	subject_id		DKAN_134	FN
+47	msp_0125	DKAN_134	sample_id	msp_0125	DKAN_134	TP_wrong
+47	msp_0125	DKAN_134	curator		Linda_Cova	FN
+47	msp_0125	DKAN_134	pmid	37069399	37069399	TP_correct
+47	msp_0125	DKAN_134	country	Denmark	Denmark	TP_correct
+47	msp_0125	DKAN_134	body_site	feces	feces	TP_correct
+47	msp_0125	DKAN_134	ncbi_accession		ERR10906392;ERR10906393;ERR10906394;ERR10906395;ERR10906396	FN
+47	msp_0125	DKAN_134	sequencing_platform	IonProton	IonProton	TP_correct
+47	msp_0125	DKAN_134	age		25	FN
+47	msp_0125	DKAN_134	age_group		adult	FN
+47	msp_0125	DKAN_134	sex	Female	Female	TP_correct
+47	msp_0125	DKAN_134	antibiotics_current_use	No	No	TP_correct
+47	msp_0125	DKAN_134	bmi	not_reported	24.0	FN
+47	msp_0125	DKAN_134	disease	Anorexia Nervosa	healthy	TP_wrong
+47	msp_0125	DKAN_134	smoker	not_reported	Non-smoker (finding)	FN
+47	msp_0125	DKAN_134	treatment	selective serotonin re-uptake inhibitors; antipsychotics; benzodiazepines	no	TP_wrong
+47	msp_0125	DKAN_134	host_species	Homo sapiens and Mus musculus	Homo sapiens	TP_wrong
+48	msp_0125	DKAN_135	study_name	AN_microbiota_2023	FanY_2023	TP_wrong
+48	msp_0125	DKAN_135	subject_id		DKAN_135	FN
+48	msp_0125	DKAN_135	sample_id	msp_0125	DKAN_135	TP_wrong
+48	msp_0125	DKAN_135	curator		Linda_Cova	FN
+48	msp_0125	DKAN_135	pmid	37069399	37069399	TP_correct
+48	msp_0125	DKAN_135	country	Denmark	Denmark	TP_correct
+48	msp_0125	DKAN_135	body_site	feces	feces	TP_correct
+48	msp_0125	DKAN_135	ncbi_accession		ERR10906397;ERR10906398;ERR10906399;ERR10906400	FN
+48	msp_0125	DKAN_135	sequencing_platform	IonProton	IonProton	TP_correct
+48	msp_0125	DKAN_135	age		22	FN
+48	msp_0125	DKAN_135	age_group		adult	FN
+48	msp_0125	DKAN_135	sex	Female	Female	TP_correct
+48	msp_0125	DKAN_135	antibiotics_current_use	No	No	TP_correct
+48	msp_0125	DKAN_135	bmi	not_reported	24.1	FN
+48	msp_0125	DKAN_135	disease	Anorexia Nervosa	healthy	TP_wrong
+48	msp_0125	DKAN_135	smoker	not_reported	Non-smoker (finding)	FN
+48	msp_0125	DKAN_135	treatment	selective serotonin re-uptake inhibitors; antipsychotics; benzodiazepines	no	TP_wrong
+48	msp_0125	DKAN_135	host_species	Homo sapiens and Mus musculus	Homo sapiens	TP_wrong
+49	msp_0145	DKAN_136	study_name	AN_microbiota_2023	FanY_2023	TP_wrong
+49	msp_0145	DKAN_136	subject_id		DKAN_136	FN
+49	msp_0145	DKAN_136	sample_id	msp_0145	DKAN_136	TP_wrong
+49	msp_0145	DKAN_136	curator		Linda_Cova	FN
+49	msp_0145	DKAN_136	pmid	37069399	37069399	TP_correct
+49	msp_0145	DKAN_136	country	Denmark	Denmark	TP_correct
+49	msp_0145	DKAN_136	body_site	feces	feces	TP_correct
+49	msp_0145	DKAN_136	ncbi_accession		ERR10906401;ERR10906402;ERR10906403;ERR10906404	FN
+49	msp_0145	DKAN_136	sequencing_platform	IonProton	IonProton	TP_correct
+49	msp_0145	DKAN_136	age		38	FN
+49	msp_0145	DKAN_136	age_group		adult	FN
+49	msp_0145	DKAN_136	sex	Female	Female	TP_correct
+49	msp_0145	DKAN_136	antibiotics_current_use	No	No	TP_correct
+49	msp_0145	DKAN_136	bmi	not_reported	16.2	FN
+49	msp_0145	DKAN_136	disease	Anorexia Nervosa	anorexia	TP_wrong
+49	msp_0145	DKAN_136	smoker	not_reported	Non-smoker (finding)	FN
+49	msp_0145	DKAN_136	treatment	selective serotonin re-uptake inhibitors; antipsychotics; benzodiazepines	no	TP_wrong
+49	msp_0145	DKAN_136	host_species	Homo sapiens and Mus musculus	Homo sapiens	TP_wrong
+50	msp_0145	DKAN_137	study_name	AN_microbiota_2023	FanY_2023	TP_wrong
+50	msp_0145	DKAN_137	subject_id		DKAN_137	FN
+50	msp_0145	DKAN_137	sample_id	msp_0145	DKAN_137	TP_wrong
+50	msp_0145	DKAN_137	curator		Linda_Cova	FN
+50	msp_0145	DKAN_137	pmid	37069399	37069399	TP_correct
+50	msp_0145	DKAN_137	country	Denmark	Denmark	TP_correct
+50	msp_0145	DKAN_137	body_site	feces	feces	TP_correct
+50	msp_0145	DKAN_137	ncbi_accession		ERR10906405;ERR10906406;ERR10906407;ERR10906408	FN
+50	msp_0145	DKAN_137	sequencing_platform	IonProton	IonProton	TP_correct
+50	msp_0145	DKAN_137	age		23	FN
+50	msp_0145	DKAN_137	age_group		adult	FN
+50	msp_0145	DKAN_137	sex	Female	Female	TP_correct
+50	msp_0145	DKAN_137	antibiotics_current_use	No	No	TP_correct
+50	msp_0145	DKAN_137	bmi	not_reported	16.1	FN
+50	msp_0145	DKAN_137	disease	Anorexia Nervosa	anorexia	TP_wrong
+50	msp_0145	DKAN_137	smoker	not_reported	Smoker (finding)	FN
+50	msp_0145	DKAN_137	treatment	selective serotonin re-uptake inhibitors; antipsychotics; benzodiazepines	antipsychotics	TP_wrong
+50	msp_0145	DKAN_137	host_species	Homo sapiens and Mus musculus	Homo sapiens	TP_wrong
+51	msp_0145	DKAN_138	study_name	AN_microbiota_2023	FanY_2023	TP_wrong
+51	msp_0145	DKAN_138	subject_id		DKAN_138	FN
+51	msp_0145	DKAN_138	sample_id	msp_0145	DKAN_138	TP_wrong
+51	msp_0145	DKAN_138	curator		Linda_Cova	FN
+51	msp_0145	DKAN_138	pmid	37069399	37069399	TP_correct
+51	msp_0145	DKAN_138	country	Denmark	Denmark	TP_correct
+51	msp_0145	DKAN_138	body_site	feces	feces	TP_correct
+51	msp_0145	DKAN_138	ncbi_accession		ERR10906409;ERR10906410;ERR10906411;ERR10906412	FN
+51	msp_0145	DKAN_138	sequencing_platform	IonProton	IonProton	TP_correct
+51	msp_0145	DKAN_138	age		38	FN
+51	msp_0145	DKAN_138	age_group		adult	FN
+51	msp_0145	DKAN_138	sex	Female	Female	TP_correct
+51	msp_0145	DKAN_138	antibiotics_current_use	No	No	TP_correct
+51	msp_0145	DKAN_138	bmi	not_reported	16.6	FN
+51	msp_0145	DKAN_138	disease	Anorexia Nervosa	anorexia	TP_wrong
+51	msp_0145	DKAN_138	smoker	not_reported	Non-smoker (finding)	FN
+51	msp_0145	DKAN_138	treatment	selective serotonin re-uptake inhibitors; antipsychotics; benzodiazepines	ssri;antipsychotics	TP_wrong
+51	msp_0145	DKAN_138	host_species	Homo sapiens and Mus musculus	Homo sapiens	TP_wrong
+52	msp_0145	DKAN_139	study_name	AN_microbiota_2023	FanY_2023	TP_wrong
+52	msp_0145	DKAN_139	subject_id		DKAN_139	FN
+52	msp_0145	DKAN_139	sample_id	msp_0145	DKAN_139	TP_wrong
+52	msp_0145	DKAN_139	curator		Linda_Cova	FN
+52	msp_0145	DKAN_139	pmid	37069399	37069399	TP_correct
+52	msp_0145	DKAN_139	country	Denmark	Denmark	TP_correct
+52	msp_0145	DKAN_139	body_site	feces	feces	TP_correct
+52	msp_0145	DKAN_139	ncbi_accession		ERR10906413;ERR10906414;ERR10906415;ERR10906416	FN
+52	msp_0145	DKAN_139	sequencing_platform	IonProton	IonProton	TP_correct
+52	msp_0145	DKAN_139	age		23	FN
+52	msp_0145	DKAN_139	age_group		adult	FN
+52	msp_0145	DKAN_139	sex	Female	Female	TP_correct
+52	msp_0145	DKAN_139	antibiotics_current_use	No	No	TP_correct
+52	msp_0145	DKAN_139	bmi	not_reported	24.8	FN
+52	msp_0145	DKAN_139	disease	Anorexia Nervosa	healthy	TP_wrong
+52	msp_0145	DKAN_139	smoker	not_reported	Non-smoker (finding)	FN
+52	msp_0145	DKAN_139	treatment	selective serotonin re-uptake inhibitors; antipsychotics; benzodiazepines	no	TP_wrong
+52	msp_0145	DKAN_139	host_species	Homo sapiens and Mus musculus	Homo sapiens	TP_wrong
+53	msp_0145	DKAN_14	study_name	AN_microbiota_2023	FanY_2023	TP_wrong
+53	msp_0145	DKAN_14	subject_id		DKAN_14	FN
+53	msp_0145	DKAN_14	sample_id	msp_0145	DKAN_14	TP_wrong
+53	msp_0145	DKAN_14	curator		Linda_Cova	FN
+53	msp_0145	DKAN_14	pmid	37069399	37069399	TP_correct
+53	msp_0145	DKAN_14	country	Denmark	Denmark	TP_correct
+53	msp_0145	DKAN_14	body_site	feces	feces	TP_correct
+53	msp_0145	DKAN_14	ncbi_accession		ERR10906417;ERR10906418;ERR10906419;ERR10906420	FN
+53	msp_0145	DKAN_14	sequencing_platform	IonProton	IonProton	TP_correct
+53	msp_0145	DKAN_14	age		32	FN
+53	msp_0145	DKAN_14	age_group		adult	FN
+53	msp_0145	DKAN_14	sex	Female	Female	TP_correct
+53	msp_0145	DKAN_14	antibiotics_current_use	No	No	TP_correct
+53	msp_0145	DKAN_14	bmi	not_reported	19.4	FN
+53	msp_0145	DKAN_14	disease	Anorexia Nervosa	anorexia	TP_wrong
+53	msp_0145	DKAN_14	smoker	not_reported	Non-smoker (finding)	FN
+53	msp_0145	DKAN_14	treatment	selective serotonin re-uptake inhibitors; antipsychotics; benzodiazepines	ssri	TP_wrong
+53	msp_0145	DKAN_14	host_species	Homo sapiens and Mus musculus	Homo sapiens	TP_wrong
+54	msp_0145	DKAN_140	study_name	AN_microbiota_2023	FanY_2023	TP_wrong
+54	msp_0145	DKAN_140	subject_id		DKAN_140	FN
+54	msp_0145	DKAN_140	sample_id	msp_0145	DKAN_140	TP_wrong
+54	msp_0145	DKAN_140	curator		Linda_Cova	FN
+54	msp_0145	DKAN_140	pmid	37069399	37069399	TP_correct
+54	msp_0145	DKAN_140	country	Denmark	Denmark	TP_correct
+54	msp_0145	DKAN_140	body_site	feces	feces	TP_correct
+54	msp_0145	DKAN_140	ncbi_accession		ERR10906421;ERR10906422;ERR10906423;ERR10906424	FN
+54	msp_0145	DKAN_140	sequencing_platform	IonProton	IonProton	TP_correct
+54	msp_0145	DKAN_140	age		23	FN
+54	msp_0145	DKAN_140	age_group		adult	FN
+54	msp_0145	DKAN_140	sex	Female	Female	TP_correct
+54	msp_0145	DKAN_140	antibiotics_current_use	No	No	TP_correct
+54	msp_0145	DKAN_140	bmi	not_reported	22.0	FN
+54	msp_0145	DKAN_140	disease	Anorexia Nervosa	healthy	TP_wrong
+54	msp_0145	DKAN_140	smoker	not_reported	Non-smoker (finding)	FN
+54	msp_0145	DKAN_140	treatment	selective serotonin re-uptake inhibitors; antipsychotics; benzodiazepines	no	TP_wrong
+54	msp_0145	DKAN_140	host_species	Homo sapiens and Mus musculus	Homo sapiens	TP_wrong
+55	msp_0145	DKAN_141	study_name	AN_microbiota_2023	FanY_2023	TP_wrong
+55	msp_0145	DKAN_141	subject_id		DKAN_141	FN
+55	msp_0145	DKAN_141	sample_id	msp_0145	DKAN_141	TP_wrong
+55	msp_0145	DKAN_141	curator		Linda_Cova	FN
+55	msp_0145	DKAN_141	pmid	37069399	37069399	TP_correct
+55	msp_0145	DKAN_141	country	Denmark	Denmark	TP_correct
+55	msp_0145	DKAN_141	body_site	feces	feces	TP_correct
+55	msp_0145	DKAN_141	ncbi_accession		ERR10906425;ERR10906426;ERR10906427;ERR10906428	FN
+55	msp_0145	DKAN_141	sequencing_platform	IonProton	IonProton	TP_correct
+55	msp_0145	DKAN_141	age		22	FN
+55	msp_0145	DKAN_141	age_group		adult	FN
+55	msp_0145	DKAN_141	sex	Female	Female	TP_correct
+55	msp_0145	DKAN_141	antibiotics_current_use	No	No	TP_correct
+55	msp_0145	DKAN_141	bmi	not_reported	24.0	FN
+55	msp_0145	DKAN_141	disease	Anorexia Nervosa	healthy	TP_wrong
+55	msp_0145	DKAN_141	smoker	not_reported	Non-smoker (finding)	FN
+55	msp_0145	DKAN_141	treatment	selective serotonin re-uptake inhibitors; antipsychotics; benzodiazepines	no	TP_wrong
+55	msp_0145	DKAN_141	host_species	Homo sapiens and Mus musculus	Homo sapiens	TP_wrong
+56	msp_0148c	DKAN_142	study_name	AN_microbiota_2023	FanY_2023	TP_wrong
+56	msp_0148c	DKAN_142	subject_id		DKAN_142	FN
+56	msp_0148c	DKAN_142	sample_id	msp_0148c	DKAN_142	TP_wrong
+56	msp_0148c	DKAN_142	curator		Linda_Cova	FN
+56	msp_0148c	DKAN_142	pmid	37069399	37069399	TP_correct
+56	msp_0148c	DKAN_142	country	Denmark	Denmark	TP_correct
+56	msp_0148c	DKAN_142	body_site	feces	feces	TP_correct
+56	msp_0148c	DKAN_142	ncbi_accession		ERR10906429;ERR10906430;ERR10906431;ERR10906432	FN
+56	msp_0148c	DKAN_142	sequencing_platform	IonProton	IonProton	TP_correct
+56	msp_0148c	DKAN_142	age		15	FN
+56	msp_0148c	DKAN_142	age_group		schoolage	FN
+56	msp_0148c	DKAN_142	sex	Female	Female	TP_correct
+56	msp_0148c	DKAN_142	antibiotics_current_use	No	No	TP_correct
+56	msp_0148c	DKAN_142	bmi	not_reported	15.3	FN
+56	msp_0148c	DKAN_142	disease	Anorexia Nervosa	anorexia	TP_wrong
+56	msp_0148c	DKAN_142	smoker	not_reported	Non-smoker (finding)	FN
+56	msp_0148c	DKAN_142	treatment	selective serotonin re-uptake inhibitors; antipsychotics; benzodiazepines	no	TP_wrong
+56	msp_0148c	DKAN_142	host_species	Homo sapiens and Mus musculus	Homo sapiens	TP_wrong
+57	msp_0148c	DKAN_143	study_name	AN_microbiota_2023	FanY_2023	TP_wrong
+57	msp_0148c	DKAN_143	subject_id		DKAN_143	FN
+57	msp_0148c	DKAN_143	sample_id	msp_0148c	DKAN_143	TP_wrong
+57	msp_0148c	DKAN_143	curator		Linda_Cova	FN
+57	msp_0148c	DKAN_143	pmid	37069399	37069399	TP_correct
+57	msp_0148c	DKAN_143	country	Denmark	Denmark	TP_correct
+57	msp_0148c	DKAN_143	body_site	feces	feces	TP_correct
+57	msp_0148c	DKAN_143	ncbi_accession		ERR10906433;ERR10906434;ERR10906435;ERR10906436	FN
+57	msp_0148c	DKAN_143	sequencing_platform	IonProton	IonProton	TP_correct
+57	msp_0148c	DKAN_143	age		26	FN
+57	msp_0148c	DKAN_143	age_group		adult	FN
+57	msp_0148c	DKAN_143	sex	Female	Female	TP_correct
+57	msp_0148c	DKAN_143	antibiotics_current_use	No	No	TP_correct
+57	msp_0148c	DKAN_143	bmi	not_reported	24.9	FN
+57	msp_0148c	DKAN_143	disease	Anorexia Nervosa	healthy	TP_wrong
+57	msp_0148c	DKAN_143	smoker	not_reported	Non-smoker (finding)	FN
+57	msp_0148c	DKAN_143	treatment	selective serotonin re-uptake inhibitors; antipsychotics; benzodiazepines	no	TP_wrong
+57	msp_0148c	DKAN_143	host_species	Homo sapiens and Mus musculus	Homo sapiens	TP_wrong
+58	msp_0148c	DKAN_144	study_name	AN_microbiota_2023	FanY_2023	TP_wrong
+58	msp_0148c	DKAN_144	subject_id		DKAN_144	FN
+58	msp_0148c	DKAN_144	sample_id	msp_0148c	DKAN_144	TP_wrong
+58	msp_0148c	DKAN_144	curator		Linda_Cova	FN
+58	msp_0148c	DKAN_144	pmid	37069399	37069399	TP_correct
+58	msp_0148c	DKAN_144	country	Denmark	Denmark	TP_correct
+58	msp_0148c	DKAN_144	body_site	feces	feces	TP_correct
+58	msp_0148c	DKAN_144	ncbi_accession		ERR10906437;ERR10906438;ERR10906439;ERR10906440	FN
+58	msp_0148c	DKAN_144	sequencing_platform	IonProton	IonProton	TP_correct
+58	msp_0148c	DKAN_144	age		22	FN
+58	msp_0148c	DKAN_144	age_group		adult	FN
+58	msp_0148c	DKAN_144	sex	Female	Female	TP_correct
+58	msp_0148c	DKAN_144	antibiotics_current_use	No	No	TP_correct
+58	msp_0148c	DKAN_144	bmi	not_reported	23.4	FN
+58	msp_0148c	DKAN_144	disease	Anorexia Nervosa	healthy	TP_wrong
+58	msp_0148c	DKAN_144	smoker	not_reported	Non-smoker (finding)	FN
+58	msp_0148c	DKAN_144	treatment	selective serotonin re-uptake inhibitors; antipsychotics; benzodiazepines	no	TP_wrong
+58	msp_0148c	DKAN_144	host_species	Homo sapiens and Mus musculus	Homo sapiens	TP_wrong
+59	msp_0148c	DKAN_145	study_name	AN_microbiota_2023	FanY_2023	TP_wrong
+59	msp_0148c	DKAN_145	subject_id		DKAN_145	FN
+59	msp_0148c	DKAN_145	sample_id	msp_0148c	DKAN_145	TP_wrong
+59	msp_0148c	DKAN_145	curator		Linda_Cova	FN
+59	msp_0148c	DKAN_145	pmid	37069399	37069399	TP_correct
+59	msp_0148c	DKAN_145	country	Denmark	Denmark	TP_correct
+59	msp_0148c	DKAN_145	body_site	feces	feces	TP_correct
+59	msp_0148c	DKAN_145	ncbi_accession		ERR10906441;ERR10906442;ERR10906443;ERR10906444	FN
+59	msp_0148c	DKAN_145	sequencing_platform	IonProton	IonProton	TP_correct
+59	msp_0148c	DKAN_145	age		26	FN
+59	msp_0148c	DKAN_145	age_group		adult	FN
+59	msp_0148c	DKAN_145	sex	Female	Female	TP_correct
+59	msp_0148c	DKAN_145	antibiotics_current_use	No	No	TP_correct
+59	msp_0148c	DKAN_145	bmi	not_reported	22.4	FN
+59	msp_0148c	DKAN_145	disease	Anorexia Nervosa	healthy	TP_wrong
+59	msp_0148c	DKAN_145	smoker	not_reported	Non-smoker (finding)	FN
+59	msp_0148c	DKAN_145	treatment	selective serotonin re-uptake inhibitors; antipsychotics; benzodiazepines	no	TP_wrong
+59	msp_0148c	DKAN_145	host_species	Homo sapiens and Mus musculus	Homo sapiens	TP_wrong
+60	msp_0148c	DKAN_146	study_name	AN_microbiota_2023	FanY_2023	TP_wrong
+60	msp_0148c	DKAN_146	subject_id		DKAN_146	FN
+60	msp_0148c	DKAN_146	sample_id	msp_0148c	DKAN_146	TP_wrong
+60	msp_0148c	DKAN_146	curator		Linda_Cova	FN
+60	msp_0148c	DKAN_146	pmid	37069399	37069399	TP_correct
+60	msp_0148c	DKAN_146	country	Denmark	Denmark	TP_correct
+60	msp_0148c	DKAN_146	body_site	feces	feces	TP_correct
+60	msp_0148c	DKAN_146	ncbi_accession		ERR10906445;ERR10906446;ERR10906447;ERR10906448;ERR10906449	FN
+60	msp_0148c	DKAN_146	sequencing_platform	IonProton	IonProton	TP_correct
+60	msp_0148c	DKAN_146	age		23	FN
+60	msp_0148c	DKAN_146	age_group		adult	FN
+60	msp_0148c	DKAN_146	sex	Female	Female	TP_correct
+60	msp_0148c	DKAN_146	antibiotics_current_use	No	No	TP_correct
+60	msp_0148c	DKAN_146	bmi	not_reported	22.3	FN
+60	msp_0148c	DKAN_146	disease	Anorexia Nervosa	healthy	TP_wrong
+60	msp_0148c	DKAN_146	smoker	not_reported	Non-smoker (finding)	FN
+60	msp_0148c	DKAN_146	treatment	selective serotonin re-uptake inhibitors; antipsychotics; benzodiazepines	no	TP_wrong
+60	msp_0148c	DKAN_146	host_species	Homo sapiens and Mus musculus	Homo sapiens	TP_wrong
+61	msp_0148c	DKAN_147	study_name	AN_microbiota_2023	FanY_2023	TP_wrong
+61	msp_0148c	DKAN_147	subject_id		DKAN_147	FN
+61	msp_0148c	DKAN_147	sample_id	msp_0148c	DKAN_147	TP_wrong
+61	msp_0148c	DKAN_147	curator		Linda_Cova	FN
+61	msp_0148c	DKAN_147	pmid	37069399	37069399	TP_correct
+61	msp_0148c	DKAN_147	country	Denmark	Denmark	TP_correct
+61	msp_0148c	DKAN_147	body_site	feces	feces	TP_correct
+61	msp_0148c	DKAN_147	ncbi_accession		ERR10906450;ERR10906451;ERR10906452;ERR10906453	FN
+61	msp_0148c	DKAN_147	sequencing_platform	IonProton	IonProton	TP_correct
+61	msp_0148c	DKAN_147	age		15	FN
+61	msp_0148c	DKAN_147	age_group		schoolage	FN
+61	msp_0148c	DKAN_147	sex	Female	Female	TP_correct
+61	msp_0148c	DKAN_147	antibiotics_current_use	No	No	TP_correct
+61	msp_0148c	DKAN_147	bmi	not_reported	20.1	FN
+61	msp_0148c	DKAN_147	disease	Anorexia Nervosa	healthy	TP_wrong
+61	msp_0148c	DKAN_147	smoker	not_reported	Non-smoker (finding)	FN
+61	msp_0148c	DKAN_147	treatment	selective serotonin re-uptake inhibitors; antipsychotics; benzodiazepines	no	TP_wrong
+61	msp_0148c	DKAN_147	host_species	Homo sapiens and Mus musculus	Homo sapiens	TP_wrong
+62	msp_0148c	DKAN_15	study_name	AN_microbiota_2023	FanY_2023	TP_wrong
+62	msp_0148c	DKAN_15	subject_id		DKAN_15	FN
+62	msp_0148c	DKAN_15	sample_id	msp_0148c	DKAN_15	TP_wrong
+62	msp_0148c	DKAN_15	curator		Linda_Cova	FN
+62	msp_0148c	DKAN_15	pmid	37069399	37069399	TP_correct
+62	msp_0148c	DKAN_15	country	Denmark	Denmark	TP_correct
+62	msp_0148c	DKAN_15	body_site	feces	feces	TP_correct
+62	msp_0148c	DKAN_15	ncbi_accession		ERR10906454;ERR10906455;ERR10906456;ERR10906457	FN
+62	msp_0148c	DKAN_15	sequencing_platform	IonProton	IonProton	TP_correct
+62	msp_0148c	DKAN_15	age		18	FN
+62	msp_0148c	DKAN_15	age_group		schoolage	FN
+62	msp_0148c	DKAN_15	sex	Female	Female	TP_correct
+62	msp_0148c	DKAN_15	antibiotics_current_use	No	No	TP_correct
+62	msp_0148c	DKAN_15	bmi	not_reported	16.1	FN
+62	msp_0148c	DKAN_15	disease	Anorexia Nervosa	anorexia	TP_wrong
+62	msp_0148c	DKAN_15	smoker	not_reported	Non-smoker (finding)	FN
+62	msp_0148c	DKAN_15	treatment	selective serotonin re-uptake inhibitors; antipsychotics; benzodiazepines	ssri	TP_wrong
+62	msp_0148c	DKAN_15	host_species	Homo sapiens and Mus musculus	Homo sapiens	TP_wrong
+63	msp_0153	DKAN_16	study_name	AN_microbiota_2023	FanY_2023	TP_wrong
+63	msp_0153	DKAN_16	subject_id		DKAN_16	FN
+63	msp_0153	DKAN_16	sample_id	msp_0153	DKAN_16	TP_wrong
+63	msp_0153	DKAN_16	curator		Linda_Cova	FN
+63	msp_0153	DKAN_16	pmid	37069399	37069399	TP_correct
+63	msp_0153	DKAN_16	country	Denmark	Denmark	TP_correct
+63	msp_0153	DKAN_16	body_site	feces	feces	TP_correct
+63	msp_0153	DKAN_16	ncbi_accession		ERR10906458;ERR10906459;ERR10906460;ERR10906461	FN
+63	msp_0153	DKAN_16	sequencing_platform	IonProton	IonProton	TP_correct
+63	msp_0153	DKAN_16	age		21	FN
+63	msp_0153	DKAN_16	age_group		adult	FN
+63	msp_0153	DKAN_16	sex	Female	Female	TP_correct
+63	msp_0153	DKAN_16	antibiotics_current_use	No	No	TP_correct
+63	msp_0153	DKAN_16	bmi	not_reported	17.3	FN
+63	msp_0153	DKAN_16	disease	Anorexia Nervosa	anorexia	TP_wrong
+63	msp_0153	DKAN_16	smoker	not_reported	Non-smoker (finding)	FN
+63	msp_0153	DKAN_16	treatment	selective serotonin re-uptake inhibitors; antipsychotics; benzodiazepines	ssri	TP_wrong
+63	msp_0153	DKAN_16	host_species	Homo sapiens and Mus musculus	Homo sapiens	TP_wrong
+64	msp_0153	DKAN_17	study_name	AN_microbiota_2023	FanY_2023	TP_wrong
+64	msp_0153	DKAN_17	subject_id		DKAN_17	FN
+64	msp_0153	DKAN_17	sample_id	msp_0153	DKAN_17	TP_wrong
+64	msp_0153	DKAN_17	curator		Linda_Cova	FN
+64	msp_0153	DKAN_17	pmid	37069399	37069399	TP_correct
+64	msp_0153	DKAN_17	country	Denmark	Denmark	TP_correct
+64	msp_0153	DKAN_17	body_site	feces	feces	TP_correct
+64	msp_0153	DKAN_17	ncbi_accession		ERR10906462;ERR10906463;ERR10906464;ERR10906465	FN
+64	msp_0153	DKAN_17	sequencing_platform	IonProton	IonProton	TP_correct
+64	msp_0153	DKAN_17	age		26	FN
+64	msp_0153	DKAN_17	age_group		adult	FN
+64	msp_0153	DKAN_17	sex	Female	Female	TP_correct
+64	msp_0153	DKAN_17	antibiotics_current_use	No	No	TP_correct
+64	msp_0153	DKAN_17	bmi	not_reported	16.8	FN
+64	msp_0153	DKAN_17	disease	Anorexia Nervosa	anorexia	TP_wrong
+64	msp_0153	DKAN_17	smoker	not_reported	Non-smoker (finding)	FN
+64	msp_0153	DKAN_17	treatment	selective serotonin re-uptake inhibitors; antipsychotics; benzodiazepines	no	TP_wrong
+64	msp_0153	DKAN_17	host_species	Homo sapiens and Mus musculus	Homo sapiens	TP_wrong
+65	msp_0153	DKAN_18	study_name	AN_microbiota_2023	FanY_2023	TP_wrong
+65	msp_0153	DKAN_18	subject_id		DKAN_18	FN
+65	msp_0153	DKAN_18	sample_id	msp_0153	DKAN_18	TP_wrong
+65	msp_0153	DKAN_18	curator		Linda_Cova	FN
+65	msp_0153	DKAN_18	pmid	37069399	37069399	TP_correct
+65	msp_0153	DKAN_18	country	Denmark	Denmark	TP_correct
+65	msp_0153	DKAN_18	body_site	feces	feces	TP_correct
+65	msp_0153	DKAN_18	ncbi_accession		ERR10906466;ERR10906467;ERR10906468;ERR10906469	FN
+65	msp_0153	DKAN_18	sequencing_platform	IonProton	IonProton	TP_correct
+65	msp_0153	DKAN_18	age		25	FN
+65	msp_0153	DKAN_18	age_group		adult	FN
+65	msp_0153	DKAN_18	sex	Female	Female	TP_correct
+65	msp_0153	DKAN_18	antibiotics_current_use	No	No	TP_correct
+65	msp_0153	DKAN_18	bmi	not_reported	17.3	FN
+65	msp_0153	DKAN_18	disease	Anorexia Nervosa	anorexia	TP_wrong
+65	msp_0153	DKAN_18	smoker	not_reported	Non-smoker (finding)	FN
+65	msp_0153	DKAN_18	treatment	selective serotonin re-uptake inhibitors; antipsychotics; benzodiazepines	no	TP_wrong
+65	msp_0153	DKAN_18	host_species	Homo sapiens and Mus musculus	Homo sapiens	TP_wrong
+66	msp_0153	DKAN_19	study_name	AN_microbiota_2023	FanY_2023	TP_wrong
+66	msp_0153	DKAN_19	subject_id		DKAN_19	FN
+66	msp_0153	DKAN_19	sample_id	msp_0153	DKAN_19	TP_wrong
+66	msp_0153	DKAN_19	curator		Linda_Cova	FN
+66	msp_0153	DKAN_19	pmid	37069399	37069399	TP_correct
+66	msp_0153	DKAN_19	country	Denmark	Denmark	TP_correct
+66	msp_0153	DKAN_19	body_site	feces	feces	TP_correct
+66	msp_0153	DKAN_19	ncbi_accession		ERR10906470;ERR10906471;ERR10906472;ERR10906473	FN
+66	msp_0153	DKAN_19	sequencing_platform	IonProton	IonProton	TP_correct
+66	msp_0153	DKAN_19	age		15	FN
+66	msp_0153	DKAN_19	age_group		schoolage	FN
+66	msp_0153	DKAN_19	sex	Female	Female	TP_correct
+66	msp_0153	DKAN_19	antibiotics_current_use	No	No	TP_correct
+66	msp_0153	DKAN_19	bmi	not_reported	18.1	FN
+66	msp_0153	DKAN_19	disease	Anorexia Nervosa	anorexia	TP_wrong
+66	msp_0153	DKAN_19	smoker	not_reported	Non-smoker (finding)	FN
+66	msp_0153	DKAN_19	treatment	selective serotonin re-uptake inhibitors; antipsychotics; benzodiazepines	no	TP_wrong
+66	msp_0153	DKAN_19	host_species	Homo sapiens and Mus musculus	Homo sapiens	TP_wrong
+67	msp_0153	DKAN_20	study_name	AN_microbiota_2023	FanY_2023	TP_wrong
+67	msp_0153	DKAN_20	subject_id		DKAN_20	FN
+67	msp_0153	DKAN_20	sample_id	msp_0153	DKAN_20	TP_wrong
+67	msp_0153	DKAN_20	curator		Linda_Cova	FN
+67	msp_0153	DKAN_20	pmid	37069399	37069399	TP_correct
+67	msp_0153	DKAN_20	country	Denmark	Denmark	TP_correct
+67	msp_0153	DKAN_20	body_site	feces	feces	TP_correct
+67	msp_0153	DKAN_20	ncbi_accession		ERR10906474;ERR10906475;ERR10906476;ERR10906477	FN
+67	msp_0153	DKAN_20	sequencing_platform	IonProton	IonProton	TP_correct
+67	msp_0153	DKAN_20	age		15	FN
+67	msp_0153	DKAN_20	age_group		schoolage	FN
+67	msp_0153	DKAN_20	sex	Female	Female	TP_correct
+67	msp_0153	DKAN_20	antibiotics_current_use	No	No	TP_correct
+67	msp_0153	DKAN_20	bmi	not_reported	19.8	FN
+67	msp_0153	DKAN_20	disease	Anorexia Nervosa	healthy	TP_wrong
+67	msp_0153	DKAN_20	smoker	not_reported	Non-smoker (finding)	FN
+67	msp_0153	DKAN_20	treatment	selective serotonin re-uptake inhibitors; antipsychotics; benzodiazepines	no	TP_wrong
+67	msp_0153	DKAN_20	host_species	Homo sapiens and Mus musculus	Homo sapiens	TP_wrong
+68	msp_0153	DKAN_21	study_name	AN_microbiota_2023	FanY_2023	TP_wrong
+68	msp_0153	DKAN_21	subject_id		DKAN_21	FN
+68	msp_0153	DKAN_21	sample_id	msp_0153	DKAN_21	TP_wrong
+68	msp_0153	DKAN_21	curator		Linda_Cova	FN
+68	msp_0153	DKAN_21	pmid	37069399	37069399	TP_correct
+68	msp_0153	DKAN_21	country	Denmark	Denmark	TP_correct
+68	msp_0153	DKAN_21	body_site	feces	feces	TP_correct
+68	msp_0153	DKAN_21	ncbi_accession		ERR10906478;ERR10906479;ERR10906480;ERR10906481	FN
+68	msp_0153	DKAN_21	sequencing_platform	IonProton	IonProton	TP_correct
+68	msp_0153	DKAN_21	age		24	FN
+68	msp_0153	DKAN_21	age_group		adult	FN
+68	msp_0153	DKAN_21	sex	Female	Female	TP_correct
+68	msp_0153	DKAN_21	antibiotics_current_use	No	No	TP_correct
+68	msp_0153	DKAN_21	bmi	not_reported	16.9	FN
+68	msp_0153	DKAN_21	disease	Anorexia Nervosa	anorexia	TP_wrong
+68	msp_0153	DKAN_21	smoker	not_reported	Non-smoker (finding)	FN
+68	msp_0153	DKAN_21	treatment	selective serotonin re-uptake inhibitors; antipsychotics; benzodiazepines	no	TP_wrong
+68	msp_0153	DKAN_21	host_species	Homo sapiens and Mus musculus	Homo sapiens	TP_wrong
+69	msp_0153	DKAN_22	study_name	AN_microbiota_2023	FanY_2023	TP_wrong
+69	msp_0153	DKAN_22	subject_id		DKAN_22	FN
+69	msp_0153	DKAN_22	sample_id	msp_0153	DKAN_22	TP_wrong
+69	msp_0153	DKAN_22	curator		Linda_Cova	FN
+69	msp_0153	DKAN_22	pmid	37069399	37069399	TP_correct
+69	msp_0153	DKAN_22	country	Denmark	Denmark	TP_correct
+69	msp_0153	DKAN_22	body_site	feces	feces	TP_correct
+69	msp_0153	DKAN_22	ncbi_accession		ERR10906482;ERR10906483;ERR10906484;ERR10906485	FN
+69	msp_0153	DKAN_22	sequencing_platform	IonProton	IonProton	TP_correct
+69	msp_0153	DKAN_22	age		23	FN
+69	msp_0153	DKAN_22	age_group		adult	FN
+69	msp_0153	DKAN_22	sex	Female	Female	TP_correct
+69	msp_0153	DKAN_22	antibiotics_current_use	No	No	TP_correct
+69	msp_0153	DKAN_22	bmi	not_reported	18.0	FN
+69	msp_0153	DKAN_22	disease	Anorexia Nervosa	anorexia	TP_wrong
+69	msp_0153	DKAN_22	smoker	not_reported	Non-smoker (finding)	FN
+69	msp_0153	DKAN_22	treatment	selective serotonin re-uptake inhibitors; antipsychotics; benzodiazepines	no	TP_wrong
+69	msp_0153	DKAN_22	host_species	Homo sapiens and Mus musculus	Homo sapiens	TP_wrong
+70	msp_0258	DKAN_23	study_name	AN_microbiota_2023	FanY_2023	TP_wrong
+70	msp_0258	DKAN_23	subject_id		DKAN_23	FN
+70	msp_0258	DKAN_23	sample_id	msp_0258	DKAN_23	TP_wrong
+70	msp_0258	DKAN_23	curator		Linda_Cova	FN
+70	msp_0258	DKAN_23	pmid	37069399	37069399	TP_correct
+70	msp_0258	DKAN_23	country	Denmark	Denmark	TP_correct
+70	msp_0258	DKAN_23	body_site	feces	feces	TP_correct
+70	msp_0258	DKAN_23	ncbi_accession		ERR10906486;ERR10906487;ERR10906488;ERR10906489	FN
+70	msp_0258	DKAN_23	sequencing_platform	IonProton	IonProton	TP_correct
+70	msp_0258	DKAN_23	age		16	FN
+70	msp_0258	DKAN_23	age_group		schoolage	FN
+70	msp_0258	DKAN_23	sex	Female	Female	TP_correct
+70	msp_0258	DKAN_23	antibiotics_current_use	No	No	TP_correct
+70	msp_0258	DKAN_23	bmi	not_reported	16.7	FN
+70	msp_0258	DKAN_23	disease	Anorexia Nervosa	anorexia	TP_wrong
+70	msp_0258	DKAN_23	smoker	not_reported	Non-smoker (finding)	FN
+70	msp_0258	DKAN_23	treatment	selective serotonin re-uptake inhibitors; antipsychotics; benzodiazepines	no	TP_wrong
+70	msp_0258	DKAN_23	host_species	Homo sapiens and Mus musculus	Homo sapiens	TP_wrong
+71	msp_0258	DKAN_24	study_name	AN_microbiota_2023	FanY_2023	TP_wrong
+71	msp_0258	DKAN_24	subject_id		DKAN_24	FN
+71	msp_0258	DKAN_24	sample_id	msp_0258	DKAN_24	TP_wrong
+71	msp_0258	DKAN_24	curator		Linda_Cova	FN
+71	msp_0258	DKAN_24	pmid	37069399	37069399	TP_correct
+71	msp_0258	DKAN_24	country	Denmark	Denmark	TP_correct
+71	msp_0258	DKAN_24	body_site	feces	feces	TP_correct
+71	msp_0258	DKAN_24	ncbi_accession		ERR10906490;ERR10906491;ERR10906492;ERR10906493	FN
+71	msp_0258	DKAN_24	sequencing_platform	IonProton	IonProton	TP_correct
+71	msp_0258	DKAN_24	age		16	FN
+71	msp_0258	DKAN_24	age_group		schoolage	FN
+71	msp_0258	DKAN_24	sex	Female	Female	TP_correct
+71	msp_0258	DKAN_24	antibiotics_current_use	No	No	TP_correct
+71	msp_0258	DKAN_24	bmi	not_reported	23.0	FN
+71	msp_0258	DKAN_24	disease	Anorexia Nervosa	healthy	TP_wrong
+71	msp_0258	DKAN_24	smoker	not_reported	Non-smoker (finding)	FN
+71	msp_0258	DKAN_24	treatment	selective serotonin re-uptake inhibitors; antipsychotics; benzodiazepines	no	TP_wrong
+71	msp_0258	DKAN_24	host_species	Homo sapiens and Mus musculus	Homo sapiens	TP_wrong
+72	msp_0258	DKAN_25	study_name	AN_microbiota_2023	FanY_2023	TP_wrong
+72	msp_0258	DKAN_25	subject_id		DKAN_25	FN
+72	msp_0258	DKAN_25	sample_id	msp_0258	DKAN_25	TP_wrong
+72	msp_0258	DKAN_25	curator		Linda_Cova	FN
+72	msp_0258	DKAN_25	pmid	37069399	37069399	TP_correct
+72	msp_0258	DKAN_25	country	Denmark	Denmark	TP_correct
+72	msp_0258	DKAN_25	body_site	feces	feces	TP_correct
+72	msp_0258	DKAN_25	ncbi_accession		ERR10906494;ERR10906495;ERR10906496;ERR10906497	FN
+72	msp_0258	DKAN_25	sequencing_platform	IonProton	IonProton	TP_correct
+72	msp_0258	DKAN_25	age		16	FN
+72	msp_0258	DKAN_25	age_group		schoolage	FN
+72	msp_0258	DKAN_25	sex	Female	Female	TP_correct
+72	msp_0258	DKAN_25	antibiotics_current_use	No	No	TP_correct
+72	msp_0258	DKAN_25	bmi	not_reported	20.1	FN
+72	msp_0258	DKAN_25	disease	Anorexia Nervosa	healthy	TP_wrong
+72	msp_0258	DKAN_25	smoker	not_reported	Non-smoker (finding)	FN
+72	msp_0258	DKAN_25	treatment	selective serotonin re-uptake inhibitors; antipsychotics; benzodiazepines	no	TP_wrong
+72	msp_0258	DKAN_25	host_species	Homo sapiens and Mus musculus	Homo sapiens	TP_wrong
+73	msp_0258	DKAN_26	study_name	AN_microbiota_2023	FanY_2023	TP_wrong
+73	msp_0258	DKAN_26	subject_id		DKAN_26	FN
+73	msp_0258	DKAN_26	sample_id	msp_0258	DKAN_26	TP_wrong
+73	msp_0258	DKAN_26	curator		Linda_Cova	FN
+73	msp_0258	DKAN_26	pmid	37069399	37069399	TP_correct
+73	msp_0258	DKAN_26	country	Denmark	Denmark	TP_correct
+73	msp_0258	DKAN_26	body_site	feces	feces	TP_correct
+73	msp_0258	DKAN_26	ncbi_accession		ERR10906498;ERR10906499;ERR10906500;ERR10906501	FN
+73	msp_0258	DKAN_26	sequencing_platform	IonProton	IonProton	TP_correct
+73	msp_0258	DKAN_26	age		19	FN
+73	msp_0258	DKAN_26	age_group		adult	FN
+73	msp_0258	DKAN_26	sex	Female	Female	TP_correct
+73	msp_0258	DKAN_26	antibiotics_current_use	No	No	TP_correct
+73	msp_0258	DKAN_26	bmi	not_reported	20.7	FN
+73	msp_0258	DKAN_26	disease	Anorexia Nervosa	healthy	TP_wrong
+73	msp_0258	DKAN_26	smoker	not_reported	Non-smoker (finding)	FN
+73	msp_0258	DKAN_26	treatment	selective serotonin re-uptake inhibitors; antipsychotics; benzodiazepines	no	TP_wrong
+73	msp_0258	DKAN_26	host_species	Homo sapiens and Mus musculus	Homo sapiens	TP_wrong
+74	msp_0258	DKAN_27	study_name	AN_microbiota_2023	FanY_2023	TP_wrong
+74	msp_0258	DKAN_27	subject_id		DKAN_27	FN
+74	msp_0258	DKAN_27	sample_id	msp_0258	DKAN_27	TP_wrong
+74	msp_0258	DKAN_27	curator		Linda_Cova	FN
+74	msp_0258	DKAN_27	pmid	37069399	37069399	TP_correct
+74	msp_0258	DKAN_27	country	Denmark	Denmark	TP_correct
+74	msp_0258	DKAN_27	body_site	feces	feces	TP_correct
+74	msp_0258	DKAN_27	ncbi_accession		ERR10906502;ERR10906503;ERR10906504;ERR10906505	FN
+74	msp_0258	DKAN_27	sequencing_platform	IonProton	IonProton	TP_correct
+74	msp_0258	DKAN_27	age		18	FN
+74	msp_0258	DKAN_27	age_group		schoolage	FN
+74	msp_0258	DKAN_27	sex	Female	Female	TP_correct
+74	msp_0258	DKAN_27	antibiotics_current_use	No	No	TP_correct
+74	msp_0258	DKAN_27	bmi	not_reported	22.2	FN
+74	msp_0258	DKAN_27	disease	Anorexia Nervosa	healthy	TP_wrong
+74	msp_0258	DKAN_27	smoker	not_reported	Non-smoker (finding)	FN
+74	msp_0258	DKAN_27	treatment	selective serotonin re-uptake inhibitors; antipsychotics; benzodiazepines	no	TP_wrong
+74	msp_0258	DKAN_27	host_species	Homo sapiens and Mus musculus	Homo sapiens	TP_wrong
+75	msp_0258	DKAN_28	study_name	AN_microbiota_2023	FanY_2023	TP_wrong
+75	msp_0258	DKAN_28	subject_id		DKAN_28	FN
+75	msp_0258	DKAN_28	sample_id	msp_0258	DKAN_28	TP_wrong
+75	msp_0258	DKAN_28	curator		Linda_Cova	FN
+75	msp_0258	DKAN_28	pmid	37069399	37069399	TP_correct
+75	msp_0258	DKAN_28	country	Denmark	Denmark	TP_correct
+75	msp_0258	DKAN_28	body_site	feces	feces	TP_correct
+75	msp_0258	DKAN_28	ncbi_accession		ERR10906506;ERR10906507;ERR10906508;ERR10906509	FN
+75	msp_0258	DKAN_28	sequencing_platform	IonProton	IonProton	TP_correct
+75	msp_0258	DKAN_28	age		16	FN
+75	msp_0258	DKAN_28	age_group		schoolage	FN
+75	msp_0258	DKAN_28	sex	Female	Female	TP_correct
+75	msp_0258	DKAN_28	antibiotics_current_use	No	No	TP_correct
+75	msp_0258	DKAN_28	bmi	not_reported	20.4	FN
+75	msp_0258	DKAN_28	disease	Anorexia Nervosa	anorexia	TP_wrong
+75	msp_0258	DKAN_28	smoker	not_reported	Non-smoker (finding)	FN
+75	msp_0258	DKAN_28	treatment	selective serotonin re-uptake inhibitors; antipsychotics; benzodiazepines	antipsychotics;benzodiazepines	TP_wrong
+75	msp_0258	DKAN_28	host_species	Homo sapiens and Mus musculus	Homo sapiens	TP_wrong
+76	msp_0258	DKAN_29	study_name	AN_microbiota_2023	FanY_2023	TP_wrong
+76	msp_0258	DKAN_29	subject_id		DKAN_29	FN
+76	msp_0258	DKAN_29	sample_id	msp_0258	DKAN_29	TP_wrong
+76	msp_0258	DKAN_29	curator		Linda_Cova	FN
+76	msp_0258	DKAN_29	pmid	37069399	37069399	TP_correct
+76	msp_0258	DKAN_29	country	Denmark	Denmark	TP_correct
+76	msp_0258	DKAN_29	body_site	feces	feces	TP_correct
+76	msp_0258	DKAN_29	ncbi_accession		ERR10906510;ERR10906511;ERR10906512;ERR10906513	FN
+76	msp_0258	DKAN_29	sequencing_platform	IonProton	IonProton	TP_correct
+76	msp_0258	DKAN_29	age		35	FN
+76	msp_0258	DKAN_29	age_group		adult	FN
+76	msp_0258	DKAN_29	sex	Female	Female	TP_correct
+76	msp_0258	DKAN_29	antibiotics_current_use	No	No	TP_correct
+76	msp_0258	DKAN_29	bmi	not_reported	22.3	FN
+76	msp_0258	DKAN_29	disease	Anorexia Nervosa	healthy	TP_wrong
+76	msp_0258	DKAN_29	smoker	not_reported	Non-smoker (finding)	FN
+76	msp_0258	DKAN_29	treatment	selective serotonin re-uptake inhibitors; antipsychotics; benzodiazepines	no	TP_wrong
+76	msp_0258	DKAN_29	host_species	Homo sapiens and Mus musculus	Homo sapiens	TP_wrong
+77	msp_0263	DKAN_30	study_name	AN_microbiota_2023	FanY_2023	TP_wrong
+77	msp_0263	DKAN_30	subject_id		DKAN_30	FN
+77	msp_0263	DKAN_30	sample_id	msp_0263	DKAN_30	TP_wrong
+77	msp_0263	DKAN_30	curator		Linda_Cova	FN
+77	msp_0263	DKAN_30	pmid	37069399	37069399	TP_correct
+77	msp_0263	DKAN_30	country	Denmark	Denmark	TP_correct
+77	msp_0263	DKAN_30	body_site	feces	feces	TP_correct
+77	msp_0263	DKAN_30	ncbi_accession		ERR10906514;ERR10906515;ERR10906516;ERR10906517	FN
+77	msp_0263	DKAN_30	sequencing_platform	IonProton	IonProton	TP_correct
+77	msp_0263	DKAN_30	age		36	FN
+77	msp_0263	DKAN_30	age_group		adult	FN
+77	msp_0263	DKAN_30	sex	Female	Female	TP_correct
+77	msp_0263	DKAN_30	antibiotics_current_use	No	No	TP_correct
+77	msp_0263	DKAN_30	bmi	not_reported	25.8	FN
+77	msp_0263	DKAN_30	disease	Anorexia Nervosa	healthy	TP_wrong
+77	msp_0263	DKAN_30	smoker	not_reported	Non-smoker (finding)	FN
+77	msp_0263	DKAN_30	treatment	selective serotonin re-uptake inhibitors; antipsychotics; benzodiazepines	no	TP_wrong
+77	msp_0263	DKAN_30	host_species	Homo sapiens and Mus musculus	Homo sapiens	TP_wrong
+78	msp_0263	DKAN_31	study_name	AN_microbiota_2023	FanY_2023	TP_wrong
+78	msp_0263	DKAN_31	subject_id		DKAN_31	FN
+78	msp_0263	DKAN_31	sample_id	msp_0263	DKAN_31	TP_wrong
+78	msp_0263	DKAN_31	curator		Linda_Cova	FN
+78	msp_0263	DKAN_31	pmid	37069399	37069399	TP_correct
+78	msp_0263	DKAN_31	country	Denmark	Denmark	TP_correct
+78	msp_0263	DKAN_31	body_site	feces	feces	TP_correct
+78	msp_0263	DKAN_31	ncbi_accession		ERR10906518;ERR10906519;ERR10906520;ERR10906521	FN
+78	msp_0263	DKAN_31	sequencing_platform	IonProton	IonProton	TP_correct
+78	msp_0263	DKAN_31	age		24	FN
+78	msp_0263	DKAN_31	age_group		adult	FN
+78	msp_0263	DKAN_31	sex	Female	Female	TP_correct
+78	msp_0263	DKAN_31	antibiotics_current_use	No	No	TP_correct
+78	msp_0263	DKAN_31	bmi	not_reported	16.1	FN
+78	msp_0263	DKAN_31	disease	Anorexia Nervosa	anorexia	TP_wrong
+78	msp_0263	DKAN_31	smoker	not_reported	Non-smoker (finding)	FN
+78	msp_0263	DKAN_31	treatment	selective serotonin re-uptake inhibitors; antipsychotics; benzodiazepines	no	TP_wrong
+78	msp_0263	DKAN_31	host_species	Homo sapiens and Mus musculus	Homo sapiens	TP_wrong
+79	msp_0263	DKAN_32	study_name	AN_microbiota_2023	FanY_2023	TP_wrong
+79	msp_0263	DKAN_32	subject_id		DKAN_32	FN
+79	msp_0263	DKAN_32	sample_id	msp_0263	DKAN_32	TP_wrong
+79	msp_0263	DKAN_32	curator		Linda_Cova	FN
+79	msp_0263	DKAN_32	pmid	37069399	37069399	TP_correct
+79	msp_0263	DKAN_32	country	Denmark	Denmark	TP_correct
+79	msp_0263	DKAN_32	body_site	feces	feces	TP_correct
+79	msp_0263	DKAN_32	ncbi_accession		ERR10906522;ERR10906523;ERR10906524;ERR10906525	FN
+79	msp_0263	DKAN_32	sequencing_platform	IonProton	IonProton	TP_correct
+79	msp_0263	DKAN_32	age		19	FN
+79	msp_0263	DKAN_32	age_group		adult	FN
+79	msp_0263	DKAN_32	sex	Female	Female	TP_correct
+79	msp_0263	DKAN_32	antibiotics_current_use	No	No	TP_correct
+79	msp_0263	DKAN_32	bmi	not_reported	16.8	FN
+79	msp_0263	DKAN_32	disease	Anorexia Nervosa	anorexia	TP_wrong
+79	msp_0263	DKAN_32	smoker	not_reported	Non-smoker (finding)	FN
+79	msp_0263	DKAN_32	treatment	selective serotonin re-uptake inhibitors; antipsychotics; benzodiazepines	ssri	TP_wrong
+79	msp_0263	DKAN_32	host_species	Homo sapiens and Mus musculus	Homo sapiens	TP_wrong
+80	msp_0263	DKAN_33	study_name	AN_microbiota_2023	FanY_2023	TP_wrong
+80	msp_0263	DKAN_33	subject_id		DKAN_33	FN
+80	msp_0263	DKAN_33	sample_id	msp_0263	DKAN_33	TP_wrong
+80	msp_0263	DKAN_33	curator		Linda_Cova	FN
+80	msp_0263	DKAN_33	pmid	37069399	37069399	TP_correct
+80	msp_0263	DKAN_33	country	Denmark	Denmark	TP_correct
+80	msp_0263	DKAN_33	body_site	feces	feces	TP_correct
+80	msp_0263	DKAN_33	ncbi_accession		ERR10906526;ERR10906527;ERR10906528;ERR10906529	FN
+80	msp_0263	DKAN_33	sequencing_platform	IonProton	IonProton	TP_correct
+80	msp_0263	DKAN_33	age		18	FN
+80	msp_0263	DKAN_33	age_group		schoolage	FN
+80	msp_0263	DKAN_33	sex	Female	Female	TP_correct
+80	msp_0263	DKAN_33	antibiotics_current_use	No	No	TP_correct
+80	msp_0263	DKAN_33	bmi	not_reported	16.2	FN
+80	msp_0263	DKAN_33	disease	Anorexia Nervosa	anorexia	TP_wrong
+80	msp_0263	DKAN_33	smoker	not_reported	Non-smoker (finding)	FN
+80	msp_0263	DKAN_33	treatment	selective serotonin re-uptake inhibitors; antipsychotics; benzodiazepines	no	TP_wrong
+80	msp_0263	DKAN_33	host_species	Homo sapiens and Mus musculus	Homo sapiens	TP_wrong
+81	msp_0263	DKAN_34	study_name	AN_microbiota_2023	FanY_2023	TP_wrong
+81	msp_0263	DKAN_34	subject_id		DKAN_34	FN
+81	msp_0263	DKAN_34	sample_id	msp_0263	DKAN_34	TP_wrong
+81	msp_0263	DKAN_34	curator		Linda_Cova	FN
+81	msp_0263	DKAN_34	pmid	37069399	37069399	TP_correct
+81	msp_0263	DKAN_34	country	Denmark	Denmark	TP_correct
+81	msp_0263	DKAN_34	body_site	feces	feces	TP_correct
+81	msp_0263	DKAN_34	ncbi_accession		ERR10906530;ERR10906531;ERR10906532;ERR10906533	FN
+81	msp_0263	DKAN_34	sequencing_platform	IonProton	IonProton	TP_correct
+81	msp_0263	DKAN_34	age		18	FN
+81	msp_0263	DKAN_34	age_group		schoolage	FN
+81	msp_0263	DKAN_34	sex	Female	Female	TP_correct
+81	msp_0263	DKAN_34	antibiotics_current_use	No	No	TP_correct
+81	msp_0263	DKAN_34	bmi	not_reported	16.9	FN
+81	msp_0263	DKAN_34	disease	Anorexia Nervosa	anorexia	TP_wrong
+81	msp_0263	DKAN_34	smoker	not_reported	Non-smoker (finding)	FN
+81	msp_0263	DKAN_34	treatment	selective serotonin re-uptake inhibitors; antipsychotics; benzodiazepines	no	TP_wrong
+81	msp_0263	DKAN_34	host_species	Homo sapiens and Mus musculus	Homo sapiens	TP_wrong
+82	msp_0263	DKAN_35	study_name	AN_microbiota_2023	FanY_2023	TP_wrong
+82	msp_0263	DKAN_35	subject_id		DKAN_35	FN
+82	msp_0263	DKAN_35	sample_id	msp_0263	DKAN_35	TP_wrong
+82	msp_0263	DKAN_35	curator		Linda_Cova	FN
+82	msp_0263	DKAN_35	pmid	37069399	37069399	TP_correct
+82	msp_0263	DKAN_35	country	Denmark	Denmark	TP_correct
+82	msp_0263	DKAN_35	body_site	feces	feces	TP_correct
+82	msp_0263	DKAN_35	ncbi_accession		ERR10906534;ERR10906535;ERR10906536;ERR10906537	FN
+82	msp_0263	DKAN_35	sequencing_platform	IonProton	IonProton	TP_correct
+82	msp_0263	DKAN_35	age		24	FN
+82	msp_0263	DKAN_35	age_group		adult	FN
+82	msp_0263	DKAN_35	sex	Female	Female	TP_correct
+82	msp_0263	DKAN_35	antibiotics_current_use	No	No	TP_correct
+82	msp_0263	DKAN_35	bmi	not_reported	19.9	FN
+82	msp_0263	DKAN_35	disease	Anorexia Nervosa	anorexia	TP_wrong
+82	msp_0263	DKAN_35	smoker	not_reported	Non-smoker (finding)	FN
+82	msp_0263	DKAN_35	treatment	selective serotonin re-uptake inhibitors; antipsychotics; benzodiazepines	no	TP_wrong
+82	msp_0263	DKAN_35	host_species	Homo sapiens and Mus musculus	Homo sapiens	TP_wrong
+83	msp_0263	DKAN_36	study_name	AN_microbiota_2023	FanY_2023	TP_wrong
+83	msp_0263	DKAN_36	subject_id		DKAN_36	FN
+83	msp_0263	DKAN_36	sample_id	msp_0263	DKAN_36	TP_wrong
+83	msp_0263	DKAN_36	curator		Linda_Cova	FN
+83	msp_0263	DKAN_36	pmid	37069399	37069399	TP_correct
+83	msp_0263	DKAN_36	country	Denmark	Denmark	TP_correct
+83	msp_0263	DKAN_36	body_site	feces	feces	TP_correct
+83	msp_0263	DKAN_36	ncbi_accession		ERR10906538;ERR10906539;ERR10906540;ERR10906541	FN
+83	msp_0263	DKAN_36	sequencing_platform	IonProton	IonProton	TP_correct
+83	msp_0263	DKAN_36	age		24	FN
+83	msp_0263	DKAN_36	age_group		adult	FN
+83	msp_0263	DKAN_36	sex	Female	Female	TP_correct
+83	msp_0263	DKAN_36	antibiotics_current_use	No	No	TP_correct
+83	msp_0263	DKAN_36	bmi	not_reported	14.9	FN
+83	msp_0263	DKAN_36	disease	Anorexia Nervosa	anorexia	TP_wrong
+83	msp_0263	DKAN_36	smoker	not_reported	Non-smoker (finding)	FN
+83	msp_0263	DKAN_36	treatment	selective serotonin re-uptake inhibitors; antipsychotics; benzodiazepines	ssri	TP_wrong
+83	msp_0263	DKAN_36	host_species	Homo sapiens and Mus musculus	Homo sapiens	TP_wrong
+84	msp_0296	DKAN_37	study_name	AN_microbiota_2023	FanY_2023	TP_wrong
+84	msp_0296	DKAN_37	subject_id		DKAN_37	FN
+84	msp_0296	DKAN_37	sample_id	msp_0296	DKAN_37	TP_wrong
+84	msp_0296	DKAN_37	curator		Linda_Cova	FN
+84	msp_0296	DKAN_37	pmid	37069399	37069399	TP_correct
+84	msp_0296	DKAN_37	country	Denmark	Denmark	TP_correct
+84	msp_0296	DKAN_37	body_site	feces	feces	TP_correct
+84	msp_0296	DKAN_37	ncbi_accession		ERR10906542;ERR10906543;ERR10906544;ERR10906545	FN
+84	msp_0296	DKAN_37	sequencing_platform	IonProton	IonProton	TP_correct
+84	msp_0296	DKAN_37	age		17	FN
+84	msp_0296	DKAN_37	age_group		schoolage	FN
+84	msp_0296	DKAN_37	sex	Female	Female	TP_correct
+84	msp_0296	DKAN_37	antibiotics_current_use	No	No	TP_correct
+84	msp_0296	DKAN_37	bmi	not_reported	16.2	FN
+84	msp_0296	DKAN_37	disease	Anorexia Nervosa	anorexia	TP_wrong
+84	msp_0296	DKAN_37	smoker	not_reported	Non-smoker (finding)	FN
+84	msp_0296	DKAN_37	treatment	selective serotonin re-uptake inhibitors; antipsychotics; benzodiazepines	no	TP_wrong
+84	msp_0296	DKAN_37	host_species	Homo sapiens and Mus musculus	Homo sapiens	TP_wrong
+85	msp_0296	DKAN_38	study_name	AN_microbiota_2023	FanY_2023	TP_wrong
+85	msp_0296	DKAN_38	subject_id		DKAN_38	FN
+85	msp_0296	DKAN_38	sample_id	msp_0296	DKAN_38	TP_wrong
+85	msp_0296	DKAN_38	curator		Linda_Cova	FN
+85	msp_0296	DKAN_38	pmid	37069399	37069399	TP_correct
+85	msp_0296	DKAN_38	country	Denmark	Denmark	TP_correct
+85	msp_0296	DKAN_38	body_site	feces	feces	TP_correct
+85	msp_0296	DKAN_38	ncbi_accession		ERR10906546;ERR10906547;ERR10906548;ERR10906549	FN
+85	msp_0296	DKAN_38	sequencing_platform	IonProton	IonProton	TP_correct
+85	msp_0296	DKAN_38	age		17	FN
+85	msp_0296	DKAN_38	age_group		schoolage	FN
+85	msp_0296	DKAN_38	sex	Female	Female	TP_correct
+85	msp_0296	DKAN_38	antibiotics_current_use	No	No	TP_correct
+85	msp_0296	DKAN_38	bmi	not_reported	17.9	FN
+85	msp_0296	DKAN_38	disease	Anorexia Nervosa	anorexia	TP_wrong
+85	msp_0296	DKAN_38	smoker	not_reported	Smoker (finding)	FN
+85	msp_0296	DKAN_38	treatment	selective serotonin re-uptake inhibitors; antipsychotics; benzodiazepines	no	TP_wrong
+85	msp_0296	DKAN_38	host_species	Homo sapiens and Mus musculus	Homo sapiens	TP_wrong
+86	msp_0296	DKAN_39	study_name	AN_microbiota_2023	FanY_2023	TP_wrong
+86	msp_0296	DKAN_39	subject_id		DKAN_39	FN
+86	msp_0296	DKAN_39	sample_id	msp_0296	DKAN_39	TP_wrong
+86	msp_0296	DKAN_39	curator		Linda_Cova	FN
+86	msp_0296	DKAN_39	pmid	37069399	37069399	TP_correct
+86	msp_0296	DKAN_39	country	Denmark	Denmark	TP_correct
+86	msp_0296	DKAN_39	body_site	feces	feces	TP_correct
+86	msp_0296	DKAN_39	ncbi_accession		ERR10906550;ERR10906551;ERR10906552;ERR10906553	FN
+86	msp_0296	DKAN_39	sequencing_platform	IonProton	IonProton	TP_correct
+86	msp_0296	DKAN_39	age		26	FN
+86	msp_0296	DKAN_39	age_group		adult	FN
+86	msp_0296	DKAN_39	sex	Female	Female	TP_correct
+86	msp_0296	DKAN_39	antibiotics_current_use	No	No	TP_correct
+86	msp_0296	DKAN_39	bmi	not_reported	22.8	FN
+86	msp_0296	DKAN_39	disease	Anorexia Nervosa	healthy	TP_wrong
+86	msp_0296	DKAN_39	smoker	not_reported	Non-smoker (finding)	FN
+86	msp_0296	DKAN_39	treatment	selective serotonin re-uptake inhibitors; antipsychotics; benzodiazepines	no	TP_wrong
+86	msp_0296	DKAN_39	host_species	Homo sapiens and Mus musculus	Homo sapiens	TP_wrong
+87	msp_0296	DKAN_40	study_name	AN_microbiota_2023	FanY_2023	TP_wrong
+87	msp_0296	DKAN_40	subject_id		DKAN_40	FN
+87	msp_0296	DKAN_40	sample_id	msp_0296	DKAN_40	TP_wrong
+87	msp_0296	DKAN_40	curator		Linda_Cova	FN
+87	msp_0296	DKAN_40	pmid	37069399	37069399	TP_correct
+87	msp_0296	DKAN_40	country	Denmark	Denmark	TP_correct
+87	msp_0296	DKAN_40	body_site	feces	feces	TP_correct
+87	msp_0296	DKAN_40	ncbi_accession		ERR10906554;ERR10906555;ERR10906556;ERR10906557	FN
+87	msp_0296	DKAN_40	sequencing_platform	IonProton	IonProton	TP_correct
+87	msp_0296	DKAN_40	age		24	FN
+87	msp_0296	DKAN_40	age_group		adult	FN
+87	msp_0296	DKAN_40	sex	Female	Female	TP_correct
+87	msp_0296	DKAN_40	antibiotics_current_use	No	No	TP_correct
+87	msp_0296	DKAN_40	bmi	not_reported	22.0	FN
+87	msp_0296	DKAN_40	disease	Anorexia Nervosa	healthy	TP_wrong
+87	msp_0296	DKAN_40	smoker	not_reported	Non-smoker (finding)	FN
+87	msp_0296	DKAN_40	treatment	selective serotonin re-uptake inhibitors; antipsychotics; benzodiazepines	no	TP_wrong
+87	msp_0296	DKAN_40	host_species	Homo sapiens and Mus musculus	Homo sapiens	TP_wrong
+88	msp_0296	DKAN_41	study_name	AN_microbiota_2023	FanY_2023	TP_wrong
+88	msp_0296	DKAN_41	subject_id		DKAN_41	FN
+88	msp_0296	DKAN_41	sample_id	msp_0296	DKAN_41	TP_wrong
+88	msp_0296	DKAN_41	curator		Linda_Cova	FN
+88	msp_0296	DKAN_41	pmid	37069399	37069399	TP_correct
+88	msp_0296	DKAN_41	country	Denmark	Denmark	TP_correct
+88	msp_0296	DKAN_41	body_site	feces	feces	TP_correct
+88	msp_0296	DKAN_41	ncbi_accession		ERR10906558;ERR10906559;ERR10906560;ERR10906561	FN
+88	msp_0296	DKAN_41	sequencing_platform	IonProton	IonProton	TP_correct
+88	msp_0296	DKAN_41	age		45	FN
+88	msp_0296	DKAN_41	age_group		adult	FN
+88	msp_0296	DKAN_41	sex	Female	Female	TP_correct
+88	msp_0296	DKAN_41	antibiotics_current_use	No	No	TP_correct
+88	msp_0296	DKAN_41	bmi	not_reported	18.0	FN
+88	msp_0296	DKAN_41	disease	Anorexia Nervosa	anorexia	TP_wrong
+88	msp_0296	DKAN_41	smoker	not_reported	Non-smoker (finding)	FN
+88	msp_0296	DKAN_41	treatment	selective serotonin re-uptake inhibitors; antipsychotics; benzodiazepines	ssri	TP_wrong
+88	msp_0296	DKAN_41	host_species	Homo sapiens and Mus musculus	Homo sapiens	TP_wrong
+89	msp_0296	DKAN_42	study_name	AN_microbiota_2023	FanY_2023	TP_wrong
+89	msp_0296	DKAN_42	subject_id		DKAN_42	FN
+89	msp_0296	DKAN_42	sample_id	msp_0296	DKAN_42	TP_wrong
+89	msp_0296	DKAN_42	curator		Linda_Cova	FN
+89	msp_0296	DKAN_42	pmid	37069399	37069399	TP_correct
+89	msp_0296	DKAN_42	country	Denmark	Denmark	TP_correct
+89	msp_0296	DKAN_42	body_site	feces	feces	TP_correct
+89	msp_0296	DKAN_42	ncbi_accession		ERR10906562;ERR10906563;ERR10906564;ERR10906565	FN
+89	msp_0296	DKAN_42	sequencing_platform	IonProton	IonProton	TP_correct
+89	msp_0296	DKAN_42	age		20	FN
+89	msp_0296	DKAN_42	age_group		adult	FN
+89	msp_0296	DKAN_42	sex	Female	Female	TP_correct
+89	msp_0296	DKAN_42	antibiotics_current_use	No	No	TP_correct
+89	msp_0296	DKAN_42	bmi	not_reported	13.9	FN
+89	msp_0296	DKAN_42	disease	Anorexia Nervosa	anorexia	TP_wrong
+89	msp_0296	DKAN_42	smoker	not_reported	Non-smoker (finding)	FN
+89	msp_0296	DKAN_42	treatment	selective serotonin re-uptake inhibitors; antipsychotics; benzodiazepines	no	TP_wrong
+89	msp_0296	DKAN_42	host_species	Homo sapiens and Mus musculus	Homo sapiens	TP_wrong
+90	msp_0296	DKAN_43	study_name	AN_microbiota_2023	FanY_2023	TP_wrong
+90	msp_0296	DKAN_43	subject_id		DKAN_43	FN
+90	msp_0296	DKAN_43	sample_id	msp_0296	DKAN_43	TP_wrong
+90	msp_0296	DKAN_43	curator		Linda_Cova	FN
+90	msp_0296	DKAN_43	pmid	37069399	37069399	TP_correct
+90	msp_0296	DKAN_43	country	Denmark	Denmark	TP_correct
+90	msp_0296	DKAN_43	body_site	feces	feces	TP_correct
+90	msp_0296	DKAN_43	ncbi_accession		ERR10906566;ERR10906567;ERR10906568;ERR10906569	FN
+90	msp_0296	DKAN_43	sequencing_platform	IonProton	IonProton	TP_correct
+90	msp_0296	DKAN_43	age		23	FN
+90	msp_0296	DKAN_43	age_group		adult	FN
+90	msp_0296	DKAN_43	sex	Female	Female	TP_correct
+90	msp_0296	DKAN_43	antibiotics_current_use	No	No	TP_correct
+90	msp_0296	DKAN_43	bmi	not_reported	24.2	FN
+90	msp_0296	DKAN_43	disease	Anorexia Nervosa	healthy	TP_wrong
+90	msp_0296	DKAN_43	smoker	not_reported	Non-smoker (finding)	FN
+90	msp_0296	DKAN_43	treatment	selective serotonin re-uptake inhibitors; antipsychotics; benzodiazepines	no	TP_wrong
+90	msp_0296	DKAN_43	host_species	Homo sapiens and Mus musculus	Homo sapiens	TP_wrong
+91	msp_0297	DKAN_44	study_name	AN_microbiota_2023	FanY_2023	TP_wrong
+91	msp_0297	DKAN_44	subject_id		DKAN_44	FN
+91	msp_0297	DKAN_44	sample_id	msp_0297	DKAN_44	TP_wrong
+91	msp_0297	DKAN_44	curator		Linda_Cova	FN
+91	msp_0297	DKAN_44	pmid	37069399	37069399	TP_correct
+91	msp_0297	DKAN_44	country	Denmark	Denmark	TP_correct
+91	msp_0297	DKAN_44	body_site	feces	feces	TP_correct
+91	msp_0297	DKAN_44	ncbi_accession		ERR10906570;ERR10906571;ERR10906572;ERR10906573	FN
+91	msp_0297	DKAN_44	sequencing_platform	IonProton	IonProton	TP_correct
+91	msp_0297	DKAN_44	age		29	FN
+91	msp_0297	DKAN_44	age_group		adult	FN
+91	msp_0297	DKAN_44	sex	Female	Female	TP_correct
+91	msp_0297	DKAN_44	antibiotics_current_use	No	No	TP_correct
+91	msp_0297	DKAN_44	bmi	not_reported	19.6	FN
+91	msp_0297	DKAN_44	disease	Anorexia Nervosa	healthy	TP_wrong
+91	msp_0297	DKAN_44	smoker	not_reported	Non-smoker (finding)	FN
+91	msp_0297	DKAN_44	treatment	selective serotonin re-uptake inhibitors; antipsychotics; benzodiazepines	no	TP_wrong
+91	msp_0297	DKAN_44	host_species	Homo sapiens and Mus musculus	Homo sapiens	TP_wrong
+92	msp_0297	DKAN_45	study_name	AN_microbiota_2023	FanY_2023	TP_wrong
+92	msp_0297	DKAN_45	subject_id		DKAN_45	FN
+92	msp_0297	DKAN_45	sample_id	msp_0297	DKAN_45	TP_wrong
+92	msp_0297	DKAN_45	curator		Linda_Cova	FN
+92	msp_0297	DKAN_45	pmid	37069399	37069399	TP_correct
+92	msp_0297	DKAN_45	country	Denmark	Denmark	TP_correct
+92	msp_0297	DKAN_45	body_site	feces	feces	TP_correct
+92	msp_0297	DKAN_45	ncbi_accession		ERR10906574;ERR10906575;ERR10906576;ERR10906577	FN
+92	msp_0297	DKAN_45	sequencing_platform	IonProton	IonProton	TP_correct
+92	msp_0297	DKAN_45	age		15	FN
+92	msp_0297	DKAN_45	age_group		schoolage	FN
+92	msp_0297	DKAN_45	sex	Female	Female	TP_correct
+92	msp_0297	DKAN_45	antibiotics_current_use	No	No	TP_correct
+92	msp_0297	DKAN_45	bmi	not_reported	16.3	FN
+92	msp_0297	DKAN_45	disease	Anorexia Nervosa	anorexia	TP_wrong
+92	msp_0297	DKAN_45	smoker	not_reported	Non-smoker (finding)	FN
+92	msp_0297	DKAN_45	treatment	selective serotonin re-uptake inhibitors; antipsychotics; benzodiazepines	no	TP_wrong
+92	msp_0297	DKAN_45	host_species	Homo sapiens and Mus musculus	Homo sapiens	TP_wrong
+93	msp_0297	DKAN_46	study_name	AN_microbiota_2023	FanY_2023	TP_wrong
+93	msp_0297	DKAN_46	subject_id		DKAN_46	FN
+93	msp_0297	DKAN_46	sample_id	msp_0297	DKAN_46	TP_wrong
+93	msp_0297	DKAN_46	curator		Linda_Cova	FN
+93	msp_0297	DKAN_46	pmid	37069399	37069399	TP_correct
+93	msp_0297	DKAN_46	country	Denmark	Denmark	TP_correct
+93	msp_0297	DKAN_46	body_site	feces	feces	TP_correct
+93	msp_0297	DKAN_46	ncbi_accession		ERR10906578;ERR10906579;ERR10906580;ERR10906581	FN
+93	msp_0297	DKAN_46	sequencing_platform	IonProton	IonProton	TP_correct
+93	msp_0297	DKAN_46	age		15	FN
+93	msp_0297	DKAN_46	age_group		schoolage	FN
+93	msp_0297	DKAN_46	sex	Female	Female	TP_correct
+93	msp_0297	DKAN_46	antibiotics_current_use	No	No	TP_correct
+93	msp_0297	DKAN_46	bmi	not_reported	14.0	FN
+93	msp_0297	DKAN_46	disease	Anorexia Nervosa	anorexia	TP_wrong
+93	msp_0297	DKAN_46	smoker	not_reported	Non-smoker (finding)	FN
+93	msp_0297	DKAN_46	treatment	selective serotonin re-uptake inhibitors; antipsychotics; benzodiazepines	no	TP_wrong
+93	msp_0297	DKAN_46	host_species	Homo sapiens and Mus musculus	Homo sapiens	TP_wrong
+94	msp_0297	DKAN_47	study_name	AN_microbiota_2023	FanY_2023	TP_wrong
+94	msp_0297	DKAN_47	subject_id		DKAN_47	FN
+94	msp_0297	DKAN_47	sample_id	msp_0297	DKAN_47	TP_wrong
+94	msp_0297	DKAN_47	curator		Linda_Cova	FN
+94	msp_0297	DKAN_47	pmid	37069399	37069399	TP_correct
+94	msp_0297	DKAN_47	country	Denmark	Denmark	TP_correct
+94	msp_0297	DKAN_47	body_site	feces	feces	TP_correct
+94	msp_0297	DKAN_47	ncbi_accession		ERR10906582;ERR10906583;ERR10906584;ERR10906585	FN
+94	msp_0297	DKAN_47	sequencing_platform	IonProton	IonProton	TP_correct
+94	msp_0297	DKAN_47	age		19	FN
+94	msp_0297	DKAN_47	age_group		adult	FN
+94	msp_0297	DKAN_47	sex	Female	Female	TP_correct
+94	msp_0297	DKAN_47	antibiotics_current_use	No	No	TP_correct
+94	msp_0297	DKAN_47	bmi	not_reported	19.5	FN
+94	msp_0297	DKAN_47	disease	Anorexia Nervosa	healthy	TP_wrong
+94	msp_0297	DKAN_47	smoker	not_reported	Non-smoker (finding)	FN
+94	msp_0297	DKAN_47	treatment	selective serotonin re-uptake inhibitors; antipsychotics; benzodiazepines	no	TP_wrong
+94	msp_0297	DKAN_47	host_species	Homo sapiens and Mus musculus	Homo sapiens	TP_wrong
+95	msp_0297	DKAN_48	study_name	AN_microbiota_2023	FanY_2023	TP_wrong
+95	msp_0297	DKAN_48	subject_id		DKAN_48	FN
+95	msp_0297	DKAN_48	sample_id	msp_0297	DKAN_48	TP_wrong
+95	msp_0297	DKAN_48	curator		Linda_Cova	FN
+95	msp_0297	DKAN_48	pmid	37069399	37069399	TP_correct
+95	msp_0297	DKAN_48	country	Denmark	Denmark	TP_correct
+95	msp_0297	DKAN_48	body_site	feces	feces	TP_correct
+95	msp_0297	DKAN_48	ncbi_accession		ERR10906586;ERR10906587;ERR10906588;ERR10906589	FN
+95	msp_0297	DKAN_48	sequencing_platform	IonProton	IonProton	TP_correct
+95	msp_0297	DKAN_48	age		23	FN
+95	msp_0297	DKAN_48	age_group		adult	FN
+95	msp_0297	DKAN_48	sex	Female	Female	TP_correct
+95	msp_0297	DKAN_48	antibiotics_current_use	No	No	TP_correct
+95	msp_0297	DKAN_48	bmi	not_reported	15.8	FN
+95	msp_0297	DKAN_48	disease	Anorexia Nervosa	anorexia	TP_wrong
+95	msp_0297	DKAN_48	smoker	not_reported	Non-smoker (finding)	FN
+95	msp_0297	DKAN_48	treatment	selective serotonin re-uptake inhibitors; antipsychotics; benzodiazepines	no	TP_wrong
+95	msp_0297	DKAN_48	host_species	Homo sapiens and Mus musculus	Homo sapiens	TP_wrong
+96	msp_0297	DKAN_49	study_name	AN_microbiota_2023	FanY_2023	TP_wrong
+96	msp_0297	DKAN_49	subject_id		DKAN_49	FN
+96	msp_0297	DKAN_49	sample_id	msp_0297	DKAN_49	TP_wrong
+96	msp_0297	DKAN_49	curator		Linda_Cova	FN
+96	msp_0297	DKAN_49	pmid	37069399	37069399	TP_correct
+96	msp_0297	DKAN_49	country	Denmark	Denmark	TP_correct
+96	msp_0297	DKAN_49	body_site	feces	feces	TP_correct
+96	msp_0297	DKAN_49	ncbi_accession		ERR10906590;ERR10906591;ERR10906592;ERR10906593	FN
+96	msp_0297	DKAN_49	sequencing_platform	IonProton	IonProton	TP_correct
+96	msp_0297	DKAN_49	age		20	FN
+96	msp_0297	DKAN_49	age_group		adult	FN
+96	msp_0297	DKAN_49	sex	Female	Female	TP_correct
+96	msp_0297	DKAN_49	antibiotics_current_use	No	No	TP_correct
+96	msp_0297	DKAN_49	bmi	not_reported	16.7	FN
+96	msp_0297	DKAN_49	disease	Anorexia Nervosa	anorexia	TP_wrong
+96	msp_0297	DKAN_49	smoker	not_reported	Non-smoker (finding)	FN
+96	msp_0297	DKAN_49	treatment	selective serotonin re-uptake inhibitors; antipsychotics; benzodiazepines	no	TP_wrong
+96	msp_0297	DKAN_49	host_species	Homo sapiens and Mus musculus	Homo sapiens	TP_wrong
+97	msp_0297	DKAN_50	study_name	AN_microbiota_2023	FanY_2023	TP_wrong
+97	msp_0297	DKAN_50	subject_id		DKAN_50	FN
+97	msp_0297	DKAN_50	sample_id	msp_0297	DKAN_50	TP_wrong
+97	msp_0297	DKAN_50	curator		Linda_Cova	FN
+97	msp_0297	DKAN_50	pmid	37069399	37069399	TP_correct
+97	msp_0297	DKAN_50	country	Denmark	Denmark	TP_correct
+97	msp_0297	DKAN_50	body_site	feces	feces	TP_correct
+97	msp_0297	DKAN_50	ncbi_accession		ERR10906594;ERR10906595;ERR10906596;ERR10906597	FN
+97	msp_0297	DKAN_50	sequencing_platform	IonProton	IonProton	TP_correct
+97	msp_0297	DKAN_50	age		19	FN
+97	msp_0297	DKAN_50	age_group		adult	FN
+97	msp_0297	DKAN_50	sex	Female	Female	TP_correct
+97	msp_0297	DKAN_50	antibiotics_current_use	No	No	TP_correct
+97	msp_0297	DKAN_50	bmi	not_reported	22.5	FN
+97	msp_0297	DKAN_50	disease	Anorexia Nervosa	healthy	TP_wrong
+97	msp_0297	DKAN_50	smoker	not_reported	Non-smoker (finding)	FN
+97	msp_0297	DKAN_50	treatment	selective serotonin re-uptake inhibitors; antipsychotics; benzodiazepines	no	TP_wrong
+97	msp_0297	DKAN_50	host_species	Homo sapiens and Mus musculus	Homo sapiens	TP_wrong
+98	msp_0346	DKAN_51	study_name	AN_microbiota_2023	FanY_2023	TP_wrong
+98	msp_0346	DKAN_51	subject_id		DKAN_51	FN
+98	msp_0346	DKAN_51	sample_id	msp_0346	DKAN_51	TP_wrong
+98	msp_0346	DKAN_51	curator		Linda_Cova	FN
+98	msp_0346	DKAN_51	pmid	37069399	37069399	TP_correct
+98	msp_0346	DKAN_51	country	Denmark	Denmark	TP_correct
+98	msp_0346	DKAN_51	body_site	feces	feces	TP_correct
+98	msp_0346	DKAN_51	ncbi_accession		ERR10906598;ERR10906599;ERR10906600;ERR10906601	FN
+98	msp_0346	DKAN_51	sequencing_platform	IonProton	IonProton	TP_correct
+98	msp_0346	DKAN_51	age		17	FN
+98	msp_0346	DKAN_51	age_group		schoolage	FN
+98	msp_0346	DKAN_51	sex	Female	Female	TP_correct
+98	msp_0346	DKAN_51	antibiotics_current_use	No	No	TP_correct
+98	msp_0346	DKAN_51	bmi	not_reported	18.7	FN
+98	msp_0346	DKAN_51	disease	Anorexia Nervosa	anorexia	TP_wrong
+98	msp_0346	DKAN_51	smoker	not_reported	Non-smoker (finding)	FN
+98	msp_0346	DKAN_51	treatment	selective serotonin re-uptake inhibitors; antipsychotics; benzodiazepines	no	TP_wrong
+98	msp_0346	DKAN_51	host_species	Homo sapiens and Mus musculus	Homo sapiens	TP_wrong
+99	msp_0346	DKAN_52	study_name	AN_microbiota_2023	FanY_2023	TP_wrong
+99	msp_0346	DKAN_52	subject_id		DKAN_52	FN
+99	msp_0346	DKAN_52	sample_id	msp_0346	DKAN_52	TP_wrong
+99	msp_0346	DKAN_52	curator		Linda_Cova	FN
+99	msp_0346	DKAN_52	pmid	37069399	37069399	TP_correct
+99	msp_0346	DKAN_52	country	Denmark	Denmark	TP_correct
+99	msp_0346	DKAN_52	body_site	feces	feces	TP_correct
+99	msp_0346	DKAN_52	ncbi_accession		ERR10906602;ERR10906603;ERR10906604;ERR10906605	FN
+99	msp_0346	DKAN_52	sequencing_platform	IonProton	IonProton	TP_correct
+99	msp_0346	DKAN_52	age		24	FN
+99	msp_0346	DKAN_52	age_group		adult	FN
+99	msp_0346	DKAN_52	sex	Female	Female	TP_correct
+99	msp_0346	DKAN_52	antibiotics_current_use	No	No	TP_correct
+99	msp_0346	DKAN_52	bmi	not_reported	17.1	FN
+99	msp_0346	DKAN_52	disease	Anorexia Nervosa	anorexia	TP_wrong
+99	msp_0346	DKAN_52	smoker	not_reported	Non-smoker (finding)	FN
+99	msp_0346	DKAN_52	treatment	selective serotonin re-uptake inhibitors; antipsychotics; benzodiazepines	no	TP_wrong
+99	msp_0346	DKAN_52	host_species	Homo sapiens and Mus musculus	Homo sapiens	TP_wrong
+100	msp_0346	DKAN_53	study_name	AN_microbiota_2023	FanY_2023	TP_wrong
+100	msp_0346	DKAN_53	subject_id		DKAN_53	FN
+100	msp_0346	DKAN_53	sample_id	msp_0346	DKAN_53	TP_wrong
+100	msp_0346	DKAN_53	curator		Linda_Cova	FN
+100	msp_0346	DKAN_53	pmid	37069399	37069399	TP_correct
+100	msp_0346	DKAN_53	country	Denmark	Denmark	TP_correct
+100	msp_0346	DKAN_53	body_site	feces	feces	TP_correct
+100	msp_0346	DKAN_53	ncbi_accession		ERR10906606;ERR10906607;ERR10906608;ERR10906609	FN
+100	msp_0346	DKAN_53	sequencing_platform	IonProton	IonProton	TP_correct
+100	msp_0346	DKAN_53	age		38	FN
+100	msp_0346	DKAN_53	age_group		adult	FN
+100	msp_0346	DKAN_53	sex	Female	Female	TP_correct
+100	msp_0346	DKAN_53	antibiotics_current_use	No	No	TP_correct
+100	msp_0346	DKAN_53	bmi	not_reported	18.8	FN
+100	msp_0346	DKAN_53	disease	Anorexia Nervosa	anorexia	TP_wrong
+100	msp_0346	DKAN_53	smoker	not_reported	Non-smoker (finding)	FN
+100	msp_0346	DKAN_53	treatment	selective serotonin re-uptake inhibitors; antipsychotics; benzodiazepines	ssri	TP_wrong
+100	msp_0346	DKAN_53	host_species	Homo sapiens and Mus musculus	Homo sapiens	TP_wrong
+101	msp_0346	DKAN_54	study_name	AN_microbiota_2023	FanY_2023	TP_wrong
+101	msp_0346	DKAN_54	subject_id		DKAN_54	FN
+101	msp_0346	DKAN_54	sample_id	msp_0346	DKAN_54	TP_wrong
+101	msp_0346	DKAN_54	curator		Linda_Cova	FN
+101	msp_0346	DKAN_54	pmid	37069399	37069399	TP_correct
+101	msp_0346	DKAN_54	country	Denmark	Denmark	TP_correct
+101	msp_0346	DKAN_54	body_site	feces	feces	TP_correct
+101	msp_0346	DKAN_54	ncbi_accession		ERR10906610;ERR10906611;ERR10906612;ERR10906613	FN
+101	msp_0346	DKAN_54	sequencing_platform	IonProton	IonProton	TP_correct
+101	msp_0346	DKAN_54	age		17	FN
+101	msp_0346	DKAN_54	age_group		schoolage	FN
+101	msp_0346	DKAN_54	sex	Female	Female	TP_correct
+101	msp_0346	DKAN_54	antibiotics_current_use	No	No	TP_correct
+101	msp_0346	DKAN_54	bmi	not_reported	17.7	FN
+101	msp_0346	DKAN_54	disease	Anorexia Nervosa	anorexia	TP_wrong
+101	msp_0346	DKAN_54	smoker	not_reported	Non-smoker (finding)	FN
+101	msp_0346	DKAN_54	treatment	selective serotonin re-uptake inhibitors; antipsychotics; benzodiazepines	no	TP_wrong
+101	msp_0346	DKAN_54	host_species	Homo sapiens and Mus musculus	Homo sapiens	TP_wrong
+102	msp_0346	DKAN_55	study_name	AN_microbiota_2023	FanY_2023	TP_wrong
+102	msp_0346	DKAN_55	subject_id		DKAN_55	FN
+102	msp_0346	DKAN_55	sample_id	msp_0346	DKAN_55	TP_wrong
+102	msp_0346	DKAN_55	curator		Linda_Cova	FN
+102	msp_0346	DKAN_55	pmid	37069399	37069399	TP_correct
+102	msp_0346	DKAN_55	country	Denmark	Denmark	TP_correct
+102	msp_0346	DKAN_55	body_site	feces	feces	TP_correct
+102	msp_0346	DKAN_55	ncbi_accession		ERR10906614;ERR10906615;ERR10906616;ERR10906617	FN
+102	msp_0346	DKAN_55	sequencing_platform	IonProton	IonProton	TP_correct
+102	msp_0346	DKAN_55	age		22	FN
+102	msp_0346	DKAN_55	age_group		adult	FN
+102	msp_0346	DKAN_55	sex	Female	Female	TP_correct
+102	msp_0346	DKAN_55	antibiotics_current_use	No	No	TP_correct
+102	msp_0346	DKAN_55	bmi	not_reported	15.6	FN
+102	msp_0346	DKAN_55	disease	Anorexia Nervosa	anorexia	TP_wrong
+102	msp_0346	DKAN_55	smoker	not_reported	Non-smoker (finding)	FN
+102	msp_0346	DKAN_55	treatment	selective serotonin re-uptake inhibitors; antipsychotics; benzodiazepines	no	TP_wrong
+102	msp_0346	DKAN_55	host_species	Homo sapiens and Mus musculus	Homo sapiens	TP_wrong
+103	msp_0346	DKAN_56	study_name	AN_microbiota_2023	FanY_2023	TP_wrong
+103	msp_0346	DKAN_56	subject_id		DKAN_56	FN
+103	msp_0346	DKAN_56	sample_id	msp_0346	DKAN_56	TP_wrong
+103	msp_0346	DKAN_56	curator		Linda_Cova	FN
+103	msp_0346	DKAN_56	pmid	37069399	37069399	TP_correct
+103	msp_0346	DKAN_56	country	Denmark	Denmark	TP_correct
+103	msp_0346	DKAN_56	body_site	feces	feces	TP_correct
+103	msp_0346	DKAN_56	ncbi_accession		ERR10906618;ERR10906619;ERR10906620;ERR10906621	FN
+103	msp_0346	DKAN_56	sequencing_platform	IonProton	IonProton	TP_correct
+103	msp_0346	DKAN_56	age		19	FN
+103	msp_0346	DKAN_56	age_group		adult	FN
+103	msp_0346	DKAN_56	sex	Female	Female	TP_correct
+103	msp_0346	DKAN_56	antibiotics_current_use	No	No	TP_correct
+103	msp_0346	DKAN_56	bmi	not_reported	19.9	FN
+103	msp_0346	DKAN_56	disease	Anorexia Nervosa	anorexia	TP_wrong
+103	msp_0346	DKAN_56	smoker	not_reported	Non-smoker (finding)	FN
+103	msp_0346	DKAN_56	treatment	selective serotonin re-uptake inhibitors; antipsychotics; benzodiazepines	no	TP_wrong
+103	msp_0346	DKAN_56	host_species	Homo sapiens and Mus musculus	Homo sapiens	TP_wrong
+104	msp_0346	DKAN_57	study_name	AN_microbiota_2023	FanY_2023	TP_wrong
+104	msp_0346	DKAN_57	subject_id		DKAN_57	FN
+104	msp_0346	DKAN_57	sample_id	msp_0346	DKAN_57	TP_wrong
+104	msp_0346	DKAN_57	curator		Linda_Cova	FN
+104	msp_0346	DKAN_57	pmid	37069399	37069399	TP_correct
+104	msp_0346	DKAN_57	country	Denmark	Denmark	TP_correct
+104	msp_0346	DKAN_57	body_site	feces	feces	TP_correct
+104	msp_0346	DKAN_57	ncbi_accession		ERR10906622;ERR10906623;ERR10906624;ERR10906625	FN
+104	msp_0346	DKAN_57	sequencing_platform	IonProton	IonProton	TP_correct
+104	msp_0346	DKAN_57	age		36	FN
+104	msp_0346	DKAN_57	age_group		adult	FN
+104	msp_0346	DKAN_57	sex	Female	Female	TP_correct
+104	msp_0346	DKAN_57	antibiotics_current_use	No	No	TP_correct
+104	msp_0346	DKAN_57	bmi	not_reported	20.1	FN
+104	msp_0346	DKAN_57	disease	Anorexia Nervosa	healthy	TP_wrong
+104	msp_0346	DKAN_57	smoker	not_reported	Non-smoker (finding)	FN
+104	msp_0346	DKAN_57	treatment	selective serotonin re-uptake inhibitors; antipsychotics; benzodiazepines	no	TP_wrong
+104	msp_0346	DKAN_57	host_species	Homo sapiens and Mus musculus	Homo sapiens	TP_wrong
+105	msp_0347	DKAN_58	study_name	AN_microbiota_2023	FanY_2023	TP_wrong
+105	msp_0347	DKAN_58	subject_id		DKAN_58	FN
+105	msp_0347	DKAN_58	sample_id	msp_0347	DKAN_58	TP_wrong
+105	msp_0347	DKAN_58	curator		Linda_Cova	FN
+105	msp_0347	DKAN_58	pmid	37069399	37069399	TP_correct
+105	msp_0347	DKAN_58	country	Denmark	Denmark	TP_correct
+105	msp_0347	DKAN_58	body_site	feces	feces	TP_correct
+105	msp_0347	DKAN_58	ncbi_accession		ERR10906626;ERR10906627;ERR10906628;ERR10906629	FN
+105	msp_0347	DKAN_58	sequencing_platform	IonProton	IonProton	TP_correct
+105	msp_0347	DKAN_58	age		34	FN
+105	msp_0347	DKAN_58	age_group		adult	FN
+105	msp_0347	DKAN_58	sex	Female	Female	TP_correct
+105	msp_0347	DKAN_58	antibiotics_current_use	No	No	TP_correct
+105	msp_0347	DKAN_58	bmi	not_reported	20.2	FN
+105	msp_0347	DKAN_58	disease	Anorexia Nervosa	healthy	TP_wrong
+105	msp_0347	DKAN_58	smoker	not_reported	Non-smoker (finding)	FN
+105	msp_0347	DKAN_58	treatment	selective serotonin re-uptake inhibitors; antipsychotics; benzodiazepines	no	TP_wrong
+105	msp_0347	DKAN_58	host_species	Homo sapiens and Mus musculus	Homo sapiens	TP_wrong
+106	msp_0347	DKAN_59	study_name	AN_microbiota_2023	FanY_2023	TP_wrong
+106	msp_0347	DKAN_59	subject_id		DKAN_59	FN
+106	msp_0347	DKAN_59	sample_id	msp_0347	DKAN_59	TP_wrong
+106	msp_0347	DKAN_59	curator		Linda_Cova	FN
+106	msp_0347	DKAN_59	pmid	37069399	37069399	TP_correct
+106	msp_0347	DKAN_59	country	Denmark	Denmark	TP_correct
+106	msp_0347	DKAN_59	body_site	feces	feces	TP_correct
+106	msp_0347	DKAN_59	ncbi_accession		ERR10906630;ERR10906631;ERR10906632;ERR10906633	FN
+106	msp_0347	DKAN_59	sequencing_platform	IonProton	IonProton	TP_correct
+106	msp_0347	DKAN_59	age		35	FN
+106	msp_0347	DKAN_59	age_group		adult	FN
+106	msp_0347	DKAN_59	sex	Female	Female	TP_correct
+106	msp_0347	DKAN_59	antibiotics_current_use	No	No	TP_correct
+106	msp_0347	DKAN_59	bmi	not_reported	16.3	FN
+106	msp_0347	DKAN_59	disease	Anorexia Nervosa	anorexia	TP_wrong
+106	msp_0347	DKAN_59	smoker	not_reported	Non-smoker (finding)	FN
+106	msp_0347	DKAN_59	treatment	selective serotonin re-uptake inhibitors; antipsychotics; benzodiazepines	no	TP_wrong
+106	msp_0347	DKAN_59	host_species	Homo sapiens and Mus musculus	Homo sapiens	TP_wrong
+107	msp_0347	DKAN_60	study_name	AN_microbiota_2023	FanY_2023	TP_wrong
+107	msp_0347	DKAN_60	subject_id		DKAN_60	FN
+107	msp_0347	DKAN_60	sample_id	msp_0347	DKAN_60	TP_wrong
+107	msp_0347	DKAN_60	curator		Linda_Cova	FN
+107	msp_0347	DKAN_60	pmid	37069399	37069399	TP_correct
+107	msp_0347	DKAN_60	country	Denmark	Denmark	TP_correct
+107	msp_0347	DKAN_60	body_site	feces	feces	TP_correct
+107	msp_0347	DKAN_60	ncbi_accession		ERR10906634;ERR10906635;ERR10906636;ERR10906637	FN
+107	msp_0347	DKAN_60	sequencing_platform	IonProton	IonProton	TP_correct
+107	msp_0347	DKAN_60	age		26	FN
+107	msp_0347	DKAN_60	age_group		adult	FN
+107	msp_0347	DKAN_60	sex	Female	Female	TP_correct
+107	msp_0347	DKAN_60	antibiotics_current_use	No	No	TP_correct
+107	msp_0347	DKAN_60	bmi	not_reported	15.7	FN
+107	msp_0347	DKAN_60	disease	Anorexia Nervosa	anorexia	TP_wrong
+107	msp_0347	DKAN_60	smoker	not_reported	Smoker (finding)	FN
+107	msp_0347	DKAN_60	treatment	selective serotonin re-uptake inhibitors; antipsychotics; benzodiazepines	no	TP_wrong
+107	msp_0347	DKAN_60	host_species	Homo sapiens and Mus musculus	Homo sapiens	TP_wrong
+108	msp_0347	DKAN_61	study_name	AN_microbiota_2023	FanY_2023	TP_wrong
+108	msp_0347	DKAN_61	subject_id		DKAN_61	FN
+108	msp_0347	DKAN_61	sample_id	msp_0347	DKAN_61	TP_wrong
+108	msp_0347	DKAN_61	curator		Linda_Cova	FN
+108	msp_0347	DKAN_61	pmid	37069399	37069399	TP_correct
+108	msp_0347	DKAN_61	country	Denmark	Denmark	TP_correct
+108	msp_0347	DKAN_61	body_site	feces	feces	TP_correct
+108	msp_0347	DKAN_61	ncbi_accession		ERR10906638;ERR10906639;ERR10906640;ERR10906641	FN
+108	msp_0347	DKAN_61	sequencing_platform	IonProton	IonProton	TP_correct
+108	msp_0347	DKAN_61	age		18	FN
+108	msp_0347	DKAN_61	age_group		schoolage	FN
+108	msp_0347	DKAN_61	sex	Female	Female	TP_correct
+108	msp_0347	DKAN_61	antibiotics_current_use	No	No	TP_correct
+108	msp_0347	DKAN_61	bmi	not_reported	16.3	FN
+108	msp_0347	DKAN_61	disease	Anorexia Nervosa	anorexia	TP_wrong
+108	msp_0347	DKAN_61	smoker	not_reported	Non-smoker (finding)	FN
+108	msp_0347	DKAN_61	treatment	selective serotonin re-uptake inhibitors; antipsychotics; benzodiazepines	ssri	TP_wrong
+108	msp_0347	DKAN_61	host_species	Homo sapiens and Mus musculus	Homo sapiens	TP_wrong
+109	msp_0347	DKAN_62	study_name	AN_microbiota_2023	FanY_2023	TP_wrong
+109	msp_0347	DKAN_62	subject_id		DKAN_62	FN
+109	msp_0347	DKAN_62	sample_id	msp_0347	DKAN_62	TP_wrong
+109	msp_0347	DKAN_62	curator		Linda_Cova	FN
+109	msp_0347	DKAN_62	pmid	37069399	37069399	TP_correct
+109	msp_0347	DKAN_62	country	Denmark	Denmark	TP_correct
+109	msp_0347	DKAN_62	body_site	feces	feces	TP_correct
+109	msp_0347	DKAN_62	ncbi_accession		ERR10906642;ERR10906643;ERR10906644;ERR10906645;ERR10906646	FN
+109	msp_0347	DKAN_62	sequencing_platform	IonProton	IonProton	TP_correct
+109	msp_0347	DKAN_62	age		19	FN
+109	msp_0347	DKAN_62	age_group		adult	FN
+109	msp_0347	DKAN_62	sex	Female	Female	TP_correct
+109	msp_0347	DKAN_62	antibiotics_current_use	No	No	TP_correct
+109	msp_0347	DKAN_62	bmi	not_reported	14.2	FN
+109	msp_0347	DKAN_62	disease	Anorexia Nervosa	anorexia	TP_wrong
+109	msp_0347	DKAN_62	smoker	not_reported	Non-smoker (finding)	FN
+109	msp_0347	DKAN_62	treatment	selective serotonin re-uptake inhibitors; antipsychotics; benzodiazepines	no	TP_wrong
+109	msp_0347	DKAN_62	host_species	Homo sapiens and Mus musculus	Homo sapiens	TP_wrong
+110	msp_0347	DKAN_63	study_name	AN_microbiota_2023	FanY_2023	TP_wrong
+110	msp_0347	DKAN_63	subject_id		DKAN_63	FN
+110	msp_0347	DKAN_63	sample_id	msp_0347	DKAN_63	TP_wrong
+110	msp_0347	DKAN_63	curator		Linda_Cova	FN
+110	msp_0347	DKAN_63	pmid	37069399	37069399	TP_correct
+110	msp_0347	DKAN_63	country	Denmark	Denmark	TP_correct
+110	msp_0347	DKAN_63	body_site	feces	feces	TP_correct
+110	msp_0347	DKAN_63	ncbi_accession		ERR10906647;ERR10906648;ERR10906649;ERR10906650	FN
+110	msp_0347	DKAN_63	sequencing_platform	IonProton	IonProton	TP_correct
+110	msp_0347	DKAN_63	age		21	FN
+110	msp_0347	DKAN_63	age_group		adult	FN
+110	msp_0347	DKAN_63	sex	Female	Female	TP_correct
+110	msp_0347	DKAN_63	antibiotics_current_use	No	No	TP_correct
+110	msp_0347	DKAN_63	bmi	not_reported	10.2	FN
+110	msp_0347	DKAN_63	disease	Anorexia Nervosa	anorexia	TP_wrong
+110	msp_0347	DKAN_63	smoker	not_reported	Non-smoker (finding)	FN
+110	msp_0347	DKAN_63	treatment	selective serotonin re-uptake inhibitors; antipsychotics; benzodiazepines	no	TP_wrong
+110	msp_0347	DKAN_63	host_species	Homo sapiens and Mus musculus	Homo sapiens	TP_wrong
+111	msp_0347	DKAN_64	study_name	AN_microbiota_2023	FanY_2023	TP_wrong
+111	msp_0347	DKAN_64	subject_id		DKAN_64	FN
+111	msp_0347	DKAN_64	sample_id	msp_0347	DKAN_64	TP_wrong
+111	msp_0347	DKAN_64	curator		Linda_Cova	FN
+111	msp_0347	DKAN_64	pmid	37069399	37069399	TP_correct
+111	msp_0347	DKAN_64	country	Denmark	Denmark	TP_correct
+111	msp_0347	DKAN_64	body_site	feces	feces	TP_correct
+111	msp_0347	DKAN_64	ncbi_accession		ERR10906651;ERR10906652;ERR10906653;ERR10906654;ERR10906655	FN
+111	msp_0347	DKAN_64	sequencing_platform	IonProton	IonProton	TP_correct
+111	msp_0347	DKAN_64	age		20	FN
+111	msp_0347	DKAN_64	age_group		adult	FN
+111	msp_0347	DKAN_64	sex	Female	Female	TP_correct
+111	msp_0347	DKAN_64	antibiotics_current_use	No	No	TP_correct
+111	msp_0347	DKAN_64	bmi	not_reported	10.3	FN
+111	msp_0347	DKAN_64	disease	Anorexia Nervosa	anorexia	TP_wrong
+111	msp_0347	DKAN_64	smoker	not_reported	Non-smoker (finding)	FN
+111	msp_0347	DKAN_64	treatment	selective serotonin re-uptake inhibitors; antipsychotics; benzodiazepines	no	TP_wrong
+111	msp_0347	DKAN_64	host_species	Homo sapiens and Mus musculus	Homo sapiens	TP_wrong
+112	msp_0356	DKAN_65	study_name	AN_microbiota_2023	FanY_2023	TP_wrong
+112	msp_0356	DKAN_65	subject_id		DKAN_65	FN
+112	msp_0356	DKAN_65	sample_id	msp_0356	DKAN_65	TP_wrong
+112	msp_0356	DKAN_65	curator		Linda_Cova	FN
+112	msp_0356	DKAN_65	pmid	37069399	37069399	TP_correct
+112	msp_0356	DKAN_65	country	Denmark	Denmark	TP_correct
+112	msp_0356	DKAN_65	body_site	feces	feces	TP_correct
+112	msp_0356	DKAN_65	ncbi_accession		ERR10906656;ERR10906657;ERR10906658;ERR10906659	FN
+112	msp_0356	DKAN_65	sequencing_platform	IonProton	IonProton	TP_correct
+112	msp_0356	DKAN_65	age		23	FN
+112	msp_0356	DKAN_65	age_group		adult	FN
+112	msp_0356	DKAN_65	sex	Female	Female	TP_correct
+112	msp_0356	DKAN_65	antibiotics_current_use	No	No	TP_correct
+112	msp_0356	DKAN_65	bmi	not_reported	20.5	FN
+112	msp_0356	DKAN_65	disease	Anorexia Nervosa	healthy	TP_wrong
+112	msp_0356	DKAN_65	smoker	not_reported	Smoker (finding)	FN
+112	msp_0356	DKAN_65	treatment	selective serotonin re-uptake inhibitors; antipsychotics; benzodiazepines	no	TP_wrong
+112	msp_0356	DKAN_65	host_species	Homo sapiens and Mus musculus	Homo sapiens	TP_wrong
+113	msp_0356	DKAN_66	study_name	AN_microbiota_2023	FanY_2023	TP_wrong
+113	msp_0356	DKAN_66	subject_id		DKAN_66	FN
+113	msp_0356	DKAN_66	sample_id	msp_0356	DKAN_66	TP_wrong
+113	msp_0356	DKAN_66	curator		Linda_Cova	FN
+113	msp_0356	DKAN_66	pmid	37069399	37069399	TP_correct
+113	msp_0356	DKAN_66	country	Denmark	Denmark	TP_correct
+113	msp_0356	DKAN_66	body_site	feces	feces	TP_correct
+113	msp_0356	DKAN_66	ncbi_accession		ERR10906660;ERR10906661;ERR10906662;ERR10906663	FN
+113	msp_0356	DKAN_66	sequencing_platform	IonProton	IonProton	TP_correct
+113	msp_0356	DKAN_66	age		15	FN
+113	msp_0356	DKAN_66	age_group		schoolage	FN
+113	msp_0356	DKAN_66	sex	Female	Female	TP_correct
+113	msp_0356	DKAN_66	antibiotics_current_use	No	No	TP_correct
+113	msp_0356	DKAN_66	bmi	not_reported	12.7	FN
+113	msp_0356	DKAN_66	disease	Anorexia Nervosa	anorexia	TP_wrong
+113	msp_0356	DKAN_66	smoker	not_reported	Non-smoker (finding)	FN
+113	msp_0356	DKAN_66	treatment	selective serotonin re-uptake inhibitors; antipsychotics; benzodiazepines	no	TP_wrong
+113	msp_0356	DKAN_66	host_species	Homo sapiens and Mus musculus	Homo sapiens	TP_wrong
+114	msp_0356	DKAN_67	study_name	AN_microbiota_2023	FanY_2023	TP_wrong
+114	msp_0356	DKAN_67	subject_id		DKAN_67	FN
+114	msp_0356	DKAN_67	sample_id	msp_0356	DKAN_67	TP_wrong
+114	msp_0356	DKAN_67	curator		Linda_Cova	FN
+114	msp_0356	DKAN_67	pmid	37069399	37069399	TP_correct
+114	msp_0356	DKAN_67	country	Denmark	Denmark	TP_correct
+114	msp_0356	DKAN_67	body_site	feces	feces	TP_correct
+114	msp_0356	DKAN_67	ncbi_accession		ERR10906664;ERR10906665;ERR10906666;ERR10906667	FN
+114	msp_0356	DKAN_67	sequencing_platform	IonProton	IonProton	TP_correct
+114	msp_0356	DKAN_67	age		22	FN
+114	msp_0356	DKAN_67	age_group		adult	FN
+114	msp_0356	DKAN_67	sex	Female	Female	TP_correct
+114	msp_0356	DKAN_67	antibiotics_current_use	No	No	TP_correct
+114	msp_0356	DKAN_67	bmi	not_reported	18.5	FN
+114	msp_0356	DKAN_67	disease	Anorexia Nervosa	healthy	TP_wrong
+114	msp_0356	DKAN_67	smoker	not_reported	Non-smoker (finding)	FN
+114	msp_0356	DKAN_67	treatment	selective serotonin re-uptake inhibitors; antipsychotics; benzodiazepines	no	TP_wrong
+114	msp_0356	DKAN_67	host_species	Homo sapiens and Mus musculus	Homo sapiens	TP_wrong
+115	msp_0356	DKAN_68	study_name	AN_microbiota_2023	FanY_2023	TP_wrong
+115	msp_0356	DKAN_68	subject_id		DKAN_68	FN
+115	msp_0356	DKAN_68	sample_id	msp_0356	DKAN_68	TP_wrong
+115	msp_0356	DKAN_68	curator		Linda_Cova	FN
+115	msp_0356	DKAN_68	pmid	37069399	37069399	TP_correct
+115	msp_0356	DKAN_68	country	Denmark	Denmark	TP_correct
+115	msp_0356	DKAN_68	body_site	feces	feces	TP_correct
+115	msp_0356	DKAN_68	ncbi_accession		ERR10906668;ERR10906669;ERR10906670;ERR10906671	FN
+115	msp_0356	DKAN_68	sequencing_platform	IonProton	IonProton	TP_correct
+115	msp_0356	DKAN_68	age		30	FN
+115	msp_0356	DKAN_68	age_group		adult	FN
+115	msp_0356	DKAN_68	sex	Female	Female	TP_correct
+115	msp_0356	DKAN_68	antibiotics_current_use	No	No	TP_correct
+115	msp_0356	DKAN_68	bmi	not_reported	10.1	FN
+115	msp_0356	DKAN_68	disease	Anorexia Nervosa	anorexia	TP_wrong
+115	msp_0356	DKAN_68	smoker	not_reported	Non-smoker (finding)	FN
+115	msp_0356	DKAN_68	treatment	selective serotonin re-uptake inhibitors; antipsychotics; benzodiazepines	no	TP_wrong
+115	msp_0356	DKAN_68	host_species	Homo sapiens and Mus musculus	Homo sapiens	TP_wrong
+116	msp_0356	DKAN_69	study_name	AN_microbiota_2023	FanY_2023	TP_wrong
+116	msp_0356	DKAN_69	subject_id		DKAN_69	FN
+116	msp_0356	DKAN_69	sample_id	msp_0356	DKAN_69	TP_wrong
+116	msp_0356	DKAN_69	curator		Linda_Cova	FN
+116	msp_0356	DKAN_69	pmid	37069399	37069399	TP_correct
+116	msp_0356	DKAN_69	country	Denmark	Denmark	TP_correct
+116	msp_0356	DKAN_69	body_site	feces	feces	TP_correct
+116	msp_0356	DKAN_69	ncbi_accession		ERR10906672;ERR10906673;ERR10906674;ERR10906675	FN
+116	msp_0356	DKAN_69	sequencing_platform	IonProton	IonProton	TP_correct
+116	msp_0356	DKAN_69	age		22	FN
+116	msp_0356	DKAN_69	age_group		adult	FN
+116	msp_0356	DKAN_69	sex	Female	Female	TP_correct
+116	msp_0356	DKAN_69	antibiotics_current_use	No	No	TP_correct
+116	msp_0356	DKAN_69	bmi	not_reported	10.0	FN
+116	msp_0356	DKAN_69	disease	Anorexia Nervosa	anorexia	TP_wrong
+116	msp_0356	DKAN_69	smoker	not_reported	Non-smoker (finding)	FN
+116	msp_0356	DKAN_69	treatment	selective serotonin re-uptake inhibitors; antipsychotics; benzodiazepines	no	TP_wrong
+116	msp_0356	DKAN_69	host_species	Homo sapiens and Mus musculus	Homo sapiens	TP_wrong
+117	msp_0356	DKAN_70	study_name	AN_microbiota_2023	FanY_2023	TP_wrong
+117	msp_0356	DKAN_70	subject_id		DKAN_70	FN
+117	msp_0356	DKAN_70	sample_id	msp_0356	DKAN_70	TP_wrong
+117	msp_0356	DKAN_70	curator		Linda_Cova	FN
+117	msp_0356	DKAN_70	pmid	37069399	37069399	TP_correct
+117	msp_0356	DKAN_70	country	Denmark	Denmark	TP_correct
+117	msp_0356	DKAN_70	body_site	feces	feces	TP_correct
+117	msp_0356	DKAN_70	ncbi_accession		ERR10906676;ERR10906677;ERR10906678;ERR10906679	FN
+117	msp_0356	DKAN_70	sequencing_platform	IonProton	IonProton	TP_correct
+117	msp_0356	DKAN_70	age		15	FN
+117	msp_0356	DKAN_70	age_group		schoolage	FN
+117	msp_0356	DKAN_70	sex	Female	Female	TP_correct
+117	msp_0356	DKAN_70	antibiotics_current_use	No	No	TP_correct
+117	msp_0356	DKAN_70	bmi	not_reported	16.6	FN
+117	msp_0356	DKAN_70	disease	Anorexia Nervosa	anorexia	TP_wrong
+117	msp_0356	DKAN_70	smoker	not_reported	Non-smoker (finding)	FN
+117	msp_0356	DKAN_70	treatment	selective serotonin re-uptake inhibitors; antipsychotics; benzodiazepines	no	TP_wrong
+117	msp_0356	DKAN_70	host_species	Homo sapiens and Mus musculus	Homo sapiens	TP_wrong
+118	msp_0356	DKAN_71	study_name	AN_microbiota_2023	FanY_2023	TP_wrong
+118	msp_0356	DKAN_71	subject_id		DKAN_71	FN
+118	msp_0356	DKAN_71	sample_id	msp_0356	DKAN_71	TP_wrong
+118	msp_0356	DKAN_71	curator		Linda_Cova	FN
+118	msp_0356	DKAN_71	pmid	37069399	37069399	TP_correct
+118	msp_0356	DKAN_71	country	Denmark	Denmark	TP_correct
+118	msp_0356	DKAN_71	body_site	feces	feces	TP_correct
+118	msp_0356	DKAN_71	ncbi_accession		ERR10906680;ERR10906681;ERR10906682;ERR10906683	FN
+118	msp_0356	DKAN_71	sequencing_platform	IonProton	IonProton	TP_correct
+118	msp_0356	DKAN_71	age		26	FN
+118	msp_0356	DKAN_71	age_group		adult	FN
+118	msp_0356	DKAN_71	sex	Female	Female	TP_correct
+118	msp_0356	DKAN_71	antibiotics_current_use	No	No	TP_correct
+118	msp_0356	DKAN_71	bmi	not_reported	22.0	FN
+118	msp_0356	DKAN_71	disease	Anorexia Nervosa	healthy	TP_wrong
+118	msp_0356	DKAN_71	smoker	not_reported	Non-smoker (finding)	FN
+118	msp_0356	DKAN_71	treatment	selective serotonin re-uptake inhibitors; antipsychotics; benzodiazepines	no	TP_wrong
+118	msp_0356	DKAN_71	host_species	Homo sapiens and Mus musculus	Homo sapiens	TP_wrong
+119	msp_0380	DKAN_72	study_name	AN_microbiota_2023	FanY_2023	TP_wrong
+119	msp_0380	DKAN_72	subject_id		DKAN_72	FN
+119	msp_0380	DKAN_72	sample_id	msp_0380	DKAN_72	TP_wrong
+119	msp_0380	DKAN_72	curator		Linda_Cova	FN
+119	msp_0380	DKAN_72	pmid	37069399	37069399	TP_correct
+119	msp_0380	DKAN_72	country	Denmark	Denmark	TP_correct
+119	msp_0380	DKAN_72	body_site	feces	feces	TP_correct
+119	msp_0380	DKAN_72	ncbi_accession		ERR10906684;ERR10906685;ERR10906686;ERR10906687	FN
+119	msp_0380	DKAN_72	sequencing_platform	IonProton	IonProton	TP_correct
+119	msp_0380	DKAN_72	age		26	FN
+119	msp_0380	DKAN_72	age_group		adult	FN
+119	msp_0380	DKAN_72	sex	Female	Female	TP_correct
+119	msp_0380	DKAN_72	antibiotics_current_use	No	No	TP_correct
+119	msp_0380	DKAN_72	bmi	not_reported	21.8	FN
+119	msp_0380	DKAN_72	disease	Anorexia Nervosa	healthy	TP_wrong
+119	msp_0380	DKAN_72	smoker	not_reported	Non-smoker (finding)	FN
+119	msp_0380	DKAN_72	treatment	selective serotonin re-uptake inhibitors; antipsychotics; benzodiazepines	no	TP_wrong
+119	msp_0380	DKAN_72	host_species	Homo sapiens and Mus musculus	Homo sapiens	TP_wrong
+120	msp_0380	DKAN_73	study_name	AN_microbiota_2023	FanY_2023	TP_wrong
+120	msp_0380	DKAN_73	subject_id		DKAN_73	FN
+120	msp_0380	DKAN_73	sample_id	msp_0380	DKAN_73	TP_wrong
+120	msp_0380	DKAN_73	curator		Linda_Cova	FN
+120	msp_0380	DKAN_73	pmid	37069399	37069399	TP_correct
+120	msp_0380	DKAN_73	country	Denmark	Denmark	TP_correct
+120	msp_0380	DKAN_73	body_site	feces	feces	TP_correct
+120	msp_0380	DKAN_73	ncbi_accession		ERR10906688;ERR10906689;ERR10906690;ERR10906691;ERR10906692	FN
+120	msp_0380	DKAN_73	sequencing_platform	IonProton	IonProton	TP_correct
+120	msp_0380	DKAN_73	age		24	FN
+120	msp_0380	DKAN_73	age_group		adult	FN
+120	msp_0380	DKAN_73	sex	Female	Female	TP_correct
+120	msp_0380	DKAN_73	antibiotics_current_use	No	No	TP_correct
+120	msp_0380	DKAN_73	bmi	not_reported	19.6	FN
+120	msp_0380	DKAN_73	disease	Anorexia Nervosa	healthy	TP_wrong
+120	msp_0380	DKAN_73	smoker	not_reported	Non-smoker (finding)	FN
+120	msp_0380	DKAN_73	treatment	selective serotonin re-uptake inhibitors; antipsychotics; benzodiazepines	no	TP_wrong
+120	msp_0380	DKAN_73	host_species	Homo sapiens and Mus musculus	Homo sapiens	TP_wrong
+121	msp_0380	DKAN_74	study_name	AN_microbiota_2023	FanY_2023	TP_wrong
+121	msp_0380	DKAN_74	subject_id		DKAN_74	FN
+121	msp_0380	DKAN_74	sample_id	msp_0380	DKAN_74	TP_wrong
+121	msp_0380	DKAN_74	curator		Linda_Cova	FN
+121	msp_0380	DKAN_74	pmid	37069399	37069399	TP_correct
+121	msp_0380	DKAN_74	country	Denmark	Denmark	TP_correct
+121	msp_0380	DKAN_74	body_site	feces	feces	TP_correct
+121	msp_0380	DKAN_74	ncbi_accession		ERR10906693;ERR10906694;ERR10906695;ERR10906696	FN
+121	msp_0380	DKAN_74	sequencing_platform	IonProton	IonProton	TP_correct
+121	msp_0380	DKAN_74	age		24	FN
+121	msp_0380	DKAN_74	age_group		adult	FN
+121	msp_0380	DKAN_74	sex	Female	Female	TP_correct
+121	msp_0380	DKAN_74	antibiotics_current_use	No	No	TP_correct
+121	msp_0380	DKAN_74	bmi	not_reported	20.6	FN
+121	msp_0380	DKAN_74	disease	Anorexia Nervosa	healthy	TP_wrong
+121	msp_0380	DKAN_74	smoker	not_reported	Non-smoker (finding)	FN
+121	msp_0380	DKAN_74	treatment	selective serotonin re-uptake inhibitors; antipsychotics; benzodiazepines	no	TP_wrong
+121	msp_0380	DKAN_74	host_species	Homo sapiens and Mus musculus	Homo sapiens	TP_wrong
+122	msp_0380	DKAN_75	study_name	AN_microbiota_2023	FanY_2023	TP_wrong
+122	msp_0380	DKAN_75	subject_id		DKAN_75	FN
+122	msp_0380	DKAN_75	sample_id	msp_0380	DKAN_75	TP_wrong
+122	msp_0380	DKAN_75	curator		Linda_Cova	FN
+122	msp_0380	DKAN_75	pmid	37069399	37069399	TP_correct
+122	msp_0380	DKAN_75	country	Denmark	Denmark	TP_correct
+122	msp_0380	DKAN_75	body_site	feces	feces	TP_correct
+122	msp_0380	DKAN_75	ncbi_accession		ERR10906697;ERR10906698;ERR10906699;ERR10906700	FN
+122	msp_0380	DKAN_75	sequencing_platform	IonProton	IonProton	TP_correct
+122	msp_0380	DKAN_75	age		24	FN
+122	msp_0380	DKAN_75	age_group		adult	FN
+122	msp_0380	DKAN_75	sex	Female	Female	TP_correct
+122	msp_0380	DKAN_75	antibiotics_current_use	No	No	TP_correct
+122	msp_0380	DKAN_75	bmi	not_reported	21.8	FN
+122	msp_0380	DKAN_75	disease	Anorexia Nervosa	healthy	TP_wrong
+122	msp_0380	DKAN_75	smoker	not_reported	Non-smoker (finding)	FN
+122	msp_0380	DKAN_75	treatment	selective serotonin re-uptake inhibitors; antipsychotics; benzodiazepines	no	TP_wrong
+122	msp_0380	DKAN_75	host_species	Homo sapiens and Mus musculus	Homo sapiens	TP_wrong
+123	msp_0380	DKAN_76	study_name	AN_microbiota_2023	FanY_2023	TP_wrong
+123	msp_0380	DKAN_76	subject_id		DKAN_76	FN
+123	msp_0380	DKAN_76	sample_id	msp_0380	DKAN_76	TP_wrong
+123	msp_0380	DKAN_76	curator		Linda_Cova	FN
+123	msp_0380	DKAN_76	pmid	37069399	37069399	TP_correct
+123	msp_0380	DKAN_76	country	Denmark	Denmark	TP_correct
+123	msp_0380	DKAN_76	body_site	feces	feces	TP_correct
+123	msp_0380	DKAN_76	ncbi_accession		ERR10906701;ERR10906702;ERR10906703;ERR10906704	FN
+123	msp_0380	DKAN_76	sequencing_platform	IonProton	IonProton	TP_correct
+123	msp_0380	DKAN_76	age		26	FN
+123	msp_0380	DKAN_76	age_group		adult	FN
+123	msp_0380	DKAN_76	sex	Female	Female	TP_correct
+123	msp_0380	DKAN_76	antibiotics_current_use	No	No	TP_correct
+123	msp_0380	DKAN_76	bmi	not_reported	12.6	FN
+123	msp_0380	DKAN_76	disease	Anorexia Nervosa	anorexia	TP_wrong
+123	msp_0380	DKAN_76	smoker	not_reported	Smoker (finding)	FN
+123	msp_0380	DKAN_76	treatment	selective serotonin re-uptake inhibitors; antipsychotics; benzodiazepines	no	TP_wrong
+123	msp_0380	DKAN_76	host_species	Homo sapiens and Mus musculus	Homo sapiens	TP_wrong
+124	msp_0380	DKAN_77	study_name	AN_microbiota_2023	FanY_2023	TP_wrong
+124	msp_0380	DKAN_77	subject_id		DKAN_77	FN
+124	msp_0380	DKAN_77	sample_id	msp_0380	DKAN_77	TP_wrong
+124	msp_0380	DKAN_77	curator		Linda_Cova	FN
+124	msp_0380	DKAN_77	pmid	37069399	37069399	TP_correct
+124	msp_0380	DKAN_77	country	Denmark	Denmark	TP_correct
+124	msp_0380	DKAN_77	body_site	feces	feces	TP_correct
+124	msp_0380	DKAN_77	ncbi_accession		ERR10906705;ERR10906706;ERR10906707;ERR10906708	FN
+124	msp_0380	DKAN_77	sequencing_platform	IonProton	IonProton	TP_correct
+124	msp_0380	DKAN_77	age		26	FN
+124	msp_0380	DKAN_77	age_group		adult	FN
+124	msp_0380	DKAN_77	sex	Female	Female	TP_correct
+124	msp_0380	DKAN_77	antibiotics_current_use	No	No	TP_correct
+124	msp_0380	DKAN_77	bmi	not_reported	14.5	FN
+124	msp_0380	DKAN_77	disease	Anorexia Nervosa	anorexia	TP_wrong
+124	msp_0380	DKAN_77	smoker	not_reported	Non-smoker (finding)	FN
+124	msp_0380	DKAN_77	treatment	selective serotonin re-uptake inhibitors; antipsychotics; benzodiazepines	no	TP_wrong
+124	msp_0380	DKAN_77	host_species	Homo sapiens and Mus musculus	Homo sapiens	TP_wrong
+125	msp_0380	DKAN_78	study_name	AN_microbiota_2023	FanY_2023	TP_wrong
+125	msp_0380	DKAN_78	subject_id		DKAN_78	FN
+125	msp_0380	DKAN_78	sample_id	msp_0380	DKAN_78	TP_wrong
+125	msp_0380	DKAN_78	curator		Linda_Cova	FN
+125	msp_0380	DKAN_78	pmid	37069399	37069399	TP_correct
+125	msp_0380	DKAN_78	country	Denmark	Denmark	TP_correct
+125	msp_0380	DKAN_78	body_site	feces	feces	TP_correct
+125	msp_0380	DKAN_78	ncbi_accession		ERR10906709;ERR10906710;ERR10906711;ERR10906712	FN
+125	msp_0380	DKAN_78	sequencing_platform	IonProton	IonProton	TP_correct
+125	msp_0380	DKAN_78	age		31	FN
+125	msp_0380	DKAN_78	age_group		adult	FN
+125	msp_0380	DKAN_78	sex	Female	Female	TP_correct
+125	msp_0380	DKAN_78	antibiotics_current_use	No	No	TP_correct
+125	msp_0380	DKAN_78	bmi	not_reported	16.8	FN
+125	msp_0380	DKAN_78	disease	Anorexia Nervosa	anorexia	TP_wrong
+125	msp_0380	DKAN_78	smoker	not_reported	Non-smoker (finding)	FN
+125	msp_0380	DKAN_78	treatment	selective serotonin re-uptake inhibitors; antipsychotics; benzodiazepines	no	TP_wrong
+125	msp_0380	DKAN_78	host_species	Homo sapiens and Mus musculus	Homo sapiens	TP_wrong
+126	msp_0448	DKAN_79	study_name	AN_microbiota_2023	FanY_2023	TP_wrong
+126	msp_0448	DKAN_79	subject_id		DKAN_79	FN
+126	msp_0448	DKAN_79	sample_id	msp_0448	DKAN_79	TP_wrong
+126	msp_0448	DKAN_79	curator		Linda_Cova	FN
+126	msp_0448	DKAN_79	pmid	37069399	37069399	TP_correct
+126	msp_0448	DKAN_79	country	Denmark	Denmark	TP_correct
+126	msp_0448	DKAN_79	body_site	feces	feces	TP_correct
+126	msp_0448	DKAN_79	ncbi_accession		ERR10906713;ERR10906714;ERR10906715;ERR10906716	FN
+126	msp_0448	DKAN_79	sequencing_platform	IonProton	IonProton	TP_correct
+126	msp_0448	DKAN_79	age		23	FN
+126	msp_0448	DKAN_79	age_group		adult	FN
+126	msp_0448	DKAN_79	sex	Female	Female	TP_correct
+126	msp_0448	DKAN_79	antibiotics_current_use	No	No	TP_correct
+126	msp_0448	DKAN_79	bmi	not_reported	15.2	FN
+126	msp_0448	DKAN_79	disease	Anorexia Nervosa	anorexia	TP_wrong
+126	msp_0448	DKAN_79	smoker	not_reported	Non-smoker (finding)	FN
+126	msp_0448	DKAN_79	treatment	selective serotonin re-uptake inhibitors; antipsychotics; benzodiazepines	no	TP_wrong
+126	msp_0448	DKAN_79	host_species	Homo sapiens and Mus musculus	Homo sapiens	TP_wrong
+127	msp_0448	DKAN_80	study_name	AN_microbiota_2023	FanY_2023	TP_wrong
+127	msp_0448	DKAN_80	subject_id		DKAN_80	FN
+127	msp_0448	DKAN_80	sample_id	msp_0448	DKAN_80	TP_wrong
+127	msp_0448	DKAN_80	curator		Linda_Cova	FN
+127	msp_0448	DKAN_80	pmid	37069399	37069399	TP_correct
+127	msp_0448	DKAN_80	country	Denmark	Denmark	TP_correct
+127	msp_0448	DKAN_80	body_site	feces	feces	TP_correct
+127	msp_0448	DKAN_80	ncbi_accession		ERR10906717;ERR10906718;ERR10906719;ERR10906720	FN
+127	msp_0448	DKAN_80	sequencing_platform	IonProton	IonProton	TP_correct
+127	msp_0448	DKAN_80	age		22	FN
+127	msp_0448	DKAN_80	age_group		adult	FN
+127	msp_0448	DKAN_80	sex	Female	Female	TP_correct
+127	msp_0448	DKAN_80	antibiotics_current_use	No	No	TP_correct
+127	msp_0448	DKAN_80	bmi	not_reported	11.5	FN
+127	msp_0448	DKAN_80	disease	Anorexia Nervosa	anorexia	TP_wrong
+127	msp_0448	DKAN_80	smoker	not_reported	Non-smoker (finding)	FN
+127	msp_0448	DKAN_80	treatment	selective serotonin re-uptake inhibitors; antipsychotics; benzodiazepines	no	TP_wrong
+127	msp_0448	DKAN_80	host_species	Homo sapiens and Mus musculus	Homo sapiens	TP_wrong
+128	msp_0448	DKAN_81	study_name	AN_microbiota_2023	FanY_2023	TP_wrong
+128	msp_0448	DKAN_81	subject_id		DKAN_81	FN
+128	msp_0448	DKAN_81	sample_id	msp_0448	DKAN_81	TP_wrong
+128	msp_0448	DKAN_81	curator		Linda_Cova	FN
+128	msp_0448	DKAN_81	pmid	37069399	37069399	TP_correct
+128	msp_0448	DKAN_81	country	Denmark	Denmark	TP_correct
+128	msp_0448	DKAN_81	body_site	feces	feces	TP_correct
+128	msp_0448	DKAN_81	ncbi_accession		ERR10906721;ERR10906722;ERR10906723;ERR10906724	FN
+128	msp_0448	DKAN_81	sequencing_platform	IonProton	IonProton	TP_correct
+128	msp_0448	DKAN_81	age		22	FN
+128	msp_0448	DKAN_81	age_group		adult	FN
+128	msp_0448	DKAN_81	sex	Female	Female	TP_correct
+128	msp_0448	DKAN_81	antibiotics_current_use	No	No	TP_correct
+128	msp_0448	DKAN_81	bmi	not_reported	10.4	FN
+128	msp_0448	DKAN_81	disease	Anorexia Nervosa	anorexia	TP_wrong
+128	msp_0448	DKAN_81	smoker	not_reported	Non-smoker (finding)	FN
+128	msp_0448	DKAN_81	treatment	selective serotonin re-uptake inhibitors; antipsychotics; benzodiazepines	antipsychotics;benzodiazepines	TP_wrong
+128	msp_0448	DKAN_81	host_species	Homo sapiens and Mus musculus	Homo sapiens	TP_wrong
+129	msp_0448	DKAN_82	study_name	AN_microbiota_2023	FanY_2023	TP_wrong
+129	msp_0448	DKAN_82	subject_id		DKAN_82	FN
+129	msp_0448	DKAN_82	sample_id	msp_0448	DKAN_82	TP_wrong
+129	msp_0448	DKAN_82	curator		Linda_Cova	FN
+129	msp_0448	DKAN_82	pmid	37069399	37069399	TP_correct
+129	msp_0448	DKAN_82	country	Denmark	Denmark	TP_correct
+129	msp_0448	DKAN_82	body_site	feces	feces	TP_correct
+129	msp_0448	DKAN_82	ncbi_accession		ERR10906725;ERR10906726;ERR10906727;ERR10906728	FN
+129	msp_0448	DKAN_82	sequencing_platform	IonProton	IonProton	TP_correct
+129	msp_0448	DKAN_82	age		26	FN
+129	msp_0448	DKAN_82	age_group		adult	FN
+129	msp_0448	DKAN_82	sex	Female	Female	TP_correct
+129	msp_0448	DKAN_82	antibiotics_current_use	No	No	TP_correct
+129	msp_0448	DKAN_82	bmi	not_reported	25.3	FN
+129	msp_0448	DKAN_82	disease	Anorexia Nervosa	healthy	TP_wrong
+129	msp_0448	DKAN_82	smoker	not_reported	Non-smoker (finding)	FN
+129	msp_0448	DKAN_82	treatment	selective serotonin re-uptake inhibitors; antipsychotics; benzodiazepines	no	TP_wrong
+129	msp_0448	DKAN_82	host_species	Homo sapiens and Mus musculus	Homo sapiens	TP_wrong
+130	msp_0448	DKAN_83	study_name	AN_microbiota_2023	FanY_2023	TP_wrong
+130	msp_0448	DKAN_83	subject_id		DKAN_83	FN
+130	msp_0448	DKAN_83	sample_id	msp_0448	DKAN_83	TP_wrong
+130	msp_0448	DKAN_83	curator		Linda_Cova	FN
+130	msp_0448	DKAN_83	pmid	37069399	37069399	TP_correct
+130	msp_0448	DKAN_83	country	Denmark	Denmark	TP_correct
+130	msp_0448	DKAN_83	body_site	feces	feces	TP_correct
+130	msp_0448	DKAN_83	ncbi_accession		ERR10906729;ERR10906730;ERR10906731;ERR10906732	FN
+130	msp_0448	DKAN_83	sequencing_platform	IonProton	IonProton	TP_correct
+130	msp_0448	DKAN_83	age		25	FN
+130	msp_0448	DKAN_83	age_group		adult	FN
+130	msp_0448	DKAN_83	sex	Female	Female	TP_correct
+130	msp_0448	DKAN_83	antibiotics_current_use	No	No	TP_correct
+130	msp_0448	DKAN_83	bmi	not_reported	24.3	FN
+130	msp_0448	DKAN_83	disease	Anorexia Nervosa	healthy	TP_wrong
+130	msp_0448	DKAN_83	smoker	not_reported	Non-smoker (finding)	FN
+130	msp_0448	DKAN_83	treatment	selective serotonin re-uptake inhibitors; antipsychotics; benzodiazepines	no	TP_wrong
+130	msp_0448	DKAN_83	host_species	Homo sapiens and Mus musculus	Homo sapiens	TP_wrong
+131	msp_0448	DKAN_84	study_name	AN_microbiota_2023	FanY_2023	TP_wrong
+131	msp_0448	DKAN_84	subject_id		DKAN_84	FN
+131	msp_0448	DKAN_84	sample_id	msp_0448	DKAN_84	TP_wrong
+131	msp_0448	DKAN_84	curator		Linda_Cova	FN
+131	msp_0448	DKAN_84	pmid	37069399	37069399	TP_correct
+131	msp_0448	DKAN_84	country	Denmark	Denmark	TP_correct
+131	msp_0448	DKAN_84	body_site	feces	feces	TP_correct
+131	msp_0448	DKAN_84	ncbi_accession		ERR10906733;ERR10906734;ERR10906735;ERR10906736	FN
+131	msp_0448	DKAN_84	sequencing_platform	IonProton	IonProton	TP_correct
+131	msp_0448	DKAN_84	age		36	FN
+131	msp_0448	DKAN_84	age_group		adult	FN
+131	msp_0448	DKAN_84	sex	Female	Female	TP_correct
+131	msp_0448	DKAN_84	antibiotics_current_use	No	No	TP_correct
+131	msp_0448	DKAN_84	bmi	not_reported	15.2	FN
+131	msp_0448	DKAN_84	disease	Anorexia Nervosa	anorexia	TP_wrong
+131	msp_0448	DKAN_84	smoker	not_reported	Smoker (finding)	FN
+131	msp_0448	DKAN_84	treatment	selective serotonin re-uptake inhibitors; antipsychotics; benzodiazepines	ssri;antipsychotics	TP_wrong
+131	msp_0448	DKAN_84	host_species	Homo sapiens and Mus musculus	Homo sapiens	TP_wrong
+132	msp_0448	DKAN_85	study_name	AN_microbiota_2023	FanY_2023	TP_wrong
+132	msp_0448	DKAN_85	subject_id		DKAN_85	FN
+132	msp_0448	DKAN_85	sample_id	msp_0448	DKAN_85	TP_wrong
+132	msp_0448	DKAN_85	curator		Linda_Cova	FN
+132	msp_0448	DKAN_85	pmid	37069399	37069399	TP_correct
+132	msp_0448	DKAN_85	country	Denmark	Denmark	TP_correct
+132	msp_0448	DKAN_85	body_site	feces	feces	TP_correct
+132	msp_0448	DKAN_85	ncbi_accession		ERR10906737;ERR10906738;ERR10906739;ERR10906740	FN
+132	msp_0448	DKAN_85	sequencing_platform	IonProton	IonProton	TP_correct
+132	msp_0448	DKAN_85	age		36	FN
+132	msp_0448	DKAN_85	age_group		adult	FN
+132	msp_0448	DKAN_85	sex	Female	Female	TP_correct
+132	msp_0448	DKAN_85	antibiotics_current_use	No	No	TP_correct
+132	msp_0448	DKAN_85	bmi	not_reported	15.0	FN
+132	msp_0448	DKAN_85	disease	Anorexia Nervosa	anorexia	TP_wrong
+132	msp_0448	DKAN_85	smoker	not_reported	Smoker (finding)	FN
+132	msp_0448	DKAN_85	treatment	selective serotonin re-uptake inhibitors; antipsychotics; benzodiazepines	ssri;antipsychotics;benzodiazepines	TP_wrong
+132	msp_0448	DKAN_85	host_species	Homo sapiens and Mus musculus	Homo sapiens	TP_wrong
+133	msp_0487	DKAN_86	study_name	AN_microbiota_2023	FanY_2023	TP_wrong
+133	msp_0487	DKAN_86	subject_id		DKAN_86	FN
+133	msp_0487	DKAN_86	sample_id	msp_0487	DKAN_86	TP_wrong
+133	msp_0487	DKAN_86	curator		Linda_Cova	FN
+133	msp_0487	DKAN_86	pmid	37069399	37069399	TP_correct
+133	msp_0487	DKAN_86	country	Denmark	Denmark	TP_correct
+133	msp_0487	DKAN_86	body_site	feces	feces	TP_correct
+133	msp_0487	DKAN_86	ncbi_accession		ERR10906741;ERR10906742;ERR10906743;ERR10906744	FN
+133	msp_0487	DKAN_86	sequencing_platform	IonProton	IonProton	TP_correct
+133	msp_0487	DKAN_86	age		24	FN
+133	msp_0487	DKAN_86	age_group		adult	FN
+133	msp_0487	DKAN_86	sex	Female	Female	TP_correct
+133	msp_0487	DKAN_86	antibiotics_current_use	No	No	TP_correct
+133	msp_0487	DKAN_86	bmi	not_reported	15.0	FN
+133	msp_0487	DKAN_86	disease	Anorexia Nervosa	anorexia	TP_wrong
+133	msp_0487	DKAN_86	smoker	not_reported	Non-smoker (finding)	FN
+133	msp_0487	DKAN_86	treatment	selective serotonin re-uptake inhibitors; antipsychotics; benzodiazepines	antipsychotics	TP_wrong
+133	msp_0487	DKAN_86	host_species	Homo sapiens and Mus musculus	Homo sapiens	TP_wrong
+134	msp_0487	DKAN_87	study_name	AN_microbiota_2023	FanY_2023	TP_wrong
+134	msp_0487	DKAN_87	subject_id		DKAN_87	FN
+134	msp_0487	DKAN_87	sample_id	msp_0487	DKAN_87	TP_wrong
+134	msp_0487	DKAN_87	curator		Linda_Cova	FN
+134	msp_0487	DKAN_87	pmid	37069399	37069399	TP_correct
+134	msp_0487	DKAN_87	country	Denmark	Denmark	TP_correct
+134	msp_0487	DKAN_87	body_site	feces	feces	TP_correct
+134	msp_0487	DKAN_87	ncbi_accession		ERR10906745;ERR10906746;ERR10906747;ERR10906748	FN
+134	msp_0487	DKAN_87	sequencing_platform	IonProton	IonProton	TP_correct
+134	msp_0487	DKAN_87	age		25	FN
+134	msp_0487	DKAN_87	age_group		adult	FN
+134	msp_0487	DKAN_87	sex	Female	Female	TP_correct
+134	msp_0487	DKAN_87	antibiotics_current_use	No	No	TP_correct
+134	msp_0487	DKAN_87	bmi	not_reported	22.9	FN
+134	msp_0487	DKAN_87	disease	Anorexia Nervosa	healthy	TP_wrong
+134	msp_0487	DKAN_87	smoker	not_reported	Non-smoker (finding)	FN
+134	msp_0487	DKAN_87	treatment	selective serotonin re-uptake inhibitors; antipsychotics; benzodiazepines	no	TP_wrong
+134	msp_0487	DKAN_87	host_species	Homo sapiens and Mus musculus	Homo sapiens	TP_wrong
+135	msp_0487	DKAN_88	study_name	AN_microbiota_2023	FanY_2023	TP_wrong
+135	msp_0487	DKAN_88	subject_id		DKAN_88	FN
+135	msp_0487	DKAN_88	sample_id	msp_0487	DKAN_88	TP_wrong
+135	msp_0487	DKAN_88	curator		Linda_Cova	FN
+135	msp_0487	DKAN_88	pmid	37069399	37069399	TP_correct
+135	msp_0487	DKAN_88	country	Denmark	Denmark	TP_correct
+135	msp_0487	DKAN_88	body_site	feces	feces	TP_correct
+135	msp_0487	DKAN_88	ncbi_accession		ERR10906749;ERR10906750;ERR10906751;ERR10906752	FN
+135	msp_0487	DKAN_88	sequencing_platform	IonProton	IonProton	TP_correct
+135	msp_0487	DKAN_88	age		20	FN
+135	msp_0487	DKAN_88	age_group		adult	FN
+135	msp_0487	DKAN_88	sex	Female	Female	TP_correct
+135	msp_0487	DKAN_88	antibiotics_current_use	No	No	TP_correct
+135	msp_0487	DKAN_88	bmi	not_reported	12.7	FN
+135	msp_0487	DKAN_88	disease	Anorexia Nervosa	anorexia	TP_wrong
+135	msp_0487	DKAN_88	smoker	not_reported	Smoker (finding)	FN
+135	msp_0487	DKAN_88	treatment	selective serotonin re-uptake inhibitors; antipsychotics; benzodiazepines	ssri;antipsychotics	TP_wrong
+135	msp_0487	DKAN_88	host_species	Homo sapiens and Mus musculus	Homo sapiens	TP_wrong
+136	msp_0487	DKAN_89	study_name	AN_microbiota_2023	FanY_2023	TP_wrong
+136	msp_0487	DKAN_89	subject_id		DKAN_89	FN
+136	msp_0487	DKAN_89	sample_id	msp_0487	DKAN_89	TP_wrong
+136	msp_0487	DKAN_89	curator		Linda_Cova	FN
+136	msp_0487	DKAN_89	pmid	37069399	37069399	TP_correct
+136	msp_0487	DKAN_89	country	Denmark	Denmark	TP_correct
+136	msp_0487	DKAN_89	body_site	feces	feces	TP_correct
+136	msp_0487	DKAN_89	ncbi_accession		ERR10906753;ERR10906754;ERR10906755;ERR10906756	FN
+136	msp_0487	DKAN_89	sequencing_platform	IonProton	IonProton	TP_correct
+136	msp_0487	DKAN_89	age		20	FN
+136	msp_0487	DKAN_89	age_group		adult	FN
+136	msp_0487	DKAN_89	sex	Female	Female	TP_correct
+136	msp_0487	DKAN_89	antibiotics_current_use	No	No	TP_correct
+136	msp_0487	DKAN_89	bmi	not_reported	11.7	FN
+136	msp_0487	DKAN_89	disease	Anorexia Nervosa	anorexia	TP_wrong
+136	msp_0487	DKAN_89	smoker	not_reported	Non-smoker (finding)	FN
+136	msp_0487	DKAN_89	treatment	selective serotonin re-uptake inhibitors; antipsychotics; benzodiazepines	no	TP_wrong
+136	msp_0487	DKAN_89	host_species	Homo sapiens and Mus musculus	Homo sapiens	TP_wrong
+137	msp_0487	DKAN_90	study_name	AN_microbiota_2023	FanY_2023	TP_wrong
+137	msp_0487	DKAN_90	subject_id		DKAN_90	FN
+137	msp_0487	DKAN_90	sample_id	msp_0487	DKAN_90	TP_wrong
+137	msp_0487	DKAN_90	curator		Linda_Cova	FN
+137	msp_0487	DKAN_90	pmid	37069399	37069399	TP_correct
+137	msp_0487	DKAN_90	country	Denmark	Denmark	TP_correct
+137	msp_0487	DKAN_90	body_site	feces	feces	TP_correct
+137	msp_0487	DKAN_90	ncbi_accession		ERR10906757;ERR10906758;ERR10906759;ERR10906760	FN
+137	msp_0487	DKAN_90	sequencing_platform	IonProton	IonProton	TP_correct
+137	msp_0487	DKAN_90	age		46	FN
+137	msp_0487	DKAN_90	age_group		adult	FN
+137	msp_0487	DKAN_90	sex	Female	Female	TP_correct
+137	msp_0487	DKAN_90	antibiotics_current_use	No	No	TP_correct
+137	msp_0487	DKAN_90	bmi	not_reported	13.8	FN
+137	msp_0487	DKAN_90	disease	Anorexia Nervosa	anorexia	TP_wrong
+137	msp_0487	DKAN_90	smoker	not_reported	Non-smoker (finding)	FN
+137	msp_0487	DKAN_90	treatment	selective serotonin re-uptake inhibitors; antipsychotics; benzodiazepines	no	TP_wrong
+137	msp_0487	DKAN_90	host_species	Homo sapiens and Mus musculus	Homo sapiens	TP_wrong
+138	msp_0487	DKAN_91	study_name	AN_microbiota_2023	FanY_2023	TP_wrong
+138	msp_0487	DKAN_91	subject_id		DKAN_91	FN
+138	msp_0487	DKAN_91	sample_id	msp_0487	DKAN_91	TP_wrong
+138	msp_0487	DKAN_91	curator		Linda_Cova	FN
+138	msp_0487	DKAN_91	pmid	37069399	37069399	TP_correct
+138	msp_0487	DKAN_91	country	Denmark	Denmark	TP_correct
+138	msp_0487	DKAN_91	body_site	feces	feces	TP_correct
+138	msp_0487	DKAN_91	ncbi_accession		ERR10906761;ERR10906762;ERR10906763;ERR10906764	FN
+138	msp_0487	DKAN_91	sequencing_platform	IonProton	IonProton	TP_correct
+138	msp_0487	DKAN_91	age		33	FN
+138	msp_0487	DKAN_91	age_group		adult	FN
+138	msp_0487	DKAN_91	sex	Female	Female	TP_correct
+138	msp_0487	DKAN_91	antibiotics_current_use	No	No	TP_correct
+138	msp_0487	DKAN_91	bmi	not_reported	17.0	FN
+138	msp_0487	DKAN_91	disease	Anorexia Nervosa	anorexia	TP_wrong
+138	msp_0487	DKAN_91	smoker	not_reported	Non-smoker (finding)	FN
+138	msp_0487	DKAN_91	treatment	selective serotonin re-uptake inhibitors; antipsychotics; benzodiazepines	ssri;antipsychotics	TP_wrong
+138	msp_0487	DKAN_91	host_species	Homo sapiens and Mus musculus	Homo sapiens	TP_wrong
+139	msp_0487	DKAN_92	study_name	AN_microbiota_2023	FanY_2023	TP_wrong
+139	msp_0487	DKAN_92	subject_id		DKAN_92	FN
+139	msp_0487	DKAN_92	sample_id	msp_0487	DKAN_92	TP_wrong
+139	msp_0487	DKAN_92	curator		Linda_Cova	FN
+139	msp_0487	DKAN_92	pmid	37069399	37069399	TP_correct
+139	msp_0487	DKAN_92	country	Denmark	Denmark	TP_correct
+139	msp_0487	DKAN_92	body_site	feces	feces	TP_correct
+139	msp_0487	DKAN_92	ncbi_accession		ERR10906765;ERR10906766;ERR10906767;ERR10906768	FN
+139	msp_0487	DKAN_92	sequencing_platform	IonProton	IonProton	TP_correct
+139	msp_0487	DKAN_92	age		23	FN
+139	msp_0487	DKAN_92	age_group		adult	FN
+139	msp_0487	DKAN_92	sex	Female	Female	TP_correct
+139	msp_0487	DKAN_92	antibiotics_current_use	No	No	TP_correct
+139	msp_0487	DKAN_92	bmi	not_reported	16.3	FN
+139	msp_0487	DKAN_92	disease	Anorexia Nervosa	anorexia	TP_wrong
+139	msp_0487	DKAN_92	smoker	not_reported	Non-smoker (finding)	FN
+139	msp_0487	DKAN_92	treatment	selective serotonin re-uptake inhibitors; antipsychotics; benzodiazepines	antipsychotics	TP_wrong
+139	msp_0487	DKAN_92	host_species	Homo sapiens and Mus musculus	Homo sapiens	TP_wrong
+140	msp_0545	DKAN_93	study_name	AN_microbiota_2023	FanY_2023	TP_wrong
+140	msp_0545	DKAN_93	subject_id		DKAN_93	FN
+140	msp_0545	DKAN_93	sample_id	msp_0545	DKAN_93	TP_wrong
+140	msp_0545	DKAN_93	curator		Linda_Cova	FN
+140	msp_0545	DKAN_93	pmid	37069399	37069399	TP_correct
+140	msp_0545	DKAN_93	country	Denmark	Denmark	TP_correct
+140	msp_0545	DKAN_93	body_site	feces	feces	TP_correct
+140	msp_0545	DKAN_93	ncbi_accession		ERR10906769;ERR10906770;ERR10906771;ERR10906772	FN
+140	msp_0545	DKAN_93	sequencing_platform	IonProton	IonProton	TP_correct
+140	msp_0545	DKAN_93	age		21	FN
+140	msp_0545	DKAN_93	age_group		adult	FN
+140	msp_0545	DKAN_93	sex	Female	Female	TP_correct
+140	msp_0545	DKAN_93	antibiotics_current_use	No	No	TP_correct
+140	msp_0545	DKAN_93	bmi	not_reported	17.0	FN
+140	msp_0545	DKAN_93	disease	Anorexia Nervosa	anorexia	TP_wrong
+140	msp_0545	DKAN_93	smoker	not_reported	Non-smoker (finding)	FN
+140	msp_0545	DKAN_93	treatment	selective serotonin re-uptake inhibitors; antipsychotics; benzodiazepines	antipsychotics	TP_wrong
+140	msp_0545	DKAN_93	host_species	Homo sapiens and Mus musculus	Homo sapiens	TP_wrong
+141	msp_0545	DKAN_94	study_name	AN_microbiota_2023	FanY_2023	TP_wrong
+141	msp_0545	DKAN_94	subject_id		DKAN_94	FN
+141	msp_0545	DKAN_94	sample_id	msp_0545	DKAN_94	TP_wrong
+141	msp_0545	DKAN_94	curator		Linda_Cova	FN
+141	msp_0545	DKAN_94	pmid	37069399	37069399	TP_correct
+141	msp_0545	DKAN_94	country	Denmark	Denmark	TP_correct
+141	msp_0545	DKAN_94	body_site	feces	feces	TP_correct
+141	msp_0545	DKAN_94	ncbi_accession		ERR10906773;ERR10906774;ERR10906775;ERR10906776	FN
+141	msp_0545	DKAN_94	sequencing_platform	IonProton	IonProton	TP_correct
+141	msp_0545	DKAN_94	age		30	FN
+141	msp_0545	DKAN_94	age_group		adult	FN
+141	msp_0545	DKAN_94	sex	Female	Female	TP_correct
+141	msp_0545	DKAN_94	antibiotics_current_use	No	No	TP_correct
+141	msp_0545	DKAN_94	bmi	not_reported	20.1	FN
+141	msp_0545	DKAN_94	disease	Anorexia Nervosa	healthy	TP_wrong
+141	msp_0545	DKAN_94	smoker	not_reported	Non-smoker (finding)	FN
+141	msp_0545	DKAN_94	treatment	selective serotonin re-uptake inhibitors; antipsychotics; benzodiazepines	no	TP_wrong
+141	msp_0545	DKAN_94	host_species	Homo sapiens and Mus musculus	Homo sapiens	TP_wrong
+142	msp_0545	DKAN_95	study_name	AN_microbiota_2023	FanY_2023	TP_wrong
+142	msp_0545	DKAN_95	subject_id		DKAN_95	FN
+142	msp_0545	DKAN_95	sample_id	msp_0545	DKAN_95	TP_wrong
+142	msp_0545	DKAN_95	curator		Linda_Cova	FN
+142	msp_0545	DKAN_95	pmid	37069399	37069399	TP_correct
+142	msp_0545	DKAN_95	country	Denmark	Denmark	TP_correct
+142	msp_0545	DKAN_95	body_site	feces	feces	TP_correct
+142	msp_0545	DKAN_95	ncbi_accession		ERR10906777;ERR10906778;ERR10906779;ERR10906780	FN
+142	msp_0545	DKAN_95	sequencing_platform	IonProton	IonProton	TP_correct
+142	msp_0545	DKAN_95	age		23	FN
+142	msp_0545	DKAN_95	age_group		adult	FN
+142	msp_0545	DKAN_95	sex	Female	Female	TP_correct
+142	msp_0545	DKAN_95	antibiotics_current_use	No	No	TP_correct
+142	msp_0545	DKAN_95	bmi	not_reported	14.7	FN
+142	msp_0545	DKAN_95	disease	Anorexia Nervosa	anorexia	TP_wrong
+142	msp_0545	DKAN_95	smoker	not_reported	Smoker (finding)	FN
+142	msp_0545	DKAN_95	treatment	selective serotonin re-uptake inhibitors; antipsychotics; benzodiazepines	no	TP_wrong
+142	msp_0545	DKAN_95	host_species	Homo sapiens and Mus musculus	Homo sapiens	TP_wrong
+143	msp_0545	DKAN_96	study_name	AN_microbiota_2023	FanY_2023	TP_wrong
+143	msp_0545	DKAN_96	subject_id		DKAN_96	FN
+143	msp_0545	DKAN_96	sample_id	msp_0545	DKAN_96	TP_wrong
+143	msp_0545	DKAN_96	curator		Linda_Cova	FN
+143	msp_0545	DKAN_96	pmid	37069399	37069399	TP_correct
+143	msp_0545	DKAN_96	country	Denmark	Denmark	TP_correct
+143	msp_0545	DKAN_96	body_site	feces	feces	TP_correct
+143	msp_0545	DKAN_96	ncbi_accession		ERR10906781;ERR10906782;ERR10906783;ERR10906784	FN
+143	msp_0545	DKAN_96	sequencing_platform	IonProton	IonProton	TP_correct
+143	msp_0545	DKAN_96	age		26	FN
+143	msp_0545	DKAN_96	age_group		adult	FN
+143	msp_0545	DKAN_96	sex	Female	Female	TP_correct
+143	msp_0545	DKAN_96	antibiotics_current_use	No	No	TP_correct
+143	msp_0545	DKAN_96	bmi	not_reported	15.9	FN
+143	msp_0545	DKAN_96	disease	Anorexia Nervosa	anorexia	TP_wrong
+143	msp_0545	DKAN_96	smoker	not_reported	Non-smoker (finding)	FN
+143	msp_0545	DKAN_96	treatment	selective serotonin re-uptake inhibitors; antipsychotics; benzodiazepines	ssri;benzodiazepines	TP_wrong
+143	msp_0545	DKAN_96	host_species	Homo sapiens and Mus musculus	Homo sapiens	TP_wrong
+144	msp_0545	DKAN_97	study_name	AN_microbiota_2023	FanY_2023	TP_wrong
+144	msp_0545	DKAN_97	subject_id		DKAN_97	FN
+144	msp_0545	DKAN_97	sample_id	msp_0545	DKAN_97	TP_wrong
+144	msp_0545	DKAN_97	curator		Linda_Cova	FN
+144	msp_0545	DKAN_97	pmid	37069399	37069399	TP_correct
+144	msp_0545	DKAN_97	country	Denmark	Denmark	TP_correct
+144	msp_0545	DKAN_97	body_site	feces	feces	TP_correct
+144	msp_0545	DKAN_97	ncbi_accession		ERR10906785;ERR10906786;ERR10906787;ERR10906788	FN
+144	msp_0545	DKAN_97	sequencing_platform	IonProton	IonProton	TP_correct
+144	msp_0545	DKAN_97	age		21	FN
+144	msp_0545	DKAN_97	age_group		adult	FN
+144	msp_0545	DKAN_97	sex	Female	Female	TP_correct
+144	msp_0545	DKAN_97	antibiotics_current_use	No	No	TP_correct
+144	msp_0545	DKAN_97	bmi	not_reported	13.2	FN
+144	msp_0545	DKAN_97	disease	Anorexia Nervosa	anorexia	TP_wrong
+144	msp_0545	DKAN_97	smoker	not_reported	Smoker (finding)	FN
+144	msp_0545	DKAN_97	treatment	selective serotonin re-uptake inhibitors; antipsychotics; benzodiazepines	ssri;antipsychotics	TP_wrong
+144	msp_0545	DKAN_97	host_species	Homo sapiens and Mus musculus	Homo sapiens	TP_wrong
+145	msp_0545	DKAN_98	study_name	AN_microbiota_2023	FanY_2023	TP_wrong
+145	msp_0545	DKAN_98	subject_id		DKAN_98	FN
+145	msp_0545	DKAN_98	sample_id	msp_0545	DKAN_98	TP_wrong
+145	msp_0545	DKAN_98	curator		Linda_Cova	FN
+145	msp_0545	DKAN_98	pmid	37069399	37069399	TP_correct
+145	msp_0545	DKAN_98	country	Denmark	Denmark	TP_correct
+145	msp_0545	DKAN_98	body_site	feces	feces	TP_correct
+145	msp_0545	DKAN_98	ncbi_accession		ERR10906789;ERR10906790;ERR10906791;ERR10906792	FN
+145	msp_0545	DKAN_98	sequencing_platform	IonProton	IonProton	TP_correct
+145	msp_0545	DKAN_98	age		33	FN
+145	msp_0545	DKAN_98	age_group		adult	FN
+145	msp_0545	DKAN_98	sex	Female	Female	TP_correct
+145	msp_0545	DKAN_98	antibiotics_current_use	No	No	TP_correct
+145	msp_0545	DKAN_98	bmi	not_reported	10.4	FN
+145	msp_0545	DKAN_98	disease	Anorexia Nervosa	anorexia	TP_wrong
+145	msp_0545	DKAN_98	smoker	not_reported	Non-smoker (finding)	FN
+145	msp_0545	DKAN_98	treatment	selective serotonin re-uptake inhibitors; antipsychotics; benzodiazepines	no	TP_wrong
+145	msp_0545	DKAN_98	host_species	Homo sapiens and Mus musculus	Homo sapiens	TP_wrong
+146	msp_0545	DKAN_99	study_name	AN_microbiota_2023	FanY_2023	TP_wrong
+146	msp_0545	DKAN_99	subject_id		DKAN_99	FN
+146	msp_0545	DKAN_99	sample_id	msp_0545	DKAN_99	TP_wrong
+146	msp_0545	DKAN_99	curator		Linda_Cova	FN
+146	msp_0545	DKAN_99	pmid	37069399	37069399	TP_correct
+146	msp_0545	DKAN_99	country	Denmark	Denmark	TP_correct
+146	msp_0545	DKAN_99	body_site	feces	feces	TP_correct
+146	msp_0545	DKAN_99	ncbi_accession		ERR10906793;ERR10906794;ERR10906795;ERR10906796	FN
+146	msp_0545	DKAN_99	sequencing_platform	IonProton	IonProton	TP_correct
+146	msp_0545	DKAN_99	age		25	FN
+146	msp_0545	DKAN_99	age_group		adult	FN
+146	msp_0545	DKAN_99	sex	Female	Female	TP_correct
+146	msp_0545	DKAN_99	antibiotics_current_use	No	No	TP_correct
+146	msp_0545	DKAN_99	bmi	not_reported	12.0	FN
+146	msp_0545	DKAN_99	disease	Anorexia Nervosa	anorexia	TP_wrong
+146	msp_0545	DKAN_99	smoker	not_reported	Non-smoker (finding)	FN
+146	msp_0545	DKAN_99	treatment	selective serotonin re-uptake inhibitors; antipsychotics; benzodiazepines	ssri;antipsychotics;benzodiazepines	TP_wrong
+146	msp_0545	DKAN_99	host_species	Homo sapiens and Mus musculus	Homo sapiens	TP_wrong

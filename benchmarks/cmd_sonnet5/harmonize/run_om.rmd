@@ -1,0 +1,301 @@
+---
+title: "OntologyMapper over extracted cMD values (R port of run_om.py)"
+author: "MetaExtractor benchmark"
+output:
+  html_document:
+    toc: true
+    df_print: paged
+params:
+  # Directory containing this .rmd (the `harmonize/` dir). Mirrors run_om.py's HERE.
+  harmonize_dir: "/Users/sehyunoh/OmicsMLRepo/MetaExtractor/benchmarks/cmd_sonnet5/harmonize"
+  # Optional: python env that has `metaharmonizer` importable. Leave "" to use the
+  # reticulate default (RETICULATE_PYTHON / active venv / conda).
+  python: ""
+  condaenv: ""
+---
+
+Build NCIt corpora and run `OntologyMapper` on the extracted disease / body_site /
+treatment values from **both** model runs of the refined multi-seed pipeline
+(`out_ms_refined/sonnet_r1/` and `out_ms_refined/haiku_r1/`; Section 3.3), writing
+one crosswalk CSV per category.
+
+Crosswalk columns: `query, ref_match, stage, match1` (top label), `match1_score`,
+`match1_code` (obo_id joined from the built corpus).
+
+Ontology roots (NCIt via EVSREST, keyless):
+
+- `disease`   -> `NCIT:C2991`  (Disease or Disorder) — overrides the shipped
+  oncology default `NCIT:C3262` Neoplasm, which does not cover cMD's
+  general-disease vocabulary.
+- `bodysite`  -> `NCIT:C32221` (Body Part) — registry default.
+- `treatment` -> `NCIT:C1909`  (Pharmacologic Substance) — registry default.
+
+> The staged mapping engine (`OntoMapEngine`) lives only in the Python
+> `metaharmonizer` package, so it is called through **reticulate**. Everything
+> else — JSON collection, dedup, corpus code-map join, CSV writing — is native R.
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, message = TRUE, warning = TRUE)
+library(reticulate)
+library(jsonlite)
+```
+
+```{r paths}
+HERE  <- normalizePath(params$harmonize_dir, mustWork = TRUE)
+BENCH <- dirname(HERE)                                   # cmd_sonnet5/
+MANI  <- jsonlite::fromJSON(file.path(BENCH, "manifest.json"),
+                            simplifyVector = FALSE)
+
+# extraction field -> OM corpus_category
+CATS <- c(disease = "disease", body_site = "bodysite", treatment = "treatment")
+
+# Extraction outputs to load: label -> dir under BENCH. Refined multi-seed run
+# (Section 3.3 of the manuscript); swap the seed (r1/r2/r3) as needed. Each dir
+# holds one <study>.json per manifest study, with per-sample enumeration.
+RUN_DIRS <- c(sonnet = "out_ms_refined/sonnet_r1",
+              haiku  = "out_ms_refined/haiku_r1")
+
+# str -> atomic terms: normalise "/" to ";", split, trim, drop blanks
+SPLIT <- function(s) {
+  parts <- trimws(strsplit(gsub("/", ";", as.character(s)), ";", fixed = FALSE)[[1]])
+  parts[nzchar(parts)]
+}
+```
+
+```{r reticulate-env, eval=FALSE}
+# Point reticulate at the interpreter that has `metaharmonizer`, if provided.
+if (nzchar(params$condaenv)) use_condaenv(params$condaenv, required = TRUE)
+if (nzchar(params$python))   use_python(params$python, required = TRUE)
+
+# Override the shipped oncology disease root with general Disease-or-Disorder,
+# mutating the live module dict (tuple key) before importing OntoMapEngine.
+ome <- import("metaharmonizer.engine.ontology_mapping_engine", convert = FALSE)
+reg <- py_get_attr(ome, "_CORPUS_REGISTRY")
+py_set_item(reg, tuple("disease", "ncit"), "NCIT:C2991")
+
+mh    <- import("metaharmonizer", convert = FALSE)
+paths <- import("metaharmonizer._paths")
+RETRIEVED_ONTOLOGIES_DIR <- py_str(paths$RETRIEVED_ONTOLOGIES_DIR)
+```
+
+```{r collect}
+# ---- Full pre-harmonization snapshot --------------------------------------
+# `MX` is the single object holding EVERY extracted cell across both model runs,
+# before any MetaHarmonizer / OntologyMapper call. One row per atomic extracted
+# value, keeping the {evidence, section, confidence} provenance that the query
+# terms fed to OM ultimately discard. Columns:
+#
+#   source        "sonnet" | "haiku"    (which model run produced the cell)
+#   study         manifest study id
+#   level         "fields" (study-level) | "sample"
+#   sample_index  1-based index into `samples` (NA for study-level fields)
+#   field         extraction field name (disease, body_site, treatment, ...)
+#   value         the extracted value ({value,...} cells unwrapped to .value)
+#   evidence      evidence_quote from the cell, NA for bare-value cells
+#   section       section the value was drawn from
+#   confidence    model-reported confidence
+
+# NULL-safe collapse of a (possibly list) scalar field to one string.
+scal <- function(z) if (is.null(z)) NA_character_ else paste(unlist(z), collapse = "; ")
+
+# One extraction cell -> rows(value, evidence, section, confidence). A
+# {value, evidence_quote, section, confidence, ...} dict is unwrapped (keeping
+# its metadata); a JSON array value yields one row per element.
+cell_rows <- function(x) {
+  ev <- se <- co <- NA_character_
+  v  <- x
+  if (is.list(x) && !is.null(names(x)) && "value" %in% names(x)) {
+    ev <- scal(x$evidence_quote); se <- scal(x$section); co <- scal(x$confidence)
+    v  <- x[["value"]]
+  }
+  xs   <- if (is.list(v)) v else list(v)
+  rows <- lapply(xs, function(val) {
+    if (is.null(val)) return(NULL)
+    data.frame(value = as.character(val), evidence = ev, section = se,
+               confidence = co, stringsAsFactors = FALSE)
+  })
+  rows <- rows[!vapply(rows, is.null, logical(1))]
+  if (length(rows)) do.call(rbind, rows) else NULL
+}
+
+# Walk every study JSON in both output dirs into one long data.frame.
+build_mx <- function() {
+  rows <- list()
+  for (label in names(RUN_DIRS)) {
+    for (m in MANI) {
+      p <- file.path(BENCH, RUN_DIRS[[label]], paste0(m$study, ".json"))
+      if (!file.exists(p)) next
+      d          <- jsonlite::fromJSON(p, simplifyVector = FALSE)
+      fields     <- if (is.null(d$fields))  list() else d$fields
+      samples    <- if (is.null(d$samples)) list() else d$samples
+      containers <- c(list(fields), samples)
+      levels     <- c("fields", rep("sample", length(samples)))
+      idxs       <- c(NA_integer_, seq_along(samples))
+      for (i in seq_along(containers)) {
+        cont <- containers[[i]]
+        if (!is.list(cont) || is.null(names(cont))) next
+        for (field in names(cont)) {
+          r <- cell_rows(cont[[field]])
+          if (is.null(r)) next
+          r$source       <- label
+          r$study        <- m$study
+          r$level        <- levels[i]
+          r$sample_index <- idxs[i]
+          r$field        <- field
+          rows[[length(rows) + 1L]] <- r
+        }
+      }
+    }
+  }
+  cols <- c("source", "study", "level", "sample_index", "field",
+            "value", "evidence", "section", "confidence")
+  if (!length(rows))
+    return(setNames(data.frame(matrix(character(), 0, length(cols)),
+                               stringsAsFactors = FALSE), cols))
+  do.call(rbind, rows)[cols]
+}
+
+MX <- build_mx()
+cat(sprintf("MX: %d extracted cells | %d studies | fields: %s\n",
+            nrow(MX), length(unique(MX$study)),
+            paste(sort(unique(MX$field)), collapse = ", ")))
+
+# `collect()` now derives the atomic OM query terms for one field directly from
+# MX, applying the same normalisation (SPLIT) and NA-token filtering as before,
+# so MX is the single source of truth for what enters harmonization.
+collect <- function(field) {
+  v     <- MX$value[MX$field == field]
+  bad   <- tolower(trimws(v)) %in% c("not_reported", "na", "nan", "")
+  terms <- unlist(lapply(v[!bad], SPLIT), use.names = FALSE)
+  sort(unique(terms))
+}
+```
+
+```{r mx-tables}
+# ---- MX -> per-study `samples x features` metadata tables ------------------
+# Reshape the long MX snapshot into one wide table per study: rows = samples,
+# columns = extraction fields, cells = extracted value. Study-level `fields`
+# values (sample_index == NA) are broadcast across every sample row; a
+# sample-level value for the same field takes precedence. Duplicate cells (a
+# field that produced a JSON array) are collapsed with "; ". Studies with only
+# study-level output become a single-row table.
+#
+# MetaExtractor-level cleaning applied here, before any harmonization:
+#   * the extractor's `not_reported` sentinel (and blank cells) -> NA;
+#   * columns that are NA for every sample are dropped (`sample_index` kept).
+#
+# Returns a named list keyed by study id; each element is a data.frame whose
+# first column is `sample_index`, followed by one column per retained field.
+mx_to_tables <- function(mx, source = "sonnet") {
+  d <- mx[mx$source == source, , drop = FALSE]
+
+  # Collapse duplicate cell values, treating `not_reported`/blank as missing:
+  # drop those tokens first, and return NA if nothing meaningful remains.
+  na_tokens <- c("not_reported", "na", "nan", "")
+  join <- function(v) {
+    v <- v[!is.na(v) & !(tolower(trimws(v)) %in% na_tokens)]
+    if (!length(v)) NA_character_ else paste(unique(v), collapse = "; ")
+  }
+  studies <- unique(d$study)
+  setNames(lapply(studies, function(st) {
+    ds  <- d[d$study == st, , drop = FALSE]
+    smp <- ds[ds$level == "sample", , drop = FALSE]     # per-sample cells
+    fld <- ds[ds$level == "fields", , drop = FALSE]     # study-level constants
+    features   <- unique(ds$field)
+    sample_ids <- sort(unique(smp$sample_index))
+    if (!length(sample_ids)) sample_ids <- NA_integer_  # study-level-only study
+
+    # Lookups: field -> constant value; "index\rfield" -> sample value.
+    const <- if (nrow(fld)) as.list(tapply(fld$value, fld$field, join)) else list()
+    skey  <- if (nrow(smp))
+      as.list(tapply(smp$value, paste(smp$sample_index, smp$field, sep = "\r"), join))
+      else list()
+
+    m <- matrix(NA_character_, length(sample_ids), length(features),
+                dimnames = list(NULL, features))
+    for (j in seq_along(features)) {
+      f  <- features[j]
+      cv <- const[[f]]
+      for (i in seq_along(sample_ids)) {
+        sv <- skey[[paste(sample_ids[i], f, sep = "\r")]]
+        # sample value wins when present & non-NA, else fall back to the
+        # broadcast study-level constant (also NA if it was not_reported).
+        m[i, j] <- if (!is.null(sv) && !is.na(sv)) sv
+                   else if (!is.null(cv) && !is.na(cv)) cv
+                   else NA_character_
+      }
+    }
+    out  <- data.frame(sample_index = sample_ids, m, check.names = FALSE,
+                       stringsAsFactors = FALSE)
+    # Drop all-NA columns (every value was not_reported/absent); keep the key.
+    keep <- vapply(out, function(col) any(!is.na(col)), logical(1))
+    keep[["sample_index"]] <- TRUE
+    out[, keep, drop = FALSE]
+  }), studies)
+}
+
+# One set of per-study tables per model run.
+MX_TABLES       <- mx_to_tables(MX, source = "sonnet")  # primary run
+MX_TABLES_HAIKU <- mx_to_tables(MX, source = "haiku")
+
+for (nm in c("MX_TABLES", "MX_TABLES_HAIKU")) {
+  tabs <- get(nm)
+  cat(sprintf("%s: %d studies\n", nm, length(tabs)))
+  for (st in names(tabs)) {
+    tb <- tabs[[st]]
+    cat(sprintf("  %-24s %3d samples x %d features\n", st, nrow(tb), ncol(tb) - 1L))
+  }
+}
+
+# Optional: write one CSV per study per run alongside the crosswalks.
+# runs <- list(sonnet = MX_TABLES, haiku = MX_TABLES_HAIKU)
+# for (run in names(runs))
+#   for (st in names(runs[[run]]))
+#     write.csv(runs[[run]][[st]],
+#               file.path(HERE, sprintf("mx_table_%s_%s.csv", run, st)),
+#               row.names = FALSE)
+```
+
+```{r corpus-code-map}
+# label(lower) -> obo_id, from the built corpus CSV.
+corpus_code_map <- function(category) {
+  csvp <- file.path(RETRIEVED_ONTOLOGIES_DIR, sprintf("ncit_%s_corpus.csv", category))
+  df   <- read.csv(csvp, stringsAsFactors = FALSE, check.names = FALSE)
+  cn   <- names(df)
+  lab  <- if ("label"  %in% cn) "label"  else cn[grepl("label",        cn, ignore.case = TRUE)][1]
+  oid  <- if ("obo_id" %in% cn) "obo_id" else cn[grepl("obo_id|code",  cn, ignore.case = TRUE)][1]
+  setNames(as.character(df[[oid]]), tolower(trimws(as.character(df[[lab]]))))
+}
+```
+
+```{r run, results="asis", eval=FALSE}
+for (field in names(CATS)) {
+  category <- CATS[[field]]
+  terms <- collect(field)
+  cat(sprintf("\n### %s (%s): %d unique atomic terms\n\n", field, category, length(terms)))
+  cat("terms:", paste(terms, collapse = ", "), "\n\n")
+  if (length(terms) == 0) next
+
+  t0 <- Sys.time()
+  eng <- mh$OntoMapEngine(
+    corpus_category = category,
+    query_ls        = as.list(terms),
+    ontology_source = "ncit",
+    s3_strategy     = NULL           # Stage 1 exact + Stage 2 embed + 2.5 synonym
+  )
+  res <- py_to_r(eng$run())          # pandas DataFrame -> data.frame
+  cat(sprintf("OM done in %.0fs\n\n", as.numeric(difftime(Sys.time(), t0, units = "secs"))))
+
+  codes <- corpus_code_map(category)
+  res$match1_code <- vapply(res$match1, function(l) {
+    v <- codes[tolower(trimws(as.character(l)))]
+    if (length(v) == 0 || is.na(v)) "" else unname(v)
+  }, character(1))
+
+  cols <- intersect(c("query", "ref_match", "stage", "match1", "match1_score", "match1_code"),
+                    names(res))
+  out <- file.path(HERE, sprintf("crosswalk_%s.csv", field))
+  write.csv(res[cols], out, row.names = FALSE)
+  cat(sprintf("wrote %s\n\n", out))
+}
+```

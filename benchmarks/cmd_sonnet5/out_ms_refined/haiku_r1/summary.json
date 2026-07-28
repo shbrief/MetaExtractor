@@ -1,0 +1,585 @@
+{
+  "per_study": [
+    {
+      "study": "Bengtsson-PalmeJ_2015",
+      "pmid": "26259788",
+      "n_gold": 70,
+      "n_extracted": 70,
+      "sample_align": "match",
+      "content": {
+        "tn": 0,
+        "tp_correct": 378,
+        "tp_wrong": 392,
+        "fn": 420,
+        "fp": 0
+      },
+      "content_coverage": {
+        "tn": 0,
+        "tp_correct": 378,
+        "tp_wrong": 392,
+        "fn": 420,
+        "fp": 0
+      },
+      "meta": {
+        "tn": 0,
+        "tp_correct": 141,
+        "tp_wrong": 279,
+        "fn": 140,
+        "fp": 0
+      },
+      "n_content_fields": 17,
+      "faithfulness": {
+        "contract_violations": null
+      }
+    },
+    {
+      "study": "TettAJ_2019_b",
+      "pmid": "31607556",
+      "n_gold": 44,
+      "n_extracted": 50,
+      "sample_align": "MISMATCH (50 vs 44)",
+      "content": {
+        "tn": 3,
+        "tp_correct": 50,
+        "tp_wrong": 170,
+        "fn": 481,
+        "fp": 0
+      },
+      "content_coverage": {
+        "tn": 3,
+        "tp_correct": 50,
+        "tp_wrong": 170,
+        "fn": 481,
+        "fp": 0
+      },
+      "meta": {
+        "tn": 0,
+        "tp_correct": 88,
+        "tp_wrong": 132,
+        "fn": 88,
+        "fp": 0
+      },
+      "n_content_fields": 16,
+      "faithfulness": {
+        "contract_violations": null
+      }
+    },
+    {
+      "study": "LiJ_2017",
+      "pmid": "28143587",
+      "n_gold": 196,
+      "n_extracted": 1448,
+      "sample_align": "MISMATCH (1448 vs 196)",
+      "content": {
+        "tn": 0,
+        "tp_correct": 980,
+        "tp_wrong": 588,
+        "fn": 1176,
+        "fp": 588
+      },
+      "content_coverage": {
+        "tn": 0,
+        "tp_correct": 980,
+        "tp_wrong": 588,
+        "fn": 1176,
+        "fp": 588
+      },
+      "meta": {
+        "tn": 0,
+        "tp_correct": 196,
+        "tp_wrong": 588,
+        "fn": 588,
+        "fp": 0
+      },
+      "n_content_fields": 17,
+      "faithfulness": {
+        "contract_violations": null
+      }
+    },
+    {
+      "study": "NayakRR_2021",
+      "pmid": "33440172",
+      "n_gold": 34,
+      "n_extracted": 434,
+      "sample_align": "MISMATCH (434 vs 34)",
+      "content": {
+        "tn": 0,
+        "tp_correct": 97,
+        "tp_wrong": 277,
+        "fn": 0,
+        "fp": 0
+      },
+      "content_coverage": {
+        "tn": 0,
+        "tp_correct": 97,
+        "tp_wrong": 277,
+        "fn": 0,
+        "fp": 0
+      },
+      "meta": {
+        "tn": 0,
+        "tp_correct": 34,
+        "tp_wrong": 136,
+        "fn": 68,
+        "fp": 0
+      },
+      "n_content_fields": 11,
+      "faithfulness": {
+        "contract_violations": null
+      }
+    },
+    {
+      "study": "PasolliE_2019",
+      "pmid": "30661755",
+      "n_gold": 112,
+      "n_extracted": 112,
+      "sample_align": "match",
+      "content": {
+        "tn": 336,
+        "tp_correct": 785,
+        "tp_wrong": 895,
+        "fn": 560,
+        "fp": 0
+      },
+      "content_coverage": {
+        "tn": 336,
+        "tp_correct": 785,
+        "tp_wrong": 895,
+        "fn": 560,
+        "fp": 0
+      },
+      "meta": {
+        "tn": 0,
+        "tp_correct": 336,
+        "tp_wrong": 224,
+        "fn": 224,
+        "fp": 0
+      },
+      "n_content_fields": 23,
+      "faithfulness": {
+        "contract_violations": null
+      }
+    },
+    {
+      "study": "Heitz-BuschartA_2016",
+      "pmid": "27723761",
+      "n_gold": 53,
+      "n_extracted": 221,
+      "sample_align": "MISMATCH (221 vs 53)",
+      "content": {
+        "tn": 37,
+        "tp_correct": 248,
+        "tp_wrong": 304,
+        "fn": 546,
+        "fp": 31
+      },
+      "content_coverage": {
+        "tn": 37,
+        "tp_correct": 248,
+        "tp_wrong": 304,
+        "fn": 546,
+        "fp": 31
+      },
+      "meta": {
+        "tn": 0,
+        "tp_correct": 106,
+        "tp_wrong": 159,
+        "fn": 106,
+        "fp": 0
+      },
+      "n_content_fields": 22,
+      "faithfulness": {
+        "contract_violations": null
+      }
+    },
+    {
+      "study": "FanY_2023",
+      "pmid": "37069399",
+      "n_gold": 147,
+      "n_extracted": 319,
+      "sample_align": "MISMATCH (319 vs 147)",
+      "content": {
+        "tn": 0,
+        "tp_correct": 982,
+        "tp_wrong": 341,
+        "fn": 294,
+        "fp": 0
+      },
+      "content_coverage": {
+        "tn": 0,
+        "tp_correct": 982,
+        "tp_wrong": 341,
+        "fn": 294,
+        "fp": 0
+      },
+      "meta": {
+        "tn": 0,
+        "tp_correct": 147,
+        "tp_wrong": 294,
+        "fn": 588,
+        "fp": 0
+      },
+      "n_content_fields": 11,
+      "faithfulness": {
+        "contract_violations": null
+      }
+    },
+    {
+      "study": "QinJ_2012",
+      "pmid": "23023125",
+      "n_gold": 363,
+      "n_extracted": 0,
+      "sample_align": "MISMATCH (0 vs 363)",
+      "content": {
+        "tn": 0,
+        "tp_correct": 0,
+        "tp_wrong": 0,
+        "fn": 0,
+        "fp": 0
+      },
+      "content_coverage": {
+        "tn": 130,
+        "tp_correct": 0,
+        "tp_wrong": 0,
+        "fn": 6041,
+        "fp": 0
+      },
+      "meta": {
+        "tn": 0,
+        "tp_correct": 0,
+        "tp_wrong": 0,
+        "fn": 0,
+        "fp": 0
+      },
+      "n_content_fields": 17,
+      "faithfulness": {
+        "contract_violations": null
+      }
+    },
+    {
+      "study": "ContevilleLC_2019",
+      "pmid": "31417531",
+      "n_gold": 15,
+      "n_extracted": 15,
+      "sample_align": "match",
+      "content": {
+        "tn": 30,
+        "tp_correct": 60,
+        "tp_wrong": 45,
+        "fn": 30,
+        "fp": 0
+      },
+      "content_coverage": {
+        "tn": 30,
+        "tp_correct": 60,
+        "tp_wrong": 45,
+        "fn": 30,
+        "fp": 0
+      },
+      "meta": {
+        "tn": 0,
+        "tp_correct": 32,
+        "tp_wrong": 43,
+        "fn": 30,
+        "fp": 0
+      },
+      "n_content_fields": 11,
+      "faithfulness": {
+        "contract_violations": null
+      }
+    },
+    {
+      "study": "LiSS_2016",
+      "pmid": "27126044",
+      "n_gold": 55,
+      "n_extracted": 430,
+      "sample_align": "MISMATCH (430 vs 55)",
+      "content": {
+        "tn": 0,
+        "tp_correct": 65,
+        "tp_wrong": 265,
+        "fn": 385,
+        "fp": 165
+      },
+      "content_coverage": {
+        "tn": 0,
+        "tp_correct": 65,
+        "tp_wrong": 265,
+        "fn": 385,
+        "fp": 165
+      },
+      "meta": {
+        "tn": 0,
+        "tp_correct": 110,
+        "tp_wrong": 110,
+        "fn": 165,
+        "fp": 0
+      },
+      "n_content_fields": 16,
+      "faithfulness": {
+        "contract_violations": null
+      }
+    }
+  ],
+  "field_totals": {
+    "study_name": {
+      "tn": 0,
+      "tp_correct": 0,
+      "tp_wrong": 439,
+      "fn": 287,
+      "fp": 0
+    },
+    "subject_id": {
+      "tn": 0,
+      "tp_correct": 1,
+      "tp_wrong": 128,
+      "fn": 597,
+      "fp": 0
+    },
+    "sample_id": {
+      "tn": 0,
+      "tp_correct": 112,
+      "tp_wrong": 614,
+      "fn": 0,
+      "fp": 0
+    },
+    "curator": {
+      "tn": 0,
+      "tp_correct": 0,
+      "tp_wrong": 0,
+      "fn": 726,
+      "fp": 0
+    },
+    "pmid": {
+      "tn": 0,
+      "tp_correct": 726,
+      "tp_wrong": 0,
+      "fn": 0,
+      "fp": 0
+    },
+    "target_condition": {
+      "tn": 0,
+      "tp_correct": 53,
+      "tp_wrong": 433,
+      "fn": 44,
+      "fp": 0
+    },
+    "control": {
+      "tn": 0,
+      "tp_correct": 0,
+      "tp_wrong": 70,
+      "fn": 460,
+      "fp": 0
+    },
+    "country": {
+      "tn": 0,
+      "tp_correct": 466,
+      "tp_wrong": 260,
+      "fn": 0,
+      "fp": 0
+    },
+    "body_site": {
+      "tn": 0,
+      "tp_correct": 481,
+      "tp_wrong": 201,
+      "fn": 44,
+      "fp": 0
+    },
+    "days_from_first_collection": {
+      "tn": 0,
+      "tp_correct": 17,
+      "tp_wrong": 87,
+      "fn": 108,
+      "fp": 0
+    },
+    "westernized": {
+      "tn": 0,
+      "tp_correct": 235,
+      "tp_wrong": 0,
+      "fn": 295,
+      "fp": 0
+    },
+    "dna_extraction_kit": {
+      "tn": 0,
+      "tp_correct": 211,
+      "tp_wrong": 199,
+      "fn": 114,
+      "fp": 0
+    },
+    "ncbi_accession": {
+      "tn": 0,
+      "tp_correct": 2,
+      "tp_wrong": 337,
+      "fn": 387,
+      "fp": 0
+    },
+    "sequencing_platform": {
+      "tn": 0,
+      "tp_correct": 455,
+      "tp_wrong": 227,
+      "fn": 44,
+      "fp": 0
+    },
+    "age": {
+      "tn": 16,
+      "tp_correct": 4,
+      "tp_wrong": 30,
+      "fn": 425,
+      "fp": 0
+    },
+    "age_group": {
+      "tn": 0,
+      "tp_correct": 220,
+      "tp_wrong": 143,
+      "fn": 363,
+      "fp": 0
+    },
+    "age_unit": {
+      "tn": 1,
+      "tp_correct": 112,
+      "tp_wrong": 0,
+      "fn": 166,
+      "fp": 0
+    },
+    "sex": {
+      "tn": 15,
+      "tp_correct": 305,
+      "tp_wrong": 41,
+      "fn": 125,
+      "fp": 0
+    },
+    "age_min": {
+      "tn": 0,
+      "tp_correct": 26,
+      "tp_wrong": 200,
+      "fn": 304,
+      "fp": 0
+    },
+    "age_max": {
+      "tn": 0,
+      "tp_correct": 3,
+      "tp_wrong": 223,
+      "fn": 304,
+      "fp": 0
+    },
+    "age_years": {
+      "tn": 1,
+      "tp_correct": 112,
+      "tp_wrong": 0,
+      "fn": 166,
+      "fp": 0
+    },
+    "antibiotics_current_use": {
+      "tn": 31,
+      "tp_correct": 502,
+      "tp_wrong": 0,
+      "fn": 149,
+      "fp": 0
+    },
+    "disease": {
+      "tn": 0,
+      "tp_correct": 181,
+      "tp_wrong": 422,
+      "fn": 123,
+      "fp": 0
+    },
+    "uncurated_metadata": {
+      "tn": 0,
+      "tp_correct": 0,
+      "tp_wrong": 70,
+      "fn": 0,
+      "fp": 0
+    },
+    "host_species": {
+      "tn": 0,
+      "tp_correct": 349,
+      "tp_wrong": 377,
+      "fn": 0,
+      "fp": 0
+    },
+    "family": {
+      "tn": 0,
+      "tp_correct": 0,
+      "tp_wrong": 0,
+      "fn": 156,
+      "fp": 0
+    },
+    "family_role": {
+      "tn": 0,
+      "tp_correct": 6,
+      "tp_wrong": 38,
+      "fn": 0,
+      "fp": 0
+    },
+    "location": {
+      "tn": 0,
+      "tp_correct": 0,
+      "tp_wrong": 15,
+      "fn": 196,
+      "fp": 0
+    },
+    "smoker": {
+      "tn": 0,
+      "tp_correct": 129,
+      "tp_wrong": 214,
+      "fn": 0,
+      "fp": 0
+    },
+    "biomarker_name": {
+      "tn": 112,
+      "tp_correct": 0,
+      "tp_wrong": 50,
+      "fn": 0,
+      "fp": 254
+    },
+    "biomarker_unit": {
+      "tn": 112,
+      "tp_correct": 0,
+      "tp_wrong": 50,
+      "fn": 0,
+      "fp": 254
+    },
+    "biomarker_value": {
+      "tn": 112,
+      "tp_correct": 0,
+      "tp_wrong": 50,
+      "fn": 0,
+      "fp": 254
+    },
+    "treatment": {
+      "tn": 0,
+      "tp_correct": 0,
+      "tp_wrong": 212,
+      "fn": 0,
+      "fp": 22
+    },
+    "ancestry": {
+      "tn": 0,
+      "tp_correct": 0,
+      "tp_wrong": 0,
+      "fn": 112,
+      "fp": 0
+    },
+    "ancestry_details": {
+      "tn": 0,
+      "tp_correct": 0,
+      "tp_wrong": 112,
+      "fn": 0,
+      "fp": 0
+    },
+    "bmi": {
+      "tn": 6,
+      "tp_correct": 112,
+      "tp_wrong": 0,
+      "fn": 194,
+      "fp": 0
+    },
+    "lifestyle": {
+      "tn": 0,
+      "tp_correct": 15,
+      "tp_wrong": 0,
+      "fn": 0,
+      "fp": 0
+    }
+  }
+}

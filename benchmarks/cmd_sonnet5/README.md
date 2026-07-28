@@ -19,9 +19,11 @@ the three repeats.
 > are the **fixed** pipeline (`out_ms/`); the pre-fix run is kept in
 > `out_ms.pre_fetchfix/` as before/after evidence.
 
-- **Path:** by-PMID — fetch full text + supplementary; per-sample rows come from
-  supplementary tables via a deterministic column-mapper (the LLM never sees raw
-  tables) and from prose.
+- **Path:** by-PMID — fetch full text + supplementary. Per-sample rows come from
+  supplementary tables via a mostly-deterministic path (a bounded LLM "plan" call
+  reads a ~20-row preview to infer table *structure*; a Python executor then copies
+  every cell value verbatim by index — the LLM emits indices, never values) and from
+  LLM enumeration over prose.
 - **Target schema:** `cmd.clean.linkml.yaml` (11 `reachable_from` ontology enums
   downgraded to string by `make_clean_schema.py`).
 - **Gold:** `curatedMetagenomicDataCuration/inst/curated/<study>/<study>_sample.tsv`.

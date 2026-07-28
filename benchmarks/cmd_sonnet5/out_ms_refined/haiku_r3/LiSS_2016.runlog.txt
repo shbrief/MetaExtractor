@@ -1,0 +1,13 @@
+cmd: metaextract --paper-id 27126044 --schema /Users/sehyunoh/OmicsMLRepo/MetaExtractor/benchmarks/cmd_sonnet5/cmd.clean.linkml.yaml --model claude-haiku-4-5 --out /Users/sehyunoh/OmicsMLRepo/MetaExtractor/benchmarks/cmd_sonnet5/out_ms_refined/haiku_r3/LiSS_2016.json --csv /Users/sehyunoh/OmicsMLRepo/MetaExtractor/benchmarks/cmd_sonnet5/out_ms_refined/haiku_r3/LiSS_2016.csv --csv-provenance
+status: ok
+elapsed_s: 64.3
+--- stderr ---
+[fetched unpaywall_pdf for 27126044]
+[supplementary tables parsed: 1 (deterministic path; LLM will not see them)]
+[SRA/ENA run manifest: ena:PRJEB12357 (430 runs) (deterministic path)]
+[table selection: 1 kept / 1 scored (gate=0.15)]
+[  PRJEB12357_ena_manifest.tsv: kept (score=0.47) — key-like column 'run_accession']
+[wrote CSV: /Users/sehyunoh/OmicsMLRepo/MetaExtractor/benchmarks/cmd_sonnet5/out_ms_refined/haiku_r3/LiSS_2016.csv]
+[usage: 4 call(s); input=10,540, cache_write=11,961, cache_read=23,922, output=9,698]
+[cost: $0.0764 (input $0.0105 + cache_w $0.0150 + cache_r $0.0024 + output $0.0485)]
+

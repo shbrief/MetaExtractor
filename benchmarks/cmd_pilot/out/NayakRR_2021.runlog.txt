@@ -1,0 +1,20 @@
+cmd: metaextract --paper-id 33440172 --schema /private/tmp/claude-501/-Users-sehyunoh-OmicsMLRepo-metacurator/d59c5ae1-0f71-458d-a430-59f0885f03e3/scratchpad/cmd.clean.linkml.yaml --model claude-haiku-4-5 --out out/NayakRR_2021.json --csv out/NayakRR_2021.csv --csv-provenance
+returncode: 0
+elapsed_s: 87.5
+--- stderr ---
+[fetched pmc_fulltext for 33440172]
+[supplementary skipped: NIHMS1655935-supplement-1.pdf — s3: HTTPError: HTTP Error 404: Not Found]
+[supplementary skipped: NIHMS1655935-supplement-3.xlsx — s3: HTTPError: HTTP Error 404: Not Found]
+[supplementary skipped: NIHMS1655935-supplement-4.xlsx — s3: HTTPError: HTTP Error 404: Not Found]
+[supplementary skipped: NIHMS1655935-supplement-5.xlsx — s3: HTTPError: HTTP Error 404: Not Found]
+[supplementary skipped: NIHMS1655935-supplement-6.xlsx — s3: HTTPError: HTTP Error 404: Not Found]
+[supplementary skipped: NIHMS1655935-supplement-7.xlsx — s3: HTTPError: HTTP Error 404: Not Found]
+[supplementary skipped: NIHMS1655935-supplement-8.xlsx — s3: HTTPError: HTTP Error 404: Not Found]
+[supplementary skipped: NIHMS1655935-supplement-9.xlsx — s3: HTTPError: HTTP Error 404: Not Found]
+[supplementary skipped: (europepmc zip) — response was not a valid ZIP]
+[wrote CSV: out/NayakRR_2021.csv]
+[usage: 3 call(s); input=7,268, cache_write=23,577, cache_read=47,154, output=13,383]
+[cost: $0.1084 (input $0.0073 + cache_w $0.0295 + cache_r $0.0047 + output $0.0669)]
+
+--- stdout(head) ---
+

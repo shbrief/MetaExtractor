@@ -1,0 +1,145 @@
+sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	decision
+0	NLF006	H1F413846	study_name	not_reported	LiJ_2017	FN
+0	NLF006	H1F413846	subject_id	not_reported	H1F413846	FN
+0	NLF006	H1F413846	sample_id	NLF006	H1F413846	TP_wrong
+0	NLF006	H1F413846	curator	not_reported	Valentina_Giunchiglia	FN
+0	NLF006	H1F413846	pmid	28143587	28143587	TP_correct
+0	NLF006	H1F413846	target_condition	Control	Hypertension	TP_wrong
+0	NLF006	H1F413846	control	Study Control	Case	TP_wrong
+0	NLF006	H1F413846	country	China	China	TP_correct
+0	NLF006	H1F413846	body_site	feces	feces	TP_correct
+0	NLF006	H1F413846	location	Tangshan, northern China	Tangshan	TP_wrong
+0	NLF006	H1F413846	westernized	not_reported	Yes	FN
+0	NLF006	H1F413846	dna_extraction_kit	Tiangen	Tiangen	TP_correct
+0	NLF006	H1F413846	ncbi_accession	not_reported	ERR1398121	FN
+0	NLF006	H1F413846	sequencing_platform	IlluminaHiSeq	IlluminaHiSeq	TP_correct
+0	NLF006	H1F413846	age_group	Adult	Adult	TP_correct
+0	NLF006	H1F413846	age_min	not_reported	18	FN
+0	NLF006	H1F413846	age_max	not_reported	65	FN
+0	NLF006	H1F413846	antibiotics_current_use	No	No	TP_correct
+0	NLF006	H1F413846	disease	Hypertension; Pre-hypertension; Healthy	Hypertension,Borderline Hypertension	TP_wrong
+0	NLF006	H1F413846	smoker	Non-smoker	Non-smoker (finding)	TP_wrong
+0	NLF006	H1F413846	biomarker_name	Systolic blood pressure (SBP); Diastolic blood pressure (DBP); Fasting blood glucose (FBG)		FP
+0	NLF006	H1F413846	biomarker_unit	mmHg; mmHg; not_reported		FP
+0	NLF006	H1F413846	biomarker_value	{'SBP': {'Control': '≤125 mmHg', 'pHTN': '125 mmHg < SBP ≤ 139 mmHg', 'HTN': 'SBP ≥140 mmHg'}, 'DBP': {'Control': '≤80 mmHg', 'pHTN': '80 mmHg < DBP ≤ 89 mmHg', 'HTN': 'DBP ≥90 mmHg'}}		FP
+0	NLF006	H1F413846	host_species	Homo sapiens	Homo sapiens	TP_correct
+1	SZEY-103A	H1F512951	study_name	not_reported	LiJ_2017	FN
+1	SZEY-103A	H1F512951	subject_id	not_reported	H1F512951	FN
+1	SZEY-103A	H1F512951	sample_id	SZEY-103A	H1F512951	TP_wrong
+1	SZEY-103A	H1F512951	curator	not_reported	Valentina_Giunchiglia	FN
+1	SZEY-103A	H1F512951	pmid	28143587	28143587	TP_correct
+1	SZEY-103A	H1F512951	target_condition	Control	Hypertension	TP_wrong
+1	SZEY-103A	H1F512951	control	Study Control	Case	TP_wrong
+1	SZEY-103A	H1F512951	country	China	China	TP_correct
+1	SZEY-103A	H1F512951	body_site	feces	feces	TP_correct
+1	SZEY-103A	H1F512951	location	Tangshan, northern China	Tangshan	TP_wrong
+1	SZEY-103A	H1F512951	westernized	not_reported	Yes	FN
+1	SZEY-103A	H1F512951	dna_extraction_kit	Tiangen	Tiangen	TP_correct
+1	SZEY-103A	H1F512951	ncbi_accession	not_reported	ERR1398068	FN
+1	SZEY-103A	H1F512951	sequencing_platform	IlluminaHiSeq	IlluminaHiSeq	TP_correct
+1	SZEY-103A	H1F512951	age_group	Adult	Adult	TP_correct
+1	SZEY-103A	H1F512951	age_min	not_reported	18	FN
+1	SZEY-103A	H1F512951	age_max	not_reported	65	FN
+1	SZEY-103A	H1F512951	antibiotics_current_use	No	No	TP_correct
+1	SZEY-103A	H1F512951	disease	Hypertension; Pre-hypertension; Healthy	Hypertension	TP_wrong
+1	SZEY-103A	H1F512951	smoker	Non-smoker	Non-smoker (finding)	TP_wrong
+1	SZEY-103A	H1F512951	biomarker_name	Systolic blood pressure (SBP); Diastolic blood pressure (DBP); Fasting blood glucose (FBG)		FP
+1	SZEY-103A	H1F512951	biomarker_unit	mmHg; mmHg; not_reported		FP
+1	SZEY-103A	H1F512951	biomarker_value	{'SBP': {'Control': '≤125 mmHg', 'pHTN': '125 mmHg < SBP ≤ 139 mmHg', 'HTN': 'SBP ≥140 mmHg'}, 'DBP': {'Control': '≤80 mmHg', 'pHTN': '80 mmHg < DBP ≤ 89 mmHg', 'HTN': 'DBP ≥90 mmHg'}}		FP
+1	SZEY-103A	H1F512951	host_species	Homo sapiens	Homo sapiens	TP_correct
+2	SZEY-104A	H1F513817	study_name	not_reported	LiJ_2017	FN
+2	SZEY-104A	H1F513817	subject_id	not_reported	H1F513817	FN
+2	SZEY-104A	H1F513817	sample_id	SZEY-104A	H1F513817	TP_wrong
+2	SZEY-104A	H1F513817	curator	not_reported	Valentina_Giunchiglia	FN
+2	SZEY-104A	H1F513817	pmid	28143587	28143587	TP_correct
+2	SZEY-104A	H1F513817	target_condition	Control	Hypertension	TP_wrong
+2	SZEY-104A	H1F513817	control	Study Control	Case	TP_wrong
+2	SZEY-104A	H1F513817	country	China	China	TP_correct
+2	SZEY-104A	H1F513817	body_site	feces	feces	TP_correct
+2	SZEY-104A	H1F513817	location	Tangshan, northern China	Tangshan	TP_wrong
+2	SZEY-104A	H1F513817	westernized	not_reported	Yes	FN
+2	SZEY-104A	H1F513817	dna_extraction_kit	Tiangen	Tiangen	TP_correct
+2	SZEY-104A	H1F513817	ncbi_accession	not_reported	ERR1398201	FN
+2	SZEY-104A	H1F513817	sequencing_platform	IlluminaHiSeq	IlluminaHiSeq	TP_correct
+2	SZEY-104A	H1F513817	age_group	Adult	Adult	TP_correct
+2	SZEY-104A	H1F513817	age_min	not_reported	18	FN
+2	SZEY-104A	H1F513817	age_max	not_reported	65	FN
+2	SZEY-104A	H1F513817	antibiotics_current_use	No	No	TP_correct
+2	SZEY-104A	H1F513817	disease	Hypertension; Pre-hypertension; Healthy	Hypertension,Borderline Hypertension	TP_wrong
+2	SZEY-104A	H1F513817	smoker	Non-smoker	Non-smoker (finding)	TP_wrong
+2	SZEY-104A	H1F513817	biomarker_name	Systolic blood pressure (SBP); Diastolic blood pressure (DBP); Fasting blood glucose (FBG)		FP
+2	SZEY-104A	H1F513817	biomarker_unit	mmHg; mmHg; not_reported		FP
+2	SZEY-104A	H1F513817	biomarker_value	{'SBP': {'Control': '≤125 mmHg', 'pHTN': '125 mmHg < SBP ≤ 139 mmHg', 'HTN': 'SBP ≥140 mmHg'}, 'DBP': {'Control': '≤80 mmHg', 'pHTN': '80 mmHg < DBP ≤ 89 mmHg', 'HTN': 'DBP ≥90 mmHg'}}		FP
+2	SZEY-104A	H1F513817	host_species	Homo sapiens	Homo sapiens	TP_correct
+3	NOM007	H1F513818	study_name	not_reported	LiJ_2017	FN
+3	NOM007	H1F513818	subject_id	not_reported	H1F513818	FN
+3	NOM007	H1F513818	sample_id	NOM007	H1F513818	TP_wrong
+3	NOM007	H1F513818	curator	not_reported	Valentina_Giunchiglia	FN
+3	NOM007	H1F513818	pmid	28143587	28143587	TP_correct
+3	NOM007	H1F513818	target_condition	Hypertension	Hypertension	TP_correct
+3	NOM007	H1F513818	control	Case	Case	TP_correct
+3	NOM007	H1F513818	country	China	China	TP_correct
+3	NOM007	H1F513818	body_site	feces	feces	TP_correct
+3	NOM007	H1F513818	location	Tangshan, northern China	Tangshan	TP_wrong
+3	NOM007	H1F513818	westernized	not_reported	Yes	FN
+3	NOM007	H1F513818	dna_extraction_kit	Tiangen	Tiangen	TP_correct
+3	NOM007	H1F513818	ncbi_accession	not_reported	ERR1398155	FN
+3	NOM007	H1F513818	sequencing_platform	IlluminaHiSeq	IlluminaHiSeq	TP_correct
+3	NOM007	H1F513818	age_group	Adult	Adult	TP_correct
+3	NOM007	H1F513818	age_min	not_reported	18	FN
+3	NOM007	H1F513818	age_max	not_reported	65	FN
+3	NOM007	H1F513818	antibiotics_current_use	No	No	TP_correct
+3	NOM007	H1F513818	disease	Hypertension; Pre-hypertension; Healthy	Hypertension,Borderline Hypertension	TP_wrong
+3	NOM007	H1F513818	smoker	Non-smoker	Non-smoker (finding)	TP_wrong
+3	NOM007	H1F513818	biomarker_name	Systolic blood pressure (SBP); Diastolic blood pressure (DBP); Fasting blood glucose (FBG)		FP
+3	NOM007	H1F513818	biomarker_unit	mmHg; mmHg; not_reported		FP
+3	NOM007	H1F513818	biomarker_value	{'SBP': {'Control': '≤125 mmHg', 'pHTN': '125 mmHg < SBP ≤ 139 mmHg', 'HTN': 'SBP ≥140 mmHg'}, 'DBP': {'Control': '≤80 mmHg', 'pHTN': '80 mmHg < DBP ≤ 89 mmHg', 'HTN': 'DBP ≥90 mmHg'}}		FP
+3	NOM007	H1F513818	host_species	Homo sapiens	Homo sapiens	TP_correct
+4	SZEY-101A	H1F613739	study_name	not_reported	LiJ_2017	FN
+4	SZEY-101A	H1F613739	subject_id	not_reported	H1F613739	FN
+4	SZEY-101A	H1F613739	sample_id	SZEY-101A	H1F613739	TP_wrong
+4	SZEY-101A	H1F613739	curator	not_reported	Valentina_Giunchiglia	FN
+4	SZEY-101A	H1F613739	pmid	28143587	28143587	TP_correct
+4	SZEY-101A	H1F613739	target_condition	Hypertension	Hypertension	TP_correct
+4	SZEY-101A	H1F613739	control	Case	Case	TP_correct
+4	SZEY-101A	H1F613739	country	China	China	TP_correct
+4	SZEY-101A	H1F613739	body_site	feces	feces	TP_correct
+4	SZEY-101A	H1F613739	location	Tangshan, northern China	Tangshan	TP_wrong
+4	SZEY-101A	H1F613739	westernized	not_reported	Yes	FN
+4	SZEY-101A	H1F613739	dna_extraction_kit	Tiangen	Tiangen	TP_correct
+4	SZEY-101A	H1F613739	ncbi_accession	not_reported	ERR1398222	FN
+4	SZEY-101A	H1F613739	sequencing_platform	IlluminaHiSeq	IlluminaHiSeq	TP_correct
+4	SZEY-101A	H1F613739	age_group	Adult	Adult	TP_correct
+4	SZEY-101A	H1F613739	age_min	not_reported	18	FN
+4	SZEY-101A	H1F613739	age_max	not_reported	65	FN
+4	SZEY-101A	H1F613739	antibiotics_current_use	No	No	TP_correct
+4	SZEY-101A	H1F613739	disease	Hypertension; Pre-hypertension; Healthy	Hypertension,Borderline Hypertension	TP_wrong
+4	SZEY-101A	H1F613739	smoker	Non-smoker	Non-smoker (finding)	TP_wrong
+4	SZEY-101A	H1F613739	biomarker_name	Systolic blood pressure (SBP); Diastolic blood pressure (DBP); Fasting blood glucose (FBG)		FP
+4	SZEY-101A	H1F613739	biomarker_unit	mmHg; mmHg; not_reported		FP
+4	SZEY-101A	H1F613739	biomarker_value	{'SBP': {'Control': '≤125 mmHg', 'pHTN': '125 mmHg < SBP ≤ 139 mmHg', 'HTN': 'SBP ≥140 mmHg'}, 'DBP': {'Control': '≤80 mmHg', 'pHTN': '80 mmHg < DBP ≤ 89 mmHg', 'HTN': 'DBP ≥90 mmHg'}}		FP
+4	SZEY-101A	H1F613739	host_species	Homo sapiens	Homo sapiens	TP_correct
+5	SZEY-99A	H1M213648	study_name	not_reported	LiJ_2017	FN
+5	SZEY-99A	H1M213648	subject_id	not_reported	H1M213648	FN
+5	SZEY-99A	H1M213648	sample_id	SZEY-99A	H1M213648	TP_wrong
+5	SZEY-99A	H1M213648	curator	not_reported	Valentina_Giunchiglia	FN
+5	SZEY-99A	H1M213648	pmid	28143587	28143587	TP_correct
+5	SZEY-99A	H1M213648	target_condition	Hypertension	Hypertension	TP_correct
+5	SZEY-99A	H1M213648	control	Case	Case	TP_correct
+5	SZEY-99A	H1M213648	country	China	China	TP_correct
+5	SZEY-99A	H1M213648	body_site	feces	feces	TP_correct
+5	SZEY-99A	H1M213648	location	Tangshan, northern China	Tangshan	TP_wrong
+5	SZEY-99A	H1M213648	westernized	not_reported	Yes	FN
+5	SZEY-99A	H1M213648	dna_extraction_kit	Tiangen	Tiangen	TP_correct
+5	SZEY-99A	H1M213648	ncbi_accession	not_reported	ERR1398255	FN
+5	SZEY-99A	H1M213648	sequencing_platform	IlluminaHiSeq	IlluminaHiSeq	TP_correct
+5	SZEY-99A	H1M213648	age_group	Adult	Adult	TP_correct
+5	SZEY-99A	H1M213648	age_min	not_reported	18	FN
+5	SZEY-99A	H1M213648	age_max	not_reported	65	FN
+5	SZEY-99A	H1M213648	antibiotics_current_use	No	No	TP_correct
+5	SZEY-99A	H1M213648	disease	Hypertension; Pre-hypertension; Healthy	Hypertension,Borderline Hypertension	TP_wrong
+5	SZEY-99A	H1M213648	smoker	Non-smoker	Non-smoker (finding)	TP_wrong
+5	SZEY-99A	H1M213648	biomarker_name	Systolic blood pressure (SBP); Diastolic blood pressure (DBP); Fasting blood glucose (FBG)		FP
+5	SZEY-99A	H1M213648	biomarker_unit	mmHg; mmHg; not_reported		FP
+5	SZEY-99A	H1M213648	biomarker_value	{'SBP': {'Control': '≤125 mmHg', 'pHTN': '125 mmHg < SBP ≤ 139 mmHg', 'HTN': 'SBP ≥140 mmHg'}, 'DBP': {'Control': '≤80 mmHg', 'pHTN': '80 mmHg < DBP ≤ 89 mmHg', 'HTN': 'DBP ≥90 mmHg'}}		FP
+5	SZEY-99A	H1M213648	host_species	Homo sapiens	Homo sapiens	TP_correct

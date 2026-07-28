@@ -1,0 +1,13 @@
+cmd: metaextract --paper-id 30661755 --schema /private/tmp/claude-501/-Users-sehyunoh-OmicsMLRepo-metacurator/d59c5ae1-0f71-458d-a430-59f0885f03e3/scratchpad/cmd.clean.linkml.yaml --model claude-haiku-4-5 --supplementary /Users/sehyunoh/Projects/cMD_architecture/curatedMetagenomicDataCuration/inst/curated/PasolliE_2019/PasolliE_2019_sra_meta.tsv --no-supplementary --out out_tables/PasolliE_2019.json --csv out_tables/PasolliE_2019.csv --csv-provenance
+returncode: 0
+elapsed_s: 69.1
+--- stderr ---
+[fetched pmc_fulltext for 30661755]
+[supplementary (local) included (1): /Users/sehyunoh/Projects/cMD_architecture/curatedMetagenomicDataCuration/inst/curated/PasolliE_2019/PasolliE_2019_sra_meta.tsv]
+[supplementary (local) tables parsed: 1 (deterministic path; LLM will not see them)]
+[table selection: 1 kept / 1 scored (gate=0.15)]
+[  PasolliE_2019_sra_meta.tsv: kept (score=0.56) — key-like column 'Run'; westernized: values match enum in 'Tumor' (100%); antibiotics_current_use: values match enum in 'Tumor' (100%); disease_response_orr: values match enum in 'Tumor' (100%); disease_response_pfs: values match enum in 'Tumor' (100%); obgyn_birth_control: values match enum in 'Tumor' (100%); obgyn_lactating: values match enum in 'Tumor' (100%); tumor_staging_ajcc: values match enum in 'InsertSize' (100%)]
+[wrote CSV: out_tables/PasolliE_2019.csv]
+[usage: 4 call(s); input=14,455, cache_write=27,280, cache_read=54,560, output=10,406]
+[cost: $0.1060 (input $0.0145 + cache_w $0.0341 + cache_r $0.0055 + output $0.0520)]
+

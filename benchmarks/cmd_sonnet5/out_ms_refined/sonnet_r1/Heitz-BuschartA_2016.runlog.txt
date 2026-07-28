@@ -1,0 +1,13 @@
+cmd: metaextract --paper-id 27723761 --schema /Users/sehyunoh/OmicsMLRepo/MetaExtractor/benchmarks/cmd_sonnet5/cmd.clean.linkml.yaml --model claude-sonnet-5 --out /Users/sehyunoh/OmicsMLRepo/MetaExtractor/benchmarks/cmd_sonnet5/out_ms_refined/sonnet_r1/Heitz-BuschartA_2016.json --csv /Users/sehyunoh/OmicsMLRepo/MetaExtractor/benchmarks/cmd_sonnet5/out_ms_refined/sonnet_r1/Heitz-BuschartA_2016.csv --csv-provenance
+status: ok
+elapsed_s: 192.2
+--- stderr ---
+[fetched unpaywall_pdf for 27723761]
+[supplementary tables parsed: 1 (deterministic path; LLM will not see them)]
+[SRA/ENA run manifest: ena:PRJNA289586 (221 runs) (deterministic path)]
+[table selection: 1 kept / 1 scored (gate=0.15)]
+[  PRJNA289586_ena_manifest.tsv: kept (score=0.47) — key-like column 'run_accession'; sex: values match enum in 'host_sex' (100%)]
+[wrote CSV: /Users/sehyunoh/OmicsMLRepo/MetaExtractor/benchmarks/cmd_sonnet5/out_ms_refined/sonnet_r1/Heitz-BuschartA_2016.csv]
+[usage: 4 call(s); input=13,686, cache_write=37,159, cache_read=78,029, output=21,327]
+[cost: no pricing entry for claude-sonnet-5]
+

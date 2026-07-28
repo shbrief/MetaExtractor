@@ -1,0 +1,28 @@
+cmd: metaextract --paper-id 31417531 --schema /Users/sehyunoh/OmicsMLRepo/MetaExtractor/benchmarks/cmd_sonnet5/cmd.clean.linkml.yaml --model claude-sonnet-5 --out /Users/sehyunoh/OmicsMLRepo/MetaExtractor/benchmarks/cmd_sonnet5/out_ms_refined/sonnet_r2/ContevilleLC_2019.json --csv /Users/sehyunoh/OmicsMLRepo/MetaExtractor/benchmarks/cmd_sonnet5/out_ms_refined/sonnet_r2/ContevilleLC_2019.csv --csv-provenance
+status: ok
+elapsed_s: 146.4
+--- stderr ---
+[fetched pmc_fulltext for 31417531]
+[supplementary tables parsed: 1 (deterministic path; LLM will not see them)]
+[SRA/ENA run manifest: ena:PRJNA527208 (15 runs) (deterministic path)]
+[supplementary skipped: Image_1.TIFF — image-only (.tiff)]
+[supplementary skipped: Image_2.TIFF — image-only (.tiff)]
+[supplementary skipped: Image_3.TIFF — image-only (.tiff)]
+[supplementary skipped: Table_1.XLS — s3: ValueError: unsupported extension (.xls)]
+[supplementary skipped: Table_2.XLS — s3: ValueError: unsupported extension (.xls)]
+[supplementary skipped: Table_1.XLS — europepmc: ValueError: unsupported extension (.xls)]
+[supplementary skipped: Table_2.XLS — europepmc: ValueError: unsupported extension (.xls)]
+[supplementary skipped: fmicb-10-01743-g001.gif — europepmc: ValueError: image-only (.gif)]
+[supplementary skipped: fmicb-10-01743-g001.jpg — europepmc: ValueError: image-only (.jpg)]
+[supplementary skipped: fmicb-10-01743-g002.gif — europepmc: ValueError: image-only (.gif)]
+[supplementary skipped: fmicb-10-01743-g002.jpg — europepmc: ValueError: image-only (.jpg)]
+[supplementary skipped: fmicb-10-01743-g003.gif — europepmc: ValueError: image-only (.gif)]
+[supplementary skipped: fmicb-10-01743-g003.jpg — europepmc: ValueError: image-only (.jpg)]
+[supplementary skipped: fmicb-10-01743-g004.gif — europepmc: ValueError: image-only (.gif)]
+[supplementary skipped: fmicb-10-01743-g004.jpg — europepmc: ValueError: image-only (.jpg)]
+[table selection: 1 kept / 1 scored (gate=0.15)]
+[  PRJNA527208_ena_manifest.tsv: kept (score=0.47) — key-like column 'run_accession']
+[wrote CSV: /Users/sehyunoh/OmicsMLRepo/MetaExtractor/benchmarks/cmd_sonnet5/out_ms_refined/sonnet_r2/ContevilleLC_2019.csv]
+[usage: 4 call(s); input=12,906, cache_write=12,672, cache_read=25,344, output=18,122]
+[cost: no pricing entry for claude-sonnet-5]
+

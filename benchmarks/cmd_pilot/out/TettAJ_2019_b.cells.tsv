@@ -1,0 +1,1013 @@
+sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	decision
+0	S378_Clade_A_bin	C16-20005-GH	study_name	KarlssonFH_2013	TettAJ_2019_b	TP_wrong
+0	S378_Clade_A_bin	C16-20005-GH	subject_id		C16-10022-GH_M	FN
+0	S378_Clade_A_bin	C16-20005-GH	sample_id	S378_Clade_A_bin	C16-20005-GH	TP_wrong
+0	S378_Clade_A_bin	C16-20005-GH	curator		Paolo_Manghi	FN
+0	S378_Clade_A_bin	C16-20005-GH	pmid	31607556	31607556	TP_correct
+0	S378_Clade_A_bin	C16-20005-GH	target_condition		Prevotella copri	FN
+0	S378_Clade_A_bin	C16-20005-GH	control		Study Control	FN
+0	S378_Clade_A_bin	C16-20005-GH	country		Ghana	FN
+0	S378_Clade_A_bin	C16-20005-GH	body_site		feces	FN
+0	S378_Clade_A_bin	C16-20005-GH	westernized		No	FN
+0	S378_Clade_A_bin	C16-20005-GH	dna_extraction_kit		Qiagen	FN
+0	S378_Clade_A_bin	C16-20005-GH	ncbi_accession		SRR8791405	FN
+0	S378_Clade_A_bin	C16-20005-GH	sequencing_platform		IlluminaHiSeq	FN
+0	S378_Clade_A_bin	C16-20005-GH	age		34.0	FN
+0	S378_Clade_A_bin	C16-20005-GH	age_group		Adult	FN
+0	S378_Clade_A_bin	C16-20005-GH	age_unit		Year	FN
+0	S378_Clade_A_bin	C16-20005-GH	family		TettAJ_2019_b_1	FN
+0	S378_Clade_A_bin	C16-20005-GH	family_role		mother	FN
+0	S378_Clade_A_bin	C16-20005-GH	age_min	not_reported	34	FN
+0	S378_Clade_A_bin	C16-20005-GH	age_max	not_reported	34	FN
+0	S378_Clade_A_bin	C16-20005-GH	age_years	not_reported	34.0	FN
+0	S378_Clade_A_bin	C16-20005-GH	disease	Healthy	Healthy	TP_correct
+0	S378_Clade_A_bin	C16-20005-GH	host_species	Homo sapiens	Homo sapiens	TP_correct
+1	PNP_Main_45_megahit_Clade_A_bin	C16-20006-GH	study_name	ZeeviD_2015_B	TettAJ_2019_b	TP_wrong
+1	PNP_Main_45_megahit_Clade_A_bin	C16-20006-GH	subject_id		C16-10022-GH_F	FN
+1	PNP_Main_45_megahit_Clade_A_bin	C16-20006-GH	sample_id	PNP_Main_45_megahit_Clade_A_bin	C16-20006-GH	TP_wrong
+1	PNP_Main_45_megahit_Clade_A_bin	C16-20006-GH	curator		Paolo_Manghi	FN
+1	PNP_Main_45_megahit_Clade_A_bin	C16-20006-GH	pmid	31607556	31607556	TP_correct
+1	PNP_Main_45_megahit_Clade_A_bin	C16-20006-GH	target_condition		Prevotella copri	FN
+1	PNP_Main_45_megahit_Clade_A_bin	C16-20006-GH	control		Study Control	FN
+1	PNP_Main_45_megahit_Clade_A_bin	C16-20006-GH	country		Ghana	FN
+1	PNP_Main_45_megahit_Clade_A_bin	C16-20006-GH	body_site		feces	FN
+1	PNP_Main_45_megahit_Clade_A_bin	C16-20006-GH	westernized		No	FN
+1	PNP_Main_45_megahit_Clade_A_bin	C16-20006-GH	dna_extraction_kit		Qiagen	FN
+1	PNP_Main_45_megahit_Clade_A_bin	C16-20006-GH	ncbi_accession		SRR8791404	FN
+1	PNP_Main_45_megahit_Clade_A_bin	C16-20006-GH	sequencing_platform		IlluminaHiSeq	FN
+1	PNP_Main_45_megahit_Clade_A_bin	C16-20006-GH	age		33.0	FN
+1	PNP_Main_45_megahit_Clade_A_bin	C16-20006-GH	age_group		Adult	FN
+1	PNP_Main_45_megahit_Clade_A_bin	C16-20006-GH	age_unit		Year	FN
+1	PNP_Main_45_megahit_Clade_A_bin	C16-20006-GH	family		TettAJ_2019_b_1	FN
+1	PNP_Main_45_megahit_Clade_A_bin	C16-20006-GH	family_role		father	FN
+1	PNP_Main_45_megahit_Clade_A_bin	C16-20006-GH	age_min	not_reported	33	FN
+1	PNP_Main_45_megahit_Clade_A_bin	C16-20006-GH	age_max	not_reported	33	FN
+1	PNP_Main_45_megahit_Clade_A_bin	C16-20006-GH	age_years	not_reported	33.0	FN
+1	PNP_Main_45_megahit_Clade_A_bin	C16-20006-GH	disease	Healthy	Healthy	TP_correct
+1	PNP_Main_45_megahit_Clade_A_bin	C16-20006-GH	host_species	Homo sapiens	Homo sapiens	TP_correct
+2	PNP_Main_575_megahit_Clade_A_bin	C16-20007-GH	study_name	ZeeviD_2015_A	TettAJ_2019_b	TP_wrong
+2	PNP_Main_575_megahit_Clade_A_bin	C16-20007-GH	subject_id		C16-10022-GH_S1	FN
+2	PNP_Main_575_megahit_Clade_A_bin	C16-20007-GH	sample_id	PNP_Main_575_megahit_Clade_A_bin	C16-20007-GH	TP_wrong
+2	PNP_Main_575_megahit_Clade_A_bin	C16-20007-GH	curator		Paolo_Manghi	FN
+2	PNP_Main_575_megahit_Clade_A_bin	C16-20007-GH	pmid	31607556	31607556	TP_correct
+2	PNP_Main_575_megahit_Clade_A_bin	C16-20007-GH	target_condition		Prevotella copri	FN
+2	PNP_Main_575_megahit_Clade_A_bin	C16-20007-GH	control		Study Control	FN
+2	PNP_Main_575_megahit_Clade_A_bin	C16-20007-GH	country		Ghana	FN
+2	PNP_Main_575_megahit_Clade_A_bin	C16-20007-GH	body_site		feces	FN
+2	PNP_Main_575_megahit_Clade_A_bin	C16-20007-GH	westernized		No	FN
+2	PNP_Main_575_megahit_Clade_A_bin	C16-20007-GH	dna_extraction_kit		Qiagen	FN
+2	PNP_Main_575_megahit_Clade_A_bin	C16-20007-GH	ncbi_accession		SRR8791403	FN
+2	PNP_Main_575_megahit_Clade_A_bin	C16-20007-GH	sequencing_platform		IlluminaHiSeq	FN
+2	PNP_Main_575_megahit_Clade_A_bin	C16-20007-GH	age		7.0	FN
+2	PNP_Main_575_megahit_Clade_A_bin	C16-20007-GH	age_group		Child	FN
+2	PNP_Main_575_megahit_Clade_A_bin	C16-20007-GH	age_unit		Year	FN
+2	PNP_Main_575_megahit_Clade_A_bin	C16-20007-GH	family		TettAJ_2019_b_1	FN
+2	PNP_Main_575_megahit_Clade_A_bin	C16-20007-GH	family_role		child	FN
+2	PNP_Main_575_megahit_Clade_A_bin	C16-20007-GH	age_min	not_reported	7	FN
+2	PNP_Main_575_megahit_Clade_A_bin	C16-20007-GH	age_max	not_reported	7	FN
+2	PNP_Main_575_megahit_Clade_A_bin	C16-20007-GH	age_years	not_reported	7.0	FN
+2	PNP_Main_575_megahit_Clade_A_bin	C16-20007-GH	disease	Healthy	Healthy	TP_correct
+2	PNP_Main_575_megahit_Clade_A_bin	C16-20007-GH	host_species	Homo sapiens	Homo sapiens	TP_correct
+3	S484_Clade_A_bin	C16-20008-GH	study_name	KarlssonFH_2013	TettAJ_2019_b	TP_wrong
+3	S484_Clade_A_bin	C16-20008-GH	subject_id		C16-10022-GH_S2	FN
+3	S484_Clade_A_bin	C16-20008-GH	sample_id	S484_Clade_A_bin	C16-20008-GH	TP_wrong
+3	S484_Clade_A_bin	C16-20008-GH	curator		Paolo_Manghi	FN
+3	S484_Clade_A_bin	C16-20008-GH	pmid	31607556	31607556	TP_correct
+3	S484_Clade_A_bin	C16-20008-GH	target_condition		Prevotella copri	FN
+3	S484_Clade_A_bin	C16-20008-GH	control		Study Control	FN
+3	S484_Clade_A_bin	C16-20008-GH	country		Ghana	FN
+3	S484_Clade_A_bin	C16-20008-GH	body_site		feces	FN
+3	S484_Clade_A_bin	C16-20008-GH	westernized		No	FN
+3	S484_Clade_A_bin	C16-20008-GH	dna_extraction_kit		Qiagen	FN
+3	S484_Clade_A_bin	C16-20008-GH	ncbi_accession		SRR8791402	FN
+3	S484_Clade_A_bin	C16-20008-GH	sequencing_platform		IlluminaHiSeq	FN
+3	S484_Clade_A_bin	C16-20008-GH	age		5.0	FN
+3	S484_Clade_A_bin	C16-20008-GH	age_group		Child	FN
+3	S484_Clade_A_bin	C16-20008-GH	age_unit		Year	FN
+3	S484_Clade_A_bin	C16-20008-GH	family		TettAJ_2019_b_1	FN
+3	S484_Clade_A_bin	C16-20008-GH	family_role		child	FN
+3	S484_Clade_A_bin	C16-20008-GH	age_min	not_reported	5	FN
+3	S484_Clade_A_bin	C16-20008-GH	age_max	not_reported	5	FN
+3	S484_Clade_A_bin	C16-20008-GH	age_years	not_reported	5.0	FN
+3	S484_Clade_A_bin	C16-20008-GH	disease	Healthy	Healthy	TP_correct
+3	S484_Clade_A_bin	C16-20008-GH	host_species	Homo sapiens	Homo sapiens	TP_correct
+4	FAT_020-22-2-0_Clade_A_bin	C16-20009-GH	study_name	LiSS_2016	TettAJ_2019_b	TP_wrong
+4	FAT_020-22-2-0_Clade_A_bin	C16-20009-GH	subject_id		C16-10025-GH_M	FN
+4	FAT_020-22-2-0_Clade_A_bin	C16-20009-GH	sample_id	FAT_020-22-2-0_Clade_A_bin	C16-20009-GH	TP_wrong
+4	FAT_020-22-2-0_Clade_A_bin	C16-20009-GH	curator		Paolo_Manghi	FN
+4	FAT_020-22-2-0_Clade_A_bin	C16-20009-GH	pmid	31607556	31607556	TP_correct
+4	FAT_020-22-2-0_Clade_A_bin	C16-20009-GH	target_condition		Prevotella copri	FN
+4	FAT_020-22-2-0_Clade_A_bin	C16-20009-GH	control		Study Control	FN
+4	FAT_020-22-2-0_Clade_A_bin	C16-20009-GH	country		Ghana	FN
+4	FAT_020-22-2-0_Clade_A_bin	C16-20009-GH	body_site		feces	FN
+4	FAT_020-22-2-0_Clade_A_bin	C16-20009-GH	westernized		No	FN
+4	FAT_020-22-2-0_Clade_A_bin	C16-20009-GH	dna_extraction_kit		Qiagen	FN
+4	FAT_020-22-2-0_Clade_A_bin	C16-20009-GH	ncbi_accession		SRR8791401	FN
+4	FAT_020-22-2-0_Clade_A_bin	C16-20009-GH	sequencing_platform		IlluminaHiSeq	FN
+4	FAT_020-22-2-0_Clade_A_bin	C16-20009-GH	age		24.0	FN
+4	FAT_020-22-2-0_Clade_A_bin	C16-20009-GH	age_group		Adult	FN
+4	FAT_020-22-2-0_Clade_A_bin	C16-20009-GH	age_unit		Year	FN
+4	FAT_020-22-2-0_Clade_A_bin	C16-20009-GH	family		TettAJ_2019_b_2	FN
+4	FAT_020-22-2-0_Clade_A_bin	C16-20009-GH	family_role		mother	FN
+4	FAT_020-22-2-0_Clade_A_bin	C16-20009-GH	age_min	not_reported	24	FN
+4	FAT_020-22-2-0_Clade_A_bin	C16-20009-GH	age_max	not_reported	24	FN
+4	FAT_020-22-2-0_Clade_A_bin	C16-20009-GH	age_years	not_reported	24.0	FN
+4	FAT_020-22-2-0_Clade_A_bin	C16-20009-GH	disease	Healthy	Healthy	TP_correct
+4	FAT_020-22-2-0_Clade_A_bin	C16-20009-GH	host_species	Homo sapiens	Homo sapiens	TP_correct
+5	MH0001_Clade_A_bin	C16-20010-GH	study_name	LeChatelierE_2013	TettAJ_2019_b	TP_wrong
+5	MH0001_Clade_A_bin	C16-20010-GH	subject_id		C16-10025-GH_F	FN
+5	MH0001_Clade_A_bin	C16-20010-GH	sample_id	MH0001_Clade_A_bin	C16-20010-GH	TP_wrong
+5	MH0001_Clade_A_bin	C16-20010-GH	curator		Paolo_Manghi	FN
+5	MH0001_Clade_A_bin	C16-20010-GH	pmid	31607556	31607556	TP_correct
+5	MH0001_Clade_A_bin	C16-20010-GH	target_condition		Prevotella copri	FN
+5	MH0001_Clade_A_bin	C16-20010-GH	control		Study Control	FN
+5	MH0001_Clade_A_bin	C16-20010-GH	country		Ghana	FN
+5	MH0001_Clade_A_bin	C16-20010-GH	body_site		feces	FN
+5	MH0001_Clade_A_bin	C16-20010-GH	westernized		No	FN
+5	MH0001_Clade_A_bin	C16-20010-GH	dna_extraction_kit		Qiagen	FN
+5	MH0001_Clade_A_bin	C16-20010-GH	ncbi_accession		SRR8791400	FN
+5	MH0001_Clade_A_bin	C16-20010-GH	sequencing_platform		IlluminaHiSeq	FN
+5	MH0001_Clade_A_bin	C16-20010-GH	age		28.0	FN
+5	MH0001_Clade_A_bin	C16-20010-GH	age_group		Adult	FN
+5	MH0001_Clade_A_bin	C16-20010-GH	age_unit		Year	FN
+5	MH0001_Clade_A_bin	C16-20010-GH	family		TettAJ_2019_b_2	FN
+5	MH0001_Clade_A_bin	C16-20010-GH	family_role		father	FN
+5	MH0001_Clade_A_bin	C16-20010-GH	age_min	not_reported	28	FN
+5	MH0001_Clade_A_bin	C16-20010-GH	age_max	not_reported	28	FN
+5	MH0001_Clade_A_bin	C16-20010-GH	age_years	not_reported	28.0	FN
+5	MH0001_Clade_A_bin	C16-20010-GH	disease	Healthy	Healthy	TP_correct
+5	MH0001_Clade_A_bin	C16-20010-GH	host_species	Homo sapiens	Homo sapiens	TP_correct
+6	G88993_Clade_A_bin	C16-20011-GH	study_name	SchirmerM_2016	TettAJ_2019_b	TP_wrong
+6	G88993_Clade_A_bin	C16-20011-GH	subject_id		C16-10025-GH_S1	FN
+6	G88993_Clade_A_bin	C16-20011-GH	sample_id	G88993_Clade_A_bin	C16-20011-GH	TP_wrong
+6	G88993_Clade_A_bin	C16-20011-GH	curator		Paolo_Manghi	FN
+6	G88993_Clade_A_bin	C16-20011-GH	pmid	31607556	31607556	TP_correct
+6	G88993_Clade_A_bin	C16-20011-GH	target_condition		Prevotella copri	FN
+6	G88993_Clade_A_bin	C16-20011-GH	control		Study Control	FN
+6	G88993_Clade_A_bin	C16-20011-GH	country		Ghana	FN
+6	G88993_Clade_A_bin	C16-20011-GH	body_site		feces	FN
+6	G88993_Clade_A_bin	C16-20011-GH	westernized		No	FN
+6	G88993_Clade_A_bin	C16-20011-GH	dna_extraction_kit		Qiagen	FN
+6	G88993_Clade_A_bin	C16-20011-GH	ncbi_accession		SRR8791399	FN
+6	G88993_Clade_A_bin	C16-20011-GH	sequencing_platform		IlluminaHiSeq	FN
+6	G88993_Clade_A_bin	C16-20011-GH	age		12.0	FN
+6	G88993_Clade_A_bin	C16-20011-GH	age_group		Infant	FN
+6	G88993_Clade_A_bin	C16-20011-GH	age_unit		Month	FN
+6	G88993_Clade_A_bin	C16-20011-GH	family		TettAJ_2019_b_2	FN
+6	G88993_Clade_A_bin	C16-20011-GH	family_role		child	FN
+6	G88993_Clade_A_bin	C16-20011-GH	age_min	not_reported	1	FN
+6	G88993_Clade_A_bin	C16-20011-GH	age_max	not_reported	1	FN
+6	G88993_Clade_A_bin	C16-20011-GH	age_years	not_reported	1.0	FN
+6	G88993_Clade_A_bin	C16-20011-GH	disease	Healthy	Healthy	TP_correct
+6	G88993_Clade_A_bin	C16-20011-GH	host_species	Homo sapiens	Homo sapiens	TP_correct
+7	SRS015782_Clade_A_bin	C16-20029-GH	study_name	HMP_2012	TettAJ_2019_b	TP_wrong
+7	SRS015782_Clade_A_bin	C16-20029-GH	subject_id		C16-10056-GH_M	FN
+7	SRS015782_Clade_A_bin	C16-20029-GH	sample_id	SRS015782_Clade_A_bin	C16-20029-GH	TP_wrong
+7	SRS015782_Clade_A_bin	C16-20029-GH	curator		Paolo_Manghi	FN
+7	SRS015782_Clade_A_bin	C16-20029-GH	pmid	31607556	31607556	TP_correct
+7	SRS015782_Clade_A_bin	C16-20029-GH	target_condition		Prevotella copri	FN
+7	SRS015782_Clade_A_bin	C16-20029-GH	control		Study Control	FN
+7	SRS015782_Clade_A_bin	C16-20029-GH	country		Ghana	FN
+7	SRS015782_Clade_A_bin	C16-20029-GH	body_site		feces	FN
+7	SRS015782_Clade_A_bin	C16-20029-GH	westernized		No	FN
+7	SRS015782_Clade_A_bin	C16-20029-GH	dna_extraction_kit		Qiagen	FN
+7	SRS015782_Clade_A_bin	C16-20029-GH	ncbi_accession		SRR8791398	FN
+7	SRS015782_Clade_A_bin	C16-20029-GH	sequencing_platform		IlluminaHiSeq	FN
+7	SRS015782_Clade_A_bin	C16-20029-GH	age		28.0	FN
+7	SRS015782_Clade_A_bin	C16-20029-GH	age_group		Adult	FN
+7	SRS015782_Clade_A_bin	C16-20029-GH	age_unit		Year	FN
+7	SRS015782_Clade_A_bin	C16-20029-GH	family		TettAJ_2019_b_3	FN
+7	SRS015782_Clade_A_bin	C16-20029-GH	family_role		mother	FN
+7	SRS015782_Clade_A_bin	C16-20029-GH	age_min	not_reported	28	FN
+7	SRS015782_Clade_A_bin	C16-20029-GH	age_max	not_reported	28	FN
+7	SRS015782_Clade_A_bin	C16-20029-GH	age_years	not_reported	28.0	FN
+7	SRS015782_Clade_A_bin	C16-20029-GH	disease	Healthy	Healthy	TP_correct
+7	SRS015782_Clade_A_bin	C16-20029-GH	host_species	Homo sapiens	Homo sapiens	TP_correct
+8	PNP_Validation_35_megahit_Clade_A_bin	C16-20030-GH	study_name	ZeeviD_2015_A	TettAJ_2019_b	TP_wrong
+8	PNP_Validation_35_megahit_Clade_A_bin	C16-20030-GH	subject_id		C16-10056-GH_F	FN
+8	PNP_Validation_35_megahit_Clade_A_bin	C16-20030-GH	sample_id	PNP_Validation_35_megahit_Clade_A_bin	C16-20030-GH	TP_wrong
+8	PNP_Validation_35_megahit_Clade_A_bin	C16-20030-GH	curator		Paolo_Manghi	FN
+8	PNP_Validation_35_megahit_Clade_A_bin	C16-20030-GH	pmid	31607556	31607556	TP_correct
+8	PNP_Validation_35_megahit_Clade_A_bin	C16-20030-GH	target_condition		Prevotella copri	FN
+8	PNP_Validation_35_megahit_Clade_A_bin	C16-20030-GH	control		Study Control	FN
+8	PNP_Validation_35_megahit_Clade_A_bin	C16-20030-GH	country		Ghana	FN
+8	PNP_Validation_35_megahit_Clade_A_bin	C16-20030-GH	body_site		feces	FN
+8	PNP_Validation_35_megahit_Clade_A_bin	C16-20030-GH	westernized		No	FN
+8	PNP_Validation_35_megahit_Clade_A_bin	C16-20030-GH	dna_extraction_kit		Qiagen	FN
+8	PNP_Validation_35_megahit_Clade_A_bin	C16-20030-GH	ncbi_accession		SRR8791407	FN
+8	PNP_Validation_35_megahit_Clade_A_bin	C16-20030-GH	sequencing_platform		IlluminaHiSeq	FN
+8	PNP_Validation_35_megahit_Clade_A_bin	C16-20030-GH	age			TN
+8	PNP_Validation_35_megahit_Clade_A_bin	C16-20030-GH	age_group		Adult	FN
+8	PNP_Validation_35_megahit_Clade_A_bin	C16-20030-GH	age_unit			TN
+8	PNP_Validation_35_megahit_Clade_A_bin	C16-20030-GH	family		TettAJ_2019_b_3	FN
+8	PNP_Validation_35_megahit_Clade_A_bin	C16-20030-GH	family_role		father	FN
+8	PNP_Validation_35_megahit_Clade_A_bin	C16-20030-GH	age_min	not_reported	18	FN
+8	PNP_Validation_35_megahit_Clade_A_bin	C16-20030-GH	age_max	not_reported	65	FN
+8	PNP_Validation_35_megahit_Clade_A_bin	C16-20030-GH	age_years	not_reported		TN
+8	PNP_Validation_35_megahit_Clade_A_bin	C16-20030-GH	disease	Healthy	Healthy	TP_correct
+8	PNP_Validation_35_megahit_Clade_A_bin	C16-20030-GH	host_species	Homo sapiens	Homo sapiens	TP_correct
+9	G78683_Clade_A_bin	C16-20032-GH	study_name	VatanenT_2016	TettAJ_2019_b	TP_wrong
+9	G78683_Clade_A_bin	C16-20032-GH	subject_id		C16-10056-GH_S1	FN
+9	G78683_Clade_A_bin	C16-20032-GH	sample_id	G78683_Clade_A_bin	C16-20032-GH	TP_wrong
+9	G78683_Clade_A_bin	C16-20032-GH	curator		Paolo_Manghi	FN
+9	G78683_Clade_A_bin	C16-20032-GH	pmid	31607556	31607556	TP_correct
+9	G78683_Clade_A_bin	C16-20032-GH	target_condition		Prevotella copri	FN
+9	G78683_Clade_A_bin	C16-20032-GH	control		Study Control	FN
+9	G78683_Clade_A_bin	C16-20032-GH	country		Ghana	FN
+9	G78683_Clade_A_bin	C16-20032-GH	body_site		feces	FN
+9	G78683_Clade_A_bin	C16-20032-GH	westernized		No	FN
+9	G78683_Clade_A_bin	C16-20032-GH	dna_extraction_kit		Qiagen	FN
+9	G78683_Clade_A_bin	C16-20032-GH	ncbi_accession		SRR8791406	FN
+9	G78683_Clade_A_bin	C16-20032-GH	sequencing_platform		IlluminaHiSeq	FN
+9	G78683_Clade_A_bin	C16-20032-GH	age		5.0	FN
+9	G78683_Clade_A_bin	C16-20032-GH	age_group		Child	FN
+9	G78683_Clade_A_bin	C16-20032-GH	age_unit		Year	FN
+9	G78683_Clade_A_bin	C16-20032-GH	family		TettAJ_2019_b_3	FN
+9	G78683_Clade_A_bin	C16-20032-GH	family_role		child	FN
+9	G78683_Clade_A_bin	C16-20032-GH	age_min	not_reported	5	FN
+9	G78683_Clade_A_bin	C16-20032-GH	age_max	not_reported	5	FN
+9	G78683_Clade_A_bin	C16-20032-GH	age_years	not_reported	5.0	FN
+9	G78683_Clade_A_bin	C16-20032-GH	disease	Healthy	Healthy	TP_correct
+9	G78683_Clade_A_bin	C16-20032-GH	host_species	Homo sapiens	Homo sapiens	TP_correct
+10	SID45_M_Clade_A_bin	C16-20047-GH	study_name	BackhedF_2015	TettAJ_2019_b	TP_wrong
+10	SID45_M_Clade_A_bin	C16-20047-GH	subject_id		C16-10074-GH_F	FN
+10	SID45_M_Clade_A_bin	C16-20047-GH	sample_id	SID45_M_Clade_A_bin	C16-20047-GH	TP_wrong
+10	SID45_M_Clade_A_bin	C16-20047-GH	curator		Paolo_Manghi	FN
+10	SID45_M_Clade_A_bin	C16-20047-GH	pmid	31607556	31607556	TP_correct
+10	SID45_M_Clade_A_bin	C16-20047-GH	target_condition		Prevotella copri	FN
+10	SID45_M_Clade_A_bin	C16-20047-GH	control		Study Control	FN
+10	SID45_M_Clade_A_bin	C16-20047-GH	country		Ghana	FN
+10	SID45_M_Clade_A_bin	C16-20047-GH	body_site		feces	FN
+10	SID45_M_Clade_A_bin	C16-20047-GH	westernized		No	FN
+10	SID45_M_Clade_A_bin	C16-20047-GH	dna_extraction_kit		Qiagen	FN
+10	SID45_M_Clade_A_bin	C16-20047-GH	ncbi_accession		SRR8791371	FN
+10	SID45_M_Clade_A_bin	C16-20047-GH	sequencing_platform		IlluminaHiSeq	FN
+10	SID45_M_Clade_A_bin	C16-20047-GH	age		45.0	FN
+10	SID45_M_Clade_A_bin	C16-20047-GH	age_group		Adult	FN
+10	SID45_M_Clade_A_bin	C16-20047-GH	age_unit		Year	FN
+10	SID45_M_Clade_A_bin	C16-20047-GH	family		TettAJ_2019_b_4	FN
+10	SID45_M_Clade_A_bin	C16-20047-GH	family_role		father	FN
+10	SID45_M_Clade_A_bin	C16-20047-GH	age_min	not_reported	45	FN
+10	SID45_M_Clade_A_bin	C16-20047-GH	age_max	not_reported	45	FN
+10	SID45_M_Clade_A_bin	C16-20047-GH	age_years	not_reported	45.0	FN
+10	SID45_M_Clade_A_bin	C16-20047-GH	disease	Healthy	Healthy	TP_correct
+10	SID45_M_Clade_A_bin	C16-20047-GH	host_species	Homo sapiens	Homo sapiens	TP_correct
+11	MMRS88581325ST-27-0-0_Clade_A_bin	C16-20048-GH	study_name	VogtmannE_2016	TettAJ_2019_b	TP_wrong
+11	MMRS88581325ST-27-0-0_Clade_A_bin	C16-20048-GH	subject_id		C16-10074-GH_M	FN
+11	MMRS88581325ST-27-0-0_Clade_A_bin	C16-20048-GH	sample_id	MMRS88581325ST-27-0-0_Clade_A_bin	C16-20048-GH	TP_wrong
+11	MMRS88581325ST-27-0-0_Clade_A_bin	C16-20048-GH	curator		Paolo_Manghi	FN
+11	MMRS88581325ST-27-0-0_Clade_A_bin	C16-20048-GH	pmid	31607556	31607556	TP_correct
+11	MMRS88581325ST-27-0-0_Clade_A_bin	C16-20048-GH	target_condition		Prevotella copri	FN
+11	MMRS88581325ST-27-0-0_Clade_A_bin	C16-20048-GH	control		Study Control	FN
+11	MMRS88581325ST-27-0-0_Clade_A_bin	C16-20048-GH	country		Ghana	FN
+11	MMRS88581325ST-27-0-0_Clade_A_bin	C16-20048-GH	body_site		feces	FN
+11	MMRS88581325ST-27-0-0_Clade_A_bin	C16-20048-GH	westernized		No	FN
+11	MMRS88581325ST-27-0-0_Clade_A_bin	C16-20048-GH	dna_extraction_kit		Qiagen	FN
+11	MMRS88581325ST-27-0-0_Clade_A_bin	C16-20048-GH	ncbi_accession		SRR8791370	FN
+11	MMRS88581325ST-27-0-0_Clade_A_bin	C16-20048-GH	sequencing_platform		IlluminaHiSeq	FN
+11	MMRS88581325ST-27-0-0_Clade_A_bin	C16-20048-GH	age		36.0	FN
+11	MMRS88581325ST-27-0-0_Clade_A_bin	C16-20048-GH	age_group		Adult	FN
+11	MMRS88581325ST-27-0-0_Clade_A_bin	C16-20048-GH	age_unit		Year	FN
+11	MMRS88581325ST-27-0-0_Clade_A_bin	C16-20048-GH	family		TettAJ_2019_b_4	FN
+11	MMRS88581325ST-27-0-0_Clade_A_bin	C16-20048-GH	family_role		mother	FN
+11	MMRS88581325ST-27-0-0_Clade_A_bin	C16-20048-GH	age_min	not_reported	36	FN
+11	MMRS88581325ST-27-0-0_Clade_A_bin	C16-20048-GH	age_max	not_reported	36	FN
+11	MMRS88581325ST-27-0-0_Clade_A_bin	C16-20048-GH	age_years	not_reported	36.0	FN
+11	MMRS88581325ST-27-0-0_Clade_A_bin	C16-20048-GH	disease	Healthy	Healthy	TP_correct
+11	MMRS88581325ST-27-0-0_Clade_A_bin	C16-20048-GH	host_species	Homo sapiens	Homo sapiens	TP_correct
+12	PNP_Main_320_megahit_Clade_A_bin	C16-20049-GH	study_name	ZeeviD_2015_A	TettAJ_2019_b	TP_wrong
+12	PNP_Main_320_megahit_Clade_A_bin	C16-20049-GH	subject_id		C16-10074-GH_S1	FN
+12	PNP_Main_320_megahit_Clade_A_bin	C16-20049-GH	sample_id	PNP_Main_320_megahit_Clade_A_bin	C16-20049-GH	TP_wrong
+12	PNP_Main_320_megahit_Clade_A_bin	C16-20049-GH	curator		Paolo_Manghi	FN
+12	PNP_Main_320_megahit_Clade_A_bin	C16-20049-GH	pmid	31607556	31607556	TP_correct
+12	PNP_Main_320_megahit_Clade_A_bin	C16-20049-GH	target_condition		Prevotella copri	FN
+12	PNP_Main_320_megahit_Clade_A_bin	C16-20049-GH	control		Study Control	FN
+12	PNP_Main_320_megahit_Clade_A_bin	C16-20049-GH	country		Ghana	FN
+12	PNP_Main_320_megahit_Clade_A_bin	C16-20049-GH	body_site		feces	FN
+12	PNP_Main_320_megahit_Clade_A_bin	C16-20049-GH	westernized		No	FN
+12	PNP_Main_320_megahit_Clade_A_bin	C16-20049-GH	dna_extraction_kit		Qiagen	FN
+12	PNP_Main_320_megahit_Clade_A_bin	C16-20049-GH	ncbi_accession		SRR8791373	FN
+12	PNP_Main_320_megahit_Clade_A_bin	C16-20049-GH	sequencing_platform		IlluminaHiSeq	FN
+12	PNP_Main_320_megahit_Clade_A_bin	C16-20049-GH	age		9.0	FN
+12	PNP_Main_320_megahit_Clade_A_bin	C16-20049-GH	age_group		Child	FN
+12	PNP_Main_320_megahit_Clade_A_bin	C16-20049-GH	age_unit		Year	FN
+12	PNP_Main_320_megahit_Clade_A_bin	C16-20049-GH	family		TettAJ_2019_b_4	FN
+12	PNP_Main_320_megahit_Clade_A_bin	C16-20049-GH	family_role		child	FN
+12	PNP_Main_320_megahit_Clade_A_bin	C16-20049-GH	age_min	not_reported	9	FN
+12	PNP_Main_320_megahit_Clade_A_bin	C16-20049-GH	age_max	not_reported	9	FN
+12	PNP_Main_320_megahit_Clade_A_bin	C16-20049-GH	age_years	not_reported	9.0	FN
+12	PNP_Main_320_megahit_Clade_A_bin	C16-20049-GH	disease	Healthy	Healthy	TP_correct
+12	PNP_Main_320_megahit_Clade_A_bin	C16-20049-GH	host_species	Homo sapiens	Homo sapiens	TP_correct
+13	CCIS55230578ST-4-0_Clade_A_bin	C16-20050-GH	study_name	ZellerG_2014	TettAJ_2019_b	TP_wrong
+13	CCIS55230578ST-4-0_Clade_A_bin	C16-20050-GH	subject_id		C16-10074-GH_S2	FN
+13	CCIS55230578ST-4-0_Clade_A_bin	C16-20050-GH	sample_id	CCIS55230578ST-4-0_Clade_A_bin	C16-20050-GH	TP_wrong
+13	CCIS55230578ST-4-0_Clade_A_bin	C16-20050-GH	curator		Paolo_Manghi	FN
+13	CCIS55230578ST-4-0_Clade_A_bin	C16-20050-GH	pmid	31607556	31607556	TP_correct
+13	CCIS55230578ST-4-0_Clade_A_bin	C16-20050-GH	target_condition		Prevotella copri	FN
+13	CCIS55230578ST-4-0_Clade_A_bin	C16-20050-GH	control		Study Control	FN
+13	CCIS55230578ST-4-0_Clade_A_bin	C16-20050-GH	country		Ghana	FN
+13	CCIS55230578ST-4-0_Clade_A_bin	C16-20050-GH	body_site		feces	FN
+13	CCIS55230578ST-4-0_Clade_A_bin	C16-20050-GH	westernized		No	FN
+13	CCIS55230578ST-4-0_Clade_A_bin	C16-20050-GH	dna_extraction_kit		Qiagen	FN
+13	CCIS55230578ST-4-0_Clade_A_bin	C16-20050-GH	ncbi_accession		SRR8791372	FN
+13	CCIS55230578ST-4-0_Clade_A_bin	C16-20050-GH	sequencing_platform		IlluminaHiSeq	FN
+13	CCIS55230578ST-4-0_Clade_A_bin	C16-20050-GH	age		7.0	FN
+13	CCIS55230578ST-4-0_Clade_A_bin	C16-20050-GH	age_group		Child	FN
+13	CCIS55230578ST-4-0_Clade_A_bin	C16-20050-GH	age_unit		Year	FN
+13	CCIS55230578ST-4-0_Clade_A_bin	C16-20050-GH	family		TettAJ_2019_b_4	FN
+13	CCIS55230578ST-4-0_Clade_A_bin	C16-20050-GH	family_role		child	FN
+13	CCIS55230578ST-4-0_Clade_A_bin	C16-20050-GH	age_min	not_reported	7	FN
+13	CCIS55230578ST-4-0_Clade_A_bin	C16-20050-GH	age_max	not_reported	7	FN
+13	CCIS55230578ST-4-0_Clade_A_bin	C16-20050-GH	age_years	not_reported	7.0	FN
+13	CCIS55230578ST-4-0_Clade_A_bin	C16-20050-GH	disease	Healthy	Healthy	TP_correct
+13	CCIS55230578ST-4-0_Clade_A_bin	C16-20050-GH	host_species	Homo sapiens	Homo sapiens	TP_correct
+14	G78618_Clade_A_bin	C16-20065-GH	study_name	VatanenT_2016	TettAJ_2019_b	TP_wrong
+14	G78618_Clade_A_bin	C16-20065-GH	subject_id		C16-10106-GH_M	FN
+14	G78618_Clade_A_bin	C16-20065-GH	sample_id	G78618_Clade_A_bin	C16-20065-GH	TP_wrong
+14	G78618_Clade_A_bin	C16-20065-GH	curator		Paolo_Manghi	FN
+14	G78618_Clade_A_bin	C16-20065-GH	pmid	31607556	31607556	TP_correct
+14	G78618_Clade_A_bin	C16-20065-GH	target_condition		Prevotella copri	FN
+14	G78618_Clade_A_bin	C16-20065-GH	control		Study Control	FN
+14	G78618_Clade_A_bin	C16-20065-GH	country		Ghana	FN
+14	G78618_Clade_A_bin	C16-20065-GH	body_site		feces	FN
+14	G78618_Clade_A_bin	C16-20065-GH	westernized		No	FN
+14	G78618_Clade_A_bin	C16-20065-GH	dna_extraction_kit		Qiagen	FN
+14	G78618_Clade_A_bin	C16-20065-GH	ncbi_accession		SRR8791367	FN
+14	G78618_Clade_A_bin	C16-20065-GH	sequencing_platform		IlluminaHiSeq	FN
+14	G78618_Clade_A_bin	C16-20065-GH	age		34.0	FN
+14	G78618_Clade_A_bin	C16-20065-GH	age_group		Adult	FN
+14	G78618_Clade_A_bin	C16-20065-GH	age_unit		Year	FN
+14	G78618_Clade_A_bin	C16-20065-GH	family		TettAJ_2019_b_5	FN
+14	G78618_Clade_A_bin	C16-20065-GH	family_role		mother	FN
+14	G78618_Clade_A_bin	C16-20065-GH	age_min	not_reported	34	FN
+14	G78618_Clade_A_bin	C16-20065-GH	age_max	not_reported	34	FN
+14	G78618_Clade_A_bin	C16-20065-GH	age_years	not_reported	34.0	FN
+14	G78618_Clade_A_bin	C16-20065-GH	disease	Healthy	Healthy	TP_correct
+14	G78618_Clade_A_bin	C16-20065-GH	host_species	Homo sapiens	Homo sapiens	TP_correct
+15	YSZC12003_35708_Clade_A_bin	C16-20066-GH	study_name	XieH_2016	TettAJ_2019_b	TP_wrong
+15	YSZC12003_35708_Clade_A_bin	C16-20066-GH	subject_id		C16-10106-GH_F	FN
+15	YSZC12003_35708_Clade_A_bin	C16-20066-GH	sample_id	YSZC12003_35708_Clade_A_bin	C16-20066-GH	TP_wrong
+15	YSZC12003_35708_Clade_A_bin	C16-20066-GH	curator		Paolo_Manghi	FN
+15	YSZC12003_35708_Clade_A_bin	C16-20066-GH	pmid	31607556	31607556	TP_correct
+15	YSZC12003_35708_Clade_A_bin	C16-20066-GH	target_condition		Prevotella copri	FN
+15	YSZC12003_35708_Clade_A_bin	C16-20066-GH	control		Study Control	FN
+15	YSZC12003_35708_Clade_A_bin	C16-20066-GH	country		Ghana	FN
+15	YSZC12003_35708_Clade_A_bin	C16-20066-GH	body_site		feces	FN
+15	YSZC12003_35708_Clade_A_bin	C16-20066-GH	westernized		No	FN
+15	YSZC12003_35708_Clade_A_bin	C16-20066-GH	dna_extraction_kit		Qiagen	FN
+15	YSZC12003_35708_Clade_A_bin	C16-20066-GH	ncbi_accession		SRR8791366	FN
+15	YSZC12003_35708_Clade_A_bin	C16-20066-GH	sequencing_platform		IlluminaHiSeq	FN
+15	YSZC12003_35708_Clade_A_bin	C16-20066-GH	age		41.0	FN
+15	YSZC12003_35708_Clade_A_bin	C16-20066-GH	age_group		Adult	FN
+15	YSZC12003_35708_Clade_A_bin	C16-20066-GH	age_unit		Year	FN
+15	YSZC12003_35708_Clade_A_bin	C16-20066-GH	family		TettAJ_2019_b_5	FN
+15	YSZC12003_35708_Clade_A_bin	C16-20066-GH	family_role		father	FN
+15	YSZC12003_35708_Clade_A_bin	C16-20066-GH	age_min	not_reported	41	FN
+15	YSZC12003_35708_Clade_A_bin	C16-20066-GH	age_max	not_reported	41	FN
+15	YSZC12003_35708_Clade_A_bin	C16-20066-GH	age_years	not_reported	41.0	FN
+15	YSZC12003_35708_Clade_A_bin	C16-20066-GH	disease	Healthy	Healthy	TP_correct
+15	YSZC12003_35708_Clade_A_bin	C16-20066-GH	host_species	Homo sapiens	Homo sapiens	TP_correct
+16	CA_C10003MS2030FE_t0M15_Clade_A_bin	C16-20073-GH	study_name	CM_caritro	TettAJ_2019_b	TP_wrong
+16	CA_C10003MS2030FE_t0M15_Clade_A_bin	C16-20073-GH	subject_id		C16-10106-GH_S1	FN
+16	CA_C10003MS2030FE_t0M15_Clade_A_bin	C16-20073-GH	sample_id	CA_C10003MS2030FE_t0M15_Clade_A_bin	C16-20073-GH	TP_wrong
+16	CA_C10003MS2030FE_t0M15_Clade_A_bin	C16-20073-GH	curator		Paolo_Manghi	FN
+16	CA_C10003MS2030FE_t0M15_Clade_A_bin	C16-20073-GH	pmid	31607556	31607556	TP_correct
+16	CA_C10003MS2030FE_t0M15_Clade_A_bin	C16-20073-GH	target_condition		Prevotella copri	FN
+16	CA_C10003MS2030FE_t0M15_Clade_A_bin	C16-20073-GH	control		Study Control	FN
+16	CA_C10003MS2030FE_t0M15_Clade_A_bin	C16-20073-GH	country		Ghana	FN
+16	CA_C10003MS2030FE_t0M15_Clade_A_bin	C16-20073-GH	body_site		feces	FN
+16	CA_C10003MS2030FE_t0M15_Clade_A_bin	C16-20073-GH	westernized		No	FN
+16	CA_C10003MS2030FE_t0M15_Clade_A_bin	C16-20073-GH	dna_extraction_kit		Qiagen	FN
+16	CA_C10003MS2030FE_t0M15_Clade_A_bin	C16-20073-GH	ncbi_accession		SRR8791369	FN
+16	CA_C10003MS2030FE_t0M15_Clade_A_bin	C16-20073-GH	sequencing_platform		IlluminaHiSeq	FN
+16	CA_C10003MS2030FE_t0M15_Clade_A_bin	C16-20073-GH	age		7.0	FN
+16	CA_C10003MS2030FE_t0M15_Clade_A_bin	C16-20073-GH	age_group		Child	FN
+16	CA_C10003MS2030FE_t0M15_Clade_A_bin	C16-20073-GH	age_unit		Year	FN
+16	CA_C10003MS2030FE_t0M15_Clade_A_bin	C16-20073-GH	family		TettAJ_2019_b_5	FN
+16	CA_C10003MS2030FE_t0M15_Clade_A_bin	C16-20073-GH	family_role		child	FN
+16	CA_C10003MS2030FE_t0M15_Clade_A_bin	C16-20073-GH	age_min	not_reported	7	FN
+16	CA_C10003MS2030FE_t0M15_Clade_A_bin	C16-20073-GH	age_max	not_reported	7	FN
+16	CA_C10003MS2030FE_t0M15_Clade_A_bin	C16-20073-GH	age_years	not_reported	7.0	FN
+16	CA_C10003MS2030FE_t0M15_Clade_A_bin	C16-20073-GH	disease	Healthy	Healthy	TP_correct
+16	CA_C10003MS2030FE_t0M15_Clade_A_bin	C16-20073-GH	host_species	Homo sapiens	Homo sapiens	TP_correct
+17	MH0417_Clade_A_bin	C16-20074-GH	study_name	LeChatelierE_2013	TettAJ_2019_b	TP_wrong
+17	MH0417_Clade_A_bin	C16-20074-GH	subject_id		C16-10106-GH_S2	FN
+17	MH0417_Clade_A_bin	C16-20074-GH	sample_id	MH0417_Clade_A_bin	C16-20074-GH	TP_wrong
+17	MH0417_Clade_A_bin	C16-20074-GH	curator		Paolo_Manghi	FN
+17	MH0417_Clade_A_bin	C16-20074-GH	pmid	31607556	31607556	TP_correct
+17	MH0417_Clade_A_bin	C16-20074-GH	target_condition		Prevotella copri	FN
+17	MH0417_Clade_A_bin	C16-20074-GH	control		Study Control	FN
+17	MH0417_Clade_A_bin	C16-20074-GH	country		Ghana	FN
+17	MH0417_Clade_A_bin	C16-20074-GH	body_site		feces	FN
+17	MH0417_Clade_A_bin	C16-20074-GH	westernized		No	FN
+17	MH0417_Clade_A_bin	C16-20074-GH	dna_extraction_kit		Qiagen	FN
+17	MH0417_Clade_A_bin	C16-20074-GH	ncbi_accession		SRR8791368	FN
+17	MH0417_Clade_A_bin	C16-20074-GH	sequencing_platform		IlluminaHiSeq	FN
+17	MH0417_Clade_A_bin	C16-20074-GH	age		6.0	FN
+17	MH0417_Clade_A_bin	C16-20074-GH	age_group		Child	FN
+17	MH0417_Clade_A_bin	C16-20074-GH	age_unit		Year	FN
+17	MH0417_Clade_A_bin	C16-20074-GH	family		TettAJ_2019_b_5	FN
+17	MH0417_Clade_A_bin	C16-20074-GH	family_role		child	FN
+17	MH0417_Clade_A_bin	C16-20074-GH	age_min	not_reported	6	FN
+17	MH0417_Clade_A_bin	C16-20074-GH	age_max	not_reported	6	FN
+17	MH0417_Clade_A_bin	C16-20074-GH	age_years	not_reported	6.0	FN
+17	MH0417_Clade_A_bin	C16-20074-GH	disease	Healthy	Healthy	TP_correct
+17	MH0417_Clade_A_bin	C16-20074-GH	host_species	Homo sapiens	Homo sapiens	TP_correct
+18	V1_UC38_0_Clade_A_bin	C16-20108-GH	study_name	NielsenHB_2014	TettAJ_2019_b	TP_wrong
+18	V1_UC38_0_Clade_A_bin	C16-20108-GH	subject_id		C16-10146-GH_M	FN
+18	V1_UC38_0_Clade_A_bin	C16-20108-GH	sample_id	V1_UC38_0_Clade_A_bin	C16-20108-GH	TP_wrong
+18	V1_UC38_0_Clade_A_bin	C16-20108-GH	curator		Paolo_Manghi	FN
+18	V1_UC38_0_Clade_A_bin	C16-20108-GH	pmid	31607556	31607556	TP_correct
+18	V1_UC38_0_Clade_A_bin	C16-20108-GH	target_condition		Prevotella copri	FN
+18	V1_UC38_0_Clade_A_bin	C16-20108-GH	control		Study Control	FN
+18	V1_UC38_0_Clade_A_bin	C16-20108-GH	country		Ghana	FN
+18	V1_UC38_0_Clade_A_bin	C16-20108-GH	body_site		feces	FN
+18	V1_UC38_0_Clade_A_bin	C16-20108-GH	westernized		No	FN
+18	V1_UC38_0_Clade_A_bin	C16-20108-GH	dna_extraction_kit		Qiagen	FN
+18	V1_UC38_0_Clade_A_bin	C16-20108-GH	ncbi_accession		SRR8791365	FN
+18	V1_UC38_0_Clade_A_bin	C16-20108-GH	sequencing_platform		IlluminaHiSeq	FN
+18	V1_UC38_0_Clade_A_bin	C16-20108-GH	age		40.0	FN
+18	V1_UC38_0_Clade_A_bin	C16-20108-GH	age_group		Adult	FN
+18	V1_UC38_0_Clade_A_bin	C16-20108-GH	age_unit		Year	FN
+18	V1_UC38_0_Clade_A_bin	C16-20108-GH	family		TettAJ_2019_b_6	FN
+18	V1_UC38_0_Clade_A_bin	C16-20108-GH	family_role		mother	FN
+18	V1_UC38_0_Clade_A_bin	C16-20108-GH	age_min	not_reported	40	FN
+18	V1_UC38_0_Clade_A_bin	C16-20108-GH	age_max	not_reported	40	FN
+18	V1_UC38_0_Clade_A_bin	C16-20108-GH	age_years	not_reported	40.0	FN
+18	V1_UC38_0_Clade_A_bin	C16-20108-GH	disease	Healthy	Healthy	TP_correct
+18	V1_UC38_0_Clade_A_bin	C16-20108-GH	host_species	Homo sapiens	Homo sapiens	TP_correct
+19	PNP_Validation_74_megahit_Clade_A_bin	C16-20110-GH	study_name	ZeeviD_2015_A	TettAJ_2019_b	TP_wrong
+19	PNP_Validation_74_megahit_Clade_A_bin	C16-20110-GH	subject_id		C16-10146-GH_S1	FN
+19	PNP_Validation_74_megahit_Clade_A_bin	C16-20110-GH	sample_id	PNP_Validation_74_megahit_Clade_A_bin	C16-20110-GH	TP_wrong
+19	PNP_Validation_74_megahit_Clade_A_bin	C16-20110-GH	curator		Paolo_Manghi	FN
+19	PNP_Validation_74_megahit_Clade_A_bin	C16-20110-GH	pmid	31607556	31607556	TP_correct
+19	PNP_Validation_74_megahit_Clade_A_bin	C16-20110-GH	target_condition		Prevotella copri	FN
+19	PNP_Validation_74_megahit_Clade_A_bin	C16-20110-GH	control		Study Control	FN
+19	PNP_Validation_74_megahit_Clade_A_bin	C16-20110-GH	country		Ghana	FN
+19	PNP_Validation_74_megahit_Clade_A_bin	C16-20110-GH	body_site		feces	FN
+19	PNP_Validation_74_megahit_Clade_A_bin	C16-20110-GH	westernized		No	FN
+19	PNP_Validation_74_megahit_Clade_A_bin	C16-20110-GH	dna_extraction_kit		Qiagen	FN
+19	PNP_Validation_74_megahit_Clade_A_bin	C16-20110-GH	ncbi_accession		SRR8791364	FN
+19	PNP_Validation_74_megahit_Clade_A_bin	C16-20110-GH	sequencing_platform		IlluminaHiSeq	FN
+19	PNP_Validation_74_megahit_Clade_A_bin	C16-20110-GH	age		15.0	FN
+19	PNP_Validation_74_megahit_Clade_A_bin	C16-20110-GH	age_group		Adolescent	FN
+19	PNP_Validation_74_megahit_Clade_A_bin	C16-20110-GH	age_unit		Year	FN
+19	PNP_Validation_74_megahit_Clade_A_bin	C16-20110-GH	family		TettAJ_2019_b_6	FN
+19	PNP_Validation_74_megahit_Clade_A_bin	C16-20110-GH	family_role		child	FN
+19	PNP_Validation_74_megahit_Clade_A_bin	C16-20110-GH	age_min	not_reported	15	FN
+19	PNP_Validation_74_megahit_Clade_A_bin	C16-20110-GH	age_max	not_reported	15	FN
+19	PNP_Validation_74_megahit_Clade_A_bin	C16-20110-GH	age_years	not_reported	15.0	FN
+19	PNP_Validation_74_megahit_Clade_A_bin	C16-20110-GH	disease	Healthy	Healthy	TP_correct
+19	PNP_Validation_74_megahit_Clade_A_bin	C16-20110-GH	host_species	Homo sapiens	Homo sapiens	TP_correct
+20	AS45_3_Clade_A_bin	C16-20111-GH	study_name	LouisS_2016	TettAJ_2019_b	TP_wrong
+20	AS45_3_Clade_A_bin	C16-20111-GH	subject_id		C16-10146-GH_S2	FN
+20	AS45_3_Clade_A_bin	C16-20111-GH	sample_id	AS45_3_Clade_A_bin	C16-20111-GH	TP_wrong
+20	AS45_3_Clade_A_bin	C16-20111-GH	curator		Paolo_Manghi	FN
+20	AS45_3_Clade_A_bin	C16-20111-GH	pmid	31607556	31607556	TP_correct
+20	AS45_3_Clade_A_bin	C16-20111-GH	target_condition		Prevotella copri	FN
+20	AS45_3_Clade_A_bin	C16-20111-GH	control		Study Control	FN
+20	AS45_3_Clade_A_bin	C16-20111-GH	country		Ghana	FN
+20	AS45_3_Clade_A_bin	C16-20111-GH	body_site		feces	FN
+20	AS45_3_Clade_A_bin	C16-20111-GH	westernized		No	FN
+20	AS45_3_Clade_A_bin	C16-20111-GH	dna_extraction_kit		Qiagen	FN
+20	AS45_3_Clade_A_bin	C16-20111-GH	ncbi_accession		SRR8791388	FN
+20	AS45_3_Clade_A_bin	C16-20111-GH	sequencing_platform		IlluminaHiSeq	FN
+20	AS45_3_Clade_A_bin	C16-20111-GH	age		12.0	FN
+20	AS45_3_Clade_A_bin	C16-20111-GH	age_group		Adolescent	FN
+20	AS45_3_Clade_A_bin	C16-20111-GH	age_unit		Year	FN
+20	AS45_3_Clade_A_bin	C16-20111-GH	family		TettAJ_2019_b_6	FN
+20	AS45_3_Clade_A_bin	C16-20111-GH	family_role		child	FN
+20	AS45_3_Clade_A_bin	C16-20111-GH	age_min	not_reported	12	FN
+20	AS45_3_Clade_A_bin	C16-20111-GH	age_max	not_reported	12	FN
+20	AS45_3_Clade_A_bin	C16-20111-GH	age_years	not_reported	12.0	FN
+20	AS45_3_Clade_A_bin	C16-20111-GH	disease	Healthy	Healthy	TP_correct
+20	AS45_3_Clade_A_bin	C16-20111-GH	host_species	Homo sapiens	Homo sapiens	TP_correct
+21	PRJNA231909.3117378_Clade_A_bin	C16-20112-GH	study_name	KosticAD_2015	TettAJ_2019_b	TP_wrong
+21	PRJNA231909.3117378_Clade_A_bin	C16-20112-GH	subject_id		C16-10146-GH_S3	FN
+21	PRJNA231909.3117378_Clade_A_bin	C16-20112-GH	sample_id	PRJNA231909.3117378_Clade_A_bin	C16-20112-GH	TP_wrong
+21	PRJNA231909.3117378_Clade_A_bin	C16-20112-GH	curator		Paolo_Manghi	FN
+21	PRJNA231909.3117378_Clade_A_bin	C16-20112-GH	pmid	31607556	31607556	TP_correct
+21	PRJNA231909.3117378_Clade_A_bin	C16-20112-GH	target_condition		Prevotella copri	FN
+21	PRJNA231909.3117378_Clade_A_bin	C16-20112-GH	control		Study Control	FN
+21	PRJNA231909.3117378_Clade_A_bin	C16-20112-GH	country		Ghana	FN
+21	PRJNA231909.3117378_Clade_A_bin	C16-20112-GH	body_site		feces	FN
+21	PRJNA231909.3117378_Clade_A_bin	C16-20112-GH	westernized		No	FN
+21	PRJNA231909.3117378_Clade_A_bin	C16-20112-GH	dna_extraction_kit		Qiagen	FN
+21	PRJNA231909.3117378_Clade_A_bin	C16-20112-GH	ncbi_accession		SRR8791389	FN
+21	PRJNA231909.3117378_Clade_A_bin	C16-20112-GH	sequencing_platform		IlluminaHiSeq	FN
+21	PRJNA231909.3117378_Clade_A_bin	C16-20112-GH	age		7.0	FN
+21	PRJNA231909.3117378_Clade_A_bin	C16-20112-GH	age_group		Child	FN
+21	PRJNA231909.3117378_Clade_A_bin	C16-20112-GH	age_unit		Year	FN
+21	PRJNA231909.3117378_Clade_A_bin	C16-20112-GH	family		TettAJ_2019_b_6	FN
+21	PRJNA231909.3117378_Clade_A_bin	C16-20112-GH	family_role		child	FN
+21	PRJNA231909.3117378_Clade_A_bin	C16-20112-GH	age_min	not_reported	7	FN
+21	PRJNA231909.3117378_Clade_A_bin	C16-20112-GH	age_max	not_reported	7	FN
+21	PRJNA231909.3117378_Clade_A_bin	C16-20112-GH	age_years	not_reported	7.0	FN
+21	PRJNA231909.3117378_Clade_A_bin	C16-20112-GH	disease	Healthy	Healthy	TP_correct
+21	PRJNA231909.3117378_Clade_A_bin	C16-20112-GH	host_species	Homo sapiens	Homo sapiens	TP_correct
+22	H3M515920_Clade_A_bin	C16-20113-GH	study_name	LiJ_2017	TettAJ_2019_b	TP_wrong
+22	H3M515920_Clade_A_bin	C16-20113-GH	subject_id		C16-10146-GH_S4	FN
+22	H3M515920_Clade_A_bin	C16-20113-GH	sample_id	H3M515920_Clade_A_bin	C16-20113-GH	TP_wrong
+22	H3M515920_Clade_A_bin	C16-20113-GH	curator		Paolo_Manghi	FN
+22	H3M515920_Clade_A_bin	C16-20113-GH	pmid	31607556	31607556	TP_correct
+22	H3M515920_Clade_A_bin	C16-20113-GH	target_condition		Prevotella copri	FN
+22	H3M515920_Clade_A_bin	C16-20113-GH	control		Study Control	FN
+22	H3M515920_Clade_A_bin	C16-20113-GH	country		Ghana	FN
+22	H3M515920_Clade_A_bin	C16-20113-GH	body_site		feces	FN
+22	H3M515920_Clade_A_bin	C16-20113-GH	westernized		No	FN
+22	H3M515920_Clade_A_bin	C16-20113-GH	dna_extraction_kit		Qiagen	FN
+22	H3M515920_Clade_A_bin	C16-20113-GH	ncbi_accession		SRR8791390	FN
+22	H3M515920_Clade_A_bin	C16-20113-GH	sequencing_platform		IlluminaHiSeq	FN
+22	H3M515920_Clade_A_bin	C16-20113-GH	age		6.0	FN
+22	H3M515920_Clade_A_bin	C16-20113-GH	age_group		Child	FN
+22	H3M515920_Clade_A_bin	C16-20113-GH	age_unit		Year	FN
+22	H3M515920_Clade_A_bin	C16-20113-GH	family		TettAJ_2019_b_6	FN
+22	H3M515920_Clade_A_bin	C16-20113-GH	family_role		child	FN
+22	H3M515920_Clade_A_bin	C16-20113-GH	age_min	not_reported	6	FN
+22	H3M515920_Clade_A_bin	C16-20113-GH	age_max	not_reported	6	FN
+22	H3M515920_Clade_A_bin	C16-20113-GH	age_years	not_reported	6.0	FN
+22	H3M515920_Clade_A_bin	C16-20113-GH	disease	Healthy	Healthy	TP_correct
+22	H3M515920_Clade_A_bin	C16-20113-GH	host_species	Homo sapiens	Homo sapiens	TP_correct
+23	LD-43_Clade_A_bin	C16-20124-GH	study_name	QinN_2014	TettAJ_2019_b	TP_wrong
+23	LD-43_Clade_A_bin	C16-20124-GH	subject_id		C16-10151-GH_M	FN
+23	LD-43_Clade_A_bin	C16-20124-GH	sample_id	LD-43_Clade_A_bin	C16-20124-GH	TP_wrong
+23	LD-43_Clade_A_bin	C16-20124-GH	curator		Paolo_Manghi	FN
+23	LD-43_Clade_A_bin	C16-20124-GH	pmid	31607556	31607556	TP_correct
+23	LD-43_Clade_A_bin	C16-20124-GH	target_condition		Prevotella copri	FN
+23	LD-43_Clade_A_bin	C16-20124-GH	control		Study Control	FN
+23	LD-43_Clade_A_bin	C16-20124-GH	country		Ghana	FN
+23	LD-43_Clade_A_bin	C16-20124-GH	body_site		feces	FN
+23	LD-43_Clade_A_bin	C16-20124-GH	westernized		No	FN
+23	LD-43_Clade_A_bin	C16-20124-GH	dna_extraction_kit		Qiagen	FN
+23	LD-43_Clade_A_bin	C16-20124-GH	ncbi_accession		SRR8791391	FN
+23	LD-43_Clade_A_bin	C16-20124-GH	sequencing_platform		IlluminaHiSeq	FN
+23	LD-43_Clade_A_bin	C16-20124-GH	age		38.0	FN
+23	LD-43_Clade_A_bin	C16-20124-GH	age_group		Adult	FN
+23	LD-43_Clade_A_bin	C16-20124-GH	age_unit		Year	FN
+23	LD-43_Clade_A_bin	C16-20124-GH	family		TettAJ_2019_b_7	FN
+23	LD-43_Clade_A_bin	C16-20124-GH	family_role		mother	FN
+23	LD-43_Clade_A_bin	C16-20124-GH	age_min	not_reported	38	FN
+23	LD-43_Clade_A_bin	C16-20124-GH	age_max	not_reported	38	FN
+23	LD-43_Clade_A_bin	C16-20124-GH	age_years	not_reported	38.0	FN
+23	LD-43_Clade_A_bin	C16-20124-GH	disease	Healthy	Healthy	TP_correct
+23	LD-43_Clade_A_bin	C16-20124-GH	host_species	Homo sapiens	Homo sapiens	TP_correct
+24	NOM019_Clade_A_bin	C16-20125-GH	study_name	QinJ_2012	TettAJ_2019_b	TP_wrong
+24	NOM019_Clade_A_bin	C16-20125-GH	subject_id		C16-10151-GH_F	FN
+24	NOM019_Clade_A_bin	C16-20125-GH	sample_id	NOM019_Clade_A_bin	C16-20125-GH	TP_wrong
+24	NOM019_Clade_A_bin	C16-20125-GH	curator		Paolo_Manghi	FN
+24	NOM019_Clade_A_bin	C16-20125-GH	pmid	31607556	31607556	TP_correct
+24	NOM019_Clade_A_bin	C16-20125-GH	target_condition		Prevotella copri	FN
+24	NOM019_Clade_A_bin	C16-20125-GH	control		Study Control	FN
+24	NOM019_Clade_A_bin	C16-20125-GH	country		Ghana	FN
+24	NOM019_Clade_A_bin	C16-20125-GH	body_site		feces	FN
+24	NOM019_Clade_A_bin	C16-20125-GH	westernized		No	FN
+24	NOM019_Clade_A_bin	C16-20125-GH	dna_extraction_kit		Qiagen	FN
+24	NOM019_Clade_A_bin	C16-20125-GH	ncbi_accession		SRR8791392	FN
+24	NOM019_Clade_A_bin	C16-20125-GH	sequencing_platform		IlluminaHiSeq	FN
+24	NOM019_Clade_A_bin	C16-20125-GH	age		43.0	FN
+24	NOM019_Clade_A_bin	C16-20125-GH	age_group		Adult	FN
+24	NOM019_Clade_A_bin	C16-20125-GH	age_unit		Year	FN
+24	NOM019_Clade_A_bin	C16-20125-GH	family		TettAJ_2019_b_7	FN
+24	NOM019_Clade_A_bin	C16-20125-GH	family_role		father	FN
+24	NOM019_Clade_A_bin	C16-20125-GH	age_min	not_reported	43	FN
+24	NOM019_Clade_A_bin	C16-20125-GH	age_max	not_reported	43	FN
+24	NOM019_Clade_A_bin	C16-20125-GH	age_years	not_reported	43.0	FN
+24	NOM019_Clade_A_bin	C16-20125-GH	disease	Healthy	Healthy	TP_correct
+24	NOM019_Clade_A_bin	C16-20125-GH	host_species	Homo sapiens	Homo sapiens	TP_correct
+25	MH0330_Clade_A_bin	C16-20126-GH	study_name	LiJ_2014	TettAJ_2019_b	TP_wrong
+25	MH0330_Clade_A_bin	C16-20126-GH	subject_id		C16-10151-GH_S1	FN
+25	MH0330_Clade_A_bin	C16-20126-GH	sample_id	MH0330_Clade_A_bin	C16-20126-GH	TP_wrong
+25	MH0330_Clade_A_bin	C16-20126-GH	curator		Paolo_Manghi	FN
+25	MH0330_Clade_A_bin	C16-20126-GH	pmid	31607556	31607556	TP_correct
+25	MH0330_Clade_A_bin	C16-20126-GH	target_condition		Prevotella copri	FN
+25	MH0330_Clade_A_bin	C16-20126-GH	control		Study Control	FN
+25	MH0330_Clade_A_bin	C16-20126-GH	country		Ghana	FN
+25	MH0330_Clade_A_bin	C16-20126-GH	body_site		feces	FN
+25	MH0330_Clade_A_bin	C16-20126-GH	westernized		No	FN
+25	MH0330_Clade_A_bin	C16-20126-GH	dna_extraction_kit		Qiagen	FN
+25	MH0330_Clade_A_bin	C16-20126-GH	ncbi_accession		SRR8791393	FN
+25	MH0330_Clade_A_bin	C16-20126-GH	sequencing_platform		IlluminaHiSeq	FN
+25	MH0330_Clade_A_bin	C16-20126-GH	age		12.0	FN
+25	MH0330_Clade_A_bin	C16-20126-GH	age_group		Adolescent	FN
+25	MH0330_Clade_A_bin	C16-20126-GH	age_unit		Year	FN
+25	MH0330_Clade_A_bin	C16-20126-GH	family		TettAJ_2019_b_7	FN
+25	MH0330_Clade_A_bin	C16-20126-GH	family_role		child	FN
+25	MH0330_Clade_A_bin	C16-20126-GH	age_min	not_reported	12	FN
+25	MH0330_Clade_A_bin	C16-20126-GH	age_max	not_reported	12	FN
+25	MH0330_Clade_A_bin	C16-20126-GH	age_years	not_reported	12.0	FN
+25	MH0330_Clade_A_bin	C16-20126-GH	disease	Healthy	Healthy	TP_correct
+25	MH0330_Clade_A_bin	C16-20126-GH	host_species	Homo sapiens	Homo sapiens	TP_correct
+26	CCIS90903952ST-3-0_Clade_A_bin	C16-20127-GH	study_name	ZellerG_2014	TettAJ_2019_b	TP_wrong
+26	CCIS90903952ST-3-0_Clade_A_bin	C16-20127-GH	subject_id		C16-10151-GH_S2	FN
+26	CCIS90903952ST-3-0_Clade_A_bin	C16-20127-GH	sample_id	CCIS90903952ST-3-0_Clade_A_bin	C16-20127-GH	TP_wrong
+26	CCIS90903952ST-3-0_Clade_A_bin	C16-20127-GH	curator		Paolo_Manghi	FN
+26	CCIS90903952ST-3-0_Clade_A_bin	C16-20127-GH	pmid	31607556	31607556	TP_correct
+26	CCIS90903952ST-3-0_Clade_A_bin	C16-20127-GH	target_condition		Prevotella copri	FN
+26	CCIS90903952ST-3-0_Clade_A_bin	C16-20127-GH	control		Study Control	FN
+26	CCIS90903952ST-3-0_Clade_A_bin	C16-20127-GH	country		Ghana	FN
+26	CCIS90903952ST-3-0_Clade_A_bin	C16-20127-GH	body_site		feces	FN
+26	CCIS90903952ST-3-0_Clade_A_bin	C16-20127-GH	westernized		No	FN
+26	CCIS90903952ST-3-0_Clade_A_bin	C16-20127-GH	dna_extraction_kit		Qiagen	FN
+26	CCIS90903952ST-3-0_Clade_A_bin	C16-20127-GH	ncbi_accession		SRR8791394	FN
+26	CCIS90903952ST-3-0_Clade_A_bin	C16-20127-GH	sequencing_platform		IlluminaHiSeq	FN
+26	CCIS90903952ST-3-0_Clade_A_bin	C16-20127-GH	age		10.0	FN
+26	CCIS90903952ST-3-0_Clade_A_bin	C16-20127-GH	age_group		Child	FN
+26	CCIS90903952ST-3-0_Clade_A_bin	C16-20127-GH	age_unit		Year	FN
+26	CCIS90903952ST-3-0_Clade_A_bin	C16-20127-GH	family		TettAJ_2019_b_7	FN
+26	CCIS90903952ST-3-0_Clade_A_bin	C16-20127-GH	family_role		child	FN
+26	CCIS90903952ST-3-0_Clade_A_bin	C16-20127-GH	age_min	not_reported	10	FN
+26	CCIS90903952ST-3-0_Clade_A_bin	C16-20127-GH	age_max	not_reported	10	FN
+26	CCIS90903952ST-3-0_Clade_A_bin	C16-20127-GH	age_years	not_reported	10.0	FN
+26	CCIS90903952ST-3-0_Clade_A_bin	C16-20127-GH	disease	Healthy	Healthy	TP_correct
+26	CCIS90903952ST-3-0_Clade_A_bin	C16-20127-GH	host_species	Homo sapiens	Homo sapiens	TP_correct
+27	SID637_M_Clade_A_bin	C16-20138-GH	study_name	BackhedF_2015	TettAJ_2019_b	TP_wrong
+27	SID637_M_Clade_A_bin	C16-20138-GH	subject_id		C16-10151-GH_S3	FN
+27	SID637_M_Clade_A_bin	C16-20138-GH	sample_id	SID637_M_Clade_A_bin	C16-20138-GH	TP_wrong
+27	SID637_M_Clade_A_bin	C16-20138-GH	curator		Paolo_Manghi	FN
+27	SID637_M_Clade_A_bin	C16-20138-GH	pmid	31607556	31607556	TP_correct
+27	SID637_M_Clade_A_bin	C16-20138-GH	target_condition		Prevotella copri	FN
+27	SID637_M_Clade_A_bin	C16-20138-GH	control		Study Control	FN
+27	SID637_M_Clade_A_bin	C16-20138-GH	country		Ghana	FN
+27	SID637_M_Clade_A_bin	C16-20138-GH	body_site		feces	FN
+27	SID637_M_Clade_A_bin	C16-20138-GH	westernized		No	FN
+27	SID637_M_Clade_A_bin	C16-20138-GH	dna_extraction_kit		Qiagen	FN
+27	SID637_M_Clade_A_bin	C16-20138-GH	ncbi_accession		SRR8791395	FN
+27	SID637_M_Clade_A_bin	C16-20138-GH	sequencing_platform		IlluminaHiSeq	FN
+27	SID637_M_Clade_A_bin	C16-20138-GH	age		3.0	FN
+27	SID637_M_Clade_A_bin	C16-20138-GH	age_group		Child	FN
+27	SID637_M_Clade_A_bin	C16-20138-GH	age_unit		Year	FN
+27	SID637_M_Clade_A_bin	C16-20138-GH	family		TettAJ_2019_b_7	FN
+27	SID637_M_Clade_A_bin	C16-20138-GH	family_role		child	FN
+27	SID637_M_Clade_A_bin	C16-20138-GH	age_min	not_reported	3	FN
+27	SID637_M_Clade_A_bin	C16-20138-GH	age_max	not_reported	3	FN
+27	SID637_M_Clade_A_bin	C16-20138-GH	age_years	not_reported	3.0	FN
+27	SID637_M_Clade_A_bin	C16-20138-GH	disease	Healthy	Healthy	TP_correct
+27	SID637_M_Clade_A_bin	C16-20138-GH	host_species	Homo sapiens	Homo sapiens	TP_correct
+28	nHM510737_Clade_A_bin	C16-20241-GH	study_name	LiJ_2017	TettAJ_2019_b	TP_wrong
+28	nHM510737_Clade_A_bin	C16-20241-GH	subject_id		C16-10312-GH_M	FN
+28	nHM510737_Clade_A_bin	C16-20241-GH	sample_id	nHM510737_Clade_A_bin	C16-20241-GH	TP_wrong
+28	nHM510737_Clade_A_bin	C16-20241-GH	curator		Paolo_Manghi	FN
+28	nHM510737_Clade_A_bin	C16-20241-GH	pmid	31607556	31607556	TP_correct
+28	nHM510737_Clade_A_bin	C16-20241-GH	target_condition		Prevotella copri	FN
+28	nHM510737_Clade_A_bin	C16-20241-GH	control		Study Control	FN
+28	nHM510737_Clade_A_bin	C16-20241-GH	country		Ghana	FN
+28	nHM510737_Clade_A_bin	C16-20241-GH	body_site		feces	FN
+28	nHM510737_Clade_A_bin	C16-20241-GH	westernized		No	FN
+28	nHM510737_Clade_A_bin	C16-20241-GH	dna_extraction_kit		Qiagen	FN
+28	nHM510737_Clade_A_bin	C16-20241-GH	ncbi_accession		SRR8791396	FN
+28	nHM510737_Clade_A_bin	C16-20241-GH	sequencing_platform		IlluminaHiSeq	FN
+28	nHM510737_Clade_A_bin	C16-20241-GH	age		31.0	FN
+28	nHM510737_Clade_A_bin	C16-20241-GH	age_group		Adult	FN
+28	nHM510737_Clade_A_bin	C16-20241-GH	age_unit		Year	FN
+28	nHM510737_Clade_A_bin	C16-20241-GH	family		TettAJ_2019_b_8	FN
+28	nHM510737_Clade_A_bin	C16-20241-GH	family_role		mother	FN
+28	nHM510737_Clade_A_bin	C16-20241-GH	age_min	not_reported	31	FN
+28	nHM510737_Clade_A_bin	C16-20241-GH	age_max	not_reported	31	FN
+28	nHM510737_Clade_A_bin	C16-20241-GH	age_years	not_reported	31.0	FN
+28	nHM510737_Clade_A_bin	C16-20241-GH	disease	Healthy	Healthy	TP_correct
+28	nHM510737_Clade_A_bin	C16-20241-GH	host_species	Homo sapiens	Homo sapiens	TP_correct
+29	MH0077_Clade_A_bin	C16-20242-GH	study_name	LeChatelierE_2013	TettAJ_2019_b	TP_wrong
+29	MH0077_Clade_A_bin	C16-20242-GH	subject_id		C16-10312-GH_F	FN
+29	MH0077_Clade_A_bin	C16-20242-GH	sample_id	MH0077_Clade_A_bin	C16-20242-GH	TP_wrong
+29	MH0077_Clade_A_bin	C16-20242-GH	curator		Paolo_Manghi	FN
+29	MH0077_Clade_A_bin	C16-20242-GH	pmid	31607556	31607556	TP_correct
+29	MH0077_Clade_A_bin	C16-20242-GH	target_condition		Prevotella copri	FN
+29	MH0077_Clade_A_bin	C16-20242-GH	control		Study Control	FN
+29	MH0077_Clade_A_bin	C16-20242-GH	country		Ghana	FN
+29	MH0077_Clade_A_bin	C16-20242-GH	body_site		feces	FN
+29	MH0077_Clade_A_bin	C16-20242-GH	westernized		No	FN
+29	MH0077_Clade_A_bin	C16-20242-GH	dna_extraction_kit		Qiagen	FN
+29	MH0077_Clade_A_bin	C16-20242-GH	ncbi_accession		SRR8791397	FN
+29	MH0077_Clade_A_bin	C16-20242-GH	sequencing_platform		IlluminaHiSeq	FN
+29	MH0077_Clade_A_bin	C16-20242-GH	age		34.0	FN
+29	MH0077_Clade_A_bin	C16-20242-GH	age_group		Adult	FN
+29	MH0077_Clade_A_bin	C16-20242-GH	age_unit		Year	FN
+29	MH0077_Clade_A_bin	C16-20242-GH	family		TettAJ_2019_b_8	FN
+29	MH0077_Clade_A_bin	C16-20242-GH	family_role		father	FN
+29	MH0077_Clade_A_bin	C16-20242-GH	age_min	not_reported	34	FN
+29	MH0077_Clade_A_bin	C16-20242-GH	age_max	not_reported	34	FN
+29	MH0077_Clade_A_bin	C16-20242-GH	age_years	not_reported	34.0	FN
+29	MH0077_Clade_A_bin	C16-20242-GH	disease	Healthy	Healthy	TP_correct
+29	MH0077_Clade_A_bin	C16-20242-GH	host_species	Homo sapiens	Homo sapiens	TP_correct
+30	O2_UC44_2_Clade_A_bin	C16-20243-GH	study_name	NielsenHB_2014	TettAJ_2019_b	TP_wrong
+30	O2_UC44_2_Clade_A_bin	C16-20243-GH	subject_id		C16-10312-GH_S1	FN
+30	O2_UC44_2_Clade_A_bin	C16-20243-GH	sample_id	O2_UC44_2_Clade_A_bin	C16-20243-GH	TP_wrong
+30	O2_UC44_2_Clade_A_bin	C16-20243-GH	curator		Paolo_Manghi	FN
+30	O2_UC44_2_Clade_A_bin	C16-20243-GH	pmid	31607556	31607556	TP_correct
+30	O2_UC44_2_Clade_A_bin	C16-20243-GH	target_condition		Prevotella copri	FN
+30	O2_UC44_2_Clade_A_bin	C16-20243-GH	control		Study Control	FN
+30	O2_UC44_2_Clade_A_bin	C16-20243-GH	country		Ghana	FN
+30	O2_UC44_2_Clade_A_bin	C16-20243-GH	body_site		feces	FN
+30	O2_UC44_2_Clade_A_bin	C16-20243-GH	westernized		No	FN
+30	O2_UC44_2_Clade_A_bin	C16-20243-GH	dna_extraction_kit		Qiagen	FN
+30	O2_UC44_2_Clade_A_bin	C16-20243-GH	ncbi_accession		SRR8791381	FN
+30	O2_UC44_2_Clade_A_bin	C16-20243-GH	sequencing_platform		IlluminaHiSeq	FN
+30	O2_UC44_2_Clade_A_bin	C16-20243-GH	age		7.0	FN
+30	O2_UC44_2_Clade_A_bin	C16-20243-GH	age_group		Child	FN
+30	O2_UC44_2_Clade_A_bin	C16-20243-GH	age_unit		Year	FN
+30	O2_UC44_2_Clade_A_bin	C16-20243-GH	family		TettAJ_2019_b_8	FN
+30	O2_UC44_2_Clade_A_bin	C16-20243-GH	family_role		child	FN
+30	O2_UC44_2_Clade_A_bin	C16-20243-GH	age_min	not_reported	7	FN
+30	O2_UC44_2_Clade_A_bin	C16-20243-GH	age_max	not_reported	7	FN
+30	O2_UC44_2_Clade_A_bin	C16-20243-GH	age_years	not_reported	7.0	FN
+30	O2_UC44_2_Clade_A_bin	C16-20243-GH	disease	Healthy	Healthy	TP_correct
+30	O2_UC44_2_Clade_A_bin	C16-20243-GH	host_species	Homo sapiens	Homo sapiens	TP_correct
+31	MH0217_Clade_A_bin	C16-20244-GH	study_name	LeChatelierE_2013	TettAJ_2019_b	TP_wrong
+31	MH0217_Clade_A_bin	C16-20244-GH	subject_id		C16-10312-GH_S2	FN
+31	MH0217_Clade_A_bin	C16-20244-GH	sample_id	MH0217_Clade_A_bin	C16-20244-GH	TP_wrong
+31	MH0217_Clade_A_bin	C16-20244-GH	curator		Paolo_Manghi	FN
+31	MH0217_Clade_A_bin	C16-20244-GH	pmid	31607556	31607556	TP_correct
+31	MH0217_Clade_A_bin	C16-20244-GH	target_condition		Prevotella copri	FN
+31	MH0217_Clade_A_bin	C16-20244-GH	control		Study Control	FN
+31	MH0217_Clade_A_bin	C16-20244-GH	country		Ghana	FN
+31	MH0217_Clade_A_bin	C16-20244-GH	body_site		feces	FN
+31	MH0217_Clade_A_bin	C16-20244-GH	westernized		No	FN
+31	MH0217_Clade_A_bin	C16-20244-GH	dna_extraction_kit		Qiagen	FN
+31	MH0217_Clade_A_bin	C16-20244-GH	ncbi_accession		SRR8791380	FN
+31	MH0217_Clade_A_bin	C16-20244-GH	sequencing_platform		IlluminaHiSeq	FN
+31	MH0217_Clade_A_bin	C16-20244-GH	age		6.0	FN
+31	MH0217_Clade_A_bin	C16-20244-GH	age_group		Child	FN
+31	MH0217_Clade_A_bin	C16-20244-GH	age_unit		Year	FN
+31	MH0217_Clade_A_bin	C16-20244-GH	family		TettAJ_2019_b_8	FN
+31	MH0217_Clade_A_bin	C16-20244-GH	family_role		child	FN
+31	MH0217_Clade_A_bin	C16-20244-GH	age_min	not_reported	6	FN
+31	MH0217_Clade_A_bin	C16-20244-GH	age_max	not_reported	6	FN
+31	MH0217_Clade_A_bin	C16-20244-GH	age_years	not_reported	6.0	FN
+31	MH0217_Clade_A_bin	C16-20244-GH	disease	Healthy	Healthy	TP_correct
+31	MH0217_Clade_A_bin	C16-20244-GH	host_species	Homo sapiens	Homo sapiens	TP_correct
+32	PNP_Main_476_megahit_Clade_A_bin	C16-20245-GH	study_name	ZeeviD_2015_B	TettAJ_2019_b	TP_wrong
+32	PNP_Main_476_megahit_Clade_A_bin	C16-20245-GH	subject_id		C16-10312-GH_S3	FN
+32	PNP_Main_476_megahit_Clade_A_bin	C16-20245-GH	sample_id	PNP_Main_476_megahit_Clade_A_bin	C16-20245-GH	TP_wrong
+32	PNP_Main_476_megahit_Clade_A_bin	C16-20245-GH	curator		Paolo_Manghi	FN
+32	PNP_Main_476_megahit_Clade_A_bin	C16-20245-GH	pmid	31607556	31607556	TP_correct
+32	PNP_Main_476_megahit_Clade_A_bin	C16-20245-GH	target_condition		Prevotella copri	FN
+32	PNP_Main_476_megahit_Clade_A_bin	C16-20245-GH	control		Study Control	FN
+32	PNP_Main_476_megahit_Clade_A_bin	C16-20245-GH	country		Ghana	FN
+32	PNP_Main_476_megahit_Clade_A_bin	C16-20245-GH	body_site		feces	FN
+32	PNP_Main_476_megahit_Clade_A_bin	C16-20245-GH	westernized		No	FN
+32	PNP_Main_476_megahit_Clade_A_bin	C16-20245-GH	dna_extraction_kit		Qiagen	FN
+32	PNP_Main_476_megahit_Clade_A_bin	C16-20245-GH	ncbi_accession		SRR8791379	FN
+32	PNP_Main_476_megahit_Clade_A_bin	C16-20245-GH	sequencing_platform		IlluminaHiSeq	FN
+32	PNP_Main_476_megahit_Clade_A_bin	C16-20245-GH	age		5.0	FN
+32	PNP_Main_476_megahit_Clade_A_bin	C16-20245-GH	age_group		Child	FN
+32	PNP_Main_476_megahit_Clade_A_bin	C16-20245-GH	age_unit		Year	FN
+32	PNP_Main_476_megahit_Clade_A_bin	C16-20245-GH	family		TettAJ_2019_b_8	FN
+32	PNP_Main_476_megahit_Clade_A_bin	C16-20245-GH	family_role		child	FN
+32	PNP_Main_476_megahit_Clade_A_bin	C16-20245-GH	age_min	not_reported	5	FN
+32	PNP_Main_476_megahit_Clade_A_bin	C16-20245-GH	age_max	not_reported	5	FN
+32	PNP_Main_476_megahit_Clade_A_bin	C16-20245-GH	age_years	not_reported	5.0	FN
+32	PNP_Main_476_megahit_Clade_A_bin	C16-20245-GH	disease	Healthy	Healthy	TP_correct
+32	PNP_Main_476_megahit_Clade_A_bin	C16-20245-GH	host_species	Homo sapiens	Homo sapiens	TP_correct
+33	nHM512705_Clade_A_bin	C16-20246-GH	study_name	LiJ_2017	TettAJ_2019_b	TP_wrong
+33	nHM512705_Clade_A_bin	C16-20246-GH	subject_id		C16-10312-GH_S4	FN
+33	nHM512705_Clade_A_bin	C16-20246-GH	sample_id	nHM512705_Clade_A_bin	C16-20246-GH	TP_wrong
+33	nHM512705_Clade_A_bin	C16-20246-GH	curator		Paolo_Manghi	FN
+33	nHM512705_Clade_A_bin	C16-20246-GH	pmid	31607556	31607556	TP_correct
+33	nHM512705_Clade_A_bin	C16-20246-GH	target_condition		Prevotella copri	FN
+33	nHM512705_Clade_A_bin	C16-20246-GH	control		Study Control	FN
+33	nHM512705_Clade_A_bin	C16-20246-GH	country		Ghana	FN
+33	nHM512705_Clade_A_bin	C16-20246-GH	body_site		feces	FN
+33	nHM512705_Clade_A_bin	C16-20246-GH	westernized		No	FN
+33	nHM512705_Clade_A_bin	C16-20246-GH	dna_extraction_kit		Qiagen	FN
+33	nHM512705_Clade_A_bin	C16-20246-GH	ncbi_accession		SRR8791378	FN
+33	nHM512705_Clade_A_bin	C16-20246-GH	sequencing_platform		IlluminaHiSeq	FN
+33	nHM512705_Clade_A_bin	C16-20246-GH	age		3.0	FN
+33	nHM512705_Clade_A_bin	C16-20246-GH	age_group		Child	FN
+33	nHM512705_Clade_A_bin	C16-20246-GH	age_unit		Year	FN
+33	nHM512705_Clade_A_bin	C16-20246-GH	family		TettAJ_2019_b_8	FN
+33	nHM512705_Clade_A_bin	C16-20246-GH	family_role		child	FN
+33	nHM512705_Clade_A_bin	C16-20246-GH	age_min	not_reported	3	FN
+33	nHM512705_Clade_A_bin	C16-20246-GH	age_max	not_reported	3	FN
+33	nHM512705_Clade_A_bin	C16-20246-GH	age_years	not_reported	3.0	FN
+33	nHM512705_Clade_A_bin	C16-20246-GH	disease	Healthy	Healthy	TP_correct
+33	nHM512705_Clade_A_bin	C16-20246-GH	host_species	Homo sapiens	Homo sapiens	TP_correct
+34	nHF611710_Clade_A_bin	C16-20247-GH	study_name	LiJ_2017	TettAJ_2019_b	TP_wrong
+34	nHF611710_Clade_A_bin	C16-20247-GH	subject_id		C16-10312-GH_S5	FN
+34	nHF611710_Clade_A_bin	C16-20247-GH	sample_id	nHF611710_Clade_A_bin	C16-20247-GH	TP_wrong
+34	nHF611710_Clade_A_bin	C16-20247-GH	curator		Paolo_Manghi	FN
+34	nHF611710_Clade_A_bin	C16-20247-GH	pmid	31607556	31607556	TP_correct
+34	nHF611710_Clade_A_bin	C16-20247-GH	target_condition		Prevotella copri	FN
+34	nHF611710_Clade_A_bin	C16-20247-GH	control		Study Control	FN
+34	nHF611710_Clade_A_bin	C16-20247-GH	country		Ghana	FN
+34	nHF611710_Clade_A_bin	C16-20247-GH	body_site		feces	FN
+34	nHF611710_Clade_A_bin	C16-20247-GH	westernized		No	FN
+34	nHF611710_Clade_A_bin	C16-20247-GH	dna_extraction_kit		Qiagen	FN
+34	nHF611710_Clade_A_bin	C16-20247-GH	ncbi_accession		SRR8791377	FN
+34	nHF611710_Clade_A_bin	C16-20247-GH	sequencing_platform		IlluminaHiSeq	FN
+34	nHF611710_Clade_A_bin	C16-20247-GH	age		0.0	FN
+34	nHF611710_Clade_A_bin	C16-20247-GH	age_group		Newborn	FN
+34	nHF611710_Clade_A_bin	C16-20247-GH	age_unit		Day	FN
+34	nHF611710_Clade_A_bin	C16-20247-GH	family		TettAJ_2019_b_8	FN
+34	nHF611710_Clade_A_bin	C16-20247-GH	family_role		child	FN
+34	nHF611710_Clade_A_bin	C16-20247-GH	age_min	not_reported	0	FN
+34	nHF611710_Clade_A_bin	C16-20247-GH	age_max	not_reported	0	FN
+34	nHF611710_Clade_A_bin	C16-20247-GH	age_years	not_reported	0.0	FN
+34	nHF611710_Clade_A_bin	C16-20247-GH	disease	Healthy	Healthy	TP_correct
+34	nHF611710_Clade_A_bin	C16-20247-GH	host_species	Homo sapiens	Homo sapiens	TP_correct
+35	YSZC12003_37293_Clade_A_bin	C16-20273-GH	study_name	XieH_2016	TettAJ_2019_b	TP_wrong
+35	YSZC12003_37293_Clade_A_bin	C16-20273-GH	subject_id		C16-10328-GH_M	FN
+35	YSZC12003_37293_Clade_A_bin	C16-20273-GH	sample_id	YSZC12003_37293_Clade_A_bin	C16-20273-GH	TP_wrong
+35	YSZC12003_37293_Clade_A_bin	C16-20273-GH	curator		Paolo_Manghi	FN
+35	YSZC12003_37293_Clade_A_bin	C16-20273-GH	pmid	31607556	31607556	TP_correct
+35	YSZC12003_37293_Clade_A_bin	C16-20273-GH	target_condition		Prevotella copri	FN
+35	YSZC12003_37293_Clade_A_bin	C16-20273-GH	control		Study Control	FN
+35	YSZC12003_37293_Clade_A_bin	C16-20273-GH	country		Ghana	FN
+35	YSZC12003_37293_Clade_A_bin	C16-20273-GH	body_site		feces	FN
+35	YSZC12003_37293_Clade_A_bin	C16-20273-GH	westernized		No	FN
+35	YSZC12003_37293_Clade_A_bin	C16-20273-GH	dna_extraction_kit		Qiagen	FN
+35	YSZC12003_37293_Clade_A_bin	C16-20273-GH	ncbi_accession		SRR8791376	FN
+35	YSZC12003_37293_Clade_A_bin	C16-20273-GH	sequencing_platform		IlluminaHiSeq	FN
+35	YSZC12003_37293_Clade_A_bin	C16-20273-GH	age		31.0	FN
+35	YSZC12003_37293_Clade_A_bin	C16-20273-GH	age_group		Adult	FN
+35	YSZC12003_37293_Clade_A_bin	C16-20273-GH	age_unit		Year	FN
+35	YSZC12003_37293_Clade_A_bin	C16-20273-GH	family		TettAJ_2019_b_9	FN
+35	YSZC12003_37293_Clade_A_bin	C16-20273-GH	family_role		mother	FN
+35	YSZC12003_37293_Clade_A_bin	C16-20273-GH	age_min	not_reported	31	FN
+35	YSZC12003_37293_Clade_A_bin	C16-20273-GH	age_max	not_reported	31	FN
+35	YSZC12003_37293_Clade_A_bin	C16-20273-GH	age_years	not_reported	31.0	FN
+35	YSZC12003_37293_Clade_A_bin	C16-20273-GH	disease	Healthy	Healthy	TP_correct
+35	YSZC12003_37293_Clade_A_bin	C16-20273-GH	host_species	Homo sapiens	Homo sapiens	TP_correct
+36	TRAVELRES1_Clade_A_bin	C16-20274-GH	study_name	BengtssonPalmeJ_2015	TettAJ_2019_b	TP_wrong
+36	TRAVELRES1_Clade_A_bin	C16-20274-GH	subject_id		C16-10328-GH_F	FN
+36	TRAVELRES1_Clade_A_bin	C16-20274-GH	sample_id	TRAVELRES1_Clade_A_bin	C16-20274-GH	TP_wrong
+36	TRAVELRES1_Clade_A_bin	C16-20274-GH	curator		Paolo_Manghi	FN
+36	TRAVELRES1_Clade_A_bin	C16-20274-GH	pmid	31607556	31607556	TP_correct
+36	TRAVELRES1_Clade_A_bin	C16-20274-GH	target_condition		Prevotella copri	FN
+36	TRAVELRES1_Clade_A_bin	C16-20274-GH	control		Study Control	FN
+36	TRAVELRES1_Clade_A_bin	C16-20274-GH	country		Ghana	FN
+36	TRAVELRES1_Clade_A_bin	C16-20274-GH	body_site		feces	FN
+36	TRAVELRES1_Clade_A_bin	C16-20274-GH	westernized		No	FN
+36	TRAVELRES1_Clade_A_bin	C16-20274-GH	dna_extraction_kit		Qiagen	FN
+36	TRAVELRES1_Clade_A_bin	C16-20274-GH	ncbi_accession		SRR8791375	FN
+36	TRAVELRES1_Clade_A_bin	C16-20274-GH	sequencing_platform		IlluminaHiSeq	FN
+36	TRAVELRES1_Clade_A_bin	C16-20274-GH	age		34.0	FN
+36	TRAVELRES1_Clade_A_bin	C16-20274-GH	age_group		Adult	FN
+36	TRAVELRES1_Clade_A_bin	C16-20274-GH	age_unit		Year	FN
+36	TRAVELRES1_Clade_A_bin	C16-20274-GH	family		TettAJ_2019_b_9	FN
+36	TRAVELRES1_Clade_A_bin	C16-20274-GH	family_role		father	FN
+36	TRAVELRES1_Clade_A_bin	C16-20274-GH	age_min	not_reported	34	FN
+36	TRAVELRES1_Clade_A_bin	C16-20274-GH	age_max	not_reported	34	FN
+36	TRAVELRES1_Clade_A_bin	C16-20274-GH	age_years	not_reported	34.0	FN
+36	TRAVELRES1_Clade_A_bin	C16-20274-GH	disease	Healthy	Healthy	TP_correct
+36	TRAVELRES1_Clade_A_bin	C16-20274-GH	host_species	Homo sapiens	Homo sapiens	TP_correct
+37	PNP_Main_30_megahit_Clade_A_bin	C16-20275-GH	study_name	ZeeviD_2015_A	TettAJ_2019_b	TP_wrong
+37	PNP_Main_30_megahit_Clade_A_bin	C16-20275-GH	subject_id		C16-10328-GH_S1	FN
+37	PNP_Main_30_megahit_Clade_A_bin	C16-20275-GH	sample_id	PNP_Main_30_megahit_Clade_A_bin	C16-20275-GH	TP_wrong
+37	PNP_Main_30_megahit_Clade_A_bin	C16-20275-GH	curator		Paolo_Manghi	FN
+37	PNP_Main_30_megahit_Clade_A_bin	C16-20275-GH	pmid	31607556	31607556	TP_correct
+37	PNP_Main_30_megahit_Clade_A_bin	C16-20275-GH	target_condition		Prevotella copri	FN
+37	PNP_Main_30_megahit_Clade_A_bin	C16-20275-GH	control		Study Control	FN
+37	PNP_Main_30_megahit_Clade_A_bin	C16-20275-GH	country		Ghana	FN
+37	PNP_Main_30_megahit_Clade_A_bin	C16-20275-GH	body_site		feces	FN
+37	PNP_Main_30_megahit_Clade_A_bin	C16-20275-GH	westernized		No	FN
+37	PNP_Main_30_megahit_Clade_A_bin	C16-20275-GH	dna_extraction_kit		Qiagen	FN
+37	PNP_Main_30_megahit_Clade_A_bin	C16-20275-GH	ncbi_accession		SRR8791374	FN
+37	PNP_Main_30_megahit_Clade_A_bin	C16-20275-GH	sequencing_platform		IlluminaHiSeq	FN
+37	PNP_Main_30_megahit_Clade_A_bin	C16-20275-GH	age		10.0	FN
+37	PNP_Main_30_megahit_Clade_A_bin	C16-20275-GH	age_group		Child	FN
+37	PNP_Main_30_megahit_Clade_A_bin	C16-20275-GH	age_unit		Year	FN
+37	PNP_Main_30_megahit_Clade_A_bin	C16-20275-GH	family		TettAJ_2019_b_9	FN
+37	PNP_Main_30_megahit_Clade_A_bin	C16-20275-GH	family_role		child	FN
+37	PNP_Main_30_megahit_Clade_A_bin	C16-20275-GH	age_min	not_reported	10	FN
+37	PNP_Main_30_megahit_Clade_A_bin	C16-20275-GH	age_max	not_reported	10	FN
+37	PNP_Main_30_megahit_Clade_A_bin	C16-20275-GH	age_years	not_reported	10.0	FN
+37	PNP_Main_30_megahit_Clade_A_bin	C16-20275-GH	disease	Healthy	Healthy	TP_correct
+37	PNP_Main_30_megahit_Clade_A_bin	C16-20275-GH	host_species	Homo sapiens	Homo sapiens	TP_correct
+38	TRAVELRES55_Clade_A_bin	C16-20288-GH	study_name	BengtssonPalmeJ_2015	TettAJ_2019_b	TP_wrong
+38	TRAVELRES55_Clade_A_bin	C16-20288-GH	subject_id		C16-10332-GH_F	FN
+38	TRAVELRES55_Clade_A_bin	C16-20288-GH	sample_id	TRAVELRES55_Clade_A_bin	C16-20288-GH	TP_wrong
+38	TRAVELRES55_Clade_A_bin	C16-20288-GH	curator		Paolo_Manghi	FN
+38	TRAVELRES55_Clade_A_bin	C16-20288-GH	pmid	31607556	31607556	TP_correct
+38	TRAVELRES55_Clade_A_bin	C16-20288-GH	target_condition		Prevotella copri	FN
+38	TRAVELRES55_Clade_A_bin	C16-20288-GH	control		Study Control	FN
+38	TRAVELRES55_Clade_A_bin	C16-20288-GH	country		Ghana	FN
+38	TRAVELRES55_Clade_A_bin	C16-20288-GH	body_site		feces	FN
+38	TRAVELRES55_Clade_A_bin	C16-20288-GH	westernized		No	FN
+38	TRAVELRES55_Clade_A_bin	C16-20288-GH	dna_extraction_kit		Qiagen	FN
+38	TRAVELRES55_Clade_A_bin	C16-20288-GH	ncbi_accession		SRR8791383	FN
+38	TRAVELRES55_Clade_A_bin	C16-20288-GH	sequencing_platform		IlluminaHiSeq	FN
+38	TRAVELRES55_Clade_A_bin	C16-20288-GH	age		41.0	FN
+38	TRAVELRES55_Clade_A_bin	C16-20288-GH	age_group		Adult	FN
+38	TRAVELRES55_Clade_A_bin	C16-20288-GH	age_unit		Year	FN
+38	TRAVELRES55_Clade_A_bin	C16-20288-GH	family		TettAJ_2019_b_10	FN
+38	TRAVELRES55_Clade_A_bin	C16-20288-GH	family_role		father	FN
+38	TRAVELRES55_Clade_A_bin	C16-20288-GH	age_min	not_reported	41	FN
+38	TRAVELRES55_Clade_A_bin	C16-20288-GH	age_max	not_reported	41	FN
+38	TRAVELRES55_Clade_A_bin	C16-20288-GH	age_years	not_reported	41.0	FN
+38	TRAVELRES55_Clade_A_bin	C16-20288-GH	disease	Healthy	Healthy	TP_correct
+38	TRAVELRES55_Clade_A_bin	C16-20288-GH	host_species	Homo sapiens	Homo sapiens	TP_correct
+39	TRAVELRES14_Clade_A_bin	C16-20292-GH	study_name	BengtssonPalmeJ_2015	TettAJ_2019_b	TP_wrong
+39	TRAVELRES14_Clade_A_bin	C16-20292-GH	subject_id		C16-10332-GH_M	FN
+39	TRAVELRES14_Clade_A_bin	C16-20292-GH	sample_id	TRAVELRES14_Clade_A_bin	C16-20292-GH	TP_wrong
+39	TRAVELRES14_Clade_A_bin	C16-20292-GH	curator		Paolo_Manghi	FN
+39	TRAVELRES14_Clade_A_bin	C16-20292-GH	pmid	31607556	31607556	TP_correct
+39	TRAVELRES14_Clade_A_bin	C16-20292-GH	target_condition		Prevotella copri	FN
+39	TRAVELRES14_Clade_A_bin	C16-20292-GH	control		Study Control	FN
+39	TRAVELRES14_Clade_A_bin	C16-20292-GH	country		Ghana	FN
+39	TRAVELRES14_Clade_A_bin	C16-20292-GH	body_site		feces	FN
+39	TRAVELRES14_Clade_A_bin	C16-20292-GH	westernized		No	FN
+39	TRAVELRES14_Clade_A_bin	C16-20292-GH	dna_extraction_kit		Qiagen	FN
+39	TRAVELRES14_Clade_A_bin	C16-20292-GH	ncbi_accession		SRR8791382	FN
+39	TRAVELRES14_Clade_A_bin	C16-20292-GH	sequencing_platform		IlluminaHiSeq	FN
+39	TRAVELRES14_Clade_A_bin	C16-20292-GH	age		25.0	FN
+39	TRAVELRES14_Clade_A_bin	C16-20292-GH	age_group		Adult	FN
+39	TRAVELRES14_Clade_A_bin	C16-20292-GH	age_unit		Year	FN
+39	TRAVELRES14_Clade_A_bin	C16-20292-GH	family		TettAJ_2019_b_10	FN
+39	TRAVELRES14_Clade_A_bin	C16-20292-GH	family_role		mother	FN
+39	TRAVELRES14_Clade_A_bin	C16-20292-GH	age_min	not_reported	25	FN
+39	TRAVELRES14_Clade_A_bin	C16-20292-GH	age_max	not_reported	25	FN
+39	TRAVELRES14_Clade_A_bin	C16-20292-GH	age_years	not_reported	25.0	FN
+39	TRAVELRES14_Clade_A_bin	C16-20292-GH	disease	Healthy	Healthy	TP_correct
+39	TRAVELRES14_Clade_A_bin	C16-20292-GH	host_species	Homo sapiens	Homo sapiens	TP_correct
+40	PNP_Main_116_megahit_Clade_A_bin	C16-20362-GH	study_name	ZeeviD_2015_A	TettAJ_2019_b	TP_wrong
+40	PNP_Main_116_megahit_Clade_A_bin	C16-20362-GH	subject_id		C16-10372-GH_M	FN
+40	PNP_Main_116_megahit_Clade_A_bin	C16-20362-GH	sample_id	PNP_Main_116_megahit_Clade_A_bin	C16-20362-GH	TP_wrong
+40	PNP_Main_116_megahit_Clade_A_bin	C16-20362-GH	curator		Paolo_Manghi	FN
+40	PNP_Main_116_megahit_Clade_A_bin	C16-20362-GH	pmid	31607556	31607556	TP_correct
+40	PNP_Main_116_megahit_Clade_A_bin	C16-20362-GH	target_condition		Prevotella copri	FN
+40	PNP_Main_116_megahit_Clade_A_bin	C16-20362-GH	control		Study Control	FN
+40	PNP_Main_116_megahit_Clade_A_bin	C16-20362-GH	country		Ghana	FN
+40	PNP_Main_116_megahit_Clade_A_bin	C16-20362-GH	body_site		feces	FN
+40	PNP_Main_116_megahit_Clade_A_bin	C16-20362-GH	westernized		No	FN
+40	PNP_Main_116_megahit_Clade_A_bin	C16-20362-GH	dna_extraction_kit		Qiagen	FN
+40	PNP_Main_116_megahit_Clade_A_bin	C16-20362-GH	ncbi_accession		SRR8791386	FN
+40	PNP_Main_116_megahit_Clade_A_bin	C16-20362-GH	sequencing_platform		IlluminaHiSeq	FN
+40	PNP_Main_116_megahit_Clade_A_bin	C16-20362-GH	age		20.0	FN
+40	PNP_Main_116_megahit_Clade_A_bin	C16-20362-GH	age_group		Adult	FN
+40	PNP_Main_116_megahit_Clade_A_bin	C16-20362-GH	age_unit		Year	FN
+40	PNP_Main_116_megahit_Clade_A_bin	C16-20362-GH	family		TettAJ_2019_b_11	FN
+40	PNP_Main_116_megahit_Clade_A_bin	C16-20362-GH	family_role		mother	FN
+40	PNP_Main_116_megahit_Clade_A_bin	C16-20362-GH	age_min	not_reported	20	FN
+40	PNP_Main_116_megahit_Clade_A_bin	C16-20362-GH	age_max	not_reported	20	FN
+40	PNP_Main_116_megahit_Clade_A_bin	C16-20362-GH	age_years	not_reported	20.0	FN
+40	PNP_Main_116_megahit_Clade_A_bin	C16-20362-GH	disease	Healthy	Healthy	TP_correct
+40	PNP_Main_116_megahit_Clade_A_bin	C16-20362-GH	host_species	Homo sapiens	Homo sapiens	TP_correct
+41	PNP_Main_502_megahit_Clade_A_bin	C16-20363-GH	study_name	ZeeviD_2015_B	TettAJ_2019_b	TP_wrong
+41	PNP_Main_502_megahit_Clade_A_bin	C16-20363-GH	subject_id		C16-10372-GH_F	FN
+41	PNP_Main_502_megahit_Clade_A_bin	C16-20363-GH	sample_id	PNP_Main_502_megahit_Clade_A_bin	C16-20363-GH	TP_wrong
+41	PNP_Main_502_megahit_Clade_A_bin	C16-20363-GH	curator		Paolo_Manghi	FN
+41	PNP_Main_502_megahit_Clade_A_bin	C16-20363-GH	pmid	31607556	31607556	TP_correct
+41	PNP_Main_502_megahit_Clade_A_bin	C16-20363-GH	target_condition		Prevotella copri	FN
+41	PNP_Main_502_megahit_Clade_A_bin	C16-20363-GH	control		Study Control	FN
+41	PNP_Main_502_megahit_Clade_A_bin	C16-20363-GH	country		Ghana	FN
+41	PNP_Main_502_megahit_Clade_A_bin	C16-20363-GH	body_site		feces	FN
+41	PNP_Main_502_megahit_Clade_A_bin	C16-20363-GH	westernized		No	FN
+41	PNP_Main_502_megahit_Clade_A_bin	C16-20363-GH	dna_extraction_kit		Qiagen	FN
+41	PNP_Main_502_megahit_Clade_A_bin	C16-20363-GH	ncbi_accession		SRR8791387	FN
+41	PNP_Main_502_megahit_Clade_A_bin	C16-20363-GH	sequencing_platform		IlluminaHiSeq	FN
+41	PNP_Main_502_megahit_Clade_A_bin	C16-20363-GH	age		34.0	FN
+41	PNP_Main_502_megahit_Clade_A_bin	C16-20363-GH	age_group		Adult	FN
+41	PNP_Main_502_megahit_Clade_A_bin	C16-20363-GH	age_unit		Year	FN
+41	PNP_Main_502_megahit_Clade_A_bin	C16-20363-GH	family		TettAJ_2019_b_11	FN
+41	PNP_Main_502_megahit_Clade_A_bin	C16-20363-GH	family_role		father	FN
+41	PNP_Main_502_megahit_Clade_A_bin	C16-20363-GH	age_min	not_reported	34	FN
+41	PNP_Main_502_megahit_Clade_A_bin	C16-20363-GH	age_max	not_reported	34	FN
+41	PNP_Main_502_megahit_Clade_A_bin	C16-20363-GH	age_years	not_reported	34.0	FN
+41	PNP_Main_502_megahit_Clade_A_bin	C16-20363-GH	disease	Healthy	Healthy	TP_correct
+41	PNP_Main_502_megahit_Clade_A_bin	C16-20363-GH	host_species	Homo sapiens	Homo sapiens	TP_correct
+42	YSZC12003_37544_Clade_A_bin	C16-20374-GH	study_name	XieH_2016	TettAJ_2019_b	TP_wrong
+42	YSZC12003_37544_Clade_A_bin	C16-20374-GH	subject_id		C16-10389-GH_M	FN
+42	YSZC12003_37544_Clade_A_bin	C16-20374-GH	sample_id	YSZC12003_37544_Clade_A_bin	C16-20374-GH	TP_wrong
+42	YSZC12003_37544_Clade_A_bin	C16-20374-GH	curator		Paolo_Manghi	FN
+42	YSZC12003_37544_Clade_A_bin	C16-20374-GH	pmid	31607556	31607556	TP_correct
+42	YSZC12003_37544_Clade_A_bin	C16-20374-GH	target_condition		Prevotella copri	FN
+42	YSZC12003_37544_Clade_A_bin	C16-20374-GH	control		Study Control	FN
+42	YSZC12003_37544_Clade_A_bin	C16-20374-GH	country		Ghana	FN
+42	YSZC12003_37544_Clade_A_bin	C16-20374-GH	body_site		feces	FN
+42	YSZC12003_37544_Clade_A_bin	C16-20374-GH	westernized		No	FN
+42	YSZC12003_37544_Clade_A_bin	C16-20374-GH	dna_extraction_kit		Qiagen	FN
+42	YSZC12003_37544_Clade_A_bin	C16-20374-GH	ncbi_accession		SRR8791384	FN
+42	YSZC12003_37544_Clade_A_bin	C16-20374-GH	sequencing_platform		IlluminaHiSeq	FN
+42	YSZC12003_37544_Clade_A_bin	C16-20374-GH	age		24.0	FN
+42	YSZC12003_37544_Clade_A_bin	C16-20374-GH	age_group		Adult	FN
+42	YSZC12003_37544_Clade_A_bin	C16-20374-GH	age_unit		Year	FN
+42	YSZC12003_37544_Clade_A_bin	C16-20374-GH	family		TettAJ_2019_b_12	FN
+42	YSZC12003_37544_Clade_A_bin	C16-20374-GH	family_role		mother	FN
+42	YSZC12003_37544_Clade_A_bin	C16-20374-GH	age_min	not_reported	24	FN
+42	YSZC12003_37544_Clade_A_bin	C16-20374-GH	age_max	not_reported	24	FN
+42	YSZC12003_37544_Clade_A_bin	C16-20374-GH	age_years	not_reported	24.0	FN
+42	YSZC12003_37544_Clade_A_bin	C16-20374-GH	disease	Healthy	Healthy	TP_correct
+42	YSZC12003_37544_Clade_A_bin	C16-20374-GH	host_species	Homo sapiens	Homo sapiens	TP_correct
+43	TRAVELRES56_Clade_A_bin	C16-20375-GH	study_name	BengtssonPalmeJ_2015	TettAJ_2019_b	TP_wrong
+43	TRAVELRES56_Clade_A_bin	C16-20375-GH	subject_id		C16-10389-GH_F	FN
+43	TRAVELRES56_Clade_A_bin	C16-20375-GH	sample_id	TRAVELRES56_Clade_A_bin	C16-20375-GH	TP_wrong
+43	TRAVELRES56_Clade_A_bin	C16-20375-GH	curator		Paolo_Manghi	FN
+43	TRAVELRES56_Clade_A_bin	C16-20375-GH	pmid	31607556	31607556	TP_correct
+43	TRAVELRES56_Clade_A_bin	C16-20375-GH	target_condition		Prevotella copri	FN
+43	TRAVELRES56_Clade_A_bin	C16-20375-GH	control		Study Control	FN
+43	TRAVELRES56_Clade_A_bin	C16-20375-GH	country		Ghana	FN
+43	TRAVELRES56_Clade_A_bin	C16-20375-GH	body_site		feces	FN
+43	TRAVELRES56_Clade_A_bin	C16-20375-GH	westernized		No	FN
+43	TRAVELRES56_Clade_A_bin	C16-20375-GH	dna_extraction_kit		Qiagen	FN
+43	TRAVELRES56_Clade_A_bin	C16-20375-GH	ncbi_accession		SRR8791385	FN
+43	TRAVELRES56_Clade_A_bin	C16-20375-GH	sequencing_platform		IlluminaHiSeq	FN
+43	TRAVELRES56_Clade_A_bin	C16-20375-GH	age		31.0	FN
+43	TRAVELRES56_Clade_A_bin	C16-20375-GH	age_group		Adult	FN
+43	TRAVELRES56_Clade_A_bin	C16-20375-GH	age_unit		Year	FN
+43	TRAVELRES56_Clade_A_bin	C16-20375-GH	family		TettAJ_2019_b_12	FN
+43	TRAVELRES56_Clade_A_bin	C16-20375-GH	family_role		father	FN
+43	TRAVELRES56_Clade_A_bin	C16-20375-GH	age_min	not_reported	31	FN
+43	TRAVELRES56_Clade_A_bin	C16-20375-GH	age_max	not_reported	31	FN
+43	TRAVELRES56_Clade_A_bin	C16-20375-GH	age_years	not_reported	31.0	FN
+43	TRAVELRES56_Clade_A_bin	C16-20375-GH	disease	Healthy	Healthy	TP_correct
+43	TRAVELRES56_Clade_A_bin	C16-20375-GH	host_species	Homo sapiens	Homo sapiens	TP_correct

@@ -1,0 +1,109 @@
+sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	decision
+0	not_reported	NYU_RA_347C	study_name	not_reported	NayakRR_2021	FN
+0	not_reported	NYU_RA_347C	subject_id	Donor 1	s_347	TP_wrong
+0	not_reported	NYU_RA_347C	sample_id	not_reported	NYU_RA_347C	FN
+0	not_reported	NYU_RA_347C	curator	not_reported	Linda_Cova	FN
+0	not_reported	NYU_RA_347C	pmid	33440172	33440172	TP_correct
+0	not_reported	NYU_RA_347C	country	United States	United States	TP_correct
+0	not_reported	NYU_RA_347C	body_site	feces	feces	TP_correct
+0	not_reported	NYU_RA_347C	days_from_first_collection	not_reported	30	FN
+0	not_reported	NYU_RA_347C	dna_extraction_kit	MoBio	ZymoBIOMICS96MagBead	TP_wrong
+0	not_reported	NYU_RA_347C	ncbi_accession	PRJNA656577	SRR12455507	TP_wrong
+0	not_reported	NYU_RA_347C	sequencing_platform	IlluminaMiSeq	IlluminaNovaSeq	TP_wrong
+0	not_reported	NYU_RA_347C	age	not_reported	37	FN
+0	not_reported	NYU_RA_347C	age_group	Adult	adult	TP_correct
+0	not_reported	NYU_RA_347C	sex	Male	Male	TP_correct
+0	not_reported	NYU_RA_347C	antibiotics_current_use	No	No	TP_correct
+0	not_reported	NYU_RA_347C	disease	Rheumatoid Arthritis; Healthy	RA	TP_wrong
+0	not_reported	NYU_RA_347C	treatment	Methotrexate	MTX	TP_wrong
+0	not_reported	NYU_RA_347C	host_species	Homo sapiens and Mus musculus	Homo sapiens	TP_wrong
+1	not_reported	NYU_RA_215C	study_name	not_reported	NayakRR_2021	FN
+1	not_reported	NYU_RA_215C	subject_id	Donor 2	s_215	TP_wrong
+1	not_reported	NYU_RA_215C	sample_id	not_reported	NYU_RA_215C	FN
+1	not_reported	NYU_RA_215C	curator	not_reported	Linda_Cova	FN
+1	not_reported	NYU_RA_215C	pmid	33440172	33440172	TP_correct
+1	not_reported	NYU_RA_215C	country	United States	United States	TP_correct
+1	not_reported	NYU_RA_215C	body_site	feces	feces	TP_correct
+1	not_reported	NYU_RA_215C	days_from_first_collection	not_reported	30	FN
+1	not_reported	NYU_RA_215C	dna_extraction_kit	MoBio	ZymoBIOMICS96MagBead	TP_wrong
+1	not_reported	NYU_RA_215C	ncbi_accession	PRJNA656577	SRR12455511	TP_wrong
+1	not_reported	NYU_RA_215C	sequencing_platform	IlluminaMiSeq	IlluminaNovaSeq	TP_wrong
+1	not_reported	NYU_RA_215C	age	not_reported	41	FN
+1	not_reported	NYU_RA_215C	age_group	Adult	adult	TP_correct
+1	not_reported	NYU_RA_215C	sex	Female	Male	TP_wrong
+1	not_reported	NYU_RA_215C	antibiotics_current_use	No	No	TP_correct
+1	not_reported	NYU_RA_215C	disease	Rheumatoid Arthritis; Healthy	RA	TP_wrong
+1	not_reported	NYU_RA_215C	treatment	Methotrexate	MTX	TP_wrong
+1	not_reported	NYU_RA_215C	host_species	Homo sapiens and Mus musculus	Homo sapiens	TP_wrong
+2	not_reported	NYU_RA_88B	study_name	not_reported	NayakRR_2021	FN
+2	not_reported	NYU_RA_88B	subject_id	Donor 3	s_88	TP_wrong
+2	not_reported	NYU_RA_88B	sample_id	not_reported	NYU_RA_88B	FN
+2	not_reported	NYU_RA_88B	curator	not_reported	Linda_Cova	FN
+2	not_reported	NYU_RA_88B	pmid	33440172	33440172	TP_correct
+2	not_reported	NYU_RA_88B	country	United States	United States	TP_correct
+2	not_reported	NYU_RA_88B	body_site	feces	feces	TP_correct
+2	not_reported	NYU_RA_88B	days_from_first_collection	not_reported	0	FN
+2	not_reported	NYU_RA_88B	dna_extraction_kit	MoBio	ZymoBIOMICS96MagBead	TP_wrong
+2	not_reported	NYU_RA_88B	ncbi_accession	PRJNA656577	SRR12455516	TP_wrong
+2	not_reported	NYU_RA_88B	sequencing_platform	IlluminaMiSeq	IlluminaNovaSeq	TP_wrong
+2	not_reported	NYU_RA_88B	age	not_reported	44	FN
+2	not_reported	NYU_RA_88B	age_group	Adult	adult	TP_correct
+2	not_reported	NYU_RA_88B	sex	Male	Female	TP_wrong
+2	not_reported	NYU_RA_88B	antibiotics_current_use	No	No	TP_correct
+2	not_reported	NYU_RA_88B	disease	Rheumatoid Arthritis; Healthy	RA	TP_wrong
+2	not_reported	NYU_RA_88B	treatment	Methotrexate	no	TP_wrong
+2	not_reported	NYU_RA_88B	host_species	Homo sapiens and Mus musculus	Homo sapiens	TP_wrong
+3	not_reported	NYU_RA_140C	study_name	not_reported	NayakRR_2021	FN
+3	not_reported	NYU_RA_140C	subject_id	RA_cohort_patient_01-30	s_140	TP_wrong
+3	not_reported	NYU_RA_140C	sample_id	not_reported	NYU_RA_140C	FN
+3	not_reported	NYU_RA_140C	curator	not_reported	Linda_Cova	FN
+3	not_reported	NYU_RA_140C	pmid	33440172	33440172	TP_correct
+3	not_reported	NYU_RA_140C	country	United States	United States	TP_correct
+3	not_reported	NYU_RA_140C	body_site	feces	feces	TP_correct
+3	not_reported	NYU_RA_140C	days_from_first_collection	not_reported	30	FN
+3	not_reported	NYU_RA_140C	dna_extraction_kit	MoBio	ZymoBIOMICS96MagBead	TP_wrong
+3	not_reported	NYU_RA_140C	ncbi_accession	PRJNA656577	SRR12455524	TP_wrong
+3	not_reported	NYU_RA_140C	sequencing_platform	IlluminaMiSeq	IlluminaNovaSeq	TP_wrong
+3	not_reported	NYU_RA_140C	age	not_reported	23	FN
+3	not_reported	NYU_RA_140C	age_group	Adult	adult	TP_correct
+3	not_reported	NYU_RA_140C	sex	not_reported	Female	FN
+3	not_reported	NYU_RA_140C	antibiotics_current_use	No	No	TP_correct
+3	not_reported	NYU_RA_140C	disease	Rheumatoid Arthritis; Healthy	RA	TP_wrong
+3	not_reported	NYU_RA_140C	treatment	Methotrexate	MTX	TP_wrong
+3	not_reported	NYU_RA_140C	host_species	Homo sapiens and Mus musculus	Homo sapiens	TP_wrong
+4	not_reported	NYU_RA_72B	study_name	not_reported	NayakRR_2021	FN
+4	not_reported	NYU_RA_72B	subject_id	RA_clinical_longitudinal_01-23	s_72	TP_wrong
+4	not_reported	NYU_RA_72B	sample_id	not_reported	NYU_RA_72B	FN
+4	not_reported	NYU_RA_72B	curator	not_reported	Linda_Cova	FN
+4	not_reported	NYU_RA_72B	pmid	33440172	33440172	TP_correct
+4	not_reported	NYU_RA_72B	country	United States	United States	TP_correct
+4	not_reported	NYU_RA_72B	body_site	feces	feces	TP_correct
+4	not_reported	NYU_RA_72B	days_from_first_collection	not_reported	0	FN
+4	not_reported	NYU_RA_72B	dna_extraction_kit	MoBio	ZymoBIOMICS96MagBead	TP_wrong
+4	not_reported	NYU_RA_72B	ncbi_accession	PRJNA656577	SRR12455530	TP_wrong
+4	not_reported	NYU_RA_72B	sequencing_platform	IlluminaMiSeq	IlluminaNovaSeq	TP_wrong
+4	not_reported	NYU_RA_72B	age	not_reported	37	FN
+4	not_reported	NYU_RA_72B	age_group	Adult	adult	TP_correct
+4	not_reported	NYU_RA_72B	sex	not_reported	Female	FN
+4	not_reported	NYU_RA_72B	antibiotics_current_use	No	No	TP_correct
+4	not_reported	NYU_RA_72B	disease	Rheumatoid Arthritis; Healthy	RA	TP_wrong
+4	not_reported	NYU_RA_72B	treatment	Methotrexate	no	TP_wrong
+4	not_reported	NYU_RA_72B	host_species	Homo sapiens and Mus musculus	Homo sapiens	TP_wrong
+5	not_reported	NYU_RA_5C	study_name	not_reported	NayakRR_2021	FN
+5	not_reported	NYU_RA_5C	subject_id	RA_clinical_metagenomic_01-17	s_5	TP_wrong
+5	not_reported	NYU_RA_5C	sample_id	not_reported	NYU_RA_5C	FN
+5	not_reported	NYU_RA_5C	curator	not_reported	Linda_Cova	FN
+5	not_reported	NYU_RA_5C	pmid	33440172	33440172	TP_correct
+5	not_reported	NYU_RA_5C	country	United States	United States	TP_correct
+5	not_reported	NYU_RA_5C	body_site	feces	feces	TP_correct
+5	not_reported	NYU_RA_5C	days_from_first_collection	not_reported	30	FN
+5	not_reported	NYU_RA_5C	dna_extraction_kit	MoBio	ZymoBIOMICS96MagBead	TP_wrong
+5	not_reported	NYU_RA_5C	ncbi_accession	PRJNA656577	SRR12455531	TP_wrong
+5	not_reported	NYU_RA_5C	sequencing_platform	IlluminaNovaSeq	IlluminaNovaSeq	TP_correct
+5	not_reported	NYU_RA_5C	age	not_reported	28	FN
+5	not_reported	NYU_RA_5C	age_group	Adult	adult	TP_correct
+5	not_reported	NYU_RA_5C	sex	not_reported	Female	FN
+5	not_reported	NYU_RA_5C	antibiotics_current_use	No	No	TP_correct
+5	not_reported	NYU_RA_5C	disease	Rheumatoid Arthritis; Healthy	RA	TP_wrong
+5	not_reported	NYU_RA_5C	treatment	Methotrexate	MTX	TP_wrong
+5	not_reported	NYU_RA_5C	host_species	Homo sapiens and Mus musculus	Homo sapiens	TP_wrong

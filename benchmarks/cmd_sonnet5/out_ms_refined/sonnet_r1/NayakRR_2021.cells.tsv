@@ -1,0 +1,613 @@
+sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	decision
+0	SAMN15814313	NYU_RA_347C	study_name	not_reported	NayakRR_2021	FN
+0	SAMN15814313	NYU_RA_347C	subject_id	not_reported	s_347	FN
+0	SAMN15814313	NYU_RA_347C	sample_id	SAMN15814313	NYU_RA_347C	TP_wrong
+0	SAMN15814313	NYU_RA_347C	curator	not_reported	Linda_Cova	FN
+0	SAMN15814313	NYU_RA_347C	pmid	not_reported	33440172	FN
+0	SAMN15814313	NYU_RA_347C	country	USA	United States	TP_wrong
+0	SAMN15814313	NYU_RA_347C	body_site	feces	feces	TP_correct
+0	SAMN15814313	NYU_RA_347C	days_from_first_collection	2017-06	30	TP_wrong
+0	SAMN15814313	NYU_RA_347C	dna_extraction_kit	PowerSoil	ZymoBIOMICS96MagBead	TP_wrong
+0	SAMN15814313	NYU_RA_347C	ncbi_accession	SRR12451450	SRR12455507	TP_wrong
+0	SAMN15814313	NYU_RA_347C	sequencing_platform	Illumina MiSeq	IlluminaNovaSeq	TP_wrong
+0	SAMN15814313	NYU_RA_347C	age	not_reported	37	FN
+0	SAMN15814313	NYU_RA_347C	age_group	Adult	adult	TP_correct
+0	SAMN15814313	NYU_RA_347C	sex		Male	FN
+0	SAMN15814313	NYU_RA_347C	antibiotics_current_use	No	No	TP_correct
+0	SAMN15814313	NYU_RA_347C	disease	Rheumatoid Arthritis	RA	TP_wrong
+0	SAMN15814313	NYU_RA_347C	treatment	Methotrexate	MTX	TP_wrong
+0	SAMN15814313	NYU_RA_347C	host_species	mouse	Homo sapiens	TP_wrong
+1	SAMN15814312	NYU_RA_215C	study_name	not_reported	NayakRR_2021	FN
+1	SAMN15814312	NYU_RA_215C	subject_id	not_reported	s_215	FN
+1	SAMN15814312	NYU_RA_215C	sample_id	SAMN15814312	NYU_RA_215C	TP_wrong
+1	SAMN15814312	NYU_RA_215C	curator	not_reported	Linda_Cova	FN
+1	SAMN15814312	NYU_RA_215C	pmid	not_reported	33440172	FN
+1	SAMN15814312	NYU_RA_215C	country	USA	United States	TP_wrong
+1	SAMN15814312	NYU_RA_215C	body_site	feces	feces	TP_correct
+1	SAMN15814312	NYU_RA_215C	days_from_first_collection	2017-06	30	TP_wrong
+1	SAMN15814312	NYU_RA_215C	dna_extraction_kit	PowerSoil	ZymoBIOMICS96MagBead	TP_wrong
+1	SAMN15814312	NYU_RA_215C	ncbi_accession	SRR12451451	SRR12455511	TP_wrong
+1	SAMN15814312	NYU_RA_215C	sequencing_platform	Illumina MiSeq	IlluminaNovaSeq	TP_wrong
+1	SAMN15814312	NYU_RA_215C	age	not_reported	41	FN
+1	SAMN15814312	NYU_RA_215C	age_group	Adult	adult	TP_correct
+1	SAMN15814312	NYU_RA_215C	sex		Male	FN
+1	SAMN15814312	NYU_RA_215C	antibiotics_current_use	No	No	TP_correct
+1	SAMN15814312	NYU_RA_215C	disease	Rheumatoid Arthritis	RA	TP_wrong
+1	SAMN15814312	NYU_RA_215C	treatment	Methotrexate	MTX	TP_wrong
+1	SAMN15814312	NYU_RA_215C	host_species	mouse	Homo sapiens	TP_wrong
+2	SAMN15814311	NYU_RA_88B	study_name	not_reported	NayakRR_2021	FN
+2	SAMN15814311	NYU_RA_88B	subject_id	not_reported	s_88	FN
+2	SAMN15814311	NYU_RA_88B	sample_id	SAMN15814311	NYU_RA_88B	TP_wrong
+2	SAMN15814311	NYU_RA_88B	curator	not_reported	Linda_Cova	FN
+2	SAMN15814311	NYU_RA_88B	pmid	not_reported	33440172	FN
+2	SAMN15814311	NYU_RA_88B	country	USA	United States	TP_wrong
+2	SAMN15814311	NYU_RA_88B	body_site	feces	feces	TP_correct
+2	SAMN15814311	NYU_RA_88B	days_from_first_collection	2017-06	0	TP_wrong
+2	SAMN15814311	NYU_RA_88B	dna_extraction_kit	PowerSoil	ZymoBIOMICS96MagBead	TP_wrong
+2	SAMN15814311	NYU_RA_88B	ncbi_accession	SRR12451452	SRR12455516	TP_wrong
+2	SAMN15814311	NYU_RA_88B	sequencing_platform	Illumina MiSeq	IlluminaNovaSeq	TP_wrong
+2	SAMN15814311	NYU_RA_88B	age	not_reported	44	FN
+2	SAMN15814311	NYU_RA_88B	age_group	Adult	adult	TP_correct
+2	SAMN15814311	NYU_RA_88B	sex		Female	FN
+2	SAMN15814311	NYU_RA_88B	antibiotics_current_use	No	No	TP_correct
+2	SAMN15814311	NYU_RA_88B	disease	Rheumatoid Arthritis	RA	TP_wrong
+2	SAMN15814311	NYU_RA_88B	treatment	Methotrexate	no	TP_wrong
+2	SAMN15814311	NYU_RA_88B	host_species	mouse	Homo sapiens	TP_wrong
+3	SAMN15814323	NYU_RA_140C	study_name	not_reported	NayakRR_2021	FN
+3	SAMN15814323	NYU_RA_140C	subject_id	not_reported	s_140	FN
+3	SAMN15814323	NYU_RA_140C	sample_id	SAMN15814323	NYU_RA_140C	TP_wrong
+3	SAMN15814323	NYU_RA_140C	curator	not_reported	Linda_Cova	FN
+3	SAMN15814323	NYU_RA_140C	pmid	not_reported	33440172	FN
+3	SAMN15814323	NYU_RA_140C	country	USA	United States	TP_wrong
+3	SAMN15814323	NYU_RA_140C	body_site	feces	feces	TP_correct
+3	SAMN15814323	NYU_RA_140C	days_from_first_collection	2017-06	30	TP_wrong
+3	SAMN15814323	NYU_RA_140C	dna_extraction_kit	PowerSoil	ZymoBIOMICS96MagBead	TP_wrong
+3	SAMN15814323	NYU_RA_140C	ncbi_accession	SRR12451456	SRR12455524	TP_wrong
+3	SAMN15814323	NYU_RA_140C	sequencing_platform	Illumina MiSeq	IlluminaNovaSeq	TP_wrong
+3	SAMN15814323	NYU_RA_140C	age	not_reported	23	FN
+3	SAMN15814323	NYU_RA_140C	age_group	Adult	adult	TP_correct
+3	SAMN15814323	NYU_RA_140C	sex		Female	FN
+3	SAMN15814323	NYU_RA_140C	antibiotics_current_use	No	No	TP_correct
+3	SAMN15814323	NYU_RA_140C	disease	Rheumatoid Arthritis	RA	TP_wrong
+3	SAMN15814323	NYU_RA_140C	treatment	Methotrexate	MTX	TP_wrong
+3	SAMN15814323	NYU_RA_140C	host_species	mouse	Homo sapiens	TP_wrong
+4	SAMN15814320	NYU_RA_72B	study_name	not_reported	NayakRR_2021	FN
+4	SAMN15814320	NYU_RA_72B	subject_id	not_reported	s_72	FN
+4	SAMN15814320	NYU_RA_72B	sample_id	SAMN15814320	NYU_RA_72B	TP_wrong
+4	SAMN15814320	NYU_RA_72B	curator	not_reported	Linda_Cova	FN
+4	SAMN15814320	NYU_RA_72B	pmid	not_reported	33440172	FN
+4	SAMN15814320	NYU_RA_72B	country	USA	United States	TP_wrong
+4	SAMN15814320	NYU_RA_72B	body_site	feces	feces	TP_correct
+4	SAMN15814320	NYU_RA_72B	days_from_first_collection	2017-06	0	TP_wrong
+4	SAMN15814320	NYU_RA_72B	dna_extraction_kit	PowerSoil	ZymoBIOMICS96MagBead	TP_wrong
+4	SAMN15814320	NYU_RA_72B	ncbi_accession	SRR12451459	SRR12455530	TP_wrong
+4	SAMN15814320	NYU_RA_72B	sequencing_platform	Illumina MiSeq	IlluminaNovaSeq	TP_wrong
+4	SAMN15814320	NYU_RA_72B	age	not_reported	37	FN
+4	SAMN15814320	NYU_RA_72B	age_group	Adult	adult	TP_correct
+4	SAMN15814320	NYU_RA_72B	sex		Female	FN
+4	SAMN15814320	NYU_RA_72B	antibiotics_current_use	No	No	TP_correct
+4	SAMN15814320	NYU_RA_72B	disease	Rheumatoid Arthritis	RA	TP_wrong
+4	SAMN15814320	NYU_RA_72B	treatment	Methotrexate	no	TP_wrong
+4	SAMN15814320	NYU_RA_72B	host_species	mouse	Homo sapiens	TP_wrong
+5	SAMN15814310	NYU_RA_5C	study_name	not_reported	NayakRR_2021	FN
+5	SAMN15814310	NYU_RA_5C	subject_id	not_reported	s_5	FN
+5	SAMN15814310	NYU_RA_5C	sample_id	SAMN15814310	NYU_RA_5C	TP_wrong
+5	SAMN15814310	NYU_RA_5C	curator	not_reported	Linda_Cova	FN
+5	SAMN15814310	NYU_RA_5C	pmid	not_reported	33440172	FN
+5	SAMN15814310	NYU_RA_5C	country	USA	United States	TP_wrong
+5	SAMN15814310	NYU_RA_5C	body_site	feces	feces	TP_correct
+5	SAMN15814310	NYU_RA_5C	days_from_first_collection	2017-06	30	TP_wrong
+5	SAMN15814310	NYU_RA_5C	dna_extraction_kit	PowerSoil	ZymoBIOMICS96MagBead	TP_wrong
+5	SAMN15814310	NYU_RA_5C	ncbi_accession	SRR12451461	SRR12455531	TP_wrong
+5	SAMN15814310	NYU_RA_5C	sequencing_platform	Illumina MiSeq	IlluminaNovaSeq	TP_wrong
+5	SAMN15814310	NYU_RA_5C	age	not_reported	28	FN
+5	SAMN15814310	NYU_RA_5C	age_group	Adult	adult	TP_correct
+5	SAMN15814310	NYU_RA_5C	sex		Female	FN
+5	SAMN15814310	NYU_RA_5C	antibiotics_current_use	No	No	TP_correct
+5	SAMN15814310	NYU_RA_5C	disease	Rheumatoid Arthritis	RA	TP_wrong
+5	SAMN15814310	NYU_RA_5C	treatment	Methotrexate	MTX	TP_wrong
+5	SAMN15814310	NYU_RA_5C	host_species	mouse	Homo sapiens	TP_wrong
+6	SAMN15816111	NYU_RA_356C	study_name	not_reported	NayakRR_2021	FN
+6	SAMN15816111	NYU_RA_356C	subject_id	not_reported	s_356	FN
+6	SAMN15816111	NYU_RA_356C	sample_id	SAMN15816111	NYU_RA_356C	TP_wrong
+6	SAMN15816111	NYU_RA_356C	curator	not_reported	Linda_Cova	FN
+6	SAMN15816111	NYU_RA_356C	pmid	not_reported	33440172	FN
+6	SAMN15816111	NYU_RA_356C	country	USA	United States	TP_wrong
+6	SAMN15816111	NYU_RA_356C	body_site	feces	feces	TP_correct
+6	SAMN15816111	NYU_RA_356C	days_from_first_collection	2019	30	TP_wrong
+6	SAMN15816111	NYU_RA_356C	dna_extraction_kit	PowerSoil	ZymoBIOMICS96MagBead	TP_wrong
+6	SAMN15816111	NYU_RA_356C	ncbi_accession	SRR12451727	SRR12455537	TP_wrong
+6	SAMN15816111	NYU_RA_356C	sequencing_platform	Illumina MiSeq	IlluminaNovaSeq	TP_wrong
+6	SAMN15816111	NYU_RA_356C	age	not_reported	54	FN
+6	SAMN15816111	NYU_RA_356C	age_group	Adult	adult	TP_correct
+6	SAMN15816111	NYU_RA_356C	sex		Female	FN
+6	SAMN15816111	NYU_RA_356C	antibiotics_current_use	No	No	TP_correct
+6	SAMN15816111	NYU_RA_356C	disease	Rheumatoid Arthritis	RA	TP_wrong
+6	SAMN15816111	NYU_RA_356C	treatment	Methotrexate	MTX	TP_wrong
+6	SAMN15816111	NYU_RA_356C	host_species	mouse	Homo sapiens	TP_wrong
+7	SAMN15816107	NYU_RA_263B	study_name	not_reported	NayakRR_2021	FN
+7	SAMN15816107	NYU_RA_263B	subject_id	not_reported	s_263	FN
+7	SAMN15816107	NYU_RA_263B	sample_id	SAMN15816107	NYU_RA_263B	TP_wrong
+7	SAMN15816107	NYU_RA_263B	curator	not_reported	Linda_Cova	FN
+7	SAMN15816107	NYU_RA_263B	pmid	not_reported	33440172	FN
+7	SAMN15816107	NYU_RA_263B	country	USA	United States	TP_wrong
+7	SAMN15816107	NYU_RA_263B	body_site	feces	feces	TP_correct
+7	SAMN15816107	NYU_RA_263B	days_from_first_collection	2019	0	TP_wrong
+7	SAMN15816107	NYU_RA_263B	dna_extraction_kit	PowerSoil	ZymoBIOMICS96MagBead	TP_wrong
+7	SAMN15816107	NYU_RA_263B	ncbi_accession	SRR12451731	SRR12455510	TP_wrong
+7	SAMN15816107	NYU_RA_263B	sequencing_platform	Illumina MiSeq	IlluminaNovaSeq	TP_wrong
+7	SAMN15816107	NYU_RA_263B	age	not_reported	65	FN
+7	SAMN15816107	NYU_RA_263B	age_group	Adult	adult	TP_correct
+7	SAMN15816107	NYU_RA_263B	sex		Female	FN
+7	SAMN15816107	NYU_RA_263B	antibiotics_current_use	No	No	TP_correct
+7	SAMN15816107	NYU_RA_263B	disease	Rheumatoid Arthritis	RA	TP_wrong
+7	SAMN15816107	NYU_RA_263B	treatment	Methotrexate	no	TP_wrong
+7	SAMN15816107	NYU_RA_263B	host_species	mouse	Homo sapiens	TP_wrong
+8	SAMN15815959	NYU_RA_360C	study_name	not_reported	NayakRR_2021	FN
+8	SAMN15815959	NYU_RA_360C	subject_id	not_reported	s_360	FN
+8	SAMN15815959	NYU_RA_360C	sample_id	SAMN15815959	NYU_RA_360C	TP_wrong
+8	SAMN15815959	NYU_RA_360C	curator	not_reported	Linda_Cova	FN
+8	SAMN15815959	NYU_RA_360C	pmid	not_reported	33440172	FN
+8	SAMN15815959	NYU_RA_360C	country	USA	United States	TP_wrong
+8	SAMN15815959	NYU_RA_360C	body_site	feces	feces	TP_correct
+8	SAMN15815959	NYU_RA_360C	days_from_first_collection	2019-08	30	TP_wrong
+8	SAMN15815959	NYU_RA_360C	dna_extraction_kit	PowerSoil	ZymoBIOMICS96MagBead	TP_wrong
+8	SAMN15815959	NYU_RA_360C	ncbi_accession	SRR12451736	SRR12455535	TP_wrong
+8	SAMN15815959	NYU_RA_360C	sequencing_platform	Illumina MiSeq	IlluminaNovaSeq	TP_wrong
+8	SAMN15815959	NYU_RA_360C	age	not_reported	65	FN
+8	SAMN15815959	NYU_RA_360C	age_group	Adult	adult	TP_correct
+8	SAMN15815959	NYU_RA_360C	sex		Female	FN
+8	SAMN15815959	NYU_RA_360C	antibiotics_current_use	No	No	TP_correct
+8	SAMN15815959	NYU_RA_360C	disease	Rheumatoid Arthritis	RA	TP_wrong
+8	SAMN15815959	NYU_RA_360C	treatment	Methotrexate	MTX	TP_wrong
+8	SAMN15815959	NYU_RA_360C	host_species	mouse	Homo sapiens	TP_wrong
+9	SAMN15816101	NYU_RA_347B	study_name	not_reported	NayakRR_2021	FN
+9	SAMN15816101	NYU_RA_347B	subject_id	not_reported	s_347	FN
+9	SAMN15816101	NYU_RA_347B	sample_id	SAMN15816101	NYU_RA_347B	TP_wrong
+9	SAMN15816101	NYU_RA_347B	curator	not_reported	Linda_Cova	FN
+9	SAMN15816101	NYU_RA_347B	pmid	not_reported	33440172	FN
+9	SAMN15816101	NYU_RA_347B	country	USA	United States	TP_wrong
+9	SAMN15816101	NYU_RA_347B	body_site	feces	feces	TP_correct
+9	SAMN15816101	NYU_RA_347B	days_from_first_collection	2019	0	TP_wrong
+9	SAMN15816101	NYU_RA_347B	dna_extraction_kit	PowerSoil	ZymoBIOMICS96MagBead	TP_wrong
+9	SAMN15816101	NYU_RA_347B	ncbi_accession	SRR12451738	SRR12455508	TP_wrong
+9	SAMN15816101	NYU_RA_347B	sequencing_platform	Illumina MiSeq	IlluminaNovaSeq	TP_wrong
+9	SAMN15816101	NYU_RA_347B	age	not_reported	37	FN
+9	SAMN15816101	NYU_RA_347B	age_group	Adult	adult	TP_correct
+9	SAMN15816101	NYU_RA_347B	sex		Male	FN
+9	SAMN15816101	NYU_RA_347B	antibiotics_current_use	No	No	TP_correct
+9	SAMN15816101	NYU_RA_347B	disease	Rheumatoid Arthritis	RA	TP_wrong
+9	SAMN15816101	NYU_RA_347B	treatment	Methotrexate	no	TP_wrong
+9	SAMN15816101	NYU_RA_347B	host_species	mouse	Homo sapiens	TP_wrong
+10	SAMN15816099	NYU_RA_140B	study_name	not_reported	NayakRR_2021	FN
+10	SAMN15816099	NYU_RA_140B	subject_id	not_reported	s_140	FN
+10	SAMN15816099	NYU_RA_140B	sample_id	SAMN15816099	NYU_RA_140B	TP_wrong
+10	SAMN15816099	NYU_RA_140B	curator	not_reported	Linda_Cova	FN
+10	SAMN15816099	NYU_RA_140B	pmid	not_reported	33440172	FN
+10	SAMN15816099	NYU_RA_140B	country	USA	United States	TP_wrong
+10	SAMN15816099	NYU_RA_140B	body_site	feces	feces	TP_correct
+10	SAMN15816099	NYU_RA_140B	days_from_first_collection	2019	0	TP_wrong
+10	SAMN15816099	NYU_RA_140B	dna_extraction_kit	PowerSoil	ZymoBIOMICS96MagBead	TP_wrong
+10	SAMN15816099	NYU_RA_140B	ncbi_accession	SRR12451740	SRR12455525	TP_wrong
+10	SAMN15816099	NYU_RA_140B	sequencing_platform	Illumina MiSeq	IlluminaNovaSeq	TP_wrong
+10	SAMN15816099	NYU_RA_140B	age	not_reported	23	FN
+10	SAMN15816099	NYU_RA_140B	age_group	Adult	adult	TP_correct
+10	SAMN15816099	NYU_RA_140B	sex		Female	FN
+10	SAMN15816099	NYU_RA_140B	antibiotics_current_use	No	No	TP_correct
+10	SAMN15816099	NYU_RA_140B	disease	Rheumatoid Arthritis	RA	TP_wrong
+10	SAMN15816099	NYU_RA_140B	treatment	Methotrexate	no	TP_wrong
+10	SAMN15816099	NYU_RA_140B	host_species	mouse	Homo sapiens	TP_wrong
+11	SAMN15816096	NYU_RA_72C	study_name	not_reported	NayakRR_2021	FN
+11	SAMN15816096	NYU_RA_72C	subject_id	not_reported	s_72	FN
+11	SAMN15816096	NYU_RA_72C	sample_id	SAMN15816096	NYU_RA_72C	TP_wrong
+11	SAMN15816096	NYU_RA_72C	curator	not_reported	Linda_Cova	FN
+11	SAMN15816096	NYU_RA_72C	pmid	not_reported	33440172	FN
+11	SAMN15816096	NYU_RA_72C	country	USA	United States	TP_wrong
+11	SAMN15816096	NYU_RA_72C	body_site	feces	feces	TP_correct
+11	SAMN15816096	NYU_RA_72C	days_from_first_collection	2019	30	TP_wrong
+11	SAMN15816096	NYU_RA_72C	dna_extraction_kit	PowerSoil	ZymoBIOMICS96MagBead	TP_wrong
+11	SAMN15816096	NYU_RA_72C	ncbi_accession	SRR12451743	SRR12455529	TP_wrong
+11	SAMN15816096	NYU_RA_72C	sequencing_platform	Illumina MiSeq	IlluminaNovaSeq	TP_wrong
+11	SAMN15816096	NYU_RA_72C	age	not_reported	37	FN
+11	SAMN15816096	NYU_RA_72C	age_group	Adult	adult	TP_correct
+11	SAMN15816096	NYU_RA_72C	sex		Female	FN
+11	SAMN15816096	NYU_RA_72C	antibiotics_current_use	No	No	TP_correct
+11	SAMN15816096	NYU_RA_72C	disease	Rheumatoid Arthritis	RA	TP_wrong
+11	SAMN15816096	NYU_RA_72C	treatment	Methotrexate	MTX	TP_wrong
+11	SAMN15816096	NYU_RA_72C	host_species	mouse	Homo sapiens	TP_wrong
+12	SAMN15816094	NYU_RA_215B	study_name	not_reported	NayakRR_2021	FN
+12	SAMN15816094	NYU_RA_215B	subject_id	not_reported	s_215	FN
+12	SAMN15816094	NYU_RA_215B	sample_id	SAMN15816094	NYU_RA_215B	TP_wrong
+12	SAMN15816094	NYU_RA_215B	curator	not_reported	Linda_Cova	FN
+12	SAMN15816094	NYU_RA_215B	pmid	not_reported	33440172	FN
+12	SAMN15816094	NYU_RA_215B	country	USA	United States	TP_wrong
+12	SAMN15816094	NYU_RA_215B	body_site	feces	feces	TP_correct
+12	SAMN15816094	NYU_RA_215B	days_from_first_collection	2019	0	TP_wrong
+12	SAMN15816094	NYU_RA_215B	dna_extraction_kit	PowerSoil	ZymoBIOMICS96MagBead	TP_wrong
+12	SAMN15816094	NYU_RA_215B	ncbi_accession	SRR12451745	SRR12455512	TP_wrong
+12	SAMN15816094	NYU_RA_215B	sequencing_platform	Illumina MiSeq	IlluminaNovaSeq	TP_wrong
+12	SAMN15816094	NYU_RA_215B	age	not_reported	41	FN
+12	SAMN15816094	NYU_RA_215B	age_group	Adult	adult	TP_correct
+12	SAMN15816094	NYU_RA_215B	sex		Male	FN
+12	SAMN15816094	NYU_RA_215B	antibiotics_current_use	No	No	TP_correct
+12	SAMN15816094	NYU_RA_215B	disease	Rheumatoid Arthritis	RA	TP_wrong
+12	SAMN15816094	NYU_RA_215B	treatment	Methotrexate	no	TP_wrong
+12	SAMN15816094	NYU_RA_215B	host_species	mouse	Homo sapiens	TP_wrong
+13	SAMN15816010	NYU_RA_371C	study_name	not_reported	NayakRR_2021	FN
+13	SAMN15816010	NYU_RA_371C	subject_id	not_reported	s_371	FN
+13	SAMN15816010	NYU_RA_371C	sample_id	SAMN15816010	NYU_RA_371C	TP_wrong
+13	SAMN15816010	NYU_RA_371C	curator	not_reported	Linda_Cova	FN
+13	SAMN15816010	NYU_RA_371C	pmid	not_reported	33440172	FN
+13	SAMN15816010	NYU_RA_371C	country	USA	United States	TP_wrong
+13	SAMN15816010	NYU_RA_371C	body_site	feces	feces	TP_correct
+13	SAMN15816010	NYU_RA_371C	days_from_first_collection	2018	30	TP_wrong
+13	SAMN15816010	NYU_RA_371C	dna_extraction_kit	PowerSoil	ZymoBIOMICS96MagBead	TP_wrong
+13	SAMN15816010	NYU_RA_371C	ncbi_accession	SRR12451765	SRR12455533	TP_wrong
+13	SAMN15816010	NYU_RA_371C	sequencing_platform	Illumina MiSeq	IlluminaNovaSeq	TP_wrong
+13	SAMN15816010	NYU_RA_371C	age	not_reported	50	FN
+13	SAMN15816010	NYU_RA_371C	age_group	Adult	adult	TP_correct
+13	SAMN15816010	NYU_RA_371C	sex		Female	FN
+13	SAMN15816010	NYU_RA_371C	antibiotics_current_use	No	No	TP_correct
+13	SAMN15816010	NYU_RA_371C	disease	Rheumatoid Arthritis	RA	TP_wrong
+13	SAMN15816010	NYU_RA_371C	treatment	Methotrexate	MTX	TP_wrong
+13	SAMN15816010	NYU_RA_371C	host_species	mouse	Homo sapiens	TP_wrong
+14	SAMN15816007	NYU_RA_126B	study_name	not_reported	NayakRR_2021	FN
+14	SAMN15816007	NYU_RA_126B	subject_id	not_reported	s_126	FN
+14	SAMN15816007	NYU_RA_126B	sample_id	SAMN15816007	NYU_RA_126B	TP_wrong
+14	SAMN15816007	NYU_RA_126B	curator	not_reported	Linda_Cova	FN
+14	SAMN15816007	NYU_RA_126B	pmid	not_reported	33440172	FN
+14	SAMN15816007	NYU_RA_126B	country	USA	United States	TP_wrong
+14	SAMN15816007	NYU_RA_126B	body_site	feces	feces	TP_correct
+14	SAMN15816007	NYU_RA_126B	days_from_first_collection	2018	0	TP_wrong
+14	SAMN15816007	NYU_RA_126B	dna_extraction_kit	PowerSoil	ZymoBIOMICS96MagBead	TP_wrong
+14	SAMN15816007	NYU_RA_126B	ncbi_accession	SRR12451768	SRR12455528	TP_wrong
+14	SAMN15816007	NYU_RA_126B	sequencing_platform	Illumina MiSeq	IlluminaNovaSeq	TP_wrong
+14	SAMN15816007	NYU_RA_126B	age	not_reported	47	FN
+14	SAMN15816007	NYU_RA_126B	age_group	Adult	adult	TP_correct
+14	SAMN15816007	NYU_RA_126B	sex		Male	FN
+14	SAMN15816007	NYU_RA_126B	antibiotics_current_use	No	No	TP_correct
+14	SAMN15816007	NYU_RA_126B	disease	Rheumatoid Arthritis	RA	TP_wrong
+14	SAMN15816007	NYU_RA_126B	treatment	Methotrexate	no	TP_wrong
+14	SAMN15816007	NYU_RA_126B	host_species	mouse	Homo sapiens	TP_wrong
+15	SAMN15816004	NYU_RA_107B	study_name	not_reported	NayakRR_2021	FN
+15	SAMN15816004	NYU_RA_107B	subject_id	not_reported	s_107	FN
+15	SAMN15816004	NYU_RA_107B	sample_id	SAMN15816004	NYU_RA_107B	TP_wrong
+15	SAMN15816004	NYU_RA_107B	curator	not_reported	Linda_Cova	FN
+15	SAMN15816004	NYU_RA_107B	pmid	not_reported	33440172	FN
+15	SAMN15816004	NYU_RA_107B	country	USA	United States	TP_wrong
+15	SAMN15816004	NYU_RA_107B	body_site	feces	feces	TP_correct
+15	SAMN15816004	NYU_RA_107B	days_from_first_collection	2018	0	TP_wrong
+15	SAMN15816004	NYU_RA_107B	dna_extraction_kit	PowerSoil	ZymoBIOMICS96MagBead	TP_wrong
+15	SAMN15816004	NYU_RA_107B	ncbi_accession	SRR12451771	SRR12455540	TP_wrong
+15	SAMN15816004	NYU_RA_107B	sequencing_platform	Illumina MiSeq	IlluminaNovaSeq	TP_wrong
+15	SAMN15816004	NYU_RA_107B	age	not_reported	22	FN
+15	SAMN15816004	NYU_RA_107B	age_group	Adult	adult	TP_correct
+15	SAMN15816004	NYU_RA_107B	sex		Male	FN
+15	SAMN15816004	NYU_RA_107B	antibiotics_current_use	No	No	TP_correct
+15	SAMN15816004	NYU_RA_107B	disease	Rheumatoid Arthritis	RA	TP_wrong
+15	SAMN15816004	NYU_RA_107B	treatment	Methotrexate	no	TP_wrong
+15	SAMN15816004	NYU_RA_107B	host_species	mouse	Homo sapiens	TP_wrong
+16	SAMN15815949	NYU_RA_5B	study_name	not_reported	NayakRR_2021	FN
+16	SAMN15815949	NYU_RA_5B	subject_id	not_reported	s_5	FN
+16	SAMN15815949	NYU_RA_5B	sample_id	SAMN15815949	NYU_RA_5B	TP_wrong
+16	SAMN15815949	NYU_RA_5B	curator	not_reported	Linda_Cova	FN
+16	SAMN15815949	NYU_RA_5B	pmid	not_reported	33440172	FN
+16	SAMN15815949	NYU_RA_5B	country	USA	United States	TP_wrong
+16	SAMN15815949	NYU_RA_5B	body_site	feces	feces	TP_correct
+16	SAMN15815949	NYU_RA_5B	days_from_first_collection	2019-08	0	TP_wrong
+16	SAMN15815949	NYU_RA_5B	dna_extraction_kit	PowerSoil	ZymoBIOMICS96MagBead	TP_wrong
+16	SAMN15815949	NYU_RA_5B	ncbi_accession	SRR12451773	SRR12455532	TP_wrong
+16	SAMN15815949	NYU_RA_5B	sequencing_platform	Illumina MiSeq	IlluminaNovaSeq	TP_wrong
+16	SAMN15815949	NYU_RA_5B	age	not_reported	28	FN
+16	SAMN15815949	NYU_RA_5B	age_group	Adult	adult	TP_correct
+16	SAMN15815949	NYU_RA_5B	sex		Female	FN
+16	SAMN15815949	NYU_RA_5B	antibiotics_current_use	No	No	TP_correct
+16	SAMN15815949	NYU_RA_5B	disease	Rheumatoid Arthritis	RA	TP_wrong
+16	SAMN15815949	NYU_RA_5B	treatment	Methotrexate	no	TP_wrong
+16	SAMN15815949	NYU_RA_5B	host_species	mouse	Homo sapiens	TP_wrong
+17	SAMN15816001	NYU_RA_360B	study_name	not_reported	NayakRR_2021	FN
+17	SAMN15816001	NYU_RA_360B	subject_id	not_reported	s_360	FN
+17	SAMN15816001	NYU_RA_360B	sample_id	SAMN15816001	NYU_RA_360B	TP_wrong
+17	SAMN15816001	NYU_RA_360B	curator	not_reported	Linda_Cova	FN
+17	SAMN15816001	NYU_RA_360B	pmid	not_reported	33440172	FN
+17	SAMN15816001	NYU_RA_360B	country	USA	United States	TP_wrong
+17	SAMN15816001	NYU_RA_360B	body_site	feces	feces	TP_correct
+17	SAMN15816001	NYU_RA_360B	days_from_first_collection	2018	0	TP_wrong
+17	SAMN15816001	NYU_RA_360B	dna_extraction_kit	PowerSoil	ZymoBIOMICS96MagBead	TP_wrong
+17	SAMN15816001	NYU_RA_360B	ncbi_accession	SRR12451775	SRR12455536	TP_wrong
+17	SAMN15816001	NYU_RA_360B	sequencing_platform	Illumina MiSeq	IlluminaNovaSeq	TP_wrong
+17	SAMN15816001	NYU_RA_360B	age	not_reported	65	FN
+17	SAMN15816001	NYU_RA_360B	age_group	Adult	adult	TP_correct
+17	SAMN15816001	NYU_RA_360B	sex		Female	FN
+17	SAMN15816001	NYU_RA_360B	antibiotics_current_use	No	No	TP_correct
+17	SAMN15816001	NYU_RA_360B	disease	Rheumatoid Arthritis	RA	TP_wrong
+17	SAMN15816001	NYU_RA_360B	treatment	Methotrexate	no	TP_wrong
+17	SAMN15816001	NYU_RA_360B	host_species	mouse	Homo sapiens	TP_wrong
+18	SAMN15816000	NYU_RA_88C	study_name	not_reported	NayakRR_2021	FN
+18	SAMN15816000	NYU_RA_88C	subject_id	not_reported	s_88	FN
+18	SAMN15816000	NYU_RA_88C	sample_id	SAMN15816000	NYU_RA_88C	TP_wrong
+18	SAMN15816000	NYU_RA_88C	curator	not_reported	Linda_Cova	FN
+18	SAMN15816000	NYU_RA_88C	pmid	not_reported	33440172	FN
+18	SAMN15816000	NYU_RA_88C	country	USA	United States	TP_wrong
+18	SAMN15816000	NYU_RA_88C	body_site	feces	feces	TP_correct
+18	SAMN15816000	NYU_RA_88C	days_from_first_collection	2018	30	TP_wrong
+18	SAMN15816000	NYU_RA_88C	dna_extraction_kit	PowerSoil	ZymoBIOMICS96MagBead	TP_wrong
+18	SAMN15816000	NYU_RA_88C	ncbi_accession	SRR12451776	SRR12455515	TP_wrong
+18	SAMN15816000	NYU_RA_88C	sequencing_platform	Illumina MiSeq	IlluminaNovaSeq	TP_wrong
+18	SAMN15816000	NYU_RA_88C	age	not_reported	44	FN
+18	SAMN15816000	NYU_RA_88C	age_group	Adult	adult	TP_correct
+18	SAMN15816000	NYU_RA_88C	sex		Female	FN
+18	SAMN15816000	NYU_RA_88C	antibiotics_current_use	No	No	TP_correct
+18	SAMN15816000	NYU_RA_88C	disease	Rheumatoid Arthritis	RA	TP_wrong
+18	SAMN15816000	NYU_RA_88C	treatment	Methotrexate	MTX	TP_wrong
+18	SAMN15816000	NYU_RA_88C	host_species	mouse	Homo sapiens	TP_wrong
+19	SAMN15815993	NYU_RA_334B	study_name	not_reported	NayakRR_2021	FN
+19	SAMN15815993	NYU_RA_334B	subject_id	not_reported	s_334	FN
+19	SAMN15815993	NYU_RA_334B	sample_id	SAMN15815993	NYU_RA_334B	TP_wrong
+19	SAMN15815993	NYU_RA_334B	curator	not_reported	Linda_Cova	FN
+19	SAMN15815993	NYU_RA_334B	pmid	not_reported	33440172	FN
+19	SAMN15815993	NYU_RA_334B	country	USA	United States	TP_wrong
+19	SAMN15815993	NYU_RA_334B	body_site	feces	feces	TP_correct
+19	SAMN15815993	NYU_RA_334B	days_from_first_collection	2018	0	TP_wrong
+19	SAMN15815993	NYU_RA_334B	dna_extraction_kit	PowerSoil	ZymoBIOMICS96MagBead	TP_wrong
+19	SAMN15815993	NYU_RA_334B	ncbi_accession	SRR12451783	SRR12455519	TP_wrong
+19	SAMN15815993	NYU_RA_334B	sequencing_platform	Illumina MiSeq	IlluminaNovaSeq	TP_wrong
+19	SAMN15815993	NYU_RA_334B	age	not_reported	22	FN
+19	SAMN15815993	NYU_RA_334B	age_group	Adult	adult	TP_correct
+19	SAMN15815993	NYU_RA_334B	sex		Female	FN
+19	SAMN15815993	NYU_RA_334B	antibiotics_current_use	No	No	TP_correct
+19	SAMN15815993	NYU_RA_334B	disease	Rheumatoid Arthritis	RA	TP_wrong
+19	SAMN15815993	NYU_RA_334B	treatment	Methotrexate	no	TP_wrong
+19	SAMN15815993	NYU_RA_334B	host_species	mouse	Homo sapiens	TP_wrong
+20	SAMN15815990	NYU_RA_82C	study_name	not_reported	NayakRR_2021	FN
+20	SAMN15815990	NYU_RA_82C	subject_id	not_reported	s_82	FN
+20	SAMN15815990	NYU_RA_82C	sample_id	SAMN15815990	NYU_RA_82C	TP_wrong
+20	SAMN15815990	NYU_RA_82C	curator	not_reported	Linda_Cova	FN
+20	SAMN15815990	NYU_RA_82C	pmid	not_reported	33440172	FN
+20	SAMN15815990	NYU_RA_82C	country	USA	United States	TP_wrong
+20	SAMN15815990	NYU_RA_82C	body_site	feces	feces	TP_correct
+20	SAMN15815990	NYU_RA_82C	days_from_first_collection	2019-08	30	TP_wrong
+20	SAMN15815990	NYU_RA_82C	dna_extraction_kit	PowerSoil	ZymoBIOMICS96MagBead	TP_wrong
+20	SAMN15815990	NYU_RA_82C	ncbi_accession	SRR12451787	SRR12455526	TP_wrong
+20	SAMN15815990	NYU_RA_82C	sequencing_platform	Illumina MiSeq	IlluminaNovaSeq	TP_wrong
+20	SAMN15815990	NYU_RA_82C	age	not_reported	31	FN
+20	SAMN15815990	NYU_RA_82C	age_group	Adult	adult	TP_correct
+20	SAMN15815990	NYU_RA_82C	sex		Female	FN
+20	SAMN15815990	NYU_RA_82C	antibiotics_current_use	No	No	TP_correct
+20	SAMN15815990	NYU_RA_82C	disease	Rheumatoid Arthritis	RA	TP_wrong
+20	SAMN15815990	NYU_RA_82C	treatment	Methotrexate	MTX	TP_wrong
+20	SAMN15815990	NYU_RA_82C	host_species	mouse	Homo sapiens	TP_wrong
+21	SAMN15815983	NYU_RA_283C	study_name	not_reported	NayakRR_2021	FN
+21	SAMN15815983	NYU_RA_283C	subject_id	not_reported	s_283	FN
+21	SAMN15815983	NYU_RA_283C	sample_id	SAMN15815983	NYU_RA_283C	TP_wrong
+21	SAMN15815983	NYU_RA_283C	curator	not_reported	Linda_Cova	FN
+21	SAMN15815983	NYU_RA_283C	pmid	not_reported	33440172	FN
+21	SAMN15815983	NYU_RA_283C	country	USA	United States	TP_wrong
+21	SAMN15815983	NYU_RA_283C	body_site	feces	feces	TP_correct
+21	SAMN15815983	NYU_RA_283C	days_from_first_collection	2019-08	30	TP_wrong
+21	SAMN15815983	NYU_RA_283C	dna_extraction_kit	PowerSoil	ZymoBIOMICS96MagBead	TP_wrong
+21	SAMN15815983	NYU_RA_283C	ncbi_accession	SRR12451794	SRR12455522	TP_wrong
+21	SAMN15815983	NYU_RA_283C	sequencing_platform	Illumina MiSeq	IlluminaNovaSeq	TP_wrong
+21	SAMN15815983	NYU_RA_283C	age	not_reported	23	FN
+21	SAMN15815983	NYU_RA_283C	age_group	Adult	adult	TP_correct
+21	SAMN15815983	NYU_RA_283C	sex		Female	FN
+21	SAMN15815983	NYU_RA_283C	antibiotics_current_use	No	No	TP_correct
+21	SAMN15815983	NYU_RA_283C	disease	Rheumatoid Arthritis	RA	TP_wrong
+21	SAMN15815983	NYU_RA_283C	treatment	Methotrexate	MTX	TP_wrong
+21	SAMN15815983	NYU_RA_283C	host_species	mouse	Homo sapiens	TP_wrong
+22	SAMN15815982	NYU_RA_371B	study_name	not_reported	NayakRR_2021	FN
+22	SAMN15815982	NYU_RA_371B	subject_id	not_reported	s_371	FN
+22	SAMN15815982	NYU_RA_371B	sample_id	SAMN15815982	NYU_RA_371B	TP_wrong
+22	SAMN15815982	NYU_RA_371B	curator	not_reported	Linda_Cova	FN
+22	SAMN15815982	NYU_RA_371B	pmid	not_reported	33440172	FN
+22	SAMN15815982	NYU_RA_371B	country	USA	United States	TP_wrong
+22	SAMN15815982	NYU_RA_371B	body_site	feces	feces	TP_correct
+22	SAMN15815982	NYU_RA_371B	days_from_first_collection	2019-08	0	TP_wrong
+22	SAMN15815982	NYU_RA_371B	dna_extraction_kit	PowerSoil	ZymoBIOMICS96MagBead	TP_wrong
+22	SAMN15815982	NYU_RA_371B	ncbi_accession	SRR12451796	SRR12455534	TP_wrong
+22	SAMN15815982	NYU_RA_371B	sequencing_platform	Illumina MiSeq	IlluminaNovaSeq	TP_wrong
+22	SAMN15815982	NYU_RA_371B	age	not_reported	50	FN
+22	SAMN15815982	NYU_RA_371B	age_group	Adult	adult	TP_correct
+22	SAMN15815982	NYU_RA_371B	sex		Female	FN
+22	SAMN15815982	NYU_RA_371B	antibiotics_current_use	No	No	TP_correct
+22	SAMN15815982	NYU_RA_371B	disease	Rheumatoid Arthritis	RA	TP_wrong
+22	SAMN15815982	NYU_RA_371B	treatment	Methotrexate	no	TP_wrong
+22	SAMN15815982	NYU_RA_371B	host_species	mouse	Homo sapiens	TP_wrong
+23	SAMN15815978	NYU_RA_263C	study_name	not_reported	NayakRR_2021	FN
+23	SAMN15815978	NYU_RA_263C	subject_id	not_reported	s_263	FN
+23	SAMN15815978	NYU_RA_263C	sample_id	SAMN15815978	NYU_RA_263C	TP_wrong
+23	SAMN15815978	NYU_RA_263C	curator	not_reported	Linda_Cova	FN
+23	SAMN15815978	NYU_RA_263C	pmid	not_reported	33440172	FN
+23	SAMN15815978	NYU_RA_263C	country	USA	United States	TP_wrong
+23	SAMN15815978	NYU_RA_263C	body_site	feces	feces	TP_correct
+23	SAMN15815978	NYU_RA_263C	days_from_first_collection	2019-08	30	TP_wrong
+23	SAMN15815978	NYU_RA_263C	dna_extraction_kit	PowerSoil	ZymoBIOMICS96MagBead	TP_wrong
+23	SAMN15815978	NYU_RA_263C	ncbi_accession	SRR12451800	SRR12455509	TP_wrong
+23	SAMN15815978	NYU_RA_263C	sequencing_platform	Illumina MiSeq	IlluminaNovaSeq	TP_wrong
+23	SAMN15815978	NYU_RA_263C	age	not_reported	65	FN
+23	SAMN15815978	NYU_RA_263C	age_group	Adult	adult	TP_correct
+23	SAMN15815978	NYU_RA_263C	sex		Female	FN
+23	SAMN15815978	NYU_RA_263C	antibiotics_current_use	No	No	TP_correct
+23	SAMN15815978	NYU_RA_263C	disease	Rheumatoid Arthritis	RA	TP_wrong
+23	SAMN15815978	NYU_RA_263C	treatment	Methotrexate	MTX	TP_wrong
+23	SAMN15815978	NYU_RA_263C	host_species	mouse	Homo sapiens	TP_wrong
+24	SAMN15815977	NYU_RA_334C	study_name	not_reported	NayakRR_2021	FN
+24	SAMN15815977	NYU_RA_334C	subject_id	not_reported	s_334	FN
+24	SAMN15815977	NYU_RA_334C	sample_id	SAMN15815977	NYU_RA_334C	TP_wrong
+24	SAMN15815977	NYU_RA_334C	curator	not_reported	Linda_Cova	FN
+24	SAMN15815977	NYU_RA_334C	pmid	not_reported	33440172	FN
+24	SAMN15815977	NYU_RA_334C	country	USA	United States	TP_wrong
+24	SAMN15815977	NYU_RA_334C	body_site	feces	feces	TP_correct
+24	SAMN15815977	NYU_RA_334C	days_from_first_collection	2019-08	30	TP_wrong
+24	SAMN15815977	NYU_RA_334C	dna_extraction_kit	PowerSoil	ZymoBIOMICS96MagBead	TP_wrong
+24	SAMN15815977	NYU_RA_334C	ncbi_accession	SRR12451801	SRR12455518	TP_wrong
+24	SAMN15815977	NYU_RA_334C	sequencing_platform	Illumina MiSeq	IlluminaNovaSeq	TP_wrong
+24	SAMN15815977	NYU_RA_334C	age	not_reported	22	FN
+24	SAMN15815977	NYU_RA_334C	age_group	Adult	adult	TP_correct
+24	SAMN15815977	NYU_RA_334C	sex		Female	FN
+24	SAMN15815977	NYU_RA_334C	antibiotics_current_use	No	No	TP_correct
+24	SAMN15815977	NYU_RA_334C	disease	Rheumatoid Arthritis	RA	TP_wrong
+24	SAMN15815977	NYU_RA_334C	treatment	Methotrexate	MTX	TP_wrong
+24	SAMN15815977	NYU_RA_334C	host_species	mouse	Homo sapiens	TP_wrong
+25	SAMN15815976	NYU_RA_82B	study_name	not_reported	NayakRR_2021	FN
+25	SAMN15815976	NYU_RA_82B	subject_id	not_reported	s_82	FN
+25	SAMN15815976	NYU_RA_82B	sample_id	SAMN15815976	NYU_RA_82B	TP_wrong
+25	SAMN15815976	NYU_RA_82B	curator	not_reported	Linda_Cova	FN
+25	SAMN15815976	NYU_RA_82B	pmid	not_reported	33440172	FN
+25	SAMN15815976	NYU_RA_82B	country	USA	United States	TP_wrong
+25	SAMN15815976	NYU_RA_82B	body_site	feces	feces	TP_correct
+25	SAMN15815976	NYU_RA_82B	days_from_first_collection	2019-08	0	TP_wrong
+25	SAMN15815976	NYU_RA_82B	dna_extraction_kit	PowerSoil	ZymoBIOMICS96MagBead	TP_wrong
+25	SAMN15815976	NYU_RA_82B	ncbi_accession	SRR12451802	SRR12455527	TP_wrong
+25	SAMN15815976	NYU_RA_82B	sequencing_platform	Illumina MiSeq	IlluminaNovaSeq	TP_wrong
+25	SAMN15815976	NYU_RA_82B	age	not_reported	31	FN
+25	SAMN15815976	NYU_RA_82B	age_group	Adult	adult	TP_correct
+25	SAMN15815976	NYU_RA_82B	sex		Female	FN
+25	SAMN15815976	NYU_RA_82B	antibiotics_current_use	No	No	TP_correct
+25	SAMN15815976	NYU_RA_82B	disease	Rheumatoid Arthritis	RA	TP_wrong
+25	SAMN15815976	NYU_RA_82B	treatment	Methotrexate	no	TP_wrong
+25	SAMN15815976	NYU_RA_82B	host_species	mouse	Homo sapiens	TP_wrong
+26	SAMN15816042	NYU_RA_90C	study_name	not_reported	NayakRR_2021	FN
+26	SAMN15816042	NYU_RA_90C	subject_id	not_reported	s_90	FN
+26	SAMN15816042	NYU_RA_90C	sample_id	SAMN15816042	NYU_RA_90C	TP_wrong
+26	SAMN15816042	NYU_RA_90C	curator	not_reported	Linda_Cova	FN
+26	SAMN15816042	NYU_RA_90C	pmid	not_reported	33440172	FN
+26	SAMN15816042	NYU_RA_90C	country	USA	United States	TP_wrong
+26	SAMN15816042	NYU_RA_90C	body_site	feces	feces	TP_correct
+26	SAMN15816042	NYU_RA_90C	days_from_first_collection	2018	30	TP_wrong
+26	SAMN15816042	NYU_RA_90C	dna_extraction_kit	PowerSoil	ZymoBIOMICS96MagBead	TP_wrong
+26	SAMN15816042	NYU_RA_90C	ncbi_accession	SRR12451804	SRR12455513	TP_wrong
+26	SAMN15816042	NYU_RA_90C	sequencing_platform	Illumina MiSeq	IlluminaNovaSeq	TP_wrong
+26	SAMN15816042	NYU_RA_90C	age	not_reported	71	FN
+26	SAMN15816042	NYU_RA_90C	age_group	Adult	senior	TP_wrong
+26	SAMN15816042	NYU_RA_90C	sex		Female	FN
+26	SAMN15816042	NYU_RA_90C	antibiotics_current_use	No	No	TP_correct
+26	SAMN15816042	NYU_RA_90C	disease	Rheumatoid Arthritis	RA	TP_wrong
+26	SAMN15816042	NYU_RA_90C	treatment	Methotrexate	MTX	TP_wrong
+26	SAMN15816042	NYU_RA_90C	host_species	mouse	Homo sapiens	TP_wrong
+27	SAMN15816037	NYU_RA_90B	study_name	not_reported	NayakRR_2021	FN
+27	SAMN15816037	NYU_RA_90B	subject_id	not_reported	s_90	FN
+27	SAMN15816037	NYU_RA_90B	sample_id	SAMN15816037	NYU_RA_90B	TP_wrong
+27	SAMN15816037	NYU_RA_90B	curator	not_reported	Linda_Cova	FN
+27	SAMN15816037	NYU_RA_90B	pmid	not_reported	33440172	FN
+27	SAMN15816037	NYU_RA_90B	country	USA	United States	TP_wrong
+27	SAMN15816037	NYU_RA_90B	body_site	feces	feces	TP_correct
+27	SAMN15816037	NYU_RA_90B	days_from_first_collection	2018	0	TP_wrong
+27	SAMN15816037	NYU_RA_90B	dna_extraction_kit	PowerSoil	ZymoBIOMICS96MagBead	TP_wrong
+27	SAMN15816037	NYU_RA_90B	ncbi_accession	SRR12451809	SRR12455514	TP_wrong
+27	SAMN15816037	NYU_RA_90B	sequencing_platform	Illumina MiSeq	IlluminaNovaSeq	TP_wrong
+27	SAMN15816037	NYU_RA_90B	age	not_reported	71	FN
+27	SAMN15816037	NYU_RA_90B	age_group	Adult	senior	TP_wrong
+27	SAMN15816037	NYU_RA_90B	sex		Female	FN
+27	SAMN15816037	NYU_RA_90B	antibiotics_current_use	No	No	TP_correct
+27	SAMN15816037	NYU_RA_90B	disease	Rheumatoid Arthritis	RA	TP_wrong
+27	SAMN15816037	NYU_RA_90B	treatment	Methotrexate	no	TP_wrong
+27	SAMN15816037	NYU_RA_90B	host_species	mouse	Homo sapiens	TP_wrong
+28	SAMN15816035	NYU_RA_107C	study_name	not_reported	NayakRR_2021	FN
+28	SAMN15816035	NYU_RA_107C	subject_id	not_reported	s_107	FN
+28	SAMN15816035	NYU_RA_107C	sample_id	SAMN15816035	NYU_RA_107C	TP_wrong
+28	SAMN15816035	NYU_RA_107C	curator	not_reported	Linda_Cova	FN
+28	SAMN15816035	NYU_RA_107C	pmid	not_reported	33440172	FN
+28	SAMN15816035	NYU_RA_107C	country	USA	United States	TP_wrong
+28	SAMN15816035	NYU_RA_107C	body_site	feces	feces	TP_correct
+28	SAMN15816035	NYU_RA_107C	days_from_first_collection	2018	30	TP_wrong
+28	SAMN15816035	NYU_RA_107C	dna_extraction_kit	PowerSoil	ZymoBIOMICS96MagBead	TP_wrong
+28	SAMN15816035	NYU_RA_107C	ncbi_accession	SRR12451811	SRR12455539	TP_wrong
+28	SAMN15816035	NYU_RA_107C	sequencing_platform	Illumina MiSeq	IlluminaNovaSeq	TP_wrong
+28	SAMN15816035	NYU_RA_107C	age	not_reported	22	FN
+28	SAMN15816035	NYU_RA_107C	age_group	Adult	adult	TP_correct
+28	SAMN15816035	NYU_RA_107C	sex		Male	FN
+28	SAMN15816035	NYU_RA_107C	antibiotics_current_use	No	No	TP_correct
+28	SAMN15816035	NYU_RA_107C	disease	Rheumatoid Arthritis	RA	TP_wrong
+28	SAMN15816035	NYU_RA_107C	treatment	Methotrexate	MTX	TP_wrong
+28	SAMN15816035	NYU_RA_107C	host_species	mouse	Homo sapiens	TP_wrong
+29	SAMN15816033	NYU_RA_356B	study_name	not_reported	NayakRR_2021	FN
+29	SAMN15816033	NYU_RA_356B	subject_id	not_reported	s_356	FN
+29	SAMN15816033	NYU_RA_356B	sample_id	SAMN15816033	NYU_RA_356B	TP_wrong
+29	SAMN15816033	NYU_RA_356B	curator	not_reported	Linda_Cova	FN
+29	SAMN15816033	NYU_RA_356B	pmid	not_reported	33440172	FN
+29	SAMN15816033	NYU_RA_356B	country	USA	United States	TP_wrong
+29	SAMN15816033	NYU_RA_356B	body_site	feces	feces	TP_correct
+29	SAMN15816033	NYU_RA_356B	days_from_first_collection	2018	0	TP_wrong
+29	SAMN15816033	NYU_RA_356B	dna_extraction_kit	PowerSoil	ZymoBIOMICS96MagBead	TP_wrong
+29	SAMN15816033	NYU_RA_356B	ncbi_accession	SRR12451813	SRR12455538	TP_wrong
+29	SAMN15816033	NYU_RA_356B	sequencing_platform	Illumina MiSeq	IlluminaNovaSeq	TP_wrong
+29	SAMN15816033	NYU_RA_356B	age	not_reported	54	FN
+29	SAMN15816033	NYU_RA_356B	age_group	Adult	adult	TP_correct
+29	SAMN15816033	NYU_RA_356B	sex		Female	FN
+29	SAMN15816033	NYU_RA_356B	antibiotics_current_use	No	No	TP_correct
+29	SAMN15816033	NYU_RA_356B	disease	Rheumatoid Arthritis	RA	TP_wrong
+29	SAMN15816033	NYU_RA_356B	treatment	Methotrexate	no	TP_wrong
+29	SAMN15816033	NYU_RA_356B	host_species	mouse	Homo sapiens	TP_wrong
+30	SAMN15816032	NYU_RA_126C	study_name	not_reported	NayakRR_2021	FN
+30	SAMN15816032	NYU_RA_126C	subject_id	not_reported	s_126	FN
+30	SAMN15816032	NYU_RA_126C	sample_id	SAMN15816032	NYU_RA_126C	TP_wrong
+30	SAMN15816032	NYU_RA_126C	curator	not_reported	Linda_Cova	FN
+30	SAMN15816032	NYU_RA_126C	pmid	not_reported	33440172	FN
+30	SAMN15816032	NYU_RA_126C	country	USA	United States	TP_wrong
+30	SAMN15816032	NYU_RA_126C	body_site	feces	feces	TP_correct
+30	SAMN15816032	NYU_RA_126C	days_from_first_collection	2018	30	TP_wrong
+30	SAMN15816032	NYU_RA_126C	dna_extraction_kit	PowerSoil	ZymoBIOMICS96MagBead	TP_wrong
+30	SAMN15816032	NYU_RA_126C	ncbi_accession	SRR12451815	SRR12455517	TP_wrong
+30	SAMN15816032	NYU_RA_126C	sequencing_platform	Illumina MiSeq	IlluminaNovaSeq	TP_wrong
+30	SAMN15816032	NYU_RA_126C	age	not_reported	47	FN
+30	SAMN15816032	NYU_RA_126C	age_group	Adult	adult	TP_correct
+30	SAMN15816032	NYU_RA_126C	sex		Male	FN
+30	SAMN15816032	NYU_RA_126C	antibiotics_current_use	No	No	TP_correct
+30	SAMN15816032	NYU_RA_126C	disease	Rheumatoid Arthritis	RA	TP_wrong
+30	SAMN15816032	NYU_RA_126C	treatment	Methotrexate	MTX	TP_wrong
+30	SAMN15816032	NYU_RA_126C	host_species	mouse	Homo sapiens	TP_wrong
+31	SAMN15816031	NYU_RA_317C	study_name	not_reported	NayakRR_2021	FN
+31	SAMN15816031	NYU_RA_317C	subject_id	not_reported	s_317	FN
+31	SAMN15816031	NYU_RA_317C	sample_id	SAMN15816031	NYU_RA_317C	TP_wrong
+31	SAMN15816031	NYU_RA_317C	curator	not_reported	Linda_Cova	FN
+31	SAMN15816031	NYU_RA_317C	pmid	not_reported	33440172	FN
+31	SAMN15816031	NYU_RA_317C	country	USA	United States	TP_wrong
+31	SAMN15816031	NYU_RA_317C	body_site	feces	feces	TP_correct
+31	SAMN15816031	NYU_RA_317C	days_from_first_collection	2018	30	TP_wrong
+31	SAMN15816031	NYU_RA_317C	dna_extraction_kit	PowerSoil	ZymoBIOMICS96MagBead	TP_wrong
+31	SAMN15816031	NYU_RA_317C	ncbi_accession	SRR12451816	SRR12455520	TP_wrong
+31	SAMN15816031	NYU_RA_317C	sequencing_platform	Illumina MiSeq	IlluminaNovaSeq	TP_wrong
+31	SAMN15816031	NYU_RA_317C	age	not_reported	27	FN
+31	SAMN15816031	NYU_RA_317C	age_group	Adult	adult	TP_correct
+31	SAMN15816031	NYU_RA_317C	sex		Male	FN
+31	SAMN15816031	NYU_RA_317C	antibiotics_current_use	No	No	TP_correct
+31	SAMN15816031	NYU_RA_317C	disease	Rheumatoid Arthritis	RA	TP_wrong
+31	SAMN15816031	NYU_RA_317C	treatment	Methotrexate	MTX	TP_wrong
+31	SAMN15816031	NYU_RA_317C	host_species	mouse	Homo sapiens	TP_wrong
+32	SAMN15816027	NYU_RA_317B	study_name	not_reported	NayakRR_2021	FN
+32	SAMN15816027	NYU_RA_317B	subject_id	not_reported	s_317	FN
+32	SAMN15816027	NYU_RA_317B	sample_id	SAMN15816027	NYU_RA_317B	TP_wrong
+32	SAMN15816027	NYU_RA_317B	curator	not_reported	Linda_Cova	FN
+32	SAMN15816027	NYU_RA_317B	pmid	not_reported	33440172	FN
+32	SAMN15816027	NYU_RA_317B	country	USA	United States	TP_wrong
+32	SAMN15816027	NYU_RA_317B	body_site	feces	feces	TP_correct
+32	SAMN15816027	NYU_RA_317B	days_from_first_collection	2018	0	TP_wrong
+32	SAMN15816027	NYU_RA_317B	dna_extraction_kit	PowerSoil	ZymoBIOMICS96MagBead	TP_wrong
+32	SAMN15816027	NYU_RA_317B	ncbi_accession	SRR12451820	SRR12455521	TP_wrong
+32	SAMN15816027	NYU_RA_317B	sequencing_platform	Illumina MiSeq	IlluminaNovaSeq	TP_wrong
+32	SAMN15816027	NYU_RA_317B	age	not_reported	27	FN
+32	SAMN15816027	NYU_RA_317B	age_group	Adult	adult	TP_correct
+32	SAMN15816027	NYU_RA_317B	sex		Male	FN
+32	SAMN15816027	NYU_RA_317B	antibiotics_current_use	No	No	TP_correct
+32	SAMN15816027	NYU_RA_317B	disease	Rheumatoid Arthritis	RA	TP_wrong
+32	SAMN15816027	NYU_RA_317B	treatment	Methotrexate	no	TP_wrong
+32	SAMN15816027	NYU_RA_317B	host_species	mouse	Homo sapiens	TP_wrong
+33	SAMN15815965	NYU_RA_283B	study_name	not_reported	NayakRR_2021	FN
+33	SAMN15815965	NYU_RA_283B	subject_id	not_reported	s_283	FN
+33	SAMN15815965	NYU_RA_283B	sample_id	SAMN15815965	NYU_RA_283B	TP_wrong
+33	SAMN15815965	NYU_RA_283B	curator	not_reported	Linda_Cova	FN
+33	SAMN15815965	NYU_RA_283B	pmid	not_reported	33440172	FN
+33	SAMN15815965	NYU_RA_283B	country	USA	United States	TP_wrong
+33	SAMN15815965	NYU_RA_283B	body_site	feces	feces	TP_correct
+33	SAMN15815965	NYU_RA_283B	days_from_first_collection	2019-08	0	TP_wrong
+33	SAMN15815965	NYU_RA_283B	dna_extraction_kit	PowerSoil	ZymoBIOMICS96MagBead	TP_wrong
+33	SAMN15815965	NYU_RA_283B	ncbi_accession	SRR12451835	SRR12455523	TP_wrong
+33	SAMN15815965	NYU_RA_283B	sequencing_platform	Illumina MiSeq	IlluminaNovaSeq	TP_wrong
+33	SAMN15815965	NYU_RA_283B	age	not_reported	23	FN
+33	SAMN15815965	NYU_RA_283B	age_group	Adult	adult	TP_correct
+33	SAMN15815965	NYU_RA_283B	sex		Female	FN
+33	SAMN15815965	NYU_RA_283B	antibiotics_current_use	No	No	TP_correct
+33	SAMN15815965	NYU_RA_283B	disease	Rheumatoid Arthritis	RA	TP_wrong
+33	SAMN15815965	NYU_RA_283B	treatment	Methotrexate	no	TP_wrong
+33	SAMN15815965	NYU_RA_283B	host_species	mouse	Homo sapiens	TP_wrong
