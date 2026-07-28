@@ -1,10 +1,15 @@
 # MetaExtractor
 
-LLM-backed biomedical metadata extractor. Given a research paper and a
-schema, returns one structured JSON object per paper with verbatim evidence
-quotes, section attributions, and explicit `not_reported` markers — no
-fabrication, no outside knowledge. Ships with an evaluator that scores
-extractions against a gold-standard table.
+A general-purpose, schema-driven metadata extractor for scientific literature.
+Given a research paper and *any* target schema (JSON, YAML, or LinkML), it
+returns structured metadata — one JSON object per paper, or one row per sample —
+with verbatim evidence quotes, section attributions, and explicit `not_reported`
+markers: no fabrication, no outside knowledge. A deterministic layer handles
+document retrieval, supplementary-table parsing, column mapping, and validation,
+so the LLM proposes values but never mints an identifier or edits a data value.
+Ships with an evaluator that scores extractions against a gold-standard table.
+curatedMetagenomicData (cMD) is bundled as a worked example and used as the
+benchmark domain — but nothing in the tool is specific to microbiome data.
 
 ## Install
 
@@ -18,7 +23,36 @@ pip install -e ".[linkml]"
 pip install -e ".[supplementary]"
 ```
 
-Requires `ANTHROPIC_API_KEY` in your environment.
+Requires `ANTHROPIC_API_KEY` in your environment (the web app also accepts a
+key pasted into the browser).
+
+## Web app
+
+A Streamlit UI wraps the library around its three key inputs — **target study**,
+**target schema**, and **API key**:
+
+```bash
+pip install -e ".[app]"
+metaextract-app                 # opens http://localhost:8501
+# extra args pass through to Streamlit, e.g. metaextract-app --server.port 8502
+```
+
+- **① API key** (sidebar) — paste your Anthropic key, or a reference:
+  `file:~/path/to/keyfile` reads the first non-empty line of a file, and
+  `env:VARNAME` reads an environment variable (same conventions as the CLI's
+  `--api-key`). Whatever you provide is trimmed, so a trailing newline never
+  causes a spurious `invalid x-api-key`. The value lives in the session only
+  and is never written to disk; left blank, it falls back to
+  `ANTHROPIC_API_KEY` / `CLAUDE_API_KEY`.
+- **② Target study** — enter a PMID/PMCID to fetch from NCBI (with optional
+  supplementary materials), or paste text / upload a `.txt`/`.md`/`.pdf`.
+- **③ Target schema** — pick a schema **bundled with the package** (the cMD
+  LinkML schema and a small study-level demo) or **upload** your own JSON /
+  YAML / LinkML file. Fields preview inline before you run.
+
+Results show granularity, per-field values with verbatim evidence, any
+sample-level rows, token usage and estimated cost, plus JSON and CSV
+downloads.
 
 ## CLI
 
