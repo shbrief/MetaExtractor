@@ -10,7 +10,7 @@ Headline content metrics per repeat (median [min–max] across 3 run(s)):
 - **P**: 0.990 [0.963–0.994]
 - **R**: 0.631 [0.609–0.632]
 - **F1**: 0.772 [0.746–0.772]
-- **vacc**: 0.610 [0.594–0.622]
+- **vacc**: 0.615 [0.600–0.628]
 - **fp**: – [–––]
 - **R_cov (coverage-aware recall; un/under-enumerated gold rows counted as FN)**: 0.305 [0.294–0.306]
 
@@ -36,7 +36,7 @@ Headline content metrics per repeat (median [min–max] across 3 run(s)):
 - **P**: 0.901 [0.898–0.906]
 - **R**: 0.660 [0.640–0.696]
 - **F1**: 0.762 [0.748–0.787]
-- **vacc**: 0.508 [0.474–0.523]
+- **vacc**: 0.512 [0.474–0.527]
 - **fp**: – [–––]
 - **R_cov (coverage-aware recall; un/under-enumerated gold rows counted as FN)**: 0.423 [0.411–0.447]
 

@@ -1,11 +1,10 @@
-"""The cMD schema defines age_min/age_max as *per-subject* bounds, never a
-cohort range: when a specific age is known they equal that age; when only
-age_group is known they are the definition of that group (Adult -> 18/65).
+"""age_min/age_max are per-subject bounds, filled deterministically after
+extraction by precedence: a specific per-subject age wins; else a reported
+numeric range is kept as-is (e.g. "Subjects were 23 to 34 years old" -> 23/34);
+else the age_group definition (Adult -> 18/65) is the last-resort fallback.
 
-``_normalize_age_bounds`` enforces this deterministically after extraction,
-repairing the common LLM error of dropping a prose cohort range (e.g.
-"Subjects were 23 to 34 years old") into age_min/age_max. These tests pin the
-rule and the canonical group bounds.
+``_normalize_age_bounds`` implements this. These tests pin the precedence and
+the canonical group bounds.
 """
 from metaextractor.extractor import AGE_GROUP_BOUNDS, _normalize_age_bounds
 from metaextractor.output import ExtractionResult, FieldResult
@@ -29,10 +28,10 @@ def _result(fields, samples=None, granularity="sample_level"):
     )
 
 
-def test_group_only_range_is_replaced_by_group_definition():
-    """The Bengtsson-PalmeJ_2015 failure mode: age not_reported, age_group
-    Adult, but a cohort range (23-34) parked in age_min/age_max — at both the
-    study level and (post fan-out) every sample."""
+def test_reported_range_is_kept_over_group_definition():
+    """A reported cohort range (23-34) with age not_reported and age_group
+    Adult is kept as-is — at the study level and (post fan-out) every sample —
+    not overwritten with the group definition (18/65)."""
     r = _result(
         fields={
             "age": _fr("not_reported"),
@@ -43,10 +42,18 @@ def test_group_only_range_is_replaced_by_group_definition():
         samples=[{"age_group": "Adult", "age_min": "23", "age_max": "34"} for _ in range(3)],
     )
     n = _normalize_age_bounds(r)
-    assert n == 2 + 2 * 3  # study-level pair + one pair per sample
-    assert (r.fields["age_min"].value, r.fields["age_max"].value) == ("18", "65")
-    assert r.fields["age_min"].extraction_type == "derived"
-    assert all((s["age_min"], s["age_max"]) == ("18", "65") for s in r.samples)
+    assert n == 0
+    assert (r.fields["age_min"].value, r.fields["age_max"].value) == ("23", "34")
+    assert all((s["age_min"], s["age_max"]) == ("23", "34") for s in r.samples)
+
+
+def test_partial_reported_range_blocks_group_fallback():
+    """One numeric bound present marks a reported range; the group definition
+    fallback does not fire and does not fill the other bound."""
+    r = _result(fields={}, samples=[{"age_group": "Adult", "age_min": "23"}])
+    assert _normalize_age_bounds(r) == 0
+    assert r.samples[0]["age_min"] == "23"
+    assert "age_max" not in r.samples[0]
 
 
 def test_specific_age_fills_missing_bounds_only():

@@ -17,8 +17,8 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	decision
 0	SAMEA2784448	TRAVELRES1	age_group	Adult	Adult	TP_correct
 0	SAMEA2784448	TRAVELRES1	age_unit	Year	Year	TP_correct
 0	SAMEA2784448	TRAVELRES1	sex		Female	FN
-0	SAMEA2784448	TRAVELRES1	age_min	18	25	TP_wrong
-0	SAMEA2784448	TRAVELRES1	age_max	65	25	TP_wrong
+0	SAMEA2784448	TRAVELRES1	age_min	23	25	TP_wrong
+0	SAMEA2784448	TRAVELRES1	age_max	34	25	TP_wrong
 0	SAMEA2784448	TRAVELRES1	age_years	not_reported	25	FN
 0	SAMEA2784448	TRAVELRES1	antibiotics_current_use	No	No	TP_correct
 0	SAMEA2784448	TRAVELRES1	disease	not_reported	Healthy	FN
@@ -42,8 +42,8 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	decision
 1	SAMEA2784452	TRAVELRES10	age_group	Adult	Adult	TP_correct
 1	SAMEA2784452	TRAVELRES10	age_unit	Year	Year	TP_correct
 1	SAMEA2784452	TRAVELRES10	sex		Female	FN
-1	SAMEA2784452	TRAVELRES10	age_min	18	34	TP_wrong
-1	SAMEA2784452	TRAVELRES10	age_max	65	34	TP_wrong
+1	SAMEA2784452	TRAVELRES10	age_min	23	34	TP_wrong
+1	SAMEA2784452	TRAVELRES10	age_max	34	34	TP_correct
 1	SAMEA2784452	TRAVELRES10	age_years	not_reported	34	FN
 1	SAMEA2784452	TRAVELRES10	antibiotics_current_use	No	No	TP_correct
 1	SAMEA2784452	TRAVELRES10	disease	not_reported	Healthy	FN
@@ -67,8 +67,8 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	decision
 2	SAMEA2784454	TRAVELRES11	age_group	Adult	Adult	TP_correct
 2	SAMEA2784454	TRAVELRES11	age_unit	Year	Year	TP_correct
 2	SAMEA2784454	TRAVELRES11	sex		Female	FN
-2	SAMEA2784454	TRAVELRES11	age_min	18	22	TP_wrong
-2	SAMEA2784454	TRAVELRES11	age_max	65	22	TP_wrong
+2	SAMEA2784454	TRAVELRES11	age_min	23	22	TP_correct
+2	SAMEA2784454	TRAVELRES11	age_max	34	22	TP_wrong
 2	SAMEA2784454	TRAVELRES11	age_years	not_reported	22	FN
 2	SAMEA2784454	TRAVELRES11	antibiotics_current_use	No	No	TP_correct
 2	SAMEA2784454	TRAVELRES11	disease	not_reported	Healthy	FN
@@ -92,8 +92,8 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	decision
 3	SAMEA2784455	TRAVELRES12	age_group	Adult	Adult	TP_correct
 3	SAMEA2784455	TRAVELRES12	age_unit	Year	Year	TP_correct
 3	SAMEA2784455	TRAVELRES12	sex		Female	FN
-3	SAMEA2784455	TRAVELRES12	age_min	18	22	TP_wrong
-3	SAMEA2784455	TRAVELRES12	age_max	65	22	TP_wrong
+3	SAMEA2784455	TRAVELRES12	age_min	23	22	TP_correct
+3	SAMEA2784455	TRAVELRES12	age_max	34	22	TP_wrong
 3	SAMEA2784455	TRAVELRES12	age_years	not_reported	22	FN
 3	SAMEA2784455	TRAVELRES12	antibiotics_current_use	No	No	TP_correct
 3	SAMEA2784455	TRAVELRES12	disease	not_reported	Healthy	FN
@@ -117,8 +117,8 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	decision
 4	SAMEA2784457	TRAVELRES13	age_group	Adult	Adult	TP_correct
 4	SAMEA2784457	TRAVELRES13	age_unit	Year	Year	TP_correct
 4	SAMEA2784457	TRAVELRES13	sex		Female	FN
-4	SAMEA2784457	TRAVELRES13	age_min	18	23	TP_wrong
-4	SAMEA2784457	TRAVELRES13	age_max	65	23	TP_wrong
+4	SAMEA2784457	TRAVELRES13	age_min	23	23	TP_correct
+4	SAMEA2784457	TRAVELRES13	age_max	34	23	TP_wrong
 4	SAMEA2784457	TRAVELRES13	age_years	not_reported	23	FN
 4	SAMEA2784457	TRAVELRES13	antibiotics_current_use	No	No	TP_correct
 4	SAMEA2784457	TRAVELRES13	disease	not_reported	Healthy	FN
@@ -142,8 +142,8 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	decision
 5	SAMEA2784459	TRAVELRES14	age_group	Adult	Adult	TP_correct
 5	SAMEA2784459	TRAVELRES14	age_unit	Year	Year	TP_correct
 5	SAMEA2784459	TRAVELRES14	sex		Female	FN
-5	SAMEA2784459	TRAVELRES14	age_min	18	23	TP_wrong
-5	SAMEA2784459	TRAVELRES14	age_max	65	23	TP_wrong
+5	SAMEA2784459	TRAVELRES14	age_min	23	23	TP_correct
+5	SAMEA2784459	TRAVELRES14	age_max	34	23	TP_wrong
 5	SAMEA2784459	TRAVELRES14	age_years	not_reported	23	FN
 5	SAMEA2784459	TRAVELRES14	antibiotics_current_use	No	No	TP_correct
 5	SAMEA2784459	TRAVELRES14	disease	not_reported	Healthy	FN
@@ -167,8 +167,8 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	decision
 6	SAMEA2784460	TRAVELRES15	age_group	Adult	Adult	TP_correct
 6	SAMEA2784460	TRAVELRES15	age_unit	Year	Year	TP_correct
 6	SAMEA2784460	TRAVELRES15	sex		Female	FN
-6	SAMEA2784460	TRAVELRES15	age_min	18	23	TP_wrong
-6	SAMEA2784460	TRAVELRES15	age_max	65	23	TP_wrong
+6	SAMEA2784460	TRAVELRES15	age_min	23	23	TP_correct
+6	SAMEA2784460	TRAVELRES15	age_max	34	23	TP_wrong
 6	SAMEA2784460	TRAVELRES15	age_years	not_reported	23	FN
 6	SAMEA2784460	TRAVELRES15	antibiotics_current_use	No	No	TP_correct
 6	SAMEA2784460	TRAVELRES15	disease	not_reported	Healthy	FN
@@ -192,8 +192,8 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	decision
 7	SAMEA2784461	TRAVELRES16	age_group	Adult	Adult	TP_correct
 7	SAMEA2784461	TRAVELRES16	age_unit	Year	Year	TP_correct
 7	SAMEA2784461	TRAVELRES16	sex		Female	FN
-7	SAMEA2784461	TRAVELRES16	age_min	18	23	TP_wrong
-7	SAMEA2784461	TRAVELRES16	age_max	65	23	TP_wrong
+7	SAMEA2784461	TRAVELRES16	age_min	23	23	TP_correct
+7	SAMEA2784461	TRAVELRES16	age_max	34	23	TP_wrong
 7	SAMEA2784461	TRAVELRES16	age_years	not_reported	23	FN
 7	SAMEA2784461	TRAVELRES16	antibiotics_current_use	No	No	TP_correct
 7	SAMEA2784461	TRAVELRES16	disease	not_reported	Healthy	FN
@@ -217,8 +217,8 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	decision
 8	SAMEA2784463	TRAVELRES17	age_group	Adult	Adult	TP_correct
 8	SAMEA2784463	TRAVELRES17	age_unit	Year	Year	TP_correct
 8	SAMEA2784463	TRAVELRES17	sex		Male	FN
-8	SAMEA2784463	TRAVELRES17	age_min	18	24	TP_wrong
-8	SAMEA2784463	TRAVELRES17	age_max	65	24	TP_wrong
+8	SAMEA2784463	TRAVELRES17	age_min	23	24	TP_correct
+8	SAMEA2784463	TRAVELRES17	age_max	34	24	TP_wrong
 8	SAMEA2784463	TRAVELRES17	age_years	not_reported	24	FN
 8	SAMEA2784463	TRAVELRES17	antibiotics_current_use	No	No	TP_correct
 8	SAMEA2784463	TRAVELRES17	disease	not_reported	Healthy	FN
@@ -242,8 +242,8 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	decision
 9	SAMEA2784466	TRAVELRES18	age_group	Adult	Adult	TP_correct
 9	SAMEA2784466	TRAVELRES18	age_unit	Year	Year	TP_correct
 9	SAMEA2784466	TRAVELRES18	sex		Male	FN
-9	SAMEA2784466	TRAVELRES18	age_min	18	24	TP_wrong
-9	SAMEA2784466	TRAVELRES18	age_max	65	24	TP_wrong
+9	SAMEA2784466	TRAVELRES18	age_min	23	24	TP_correct
+9	SAMEA2784466	TRAVELRES18	age_max	34	24	TP_wrong
 9	SAMEA2784466	TRAVELRES18	age_years	not_reported	24	FN
 9	SAMEA2784466	TRAVELRES18	antibiotics_current_use	No	No	TP_correct
 9	SAMEA2784466	TRAVELRES18	disease	not_reported	Healthy	FN
@@ -267,8 +267,8 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	decision
 10	SAMEA2784469	TRAVELRES19	age_group	Adult	Adult	TP_correct
 10	SAMEA2784469	TRAVELRES19	age_unit	Year	Year	TP_correct
 10	SAMEA2784469	TRAVELRES19	sex		Female	FN
-10	SAMEA2784469	TRAVELRES19	age_min	18	26	TP_wrong
-10	SAMEA2784469	TRAVELRES19	age_max	65	26	TP_wrong
+10	SAMEA2784469	TRAVELRES19	age_min	23	26	TP_wrong
+10	SAMEA2784469	TRAVELRES19	age_max	34	26	TP_wrong
 10	SAMEA2784469	TRAVELRES19	age_years	not_reported	26	FN
 10	SAMEA2784469	TRAVELRES19	antibiotics_current_use	No	No	TP_correct
 10	SAMEA2784469	TRAVELRES19	disease	not_reported	Healthy	FN
@@ -292,8 +292,8 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	decision
 11	SAMEA2784476	TRAVELRES2	age_group	Adult	Adult	TP_correct
 11	SAMEA2784476	TRAVELRES2	age_unit	Year	Year	TP_correct
 11	SAMEA2784476	TRAVELRES2	sex		Female	FN
-11	SAMEA2784476	TRAVELRES2	age_min	18	25	TP_wrong
-11	SAMEA2784476	TRAVELRES2	age_max	65	25	TP_wrong
+11	SAMEA2784476	TRAVELRES2	age_min	23	25	TP_wrong
+11	SAMEA2784476	TRAVELRES2	age_max	34	25	TP_wrong
 11	SAMEA2784476	TRAVELRES2	age_years	not_reported	25	FN
 11	SAMEA2784476	TRAVELRES2	antibiotics_current_use	No	No	TP_correct
 11	SAMEA2784476	TRAVELRES2	disease	not_reported	Healthy	FN
@@ -317,8 +317,8 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	decision
 12	SAMEA2784478	TRAVELRES20	age_group	Adult	Adult	TP_correct
 12	SAMEA2784478	TRAVELRES20	age_unit	Year	Year	TP_correct
 12	SAMEA2784478	TRAVELRES20	sex		Female	FN
-12	SAMEA2784478	TRAVELRES20	age_min	18	26	TP_wrong
-12	SAMEA2784478	TRAVELRES20	age_max	65	26	TP_wrong
+12	SAMEA2784478	TRAVELRES20	age_min	23	26	TP_wrong
+12	SAMEA2784478	TRAVELRES20	age_max	34	26	TP_wrong
 12	SAMEA2784478	TRAVELRES20	age_years	not_reported	26	FN
 12	SAMEA2784478	TRAVELRES20	antibiotics_current_use	No	No	TP_correct
 12	SAMEA2784478	TRAVELRES20	disease	not_reported	Healthy	FN
@@ -342,8 +342,8 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	decision
 13	SAMEA2784479	TRAVELRES21	age_group	Adult	Adult	TP_correct
 13	SAMEA2784479	TRAVELRES21	age_unit	Year	Year	TP_correct
 13	SAMEA2784479	TRAVELRES21	sex		Female	FN
-13	SAMEA2784479	TRAVELRES21	age_min	18	24	TP_wrong
-13	SAMEA2784479	TRAVELRES21	age_max	65	24	TP_wrong
+13	SAMEA2784479	TRAVELRES21	age_min	23	24	TP_correct
+13	SAMEA2784479	TRAVELRES21	age_max	34	24	TP_wrong
 13	SAMEA2784479	TRAVELRES21	age_years	not_reported	24	FN
 13	SAMEA2784479	TRAVELRES21	antibiotics_current_use	No	No	TP_correct
 13	SAMEA2784479	TRAVELRES21	disease	not_reported	Healthy	FN
@@ -367,8 +367,8 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	decision
 14	SAMEA2784482	TRAVELRES22	age_group	Adult	Adult	TP_correct
 14	SAMEA2784482	TRAVELRES22	age_unit	Year	Year	TP_correct
 14	SAMEA2784482	TRAVELRES22	sex		Female	FN
-14	SAMEA2784482	TRAVELRES22	age_min	18	24	TP_wrong
-14	SAMEA2784482	TRAVELRES22	age_max	65	24	TP_wrong
+14	SAMEA2784482	TRAVELRES22	age_min	23	24	TP_correct
+14	SAMEA2784482	TRAVELRES22	age_max	34	24	TP_wrong
 14	SAMEA2784482	TRAVELRES22	age_years	not_reported	24	FN
 14	SAMEA2784482	TRAVELRES22	antibiotics_current_use	No	No	TP_correct
 14	SAMEA2784482	TRAVELRES22	disease	not_reported	Healthy	FN
@@ -392,8 +392,8 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	decision
 15	SAMEA2784483	TRAVELRES23	age_group	Adult	Adult	TP_correct
 15	SAMEA2784483	TRAVELRES23	age_unit	Year	Year	TP_correct
 15	SAMEA2784483	TRAVELRES23	sex		Female	FN
-15	SAMEA2784483	TRAVELRES23	age_min	18	24	TP_wrong
-15	SAMEA2784483	TRAVELRES23	age_max	65	24	TP_wrong
+15	SAMEA2784483	TRAVELRES23	age_min	23	24	TP_correct
+15	SAMEA2784483	TRAVELRES23	age_max	34	24	TP_wrong
 15	SAMEA2784483	TRAVELRES23	age_years	not_reported	24	FN
 15	SAMEA2784483	TRAVELRES23	antibiotics_current_use	No	No	TP_correct
 15	SAMEA2784483	TRAVELRES23	disease	not_reported	Healthy	FN
@@ -417,8 +417,8 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	decision
 16	SAMEA2784484	TRAVELRES24	age_group	Adult	Adult	TP_correct
 16	SAMEA2784484	TRAVELRES24	age_unit	Year	Year	TP_correct
 16	SAMEA2784484	TRAVELRES24	sex		Female	FN
-16	SAMEA2784484	TRAVELRES24	age_min	18	24	TP_wrong
-16	SAMEA2784484	TRAVELRES24	age_max	65	24	TP_wrong
+16	SAMEA2784484	TRAVELRES24	age_min	23	24	TP_correct
+16	SAMEA2784484	TRAVELRES24	age_max	34	24	TP_wrong
 16	SAMEA2784484	TRAVELRES24	age_years	not_reported	24	FN
 16	SAMEA2784484	TRAVELRES24	antibiotics_current_use	No	No	TP_correct
 16	SAMEA2784484	TRAVELRES24	disease	not_reported	Healthy	FN
@@ -442,8 +442,8 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	decision
 17	SAMEA2784490	TRAVELRES25	age_group	Adult	Adult	TP_correct
 17	SAMEA2784490	TRAVELRES25	age_unit	Year	Year	TP_correct
 17	SAMEA2784490	TRAVELRES25	sex		Female	FN
-17	SAMEA2784490	TRAVELRES25	age_min	18	25	TP_wrong
-17	SAMEA2784490	TRAVELRES25	age_max	65	25	TP_wrong
+17	SAMEA2784490	TRAVELRES25	age_min	23	25	TP_wrong
+17	SAMEA2784490	TRAVELRES25	age_max	34	25	TP_wrong
 17	SAMEA2784490	TRAVELRES25	age_years	not_reported	25	FN
 17	SAMEA2784490	TRAVELRES25	antibiotics_current_use	No	No	TP_correct
 17	SAMEA2784490	TRAVELRES25	disease	not_reported	Healthy	FN
@@ -467,8 +467,8 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	decision
 18	SAMEA2784495	TRAVELRES26	age_group	Adult	Adult	TP_correct
 18	SAMEA2784495	TRAVELRES26	age_unit	Year	Year	TP_correct
 18	SAMEA2784495	TRAVELRES26	sex		Female	FN
-18	SAMEA2784495	TRAVELRES26	age_min	18	25	TP_wrong
-18	SAMEA2784495	TRAVELRES26	age_max	65	25	TP_wrong
+18	SAMEA2784495	TRAVELRES26	age_min	23	25	TP_wrong
+18	SAMEA2784495	TRAVELRES26	age_max	34	25	TP_wrong
 18	SAMEA2784495	TRAVELRES26	age_years	not_reported	25	FN
 18	SAMEA2784495	TRAVELRES26	antibiotics_current_use	No	No	TP_correct
 18	SAMEA2784495	TRAVELRES26	disease	not_reported	Healthy	FN
@@ -492,8 +492,8 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	decision
 19	SAMEA2784497	TRAVELRES27	age_group	Adult	Adult	TP_correct
 19	SAMEA2784497	TRAVELRES27	age_unit	Year	Year	TP_correct
 19	SAMEA2784497	TRAVELRES27	sex		Male	FN
-19	SAMEA2784497	TRAVELRES27	age_min	18	25	TP_wrong
-19	SAMEA2784497	TRAVELRES27	age_max	65	25	TP_wrong
+19	SAMEA2784497	TRAVELRES27	age_min	23	25	TP_wrong
+19	SAMEA2784497	TRAVELRES27	age_max	34	25	TP_wrong
 19	SAMEA2784497	TRAVELRES27	age_years	not_reported	25	FN
 19	SAMEA2784497	TRAVELRES27	antibiotics_current_use	No	No	TP_correct
 19	SAMEA2784497	TRAVELRES27	disease	not_reported	Healthy	FN
@@ -517,8 +517,8 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	decision
 20	SAMEA2784498	TRAVELRES28	age_group	Adult	Adult	TP_correct
 20	SAMEA2784498	TRAVELRES28	age_unit	Year	Year	TP_correct
 20	SAMEA2784498	TRAVELRES28	sex		Male	FN
-20	SAMEA2784498	TRAVELRES28	age_min	18	25	TP_wrong
-20	SAMEA2784498	TRAVELRES28	age_max	65	25	TP_wrong
+20	SAMEA2784498	TRAVELRES28	age_min	23	25	TP_wrong
+20	SAMEA2784498	TRAVELRES28	age_max	34	25	TP_wrong
 20	SAMEA2784498	TRAVELRES28	age_years	not_reported	25	FN
 20	SAMEA2784498	TRAVELRES28	antibiotics_current_use	No	No	TP_correct
 20	SAMEA2784498	TRAVELRES28	disease	not_reported	Healthy	FN
@@ -542,8 +542,8 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	decision
 21	SAMEA2784504	TRAVELRES29	age_group	Adult	Adult	TP_correct
 21	SAMEA2784504	TRAVELRES29	age_unit	Year	Year	TP_correct
 21	SAMEA2784504	TRAVELRES29	sex		Male	FN
-21	SAMEA2784504	TRAVELRES29	age_min	18	24	TP_wrong
-21	SAMEA2784504	TRAVELRES29	age_max	65	24	TP_wrong
+21	SAMEA2784504	TRAVELRES29	age_min	23	24	TP_correct
+21	SAMEA2784504	TRAVELRES29	age_max	34	24	TP_wrong
 21	SAMEA2784504	TRAVELRES29	age_years	not_reported	24	FN
 21	SAMEA2784504	TRAVELRES29	antibiotics_current_use	No	No	TP_correct
 21	SAMEA2784504	TRAVELRES29	disease	not_reported	Healthy	FN
@@ -567,8 +567,8 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	decision
 22	SAMEA2784507	TRAVELRES3	age_group	Adult	Adult	TP_correct
 22	SAMEA2784507	TRAVELRES3	age_unit	Year	Year	TP_correct
 22	SAMEA2784507	TRAVELRES3	sex		Female	FN
-22	SAMEA2784507	TRAVELRES3	age_min	18	25	TP_wrong
-22	SAMEA2784507	TRAVELRES3	age_max	65	25	TP_wrong
+22	SAMEA2784507	TRAVELRES3	age_min	23	25	TP_wrong
+22	SAMEA2784507	TRAVELRES3	age_max	34	25	TP_wrong
 22	SAMEA2784507	TRAVELRES3	age_years	not_reported	25	FN
 22	SAMEA2784507	TRAVELRES3	antibiotics_current_use	No	No	TP_correct
 22	SAMEA2784507	TRAVELRES3	disease	not_reported	Healthy	FN
@@ -592,8 +592,8 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	decision
 23	SAMEA2784508	TRAVELRES30	age_group	Adult	Adult	TP_correct
 23	SAMEA2784508	TRAVELRES30	age_unit	Year	Year	TP_correct
 23	SAMEA2784508	TRAVELRES30	sex		Male	FN
-23	SAMEA2784508	TRAVELRES30	age_min	18	24	TP_wrong
-23	SAMEA2784508	TRAVELRES30	age_max	65	24	TP_wrong
+23	SAMEA2784508	TRAVELRES30	age_min	23	24	TP_correct
+23	SAMEA2784508	TRAVELRES30	age_max	34	24	TP_wrong
 23	SAMEA2784508	TRAVELRES30	age_years	not_reported	24	FN
 23	SAMEA2784508	TRAVELRES30	antibiotics_current_use	No	No	TP_correct
 23	SAMEA2784508	TRAVELRES30	disease	not_reported	Healthy	FN
@@ -617,8 +617,8 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	decision
 24	SAMEA2784513	TRAVELRES31	age_group	Adult	Adult	TP_correct
 24	SAMEA2784513	TRAVELRES31	age_unit	Year	Year	TP_correct
 24	SAMEA2784513	TRAVELRES31	sex		Female	FN
-24	SAMEA2784513	TRAVELRES31	age_min	18	27	TP_wrong
-24	SAMEA2784513	TRAVELRES31	age_max	65	27	TP_wrong
+24	SAMEA2784513	TRAVELRES31	age_min	23	27	TP_wrong
+24	SAMEA2784513	TRAVELRES31	age_max	34	27	TP_wrong
 24	SAMEA2784513	TRAVELRES31	age_years	not_reported	27	FN
 24	SAMEA2784513	TRAVELRES31	antibiotics_current_use	No	No	TP_correct
 24	SAMEA2784513	TRAVELRES31	disease	not_reported	Healthy	FN
@@ -642,8 +642,8 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	decision
 25	SAMEA2784517	TRAVELRES32	age_group	Adult	Adult	TP_correct
 25	SAMEA2784517	TRAVELRES32	age_unit	Year	Year	TP_correct
 25	SAMEA2784517	TRAVELRES32	sex		Female	FN
-25	SAMEA2784517	TRAVELRES32	age_min	18	27	TP_wrong
-25	SAMEA2784517	TRAVELRES32	age_max	65	27	TP_wrong
+25	SAMEA2784517	TRAVELRES32	age_min	23	27	TP_wrong
+25	SAMEA2784517	TRAVELRES32	age_max	34	27	TP_wrong
 25	SAMEA2784517	TRAVELRES32	age_years	not_reported	27	FN
 25	SAMEA2784517	TRAVELRES32	antibiotics_current_use	No	No	TP_correct
 25	SAMEA2784517	TRAVELRES32	disease	not_reported	Healthy	FN
@@ -667,8 +667,8 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	decision
 26	SAMEA2784449	TRAVELRES33	age_group	Adult	Adult	TP_correct
 26	SAMEA2784449	TRAVELRES33	age_unit	Year	Year	TP_correct
 26	SAMEA2784449	TRAVELRES33	sex		Female	FN
-26	SAMEA2784449	TRAVELRES33	age_min	18	28	TP_wrong
-26	SAMEA2784449	TRAVELRES33	age_max	65	28	TP_wrong
+26	SAMEA2784449	TRAVELRES33	age_min	23	28	TP_wrong
+26	SAMEA2784449	TRAVELRES33	age_max	34	28	TP_wrong
 26	SAMEA2784449	TRAVELRES33	age_years	not_reported	28	FN
 26	SAMEA2784449	TRAVELRES33	antibiotics_current_use	No	No	TP_correct
 26	SAMEA2784449	TRAVELRES33	disease	not_reported	Healthy	FN
@@ -692,8 +692,8 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	decision
 27	SAMEA2784450	TRAVELRES34	age_group	Adult	Adult	TP_correct
 27	SAMEA2784450	TRAVELRES34	age_unit	Year	Year	TP_correct
 27	SAMEA2784450	TRAVELRES34	sex		Female	FN
-27	SAMEA2784450	TRAVELRES34	age_min	18	28	TP_wrong
-27	SAMEA2784450	TRAVELRES34	age_max	65	28	TP_wrong
+27	SAMEA2784450	TRAVELRES34	age_min	23	28	TP_wrong
+27	SAMEA2784450	TRAVELRES34	age_max	34	28	TP_wrong
 27	SAMEA2784450	TRAVELRES34	age_years	not_reported	28	FN
 27	SAMEA2784450	TRAVELRES34	antibiotics_current_use	No	No	TP_correct
 27	SAMEA2784450	TRAVELRES34	disease	not_reported	Healthy	FN
@@ -717,8 +717,8 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	decision
 28	SAMEA2784451	TRAVELRES35	age_group	Adult	Adult	TP_correct
 28	SAMEA2784451	TRAVELRES35	age_unit	Year	Year	TP_correct
 28	SAMEA2784451	TRAVELRES35	sex		Male	FN
-28	SAMEA2784451	TRAVELRES35	age_min	18	25	TP_wrong
-28	SAMEA2784451	TRAVELRES35	age_max	65	25	TP_wrong
+28	SAMEA2784451	TRAVELRES35	age_min	23	25	TP_wrong
+28	SAMEA2784451	TRAVELRES35	age_max	34	25	TP_wrong
 28	SAMEA2784451	TRAVELRES35	age_years	not_reported	25	FN
 28	SAMEA2784451	TRAVELRES35	antibiotics_current_use	No	No	TP_correct
 28	SAMEA2784451	TRAVELRES35	disease	not_reported	Healthy	FN
@@ -742,8 +742,8 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	decision
 29	SAMEA2784456	TRAVELRES36	age_group	Adult	Adult	TP_correct
 29	SAMEA2784456	TRAVELRES36	age_unit	Year	Year	TP_correct
 29	SAMEA2784456	TRAVELRES36	sex		Male	FN
-29	SAMEA2784456	TRAVELRES36	age_min	18	25	TP_wrong
-29	SAMEA2784456	TRAVELRES36	age_max	65	25	TP_wrong
+29	SAMEA2784456	TRAVELRES36	age_min	23	25	TP_wrong
+29	SAMEA2784456	TRAVELRES36	age_max	34	25	TP_wrong
 29	SAMEA2784456	TRAVELRES36	age_years	not_reported	25	FN
 29	SAMEA2784456	TRAVELRES36	antibiotics_current_use	No	No	TP_correct
 29	SAMEA2784456	TRAVELRES36	disease	not_reported	Healthy	FN
@@ -767,8 +767,8 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	decision
 30	SAMEA2784465	TRAVELRES37	age_group	Adult	Adult	TP_correct
 30	SAMEA2784465	TRAVELRES37	age_unit	Year	Year	TP_correct
 30	SAMEA2784465	TRAVELRES37	sex		Male	FN
-30	SAMEA2784465	TRAVELRES37	age_min	18	28	TP_wrong
-30	SAMEA2784465	TRAVELRES37	age_max	65	28	TP_wrong
+30	SAMEA2784465	TRAVELRES37	age_min	23	28	TP_wrong
+30	SAMEA2784465	TRAVELRES37	age_max	34	28	TP_wrong
 30	SAMEA2784465	TRAVELRES37	age_years	not_reported	28	FN
 30	SAMEA2784465	TRAVELRES37	antibiotics_current_use	No	No	TP_correct
 30	SAMEA2784465	TRAVELRES37	disease	not_reported	Healthy	FN
@@ -792,8 +792,8 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	decision
 31	SAMEA2784468	TRAVELRES38	age_group	Adult	Adult	TP_correct
 31	SAMEA2784468	TRAVELRES38	age_unit	Year	Year	TP_correct
 31	SAMEA2784468	TRAVELRES38	sex		Male	FN
-31	SAMEA2784468	TRAVELRES38	age_min	18	28	TP_wrong
-31	SAMEA2784468	TRAVELRES38	age_max	65	28	TP_wrong
+31	SAMEA2784468	TRAVELRES38	age_min	23	28	TP_wrong
+31	SAMEA2784468	TRAVELRES38	age_max	34	28	TP_wrong
 31	SAMEA2784468	TRAVELRES38	age_years	not_reported	28	FN
 31	SAMEA2784468	TRAVELRES38	antibiotics_current_use	No	No	TP_correct
 31	SAMEA2784468	TRAVELRES38	disease	not_reported	Healthy	FN
@@ -817,8 +817,8 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	decision
 32	SAMEA2784471	TRAVELRES39	age_group	Adult	Adult	TP_correct
 32	SAMEA2784471	TRAVELRES39	age_unit	Year	Year	TP_correct
 32	SAMEA2784471	TRAVELRES39	sex		Female	FN
-32	SAMEA2784471	TRAVELRES39	age_min	18	23	TP_wrong
-32	SAMEA2784471	TRAVELRES39	age_max	65	23	TP_wrong
+32	SAMEA2784471	TRAVELRES39	age_min	23	23	TP_correct
+32	SAMEA2784471	TRAVELRES39	age_max	34	23	TP_wrong
 32	SAMEA2784471	TRAVELRES39	age_years	not_reported	23	FN
 32	SAMEA2784471	TRAVELRES39	antibiotics_current_use	No	No	TP_correct
 32	SAMEA2784471	TRAVELRES39	disease	not_reported	Healthy	FN
@@ -842,8 +842,8 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	decision
 33	SAMEA2784472	TRAVELRES4	age_group	Adult	Adult	TP_correct
 33	SAMEA2784472	TRAVELRES4	age_unit	Year	Year	TP_correct
 33	SAMEA2784472	TRAVELRES4	sex		Female	FN
-33	SAMEA2784472	TRAVELRES4	age_min	18	25	TP_wrong
-33	SAMEA2784472	TRAVELRES4	age_max	65	25	TP_wrong
+33	SAMEA2784472	TRAVELRES4	age_min	23	25	TP_wrong
+33	SAMEA2784472	TRAVELRES4	age_max	34	25	TP_wrong
 33	SAMEA2784472	TRAVELRES4	age_years	not_reported	25	FN
 33	SAMEA2784472	TRAVELRES4	antibiotics_current_use	No	No	TP_correct
 33	SAMEA2784472	TRAVELRES4	disease	not_reported	Healthy	FN
@@ -867,8 +867,8 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	decision
 34	SAMEA2784473	TRAVELRES40	age_group	Adult	Adult	TP_correct
 34	SAMEA2784473	TRAVELRES40	age_unit	Year	Year	TP_correct
 34	SAMEA2784473	TRAVELRES40	sex		Female	FN
-34	SAMEA2784473	TRAVELRES40	age_min	18	23	TP_wrong
-34	SAMEA2784473	TRAVELRES40	age_max	65	23	TP_wrong
+34	SAMEA2784473	TRAVELRES40	age_min	23	23	TP_correct
+34	SAMEA2784473	TRAVELRES40	age_max	34	23	TP_wrong
 34	SAMEA2784473	TRAVELRES40	age_years	not_reported	23	FN
 34	SAMEA2784473	TRAVELRES40	antibiotics_current_use	No	No	TP_correct
 34	SAMEA2784473	TRAVELRES40	disease	not_reported	Healthy	FN
@@ -892,8 +892,8 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	decision
 35	SAMEA2784477	TRAVELRES41	age_group	Adult	Adult	TP_correct
 35	SAMEA2784477	TRAVELRES41	age_unit	Year	Year	TP_correct
 35	SAMEA2784477	TRAVELRES41	sex		Female	FN
-35	SAMEA2784477	TRAVELRES41	age_min	18	25	TP_wrong
-35	SAMEA2784477	TRAVELRES41	age_max	65	25	TP_wrong
+35	SAMEA2784477	TRAVELRES41	age_min	23	25	TP_wrong
+35	SAMEA2784477	TRAVELRES41	age_max	34	25	TP_wrong
 35	SAMEA2784477	TRAVELRES41	age_years	not_reported	25	FN
 35	SAMEA2784477	TRAVELRES41	antibiotics_current_use	No	No	TP_correct
 35	SAMEA2784477	TRAVELRES41	disease	not_reported	Healthy	FN
@@ -917,8 +917,8 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	decision
 36	SAMEA2784485	TRAVELRES42	age_group	Adult	Adult	TP_correct
 36	SAMEA2784485	TRAVELRES42	age_unit	Year	Year	TP_correct
 36	SAMEA2784485	TRAVELRES42	sex		Female	FN
-36	SAMEA2784485	TRAVELRES42	age_min	18	25	TP_wrong
-36	SAMEA2784485	TRAVELRES42	age_max	65	25	TP_wrong
+36	SAMEA2784485	TRAVELRES42	age_min	23	25	TP_wrong
+36	SAMEA2784485	TRAVELRES42	age_max	34	25	TP_wrong
 36	SAMEA2784485	TRAVELRES42	age_years	not_reported	25	FN
 36	SAMEA2784485	TRAVELRES42	antibiotics_current_use	No	No	TP_correct
 36	SAMEA2784485	TRAVELRES42	disease	not_reported	Healthy	FN
@@ -942,8 +942,8 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	decision
 37	SAMEA2784488	TRAVELRES43	age_group	Adult	Adult	TP_correct
 37	SAMEA2784488	TRAVELRES43	age_unit	Year	Year	TP_correct
 37	SAMEA2784488	TRAVELRES43	sex		Male	FN
-37	SAMEA2784488	TRAVELRES43	age_min	18	23	TP_wrong
-37	SAMEA2784488	TRAVELRES43	age_max	65	23	TP_wrong
+37	SAMEA2784488	TRAVELRES43	age_min	23	23	TP_correct
+37	SAMEA2784488	TRAVELRES43	age_max	34	23	TP_wrong
 37	SAMEA2784488	TRAVELRES43	age_years	not_reported	23	FN
 37	SAMEA2784488	TRAVELRES43	antibiotics_current_use	No	No	TP_correct
 37	SAMEA2784488	TRAVELRES43	disease	not_reported	Healthy	FN
@@ -967,8 +967,8 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	decision
 38	SAMEA2784492	TRAVELRES44	age_group	Adult	Adult	TP_correct
 38	SAMEA2784492	TRAVELRES44	age_unit	Year	Year	TP_correct
 38	SAMEA2784492	TRAVELRES44	sex		Male	FN
-38	SAMEA2784492	TRAVELRES44	age_min	18	23	TP_wrong
-38	SAMEA2784492	TRAVELRES44	age_max	65	23	TP_wrong
+38	SAMEA2784492	TRAVELRES44	age_min	23	23	TP_correct
+38	SAMEA2784492	TRAVELRES44	age_max	34	23	TP_wrong
 38	SAMEA2784492	TRAVELRES44	age_years	not_reported	23	FN
 38	SAMEA2784492	TRAVELRES44	antibiotics_current_use	No	No	TP_correct
 38	SAMEA2784492	TRAVELRES44	disease	not_reported	Healthy	FN
@@ -992,8 +992,8 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	decision
 39	SAMEA2784494	TRAVELRES45	age_group	Adult	Adult	TP_correct
 39	SAMEA2784494	TRAVELRES45	age_unit	Year	Year	TP_correct
 39	SAMEA2784494	TRAVELRES45	sex		Female	FN
-39	SAMEA2784494	TRAVELRES45	age_min	18	29	TP_wrong
-39	SAMEA2784494	TRAVELRES45	age_max	65	29	TP_wrong
+39	SAMEA2784494	TRAVELRES45	age_min	23	29	TP_wrong
+39	SAMEA2784494	TRAVELRES45	age_max	34	29	TP_wrong
 39	SAMEA2784494	TRAVELRES45	age_years	not_reported	29	FN
 39	SAMEA2784494	TRAVELRES45	antibiotics_current_use	No	No	TP_correct
 39	SAMEA2784494	TRAVELRES45	disease	not_reported	Healthy	FN
@@ -1017,8 +1017,8 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	decision
 40	SAMEA2784499	TRAVELRES46	age_group	Adult	Adult	TP_correct
 40	SAMEA2784499	TRAVELRES46	age_unit	Year	Year	TP_correct
 40	SAMEA2784499	TRAVELRES46	sex		Female	FN
-40	SAMEA2784499	TRAVELRES46	age_min	18	29	TP_wrong
-40	SAMEA2784499	TRAVELRES46	age_max	65	29	TP_wrong
+40	SAMEA2784499	TRAVELRES46	age_min	23	29	TP_wrong
+40	SAMEA2784499	TRAVELRES46	age_max	34	29	TP_wrong
 40	SAMEA2784499	TRAVELRES46	age_years	not_reported	29	FN
 40	SAMEA2784499	TRAVELRES46	antibiotics_current_use	No	No	TP_correct
 40	SAMEA2784499	TRAVELRES46	disease	not_reported	Healthy	FN
@@ -1042,8 +1042,8 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	decision
 41	SAMEA2784500	TRAVELRES47	age_group	Adult	Adult	TP_correct
 41	SAMEA2784500	TRAVELRES47	age_unit	Year	Year	TP_correct
 41	SAMEA2784500	TRAVELRES47	sex		Female	FN
-41	SAMEA2784500	TRAVELRES47	age_min	18	28	TP_wrong
-41	SAMEA2784500	TRAVELRES47	age_max	65	28	TP_wrong
+41	SAMEA2784500	TRAVELRES47	age_min	23	28	TP_wrong
+41	SAMEA2784500	TRAVELRES47	age_max	34	28	TP_wrong
 41	SAMEA2784500	TRAVELRES47	age_years	not_reported	28	FN
 41	SAMEA2784500	TRAVELRES47	antibiotics_current_use	No	No	TP_correct
 41	SAMEA2784500	TRAVELRES47	disease	not_reported	Healthy	FN
@@ -1067,8 +1067,8 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	decision
 42	SAMEA2784501	TRAVELRES48	age_group	Adult	Adult	TP_correct
 42	SAMEA2784501	TRAVELRES48	age_unit	Year	Year	TP_correct
 42	SAMEA2784501	TRAVELRES48	sex		Female	FN
-42	SAMEA2784501	TRAVELRES48	age_min	18	28	TP_wrong
-42	SAMEA2784501	TRAVELRES48	age_max	65	28	TP_wrong
+42	SAMEA2784501	TRAVELRES48	age_min	23	28	TP_wrong
+42	SAMEA2784501	TRAVELRES48	age_max	34	28	TP_wrong
 42	SAMEA2784501	TRAVELRES48	age_years	not_reported	28	FN
 42	SAMEA2784501	TRAVELRES48	antibiotics_current_use	No	No	TP_correct
 42	SAMEA2784501	TRAVELRES48	disease	not_reported	Healthy	FN
@@ -1092,8 +1092,8 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	decision
 43	SAMEA2784502	TRAVELRES49	age_group	Adult	Adult	TP_correct
 43	SAMEA2784502	TRAVELRES49	age_unit	Year	Year	TP_correct
 43	SAMEA2784502	TRAVELRES49	sex		Male	FN
-43	SAMEA2784502	TRAVELRES49	age_min	18	28	TP_wrong
-43	SAMEA2784502	TRAVELRES49	age_max	65	28	TP_wrong
+43	SAMEA2784502	TRAVELRES49	age_min	23	28	TP_wrong
+43	SAMEA2784502	TRAVELRES49	age_max	34	28	TP_wrong
 43	SAMEA2784502	TRAVELRES49	age_years	not_reported	28	FN
 43	SAMEA2784502	TRAVELRES49	antibiotics_current_use	No	No	TP_correct
 43	SAMEA2784502	TRAVELRES49	disease	not_reported	Healthy	FN
@@ -1117,8 +1117,8 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	decision
 44	SAMEA2784503	TRAVELRES5	age_group	Adult	Adult	TP_correct
 44	SAMEA2784503	TRAVELRES5	age_unit	Year	Year	TP_correct
 44	SAMEA2784503	TRAVELRES5	sex		Female	FN
-44	SAMEA2784503	TRAVELRES5	age_min	18	26	TP_wrong
-44	SAMEA2784503	TRAVELRES5	age_max	65	26	TP_wrong
+44	SAMEA2784503	TRAVELRES5	age_min	23	26	TP_wrong
+44	SAMEA2784503	TRAVELRES5	age_max	34	26	TP_wrong
 44	SAMEA2784503	TRAVELRES5	age_years	not_reported	26	FN
 44	SAMEA2784503	TRAVELRES5	antibiotics_current_use	No	No	TP_correct
 44	SAMEA2784503	TRAVELRES5	disease	not_reported	Healthy	FN
@@ -1142,8 +1142,8 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	decision
 45	SAMEA2784505	TRAVELRES50	age_group	Adult	Adult	TP_correct
 45	SAMEA2784505	TRAVELRES50	age_unit	Year	Year	TP_correct
 45	SAMEA2784505	TRAVELRES50	sex		Male	FN
-45	SAMEA2784505	TRAVELRES50	age_min	18	28	TP_wrong
-45	SAMEA2784505	TRAVELRES50	age_max	65	28	TP_wrong
+45	SAMEA2784505	TRAVELRES50	age_min	23	28	TP_wrong
+45	SAMEA2784505	TRAVELRES50	age_max	34	28	TP_wrong
 45	SAMEA2784505	TRAVELRES50	age_years	not_reported	28	FN
 45	SAMEA2784505	TRAVELRES50	antibiotics_current_use	No	No	TP_correct
 45	SAMEA2784505	TRAVELRES50	disease	not_reported	Healthy	FN
@@ -1167,8 +1167,8 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	decision
 46	SAMEA2784511	TRAVELRES51	age_group	Adult	Adult	TP_correct
 46	SAMEA2784511	TRAVELRES51	age_unit	Year	Year	TP_correct
 46	SAMEA2784511	TRAVELRES51	sex		Female	FN
-46	SAMEA2784511	TRAVELRES51	age_min	18	29	TP_wrong
-46	SAMEA2784511	TRAVELRES51	age_max	65	29	TP_wrong
+46	SAMEA2784511	TRAVELRES51	age_min	23	29	TP_wrong
+46	SAMEA2784511	TRAVELRES51	age_max	34	29	TP_wrong
 46	SAMEA2784511	TRAVELRES51	age_years	not_reported	29	FN
 46	SAMEA2784511	TRAVELRES51	antibiotics_current_use	No	No	TP_correct
 46	SAMEA2784511	TRAVELRES51	disease	not_reported	Healthy	FN
@@ -1192,8 +1192,8 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	decision
 47	SAMEA2784514	TRAVELRES52	age_group	Adult	Adult	TP_correct
 47	SAMEA2784514	TRAVELRES52	age_unit	Year	Year	TP_correct
 47	SAMEA2784514	TRAVELRES52	sex		Female	FN
-47	SAMEA2784514	TRAVELRES52	age_min	18	29	TP_wrong
-47	SAMEA2784514	TRAVELRES52	age_max	65	29	TP_wrong
+47	SAMEA2784514	TRAVELRES52	age_min	23	29	TP_wrong
+47	SAMEA2784514	TRAVELRES52	age_max	34	29	TP_wrong
 47	SAMEA2784514	TRAVELRES52	age_years	not_reported	29	FN
 47	SAMEA2784514	TRAVELRES52	antibiotics_current_use	No	No	TP_correct
 47	SAMEA2784514	TRAVELRES52	disease	not_reported	Healthy	FN
@@ -1217,8 +1217,8 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	decision
 48	SAMEA2784516	TRAVELRES53	age_group	Adult	Adult	TP_correct
 48	SAMEA2784516	TRAVELRES53	age_unit	Year	Year	TP_correct
 48	SAMEA2784516	TRAVELRES53	sex		Female	FN
-48	SAMEA2784516	TRAVELRES53	age_min	18	24	TP_wrong
-48	SAMEA2784516	TRAVELRES53	age_max	65	24	TP_wrong
+48	SAMEA2784516	TRAVELRES53	age_min	23	24	TP_correct
+48	SAMEA2784516	TRAVELRES53	age_max	34	24	TP_wrong
 48	SAMEA2784516	TRAVELRES53	age_years	not_reported	24	FN
 48	SAMEA2784516	TRAVELRES53	antibiotics_current_use	No	No	TP_correct
 48	SAMEA2784516	TRAVELRES53	disease	not_reported	Healthy	FN
@@ -1242,8 +1242,8 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	decision
 49	SAMEA2784453	TRAVELRES54	age_group	Adult	Adult	TP_correct
 49	SAMEA2784453	TRAVELRES54	age_unit	Year	Year	TP_correct
 49	SAMEA2784453	TRAVELRES54	sex		Female	FN
-49	SAMEA2784453	TRAVELRES54	age_min	18	24	TP_wrong
-49	SAMEA2784453	TRAVELRES54	age_max	65	24	TP_wrong
+49	SAMEA2784453	TRAVELRES54	age_min	23	24	TP_correct
+49	SAMEA2784453	TRAVELRES54	age_max	34	24	TP_wrong
 49	SAMEA2784453	TRAVELRES54	age_years	not_reported	24	FN
 49	SAMEA2784453	TRAVELRES54	antibiotics_current_use	No	No	TP_correct
 49	SAMEA2784453	TRAVELRES54	disease	not_reported	Healthy	FN
@@ -1267,8 +1267,8 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	decision
 50	SAMEA2784458	TRAVELRES55	age_group	Adult	Adult	TP_correct
 50	SAMEA2784458	TRAVELRES55	age_unit	Year	Year	TP_correct
 50	SAMEA2784458	TRAVELRES55	sex		Female	FN
-50	SAMEA2784458	TRAVELRES55	age_min	18	23	TP_wrong
-50	SAMEA2784458	TRAVELRES55	age_max	65	23	TP_wrong
+50	SAMEA2784458	TRAVELRES55	age_min	23	23	TP_correct
+50	SAMEA2784458	TRAVELRES55	age_max	34	23	TP_wrong
 50	SAMEA2784458	TRAVELRES55	age_years	not_reported	23	FN
 50	SAMEA2784458	TRAVELRES55	antibiotics_current_use	No	No	TP_correct
 50	SAMEA2784458	TRAVELRES55	disease	not_reported	Healthy	FN
@@ -1292,8 +1292,8 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	decision
 51	SAMEA2784462	TRAVELRES56	age_group	Adult	Adult	TP_correct
 51	SAMEA2784462	TRAVELRES56	age_unit	Year	Year	TP_correct
 51	SAMEA2784462	TRAVELRES56	sex		Female	FN
-51	SAMEA2784462	TRAVELRES56	age_min	18	23	TP_wrong
-51	SAMEA2784462	TRAVELRES56	age_max	65	23	TP_wrong
+51	SAMEA2784462	TRAVELRES56	age_min	23	23	TP_correct
+51	SAMEA2784462	TRAVELRES56	age_max	34	23	TP_wrong
 51	SAMEA2784462	TRAVELRES56	age_years	not_reported	23	FN
 51	SAMEA2784462	TRAVELRES56	antibiotics_current_use	No	No	TP_correct
 51	SAMEA2784462	TRAVELRES56	disease	not_reported	Healthy	FN
@@ -1317,8 +1317,8 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	decision
 52	SAMEA2784464	TRAVELRES57	age_group	Adult	Adult	TP_correct
 52	SAMEA2784464	TRAVELRES57	age_unit	Year	Year	TP_correct
 52	SAMEA2784464	TRAVELRES57	sex		Female	FN
-52	SAMEA2784464	TRAVELRES57	age_min	18	24	TP_wrong
-52	SAMEA2784464	TRAVELRES57	age_max	65	24	TP_wrong
+52	SAMEA2784464	TRAVELRES57	age_min	23	24	TP_correct
+52	SAMEA2784464	TRAVELRES57	age_max	34	24	TP_wrong
 52	SAMEA2784464	TRAVELRES57	age_years	not_reported	24	FN
 52	SAMEA2784464	TRAVELRES57	antibiotics_current_use	No	No	TP_correct
 52	SAMEA2784464	TRAVELRES57	disease	not_reported	Healthy	FN
@@ -1342,8 +1342,8 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	decision
 53	SAMEA2784467	TRAVELRES58	age_group	Adult	Adult	TP_correct
 53	SAMEA2784467	TRAVELRES58	age_unit	Year	Year	TP_correct
 53	SAMEA2784467	TRAVELRES58	sex		Female	FN
-53	SAMEA2784467	TRAVELRES58	age_min	18	24	TP_wrong
-53	SAMEA2784467	TRAVELRES58	age_max	65	24	TP_wrong
+53	SAMEA2784467	TRAVELRES58	age_min	23	24	TP_correct
+53	SAMEA2784467	TRAVELRES58	age_max	34	24	TP_wrong
 53	SAMEA2784467	TRAVELRES58	age_years	not_reported	24	FN
 53	SAMEA2784467	TRAVELRES58	antibiotics_current_use	No	No	TP_correct
 53	SAMEA2784467	TRAVELRES58	disease	not_reported	Healthy	FN
@@ -1367,8 +1367,8 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	decision
 54	SAMEA2784470	TRAVELRES59	age_group	Adult	Adult	TP_correct
 54	SAMEA2784470	TRAVELRES59	age_unit	Year	Year	TP_correct
 54	SAMEA2784470	TRAVELRES59	sex		Female	FN
-54	SAMEA2784470	TRAVELRES59	age_min	18	25	TP_wrong
-54	SAMEA2784470	TRAVELRES59	age_max	65	25	TP_wrong
+54	SAMEA2784470	TRAVELRES59	age_min	23	25	TP_wrong
+54	SAMEA2784470	TRAVELRES59	age_max	34	25	TP_wrong
 54	SAMEA2784470	TRAVELRES59	age_years	not_reported	25	FN
 54	SAMEA2784470	TRAVELRES59	antibiotics_current_use	No	No	TP_correct
 54	SAMEA2784470	TRAVELRES59	disease	not_reported	Healthy	FN
@@ -1392,8 +1392,8 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	decision
 55	SAMEA2784474	TRAVELRES6	age_group	Adult	Adult	TP_correct
 55	SAMEA2784474	TRAVELRES6	age_unit	Year	Year	TP_correct
 55	SAMEA2784474	TRAVELRES6	sex		Female	FN
-55	SAMEA2784474	TRAVELRES6	age_min	18	26	TP_wrong
-55	SAMEA2784474	TRAVELRES6	age_max	65	26	TP_wrong
+55	SAMEA2784474	TRAVELRES6	age_min	23	26	TP_wrong
+55	SAMEA2784474	TRAVELRES6	age_max	34	26	TP_wrong
 55	SAMEA2784474	TRAVELRES6	age_years	not_reported	26	FN
 55	SAMEA2784474	TRAVELRES6	antibiotics_current_use	No	No	TP_correct
 55	SAMEA2784474	TRAVELRES6	disease	not_reported	Healthy	FN
@@ -1417,8 +1417,8 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	decision
 56	SAMEA2784475	TRAVELRES60	age_group	Adult	Adult	TP_correct
 56	SAMEA2784475	TRAVELRES60	age_unit	Year	Year	TP_correct
 56	SAMEA2784475	TRAVELRES60	sex		Female	FN
-56	SAMEA2784475	TRAVELRES60	age_min	18	25	TP_wrong
-56	SAMEA2784475	TRAVELRES60	age_max	65	25	TP_wrong
+56	SAMEA2784475	TRAVELRES60	age_min	23	25	TP_wrong
+56	SAMEA2784475	TRAVELRES60	age_max	34	25	TP_wrong
 56	SAMEA2784475	TRAVELRES60	age_years	not_reported	25	FN
 56	SAMEA2784475	TRAVELRES60	antibiotics_current_use	No	No	TP_correct
 56	SAMEA2784475	TRAVELRES60	disease	not_reported	Healthy	FN
@@ -1442,8 +1442,8 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	decision
 57	SAMEA2784480	TRAVELRES61	age_group	Adult	Adult	TP_correct
 57	SAMEA2784480	TRAVELRES61	age_unit	Year	Year	TP_correct
 57	SAMEA2784480	TRAVELRES61	sex		Male	FN
-57	SAMEA2784480	TRAVELRES61	age_min	18	26	TP_wrong
-57	SAMEA2784480	TRAVELRES61	age_max	65	26	TP_wrong
+57	SAMEA2784480	TRAVELRES61	age_min	23	26	TP_wrong
+57	SAMEA2784480	TRAVELRES61	age_max	34	26	TP_wrong
 57	SAMEA2784480	TRAVELRES61	age_years	not_reported	26	FN
 57	SAMEA2784480	TRAVELRES61	antibiotics_current_use	No	No	TP_correct
 57	SAMEA2784480	TRAVELRES61	disease	not_reported	Healthy	FN
@@ -1467,8 +1467,8 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	decision
 58	SAMEA2784481	TRAVELRES62	age_group	Adult	Adult	TP_correct
 58	SAMEA2784481	TRAVELRES62	age_unit	Year	Year	TP_correct
 58	SAMEA2784481	TRAVELRES62	sex		Male	FN
-58	SAMEA2784481	TRAVELRES62	age_min	18	26	TP_wrong
-58	SAMEA2784481	TRAVELRES62	age_max	65	26	TP_wrong
+58	SAMEA2784481	TRAVELRES62	age_min	23	26	TP_wrong
+58	SAMEA2784481	TRAVELRES62	age_max	34	26	TP_wrong
 58	SAMEA2784481	TRAVELRES62	age_years	not_reported	26	FN
 58	SAMEA2784481	TRAVELRES62	antibiotics_current_use	No	No	TP_correct
 58	SAMEA2784481	TRAVELRES62	disease	not_reported	Healthy	FN
@@ -1492,8 +1492,8 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	decision
 59	SAMEA2784486	TRAVELRES63	age_group	Adult	Adult	TP_correct
 59	SAMEA2784486	TRAVELRES63	age_unit	Year	Year	TP_correct
 59	SAMEA2784486	TRAVELRES63	sex		Female	FN
-59	SAMEA2784486	TRAVELRES63	age_min	18	25	TP_wrong
-59	SAMEA2784486	TRAVELRES63	age_max	65	25	TP_wrong
+59	SAMEA2784486	TRAVELRES63	age_min	23	25	TP_wrong
+59	SAMEA2784486	TRAVELRES63	age_max	34	25	TP_wrong
 59	SAMEA2784486	TRAVELRES63	age_years	not_reported	25	FN
 59	SAMEA2784486	TRAVELRES63	antibiotics_current_use	No	No	TP_correct
 59	SAMEA2784486	TRAVELRES63	disease	not_reported	Healthy	FN
@@ -1517,8 +1517,8 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	decision
 60	SAMEA2784487	TRAVELRES64	age_group	Adult	Adult	TP_correct
 60	SAMEA2784487	TRAVELRES64	age_unit	Year	Year	TP_correct
 60	SAMEA2784487	TRAVELRES64	sex		Female	FN
-60	SAMEA2784487	TRAVELRES64	age_min	18	25	TP_wrong
-60	SAMEA2784487	TRAVELRES64	age_max	65	25	TP_wrong
+60	SAMEA2784487	TRAVELRES64	age_min	23	25	TP_wrong
+60	SAMEA2784487	TRAVELRES64	age_max	34	25	TP_wrong
 60	SAMEA2784487	TRAVELRES64	age_years	not_reported	25	FN
 60	SAMEA2784487	TRAVELRES64	antibiotics_current_use	No	No	TP_correct
 60	SAMEA2784487	TRAVELRES64	disease	not_reported	Healthy	FN
@@ -1542,8 +1542,8 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	decision
 61	SAMEA2784489	TRAVELRES65	age_group	Adult	Adult	TP_correct
 61	SAMEA2784489	TRAVELRES65	age_unit	Year	Year	TP_correct
 61	SAMEA2784489	TRAVELRES65	sex		Female	FN
-61	SAMEA2784489	TRAVELRES65	age_min	18	28	TP_wrong
-61	SAMEA2784489	TRAVELRES65	age_max	65	28	TP_wrong
+61	SAMEA2784489	TRAVELRES65	age_min	23	28	TP_wrong
+61	SAMEA2784489	TRAVELRES65	age_max	34	28	TP_wrong
 61	SAMEA2784489	TRAVELRES65	age_years	not_reported	28	FN
 61	SAMEA2784489	TRAVELRES65	antibiotics_current_use	No	No	TP_correct
 61	SAMEA2784489	TRAVELRES65	disease	not_reported	Healthy	FN
@@ -1567,8 +1567,8 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	decision
 62	SAMEA2784491	TRAVELRES66	age_group	Adult	Adult	TP_correct
 62	SAMEA2784491	TRAVELRES66	age_unit	Year	Year	TP_correct
 62	SAMEA2784491	TRAVELRES66	sex		Female	FN
-62	SAMEA2784491	TRAVELRES66	age_min	18	28	TP_wrong
-62	SAMEA2784491	TRAVELRES66	age_max	65	28	TP_wrong
+62	SAMEA2784491	TRAVELRES66	age_min	23	28	TP_wrong
+62	SAMEA2784491	TRAVELRES66	age_max	34	28	TP_wrong
 62	SAMEA2784491	TRAVELRES66	age_years	not_reported	28	FN
 62	SAMEA2784491	TRAVELRES66	antibiotics_current_use	No	No	TP_correct
 62	SAMEA2784491	TRAVELRES66	disease	not_reported	Healthy	FN
@@ -1592,8 +1592,8 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	decision
 63	SAMEA2784493	TRAVELRES67	age_group	Adult	Adult	TP_correct
 63	SAMEA2784493	TRAVELRES67	age_unit	Year	Year	TP_correct
 63	SAMEA2784493	TRAVELRES67	sex		Male	FN
-63	SAMEA2784493	TRAVELRES67	age_min	18	25	TP_wrong
-63	SAMEA2784493	TRAVELRES67	age_max	65	25	TP_wrong
+63	SAMEA2784493	TRAVELRES67	age_min	23	25	TP_wrong
+63	SAMEA2784493	TRAVELRES67	age_max	34	25	TP_wrong
 63	SAMEA2784493	TRAVELRES67	age_years	not_reported	25	FN
 63	SAMEA2784493	TRAVELRES67	antibiotics_current_use	No	No	TP_correct
 63	SAMEA2784493	TRAVELRES67	disease	not_reported	Healthy	FN
@@ -1617,8 +1617,8 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	decision
 64	SAMEA2784496	TRAVELRES68	age_group	Adult	Adult	TP_correct
 64	SAMEA2784496	TRAVELRES68	age_unit	Year	Year	TP_correct
 64	SAMEA2784496	TRAVELRES68	sex		Male	FN
-64	SAMEA2784496	TRAVELRES68	age_min	18	25	TP_wrong
-64	SAMEA2784496	TRAVELRES68	age_max	65	25	TP_wrong
+64	SAMEA2784496	TRAVELRES68	age_min	23	25	TP_wrong
+64	SAMEA2784496	TRAVELRES68	age_max	34	25	TP_wrong
 64	SAMEA2784496	TRAVELRES68	age_years	not_reported	25	FN
 64	SAMEA2784496	TRAVELRES68	antibiotics_current_use	No	No	TP_correct
 64	SAMEA2784496	TRAVELRES68	disease	not_reported	Healthy	FN
@@ -1642,8 +1642,8 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	decision
 65	SAMEA2784506	TRAVELRES69	age_group	Adult	Adult	TP_correct
 65	SAMEA2784506	TRAVELRES69	age_unit	Year	Year	TP_correct
 65	SAMEA2784506	TRAVELRES69	sex		Female	FN
-65	SAMEA2784506	TRAVELRES69	age_min	18	28	TP_wrong
-65	SAMEA2784506	TRAVELRES69	age_max	65	28	TP_wrong
+65	SAMEA2784506	TRAVELRES69	age_min	23	28	TP_wrong
+65	SAMEA2784506	TRAVELRES69	age_max	34	28	TP_wrong
 65	SAMEA2784506	TRAVELRES69	age_years	not_reported	28	FN
 65	SAMEA2784506	TRAVELRES69	antibiotics_current_use	No	No	TP_correct
 65	SAMEA2784506	TRAVELRES69	disease	not_reported	Healthy	FN
@@ -1667,8 +1667,8 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	decision
 66	SAMEA2784509	TRAVELRES7	age_group	Adult	Adult	TP_correct
 66	SAMEA2784509	TRAVELRES7	age_unit	Year	Year	TP_correct
 66	SAMEA2784509	TRAVELRES7	sex		Female	FN
-66	SAMEA2784509	TRAVELRES7	age_min	18	23	TP_wrong
-66	SAMEA2784509	TRAVELRES7	age_max	65	23	TP_wrong
+66	SAMEA2784509	TRAVELRES7	age_min	23	23	TP_correct
+66	SAMEA2784509	TRAVELRES7	age_max	34	23	TP_wrong
 66	SAMEA2784509	TRAVELRES7	age_years	not_reported	23	FN
 66	SAMEA2784509	TRAVELRES7	antibiotics_current_use	No	No	TP_correct
 66	SAMEA2784509	TRAVELRES7	disease	not_reported	Healthy	FN
@@ -1692,8 +1692,8 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	decision
 67	SAMEA2784510	TRAVELRES70	age_group	Adult	Adult	TP_correct
 67	SAMEA2784510	TRAVELRES70	age_unit	Year	Year	TP_correct
 67	SAMEA2784510	TRAVELRES70	sex		Female	FN
-67	SAMEA2784510	TRAVELRES70	age_min	18	28	TP_wrong
-67	SAMEA2784510	TRAVELRES70	age_max	65	28	TP_wrong
+67	SAMEA2784510	TRAVELRES70	age_min	23	28	TP_wrong
+67	SAMEA2784510	TRAVELRES70	age_max	34	28	TP_wrong
 67	SAMEA2784510	TRAVELRES70	age_years	not_reported	28	FN
 67	SAMEA2784510	TRAVELRES70	antibiotics_current_use	No	No	TP_correct
 67	SAMEA2784510	TRAVELRES70	disease	not_reported	Healthy	FN
@@ -1717,8 +1717,8 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	decision
 68	SAMEA2784512	TRAVELRES8	age_group	Adult	Adult	TP_correct
 68	SAMEA2784512	TRAVELRES8	age_unit	Year	Year	TP_correct
 68	SAMEA2784512	TRAVELRES8	sex		Female	FN
-68	SAMEA2784512	TRAVELRES8	age_min	18	23	TP_wrong
-68	SAMEA2784512	TRAVELRES8	age_max	65	23	TP_wrong
+68	SAMEA2784512	TRAVELRES8	age_min	23	23	TP_correct
+68	SAMEA2784512	TRAVELRES8	age_max	34	23	TP_wrong
 68	SAMEA2784512	TRAVELRES8	age_years	not_reported	23	FN
 68	SAMEA2784512	TRAVELRES8	antibiotics_current_use	No	No	TP_correct
 68	SAMEA2784512	TRAVELRES8	disease	not_reported	Healthy	FN
@@ -1742,8 +1742,8 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	decision
 69	SAMEA2784515	TRAVELRES9	age_group	Adult	Adult	TP_correct
 69	SAMEA2784515	TRAVELRES9	age_unit	Year	Year	TP_correct
 69	SAMEA2784515	TRAVELRES9	sex		Female	FN
-69	SAMEA2784515	TRAVELRES9	age_min	18	34	TP_wrong
-69	SAMEA2784515	TRAVELRES9	age_max	65	34	TP_wrong
+69	SAMEA2784515	TRAVELRES9	age_min	23	34	TP_wrong
+69	SAMEA2784515	TRAVELRES9	age_max	34	34	TP_correct
 69	SAMEA2784515	TRAVELRES9	age_years	not_reported	34	FN
 69	SAMEA2784515	TRAVELRES9	antibiotics_current_use	No	No	TP_correct
 69	SAMEA2784515	TRAVELRES9	disease	not_reported	Healthy	FN

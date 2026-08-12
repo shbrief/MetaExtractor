@@ -390,16 +390,16 @@
       "notes": "Only lower age bound reported for human RA patients; no upper limit specified."
     },
     "age_max": {
-      "value": "65",
+      "value": "not_reported",
       "by_subgroup": null,
       "unit": null,
       "normalized_value": null,
       "normalized_unit": null,
-      "extraction_type": "derived",
+      "extraction_type": "directly_stated",
       "confidence": "high",
       "evidence_quote": "",
       "section": "",
-      "notes": "No upper age bound reported for human participants. [age_min/age_max set from schema age-bound rule]"
+      "notes": "No upper age bound reported for human participants."
     },
     "age_years": {
       "value": "not_reported",
@@ -899,8 +899,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451451",
@@ -927,8 +926,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451452",
@@ -955,8 +953,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451456",
@@ -983,8 +980,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451459",
@@ -1011,8 +1007,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451461",
@@ -1039,8 +1034,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451727",
@@ -1067,8 +1061,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451731",
@@ -1095,8 +1088,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451736",
@@ -1123,8 +1115,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451738",
@@ -1151,8 +1142,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451740",
@@ -1179,8 +1169,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451743",
@@ -1207,8 +1196,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451745",
@@ -1235,8 +1223,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451765",
@@ -1263,8 +1250,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451768",
@@ -1291,8 +1277,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451771",
@@ -1319,8 +1304,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451773",
@@ -1347,8 +1331,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451775",
@@ -1375,8 +1358,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451776",
@@ -1403,8 +1385,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451783",
@@ -1431,8 +1412,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451787",
@@ -1459,8 +1439,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451794",
@@ -1487,8 +1466,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451796",
@@ -1515,8 +1493,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451800",
@@ -1543,8 +1520,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451801",
@@ -1571,8 +1547,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451802",
@@ -1599,8 +1574,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451804",
@@ -1627,8 +1601,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451809",
@@ -1655,8 +1628,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451811",
@@ -1683,8 +1655,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451813",
@@ -1711,8 +1682,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451815",
@@ -1739,8 +1709,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451816",
@@ -1767,8 +1736,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451820",
@@ -1795,8 +1763,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451835",
@@ -1823,8 +1790,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451837",
@@ -1851,8 +1817,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451841",
@@ -1879,8 +1844,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451843",
@@ -1907,8 +1871,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451844",
@@ -1935,8 +1898,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451848",
@@ -1963,8 +1925,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451849",
@@ -1991,8 +1952,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451852",
@@ -2019,8 +1979,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451858",
@@ -2047,8 +2006,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451859",
@@ -2075,8 +2033,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451860",
@@ -2103,8 +2060,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451861",
@@ -2131,8 +2087,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451862",
@@ -2159,8 +2114,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451864",
@@ -2187,8 +2141,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451869",
@@ -2215,8 +2168,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451870",
@@ -2243,8 +2195,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451880",
@@ -2271,8 +2222,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451881",
@@ -2299,8 +2249,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451884",
@@ -2327,8 +2276,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451885",
@@ -2355,8 +2303,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451889",
@@ -2383,8 +2330,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451890",
@@ -2411,8 +2357,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451891",
@@ -2439,8 +2384,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451895",
@@ -2467,8 +2411,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451897",
@@ -2495,8 +2438,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451942",
@@ -2523,8 +2465,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451944",
@@ -2551,8 +2492,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451948",
@@ -2579,8 +2519,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451952",
@@ -2607,8 +2546,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451954",
@@ -2635,8 +2573,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451955",
@@ -2663,8 +2600,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12452152",
@@ -2691,8 +2627,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12452153",
@@ -2719,8 +2654,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12452157",
@@ -2747,8 +2681,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12452158",
@@ -2775,8 +2708,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12452162",
@@ -2803,8 +2735,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12452163",
@@ -2831,8 +2762,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12452167",
@@ -2859,8 +2789,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12452170",
@@ -2887,8 +2816,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12452173",
@@ -2915,8 +2843,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12452174",
@@ -2943,8 +2870,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12452180",
@@ -2971,8 +2897,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12452182",
@@ -2999,8 +2924,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12452183",
@@ -3027,8 +2951,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12454620",
@@ -3055,8 +2978,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12454621",
@@ -3083,8 +3005,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12454624",
@@ -3111,8 +3032,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12454628",
@@ -3139,8 +3059,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12454631",
@@ -3167,8 +3086,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12454633",
@@ -3195,8 +3113,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12454634",
@@ -3223,8 +3140,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12454635",
@@ -3251,8 +3167,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12454636",
@@ -3279,8 +3194,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12454638",
@@ -3307,8 +3221,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12454645",
@@ -3335,8 +3248,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12454649",
@@ -3363,8 +3275,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12454650",
@@ -3391,8 +3302,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12454651",
@@ -3419,8 +3329,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12454656",
@@ -3447,8 +3356,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12454667",
@@ -3475,8 +3383,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12454671",
@@ -3503,8 +3410,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12454672",
@@ -3531,8 +3437,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12454676",
@@ -3559,8 +3464,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12454689",
@@ -3587,8 +3491,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12454690",
@@ -3615,8 +3518,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12454691",
@@ -3643,8 +3545,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12454699",
@@ -3671,8 +3572,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12454705",
@@ -3699,8 +3599,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12454708",
@@ -3727,8 +3626,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12454712",
@@ -3755,8 +3653,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12454713",
@@ -3783,8 +3680,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12454719",
@@ -3811,8 +3707,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12454720",
@@ -3839,8 +3734,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12454721",
@@ -3867,8 +3761,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12455123",
@@ -3895,8 +3788,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12455125",
@@ -3923,8 +3815,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12455127",
@@ -3951,8 +3842,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12455139",
@@ -3979,8 +3869,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12455141",
@@ -4007,8 +3896,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12455142",
@@ -4035,8 +3923,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12455143",
@@ -4063,8 +3950,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12455146",
@@ -4091,8 +3977,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12455147",
@@ -4119,8 +4004,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12455148",
@@ -4147,8 +4031,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12455150",
@@ -4175,8 +4058,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12455151",
@@ -4203,8 +4085,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12455152",
@@ -4231,8 +4112,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12455156",
@@ -4259,8 +4139,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12455157",
@@ -4287,8 +4166,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12455168",
@@ -4315,8 +4193,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12455507",
@@ -4343,8 +4220,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12455510",
@@ -4371,8 +4247,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12455513",
@@ -4399,8 +4274,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12455514",
@@ -4427,8 +4301,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12455516",
@@ -4455,8 +4328,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12455521",
@@ -4483,8 +4355,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12455522",
@@ -4511,8 +4382,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12455523",
@@ -4539,8 +4409,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12455524",
@@ -4567,8 +4436,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12455527",
@@ -4595,8 +4463,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12455528",
@@ -4623,8 +4490,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12455530",
@@ -4651,8 +4517,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12455532",
@@ -4679,8 +4544,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12455535",
@@ -4707,8 +4571,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12455537",
@@ -4735,8 +4598,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12455540",
@@ -4763,8 +4625,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451445",
@@ -4791,8 +4652,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451447",
@@ -4819,8 +4679,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451448",
@@ -4847,8 +4706,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451449",
@@ -4875,8 +4733,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451453",
@@ -4903,8 +4760,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451457",
@@ -4931,8 +4787,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451458",
@@ -4959,8 +4814,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451725",
@@ -4987,8 +4841,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451728",
@@ -5015,8 +4868,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451729",
@@ -5043,8 +4895,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451732",
@@ -5071,8 +4922,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451733",
@@ -5099,8 +4949,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451734",
@@ -5127,8 +4976,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451737",
@@ -5155,8 +5003,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451739",
@@ -5183,8 +5030,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451741",
@@ -5211,8 +5057,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451744",
@@ -5239,8 +5084,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451747",
@@ -5267,8 +5111,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451749",
@@ -5295,8 +5138,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451750",
@@ -5323,8 +5165,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451751",
@@ -5351,8 +5192,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451755",
@@ -5379,8 +5219,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451756",
@@ -5407,8 +5246,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451757",
@@ -5435,8 +5273,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451759",
@@ -5463,8 +5300,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451760",
@@ -5491,8 +5327,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451761",
@@ -5519,8 +5354,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451763",
@@ -5547,8 +5381,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451764",
@@ -5575,8 +5408,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451766",
@@ -5603,8 +5435,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451767",
@@ -5631,8 +5462,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451769",
@@ -5659,8 +5489,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451772",
@@ -5687,8 +5516,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451774",
@@ -5715,8 +5543,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451778",
@@ -5743,8 +5570,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451780",
@@ -5771,8 +5597,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451781",
@@ -5799,8 +5624,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451782",
@@ -5827,8 +5651,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451784",
@@ -5855,8 +5678,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451785",
@@ -5883,8 +5705,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451788",
@@ -5911,8 +5732,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451790",
@@ -5939,8 +5759,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451792",
@@ -5967,8 +5786,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451797",
@@ -5995,8 +5813,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451798",
@@ -6023,8 +5840,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451807",
@@ -6051,8 +5867,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451810",
@@ -6079,8 +5894,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451814",
@@ -6107,8 +5921,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451817",
@@ -6135,8 +5948,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451818",
@@ -6163,8 +5975,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451823",
@@ -6191,8 +6002,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451824",
@@ -6219,8 +6029,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451825",
@@ -6247,8 +6056,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451826",
@@ -6275,8 +6083,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451829",
@@ -6303,8 +6110,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451830",
@@ -6331,8 +6137,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451832",
@@ -6359,8 +6164,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451836",
@@ -6387,8 +6191,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451839",
@@ -6415,8 +6218,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451842",
@@ -6443,8 +6245,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451847",
@@ -6471,8 +6272,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451850",
@@ -6499,8 +6299,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451851",
@@ -6527,8 +6326,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451853",
@@ -6555,8 +6353,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451855",
@@ -6583,8 +6380,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451856",
@@ -6611,8 +6407,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451866",
@@ -6639,8 +6434,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451871",
@@ -6667,8 +6461,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451872",
@@ -6695,8 +6488,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451873",
@@ -6723,8 +6515,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451877",
@@ -6751,8 +6542,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451879",
@@ -6779,8 +6569,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451883",
@@ -6807,8 +6596,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451887",
@@ -6835,8 +6623,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451892",
@@ -6863,8 +6650,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451900",
@@ -6891,8 +6677,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451901",
@@ -6919,8 +6704,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451903",
@@ -6947,8 +6731,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451940",
@@ -6975,8 +6758,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451941",
@@ -7003,8 +6785,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451945",
@@ -7031,8 +6812,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451946",
@@ -7059,8 +6839,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451947",
@@ -7087,8 +6866,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451949",
@@ -7115,8 +6893,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451951",
@@ -7143,8 +6920,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451953",
@@ -7171,8 +6947,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12452150",
@@ -7199,8 +6974,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12452154",
@@ -7227,8 +7001,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12452156",
@@ -7255,8 +7028,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12452165",
@@ -7283,8 +7055,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12452166",
@@ -7311,8 +7082,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12452169",
@@ -7339,8 +7109,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12452172",
@@ -7367,8 +7136,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12452175",
@@ -7395,8 +7163,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12452176",
@@ -7423,8 +7190,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12452178",
@@ -7451,8 +7217,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12452184",
@@ -7479,8 +7244,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12454622",
@@ -7507,8 +7271,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12454626",
@@ -7535,8 +7298,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12454629",
@@ -7563,8 +7325,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12454630",
@@ -7591,8 +7352,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12454632",
@@ -7619,8 +7379,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12454637",
@@ -7647,8 +7406,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12454639",
@@ -7675,8 +7433,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12454641",
@@ -7703,8 +7460,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12454643",
@@ -7731,8 +7487,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12454648",
@@ -7759,8 +7514,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12454652",
@@ -7787,8 +7541,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12454655",
@@ -7815,8 +7568,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12454657",
@@ -7843,8 +7595,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12454659",
@@ -7871,8 +7622,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12454664",
@@ -7899,8 +7649,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12454665",
@@ -7927,8 +7676,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12454666",
@@ -7955,8 +7703,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12454674",
@@ -7983,8 +7730,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12454675",
@@ -8011,8 +7757,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12454677",
@@ -8039,8 +7784,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12454682",
@@ -8067,8 +7811,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12454684",
@@ -8095,8 +7838,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12454686",
@@ -8123,8 +7865,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12454688",
@@ -8151,8 +7892,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12454693",
@@ -8179,8 +7919,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12454694",
@@ -8207,8 +7946,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12454696",
@@ -8235,8 +7973,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12454697",
@@ -8263,8 +8000,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12454698",
@@ -8291,8 +8027,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12454700",
@@ -8319,8 +8054,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12454703",
@@ -8347,8 +8081,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12454704",
@@ -8375,8 +8108,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12454707",
@@ -8403,8 +8135,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12454714",
@@ -8431,8 +8162,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12454716",
@@ -8459,8 +8189,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12454717",
@@ -8487,8 +8216,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12455128",
@@ -8515,8 +8243,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12455129",
@@ -8543,8 +8270,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12455130",
@@ -8571,8 +8297,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12455137",
@@ -8599,8 +8324,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12455144",
@@ -8627,8 +8351,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12455145",
@@ -8655,8 +8378,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12455149",
@@ -8683,8 +8405,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12455154",
@@ -8711,8 +8432,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12455155",
@@ -8739,8 +8459,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12455158",
@@ -8767,8 +8486,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12455159",
@@ -8795,8 +8513,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12455161",
@@ -8823,8 +8540,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12455162",
@@ -8851,8 +8567,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12455164",
@@ -8879,8 +8594,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12455167",
@@ -8907,8 +8621,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12455508",
@@ -8935,8 +8648,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12455509",
@@ -8963,8 +8675,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12455511",
@@ -8991,8 +8702,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12455512",
@@ -9019,8 +8729,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12455517",
@@ -9047,8 +8756,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12455520",
@@ -9075,8 +8783,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12455525",
@@ -9103,8 +8810,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12455526",
@@ -9131,8 +8837,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12455529",
@@ -9159,8 +8864,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12455531",
@@ -9187,8 +8891,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12455534",
@@ -9215,8 +8918,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12455539",
@@ -9243,8 +8945,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451446",
@@ -9271,8 +8972,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451454",
@@ -9299,8 +8999,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451455",
@@ -9327,8 +9026,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451460",
@@ -9355,8 +9053,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451462",
@@ -9383,8 +9080,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451726",
@@ -9411,8 +9107,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451730",
@@ -9439,8 +9134,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451735",
@@ -9467,8 +9161,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451742",
@@ -9495,8 +9188,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451746",
@@ -9523,8 +9215,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451748",
@@ -9551,8 +9242,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451752",
@@ -9579,8 +9269,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451753",
@@ -9607,8 +9296,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451754",
@@ -9635,8 +9323,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451758",
@@ -9663,8 +9350,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451762",
@@ -9691,8 +9377,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451770",
@@ -9719,8 +9404,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451777",
@@ -9747,8 +9431,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451779",
@@ -9775,8 +9458,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451786",
@@ -9803,8 +9485,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451789",
@@ -9831,8 +9512,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451791",
@@ -9859,8 +9539,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451793",
@@ -9887,8 +9566,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451795",
@@ -9915,8 +9593,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451799",
@@ -9943,8 +9620,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451803",
@@ -9971,8 +9647,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451805",
@@ -9999,8 +9674,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451806",
@@ -10027,8 +9701,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451808",
@@ -10055,8 +9728,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451812",
@@ -10083,8 +9755,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451819",
@@ -10111,8 +9782,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451821",
@@ -10139,8 +9809,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451822",
@@ -10167,8 +9836,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451827",
@@ -10195,8 +9863,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451828",
@@ -10223,8 +9890,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451831",
@@ -10251,8 +9917,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451833",
@@ -10279,8 +9944,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451834",
@@ -10307,8 +9971,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451838",
@@ -10335,8 +9998,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451840",
@@ -10363,8 +10025,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451845",
@@ -10391,8 +10052,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451846",
@@ -10419,8 +10079,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451854",
@@ -10447,8 +10106,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451857",
@@ -10475,8 +10133,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451863",
@@ -10503,8 +10160,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451865",
@@ -10531,8 +10187,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451867",
@@ -10559,8 +10214,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451868",
@@ -10587,8 +10241,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451874",
@@ -10615,8 +10268,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451875",
@@ -10643,8 +10295,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451876",
@@ -10671,8 +10322,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451878",
@@ -10699,8 +10349,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451882",
@@ -10727,8 +10376,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451886",
@@ -10755,8 +10403,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451888",
@@ -10783,8 +10430,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451893",
@@ -10811,8 +10457,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451894",
@@ -10839,8 +10484,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451896",
@@ -10867,8 +10511,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451898",
@@ -10895,8 +10538,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451899",
@@ -10923,8 +10565,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451902",
@@ -10951,8 +10592,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451943",
@@ -10979,8 +10619,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451950",
@@ -11007,8 +10646,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451956",
@@ -11035,8 +10673,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12451957",
@@ -11063,8 +10700,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12452149",
@@ -11091,8 +10727,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12452151",
@@ -11119,8 +10754,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12452155",
@@ -11147,8 +10781,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12452159",
@@ -11175,8 +10808,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12452160",
@@ -11203,8 +10835,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12452161",
@@ -11231,8 +10862,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12452164",
@@ -11259,8 +10889,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12452168",
@@ -11287,8 +10916,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12452171",
@@ -11315,8 +10943,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12452177",
@@ -11343,8 +10970,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12452179",
@@ -11371,8 +10997,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12452181",
@@ -11399,8 +11024,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12454623",
@@ -11427,8 +11051,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12454625",
@@ -11455,8 +11078,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12454627",
@@ -11483,8 +11105,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12454640",
@@ -11511,8 +11132,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12454642",
@@ -11539,8 +11159,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12454644",
@@ -11567,8 +11186,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12454646",
@@ -11595,8 +11213,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12454647",
@@ -11623,8 +11240,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12454653",
@@ -11651,8 +11267,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12454654",
@@ -11679,8 +11294,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12454658",
@@ -11707,8 +11321,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12454660",
@@ -11735,8 +11348,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12454661",
@@ -11763,8 +11375,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12454662",
@@ -11791,8 +11402,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12454663",
@@ -11819,8 +11429,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12454668",
@@ -11847,8 +11456,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12454669",
@@ -11875,8 +11483,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12454670",
@@ -11903,8 +11510,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12454673",
@@ -11931,8 +11537,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12454678",
@@ -11959,8 +11564,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12454679",
@@ -11987,8 +11591,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12454680",
@@ -12015,8 +11618,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12454681",
@@ -12043,8 +11645,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12454683",
@@ -12071,8 +11672,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12454685",
@@ -12099,8 +11699,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12454687",
@@ -12127,8 +11726,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12454692",
@@ -12155,8 +11753,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12454695",
@@ -12183,8 +11780,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12454701",
@@ -12211,8 +11807,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12454702",
@@ -12239,8 +11834,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12454706",
@@ -12267,8 +11861,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12454709",
@@ -12295,8 +11888,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12454710",
@@ -12323,8 +11915,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12454711",
@@ -12351,8 +11942,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12454715",
@@ -12379,8 +11969,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12454718",
@@ -12407,8 +11996,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12454722",
@@ -12435,8 +12023,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12455124",
@@ -12463,8 +12050,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12455126",
@@ -12491,8 +12077,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12455131",
@@ -12519,8 +12104,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12455132",
@@ -12547,8 +12131,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12455133",
@@ -12575,8 +12158,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12455134",
@@ -12603,8 +12185,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12455135",
@@ -12631,8 +12212,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12455136",
@@ -12659,8 +12239,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12455138",
@@ -12687,8 +12266,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12455140",
@@ -12715,8 +12293,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12455153",
@@ -12743,8 +12320,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12455160",
@@ -12771,8 +12347,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12455163",
@@ -12799,8 +12374,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12455165",
@@ -12827,8 +12401,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12455166",
@@ -12855,8 +12428,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12455515",
@@ -12883,8 +12455,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12455518",
@@ -12911,8 +12482,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12455519",
@@ -12939,8 +12509,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12455533",
@@ -12967,8 +12536,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12455536",
@@ -12995,8 +12563,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     },
     {
       "ncbi_accession": "SRR12455538",
@@ -13023,8 +12590,7 @@
       "disease_details": "New-onset rheumatoid arthritis (NORA)",
       "feces_phenotype": "Fecal specimen",
       "fmt_id": "Donor 1; Donor 2; Donor 3; Donor 4; Donor 5; Donor 6",
-      "treatment": "Methotrexate",
-      "age_max": "65"
+      "treatment": "Methotrexate"
     }
   ],
   "table_selection": [

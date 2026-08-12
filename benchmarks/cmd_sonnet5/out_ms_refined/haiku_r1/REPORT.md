@@ -4,8 +4,8 @@ Target schema: `curatedmetagenomicdata/cmd.linkml.yaml`. Gold: cMD `*_sample.tsv
 
 ## Headline (content fields, micro-averaged)
 
-- Precision **0.90**, Recall **0.64**, F1 **0.75**, value-accuracy-on-attempted **0.52**
-- cells: TN=406 TPc=3617 TPw=3305 FN=3892 FP=784
+- Precision **0.90**, Recall **0.64**, F1 **0.75**, value-accuracy-on-attempted **0.53**
+- cells: TN=406 TPc=3645 TPw=3277 FN=3892 FP=784
 
 - **Coverage-aware recall 0.41** — recall when un/under-enumerated gold rows are counted as FN rather than dropped. The positional recall above (0.64) scores only the overlap `min(n_extracted, n_gold)`, so samples a study never enumerated do not enter the denominator.
 
@@ -13,7 +13,7 @@ Target schema: `curatedmetagenomicdata/cmd.linkml.yaml`. Gold: cMD `*_sample.tsv
 
 | study | pmid | gold n | ext n | align | content P | R | F1 | val-acc |
 |---|---|--:|--:|---|--:|--:|--:|--:|
-| Bengtsson-PalmeJ_2015 | 26259788 | 70 | 70 | match | 1.00 | 0.65 | 0.79 | 0.45 |
+| Bengtsson-PalmeJ_2015 | 26259788 | 70 | 70 | match | 1.00 | 0.65 | 0.79 | 0.49 |
 | TettAJ_2019_b | 31607556 | 44 | 50 | MISMATCH (50 vs 44) | 1.00 | 0.31 | 0.48 | 0.23 |
 | LiJ_2017 | 28143587 | 196 | 1448 | MISMATCH (1448 vs 196) | 0.73 | 0.57 | 0.64 | 0.62 |
 | NayakRR_2021 | 33440172 | 34 | 434 | MISMATCH (434 vs 34) | 1.00 | 1.00 | 1.00 | 0.26 |
@@ -30,8 +30,8 @@ Target schema: `curatedmetagenomicdata/cmd.linkml.yaml`. Gold: cMD `*_sample.tsv
 |---|---|--:|--:|--:|--:|--:|--:|--:|--:|--:|--:|
 | age | content | 475 | 16 | 4 | 30 | 425 | 0 | 1.00 | 0.07 | 0.14 | 0.12 |
 | age_group | content | 726 | 0 | 220 | 143 | 363 | 0 | 1.00 | 0.50 | 0.67 | 0.61 |
-| age_max | content | 530 | 0 | 1 | 225 | 304 | 0 | 1.00 | 0.43 | 0.60 | 0.00 |
-| age_min | content | 530 | 0 | 0 | 226 | 304 | 0 | 1.00 | 0.43 | 0.60 | 0.00 |
+| age_max | content | 530 | 0 | 3 | 223 | 304 | 0 | 1.00 | 0.43 | 0.60 | 0.01 |
+| age_min | content | 530 | 0 | 26 | 200 | 304 | 0 | 1.00 | 0.43 | 0.60 | 0.12 |
 | age_unit | content | 279 | 1 | 112 | 0 | 166 | 0 | 1.00 | 0.40 | 0.57 | 1.00 |
 | age_years | content | 279 | 1 | 112 | 0 | 166 | 0 | 1.00 | 0.40 | 0.57 | 1.00 |
 | ancestry | content | 112 | 0 | 0 | 0 | 112 | 0 |   –  | 0.00 |   –  |   –  |

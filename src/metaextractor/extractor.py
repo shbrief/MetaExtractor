@@ -188,13 +188,13 @@ class MetaExtractor:
                     f"into per-sample rows."
                 )
 
-        # Enforce the schema's per-subject age_min/age_max rule (runs after
-        # fan-out so any propagated cohort range is corrected too).
+        # Fill per-subject age_min/age_max deterministically (runs after fan-out
+        # so propagated records are covered too).
         n_age = _normalize_age_bounds(result)
         if n_age:
             result.extraction_warnings.append(
-                f"Normalized {n_age} age_min/age_max cell(s) to the schema "
-                f"age-bound rule (per-subject age, else age_group definition)."
+                f"Filled {n_age} age_min/age_max cell(s) by the age-bound rule "
+                f"(per-subject age, else reported range, else age_group definition)."
             )
         return result
 
@@ -674,10 +674,12 @@ def _fan_out_fields_to_samples(result: ExtractionResult) -> int:
 
 
 # Canonical age-group bounds in YEARS, from the cMD schema's age_group
-# definitions and confirmed against the curated gold (the dominant age_min !=
-# age_max "group-definition" rows across 101 curated studies). Newborn (< 1
-# month) is intentionally omitted: it is defined in sub-year units and never
-# appears as a group-definition row in the gold, so we leave it untouched.
+# definitions. Used only as a last-resort fallback (no per-subject age and no
+# reported numeric range): they derive age_min/age_max purely from the group
+# label. Not a match to the curated gold, which for range-reporting studies
+# records genuine per-subject ages — hence the fallback yields to a reported
+# range. Newborn (< 1 month) is intentionally omitted: it is defined in
+# sub-year units, so we leave it untouched.
 AGE_GROUP_BOUNDS: dict[str, tuple[float, float]] = {
     "Infant":     (0.0, 2.0),
     "Child":      (2.0, 11.0),
@@ -708,18 +710,16 @@ def _age_num(v: Any) -> float | None:
 def _normalize_age_bounds(result: ExtractionResult) -> int:
     """Enforce the schema's age_min/age_max semantics on every record.
 
-    Per the cMD schema, age_min/age_max are per-subject bounds, not a cohort
-    range: when a specific age is known they equal that age; when only
-    age_group is known they are the *definition* of that group (Adult ->
-    18/65), never a range quoted in prose. This deterministically repairs the
-    common LLM error of dropping a reported cohort range (e.g. "Subjects were
-    23 to 34 years old") into age_min/age_max.
+    age_min/age_max are per-subject bounds. This fills them deterministically
+    from the best available evidence, by precedence:
 
     Rules per record (study-level ``fields`` and each sample):
       * specific age present -> fill any missing age_min/age_max with it
         (existing values are left alone);
+      * else a reported numeric range present (either bound numeric) -> keep
+        it as-is (e.g. "Subjects were 23 to 34 years old" -> 23/34);
       * else age_group in AGE_GROUP_BOUNDS -> set age_min/age_max to the
-        group's defining bounds, overwriting a non-conformant range.
+        group's defining bounds (Adult -> 18/65) as a last-resort fallback.
 
     Returns the number of age_min/age_max cells rewritten.
     """
@@ -731,14 +731,20 @@ def _normalize_age_bounds(result: ExtractionResult) -> int:
         group = g.strip() if isinstance(g, str) else None
         written = 0
         if spec is not None:
+            # A specific per-subject age wins: fill any missing bounds with it,
+            # leaving existing values alone.
             for b in ("age_min", "age_max"):
                 if _age_num(get(b)) is None and set_(b, _fmt_age(spec)):
                     written += 1
-        elif group in AGE_GROUP_BOUNDS:
-            lo, hi = AGE_GROUP_BOUNDS[group]
-            for b, want in (("age_min", _fmt_age(lo)), ("age_max", _fmt_age(hi))):
-                if str(get(b) or "").strip() != want and set_(b, want):
-                    written += 1
+        elif _age_num(get("age_min")) is None and _age_num(get("age_max")) is None:
+            # No specific age and no reported numeric range: fall back to the
+            # age_group definition (Adult -> 18/65). A reported range (either
+            # bound numeric) is kept as-is — see docstring.
+            if group in AGE_GROUP_BOUNDS:
+                lo, hi = AGE_GROUP_BOUNDS[group]
+                for b, want in (("age_min", _fmt_age(lo)), ("age_max", _fmt_age(hi))):
+                    if str(get(b) or "").strip() != want and set_(b, want):
+                        written += 1
         return written
 
     def _field_get(name):
