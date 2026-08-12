@@ -40,16 +40,16 @@
       "sample_align": "MISMATCH (50 vs 44)",
       "content": {
         "tn": 2,
-        "tp_correct": 95,
-        "tp_wrong": 211,
-        "fn": 395,
+        "tp_correct": 97,
+        "tp_wrong": 295,
+        "fn": 309,
         "fp": 1
       },
       "content_coverage": {
         "tn": 2,
-        "tp_correct": 95,
-        "tp_wrong": 211,
-        "fn": 395,
+        "tp_correct": 97,
+        "tp_wrong": 295,
+        "fn": 309,
         "fp": 1
       },
       "meta": {
@@ -450,16 +450,16 @@
     },
     "age_min": {
       "tn": 0,
-      "tp_correct": 26,
-      "tp_wrong": 352,
-      "fn": 152,
+      "tp_correct": 27,
+      "tp_wrong": 394,
+      "fn": 109,
       "fp": 0
     },
     "age_max": {
       "tn": 0,
-      "tp_correct": 3,
-      "tp_wrong": 375,
-      "fn": 152,
+      "tp_correct": 4,
+      "tp_wrong": 417,
+      "fn": 109,
       "fp": 0
     },
     "age_years": {

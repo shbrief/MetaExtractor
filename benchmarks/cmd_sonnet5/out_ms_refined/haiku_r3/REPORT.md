@@ -4,17 +4,17 @@ Target schema: `curatedmetagenomicdata/cmd.linkml.yaml`. Gold: cMD `*_sample.tsv
 
 ## Headline (content fields, micro-averaged)
 
-- Precision **0.90**, Recall **0.69**, F1 **0.78**, value-accuracy-on-attempted **0.48**
-- cells: TN=405 TPc=3568 TPw=3872 FN=3374 FP=785
+- Precision **0.91**, Recall **0.70**, F1 **0.79**, value-accuracy-on-attempted **0.47**
+- cells: TN=405 TPc=3570 TPw=3956 FN=3288 FP=785
 
-- **Coverage-aware recall 0.44** — recall when un/under-enumerated gold rows are counted as FN rather than dropped. The positional recall above (0.69) scores only the overlap `min(n_extracted, n_gold)`, so samples a study never enumerated do not enter the denominator.
+- **Coverage-aware recall 0.45** — recall when un/under-enumerated gold rows are counted as FN rather than dropped. The positional recall above (0.70) scores only the overlap `min(n_extracted, n_gold)`, so samples a study never enumerated do not enter the denominator.
 
 ## Per study
 
 | study | pmid | gold n | ext n | align | content P | R | F1 | val-acc |
 |---|---|--:|--:|---|--:|--:|--:|--:|
 | Bengtsson-PalmeJ_2015 | 26259788 | 70 | 70 | match | 1.00 | 0.71 | 0.83 | 0.36 |
-| TettAJ_2019_b | 31607556 | 44 | 50 | MISMATCH (50 vs 44) | 1.00 | 0.44 | 0.61 | 0.31 |
+| TettAJ_2019_b | 31607556 | 44 | 50 | MISMATCH (50 vs 44) | 1.00 | 0.56 | 0.72 | 0.25 |
 | LiJ_2017 | 28143587 | 196 | 1448 | MISMATCH (1448 vs 196) | 0.77 | 0.71 | 0.74 | 0.50 |
 | NayakRR_2021 | 33440172 | 34 | 434 | MISMATCH (434 vs 34) | 1.00 | 0.64 | 0.78 | 0.29 |
 | PasolliE_2019 | 30661755 | 112 | 112 | match | 1.00 | 0.75 | 0.86 | 0.47 |
@@ -30,8 +30,8 @@ Target schema: `curatedmetagenomicdata/cmd.linkml.yaml`. Gold: cMD `*_sample.tsv
 |---|---|--:|--:|--:|--:|--:|--:|--:|--:|--:|--:|
 | age | content | 475 | 15 | 17 | 95 | 347 | 1 | 0.99 | 0.24 | 0.39 | 0.15 |
 | age_group | content | 726 | 0 | 188 | 141 | 397 | 0 | 1.00 | 0.45 | 0.62 | 0.57 |
-| age_max | content | 530 | 0 | 3 | 375 | 152 | 0 | 1.00 | 0.71 | 0.83 | 0.01 |
-| age_min | content | 530 | 0 | 26 | 352 | 152 | 0 | 1.00 | 0.71 | 0.83 | 0.07 |
+| age_max | content | 530 | 0 | 4 | 417 | 109 | 0 | 1.00 | 0.79 | 0.89 | 0.01 |
+| age_min | content | 530 | 0 | 27 | 394 | 109 | 0 | 1.00 | 0.79 | 0.89 | 0.06 |
 | age_unit | content | 279 | 1 | 182 | 0 | 96 | 0 | 1.00 | 0.65 | 0.79 | 1.00 |
 | age_years | content | 279 | 1 | 112 | 0 | 166 | 0 | 1.00 | 0.40 | 0.57 | 1.00 |
 | ancestry | content | 112 | 0 | 0 | 0 | 112 | 0 |   –  | 0.00 |   –  |   –  |

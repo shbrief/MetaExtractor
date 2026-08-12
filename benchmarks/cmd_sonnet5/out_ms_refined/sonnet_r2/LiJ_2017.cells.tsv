@@ -14,8 +14,8 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	decision
 0	NLF006	H1F413846	ncbi_accession	not_reported	ERR1398121	FN
 0	NLF006	H1F413846	sequencing_platform	IlluminaHiSeq	IlluminaHiSeq	TP_correct
 0	NLF006	H1F413846	age_group	not_reported	Adult	FN
-0	NLF006	H1F413846	age_min	not_reported	18	FN
-0	NLF006	H1F413846	age_max	not_reported	65	FN
+0	NLF006	H1F413846	age_min	27	18	TP_wrong
+0	NLF006	H1F413846	age_max	27	65	TP_wrong
 0	NLF006	H1F413846	antibiotics_current_use	No	No	TP_correct
 0	NLF006	H1F413846	disease	Healthy; Pre-hypertension; Hypertension	Hypertension,Borderline Hypertension	TP_wrong
 0	NLF006	H1F413846	smoker	Non-smoker (finding)	Non-smoker (finding)	TP_correct
@@ -38,8 +38,8 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	decision
 1	SZEY-103A	H1F512951	ncbi_accession	not_reported	ERR1398068	FN
 1	SZEY-103A	H1F512951	sequencing_platform	IlluminaHiSeq	IlluminaHiSeq	TP_correct
 1	SZEY-103A	H1F512951	age_group	not_reported	Adult	FN
-1	SZEY-103A	H1F512951	age_min	not_reported	18	FN
-1	SZEY-103A	H1F512951	age_max	not_reported	65	FN
+1	SZEY-103A	H1F512951	age_min	50	18	TP_wrong
+1	SZEY-103A	H1F512951	age_max	50	65	TP_wrong
 1	SZEY-103A	H1F512951	antibiotics_current_use	No	No	TP_correct
 1	SZEY-103A	H1F512951	disease	Healthy; Pre-hypertension; Hypertension	Hypertension	TP_wrong
 1	SZEY-103A	H1F512951	smoker	Non-smoker (finding)	Non-smoker (finding)	TP_correct
@@ -62,8 +62,8 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	decision
 2	SZEY-104A	H1F513817	ncbi_accession	not_reported	ERR1398201	FN
 2	SZEY-104A	H1F513817	sequencing_platform	IlluminaHiSeq	IlluminaHiSeq	TP_correct
 2	SZEY-104A	H1F513817	age_group	not_reported	Adult	FN
-2	SZEY-104A	H1F513817	age_min	not_reported	18	FN
-2	SZEY-104A	H1F513817	age_max	not_reported	65	FN
+2	SZEY-104A	H1F513817	age_min	50	18	TP_wrong
+2	SZEY-104A	H1F513817	age_max	50	65	TP_wrong
 2	SZEY-104A	H1F513817	antibiotics_current_use	No	No	TP_correct
 2	SZEY-104A	H1F513817	disease	Healthy; Pre-hypertension; Hypertension	Hypertension,Borderline Hypertension	TP_wrong
 2	SZEY-104A	H1F513817	smoker	Non-smoker (finding)	Non-smoker (finding)	TP_correct
@@ -86,8 +86,8 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	decision
 3	NOM007	H1F513818	ncbi_accession	not_reported	ERR1398155	FN
 3	NOM007	H1F513818	sequencing_platform	IlluminaHiSeq	IlluminaHiSeq	TP_correct
 3	NOM007	H1F513818	age_group	not_reported	Adult	FN
-3	NOM007	H1F513818	age_min	not_reported	18	FN
-3	NOM007	H1F513818	age_max	not_reported	65	FN
+3	NOM007	H1F513818	age_min	72	18	TP_wrong
+3	NOM007	H1F513818	age_max	72	65	TP_wrong
 3	NOM007	H1F513818	antibiotics_current_use	No	No	TP_correct
 3	NOM007	H1F513818	disease	Healthy; Pre-hypertension; Hypertension	Hypertension,Borderline Hypertension	TP_wrong
 3	NOM007	H1F513818	smoker	Non-smoker (finding)	Non-smoker (finding)	TP_correct
@@ -110,8 +110,8 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	decision
 4	SZEY-101A	H1F613739	ncbi_accession	not_reported	ERR1398222	FN
 4	SZEY-101A	H1F613739	sequencing_platform	IlluminaHiSeq	IlluminaHiSeq	TP_correct
 4	SZEY-101A	H1F613739	age_group	not_reported	Adult	FN
-4	SZEY-101A	H1F613739	age_min	not_reported	18	FN
-4	SZEY-101A	H1F613739	age_max	not_reported	65	FN
+4	SZEY-101A	H1F613739	age_min	47	18	TP_wrong
+4	SZEY-101A	H1F613739	age_max	47	65	TP_wrong
 4	SZEY-101A	H1F613739	antibiotics_current_use	No	No	TP_correct
 4	SZEY-101A	H1F613739	disease	Healthy; Pre-hypertension; Hypertension	Hypertension,Borderline Hypertension	TP_wrong
 4	SZEY-101A	H1F613739	smoker	Non-smoker (finding)	Non-smoker (finding)	TP_correct
@@ -134,8 +134,8 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	decision
 5	SZEY-99A	H1M213648	ncbi_accession	not_reported	ERR1398255	FN
 5	SZEY-99A	H1M213648	sequencing_platform	IlluminaHiSeq	IlluminaHiSeq	TP_correct
 5	SZEY-99A	H1M213648	age_group	not_reported	Adult	FN
-5	SZEY-99A	H1M213648	age_min	not_reported	18	FN
-5	SZEY-99A	H1M213648	age_max	not_reported	65	FN
+5	SZEY-99A	H1M213648	age_min	46	18	TP_wrong
+5	SZEY-99A	H1M213648	age_max	46	65	TP_wrong
 5	SZEY-99A	H1M213648	antibiotics_current_use	No	No	TP_correct
 5	SZEY-99A	H1M213648	disease	Healthy; Pre-hypertension; Hypertension	Hypertension,Borderline Hypertension	TP_wrong
 5	SZEY-99A	H1M213648	smoker	Non-smoker (finding)	Non-smoker (finding)	TP_correct

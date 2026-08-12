@@ -4,20 +4,20 @@ Target schema: `curatedmetagenomicdata/cmd.linkml.yaml`. Gold: cMD `*_sample.tsv
 
 ## Headline (content fields, micro-averaged)
 
-- Precision **0.99**, Recall **0.59**, F1 **0.74**, value-accuracy-on-attempted **0.61**
-- cells: TN=569 TPc=2945 TPw=1887 FN=3322 FP=51
+- Precision **0.99**, Recall **0.63**, F1 **0.77**, value-accuracy-on-attempted **0.61**
+- cells: TN=569 TPc=3143 TPw=2011 FN=3000 FP=51
 
-- **Coverage-aware recall 0.29** — recall when un/under-enumerated gold rows are counted as FN rather than dropped. The positional recall above (0.59) scores only the overlap `min(n_extracted, n_gold)`, so samples a study never enumerated do not enter the denominator.
+- **Coverage-aware recall 0.31** — recall when un/under-enumerated gold rows are counted as FN rather than dropped. The positional recall above (0.63) scores only the overlap `min(n_extracted, n_gold)`, so samples a study never enumerated do not enter the denominator.
 
 ## Per study
 
 | study | pmid | gold n | ext n | align | content P | R | F1 | val-acc |
 |---|---|--:|--:|---|--:|--:|--:|--:|
-| Bengtsson-PalmeJ_2015 | 26259788 | 70 | 70 | match | 1.00 | 0.53 | 0.69 | 0.71 |
-| TettAJ_2019_b | 31607556 | 44 | 50 | MISMATCH (50 vs 44) | 1.00 | 0.75 | 0.86 | 0.51 |
-| LiJ_2017 | 28143587 | 196 | 6 | MISMATCH (6 vs 196) | 0.79 | 0.79 | 0.79 | 0.64 |
+| Bengtsson-PalmeJ_2015 | 26259788 | 70 | 70 | match | 1.00 | 0.53 | 0.69 | 0.67 |
+| TettAJ_2019_b | 31607556 | 44 | 50 | MISMATCH (50 vs 44) | 1.00 | 0.87 | 0.93 | 0.44 |
+| LiJ_2017 | 28143587 | 196 | 6 | MISMATCH (6 vs 196) | 0.81 | 0.93 | 0.87 | 0.54 |
 | NayakRR_2021 | 33440172 | 34 | 434 | MISMATCH (434 vs 34) | 1.00 | 0.73 | 0.84 | 0.37 |
-| PasolliE_2019 | 30661755 | 112 | 112 | match | 1.00 | 0.55 | 0.71 | 0.63 |
+| PasolliE_2019 | 30661755 | 112 | 112 | match | 1.00 | 0.65 | 0.79 | 0.69 |
 | Heitz-BuschartA_2016 | 27723761 | 53 | 221 | MISMATCH (221 vs 53) | 0.96 | 0.60 | 0.74 | 0.45 |
 | FanY_2023 | 37069399 | 147 | 510 | MISMATCH (510 vs 147) | 1.00 | 0.64 | 0.78 | 0.71 |
 | QinJ_2012 | 23023125 | 363 | 0 | MISMATCH (0 vs 363) |   –  |   –  |   –  |   –  |
@@ -30,8 +30,8 @@ Target schema: `curatedmetagenomicdata/cmd.linkml.yaml`. Gold: cMD `*_sample.tsv
 |---|---|--:|--:|--:|--:|--:|--:|--:|--:|--:|--:|
 | age | content | 475 | 15 | 1 | 41 | 417 | 1 | 0.98 | 0.09 | 0.17 | 0.02 |
 | age_group | content | 536 | 0 | 218 | 4 | 314 | 0 | 1.00 | 0.41 | 0.59 | 0.98 |
-| age_max | content | 340 | 0 | 2 | 68 | 270 | 0 | 1.00 | 0.21 | 0.34 | 0.03 |
-| age_min | content | 340 | 0 | 26 | 44 | 270 | 0 | 1.00 | 0.21 | 0.34 | 0.37 |
+| age_max | content | 340 | 0 | 113 | 118 | 109 | 0 | 1.00 | 0.68 | 0.81 | 0.49 |
+| age_min | content | 340 | 0 | 113 | 118 | 109 | 0 | 1.00 | 0.68 | 0.81 | 0.49 |
 | age_unit | content | 279 | 0 | 111 | 2 | 165 | 1 | 0.99 | 0.41 | 0.58 | 0.98 |
 | age_years | content | 279 | 1 | 112 | 0 | 166 | 0 | 1.00 | 0.40 | 0.57 | 1.00 |
 | ancestry | content | 112 | 0 | 0 | 0 | 112 | 0 |   –  | 0.00 |   –  |   –  |

@@ -8,15 +8,15 @@
       "sample_align": "match",
       "content": {
         "tn": 0,
-        "tp_correct": 448,
-        "tp_wrong": 252,
+        "tp_correct": 420,
+        "tp_wrong": 280,
         "fn": 490,
         "fp": 0
       },
       "content_coverage": {
         "tn": 0,
-        "tp_correct": 448,
-        "tp_wrong": 252,
+        "tp_correct": 420,
+        "tp_wrong": 280,
         "fn": 490,
         "fp": 0
       },
@@ -40,16 +40,16 @@
       "sample_align": "MISMATCH (50 vs 44)",
       "content": {
         "tn": 1,
-        "tp_correct": 268,
-        "tp_wrong": 213,
-        "fn": 220,
+        "tp_correct": 270,
+        "tp_wrong": 297,
+        "fn": 134,
         "fp": 2
       },
       "content_coverage": {
         "tn": 1,
-        "tp_correct": 268,
-        "tp_wrong": 213,
-        "fn": 220,
+        "tp_correct": 270,
+        "tp_wrong": 297,
+        "fn": 134,
         "fp": 2
       },
       "meta": {
@@ -73,15 +73,15 @@
       "content": {
         "tn": 18,
         "tp_correct": 45,
-        "tp_wrong": 21,
-        "fn": 18,
+        "tp_wrong": 33,
+        "fn": 6,
         "fp": 0
       },
       "content_coverage": {
         "tn": 588,
         "tp_correct": 45,
-        "tp_wrong": 21,
-        "fn": 2678,
+        "tp_wrong": 33,
+        "fn": 2666,
         "fp": 0
       },
       "meta": {
@@ -136,16 +136,16 @@
       "sample_align": "match",
       "content": {
         "tn": 336,
-        "tp_correct": 670,
+        "tp_correct": 894,
         "tp_wrong": 562,
-        "fn": 1008,
+        "fn": 784,
         "fp": 0
       },
       "content_coverage": {
         "tn": 336,
-        "tp_correct": 670,
+        "tp_correct": 894,
         "tp_wrong": 562,
-        "fn": 1008,
+        "fn": 784,
         "fp": 0
       },
       "meta": {
@@ -450,16 +450,16 @@
     },
     "age_min": {
       "tn": 0,
-      "tp_correct": 26,
-      "tp_wrong": 44,
-      "fn": 270,
+      "tp_correct": 113,
+      "tp_wrong": 118,
+      "fn": 109,
       "fp": 0
     },
     "age_max": {
       "tn": 0,
-      "tp_correct": 2,
-      "tp_wrong": 68,
-      "fn": 270,
+      "tp_correct": 113,
+      "tp_wrong": 118,
+      "fn": 109,
       "fp": 0
     },
     "age_years": {

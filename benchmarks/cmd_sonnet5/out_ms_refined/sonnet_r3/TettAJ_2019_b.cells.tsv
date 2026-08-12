@@ -17,8 +17,8 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	decision
 0	CM_A01_I1_18	C16-20005-GH	age_unit	Year	Year	TP_correct
 0	CM_A01_I1_18	C16-20005-GH	family	8	TettAJ_2019_b_1	TP_wrong
 0	CM_A01_I1_18	C16-20005-GH	family_role	Infant	mother	TP_wrong
-0	CM_A01_I1_18	C16-20005-GH	age_min	not_reported	34	FN
-0	CM_A01_I1_18	C16-20005-GH	age_max	not_reported	34	FN
+0	CM_A01_I1_18	C16-20005-GH	age_min	1	34	TP_wrong
+0	CM_A01_I1_18	C16-20005-GH	age_max	1	34	TP_wrong
 0	CM_A01_I1_18	C16-20005-GH	age_years	not_reported	34.0	FN
 0	CM_A01_I1_18	C16-20005-GH	disease	healthy	Healthy	TP_correct
 0	CM_A01_I1_18	C16-20005-GH	host_species	Homo sapiens	Homo sapiens	TP_correct
@@ -40,8 +40,8 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	decision
 1	CM_A01_M0_18	C16-20006-GH	age_unit	Year	Year	TP_correct
 1	CM_A01_M0_18	C16-20006-GH	family	8	TettAJ_2019_b_1	TP_wrong
 1	CM_A01_M0_18	C16-20006-GH	family_role	Mother	father	TP_wrong
-1	CM_A01_M0_18	C16-20006-GH	age_min	not_reported	33	FN
-1	CM_A01_M0_18	C16-20006-GH	age_max	not_reported	33	FN
+1	CM_A01_M0_18	C16-20006-GH	age_min	30	33	TP_wrong
+1	CM_A01_M0_18	C16-20006-GH	age_max	30	33	TP_wrong
 1	CM_A01_M0_18	C16-20006-GH	age_years	not_reported	33.0	FN
 1	CM_A01_M0_18	C16-20006-GH	disease	healthy	Healthy	TP_correct
 1	CM_A01_M0_18	C16-20006-GH	host_species	Homo sapiens	Homo sapiens	TP_correct
@@ -63,8 +63,8 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	decision
 2	CM_A04_I1_18	C16-20007-GH	age_unit	Year	Year	TP_correct
 2	CM_A04_I1_18	C16-20007-GH	family	7	TettAJ_2019_b_1	TP_wrong
 2	CM_A04_I1_18	C16-20007-GH	family_role	Infant	child	TP_wrong
-2	CM_A04_I1_18	C16-20007-GH	age_min	not_reported	7	FN
-2	CM_A04_I1_18	C16-20007-GH	age_max	not_reported	7	FN
+2	CM_A04_I1_18	C16-20007-GH	age_min	0.75	7	TP_wrong
+2	CM_A04_I1_18	C16-20007-GH	age_max	0.75	7	TP_wrong
 2	CM_A04_I1_18	C16-20007-GH	age_years	not_reported	7.0	FN
 2	CM_A04_I1_18	C16-20007-GH	disease	healthy	Healthy	TP_correct
 2	CM_A04_I1_18	C16-20007-GH	host_species	Homo sapiens	Homo sapiens	TP_correct
@@ -86,8 +86,8 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	decision
 3	CM_A04_M0_18	C16-20008-GH	age_unit	Year	Year	TP_correct
 3	CM_A04_M0_18	C16-20008-GH	family	7	TettAJ_2019_b_1	TP_wrong
 3	CM_A04_M0_18	C16-20008-GH	family_role	Mother	child	TP_wrong
-3	CM_A04_M0_18	C16-20008-GH	age_min	not_reported	5	FN
-3	CM_A04_M0_18	C16-20008-GH	age_max	not_reported	5	FN
+3	CM_A04_M0_18	C16-20008-GH	age_min	37	5	TP_wrong
+3	CM_A04_M0_18	C16-20008-GH	age_max	37	5	TP_wrong
 3	CM_A04_M0_18	C16-20008-GH	age_years	not_reported	5.0	FN
 3	CM_A04_M0_18	C16-20008-GH	disease	healthy	Healthy	TP_correct
 3	CM_A04_M0_18	C16-20008-GH	host_species	Homo sapiens	Homo sapiens	TP_correct
@@ -109,8 +109,8 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	decision
 4	CM_A06_I1_18	C16-20009-GH	age_unit	Year	Year	TP_correct
 4	CM_A06_I1_18	C16-20009-GH	family	6	TettAJ_2019_b_2	TP_wrong
 4	CM_A06_I1_18	C16-20009-GH	family_role	Infant	mother	TP_wrong
-4	CM_A06_I1_18	C16-20009-GH	age_min	not_reported	24	FN
-4	CM_A06_I1_18	C16-20009-GH	age_max	not_reported	24	FN
+4	CM_A06_I1_18	C16-20009-GH	age_min	0.6666666667	24	TP_wrong
+4	CM_A06_I1_18	C16-20009-GH	age_max	0.6666666667	24	TP_wrong
 4	CM_A06_I1_18	C16-20009-GH	age_years	not_reported	24.0	FN
 4	CM_A06_I1_18	C16-20009-GH	disease	healthy	Healthy	TP_correct
 4	CM_A06_I1_18	C16-20009-GH	host_species	Homo sapiens	Homo sapiens	TP_correct
@@ -132,8 +132,8 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	decision
 5	CM_A06_M0_18	C16-20010-GH	age_unit	Year	Year	TP_correct
 5	CM_A06_M0_18	C16-20010-GH	family	6	TettAJ_2019_b_2	TP_wrong
 5	CM_A06_M0_18	C16-20010-GH	family_role	Mother	father	TP_wrong
-5	CM_A06_M0_18	C16-20010-GH	age_min	not_reported	28	FN
-5	CM_A06_M0_18	C16-20010-GH	age_max	not_reported	28	FN
+5	CM_A06_M0_18	C16-20010-GH	age_min	30	28	TP_wrong
+5	CM_A06_M0_18	C16-20010-GH	age_max	30	28	TP_wrong
 5	CM_A06_M0_18	C16-20010-GH	age_years	not_reported	28.0	FN
 5	CM_A06_M0_18	C16-20010-GH	disease	healthy	Healthy	TP_correct
 5	CM_A06_M0_18	C16-20010-GH	host_species	Homo sapiens	Homo sapiens	TP_correct
@@ -155,8 +155,8 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	decision
 6	CM_D02_I1_18	C16-20011-GH	age_unit	Year	Month	TP_wrong
 6	CM_D02_I1_18	C16-20011-GH	family	5	TettAJ_2019_b_2	TP_wrong
 6	CM_D02_I1_18	C16-20011-GH	family_role	Infant	child	TP_wrong
-6	CM_D02_I1_18	C16-20011-GH	age_min	not_reported	1	FN
-6	CM_D02_I1_18	C16-20011-GH	age_max	not_reported	1	FN
+6	CM_D02_I1_18	C16-20011-GH	age_min	3	1	TP_wrong
+6	CM_D02_I1_18	C16-20011-GH	age_max	3	1	TP_wrong
 6	CM_D02_I1_18	C16-20011-GH	age_years	not_reported	1.0	FN
 6	CM_D02_I1_18	C16-20011-GH	disease	healthy	Healthy	TP_correct
 6	CM_D02_I1_18	C16-20011-GH	host_species	Homo sapiens	Homo sapiens	TP_correct
@@ -178,8 +178,8 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	decision
 7	CM_D02_M0_18	C16-20029-GH	age_unit	Year	Year	TP_correct
 7	CM_D02_M0_18	C16-20029-GH	family	5	TettAJ_2019_b_3	TP_wrong
 7	CM_D02_M0_18	C16-20029-GH	family_role	Mother	mother	TP_correct
-7	CM_D02_M0_18	C16-20029-GH	age_min	not_reported	28	FN
-7	CM_D02_M0_18	C16-20029-GH	age_max	not_reported	28	FN
+7	CM_D02_M0_18	C16-20029-GH	age_min	25	28	TP_wrong
+7	CM_D02_M0_18	C16-20029-GH	age_max	25	28	TP_wrong
 7	CM_D02_M0_18	C16-20029-GH	age_years	not_reported	28.0	FN
 7	CM_D02_M0_18	C16-20029-GH	disease	healthy	Healthy	TP_correct
 7	CM_D02_M0_18	C16-20029-GH	host_species	Homo sapiens	Homo sapiens	TP_correct
@@ -201,8 +201,8 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	decision
 8	CM_D03_I12_18	C16-20030-GH	age_unit	Year		FP
 8	CM_D03_I12_18	C16-20030-GH	family	4	TettAJ_2019_b_3	TP_wrong
 8	CM_D03_I12_18	C16-20030-GH	family_role	Infant	father	TP_wrong
-8	CM_D03_I12_18	C16-20030-GH	age_min	not_reported	18	FN
-8	CM_D03_I12_18	C16-20030-GH	age_max	not_reported	65	FN
+8	CM_D03_I12_18	C16-20030-GH	age_min	0.5833333333	18	TP_wrong
+8	CM_D03_I12_18	C16-20030-GH	age_max	0.5833333333	65	TP_wrong
 8	CM_D03_I12_18	C16-20030-GH	age_years	not_reported		TN
 8	CM_D03_I12_18	C16-20030-GH	disease	healthy	Healthy	TP_correct
 8	CM_D03_I12_18	C16-20030-GH	host_species	Homo sapiens	Homo sapiens	TP_correct
@@ -224,8 +224,8 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	decision
 9	CM_D03_M0_18	C16-20032-GH	age_unit	Year	Year	TP_correct
 9	CM_D03_M0_18	C16-20032-GH	family	4	TettAJ_2019_b_3	TP_wrong
 9	CM_D03_M0_18	C16-20032-GH	family_role	Mother	child	TP_wrong
-9	CM_D03_M0_18	C16-20032-GH	age_min	not_reported	5	FN
-9	CM_D03_M0_18	C16-20032-GH	age_max	not_reported	5	FN
+9	CM_D03_M0_18	C16-20032-GH	age_min	25	5	TP_wrong
+9	CM_D03_M0_18	C16-20032-GH	age_max	25	5	TP_wrong
 9	CM_D03_M0_18	C16-20032-GH	age_years	not_reported	5.0	FN
 9	CM_D03_M0_18	C16-20032-GH	disease	healthy	Healthy	TP_correct
 9	CM_D03_M0_18	C16-20032-GH	host_species	Homo sapiens	Homo sapiens	TP_correct
@@ -247,8 +247,8 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	decision
 10	CM_D04_I1_18	C16-20047-GH	age_unit	Year	Year	TP_correct
 10	CM_D04_I1_18	C16-20047-GH	family	3	TettAJ_2019_b_4	TP_wrong
 10	CM_D04_I1_18	C16-20047-GH	family_role	Infant	father	TP_wrong
-10	CM_D04_I1_18	C16-20047-GH	age_min	not_reported	45	FN
-10	CM_D04_I1_18	C16-20047-GH	age_max	not_reported	45	FN
+10	CM_D04_I1_18	C16-20047-GH	age_min	1.5833333333	45	TP_wrong
+10	CM_D04_I1_18	C16-20047-GH	age_max	1.5833333333	45	TP_wrong
 10	CM_D04_I1_18	C16-20047-GH	age_years	not_reported	45.0	FN
 10	CM_D04_I1_18	C16-20047-GH	disease	healthy	Healthy	TP_correct
 10	CM_D04_I1_18	C16-20047-GH	host_species	Homo sapiens	Homo sapiens	TP_correct
@@ -270,8 +270,8 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	decision
 11	CM_D04_M0_18	C16-20048-GH	age_unit	Year	Year	TP_correct
 11	CM_D04_M0_18	C16-20048-GH	family	3	TettAJ_2019_b_4	TP_wrong
 11	CM_D04_M0_18	C16-20048-GH	family_role	Mother	mother	TP_correct
-11	CM_D04_M0_18	C16-20048-GH	age_min	not_reported	36	FN
-11	CM_D04_M0_18	C16-20048-GH	age_max	not_reported	36	FN
+11	CM_D04_M0_18	C16-20048-GH	age_min	28	36	TP_wrong
+11	CM_D04_M0_18	C16-20048-GH	age_max	28	36	TP_wrong
 11	CM_D04_M0_18	C16-20048-GH	age_years	not_reported	36.0	FN
 11	CM_D04_M0_18	C16-20048-GH	disease	healthy	Healthy	TP_correct
 11	CM_D04_M0_18	C16-20048-GH	host_species	Homo sapiens	Homo sapiens	TP_correct
@@ -293,8 +293,8 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	decision
 12	CM_D05_I1_18	C16-20049-GH	age_unit	Year	Year	TP_correct
 12	CM_D05_I1_18	C16-20049-GH	family	24	TettAJ_2019_b_4	TP_wrong
 12	CM_D05_I1_18	C16-20049-GH	family_role	Infant	child	TP_wrong
-12	CM_D05_I1_18	C16-20049-GH	age_min	not_reported	9	FN
-12	CM_D05_I1_18	C16-20049-GH	age_max	not_reported	9	FN
+12	CM_D05_I1_18	C16-20049-GH	age_min	2.6666666667	9	TP_wrong
+12	CM_D05_I1_18	C16-20049-GH	age_max	2.6666666667	9	TP_wrong
 12	CM_D05_I1_18	C16-20049-GH	age_years	not_reported	9.0	FN
 12	CM_D05_I1_18	C16-20049-GH	disease	healthy	Healthy	TP_correct
 12	CM_D05_I1_18	C16-20049-GH	host_species	Homo sapiens	Homo sapiens	TP_correct
@@ -316,8 +316,8 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	decision
 13	CM_D05_M0_18	C16-20050-GH	age_unit	Year	Year	TP_correct
 13	CM_D05_M0_18	C16-20050-GH	family	24	TettAJ_2019_b_4	TP_wrong
 13	CM_D05_M0_18	C16-20050-GH	family_role	Mother	child	TP_wrong
-13	CM_D05_M0_18	C16-20050-GH	age_min	not_reported	7	FN
-13	CM_D05_M0_18	C16-20050-GH	age_max	not_reported	7	FN
+13	CM_D05_M0_18	C16-20050-GH	age_min	45	7	TP_wrong
+13	CM_D05_M0_18	C16-20050-GH	age_max	45	7	TP_wrong
 13	CM_D05_M0_18	C16-20050-GH	age_years	not_reported	7.0	FN
 13	CM_D05_M0_18	C16-20050-GH	disease	healthy	Healthy	TP_correct
 13	CM_D05_M0_18	C16-20050-GH	host_species	Homo sapiens	Homo sapiens	TP_correct
@@ -339,8 +339,8 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	decision
 14	CM_D06_I1_18	C16-20065-GH	age_unit	Year	Year	TP_correct
 14	CM_D06_I1_18	C16-20065-GH	family	23	TettAJ_2019_b_5	TP_wrong
 14	CM_D06_I1_18	C16-20065-GH	family_role	Infant	mother	TP_wrong
-14	CM_D06_I1_18	C16-20065-GH	age_min	not_reported	34	FN
-14	CM_D06_I1_18	C16-20065-GH	age_max	not_reported	34	FN
+14	CM_D06_I1_18	C16-20065-GH	age_min	0.25	34	TP_wrong
+14	CM_D06_I1_18	C16-20065-GH	age_max	0.25	34	TP_wrong
 14	CM_D06_I1_18	C16-20065-GH	age_years	not_reported	34.0	FN
 14	CM_D06_I1_18	C16-20065-GH	disease	healthy	Healthy	TP_correct
 14	CM_D06_I1_18	C16-20065-GH	host_species	Homo sapiens	Homo sapiens	TP_correct
@@ -362,8 +362,8 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	decision
 15	CM_D06_M0_18	C16-20066-GH	age_unit	Year	Year	TP_correct
 15	CM_D06_M0_18	C16-20066-GH	family	23	TettAJ_2019_b_5	TP_wrong
 15	CM_D06_M0_18	C16-20066-GH	family_role	Mother	father	TP_wrong
-15	CM_D06_M0_18	C16-20066-GH	age_min	not_reported	41	FN
-15	CM_D06_M0_18	C16-20066-GH	age_max	not_reported	41	FN
+15	CM_D06_M0_18	C16-20066-GH	age_min	35	41	TP_wrong
+15	CM_D06_M0_18	C16-20066-GH	age_max	35	41	TP_wrong
 15	CM_D06_M0_18	C16-20066-GH	age_years	not_reported	41.0	FN
 15	CM_D06_M0_18	C16-20066-GH	disease	healthy	Healthy	TP_correct
 15	CM_D06_M0_18	C16-20066-GH	host_species	Homo sapiens	Homo sapiens	TP_correct
@@ -385,8 +385,8 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	decision
 16	CM_D07_I1_18	C16-20073-GH	age_unit	Year	Year	TP_correct
 16	CM_D07_I1_18	C16-20073-GH	family	22	TettAJ_2019_b_5	TP_wrong
 16	CM_D07_I1_18	C16-20073-GH	family_role	Infant	child	TP_wrong
-16	CM_D07_I1_18	C16-20073-GH	age_min	not_reported	7	FN
-16	CM_D07_I1_18	C16-20073-GH	age_max	not_reported	7	FN
+16	CM_D07_I1_18	C16-20073-GH	age_min	1.75	7	TP_wrong
+16	CM_D07_I1_18	C16-20073-GH	age_max	1.75	7	TP_wrong
 16	CM_D07_I1_18	C16-20073-GH	age_years	not_reported	7.0	FN
 16	CM_D07_I1_18	C16-20073-GH	disease	healthy	Healthy	TP_correct
 16	CM_D07_I1_18	C16-20073-GH	host_species	Homo sapiens	Homo sapiens	TP_correct
@@ -408,8 +408,8 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	decision
 17	CM_D07_M0_18	C16-20074-GH	age_unit	Year	Year	TP_correct
 17	CM_D07_M0_18	C16-20074-GH	family	22	TettAJ_2019_b_5	TP_wrong
 17	CM_D07_M0_18	C16-20074-GH	family_role	Mother	child	TP_wrong
-17	CM_D07_M0_18	C16-20074-GH	age_min	not_reported	6	FN
-17	CM_D07_M0_18	C16-20074-GH	age_max	not_reported	6	FN
+17	CM_D07_M0_18	C16-20074-GH	age_min	22	6	TP_wrong
+17	CM_D07_M0_18	C16-20074-GH	age_max	22	6	TP_wrong
 17	CM_D07_M0_18	C16-20074-GH	age_years	not_reported	6.0	FN
 17	CM_D07_M0_18	C16-20074-GH	disease	healthy	Healthy	TP_correct
 17	CM_D07_M0_18	C16-20074-GH	host_species	Homo sapiens	Homo sapiens	TP_correct
@@ -431,8 +431,8 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	decision
 18	CM_D08_I1_18	C16-20108-GH	age_unit	Year	Year	TP_correct
 18	CM_D08_I1_18	C16-20108-GH	family	21	TettAJ_2019_b_6	TP_wrong
 18	CM_D08_I1_18	C16-20108-GH	family_role	Infant	mother	TP_wrong
-18	CM_D08_I1_18	C16-20108-GH	age_min	not_reported	40	FN
-18	CM_D08_I1_18	C16-20108-GH	age_max	not_reported	40	FN
+18	CM_D08_I1_18	C16-20108-GH	age_min	2.1666666667	40	TP_wrong
+18	CM_D08_I1_18	C16-20108-GH	age_max	2.1666666667	40	TP_wrong
 18	CM_D08_I1_18	C16-20108-GH	age_years	not_reported	40.0	FN
 18	CM_D08_I1_18	C16-20108-GH	disease	healthy	Healthy	TP_correct
 18	CM_D08_I1_18	C16-20108-GH	host_species	Homo sapiens	Homo sapiens	TP_correct
@@ -454,8 +454,8 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	decision
 19	CM_D08_M0_18	C16-20110-GH	age_unit	Year	Year	TP_correct
 19	CM_D08_M0_18	C16-20110-GH	family	21	TettAJ_2019_b_6	TP_wrong
 19	CM_D08_M0_18	C16-20110-GH	family_role	Mother	child	TP_wrong
-19	CM_D08_M0_18	C16-20110-GH	age_min	not_reported	15	FN
-19	CM_D08_M0_18	C16-20110-GH	age_max	not_reported	15	FN
+19	CM_D08_M0_18	C16-20110-GH	age_min	22	15	TP_wrong
+19	CM_D08_M0_18	C16-20110-GH	age_max	22	15	TP_wrong
 19	CM_D08_M0_18	C16-20110-GH	age_years	not_reported	15.0	FN
 19	CM_D08_M0_18	C16-20110-GH	disease	healthy	Healthy	TP_correct
 19	CM_D08_M0_18	C16-20110-GH	host_species	Homo sapiens	Homo sapiens	TP_correct
@@ -477,8 +477,8 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	decision
 20	CM_D09_I1_18	C16-20111-GH	age_unit	Year	Year	TP_correct
 20	CM_D09_I1_18	C16-20111-GH	family	20	TettAJ_2019_b_6	TP_wrong
 20	CM_D09_I1_18	C16-20111-GH	family_role	Infant	child	TP_wrong
-20	CM_D09_I1_18	C16-20111-GH	age_min	not_reported	12	FN
-20	CM_D09_I1_18	C16-20111-GH	age_max	not_reported	12	FN
+20	CM_D09_I1_18	C16-20111-GH	age_min	3	12	TP_wrong
+20	CM_D09_I1_18	C16-20111-GH	age_max	3	12	TP_wrong
 20	CM_D09_I1_18	C16-20111-GH	age_years	not_reported	12.0	FN
 20	CM_D09_I1_18	C16-20111-GH	disease	healthy	Healthy	TP_correct
 20	CM_D09_I1_18	C16-20111-GH	host_species	Homo sapiens	Homo sapiens	TP_correct
@@ -500,8 +500,8 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	decision
 21	CM_D09_M0_18	C16-20112-GH	age_unit	Year	Year	TP_correct
 21	CM_D09_M0_18	C16-20112-GH	family	20	TettAJ_2019_b_6	TP_wrong
 21	CM_D09_M0_18	C16-20112-GH	family_role	Mother	child	TP_wrong
-21	CM_D09_M0_18	C16-20112-GH	age_min	not_reported	7	FN
-21	CM_D09_M0_18	C16-20112-GH	age_max	not_reported	7	FN
+21	CM_D09_M0_18	C16-20112-GH	age_min	27	7	TP_wrong
+21	CM_D09_M0_18	C16-20112-GH	age_max	27	7	TP_wrong
 21	CM_D09_M0_18	C16-20112-GH	age_years	not_reported	7.0	FN
 21	CM_D09_M0_18	C16-20112-GH	disease	healthy	Healthy	TP_correct
 21	CM_D09_M0_18	C16-20112-GH	host_species	Homo sapiens	Homo sapiens	TP_correct
@@ -523,8 +523,8 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	decision
 22	CM_D10_I1_18	C16-20113-GH	age_unit	Year	Year	TP_correct
 22	CM_D10_I1_18	C16-20113-GH	family	19	TettAJ_2019_b_6	TP_wrong
 22	CM_D10_I1_18	C16-20113-GH	family_role	Infant	child	TP_wrong
-22	CM_D10_I1_18	C16-20113-GH	age_min	not_reported	6	FN
-22	CM_D10_I1_18	C16-20113-GH	age_max	not_reported	6	FN
+22	CM_D10_I1_18	C16-20113-GH	age_min	1.1666666667	6	TP_wrong
+22	CM_D10_I1_18	C16-20113-GH	age_max	1.1666666667	6	TP_wrong
 22	CM_D10_I1_18	C16-20113-GH	age_years	not_reported	6.0	FN
 22	CM_D10_I1_18	C16-20113-GH	disease	healthy	Healthy	TP_correct
 22	CM_D10_I1_18	C16-20113-GH	host_species	Homo sapiens	Homo sapiens	TP_correct
@@ -546,8 +546,8 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	decision
 23	CM_D10_M0_18	C16-20124-GH	age_unit	Year	Year	TP_correct
 23	CM_D10_M0_18	C16-20124-GH	family	19	TettAJ_2019_b_7	TP_wrong
 23	CM_D10_M0_18	C16-20124-GH	family_role	Mother	mother	TP_correct
-23	CM_D10_M0_18	C16-20124-GH	age_min	not_reported	38	FN
-23	CM_D10_M0_18	C16-20124-GH	age_max	not_reported	38	FN
+23	CM_D10_M0_18	C16-20124-GH	age_min	25	38	TP_wrong
+23	CM_D10_M0_18	C16-20124-GH	age_max	25	38	TP_wrong
 23	CM_D10_M0_18	C16-20124-GH	age_years	not_reported	38.0	FN
 23	CM_D10_M0_18	C16-20124-GH	disease	healthy	Healthy	TP_correct
 23	CM_D10_M0_18	C16-20124-GH	host_species	Homo sapiens	Homo sapiens	TP_correct
@@ -569,8 +569,8 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	decision
 24	CM_D11_I1_18	C16-20125-GH	age_unit	Year	Year	TP_correct
 24	CM_D11_I1_18	C16-20125-GH	family	18	TettAJ_2019_b_7	TP_wrong
 24	CM_D11_I1_18	C16-20125-GH	family_role	Infant	father	TP_wrong
-24	CM_D11_I1_18	C16-20125-GH	age_min	not_reported	43	FN
-24	CM_D11_I1_18	C16-20125-GH	age_max	not_reported	43	FN
+24	CM_D11_I1_18	C16-20125-GH	age_min	1.4166666667	43	TP_wrong
+24	CM_D11_I1_18	C16-20125-GH	age_max	1.4166666667	43	TP_wrong
 24	CM_D11_I1_18	C16-20125-GH	age_years	not_reported	43.0	FN
 24	CM_D11_I1_18	C16-20125-GH	disease	healthy	Healthy	TP_correct
 24	CM_D11_I1_18	C16-20125-GH	host_species	Homo sapiens	Homo sapiens	TP_correct
@@ -592,8 +592,8 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	decision
 25	CM_D11_M0_18	C16-20126-GH	age_unit	Year	Year	TP_correct
 25	CM_D11_M0_18	C16-20126-GH	family	18	TettAJ_2019_b_7	TP_wrong
 25	CM_D11_M0_18	C16-20126-GH	family_role	Mother	child	TP_wrong
-25	CM_D11_M0_18	C16-20126-GH	age_min	not_reported	12	FN
-25	CM_D11_M0_18	C16-20126-GH	age_max	not_reported	12	FN
+25	CM_D11_M0_18	C16-20126-GH	age_min	25	12	TP_wrong
+25	CM_D11_M0_18	C16-20126-GH	age_max	25	12	TP_wrong
 25	CM_D11_M0_18	C16-20126-GH	age_years	not_reported	12.0	FN
 25	CM_D11_M0_18	C16-20126-GH	disease	healthy	Healthy	TP_correct
 25	CM_D11_M0_18	C16-20126-GH	host_species	Homo sapiens	Homo sapiens	TP_correct
@@ -615,8 +615,8 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	decision
 26	CM_D13_I1_18	C16-20127-GH	age_unit	Year	Year	TP_correct
 26	CM_D13_I1_18	C16-20127-GH	family	17	TettAJ_2019_b_7	TP_wrong
 26	CM_D13_I1_18	C16-20127-GH	family_role	Infant	child	TP_wrong
-26	CM_D13_I1_18	C16-20127-GH	age_min	not_reported	10	FN
-26	CM_D13_I1_18	C16-20127-GH	age_max	not_reported	10	FN
+26	CM_D13_I1_18	C16-20127-GH	age_min	1.1666666667	10	TP_wrong
+26	CM_D13_I1_18	C16-20127-GH	age_max	1.1666666667	10	TP_wrong
 26	CM_D13_I1_18	C16-20127-GH	age_years	not_reported	10.0	FN
 26	CM_D13_I1_18	C16-20127-GH	disease	healthy	Healthy	TP_correct
 26	CM_D13_I1_18	C16-20127-GH	host_species	Homo sapiens	Homo sapiens	TP_correct
@@ -638,8 +638,8 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	decision
 27	CM_D13_M0_18	C16-20138-GH	age_unit	Year	Year	TP_correct
 27	CM_D13_M0_18	C16-20138-GH	family	17	TettAJ_2019_b_7	TP_wrong
 27	CM_D13_M0_18	C16-20138-GH	family_role	Mother	child	TP_wrong
-27	CM_D13_M0_18	C16-20138-GH	age_min	not_reported	3	FN
-27	CM_D13_M0_18	C16-20138-GH	age_max	not_reported	3	FN
+27	CM_D13_M0_18	C16-20138-GH	age_min	26	3	TP_wrong
+27	CM_D13_M0_18	C16-20138-GH	age_max	26	3	TP_wrong
 27	CM_D13_M0_18	C16-20138-GH	age_years	not_reported	3.0	FN
 27	CM_D13_M0_18	C16-20138-GH	disease	healthy	Healthy	TP_correct
 27	CM_D13_M0_18	C16-20138-GH	host_species	Homo sapiens	Homo sapiens	TP_correct
@@ -661,8 +661,8 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	decision
 28	CM_D15_I1_18	C16-20241-GH	age_unit	Year	Year	TP_correct
 28	CM_D15_I1_18	C16-20241-GH	family	16	TettAJ_2019_b_8	TP_wrong
 28	CM_D15_I1_18	C16-20241-GH	family_role	Infant	mother	TP_wrong
-28	CM_D15_I1_18	C16-20241-GH	age_min	not_reported	31	FN
-28	CM_D15_I1_18	C16-20241-GH	age_max	not_reported	31	FN
+28	CM_D15_I1_18	C16-20241-GH	age_min	4.5	31	TP_wrong
+28	CM_D15_I1_18	C16-20241-GH	age_max	4.5	31	TP_wrong
 28	CM_D15_I1_18	C16-20241-GH	age_years	not_reported	31.0	FN
 28	CM_D15_I1_18	C16-20241-GH	disease	healthy	Healthy	TP_correct
 28	CM_D15_I1_18	C16-20241-GH	host_species	Homo sapiens	Homo sapiens	TP_correct
@@ -684,8 +684,8 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	decision
 29	CM_D15_M0_18	C16-20242-GH	age_unit	Year	Year	TP_correct
 29	CM_D15_M0_18	C16-20242-GH	family	16	TettAJ_2019_b_8	TP_wrong
 29	CM_D15_M0_18	C16-20242-GH	family_role	Mother	father	TP_wrong
-29	CM_D15_M0_18	C16-20242-GH	age_min	not_reported	34	FN
-29	CM_D15_M0_18	C16-20242-GH	age_max	not_reported	34	FN
+29	CM_D15_M0_18	C16-20242-GH	age_min	28	34	TP_wrong
+29	CM_D15_M0_18	C16-20242-GH	age_max	28	34	TP_wrong
 29	CM_D15_M0_18	C16-20242-GH	age_years	not_reported	34.0	FN
 29	CM_D15_M0_18	C16-20242-GH	disease	healthy	Healthy	TP_correct
 29	CM_D15_M0_18	C16-20242-GH	host_species	Homo sapiens	Homo sapiens	TP_correct
@@ -707,8 +707,8 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	decision
 30	CM_D21_I1_18	C16-20243-GH	age_unit	Year	Year	TP_correct
 30	CM_D21_I1_18	C16-20243-GH	family	15	TettAJ_2019_b_8	TP_wrong
 30	CM_D21_I1_18	C16-20243-GH	family_role	Infant	child	TP_wrong
-30	CM_D21_I1_18	C16-20243-GH	age_min	not_reported	7	FN
-30	CM_D21_I1_18	C16-20243-GH	age_max	not_reported	7	FN
+30	CM_D21_I1_18	C16-20243-GH	age_min	0.5	7	TP_wrong
+30	CM_D21_I1_18	C16-20243-GH	age_max	0.5	7	TP_wrong
 30	CM_D21_I1_18	C16-20243-GH	age_years	not_reported	7.0	FN
 30	CM_D21_I1_18	C16-20243-GH	disease	healthy	Healthy	TP_correct
 30	CM_D21_I1_18	C16-20243-GH	host_species	Homo sapiens	Homo sapiens	TP_correct
@@ -753,8 +753,8 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	decision
 32	CM_D21B_I12_18	C16-20245-GH	age_unit	Year	Year	TP_correct
 32	CM_D21B_I12_18	C16-20245-GH	family	15	TettAJ_2019_b_8	TP_wrong
 32	CM_D21B_I12_18	C16-20245-GH	family_role	Infant	child	TP_wrong
-32	CM_D21B_I12_18	C16-20245-GH	age_min	not_reported	5	FN
-32	CM_D21B_I12_18	C16-20245-GH	age_max	not_reported	5	FN
+32	CM_D21B_I12_18	C16-20245-GH	age_min	0.1666666667	5	TP_wrong
+32	CM_D21B_I12_18	C16-20245-GH	age_max	0.1666666667	5	TP_wrong
 32	CM_D21B_I12_18	C16-20245-GH	age_years	not_reported	5.0	FN
 32	CM_D21B_I12_18	C16-20245-GH	disease	healthy	Healthy	TP_correct
 32	CM_D21B_I12_18	C16-20245-GH	host_species	Homo sapiens	Homo sapiens	TP_correct
@@ -776,8 +776,8 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	decision
 33	CM_D24_I1_18	C16-20246-GH	age_unit	Year	Year	TP_correct
 33	CM_D24_I1_18	C16-20246-GH	family	14	TettAJ_2019_b_8	TP_wrong
 33	CM_D24_I1_18	C16-20246-GH	family_role	Infant	child	TP_wrong
-33	CM_D24_I1_18	C16-20246-GH	age_min	not_reported	3	FN
-33	CM_D24_I1_18	C16-20246-GH	age_max	not_reported	3	FN
+33	CM_D24_I1_18	C16-20246-GH	age_min	2	3	TP_wrong
+33	CM_D24_I1_18	C16-20246-GH	age_max	2	3	TP_wrong
 33	CM_D24_I1_18	C16-20246-GH	age_years	not_reported	3.0	FN
 33	CM_D24_I1_18	C16-20246-GH	disease	healthy	Healthy	TP_correct
 33	CM_D24_I1_18	C16-20246-GH	host_species	Homo sapiens	Homo sapiens	TP_correct
@@ -799,8 +799,8 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	decision
 34	CM_D24_M0_18	C16-20247-GH	age_unit	Year	Day	TP_wrong
 34	CM_D24_M0_18	C16-20247-GH	family	14	TettAJ_2019_b_8	TP_wrong
 34	CM_D24_M0_18	C16-20247-GH	family_role	Mother	child	TP_wrong
-34	CM_D24_M0_18	C16-20247-GH	age_min	not_reported	0	FN
-34	CM_D24_M0_18	C16-20247-GH	age_max	not_reported	0	FN
+34	CM_D24_M0_18	C16-20247-GH	age_min	25	0	TP_wrong
+34	CM_D24_M0_18	C16-20247-GH	age_max	25	0	TP_wrong
 34	CM_D24_M0_18	C16-20247-GH	age_years	not_reported	0.0	FN
 34	CM_D24_M0_18	C16-20247-GH	disease	healthy	Healthy	TP_correct
 34	CM_D24_M0_18	C16-20247-GH	host_species	Homo sapiens	Homo sapiens	TP_correct
@@ -822,8 +822,8 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	decision
 35	CM_D26_M0_18	C16-20273-GH	age_unit	Year	Year	TP_correct
 35	CM_D26_M0_18	C16-20273-GH	family	13	TettAJ_2019_b_9	TP_wrong
 35	CM_D26_M0_18	C16-20273-GH	family_role	Mother	mother	TP_correct
-35	CM_D26_M0_18	C16-20273-GH	age_min	not_reported	31	FN
-35	CM_D26_M0_18	C16-20273-GH	age_max	not_reported	31	FN
+35	CM_D26_M0_18	C16-20273-GH	age_min	30	31	TP_correct
+35	CM_D26_M0_18	C16-20273-GH	age_max	30	31	TP_correct
 35	CM_D26_M0_18	C16-20273-GH	age_years	not_reported	31.0	FN
 35	CM_D26_M0_18	C16-20273-GH	disease	healthy	Healthy	TP_correct
 35	CM_D26_M0_18	C16-20273-GH	host_species	Homo sapiens	Homo sapiens	TP_correct
@@ -845,8 +845,8 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	decision
 36	CM_D26A_I13_18	C16-20274-GH	age_unit	Year	Year	TP_correct
 36	CM_D26A_I13_18	C16-20274-GH	family	13	TettAJ_2019_b_9	TP_wrong
 36	CM_D26A_I13_18	C16-20274-GH	family_role	Infant	father	TP_wrong
-36	CM_D26A_I13_18	C16-20274-GH	age_min	not_reported	34	FN
-36	CM_D26A_I13_18	C16-20274-GH	age_max	not_reported	34	FN
+36	CM_D26A_I13_18	C16-20274-GH	age_min	0.1666666667	34	TP_wrong
+36	CM_D26A_I13_18	C16-20274-GH	age_max	0.1666666667	34	TP_wrong
 36	CM_D26A_I13_18	C16-20274-GH	age_years	not_reported	34.0	FN
 36	CM_D26A_I13_18	C16-20274-GH	disease	healthy	Healthy	TP_correct
 36	CM_D26A_I13_18	C16-20274-GH	host_species	Homo sapiens	Homo sapiens	TP_correct
@@ -868,8 +868,8 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	decision
 37	CM_D26AB_I1_18	C16-20275-GH	age_unit	Year	Year	TP_correct
 37	CM_D26AB_I1_18	C16-20275-GH	family	13	TettAJ_2019_b_9	TP_wrong
 37	CM_D26AB_I1_18	C16-20275-GH	family_role	Infant	child	TP_wrong
-37	CM_D26AB_I1_18	C16-20275-GH	age_min	not_reported	10	FN
-37	CM_D26AB_I1_18	C16-20275-GH	age_max	not_reported	10	FN
+37	CM_D26AB_I1_18	C16-20275-GH	age_min	0.5	10	TP_wrong
+37	CM_D26AB_I1_18	C16-20275-GH	age_max	0.5	10	TP_wrong
 37	CM_D26AB_I1_18	C16-20275-GH	age_years	not_reported	10.0	FN
 37	CM_D26AB_I1_18	C16-20275-GH	disease	healthy	Healthy	TP_correct
 37	CM_D26AB_I1_18	C16-20275-GH	host_species	Homo sapiens	Homo sapiens	TP_correct
@@ -891,8 +891,8 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	decision
 38	CM_D26K_I12_18	C16-20288-GH	age_unit	Year	Year	TP_correct
 38	CM_D26K_I12_18	C16-20288-GH	family	13	TettAJ_2019_b_10	TP_wrong
 38	CM_D26K_I12_18	C16-20288-GH	family_role	Infant	father	TP_wrong
-38	CM_D26K_I12_18	C16-20288-GH	age_min	not_reported	41	FN
-38	CM_D26K_I12_18	C16-20288-GH	age_max	not_reported	41	FN
+38	CM_D26K_I12_18	C16-20288-GH	age_min	0.6666666667	41	TP_wrong
+38	CM_D26K_I12_18	C16-20288-GH	age_max	0.6666666667	41	TP_wrong
 38	CM_D26K_I12_18	C16-20288-GH	age_years	not_reported	41.0	FN
 38	CM_D26K_I12_18	C16-20288-GH	disease	healthy	Healthy	TP_correct
 38	CM_D26K_I12_18	C16-20288-GH	host_species	Homo sapiens	Homo sapiens	TP_correct
@@ -914,8 +914,8 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	decision
 39	CM_D33_I1_18	C16-20292-GH	age_unit	Year	Year	TP_correct
 39	CM_D33_I1_18	C16-20292-GH	family	12	TettAJ_2019_b_10	TP_wrong
 39	CM_D33_I1_18	C16-20292-GH	family_role	Infant	mother	TP_wrong
-39	CM_D33_I1_18	C16-20292-GH	age_min	not_reported	25	FN
-39	CM_D33_I1_18	C16-20292-GH	age_max	not_reported	25	FN
+39	CM_D33_I1_18	C16-20292-GH	age_min	0.5833333333	25	TP_wrong
+39	CM_D33_I1_18	C16-20292-GH	age_max	0.5833333333	25	TP_wrong
 39	CM_D33_I1_18	C16-20292-GH	age_years	not_reported	25.0	FN
 39	CM_D33_I1_18	C16-20292-GH	disease	healthy	Healthy	TP_correct
 39	CM_D33_I1_18	C16-20292-GH	host_species	Homo sapiens	Homo sapiens	TP_correct
@@ -937,8 +937,8 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	decision
 40	CM_D33_M0_18	C16-20362-GH	age_unit	Year	Year	TP_correct
 40	CM_D33_M0_18	C16-20362-GH	family	12	TettAJ_2019_b_11	TP_wrong
 40	CM_D33_M0_18	C16-20362-GH	family_role	Mother	mother	TP_correct
-40	CM_D33_M0_18	C16-20362-GH	age_min	not_reported	20	FN
-40	CM_D33_M0_18	C16-20362-GH	age_max	not_reported	20	FN
+40	CM_D33_M0_18	C16-20362-GH	age_min	27	20	TP_wrong
+40	CM_D33_M0_18	C16-20362-GH	age_max	27	20	TP_wrong
 40	CM_D33_M0_18	C16-20362-GH	age_years	not_reported	20.0	FN
 40	CM_D33_M0_18	C16-20362-GH	disease	healthy	Healthy	TP_correct
 40	CM_D33_M0_18	C16-20362-GH	host_species	Homo sapiens	Homo sapiens	TP_correct
@@ -960,8 +960,8 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	decision
 41	CM_D39_I1_18	C16-20363-GH	age_unit	Year	Year	TP_correct
 41	CM_D39_I1_18	C16-20363-GH	family	11	TettAJ_2019_b_11	TP_wrong
 41	CM_D39_I1_18	C16-20363-GH	family_role	Infant	father	TP_wrong
-41	CM_D39_I1_18	C16-20363-GH	age_min	not_reported	34	FN
-41	CM_D39_I1_18	C16-20363-GH	age_max	not_reported	34	FN
+41	CM_D39_I1_18	C16-20363-GH	age_min	0.8333333333	34	TP_wrong
+41	CM_D39_I1_18	C16-20363-GH	age_max	0.8333333333	34	TP_wrong
 41	CM_D39_I1_18	C16-20363-GH	age_years	not_reported	34.0	FN
 41	CM_D39_I1_18	C16-20363-GH	disease	healthy	Healthy	TP_correct
 41	CM_D39_I1_18	C16-20363-GH	host_species	Homo sapiens	Homo sapiens	TP_correct
@@ -983,8 +983,8 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	decision
 42	CM_D39_M0_18	C16-20374-GH	age_unit	Year	Year	TP_correct
 42	CM_D39_M0_18	C16-20374-GH	family	11	TettAJ_2019_b_12	TP_wrong
 42	CM_D39_M0_18	C16-20374-GH	family_role	Mother	mother	TP_correct
-42	CM_D39_M0_18	C16-20374-GH	age_min	not_reported	24	FN
-42	CM_D39_M0_18	C16-20374-GH	age_max	not_reported	24	FN
+42	CM_D39_M0_18	C16-20374-GH	age_min	28	24	TP_wrong
+42	CM_D39_M0_18	C16-20374-GH	age_max	28	24	TP_wrong
 42	CM_D39_M0_18	C16-20374-GH	age_years	not_reported	24.0	FN
 42	CM_D39_M0_18	C16-20374-GH	disease	healthy	Healthy	TP_correct
 42	CM_D39_M0_18	C16-20374-GH	host_species	Homo sapiens	Homo sapiens	TP_correct
@@ -1006,8 +1006,8 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	decision
 43	CM_D40_I1_18	C16-20375-GH	age_unit	Year	Year	TP_correct
 43	CM_D40_I1_18	C16-20375-GH	family	10	TettAJ_2019_b_12	TP_wrong
 43	CM_D40_I1_18	C16-20375-GH	family_role	Infant	father	TP_wrong
-43	CM_D40_I1_18	C16-20375-GH	age_min	not_reported	31	FN
-43	CM_D40_I1_18	C16-20375-GH	age_max	not_reported	31	FN
+43	CM_D40_I1_18	C16-20375-GH	age_min	0.4166666667	31	TP_wrong
+43	CM_D40_I1_18	C16-20375-GH	age_max	0.4166666667	31	TP_wrong
 43	CM_D40_I1_18	C16-20375-GH	age_years	not_reported	31.0	FN
 43	CM_D40_I1_18	C16-20375-GH	disease	healthy	Healthy	TP_correct
 43	CM_D40_I1_18	C16-20375-GH	host_species	Homo sapiens	Homo sapiens	TP_correct

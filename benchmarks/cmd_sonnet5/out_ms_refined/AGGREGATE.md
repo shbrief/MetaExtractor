@@ -7,12 +7,12 @@ Each study run **3×** per model on the **fixed** fetcher (Europe PMC fallback i
 
 Headline content metrics per repeat (median [min–max] across 3 run(s)):
 
-- **P**: 0.990 [0.960–0.993]
-- **R**: 0.591 [0.569–0.593]
-- **F1**: 0.741 [0.715–0.741]
-- **vacc**: 0.609 [0.593–0.623]
+- **P**: 0.990 [0.963–0.994]
+- **R**: 0.631 [0.609–0.632]
+- **F1**: 0.772 [0.746–0.772]
+- **vacc**: 0.610 [0.594–0.622]
 - **fp**: – [–––]
-- **R_cov (coverage-aware recall; un/under-enumerated gold rows counted as FN)**: 0.286 [0.275–0.287]
+- **R_cov (coverage-aware recall; un/under-enumerated gold rows counted as FN)**: 0.305 [0.294–0.306]
 
 ### Per-study sample enumeration across repeats
 
@@ -33,12 +33,12 @@ Headline content metrics per repeat (median [min–max] across 3 run(s)):
 
 Headline content metrics per repeat (median [min–max] across 3 run(s)):
 
-- **P**: 0.901 [0.898–0.905]
-- **R**: 0.660 [0.640–0.688]
-- **F1**: 0.762 [0.748–0.782]
-- **vacc**: 0.512 [0.480–0.527]
+- **P**: 0.901 [0.898–0.906]
+- **R**: 0.660 [0.640–0.696]
+- **F1**: 0.762 [0.748–0.787]
+- **vacc**: 0.508 [0.474–0.523]
 - **fp**: – [–––]
-- **R_cov (coverage-aware recall; un/under-enumerated gold rows counted as FN)**: 0.423 [0.411–0.441]
+- **R_cov (coverage-aware recall; un/under-enumerated gold rows counted as FN)**: 0.423 [0.411–0.447]
 
 ### Per-study sample enumeration across repeats
 

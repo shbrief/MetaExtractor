@@ -916,7 +916,9 @@
       "fmt_role": "Donor",
       "smoker": "Non-smoker (finding)",
       "uncurated_metadata": "Cohort from Kailuan Group Corporation employees in Tangshan, China; fecal microbiota transplantation performed from human donors to germ-free C57BL/6L mice.; 196 Chinese individuals: 41 healthy controls, 56 pre-hypertensive (pHTN), 99 hypertensive (HTN) patients.; Metabolomics subset: 124 individuals (30 controls, 31 pHTN, 63 HTN).; FMT donors: 2 HTN patients and 1 normotensive control; recipients were male GF C57BL/6L mice aged 8-10 weeks.",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "27",
+      "age_max": "27"
     },
     {
       "target_condition": "Control",
@@ -938,7 +940,9 @@
       "fmt_role": "Donor",
       "smoker": "Non-smoker (finding)",
       "uncurated_metadata": "Cohort from Kailuan Group Corporation employees in Tangshan, China; fecal microbiota transplantation performed from human donors to germ-free C57BL/6L mice.; 196 Chinese individuals: 41 healthy controls, 56 pre-hypertensive (pHTN), 99 hypertensive (HTN) patients.; Metabolomics subset: 124 individuals (30 controls, 31 pHTN, 63 HTN).; FMT donors: 2 HTN patients and 1 normotensive control; recipients were male GF C57BL/6L mice aged 8-10 weeks.",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "50",
+      "age_max": "50"
     },
     {
       "target_condition": "Control",
@@ -960,7 +964,9 @@
       "fmt_role": "Donor",
       "smoker": "Non-smoker (finding)",
       "uncurated_metadata": "Cohort from Kailuan Group Corporation employees in Tangshan, China; fecal microbiota transplantation performed from human donors to germ-free C57BL/6L mice.; 196 Chinese individuals: 41 healthy controls, 56 pre-hypertensive (pHTN), 99 hypertensive (HTN) patients.; Metabolomics subset: 124 individuals (30 controls, 31 pHTN, 63 HTN).; FMT donors: 2 HTN patients and 1 normotensive control; recipients were male GF C57BL/6L mice aged 8-10 weeks.",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "50",
+      "age_max": "50"
     },
     {
       "target_condition": "Hypertension",
@@ -981,7 +987,9 @@
       "fmt_role": "Donor",
       "smoker": "Non-smoker (finding)",
       "uncurated_metadata": "Cohort from Kailuan Group Corporation employees in Tangshan, China; fecal microbiota transplantation performed from human donors to germ-free C57BL/6L mice.; 196 Chinese individuals: 41 healthy controls, 56 pre-hypertensive (pHTN), 99 hypertensive (HTN) patients.; Metabolomics subset: 124 individuals (30 controls, 31 pHTN, 63 HTN).; FMT donors: 2 HTN patients and 1 normotensive control; recipients were male GF C57BL/6L mice aged 8-10 weeks.",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "72",
+      "age_max": "72"
     },
     {
       "target_condition": "Hypertension",
@@ -1002,7 +1010,9 @@
       "fmt_role": "Donor",
       "smoker": "Non-smoker (finding)",
       "uncurated_metadata": "Cohort from Kailuan Group Corporation employees in Tangshan, China; fecal microbiota transplantation performed from human donors to germ-free C57BL/6L mice.; 196 Chinese individuals: 41 healthy controls, 56 pre-hypertensive (pHTN), 99 hypertensive (HTN) patients.; Metabolomics subset: 124 individuals (30 controls, 31 pHTN, 63 HTN).; FMT donors: 2 HTN patients and 1 normotensive control; recipients were male GF C57BL/6L mice aged 8-10 weeks.",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "47",
+      "age_max": "47"
     },
     {
       "target_condition": "Hypertension",
@@ -1023,7 +1033,9 @@
       "fmt_role": "Donor",
       "smoker": "Non-smoker (finding)",
       "uncurated_metadata": "Cohort from Kailuan Group Corporation employees in Tangshan, China; fecal microbiota transplantation performed from human donors to germ-free C57BL/6L mice.; 196 Chinese individuals: 41 healthy controls, 56 pre-hypertensive (pHTN), 99 hypertensive (HTN) patients.; Metabolomics subset: 124 individuals (30 controls, 31 pHTN, 63 HTN).; FMT donors: 2 HTN patients and 1 normotensive control; recipients were male GF C57BL/6L mice aged 8-10 weeks.",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "46",
+      "age_max": "46"
     }
   ],
   "table_selection": [

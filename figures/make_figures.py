@@ -147,12 +147,12 @@ def fig1_pipeline():
 def fig3_model_compare():
     # Refined pipeline, positional scoring (out_ms_refined), median [min-max] / 3 repeats.
     metrics = ["Precision", "Recall", "F1", "value-acc"]
-    son_med = [0.990, 0.591, 0.741, 0.609]
-    son_lo = [0.960, 0.569, 0.715, 0.593]
-    son_hi = [0.993, 0.593, 0.741, 0.623]
-    hai_med = [0.901, 0.660, 0.762, 0.512]
-    hai_lo = [0.898, 0.640, 0.748, 0.480]
-    hai_hi = [0.905, 0.688, 0.782, 0.527]
+    son_med = [0.990, 0.631, 0.772, 0.610]
+    son_lo = [0.963, 0.609, 0.746, 0.594]
+    son_hi = [0.994, 0.632, 0.772, 0.622]
+    hai_med = [0.901, 0.660, 0.762, 0.508]
+    hai_lo = [0.898, 0.640, 0.748, 0.474]
+    hai_hi = [0.906, 0.696, 0.787, 0.523]
 
     fig, (ax, axfp) = plt.subplots(
         1, 2, figsize=(8.4, 4.0), gridspec_kw={"width_ratios": [3.3, 1]})

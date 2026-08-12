@@ -380,28 +380,28 @@
       "notes": null
     },
     "age_min": {
-      "value": "not_reported",
+      "value": "18",
       "by_subgroup": null,
       "unit": null,
       "normalized_value": null,
       "normalized_unit": null,
-      "extraction_type": "directly_stated",
+      "extraction_type": "derived",
       "confidence": "high",
       "evidence_quote": "",
       "section": "",
-      "notes": null
+      "notes": "[age_min/age_max set from schema age-bound rule]"
     },
     "age_max": {
-      "value": "not_reported",
+      "value": "65",
       "by_subgroup": null,
       "unit": null,
       "normalized_value": null,
       "normalized_unit": null,
-      "extraction_type": "directly_stated",
+      "extraction_type": "derived",
       "confidence": "high",
       "evidence_quote": "",
       "section": "",
-      "notes": null
+      "notes": "[age_min/age_max set from schema age-bound rule]"
     },
     "age_years": {
       "value": "not_reported",

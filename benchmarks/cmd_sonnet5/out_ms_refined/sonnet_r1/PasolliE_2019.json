@@ -959,7 +959,9 @@
       "sequencing_platform": "{'Madagascar cohort': 'IlluminaHiSeq', 'Ethiopia cohort': 'IlluminaHiSeq'}",
       "ancestry_details": "{'Madagascar cohort': ['Betsimisaraka', 'Tsimihety'], 'Ethiopia cohort': 'not_reported'}",
       "disease_details": "Healthy",
-      "host_species": "Homo sapiens (human)"
+      "host_species": "Homo sapiens (human)",
+      "age_min": "21",
+      "age_max": "21"
     },
     {
       "study_name": "CM_madagascar",
@@ -988,7 +990,9 @@
       "sequencing_platform": "{'Madagascar cohort': 'IlluminaHiSeq', 'Ethiopia cohort': 'IlluminaHiSeq'}",
       "ancestry_details": "{'Madagascar cohort': ['Betsimisaraka', 'Tsimihety'], 'Ethiopia cohort': 'not_reported'}",
       "disease_details": "Healthy",
-      "host_species": "Homo sapiens (human)"
+      "host_species": "Homo sapiens (human)",
+      "age_min": "24",
+      "age_max": "24"
     },
     {
       "study_name": "CM_madagascar",
@@ -1017,7 +1021,9 @@
       "sequencing_platform": "{'Madagascar cohort': 'IlluminaHiSeq', 'Ethiopia cohort': 'IlluminaHiSeq'}",
       "ancestry_details": "{'Madagascar cohort': ['Betsimisaraka', 'Tsimihety'], 'Ethiopia cohort': 'not_reported'}",
       "disease_details": "Healthy",
-      "host_species": "Homo sapiens (human)"
+      "host_species": "Homo sapiens (human)",
+      "age_min": "38",
+      "age_max": "38"
     },
     {
       "study_name": "CM_madagascar",
@@ -1046,7 +1052,9 @@
       "sequencing_platform": "{'Madagascar cohort': 'IlluminaHiSeq', 'Ethiopia cohort': 'IlluminaHiSeq'}",
       "ancestry_details": "{'Madagascar cohort': ['Betsimisaraka', 'Tsimihety'], 'Ethiopia cohort': 'not_reported'}",
       "disease_details": "Healthy",
-      "host_species": "Homo sapiens (human)"
+      "host_species": "Homo sapiens (human)",
+      "age_min": "34",
+      "age_max": "34"
     },
     {
       "study_name": "CM_madagascar",
@@ -1075,7 +1083,9 @@
       "sequencing_platform": "{'Madagascar cohort': 'IlluminaHiSeq', 'Ethiopia cohort': 'IlluminaHiSeq'}",
       "ancestry_details": "{'Madagascar cohort': ['Betsimisaraka', 'Tsimihety'], 'Ethiopia cohort': 'not_reported'}",
       "disease_details": "Healthy",
-      "host_species": "Homo sapiens (human)"
+      "host_species": "Homo sapiens (human)",
+      "age_min": "28",
+      "age_max": "28"
     },
     {
       "study_name": "CM_madagascar",
@@ -1095,7 +1105,9 @@
       "sequencing_platform": "{'Madagascar cohort': 'IlluminaHiSeq', 'Ethiopia cohort': 'IlluminaHiSeq'}",
       "ancestry_details": "{'Madagascar cohort': ['Betsimisaraka', 'Tsimihety'], 'Ethiopia cohort': 'not_reported'}",
       "disease_details": "Healthy",
-      "host_species": "Homo sapiens (human)"
+      "host_species": "Homo sapiens (human)",
+      "age_min": "30",
+      "age_max": "30"
     },
     {
       "study_name": "CM_madagascar",
@@ -1124,7 +1136,9 @@
       "sequencing_platform": "{'Madagascar cohort': 'IlluminaHiSeq', 'Ethiopia cohort': 'IlluminaHiSeq'}",
       "ancestry_details": "{'Madagascar cohort': ['Betsimisaraka', 'Tsimihety'], 'Ethiopia cohort': 'not_reported'}",
       "disease_details": "Healthy",
-      "host_species": "Homo sapiens (human)"
+      "host_species": "Homo sapiens (human)",
+      "age_min": "31",
+      "age_max": "31"
     },
     {
       "study_name": "CM_madagascar",
@@ -1153,7 +1167,9 @@
       "sequencing_platform": "{'Madagascar cohort': 'IlluminaHiSeq', 'Ethiopia cohort': 'IlluminaHiSeq'}",
       "ancestry_details": "{'Madagascar cohort': ['Betsimisaraka', 'Tsimihety'], 'Ethiopia cohort': 'not_reported'}",
       "disease_details": "Healthy",
-      "host_species": "Homo sapiens (human)"
+      "host_species": "Homo sapiens (human)",
+      "age_min": "48",
+      "age_max": "48"
     },
     {
       "study_name": "CM_madagascar",
@@ -1182,7 +1198,9 @@
       "sequencing_platform": "{'Madagascar cohort': 'IlluminaHiSeq', 'Ethiopia cohort': 'IlluminaHiSeq'}",
       "ancestry_details": "{'Madagascar cohort': ['Betsimisaraka', 'Tsimihety'], 'Ethiopia cohort': 'not_reported'}",
       "disease_details": "Healthy",
-      "host_species": "Homo sapiens (human)"
+      "host_species": "Homo sapiens (human)",
+      "age_min": "46",
+      "age_max": "46"
     },
     {
       "study_name": "CM_madagascar",
@@ -1211,7 +1229,9 @@
       "sequencing_platform": "{'Madagascar cohort': 'IlluminaHiSeq', 'Ethiopia cohort': 'IlluminaHiSeq'}",
       "ancestry_details": "{'Madagascar cohort': ['Betsimisaraka', 'Tsimihety'], 'Ethiopia cohort': 'not_reported'}",
       "disease_details": "Healthy",
-      "host_species": "Homo sapiens (human)"
+      "host_species": "Homo sapiens (human)",
+      "age_min": "52",
+      "age_max": "52"
     },
     {
       "study_name": "CM_madagascar",
@@ -1240,7 +1260,9 @@
       "sequencing_platform": "{'Madagascar cohort': 'IlluminaHiSeq', 'Ethiopia cohort': 'IlluminaHiSeq'}",
       "ancestry_details": "{'Madagascar cohort': ['Betsimisaraka', 'Tsimihety'], 'Ethiopia cohort': 'not_reported'}",
       "disease_details": "Healthy",
-      "host_species": "Homo sapiens (human)"
+      "host_species": "Homo sapiens (human)",
+      "age_min": "50",
+      "age_max": "50"
     },
     {
       "study_name": "CM_madagascar",
@@ -1269,7 +1291,9 @@
       "sequencing_platform": "{'Madagascar cohort': 'IlluminaHiSeq', 'Ethiopia cohort': 'IlluminaHiSeq'}",
       "ancestry_details": "{'Madagascar cohort': ['Betsimisaraka', 'Tsimihety'], 'Ethiopia cohort': 'not_reported'}",
       "disease_details": "Healthy",
-      "host_species": "Homo sapiens (human)"
+      "host_species": "Homo sapiens (human)",
+      "age_min": "23",
+      "age_max": "23"
     },
     {
       "study_name": "CM_madagascar",
@@ -1298,7 +1322,9 @@
       "sequencing_platform": "{'Madagascar cohort': 'IlluminaHiSeq', 'Ethiopia cohort': 'IlluminaHiSeq'}",
       "ancestry_details": "{'Madagascar cohort': ['Betsimisaraka', 'Tsimihety'], 'Ethiopia cohort': 'not_reported'}",
       "disease_details": "Healthy",
-      "host_species": "Homo sapiens (human)"
+      "host_species": "Homo sapiens (human)",
+      "age_min": "22",
+      "age_max": "22"
     },
     {
       "study_name": "CM_madagascar",
@@ -1327,7 +1353,9 @@
       "sequencing_platform": "{'Madagascar cohort': 'IlluminaHiSeq', 'Ethiopia cohort': 'IlluminaHiSeq'}",
       "ancestry_details": "{'Madagascar cohort': ['Betsimisaraka', 'Tsimihety'], 'Ethiopia cohort': 'not_reported'}",
       "disease_details": "Healthy",
-      "host_species": "Homo sapiens (human)"
+      "host_species": "Homo sapiens (human)",
+      "age_min": "52",
+      "age_max": "52"
     },
     {
       "study_name": "CM_madagascar",
@@ -1356,7 +1384,9 @@
       "sequencing_platform": "{'Madagascar cohort': 'IlluminaHiSeq', 'Ethiopia cohort': 'IlluminaHiSeq'}",
       "ancestry_details": "{'Madagascar cohort': ['Betsimisaraka', 'Tsimihety'], 'Ethiopia cohort': 'not_reported'}",
       "disease_details": "Healthy",
-      "host_species": "Homo sapiens (human)"
+      "host_species": "Homo sapiens (human)",
+      "age_min": "52",
+      "age_max": "52"
     },
     {
       "study_name": "CM_madagascar",
@@ -1385,7 +1415,9 @@
       "sequencing_platform": "{'Madagascar cohort': 'IlluminaHiSeq', 'Ethiopia cohort': 'IlluminaHiSeq'}",
       "ancestry_details": "{'Madagascar cohort': ['Betsimisaraka', 'Tsimihety'], 'Ethiopia cohort': 'not_reported'}",
       "disease_details": "Healthy",
-      "host_species": "Homo sapiens (human)"
+      "host_species": "Homo sapiens (human)",
+      "age_min": "21",
+      "age_max": "21"
     },
     {
       "study_name": "CM_madagascar",
@@ -1414,7 +1446,9 @@
       "sequencing_platform": "{'Madagascar cohort': 'IlluminaHiSeq', 'Ethiopia cohort': 'IlluminaHiSeq'}",
       "ancestry_details": "{'Madagascar cohort': ['Betsimisaraka', 'Tsimihety'], 'Ethiopia cohort': 'not_reported'}",
       "disease_details": "Healthy",
-      "host_species": "Homo sapiens (human)"
+      "host_species": "Homo sapiens (human)",
+      "age_min": "36",
+      "age_max": "36"
     },
     {
       "study_name": "CM_madagascar",
@@ -1443,7 +1477,9 @@
       "sequencing_platform": "{'Madagascar cohort': 'IlluminaHiSeq', 'Ethiopia cohort': 'IlluminaHiSeq'}",
       "ancestry_details": "{'Madagascar cohort': ['Betsimisaraka', 'Tsimihety'], 'Ethiopia cohort': 'not_reported'}",
       "disease_details": "Healthy",
-      "host_species": "Homo sapiens (human)"
+      "host_species": "Homo sapiens (human)",
+      "age_min": "21",
+      "age_max": "21"
     },
     {
       "study_name": "CM_madagascar",
@@ -1472,7 +1508,9 @@
       "sequencing_platform": "{'Madagascar cohort': 'IlluminaHiSeq', 'Ethiopia cohort': 'IlluminaHiSeq'}",
       "ancestry_details": "{'Madagascar cohort': ['Betsimisaraka', 'Tsimihety'], 'Ethiopia cohort': 'not_reported'}",
       "disease_details": "Healthy",
-      "host_species": "Homo sapiens (human)"
+      "host_species": "Homo sapiens (human)",
+      "age_min": "63",
+      "age_max": "63"
     },
     {
       "study_name": "CM_madagascar",
@@ -1501,7 +1539,9 @@
       "sequencing_platform": "{'Madagascar cohort': 'IlluminaHiSeq', 'Ethiopia cohort': 'IlluminaHiSeq'}",
       "ancestry_details": "{'Madagascar cohort': ['Betsimisaraka', 'Tsimihety'], 'Ethiopia cohort': 'not_reported'}",
       "disease_details": "Healthy",
-      "host_species": "Homo sapiens (human)"
+      "host_species": "Homo sapiens (human)",
+      "age_min": "16",
+      "age_max": "16"
     },
     {
       "study_name": "CM_madagascar",
@@ -1530,7 +1570,9 @@
       "sequencing_platform": "{'Madagascar cohort': 'IlluminaHiSeq', 'Ethiopia cohort': 'IlluminaHiSeq'}",
       "ancestry_details": "{'Madagascar cohort': ['Betsimisaraka', 'Tsimihety'], 'Ethiopia cohort': 'not_reported'}",
       "disease_details": "Healthy",
-      "host_species": "Homo sapiens (human)"
+      "host_species": "Homo sapiens (human)",
+      "age_min": "45",
+      "age_max": "45"
     },
     {
       "study_name": "CM_madagascar",
@@ -1559,7 +1601,9 @@
       "sequencing_platform": "{'Madagascar cohort': 'IlluminaHiSeq', 'Ethiopia cohort': 'IlluminaHiSeq'}",
       "ancestry_details": "{'Madagascar cohort': ['Betsimisaraka', 'Tsimihety'], 'Ethiopia cohort': 'not_reported'}",
       "disease_details": "Healthy",
-      "host_species": "Homo sapiens (human)"
+      "host_species": "Homo sapiens (human)",
+      "age_min": "23",
+      "age_max": "23"
     },
     {
       "study_name": "CM_madagascar",
@@ -1588,7 +1632,9 @@
       "sequencing_platform": "{'Madagascar cohort': 'IlluminaHiSeq', 'Ethiopia cohort': 'IlluminaHiSeq'}",
       "ancestry_details": "{'Madagascar cohort': ['Betsimisaraka', 'Tsimihety'], 'Ethiopia cohort': 'not_reported'}",
       "disease_details": "Healthy",
-      "host_species": "Homo sapiens (human)"
+      "host_species": "Homo sapiens (human)",
+      "age_min": "27",
+      "age_max": "27"
     },
     {
       "study_name": "CM_madagascar",
@@ -1617,7 +1663,9 @@
       "sequencing_platform": "{'Madagascar cohort': 'IlluminaHiSeq', 'Ethiopia cohort': 'IlluminaHiSeq'}",
       "ancestry_details": "{'Madagascar cohort': ['Betsimisaraka', 'Tsimihety'], 'Ethiopia cohort': 'not_reported'}",
       "disease_details": "Healthy",
-      "host_species": "Homo sapiens (human)"
+      "host_species": "Homo sapiens (human)",
+      "age_min": "40",
+      "age_max": "40"
     },
     {
       "study_name": "CM_madagascar",
@@ -1646,7 +1694,9 @@
       "sequencing_platform": "{'Madagascar cohort': 'IlluminaHiSeq', 'Ethiopia cohort': 'IlluminaHiSeq'}",
       "ancestry_details": "{'Madagascar cohort': ['Betsimisaraka', 'Tsimihety'], 'Ethiopia cohort': 'not_reported'}",
       "disease_details": "Healthy",
-      "host_species": "Homo sapiens (human)"
+      "host_species": "Homo sapiens (human)",
+      "age_min": "34",
+      "age_max": "34"
     },
     {
       "study_name": "CM_madagascar",
@@ -1675,7 +1725,9 @@
       "sequencing_platform": "{'Madagascar cohort': 'IlluminaHiSeq', 'Ethiopia cohort': 'IlluminaHiSeq'}",
       "ancestry_details": "{'Madagascar cohort': ['Betsimisaraka', 'Tsimihety'], 'Ethiopia cohort': 'not_reported'}",
       "disease_details": "Healthy",
-      "host_species": "Homo sapiens (human)"
+      "host_species": "Homo sapiens (human)",
+      "age_min": "22",
+      "age_max": "22"
     },
     {
       "study_name": "CM_madagascar",
@@ -1704,7 +1756,9 @@
       "sequencing_platform": "{'Madagascar cohort': 'IlluminaHiSeq', 'Ethiopia cohort': 'IlluminaHiSeq'}",
       "ancestry_details": "{'Madagascar cohort': ['Betsimisaraka', 'Tsimihety'], 'Ethiopia cohort': 'not_reported'}",
       "disease_details": "Healthy",
-      "host_species": "Homo sapiens (human)"
+      "host_species": "Homo sapiens (human)",
+      "age_min": "23",
+      "age_max": "23"
     },
     {
       "study_name": "CM_madagascar",
@@ -1733,7 +1787,9 @@
       "sequencing_platform": "{'Madagascar cohort': 'IlluminaHiSeq', 'Ethiopia cohort': 'IlluminaHiSeq'}",
       "ancestry_details": "{'Madagascar cohort': ['Betsimisaraka', 'Tsimihety'], 'Ethiopia cohort': 'not_reported'}",
       "disease_details": "Healthy",
-      "host_species": "Homo sapiens (human)"
+      "host_species": "Homo sapiens (human)",
+      "age_min": "25",
+      "age_max": "25"
     },
     {
       "study_name": "CM_madagascar",
@@ -1762,7 +1818,9 @@
       "sequencing_platform": "{'Madagascar cohort': 'IlluminaHiSeq', 'Ethiopia cohort': 'IlluminaHiSeq'}",
       "ancestry_details": "{'Madagascar cohort': ['Betsimisaraka', 'Tsimihety'], 'Ethiopia cohort': 'not_reported'}",
       "disease_details": "Healthy",
-      "host_species": "Homo sapiens (human)"
+      "host_species": "Homo sapiens (human)",
+      "age_min": "21",
+      "age_max": "21"
     },
     {
       "study_name": "CM_madagascar",
@@ -1791,7 +1849,9 @@
       "sequencing_platform": "{'Madagascar cohort': 'IlluminaHiSeq', 'Ethiopia cohort': 'IlluminaHiSeq'}",
       "ancestry_details": "{'Madagascar cohort': ['Betsimisaraka', 'Tsimihety'], 'Ethiopia cohort': 'not_reported'}",
       "disease_details": "Healthy",
-      "host_species": "Homo sapiens (human)"
+      "host_species": "Homo sapiens (human)",
+      "age_min": "50",
+      "age_max": "50"
     },
     {
       "study_name": "CM_madagascar",
@@ -1820,7 +1880,9 @@
       "sequencing_platform": "{'Madagascar cohort': 'IlluminaHiSeq', 'Ethiopia cohort': 'IlluminaHiSeq'}",
       "ancestry_details": "{'Madagascar cohort': ['Betsimisaraka', 'Tsimihety'], 'Ethiopia cohort': 'not_reported'}",
       "disease_details": "Healthy",
-      "host_species": "Homo sapiens (human)"
+      "host_species": "Homo sapiens (human)",
+      "age_min": "51",
+      "age_max": "51"
     },
     {
       "study_name": "CM_madagascar",
@@ -1849,7 +1911,9 @@
       "sequencing_platform": "{'Madagascar cohort': 'IlluminaHiSeq', 'Ethiopia cohort': 'IlluminaHiSeq'}",
       "ancestry_details": "{'Madagascar cohort': ['Betsimisaraka', 'Tsimihety'], 'Ethiopia cohort': 'not_reported'}",
       "disease_details": "Healthy",
-      "host_species": "Homo sapiens (human)"
+      "host_species": "Homo sapiens (human)",
+      "age_min": "32",
+      "age_max": "32"
     },
     {
       "study_name": "CM_madagascar",
@@ -1878,7 +1942,9 @@
       "sequencing_platform": "{'Madagascar cohort': 'IlluminaHiSeq', 'Ethiopia cohort': 'IlluminaHiSeq'}",
       "ancestry_details": "{'Madagascar cohort': ['Betsimisaraka', 'Tsimihety'], 'Ethiopia cohort': 'not_reported'}",
       "disease_details": "Healthy",
-      "host_species": "Homo sapiens (human)"
+      "host_species": "Homo sapiens (human)",
+      "age_min": "30",
+      "age_max": "30"
     },
     {
       "study_name": "CM_madagascar",
@@ -1907,7 +1973,9 @@
       "sequencing_platform": "{'Madagascar cohort': 'IlluminaHiSeq', 'Ethiopia cohort': 'IlluminaHiSeq'}",
       "ancestry_details": "{'Madagascar cohort': ['Betsimisaraka', 'Tsimihety'], 'Ethiopia cohort': 'not_reported'}",
       "disease_details": "Healthy",
-      "host_species": "Homo sapiens (human)"
+      "host_species": "Homo sapiens (human)",
+      "age_min": "33",
+      "age_max": "33"
     },
     {
       "study_name": "CM_madagascar",
@@ -1936,7 +2004,9 @@
       "sequencing_platform": "{'Madagascar cohort': 'IlluminaHiSeq', 'Ethiopia cohort': 'IlluminaHiSeq'}",
       "ancestry_details": "{'Madagascar cohort': ['Betsimisaraka', 'Tsimihety'], 'Ethiopia cohort': 'not_reported'}",
       "disease_details": "Healthy",
-      "host_species": "Homo sapiens (human)"
+      "host_species": "Homo sapiens (human)",
+      "age_min": "48",
+      "age_max": "48"
     },
     {
       "study_name": "CM_madagascar",
@@ -1965,7 +2035,9 @@
       "sequencing_platform": "{'Madagascar cohort': 'IlluminaHiSeq', 'Ethiopia cohort': 'IlluminaHiSeq'}",
       "ancestry_details": "{'Madagascar cohort': ['Betsimisaraka', 'Tsimihety'], 'Ethiopia cohort': 'not_reported'}",
       "disease_details": "Healthy",
-      "host_species": "Homo sapiens (human)"
+      "host_species": "Homo sapiens (human)",
+      "age_min": "43",
+      "age_max": "43"
     },
     {
       "study_name": "CM_madagascar",
@@ -1994,7 +2066,9 @@
       "sequencing_platform": "{'Madagascar cohort': 'IlluminaHiSeq', 'Ethiopia cohort': 'IlluminaHiSeq'}",
       "ancestry_details": "{'Madagascar cohort': ['Betsimisaraka', 'Tsimihety'], 'Ethiopia cohort': 'not_reported'}",
       "disease_details": "Healthy",
-      "host_species": "Homo sapiens (human)"
+      "host_species": "Homo sapiens (human)",
+      "age_min": "52",
+      "age_max": "52"
     },
     {
       "study_name": "CM_madagascar",
@@ -2023,7 +2097,9 @@
       "sequencing_platform": "{'Madagascar cohort': 'IlluminaHiSeq', 'Ethiopia cohort': 'IlluminaHiSeq'}",
       "ancestry_details": "{'Madagascar cohort': ['Betsimisaraka', 'Tsimihety'], 'Ethiopia cohort': 'not_reported'}",
       "disease_details": "Healthy",
-      "host_species": "Homo sapiens (human)"
+      "host_species": "Homo sapiens (human)",
+      "age_min": "51",
+      "age_max": "51"
     },
     {
       "study_name": "CM_madagascar",
@@ -2052,7 +2128,9 @@
       "sequencing_platform": "{'Madagascar cohort': 'IlluminaHiSeq', 'Ethiopia cohort': 'IlluminaHiSeq'}",
       "ancestry_details": "{'Madagascar cohort': ['Betsimisaraka', 'Tsimihety'], 'Ethiopia cohort': 'not_reported'}",
       "disease_details": "Healthy",
-      "host_species": "Homo sapiens (human)"
+      "host_species": "Homo sapiens (human)",
+      "age_min": "21",
+      "age_max": "21"
     },
     {
       "study_name": "CM_madagascar",
@@ -2081,7 +2159,9 @@
       "sequencing_platform": "{'Madagascar cohort': 'IlluminaHiSeq', 'Ethiopia cohort': 'IlluminaHiSeq'}",
       "ancestry_details": "{'Madagascar cohort': ['Betsimisaraka', 'Tsimihety'], 'Ethiopia cohort': 'not_reported'}",
       "disease_details": "Healthy",
-      "host_species": "Homo sapiens (human)"
+      "host_species": "Homo sapiens (human)",
+      "age_min": "39",
+      "age_max": "39"
     },
     {
       "study_name": "CM_madagascar",
@@ -2110,7 +2190,9 @@
       "sequencing_platform": "{'Madagascar cohort': 'IlluminaHiSeq', 'Ethiopia cohort': 'IlluminaHiSeq'}",
       "ancestry_details": "{'Madagascar cohort': ['Betsimisaraka', 'Tsimihety'], 'Ethiopia cohort': 'not_reported'}",
       "disease_details": "Healthy",
-      "host_species": "Homo sapiens (human)"
+      "host_species": "Homo sapiens (human)",
+      "age_min": "26",
+      "age_max": "26"
     },
     {
       "study_name": "CM_madagascar",
@@ -2139,7 +2221,9 @@
       "sequencing_platform": "{'Madagascar cohort': 'IlluminaHiSeq', 'Ethiopia cohort': 'IlluminaHiSeq'}",
       "ancestry_details": "{'Madagascar cohort': ['Betsimisaraka', 'Tsimihety'], 'Ethiopia cohort': 'not_reported'}",
       "disease_details": "Healthy",
-      "host_species": "Homo sapiens (human)"
+      "host_species": "Homo sapiens (human)",
+      "age_min": "44",
+      "age_max": "44"
     },
     {
       "study_name": "CM_madagascar",
@@ -2168,7 +2252,9 @@
       "sequencing_platform": "{'Madagascar cohort': 'IlluminaHiSeq', 'Ethiopia cohort': 'IlluminaHiSeq'}",
       "ancestry_details": "{'Madagascar cohort': ['Betsimisaraka', 'Tsimihety'], 'Ethiopia cohort': 'not_reported'}",
       "disease_details": "Healthy",
-      "host_species": "Homo sapiens (human)"
+      "host_species": "Homo sapiens (human)",
+      "age_min": "36",
+      "age_max": "36"
     },
     {
       "study_name": "CM_madagascar",
@@ -2197,7 +2283,9 @@
       "sequencing_platform": "{'Madagascar cohort': 'IlluminaHiSeq', 'Ethiopia cohort': 'IlluminaHiSeq'}",
       "ancestry_details": "{'Madagascar cohort': ['Betsimisaraka', 'Tsimihety'], 'Ethiopia cohort': 'not_reported'}",
       "disease_details": "Healthy",
-      "host_species": "Homo sapiens (human)"
+      "host_species": "Homo sapiens (human)",
+      "age_min": "35",
+      "age_max": "35"
     },
     {
       "study_name": "CM_madagascar",
@@ -2226,7 +2314,9 @@
       "sequencing_platform": "{'Madagascar cohort': 'IlluminaHiSeq', 'Ethiopia cohort': 'IlluminaHiSeq'}",
       "ancestry_details": "{'Madagascar cohort': ['Betsimisaraka', 'Tsimihety'], 'Ethiopia cohort': 'not_reported'}",
       "disease_details": "Healthy",
-      "host_species": "Homo sapiens (human)"
+      "host_species": "Homo sapiens (human)",
+      "age_min": "29",
+      "age_max": "29"
     },
     {
       "study_name": "CM_madagascar",
@@ -2255,7 +2345,9 @@
       "sequencing_platform": "{'Madagascar cohort': 'IlluminaHiSeq', 'Ethiopia cohort': 'IlluminaHiSeq'}",
       "ancestry_details": "{'Madagascar cohort': ['Betsimisaraka', 'Tsimihety'], 'Ethiopia cohort': 'not_reported'}",
       "disease_details": "Healthy",
-      "host_species": "Homo sapiens (human)"
+      "host_species": "Homo sapiens (human)",
+      "age_min": "37",
+      "age_max": "37"
     },
     {
       "study_name": "CM_madagascar",
@@ -2284,7 +2376,9 @@
       "sequencing_platform": "{'Madagascar cohort': 'IlluminaHiSeq', 'Ethiopia cohort': 'IlluminaHiSeq'}",
       "ancestry_details": "{'Madagascar cohort': ['Betsimisaraka', 'Tsimihety'], 'Ethiopia cohort': 'not_reported'}",
       "disease_details": "Healthy",
-      "host_species": "Homo sapiens (human)"
+      "host_species": "Homo sapiens (human)",
+      "age_min": "33",
+      "age_max": "33"
     },
     {
       "study_name": "CM_madagascar",
@@ -2313,7 +2407,9 @@
       "sequencing_platform": "{'Madagascar cohort': 'IlluminaHiSeq', 'Ethiopia cohort': 'IlluminaHiSeq'}",
       "ancestry_details": "{'Madagascar cohort': ['Betsimisaraka', 'Tsimihety'], 'Ethiopia cohort': 'not_reported'}",
       "disease_details": "Healthy",
-      "host_species": "Homo sapiens (human)"
+      "host_species": "Homo sapiens (human)",
+      "age_min": "39",
+      "age_max": "39"
     },
     {
       "study_name": "CM_madagascar",
@@ -2342,7 +2438,9 @@
       "sequencing_platform": "{'Madagascar cohort': 'IlluminaHiSeq', 'Ethiopia cohort': 'IlluminaHiSeq'}",
       "ancestry_details": "{'Madagascar cohort': ['Betsimisaraka', 'Tsimihety'], 'Ethiopia cohort': 'not_reported'}",
       "disease_details": "Healthy",
-      "host_species": "Homo sapiens (human)"
+      "host_species": "Homo sapiens (human)",
+      "age_min": "33",
+      "age_max": "33"
     },
     {
       "study_name": "CM_madagascar",
@@ -2371,7 +2469,9 @@
       "sequencing_platform": "{'Madagascar cohort': 'IlluminaHiSeq', 'Ethiopia cohort': 'IlluminaHiSeq'}",
       "ancestry_details": "{'Madagascar cohort': ['Betsimisaraka', 'Tsimihety'], 'Ethiopia cohort': 'not_reported'}",
       "disease_details": "Healthy",
-      "host_species": "Homo sapiens (human)"
+      "host_species": "Homo sapiens (human)",
+      "age_min": "35",
+      "age_max": "35"
     },
     {
       "study_name": "CM_madagascar",
@@ -2400,7 +2500,9 @@
       "sequencing_platform": "{'Madagascar cohort': 'IlluminaHiSeq', 'Ethiopia cohort': 'IlluminaHiSeq'}",
       "ancestry_details": "{'Madagascar cohort': ['Betsimisaraka', 'Tsimihety'], 'Ethiopia cohort': 'not_reported'}",
       "disease_details": "Healthy",
-      "host_species": "Homo sapiens (human)"
+      "host_species": "Homo sapiens (human)",
+      "age_min": "35",
+      "age_max": "35"
     },
     {
       "study_name": "CM_madagascar",
@@ -2429,7 +2531,9 @@
       "sequencing_platform": "{'Madagascar cohort': 'IlluminaHiSeq', 'Ethiopia cohort': 'IlluminaHiSeq'}",
       "ancestry_details": "{'Madagascar cohort': ['Betsimisaraka', 'Tsimihety'], 'Ethiopia cohort': 'not_reported'}",
       "disease_details": "Healthy",
-      "host_species": "Homo sapiens (human)"
+      "host_species": "Homo sapiens (human)",
+      "age_min": "35",
+      "age_max": "35"
     },
     {
       "study_name": "CM_madagascar",
@@ -2458,7 +2562,9 @@
       "sequencing_platform": "{'Madagascar cohort': 'IlluminaHiSeq', 'Ethiopia cohort': 'IlluminaHiSeq'}",
       "ancestry_details": "{'Madagascar cohort': ['Betsimisaraka', 'Tsimihety'], 'Ethiopia cohort': 'not_reported'}",
       "disease_details": "Healthy",
-      "host_species": "Homo sapiens (human)"
+      "host_species": "Homo sapiens (human)",
+      "age_min": "29",
+      "age_max": "29"
     },
     {
       "study_name": "CM_madagascar",
@@ -2487,7 +2593,9 @@
       "sequencing_platform": "{'Madagascar cohort': 'IlluminaHiSeq', 'Ethiopia cohort': 'IlluminaHiSeq'}",
       "ancestry_details": "{'Madagascar cohort': ['Betsimisaraka', 'Tsimihety'], 'Ethiopia cohort': 'not_reported'}",
       "disease_details": "Healthy",
-      "host_species": "Homo sapiens (human)"
+      "host_species": "Homo sapiens (human)",
+      "age_min": "26",
+      "age_max": "26"
     },
     {
       "study_name": "CM_madagascar",
@@ -2516,7 +2624,9 @@
       "sequencing_platform": "{'Madagascar cohort': 'IlluminaHiSeq', 'Ethiopia cohort': 'IlluminaHiSeq'}",
       "ancestry_details": "{'Madagascar cohort': ['Betsimisaraka', 'Tsimihety'], 'Ethiopia cohort': 'not_reported'}",
       "disease_details": "Healthy",
-      "host_species": "Homo sapiens (human)"
+      "host_species": "Homo sapiens (human)",
+      "age_min": "34",
+      "age_max": "34"
     },
     {
       "study_name": "CM_madagascar",
@@ -2545,7 +2655,9 @@
       "sequencing_platform": "{'Madagascar cohort': 'IlluminaHiSeq', 'Ethiopia cohort': 'IlluminaHiSeq'}",
       "ancestry_details": "{'Madagascar cohort': ['Betsimisaraka', 'Tsimihety'], 'Ethiopia cohort': 'not_reported'}",
       "disease_details": "Healthy",
-      "host_species": "Homo sapiens (human)"
+      "host_species": "Homo sapiens (human)",
+      "age_min": "27",
+      "age_max": "27"
     },
     {
       "study_name": "CM_madagascar",
@@ -2574,7 +2686,9 @@
       "sequencing_platform": "{'Madagascar cohort': 'IlluminaHiSeq', 'Ethiopia cohort': 'IlluminaHiSeq'}",
       "ancestry_details": "{'Madagascar cohort': ['Betsimisaraka', 'Tsimihety'], 'Ethiopia cohort': 'not_reported'}",
       "disease_details": "Healthy",
-      "host_species": "Homo sapiens (human)"
+      "host_species": "Homo sapiens (human)",
+      "age_min": "44",
+      "age_max": "44"
     },
     {
       "study_name": "CM_madagascar",
@@ -2603,7 +2717,9 @@
       "sequencing_platform": "{'Madagascar cohort': 'IlluminaHiSeq', 'Ethiopia cohort': 'IlluminaHiSeq'}",
       "ancestry_details": "{'Madagascar cohort': ['Betsimisaraka', 'Tsimihety'], 'Ethiopia cohort': 'not_reported'}",
       "disease_details": "Healthy",
-      "host_species": "Homo sapiens (human)"
+      "host_species": "Homo sapiens (human)",
+      "age_min": "44",
+      "age_max": "44"
     },
     {
       "study_name": "CM_madagascar",
@@ -2632,7 +2748,9 @@
       "sequencing_platform": "{'Madagascar cohort': 'IlluminaHiSeq', 'Ethiopia cohort': 'IlluminaHiSeq'}",
       "ancestry_details": "{'Madagascar cohort': ['Betsimisaraka', 'Tsimihety'], 'Ethiopia cohort': 'not_reported'}",
       "disease_details": "Healthy",
-      "host_species": "Homo sapiens (human)"
+      "host_species": "Homo sapiens (human)",
+      "age_min": "55",
+      "age_max": "55"
     },
     {
       "study_name": "CM_madagascar",
@@ -2661,7 +2779,9 @@
       "sequencing_platform": "{'Madagascar cohort': 'IlluminaHiSeq', 'Ethiopia cohort': 'IlluminaHiSeq'}",
       "ancestry_details": "{'Madagascar cohort': ['Betsimisaraka', 'Tsimihety'], 'Ethiopia cohort': 'not_reported'}",
       "disease_details": "Healthy",
-      "host_species": "Homo sapiens (human)"
+      "host_species": "Homo sapiens (human)",
+      "age_min": "26",
+      "age_max": "26"
     },
     {
       "study_name": "CM_madagascar",
@@ -2690,7 +2810,9 @@
       "sequencing_platform": "{'Madagascar cohort': 'IlluminaHiSeq', 'Ethiopia cohort': 'IlluminaHiSeq'}",
       "ancestry_details": "{'Madagascar cohort': ['Betsimisaraka', 'Tsimihety'], 'Ethiopia cohort': 'not_reported'}",
       "disease_details": "Healthy",
-      "host_species": "Homo sapiens (human)"
+      "host_species": "Homo sapiens (human)",
+      "age_min": "58",
+      "age_max": "58"
     },
     {
       "study_name": "CM_madagascar",
@@ -2719,7 +2841,9 @@
       "sequencing_platform": "{'Madagascar cohort': 'IlluminaHiSeq', 'Ethiopia cohort': 'IlluminaHiSeq'}",
       "ancestry_details": "{'Madagascar cohort': ['Betsimisaraka', 'Tsimihety'], 'Ethiopia cohort': 'not_reported'}",
       "disease_details": "Healthy",
-      "host_species": "Homo sapiens (human)"
+      "host_species": "Homo sapiens (human)",
+      "age_min": "31",
+      "age_max": "31"
     },
     {
       "study_name": "CM_madagascar",
@@ -2748,7 +2872,9 @@
       "sequencing_platform": "{'Madagascar cohort': 'IlluminaHiSeq', 'Ethiopia cohort': 'IlluminaHiSeq'}",
       "ancestry_details": "{'Madagascar cohort': ['Betsimisaraka', 'Tsimihety'], 'Ethiopia cohort': 'not_reported'}",
       "disease_details": "Healthy",
-      "host_species": "Homo sapiens (human)"
+      "host_species": "Homo sapiens (human)",
+      "age_min": "22",
+      "age_max": "22"
     },
     {
       "study_name": "CM_madagascar",
@@ -2777,7 +2903,9 @@
       "sequencing_platform": "{'Madagascar cohort': 'IlluminaHiSeq', 'Ethiopia cohort': 'IlluminaHiSeq'}",
       "ancestry_details": "{'Madagascar cohort': ['Betsimisaraka', 'Tsimihety'], 'Ethiopia cohort': 'not_reported'}",
       "disease_details": "Healthy",
-      "host_species": "Homo sapiens (human)"
+      "host_species": "Homo sapiens (human)",
+      "age_min": "46",
+      "age_max": "46"
     },
     {
       "study_name": "CM_madagascar",
@@ -2806,7 +2934,9 @@
       "sequencing_platform": "{'Madagascar cohort': 'IlluminaHiSeq', 'Ethiopia cohort': 'IlluminaHiSeq'}",
       "ancestry_details": "{'Madagascar cohort': ['Betsimisaraka', 'Tsimihety'], 'Ethiopia cohort': 'not_reported'}",
       "disease_details": "Healthy",
-      "host_species": "Homo sapiens (human)"
+      "host_species": "Homo sapiens (human)",
+      "age_min": "46",
+      "age_max": "46"
     },
     {
       "study_name": "CM_madagascar",
@@ -2835,7 +2965,9 @@
       "sequencing_platform": "{'Madagascar cohort': 'IlluminaHiSeq', 'Ethiopia cohort': 'IlluminaHiSeq'}",
       "ancestry_details": "{'Madagascar cohort': ['Betsimisaraka', 'Tsimihety'], 'Ethiopia cohort': 'not_reported'}",
       "disease_details": "Healthy",
-      "host_species": "Homo sapiens (human)"
+      "host_species": "Homo sapiens (human)",
+      "age_min": "35",
+      "age_max": "35"
     },
     {
       "study_name": "CM_madagascar",
@@ -2864,7 +2996,9 @@
       "sequencing_platform": "{'Madagascar cohort': 'IlluminaHiSeq', 'Ethiopia cohort': 'IlluminaHiSeq'}",
       "ancestry_details": "{'Madagascar cohort': ['Betsimisaraka', 'Tsimihety'], 'Ethiopia cohort': 'not_reported'}",
       "disease_details": "Healthy",
-      "host_species": "Homo sapiens (human)"
+      "host_species": "Homo sapiens (human)",
+      "age_min": "26",
+      "age_max": "26"
     },
     {
       "study_name": "CM_madagascar",
@@ -2893,7 +3027,9 @@
       "sequencing_platform": "{'Madagascar cohort': 'IlluminaHiSeq', 'Ethiopia cohort': 'IlluminaHiSeq'}",
       "ancestry_details": "{'Madagascar cohort': ['Betsimisaraka', 'Tsimihety'], 'Ethiopia cohort': 'not_reported'}",
       "disease_details": "Healthy",
-      "host_species": "Homo sapiens (human)"
+      "host_species": "Homo sapiens (human)",
+      "age_min": "55",
+      "age_max": "55"
     },
     {
       "study_name": "CM_madagascar",
@@ -2922,7 +3058,9 @@
       "sequencing_platform": "{'Madagascar cohort': 'IlluminaHiSeq', 'Ethiopia cohort': 'IlluminaHiSeq'}",
       "ancestry_details": "{'Madagascar cohort': ['Betsimisaraka', 'Tsimihety'], 'Ethiopia cohort': 'not_reported'}",
       "disease_details": "Healthy",
-      "host_species": "Homo sapiens (human)"
+      "host_species": "Homo sapiens (human)",
+      "age_min": "21",
+      "age_max": "21"
     },
     {
       "study_name": "CM_madagascar",
@@ -2951,7 +3089,9 @@
       "sequencing_platform": "{'Madagascar cohort': 'IlluminaHiSeq', 'Ethiopia cohort': 'IlluminaHiSeq'}",
       "ancestry_details": "{'Madagascar cohort': ['Betsimisaraka', 'Tsimihety'], 'Ethiopia cohort': 'not_reported'}",
       "disease_details": "Healthy",
-      "host_species": "Homo sapiens (human)"
+      "host_species": "Homo sapiens (human)",
+      "age_min": "24",
+      "age_max": "24"
     },
     {
       "study_name": "CM_madagascar",
@@ -2980,7 +3120,9 @@
       "sequencing_platform": "{'Madagascar cohort': 'IlluminaHiSeq', 'Ethiopia cohort': 'IlluminaHiSeq'}",
       "ancestry_details": "{'Madagascar cohort': ['Betsimisaraka', 'Tsimihety'], 'Ethiopia cohort': 'not_reported'}",
       "disease_details": "Healthy",
-      "host_species": "Homo sapiens (human)"
+      "host_species": "Homo sapiens (human)",
+      "age_min": "22",
+      "age_max": "22"
     },
     {
       "study_name": "CM_madagascar",
@@ -3009,7 +3151,9 @@
       "sequencing_platform": "{'Madagascar cohort': 'IlluminaHiSeq', 'Ethiopia cohort': 'IlluminaHiSeq'}",
       "ancestry_details": "{'Madagascar cohort': ['Betsimisaraka', 'Tsimihety'], 'Ethiopia cohort': 'not_reported'}",
       "disease_details": "Healthy",
-      "host_species": "Homo sapiens (human)"
+      "host_species": "Homo sapiens (human)",
+      "age_min": "32",
+      "age_max": "32"
     },
     {
       "study_name": "CM_madagascar",
@@ -3038,7 +3182,9 @@
       "sequencing_platform": "{'Madagascar cohort': 'IlluminaHiSeq', 'Ethiopia cohort': 'IlluminaHiSeq'}",
       "ancestry_details": "{'Madagascar cohort': ['Betsimisaraka', 'Tsimihety'], 'Ethiopia cohort': 'not_reported'}",
       "disease_details": "Healthy",
-      "host_species": "Homo sapiens (human)"
+      "host_species": "Homo sapiens (human)",
+      "age_min": "25",
+      "age_max": "25"
     },
     {
       "study_name": "CM_madagascar",
@@ -3067,7 +3213,9 @@
       "sequencing_platform": "{'Madagascar cohort': 'IlluminaHiSeq', 'Ethiopia cohort': 'IlluminaHiSeq'}",
       "ancestry_details": "{'Madagascar cohort': ['Betsimisaraka', 'Tsimihety'], 'Ethiopia cohort': 'not_reported'}",
       "disease_details": "Healthy",
-      "host_species": "Homo sapiens (human)"
+      "host_species": "Homo sapiens (human)",
+      "age_min": "24",
+      "age_max": "24"
     },
     {
       "study_name": "CM_madagascar",
@@ -3096,7 +3244,9 @@
       "sequencing_platform": "{'Madagascar cohort': 'IlluminaHiSeq', 'Ethiopia cohort': 'IlluminaHiSeq'}",
       "ancestry_details": "{'Madagascar cohort': ['Betsimisaraka', 'Tsimihety'], 'Ethiopia cohort': 'not_reported'}",
       "disease_details": "Healthy",
-      "host_species": "Homo sapiens (human)"
+      "host_species": "Homo sapiens (human)",
+      "age_min": "47",
+      "age_max": "47"
     },
     {
       "study_name": "CM_madagascar",
@@ -3125,7 +3275,9 @@
       "sequencing_platform": "{'Madagascar cohort': 'IlluminaHiSeq', 'Ethiopia cohort': 'IlluminaHiSeq'}",
       "ancestry_details": "{'Madagascar cohort': ['Betsimisaraka', 'Tsimihety'], 'Ethiopia cohort': 'not_reported'}",
       "disease_details": "Healthy",
-      "host_species": "Homo sapiens (human)"
+      "host_species": "Homo sapiens (human)",
+      "age_min": "58",
+      "age_max": "58"
     },
     {
       "study_name": "CM_madagascar",
@@ -3154,7 +3306,9 @@
       "sequencing_platform": "{'Madagascar cohort': 'IlluminaHiSeq', 'Ethiopia cohort': 'IlluminaHiSeq'}",
       "ancestry_details": "{'Madagascar cohort': ['Betsimisaraka', 'Tsimihety'], 'Ethiopia cohort': 'not_reported'}",
       "disease_details": "Healthy",
-      "host_species": "Homo sapiens (human)"
+      "host_species": "Homo sapiens (human)",
+      "age_min": "26",
+      "age_max": "26"
     },
     {
       "study_name": "CM_madagascar",
@@ -3183,7 +3337,9 @@
       "sequencing_platform": "{'Madagascar cohort': 'IlluminaHiSeq', 'Ethiopia cohort': 'IlluminaHiSeq'}",
       "ancestry_details": "{'Madagascar cohort': ['Betsimisaraka', 'Tsimihety'], 'Ethiopia cohort': 'not_reported'}",
       "disease_details": "Healthy",
-      "host_species": "Homo sapiens (human)"
+      "host_species": "Homo sapiens (human)",
+      "age_min": "51",
+      "age_max": "51"
     },
     {
       "study_name": "CM_madagascar",
@@ -3212,7 +3368,9 @@
       "sequencing_platform": "{'Madagascar cohort': 'IlluminaHiSeq', 'Ethiopia cohort': 'IlluminaHiSeq'}",
       "ancestry_details": "{'Madagascar cohort': ['Betsimisaraka', 'Tsimihety'], 'Ethiopia cohort': 'not_reported'}",
       "disease_details": "Healthy",
-      "host_species": "Homo sapiens (human)"
+      "host_species": "Homo sapiens (human)",
+      "age_min": "38",
+      "age_max": "38"
     },
     {
       "study_name": "CM_madagascar",
@@ -3241,7 +3399,9 @@
       "sequencing_platform": "{'Madagascar cohort': 'IlluminaHiSeq', 'Ethiopia cohort': 'IlluminaHiSeq'}",
       "ancestry_details": "{'Madagascar cohort': ['Betsimisaraka', 'Tsimihety'], 'Ethiopia cohort': 'not_reported'}",
       "disease_details": "Healthy",
-      "host_species": "Homo sapiens (human)"
+      "host_species": "Homo sapiens (human)",
+      "age_min": "37",
+      "age_max": "37"
     },
     {
       "study_name": "CM_madagascar",
@@ -3270,7 +3430,9 @@
       "sequencing_platform": "{'Madagascar cohort': 'IlluminaHiSeq', 'Ethiopia cohort': 'IlluminaHiSeq'}",
       "ancestry_details": "{'Madagascar cohort': ['Betsimisaraka', 'Tsimihety'], 'Ethiopia cohort': 'not_reported'}",
       "disease_details": "Healthy",
-      "host_species": "Homo sapiens (human)"
+      "host_species": "Homo sapiens (human)",
+      "age_min": "42",
+      "age_max": "42"
     },
     {
       "study_name": "CM_madagascar",
@@ -3299,7 +3461,9 @@
       "sequencing_platform": "{'Madagascar cohort': 'IlluminaHiSeq', 'Ethiopia cohort': 'IlluminaHiSeq'}",
       "ancestry_details": "{'Madagascar cohort': ['Betsimisaraka', 'Tsimihety'], 'Ethiopia cohort': 'not_reported'}",
       "disease_details": "Healthy",
-      "host_species": "Homo sapiens (human)"
+      "host_species": "Homo sapiens (human)",
+      "age_min": "26",
+      "age_max": "26"
     },
     {
       "study_name": "CM_madagascar",
@@ -3328,7 +3492,9 @@
       "sequencing_platform": "{'Madagascar cohort': 'IlluminaHiSeq', 'Ethiopia cohort': 'IlluminaHiSeq'}",
       "ancestry_details": "{'Madagascar cohort': ['Betsimisaraka', 'Tsimihety'], 'Ethiopia cohort': 'not_reported'}",
       "disease_details": "Healthy",
-      "host_species": "Homo sapiens (human)"
+      "host_species": "Homo sapiens (human)",
+      "age_min": "27",
+      "age_max": "27"
     },
     {
       "study_name": "CM_madagascar",
@@ -3357,7 +3523,9 @@
       "sequencing_platform": "{'Madagascar cohort': 'IlluminaHiSeq', 'Ethiopia cohort': 'IlluminaHiSeq'}",
       "ancestry_details": "{'Madagascar cohort': ['Betsimisaraka', 'Tsimihety'], 'Ethiopia cohort': 'not_reported'}",
       "disease_details": "Healthy",
-      "host_species": "Homo sapiens (human)"
+      "host_species": "Homo sapiens (human)",
+      "age_min": "26",
+      "age_max": "26"
     },
     {
       "study_name": "CM_madagascar",
@@ -3386,7 +3554,9 @@
       "sequencing_platform": "{'Madagascar cohort': 'IlluminaHiSeq', 'Ethiopia cohort': 'IlluminaHiSeq'}",
       "ancestry_details": "{'Madagascar cohort': ['Betsimisaraka', 'Tsimihety'], 'Ethiopia cohort': 'not_reported'}",
       "disease_details": "Healthy",
-      "host_species": "Homo sapiens (human)"
+      "host_species": "Homo sapiens (human)",
+      "age_min": "28",
+      "age_max": "28"
     },
     {
       "study_name": "CM_madagascar",
@@ -3415,7 +3585,9 @@
       "sequencing_platform": "{'Madagascar cohort': 'IlluminaHiSeq', 'Ethiopia cohort': 'IlluminaHiSeq'}",
       "ancestry_details": "{'Madagascar cohort': ['Betsimisaraka', 'Tsimihety'], 'Ethiopia cohort': 'not_reported'}",
       "disease_details": "Healthy",
-      "host_species": "Homo sapiens (human)"
+      "host_species": "Homo sapiens (human)",
+      "age_min": "43",
+      "age_max": "43"
     },
     {
       "study_name": "CM_madagascar",
@@ -3444,7 +3616,9 @@
       "sequencing_platform": "{'Madagascar cohort': 'IlluminaHiSeq', 'Ethiopia cohort': 'IlluminaHiSeq'}",
       "ancestry_details": "{'Madagascar cohort': ['Betsimisaraka', 'Tsimihety'], 'Ethiopia cohort': 'not_reported'}",
       "disease_details": "Healthy",
-      "host_species": "Homo sapiens (human)"
+      "host_species": "Homo sapiens (human)",
+      "age_min": "50",
+      "age_max": "50"
     },
     {
       "study_name": "CM_madagascar",
@@ -3473,7 +3647,9 @@
       "sequencing_platform": "{'Madagascar cohort': 'IlluminaHiSeq', 'Ethiopia cohort': 'IlluminaHiSeq'}",
       "ancestry_details": "{'Madagascar cohort': ['Betsimisaraka', 'Tsimihety'], 'Ethiopia cohort': 'not_reported'}",
       "disease_details": "Healthy",
-      "host_species": "Homo sapiens (human)"
+      "host_species": "Homo sapiens (human)",
+      "age_min": "23",
+      "age_max": "23"
     },
     {
       "study_name": "CM_madagascar",
@@ -3502,7 +3678,9 @@
       "sequencing_platform": "{'Madagascar cohort': 'IlluminaHiSeq', 'Ethiopia cohort': 'IlluminaHiSeq'}",
       "ancestry_details": "{'Madagascar cohort': ['Betsimisaraka', 'Tsimihety'], 'Ethiopia cohort': 'not_reported'}",
       "disease_details": "Healthy",
-      "host_species": "Homo sapiens (human)"
+      "host_species": "Homo sapiens (human)",
+      "age_min": "30",
+      "age_max": "30"
     },
     {
       "study_name": "CM_madagascar",
@@ -3531,7 +3709,9 @@
       "sequencing_platform": "{'Madagascar cohort': 'IlluminaHiSeq', 'Ethiopia cohort': 'IlluminaHiSeq'}",
       "ancestry_details": "{'Madagascar cohort': ['Betsimisaraka', 'Tsimihety'], 'Ethiopia cohort': 'not_reported'}",
       "disease_details": "Healthy",
-      "host_species": "Homo sapiens (human)"
+      "host_species": "Homo sapiens (human)",
+      "age_min": "32",
+      "age_max": "32"
     },
     {
       "study_name": "CM_madagascar",
@@ -3560,7 +3740,9 @@
       "sequencing_platform": "{'Madagascar cohort': 'IlluminaHiSeq', 'Ethiopia cohort': 'IlluminaHiSeq'}",
       "ancestry_details": "{'Madagascar cohort': ['Betsimisaraka', 'Tsimihety'], 'Ethiopia cohort': 'not_reported'}",
       "disease_details": "Healthy",
-      "host_species": "Homo sapiens (human)"
+      "host_species": "Homo sapiens (human)",
+      "age_min": "37",
+      "age_max": "37"
     },
     {
       "study_name": "CM_madagascar",
@@ -3589,7 +3771,9 @@
       "sequencing_platform": "{'Madagascar cohort': 'IlluminaHiSeq', 'Ethiopia cohort': 'IlluminaHiSeq'}",
       "ancestry_details": "{'Madagascar cohort': ['Betsimisaraka', 'Tsimihety'], 'Ethiopia cohort': 'not_reported'}",
       "disease_details": "Healthy",
-      "host_species": "Homo sapiens (human)"
+      "host_species": "Homo sapiens (human)",
+      "age_min": "44",
+      "age_max": "44"
     },
     {
       "study_name": "CM_madagascar",
@@ -3618,7 +3802,9 @@
       "sequencing_platform": "{'Madagascar cohort': 'IlluminaHiSeq', 'Ethiopia cohort': 'IlluminaHiSeq'}",
       "ancestry_details": "{'Madagascar cohort': ['Betsimisaraka', 'Tsimihety'], 'Ethiopia cohort': 'not_reported'}",
       "disease_details": "Healthy",
-      "host_species": "Homo sapiens (human)"
+      "host_species": "Homo sapiens (human)",
+      "age_min": "34",
+      "age_max": "34"
     },
     {
       "study_name": "CM_madagascar",
@@ -3647,7 +3833,9 @@
       "sequencing_platform": "{'Madagascar cohort': 'IlluminaHiSeq', 'Ethiopia cohort': 'IlluminaHiSeq'}",
       "ancestry_details": "{'Madagascar cohort': ['Betsimisaraka', 'Tsimihety'], 'Ethiopia cohort': 'not_reported'}",
       "disease_details": "Healthy",
-      "host_species": "Homo sapiens (human)"
+      "host_species": "Homo sapiens (human)",
+      "age_min": "24",
+      "age_max": "24"
     },
     {
       "study_name": "CM_madagascar",
@@ -3676,7 +3864,9 @@
       "sequencing_platform": "{'Madagascar cohort': 'IlluminaHiSeq', 'Ethiopia cohort': 'IlluminaHiSeq'}",
       "ancestry_details": "{'Madagascar cohort': ['Betsimisaraka', 'Tsimihety'], 'Ethiopia cohort': 'not_reported'}",
       "disease_details": "Healthy",
-      "host_species": "Homo sapiens (human)"
+      "host_species": "Homo sapiens (human)",
+      "age_min": "29",
+      "age_max": "29"
     },
     {
       "study_name": "CM_madagascar",
@@ -3705,7 +3895,9 @@
       "sequencing_platform": "{'Madagascar cohort': 'IlluminaHiSeq', 'Ethiopia cohort': 'IlluminaHiSeq'}",
       "ancestry_details": "{'Madagascar cohort': ['Betsimisaraka', 'Tsimihety'], 'Ethiopia cohort': 'not_reported'}",
       "disease_details": "Healthy",
-      "host_species": "Homo sapiens (human)"
+      "host_species": "Homo sapiens (human)",
+      "age_min": "42",
+      "age_max": "42"
     },
     {
       "study_name": "CM_madagascar",
@@ -3734,7 +3926,9 @@
       "sequencing_platform": "{'Madagascar cohort': 'IlluminaHiSeq', 'Ethiopia cohort': 'IlluminaHiSeq'}",
       "ancestry_details": "{'Madagascar cohort': ['Betsimisaraka', 'Tsimihety'], 'Ethiopia cohort': 'not_reported'}",
       "disease_details": "Healthy",
-      "host_species": "Homo sapiens (human)"
+      "host_species": "Homo sapiens (human)",
+      "age_min": "33",
+      "age_max": "33"
     },
     {
       "study_name": "CM_madagascar",
@@ -3763,7 +3957,9 @@
       "sequencing_platform": "{'Madagascar cohort': 'IlluminaHiSeq', 'Ethiopia cohort': 'IlluminaHiSeq'}",
       "ancestry_details": "{'Madagascar cohort': ['Betsimisaraka', 'Tsimihety'], 'Ethiopia cohort': 'not_reported'}",
       "disease_details": "Healthy",
-      "host_species": "Homo sapiens (human)"
+      "host_species": "Homo sapiens (human)",
+      "age_min": "46",
+      "age_max": "46"
     },
     {
       "study_name": "CM_madagascar",
@@ -3792,7 +3988,9 @@
       "sequencing_platform": "{'Madagascar cohort': 'IlluminaHiSeq', 'Ethiopia cohort': 'IlluminaHiSeq'}",
       "ancestry_details": "{'Madagascar cohort': ['Betsimisaraka', 'Tsimihety'], 'Ethiopia cohort': 'not_reported'}",
       "disease_details": "Healthy",
-      "host_species": "Homo sapiens (human)"
+      "host_species": "Homo sapiens (human)",
+      "age_min": "29",
+      "age_max": "29"
     },
     {
       "study_name": "CM_madagascar",
@@ -3821,7 +4019,9 @@
       "sequencing_platform": "{'Madagascar cohort': 'IlluminaHiSeq', 'Ethiopia cohort': 'IlluminaHiSeq'}",
       "ancestry_details": "{'Madagascar cohort': ['Betsimisaraka', 'Tsimihety'], 'Ethiopia cohort': 'not_reported'}",
       "disease_details": "Healthy",
-      "host_species": "Homo sapiens (human)"
+      "host_species": "Homo sapiens (human)",
+      "age_min": "33",
+      "age_max": "33"
     },
     {
       "study_name": "CM_madagascar",
@@ -3850,7 +4050,9 @@
       "sequencing_platform": "{'Madagascar cohort': 'IlluminaHiSeq', 'Ethiopia cohort': 'IlluminaHiSeq'}",
       "ancestry_details": "{'Madagascar cohort': ['Betsimisaraka', 'Tsimihety'], 'Ethiopia cohort': 'not_reported'}",
       "disease_details": "Healthy",
-      "host_species": "Homo sapiens (human)"
+      "host_species": "Homo sapiens (human)",
+      "age_min": "26",
+      "age_max": "26"
     },
     {
       "study_name": "CM_madagascar",
@@ -3879,7 +4081,9 @@
       "sequencing_platform": "{'Madagascar cohort': 'IlluminaHiSeq', 'Ethiopia cohort': 'IlluminaHiSeq'}",
       "ancestry_details": "{'Madagascar cohort': ['Betsimisaraka', 'Tsimihety'], 'Ethiopia cohort': 'not_reported'}",
       "disease_details": "Healthy",
-      "host_species": "Homo sapiens (human)"
+      "host_species": "Homo sapiens (human)",
+      "age_min": "72",
+      "age_max": "72"
     },
     {
       "study_name": "CM_madagascar",
@@ -3908,7 +4112,9 @@
       "sequencing_platform": "{'Madagascar cohort': 'IlluminaHiSeq', 'Ethiopia cohort': 'IlluminaHiSeq'}",
       "ancestry_details": "{'Madagascar cohort': ['Betsimisaraka', 'Tsimihety'], 'Ethiopia cohort': 'not_reported'}",
       "disease_details": "Healthy",
-      "host_species": "Homo sapiens (human)"
+      "host_species": "Homo sapiens (human)",
+      "age_min": "29",
+      "age_max": "29"
     },
     {
       "study_name": "CM_madagascar",
@@ -3937,7 +4143,9 @@
       "sequencing_platform": "{'Madagascar cohort': 'IlluminaHiSeq', 'Ethiopia cohort': 'IlluminaHiSeq'}",
       "ancestry_details": "{'Madagascar cohort': ['Betsimisaraka', 'Tsimihety'], 'Ethiopia cohort': 'not_reported'}",
       "disease_details": "Healthy",
-      "host_species": "Homo sapiens (human)"
+      "host_species": "Homo sapiens (human)",
+      "age_min": "37",
+      "age_max": "37"
     },
     {
       "study_name": "CM_madagascar",
@@ -3966,7 +4174,9 @@
       "sequencing_platform": "{'Madagascar cohort': 'IlluminaHiSeq', 'Ethiopia cohort': 'IlluminaHiSeq'}",
       "ancestry_details": "{'Madagascar cohort': ['Betsimisaraka', 'Tsimihety'], 'Ethiopia cohort': 'not_reported'}",
       "disease_details": "Healthy",
-      "host_species": "Homo sapiens (human)"
+      "host_species": "Homo sapiens (human)",
+      "age_min": "40",
+      "age_max": "40"
     },
     {
       "study_name": "CM_madagascar",
@@ -3995,7 +4205,9 @@
       "sequencing_platform": "{'Madagascar cohort': 'IlluminaHiSeq', 'Ethiopia cohort': 'IlluminaHiSeq'}",
       "ancestry_details": "{'Madagascar cohort': ['Betsimisaraka', 'Tsimihety'], 'Ethiopia cohort': 'not_reported'}",
       "disease_details": "Healthy",
-      "host_species": "Homo sapiens (human)"
+      "host_species": "Homo sapiens (human)",
+      "age_min": "52",
+      "age_max": "52"
     },
     {
       "study_name": "CM_madagascar",
@@ -4024,7 +4236,9 @@
       "sequencing_platform": "{'Madagascar cohort': 'IlluminaHiSeq', 'Ethiopia cohort': 'IlluminaHiSeq'}",
       "ancestry_details": "{'Madagascar cohort': ['Betsimisaraka', 'Tsimihety'], 'Ethiopia cohort': 'not_reported'}",
       "disease_details": "Healthy",
-      "host_species": "Homo sapiens (human)"
+      "host_species": "Homo sapiens (human)",
+      "age_min": "21",
+      "age_max": "21"
     },
     {
       "study_name": "CM_madagascar",
@@ -4053,7 +4267,9 @@
       "sequencing_platform": "{'Madagascar cohort': 'IlluminaHiSeq', 'Ethiopia cohort': 'IlluminaHiSeq'}",
       "ancestry_details": "{'Madagascar cohort': ['Betsimisaraka', 'Tsimihety'], 'Ethiopia cohort': 'not_reported'}",
       "disease_details": "Healthy",
-      "host_species": "Homo sapiens (human)"
+      "host_species": "Homo sapiens (human)",
+      "age_min": "33",
+      "age_max": "33"
     },
     {
       "study_name": "CM_madagascar",
@@ -4082,7 +4298,9 @@
       "sequencing_platform": "{'Madagascar cohort': 'IlluminaHiSeq', 'Ethiopia cohort': 'IlluminaHiSeq'}",
       "ancestry_details": "{'Madagascar cohort': ['Betsimisaraka', 'Tsimihety'], 'Ethiopia cohort': 'not_reported'}",
       "disease_details": "Healthy",
-      "host_species": "Homo sapiens (human)"
+      "host_species": "Homo sapiens (human)",
+      "age_min": "30",
+      "age_max": "30"
     },
     {
       "study_name": "CM_madagascar",
@@ -4111,7 +4329,9 @@
       "sequencing_platform": "{'Madagascar cohort': 'IlluminaHiSeq', 'Ethiopia cohort': 'IlluminaHiSeq'}",
       "ancestry_details": "{'Madagascar cohort': ['Betsimisaraka', 'Tsimihety'], 'Ethiopia cohort': 'not_reported'}",
       "disease_details": "Healthy",
-      "host_species": "Homo sapiens (human)"
+      "host_species": "Homo sapiens (human)",
+      "age_min": "25",
+      "age_max": "25"
     },
     {
       "study_name": "CM_madagascar",
@@ -4140,7 +4360,9 @@
       "sequencing_platform": "{'Madagascar cohort': 'IlluminaHiSeq', 'Ethiopia cohort': 'IlluminaHiSeq'}",
       "ancestry_details": "{'Madagascar cohort': ['Betsimisaraka', 'Tsimihety'], 'Ethiopia cohort': 'not_reported'}",
       "disease_details": "Healthy",
-      "host_species": "Homo sapiens (human)"
+      "host_species": "Homo sapiens (human)",
+      "age_min": "36",
+      "age_max": "36"
     },
     {
       "study_name": "CM_madagascar",
@@ -4169,7 +4391,9 @@
       "sequencing_platform": "{'Madagascar cohort': 'IlluminaHiSeq', 'Ethiopia cohort': 'IlluminaHiSeq'}",
       "ancestry_details": "{'Madagascar cohort': ['Betsimisaraka', 'Tsimihety'], 'Ethiopia cohort': 'not_reported'}",
       "disease_details": "Healthy",
-      "host_species": "Homo sapiens (human)"
+      "host_species": "Homo sapiens (human)",
+      "age_min": "24",
+      "age_max": "24"
     }
   ],
   "table_selection": [

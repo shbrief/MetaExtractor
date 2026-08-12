@@ -8,15 +8,15 @@
       "sample_align": "match",
       "content": {
         "tn": 0,
-        "tp_correct": 378,
-        "tp_wrong": 392,
+        "tp_correct": 350,
+        "tp_wrong": 420,
         "fn": 420,
         "fp": 0
       },
       "content_coverage": {
         "tn": 0,
-        "tp_correct": 378,
-        "tp_wrong": 392,
+        "tp_correct": 350,
+        "tp_wrong": 420,
         "fn": 420,
         "fp": 0
       },
@@ -450,15 +450,15 @@
     },
     "age_min": {
       "tn": 0,
-      "tp_correct": 26,
-      "tp_wrong": 200,
+      "tp_correct": 0,
+      "tp_wrong": 226,
       "fn": 304,
       "fp": 0
     },
     "age_max": {
       "tn": 0,
-      "tp_correct": 3,
-      "tp_wrong": 223,
+      "tp_correct": 1,
+      "tp_wrong": 225,
       "fn": 304,
       "fp": 0
     },

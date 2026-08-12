@@ -976,7 +976,9 @@
       "sequencing_platform": "IlluminaHiSeq",
       "age_unit": "Year",
       "disease_details": "Healthy",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "1",
+      "age_max": "1"
     },
     {
       "study_name": "CM_ethiopia",
@@ -999,7 +1001,9 @@
       "sequencing_platform": "IlluminaHiSeq",
       "age_unit": "Year",
       "disease_details": "Healthy",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "30",
+      "age_max": "30"
     },
     {
       "study_name": "CM_ethiopia",
@@ -1022,7 +1026,9 @@
       "sequencing_platform": "IlluminaHiSeq",
       "age_unit": "Year",
       "disease_details": "Healthy",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "0.75",
+      "age_max": "0.75"
     },
     {
       "study_name": "CM_ethiopia",
@@ -1045,7 +1051,9 @@
       "sequencing_platform": "IlluminaHiSeq",
       "age_unit": "Year",
       "disease_details": "Healthy",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "37",
+      "age_max": "37"
     },
     {
       "study_name": "CM_ethiopia",
@@ -1068,7 +1076,9 @@
       "sequencing_platform": "IlluminaHiSeq",
       "age_unit": "Year",
       "disease_details": "Healthy",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "0.6666666667",
+      "age_max": "0.6666666667"
     },
     {
       "study_name": "CM_ethiopia",
@@ -1091,7 +1101,9 @@
       "sequencing_platform": "IlluminaHiSeq",
       "age_unit": "Year",
       "disease_details": "Healthy",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "30",
+      "age_max": "30"
     },
     {
       "study_name": "CM_ethiopia",
@@ -1114,7 +1126,9 @@
       "sequencing_platform": "IlluminaHiSeq",
       "age_unit": "Year",
       "disease_details": "Healthy",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "3",
+      "age_max": "3"
     },
     {
       "study_name": "CM_ethiopia",
@@ -1137,7 +1151,9 @@
       "sequencing_platform": "IlluminaHiSeq",
       "age_unit": "Year",
       "disease_details": "Healthy",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "25",
+      "age_max": "25"
     },
     {
       "study_name": "CM_ethiopia",
@@ -1160,7 +1176,9 @@
       "sequencing_platform": "IlluminaHiSeq",
       "age_unit": "Year",
       "disease_details": "Healthy",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "0.5833333333",
+      "age_max": "0.5833333333"
     },
     {
       "study_name": "CM_ethiopia",
@@ -1183,7 +1201,9 @@
       "sequencing_platform": "IlluminaHiSeq",
       "age_unit": "Year",
       "disease_details": "Healthy",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "25",
+      "age_max": "25"
     },
     {
       "study_name": "CM_ethiopia",
@@ -1206,7 +1226,9 @@
       "sequencing_platform": "IlluminaHiSeq",
       "age_unit": "Year",
       "disease_details": "Healthy",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "1.5833333333",
+      "age_max": "1.5833333333"
     },
     {
       "study_name": "CM_ethiopia",
@@ -1229,7 +1251,9 @@
       "sequencing_platform": "IlluminaHiSeq",
       "age_unit": "Year",
       "disease_details": "Healthy",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "28",
+      "age_max": "28"
     },
     {
       "study_name": "CM_ethiopia",
@@ -1252,7 +1276,9 @@
       "sequencing_platform": "IlluminaHiSeq",
       "age_unit": "Year",
       "disease_details": "Healthy",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "2.6666666667",
+      "age_max": "2.6666666667"
     },
     {
       "study_name": "CM_ethiopia",
@@ -1275,7 +1301,9 @@
       "sequencing_platform": "IlluminaHiSeq",
       "age_unit": "Year",
       "disease_details": "Healthy",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "45",
+      "age_max": "45"
     },
     {
       "study_name": "CM_ethiopia",
@@ -1298,7 +1326,9 @@
       "sequencing_platform": "IlluminaHiSeq",
       "age_unit": "Year",
       "disease_details": "Healthy",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "0.25",
+      "age_max": "0.25"
     },
     {
       "study_name": "CM_ethiopia",
@@ -1321,7 +1351,9 @@
       "sequencing_platform": "IlluminaHiSeq",
       "age_unit": "Year",
       "disease_details": "Healthy",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "35",
+      "age_max": "35"
     },
     {
       "study_name": "CM_ethiopia",
@@ -1344,7 +1376,9 @@
       "sequencing_platform": "IlluminaHiSeq",
       "age_unit": "Year",
       "disease_details": "Healthy",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "1.75",
+      "age_max": "1.75"
     },
     {
       "study_name": "CM_ethiopia",
@@ -1367,7 +1401,9 @@
       "sequencing_platform": "IlluminaHiSeq",
       "age_unit": "Year",
       "disease_details": "Healthy",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "22",
+      "age_max": "22"
     },
     {
       "study_name": "CM_ethiopia",
@@ -1390,7 +1426,9 @@
       "sequencing_platform": "IlluminaHiSeq",
       "age_unit": "Year",
       "disease_details": "Healthy",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "2.1666666667",
+      "age_max": "2.1666666667"
     },
     {
       "study_name": "CM_ethiopia",
@@ -1413,7 +1451,9 @@
       "sequencing_platform": "IlluminaHiSeq",
       "age_unit": "Year",
       "disease_details": "Healthy",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "22",
+      "age_max": "22"
     },
     {
       "study_name": "CM_ethiopia",
@@ -1436,7 +1476,9 @@
       "sequencing_platform": "IlluminaHiSeq",
       "age_unit": "Year",
       "disease_details": "Healthy",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "3",
+      "age_max": "3"
     },
     {
       "study_name": "CM_ethiopia",
@@ -1459,7 +1501,9 @@
       "sequencing_platform": "IlluminaHiSeq",
       "age_unit": "Year",
       "disease_details": "Healthy",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "27",
+      "age_max": "27"
     },
     {
       "study_name": "CM_ethiopia",
@@ -1482,7 +1526,9 @@
       "sequencing_platform": "IlluminaHiSeq",
       "age_unit": "Year",
       "disease_details": "Healthy",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "1.1666666667",
+      "age_max": "1.1666666667"
     },
     {
       "study_name": "CM_ethiopia",
@@ -1505,7 +1551,9 @@
       "sequencing_platform": "IlluminaHiSeq",
       "age_unit": "Year",
       "disease_details": "Healthy",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "25",
+      "age_max": "25"
     },
     {
       "study_name": "CM_ethiopia",
@@ -1528,7 +1576,9 @@
       "sequencing_platform": "IlluminaHiSeq",
       "age_unit": "Year",
       "disease_details": "Healthy",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "1.4166666667",
+      "age_max": "1.4166666667"
     },
     {
       "study_name": "CM_ethiopia",
@@ -1551,7 +1601,9 @@
       "sequencing_platform": "IlluminaHiSeq",
       "age_unit": "Year",
       "disease_details": "Healthy",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "25",
+      "age_max": "25"
     },
     {
       "study_name": "CM_ethiopia",
@@ -1574,7 +1626,9 @@
       "sequencing_platform": "IlluminaHiSeq",
       "age_unit": "Year",
       "disease_details": "Healthy",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "1.1666666667",
+      "age_max": "1.1666666667"
     },
     {
       "study_name": "CM_ethiopia",
@@ -1597,7 +1651,9 @@
       "sequencing_platform": "IlluminaHiSeq",
       "age_unit": "Year",
       "disease_details": "Healthy",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "26",
+      "age_max": "26"
     },
     {
       "study_name": "CM_ethiopia",
@@ -1620,7 +1676,9 @@
       "sequencing_platform": "IlluminaHiSeq",
       "age_unit": "Year",
       "disease_details": "Healthy",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "4.5",
+      "age_max": "4.5"
     },
     {
       "study_name": "CM_ethiopia",
@@ -1643,7 +1701,9 @@
       "sequencing_platform": "IlluminaHiSeq",
       "age_unit": "Year",
       "disease_details": "Healthy",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "28",
+      "age_max": "28"
     },
     {
       "study_name": "CM_ethiopia",
@@ -1666,7 +1726,9 @@
       "sequencing_platform": "IlluminaHiSeq",
       "age_unit": "Year",
       "disease_details": "Healthy",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "0.5",
+      "age_max": "0.5"
     },
     {
       "study_name": "CM_ethiopia",
@@ -1712,7 +1774,9 @@
       "sequencing_platform": "IlluminaHiSeq",
       "age_unit": "Year",
       "disease_details": "Healthy",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "0.1666666667",
+      "age_max": "0.1666666667"
     },
     {
       "study_name": "CM_ethiopia",
@@ -1735,7 +1799,9 @@
       "sequencing_platform": "IlluminaHiSeq",
       "age_unit": "Year",
       "disease_details": "Healthy",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "2",
+      "age_max": "2"
     },
     {
       "study_name": "CM_ethiopia",
@@ -1758,7 +1824,9 @@
       "sequencing_platform": "IlluminaHiSeq",
       "age_unit": "Year",
       "disease_details": "Healthy",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "25",
+      "age_max": "25"
     },
     {
       "study_name": "CM_ethiopia",
@@ -1781,7 +1849,9 @@
       "sequencing_platform": "IlluminaHiSeq",
       "age_unit": "Year",
       "disease_details": "Healthy",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "30",
+      "age_max": "30"
     },
     {
       "study_name": "CM_ethiopia",
@@ -1804,7 +1874,9 @@
       "sequencing_platform": "IlluminaHiSeq",
       "age_unit": "Year",
       "disease_details": "Healthy",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "0.1666666667",
+      "age_max": "0.1666666667"
     },
     {
       "study_name": "CM_ethiopia",
@@ -1827,7 +1899,9 @@
       "sequencing_platform": "IlluminaHiSeq",
       "age_unit": "Year",
       "disease_details": "Healthy",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "0.5",
+      "age_max": "0.5"
     },
     {
       "study_name": "CM_ethiopia",
@@ -1850,7 +1924,9 @@
       "sequencing_platform": "IlluminaHiSeq",
       "age_unit": "Year",
       "disease_details": "Healthy",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "0.6666666667",
+      "age_max": "0.6666666667"
     },
     {
       "study_name": "CM_ethiopia",
@@ -1873,7 +1949,9 @@
       "sequencing_platform": "IlluminaHiSeq",
       "age_unit": "Year",
       "disease_details": "Healthy",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "0.5833333333",
+      "age_max": "0.5833333333"
     },
     {
       "study_name": "CM_ethiopia",
@@ -1896,7 +1974,9 @@
       "sequencing_platform": "IlluminaHiSeq",
       "age_unit": "Year",
       "disease_details": "Healthy",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "27",
+      "age_max": "27"
     },
     {
       "study_name": "CM_ethiopia",
@@ -1919,7 +1999,9 @@
       "sequencing_platform": "IlluminaHiSeq",
       "age_unit": "Year",
       "disease_details": "Healthy",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "0.8333333333",
+      "age_max": "0.8333333333"
     },
     {
       "study_name": "CM_ethiopia",
@@ -1942,7 +2024,9 @@
       "sequencing_platform": "IlluminaHiSeq",
       "age_unit": "Year",
       "disease_details": "Healthy",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "28",
+      "age_max": "28"
     },
     {
       "study_name": "CM_ethiopia",
@@ -1965,7 +2049,9 @@
       "sequencing_platform": "IlluminaHiSeq",
       "age_unit": "Year",
       "disease_details": "Healthy",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "0.4166666667",
+      "age_max": "0.4166666667"
     },
     {
       "study_name": "CM_ethiopia",
@@ -1988,7 +2074,9 @@
       "sequencing_platform": "IlluminaHiSeq",
       "age_unit": "Year",
       "disease_details": "Healthy",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "26",
+      "age_max": "26"
     },
     {
       "study_name": "CM_ethiopia",
@@ -2011,7 +2099,9 @@
       "sequencing_platform": "IlluminaHiSeq",
       "age_unit": "Year",
       "disease_details": "Healthy",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "1.5",
+      "age_max": "1.5"
     },
     {
       "study_name": "CM_ethiopia",
@@ -2034,7 +2124,9 @@
       "sequencing_platform": "IlluminaHiSeq",
       "age_unit": "Year",
       "disease_details": "Healthy",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "42",
+      "age_max": "42"
     },
     {
       "study_name": "CM_ethiopia",
@@ -2057,7 +2149,9 @@
       "sequencing_platform": "IlluminaHiSeq",
       "age_unit": "Year",
       "disease_details": "Healthy",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "40",
+      "age_max": "40"
     },
     {
       "study_name": "CM_ethiopia",
@@ -2080,7 +2174,9 @@
       "sequencing_platform": "IlluminaHiSeq",
       "age_unit": "Year",
       "disease_details": "Healthy",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "1",
+      "age_max": "1"
     },
     {
       "study_name": "CM_ethiopia",
@@ -2103,7 +2199,9 @@
       "sequencing_platform": "IlluminaHiSeq",
       "age_unit": "Year",
       "disease_details": "Healthy",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "27",
+      "age_max": "27"
     }
   ],
   "table_selection": [

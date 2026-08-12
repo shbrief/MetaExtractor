@@ -390,16 +390,16 @@
       "notes": "Represents inclusion criterion minimum age for NORA cohort, not a measured cohort age range."
     },
     "age_max": {
-      "value": "not_reported",
+      "value": "65",
       "by_subgroup": null,
       "unit": null,
       "normalized_value": null,
       "normalized_unit": null,
-      "extraction_type": "directly_stated",
+      "extraction_type": "derived",
       "confidence": "high",
       "evidence_quote": "",
       "section": "",
-      "notes": "No upper age limit specified in the paper."
+      "notes": "No upper age limit specified in the paper. [age_min/age_max set from schema age-bound rule]"
     },
     "age_years": {
       "value": "not_reported",
@@ -919,7 +919,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451451",
@@ -961,7 +962,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451452",
@@ -1003,7 +1005,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451456",
@@ -1045,7 +1048,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451459",
@@ -1087,7 +1091,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451461",
@@ -1129,7 +1134,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451727",
@@ -1171,7 +1177,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451731",
@@ -1213,7 +1220,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451736",
@@ -1255,7 +1263,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451738",
@@ -1297,7 +1306,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451740",
@@ -1339,7 +1349,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451743",
@@ -1381,7 +1392,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451745",
@@ -1423,7 +1435,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451765",
@@ -1465,7 +1478,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451768",
@@ -1507,7 +1521,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451771",
@@ -1549,7 +1564,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451773",
@@ -1591,7 +1607,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451775",
@@ -1633,7 +1650,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451776",
@@ -1675,7 +1693,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451783",
@@ -1717,7 +1736,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451787",
@@ -1759,7 +1779,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451794",
@@ -1801,7 +1822,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451796",
@@ -1843,7 +1865,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451800",
@@ -1885,7 +1908,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451801",
@@ -1927,7 +1951,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451802",
@@ -1969,7 +1994,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451804",
@@ -2011,7 +2037,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451809",
@@ -2053,7 +2080,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451811",
@@ -2095,7 +2123,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451813",
@@ -2137,7 +2166,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451815",
@@ -2179,7 +2209,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451816",
@@ -2221,7 +2252,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451820",
@@ -2263,7 +2295,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451835",
@@ -2305,7 +2338,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451837",
@@ -2347,7 +2381,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451841",
@@ -2389,7 +2424,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451843",
@@ -2431,7 +2467,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451844",
@@ -2473,7 +2510,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451848",
@@ -2515,7 +2553,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451849",
@@ -2557,7 +2596,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451852",
@@ -2599,7 +2639,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451858",
@@ -2641,7 +2682,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451859",
@@ -2683,7 +2725,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451860",
@@ -2725,7 +2768,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451861",
@@ -2767,7 +2811,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451862",
@@ -2809,7 +2854,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451864",
@@ -2851,7 +2897,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451869",
@@ -2893,7 +2940,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451870",
@@ -2935,7 +2983,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451880",
@@ -2977,7 +3026,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451881",
@@ -3019,7 +3069,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451884",
@@ -3061,7 +3112,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451885",
@@ -3103,7 +3155,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451889",
@@ -3145,7 +3198,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451890",
@@ -3187,7 +3241,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451891",
@@ -3229,7 +3284,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451895",
@@ -3271,7 +3327,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451897",
@@ -3313,7 +3370,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451942",
@@ -3355,7 +3413,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451944",
@@ -3397,7 +3456,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451948",
@@ -3439,7 +3499,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451952",
@@ -3481,7 +3542,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451954",
@@ -3523,7 +3585,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451955",
@@ -3565,7 +3628,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12452152",
@@ -3607,7 +3671,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12452153",
@@ -3649,7 +3714,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12452157",
@@ -3691,7 +3757,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12452158",
@@ -3733,7 +3800,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12452162",
@@ -3775,7 +3843,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12452163",
@@ -3817,7 +3886,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12452167",
@@ -3859,7 +3929,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12452170",
@@ -3901,7 +3972,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12452173",
@@ -3943,7 +4015,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12452174",
@@ -3985,7 +4058,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12452180",
@@ -4027,7 +4101,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12452182",
@@ -4069,7 +4144,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12452183",
@@ -4111,7 +4187,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12454620",
@@ -4153,7 +4230,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12454621",
@@ -4195,7 +4273,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12454624",
@@ -4237,7 +4316,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12454628",
@@ -4279,7 +4359,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12454631",
@@ -4321,7 +4402,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12454633",
@@ -4363,7 +4445,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12454634",
@@ -4405,7 +4488,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12454635",
@@ -4447,7 +4531,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12454636",
@@ -4489,7 +4574,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12454638",
@@ -4531,7 +4617,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12454645",
@@ -4573,7 +4660,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12454649",
@@ -4615,7 +4703,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12454650",
@@ -4657,7 +4746,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12454651",
@@ -4699,7 +4789,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12454656",
@@ -4741,7 +4832,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12454667",
@@ -4783,7 +4875,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12454671",
@@ -4825,7 +4918,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12454672",
@@ -4867,7 +4961,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12454676",
@@ -4909,7 +5004,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12454689",
@@ -4951,7 +5047,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12454690",
@@ -4993,7 +5090,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12454691",
@@ -5035,7 +5133,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12454699",
@@ -5077,7 +5176,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12454705",
@@ -5119,7 +5219,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12454708",
@@ -5161,7 +5262,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12454712",
@@ -5203,7 +5305,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12454713",
@@ -5245,7 +5348,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12454719",
@@ -5287,7 +5391,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12454720",
@@ -5329,7 +5434,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12454721",
@@ -5371,7 +5477,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12455123",
@@ -5413,7 +5520,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12455125",
@@ -5455,7 +5563,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12455127",
@@ -5497,7 +5606,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12455139",
@@ -5539,7 +5649,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12455141",
@@ -5581,7 +5692,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12455142",
@@ -5623,7 +5735,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12455143",
@@ -5665,7 +5778,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12455146",
@@ -5707,7 +5821,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12455147",
@@ -5749,7 +5864,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12455148",
@@ -5791,7 +5907,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12455150",
@@ -5833,7 +5950,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12455151",
@@ -5875,7 +5993,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12455152",
@@ -5917,7 +6036,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12455156",
@@ -5959,7 +6079,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12455157",
@@ -6001,7 +6122,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12455168",
@@ -6043,7 +6165,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12455507",
@@ -6085,7 +6208,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12455510",
@@ -6127,7 +6251,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12455513",
@@ -6169,7 +6294,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12455514",
@@ -6211,7 +6337,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12455516",
@@ -6253,7 +6380,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12455521",
@@ -6295,7 +6423,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12455522",
@@ -6337,7 +6466,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12455523",
@@ -6379,7 +6509,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12455524",
@@ -6421,7 +6552,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12455527",
@@ -6463,7 +6595,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12455528",
@@ -6505,7 +6638,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12455530",
@@ -6547,7 +6681,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12455532",
@@ -6589,7 +6724,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12455535",
@@ -6631,7 +6767,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12455537",
@@ -6673,7 +6810,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12455540",
@@ -6715,7 +6853,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451446",
@@ -6757,7 +6896,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451454",
@@ -6799,7 +6939,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451455",
@@ -6841,7 +6982,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451460",
@@ -6883,7 +7025,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451462",
@@ -6925,7 +7068,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451726",
@@ -6967,7 +7111,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451730",
@@ -7009,7 +7154,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451735",
@@ -7051,7 +7197,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451742",
@@ -7093,7 +7240,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451746",
@@ -7135,7 +7283,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451748",
@@ -7177,7 +7326,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451752",
@@ -7219,7 +7369,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451753",
@@ -7261,7 +7412,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451754",
@@ -7303,7 +7455,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451758",
@@ -7345,7 +7498,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451762",
@@ -7387,7 +7541,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451770",
@@ -7429,7 +7584,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451777",
@@ -7471,7 +7627,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451779",
@@ -7513,7 +7670,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451786",
@@ -7555,7 +7713,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451789",
@@ -7597,7 +7756,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451791",
@@ -7639,7 +7799,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451793",
@@ -7681,7 +7842,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451795",
@@ -7723,7 +7885,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451799",
@@ -7765,7 +7928,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451803",
@@ -7807,7 +7971,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451805",
@@ -7849,7 +8014,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451806",
@@ -7891,7 +8057,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451808",
@@ -7933,7 +8100,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451812",
@@ -7975,7 +8143,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451819",
@@ -8017,7 +8186,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451821",
@@ -8059,7 +8229,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451822",
@@ -8101,7 +8272,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451827",
@@ -8143,7 +8315,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451828",
@@ -8185,7 +8358,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451831",
@@ -8227,7 +8401,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451833",
@@ -8269,7 +8444,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451834",
@@ -8311,7 +8487,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451838",
@@ -8353,7 +8530,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451840",
@@ -8395,7 +8573,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451845",
@@ -8437,7 +8616,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451846",
@@ -8479,7 +8659,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451854",
@@ -8521,7 +8702,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451857",
@@ -8563,7 +8745,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451863",
@@ -8605,7 +8788,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451865",
@@ -8647,7 +8831,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451867",
@@ -8689,7 +8874,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451868",
@@ -8731,7 +8917,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451874",
@@ -8773,7 +8960,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451875",
@@ -8815,7 +9003,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451876",
@@ -8857,7 +9046,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451878",
@@ -8899,7 +9089,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451882",
@@ -8941,7 +9132,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451886",
@@ -8983,7 +9175,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451888",
@@ -9025,7 +9218,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451893",
@@ -9067,7 +9261,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451894",
@@ -9109,7 +9304,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451896",
@@ -9151,7 +9347,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451898",
@@ -9193,7 +9390,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451899",
@@ -9235,7 +9433,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451902",
@@ -9277,7 +9476,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451943",
@@ -9319,7 +9519,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451950",
@@ -9361,7 +9562,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451956",
@@ -9403,7 +9605,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451957",
@@ -9445,7 +9648,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12452149",
@@ -9487,7 +9691,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12452151",
@@ -9529,7 +9734,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12452155",
@@ -9571,7 +9777,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12452159",
@@ -9613,7 +9820,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12452160",
@@ -9655,7 +9863,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12452161",
@@ -9697,7 +9906,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12452164",
@@ -9739,7 +9949,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12452168",
@@ -9781,7 +9992,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12452171",
@@ -9823,7 +10035,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12452177",
@@ -9865,7 +10078,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12452179",
@@ -9907,7 +10121,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12452181",
@@ -9949,7 +10164,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12454623",
@@ -9991,7 +10207,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12454625",
@@ -10033,7 +10250,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12454627",
@@ -10075,7 +10293,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12454640",
@@ -10117,7 +10336,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12454642",
@@ -10159,7 +10379,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12454644",
@@ -10201,7 +10422,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12454646",
@@ -10243,7 +10465,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12454647",
@@ -10285,7 +10508,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12454653",
@@ -10327,7 +10551,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12454654",
@@ -10369,7 +10594,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12454658",
@@ -10411,7 +10637,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12454660",
@@ -10453,7 +10680,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12454661",
@@ -10495,7 +10723,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12454662",
@@ -10537,7 +10766,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12454663",
@@ -10579,7 +10809,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12454668",
@@ -10621,7 +10852,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12454669",
@@ -10663,7 +10895,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12454670",
@@ -10705,7 +10938,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12454673",
@@ -10747,7 +10981,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12454678",
@@ -10789,7 +11024,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12454679",
@@ -10831,7 +11067,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12454680",
@@ -10873,7 +11110,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12454681",
@@ -10915,7 +11153,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12454683",
@@ -10957,7 +11196,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12454685",
@@ -10999,7 +11239,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12454687",
@@ -11041,7 +11282,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12454692",
@@ -11083,7 +11325,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12454695",
@@ -11125,7 +11368,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12454701",
@@ -11167,7 +11411,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12454702",
@@ -11209,7 +11454,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12454706",
@@ -11251,7 +11497,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12454709",
@@ -11293,7 +11540,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12454710",
@@ -11335,7 +11583,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12454711",
@@ -11377,7 +11626,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12454715",
@@ -11419,7 +11669,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12454718",
@@ -11461,7 +11712,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12454722",
@@ -11503,7 +11755,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12455124",
@@ -11545,7 +11798,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12455126",
@@ -11587,7 +11841,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12455131",
@@ -11629,7 +11884,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12455132",
@@ -11671,7 +11927,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12455133",
@@ -11713,7 +11970,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12455134",
@@ -11755,7 +12013,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12455135",
@@ -11797,7 +12056,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12455136",
@@ -11839,7 +12099,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12455138",
@@ -11881,7 +12142,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12455140",
@@ -11923,7 +12185,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12455153",
@@ -11965,7 +12228,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12455160",
@@ -12007,7 +12271,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12455163",
@@ -12049,7 +12314,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12455165",
@@ -12091,7 +12357,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12455166",
@@ -12133,7 +12400,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12455515",
@@ -12175,7 +12443,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12455518",
@@ -12217,7 +12486,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12455519",
@@ -12259,7 +12529,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12455533",
@@ -12301,7 +12572,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12455536",
@@ -12343,7 +12615,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12455538",
@@ -12385,7 +12658,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451445",
@@ -12427,7 +12701,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451447",
@@ -12469,7 +12744,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451448",
@@ -12511,7 +12787,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451449",
@@ -12553,7 +12830,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451453",
@@ -12595,7 +12873,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451457",
@@ -12637,7 +12916,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451458",
@@ -12679,7 +12959,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451725",
@@ -12721,7 +13002,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451728",
@@ -12763,7 +13045,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451729",
@@ -12805,7 +13088,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451732",
@@ -12847,7 +13131,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451733",
@@ -12889,7 +13174,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451734",
@@ -12931,7 +13217,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451737",
@@ -12973,7 +13260,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451739",
@@ -13015,7 +13303,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451741",
@@ -13057,7 +13346,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451744",
@@ -13099,7 +13389,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451747",
@@ -13141,7 +13432,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451749",
@@ -13183,7 +13475,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451750",
@@ -13225,7 +13518,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451751",
@@ -13267,7 +13561,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451755",
@@ -13309,7 +13604,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451756",
@@ -13351,7 +13647,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451757",
@@ -13393,7 +13690,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451759",
@@ -13435,7 +13733,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451760",
@@ -13477,7 +13776,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451761",
@@ -13519,7 +13819,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451763",
@@ -13561,7 +13862,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451764",
@@ -13603,7 +13905,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451766",
@@ -13645,7 +13948,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451767",
@@ -13687,7 +13991,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451769",
@@ -13729,7 +14034,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451772",
@@ -13771,7 +14077,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451774",
@@ -13813,7 +14120,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451778",
@@ -13855,7 +14163,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451780",
@@ -13897,7 +14206,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451781",
@@ -13939,7 +14249,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451782",
@@ -13981,7 +14292,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451784",
@@ -14023,7 +14335,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451785",
@@ -14065,7 +14378,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451788",
@@ -14107,7 +14421,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451790",
@@ -14149,7 +14464,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451792",
@@ -14191,7 +14507,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451797",
@@ -14233,7 +14550,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451798",
@@ -14275,7 +14593,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451807",
@@ -14317,7 +14636,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451810",
@@ -14359,7 +14679,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451814",
@@ -14401,7 +14722,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451817",
@@ -14443,7 +14765,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451818",
@@ -14485,7 +14808,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451823",
@@ -14527,7 +14851,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451824",
@@ -14569,7 +14894,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451825",
@@ -14611,7 +14937,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451826",
@@ -14653,7 +14980,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451829",
@@ -14695,7 +15023,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451830",
@@ -14737,7 +15066,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451832",
@@ -14779,7 +15109,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451836",
@@ -14821,7 +15152,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451839",
@@ -14863,7 +15195,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451842",
@@ -14905,7 +15238,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451847",
@@ -14947,7 +15281,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451850",
@@ -14989,7 +15324,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451851",
@@ -15031,7 +15367,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451853",
@@ -15073,7 +15410,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451855",
@@ -15115,7 +15453,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451856",
@@ -15157,7 +15496,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451866",
@@ -15199,7 +15539,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451871",
@@ -15241,7 +15582,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451872",
@@ -15283,7 +15625,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451873",
@@ -15325,7 +15668,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451877",
@@ -15367,7 +15711,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451879",
@@ -15409,7 +15754,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451883",
@@ -15451,7 +15797,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451887",
@@ -15493,7 +15840,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451892",
@@ -15535,7 +15883,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451900",
@@ -15577,7 +15926,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451901",
@@ -15619,7 +15969,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451903",
@@ -15661,7 +16012,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451940",
@@ -15703,7 +16055,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451941",
@@ -15745,7 +16098,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451945",
@@ -15787,7 +16141,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451946",
@@ -15829,7 +16184,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451947",
@@ -15871,7 +16227,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451949",
@@ -15913,7 +16270,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451951",
@@ -15955,7 +16313,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12451953",
@@ -15997,7 +16356,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12452150",
@@ -16039,7 +16399,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12452154",
@@ -16081,7 +16442,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12452156",
@@ -16123,7 +16485,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12452165",
@@ -16165,7 +16528,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12452166",
@@ -16207,7 +16571,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12452169",
@@ -16249,7 +16614,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12452172",
@@ -16291,7 +16657,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12452175",
@@ -16333,7 +16700,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12452176",
@@ -16375,7 +16743,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12452178",
@@ -16417,7 +16786,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12452184",
@@ -16459,7 +16829,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12454622",
@@ -16501,7 +16872,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12454626",
@@ -16543,7 +16915,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12454629",
@@ -16585,7 +16958,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12454630",
@@ -16627,7 +17001,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12454632",
@@ -16669,7 +17044,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12454637",
@@ -16711,7 +17087,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12454639",
@@ -16753,7 +17130,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12454641",
@@ -16795,7 +17173,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12454643",
@@ -16837,7 +17216,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12454648",
@@ -16879,7 +17259,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12454652",
@@ -16921,7 +17302,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12454655",
@@ -16963,7 +17345,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12454657",
@@ -17005,7 +17388,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12454659",
@@ -17047,7 +17431,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12454664",
@@ -17089,7 +17474,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12454665",
@@ -17131,7 +17517,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12454666",
@@ -17173,7 +17560,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12454674",
@@ -17215,7 +17603,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12454675",
@@ -17257,7 +17646,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12454677",
@@ -17299,7 +17689,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12454682",
@@ -17341,7 +17732,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12454684",
@@ -17383,7 +17775,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12454686",
@@ -17425,7 +17818,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12454688",
@@ -17467,7 +17861,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12454693",
@@ -17509,7 +17904,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12454694",
@@ -17551,7 +17947,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12454696",
@@ -17593,7 +17990,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12454697",
@@ -17635,7 +18033,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12454698",
@@ -17677,7 +18076,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12454700",
@@ -17719,7 +18119,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12454703",
@@ -17761,7 +18162,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12454704",
@@ -17803,7 +18205,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12454707",
@@ -17845,7 +18248,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12454714",
@@ -17887,7 +18291,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12454716",
@@ -17929,7 +18334,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12454717",
@@ -17971,7 +18377,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12455128",
@@ -18013,7 +18420,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12455129",
@@ -18055,7 +18463,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12455130",
@@ -18097,7 +18506,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12455137",
@@ -18139,7 +18549,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12455144",
@@ -18181,7 +18592,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12455145",
@@ -18223,7 +18635,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12455149",
@@ -18265,7 +18678,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12455154",
@@ -18307,7 +18721,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12455155",
@@ -18349,7 +18764,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12455158",
@@ -18391,7 +18807,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12455159",
@@ -18433,7 +18850,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12455161",
@@ -18475,7 +18893,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12455162",
@@ -18517,7 +18936,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12455164",
@@ -18559,7 +18979,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12455167",
@@ -18601,7 +19022,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12455508",
@@ -18643,7 +19065,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12455509",
@@ -18685,7 +19108,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12455511",
@@ -18727,7 +19151,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12455512",
@@ -18769,7 +19194,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12455517",
@@ -18811,7 +19237,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12455520",
@@ -18853,7 +19280,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12455525",
@@ -18895,7 +19323,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12455526",
@@ -18937,7 +19366,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12455529",
@@ -18979,7 +19409,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12455531",
@@ -19021,7 +19452,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12455534",
@@ -19063,7 +19495,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     },
     {
       "ncbi_accession": "SRR12455539",
@@ -19105,7 +19538,8 @@
       "biomarker_name": "DAS28",
       "biomarker_unit": "score (DAS28 units)",
       "biomarker_value": "≥1.8 decrease",
-      "host_species": "Human, Mouse"
+      "host_species": "Human, Mouse",
+      "age_max": "65"
     }
   ],
   "table_selection": [

@@ -395,28 +395,28 @@
       "notes": "No twin-related data in this microbiome/hypertension cohort study."
     },
     "age_min": {
-      "value": "not_reported",
+      "value": "18",
       "by_subgroup": null,
       "unit": "years",
       "normalized_value": null,
       "normalized_unit": null,
-      "extraction_type": "directly_stated",
+      "extraction_type": "derived",
       "confidence": "high",
       "evidence_quote": "",
       "section": "",
-      "notes": "Age values not numerically reported in the provided text (only referenced as a correlated clinical variable)."
+      "notes": "Age values not numerically reported in the provided text (only referenced as a correlated clinical variable). [age_min/age_max set from schema age-bound rule]"
     },
     "age_max": {
-      "value": "not_reported",
+      "value": "65",
       "by_subgroup": null,
       "unit": "years",
       "normalized_value": null,
       "normalized_unit": null,
-      "extraction_type": "directly_stated",
+      "extraction_type": "derived",
       "confidence": "high",
       "evidence_quote": "",
       "section": "",
-      "notes": "Age values not numerically reported in the provided text."
+      "notes": "Age values not numerically reported in the provided text. [age_min/age_max set from schema age-bound rule]"
     },
     "age_years": {
       "value": "not_reported",
@@ -984,7 +984,9 @@
       "biomarker_unit": "mmHg; mmHg; not_reported",
       "biomarker_value": "{'SBP': {'Control': '≤125 mmHg', 'pHTN': '125 mmHg < SBP ≤ 139 mmHg', 'HTN': 'SBP ≥140 mmHg'}, 'DBP': {'Control': '≤80 mmHg', 'pHTN': '80 mmHg < DBP ≤ 89 mmHg', 'HTN': 'DBP ≥90 mmHg'}}",
       "uncurated_metadata": "Cohort: Kailuan Group Corporation employees, Tangshan, northern China; 196 participants: 41 controls, 56 pHTN, 99 HTN; Fecal microbiota transplantation donors: 2 HTN patients and 1 normotensive control; Recipient mice: n=5 control, n=10 HTN, germ-free C57BL/6L male mice aged 8-10 weeks; Metabolomics subset: 124 subjects (30 control, 31 pHTN, 63 HTN)",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "27",
+      "age_max": "27"
     },
     {
       "target_condition": "Control",
@@ -1027,7 +1029,9 @@
       "biomarker_unit": "mmHg; mmHg; not_reported",
       "biomarker_value": "{'SBP': {'Control': '≤125 mmHg', 'pHTN': '125 mmHg < SBP ≤ 139 mmHg', 'HTN': 'SBP ≥140 mmHg'}, 'DBP': {'Control': '≤80 mmHg', 'pHTN': '80 mmHg < DBP ≤ 89 mmHg', 'HTN': 'DBP ≥90 mmHg'}}",
       "uncurated_metadata": "Cohort: Kailuan Group Corporation employees, Tangshan, northern China; 196 participants: 41 controls, 56 pHTN, 99 HTN; Fecal microbiota transplantation donors: 2 HTN patients and 1 normotensive control; Recipient mice: n=5 control, n=10 HTN, germ-free C57BL/6L male mice aged 8-10 weeks; Metabolomics subset: 124 subjects (30 control, 31 pHTN, 63 HTN)",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "50",
+      "age_max": "50"
     },
     {
       "target_condition": "Control",
@@ -1070,7 +1074,9 @@
       "biomarker_unit": "mmHg; mmHg; not_reported",
       "biomarker_value": "{'SBP': {'Control': '≤125 mmHg', 'pHTN': '125 mmHg < SBP ≤ 139 mmHg', 'HTN': 'SBP ≥140 mmHg'}, 'DBP': {'Control': '≤80 mmHg', 'pHTN': '80 mmHg < DBP ≤ 89 mmHg', 'HTN': 'DBP ≥90 mmHg'}}",
       "uncurated_metadata": "Cohort: Kailuan Group Corporation employees, Tangshan, northern China; 196 participants: 41 controls, 56 pHTN, 99 HTN; Fecal microbiota transplantation donors: 2 HTN patients and 1 normotensive control; Recipient mice: n=5 control, n=10 HTN, germ-free C57BL/6L male mice aged 8-10 weeks; Metabolomics subset: 124 subjects (30 control, 31 pHTN, 63 HTN)",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "50",
+      "age_max": "50"
     },
     {
       "target_condition": "Hypertension",
@@ -1113,7 +1119,9 @@
       "biomarker_unit": "mmHg; mmHg; not_reported",
       "biomarker_value": "{'SBP': {'Control': '≤125 mmHg', 'pHTN': '125 mmHg < SBP ≤ 139 mmHg', 'HTN': 'SBP ≥140 mmHg'}, 'DBP': {'Control': '≤80 mmHg', 'pHTN': '80 mmHg < DBP ≤ 89 mmHg', 'HTN': 'DBP ≥90 mmHg'}}",
       "uncurated_metadata": "Cohort: Kailuan Group Corporation employees, Tangshan, northern China; 196 participants: 41 controls, 56 pHTN, 99 HTN; Fecal microbiota transplantation donors: 2 HTN patients and 1 normotensive control; Recipient mice: n=5 control, n=10 HTN, germ-free C57BL/6L male mice aged 8-10 weeks; Metabolomics subset: 124 subjects (30 control, 31 pHTN, 63 HTN)",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "72",
+      "age_max": "72"
     },
     {
       "target_condition": "Hypertension",
@@ -1156,7 +1164,9 @@
       "biomarker_unit": "mmHg; mmHg; not_reported",
       "biomarker_value": "{'SBP': {'Control': '≤125 mmHg', 'pHTN': '125 mmHg < SBP ≤ 139 mmHg', 'HTN': 'SBP ≥140 mmHg'}, 'DBP': {'Control': '≤80 mmHg', 'pHTN': '80 mmHg < DBP ≤ 89 mmHg', 'HTN': 'DBP ≥90 mmHg'}}",
       "uncurated_metadata": "Cohort: Kailuan Group Corporation employees, Tangshan, northern China; 196 participants: 41 controls, 56 pHTN, 99 HTN; Fecal microbiota transplantation donors: 2 HTN patients and 1 normotensive control; Recipient mice: n=5 control, n=10 HTN, germ-free C57BL/6L male mice aged 8-10 weeks; Metabolomics subset: 124 subjects (30 control, 31 pHTN, 63 HTN)",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "47",
+      "age_max": "47"
     },
     {
       "target_condition": "Hypertension",
@@ -1199,7 +1209,9 @@
       "biomarker_unit": "mmHg; mmHg; not_reported",
       "biomarker_value": "{'SBP': {'Control': '≤125 mmHg', 'pHTN': '125 mmHg < SBP ≤ 139 mmHg', 'HTN': 'SBP ≥140 mmHg'}, 'DBP': {'Control': '≤80 mmHg', 'pHTN': '80 mmHg < DBP ≤ 89 mmHg', 'HTN': 'DBP ≥90 mmHg'}}",
       "uncurated_metadata": "Cohort: Kailuan Group Corporation employees, Tangshan, northern China; 196 participants: 41 controls, 56 pHTN, 99 HTN; Fecal microbiota transplantation donors: 2 HTN patients and 1 normotensive control; Recipient mice: n=5 control, n=10 HTN, germ-free C57BL/6L male mice aged 8-10 weeks; Metabolomics subset: 124 subjects (30 control, 31 pHTN, 63 HTN)",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "46",
+      "age_max": "46"
     }
   ],
   "table_selection": [

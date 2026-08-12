@@ -421,7 +421,7 @@
       "notes": "Twin zygosity not discussed anywhere in this metagenomic genome-reconstruction study."
     },
     "age_min": {
-      "value": "not_reported",
+      "value": "18",
       "by_subgroup": {
         "newborn": 0,
         "children": 1,
@@ -432,14 +432,14 @@
       "unit": "years",
       "normalized_value": null,
       "normalized_unit": null,
-      "extraction_type": "directly_stated",
+      "extraction_type": "derived",
       "confidence": "high",
       "evidence_quote": "1,098 newborns (< 1 year of age), 465 children (age ≥1 year and <12 years), 216 school-age individuals (age ≥12 and <19 years)",
       "section": "STAR Methods — Meta-analyzed publicly available metagenomic datasets",
-      "notes": "Age category boundaries reported for whole metagenome dataset (46 studies + Madagascar/Ethiopia cohorts); no single study-level age_min given, values are per age-category subgroup."
+      "notes": "Age category boundaries reported for whole metagenome dataset (46 studies + Madagascar/Ethiopia cohorts); no single study-level age_min given, values are per age-category subgroup. [age_min/age_max set from schema age-bound rule]"
     },
     "age_max": {
-      "value": "not_reported",
+      "value": "65",
       "by_subgroup": {
         "newborn": 1,
         "children": 12,
@@ -450,11 +450,11 @@
       "unit": "years",
       "normalized_value": null,
       "normalized_unit": null,
-      "extraction_type": "directly_stated",
+      "extraction_type": "derived",
       "confidence": "medium",
       "evidence_quote": "876 from adults and seniors (age ≥19 and >65 years; merged with the class “adult” in Figure 1 )",
       "section": "STAR Methods — Meta-analyzed publicly available metagenomic datasets",
-      "notes": "Upper bound for 'adults and seniors' merged category is ambiguous (text states '≥19 and >65 years'); could not determine a definitive numeric upper age bound for this subgroup. Adult category explicitly bounded 19-65 in separate sentence ('Samples from adults (19 to 65 years of age) account for 6,615 samples'), creating a possible internal inconsistency/conflict with the 876 'adults and seniors' figure."
+      "notes": "Upper bound for 'adults and seniors' merged category is ambiguous (text states '≥19 and >65 years'); could not determine a definitive numeric upper age bound for this subgroup. Adult category explicitly bounded 19-65 in separate sentence ('Samples from adults (19 to 65 years of age) account for 6,615 samples'), creating a possible internal inconsistency/conflict with the 876 'adults and seniors' figure. [age_min/age_max set from schema age-bound rule]"
     },
     "age_years": {
       "value": "not_reported",
@@ -950,7 +950,9 @@
       "sequencing_platform": "IlluminaHiSeq",
       "age_unit": "Year",
       "uncurated_metadata": "9,428 metagenomes spanning body sites, ages, countries, and lifestyles; 31 countries: USA (1,431 samples), China (1,342), Israel (956), Sweden (600) and Denmark (580) are the 5 most represented; 5 major body sites: gut (stool), oral cavity, skin (including anterior nares), vagina, and maternal milk; Age categories: newborns (<1 year), children (1-12 years), school-age (12-19 years), adults (19-65 years), adults and seniors (19->65 years); Madagascar cohort: 112 healthy volunteers (54 females and 58 males) from MAHERY study, Betsimisaraka and Tsimihety ethnicity; Ethiopian cohort: five female individuals from Gimbichu, Oromia Region; 592 non-Westernized vs 8,836 Westernized samples total",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "21",
+      "age_max": "21"
     },
     {
       "study_name": "CM_madagascar",
@@ -977,7 +979,9 @@
       "sequencing_platform": "IlluminaHiSeq",
       "age_unit": "Year",
       "uncurated_metadata": "9,428 metagenomes spanning body sites, ages, countries, and lifestyles; 31 countries: USA (1,431 samples), China (1,342), Israel (956), Sweden (600) and Denmark (580) are the 5 most represented; 5 major body sites: gut (stool), oral cavity, skin (including anterior nares), vagina, and maternal milk; Age categories: newborns (<1 year), children (1-12 years), school-age (12-19 years), adults (19-65 years), adults and seniors (19->65 years); Madagascar cohort: 112 healthy volunteers (54 females and 58 males) from MAHERY study, Betsimisaraka and Tsimihety ethnicity; Ethiopian cohort: five female individuals from Gimbichu, Oromia Region; 592 non-Westernized vs 8,836 Westernized samples total",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "24",
+      "age_max": "24"
     },
     {
       "study_name": "CM_madagascar",
@@ -1004,7 +1008,9 @@
       "sequencing_platform": "IlluminaHiSeq",
       "age_unit": "Year",
       "uncurated_metadata": "9,428 metagenomes spanning body sites, ages, countries, and lifestyles; 31 countries: USA (1,431 samples), China (1,342), Israel (956), Sweden (600) and Denmark (580) are the 5 most represented; 5 major body sites: gut (stool), oral cavity, skin (including anterior nares), vagina, and maternal milk; Age categories: newborns (<1 year), children (1-12 years), school-age (12-19 years), adults (19-65 years), adults and seniors (19->65 years); Madagascar cohort: 112 healthy volunteers (54 females and 58 males) from MAHERY study, Betsimisaraka and Tsimihety ethnicity; Ethiopian cohort: five female individuals from Gimbichu, Oromia Region; 592 non-Westernized vs 8,836 Westernized samples total",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "38",
+      "age_max": "38"
     },
     {
       "study_name": "CM_madagascar",
@@ -1031,7 +1037,9 @@
       "sequencing_platform": "IlluminaHiSeq",
       "age_unit": "Year",
       "uncurated_metadata": "9,428 metagenomes spanning body sites, ages, countries, and lifestyles; 31 countries: USA (1,431 samples), China (1,342), Israel (956), Sweden (600) and Denmark (580) are the 5 most represented; 5 major body sites: gut (stool), oral cavity, skin (including anterior nares), vagina, and maternal milk; Age categories: newborns (<1 year), children (1-12 years), school-age (12-19 years), adults (19-65 years), adults and seniors (19->65 years); Madagascar cohort: 112 healthy volunteers (54 females and 58 males) from MAHERY study, Betsimisaraka and Tsimihety ethnicity; Ethiopian cohort: five female individuals from Gimbichu, Oromia Region; 592 non-Westernized vs 8,836 Westernized samples total",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "34",
+      "age_max": "34"
     },
     {
       "study_name": "CM_madagascar",
@@ -1058,7 +1066,9 @@
       "sequencing_platform": "IlluminaHiSeq",
       "age_unit": "Year",
       "uncurated_metadata": "9,428 metagenomes spanning body sites, ages, countries, and lifestyles; 31 countries: USA (1,431 samples), China (1,342), Israel (956), Sweden (600) and Denmark (580) are the 5 most represented; 5 major body sites: gut (stool), oral cavity, skin (including anterior nares), vagina, and maternal milk; Age categories: newborns (<1 year), children (1-12 years), school-age (12-19 years), adults (19-65 years), adults and seniors (19->65 years); Madagascar cohort: 112 healthy volunteers (54 females and 58 males) from MAHERY study, Betsimisaraka and Tsimihety ethnicity; Ethiopian cohort: five female individuals from Gimbichu, Oromia Region; 592 non-Westernized vs 8,836 Westernized samples total",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "28",
+      "age_max": "28"
     },
     {
       "study_name": "CM_madagascar",
@@ -1076,7 +1086,9 @@
       "sequencing_platform": "IlluminaHiSeq",
       "age_unit": "Year",
       "uncurated_metadata": "9,428 metagenomes spanning body sites, ages, countries, and lifestyles; 31 countries: USA (1,431 samples), China (1,342), Israel (956), Sweden (600) and Denmark (580) are the 5 most represented; 5 major body sites: gut (stool), oral cavity, skin (including anterior nares), vagina, and maternal milk; Age categories: newborns (<1 year), children (1-12 years), school-age (12-19 years), adults (19-65 years), adults and seniors (19->65 years); Madagascar cohort: 112 healthy volunteers (54 females and 58 males) from MAHERY study, Betsimisaraka and Tsimihety ethnicity; Ethiopian cohort: five female individuals from Gimbichu, Oromia Region; 592 non-Westernized vs 8,836 Westernized samples total",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "30",
+      "age_max": "30"
     },
     {
       "study_name": "CM_madagascar",
@@ -1103,7 +1115,9 @@
       "sequencing_platform": "IlluminaHiSeq",
       "age_unit": "Year",
       "uncurated_metadata": "9,428 metagenomes spanning body sites, ages, countries, and lifestyles; 31 countries: USA (1,431 samples), China (1,342), Israel (956), Sweden (600) and Denmark (580) are the 5 most represented; 5 major body sites: gut (stool), oral cavity, skin (including anterior nares), vagina, and maternal milk; Age categories: newborns (<1 year), children (1-12 years), school-age (12-19 years), adults (19-65 years), adults and seniors (19->65 years); Madagascar cohort: 112 healthy volunteers (54 females and 58 males) from MAHERY study, Betsimisaraka and Tsimihety ethnicity; Ethiopian cohort: five female individuals from Gimbichu, Oromia Region; 592 non-Westernized vs 8,836 Westernized samples total",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "31",
+      "age_max": "31"
     },
     {
       "study_name": "CM_madagascar",
@@ -1130,7 +1144,9 @@
       "sequencing_platform": "IlluminaHiSeq",
       "age_unit": "Year",
       "uncurated_metadata": "9,428 metagenomes spanning body sites, ages, countries, and lifestyles; 31 countries: USA (1,431 samples), China (1,342), Israel (956), Sweden (600) and Denmark (580) are the 5 most represented; 5 major body sites: gut (stool), oral cavity, skin (including anterior nares), vagina, and maternal milk; Age categories: newborns (<1 year), children (1-12 years), school-age (12-19 years), adults (19-65 years), adults and seniors (19->65 years); Madagascar cohort: 112 healthy volunteers (54 females and 58 males) from MAHERY study, Betsimisaraka and Tsimihety ethnicity; Ethiopian cohort: five female individuals from Gimbichu, Oromia Region; 592 non-Westernized vs 8,836 Westernized samples total",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "48",
+      "age_max": "48"
     },
     {
       "study_name": "CM_madagascar",
@@ -1157,7 +1173,9 @@
       "sequencing_platform": "IlluminaHiSeq",
       "age_unit": "Year",
       "uncurated_metadata": "9,428 metagenomes spanning body sites, ages, countries, and lifestyles; 31 countries: USA (1,431 samples), China (1,342), Israel (956), Sweden (600) and Denmark (580) are the 5 most represented; 5 major body sites: gut (stool), oral cavity, skin (including anterior nares), vagina, and maternal milk; Age categories: newborns (<1 year), children (1-12 years), school-age (12-19 years), adults (19-65 years), adults and seniors (19->65 years); Madagascar cohort: 112 healthy volunteers (54 females and 58 males) from MAHERY study, Betsimisaraka and Tsimihety ethnicity; Ethiopian cohort: five female individuals from Gimbichu, Oromia Region; 592 non-Westernized vs 8,836 Westernized samples total",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "46",
+      "age_max": "46"
     },
     {
       "study_name": "CM_madagascar",
@@ -1184,7 +1202,9 @@
       "sequencing_platform": "IlluminaHiSeq",
       "age_unit": "Year",
       "uncurated_metadata": "9,428 metagenomes spanning body sites, ages, countries, and lifestyles; 31 countries: USA (1,431 samples), China (1,342), Israel (956), Sweden (600) and Denmark (580) are the 5 most represented; 5 major body sites: gut (stool), oral cavity, skin (including anterior nares), vagina, and maternal milk; Age categories: newborns (<1 year), children (1-12 years), school-age (12-19 years), adults (19-65 years), adults and seniors (19->65 years); Madagascar cohort: 112 healthy volunteers (54 females and 58 males) from MAHERY study, Betsimisaraka and Tsimihety ethnicity; Ethiopian cohort: five female individuals from Gimbichu, Oromia Region; 592 non-Westernized vs 8,836 Westernized samples total",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "52",
+      "age_max": "52"
     },
     {
       "study_name": "CM_madagascar",
@@ -1211,7 +1231,9 @@
       "sequencing_platform": "IlluminaHiSeq",
       "age_unit": "Year",
       "uncurated_metadata": "9,428 metagenomes spanning body sites, ages, countries, and lifestyles; 31 countries: USA (1,431 samples), China (1,342), Israel (956), Sweden (600) and Denmark (580) are the 5 most represented; 5 major body sites: gut (stool), oral cavity, skin (including anterior nares), vagina, and maternal milk; Age categories: newborns (<1 year), children (1-12 years), school-age (12-19 years), adults (19-65 years), adults and seniors (19->65 years); Madagascar cohort: 112 healthy volunteers (54 females and 58 males) from MAHERY study, Betsimisaraka and Tsimihety ethnicity; Ethiopian cohort: five female individuals from Gimbichu, Oromia Region; 592 non-Westernized vs 8,836 Westernized samples total",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "50",
+      "age_max": "50"
     },
     {
       "study_name": "CM_madagascar",
@@ -1238,7 +1260,9 @@
       "sequencing_platform": "IlluminaHiSeq",
       "age_unit": "Year",
       "uncurated_metadata": "9,428 metagenomes spanning body sites, ages, countries, and lifestyles; 31 countries: USA (1,431 samples), China (1,342), Israel (956), Sweden (600) and Denmark (580) are the 5 most represented; 5 major body sites: gut (stool), oral cavity, skin (including anterior nares), vagina, and maternal milk; Age categories: newborns (<1 year), children (1-12 years), school-age (12-19 years), adults (19-65 years), adults and seniors (19->65 years); Madagascar cohort: 112 healthy volunteers (54 females and 58 males) from MAHERY study, Betsimisaraka and Tsimihety ethnicity; Ethiopian cohort: five female individuals from Gimbichu, Oromia Region; 592 non-Westernized vs 8,836 Westernized samples total",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "23",
+      "age_max": "23"
     },
     {
       "study_name": "CM_madagascar",
@@ -1265,7 +1289,9 @@
       "sequencing_platform": "IlluminaHiSeq",
       "age_unit": "Year",
       "uncurated_metadata": "9,428 metagenomes spanning body sites, ages, countries, and lifestyles; 31 countries: USA (1,431 samples), China (1,342), Israel (956), Sweden (600) and Denmark (580) are the 5 most represented; 5 major body sites: gut (stool), oral cavity, skin (including anterior nares), vagina, and maternal milk; Age categories: newborns (<1 year), children (1-12 years), school-age (12-19 years), adults (19-65 years), adults and seniors (19->65 years); Madagascar cohort: 112 healthy volunteers (54 females and 58 males) from MAHERY study, Betsimisaraka and Tsimihety ethnicity; Ethiopian cohort: five female individuals from Gimbichu, Oromia Region; 592 non-Westernized vs 8,836 Westernized samples total",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "22",
+      "age_max": "22"
     },
     {
       "study_name": "CM_madagascar",
@@ -1292,7 +1318,9 @@
       "sequencing_platform": "IlluminaHiSeq",
       "age_unit": "Year",
       "uncurated_metadata": "9,428 metagenomes spanning body sites, ages, countries, and lifestyles; 31 countries: USA (1,431 samples), China (1,342), Israel (956), Sweden (600) and Denmark (580) are the 5 most represented; 5 major body sites: gut (stool), oral cavity, skin (including anterior nares), vagina, and maternal milk; Age categories: newborns (<1 year), children (1-12 years), school-age (12-19 years), adults (19-65 years), adults and seniors (19->65 years); Madagascar cohort: 112 healthy volunteers (54 females and 58 males) from MAHERY study, Betsimisaraka and Tsimihety ethnicity; Ethiopian cohort: five female individuals from Gimbichu, Oromia Region; 592 non-Westernized vs 8,836 Westernized samples total",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "52",
+      "age_max": "52"
     },
     {
       "study_name": "CM_madagascar",
@@ -1319,7 +1347,9 @@
       "sequencing_platform": "IlluminaHiSeq",
       "age_unit": "Year",
       "uncurated_metadata": "9,428 metagenomes spanning body sites, ages, countries, and lifestyles; 31 countries: USA (1,431 samples), China (1,342), Israel (956), Sweden (600) and Denmark (580) are the 5 most represented; 5 major body sites: gut (stool), oral cavity, skin (including anterior nares), vagina, and maternal milk; Age categories: newborns (<1 year), children (1-12 years), school-age (12-19 years), adults (19-65 years), adults and seniors (19->65 years); Madagascar cohort: 112 healthy volunteers (54 females and 58 males) from MAHERY study, Betsimisaraka and Tsimihety ethnicity; Ethiopian cohort: five female individuals from Gimbichu, Oromia Region; 592 non-Westernized vs 8,836 Westernized samples total",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "52",
+      "age_max": "52"
     },
     {
       "study_name": "CM_madagascar",
@@ -1346,7 +1376,9 @@
       "sequencing_platform": "IlluminaHiSeq",
       "age_unit": "Year",
       "uncurated_metadata": "9,428 metagenomes spanning body sites, ages, countries, and lifestyles; 31 countries: USA (1,431 samples), China (1,342), Israel (956), Sweden (600) and Denmark (580) are the 5 most represented; 5 major body sites: gut (stool), oral cavity, skin (including anterior nares), vagina, and maternal milk; Age categories: newborns (<1 year), children (1-12 years), school-age (12-19 years), adults (19-65 years), adults and seniors (19->65 years); Madagascar cohort: 112 healthy volunteers (54 females and 58 males) from MAHERY study, Betsimisaraka and Tsimihety ethnicity; Ethiopian cohort: five female individuals from Gimbichu, Oromia Region; 592 non-Westernized vs 8,836 Westernized samples total",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "21",
+      "age_max": "21"
     },
     {
       "study_name": "CM_madagascar",
@@ -1373,7 +1405,9 @@
       "sequencing_platform": "IlluminaHiSeq",
       "age_unit": "Year",
       "uncurated_metadata": "9,428 metagenomes spanning body sites, ages, countries, and lifestyles; 31 countries: USA (1,431 samples), China (1,342), Israel (956), Sweden (600) and Denmark (580) are the 5 most represented; 5 major body sites: gut (stool), oral cavity, skin (including anterior nares), vagina, and maternal milk; Age categories: newborns (<1 year), children (1-12 years), school-age (12-19 years), adults (19-65 years), adults and seniors (19->65 years); Madagascar cohort: 112 healthy volunteers (54 females and 58 males) from MAHERY study, Betsimisaraka and Tsimihety ethnicity; Ethiopian cohort: five female individuals from Gimbichu, Oromia Region; 592 non-Westernized vs 8,836 Westernized samples total",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "36",
+      "age_max": "36"
     },
     {
       "study_name": "CM_madagascar",
@@ -1400,7 +1434,9 @@
       "sequencing_platform": "IlluminaHiSeq",
       "age_unit": "Year",
       "uncurated_metadata": "9,428 metagenomes spanning body sites, ages, countries, and lifestyles; 31 countries: USA (1,431 samples), China (1,342), Israel (956), Sweden (600) and Denmark (580) are the 5 most represented; 5 major body sites: gut (stool), oral cavity, skin (including anterior nares), vagina, and maternal milk; Age categories: newborns (<1 year), children (1-12 years), school-age (12-19 years), adults (19-65 years), adults and seniors (19->65 years); Madagascar cohort: 112 healthy volunteers (54 females and 58 males) from MAHERY study, Betsimisaraka and Tsimihety ethnicity; Ethiopian cohort: five female individuals from Gimbichu, Oromia Region; 592 non-Westernized vs 8,836 Westernized samples total",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "21",
+      "age_max": "21"
     },
     {
       "study_name": "CM_madagascar",
@@ -1427,7 +1463,9 @@
       "sequencing_platform": "IlluminaHiSeq",
       "age_unit": "Year",
       "uncurated_metadata": "9,428 metagenomes spanning body sites, ages, countries, and lifestyles; 31 countries: USA (1,431 samples), China (1,342), Israel (956), Sweden (600) and Denmark (580) are the 5 most represented; 5 major body sites: gut (stool), oral cavity, skin (including anterior nares), vagina, and maternal milk; Age categories: newborns (<1 year), children (1-12 years), school-age (12-19 years), adults (19-65 years), adults and seniors (19->65 years); Madagascar cohort: 112 healthy volunteers (54 females and 58 males) from MAHERY study, Betsimisaraka and Tsimihety ethnicity; Ethiopian cohort: five female individuals from Gimbichu, Oromia Region; 592 non-Westernized vs 8,836 Westernized samples total",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "63",
+      "age_max": "63"
     },
     {
       "study_name": "CM_madagascar",
@@ -1454,7 +1492,9 @@
       "sequencing_platform": "IlluminaHiSeq",
       "age_unit": "Year",
       "uncurated_metadata": "9,428 metagenomes spanning body sites, ages, countries, and lifestyles; 31 countries: USA (1,431 samples), China (1,342), Israel (956), Sweden (600) and Denmark (580) are the 5 most represented; 5 major body sites: gut (stool), oral cavity, skin (including anterior nares), vagina, and maternal milk; Age categories: newborns (<1 year), children (1-12 years), school-age (12-19 years), adults (19-65 years), adults and seniors (19->65 years); Madagascar cohort: 112 healthy volunteers (54 females and 58 males) from MAHERY study, Betsimisaraka and Tsimihety ethnicity; Ethiopian cohort: five female individuals from Gimbichu, Oromia Region; 592 non-Westernized vs 8,836 Westernized samples total",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "16",
+      "age_max": "16"
     },
     {
       "study_name": "CM_madagascar",
@@ -1481,7 +1521,9 @@
       "sequencing_platform": "IlluminaHiSeq",
       "age_unit": "Year",
       "uncurated_metadata": "9,428 metagenomes spanning body sites, ages, countries, and lifestyles; 31 countries: USA (1,431 samples), China (1,342), Israel (956), Sweden (600) and Denmark (580) are the 5 most represented; 5 major body sites: gut (stool), oral cavity, skin (including anterior nares), vagina, and maternal milk; Age categories: newborns (<1 year), children (1-12 years), school-age (12-19 years), adults (19-65 years), adults and seniors (19->65 years); Madagascar cohort: 112 healthy volunteers (54 females and 58 males) from MAHERY study, Betsimisaraka and Tsimihety ethnicity; Ethiopian cohort: five female individuals from Gimbichu, Oromia Region; 592 non-Westernized vs 8,836 Westernized samples total",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "45",
+      "age_max": "45"
     },
     {
       "study_name": "CM_madagascar",
@@ -1508,7 +1550,9 @@
       "sequencing_platform": "IlluminaHiSeq",
       "age_unit": "Year",
       "uncurated_metadata": "9,428 metagenomes spanning body sites, ages, countries, and lifestyles; 31 countries: USA (1,431 samples), China (1,342), Israel (956), Sweden (600) and Denmark (580) are the 5 most represented; 5 major body sites: gut (stool), oral cavity, skin (including anterior nares), vagina, and maternal milk; Age categories: newborns (<1 year), children (1-12 years), school-age (12-19 years), adults (19-65 years), adults and seniors (19->65 years); Madagascar cohort: 112 healthy volunteers (54 females and 58 males) from MAHERY study, Betsimisaraka and Tsimihety ethnicity; Ethiopian cohort: five female individuals from Gimbichu, Oromia Region; 592 non-Westernized vs 8,836 Westernized samples total",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "23",
+      "age_max": "23"
     },
     {
       "study_name": "CM_madagascar",
@@ -1535,7 +1579,9 @@
       "sequencing_platform": "IlluminaHiSeq",
       "age_unit": "Year",
       "uncurated_metadata": "9,428 metagenomes spanning body sites, ages, countries, and lifestyles; 31 countries: USA (1,431 samples), China (1,342), Israel (956), Sweden (600) and Denmark (580) are the 5 most represented; 5 major body sites: gut (stool), oral cavity, skin (including anterior nares), vagina, and maternal milk; Age categories: newborns (<1 year), children (1-12 years), school-age (12-19 years), adults (19-65 years), adults and seniors (19->65 years); Madagascar cohort: 112 healthy volunteers (54 females and 58 males) from MAHERY study, Betsimisaraka and Tsimihety ethnicity; Ethiopian cohort: five female individuals from Gimbichu, Oromia Region; 592 non-Westernized vs 8,836 Westernized samples total",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "27",
+      "age_max": "27"
     },
     {
       "study_name": "CM_madagascar",
@@ -1562,7 +1608,9 @@
       "sequencing_platform": "IlluminaHiSeq",
       "age_unit": "Year",
       "uncurated_metadata": "9,428 metagenomes spanning body sites, ages, countries, and lifestyles; 31 countries: USA (1,431 samples), China (1,342), Israel (956), Sweden (600) and Denmark (580) are the 5 most represented; 5 major body sites: gut (stool), oral cavity, skin (including anterior nares), vagina, and maternal milk; Age categories: newborns (<1 year), children (1-12 years), school-age (12-19 years), adults (19-65 years), adults and seniors (19->65 years); Madagascar cohort: 112 healthy volunteers (54 females and 58 males) from MAHERY study, Betsimisaraka and Tsimihety ethnicity; Ethiopian cohort: five female individuals from Gimbichu, Oromia Region; 592 non-Westernized vs 8,836 Westernized samples total",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "40",
+      "age_max": "40"
     },
     {
       "study_name": "CM_madagascar",
@@ -1589,7 +1637,9 @@
       "sequencing_platform": "IlluminaHiSeq",
       "age_unit": "Year",
       "uncurated_metadata": "9,428 metagenomes spanning body sites, ages, countries, and lifestyles; 31 countries: USA (1,431 samples), China (1,342), Israel (956), Sweden (600) and Denmark (580) are the 5 most represented; 5 major body sites: gut (stool), oral cavity, skin (including anterior nares), vagina, and maternal milk; Age categories: newborns (<1 year), children (1-12 years), school-age (12-19 years), adults (19-65 years), adults and seniors (19->65 years); Madagascar cohort: 112 healthy volunteers (54 females and 58 males) from MAHERY study, Betsimisaraka and Tsimihety ethnicity; Ethiopian cohort: five female individuals from Gimbichu, Oromia Region; 592 non-Westernized vs 8,836 Westernized samples total",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "34",
+      "age_max": "34"
     },
     {
       "study_name": "CM_madagascar",
@@ -1616,7 +1666,9 @@
       "sequencing_platform": "IlluminaHiSeq",
       "age_unit": "Year",
       "uncurated_metadata": "9,428 metagenomes spanning body sites, ages, countries, and lifestyles; 31 countries: USA (1,431 samples), China (1,342), Israel (956), Sweden (600) and Denmark (580) are the 5 most represented; 5 major body sites: gut (stool), oral cavity, skin (including anterior nares), vagina, and maternal milk; Age categories: newborns (<1 year), children (1-12 years), school-age (12-19 years), adults (19-65 years), adults and seniors (19->65 years); Madagascar cohort: 112 healthy volunteers (54 females and 58 males) from MAHERY study, Betsimisaraka and Tsimihety ethnicity; Ethiopian cohort: five female individuals from Gimbichu, Oromia Region; 592 non-Westernized vs 8,836 Westernized samples total",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "22",
+      "age_max": "22"
     },
     {
       "study_name": "CM_madagascar",
@@ -1643,7 +1695,9 @@
       "sequencing_platform": "IlluminaHiSeq",
       "age_unit": "Year",
       "uncurated_metadata": "9,428 metagenomes spanning body sites, ages, countries, and lifestyles; 31 countries: USA (1,431 samples), China (1,342), Israel (956), Sweden (600) and Denmark (580) are the 5 most represented; 5 major body sites: gut (stool), oral cavity, skin (including anterior nares), vagina, and maternal milk; Age categories: newborns (<1 year), children (1-12 years), school-age (12-19 years), adults (19-65 years), adults and seniors (19->65 years); Madagascar cohort: 112 healthy volunteers (54 females and 58 males) from MAHERY study, Betsimisaraka and Tsimihety ethnicity; Ethiopian cohort: five female individuals from Gimbichu, Oromia Region; 592 non-Westernized vs 8,836 Westernized samples total",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "23",
+      "age_max": "23"
     },
     {
       "study_name": "CM_madagascar",
@@ -1670,7 +1724,9 @@
       "sequencing_platform": "IlluminaHiSeq",
       "age_unit": "Year",
       "uncurated_metadata": "9,428 metagenomes spanning body sites, ages, countries, and lifestyles; 31 countries: USA (1,431 samples), China (1,342), Israel (956), Sweden (600) and Denmark (580) are the 5 most represented; 5 major body sites: gut (stool), oral cavity, skin (including anterior nares), vagina, and maternal milk; Age categories: newborns (<1 year), children (1-12 years), school-age (12-19 years), adults (19-65 years), adults and seniors (19->65 years); Madagascar cohort: 112 healthy volunteers (54 females and 58 males) from MAHERY study, Betsimisaraka and Tsimihety ethnicity; Ethiopian cohort: five female individuals from Gimbichu, Oromia Region; 592 non-Westernized vs 8,836 Westernized samples total",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "25",
+      "age_max": "25"
     },
     {
       "study_name": "CM_madagascar",
@@ -1697,7 +1753,9 @@
       "sequencing_platform": "IlluminaHiSeq",
       "age_unit": "Year",
       "uncurated_metadata": "9,428 metagenomes spanning body sites, ages, countries, and lifestyles; 31 countries: USA (1,431 samples), China (1,342), Israel (956), Sweden (600) and Denmark (580) are the 5 most represented; 5 major body sites: gut (stool), oral cavity, skin (including anterior nares), vagina, and maternal milk; Age categories: newborns (<1 year), children (1-12 years), school-age (12-19 years), adults (19-65 years), adults and seniors (19->65 years); Madagascar cohort: 112 healthy volunteers (54 females and 58 males) from MAHERY study, Betsimisaraka and Tsimihety ethnicity; Ethiopian cohort: five female individuals from Gimbichu, Oromia Region; 592 non-Westernized vs 8,836 Westernized samples total",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "21",
+      "age_max": "21"
     },
     {
       "study_name": "CM_madagascar",
@@ -1724,7 +1782,9 @@
       "sequencing_platform": "IlluminaHiSeq",
       "age_unit": "Year",
       "uncurated_metadata": "9,428 metagenomes spanning body sites, ages, countries, and lifestyles; 31 countries: USA (1,431 samples), China (1,342), Israel (956), Sweden (600) and Denmark (580) are the 5 most represented; 5 major body sites: gut (stool), oral cavity, skin (including anterior nares), vagina, and maternal milk; Age categories: newborns (<1 year), children (1-12 years), school-age (12-19 years), adults (19-65 years), adults and seniors (19->65 years); Madagascar cohort: 112 healthy volunteers (54 females and 58 males) from MAHERY study, Betsimisaraka and Tsimihety ethnicity; Ethiopian cohort: five female individuals from Gimbichu, Oromia Region; 592 non-Westernized vs 8,836 Westernized samples total",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "50",
+      "age_max": "50"
     },
     {
       "study_name": "CM_madagascar",
@@ -1751,7 +1811,9 @@
       "sequencing_platform": "IlluminaHiSeq",
       "age_unit": "Year",
       "uncurated_metadata": "9,428 metagenomes spanning body sites, ages, countries, and lifestyles; 31 countries: USA (1,431 samples), China (1,342), Israel (956), Sweden (600) and Denmark (580) are the 5 most represented; 5 major body sites: gut (stool), oral cavity, skin (including anterior nares), vagina, and maternal milk; Age categories: newborns (<1 year), children (1-12 years), school-age (12-19 years), adults (19-65 years), adults and seniors (19->65 years); Madagascar cohort: 112 healthy volunteers (54 females and 58 males) from MAHERY study, Betsimisaraka and Tsimihety ethnicity; Ethiopian cohort: five female individuals from Gimbichu, Oromia Region; 592 non-Westernized vs 8,836 Westernized samples total",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "51",
+      "age_max": "51"
     },
     {
       "study_name": "CM_madagascar",
@@ -1778,7 +1840,9 @@
       "sequencing_platform": "IlluminaHiSeq",
       "age_unit": "Year",
       "uncurated_metadata": "9,428 metagenomes spanning body sites, ages, countries, and lifestyles; 31 countries: USA (1,431 samples), China (1,342), Israel (956), Sweden (600) and Denmark (580) are the 5 most represented; 5 major body sites: gut (stool), oral cavity, skin (including anterior nares), vagina, and maternal milk; Age categories: newborns (<1 year), children (1-12 years), school-age (12-19 years), adults (19-65 years), adults and seniors (19->65 years); Madagascar cohort: 112 healthy volunteers (54 females and 58 males) from MAHERY study, Betsimisaraka and Tsimihety ethnicity; Ethiopian cohort: five female individuals from Gimbichu, Oromia Region; 592 non-Westernized vs 8,836 Westernized samples total",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "32",
+      "age_max": "32"
     },
     {
       "study_name": "CM_madagascar",
@@ -1805,7 +1869,9 @@
       "sequencing_platform": "IlluminaHiSeq",
       "age_unit": "Year",
       "uncurated_metadata": "9,428 metagenomes spanning body sites, ages, countries, and lifestyles; 31 countries: USA (1,431 samples), China (1,342), Israel (956), Sweden (600) and Denmark (580) are the 5 most represented; 5 major body sites: gut (stool), oral cavity, skin (including anterior nares), vagina, and maternal milk; Age categories: newborns (<1 year), children (1-12 years), school-age (12-19 years), adults (19-65 years), adults and seniors (19->65 years); Madagascar cohort: 112 healthy volunteers (54 females and 58 males) from MAHERY study, Betsimisaraka and Tsimihety ethnicity; Ethiopian cohort: five female individuals from Gimbichu, Oromia Region; 592 non-Westernized vs 8,836 Westernized samples total",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "30",
+      "age_max": "30"
     },
     {
       "study_name": "CM_madagascar",
@@ -1832,7 +1898,9 @@
       "sequencing_platform": "IlluminaHiSeq",
       "age_unit": "Year",
       "uncurated_metadata": "9,428 metagenomes spanning body sites, ages, countries, and lifestyles; 31 countries: USA (1,431 samples), China (1,342), Israel (956), Sweden (600) and Denmark (580) are the 5 most represented; 5 major body sites: gut (stool), oral cavity, skin (including anterior nares), vagina, and maternal milk; Age categories: newborns (<1 year), children (1-12 years), school-age (12-19 years), adults (19-65 years), adults and seniors (19->65 years); Madagascar cohort: 112 healthy volunteers (54 females and 58 males) from MAHERY study, Betsimisaraka and Tsimihety ethnicity; Ethiopian cohort: five female individuals from Gimbichu, Oromia Region; 592 non-Westernized vs 8,836 Westernized samples total",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "33",
+      "age_max": "33"
     },
     {
       "study_name": "CM_madagascar",
@@ -1859,7 +1927,9 @@
       "sequencing_platform": "IlluminaHiSeq",
       "age_unit": "Year",
       "uncurated_metadata": "9,428 metagenomes spanning body sites, ages, countries, and lifestyles; 31 countries: USA (1,431 samples), China (1,342), Israel (956), Sweden (600) and Denmark (580) are the 5 most represented; 5 major body sites: gut (stool), oral cavity, skin (including anterior nares), vagina, and maternal milk; Age categories: newborns (<1 year), children (1-12 years), school-age (12-19 years), adults (19-65 years), adults and seniors (19->65 years); Madagascar cohort: 112 healthy volunteers (54 females and 58 males) from MAHERY study, Betsimisaraka and Tsimihety ethnicity; Ethiopian cohort: five female individuals from Gimbichu, Oromia Region; 592 non-Westernized vs 8,836 Westernized samples total",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "48",
+      "age_max": "48"
     },
     {
       "study_name": "CM_madagascar",
@@ -1886,7 +1956,9 @@
       "sequencing_platform": "IlluminaHiSeq",
       "age_unit": "Year",
       "uncurated_metadata": "9,428 metagenomes spanning body sites, ages, countries, and lifestyles; 31 countries: USA (1,431 samples), China (1,342), Israel (956), Sweden (600) and Denmark (580) are the 5 most represented; 5 major body sites: gut (stool), oral cavity, skin (including anterior nares), vagina, and maternal milk; Age categories: newborns (<1 year), children (1-12 years), school-age (12-19 years), adults (19-65 years), adults and seniors (19->65 years); Madagascar cohort: 112 healthy volunteers (54 females and 58 males) from MAHERY study, Betsimisaraka and Tsimihety ethnicity; Ethiopian cohort: five female individuals from Gimbichu, Oromia Region; 592 non-Westernized vs 8,836 Westernized samples total",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "43",
+      "age_max": "43"
     },
     {
       "study_name": "CM_madagascar",
@@ -1913,7 +1985,9 @@
       "sequencing_platform": "IlluminaHiSeq",
       "age_unit": "Year",
       "uncurated_metadata": "9,428 metagenomes spanning body sites, ages, countries, and lifestyles; 31 countries: USA (1,431 samples), China (1,342), Israel (956), Sweden (600) and Denmark (580) are the 5 most represented; 5 major body sites: gut (stool), oral cavity, skin (including anterior nares), vagina, and maternal milk; Age categories: newborns (<1 year), children (1-12 years), school-age (12-19 years), adults (19-65 years), adults and seniors (19->65 years); Madagascar cohort: 112 healthy volunteers (54 females and 58 males) from MAHERY study, Betsimisaraka and Tsimihety ethnicity; Ethiopian cohort: five female individuals from Gimbichu, Oromia Region; 592 non-Westernized vs 8,836 Westernized samples total",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "52",
+      "age_max": "52"
     },
     {
       "study_name": "CM_madagascar",
@@ -1940,7 +2014,9 @@
       "sequencing_platform": "IlluminaHiSeq",
       "age_unit": "Year",
       "uncurated_metadata": "9,428 metagenomes spanning body sites, ages, countries, and lifestyles; 31 countries: USA (1,431 samples), China (1,342), Israel (956), Sweden (600) and Denmark (580) are the 5 most represented; 5 major body sites: gut (stool), oral cavity, skin (including anterior nares), vagina, and maternal milk; Age categories: newborns (<1 year), children (1-12 years), school-age (12-19 years), adults (19-65 years), adults and seniors (19->65 years); Madagascar cohort: 112 healthy volunteers (54 females and 58 males) from MAHERY study, Betsimisaraka and Tsimihety ethnicity; Ethiopian cohort: five female individuals from Gimbichu, Oromia Region; 592 non-Westernized vs 8,836 Westernized samples total",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "51",
+      "age_max": "51"
     },
     {
       "study_name": "CM_madagascar",
@@ -1967,7 +2043,9 @@
       "sequencing_platform": "IlluminaHiSeq",
       "age_unit": "Year",
       "uncurated_metadata": "9,428 metagenomes spanning body sites, ages, countries, and lifestyles; 31 countries: USA (1,431 samples), China (1,342), Israel (956), Sweden (600) and Denmark (580) are the 5 most represented; 5 major body sites: gut (stool), oral cavity, skin (including anterior nares), vagina, and maternal milk; Age categories: newborns (<1 year), children (1-12 years), school-age (12-19 years), adults (19-65 years), adults and seniors (19->65 years); Madagascar cohort: 112 healthy volunteers (54 females and 58 males) from MAHERY study, Betsimisaraka and Tsimihety ethnicity; Ethiopian cohort: five female individuals from Gimbichu, Oromia Region; 592 non-Westernized vs 8,836 Westernized samples total",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "21",
+      "age_max": "21"
     },
     {
       "study_name": "CM_madagascar",
@@ -1994,7 +2072,9 @@
       "sequencing_platform": "IlluminaHiSeq",
       "age_unit": "Year",
       "uncurated_metadata": "9,428 metagenomes spanning body sites, ages, countries, and lifestyles; 31 countries: USA (1,431 samples), China (1,342), Israel (956), Sweden (600) and Denmark (580) are the 5 most represented; 5 major body sites: gut (stool), oral cavity, skin (including anterior nares), vagina, and maternal milk; Age categories: newborns (<1 year), children (1-12 years), school-age (12-19 years), adults (19-65 years), adults and seniors (19->65 years); Madagascar cohort: 112 healthy volunteers (54 females and 58 males) from MAHERY study, Betsimisaraka and Tsimihety ethnicity; Ethiopian cohort: five female individuals from Gimbichu, Oromia Region; 592 non-Westernized vs 8,836 Westernized samples total",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "39",
+      "age_max": "39"
     },
     {
       "study_name": "CM_madagascar",
@@ -2021,7 +2101,9 @@
       "sequencing_platform": "IlluminaHiSeq",
       "age_unit": "Year",
       "uncurated_metadata": "9,428 metagenomes spanning body sites, ages, countries, and lifestyles; 31 countries: USA (1,431 samples), China (1,342), Israel (956), Sweden (600) and Denmark (580) are the 5 most represented; 5 major body sites: gut (stool), oral cavity, skin (including anterior nares), vagina, and maternal milk; Age categories: newborns (<1 year), children (1-12 years), school-age (12-19 years), adults (19-65 years), adults and seniors (19->65 years); Madagascar cohort: 112 healthy volunteers (54 females and 58 males) from MAHERY study, Betsimisaraka and Tsimihety ethnicity; Ethiopian cohort: five female individuals from Gimbichu, Oromia Region; 592 non-Westernized vs 8,836 Westernized samples total",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "26",
+      "age_max": "26"
     },
     {
       "study_name": "CM_madagascar",
@@ -2048,7 +2130,9 @@
       "sequencing_platform": "IlluminaHiSeq",
       "age_unit": "Year",
       "uncurated_metadata": "9,428 metagenomes spanning body sites, ages, countries, and lifestyles; 31 countries: USA (1,431 samples), China (1,342), Israel (956), Sweden (600) and Denmark (580) are the 5 most represented; 5 major body sites: gut (stool), oral cavity, skin (including anterior nares), vagina, and maternal milk; Age categories: newborns (<1 year), children (1-12 years), school-age (12-19 years), adults (19-65 years), adults and seniors (19->65 years); Madagascar cohort: 112 healthy volunteers (54 females and 58 males) from MAHERY study, Betsimisaraka and Tsimihety ethnicity; Ethiopian cohort: five female individuals from Gimbichu, Oromia Region; 592 non-Westernized vs 8,836 Westernized samples total",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "44",
+      "age_max": "44"
     },
     {
       "study_name": "CM_madagascar",
@@ -2075,7 +2159,9 @@
       "sequencing_platform": "IlluminaHiSeq",
       "age_unit": "Year",
       "uncurated_metadata": "9,428 metagenomes spanning body sites, ages, countries, and lifestyles; 31 countries: USA (1,431 samples), China (1,342), Israel (956), Sweden (600) and Denmark (580) are the 5 most represented; 5 major body sites: gut (stool), oral cavity, skin (including anterior nares), vagina, and maternal milk; Age categories: newborns (<1 year), children (1-12 years), school-age (12-19 years), adults (19-65 years), adults and seniors (19->65 years); Madagascar cohort: 112 healthy volunteers (54 females and 58 males) from MAHERY study, Betsimisaraka and Tsimihety ethnicity; Ethiopian cohort: five female individuals from Gimbichu, Oromia Region; 592 non-Westernized vs 8,836 Westernized samples total",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "36",
+      "age_max": "36"
     },
     {
       "study_name": "CM_madagascar",
@@ -2102,7 +2188,9 @@
       "sequencing_platform": "IlluminaHiSeq",
       "age_unit": "Year",
       "uncurated_metadata": "9,428 metagenomes spanning body sites, ages, countries, and lifestyles; 31 countries: USA (1,431 samples), China (1,342), Israel (956), Sweden (600) and Denmark (580) are the 5 most represented; 5 major body sites: gut (stool), oral cavity, skin (including anterior nares), vagina, and maternal milk; Age categories: newborns (<1 year), children (1-12 years), school-age (12-19 years), adults (19-65 years), adults and seniors (19->65 years); Madagascar cohort: 112 healthy volunteers (54 females and 58 males) from MAHERY study, Betsimisaraka and Tsimihety ethnicity; Ethiopian cohort: five female individuals from Gimbichu, Oromia Region; 592 non-Westernized vs 8,836 Westernized samples total",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "35",
+      "age_max": "35"
     },
     {
       "study_name": "CM_madagascar",
@@ -2129,7 +2217,9 @@
       "sequencing_platform": "IlluminaHiSeq",
       "age_unit": "Year",
       "uncurated_metadata": "9,428 metagenomes spanning body sites, ages, countries, and lifestyles; 31 countries: USA (1,431 samples), China (1,342), Israel (956), Sweden (600) and Denmark (580) are the 5 most represented; 5 major body sites: gut (stool), oral cavity, skin (including anterior nares), vagina, and maternal milk; Age categories: newborns (<1 year), children (1-12 years), school-age (12-19 years), adults (19-65 years), adults and seniors (19->65 years); Madagascar cohort: 112 healthy volunteers (54 females and 58 males) from MAHERY study, Betsimisaraka and Tsimihety ethnicity; Ethiopian cohort: five female individuals from Gimbichu, Oromia Region; 592 non-Westernized vs 8,836 Westernized samples total",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "29",
+      "age_max": "29"
     },
     {
       "study_name": "CM_madagascar",
@@ -2156,7 +2246,9 @@
       "sequencing_platform": "IlluminaHiSeq",
       "age_unit": "Year",
       "uncurated_metadata": "9,428 metagenomes spanning body sites, ages, countries, and lifestyles; 31 countries: USA (1,431 samples), China (1,342), Israel (956), Sweden (600) and Denmark (580) are the 5 most represented; 5 major body sites: gut (stool), oral cavity, skin (including anterior nares), vagina, and maternal milk; Age categories: newborns (<1 year), children (1-12 years), school-age (12-19 years), adults (19-65 years), adults and seniors (19->65 years); Madagascar cohort: 112 healthy volunteers (54 females and 58 males) from MAHERY study, Betsimisaraka and Tsimihety ethnicity; Ethiopian cohort: five female individuals from Gimbichu, Oromia Region; 592 non-Westernized vs 8,836 Westernized samples total",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "37",
+      "age_max": "37"
     },
     {
       "study_name": "CM_madagascar",
@@ -2183,7 +2275,9 @@
       "sequencing_platform": "IlluminaHiSeq",
       "age_unit": "Year",
       "uncurated_metadata": "9,428 metagenomes spanning body sites, ages, countries, and lifestyles; 31 countries: USA (1,431 samples), China (1,342), Israel (956), Sweden (600) and Denmark (580) are the 5 most represented; 5 major body sites: gut (stool), oral cavity, skin (including anterior nares), vagina, and maternal milk; Age categories: newborns (<1 year), children (1-12 years), school-age (12-19 years), adults (19-65 years), adults and seniors (19->65 years); Madagascar cohort: 112 healthy volunteers (54 females and 58 males) from MAHERY study, Betsimisaraka and Tsimihety ethnicity; Ethiopian cohort: five female individuals from Gimbichu, Oromia Region; 592 non-Westernized vs 8,836 Westernized samples total",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "33",
+      "age_max": "33"
     },
     {
       "study_name": "CM_madagascar",
@@ -2210,7 +2304,9 @@
       "sequencing_platform": "IlluminaHiSeq",
       "age_unit": "Year",
       "uncurated_metadata": "9,428 metagenomes spanning body sites, ages, countries, and lifestyles; 31 countries: USA (1,431 samples), China (1,342), Israel (956), Sweden (600) and Denmark (580) are the 5 most represented; 5 major body sites: gut (stool), oral cavity, skin (including anterior nares), vagina, and maternal milk; Age categories: newborns (<1 year), children (1-12 years), school-age (12-19 years), adults (19-65 years), adults and seniors (19->65 years); Madagascar cohort: 112 healthy volunteers (54 females and 58 males) from MAHERY study, Betsimisaraka and Tsimihety ethnicity; Ethiopian cohort: five female individuals from Gimbichu, Oromia Region; 592 non-Westernized vs 8,836 Westernized samples total",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "39",
+      "age_max": "39"
     },
     {
       "study_name": "CM_madagascar",
@@ -2237,7 +2333,9 @@
       "sequencing_platform": "IlluminaHiSeq",
       "age_unit": "Year",
       "uncurated_metadata": "9,428 metagenomes spanning body sites, ages, countries, and lifestyles; 31 countries: USA (1,431 samples), China (1,342), Israel (956), Sweden (600) and Denmark (580) are the 5 most represented; 5 major body sites: gut (stool), oral cavity, skin (including anterior nares), vagina, and maternal milk; Age categories: newborns (<1 year), children (1-12 years), school-age (12-19 years), adults (19-65 years), adults and seniors (19->65 years); Madagascar cohort: 112 healthy volunteers (54 females and 58 males) from MAHERY study, Betsimisaraka and Tsimihety ethnicity; Ethiopian cohort: five female individuals from Gimbichu, Oromia Region; 592 non-Westernized vs 8,836 Westernized samples total",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "33",
+      "age_max": "33"
     },
     {
       "study_name": "CM_madagascar",
@@ -2264,7 +2362,9 @@
       "sequencing_platform": "IlluminaHiSeq",
       "age_unit": "Year",
       "uncurated_metadata": "9,428 metagenomes spanning body sites, ages, countries, and lifestyles; 31 countries: USA (1,431 samples), China (1,342), Israel (956), Sweden (600) and Denmark (580) are the 5 most represented; 5 major body sites: gut (stool), oral cavity, skin (including anterior nares), vagina, and maternal milk; Age categories: newborns (<1 year), children (1-12 years), school-age (12-19 years), adults (19-65 years), adults and seniors (19->65 years); Madagascar cohort: 112 healthy volunteers (54 females and 58 males) from MAHERY study, Betsimisaraka and Tsimihety ethnicity; Ethiopian cohort: five female individuals from Gimbichu, Oromia Region; 592 non-Westernized vs 8,836 Westernized samples total",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "35",
+      "age_max": "35"
     },
     {
       "study_name": "CM_madagascar",
@@ -2291,7 +2391,9 @@
       "sequencing_platform": "IlluminaHiSeq",
       "age_unit": "Year",
       "uncurated_metadata": "9,428 metagenomes spanning body sites, ages, countries, and lifestyles; 31 countries: USA (1,431 samples), China (1,342), Israel (956), Sweden (600) and Denmark (580) are the 5 most represented; 5 major body sites: gut (stool), oral cavity, skin (including anterior nares), vagina, and maternal milk; Age categories: newborns (<1 year), children (1-12 years), school-age (12-19 years), adults (19-65 years), adults and seniors (19->65 years); Madagascar cohort: 112 healthy volunteers (54 females and 58 males) from MAHERY study, Betsimisaraka and Tsimihety ethnicity; Ethiopian cohort: five female individuals from Gimbichu, Oromia Region; 592 non-Westernized vs 8,836 Westernized samples total",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "35",
+      "age_max": "35"
     },
     {
       "study_name": "CM_madagascar",
@@ -2318,7 +2420,9 @@
       "sequencing_platform": "IlluminaHiSeq",
       "age_unit": "Year",
       "uncurated_metadata": "9,428 metagenomes spanning body sites, ages, countries, and lifestyles; 31 countries: USA (1,431 samples), China (1,342), Israel (956), Sweden (600) and Denmark (580) are the 5 most represented; 5 major body sites: gut (stool), oral cavity, skin (including anterior nares), vagina, and maternal milk; Age categories: newborns (<1 year), children (1-12 years), school-age (12-19 years), adults (19-65 years), adults and seniors (19->65 years); Madagascar cohort: 112 healthy volunteers (54 females and 58 males) from MAHERY study, Betsimisaraka and Tsimihety ethnicity; Ethiopian cohort: five female individuals from Gimbichu, Oromia Region; 592 non-Westernized vs 8,836 Westernized samples total",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "35",
+      "age_max": "35"
     },
     {
       "study_name": "CM_madagascar",
@@ -2345,7 +2449,9 @@
       "sequencing_platform": "IlluminaHiSeq",
       "age_unit": "Year",
       "uncurated_metadata": "9,428 metagenomes spanning body sites, ages, countries, and lifestyles; 31 countries: USA (1,431 samples), China (1,342), Israel (956), Sweden (600) and Denmark (580) are the 5 most represented; 5 major body sites: gut (stool), oral cavity, skin (including anterior nares), vagina, and maternal milk; Age categories: newborns (<1 year), children (1-12 years), school-age (12-19 years), adults (19-65 years), adults and seniors (19->65 years); Madagascar cohort: 112 healthy volunteers (54 females and 58 males) from MAHERY study, Betsimisaraka and Tsimihety ethnicity; Ethiopian cohort: five female individuals from Gimbichu, Oromia Region; 592 non-Westernized vs 8,836 Westernized samples total",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "29",
+      "age_max": "29"
     },
     {
       "study_name": "CM_madagascar",
@@ -2372,7 +2478,9 @@
       "sequencing_platform": "IlluminaHiSeq",
       "age_unit": "Year",
       "uncurated_metadata": "9,428 metagenomes spanning body sites, ages, countries, and lifestyles; 31 countries: USA (1,431 samples), China (1,342), Israel (956), Sweden (600) and Denmark (580) are the 5 most represented; 5 major body sites: gut (stool), oral cavity, skin (including anterior nares), vagina, and maternal milk; Age categories: newborns (<1 year), children (1-12 years), school-age (12-19 years), adults (19-65 years), adults and seniors (19->65 years); Madagascar cohort: 112 healthy volunteers (54 females and 58 males) from MAHERY study, Betsimisaraka and Tsimihety ethnicity; Ethiopian cohort: five female individuals from Gimbichu, Oromia Region; 592 non-Westernized vs 8,836 Westernized samples total",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "26",
+      "age_max": "26"
     },
     {
       "study_name": "CM_madagascar",
@@ -2399,7 +2507,9 @@
       "sequencing_platform": "IlluminaHiSeq",
       "age_unit": "Year",
       "uncurated_metadata": "9,428 metagenomes spanning body sites, ages, countries, and lifestyles; 31 countries: USA (1,431 samples), China (1,342), Israel (956), Sweden (600) and Denmark (580) are the 5 most represented; 5 major body sites: gut (stool), oral cavity, skin (including anterior nares), vagina, and maternal milk; Age categories: newborns (<1 year), children (1-12 years), school-age (12-19 years), adults (19-65 years), adults and seniors (19->65 years); Madagascar cohort: 112 healthy volunteers (54 females and 58 males) from MAHERY study, Betsimisaraka and Tsimihety ethnicity; Ethiopian cohort: five female individuals from Gimbichu, Oromia Region; 592 non-Westernized vs 8,836 Westernized samples total",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "34",
+      "age_max": "34"
     },
     {
       "study_name": "CM_madagascar",
@@ -2426,7 +2536,9 @@
       "sequencing_platform": "IlluminaHiSeq",
       "age_unit": "Year",
       "uncurated_metadata": "9,428 metagenomes spanning body sites, ages, countries, and lifestyles; 31 countries: USA (1,431 samples), China (1,342), Israel (956), Sweden (600) and Denmark (580) are the 5 most represented; 5 major body sites: gut (stool), oral cavity, skin (including anterior nares), vagina, and maternal milk; Age categories: newborns (<1 year), children (1-12 years), school-age (12-19 years), adults (19-65 years), adults and seniors (19->65 years); Madagascar cohort: 112 healthy volunteers (54 females and 58 males) from MAHERY study, Betsimisaraka and Tsimihety ethnicity; Ethiopian cohort: five female individuals from Gimbichu, Oromia Region; 592 non-Westernized vs 8,836 Westernized samples total",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "27",
+      "age_max": "27"
     },
     {
       "study_name": "CM_madagascar",
@@ -2453,7 +2565,9 @@
       "sequencing_platform": "IlluminaHiSeq",
       "age_unit": "Year",
       "uncurated_metadata": "9,428 metagenomes spanning body sites, ages, countries, and lifestyles; 31 countries: USA (1,431 samples), China (1,342), Israel (956), Sweden (600) and Denmark (580) are the 5 most represented; 5 major body sites: gut (stool), oral cavity, skin (including anterior nares), vagina, and maternal milk; Age categories: newborns (<1 year), children (1-12 years), school-age (12-19 years), adults (19-65 years), adults and seniors (19->65 years); Madagascar cohort: 112 healthy volunteers (54 females and 58 males) from MAHERY study, Betsimisaraka and Tsimihety ethnicity; Ethiopian cohort: five female individuals from Gimbichu, Oromia Region; 592 non-Westernized vs 8,836 Westernized samples total",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "44",
+      "age_max": "44"
     },
     {
       "study_name": "CM_madagascar",
@@ -2480,7 +2594,9 @@
       "sequencing_platform": "IlluminaHiSeq",
       "age_unit": "Year",
       "uncurated_metadata": "9,428 metagenomes spanning body sites, ages, countries, and lifestyles; 31 countries: USA (1,431 samples), China (1,342), Israel (956), Sweden (600) and Denmark (580) are the 5 most represented; 5 major body sites: gut (stool), oral cavity, skin (including anterior nares), vagina, and maternal milk; Age categories: newborns (<1 year), children (1-12 years), school-age (12-19 years), adults (19-65 years), adults and seniors (19->65 years); Madagascar cohort: 112 healthy volunteers (54 females and 58 males) from MAHERY study, Betsimisaraka and Tsimihety ethnicity; Ethiopian cohort: five female individuals from Gimbichu, Oromia Region; 592 non-Westernized vs 8,836 Westernized samples total",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "44",
+      "age_max": "44"
     },
     {
       "study_name": "CM_madagascar",
@@ -2507,7 +2623,9 @@
       "sequencing_platform": "IlluminaHiSeq",
       "age_unit": "Year",
       "uncurated_metadata": "9,428 metagenomes spanning body sites, ages, countries, and lifestyles; 31 countries: USA (1,431 samples), China (1,342), Israel (956), Sweden (600) and Denmark (580) are the 5 most represented; 5 major body sites: gut (stool), oral cavity, skin (including anterior nares), vagina, and maternal milk; Age categories: newborns (<1 year), children (1-12 years), school-age (12-19 years), adults (19-65 years), adults and seniors (19->65 years); Madagascar cohort: 112 healthy volunteers (54 females and 58 males) from MAHERY study, Betsimisaraka and Tsimihety ethnicity; Ethiopian cohort: five female individuals from Gimbichu, Oromia Region; 592 non-Westernized vs 8,836 Westernized samples total",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "55",
+      "age_max": "55"
     },
     {
       "study_name": "CM_madagascar",
@@ -2534,7 +2652,9 @@
       "sequencing_platform": "IlluminaHiSeq",
       "age_unit": "Year",
       "uncurated_metadata": "9,428 metagenomes spanning body sites, ages, countries, and lifestyles; 31 countries: USA (1,431 samples), China (1,342), Israel (956), Sweden (600) and Denmark (580) are the 5 most represented; 5 major body sites: gut (stool), oral cavity, skin (including anterior nares), vagina, and maternal milk; Age categories: newborns (<1 year), children (1-12 years), school-age (12-19 years), adults (19-65 years), adults and seniors (19->65 years); Madagascar cohort: 112 healthy volunteers (54 females and 58 males) from MAHERY study, Betsimisaraka and Tsimihety ethnicity; Ethiopian cohort: five female individuals from Gimbichu, Oromia Region; 592 non-Westernized vs 8,836 Westernized samples total",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "26",
+      "age_max": "26"
     },
     {
       "study_name": "CM_madagascar",
@@ -2561,7 +2681,9 @@
       "sequencing_platform": "IlluminaHiSeq",
       "age_unit": "Year",
       "uncurated_metadata": "9,428 metagenomes spanning body sites, ages, countries, and lifestyles; 31 countries: USA (1,431 samples), China (1,342), Israel (956), Sweden (600) and Denmark (580) are the 5 most represented; 5 major body sites: gut (stool), oral cavity, skin (including anterior nares), vagina, and maternal milk; Age categories: newborns (<1 year), children (1-12 years), school-age (12-19 years), adults (19-65 years), adults and seniors (19->65 years); Madagascar cohort: 112 healthy volunteers (54 females and 58 males) from MAHERY study, Betsimisaraka and Tsimihety ethnicity; Ethiopian cohort: five female individuals from Gimbichu, Oromia Region; 592 non-Westernized vs 8,836 Westernized samples total",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "58",
+      "age_max": "58"
     },
     {
       "study_name": "CM_madagascar",
@@ -2588,7 +2710,9 @@
       "sequencing_platform": "IlluminaHiSeq",
       "age_unit": "Year",
       "uncurated_metadata": "9,428 metagenomes spanning body sites, ages, countries, and lifestyles; 31 countries: USA (1,431 samples), China (1,342), Israel (956), Sweden (600) and Denmark (580) are the 5 most represented; 5 major body sites: gut (stool), oral cavity, skin (including anterior nares), vagina, and maternal milk; Age categories: newborns (<1 year), children (1-12 years), school-age (12-19 years), adults (19-65 years), adults and seniors (19->65 years); Madagascar cohort: 112 healthy volunteers (54 females and 58 males) from MAHERY study, Betsimisaraka and Tsimihety ethnicity; Ethiopian cohort: five female individuals from Gimbichu, Oromia Region; 592 non-Westernized vs 8,836 Westernized samples total",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "31",
+      "age_max": "31"
     },
     {
       "study_name": "CM_madagascar",
@@ -2615,7 +2739,9 @@
       "sequencing_platform": "IlluminaHiSeq",
       "age_unit": "Year",
       "uncurated_metadata": "9,428 metagenomes spanning body sites, ages, countries, and lifestyles; 31 countries: USA (1,431 samples), China (1,342), Israel (956), Sweden (600) and Denmark (580) are the 5 most represented; 5 major body sites: gut (stool), oral cavity, skin (including anterior nares), vagina, and maternal milk; Age categories: newborns (<1 year), children (1-12 years), school-age (12-19 years), adults (19-65 years), adults and seniors (19->65 years); Madagascar cohort: 112 healthy volunteers (54 females and 58 males) from MAHERY study, Betsimisaraka and Tsimihety ethnicity; Ethiopian cohort: five female individuals from Gimbichu, Oromia Region; 592 non-Westernized vs 8,836 Westernized samples total",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "22",
+      "age_max": "22"
     },
     {
       "study_name": "CM_madagascar",
@@ -2642,7 +2768,9 @@
       "sequencing_platform": "IlluminaHiSeq",
       "age_unit": "Year",
       "uncurated_metadata": "9,428 metagenomes spanning body sites, ages, countries, and lifestyles; 31 countries: USA (1,431 samples), China (1,342), Israel (956), Sweden (600) and Denmark (580) are the 5 most represented; 5 major body sites: gut (stool), oral cavity, skin (including anterior nares), vagina, and maternal milk; Age categories: newborns (<1 year), children (1-12 years), school-age (12-19 years), adults (19-65 years), adults and seniors (19->65 years); Madagascar cohort: 112 healthy volunteers (54 females and 58 males) from MAHERY study, Betsimisaraka and Tsimihety ethnicity; Ethiopian cohort: five female individuals from Gimbichu, Oromia Region; 592 non-Westernized vs 8,836 Westernized samples total",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "46",
+      "age_max": "46"
     },
     {
       "study_name": "CM_madagascar",
@@ -2669,7 +2797,9 @@
       "sequencing_platform": "IlluminaHiSeq",
       "age_unit": "Year",
       "uncurated_metadata": "9,428 metagenomes spanning body sites, ages, countries, and lifestyles; 31 countries: USA (1,431 samples), China (1,342), Israel (956), Sweden (600) and Denmark (580) are the 5 most represented; 5 major body sites: gut (stool), oral cavity, skin (including anterior nares), vagina, and maternal milk; Age categories: newborns (<1 year), children (1-12 years), school-age (12-19 years), adults (19-65 years), adults and seniors (19->65 years); Madagascar cohort: 112 healthy volunteers (54 females and 58 males) from MAHERY study, Betsimisaraka and Tsimihety ethnicity; Ethiopian cohort: five female individuals from Gimbichu, Oromia Region; 592 non-Westernized vs 8,836 Westernized samples total",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "46",
+      "age_max": "46"
     },
     {
       "study_name": "CM_madagascar",
@@ -2696,7 +2826,9 @@
       "sequencing_platform": "IlluminaHiSeq",
       "age_unit": "Year",
       "uncurated_metadata": "9,428 metagenomes spanning body sites, ages, countries, and lifestyles; 31 countries: USA (1,431 samples), China (1,342), Israel (956), Sweden (600) and Denmark (580) are the 5 most represented; 5 major body sites: gut (stool), oral cavity, skin (including anterior nares), vagina, and maternal milk; Age categories: newborns (<1 year), children (1-12 years), school-age (12-19 years), adults (19-65 years), adults and seniors (19->65 years); Madagascar cohort: 112 healthy volunteers (54 females and 58 males) from MAHERY study, Betsimisaraka and Tsimihety ethnicity; Ethiopian cohort: five female individuals from Gimbichu, Oromia Region; 592 non-Westernized vs 8,836 Westernized samples total",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "35",
+      "age_max": "35"
     },
     {
       "study_name": "CM_madagascar",
@@ -2723,7 +2855,9 @@
       "sequencing_platform": "IlluminaHiSeq",
       "age_unit": "Year",
       "uncurated_metadata": "9,428 metagenomes spanning body sites, ages, countries, and lifestyles; 31 countries: USA (1,431 samples), China (1,342), Israel (956), Sweden (600) and Denmark (580) are the 5 most represented; 5 major body sites: gut (stool), oral cavity, skin (including anterior nares), vagina, and maternal milk; Age categories: newborns (<1 year), children (1-12 years), school-age (12-19 years), adults (19-65 years), adults and seniors (19->65 years); Madagascar cohort: 112 healthy volunteers (54 females and 58 males) from MAHERY study, Betsimisaraka and Tsimihety ethnicity; Ethiopian cohort: five female individuals from Gimbichu, Oromia Region; 592 non-Westernized vs 8,836 Westernized samples total",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "26",
+      "age_max": "26"
     },
     {
       "study_name": "CM_madagascar",
@@ -2750,7 +2884,9 @@
       "sequencing_platform": "IlluminaHiSeq",
       "age_unit": "Year",
       "uncurated_metadata": "9,428 metagenomes spanning body sites, ages, countries, and lifestyles; 31 countries: USA (1,431 samples), China (1,342), Israel (956), Sweden (600) and Denmark (580) are the 5 most represented; 5 major body sites: gut (stool), oral cavity, skin (including anterior nares), vagina, and maternal milk; Age categories: newborns (<1 year), children (1-12 years), school-age (12-19 years), adults (19-65 years), adults and seniors (19->65 years); Madagascar cohort: 112 healthy volunteers (54 females and 58 males) from MAHERY study, Betsimisaraka and Tsimihety ethnicity; Ethiopian cohort: five female individuals from Gimbichu, Oromia Region; 592 non-Westernized vs 8,836 Westernized samples total",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "55",
+      "age_max": "55"
     },
     {
       "study_name": "CM_madagascar",
@@ -2777,7 +2913,9 @@
       "sequencing_platform": "IlluminaHiSeq",
       "age_unit": "Year",
       "uncurated_metadata": "9,428 metagenomes spanning body sites, ages, countries, and lifestyles; 31 countries: USA (1,431 samples), China (1,342), Israel (956), Sweden (600) and Denmark (580) are the 5 most represented; 5 major body sites: gut (stool), oral cavity, skin (including anterior nares), vagina, and maternal milk; Age categories: newborns (<1 year), children (1-12 years), school-age (12-19 years), adults (19-65 years), adults and seniors (19->65 years); Madagascar cohort: 112 healthy volunteers (54 females and 58 males) from MAHERY study, Betsimisaraka and Tsimihety ethnicity; Ethiopian cohort: five female individuals from Gimbichu, Oromia Region; 592 non-Westernized vs 8,836 Westernized samples total",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "21",
+      "age_max": "21"
     },
     {
       "study_name": "CM_madagascar",
@@ -2804,7 +2942,9 @@
       "sequencing_platform": "IlluminaHiSeq",
       "age_unit": "Year",
       "uncurated_metadata": "9,428 metagenomes spanning body sites, ages, countries, and lifestyles; 31 countries: USA (1,431 samples), China (1,342), Israel (956), Sweden (600) and Denmark (580) are the 5 most represented; 5 major body sites: gut (stool), oral cavity, skin (including anterior nares), vagina, and maternal milk; Age categories: newborns (<1 year), children (1-12 years), school-age (12-19 years), adults (19-65 years), adults and seniors (19->65 years); Madagascar cohort: 112 healthy volunteers (54 females and 58 males) from MAHERY study, Betsimisaraka and Tsimihety ethnicity; Ethiopian cohort: five female individuals from Gimbichu, Oromia Region; 592 non-Westernized vs 8,836 Westernized samples total",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "24",
+      "age_max": "24"
     },
     {
       "study_name": "CM_madagascar",
@@ -2831,7 +2971,9 @@
       "sequencing_platform": "IlluminaHiSeq",
       "age_unit": "Year",
       "uncurated_metadata": "9,428 metagenomes spanning body sites, ages, countries, and lifestyles; 31 countries: USA (1,431 samples), China (1,342), Israel (956), Sweden (600) and Denmark (580) are the 5 most represented; 5 major body sites: gut (stool), oral cavity, skin (including anterior nares), vagina, and maternal milk; Age categories: newborns (<1 year), children (1-12 years), school-age (12-19 years), adults (19-65 years), adults and seniors (19->65 years); Madagascar cohort: 112 healthy volunteers (54 females and 58 males) from MAHERY study, Betsimisaraka and Tsimihety ethnicity; Ethiopian cohort: five female individuals from Gimbichu, Oromia Region; 592 non-Westernized vs 8,836 Westernized samples total",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "22",
+      "age_max": "22"
     },
     {
       "study_name": "CM_madagascar",
@@ -2858,7 +3000,9 @@
       "sequencing_platform": "IlluminaHiSeq",
       "age_unit": "Year",
       "uncurated_metadata": "9,428 metagenomes spanning body sites, ages, countries, and lifestyles; 31 countries: USA (1,431 samples), China (1,342), Israel (956), Sweden (600) and Denmark (580) are the 5 most represented; 5 major body sites: gut (stool), oral cavity, skin (including anterior nares), vagina, and maternal milk; Age categories: newborns (<1 year), children (1-12 years), school-age (12-19 years), adults (19-65 years), adults and seniors (19->65 years); Madagascar cohort: 112 healthy volunteers (54 females and 58 males) from MAHERY study, Betsimisaraka and Tsimihety ethnicity; Ethiopian cohort: five female individuals from Gimbichu, Oromia Region; 592 non-Westernized vs 8,836 Westernized samples total",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "32",
+      "age_max": "32"
     },
     {
       "study_name": "CM_madagascar",
@@ -2885,7 +3029,9 @@
       "sequencing_platform": "IlluminaHiSeq",
       "age_unit": "Year",
       "uncurated_metadata": "9,428 metagenomes spanning body sites, ages, countries, and lifestyles; 31 countries: USA (1,431 samples), China (1,342), Israel (956), Sweden (600) and Denmark (580) are the 5 most represented; 5 major body sites: gut (stool), oral cavity, skin (including anterior nares), vagina, and maternal milk; Age categories: newborns (<1 year), children (1-12 years), school-age (12-19 years), adults (19-65 years), adults and seniors (19->65 years); Madagascar cohort: 112 healthy volunteers (54 females and 58 males) from MAHERY study, Betsimisaraka and Tsimihety ethnicity; Ethiopian cohort: five female individuals from Gimbichu, Oromia Region; 592 non-Westernized vs 8,836 Westernized samples total",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "25",
+      "age_max": "25"
     },
     {
       "study_name": "CM_madagascar",
@@ -2912,7 +3058,9 @@
       "sequencing_platform": "IlluminaHiSeq",
       "age_unit": "Year",
       "uncurated_metadata": "9,428 metagenomes spanning body sites, ages, countries, and lifestyles; 31 countries: USA (1,431 samples), China (1,342), Israel (956), Sweden (600) and Denmark (580) are the 5 most represented; 5 major body sites: gut (stool), oral cavity, skin (including anterior nares), vagina, and maternal milk; Age categories: newborns (<1 year), children (1-12 years), school-age (12-19 years), adults (19-65 years), adults and seniors (19->65 years); Madagascar cohort: 112 healthy volunteers (54 females and 58 males) from MAHERY study, Betsimisaraka and Tsimihety ethnicity; Ethiopian cohort: five female individuals from Gimbichu, Oromia Region; 592 non-Westernized vs 8,836 Westernized samples total",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "24",
+      "age_max": "24"
     },
     {
       "study_name": "CM_madagascar",
@@ -2939,7 +3087,9 @@
       "sequencing_platform": "IlluminaHiSeq",
       "age_unit": "Year",
       "uncurated_metadata": "9,428 metagenomes spanning body sites, ages, countries, and lifestyles; 31 countries: USA (1,431 samples), China (1,342), Israel (956), Sweden (600) and Denmark (580) are the 5 most represented; 5 major body sites: gut (stool), oral cavity, skin (including anterior nares), vagina, and maternal milk; Age categories: newborns (<1 year), children (1-12 years), school-age (12-19 years), adults (19-65 years), adults and seniors (19->65 years); Madagascar cohort: 112 healthy volunteers (54 females and 58 males) from MAHERY study, Betsimisaraka and Tsimihety ethnicity; Ethiopian cohort: five female individuals from Gimbichu, Oromia Region; 592 non-Westernized vs 8,836 Westernized samples total",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "47",
+      "age_max": "47"
     },
     {
       "study_name": "CM_madagascar",
@@ -2966,7 +3116,9 @@
       "sequencing_platform": "IlluminaHiSeq",
       "age_unit": "Year",
       "uncurated_metadata": "9,428 metagenomes spanning body sites, ages, countries, and lifestyles; 31 countries: USA (1,431 samples), China (1,342), Israel (956), Sweden (600) and Denmark (580) are the 5 most represented; 5 major body sites: gut (stool), oral cavity, skin (including anterior nares), vagina, and maternal milk; Age categories: newborns (<1 year), children (1-12 years), school-age (12-19 years), adults (19-65 years), adults and seniors (19->65 years); Madagascar cohort: 112 healthy volunteers (54 females and 58 males) from MAHERY study, Betsimisaraka and Tsimihety ethnicity; Ethiopian cohort: five female individuals from Gimbichu, Oromia Region; 592 non-Westernized vs 8,836 Westernized samples total",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "58",
+      "age_max": "58"
     },
     {
       "study_name": "CM_madagascar",
@@ -2993,7 +3145,9 @@
       "sequencing_platform": "IlluminaHiSeq",
       "age_unit": "Year",
       "uncurated_metadata": "9,428 metagenomes spanning body sites, ages, countries, and lifestyles; 31 countries: USA (1,431 samples), China (1,342), Israel (956), Sweden (600) and Denmark (580) are the 5 most represented; 5 major body sites: gut (stool), oral cavity, skin (including anterior nares), vagina, and maternal milk; Age categories: newborns (<1 year), children (1-12 years), school-age (12-19 years), adults (19-65 years), adults and seniors (19->65 years); Madagascar cohort: 112 healthy volunteers (54 females and 58 males) from MAHERY study, Betsimisaraka and Tsimihety ethnicity; Ethiopian cohort: five female individuals from Gimbichu, Oromia Region; 592 non-Westernized vs 8,836 Westernized samples total",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "26",
+      "age_max": "26"
     },
     {
       "study_name": "CM_madagascar",
@@ -3020,7 +3174,9 @@
       "sequencing_platform": "IlluminaHiSeq",
       "age_unit": "Year",
       "uncurated_metadata": "9,428 metagenomes spanning body sites, ages, countries, and lifestyles; 31 countries: USA (1,431 samples), China (1,342), Israel (956), Sweden (600) and Denmark (580) are the 5 most represented; 5 major body sites: gut (stool), oral cavity, skin (including anterior nares), vagina, and maternal milk; Age categories: newborns (<1 year), children (1-12 years), school-age (12-19 years), adults (19-65 years), adults and seniors (19->65 years); Madagascar cohort: 112 healthy volunteers (54 females and 58 males) from MAHERY study, Betsimisaraka and Tsimihety ethnicity; Ethiopian cohort: five female individuals from Gimbichu, Oromia Region; 592 non-Westernized vs 8,836 Westernized samples total",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "51",
+      "age_max": "51"
     },
     {
       "study_name": "CM_madagascar",
@@ -3047,7 +3203,9 @@
       "sequencing_platform": "IlluminaHiSeq",
       "age_unit": "Year",
       "uncurated_metadata": "9,428 metagenomes spanning body sites, ages, countries, and lifestyles; 31 countries: USA (1,431 samples), China (1,342), Israel (956), Sweden (600) and Denmark (580) are the 5 most represented; 5 major body sites: gut (stool), oral cavity, skin (including anterior nares), vagina, and maternal milk; Age categories: newborns (<1 year), children (1-12 years), school-age (12-19 years), adults (19-65 years), adults and seniors (19->65 years); Madagascar cohort: 112 healthy volunteers (54 females and 58 males) from MAHERY study, Betsimisaraka and Tsimihety ethnicity; Ethiopian cohort: five female individuals from Gimbichu, Oromia Region; 592 non-Westernized vs 8,836 Westernized samples total",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "38",
+      "age_max": "38"
     },
     {
       "study_name": "CM_madagascar",
@@ -3074,7 +3232,9 @@
       "sequencing_platform": "IlluminaHiSeq",
       "age_unit": "Year",
       "uncurated_metadata": "9,428 metagenomes spanning body sites, ages, countries, and lifestyles; 31 countries: USA (1,431 samples), China (1,342), Israel (956), Sweden (600) and Denmark (580) are the 5 most represented; 5 major body sites: gut (stool), oral cavity, skin (including anterior nares), vagina, and maternal milk; Age categories: newborns (<1 year), children (1-12 years), school-age (12-19 years), adults (19-65 years), adults and seniors (19->65 years); Madagascar cohort: 112 healthy volunteers (54 females and 58 males) from MAHERY study, Betsimisaraka and Tsimihety ethnicity; Ethiopian cohort: five female individuals from Gimbichu, Oromia Region; 592 non-Westernized vs 8,836 Westernized samples total",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "37",
+      "age_max": "37"
     },
     {
       "study_name": "CM_madagascar",
@@ -3101,7 +3261,9 @@
       "sequencing_platform": "IlluminaHiSeq",
       "age_unit": "Year",
       "uncurated_metadata": "9,428 metagenomes spanning body sites, ages, countries, and lifestyles; 31 countries: USA (1,431 samples), China (1,342), Israel (956), Sweden (600) and Denmark (580) are the 5 most represented; 5 major body sites: gut (stool), oral cavity, skin (including anterior nares), vagina, and maternal milk; Age categories: newborns (<1 year), children (1-12 years), school-age (12-19 years), adults (19-65 years), adults and seniors (19->65 years); Madagascar cohort: 112 healthy volunteers (54 females and 58 males) from MAHERY study, Betsimisaraka and Tsimihety ethnicity; Ethiopian cohort: five female individuals from Gimbichu, Oromia Region; 592 non-Westernized vs 8,836 Westernized samples total",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "42",
+      "age_max": "42"
     },
     {
       "study_name": "CM_madagascar",
@@ -3128,7 +3290,9 @@
       "sequencing_platform": "IlluminaHiSeq",
       "age_unit": "Year",
       "uncurated_metadata": "9,428 metagenomes spanning body sites, ages, countries, and lifestyles; 31 countries: USA (1,431 samples), China (1,342), Israel (956), Sweden (600) and Denmark (580) are the 5 most represented; 5 major body sites: gut (stool), oral cavity, skin (including anterior nares), vagina, and maternal milk; Age categories: newborns (<1 year), children (1-12 years), school-age (12-19 years), adults (19-65 years), adults and seniors (19->65 years); Madagascar cohort: 112 healthy volunteers (54 females and 58 males) from MAHERY study, Betsimisaraka and Tsimihety ethnicity; Ethiopian cohort: five female individuals from Gimbichu, Oromia Region; 592 non-Westernized vs 8,836 Westernized samples total",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "26",
+      "age_max": "26"
     },
     {
       "study_name": "CM_madagascar",
@@ -3155,7 +3319,9 @@
       "sequencing_platform": "IlluminaHiSeq",
       "age_unit": "Year",
       "uncurated_metadata": "9,428 metagenomes spanning body sites, ages, countries, and lifestyles; 31 countries: USA (1,431 samples), China (1,342), Israel (956), Sweden (600) and Denmark (580) are the 5 most represented; 5 major body sites: gut (stool), oral cavity, skin (including anterior nares), vagina, and maternal milk; Age categories: newborns (<1 year), children (1-12 years), school-age (12-19 years), adults (19-65 years), adults and seniors (19->65 years); Madagascar cohort: 112 healthy volunteers (54 females and 58 males) from MAHERY study, Betsimisaraka and Tsimihety ethnicity; Ethiopian cohort: five female individuals from Gimbichu, Oromia Region; 592 non-Westernized vs 8,836 Westernized samples total",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "27",
+      "age_max": "27"
     },
     {
       "study_name": "CM_madagascar",
@@ -3182,7 +3348,9 @@
       "sequencing_platform": "IlluminaHiSeq",
       "age_unit": "Year",
       "uncurated_metadata": "9,428 metagenomes spanning body sites, ages, countries, and lifestyles; 31 countries: USA (1,431 samples), China (1,342), Israel (956), Sweden (600) and Denmark (580) are the 5 most represented; 5 major body sites: gut (stool), oral cavity, skin (including anterior nares), vagina, and maternal milk; Age categories: newborns (<1 year), children (1-12 years), school-age (12-19 years), adults (19-65 years), adults and seniors (19->65 years); Madagascar cohort: 112 healthy volunteers (54 females and 58 males) from MAHERY study, Betsimisaraka and Tsimihety ethnicity; Ethiopian cohort: five female individuals from Gimbichu, Oromia Region; 592 non-Westernized vs 8,836 Westernized samples total",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "26",
+      "age_max": "26"
     },
     {
       "study_name": "CM_madagascar",
@@ -3209,7 +3377,9 @@
       "sequencing_platform": "IlluminaHiSeq",
       "age_unit": "Year",
       "uncurated_metadata": "9,428 metagenomes spanning body sites, ages, countries, and lifestyles; 31 countries: USA (1,431 samples), China (1,342), Israel (956), Sweden (600) and Denmark (580) are the 5 most represented; 5 major body sites: gut (stool), oral cavity, skin (including anterior nares), vagina, and maternal milk; Age categories: newborns (<1 year), children (1-12 years), school-age (12-19 years), adults (19-65 years), adults and seniors (19->65 years); Madagascar cohort: 112 healthy volunteers (54 females and 58 males) from MAHERY study, Betsimisaraka and Tsimihety ethnicity; Ethiopian cohort: five female individuals from Gimbichu, Oromia Region; 592 non-Westernized vs 8,836 Westernized samples total",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "28",
+      "age_max": "28"
     },
     {
       "study_name": "CM_madagascar",
@@ -3236,7 +3406,9 @@
       "sequencing_platform": "IlluminaHiSeq",
       "age_unit": "Year",
       "uncurated_metadata": "9,428 metagenomes spanning body sites, ages, countries, and lifestyles; 31 countries: USA (1,431 samples), China (1,342), Israel (956), Sweden (600) and Denmark (580) are the 5 most represented; 5 major body sites: gut (stool), oral cavity, skin (including anterior nares), vagina, and maternal milk; Age categories: newborns (<1 year), children (1-12 years), school-age (12-19 years), adults (19-65 years), adults and seniors (19->65 years); Madagascar cohort: 112 healthy volunteers (54 females and 58 males) from MAHERY study, Betsimisaraka and Tsimihety ethnicity; Ethiopian cohort: five female individuals from Gimbichu, Oromia Region; 592 non-Westernized vs 8,836 Westernized samples total",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "43",
+      "age_max": "43"
     },
     {
       "study_name": "CM_madagascar",
@@ -3263,7 +3435,9 @@
       "sequencing_platform": "IlluminaHiSeq",
       "age_unit": "Year",
       "uncurated_metadata": "9,428 metagenomes spanning body sites, ages, countries, and lifestyles; 31 countries: USA (1,431 samples), China (1,342), Israel (956), Sweden (600) and Denmark (580) are the 5 most represented; 5 major body sites: gut (stool), oral cavity, skin (including anterior nares), vagina, and maternal milk; Age categories: newborns (<1 year), children (1-12 years), school-age (12-19 years), adults (19-65 years), adults and seniors (19->65 years); Madagascar cohort: 112 healthy volunteers (54 females and 58 males) from MAHERY study, Betsimisaraka and Tsimihety ethnicity; Ethiopian cohort: five female individuals from Gimbichu, Oromia Region; 592 non-Westernized vs 8,836 Westernized samples total",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "50",
+      "age_max": "50"
     },
     {
       "study_name": "CM_madagascar",
@@ -3290,7 +3464,9 @@
       "sequencing_platform": "IlluminaHiSeq",
       "age_unit": "Year",
       "uncurated_metadata": "9,428 metagenomes spanning body sites, ages, countries, and lifestyles; 31 countries: USA (1,431 samples), China (1,342), Israel (956), Sweden (600) and Denmark (580) are the 5 most represented; 5 major body sites: gut (stool), oral cavity, skin (including anterior nares), vagina, and maternal milk; Age categories: newborns (<1 year), children (1-12 years), school-age (12-19 years), adults (19-65 years), adults and seniors (19->65 years); Madagascar cohort: 112 healthy volunteers (54 females and 58 males) from MAHERY study, Betsimisaraka and Tsimihety ethnicity; Ethiopian cohort: five female individuals from Gimbichu, Oromia Region; 592 non-Westernized vs 8,836 Westernized samples total",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "23",
+      "age_max": "23"
     },
     {
       "study_name": "CM_madagascar",
@@ -3317,7 +3493,9 @@
       "sequencing_platform": "IlluminaHiSeq",
       "age_unit": "Year",
       "uncurated_metadata": "9,428 metagenomes spanning body sites, ages, countries, and lifestyles; 31 countries: USA (1,431 samples), China (1,342), Israel (956), Sweden (600) and Denmark (580) are the 5 most represented; 5 major body sites: gut (stool), oral cavity, skin (including anterior nares), vagina, and maternal milk; Age categories: newborns (<1 year), children (1-12 years), school-age (12-19 years), adults (19-65 years), adults and seniors (19->65 years); Madagascar cohort: 112 healthy volunteers (54 females and 58 males) from MAHERY study, Betsimisaraka and Tsimihety ethnicity; Ethiopian cohort: five female individuals from Gimbichu, Oromia Region; 592 non-Westernized vs 8,836 Westernized samples total",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "30",
+      "age_max": "30"
     },
     {
       "study_name": "CM_madagascar",
@@ -3344,7 +3522,9 @@
       "sequencing_platform": "IlluminaHiSeq",
       "age_unit": "Year",
       "uncurated_metadata": "9,428 metagenomes spanning body sites, ages, countries, and lifestyles; 31 countries: USA (1,431 samples), China (1,342), Israel (956), Sweden (600) and Denmark (580) are the 5 most represented; 5 major body sites: gut (stool), oral cavity, skin (including anterior nares), vagina, and maternal milk; Age categories: newborns (<1 year), children (1-12 years), school-age (12-19 years), adults (19-65 years), adults and seniors (19->65 years); Madagascar cohort: 112 healthy volunteers (54 females and 58 males) from MAHERY study, Betsimisaraka and Tsimihety ethnicity; Ethiopian cohort: five female individuals from Gimbichu, Oromia Region; 592 non-Westernized vs 8,836 Westernized samples total",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "32",
+      "age_max": "32"
     },
     {
       "study_name": "CM_madagascar",
@@ -3371,7 +3551,9 @@
       "sequencing_platform": "IlluminaHiSeq",
       "age_unit": "Year",
       "uncurated_metadata": "9,428 metagenomes spanning body sites, ages, countries, and lifestyles; 31 countries: USA (1,431 samples), China (1,342), Israel (956), Sweden (600) and Denmark (580) are the 5 most represented; 5 major body sites: gut (stool), oral cavity, skin (including anterior nares), vagina, and maternal milk; Age categories: newborns (<1 year), children (1-12 years), school-age (12-19 years), adults (19-65 years), adults and seniors (19->65 years); Madagascar cohort: 112 healthy volunteers (54 females and 58 males) from MAHERY study, Betsimisaraka and Tsimihety ethnicity; Ethiopian cohort: five female individuals from Gimbichu, Oromia Region; 592 non-Westernized vs 8,836 Westernized samples total",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "37",
+      "age_max": "37"
     },
     {
       "study_name": "CM_madagascar",
@@ -3398,7 +3580,9 @@
       "sequencing_platform": "IlluminaHiSeq",
       "age_unit": "Year",
       "uncurated_metadata": "9,428 metagenomes spanning body sites, ages, countries, and lifestyles; 31 countries: USA (1,431 samples), China (1,342), Israel (956), Sweden (600) and Denmark (580) are the 5 most represented; 5 major body sites: gut (stool), oral cavity, skin (including anterior nares), vagina, and maternal milk; Age categories: newborns (<1 year), children (1-12 years), school-age (12-19 years), adults (19-65 years), adults and seniors (19->65 years); Madagascar cohort: 112 healthy volunteers (54 females and 58 males) from MAHERY study, Betsimisaraka and Tsimihety ethnicity; Ethiopian cohort: five female individuals from Gimbichu, Oromia Region; 592 non-Westernized vs 8,836 Westernized samples total",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "44",
+      "age_max": "44"
     },
     {
       "study_name": "CM_madagascar",
@@ -3425,7 +3609,9 @@
       "sequencing_platform": "IlluminaHiSeq",
       "age_unit": "Year",
       "uncurated_metadata": "9,428 metagenomes spanning body sites, ages, countries, and lifestyles; 31 countries: USA (1,431 samples), China (1,342), Israel (956), Sweden (600) and Denmark (580) are the 5 most represented; 5 major body sites: gut (stool), oral cavity, skin (including anterior nares), vagina, and maternal milk; Age categories: newborns (<1 year), children (1-12 years), school-age (12-19 years), adults (19-65 years), adults and seniors (19->65 years); Madagascar cohort: 112 healthy volunteers (54 females and 58 males) from MAHERY study, Betsimisaraka and Tsimihety ethnicity; Ethiopian cohort: five female individuals from Gimbichu, Oromia Region; 592 non-Westernized vs 8,836 Westernized samples total",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "34",
+      "age_max": "34"
     },
     {
       "study_name": "CM_madagascar",
@@ -3452,7 +3638,9 @@
       "sequencing_platform": "IlluminaHiSeq",
       "age_unit": "Year",
       "uncurated_metadata": "9,428 metagenomes spanning body sites, ages, countries, and lifestyles; 31 countries: USA (1,431 samples), China (1,342), Israel (956), Sweden (600) and Denmark (580) are the 5 most represented; 5 major body sites: gut (stool), oral cavity, skin (including anterior nares), vagina, and maternal milk; Age categories: newborns (<1 year), children (1-12 years), school-age (12-19 years), adults (19-65 years), adults and seniors (19->65 years); Madagascar cohort: 112 healthy volunteers (54 females and 58 males) from MAHERY study, Betsimisaraka and Tsimihety ethnicity; Ethiopian cohort: five female individuals from Gimbichu, Oromia Region; 592 non-Westernized vs 8,836 Westernized samples total",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "24",
+      "age_max": "24"
     },
     {
       "study_name": "CM_madagascar",
@@ -3479,7 +3667,9 @@
       "sequencing_platform": "IlluminaHiSeq",
       "age_unit": "Year",
       "uncurated_metadata": "9,428 metagenomes spanning body sites, ages, countries, and lifestyles; 31 countries: USA (1,431 samples), China (1,342), Israel (956), Sweden (600) and Denmark (580) are the 5 most represented; 5 major body sites: gut (stool), oral cavity, skin (including anterior nares), vagina, and maternal milk; Age categories: newborns (<1 year), children (1-12 years), school-age (12-19 years), adults (19-65 years), adults and seniors (19->65 years); Madagascar cohort: 112 healthy volunteers (54 females and 58 males) from MAHERY study, Betsimisaraka and Tsimihety ethnicity; Ethiopian cohort: five female individuals from Gimbichu, Oromia Region; 592 non-Westernized vs 8,836 Westernized samples total",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "29",
+      "age_max": "29"
     },
     {
       "study_name": "CM_madagascar",
@@ -3506,7 +3696,9 @@
       "sequencing_platform": "IlluminaHiSeq",
       "age_unit": "Year",
       "uncurated_metadata": "9,428 metagenomes spanning body sites, ages, countries, and lifestyles; 31 countries: USA (1,431 samples), China (1,342), Israel (956), Sweden (600) and Denmark (580) are the 5 most represented; 5 major body sites: gut (stool), oral cavity, skin (including anterior nares), vagina, and maternal milk; Age categories: newborns (<1 year), children (1-12 years), school-age (12-19 years), adults (19-65 years), adults and seniors (19->65 years); Madagascar cohort: 112 healthy volunteers (54 females and 58 males) from MAHERY study, Betsimisaraka and Tsimihety ethnicity; Ethiopian cohort: five female individuals from Gimbichu, Oromia Region; 592 non-Westernized vs 8,836 Westernized samples total",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "42",
+      "age_max": "42"
     },
     {
       "study_name": "CM_madagascar",
@@ -3533,7 +3725,9 @@
       "sequencing_platform": "IlluminaHiSeq",
       "age_unit": "Year",
       "uncurated_metadata": "9,428 metagenomes spanning body sites, ages, countries, and lifestyles; 31 countries: USA (1,431 samples), China (1,342), Israel (956), Sweden (600) and Denmark (580) are the 5 most represented; 5 major body sites: gut (stool), oral cavity, skin (including anterior nares), vagina, and maternal milk; Age categories: newborns (<1 year), children (1-12 years), school-age (12-19 years), adults (19-65 years), adults and seniors (19->65 years); Madagascar cohort: 112 healthy volunteers (54 females and 58 males) from MAHERY study, Betsimisaraka and Tsimihety ethnicity; Ethiopian cohort: five female individuals from Gimbichu, Oromia Region; 592 non-Westernized vs 8,836 Westernized samples total",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "33",
+      "age_max": "33"
     },
     {
       "study_name": "CM_madagascar",
@@ -3560,7 +3754,9 @@
       "sequencing_platform": "IlluminaHiSeq",
       "age_unit": "Year",
       "uncurated_metadata": "9,428 metagenomes spanning body sites, ages, countries, and lifestyles; 31 countries: USA (1,431 samples), China (1,342), Israel (956), Sweden (600) and Denmark (580) are the 5 most represented; 5 major body sites: gut (stool), oral cavity, skin (including anterior nares), vagina, and maternal milk; Age categories: newborns (<1 year), children (1-12 years), school-age (12-19 years), adults (19-65 years), adults and seniors (19->65 years); Madagascar cohort: 112 healthy volunteers (54 females and 58 males) from MAHERY study, Betsimisaraka and Tsimihety ethnicity; Ethiopian cohort: five female individuals from Gimbichu, Oromia Region; 592 non-Westernized vs 8,836 Westernized samples total",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "46",
+      "age_max": "46"
     },
     {
       "study_name": "CM_madagascar",
@@ -3587,7 +3783,9 @@
       "sequencing_platform": "IlluminaHiSeq",
       "age_unit": "Year",
       "uncurated_metadata": "9,428 metagenomes spanning body sites, ages, countries, and lifestyles; 31 countries: USA (1,431 samples), China (1,342), Israel (956), Sweden (600) and Denmark (580) are the 5 most represented; 5 major body sites: gut (stool), oral cavity, skin (including anterior nares), vagina, and maternal milk; Age categories: newborns (<1 year), children (1-12 years), school-age (12-19 years), adults (19-65 years), adults and seniors (19->65 years); Madagascar cohort: 112 healthy volunteers (54 females and 58 males) from MAHERY study, Betsimisaraka and Tsimihety ethnicity; Ethiopian cohort: five female individuals from Gimbichu, Oromia Region; 592 non-Westernized vs 8,836 Westernized samples total",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "29",
+      "age_max": "29"
     },
     {
       "study_name": "CM_madagascar",
@@ -3614,7 +3812,9 @@
       "sequencing_platform": "IlluminaHiSeq",
       "age_unit": "Year",
       "uncurated_metadata": "9,428 metagenomes spanning body sites, ages, countries, and lifestyles; 31 countries: USA (1,431 samples), China (1,342), Israel (956), Sweden (600) and Denmark (580) are the 5 most represented; 5 major body sites: gut (stool), oral cavity, skin (including anterior nares), vagina, and maternal milk; Age categories: newborns (<1 year), children (1-12 years), school-age (12-19 years), adults (19-65 years), adults and seniors (19->65 years); Madagascar cohort: 112 healthy volunteers (54 females and 58 males) from MAHERY study, Betsimisaraka and Tsimihety ethnicity; Ethiopian cohort: five female individuals from Gimbichu, Oromia Region; 592 non-Westernized vs 8,836 Westernized samples total",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "33",
+      "age_max": "33"
     },
     {
       "study_name": "CM_madagascar",
@@ -3641,7 +3841,9 @@
       "sequencing_platform": "IlluminaHiSeq",
       "age_unit": "Year",
       "uncurated_metadata": "9,428 metagenomes spanning body sites, ages, countries, and lifestyles; 31 countries: USA (1,431 samples), China (1,342), Israel (956), Sweden (600) and Denmark (580) are the 5 most represented; 5 major body sites: gut (stool), oral cavity, skin (including anterior nares), vagina, and maternal milk; Age categories: newborns (<1 year), children (1-12 years), school-age (12-19 years), adults (19-65 years), adults and seniors (19->65 years); Madagascar cohort: 112 healthy volunteers (54 females and 58 males) from MAHERY study, Betsimisaraka and Tsimihety ethnicity; Ethiopian cohort: five female individuals from Gimbichu, Oromia Region; 592 non-Westernized vs 8,836 Westernized samples total",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "26",
+      "age_max": "26"
     },
     {
       "study_name": "CM_madagascar",
@@ -3668,7 +3870,9 @@
       "sequencing_platform": "IlluminaHiSeq",
       "age_unit": "Year",
       "uncurated_metadata": "9,428 metagenomes spanning body sites, ages, countries, and lifestyles; 31 countries: USA (1,431 samples), China (1,342), Israel (956), Sweden (600) and Denmark (580) are the 5 most represented; 5 major body sites: gut (stool), oral cavity, skin (including anterior nares), vagina, and maternal milk; Age categories: newborns (<1 year), children (1-12 years), school-age (12-19 years), adults (19-65 years), adults and seniors (19->65 years); Madagascar cohort: 112 healthy volunteers (54 females and 58 males) from MAHERY study, Betsimisaraka and Tsimihety ethnicity; Ethiopian cohort: five female individuals from Gimbichu, Oromia Region; 592 non-Westernized vs 8,836 Westernized samples total",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "72",
+      "age_max": "72"
     },
     {
       "study_name": "CM_madagascar",
@@ -3695,7 +3899,9 @@
       "sequencing_platform": "IlluminaHiSeq",
       "age_unit": "Year",
       "uncurated_metadata": "9,428 metagenomes spanning body sites, ages, countries, and lifestyles; 31 countries: USA (1,431 samples), China (1,342), Israel (956), Sweden (600) and Denmark (580) are the 5 most represented; 5 major body sites: gut (stool), oral cavity, skin (including anterior nares), vagina, and maternal milk; Age categories: newborns (<1 year), children (1-12 years), school-age (12-19 years), adults (19-65 years), adults and seniors (19->65 years); Madagascar cohort: 112 healthy volunteers (54 females and 58 males) from MAHERY study, Betsimisaraka and Tsimihety ethnicity; Ethiopian cohort: five female individuals from Gimbichu, Oromia Region; 592 non-Westernized vs 8,836 Westernized samples total",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "29",
+      "age_max": "29"
     },
     {
       "study_name": "CM_madagascar",
@@ -3722,7 +3928,9 @@
       "sequencing_platform": "IlluminaHiSeq",
       "age_unit": "Year",
       "uncurated_metadata": "9,428 metagenomes spanning body sites, ages, countries, and lifestyles; 31 countries: USA (1,431 samples), China (1,342), Israel (956), Sweden (600) and Denmark (580) are the 5 most represented; 5 major body sites: gut (stool), oral cavity, skin (including anterior nares), vagina, and maternal milk; Age categories: newborns (<1 year), children (1-12 years), school-age (12-19 years), adults (19-65 years), adults and seniors (19->65 years); Madagascar cohort: 112 healthy volunteers (54 females and 58 males) from MAHERY study, Betsimisaraka and Tsimihety ethnicity; Ethiopian cohort: five female individuals from Gimbichu, Oromia Region; 592 non-Westernized vs 8,836 Westernized samples total",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "37",
+      "age_max": "37"
     },
     {
       "study_name": "CM_madagascar",
@@ -3749,7 +3957,9 @@
       "sequencing_platform": "IlluminaHiSeq",
       "age_unit": "Year",
       "uncurated_metadata": "9,428 metagenomes spanning body sites, ages, countries, and lifestyles; 31 countries: USA (1,431 samples), China (1,342), Israel (956), Sweden (600) and Denmark (580) are the 5 most represented; 5 major body sites: gut (stool), oral cavity, skin (including anterior nares), vagina, and maternal milk; Age categories: newborns (<1 year), children (1-12 years), school-age (12-19 years), adults (19-65 years), adults and seniors (19->65 years); Madagascar cohort: 112 healthy volunteers (54 females and 58 males) from MAHERY study, Betsimisaraka and Tsimihety ethnicity; Ethiopian cohort: five female individuals from Gimbichu, Oromia Region; 592 non-Westernized vs 8,836 Westernized samples total",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "40",
+      "age_max": "40"
     },
     {
       "study_name": "CM_madagascar",
@@ -3776,7 +3986,9 @@
       "sequencing_platform": "IlluminaHiSeq",
       "age_unit": "Year",
       "uncurated_metadata": "9,428 metagenomes spanning body sites, ages, countries, and lifestyles; 31 countries: USA (1,431 samples), China (1,342), Israel (956), Sweden (600) and Denmark (580) are the 5 most represented; 5 major body sites: gut (stool), oral cavity, skin (including anterior nares), vagina, and maternal milk; Age categories: newborns (<1 year), children (1-12 years), school-age (12-19 years), adults (19-65 years), adults and seniors (19->65 years); Madagascar cohort: 112 healthy volunteers (54 females and 58 males) from MAHERY study, Betsimisaraka and Tsimihety ethnicity; Ethiopian cohort: five female individuals from Gimbichu, Oromia Region; 592 non-Westernized vs 8,836 Westernized samples total",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "52",
+      "age_max": "52"
     },
     {
       "study_name": "CM_madagascar",
@@ -3803,7 +4015,9 @@
       "sequencing_platform": "IlluminaHiSeq",
       "age_unit": "Year",
       "uncurated_metadata": "9,428 metagenomes spanning body sites, ages, countries, and lifestyles; 31 countries: USA (1,431 samples), China (1,342), Israel (956), Sweden (600) and Denmark (580) are the 5 most represented; 5 major body sites: gut (stool), oral cavity, skin (including anterior nares), vagina, and maternal milk; Age categories: newborns (<1 year), children (1-12 years), school-age (12-19 years), adults (19-65 years), adults and seniors (19->65 years); Madagascar cohort: 112 healthy volunteers (54 females and 58 males) from MAHERY study, Betsimisaraka and Tsimihety ethnicity; Ethiopian cohort: five female individuals from Gimbichu, Oromia Region; 592 non-Westernized vs 8,836 Westernized samples total",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "21",
+      "age_max": "21"
     },
     {
       "study_name": "CM_madagascar",
@@ -3830,7 +4044,9 @@
       "sequencing_platform": "IlluminaHiSeq",
       "age_unit": "Year",
       "uncurated_metadata": "9,428 metagenomes spanning body sites, ages, countries, and lifestyles; 31 countries: USA (1,431 samples), China (1,342), Israel (956), Sweden (600) and Denmark (580) are the 5 most represented; 5 major body sites: gut (stool), oral cavity, skin (including anterior nares), vagina, and maternal milk; Age categories: newborns (<1 year), children (1-12 years), school-age (12-19 years), adults (19-65 years), adults and seniors (19->65 years); Madagascar cohort: 112 healthy volunteers (54 females and 58 males) from MAHERY study, Betsimisaraka and Tsimihety ethnicity; Ethiopian cohort: five female individuals from Gimbichu, Oromia Region; 592 non-Westernized vs 8,836 Westernized samples total",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "33",
+      "age_max": "33"
     },
     {
       "study_name": "CM_madagascar",
@@ -3857,7 +4073,9 @@
       "sequencing_platform": "IlluminaHiSeq",
       "age_unit": "Year",
       "uncurated_metadata": "9,428 metagenomes spanning body sites, ages, countries, and lifestyles; 31 countries: USA (1,431 samples), China (1,342), Israel (956), Sweden (600) and Denmark (580) are the 5 most represented; 5 major body sites: gut (stool), oral cavity, skin (including anterior nares), vagina, and maternal milk; Age categories: newborns (<1 year), children (1-12 years), school-age (12-19 years), adults (19-65 years), adults and seniors (19->65 years); Madagascar cohort: 112 healthy volunteers (54 females and 58 males) from MAHERY study, Betsimisaraka and Tsimihety ethnicity; Ethiopian cohort: five female individuals from Gimbichu, Oromia Region; 592 non-Westernized vs 8,836 Westernized samples total",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "30",
+      "age_max": "30"
     },
     {
       "study_name": "CM_madagascar",
@@ -3884,7 +4102,9 @@
       "sequencing_platform": "IlluminaHiSeq",
       "age_unit": "Year",
       "uncurated_metadata": "9,428 metagenomes spanning body sites, ages, countries, and lifestyles; 31 countries: USA (1,431 samples), China (1,342), Israel (956), Sweden (600) and Denmark (580) are the 5 most represented; 5 major body sites: gut (stool), oral cavity, skin (including anterior nares), vagina, and maternal milk; Age categories: newborns (<1 year), children (1-12 years), school-age (12-19 years), adults (19-65 years), adults and seniors (19->65 years); Madagascar cohort: 112 healthy volunteers (54 females and 58 males) from MAHERY study, Betsimisaraka and Tsimihety ethnicity; Ethiopian cohort: five female individuals from Gimbichu, Oromia Region; 592 non-Westernized vs 8,836 Westernized samples total",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "25",
+      "age_max": "25"
     },
     {
       "study_name": "CM_madagascar",
@@ -3911,7 +4131,9 @@
       "sequencing_platform": "IlluminaHiSeq",
       "age_unit": "Year",
       "uncurated_metadata": "9,428 metagenomes spanning body sites, ages, countries, and lifestyles; 31 countries: USA (1,431 samples), China (1,342), Israel (956), Sweden (600) and Denmark (580) are the 5 most represented; 5 major body sites: gut (stool), oral cavity, skin (including anterior nares), vagina, and maternal milk; Age categories: newborns (<1 year), children (1-12 years), school-age (12-19 years), adults (19-65 years), adults and seniors (19->65 years); Madagascar cohort: 112 healthy volunteers (54 females and 58 males) from MAHERY study, Betsimisaraka and Tsimihety ethnicity; Ethiopian cohort: five female individuals from Gimbichu, Oromia Region; 592 non-Westernized vs 8,836 Westernized samples total",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "36",
+      "age_max": "36"
     },
     {
       "study_name": "CM_madagascar",
@@ -3938,7 +4160,9 @@
       "sequencing_platform": "IlluminaHiSeq",
       "age_unit": "Year",
       "uncurated_metadata": "9,428 metagenomes spanning body sites, ages, countries, and lifestyles; 31 countries: USA (1,431 samples), China (1,342), Israel (956), Sweden (600) and Denmark (580) are the 5 most represented; 5 major body sites: gut (stool), oral cavity, skin (including anterior nares), vagina, and maternal milk; Age categories: newborns (<1 year), children (1-12 years), school-age (12-19 years), adults (19-65 years), adults and seniors (19->65 years); Madagascar cohort: 112 healthy volunteers (54 females and 58 males) from MAHERY study, Betsimisaraka and Tsimihety ethnicity; Ethiopian cohort: five female individuals from Gimbichu, Oromia Region; 592 non-Westernized vs 8,836 Westernized samples total",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "24",
+      "age_max": "24"
     }
   ],
   "table_selection": [

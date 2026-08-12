@@ -430,28 +430,28 @@
       "notes": "No twin study or zygosity information reported in this paper."
     },
     "age_min": {
-      "value": "not_reported",
+      "value": "18",
       "by_subgroup": null,
       "unit": "years",
       "normalized_value": null,
       "normalized_unit": null,
-      "extraction_type": "directly_stated",
+      "extraction_type": "derived",
       "confidence": "medium",
       "evidence_quote": "1,098 newborns (< 1 year of age), 465 children (age ≥1 year and <12 years), 216 school-age individuals (age ≥12 and <19 years)",
       "section": "Method details — Meta-analyzed publicly available metagenomic datasets",
-      "notes": "The study reports multiple overlapping/non-single age categories (newborn, child, school-age, adult 19-65, senior >65) across a heterogeneous set of 46+ cohorts, so a single study-level age_min cannot be assigned without arbitrarily choosing one subgroup."
+      "notes": "The study reports multiple overlapping/non-single age categories (newborn, child, school-age, adult 19-65, senior >65) across a heterogeneous set of 46+ cohorts, so a single study-level age_min cannot be assigned without arbitrarily choosing one subgroup. [age_min/age_max set from schema age-bound rule]"
     },
     "age_max": {
-      "value": "not_reported",
+      "value": "65",
       "by_subgroup": null,
       "unit": "years",
       "normalized_value": null,
       "normalized_unit": null,
-      "extraction_type": "directly_stated",
+      "extraction_type": "derived",
       "confidence": "medium",
       "evidence_quote": "Samples from adults (19 to 65 years of age) account for 6,615 samples, but all age categories are covered",
       "section": "Method details — Meta-analyzed publicly available metagenomic datasets",
-      "notes": "Multiple age categories reported (newborn, child, school-age, adult, senior) without one unifying study-level age range; see age_min notes."
+      "notes": "Multiple age categories reported (newborn, child, school-age, adult, senior) without one unifying study-level age range; see age_min notes. [age_min/age_max set from schema age-bound rule]"
     },
     "age_years": {
       "value": "not_reported",
@@ -944,7 +944,9 @@
       "dna_extraction_kit": "PowerSoil",
       "sequencing_platform": "IlluminaHiSeq",
       "uncurated_metadata": "9,428 metagenomes from 46 datasets plus Madagascar and Ethiopian cohorts; 31 countries sampled; USA (1,431), China (1,342), Israel (956), Sweden (600), Denmark (580) most represented; 5 body sites: gut (7,783), oral cavity (783), skin (503, incl. 93 anterior nares), vagina (88), maternal milk (9); Age categories: adults 19-65y (6,615), newborns <1y (1,098), children 1-12y (465), school-age 12-19y (216), adults/seniors >19,>65y merged (876); Madagascar cohort: 112 healthy volunteers (54 females, 58 males), MAHERY study, non-Westernized rural rainforest population in Madagascar; Ethiopian cohort: 5 female individuals from Gimbichu, Oromia Region, non-Westernized; Non-Westernized total: 592 samples (Madagascar + Fiji, Hadza, Mongolian, Peruvian); Westernized: 8,836 samples",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "21",
+      "age_max": "21"
     },
     {
       "study_name": "CM_madagascar",
@@ -971,7 +973,9 @@
       "dna_extraction_kit": "PowerSoil",
       "sequencing_platform": "IlluminaHiSeq",
       "uncurated_metadata": "9,428 metagenomes from 46 datasets plus Madagascar and Ethiopian cohorts; 31 countries sampled; USA (1,431), China (1,342), Israel (956), Sweden (600), Denmark (580) most represented; 5 body sites: gut (7,783), oral cavity (783), skin (503, incl. 93 anterior nares), vagina (88), maternal milk (9); Age categories: adults 19-65y (6,615), newborns <1y (1,098), children 1-12y (465), school-age 12-19y (216), adults/seniors >19,>65y merged (876); Madagascar cohort: 112 healthy volunteers (54 females, 58 males), MAHERY study, non-Westernized rural rainforest population in Madagascar; Ethiopian cohort: 5 female individuals from Gimbichu, Oromia Region, non-Westernized; Non-Westernized total: 592 samples (Madagascar + Fiji, Hadza, Mongolian, Peruvian); Westernized: 8,836 samples",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "24",
+      "age_max": "24"
     },
     {
       "study_name": "CM_madagascar",
@@ -998,7 +1002,9 @@
       "dna_extraction_kit": "PowerSoil",
       "sequencing_platform": "IlluminaHiSeq",
       "uncurated_metadata": "9,428 metagenomes from 46 datasets plus Madagascar and Ethiopian cohorts; 31 countries sampled; USA (1,431), China (1,342), Israel (956), Sweden (600), Denmark (580) most represented; 5 body sites: gut (7,783), oral cavity (783), skin (503, incl. 93 anterior nares), vagina (88), maternal milk (9); Age categories: adults 19-65y (6,615), newborns <1y (1,098), children 1-12y (465), school-age 12-19y (216), adults/seniors >19,>65y merged (876); Madagascar cohort: 112 healthy volunteers (54 females, 58 males), MAHERY study, non-Westernized rural rainforest population in Madagascar; Ethiopian cohort: 5 female individuals from Gimbichu, Oromia Region, non-Westernized; Non-Westernized total: 592 samples (Madagascar + Fiji, Hadza, Mongolian, Peruvian); Westernized: 8,836 samples",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "38",
+      "age_max": "38"
     },
     {
       "study_name": "CM_madagascar",
@@ -1025,7 +1031,9 @@
       "dna_extraction_kit": "PowerSoil",
       "sequencing_platform": "IlluminaHiSeq",
       "uncurated_metadata": "9,428 metagenomes from 46 datasets plus Madagascar and Ethiopian cohorts; 31 countries sampled; USA (1,431), China (1,342), Israel (956), Sweden (600), Denmark (580) most represented; 5 body sites: gut (7,783), oral cavity (783), skin (503, incl. 93 anterior nares), vagina (88), maternal milk (9); Age categories: adults 19-65y (6,615), newborns <1y (1,098), children 1-12y (465), school-age 12-19y (216), adults/seniors >19,>65y merged (876); Madagascar cohort: 112 healthy volunteers (54 females, 58 males), MAHERY study, non-Westernized rural rainforest population in Madagascar; Ethiopian cohort: 5 female individuals from Gimbichu, Oromia Region, non-Westernized; Non-Westernized total: 592 samples (Madagascar + Fiji, Hadza, Mongolian, Peruvian); Westernized: 8,836 samples",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "34",
+      "age_max": "34"
     },
     {
       "study_name": "CM_madagascar",
@@ -1052,7 +1060,9 @@
       "dna_extraction_kit": "PowerSoil",
       "sequencing_platform": "IlluminaHiSeq",
       "uncurated_metadata": "9,428 metagenomes from 46 datasets plus Madagascar and Ethiopian cohorts; 31 countries sampled; USA (1,431), China (1,342), Israel (956), Sweden (600), Denmark (580) most represented; 5 body sites: gut (7,783), oral cavity (783), skin (503, incl. 93 anterior nares), vagina (88), maternal milk (9); Age categories: adults 19-65y (6,615), newborns <1y (1,098), children 1-12y (465), school-age 12-19y (216), adults/seniors >19,>65y merged (876); Madagascar cohort: 112 healthy volunteers (54 females, 58 males), MAHERY study, non-Westernized rural rainforest population in Madagascar; Ethiopian cohort: 5 female individuals from Gimbichu, Oromia Region, non-Westernized; Non-Westernized total: 592 samples (Madagascar + Fiji, Hadza, Mongolian, Peruvian); Westernized: 8,836 samples",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "28",
+      "age_max": "28"
     },
     {
       "study_name": "CM_madagascar",
@@ -1070,7 +1080,9 @@
       "dna_extraction_kit": "PowerSoil",
       "sequencing_platform": "IlluminaHiSeq",
       "uncurated_metadata": "9,428 metagenomes from 46 datasets plus Madagascar and Ethiopian cohorts; 31 countries sampled; USA (1,431), China (1,342), Israel (956), Sweden (600), Denmark (580) most represented; 5 body sites: gut (7,783), oral cavity (783), skin (503, incl. 93 anterior nares), vagina (88), maternal milk (9); Age categories: adults 19-65y (6,615), newborns <1y (1,098), children 1-12y (465), school-age 12-19y (216), adults/seniors >19,>65y merged (876); Madagascar cohort: 112 healthy volunteers (54 females, 58 males), MAHERY study, non-Westernized rural rainforest population in Madagascar; Ethiopian cohort: 5 female individuals from Gimbichu, Oromia Region, non-Westernized; Non-Westernized total: 592 samples (Madagascar + Fiji, Hadza, Mongolian, Peruvian); Westernized: 8,836 samples",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "30",
+      "age_max": "30"
     },
     {
       "study_name": "CM_madagascar",
@@ -1097,7 +1109,9 @@
       "dna_extraction_kit": "PowerSoil",
       "sequencing_platform": "IlluminaHiSeq",
       "uncurated_metadata": "9,428 metagenomes from 46 datasets plus Madagascar and Ethiopian cohorts; 31 countries sampled; USA (1,431), China (1,342), Israel (956), Sweden (600), Denmark (580) most represented; 5 body sites: gut (7,783), oral cavity (783), skin (503, incl. 93 anterior nares), vagina (88), maternal milk (9); Age categories: adults 19-65y (6,615), newborns <1y (1,098), children 1-12y (465), school-age 12-19y (216), adults/seniors >19,>65y merged (876); Madagascar cohort: 112 healthy volunteers (54 females, 58 males), MAHERY study, non-Westernized rural rainforest population in Madagascar; Ethiopian cohort: 5 female individuals from Gimbichu, Oromia Region, non-Westernized; Non-Westernized total: 592 samples (Madagascar + Fiji, Hadza, Mongolian, Peruvian); Westernized: 8,836 samples",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "31",
+      "age_max": "31"
     },
     {
       "study_name": "CM_madagascar",
@@ -1124,7 +1138,9 @@
       "dna_extraction_kit": "PowerSoil",
       "sequencing_platform": "IlluminaHiSeq",
       "uncurated_metadata": "9,428 metagenomes from 46 datasets plus Madagascar and Ethiopian cohorts; 31 countries sampled; USA (1,431), China (1,342), Israel (956), Sweden (600), Denmark (580) most represented; 5 body sites: gut (7,783), oral cavity (783), skin (503, incl. 93 anterior nares), vagina (88), maternal milk (9); Age categories: adults 19-65y (6,615), newborns <1y (1,098), children 1-12y (465), school-age 12-19y (216), adults/seniors >19,>65y merged (876); Madagascar cohort: 112 healthy volunteers (54 females, 58 males), MAHERY study, non-Westernized rural rainforest population in Madagascar; Ethiopian cohort: 5 female individuals from Gimbichu, Oromia Region, non-Westernized; Non-Westernized total: 592 samples (Madagascar + Fiji, Hadza, Mongolian, Peruvian); Westernized: 8,836 samples",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "48",
+      "age_max": "48"
     },
     {
       "study_name": "CM_madagascar",
@@ -1151,7 +1167,9 @@
       "dna_extraction_kit": "PowerSoil",
       "sequencing_platform": "IlluminaHiSeq",
       "uncurated_metadata": "9,428 metagenomes from 46 datasets plus Madagascar and Ethiopian cohorts; 31 countries sampled; USA (1,431), China (1,342), Israel (956), Sweden (600), Denmark (580) most represented; 5 body sites: gut (7,783), oral cavity (783), skin (503, incl. 93 anterior nares), vagina (88), maternal milk (9); Age categories: adults 19-65y (6,615), newborns <1y (1,098), children 1-12y (465), school-age 12-19y (216), adults/seniors >19,>65y merged (876); Madagascar cohort: 112 healthy volunteers (54 females, 58 males), MAHERY study, non-Westernized rural rainforest population in Madagascar; Ethiopian cohort: 5 female individuals from Gimbichu, Oromia Region, non-Westernized; Non-Westernized total: 592 samples (Madagascar + Fiji, Hadza, Mongolian, Peruvian); Westernized: 8,836 samples",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "46",
+      "age_max": "46"
     },
     {
       "study_name": "CM_madagascar",
@@ -1178,7 +1196,9 @@
       "dna_extraction_kit": "PowerSoil",
       "sequencing_platform": "IlluminaHiSeq",
       "uncurated_metadata": "9,428 metagenomes from 46 datasets plus Madagascar and Ethiopian cohorts; 31 countries sampled; USA (1,431), China (1,342), Israel (956), Sweden (600), Denmark (580) most represented; 5 body sites: gut (7,783), oral cavity (783), skin (503, incl. 93 anterior nares), vagina (88), maternal milk (9); Age categories: adults 19-65y (6,615), newborns <1y (1,098), children 1-12y (465), school-age 12-19y (216), adults/seniors >19,>65y merged (876); Madagascar cohort: 112 healthy volunteers (54 females, 58 males), MAHERY study, non-Westernized rural rainforest population in Madagascar; Ethiopian cohort: 5 female individuals from Gimbichu, Oromia Region, non-Westernized; Non-Westernized total: 592 samples (Madagascar + Fiji, Hadza, Mongolian, Peruvian); Westernized: 8,836 samples",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "52",
+      "age_max": "52"
     },
     {
       "study_name": "CM_madagascar",
@@ -1205,7 +1225,9 @@
       "dna_extraction_kit": "PowerSoil",
       "sequencing_platform": "IlluminaHiSeq",
       "uncurated_metadata": "9,428 metagenomes from 46 datasets plus Madagascar and Ethiopian cohorts; 31 countries sampled; USA (1,431), China (1,342), Israel (956), Sweden (600), Denmark (580) most represented; 5 body sites: gut (7,783), oral cavity (783), skin (503, incl. 93 anterior nares), vagina (88), maternal milk (9); Age categories: adults 19-65y (6,615), newborns <1y (1,098), children 1-12y (465), school-age 12-19y (216), adults/seniors >19,>65y merged (876); Madagascar cohort: 112 healthy volunteers (54 females, 58 males), MAHERY study, non-Westernized rural rainforest population in Madagascar; Ethiopian cohort: 5 female individuals from Gimbichu, Oromia Region, non-Westernized; Non-Westernized total: 592 samples (Madagascar + Fiji, Hadza, Mongolian, Peruvian); Westernized: 8,836 samples",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "50",
+      "age_max": "50"
     },
     {
       "study_name": "CM_madagascar",
@@ -1232,7 +1254,9 @@
       "dna_extraction_kit": "PowerSoil",
       "sequencing_platform": "IlluminaHiSeq",
       "uncurated_metadata": "9,428 metagenomes from 46 datasets plus Madagascar and Ethiopian cohorts; 31 countries sampled; USA (1,431), China (1,342), Israel (956), Sweden (600), Denmark (580) most represented; 5 body sites: gut (7,783), oral cavity (783), skin (503, incl. 93 anterior nares), vagina (88), maternal milk (9); Age categories: adults 19-65y (6,615), newborns <1y (1,098), children 1-12y (465), school-age 12-19y (216), adults/seniors >19,>65y merged (876); Madagascar cohort: 112 healthy volunteers (54 females, 58 males), MAHERY study, non-Westernized rural rainforest population in Madagascar; Ethiopian cohort: 5 female individuals from Gimbichu, Oromia Region, non-Westernized; Non-Westernized total: 592 samples (Madagascar + Fiji, Hadza, Mongolian, Peruvian); Westernized: 8,836 samples",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "23",
+      "age_max": "23"
     },
     {
       "study_name": "CM_madagascar",
@@ -1259,7 +1283,9 @@
       "dna_extraction_kit": "PowerSoil",
       "sequencing_platform": "IlluminaHiSeq",
       "uncurated_metadata": "9,428 metagenomes from 46 datasets plus Madagascar and Ethiopian cohorts; 31 countries sampled; USA (1,431), China (1,342), Israel (956), Sweden (600), Denmark (580) most represented; 5 body sites: gut (7,783), oral cavity (783), skin (503, incl. 93 anterior nares), vagina (88), maternal milk (9); Age categories: adults 19-65y (6,615), newborns <1y (1,098), children 1-12y (465), school-age 12-19y (216), adults/seniors >19,>65y merged (876); Madagascar cohort: 112 healthy volunteers (54 females, 58 males), MAHERY study, non-Westernized rural rainforest population in Madagascar; Ethiopian cohort: 5 female individuals from Gimbichu, Oromia Region, non-Westernized; Non-Westernized total: 592 samples (Madagascar + Fiji, Hadza, Mongolian, Peruvian); Westernized: 8,836 samples",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "22",
+      "age_max": "22"
     },
     {
       "study_name": "CM_madagascar",
@@ -1286,7 +1312,9 @@
       "dna_extraction_kit": "PowerSoil",
       "sequencing_platform": "IlluminaHiSeq",
       "uncurated_metadata": "9,428 metagenomes from 46 datasets plus Madagascar and Ethiopian cohorts; 31 countries sampled; USA (1,431), China (1,342), Israel (956), Sweden (600), Denmark (580) most represented; 5 body sites: gut (7,783), oral cavity (783), skin (503, incl. 93 anterior nares), vagina (88), maternal milk (9); Age categories: adults 19-65y (6,615), newborns <1y (1,098), children 1-12y (465), school-age 12-19y (216), adults/seniors >19,>65y merged (876); Madagascar cohort: 112 healthy volunteers (54 females, 58 males), MAHERY study, non-Westernized rural rainforest population in Madagascar; Ethiopian cohort: 5 female individuals from Gimbichu, Oromia Region, non-Westernized; Non-Westernized total: 592 samples (Madagascar + Fiji, Hadza, Mongolian, Peruvian); Westernized: 8,836 samples",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "52",
+      "age_max": "52"
     },
     {
       "study_name": "CM_madagascar",
@@ -1313,7 +1341,9 @@
       "dna_extraction_kit": "PowerSoil",
       "sequencing_platform": "IlluminaHiSeq",
       "uncurated_metadata": "9,428 metagenomes from 46 datasets plus Madagascar and Ethiopian cohorts; 31 countries sampled; USA (1,431), China (1,342), Israel (956), Sweden (600), Denmark (580) most represented; 5 body sites: gut (7,783), oral cavity (783), skin (503, incl. 93 anterior nares), vagina (88), maternal milk (9); Age categories: adults 19-65y (6,615), newborns <1y (1,098), children 1-12y (465), school-age 12-19y (216), adults/seniors >19,>65y merged (876); Madagascar cohort: 112 healthy volunteers (54 females, 58 males), MAHERY study, non-Westernized rural rainforest population in Madagascar; Ethiopian cohort: 5 female individuals from Gimbichu, Oromia Region, non-Westernized; Non-Westernized total: 592 samples (Madagascar + Fiji, Hadza, Mongolian, Peruvian); Westernized: 8,836 samples",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "52",
+      "age_max": "52"
     },
     {
       "study_name": "CM_madagascar",
@@ -1340,7 +1370,9 @@
       "dna_extraction_kit": "PowerSoil",
       "sequencing_platform": "IlluminaHiSeq",
       "uncurated_metadata": "9,428 metagenomes from 46 datasets plus Madagascar and Ethiopian cohorts; 31 countries sampled; USA (1,431), China (1,342), Israel (956), Sweden (600), Denmark (580) most represented; 5 body sites: gut (7,783), oral cavity (783), skin (503, incl. 93 anterior nares), vagina (88), maternal milk (9); Age categories: adults 19-65y (6,615), newborns <1y (1,098), children 1-12y (465), school-age 12-19y (216), adults/seniors >19,>65y merged (876); Madagascar cohort: 112 healthy volunteers (54 females, 58 males), MAHERY study, non-Westernized rural rainforest population in Madagascar; Ethiopian cohort: 5 female individuals from Gimbichu, Oromia Region, non-Westernized; Non-Westernized total: 592 samples (Madagascar + Fiji, Hadza, Mongolian, Peruvian); Westernized: 8,836 samples",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "21",
+      "age_max": "21"
     },
     {
       "study_name": "CM_madagascar",
@@ -1367,7 +1399,9 @@
       "dna_extraction_kit": "PowerSoil",
       "sequencing_platform": "IlluminaHiSeq",
       "uncurated_metadata": "9,428 metagenomes from 46 datasets plus Madagascar and Ethiopian cohorts; 31 countries sampled; USA (1,431), China (1,342), Israel (956), Sweden (600), Denmark (580) most represented; 5 body sites: gut (7,783), oral cavity (783), skin (503, incl. 93 anterior nares), vagina (88), maternal milk (9); Age categories: adults 19-65y (6,615), newborns <1y (1,098), children 1-12y (465), school-age 12-19y (216), adults/seniors >19,>65y merged (876); Madagascar cohort: 112 healthy volunteers (54 females, 58 males), MAHERY study, non-Westernized rural rainforest population in Madagascar; Ethiopian cohort: 5 female individuals from Gimbichu, Oromia Region, non-Westernized; Non-Westernized total: 592 samples (Madagascar + Fiji, Hadza, Mongolian, Peruvian); Westernized: 8,836 samples",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "36",
+      "age_max": "36"
     },
     {
       "study_name": "CM_madagascar",
@@ -1394,7 +1428,9 @@
       "dna_extraction_kit": "PowerSoil",
       "sequencing_platform": "IlluminaHiSeq",
       "uncurated_metadata": "9,428 metagenomes from 46 datasets plus Madagascar and Ethiopian cohorts; 31 countries sampled; USA (1,431), China (1,342), Israel (956), Sweden (600), Denmark (580) most represented; 5 body sites: gut (7,783), oral cavity (783), skin (503, incl. 93 anterior nares), vagina (88), maternal milk (9); Age categories: adults 19-65y (6,615), newborns <1y (1,098), children 1-12y (465), school-age 12-19y (216), adults/seniors >19,>65y merged (876); Madagascar cohort: 112 healthy volunteers (54 females, 58 males), MAHERY study, non-Westernized rural rainforest population in Madagascar; Ethiopian cohort: 5 female individuals from Gimbichu, Oromia Region, non-Westernized; Non-Westernized total: 592 samples (Madagascar + Fiji, Hadza, Mongolian, Peruvian); Westernized: 8,836 samples",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "21",
+      "age_max": "21"
     },
     {
       "study_name": "CM_madagascar",
@@ -1421,7 +1457,9 @@
       "dna_extraction_kit": "PowerSoil",
       "sequencing_platform": "IlluminaHiSeq",
       "uncurated_metadata": "9,428 metagenomes from 46 datasets plus Madagascar and Ethiopian cohorts; 31 countries sampled; USA (1,431), China (1,342), Israel (956), Sweden (600), Denmark (580) most represented; 5 body sites: gut (7,783), oral cavity (783), skin (503, incl. 93 anterior nares), vagina (88), maternal milk (9); Age categories: adults 19-65y (6,615), newborns <1y (1,098), children 1-12y (465), school-age 12-19y (216), adults/seniors >19,>65y merged (876); Madagascar cohort: 112 healthy volunteers (54 females, 58 males), MAHERY study, non-Westernized rural rainforest population in Madagascar; Ethiopian cohort: 5 female individuals from Gimbichu, Oromia Region, non-Westernized; Non-Westernized total: 592 samples (Madagascar + Fiji, Hadza, Mongolian, Peruvian); Westernized: 8,836 samples",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "63",
+      "age_max": "63"
     },
     {
       "study_name": "CM_madagascar",
@@ -1448,7 +1486,9 @@
       "dna_extraction_kit": "PowerSoil",
       "sequencing_platform": "IlluminaHiSeq",
       "uncurated_metadata": "9,428 metagenomes from 46 datasets plus Madagascar and Ethiopian cohorts; 31 countries sampled; USA (1,431), China (1,342), Israel (956), Sweden (600), Denmark (580) most represented; 5 body sites: gut (7,783), oral cavity (783), skin (503, incl. 93 anterior nares), vagina (88), maternal milk (9); Age categories: adults 19-65y (6,615), newborns <1y (1,098), children 1-12y (465), school-age 12-19y (216), adults/seniors >19,>65y merged (876); Madagascar cohort: 112 healthy volunteers (54 females, 58 males), MAHERY study, non-Westernized rural rainforest population in Madagascar; Ethiopian cohort: 5 female individuals from Gimbichu, Oromia Region, non-Westernized; Non-Westernized total: 592 samples (Madagascar + Fiji, Hadza, Mongolian, Peruvian); Westernized: 8,836 samples",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "16",
+      "age_max": "16"
     },
     {
       "study_name": "CM_madagascar",
@@ -1475,7 +1515,9 @@
       "dna_extraction_kit": "PowerSoil",
       "sequencing_platform": "IlluminaHiSeq",
       "uncurated_metadata": "9,428 metagenomes from 46 datasets plus Madagascar and Ethiopian cohorts; 31 countries sampled; USA (1,431), China (1,342), Israel (956), Sweden (600), Denmark (580) most represented; 5 body sites: gut (7,783), oral cavity (783), skin (503, incl. 93 anterior nares), vagina (88), maternal milk (9); Age categories: adults 19-65y (6,615), newborns <1y (1,098), children 1-12y (465), school-age 12-19y (216), adults/seniors >19,>65y merged (876); Madagascar cohort: 112 healthy volunteers (54 females, 58 males), MAHERY study, non-Westernized rural rainforest population in Madagascar; Ethiopian cohort: 5 female individuals from Gimbichu, Oromia Region, non-Westernized; Non-Westernized total: 592 samples (Madagascar + Fiji, Hadza, Mongolian, Peruvian); Westernized: 8,836 samples",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "45",
+      "age_max": "45"
     },
     {
       "study_name": "CM_madagascar",
@@ -1502,7 +1544,9 @@
       "dna_extraction_kit": "PowerSoil",
       "sequencing_platform": "IlluminaHiSeq",
       "uncurated_metadata": "9,428 metagenomes from 46 datasets plus Madagascar and Ethiopian cohorts; 31 countries sampled; USA (1,431), China (1,342), Israel (956), Sweden (600), Denmark (580) most represented; 5 body sites: gut (7,783), oral cavity (783), skin (503, incl. 93 anterior nares), vagina (88), maternal milk (9); Age categories: adults 19-65y (6,615), newborns <1y (1,098), children 1-12y (465), school-age 12-19y (216), adults/seniors >19,>65y merged (876); Madagascar cohort: 112 healthy volunteers (54 females, 58 males), MAHERY study, non-Westernized rural rainforest population in Madagascar; Ethiopian cohort: 5 female individuals from Gimbichu, Oromia Region, non-Westernized; Non-Westernized total: 592 samples (Madagascar + Fiji, Hadza, Mongolian, Peruvian); Westernized: 8,836 samples",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "23",
+      "age_max": "23"
     },
     {
       "study_name": "CM_madagascar",
@@ -1529,7 +1573,9 @@
       "dna_extraction_kit": "PowerSoil",
       "sequencing_platform": "IlluminaHiSeq",
       "uncurated_metadata": "9,428 metagenomes from 46 datasets plus Madagascar and Ethiopian cohorts; 31 countries sampled; USA (1,431), China (1,342), Israel (956), Sweden (600), Denmark (580) most represented; 5 body sites: gut (7,783), oral cavity (783), skin (503, incl. 93 anterior nares), vagina (88), maternal milk (9); Age categories: adults 19-65y (6,615), newborns <1y (1,098), children 1-12y (465), school-age 12-19y (216), adults/seniors >19,>65y merged (876); Madagascar cohort: 112 healthy volunteers (54 females, 58 males), MAHERY study, non-Westernized rural rainforest population in Madagascar; Ethiopian cohort: 5 female individuals from Gimbichu, Oromia Region, non-Westernized; Non-Westernized total: 592 samples (Madagascar + Fiji, Hadza, Mongolian, Peruvian); Westernized: 8,836 samples",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "27",
+      "age_max": "27"
     },
     {
       "study_name": "CM_madagascar",
@@ -1556,7 +1602,9 @@
       "dna_extraction_kit": "PowerSoil",
       "sequencing_platform": "IlluminaHiSeq",
       "uncurated_metadata": "9,428 metagenomes from 46 datasets plus Madagascar and Ethiopian cohorts; 31 countries sampled; USA (1,431), China (1,342), Israel (956), Sweden (600), Denmark (580) most represented; 5 body sites: gut (7,783), oral cavity (783), skin (503, incl. 93 anterior nares), vagina (88), maternal milk (9); Age categories: adults 19-65y (6,615), newborns <1y (1,098), children 1-12y (465), school-age 12-19y (216), adults/seniors >19,>65y merged (876); Madagascar cohort: 112 healthy volunteers (54 females, 58 males), MAHERY study, non-Westernized rural rainforest population in Madagascar; Ethiopian cohort: 5 female individuals from Gimbichu, Oromia Region, non-Westernized; Non-Westernized total: 592 samples (Madagascar + Fiji, Hadza, Mongolian, Peruvian); Westernized: 8,836 samples",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "40",
+      "age_max": "40"
     },
     {
       "study_name": "CM_madagascar",
@@ -1583,7 +1631,9 @@
       "dna_extraction_kit": "PowerSoil",
       "sequencing_platform": "IlluminaHiSeq",
       "uncurated_metadata": "9,428 metagenomes from 46 datasets plus Madagascar and Ethiopian cohorts; 31 countries sampled; USA (1,431), China (1,342), Israel (956), Sweden (600), Denmark (580) most represented; 5 body sites: gut (7,783), oral cavity (783), skin (503, incl. 93 anterior nares), vagina (88), maternal milk (9); Age categories: adults 19-65y (6,615), newborns <1y (1,098), children 1-12y (465), school-age 12-19y (216), adults/seniors >19,>65y merged (876); Madagascar cohort: 112 healthy volunteers (54 females, 58 males), MAHERY study, non-Westernized rural rainforest population in Madagascar; Ethiopian cohort: 5 female individuals from Gimbichu, Oromia Region, non-Westernized; Non-Westernized total: 592 samples (Madagascar + Fiji, Hadza, Mongolian, Peruvian); Westernized: 8,836 samples",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "34",
+      "age_max": "34"
     },
     {
       "study_name": "CM_madagascar",
@@ -1610,7 +1660,9 @@
       "dna_extraction_kit": "PowerSoil",
       "sequencing_platform": "IlluminaHiSeq",
       "uncurated_metadata": "9,428 metagenomes from 46 datasets plus Madagascar and Ethiopian cohorts; 31 countries sampled; USA (1,431), China (1,342), Israel (956), Sweden (600), Denmark (580) most represented; 5 body sites: gut (7,783), oral cavity (783), skin (503, incl. 93 anterior nares), vagina (88), maternal milk (9); Age categories: adults 19-65y (6,615), newborns <1y (1,098), children 1-12y (465), school-age 12-19y (216), adults/seniors >19,>65y merged (876); Madagascar cohort: 112 healthy volunteers (54 females, 58 males), MAHERY study, non-Westernized rural rainforest population in Madagascar; Ethiopian cohort: 5 female individuals from Gimbichu, Oromia Region, non-Westernized; Non-Westernized total: 592 samples (Madagascar + Fiji, Hadza, Mongolian, Peruvian); Westernized: 8,836 samples",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "22",
+      "age_max": "22"
     },
     {
       "study_name": "CM_madagascar",
@@ -1637,7 +1689,9 @@
       "dna_extraction_kit": "PowerSoil",
       "sequencing_platform": "IlluminaHiSeq",
       "uncurated_metadata": "9,428 metagenomes from 46 datasets plus Madagascar and Ethiopian cohorts; 31 countries sampled; USA (1,431), China (1,342), Israel (956), Sweden (600), Denmark (580) most represented; 5 body sites: gut (7,783), oral cavity (783), skin (503, incl. 93 anterior nares), vagina (88), maternal milk (9); Age categories: adults 19-65y (6,615), newborns <1y (1,098), children 1-12y (465), school-age 12-19y (216), adults/seniors >19,>65y merged (876); Madagascar cohort: 112 healthy volunteers (54 females, 58 males), MAHERY study, non-Westernized rural rainforest population in Madagascar; Ethiopian cohort: 5 female individuals from Gimbichu, Oromia Region, non-Westernized; Non-Westernized total: 592 samples (Madagascar + Fiji, Hadza, Mongolian, Peruvian); Westernized: 8,836 samples",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "23",
+      "age_max": "23"
     },
     {
       "study_name": "CM_madagascar",
@@ -1664,7 +1718,9 @@
       "dna_extraction_kit": "PowerSoil",
       "sequencing_platform": "IlluminaHiSeq",
       "uncurated_metadata": "9,428 metagenomes from 46 datasets plus Madagascar and Ethiopian cohorts; 31 countries sampled; USA (1,431), China (1,342), Israel (956), Sweden (600), Denmark (580) most represented; 5 body sites: gut (7,783), oral cavity (783), skin (503, incl. 93 anterior nares), vagina (88), maternal milk (9); Age categories: adults 19-65y (6,615), newborns <1y (1,098), children 1-12y (465), school-age 12-19y (216), adults/seniors >19,>65y merged (876); Madagascar cohort: 112 healthy volunteers (54 females, 58 males), MAHERY study, non-Westernized rural rainforest population in Madagascar; Ethiopian cohort: 5 female individuals from Gimbichu, Oromia Region, non-Westernized; Non-Westernized total: 592 samples (Madagascar + Fiji, Hadza, Mongolian, Peruvian); Westernized: 8,836 samples",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "25",
+      "age_max": "25"
     },
     {
       "study_name": "CM_madagascar",
@@ -1691,7 +1747,9 @@
       "dna_extraction_kit": "PowerSoil",
       "sequencing_platform": "IlluminaHiSeq",
       "uncurated_metadata": "9,428 metagenomes from 46 datasets plus Madagascar and Ethiopian cohorts; 31 countries sampled; USA (1,431), China (1,342), Israel (956), Sweden (600), Denmark (580) most represented; 5 body sites: gut (7,783), oral cavity (783), skin (503, incl. 93 anterior nares), vagina (88), maternal milk (9); Age categories: adults 19-65y (6,615), newborns <1y (1,098), children 1-12y (465), school-age 12-19y (216), adults/seniors >19,>65y merged (876); Madagascar cohort: 112 healthy volunteers (54 females, 58 males), MAHERY study, non-Westernized rural rainforest population in Madagascar; Ethiopian cohort: 5 female individuals from Gimbichu, Oromia Region, non-Westernized; Non-Westernized total: 592 samples (Madagascar + Fiji, Hadza, Mongolian, Peruvian); Westernized: 8,836 samples",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "21",
+      "age_max": "21"
     },
     {
       "study_name": "CM_madagascar",
@@ -1718,7 +1776,9 @@
       "dna_extraction_kit": "PowerSoil",
       "sequencing_platform": "IlluminaHiSeq",
       "uncurated_metadata": "9,428 metagenomes from 46 datasets plus Madagascar and Ethiopian cohorts; 31 countries sampled; USA (1,431), China (1,342), Israel (956), Sweden (600), Denmark (580) most represented; 5 body sites: gut (7,783), oral cavity (783), skin (503, incl. 93 anterior nares), vagina (88), maternal milk (9); Age categories: adults 19-65y (6,615), newborns <1y (1,098), children 1-12y (465), school-age 12-19y (216), adults/seniors >19,>65y merged (876); Madagascar cohort: 112 healthy volunteers (54 females, 58 males), MAHERY study, non-Westernized rural rainforest population in Madagascar; Ethiopian cohort: 5 female individuals from Gimbichu, Oromia Region, non-Westernized; Non-Westernized total: 592 samples (Madagascar + Fiji, Hadza, Mongolian, Peruvian); Westernized: 8,836 samples",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "50",
+      "age_max": "50"
     },
     {
       "study_name": "CM_madagascar",
@@ -1745,7 +1805,9 @@
       "dna_extraction_kit": "PowerSoil",
       "sequencing_platform": "IlluminaHiSeq",
       "uncurated_metadata": "9,428 metagenomes from 46 datasets plus Madagascar and Ethiopian cohorts; 31 countries sampled; USA (1,431), China (1,342), Israel (956), Sweden (600), Denmark (580) most represented; 5 body sites: gut (7,783), oral cavity (783), skin (503, incl. 93 anterior nares), vagina (88), maternal milk (9); Age categories: adults 19-65y (6,615), newborns <1y (1,098), children 1-12y (465), school-age 12-19y (216), adults/seniors >19,>65y merged (876); Madagascar cohort: 112 healthy volunteers (54 females, 58 males), MAHERY study, non-Westernized rural rainforest population in Madagascar; Ethiopian cohort: 5 female individuals from Gimbichu, Oromia Region, non-Westernized; Non-Westernized total: 592 samples (Madagascar + Fiji, Hadza, Mongolian, Peruvian); Westernized: 8,836 samples",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "51",
+      "age_max": "51"
     },
     {
       "study_name": "CM_madagascar",
@@ -1772,7 +1834,9 @@
       "dna_extraction_kit": "PowerSoil",
       "sequencing_platform": "IlluminaHiSeq",
       "uncurated_metadata": "9,428 metagenomes from 46 datasets plus Madagascar and Ethiopian cohorts; 31 countries sampled; USA (1,431), China (1,342), Israel (956), Sweden (600), Denmark (580) most represented; 5 body sites: gut (7,783), oral cavity (783), skin (503, incl. 93 anterior nares), vagina (88), maternal milk (9); Age categories: adults 19-65y (6,615), newborns <1y (1,098), children 1-12y (465), school-age 12-19y (216), adults/seniors >19,>65y merged (876); Madagascar cohort: 112 healthy volunteers (54 females, 58 males), MAHERY study, non-Westernized rural rainforest population in Madagascar; Ethiopian cohort: 5 female individuals from Gimbichu, Oromia Region, non-Westernized; Non-Westernized total: 592 samples (Madagascar + Fiji, Hadza, Mongolian, Peruvian); Westernized: 8,836 samples",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "32",
+      "age_max": "32"
     },
     {
       "study_name": "CM_madagascar",
@@ -1799,7 +1863,9 @@
       "dna_extraction_kit": "PowerSoil",
       "sequencing_platform": "IlluminaHiSeq",
       "uncurated_metadata": "9,428 metagenomes from 46 datasets plus Madagascar and Ethiopian cohorts; 31 countries sampled; USA (1,431), China (1,342), Israel (956), Sweden (600), Denmark (580) most represented; 5 body sites: gut (7,783), oral cavity (783), skin (503, incl. 93 anterior nares), vagina (88), maternal milk (9); Age categories: adults 19-65y (6,615), newborns <1y (1,098), children 1-12y (465), school-age 12-19y (216), adults/seniors >19,>65y merged (876); Madagascar cohort: 112 healthy volunteers (54 females, 58 males), MAHERY study, non-Westernized rural rainforest population in Madagascar; Ethiopian cohort: 5 female individuals from Gimbichu, Oromia Region, non-Westernized; Non-Westernized total: 592 samples (Madagascar + Fiji, Hadza, Mongolian, Peruvian); Westernized: 8,836 samples",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "30",
+      "age_max": "30"
     },
     {
       "study_name": "CM_madagascar",
@@ -1826,7 +1892,9 @@
       "dna_extraction_kit": "PowerSoil",
       "sequencing_platform": "IlluminaHiSeq",
       "uncurated_metadata": "9,428 metagenomes from 46 datasets plus Madagascar and Ethiopian cohorts; 31 countries sampled; USA (1,431), China (1,342), Israel (956), Sweden (600), Denmark (580) most represented; 5 body sites: gut (7,783), oral cavity (783), skin (503, incl. 93 anterior nares), vagina (88), maternal milk (9); Age categories: adults 19-65y (6,615), newborns <1y (1,098), children 1-12y (465), school-age 12-19y (216), adults/seniors >19,>65y merged (876); Madagascar cohort: 112 healthy volunteers (54 females, 58 males), MAHERY study, non-Westernized rural rainforest population in Madagascar; Ethiopian cohort: 5 female individuals from Gimbichu, Oromia Region, non-Westernized; Non-Westernized total: 592 samples (Madagascar + Fiji, Hadza, Mongolian, Peruvian); Westernized: 8,836 samples",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "33",
+      "age_max": "33"
     },
     {
       "study_name": "CM_madagascar",
@@ -1853,7 +1921,9 @@
       "dna_extraction_kit": "PowerSoil",
       "sequencing_platform": "IlluminaHiSeq",
       "uncurated_metadata": "9,428 metagenomes from 46 datasets plus Madagascar and Ethiopian cohorts; 31 countries sampled; USA (1,431), China (1,342), Israel (956), Sweden (600), Denmark (580) most represented; 5 body sites: gut (7,783), oral cavity (783), skin (503, incl. 93 anterior nares), vagina (88), maternal milk (9); Age categories: adults 19-65y (6,615), newborns <1y (1,098), children 1-12y (465), school-age 12-19y (216), adults/seniors >19,>65y merged (876); Madagascar cohort: 112 healthy volunteers (54 females, 58 males), MAHERY study, non-Westernized rural rainforest population in Madagascar; Ethiopian cohort: 5 female individuals from Gimbichu, Oromia Region, non-Westernized; Non-Westernized total: 592 samples (Madagascar + Fiji, Hadza, Mongolian, Peruvian); Westernized: 8,836 samples",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "48",
+      "age_max": "48"
     },
     {
       "study_name": "CM_madagascar",
@@ -1880,7 +1950,9 @@
       "dna_extraction_kit": "PowerSoil",
       "sequencing_platform": "IlluminaHiSeq",
       "uncurated_metadata": "9,428 metagenomes from 46 datasets plus Madagascar and Ethiopian cohorts; 31 countries sampled; USA (1,431), China (1,342), Israel (956), Sweden (600), Denmark (580) most represented; 5 body sites: gut (7,783), oral cavity (783), skin (503, incl. 93 anterior nares), vagina (88), maternal milk (9); Age categories: adults 19-65y (6,615), newborns <1y (1,098), children 1-12y (465), school-age 12-19y (216), adults/seniors >19,>65y merged (876); Madagascar cohort: 112 healthy volunteers (54 females, 58 males), MAHERY study, non-Westernized rural rainforest population in Madagascar; Ethiopian cohort: 5 female individuals from Gimbichu, Oromia Region, non-Westernized; Non-Westernized total: 592 samples (Madagascar + Fiji, Hadza, Mongolian, Peruvian); Westernized: 8,836 samples",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "43",
+      "age_max": "43"
     },
     {
       "study_name": "CM_madagascar",
@@ -1907,7 +1979,9 @@
       "dna_extraction_kit": "PowerSoil",
       "sequencing_platform": "IlluminaHiSeq",
       "uncurated_metadata": "9,428 metagenomes from 46 datasets plus Madagascar and Ethiopian cohorts; 31 countries sampled; USA (1,431), China (1,342), Israel (956), Sweden (600), Denmark (580) most represented; 5 body sites: gut (7,783), oral cavity (783), skin (503, incl. 93 anterior nares), vagina (88), maternal milk (9); Age categories: adults 19-65y (6,615), newborns <1y (1,098), children 1-12y (465), school-age 12-19y (216), adults/seniors >19,>65y merged (876); Madagascar cohort: 112 healthy volunteers (54 females, 58 males), MAHERY study, non-Westernized rural rainforest population in Madagascar; Ethiopian cohort: 5 female individuals from Gimbichu, Oromia Region, non-Westernized; Non-Westernized total: 592 samples (Madagascar + Fiji, Hadza, Mongolian, Peruvian); Westernized: 8,836 samples",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "52",
+      "age_max": "52"
     },
     {
       "study_name": "CM_madagascar",
@@ -1934,7 +2008,9 @@
       "dna_extraction_kit": "PowerSoil",
       "sequencing_platform": "IlluminaHiSeq",
       "uncurated_metadata": "9,428 metagenomes from 46 datasets plus Madagascar and Ethiopian cohorts; 31 countries sampled; USA (1,431), China (1,342), Israel (956), Sweden (600), Denmark (580) most represented; 5 body sites: gut (7,783), oral cavity (783), skin (503, incl. 93 anterior nares), vagina (88), maternal milk (9); Age categories: adults 19-65y (6,615), newborns <1y (1,098), children 1-12y (465), school-age 12-19y (216), adults/seniors >19,>65y merged (876); Madagascar cohort: 112 healthy volunteers (54 females, 58 males), MAHERY study, non-Westernized rural rainforest population in Madagascar; Ethiopian cohort: 5 female individuals from Gimbichu, Oromia Region, non-Westernized; Non-Westernized total: 592 samples (Madagascar + Fiji, Hadza, Mongolian, Peruvian); Westernized: 8,836 samples",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "51",
+      "age_max": "51"
     },
     {
       "study_name": "CM_madagascar",
@@ -1961,7 +2037,9 @@
       "dna_extraction_kit": "PowerSoil",
       "sequencing_platform": "IlluminaHiSeq",
       "uncurated_metadata": "9,428 metagenomes from 46 datasets plus Madagascar and Ethiopian cohorts; 31 countries sampled; USA (1,431), China (1,342), Israel (956), Sweden (600), Denmark (580) most represented; 5 body sites: gut (7,783), oral cavity (783), skin (503, incl. 93 anterior nares), vagina (88), maternal milk (9); Age categories: adults 19-65y (6,615), newborns <1y (1,098), children 1-12y (465), school-age 12-19y (216), adults/seniors >19,>65y merged (876); Madagascar cohort: 112 healthy volunteers (54 females, 58 males), MAHERY study, non-Westernized rural rainforest population in Madagascar; Ethiopian cohort: 5 female individuals from Gimbichu, Oromia Region, non-Westernized; Non-Westernized total: 592 samples (Madagascar + Fiji, Hadza, Mongolian, Peruvian); Westernized: 8,836 samples",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "21",
+      "age_max": "21"
     },
     {
       "study_name": "CM_madagascar",
@@ -1988,7 +2066,9 @@
       "dna_extraction_kit": "PowerSoil",
       "sequencing_platform": "IlluminaHiSeq",
       "uncurated_metadata": "9,428 metagenomes from 46 datasets plus Madagascar and Ethiopian cohorts; 31 countries sampled; USA (1,431), China (1,342), Israel (956), Sweden (600), Denmark (580) most represented; 5 body sites: gut (7,783), oral cavity (783), skin (503, incl. 93 anterior nares), vagina (88), maternal milk (9); Age categories: adults 19-65y (6,615), newborns <1y (1,098), children 1-12y (465), school-age 12-19y (216), adults/seniors >19,>65y merged (876); Madagascar cohort: 112 healthy volunteers (54 females, 58 males), MAHERY study, non-Westernized rural rainforest population in Madagascar; Ethiopian cohort: 5 female individuals from Gimbichu, Oromia Region, non-Westernized; Non-Westernized total: 592 samples (Madagascar + Fiji, Hadza, Mongolian, Peruvian); Westernized: 8,836 samples",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "39",
+      "age_max": "39"
     },
     {
       "study_name": "CM_madagascar",
@@ -2015,7 +2095,9 @@
       "dna_extraction_kit": "PowerSoil",
       "sequencing_platform": "IlluminaHiSeq",
       "uncurated_metadata": "9,428 metagenomes from 46 datasets plus Madagascar and Ethiopian cohorts; 31 countries sampled; USA (1,431), China (1,342), Israel (956), Sweden (600), Denmark (580) most represented; 5 body sites: gut (7,783), oral cavity (783), skin (503, incl. 93 anterior nares), vagina (88), maternal milk (9); Age categories: adults 19-65y (6,615), newborns <1y (1,098), children 1-12y (465), school-age 12-19y (216), adults/seniors >19,>65y merged (876); Madagascar cohort: 112 healthy volunteers (54 females, 58 males), MAHERY study, non-Westernized rural rainforest population in Madagascar; Ethiopian cohort: 5 female individuals from Gimbichu, Oromia Region, non-Westernized; Non-Westernized total: 592 samples (Madagascar + Fiji, Hadza, Mongolian, Peruvian); Westernized: 8,836 samples",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "26",
+      "age_max": "26"
     },
     {
       "study_name": "CM_madagascar",
@@ -2042,7 +2124,9 @@
       "dna_extraction_kit": "PowerSoil",
       "sequencing_platform": "IlluminaHiSeq",
       "uncurated_metadata": "9,428 metagenomes from 46 datasets plus Madagascar and Ethiopian cohorts; 31 countries sampled; USA (1,431), China (1,342), Israel (956), Sweden (600), Denmark (580) most represented; 5 body sites: gut (7,783), oral cavity (783), skin (503, incl. 93 anterior nares), vagina (88), maternal milk (9); Age categories: adults 19-65y (6,615), newborns <1y (1,098), children 1-12y (465), school-age 12-19y (216), adults/seniors >19,>65y merged (876); Madagascar cohort: 112 healthy volunteers (54 females, 58 males), MAHERY study, non-Westernized rural rainforest population in Madagascar; Ethiopian cohort: 5 female individuals from Gimbichu, Oromia Region, non-Westernized; Non-Westernized total: 592 samples (Madagascar + Fiji, Hadza, Mongolian, Peruvian); Westernized: 8,836 samples",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "44",
+      "age_max": "44"
     },
     {
       "study_name": "CM_madagascar",
@@ -2069,7 +2153,9 @@
       "dna_extraction_kit": "PowerSoil",
       "sequencing_platform": "IlluminaHiSeq",
       "uncurated_metadata": "9,428 metagenomes from 46 datasets plus Madagascar and Ethiopian cohorts; 31 countries sampled; USA (1,431), China (1,342), Israel (956), Sweden (600), Denmark (580) most represented; 5 body sites: gut (7,783), oral cavity (783), skin (503, incl. 93 anterior nares), vagina (88), maternal milk (9); Age categories: adults 19-65y (6,615), newborns <1y (1,098), children 1-12y (465), school-age 12-19y (216), adults/seniors >19,>65y merged (876); Madagascar cohort: 112 healthy volunteers (54 females, 58 males), MAHERY study, non-Westernized rural rainforest population in Madagascar; Ethiopian cohort: 5 female individuals from Gimbichu, Oromia Region, non-Westernized; Non-Westernized total: 592 samples (Madagascar + Fiji, Hadza, Mongolian, Peruvian); Westernized: 8,836 samples",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "36",
+      "age_max": "36"
     },
     {
       "study_name": "CM_madagascar",
@@ -2096,7 +2182,9 @@
       "dna_extraction_kit": "PowerSoil",
       "sequencing_platform": "IlluminaHiSeq",
       "uncurated_metadata": "9,428 metagenomes from 46 datasets plus Madagascar and Ethiopian cohorts; 31 countries sampled; USA (1,431), China (1,342), Israel (956), Sweden (600), Denmark (580) most represented; 5 body sites: gut (7,783), oral cavity (783), skin (503, incl. 93 anterior nares), vagina (88), maternal milk (9); Age categories: adults 19-65y (6,615), newborns <1y (1,098), children 1-12y (465), school-age 12-19y (216), adults/seniors >19,>65y merged (876); Madagascar cohort: 112 healthy volunteers (54 females, 58 males), MAHERY study, non-Westernized rural rainforest population in Madagascar; Ethiopian cohort: 5 female individuals from Gimbichu, Oromia Region, non-Westernized; Non-Westernized total: 592 samples (Madagascar + Fiji, Hadza, Mongolian, Peruvian); Westernized: 8,836 samples",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "35",
+      "age_max": "35"
     },
     {
       "study_name": "CM_madagascar",
@@ -2123,7 +2211,9 @@
       "dna_extraction_kit": "PowerSoil",
       "sequencing_platform": "IlluminaHiSeq",
       "uncurated_metadata": "9,428 metagenomes from 46 datasets plus Madagascar and Ethiopian cohorts; 31 countries sampled; USA (1,431), China (1,342), Israel (956), Sweden (600), Denmark (580) most represented; 5 body sites: gut (7,783), oral cavity (783), skin (503, incl. 93 anterior nares), vagina (88), maternal milk (9); Age categories: adults 19-65y (6,615), newborns <1y (1,098), children 1-12y (465), school-age 12-19y (216), adults/seniors >19,>65y merged (876); Madagascar cohort: 112 healthy volunteers (54 females, 58 males), MAHERY study, non-Westernized rural rainforest population in Madagascar; Ethiopian cohort: 5 female individuals from Gimbichu, Oromia Region, non-Westernized; Non-Westernized total: 592 samples (Madagascar + Fiji, Hadza, Mongolian, Peruvian); Westernized: 8,836 samples",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "29",
+      "age_max": "29"
     },
     {
       "study_name": "CM_madagascar",
@@ -2150,7 +2240,9 @@
       "dna_extraction_kit": "PowerSoil",
       "sequencing_platform": "IlluminaHiSeq",
       "uncurated_metadata": "9,428 metagenomes from 46 datasets plus Madagascar and Ethiopian cohorts; 31 countries sampled; USA (1,431), China (1,342), Israel (956), Sweden (600), Denmark (580) most represented; 5 body sites: gut (7,783), oral cavity (783), skin (503, incl. 93 anterior nares), vagina (88), maternal milk (9); Age categories: adults 19-65y (6,615), newborns <1y (1,098), children 1-12y (465), school-age 12-19y (216), adults/seniors >19,>65y merged (876); Madagascar cohort: 112 healthy volunteers (54 females, 58 males), MAHERY study, non-Westernized rural rainforest population in Madagascar; Ethiopian cohort: 5 female individuals from Gimbichu, Oromia Region, non-Westernized; Non-Westernized total: 592 samples (Madagascar + Fiji, Hadza, Mongolian, Peruvian); Westernized: 8,836 samples",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "37",
+      "age_max": "37"
     },
     {
       "study_name": "CM_madagascar",
@@ -2177,7 +2269,9 @@
       "dna_extraction_kit": "PowerSoil",
       "sequencing_platform": "IlluminaHiSeq",
       "uncurated_metadata": "9,428 metagenomes from 46 datasets plus Madagascar and Ethiopian cohorts; 31 countries sampled; USA (1,431), China (1,342), Israel (956), Sweden (600), Denmark (580) most represented; 5 body sites: gut (7,783), oral cavity (783), skin (503, incl. 93 anterior nares), vagina (88), maternal milk (9); Age categories: adults 19-65y (6,615), newborns <1y (1,098), children 1-12y (465), school-age 12-19y (216), adults/seniors >19,>65y merged (876); Madagascar cohort: 112 healthy volunteers (54 females, 58 males), MAHERY study, non-Westernized rural rainforest population in Madagascar; Ethiopian cohort: 5 female individuals from Gimbichu, Oromia Region, non-Westernized; Non-Westernized total: 592 samples (Madagascar + Fiji, Hadza, Mongolian, Peruvian); Westernized: 8,836 samples",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "33",
+      "age_max": "33"
     },
     {
       "study_name": "CM_madagascar",
@@ -2204,7 +2298,9 @@
       "dna_extraction_kit": "PowerSoil",
       "sequencing_platform": "IlluminaHiSeq",
       "uncurated_metadata": "9,428 metagenomes from 46 datasets plus Madagascar and Ethiopian cohorts; 31 countries sampled; USA (1,431), China (1,342), Israel (956), Sweden (600), Denmark (580) most represented; 5 body sites: gut (7,783), oral cavity (783), skin (503, incl. 93 anterior nares), vagina (88), maternal milk (9); Age categories: adults 19-65y (6,615), newborns <1y (1,098), children 1-12y (465), school-age 12-19y (216), adults/seniors >19,>65y merged (876); Madagascar cohort: 112 healthy volunteers (54 females, 58 males), MAHERY study, non-Westernized rural rainforest population in Madagascar; Ethiopian cohort: 5 female individuals from Gimbichu, Oromia Region, non-Westernized; Non-Westernized total: 592 samples (Madagascar + Fiji, Hadza, Mongolian, Peruvian); Westernized: 8,836 samples",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "39",
+      "age_max": "39"
     },
     {
       "study_name": "CM_madagascar",
@@ -2231,7 +2327,9 @@
       "dna_extraction_kit": "PowerSoil",
       "sequencing_platform": "IlluminaHiSeq",
       "uncurated_metadata": "9,428 metagenomes from 46 datasets plus Madagascar and Ethiopian cohorts; 31 countries sampled; USA (1,431), China (1,342), Israel (956), Sweden (600), Denmark (580) most represented; 5 body sites: gut (7,783), oral cavity (783), skin (503, incl. 93 anterior nares), vagina (88), maternal milk (9); Age categories: adults 19-65y (6,615), newborns <1y (1,098), children 1-12y (465), school-age 12-19y (216), adults/seniors >19,>65y merged (876); Madagascar cohort: 112 healthy volunteers (54 females, 58 males), MAHERY study, non-Westernized rural rainforest population in Madagascar; Ethiopian cohort: 5 female individuals from Gimbichu, Oromia Region, non-Westernized; Non-Westernized total: 592 samples (Madagascar + Fiji, Hadza, Mongolian, Peruvian); Westernized: 8,836 samples",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "33",
+      "age_max": "33"
     },
     {
       "study_name": "CM_madagascar",
@@ -2258,7 +2356,9 @@
       "dna_extraction_kit": "PowerSoil",
       "sequencing_platform": "IlluminaHiSeq",
       "uncurated_metadata": "9,428 metagenomes from 46 datasets plus Madagascar and Ethiopian cohorts; 31 countries sampled; USA (1,431), China (1,342), Israel (956), Sweden (600), Denmark (580) most represented; 5 body sites: gut (7,783), oral cavity (783), skin (503, incl. 93 anterior nares), vagina (88), maternal milk (9); Age categories: adults 19-65y (6,615), newborns <1y (1,098), children 1-12y (465), school-age 12-19y (216), adults/seniors >19,>65y merged (876); Madagascar cohort: 112 healthy volunteers (54 females, 58 males), MAHERY study, non-Westernized rural rainforest population in Madagascar; Ethiopian cohort: 5 female individuals from Gimbichu, Oromia Region, non-Westernized; Non-Westernized total: 592 samples (Madagascar + Fiji, Hadza, Mongolian, Peruvian); Westernized: 8,836 samples",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "35",
+      "age_max": "35"
     },
     {
       "study_name": "CM_madagascar",
@@ -2285,7 +2385,9 @@
       "dna_extraction_kit": "PowerSoil",
       "sequencing_platform": "IlluminaHiSeq",
       "uncurated_metadata": "9,428 metagenomes from 46 datasets plus Madagascar and Ethiopian cohorts; 31 countries sampled; USA (1,431), China (1,342), Israel (956), Sweden (600), Denmark (580) most represented; 5 body sites: gut (7,783), oral cavity (783), skin (503, incl. 93 anterior nares), vagina (88), maternal milk (9); Age categories: adults 19-65y (6,615), newborns <1y (1,098), children 1-12y (465), school-age 12-19y (216), adults/seniors >19,>65y merged (876); Madagascar cohort: 112 healthy volunteers (54 females, 58 males), MAHERY study, non-Westernized rural rainforest population in Madagascar; Ethiopian cohort: 5 female individuals from Gimbichu, Oromia Region, non-Westernized; Non-Westernized total: 592 samples (Madagascar + Fiji, Hadza, Mongolian, Peruvian); Westernized: 8,836 samples",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "35",
+      "age_max": "35"
     },
     {
       "study_name": "CM_madagascar",
@@ -2312,7 +2414,9 @@
       "dna_extraction_kit": "PowerSoil",
       "sequencing_platform": "IlluminaHiSeq",
       "uncurated_metadata": "9,428 metagenomes from 46 datasets plus Madagascar and Ethiopian cohorts; 31 countries sampled; USA (1,431), China (1,342), Israel (956), Sweden (600), Denmark (580) most represented; 5 body sites: gut (7,783), oral cavity (783), skin (503, incl. 93 anterior nares), vagina (88), maternal milk (9); Age categories: adults 19-65y (6,615), newborns <1y (1,098), children 1-12y (465), school-age 12-19y (216), adults/seniors >19,>65y merged (876); Madagascar cohort: 112 healthy volunteers (54 females, 58 males), MAHERY study, non-Westernized rural rainforest population in Madagascar; Ethiopian cohort: 5 female individuals from Gimbichu, Oromia Region, non-Westernized; Non-Westernized total: 592 samples (Madagascar + Fiji, Hadza, Mongolian, Peruvian); Westernized: 8,836 samples",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "35",
+      "age_max": "35"
     },
     {
       "study_name": "CM_madagascar",
@@ -2339,7 +2443,9 @@
       "dna_extraction_kit": "PowerSoil",
       "sequencing_platform": "IlluminaHiSeq",
       "uncurated_metadata": "9,428 metagenomes from 46 datasets plus Madagascar and Ethiopian cohorts; 31 countries sampled; USA (1,431), China (1,342), Israel (956), Sweden (600), Denmark (580) most represented; 5 body sites: gut (7,783), oral cavity (783), skin (503, incl. 93 anterior nares), vagina (88), maternal milk (9); Age categories: adults 19-65y (6,615), newborns <1y (1,098), children 1-12y (465), school-age 12-19y (216), adults/seniors >19,>65y merged (876); Madagascar cohort: 112 healthy volunteers (54 females, 58 males), MAHERY study, non-Westernized rural rainforest population in Madagascar; Ethiopian cohort: 5 female individuals from Gimbichu, Oromia Region, non-Westernized; Non-Westernized total: 592 samples (Madagascar + Fiji, Hadza, Mongolian, Peruvian); Westernized: 8,836 samples",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "29",
+      "age_max": "29"
     },
     {
       "study_name": "CM_madagascar",
@@ -2366,7 +2472,9 @@
       "dna_extraction_kit": "PowerSoil",
       "sequencing_platform": "IlluminaHiSeq",
       "uncurated_metadata": "9,428 metagenomes from 46 datasets plus Madagascar and Ethiopian cohorts; 31 countries sampled; USA (1,431), China (1,342), Israel (956), Sweden (600), Denmark (580) most represented; 5 body sites: gut (7,783), oral cavity (783), skin (503, incl. 93 anterior nares), vagina (88), maternal milk (9); Age categories: adults 19-65y (6,615), newborns <1y (1,098), children 1-12y (465), school-age 12-19y (216), adults/seniors >19,>65y merged (876); Madagascar cohort: 112 healthy volunteers (54 females, 58 males), MAHERY study, non-Westernized rural rainforest population in Madagascar; Ethiopian cohort: 5 female individuals from Gimbichu, Oromia Region, non-Westernized; Non-Westernized total: 592 samples (Madagascar + Fiji, Hadza, Mongolian, Peruvian); Westernized: 8,836 samples",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "26",
+      "age_max": "26"
     },
     {
       "study_name": "CM_madagascar",
@@ -2393,7 +2501,9 @@
       "dna_extraction_kit": "PowerSoil",
       "sequencing_platform": "IlluminaHiSeq",
       "uncurated_metadata": "9,428 metagenomes from 46 datasets plus Madagascar and Ethiopian cohorts; 31 countries sampled; USA (1,431), China (1,342), Israel (956), Sweden (600), Denmark (580) most represented; 5 body sites: gut (7,783), oral cavity (783), skin (503, incl. 93 anterior nares), vagina (88), maternal milk (9); Age categories: adults 19-65y (6,615), newborns <1y (1,098), children 1-12y (465), school-age 12-19y (216), adults/seniors >19,>65y merged (876); Madagascar cohort: 112 healthy volunteers (54 females, 58 males), MAHERY study, non-Westernized rural rainforest population in Madagascar; Ethiopian cohort: 5 female individuals from Gimbichu, Oromia Region, non-Westernized; Non-Westernized total: 592 samples (Madagascar + Fiji, Hadza, Mongolian, Peruvian); Westernized: 8,836 samples",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "34",
+      "age_max": "34"
     },
     {
       "study_name": "CM_madagascar",
@@ -2420,7 +2530,9 @@
       "dna_extraction_kit": "PowerSoil",
       "sequencing_platform": "IlluminaHiSeq",
       "uncurated_metadata": "9,428 metagenomes from 46 datasets plus Madagascar and Ethiopian cohorts; 31 countries sampled; USA (1,431), China (1,342), Israel (956), Sweden (600), Denmark (580) most represented; 5 body sites: gut (7,783), oral cavity (783), skin (503, incl. 93 anterior nares), vagina (88), maternal milk (9); Age categories: adults 19-65y (6,615), newborns <1y (1,098), children 1-12y (465), school-age 12-19y (216), adults/seniors >19,>65y merged (876); Madagascar cohort: 112 healthy volunteers (54 females, 58 males), MAHERY study, non-Westernized rural rainforest population in Madagascar; Ethiopian cohort: 5 female individuals from Gimbichu, Oromia Region, non-Westernized; Non-Westernized total: 592 samples (Madagascar + Fiji, Hadza, Mongolian, Peruvian); Westernized: 8,836 samples",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "27",
+      "age_max": "27"
     },
     {
       "study_name": "CM_madagascar",
@@ -2447,7 +2559,9 @@
       "dna_extraction_kit": "PowerSoil",
       "sequencing_platform": "IlluminaHiSeq",
       "uncurated_metadata": "9,428 metagenomes from 46 datasets plus Madagascar and Ethiopian cohorts; 31 countries sampled; USA (1,431), China (1,342), Israel (956), Sweden (600), Denmark (580) most represented; 5 body sites: gut (7,783), oral cavity (783), skin (503, incl. 93 anterior nares), vagina (88), maternal milk (9); Age categories: adults 19-65y (6,615), newborns <1y (1,098), children 1-12y (465), school-age 12-19y (216), adults/seniors >19,>65y merged (876); Madagascar cohort: 112 healthy volunteers (54 females, 58 males), MAHERY study, non-Westernized rural rainforest population in Madagascar; Ethiopian cohort: 5 female individuals from Gimbichu, Oromia Region, non-Westernized; Non-Westernized total: 592 samples (Madagascar + Fiji, Hadza, Mongolian, Peruvian); Westernized: 8,836 samples",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "44",
+      "age_max": "44"
     },
     {
       "study_name": "CM_madagascar",
@@ -2474,7 +2588,9 @@
       "dna_extraction_kit": "PowerSoil",
       "sequencing_platform": "IlluminaHiSeq",
       "uncurated_metadata": "9,428 metagenomes from 46 datasets plus Madagascar and Ethiopian cohorts; 31 countries sampled; USA (1,431), China (1,342), Israel (956), Sweden (600), Denmark (580) most represented; 5 body sites: gut (7,783), oral cavity (783), skin (503, incl. 93 anterior nares), vagina (88), maternal milk (9); Age categories: adults 19-65y (6,615), newborns <1y (1,098), children 1-12y (465), school-age 12-19y (216), adults/seniors >19,>65y merged (876); Madagascar cohort: 112 healthy volunteers (54 females, 58 males), MAHERY study, non-Westernized rural rainforest population in Madagascar; Ethiopian cohort: 5 female individuals from Gimbichu, Oromia Region, non-Westernized; Non-Westernized total: 592 samples (Madagascar + Fiji, Hadza, Mongolian, Peruvian); Westernized: 8,836 samples",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "44",
+      "age_max": "44"
     },
     {
       "study_name": "CM_madagascar",
@@ -2501,7 +2617,9 @@
       "dna_extraction_kit": "PowerSoil",
       "sequencing_platform": "IlluminaHiSeq",
       "uncurated_metadata": "9,428 metagenomes from 46 datasets plus Madagascar and Ethiopian cohorts; 31 countries sampled; USA (1,431), China (1,342), Israel (956), Sweden (600), Denmark (580) most represented; 5 body sites: gut (7,783), oral cavity (783), skin (503, incl. 93 anterior nares), vagina (88), maternal milk (9); Age categories: adults 19-65y (6,615), newborns <1y (1,098), children 1-12y (465), school-age 12-19y (216), adults/seniors >19,>65y merged (876); Madagascar cohort: 112 healthy volunteers (54 females, 58 males), MAHERY study, non-Westernized rural rainforest population in Madagascar; Ethiopian cohort: 5 female individuals from Gimbichu, Oromia Region, non-Westernized; Non-Westernized total: 592 samples (Madagascar + Fiji, Hadza, Mongolian, Peruvian); Westernized: 8,836 samples",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "55",
+      "age_max": "55"
     },
     {
       "study_name": "CM_madagascar",
@@ -2528,7 +2646,9 @@
       "dna_extraction_kit": "PowerSoil",
       "sequencing_platform": "IlluminaHiSeq",
       "uncurated_metadata": "9,428 metagenomes from 46 datasets plus Madagascar and Ethiopian cohorts; 31 countries sampled; USA (1,431), China (1,342), Israel (956), Sweden (600), Denmark (580) most represented; 5 body sites: gut (7,783), oral cavity (783), skin (503, incl. 93 anterior nares), vagina (88), maternal milk (9); Age categories: adults 19-65y (6,615), newborns <1y (1,098), children 1-12y (465), school-age 12-19y (216), adults/seniors >19,>65y merged (876); Madagascar cohort: 112 healthy volunteers (54 females, 58 males), MAHERY study, non-Westernized rural rainforest population in Madagascar; Ethiopian cohort: 5 female individuals from Gimbichu, Oromia Region, non-Westernized; Non-Westernized total: 592 samples (Madagascar + Fiji, Hadza, Mongolian, Peruvian); Westernized: 8,836 samples",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "26",
+      "age_max": "26"
     },
     {
       "study_name": "CM_madagascar",
@@ -2555,7 +2675,9 @@
       "dna_extraction_kit": "PowerSoil",
       "sequencing_platform": "IlluminaHiSeq",
       "uncurated_metadata": "9,428 metagenomes from 46 datasets plus Madagascar and Ethiopian cohorts; 31 countries sampled; USA (1,431), China (1,342), Israel (956), Sweden (600), Denmark (580) most represented; 5 body sites: gut (7,783), oral cavity (783), skin (503, incl. 93 anterior nares), vagina (88), maternal milk (9); Age categories: adults 19-65y (6,615), newborns <1y (1,098), children 1-12y (465), school-age 12-19y (216), adults/seniors >19,>65y merged (876); Madagascar cohort: 112 healthy volunteers (54 females, 58 males), MAHERY study, non-Westernized rural rainforest population in Madagascar; Ethiopian cohort: 5 female individuals from Gimbichu, Oromia Region, non-Westernized; Non-Westernized total: 592 samples (Madagascar + Fiji, Hadza, Mongolian, Peruvian); Westernized: 8,836 samples",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "58",
+      "age_max": "58"
     },
     {
       "study_name": "CM_madagascar",
@@ -2582,7 +2704,9 @@
       "dna_extraction_kit": "PowerSoil",
       "sequencing_platform": "IlluminaHiSeq",
       "uncurated_metadata": "9,428 metagenomes from 46 datasets plus Madagascar and Ethiopian cohorts; 31 countries sampled; USA (1,431), China (1,342), Israel (956), Sweden (600), Denmark (580) most represented; 5 body sites: gut (7,783), oral cavity (783), skin (503, incl. 93 anterior nares), vagina (88), maternal milk (9); Age categories: adults 19-65y (6,615), newborns <1y (1,098), children 1-12y (465), school-age 12-19y (216), adults/seniors >19,>65y merged (876); Madagascar cohort: 112 healthy volunteers (54 females, 58 males), MAHERY study, non-Westernized rural rainforest population in Madagascar; Ethiopian cohort: 5 female individuals from Gimbichu, Oromia Region, non-Westernized; Non-Westernized total: 592 samples (Madagascar + Fiji, Hadza, Mongolian, Peruvian); Westernized: 8,836 samples",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "31",
+      "age_max": "31"
     },
     {
       "study_name": "CM_madagascar",
@@ -2609,7 +2733,9 @@
       "dna_extraction_kit": "PowerSoil",
       "sequencing_platform": "IlluminaHiSeq",
       "uncurated_metadata": "9,428 metagenomes from 46 datasets plus Madagascar and Ethiopian cohorts; 31 countries sampled; USA (1,431), China (1,342), Israel (956), Sweden (600), Denmark (580) most represented; 5 body sites: gut (7,783), oral cavity (783), skin (503, incl. 93 anterior nares), vagina (88), maternal milk (9); Age categories: adults 19-65y (6,615), newborns <1y (1,098), children 1-12y (465), school-age 12-19y (216), adults/seniors >19,>65y merged (876); Madagascar cohort: 112 healthy volunteers (54 females, 58 males), MAHERY study, non-Westernized rural rainforest population in Madagascar; Ethiopian cohort: 5 female individuals from Gimbichu, Oromia Region, non-Westernized; Non-Westernized total: 592 samples (Madagascar + Fiji, Hadza, Mongolian, Peruvian); Westernized: 8,836 samples",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "22",
+      "age_max": "22"
     },
     {
       "study_name": "CM_madagascar",
@@ -2636,7 +2762,9 @@
       "dna_extraction_kit": "PowerSoil",
       "sequencing_platform": "IlluminaHiSeq",
       "uncurated_metadata": "9,428 metagenomes from 46 datasets plus Madagascar and Ethiopian cohorts; 31 countries sampled; USA (1,431), China (1,342), Israel (956), Sweden (600), Denmark (580) most represented; 5 body sites: gut (7,783), oral cavity (783), skin (503, incl. 93 anterior nares), vagina (88), maternal milk (9); Age categories: adults 19-65y (6,615), newborns <1y (1,098), children 1-12y (465), school-age 12-19y (216), adults/seniors >19,>65y merged (876); Madagascar cohort: 112 healthy volunteers (54 females, 58 males), MAHERY study, non-Westernized rural rainforest population in Madagascar; Ethiopian cohort: 5 female individuals from Gimbichu, Oromia Region, non-Westernized; Non-Westernized total: 592 samples (Madagascar + Fiji, Hadza, Mongolian, Peruvian); Westernized: 8,836 samples",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "46",
+      "age_max": "46"
     },
     {
       "study_name": "CM_madagascar",
@@ -2663,7 +2791,9 @@
       "dna_extraction_kit": "PowerSoil",
       "sequencing_platform": "IlluminaHiSeq",
       "uncurated_metadata": "9,428 metagenomes from 46 datasets plus Madagascar and Ethiopian cohorts; 31 countries sampled; USA (1,431), China (1,342), Israel (956), Sweden (600), Denmark (580) most represented; 5 body sites: gut (7,783), oral cavity (783), skin (503, incl. 93 anterior nares), vagina (88), maternal milk (9); Age categories: adults 19-65y (6,615), newborns <1y (1,098), children 1-12y (465), school-age 12-19y (216), adults/seniors >19,>65y merged (876); Madagascar cohort: 112 healthy volunteers (54 females, 58 males), MAHERY study, non-Westernized rural rainforest population in Madagascar; Ethiopian cohort: 5 female individuals from Gimbichu, Oromia Region, non-Westernized; Non-Westernized total: 592 samples (Madagascar + Fiji, Hadza, Mongolian, Peruvian); Westernized: 8,836 samples",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "46",
+      "age_max": "46"
     },
     {
       "study_name": "CM_madagascar",
@@ -2690,7 +2820,9 @@
       "dna_extraction_kit": "PowerSoil",
       "sequencing_platform": "IlluminaHiSeq",
       "uncurated_metadata": "9,428 metagenomes from 46 datasets plus Madagascar and Ethiopian cohorts; 31 countries sampled; USA (1,431), China (1,342), Israel (956), Sweden (600), Denmark (580) most represented; 5 body sites: gut (7,783), oral cavity (783), skin (503, incl. 93 anterior nares), vagina (88), maternal milk (9); Age categories: adults 19-65y (6,615), newborns <1y (1,098), children 1-12y (465), school-age 12-19y (216), adults/seniors >19,>65y merged (876); Madagascar cohort: 112 healthy volunteers (54 females, 58 males), MAHERY study, non-Westernized rural rainforest population in Madagascar; Ethiopian cohort: 5 female individuals from Gimbichu, Oromia Region, non-Westernized; Non-Westernized total: 592 samples (Madagascar + Fiji, Hadza, Mongolian, Peruvian); Westernized: 8,836 samples",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "35",
+      "age_max": "35"
     },
     {
       "study_name": "CM_madagascar",
@@ -2717,7 +2849,9 @@
       "dna_extraction_kit": "PowerSoil",
       "sequencing_platform": "IlluminaHiSeq",
       "uncurated_metadata": "9,428 metagenomes from 46 datasets plus Madagascar and Ethiopian cohorts; 31 countries sampled; USA (1,431), China (1,342), Israel (956), Sweden (600), Denmark (580) most represented; 5 body sites: gut (7,783), oral cavity (783), skin (503, incl. 93 anterior nares), vagina (88), maternal milk (9); Age categories: adults 19-65y (6,615), newborns <1y (1,098), children 1-12y (465), school-age 12-19y (216), adults/seniors >19,>65y merged (876); Madagascar cohort: 112 healthy volunteers (54 females, 58 males), MAHERY study, non-Westernized rural rainforest population in Madagascar; Ethiopian cohort: 5 female individuals from Gimbichu, Oromia Region, non-Westernized; Non-Westernized total: 592 samples (Madagascar + Fiji, Hadza, Mongolian, Peruvian); Westernized: 8,836 samples",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "26",
+      "age_max": "26"
     },
     {
       "study_name": "CM_madagascar",
@@ -2744,7 +2878,9 @@
       "dna_extraction_kit": "PowerSoil",
       "sequencing_platform": "IlluminaHiSeq",
       "uncurated_metadata": "9,428 metagenomes from 46 datasets plus Madagascar and Ethiopian cohorts; 31 countries sampled; USA (1,431), China (1,342), Israel (956), Sweden (600), Denmark (580) most represented; 5 body sites: gut (7,783), oral cavity (783), skin (503, incl. 93 anterior nares), vagina (88), maternal milk (9); Age categories: adults 19-65y (6,615), newborns <1y (1,098), children 1-12y (465), school-age 12-19y (216), adults/seniors >19,>65y merged (876); Madagascar cohort: 112 healthy volunteers (54 females, 58 males), MAHERY study, non-Westernized rural rainforest population in Madagascar; Ethiopian cohort: 5 female individuals from Gimbichu, Oromia Region, non-Westernized; Non-Westernized total: 592 samples (Madagascar + Fiji, Hadza, Mongolian, Peruvian); Westernized: 8,836 samples",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "55",
+      "age_max": "55"
     },
     {
       "study_name": "CM_madagascar",
@@ -2771,7 +2907,9 @@
       "dna_extraction_kit": "PowerSoil",
       "sequencing_platform": "IlluminaHiSeq",
       "uncurated_metadata": "9,428 metagenomes from 46 datasets plus Madagascar and Ethiopian cohorts; 31 countries sampled; USA (1,431), China (1,342), Israel (956), Sweden (600), Denmark (580) most represented; 5 body sites: gut (7,783), oral cavity (783), skin (503, incl. 93 anterior nares), vagina (88), maternal milk (9); Age categories: adults 19-65y (6,615), newborns <1y (1,098), children 1-12y (465), school-age 12-19y (216), adults/seniors >19,>65y merged (876); Madagascar cohort: 112 healthy volunteers (54 females, 58 males), MAHERY study, non-Westernized rural rainforest population in Madagascar; Ethiopian cohort: 5 female individuals from Gimbichu, Oromia Region, non-Westernized; Non-Westernized total: 592 samples (Madagascar + Fiji, Hadza, Mongolian, Peruvian); Westernized: 8,836 samples",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "21",
+      "age_max": "21"
     },
     {
       "study_name": "CM_madagascar",
@@ -2798,7 +2936,9 @@
       "dna_extraction_kit": "PowerSoil",
       "sequencing_platform": "IlluminaHiSeq",
       "uncurated_metadata": "9,428 metagenomes from 46 datasets plus Madagascar and Ethiopian cohorts; 31 countries sampled; USA (1,431), China (1,342), Israel (956), Sweden (600), Denmark (580) most represented; 5 body sites: gut (7,783), oral cavity (783), skin (503, incl. 93 anterior nares), vagina (88), maternal milk (9); Age categories: adults 19-65y (6,615), newborns <1y (1,098), children 1-12y (465), school-age 12-19y (216), adults/seniors >19,>65y merged (876); Madagascar cohort: 112 healthy volunteers (54 females, 58 males), MAHERY study, non-Westernized rural rainforest population in Madagascar; Ethiopian cohort: 5 female individuals from Gimbichu, Oromia Region, non-Westernized; Non-Westernized total: 592 samples (Madagascar + Fiji, Hadza, Mongolian, Peruvian); Westernized: 8,836 samples",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "24",
+      "age_max": "24"
     },
     {
       "study_name": "CM_madagascar",
@@ -2825,7 +2965,9 @@
       "dna_extraction_kit": "PowerSoil",
       "sequencing_platform": "IlluminaHiSeq",
       "uncurated_metadata": "9,428 metagenomes from 46 datasets plus Madagascar and Ethiopian cohorts; 31 countries sampled; USA (1,431), China (1,342), Israel (956), Sweden (600), Denmark (580) most represented; 5 body sites: gut (7,783), oral cavity (783), skin (503, incl. 93 anterior nares), vagina (88), maternal milk (9); Age categories: adults 19-65y (6,615), newborns <1y (1,098), children 1-12y (465), school-age 12-19y (216), adults/seniors >19,>65y merged (876); Madagascar cohort: 112 healthy volunteers (54 females, 58 males), MAHERY study, non-Westernized rural rainforest population in Madagascar; Ethiopian cohort: 5 female individuals from Gimbichu, Oromia Region, non-Westernized; Non-Westernized total: 592 samples (Madagascar + Fiji, Hadza, Mongolian, Peruvian); Westernized: 8,836 samples",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "22",
+      "age_max": "22"
     },
     {
       "study_name": "CM_madagascar",
@@ -2852,7 +2994,9 @@
       "dna_extraction_kit": "PowerSoil",
       "sequencing_platform": "IlluminaHiSeq",
       "uncurated_metadata": "9,428 metagenomes from 46 datasets plus Madagascar and Ethiopian cohorts; 31 countries sampled; USA (1,431), China (1,342), Israel (956), Sweden (600), Denmark (580) most represented; 5 body sites: gut (7,783), oral cavity (783), skin (503, incl. 93 anterior nares), vagina (88), maternal milk (9); Age categories: adults 19-65y (6,615), newborns <1y (1,098), children 1-12y (465), school-age 12-19y (216), adults/seniors >19,>65y merged (876); Madagascar cohort: 112 healthy volunteers (54 females, 58 males), MAHERY study, non-Westernized rural rainforest population in Madagascar; Ethiopian cohort: 5 female individuals from Gimbichu, Oromia Region, non-Westernized; Non-Westernized total: 592 samples (Madagascar + Fiji, Hadza, Mongolian, Peruvian); Westernized: 8,836 samples",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "32",
+      "age_max": "32"
     },
     {
       "study_name": "CM_madagascar",
@@ -2879,7 +3023,9 @@
       "dna_extraction_kit": "PowerSoil",
       "sequencing_platform": "IlluminaHiSeq",
       "uncurated_metadata": "9,428 metagenomes from 46 datasets plus Madagascar and Ethiopian cohorts; 31 countries sampled; USA (1,431), China (1,342), Israel (956), Sweden (600), Denmark (580) most represented; 5 body sites: gut (7,783), oral cavity (783), skin (503, incl. 93 anterior nares), vagina (88), maternal milk (9); Age categories: adults 19-65y (6,615), newborns <1y (1,098), children 1-12y (465), school-age 12-19y (216), adults/seniors >19,>65y merged (876); Madagascar cohort: 112 healthy volunteers (54 females, 58 males), MAHERY study, non-Westernized rural rainforest population in Madagascar; Ethiopian cohort: 5 female individuals from Gimbichu, Oromia Region, non-Westernized; Non-Westernized total: 592 samples (Madagascar + Fiji, Hadza, Mongolian, Peruvian); Westernized: 8,836 samples",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "25",
+      "age_max": "25"
     },
     {
       "study_name": "CM_madagascar",
@@ -2906,7 +3052,9 @@
       "dna_extraction_kit": "PowerSoil",
       "sequencing_platform": "IlluminaHiSeq",
       "uncurated_metadata": "9,428 metagenomes from 46 datasets plus Madagascar and Ethiopian cohorts; 31 countries sampled; USA (1,431), China (1,342), Israel (956), Sweden (600), Denmark (580) most represented; 5 body sites: gut (7,783), oral cavity (783), skin (503, incl. 93 anterior nares), vagina (88), maternal milk (9); Age categories: adults 19-65y (6,615), newborns <1y (1,098), children 1-12y (465), school-age 12-19y (216), adults/seniors >19,>65y merged (876); Madagascar cohort: 112 healthy volunteers (54 females, 58 males), MAHERY study, non-Westernized rural rainforest population in Madagascar; Ethiopian cohort: 5 female individuals from Gimbichu, Oromia Region, non-Westernized; Non-Westernized total: 592 samples (Madagascar + Fiji, Hadza, Mongolian, Peruvian); Westernized: 8,836 samples",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "24",
+      "age_max": "24"
     },
     {
       "study_name": "CM_madagascar",
@@ -2933,7 +3081,9 @@
       "dna_extraction_kit": "PowerSoil",
       "sequencing_platform": "IlluminaHiSeq",
       "uncurated_metadata": "9,428 metagenomes from 46 datasets plus Madagascar and Ethiopian cohorts; 31 countries sampled; USA (1,431), China (1,342), Israel (956), Sweden (600), Denmark (580) most represented; 5 body sites: gut (7,783), oral cavity (783), skin (503, incl. 93 anterior nares), vagina (88), maternal milk (9); Age categories: adults 19-65y (6,615), newborns <1y (1,098), children 1-12y (465), school-age 12-19y (216), adults/seniors >19,>65y merged (876); Madagascar cohort: 112 healthy volunteers (54 females, 58 males), MAHERY study, non-Westernized rural rainforest population in Madagascar; Ethiopian cohort: 5 female individuals from Gimbichu, Oromia Region, non-Westernized; Non-Westernized total: 592 samples (Madagascar + Fiji, Hadza, Mongolian, Peruvian); Westernized: 8,836 samples",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "47",
+      "age_max": "47"
     },
     {
       "study_name": "CM_madagascar",
@@ -2960,7 +3110,9 @@
       "dna_extraction_kit": "PowerSoil",
       "sequencing_platform": "IlluminaHiSeq",
       "uncurated_metadata": "9,428 metagenomes from 46 datasets plus Madagascar and Ethiopian cohorts; 31 countries sampled; USA (1,431), China (1,342), Israel (956), Sweden (600), Denmark (580) most represented; 5 body sites: gut (7,783), oral cavity (783), skin (503, incl. 93 anterior nares), vagina (88), maternal milk (9); Age categories: adults 19-65y (6,615), newborns <1y (1,098), children 1-12y (465), school-age 12-19y (216), adults/seniors >19,>65y merged (876); Madagascar cohort: 112 healthy volunteers (54 females, 58 males), MAHERY study, non-Westernized rural rainforest population in Madagascar; Ethiopian cohort: 5 female individuals from Gimbichu, Oromia Region, non-Westernized; Non-Westernized total: 592 samples (Madagascar + Fiji, Hadza, Mongolian, Peruvian); Westernized: 8,836 samples",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "58",
+      "age_max": "58"
     },
     {
       "study_name": "CM_madagascar",
@@ -2987,7 +3139,9 @@
       "dna_extraction_kit": "PowerSoil",
       "sequencing_platform": "IlluminaHiSeq",
       "uncurated_metadata": "9,428 metagenomes from 46 datasets plus Madagascar and Ethiopian cohorts; 31 countries sampled; USA (1,431), China (1,342), Israel (956), Sweden (600), Denmark (580) most represented; 5 body sites: gut (7,783), oral cavity (783), skin (503, incl. 93 anterior nares), vagina (88), maternal milk (9); Age categories: adults 19-65y (6,615), newborns <1y (1,098), children 1-12y (465), school-age 12-19y (216), adults/seniors >19,>65y merged (876); Madagascar cohort: 112 healthy volunteers (54 females, 58 males), MAHERY study, non-Westernized rural rainforest population in Madagascar; Ethiopian cohort: 5 female individuals from Gimbichu, Oromia Region, non-Westernized; Non-Westernized total: 592 samples (Madagascar + Fiji, Hadza, Mongolian, Peruvian); Westernized: 8,836 samples",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "26",
+      "age_max": "26"
     },
     {
       "study_name": "CM_madagascar",
@@ -3014,7 +3168,9 @@
       "dna_extraction_kit": "PowerSoil",
       "sequencing_platform": "IlluminaHiSeq",
       "uncurated_metadata": "9,428 metagenomes from 46 datasets plus Madagascar and Ethiopian cohorts; 31 countries sampled; USA (1,431), China (1,342), Israel (956), Sweden (600), Denmark (580) most represented; 5 body sites: gut (7,783), oral cavity (783), skin (503, incl. 93 anterior nares), vagina (88), maternal milk (9); Age categories: adults 19-65y (6,615), newborns <1y (1,098), children 1-12y (465), school-age 12-19y (216), adults/seniors >19,>65y merged (876); Madagascar cohort: 112 healthy volunteers (54 females, 58 males), MAHERY study, non-Westernized rural rainforest population in Madagascar; Ethiopian cohort: 5 female individuals from Gimbichu, Oromia Region, non-Westernized; Non-Westernized total: 592 samples (Madagascar + Fiji, Hadza, Mongolian, Peruvian); Westernized: 8,836 samples",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "51",
+      "age_max": "51"
     },
     {
       "study_name": "CM_madagascar",
@@ -3041,7 +3197,9 @@
       "dna_extraction_kit": "PowerSoil",
       "sequencing_platform": "IlluminaHiSeq",
       "uncurated_metadata": "9,428 metagenomes from 46 datasets plus Madagascar and Ethiopian cohorts; 31 countries sampled; USA (1,431), China (1,342), Israel (956), Sweden (600), Denmark (580) most represented; 5 body sites: gut (7,783), oral cavity (783), skin (503, incl. 93 anterior nares), vagina (88), maternal milk (9); Age categories: adults 19-65y (6,615), newborns <1y (1,098), children 1-12y (465), school-age 12-19y (216), adults/seniors >19,>65y merged (876); Madagascar cohort: 112 healthy volunteers (54 females, 58 males), MAHERY study, non-Westernized rural rainforest population in Madagascar; Ethiopian cohort: 5 female individuals from Gimbichu, Oromia Region, non-Westernized; Non-Westernized total: 592 samples (Madagascar + Fiji, Hadza, Mongolian, Peruvian); Westernized: 8,836 samples",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "38",
+      "age_max": "38"
     },
     {
       "study_name": "CM_madagascar",
@@ -3068,7 +3226,9 @@
       "dna_extraction_kit": "PowerSoil",
       "sequencing_platform": "IlluminaHiSeq",
       "uncurated_metadata": "9,428 metagenomes from 46 datasets plus Madagascar and Ethiopian cohorts; 31 countries sampled; USA (1,431), China (1,342), Israel (956), Sweden (600), Denmark (580) most represented; 5 body sites: gut (7,783), oral cavity (783), skin (503, incl. 93 anterior nares), vagina (88), maternal milk (9); Age categories: adults 19-65y (6,615), newborns <1y (1,098), children 1-12y (465), school-age 12-19y (216), adults/seniors >19,>65y merged (876); Madagascar cohort: 112 healthy volunteers (54 females, 58 males), MAHERY study, non-Westernized rural rainforest population in Madagascar; Ethiopian cohort: 5 female individuals from Gimbichu, Oromia Region, non-Westernized; Non-Westernized total: 592 samples (Madagascar + Fiji, Hadza, Mongolian, Peruvian); Westernized: 8,836 samples",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "37",
+      "age_max": "37"
     },
     {
       "study_name": "CM_madagascar",
@@ -3095,7 +3255,9 @@
       "dna_extraction_kit": "PowerSoil",
       "sequencing_platform": "IlluminaHiSeq",
       "uncurated_metadata": "9,428 metagenomes from 46 datasets plus Madagascar and Ethiopian cohorts; 31 countries sampled; USA (1,431), China (1,342), Israel (956), Sweden (600), Denmark (580) most represented; 5 body sites: gut (7,783), oral cavity (783), skin (503, incl. 93 anterior nares), vagina (88), maternal milk (9); Age categories: adults 19-65y (6,615), newborns <1y (1,098), children 1-12y (465), school-age 12-19y (216), adults/seniors >19,>65y merged (876); Madagascar cohort: 112 healthy volunteers (54 females, 58 males), MAHERY study, non-Westernized rural rainforest population in Madagascar; Ethiopian cohort: 5 female individuals from Gimbichu, Oromia Region, non-Westernized; Non-Westernized total: 592 samples (Madagascar + Fiji, Hadza, Mongolian, Peruvian); Westernized: 8,836 samples",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "42",
+      "age_max": "42"
     },
     {
       "study_name": "CM_madagascar",
@@ -3122,7 +3284,9 @@
       "dna_extraction_kit": "PowerSoil",
       "sequencing_platform": "IlluminaHiSeq",
       "uncurated_metadata": "9,428 metagenomes from 46 datasets plus Madagascar and Ethiopian cohorts; 31 countries sampled; USA (1,431), China (1,342), Israel (956), Sweden (600), Denmark (580) most represented; 5 body sites: gut (7,783), oral cavity (783), skin (503, incl. 93 anterior nares), vagina (88), maternal milk (9); Age categories: adults 19-65y (6,615), newborns <1y (1,098), children 1-12y (465), school-age 12-19y (216), adults/seniors >19,>65y merged (876); Madagascar cohort: 112 healthy volunteers (54 females, 58 males), MAHERY study, non-Westernized rural rainforest population in Madagascar; Ethiopian cohort: 5 female individuals from Gimbichu, Oromia Region, non-Westernized; Non-Westernized total: 592 samples (Madagascar + Fiji, Hadza, Mongolian, Peruvian); Westernized: 8,836 samples",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "26",
+      "age_max": "26"
     },
     {
       "study_name": "CM_madagascar",
@@ -3149,7 +3313,9 @@
       "dna_extraction_kit": "PowerSoil",
       "sequencing_platform": "IlluminaHiSeq",
       "uncurated_metadata": "9,428 metagenomes from 46 datasets plus Madagascar and Ethiopian cohorts; 31 countries sampled; USA (1,431), China (1,342), Israel (956), Sweden (600), Denmark (580) most represented; 5 body sites: gut (7,783), oral cavity (783), skin (503, incl. 93 anterior nares), vagina (88), maternal milk (9); Age categories: adults 19-65y (6,615), newborns <1y (1,098), children 1-12y (465), school-age 12-19y (216), adults/seniors >19,>65y merged (876); Madagascar cohort: 112 healthy volunteers (54 females, 58 males), MAHERY study, non-Westernized rural rainforest population in Madagascar; Ethiopian cohort: 5 female individuals from Gimbichu, Oromia Region, non-Westernized; Non-Westernized total: 592 samples (Madagascar + Fiji, Hadza, Mongolian, Peruvian); Westernized: 8,836 samples",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "27",
+      "age_max": "27"
     },
     {
       "study_name": "CM_madagascar",
@@ -3176,7 +3342,9 @@
       "dna_extraction_kit": "PowerSoil",
       "sequencing_platform": "IlluminaHiSeq",
       "uncurated_metadata": "9,428 metagenomes from 46 datasets plus Madagascar and Ethiopian cohorts; 31 countries sampled; USA (1,431), China (1,342), Israel (956), Sweden (600), Denmark (580) most represented; 5 body sites: gut (7,783), oral cavity (783), skin (503, incl. 93 anterior nares), vagina (88), maternal milk (9); Age categories: adults 19-65y (6,615), newborns <1y (1,098), children 1-12y (465), school-age 12-19y (216), adults/seniors >19,>65y merged (876); Madagascar cohort: 112 healthy volunteers (54 females, 58 males), MAHERY study, non-Westernized rural rainforest population in Madagascar; Ethiopian cohort: 5 female individuals from Gimbichu, Oromia Region, non-Westernized; Non-Westernized total: 592 samples (Madagascar + Fiji, Hadza, Mongolian, Peruvian); Westernized: 8,836 samples",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "26",
+      "age_max": "26"
     },
     {
       "study_name": "CM_madagascar",
@@ -3203,7 +3371,9 @@
       "dna_extraction_kit": "PowerSoil",
       "sequencing_platform": "IlluminaHiSeq",
       "uncurated_metadata": "9,428 metagenomes from 46 datasets plus Madagascar and Ethiopian cohorts; 31 countries sampled; USA (1,431), China (1,342), Israel (956), Sweden (600), Denmark (580) most represented; 5 body sites: gut (7,783), oral cavity (783), skin (503, incl. 93 anterior nares), vagina (88), maternal milk (9); Age categories: adults 19-65y (6,615), newborns <1y (1,098), children 1-12y (465), school-age 12-19y (216), adults/seniors >19,>65y merged (876); Madagascar cohort: 112 healthy volunteers (54 females, 58 males), MAHERY study, non-Westernized rural rainforest population in Madagascar; Ethiopian cohort: 5 female individuals from Gimbichu, Oromia Region, non-Westernized; Non-Westernized total: 592 samples (Madagascar + Fiji, Hadza, Mongolian, Peruvian); Westernized: 8,836 samples",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "28",
+      "age_max": "28"
     },
     {
       "study_name": "CM_madagascar",
@@ -3230,7 +3400,9 @@
       "dna_extraction_kit": "PowerSoil",
       "sequencing_platform": "IlluminaHiSeq",
       "uncurated_metadata": "9,428 metagenomes from 46 datasets plus Madagascar and Ethiopian cohorts; 31 countries sampled; USA (1,431), China (1,342), Israel (956), Sweden (600), Denmark (580) most represented; 5 body sites: gut (7,783), oral cavity (783), skin (503, incl. 93 anterior nares), vagina (88), maternal milk (9); Age categories: adults 19-65y (6,615), newborns <1y (1,098), children 1-12y (465), school-age 12-19y (216), adults/seniors >19,>65y merged (876); Madagascar cohort: 112 healthy volunteers (54 females, 58 males), MAHERY study, non-Westernized rural rainforest population in Madagascar; Ethiopian cohort: 5 female individuals from Gimbichu, Oromia Region, non-Westernized; Non-Westernized total: 592 samples (Madagascar + Fiji, Hadza, Mongolian, Peruvian); Westernized: 8,836 samples",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "43",
+      "age_max": "43"
     },
     {
       "study_name": "CM_madagascar",
@@ -3257,7 +3429,9 @@
       "dna_extraction_kit": "PowerSoil",
       "sequencing_platform": "IlluminaHiSeq",
       "uncurated_metadata": "9,428 metagenomes from 46 datasets plus Madagascar and Ethiopian cohorts; 31 countries sampled; USA (1,431), China (1,342), Israel (956), Sweden (600), Denmark (580) most represented; 5 body sites: gut (7,783), oral cavity (783), skin (503, incl. 93 anterior nares), vagina (88), maternal milk (9); Age categories: adults 19-65y (6,615), newborns <1y (1,098), children 1-12y (465), school-age 12-19y (216), adults/seniors >19,>65y merged (876); Madagascar cohort: 112 healthy volunteers (54 females, 58 males), MAHERY study, non-Westernized rural rainforest population in Madagascar; Ethiopian cohort: 5 female individuals from Gimbichu, Oromia Region, non-Westernized; Non-Westernized total: 592 samples (Madagascar + Fiji, Hadza, Mongolian, Peruvian); Westernized: 8,836 samples",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "50",
+      "age_max": "50"
     },
     {
       "study_name": "CM_madagascar",
@@ -3284,7 +3458,9 @@
       "dna_extraction_kit": "PowerSoil",
       "sequencing_platform": "IlluminaHiSeq",
       "uncurated_metadata": "9,428 metagenomes from 46 datasets plus Madagascar and Ethiopian cohorts; 31 countries sampled; USA (1,431), China (1,342), Israel (956), Sweden (600), Denmark (580) most represented; 5 body sites: gut (7,783), oral cavity (783), skin (503, incl. 93 anterior nares), vagina (88), maternal milk (9); Age categories: adults 19-65y (6,615), newborns <1y (1,098), children 1-12y (465), school-age 12-19y (216), adults/seniors >19,>65y merged (876); Madagascar cohort: 112 healthy volunteers (54 females, 58 males), MAHERY study, non-Westernized rural rainforest population in Madagascar; Ethiopian cohort: 5 female individuals from Gimbichu, Oromia Region, non-Westernized; Non-Westernized total: 592 samples (Madagascar + Fiji, Hadza, Mongolian, Peruvian); Westernized: 8,836 samples",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "23",
+      "age_max": "23"
     },
     {
       "study_name": "CM_madagascar",
@@ -3311,7 +3487,9 @@
       "dna_extraction_kit": "PowerSoil",
       "sequencing_platform": "IlluminaHiSeq",
       "uncurated_metadata": "9,428 metagenomes from 46 datasets plus Madagascar and Ethiopian cohorts; 31 countries sampled; USA (1,431), China (1,342), Israel (956), Sweden (600), Denmark (580) most represented; 5 body sites: gut (7,783), oral cavity (783), skin (503, incl. 93 anterior nares), vagina (88), maternal milk (9); Age categories: adults 19-65y (6,615), newborns <1y (1,098), children 1-12y (465), school-age 12-19y (216), adults/seniors >19,>65y merged (876); Madagascar cohort: 112 healthy volunteers (54 females, 58 males), MAHERY study, non-Westernized rural rainforest population in Madagascar; Ethiopian cohort: 5 female individuals from Gimbichu, Oromia Region, non-Westernized; Non-Westernized total: 592 samples (Madagascar + Fiji, Hadza, Mongolian, Peruvian); Westernized: 8,836 samples",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "30",
+      "age_max": "30"
     },
     {
       "study_name": "CM_madagascar",
@@ -3338,7 +3516,9 @@
       "dna_extraction_kit": "PowerSoil",
       "sequencing_platform": "IlluminaHiSeq",
       "uncurated_metadata": "9,428 metagenomes from 46 datasets plus Madagascar and Ethiopian cohorts; 31 countries sampled; USA (1,431), China (1,342), Israel (956), Sweden (600), Denmark (580) most represented; 5 body sites: gut (7,783), oral cavity (783), skin (503, incl. 93 anterior nares), vagina (88), maternal milk (9); Age categories: adults 19-65y (6,615), newborns <1y (1,098), children 1-12y (465), school-age 12-19y (216), adults/seniors >19,>65y merged (876); Madagascar cohort: 112 healthy volunteers (54 females, 58 males), MAHERY study, non-Westernized rural rainforest population in Madagascar; Ethiopian cohort: 5 female individuals from Gimbichu, Oromia Region, non-Westernized; Non-Westernized total: 592 samples (Madagascar + Fiji, Hadza, Mongolian, Peruvian); Westernized: 8,836 samples",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "32",
+      "age_max": "32"
     },
     {
       "study_name": "CM_madagascar",
@@ -3365,7 +3545,9 @@
       "dna_extraction_kit": "PowerSoil",
       "sequencing_platform": "IlluminaHiSeq",
       "uncurated_metadata": "9,428 metagenomes from 46 datasets plus Madagascar and Ethiopian cohorts; 31 countries sampled; USA (1,431), China (1,342), Israel (956), Sweden (600), Denmark (580) most represented; 5 body sites: gut (7,783), oral cavity (783), skin (503, incl. 93 anterior nares), vagina (88), maternal milk (9); Age categories: adults 19-65y (6,615), newborns <1y (1,098), children 1-12y (465), school-age 12-19y (216), adults/seniors >19,>65y merged (876); Madagascar cohort: 112 healthy volunteers (54 females, 58 males), MAHERY study, non-Westernized rural rainforest population in Madagascar; Ethiopian cohort: 5 female individuals from Gimbichu, Oromia Region, non-Westernized; Non-Westernized total: 592 samples (Madagascar + Fiji, Hadza, Mongolian, Peruvian); Westernized: 8,836 samples",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "37",
+      "age_max": "37"
     },
     {
       "study_name": "CM_madagascar",
@@ -3392,7 +3574,9 @@
       "dna_extraction_kit": "PowerSoil",
       "sequencing_platform": "IlluminaHiSeq",
       "uncurated_metadata": "9,428 metagenomes from 46 datasets plus Madagascar and Ethiopian cohorts; 31 countries sampled; USA (1,431), China (1,342), Israel (956), Sweden (600), Denmark (580) most represented; 5 body sites: gut (7,783), oral cavity (783), skin (503, incl. 93 anterior nares), vagina (88), maternal milk (9); Age categories: adults 19-65y (6,615), newborns <1y (1,098), children 1-12y (465), school-age 12-19y (216), adults/seniors >19,>65y merged (876); Madagascar cohort: 112 healthy volunteers (54 females, 58 males), MAHERY study, non-Westernized rural rainforest population in Madagascar; Ethiopian cohort: 5 female individuals from Gimbichu, Oromia Region, non-Westernized; Non-Westernized total: 592 samples (Madagascar + Fiji, Hadza, Mongolian, Peruvian); Westernized: 8,836 samples",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "44",
+      "age_max": "44"
     },
     {
       "study_name": "CM_madagascar",
@@ -3419,7 +3603,9 @@
       "dna_extraction_kit": "PowerSoil",
       "sequencing_platform": "IlluminaHiSeq",
       "uncurated_metadata": "9,428 metagenomes from 46 datasets plus Madagascar and Ethiopian cohorts; 31 countries sampled; USA (1,431), China (1,342), Israel (956), Sweden (600), Denmark (580) most represented; 5 body sites: gut (7,783), oral cavity (783), skin (503, incl. 93 anterior nares), vagina (88), maternal milk (9); Age categories: adults 19-65y (6,615), newborns <1y (1,098), children 1-12y (465), school-age 12-19y (216), adults/seniors >19,>65y merged (876); Madagascar cohort: 112 healthy volunteers (54 females, 58 males), MAHERY study, non-Westernized rural rainforest population in Madagascar; Ethiopian cohort: 5 female individuals from Gimbichu, Oromia Region, non-Westernized; Non-Westernized total: 592 samples (Madagascar + Fiji, Hadza, Mongolian, Peruvian); Westernized: 8,836 samples",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "34",
+      "age_max": "34"
     },
     {
       "study_name": "CM_madagascar",
@@ -3446,7 +3632,9 @@
       "dna_extraction_kit": "PowerSoil",
       "sequencing_platform": "IlluminaHiSeq",
       "uncurated_metadata": "9,428 metagenomes from 46 datasets plus Madagascar and Ethiopian cohorts; 31 countries sampled; USA (1,431), China (1,342), Israel (956), Sweden (600), Denmark (580) most represented; 5 body sites: gut (7,783), oral cavity (783), skin (503, incl. 93 anterior nares), vagina (88), maternal milk (9); Age categories: adults 19-65y (6,615), newborns <1y (1,098), children 1-12y (465), school-age 12-19y (216), adults/seniors >19,>65y merged (876); Madagascar cohort: 112 healthy volunteers (54 females, 58 males), MAHERY study, non-Westernized rural rainforest population in Madagascar; Ethiopian cohort: 5 female individuals from Gimbichu, Oromia Region, non-Westernized; Non-Westernized total: 592 samples (Madagascar + Fiji, Hadza, Mongolian, Peruvian); Westernized: 8,836 samples",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "24",
+      "age_max": "24"
     },
     {
       "study_name": "CM_madagascar",
@@ -3473,7 +3661,9 @@
       "dna_extraction_kit": "PowerSoil",
       "sequencing_platform": "IlluminaHiSeq",
       "uncurated_metadata": "9,428 metagenomes from 46 datasets plus Madagascar and Ethiopian cohorts; 31 countries sampled; USA (1,431), China (1,342), Israel (956), Sweden (600), Denmark (580) most represented; 5 body sites: gut (7,783), oral cavity (783), skin (503, incl. 93 anterior nares), vagina (88), maternal milk (9); Age categories: adults 19-65y (6,615), newborns <1y (1,098), children 1-12y (465), school-age 12-19y (216), adults/seniors >19,>65y merged (876); Madagascar cohort: 112 healthy volunteers (54 females, 58 males), MAHERY study, non-Westernized rural rainforest population in Madagascar; Ethiopian cohort: 5 female individuals from Gimbichu, Oromia Region, non-Westernized; Non-Westernized total: 592 samples (Madagascar + Fiji, Hadza, Mongolian, Peruvian); Westernized: 8,836 samples",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "29",
+      "age_max": "29"
     },
     {
       "study_name": "CM_madagascar",
@@ -3500,7 +3690,9 @@
       "dna_extraction_kit": "PowerSoil",
       "sequencing_platform": "IlluminaHiSeq",
       "uncurated_metadata": "9,428 metagenomes from 46 datasets plus Madagascar and Ethiopian cohorts; 31 countries sampled; USA (1,431), China (1,342), Israel (956), Sweden (600), Denmark (580) most represented; 5 body sites: gut (7,783), oral cavity (783), skin (503, incl. 93 anterior nares), vagina (88), maternal milk (9); Age categories: adults 19-65y (6,615), newborns <1y (1,098), children 1-12y (465), school-age 12-19y (216), adults/seniors >19,>65y merged (876); Madagascar cohort: 112 healthy volunteers (54 females, 58 males), MAHERY study, non-Westernized rural rainforest population in Madagascar; Ethiopian cohort: 5 female individuals from Gimbichu, Oromia Region, non-Westernized; Non-Westernized total: 592 samples (Madagascar + Fiji, Hadza, Mongolian, Peruvian); Westernized: 8,836 samples",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "42",
+      "age_max": "42"
     },
     {
       "study_name": "CM_madagascar",
@@ -3527,7 +3719,9 @@
       "dna_extraction_kit": "PowerSoil",
       "sequencing_platform": "IlluminaHiSeq",
       "uncurated_metadata": "9,428 metagenomes from 46 datasets plus Madagascar and Ethiopian cohorts; 31 countries sampled; USA (1,431), China (1,342), Israel (956), Sweden (600), Denmark (580) most represented; 5 body sites: gut (7,783), oral cavity (783), skin (503, incl. 93 anterior nares), vagina (88), maternal milk (9); Age categories: adults 19-65y (6,615), newborns <1y (1,098), children 1-12y (465), school-age 12-19y (216), adults/seniors >19,>65y merged (876); Madagascar cohort: 112 healthy volunteers (54 females, 58 males), MAHERY study, non-Westernized rural rainforest population in Madagascar; Ethiopian cohort: 5 female individuals from Gimbichu, Oromia Region, non-Westernized; Non-Westernized total: 592 samples (Madagascar + Fiji, Hadza, Mongolian, Peruvian); Westernized: 8,836 samples",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "33",
+      "age_max": "33"
     },
     {
       "study_name": "CM_madagascar",
@@ -3554,7 +3748,9 @@
       "dna_extraction_kit": "PowerSoil",
       "sequencing_platform": "IlluminaHiSeq",
       "uncurated_metadata": "9,428 metagenomes from 46 datasets plus Madagascar and Ethiopian cohorts; 31 countries sampled; USA (1,431), China (1,342), Israel (956), Sweden (600), Denmark (580) most represented; 5 body sites: gut (7,783), oral cavity (783), skin (503, incl. 93 anterior nares), vagina (88), maternal milk (9); Age categories: adults 19-65y (6,615), newborns <1y (1,098), children 1-12y (465), school-age 12-19y (216), adults/seniors >19,>65y merged (876); Madagascar cohort: 112 healthy volunteers (54 females, 58 males), MAHERY study, non-Westernized rural rainforest population in Madagascar; Ethiopian cohort: 5 female individuals from Gimbichu, Oromia Region, non-Westernized; Non-Westernized total: 592 samples (Madagascar + Fiji, Hadza, Mongolian, Peruvian); Westernized: 8,836 samples",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "46",
+      "age_max": "46"
     },
     {
       "study_name": "CM_madagascar",
@@ -3581,7 +3777,9 @@
       "dna_extraction_kit": "PowerSoil",
       "sequencing_platform": "IlluminaHiSeq",
       "uncurated_metadata": "9,428 metagenomes from 46 datasets plus Madagascar and Ethiopian cohorts; 31 countries sampled; USA (1,431), China (1,342), Israel (956), Sweden (600), Denmark (580) most represented; 5 body sites: gut (7,783), oral cavity (783), skin (503, incl. 93 anterior nares), vagina (88), maternal milk (9); Age categories: adults 19-65y (6,615), newborns <1y (1,098), children 1-12y (465), school-age 12-19y (216), adults/seniors >19,>65y merged (876); Madagascar cohort: 112 healthy volunteers (54 females, 58 males), MAHERY study, non-Westernized rural rainforest population in Madagascar; Ethiopian cohort: 5 female individuals from Gimbichu, Oromia Region, non-Westernized; Non-Westernized total: 592 samples (Madagascar + Fiji, Hadza, Mongolian, Peruvian); Westernized: 8,836 samples",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "29",
+      "age_max": "29"
     },
     {
       "study_name": "CM_madagascar",
@@ -3608,7 +3806,9 @@
       "dna_extraction_kit": "PowerSoil",
       "sequencing_platform": "IlluminaHiSeq",
       "uncurated_metadata": "9,428 metagenomes from 46 datasets plus Madagascar and Ethiopian cohorts; 31 countries sampled; USA (1,431), China (1,342), Israel (956), Sweden (600), Denmark (580) most represented; 5 body sites: gut (7,783), oral cavity (783), skin (503, incl. 93 anterior nares), vagina (88), maternal milk (9); Age categories: adults 19-65y (6,615), newborns <1y (1,098), children 1-12y (465), school-age 12-19y (216), adults/seniors >19,>65y merged (876); Madagascar cohort: 112 healthy volunteers (54 females, 58 males), MAHERY study, non-Westernized rural rainforest population in Madagascar; Ethiopian cohort: 5 female individuals from Gimbichu, Oromia Region, non-Westernized; Non-Westernized total: 592 samples (Madagascar + Fiji, Hadza, Mongolian, Peruvian); Westernized: 8,836 samples",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "33",
+      "age_max": "33"
     },
     {
       "study_name": "CM_madagascar",
@@ -3635,7 +3835,9 @@
       "dna_extraction_kit": "PowerSoil",
       "sequencing_platform": "IlluminaHiSeq",
       "uncurated_metadata": "9,428 metagenomes from 46 datasets plus Madagascar and Ethiopian cohorts; 31 countries sampled; USA (1,431), China (1,342), Israel (956), Sweden (600), Denmark (580) most represented; 5 body sites: gut (7,783), oral cavity (783), skin (503, incl. 93 anterior nares), vagina (88), maternal milk (9); Age categories: adults 19-65y (6,615), newborns <1y (1,098), children 1-12y (465), school-age 12-19y (216), adults/seniors >19,>65y merged (876); Madagascar cohort: 112 healthy volunteers (54 females, 58 males), MAHERY study, non-Westernized rural rainforest population in Madagascar; Ethiopian cohort: 5 female individuals from Gimbichu, Oromia Region, non-Westernized; Non-Westernized total: 592 samples (Madagascar + Fiji, Hadza, Mongolian, Peruvian); Westernized: 8,836 samples",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "26",
+      "age_max": "26"
     },
     {
       "study_name": "CM_madagascar",
@@ -3662,7 +3864,9 @@
       "dna_extraction_kit": "PowerSoil",
       "sequencing_platform": "IlluminaHiSeq",
       "uncurated_metadata": "9,428 metagenomes from 46 datasets plus Madagascar and Ethiopian cohorts; 31 countries sampled; USA (1,431), China (1,342), Israel (956), Sweden (600), Denmark (580) most represented; 5 body sites: gut (7,783), oral cavity (783), skin (503, incl. 93 anterior nares), vagina (88), maternal milk (9); Age categories: adults 19-65y (6,615), newborns <1y (1,098), children 1-12y (465), school-age 12-19y (216), adults/seniors >19,>65y merged (876); Madagascar cohort: 112 healthy volunteers (54 females, 58 males), MAHERY study, non-Westernized rural rainforest population in Madagascar; Ethiopian cohort: 5 female individuals from Gimbichu, Oromia Region, non-Westernized; Non-Westernized total: 592 samples (Madagascar + Fiji, Hadza, Mongolian, Peruvian); Westernized: 8,836 samples",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "72",
+      "age_max": "72"
     },
     {
       "study_name": "CM_madagascar",
@@ -3689,7 +3893,9 @@
       "dna_extraction_kit": "PowerSoil",
       "sequencing_platform": "IlluminaHiSeq",
       "uncurated_metadata": "9,428 metagenomes from 46 datasets plus Madagascar and Ethiopian cohorts; 31 countries sampled; USA (1,431), China (1,342), Israel (956), Sweden (600), Denmark (580) most represented; 5 body sites: gut (7,783), oral cavity (783), skin (503, incl. 93 anterior nares), vagina (88), maternal milk (9); Age categories: adults 19-65y (6,615), newborns <1y (1,098), children 1-12y (465), school-age 12-19y (216), adults/seniors >19,>65y merged (876); Madagascar cohort: 112 healthy volunteers (54 females, 58 males), MAHERY study, non-Westernized rural rainforest population in Madagascar; Ethiopian cohort: 5 female individuals from Gimbichu, Oromia Region, non-Westernized; Non-Westernized total: 592 samples (Madagascar + Fiji, Hadza, Mongolian, Peruvian); Westernized: 8,836 samples",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "29",
+      "age_max": "29"
     },
     {
       "study_name": "CM_madagascar",
@@ -3716,7 +3922,9 @@
       "dna_extraction_kit": "PowerSoil",
       "sequencing_platform": "IlluminaHiSeq",
       "uncurated_metadata": "9,428 metagenomes from 46 datasets plus Madagascar and Ethiopian cohorts; 31 countries sampled; USA (1,431), China (1,342), Israel (956), Sweden (600), Denmark (580) most represented; 5 body sites: gut (7,783), oral cavity (783), skin (503, incl. 93 anterior nares), vagina (88), maternal milk (9); Age categories: adults 19-65y (6,615), newborns <1y (1,098), children 1-12y (465), school-age 12-19y (216), adults/seniors >19,>65y merged (876); Madagascar cohort: 112 healthy volunteers (54 females, 58 males), MAHERY study, non-Westernized rural rainforest population in Madagascar; Ethiopian cohort: 5 female individuals from Gimbichu, Oromia Region, non-Westernized; Non-Westernized total: 592 samples (Madagascar + Fiji, Hadza, Mongolian, Peruvian); Westernized: 8,836 samples",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "37",
+      "age_max": "37"
     },
     {
       "study_name": "CM_madagascar",
@@ -3743,7 +3951,9 @@
       "dna_extraction_kit": "PowerSoil",
       "sequencing_platform": "IlluminaHiSeq",
       "uncurated_metadata": "9,428 metagenomes from 46 datasets plus Madagascar and Ethiopian cohorts; 31 countries sampled; USA (1,431), China (1,342), Israel (956), Sweden (600), Denmark (580) most represented; 5 body sites: gut (7,783), oral cavity (783), skin (503, incl. 93 anterior nares), vagina (88), maternal milk (9); Age categories: adults 19-65y (6,615), newborns <1y (1,098), children 1-12y (465), school-age 12-19y (216), adults/seniors >19,>65y merged (876); Madagascar cohort: 112 healthy volunteers (54 females, 58 males), MAHERY study, non-Westernized rural rainforest population in Madagascar; Ethiopian cohort: 5 female individuals from Gimbichu, Oromia Region, non-Westernized; Non-Westernized total: 592 samples (Madagascar + Fiji, Hadza, Mongolian, Peruvian); Westernized: 8,836 samples",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "40",
+      "age_max": "40"
     },
     {
       "study_name": "CM_madagascar",
@@ -3770,7 +3980,9 @@
       "dna_extraction_kit": "PowerSoil",
       "sequencing_platform": "IlluminaHiSeq",
       "uncurated_metadata": "9,428 metagenomes from 46 datasets plus Madagascar and Ethiopian cohorts; 31 countries sampled; USA (1,431), China (1,342), Israel (956), Sweden (600), Denmark (580) most represented; 5 body sites: gut (7,783), oral cavity (783), skin (503, incl. 93 anterior nares), vagina (88), maternal milk (9); Age categories: adults 19-65y (6,615), newborns <1y (1,098), children 1-12y (465), school-age 12-19y (216), adults/seniors >19,>65y merged (876); Madagascar cohort: 112 healthy volunteers (54 females, 58 males), MAHERY study, non-Westernized rural rainforest population in Madagascar; Ethiopian cohort: 5 female individuals from Gimbichu, Oromia Region, non-Westernized; Non-Westernized total: 592 samples (Madagascar + Fiji, Hadza, Mongolian, Peruvian); Westernized: 8,836 samples",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "52",
+      "age_max": "52"
     },
     {
       "study_name": "CM_madagascar",
@@ -3797,7 +4009,9 @@
       "dna_extraction_kit": "PowerSoil",
       "sequencing_platform": "IlluminaHiSeq",
       "uncurated_metadata": "9,428 metagenomes from 46 datasets plus Madagascar and Ethiopian cohorts; 31 countries sampled; USA (1,431), China (1,342), Israel (956), Sweden (600), Denmark (580) most represented; 5 body sites: gut (7,783), oral cavity (783), skin (503, incl. 93 anterior nares), vagina (88), maternal milk (9); Age categories: adults 19-65y (6,615), newborns <1y (1,098), children 1-12y (465), school-age 12-19y (216), adults/seniors >19,>65y merged (876); Madagascar cohort: 112 healthy volunteers (54 females, 58 males), MAHERY study, non-Westernized rural rainforest population in Madagascar; Ethiopian cohort: 5 female individuals from Gimbichu, Oromia Region, non-Westernized; Non-Westernized total: 592 samples (Madagascar + Fiji, Hadza, Mongolian, Peruvian); Westernized: 8,836 samples",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "21",
+      "age_max": "21"
     },
     {
       "study_name": "CM_madagascar",
@@ -3824,7 +4038,9 @@
       "dna_extraction_kit": "PowerSoil",
       "sequencing_platform": "IlluminaHiSeq",
       "uncurated_metadata": "9,428 metagenomes from 46 datasets plus Madagascar and Ethiopian cohorts; 31 countries sampled; USA (1,431), China (1,342), Israel (956), Sweden (600), Denmark (580) most represented; 5 body sites: gut (7,783), oral cavity (783), skin (503, incl. 93 anterior nares), vagina (88), maternal milk (9); Age categories: adults 19-65y (6,615), newborns <1y (1,098), children 1-12y (465), school-age 12-19y (216), adults/seniors >19,>65y merged (876); Madagascar cohort: 112 healthy volunteers (54 females, 58 males), MAHERY study, non-Westernized rural rainforest population in Madagascar; Ethiopian cohort: 5 female individuals from Gimbichu, Oromia Region, non-Westernized; Non-Westernized total: 592 samples (Madagascar + Fiji, Hadza, Mongolian, Peruvian); Westernized: 8,836 samples",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "33",
+      "age_max": "33"
     },
     {
       "study_name": "CM_madagascar",
@@ -3851,7 +4067,9 @@
       "dna_extraction_kit": "PowerSoil",
       "sequencing_platform": "IlluminaHiSeq",
       "uncurated_metadata": "9,428 metagenomes from 46 datasets plus Madagascar and Ethiopian cohorts; 31 countries sampled; USA (1,431), China (1,342), Israel (956), Sweden (600), Denmark (580) most represented; 5 body sites: gut (7,783), oral cavity (783), skin (503, incl. 93 anterior nares), vagina (88), maternal milk (9); Age categories: adults 19-65y (6,615), newborns <1y (1,098), children 1-12y (465), school-age 12-19y (216), adults/seniors >19,>65y merged (876); Madagascar cohort: 112 healthy volunteers (54 females, 58 males), MAHERY study, non-Westernized rural rainforest population in Madagascar; Ethiopian cohort: 5 female individuals from Gimbichu, Oromia Region, non-Westernized; Non-Westernized total: 592 samples (Madagascar + Fiji, Hadza, Mongolian, Peruvian); Westernized: 8,836 samples",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "30",
+      "age_max": "30"
     },
     {
       "study_name": "CM_madagascar",
@@ -3878,7 +4096,9 @@
       "dna_extraction_kit": "PowerSoil",
       "sequencing_platform": "IlluminaHiSeq",
       "uncurated_metadata": "9,428 metagenomes from 46 datasets plus Madagascar and Ethiopian cohorts; 31 countries sampled; USA (1,431), China (1,342), Israel (956), Sweden (600), Denmark (580) most represented; 5 body sites: gut (7,783), oral cavity (783), skin (503, incl. 93 anterior nares), vagina (88), maternal milk (9); Age categories: adults 19-65y (6,615), newborns <1y (1,098), children 1-12y (465), school-age 12-19y (216), adults/seniors >19,>65y merged (876); Madagascar cohort: 112 healthy volunteers (54 females, 58 males), MAHERY study, non-Westernized rural rainforest population in Madagascar; Ethiopian cohort: 5 female individuals from Gimbichu, Oromia Region, non-Westernized; Non-Westernized total: 592 samples (Madagascar + Fiji, Hadza, Mongolian, Peruvian); Westernized: 8,836 samples",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "25",
+      "age_max": "25"
     },
     {
       "study_name": "CM_madagascar",
@@ -3905,7 +4125,9 @@
       "dna_extraction_kit": "PowerSoil",
       "sequencing_platform": "IlluminaHiSeq",
       "uncurated_metadata": "9,428 metagenomes from 46 datasets plus Madagascar and Ethiopian cohorts; 31 countries sampled; USA (1,431), China (1,342), Israel (956), Sweden (600), Denmark (580) most represented; 5 body sites: gut (7,783), oral cavity (783), skin (503, incl. 93 anterior nares), vagina (88), maternal milk (9); Age categories: adults 19-65y (6,615), newborns <1y (1,098), children 1-12y (465), school-age 12-19y (216), adults/seniors >19,>65y merged (876); Madagascar cohort: 112 healthy volunteers (54 females, 58 males), MAHERY study, non-Westernized rural rainforest population in Madagascar; Ethiopian cohort: 5 female individuals from Gimbichu, Oromia Region, non-Westernized; Non-Westernized total: 592 samples (Madagascar + Fiji, Hadza, Mongolian, Peruvian); Westernized: 8,836 samples",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "36",
+      "age_max": "36"
     },
     {
       "study_name": "CM_madagascar",
@@ -3932,7 +4154,9 @@
       "dna_extraction_kit": "PowerSoil",
       "sequencing_platform": "IlluminaHiSeq",
       "uncurated_metadata": "9,428 metagenomes from 46 datasets plus Madagascar and Ethiopian cohorts; 31 countries sampled; USA (1,431), China (1,342), Israel (956), Sweden (600), Denmark (580) most represented; 5 body sites: gut (7,783), oral cavity (783), skin (503, incl. 93 anterior nares), vagina (88), maternal milk (9); Age categories: adults 19-65y (6,615), newborns <1y (1,098), children 1-12y (465), school-age 12-19y (216), adults/seniors >19,>65y merged (876); Madagascar cohort: 112 healthy volunteers (54 females, 58 males), MAHERY study, non-Westernized rural rainforest population in Madagascar; Ethiopian cohort: 5 female individuals from Gimbichu, Oromia Region, non-Westernized; Non-Westernized total: 592 samples (Madagascar + Fiji, Hadza, Mongolian, Peruvian); Westernized: 8,836 samples",
-      "host_species": "Homo sapiens"
+      "host_species": "Homo sapiens",
+      "age_min": "24",
+      "age_max": "24"
     }
   ],
   "table_selection": [
