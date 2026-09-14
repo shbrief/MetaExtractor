@@ -455,11 +455,16 @@ def propose_plan(
     schema_field_names: list[str],
     max_tokens: int = 2048,
     n_rows: int = 20,
+    max_tokens_ceiling: int = 16384,
+    calls: list[dict] | None = None,
 ) -> tuple[TablePlan, dict[str, int]]:
     """Ask the LLM to propose a :class:`TablePlan` for ``table``.
 
-    Returns ``(plan, usage)`` where ``usage`` is the per-call token usage
-    dict (the keys match :class:`MetaExtractor.last_usage`).
+    Returns ``(plan, usage)`` where ``usage`` is the token usage summed over
+    the call and any re-request (the keys match :class:`MetaExtractor.last_usage`).
+    A response that stops at ``max_tokens`` is re-requested with a doubled
+    budget up to ``max_tokens_ceiling`` (kept non-streaming-safe). When ``calls``
+    is given, one record per API call is appended to it.
     """
     grid = _render_grid_for_llm(table.raw_rows, n_rows)
     user = (
@@ -469,32 +474,42 @@ def propose_plan(
         f"First {min(n_rows, len(table.raw_rows))} rows (TSV, row index in column 0):\n\n"
         f"{grid}\n"
     )
-    try:
-        msg = client.messages.create(
-            model=model,
-            max_tokens=max_tokens,
-            system=_PROPOSE_SYSTEM,
-            messages=[{"role": "user", "content": user}],
-        )
-    except Exception as e:
-        # Covers auth errors (TypeError from missing API key), network
-        # failures, rate-limit errors, etc. — anything that means we
-        # cannot get a plan from the LLM.  The caller falls back to the
-        # default row-0-header parse.
-        raise PlanProposalError(
-            f"LLM call failed: {type(e).__name__}: {e}",
-            raw_response=None,
-            usage={},
-        ) from e
+    usage = {"input_tokens": 0, "cache_creation_input_tokens": 0,
+             "cache_read_input_tokens": 0, "output_tokens": 0, "n_calls": 0}
+    budget = max_tokens
+    while True:
+        try:
+            msg = client.messages.create(
+                model=model,
+                max_tokens=budget,
+                system=_PROPOSE_SYSTEM,
+                messages=[{"role": "user", "content": user}],
+            )
+        except Exception as e:
+            # Covers auth errors (TypeError from missing API key), network
+            # failures, rate-limit errors, etc. — anything that means we
+            # cannot get a plan from the LLM.  The caller falls back to the
+            # default row-0-header parse.
+            raise PlanProposalError(
+                f"LLM call failed: {type(e).__name__}: {e}",
+                raw_response=None,
+                usage=usage,
+            ) from e
+        u = msg.usage
+        for k in ("input_tokens", "cache_creation_input_tokens",
+                  "cache_read_input_tokens", "output_tokens"):
+            usage[k] += getattr(u, k, 0) or 0
+        usage["n_calls"] += 1
+        stop_reason = getattr(msg, "stop_reason", None)
+        if calls is not None:
+            calls.append({"purpose": "table_plan", "table": table.name, "max_tokens": budget,
+                          "stop_reason": stop_reason,
+                          "output_tokens": getattr(u, "output_tokens", None)})
+        if stop_reason == "max_tokens" and budget < max_tokens_ceiling:
+            budget = min(budget * 2, max_tokens_ceiling)
+            continue
+        break
     raw = "".join(b.text for b in msg.content if b.type == "text").strip()
-    u = msg.usage
-    usage = {
-        "input_tokens": getattr(u, "input_tokens", 0) or 0,
-        "cache_creation_input_tokens": getattr(u, "cache_creation_input_tokens", 0) or 0,
-        "cache_read_input_tokens": getattr(u, "cache_read_input_tokens", 0) or 0,
-        "output_tokens": getattr(u, "output_tokens", 0) or 0,
-        "n_calls": 1,
-    }
     # Strip a stray ```json fence if the model added one.
     stripped = raw
     if stripped.startswith("```"):

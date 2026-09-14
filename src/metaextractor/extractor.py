@@ -39,6 +39,10 @@ from metaextractor.table_select import score_table
 
 DEFAULT_MODEL = "claude-sonnet-4-6"
 DEFAULT_MAX_TOKENS = 16384
+#: Upper bound for the output budget when a response stops at ``max_tokens``.
+#: The budget doubles from ``max_tokens`` up to this value (adaptive-thinking
+#: tokens count against the same budget). 64K is within every listed model's limit.
+DEFAULT_MAX_TOKENS_CEILING = 64000
 DEFAULT_BATCH_SIZE = 30
 DEFAULT_MIN_TABLE_RELEVANCE = 0.15
 
@@ -118,10 +122,16 @@ class MetaExtractor:
         api_key: str | None = None,
         min_table_relevance: float = DEFAULT_MIN_TABLE_RELEVANCE,
         age_rules: AgeBoundRules | None = None,
+        max_tokens_ceiling: int = DEFAULT_MAX_TOKENS_CEILING,
     ):
         self.client = client or Anthropic(api_key=api_key or os.environ.get("ANTHROPIC_API_KEY"))
         self.model = model
         self.max_tokens = max_tokens
+        self.max_tokens_ceiling = max(max_tokens, max_tokens_ceiling)
+        #: One record per API call of the last extract() call, including calls whose
+        #: response was truncated and re-requested: purpose, fields, budget,
+        #: stop_reason, output_tokens.
+        self.last_calls: list[dict] = []
         self.batch_size = batch_size
         self.sample_discovery = sample_discovery
         self.min_table_relevance = min_table_relevance
@@ -157,6 +167,7 @@ class MetaExtractor:
         self.last_usage = {k: 0 for k in self.last_usage}
         self.last_response_models = set()
         self.last_table_sources = {}
+        self.last_calls = []
 
         # Deterministic table path: produce sample rows from structured tables,
         # then run the LLM only for prose-derived study-level fields.
@@ -245,7 +256,8 @@ class MetaExtractor:
             )
         ])
         try:
-            result = self._extract_one(paper_text, discovery_schema, paper_id, None)
+            result = self._extract_one(paper_text, discovery_schema, paper_id, None,
+                                       purpose="sample_discovery")
         except ExtractionError:
             return None
         if result.granularity != "sample_level" or not result.samples:
@@ -266,35 +278,60 @@ class MetaExtractor:
         schema_obj: Schema,
         paper_id: str | None,
         sample_ids: list[str] | None = None,
+        purpose: str = "fields",
     ) -> ExtractionResult:
         user_content = build_user_content(
             paper_text, schema_obj.to_prompt_json(), paper_id, sample_ids=sample_ids
         )
 
-        with self.client.messages.stream(
-            model=self.model,
-            max_tokens=self.max_tokens,
-            system=[
-                {
-                    "type": "text",
-                    "text": SYSTEM_PROMPT,
-                    "cache_control": {"type": "ephemeral"},
-                }
-            ],
-            messages=[{"role": "user", "content": user_content}],
-        ) as stream:
-            response = stream.get_final_message()
+        budget = self.max_tokens
+        while True:
+            with self.client.messages.stream(
+                model=self.model,
+                max_tokens=budget,
+                system=[
+                    {
+                        "type": "text",
+                        "text": SYSTEM_PROMPT,
+                        "cache_control": {"type": "ephemeral"},
+                    }
+                ],
+                messages=[{"role": "user", "content": user_content}],
+            ) as stream:
+                response = stream.get_final_message()
 
-        if getattr(response, "model", None):
-            self.last_response_models.add(str(response.model))
-        u = response.usage
-        self.last_usage["input_tokens"] += getattr(u, "input_tokens", 0) or 0
-        self.last_usage["cache_creation_input_tokens"] += getattr(u, "cache_creation_input_tokens", 0) or 0
-        self.last_usage["cache_read_input_tokens"] += getattr(u, "cache_read_input_tokens", 0) or 0
-        self.last_usage["output_tokens"] += getattr(u, "output_tokens", 0) or 0
-        self.last_usage["n_calls"] += 1
+            if getattr(response, "model", None):
+                self.last_response_models.add(str(response.model))
+            u = response.usage
+            self.last_usage["input_tokens"] += getattr(u, "input_tokens", 0) or 0
+            self.last_usage["cache_creation_input_tokens"] += getattr(u, "cache_creation_input_tokens", 0) or 0
+            self.last_usage["cache_read_input_tokens"] += getattr(u, "cache_read_input_tokens", 0) or 0
+            self.last_usage["output_tokens"] += getattr(u, "output_tokens", 0) or 0
+            self.last_usage["n_calls"] += 1
+            stop_reason = getattr(response, "stop_reason", None)
+            self.last_calls.append({
+                "purpose": purpose, "n_fields": len(schema_obj.fields),
+                "first_field": schema_obj.fields[0].name if schema_obj.fields else None,
+                "max_tokens": budget, "stop_reason": stop_reason,
+                "output_tokens": getattr(u, "output_tokens", None),
+            })
+            # A response cut off at the output budget is re-requested with a larger
+            # budget; parsing a truncated JSON document can only fail.
+            if stop_reason == "max_tokens" and budget < self.max_tokens_ceiling:
+                budget = min(budget * 2, self.max_tokens_ceiling)
+                continue
+            break
 
         raw = "".join(block.text for block in response.content if block.type == "text").strip()
+        if stop_reason == "max_tokens":
+            raise ExtractionError(
+                f"Model response truncated at max_tokens={budget} (the configured ceiling) "
+                f"for a batch of {len(schema_obj.fields)} field(s).",
+                raw_response=raw,
+            )
+        if stop_reason == "refusal":
+            raise ExtractionError("Model declined to respond (stop_reason=refusal).",
+                                  raw_response=raw)
         payload_str = _extract_json_blob(raw)
         try:
             payload = json.loads(payload_str)
@@ -414,7 +451,8 @@ class MetaExtractor:
 
             transformed: list = None  # type: ignore[assignment]
             try:
-                plan, usage = propose_plan(self.client, self.model, t, schema_field_names)
+                plan, usage = propose_plan(self.client, self.model, t, schema_field_names,
+                                           calls=self.last_calls)
                 _accumulate_usage(self.last_usage, usage)
                 transformed = execute_plan(t, plan)
                 _reconcile_dropped_schema_columns(

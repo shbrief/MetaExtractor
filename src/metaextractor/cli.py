@@ -8,13 +8,20 @@ from pathlib import Path
 from metaextractor.extractor import (
     DEFAULT_BATCH_SIZE,
     DEFAULT_MAX_TOKENS,
+    DEFAULT_MAX_TOKENS_CEILING,
     DEFAULT_MIN_TABLE_RELEVANCE,
     DEFAULT_MODEL,
     ExtractionError,
     MetaExtractor,
     estimate_cost_usd,
 )
-from metaextractor.fetcher import FetchError, fetch_paper
+from metaextractor.fetcher import (
+    FETCH_RECORD,
+    FetchError,
+    fetch_paper,
+    load_fetched,
+    save_fetched,
+)
 from metaextractor.sample_rules import AgeBoundRules
 from metaextractor.schema import Schema
 from metaextractor.writers import to_csv
@@ -81,6 +88,10 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--model", default=DEFAULT_MODEL)
     parser.add_argument("--max-tokens", type=int, default=DEFAULT_MAX_TOKENS,
                         help=f"Per-batch response cap (default {DEFAULT_MAX_TOKENS}).")
+    parser.add_argument("--max-tokens-ceiling", type=int, default=DEFAULT_MAX_TOKENS_CEILING,
+                        help="When a response stops at the output cap, it is re-requested with the "
+                             "cap doubled, up to this value (default "
+                             f"{DEFAULT_MAX_TOKENS_CEILING}).")
     parser.add_argument("--batch-size", type=int, default=DEFAULT_BATCH_SIZE,
                         help=f"Auto-batch schemas larger than this many fields (default {DEFAULT_BATCH_SIZE}).")
     parser.add_argument("--api-key", default=None, metavar="VALUE",
@@ -102,6 +113,13 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--save-text", type=Path, default=None, metavar="PATH",
                         help="Write the exact paper text sent to the model (body plus supplementary "
                              "prose) to PATH, for auditing and evidence checks.")
+    parser.add_argument("--fetch-cache", type=Path, default=None, metavar="DIR",
+                        help="Frozen retrieval for --paper-id: read the paper text, parsed tables, "
+                             "and retrieval record from DIR when it holds one (no network), "
+                             "otherwise fetch and write them to DIR.")
+    parser.add_argument("--require-fetch-cache", action="store_true",
+                        help="With --fetch-cache: fail instead of fetching when DIR holds no "
+                             "frozen retrieval.")
     parser.add_argument("--run-meta", type=Path, default=None, metavar="PATH",
                         help="Write a JSON record of request settings, returned model ids, token "
                              "usage, cost estimate, and retrieval provenance to PATH.")
@@ -115,19 +133,29 @@ def main(argv: list[str] | None = None) -> int:
     if args.paper:
         paper_text = _read_paper(args.paper)
     elif args.paper_id:
+        cached = args.fetch_cache is not None and (args.fetch_cache / FETCH_RECORD).exists()
+        if args.require_fetch_cache and not cached:
+            print(f"ERROR: no frozen retrieval in {args.fetch_cache}", file=sys.stderr)
+            return 2
         try:
-            fetched = fetch_paper(
-                args.paper_id,
-                include_supplementary=args.include_supplementary,
-                include_sra_manifest=args.include_sra_manifest,
-                sra_project=args.sra_project,
-            )
+            if cached:
+                fetched = load_fetched(args.fetch_cache)
+            else:
+                fetched = fetch_paper(
+                    args.paper_id,
+                    include_supplementary=args.include_supplementary,
+                    include_sra_manifest=args.include_sra_manifest,
+                    sra_project=args.sra_project,
+                )
+                if args.fetch_cache is not None:
+                    save_fetched(fetched, args.fetch_cache)
         except FetchError as e:
             print(f"ERROR: fetch failed: {e}", file=sys.stderr)
             return 2
         paper_text = fetched.text
         tables.extend(fetched.supplementary_tables or [])
-        print(f"[fetched {fetched.source} for {args.paper_id}]", file=sys.stderr)
+        print(f"[{'loaded frozen retrieval' if cached else 'fetched'} {fetched.source} "
+              f"for {args.paper_id}]", file=sys.stderr)
         if not fetched.has_body:
             print(
                 "[note: no article body was reachable for this paper — only an "
@@ -203,6 +231,7 @@ def main(argv: list[str] | None = None) -> int:
         api_key=api_key,
         min_table_relevance=args.min_table_relevance,
         age_rules=AgeBoundRules.from_json(args.age_rules) if args.age_rules else None,
+        max_tokens_ceiling=args.max_tokens_ceiling,
     )
     if args.save_text:
         args.save_text.write_text(paper_text, encoding="utf-8")
@@ -211,11 +240,18 @@ def main(argv: list[str] | None = None) -> int:
             paper_text, schema_obj, paper_id=args.paper_id, tables=tables or None
         )
     except ExtractionError as e:
+        _print_calls(extractor)
         print(f"ERROR: {e}", file=sys.stderr)
         if e.raw_response:
             print("--- raw model response ---", file=sys.stderr)
             print(e.raw_response, file=sys.stderr)
+        if args.run_meta:
+            # Usage of a failed extraction is billed too; record it.
+            c = estimate_cost_usd(extractor.last_usage, args.model)
+            _write_run_meta(args, extractor, None, fetched, paper_text, tables, c, started_utc,
+                            error=str(e))
         return 2
+    _print_calls(extractor)
 
     if result.table_selection:
         kept = sum(1 for s in result.table_selection if s.selected)
@@ -265,7 +301,17 @@ def _utc_now() -> str:
     return datetime.now(timezone.utc).isoformat(timespec="seconds")
 
 
-def _write_run_meta(args, extractor, result, fetched, paper_text, tables, cost, started_utc) -> None:
+def _print_calls(extractor) -> None:
+    """Report output-budget re-requests (responses that stopped at max_tokens)."""
+    truncated = [c for c in extractor.last_calls if c.get("stop_reason") == "max_tokens"]
+    for c in truncated:
+        what = c.get("table") or f"{c.get('n_fields')} field(s) from {c.get('first_field')!r}"
+        print(f"[truncated at max_tokens={c['max_tokens']}: {c['purpose']} ({what}); "
+              f"re-requested with a larger budget if below the ceiling]", file=sys.stderr)
+
+
+def _write_run_meta(args, extractor, result, fetched, paper_text, tables, cost, started_utc,
+                    error: str | None = None) -> None:
     import hashlib
     import json
     import platform
@@ -282,10 +328,13 @@ def _write_run_meta(args, extractor, result, fetched, paper_text, tables, cost, 
         "started_utc": started_utc,
         "finished_utc": _utc_now(),
         "paper_id": args.paper_id,
+        "status": "failed" if error else "ok",
+        "error": error,
         "request": {
             "model_requested": args.model,
             "models_returned": sorted(extractor.last_response_models),
             "max_tokens": args.max_tokens,
+            "max_tokens_ceiling": args.max_tokens_ceiling,
             "batch_size": args.batch_size,
             "sample_discovery": args.sample_discovery,
             "min_table_relevance": args.min_table_relevance,
@@ -294,8 +343,10 @@ def _write_run_meta(args, extractor, result, fetched, paper_text, tables, cost, 
             "age_rules": str(args.age_rules) if args.age_rules else None,
         },
         "usage": dict(extractor.last_usage),
+        "calls": list(extractor.last_calls),
         "cost_estimate": {**cost, "pricing_as_of": PRICING_AS_OF},
         "retrieval": None if fetched is None else {
+            "frozen_retrieval": str(args.fetch_cache) if args.fetch_cache else None,
             "source": fetched.source, "has_body": fetched.has_body,
             "pmid": fetched.pmid, "pmcid": fetched.pmcid, "doi": fetched.doi,
             "attempts": fetched.retrieval_attempts,
@@ -308,8 +359,9 @@ def _write_run_meta(args, extractor, result, fetched, paper_text, tables, cost, 
         "paper_text_sha256": hashlib.sha256(paper_text.encode("utf-8")).hexdigest(),
         "paper_text_chars": len(paper_text),
         "n_tables": len(tables),
-        "output": {"granularity": result.granularity, "n_samples": len(result.samples),
-                   "n_fields": len(result.fields), "n_warnings": len(result.extraction_warnings)},
+        "output": None if result is None else {
+            "granularity": result.granularity, "n_samples": len(result.samples),
+            "n_fields": len(result.fields), "n_warnings": len(result.extraction_warnings)},
         "versions": {"metaextractor": __version__, "anthropic_sdk": sdk_version,
                      "python": platform.python_version()},
     }

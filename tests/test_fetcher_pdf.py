@@ -16,6 +16,7 @@ def test_europepmc_pdf_used_when_xml_is_abstract_only(monkeypatch):
             text="TITLE: x\n\nABSTRACT: short", supplementary_hrefs=[], has_body=False),
     )
     monkeypatch.setattr(fetcher, "_fetch_europepmc_fulltext", lambda pmcid: None)
+    monkeypatch.setattr(fetcher, "_fetch_pmc_article_html", lambda pmcid: None)
     body = "FULL TEXT BODY with accession PRJEB7369. " * 100
     monkeypatch.setattr(fetcher, "_fetch_europepmc_pdf", lambda pmcid: body)
 
@@ -36,6 +37,7 @@ def test_europepmc_pdf_not_used_when_shorter_than_abstract(monkeypatch):
             supplementary_hrefs=[], has_body=False),
     )
     monkeypatch.setattr(fetcher, "_fetch_europepmc_fulltext", lambda pmcid: None)
+    monkeypatch.setattr(fetcher, "_fetch_pmc_article_html", lambda pmcid: None)
     monkeypatch.setattr(fetcher, "_fetch_europepmc_pdf", lambda pmcid: "tiny")
 
     paper = fetcher.fetch_paper(
@@ -106,3 +108,47 @@ def test_ladder_falls_through_epmc_pdf_to_unpaywall(monkeypatch):
     assert paper.source == "unpaywall_pdf"
     assert paper.has_body is True
     assert paper.text == body
+
+
+# --- PMC article web page rung (non-OA PMC record) -----------------------------
+
+_PMC_PAGE = """<html><body><nav>menu</nav>
+<section class="body main-article-body"><section class="abstract"><h2>Abstract</h2><p>Short abstract.
+</section><section id="sec1"><h2>MATERIALS AND METHODS</h2><p>Stool was sequenced.<p>Data are in
+ENA under PRJEB7369.
+<section class="tw"><table><col><tr><td>cell</td></tr></table></section>
+<figure><figcaption>Fig 1</figcaption><img src="x"></figure>
+<h2>DISCUSSION</h2><p>Travel &amp; resistance.</p></section>
+<section class="ref-list"><h2>References</h2><li>Ref 1</li></section></section>
+<footer>courtesy</footer></body></html>"""
+
+
+def test_pmc_html_keeps_body_drops_tables_figures_references():
+    text = fetcher._pmc_html_to_text(_PMC_PAGE)
+    assert "PRJEB7369" in text and "DISCUSSION" in text and "Travel & resistance." in text
+    assert "cell" not in text and "Fig 1" not in text and "Ref 1" not in text
+    assert "menu" not in text and "courtesy" not in text
+
+
+def test_pmc_html_none_for_challenge_page():
+    assert fetcher._pmc_html_to_text("<html>Just a moment... Enable JavaScript</html>") is None
+
+
+def test_pmc_html_used_before_europepmc_pdf(monkeypatch):
+    monkeypatch.setattr(
+        fetcher, "_fetch_pmc_fulltext",
+        lambda pmcid: fetcher._PmcFullText(
+            text="TITLE: x\n\nABSTRACT: short", supplementary_hrefs=[], has_body=False),
+    )
+    monkeypatch.setattr(fetcher, "_fetch_europepmc_fulltext", lambda pmcid: None)
+    body = "INTRODUCTION\nMETHODS\nRESULTS\nDISCUSSION\nData in PRJEB7369. " * 200
+    monkeypatch.setattr(fetcher, "_fetch_pmc_article_html", lambda pmcid: body)
+
+    def no_pdf(pmcid):
+        raise AssertionError("EPMC PDF must not be fetched once a good body is found")
+    monkeypatch.setattr(fetcher, "_fetch_europepmc_pdf", no_pdf)
+    paper = fetcher.fetch_paper(
+        "PMC4576037", include_supplementary=False, include_sra_manifest=False)
+    assert paper.source == "pmc_html" and paper.has_body
+    assert [a["rung"] for a in paper.retrieval_attempts] == ["pmc_fulltext", "europepmc_fulltext",
+                                                             "pmc_html"]

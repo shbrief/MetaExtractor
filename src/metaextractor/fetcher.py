@@ -8,9 +8,9 @@ the LLM is never left with an abstract when full text is reachable):
      fall back to the Europe PMC ``fullTextXML`` endpoint, which frequently
      carries the body when NCBI does not — including bioRxiv/medRxiv and other
      preprints indexed by Europe PMC (resolved by DOI when there is no PMCID).
-  4. If the article is a non-Open-Access PMC record (abstract-only XML) but
-     Europe PMC serves a free rendered PDF, fetch and text-extract that PDF —
-     it carries the body the XML endpoints withhold.
+  4. If the article is a non-Open-Access PMC record (abstract-only XML), read
+     the body from the PMC article web page; failing that, from Europe PMC's
+     free rendered PDF — both carry the body the XML endpoints withhold.
   5. Otherwise, ask Unpaywall for any OA location (publisher free PDF, or an
      institutional/subject repository like Zenodo) and text-extract that PDF —
      this reaches OA articles with no PMC record at all.
@@ -24,6 +24,7 @@ Uses stdlib urllib so we don't add a runtime dependency.
 """
 from __future__ import annotations
 
+import html
 import http.client
 import re
 import time
@@ -51,7 +52,8 @@ class FetchError(RuntimeError):
 @dataclass
 class FetchedPaper:
     text: str
-    # "pmc_fulltext" | "europepmc_fulltext" | "europepmc_pdf" | "unpaywall_pdf" | "pubmed_abstract"
+    # "pmc_fulltext" | "europepmc_fulltext" | "pmc_html" | "europepmc_pdf" | "unpaywall_pdf"
+    # | "pubmed_abstract"
     source: str
     pmid: str | None
     pmcid: str | None
@@ -313,6 +315,54 @@ def _fetch_europepmc_by_doi(doi: str) -> tuple[_PmcFullText | None, str | None]:
     except Exception:
         return None, None
     return _parse_jats_article(data, epmc_id.split("/")[-1]), None
+
+
+PMC_ARTICLE_HTML = "https://pmc.ncbi.nlm.nih.gov/articles/PMC{bare}/"
+
+
+_PMC_BODY_START = re.compile(r'<section\b[^>]*class="[^"]*\bmain-article-body\b[^"]*"[^>]*>')
+_PMC_BODY_END = re.compile(r'<section\b[^>]*class="[^"]*\bref-list\b|<footer\b')
+_PMC_DROP = re.compile(r"<(script|style|figure|table|svg|button|noscript|select|form)\b.*?</\1\s*>",
+                       re.IGNORECASE | re.DOTALL)
+_PMC_BLOCK = re.compile(r"</?(?:p|h[1-6]|li|section|div|br|figcaption|caption)\b[^>]*>", re.IGNORECASE)
+_TAG = re.compile(r"<[^>]+>")
+
+
+def _pmc_html_to_text(page: str) -> str | None:
+    """Prose of the ``main-article-body`` section of a PMC article page, up to the
+    reference list: scripts, figures, and tables are dropped, and headings and
+    paragraphs are put on their own lines. None when the page has no article body."""
+    start = _PMC_BODY_START.search(page)
+    if not start:
+        return None
+    seg = page[start.end():]
+    end = _PMC_BODY_END.search(seg)
+    if end:
+        seg = seg[:end.start()]
+    seg = _PMC_DROP.sub(" ", seg)
+    seg = _PMC_BLOCK.sub("\n", seg)
+    seg = html.unescape(_TAG.sub("", seg))
+    lines = [re.sub(r"\s+", " ", ln).strip() for ln in seg.split("\n")]
+    text = "\n".join(ln for ln in lines if ln)
+    return text or None
+
+
+def _fetch_pmc_article_html(pmcid: str | None) -> str | None:
+    """Article prose from the PMC article web page, for PMC records outside the Open
+    Access subset whose efetch/``fullTextXML`` JATS is abstract-only.
+
+    The page is the human-readable rendering of the same PMC record and carries the
+    body (including data-availability accessions). Returns None when there is no
+    PMCID, the request fails, or the response has no article body (for example an
+    interstitial bot-check page)."""
+    if not pmcid:
+        return None
+    bare = pmcid.upper().removeprefix("PMC")
+    try:
+        data = _http_get(PMC_ARTICLE_HTML.format(bare=bare), timeout=60)
+    except Exception:
+        return None
+    return _pmc_html_to_text(data.decode("utf-8", errors="replace"))
 
 
 def _fetch_europepmc_pdf(pmcid: str | None) -> str | None:
@@ -578,6 +628,9 @@ def fetch_paper(
             # elink didn't — capture it so supplementary tables are still fetched.
             if epmc_pmcid and not pmcid:
                 pmcid = epmc_pmcid
+    if _best_body_score() < _GOOD_FULLTEXT_SCORE and pmcid:
+        html_text = _fetch_pmc_article_html(pmcid)  # non-OA PMC record: article web page
+        _add("pmc_html", html_text if html_text and len(html_text) > 1000 else None, True)
     if _best_body_score() < _GOOD_FULLTEXT_SCORE:
         pdf_text = _fetch_europepmc_pdf(pmcid)  # non-OA PMC free rendered PDF
         _add("europepmc_pdf", pdf_text if pdf_text and len(pdf_text) > 1000 else None, True)
@@ -626,3 +679,77 @@ def fetch_paper(
             paper.supplementary_tables.append(mres.table)
             paper.sra_manifest_source = mres.source
     return paper
+
+
+# ---------------------------------------------------------------------------
+# Frozen retrievals
+# ---------------------------------------------------------------------------
+FETCH_RECORD = "fetched.json"
+FETCH_TEXT = "text.txt"
+FETCH_TABLES = "tables.json"
+
+
+def save_fetched(paper: FetchedPaper, directory) -> dict:
+    """Write ``paper`` to ``directory`` so later extractions can reuse the exact
+    retrieval: ``text.txt`` (prose sent to the model), ``tables.json`` (parsed
+    supplementary and manifest tables), and ``fetched.json`` (retrieval provenance
+    plus SHA-256 checksums of the other two files). Returns the record."""
+    import dataclasses
+    import hashlib
+    import json
+    from pathlib import Path
+
+    d = Path(directory)
+    d.mkdir(parents=True, exist_ok=True)
+    text_bytes = paper.text.encode("utf-8")
+    tables = [dataclasses.asdict(t) for t in paper.supplementary_tables]
+    tables_bytes = json.dumps(tables, ensure_ascii=False, default=str).encode("utf-8")
+    (d / FETCH_TEXT).write_bytes(text_bytes)
+    (d / FETCH_TABLES).write_bytes(tables_bytes)
+    record = {
+        "source": paper.source, "has_body": paper.has_body, "pmid": paper.pmid,
+        "pmcid": paper.pmcid, "doi": paper.doi,
+        "retrieval_attempts": paper.retrieval_attempts,
+        "supplementary_included": paper.supplementary_included,
+        "supplementary_skipped": paper.supplementary_skipped,
+        "sra_manifest_source": paper.sra_manifest_source,
+        "sra_manifest_warnings": paper.sra_manifest_warnings,
+        "n_tables": len(tables), "text_chars": len(paper.text),
+        "text_sha256": hashlib.sha256(text_bytes).hexdigest(),
+        "tables_sha256": hashlib.sha256(tables_bytes).hexdigest(),
+    }
+    (d / FETCH_RECORD).write_text(json.dumps(record, indent=2, default=str), encoding="utf-8")
+    return record
+
+
+def load_fetched(directory) -> FetchedPaper:
+    """Read a retrieval written by :func:`save_fetched`, verifying its checksums.
+    No network access."""
+    import hashlib
+    import json
+    from pathlib import Path
+
+    from metaextractor.supplementary import Table
+
+    d = Path(directory)
+    try:
+        record = json.loads((d / FETCH_RECORD).read_text(encoding="utf-8"))
+        text_bytes = (d / FETCH_TEXT).read_bytes()
+        tables_bytes = (d / FETCH_TABLES).read_bytes()
+    except FileNotFoundError as e:
+        raise FetchError(f"incomplete frozen retrieval in {d}: {e}") from e
+    for name, data, key in ((FETCH_TEXT, text_bytes, "text_sha256"),
+                            (FETCH_TABLES, tables_bytes, "tables_sha256")):
+        if hashlib.sha256(data).hexdigest() != record.get(key):
+            raise FetchError(f"frozen retrieval {d / name} does not match its recorded checksum")
+    return FetchedPaper(
+        text=text_bytes.decode("utf-8"), source=record["source"], pmid=record.get("pmid"),
+        pmcid=record.get("pmcid"), has_body=record.get("has_body", False),
+        supplementary_included=record.get("supplementary_included"),
+        supplementary_skipped=[tuple(x) for x in (record.get("supplementary_skipped") or [])],
+        supplementary_tables=[Table(**t) for t in json.loads(tables_bytes)],
+        sra_manifest_source=record.get("sra_manifest_source"),
+        sra_manifest_warnings=record.get("sra_manifest_warnings") or [],
+        retrieval_attempts=record.get("retrieval_attempts") or [],
+        doi=record.get("doi"),
+    )
