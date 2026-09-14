@@ -28,6 +28,7 @@ from pathlib import Path
 from bench import _add, _zero, metrics
 
 JOINS = ("end_to_end", "conditional", "positional")
+RENDER_JOINS = ("end_to_end", "end_to_end_successful_only", "conditional", "positional")
 HEADLINE = ("value_precision", "value_recall", "value_f1", "presence_precision",
             "presence_recall", "presence_f1", "value_accuracy", "fp", "fn")
 
@@ -46,11 +47,13 @@ def load_runs(tree: Path, model: str) -> dict[str, dict]:
     return runs
 
 
-def pooled(per_study: list[dict], join: str, part: str = "content") -> dict:
+def pooled(per_study: list[dict], join: str, part: str = "content",
+           skip_failed: bool = False) -> dict:
     a = _zero()
     for s in per_study:
-        if "error" not in s:
-            _add(a, s[join][part])
+        if "error" in s or (skip_failed and s.get("extraction_failed")):
+            continue
+        _add(a, s[join][part])
     return a
 
 
@@ -121,6 +124,15 @@ def main() -> None:
             per_run = {r: metrics(pooled(s["per_study"], join)) for r, s in runs.items()}
             md["per_run"][join] = per_run
             md["headline"][join] = {k: _mmm([pr[k] for pr in per_run.values()]) for k in HEADLINE}
+        # Sensitivity: end-to-end over successful extractions only (failed runs excluded).
+        ok_only = {r: metrics(pooled(s["per_study"], "end_to_end", skip_failed=True))
+                   for r, s in runs.items()}
+        md["per_run"]["end_to_end_successful_only"] = ok_only
+        md["headline"]["end_to_end_successful_only"] = {
+            k: _mmm([pr[k] for pr in ok_only.values()]) for k in HEADLINE}
+        md["failed_extractions"] = sorted(
+            f"{r}/{s['study']}" for r, summ in runs.items() for s in summ["per_study"]
+            if s.get("extraction_failed"))
         cov = {r: metrics(pooled(s["per_study"], "positional", "content_coverage"))
                for r, s in runs.items()}
         md["headline"]["positional_coverage_recall"] = _mmm([c["presence_recall"] for c in cov.values()])
@@ -136,6 +148,7 @@ def main() -> None:
                 al = s["alignment"]
                 ps["runs"][r] = {
                     "n_extracted": s["n_extracted"], "granularity": s.get("granularity"),
+                    "extraction_failed": s.get("extraction_failed", False),
                     "alignment": al,
                     "end_to_end": s["end_to_end"]["content"],
                     "positional": s["positional"]["content"],
@@ -177,7 +190,7 @@ def render(agg: dict) -> str:
          "Content fields, micro-averaged; median [min–max] across repeats. "
          "Value-aware metrics count only value-correct cells as hits; presence metrics count "
          "any reported value.\n"]
-    for join in JOINS:
+    for join in RENDER_JOINS:
         L += [f"\n## {join.replace('_', '-')}\n",
               "| model | value P | value R | value F1 | presence P | presence R | presence F1 | value acc (TP) | FP | FN |",
               "|---|--:|--:|--:|--:|--:|--:|--:|--:|--:|"]
@@ -194,6 +207,10 @@ def render(agg: dict) -> str:
                  f"[{pd_['ci95'][0]:+.3f}, {pd_['ci95'][1]:+.3f}] "
                  f"({pd_['n_studies']} studies, B={pd_['B']}).\n")
     for model, md in agg["models"].items():
+        if md.get("failed_extractions"):
+            L.append(f"\n{model}: extractions with no output after the retry "
+                     f"(scored end-to-end as all-FN): {', '.join(md['failed_extractions'])}")
+    for model, md in agg["models"].items():
         L += [f"\n## {model}: per study × repeat (end-to-end content cells)\n",
               "| study | gold n | repeat | ext n | key | matched | unmatched | pooled | ambiguous | extra | TPc | TPw | FN | FP | positional FP |",
               "|---|--:|---|--:|---|--:|--:|--:|--:|--:|--:|--:|--:|--:|--:|"]
@@ -203,7 +220,8 @@ def render(agg: dict) -> str:
                     L.append(f"| {study} | {ps['n_gold']} | {r} | {x['error']} |" + " |" * 11)
                     continue
                 al, c = x["alignment"], x["end_to_end"]
-                L.append(f"| {study} | {ps['n_gold']} | {r} | {x['n_extracted']} | "
+                tag = " (failed)" if x.get("extraction_failed") else ""
+                L.append(f"| {study} | {ps['n_gold']} | {r}{tag} | {x['n_extracted']} | "
                          f"{al['key_used'] or '–'} | {al['matched']} | {al['unmatched_gold']} | "
                          f"{al['pooled_gold']} | {al['ambiguous_gold']} | {x['extra_records']} | "
                          f"{c['tp_correct']} | {c['tp_wrong']} | {c['fn']} | {c['fp']} | "

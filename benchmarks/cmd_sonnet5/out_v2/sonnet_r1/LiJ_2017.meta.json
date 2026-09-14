@@ -1,0 +1,141 @@
+{
+  "started_utc": "2026-09-14T15:16:15+00:00",
+  "finished_utc": "2026-09-14T15:21:47+00:00",
+  "paper_id": "28143587",
+  "request": {
+    "model_requested": "claude-sonnet-5",
+    "models_returned": [
+      "claude-sonnet-5"
+    ],
+    "max_tokens": 16384,
+    "batch_size": 30,
+    "sample_discovery": true,
+    "min_table_relevance": 0.15,
+    "sampling_and_thinking": "not set (API defaults: no temperature/top_p/top_k/thinking/effort parameters sent)",
+    "age_rules": "/Users/sehyunoh/OmicsMLRepo/MetaExtractor/benchmarks/cmd_sonnet5/age_rules_cmd.json"
+  },
+  "usage": {
+    "input_tokens": 53015,
+    "cache_creation_input_tokens": 23289,
+    "cache_read_input_tokens": 51114,
+    "output_tokens": 33030,
+    "n_calls": 17
+  },
+  "cost_estimate": {
+    "input_usd": 0.10603,
+    "output_usd": 0.3303,
+    "cache_read_usd": 0.0102228,
+    "cache_write_usd": 0.0582225,
+    "total_usd": 0.5047752999999999,
+    "pricing_as_of": "2026-06-24"
+  },
+  "retrieval": {
+    "source": "pmc_fulltext",
+    "has_body": true,
+    "pmid": "28143587",
+    "pmcid": "5286796",
+    "doi": null,
+    "attempts": [
+      {
+        "rung": "pmc_fulltext",
+        "returned_text": true,
+        "is_body": true,
+        "chars": 64808
+      }
+    ],
+    "supplementary_included": [
+      "40168_2016_222_MOESM2_ESM.xlsx",
+      "40168_2016_222_MOESM7_ESM.xlsx",
+      "40168_2016_222_MOESM10_ESM.pdf",
+      "40168_2016_222_MOESM3_ESM.pdf",
+      "40168_2016_222_MOESM4_ESM.pdf",
+      "40168_2016_222_MOESM5_ESM.pdf",
+      "40168_2016_222_MOESM6_ESM.pdf",
+      "40168_2016_222_MOESM8_ESM.pdf",
+      "40168_2016_222_MOESM9_ESM.pdf"
+    ],
+    "supplementary_skipped": [
+      [
+        "40168_2016_222_Fig1_HTML.gif",
+        "europepmc: ValueError: image-only (.gif)"
+      ],
+      [
+        "40168_2016_222_Fig1_HTML.jpg",
+        "europepmc: ValueError: image-only (.jpg)"
+      ],
+      [
+        "40168_2016_222_Fig2_HTML.gif",
+        "europepmc: ValueError: image-only (.gif)"
+      ],
+      [
+        "40168_2016_222_Fig2_HTML.jpg",
+        "europepmc: ValueError: image-only (.jpg)"
+      ],
+      [
+        "40168_2016_222_Fig3_HTML.gif",
+        "europepmc: ValueError: image-only (.gif)"
+      ],
+      [
+        "40168_2016_222_Fig3_HTML.jpg",
+        "europepmc: ValueError: image-only (.jpg)"
+      ],
+      [
+        "40168_2016_222_Fig4_HTML.gif",
+        "europepmc: ValueError: image-only (.gif)"
+      ],
+      [
+        "40168_2016_222_Fig4_HTML.jpg",
+        "europepmc: ValueError: image-only (.jpg)"
+      ],
+      [
+        "40168_2016_222_Fig5_HTML.gif",
+        "europepmc: ValueError: image-only (.gif)"
+      ],
+      [
+        "40168_2016_222_Fig5_HTML.jpg",
+        "europepmc: ValueError: image-only (.jpg)"
+      ],
+      [
+        "40168_2016_222_Fig6_HTML.gif",
+        "europepmc: ValueError: image-only (.gif)"
+      ],
+      [
+        "40168_2016_222_Fig6_HTML.jpg",
+        "europepmc: ValueError: image-only (.jpg)"
+      ],
+      [
+        "40168_2016_222_Fig7_HTML.gif",
+        "europepmc: ValueError: image-only (.gif)"
+      ],
+      [
+        "40168_2016_222_Fig7_HTML.jpg",
+        "europepmc: ValueError: image-only (.jpg)"
+      ],
+      [
+        "40168_2016_222_MOESM11_ESM.doc",
+        "europepmc: ValueError: unsupported extension (.doc)"
+      ],
+      [
+        "40168_2016_222_MOESM1_ESM.doc",
+        "europepmc: ValueError: unsupported extension (.doc)"
+      ]
+    ],
+    "sra_manifest_source": null,
+    "sra_manifest_warnings": []
+  },
+  "local_supplementary": [],
+  "paper_text_sha256": "d4d7962b0e2ee1a8a56e18c26f5742e9310e02031943d511a547acd44c5467b0",
+  "paper_text_chars": 64808,
+  "n_tables": 18,
+  "output": {
+    "granularity": "sample_level",
+    "n_samples": 12,
+    "n_fields": 71,
+    "n_warnings": 70
+  },
+  "versions": {
+    "metaextractor": "0.1.0",
+    "anthropic_sdk": "0.104.1",
+    "python": "3.14.0"
+  }
+}

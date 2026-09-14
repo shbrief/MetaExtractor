@@ -1,0 +1,310 @@
+cmd: /Users/sehyunoh/.pyenv/versions/3.14.0/bin/python -m metaextractor.cli --paper-id 30661755 --schema /Users/sehyunoh/OmicsMLRepo/MetaExtractor/benchmarks/cmd_sonnet5/cmd.clean.linkml.yaml --model claude-sonnet-5 --age-rules /Users/sehyunoh/OmicsMLRepo/MetaExtractor/benchmarks/cmd_sonnet5/age_rules_cmd.json --out /Users/sehyunoh/OmicsMLRepo/MetaExtractor/benchmarks/cmd_sonnet5/out_v2/sonnet_r2/PasolliE_2019.json --csv /Users/sehyunoh/OmicsMLRepo/MetaExtractor/benchmarks/cmd_sonnet5/out_v2/sonnet_r2/PasolliE_2019.csv --csv-provenance --save-text /Users/sehyunoh/OmicsMLRepo/MetaExtractor/benchmarks/cmd_sonnet5/out_v2/sonnet_r2/PasolliE_2019.text.txt --run-meta /Users/sehyunoh/OmicsMLRepo/MetaExtractor/benchmarks/cmd_sonnet5/out_v2/sonnet_r2/PasolliE_2019.meta.json --api-key file:/Users/sehyunoh/OmicsMLRepo/MetaHarmonizerEval/vignettes/keys/llm_baseline
+status: fail_rc2
+returncode: 2
+elapsed_s: 413.6
+--- stderr ---
+[fetched pmc_fulltext for 30661755]
+[supplementary included (7): mmc1.xlsx, mmc2.xlsx, mmc3.xlsx, mmc4.xlsx, mmc5.xlsx, mmc6.xlsx, mmc7.xlsx]
+[supplementary tables parsed: 21 (deterministic path; LLM will not see them)]
+[SRA/ENA run manifest: ena:PRJNA485056+PRJNA504891 (164 runs) (deterministic path)]
+[supplementary skipped: figs1.gif — europepmc: ValueError: image-only (.gif)]
+[supplementary skipped: figs1.jpg — europepmc: ValueError: image-only (.jpg)]
+[supplementary skipped: figs2.gif — europepmc: ValueError: image-only (.gif)]
+[supplementary skipped: figs2.jpg — europepmc: ValueError: image-only (.jpg)]
+[supplementary skipped: figs3.gif — europepmc: ValueError: image-only (.gif)]
+[supplementary skipped: figs3.jpg — europepmc: ValueError: image-only (.jpg)]
+[supplementary skipped: figs4.gif — europepmc: ValueError: image-only (.gif)]
+[supplementary skipped: figs4.jpg — europepmc: ValueError: image-only (.jpg)]
+[supplementary skipped: figs5.gif — europepmc: ValueError: image-only (.gif)]
+[supplementary skipped: figs5.jpg — europepmc: ValueError: image-only (.jpg)]
+[supplementary skipped: figs6.gif — europepmc: ValueError: image-only (.gif)]
+[supplementary skipped: figs6.jpg — europepmc: ValueError: image-only (.jpg)]
+[supplementary skipped: figs7.gif — europepmc: ValueError: image-only (.gif)]
+[supplementary skipped: figs7.jpg — europepmc: ValueError: image-only (.jpg)]
+[supplementary skipped: fx1.gif — europepmc: ValueError: image-only (.gif)]
+[supplementary skipped: fx1.jpg — europepmc: ValueError: image-only (.jpg)]
+[supplementary skipped: gr1.gif — europepmc: ValueError: image-only (.gif)]
+[supplementary skipped: gr1.jpg — europepmc: ValueError: image-only (.jpg)]
+[supplementary skipped: gr2.gif — europepmc: ValueError: image-only (.gif)]
+[supplementary skipped: gr2.jpg — europepmc: ValueError: image-only (.jpg)]
+[supplementary skipped: gr3.gif — europepmc: ValueError: image-only (.gif)]
+[supplementary skipped: gr3.jpg — europepmc: ValueError: image-only (.jpg)]
+[supplementary skipped: gr4.gif — europepmc: ValueError: image-only (.gif)]
+[supplementary skipped: gr4.jpg — europepmc: ValueError: image-only (.jpg)]
+[supplementary skipped: gr5.gif — europepmc: ValueError: image-only (.gif)]
+[supplementary skipped: gr5.jpg — europepmc: ValueError: image-only (.jpg)]
+[supplementary skipped: gr6.gif — europepmc: ValueError: image-only (.gif)]
+[supplementary skipped: gr6.jpg — europepmc: ValueError: image-only (.jpg)]
+[supplementary skipped: gr7.gif — europepmc: ValueError: image-only (.gif)]
+[supplementary skipped: gr7.jpg — europepmc: ValueError: image-only (.jpg)]
+ERROR: Model returned non-JSON output: Unterminated string starting at: line 268 column 16 (char 9563)
+--- raw model response ---
+{
+  "paper_id": "30661755",
+  "granularity": "subgroup_level",
+  "subgroups": ["Madagascar cohort", "Ethiopian cohort"],
+  "fields": {
+    "study_name": {
+      "value": "not_reported",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "",
+      "section": "",
+      "notes": "No canonical study identifier (e.g., AuthorX_Year) is given in the text for this paper's own cohorts."
+    },
+    "subject_id": {
+      "value": "not_reported",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "",
+      "section": "",
+      "notes": "No individual subject identifiers are given in the main text; per-sample metadata is only in Table S1, not provided."
+    },
+    "sample_id": {
+      "value": "not_reported",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "",
+      "section": "",
+      "notes": "No individual sample identifiers are given in the main text."
+    },
+    "curator": {
+      "value": "not_reported",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "",
+      "section": "",
+      "notes": ""
+    },
+    "pmid": {
+      "value": 30661755,
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "inferred",
+      "confidence": "medium",
+      "evidence_quote": "",
+      "section": "",
+      "notes": "Derived from the paper_id supplied in the task metadata, assumed to be the PubMed ID of this publication; not stated within the paper text itself."
+    },
+    "subcohort": {
+      "value": "not_reported",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "",
+      "section": "",
+      "notes": "Madagascar samples were drawn from two communities (A and B), but this is not modeled as a distinct required subcohort field here."
+    },
+    "target_condition": {
+      "value": "not_reported",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "",
+      "section": "",
+      "notes": "Study is a microbiome diversity survey of healthy volunteers, not framed around a specific disease/condition."
+    },
+    "control": {
+      "value": "not_reported",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "",
+      "section": "",
+      "notes": "No case-control framework described for the Madagascar/Ethiopian cohorts; participants are described only as healthy volunteers."
+    },
+    "country": {
+      "value": "not_reported",
+      "by_subgroup": {
+        "Madagascar cohort": "Madagascar",
+        "Ethiopian cohort": "Ethiopia"
+      },
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "in a remote rainforest region in north-eastern Madagascar",
+      "section": "Method details — Enrollment of participants from non-Westernized populations",
+      "notes": "Ethiopian cohort evidence: 'a previously established cohort in Gimbichu (Ethiopia, Oromia Region)'."
+    },
+    "body_site": {
+      "value": "feces",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "Faecal samples from the Madagascar cohort were self-collected in sterile polypropylene screw cap collection tubes",
+      "section": "Method details — Sample collection of non-Westernized cohorts",
+      "notes": "Same body site (stool/feces) applies to Ethiopian cohort: 'Faecal samples from Ethiopian individuals were collected'."
+    },
+    "body_site_details": {
+      "value": "not_reported",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "",
+      "section": "",
+      "notes": ""
+    },
+    "days_from_first_collection": {
+      "value": "not_reported",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "",
+      "section": "",
+      "notes": "No longitudinal/day-offset data reported for these cohorts (cross-sectional collection)."
+    },
+    "lifestyle": {
+      "value": "not_reported",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "",
+      "section": "",
+      "notes": "Madagascar population described only as relying on 'self-grown rice and wild plants and meats'; no explicit lifestyle category term (e.g., Agriculturalist) is used for either new cohort."
+    },
+    "location": {
+      "value": "not_reported",
+      "by_subgroup": {
+        "Madagascar cohort": "north-eastern Madagascar, near Makira Natural Park",
+        "Ethiopian cohort": "Gimbichu, Oromia Region, Ethiopia"
+      },
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "two subsistence communities (A and B) adjacent to the Makira Natural Park",
+      "section": "Method details — Enrollment of participants from non-Westernized populations",
+      "notes": "Ethiopian location evidence: 'a previously established cohort in Gimbichu (Ethiopia, Oromia Region)'."
+    },
+    "probing_pocket_depth": {
+      "value": "not_reported",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "",
+      "section": "",
+      "notes": "Not applicable/not reported; no periodontal probing data in this paper."
+    },
+    "westernized": {
+      "value": "No",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "Enrollment of participants from non-Westernized populations from Madagascar and Ethiopia",
+      "section": "Method details — Enrollment of participants from non-Westernized populations",
+      "notes": "Both Madagascar and Ethiopian cohorts are explicitly described as non-Westernized."
+    },
+    "antibiotics_exclusion_period": {
+      "value": "not_reported",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "",
+      "section": "",
+      "notes": ""
+    },
+    "antibiotics_exclusion_period_unit": {
+      "value": "not_reported",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "",
+      "section": "",
+      "notes": ""
+    },
+    "probing_pocket_depth_value": {
+      "value": "not_reported",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "",
+      "section": "",
+      "notes": ""
+    },
+    "dna_extraction_kit": {
+      "value": "PowerSoil DNA Isolation Kit (MoBio Laboratories)",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "DNA was extracted with the PowerSoil DNA Isolation Kit (MoBio Laboratories)",
+      "section": "Method details — DNA extraction and sequencing",
+      "notes": "Applies to both Madagascar and Ethiopian cohort samples per the shared 'DNA extraction and sequencing' method section."
+    },
+    "ncbi_accession": {
+      "value": "not_reported",
+      "by_subgroup": {
+        "Madagascar cohort": "PRJNA485056",
+        "Ethiopian cohort": "PRJNA504891"
+      },
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "under the BioProjects PRJNA485056 (Madagascar cohort) and PRJNA504891 (Ethiopian cohort)",
+      "section": "Data and software availability",
+      "notes": ""
+    },
+    "sequencing_platform": {
+      "value": "HiSeq2500 machine (
+

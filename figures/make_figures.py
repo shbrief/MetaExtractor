@@ -3,10 +3,20 @@
 
 Static PNGs (portable across GitHub markdown + pandoc HTML). CVD-safe Okabe-Ito
 palette: Sonnet 5 = blue #0072B2, Haiku 4.5 = orange #E69F00, gold = gray.
-All numbers are transcribed from the manuscript's own result tables.
+
+Figures 2 and 3 are generated from the scoring outputs of a run tree — no
+numbers are transcribed by hand:
+
+  TREE/aggregate_v2.json   (benchmarks/cmd_sonnet5/aggregate.py)
+  TREE/harmonization.json  (benchmarks/cmd_sonnet5/bench.py harmonize)
+
+  python figures/make_figures.py [--tree benchmarks/cmd_sonnet5/out_v2]
 """
 from __future__ import annotations
+import argparse
+import json
 import pathlib
+import statistics as st
 import matplotlib as mpl
 import matplotlib.pyplot as plt
 from matplotlib.patches import FancyBboxPatch, FancyArrowPatch
@@ -55,194 +65,218 @@ def fig1_pipeline():
     # DejaVu Sans carries the → glyph that Helvetica lacks; use it for this diagram.
     prev_family = mpl.rcParams["font.family"]
     mpl.rcParams["font.family"] = "DejaVu Sans"
-    fig, ax = plt.subplots(figsize=(8.4, 6.4))
+    fig, ax = plt.subplots(figsize=(8.6, 7.4))
     ax.set_xlim(0, 100)
-    ax.set_ylim(0, 100)
+    ax.set_ylim(0, 106)
     ax.axis("off")
 
-    def box(x, y, w, h, text, fill, edge, fs=8.6, bold=False):
+    def box(x, y, w, h, text, fill, edge, fs=8.3, bold=False):
         ax.add_patch(FancyBboxPatch(
             (x, y), w, h, boxstyle="round,pad=0.6,rounding_size=1.6",
             linewidth=1.2, edgecolor=edge, facecolor=fill, zorder=2))
         ax.text(x + w / 2, y + h / 2, text, ha="center", va="center",
                 fontsize=fs, color=INK, zorder=3,
                 fontweight="bold" if bold else "normal", linespacing=1.25)
-        return (x + w / 2, y, x + w / 2, y + h)  # cx, ybot, cx, ytop
+        return {"top": (x + w / 2, y + h), "bot": (x + w / 2, y), "cx": x + w / 2,
+                "left": (x, y + h / 2), "right": (x + w, y + h / 2)}
 
-    def arrow(p_from, p_to, color=MUTED, style="-|>"):
-        ax.add_patch(FancyArrowPatch(
-            p_from, p_to, arrowstyle=style, mutation_scale=13,
-            linewidth=1.3, color=color, zorder=1,
-            shrinkA=1, shrinkB=1))
+    def arrow(p_from, p_to):
+        ax.add_patch(FancyArrowPatch(p_from, p_to, arrowstyle="-|>", mutation_scale=12,
+                                     linewidth=1.2, color=MUTED, zorder=1,
+                                     shrinkA=2, shrinkB=2))
 
-    # Inputs
-    b_paper = box(4, 88, 40, 9, "Paper\n(PMID · DOI · PDF · text)", IO, IO_E, bold=True)
-    b_schema = box(56, 88, 40, 9, "Target schema\n(JSON · YAML · LinkML)", IO, IO_E, bold=True)
+    paper = box(4, 90, 40, 8, "Paper\n(PMID · PMCID · DOI · PDF · text)", IO, IO_E, bold=True)
+    schema = box(56, 90, 40, 8, "Target schema\n(JSON · YAML · LinkML subset)", IO, IO_E, bold=True)
+    fetch = box(4, 72, 40, 11,
+                "Document retrieval (best-scoring text)\nPMC · Europe PMC · Europe PMC PDF ·\n"
+                "Unpaywall PDF · abstract floor\n+ supplementary files · SRA/ENA run manifest",
+                DET, DET_E, fs=7.9)
+    adapt = box(56, 74, 40, 8, "Schema adaptation\ntyped fields · static enums · scope",
+                DET, DET_E)
+    gate = box(56, 58, 40, 7.5,
+               "Table path: relevance gate · matrix reject\n(ENA manifest only if no own-table rows)",
+               DET, DET_E, fs=7.8)
+    plan = box(56, 45, 40, 7.5, "Bounded LLM plan per table\n(headers · id columns · melt recipe)",
+               LLM, LLM_E, fs=8.0)
+    execute = box(56, 32, 40, 7.5, "Python executor: copy cells by index\n· column map · join on key",
+                  DET, DET_E, fs=8.0)
+    disc = box(4, 52, 40, 8.5,
+               "Optional LLM sample discovery\n(model-constructed sample IDs;\nonly when no table was parsed)",
+               LLM, LLM_E, fs=7.9)
+    llmx = box(4, 35, 40, 10,
+               "LLM field-batch extraction\n≤30 fields/call · values + provenance\n"
+               "JSON parsed · Pydantic structural check",
+               LLM, LLM_E, fs=7.9)
+    rules = box(22, 16, 56, 8.5,
+                "Deterministic sample rules: scoped fan-out of study/subgroup values\n"
+                "· opt-in age rules · per-cell source recorded",
+                DET, DET_E, fs=7.9)
+    out = box(22, 2, 56, 8, "Output: JSON (fields + provenance, sample rows + sources,\n"
+                            "table-selection log, warnings) + CSV", IO, IO_E, fs=8.0, bold=True)
 
-    # Deterministic spine
-    b_fetch = box(4, 73, 40, 9,
-                  "Document retrieval\nPMC→EuropePMC→abstract + supp.\n(retry · S3 fallback)",
-                  DET, DET_E)
-    b_adapt = box(56, 73, 40, 9,
-                  "Schema adaptation\ntyped fields · enum downgrade\n(dynamic ontology→free text)",
-                  DET, DET_E)
+    arrow(paper["bot"], fetch["top"])
+    arrow(schema["bot"], adapt["top"])
+    arrow(fetch["bot"], disc["top"])
+    arrow(disc["bot"], llmx["top"])
+    arrow(adapt["bot"], gate["top"])
+    arrow(fetch["right"], (gate["left"][0], gate["left"][1] + 2))
+    arrow(adapt["left"], (llmx["right"][0] - 2, llmx["top"][1]))
+    arrow(gate["bot"], plan["top"])
+    arrow(plan["bot"], execute["top"])
+    arrow(llmx["bot"], (rules["cx"] - 14, rules["top"][1]))
+    arrow(execute["bot"], (rules["cx"] + 14, rules["top"][1]))
+    arrow(rules["bot"], out["top"])
 
-    # Merge bar (conceptual): both feed the extraction stage
-    y_split = 60
-    # Route A — LLM batch extraction
-    b_llmx = box(4, y_split, 40, 9,
-                 "LLM field-batch extraction\n≤30 fields/call · cached prompt\nextraction contract + provenance",
-                 LLM, LLM_E)
-    # Route B — deterministic table path with one bounded LLM plan
-    b_gate = box(56, y_split, 40, 8,
-                 "Supp.-table path: relevance gate\n· feature-matrix reject", DET, DET_E, fs=8.2)
-    b_plan = box(56, 48.5, 40, 8,
-                 "Bounded LLM plan (structure only:\nheaders · id cols · melt indices)", LLM, LLM_E, fs=8.2)
-    b_exec = box(56, 37, 40, 8,
-                 "Python execute (verbatim cells)\n· column map · join on shared key", DET, DET_E, fs=8.2)
-
-    # optional discovery
-    b_disc = box(4, 47.5, 40, 8,
-                 "opt. LLM sample-discovery\n(enumerate stable sample IDs)", LLM, LLM_E, fs=8.2)
-
-    # Validation + output
-    b_valid = box(30, 23, 40, 8,
-                  "Pydantic validation\n(faithfulness · schema conformance)", DET, DET_E)
-    b_out = box(30, 8, 40, 9,
-                "Output: JSON (per-sample rows,\nprovenance, table log, cost) + CSV", IO, IO_E, bold=True)
-
-    # arrows
-    arrow((b_paper[0], b_paper[1]), (b_fetch[0], b_fetch[3]))
-    arrow((b_schema[0], b_schema[1]), (b_adapt[0], b_adapt[3]))
-    # fetch + adapt into both routes
-    arrow((b_fetch[0], b_fetch[1]), (b_llmx[0], b_llmx[3]))
-    arrow((b_adapt[0], b_adapt[1]), (b_gate[0], b_gate[3]))
-    arrow((b_llmx[0], b_llmx[1]), (b_disc[0], b_disc[3]))
-    # table path chain
-    arrow((b_gate[0], b_gate[1]), (b_plan[0], b_plan[3]))
-    arrow((b_plan[0], b_plan[1]), (b_exec[0], b_exec[3]))
-    # into validation
-    arrow((b_disc[0], b_disc[1]), (b_valid[0] - 6, b_valid[3]))
-    arrow((b_exec[0], b_exec[1]), (b_valid[0] + 6, b_valid[3]))
-    arrow((b_valid[0], b_valid[1]), (b_out[0], b_out[3]))
-
-    # legend
-    leg_y = 99.4
-    for i, (fc, ec, lab) in enumerate([
-        (DET, DET_E, "deterministic step"),
-        (LLM, LLM_E, "constrained LLM call"),
-        (IO, IO_E, "input / output")]):
-        x = 4 + i * 30
-        ax.add_patch(FancyBboxPatch((x, leg_y - 1.4), 2.6, 2.4,
-                     boxstyle="round,pad=0.1,rounding_size=0.5",
-                     linewidth=1.1, edgecolor=ec, facecolor=fc))
-        ax.text(x + 3.4, leg_y - 0.2, lab, fontsize=8.2, va="center", color=INK)
+    for i, (fc, ec, lab) in enumerate([(DET, DET_E, "deterministic step"),
+                                       (LLM, LLM_E, "LLM call"),
+                                       (IO, IO_E, "input / output")]):
+        x = 6 + i * 31
+        ax.add_patch(FancyBboxPatch((x, 101.2), 2.6, 2.4, boxstyle="round,pad=0.1,rounding_size=0.5",
+                                    linewidth=1.1, edgecolor=ec, facecolor=fc))
+        ax.text(x + 3.6, 102.4, lab, fontsize=8.2, va="center", color=INK)
 
     fig.savefig(OUT / "fig1_pipeline.png")
     plt.close(fig)
     mpl.rcParams["font.family"] = prev_family
 
 
+# ---------------------------------------------------------------- helpers
+MODEL_STYLE = {"sonnet": ("Sonnet 5", SONNET, "#07507c"), "haiku": ("Haiku 4.5", HAIKU, "#a9720f")}
+
+
+def _metrics(c):
+    tp = c["tp_correct"] + c["tp_wrong"]
+    vp = c["tp_correct"] / (tp + c["fp"]) if tp + c["fp"] else None
+    vr = c["tp_correct"] / (tp + c["fn"]) if tp + c["fn"] else None
+    f1 = 2 * vp * vr / (vp + vr) if vp is not None and vr is not None and vp + vr else None
+    return f1
+
+
 # ---------------------------------------------------------------- Figure 2
-def fig3_model_compare():
-    # Refined pipeline, positional scoring (out_ms_refined), median [min-max] / 3 repeats.
-    # Precision/Recall/F1 from the positional join (10 studies); value-accuracy
-    # from the identity-aligned subset (6 studies) — the only join it is defined
-    # on (Section 3.1). The positional join carries no value-accuracy by design.
-    metrics = ["Precision", "Recall", "F1", "value-acc\n(aligned)"]
-    son_med = [0.990, 0.631, 0.772, 0.625]
-    son_lo = [0.963, 0.609, 0.746, 0.593]
-    son_hi = [0.994, 0.632, 0.772, 0.636]
-    hai_med = [0.901, 0.660, 0.762, 0.430]
-    hai_lo = [0.898, 0.640, 0.748, 0.383]
-    hai_hi = [0.906, 0.696, 0.787, 0.433]
-
-    fig, (ax, axfp) = plt.subplots(
-        1, 2, figsize=(8.4, 4.0), gridspec_kw={"width_ratios": [3.3, 1]})
-
-    _clean(ax, grid_axis="y")
+def fig2_model_compare(agg: dict):
     import numpy as np
-    x = np.arange(len(metrics))
+    models = [m for m in ("sonnet", "haiku") if m in agg["models"]]
+    keys = [("value_precision", "value\nprecision"), ("value_recall", "value\nrecall"),
+            ("value_f1", "value\nF1"), ("presence_precision", "presence\nprecision"),
+            ("presence_recall", "presence\nrecall")]
+    fig = plt.figure(figsize=(9.0, 6.6))
+    gs = fig.add_gridspec(2, 2, width_ratios=[3.4, 1], height_ratios=[1, 1.05],
+                          hspace=0.55, wspace=0.28)
+    ax, axfp, axs = fig.add_subplot(gs[0, 0]), fig.add_subplot(gs[0, 1]), fig.add_subplot(gs[1, :])
+
+    _clean(ax)
+    x = np.arange(len(keys))
     w = 0.36
-
-    def err(lo, med, hi):
-        return [[m - l for m, l in zip(med, lo)], [h - m for m, h in zip(med, hi)]]
-
-    ax.bar(x - w / 2, son_med, w, color=SONNET, edgecolor="white", linewidth=1.5,
-           zorder=2, label="Sonnet 5",
-           yerr=err(son_lo, son_med, son_hi), capsize=3,
-           error_kw=dict(ecolor=INK, lw=1, capthick=1))
-    ax.bar(x + w / 2, hai_med, w, color=HAIKU, edgecolor="white", linewidth=1.5,
-           zorder=2, label="Haiku 4.5",
-           yerr=err(hai_lo, hai_med, hai_hi), capsize=3,
-           error_kw=dict(ecolor=INK, lw=1, capthick=1))
-    for xi, v in zip(x - w / 2, son_med):
-        ax.text(xi, v + 0.03, f"{v:.2f}", ha="center", fontsize=7.6, color=SONNET, fontweight="bold")
-    for xi, v in zip(x + w / 2, hai_med):
-        ax.text(xi, v + 0.03, f"{v:.2f}", ha="center", fontsize=7.6, color="#a9720f", fontweight="bold")
+    for j, m in enumerate(models):
+        label, color, dark = MODEL_STYLE[m]
+        h = agg["models"][m]["headline"]["end_to_end"]
+        med = [h[k][0] for k, _ in keys]
+        lo = [h[k][0] - h[k][1] for k, _ in keys]
+        hi = [h[k][2] - h[k][0] for k, _ in keys]
+        xs = x + (j - 0.5) * w
+        ax.bar(xs, med, w, color=color, edgecolor="white", linewidth=1.2, zorder=2, label=label,
+               yerr=[lo, hi], capsize=3, error_kw=dict(ecolor=INK, lw=1, capthick=1))
+        for xi, v, e in zip(xs, med, hi):
+            ax.text(xi, v + e + 0.025, f"{v:.2f}", ha="center", fontsize=7.2, color=dark,
+                    fontweight="bold")
+    ax.axvline(2.5, color=GRID, lw=1.2, zorder=0)
     ax.set_xticks(x)
-    ax.set_xticklabels(metrics)
-    ax.set_ylim(0, 1.08)
-    ax.set_ylabel("score  (median · whiskers = min–max of 3 repeats)")
-    ax.legend(loc="upper right", frameon=False, fontsize=8.6, ncol=2,
-              columnspacing=1.0, handlelength=1.1)
+    ax.set_xticklabels([k[1] for k in keys], fontsize=8.2)
+    ax.set_ylim(0, 1.12)
+    ax.set_ylabel("end-to-end score\n(median; whiskers = min–max, 3 repeats)", fontsize=8.4)
+    ax.set_title("a  Content fields, identity-aligned end-to-end", loc="left", fontsize=9.2)
+    ax.legend(loc="upper left", bbox_to_anchor=(0.0, -0.2), frameon=False, fontsize=8.4, ncol=2)
 
-    # FP panel — log scale, cannot share the 0–1 axis
-    _clean(axfp, grid_axis="y")
-    axfp.bar([0], [51], 0.6, color=SONNET, edgecolor="white", linewidth=1.5, zorder=2)
-    axfp.bar([1], [784], 0.6, color=HAIKU, edgecolor="white", linewidth=1.5, zorder=2)
-    axfp.set_yscale("log")
-    axfp.set_ylim(1, 2000)
-    axfp.text(0, 51 * 1.3, "51", ha="center", fontsize=8.2, color=SONNET, fontweight="bold")
-    axfp.text(1, 784 * 1.3, "784", ha="center", fontsize=8.2, color="#a9720f", fontweight="bold")
-    axfp.set_xticks([0, 1])
-    axfp.set_xticklabels(["Sonnet", "Haiku"], fontsize=8.4)
-    axfp.set_title("False positives\n(log scale)", fontsize=9)
+    _clean(axfp)
+    for j, m in enumerate(models):
+        label, color, dark = MODEL_STYLE[m]
+        med, lo, hi = agg["models"][m]["headline"]["end_to_end"]["fp"]
+        axfp.bar([j], [med], 0.6, color=color, edgecolor="white", zorder=2,
+                 yerr=[[med - lo], [hi - med]], capsize=3, error_kw=dict(ecolor=INK, lw=1))
+        axfp.text(j, hi * 1.04 + 1, f"{med:.0f}", ha="center", fontsize=8, color=dark,
+                  fontweight="bold")
+    axfp.set_xticks(range(len(models)))
+    axfp.set_xticklabels([MODEL_STYLE[m][0] for m in models], fontsize=8.2)
+    top = max(agg["models"][m]["headline"]["end_to_end"]["fp"][2] for m in models)
+    axfp.set_ylim(0, top * 1.25 + 5)
+    axfp.set_title("b  False-positive cells", loc="left", fontsize=9.2)
+
+    _clean(axs)
+    studies = list(agg["models"][models[0]]["per_study"])
+    for j, m in enumerate(models):
+        label, color, dark = MODEL_STYLE[m]
+        for i, study in enumerate(studies):
+            runs = agg["models"][m]["per_study"].get(study, {}).get("runs", {})
+            vals = [_metrics(r["end_to_end"]) for r in runs.values() if "end_to_end" in r]
+            vals = [0.0 if v is None else v for v in vals]
+            if not vals:
+                continue
+            xi = i + (j - 0.5) * 0.3
+            axs.plot([xi, xi], [min(vals), max(vals)], color=color, lw=1.6, zorder=2)
+            axs.scatter([xi], [st.median(vals)], s=34, color=color, edgecolor="white", zorder=3)
+    axs.set_xticks(range(len(studies)))
+    axs.set_xticklabels([s.replace("_", "\n", 1) for s in studies], fontsize=7.4)
+    axs.set_ylim(-0.03, 1.0)
+    axs.set_ylabel("end-to-end value F1", fontsize=8.4)
+    axs.set_title("c  Per study (dot = median, line = min–max over repeats)", loc="left",
+                  fontsize=9.2)
     fig.savefig(OUT / "fig2_model_compare.png")
     plt.close(fig)
 
 
 # ---------------------------------------------------------------- Figure 3
-def fig4_harmonization():
-    # dumbbell: raw value-acc -> correct_acc (=1.00) per model/field
-    rows = [
-        ("body_site · Haiku 4.5", 0.758, 1.00, HAIKU),
-        ("body_site · Sonnet 5", 0.638, 1.00, SONNET),
-        ("disease · Haiku 4.5", 0.310, 1.00, HAIKU),
-        ("disease · Sonnet 5", 0.505, 1.00, SONNET),
-    ]
-    fig, ax = plt.subplots(figsize=(7.8, 3.7))
-    _clean(ax, grid_axis="x")
-    for i, (lab, raw, corr, col) in enumerate(rows):
-        ax.plot([raw, corr], [i, i], color=col, lw=2.4, alpha=0.45, zorder=1)
-        ax.scatter([raw], [i], s=70, color="white", edgecolor=col, linewidth=2, zorder=3)
-        ax.scatter([corr], [i], s=90, color=col, edgecolor="white", linewidth=1.4, zorder=3)
-        ax.text(raw - 0.02, i, f"{raw:.2f}", ha="right", va="center", fontsize=7.8, color=MUTED)
-        ax.text(corr + 0.015, i, "1.00", ha="left", va="center", fontsize=7.8,
-                color=col, fontweight="bold")
-    ax.set_yticks(range(len(rows)))
-    ax.set_yticklabels([r[0] for r in rows], fontsize=8.8)
-    ax.set_xlim(0, 1.12)
-    ax.set_xlabel("accuracy on TP cells")
-    ax.set_ylim(-0.6, len(rows) - 0.4)
-    # annotate the two endpoints once
-    ax.text(0.30, len(rows) - 0.15, "raw string match", fontsize=8, color=MUTED,
-            ha="center", style="italic")
-    ax.text(1.00, len(rows) - 0.15, "after OntologyMapper\n(vs gold's own IDs)",
-            fontsize=8, color=INK, ha="center", style="italic")
+def fig3_harmonization(harm: dict):
     from matplotlib.lines import Line2D
+    rows = []
+    for field in ("disease", "body_site", "treatment"):
+        fd = harm["fields"].get(field)
+        if not fd:
+            continue
+        for m in ("sonnet", "haiku"):
+            md = fd["models"].get(m) or {}
+            s = md.get("summary") or {}
+            if md.get("runs_with_coded"):
+                rows.append((field, m, {**s, "_runs": f"{md['runs_with_coded']}/{md['runs']}",
+                                        "_coded_total": sum(pr["coded"] for pr in md["per_run"].values())}))
+    fig, ax = plt.subplots(figsize=(8.0, 0.62 * len(rows) + 1.6))
+    _clean(ax, grid_axis="x")
+    for i, (field, m, s) in enumerate(reversed(rows)):
+        label, color, dark = MODEL_STYLE[m]
+        raw, exact, anyhit = s["raw_acc_coded"], s["exact_correct"], s["any_hit"]
+        ax.plot([raw[0], exact[0]], [i, i], color=color, lw=2.2, alpha=0.4, zorder=1)
+        for v, wc, kw in ((anyhit, MUTED, dict(s=52, marker="D", color="white", edgecolor=MUTED,
+                                                linewidth=1.2)),
+                          (raw, color, dict(s=62, color="white", edgecolor=color, linewidth=2)),
+                          (exact, dark, dict(s=80, color=color, edgecolor="white", linewidth=1.2))):
+            ax.plot([v[1], v[2]], [i + 0.12, i + 0.12], color=wc, lw=1.1, alpha=0.8, zorder=2)
+            ax.scatter([v[0]], [i], zorder=3, **kw)
+        ax.text(1.05, i, f"exact {exact[0]:.2f} · raw {raw[0]:.2f} · "
+                         f"{s['_coded_total']} cells, {s['_runs']} runs",
+                va="center", fontsize=7.6, color=dark)
+    ax.set_yticks(range(len(rows)))
+    ax.set_yticklabels([f"{f} · {MODEL_STYLE[m][0]}" for f, m, _ in reversed(rows)], fontsize=8.6)
+    ax.set_xlim(-0.03, 1.03)
+    ax.set_ylim(-0.6, len(rows) - 0.4)
+    ax.set_xlabel("fraction of coded cells (identity-matched; median over runs with coded cells, "
+                  "lines = range)", fontsize=8.4)
     ax.legend(handles=[
-        Line2D([0], [0], marker="o", color="white", markerfacecolor="white",
-               markeredgecolor=INK, markersize=8, label="raw value-acc"),
-        Line2D([0], [0], marker="o", color="white", markerfacecolor=INK,
-               markeredgecolor="white", markersize=9, label="correct_acc"),
-    ], loc="lower right", frameon=False, fontsize=8.2)
+        Line2D([0], [0], marker="o", color="none", markerfacecolor="white", markeredgecolor=INK,
+               markersize=8, label="raw string match"),
+        Line2D([0], [0], marker="o", color="none", markerfacecolor=INK, markeredgecolor="white",
+               markersize=9, label="exact code-set match to curated ID"),
+        Line2D([0], [0], marker="D", color="none", markerfacecolor="white", markeredgecolor=MUTED,
+               markersize=7, label="any shared code (supplementary)"),
+    ], loc="upper center", bbox_to_anchor=(0.45, -0.22), frameon=False, fontsize=8, ncol=3)
     fig.savefig(OUT / "fig3_harmonization.png")
     plt.close(fig)
 
 
 if __name__ == "__main__":
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--tree", default=str(OUT.parent / "benchmarks/cmd_sonnet5/out_v2"))
+    a = ap.parse_args()
+    tree = pathlib.Path(a.tree)
     fig1_pipeline()
-    fig3_model_compare()
-    fig4_harmonization()
+    fig2_model_compare(json.loads((tree / "aggregate_v2.json").read_text()))
+    fig3_harmonization(json.loads((tree / "harmonization.json").read_text()))
     print("wrote:", *[p.name for p in sorted(OUT.glob("*.png"))])

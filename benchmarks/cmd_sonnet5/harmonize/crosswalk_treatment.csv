@@ -1,0 +1,39 @@
+query,ref_match,stage,match1,match1_score,match1_code
+Leucovorin,Not Found,1.0,Not Found,1.0,
+Methotrexate,Not Found,1.0,Not Found,1.0,
+atovaquone,Not Found,1.0,Not Found,1.0,
+mefloquine,Not Found,1.0,Not Found,1.0,
+proguanil,Not Found,1.0,Not Found,1.0,
+Antipsychotics,Not Found,2.0,Antipsychotic Agent,0.9517,NCIT:C29710
+Benzodiazepines,Not Found,2.0,Benzodiazepine,1.0000,NCIT:C1012
+Cognitive behavioral therapy,Not Found,2.5,Cytembena,0.5682,NCIT:C1360
+Cognitive behavioural therapy,Not Found,2.5,Cytembena,0.5729,NCIT:C1360
+Fecal Microbiota Transplantation,Not Found,2.5,Fecal Microbiota Transplantation Capsule,0.8082,NCIT:C168520
+Fecal microbiota transplantation (FMT),Not Found,2.5,Fecal Microbiota Transplantation Capsule,0.7828,NCIT:C168520
+Folic acid,Not Found,2.5,Folic Acid Derivative,0.8160,NCIT:C2078
+Insulin replacement therapy,Not Found,2.5,Therapeutic Insulin,0.7572,NCIT:C581
+Multidisciplinary treatment,Not Found,2.5,Cytotoxic Chemotherapeutic Agent,0.6208,NCIT:C186664
+No antihypertensive treatment,Not Found,2.5,Antihypertensive Agent,0.7421,NCIT:C270
+No aspirin,Not Found,2.5,Low-Dose Aspirin,0.7098,NCIT:C94758
+No insulin,Not Found,2.0,Therapeutic Insulin,0.7656,NCIT:C581
+No metformin,Not Found,2.5,Metformin,0.7978,NCIT:C61612
+No metoprolol,Not Found,2.5,Metoprolol,0.7896,NCIT:C61845
+No nifedipine,Not Found,2.5,Nifedipine,0.7832,NCIT:C29290
+No statins,Not Found,2.5,Non-Statin Antilipidemic Agent,0.7259,NCIT:C80482
+Selective serotonin re-uptake inhibitors,Not Found,2.0,Selective Serotonin Reuptake Inhibitor,0.9076,NCIT:C94725
+Selective serotonin reuptake inhibitors,Not Found,2.0,Selective Serotonin Reuptake Inhibitor,1.0000,NCIT:C94725
+antimalarial chemoprophylaxis,Not Found,2.5,Antimalarial Agent,0.8215,NCIT:C271
+antipsychotics,Not Found,2.0,Antipsychotic Agent,0.9517,NCIT:C29710
+benzodiazepines,Not Found,2.0,Benzodiazepine,1.0000,NCIT:C1012
+cognitive behavioural therapeutic treatment,Not Found,2.5,Cytembena,0.5843,NCIT:C1360
+fecal microbiota transplantation,Not Found,2.5,Fecal Microbiota Transplantation Capsule,0.8082,NCIT:C168520
+insulin replacement therapy,Not Found,2.5,Therapeutic Insulin,0.7572,NCIT:C581
+multidisciplinary treatment,Not Found,2.5,Cytotoxic Chemotherapeutic Agent,0.6208,NCIT:C186664
+no antihypertensive treatment,Not Found,2.5,Antihypertensive Agent,0.7421,NCIT:C270
+no aspirin,Not Found,2.5,Low-Dose Aspirin,0.7098,NCIT:C94758
+no insulin,Not Found,2.0,Therapeutic Insulin,0.7656,NCIT:C581
+no metformin,Not Found,2.5,Metformin,0.7978,NCIT:C61612
+no metoprolol,Not Found,2.5,Metoprolol,0.7896,NCIT:C61845
+no nifedipine,Not Found,2.5,Nifedipine,0.7832,NCIT:C29290
+no statins,Not Found,2.5,Non-Statin Antilipidemic Agent,0.7259,NCIT:C80482
+selective serotonin re-uptake inhibitors,Not Found,2.0,Selective Serotonin Reuptake Inhibitor,0.9076,NCIT:C94725

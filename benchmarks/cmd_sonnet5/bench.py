@@ -149,9 +149,14 @@ def _source_kind(prov: list, ext_idx: int | None, field: str) -> str:
 
 def score_study(m: dict, rj: Path, align_key: str = DEFAULT_ALIGN_KEY) -> dict:
     """Score one extraction on all three joins. Returns a JSON-able record plus
-    private ``_e2e``/``_gold``/``_alignment``/``_data`` handles for callers."""
-    ext = load_extraction(rj)
-    data = ext.model_dump()
+    private ``_e2e``/``_gold``/``_alignment``/``_data`` handles for callers.
+
+    A missing extraction (the run failed) is scored as an empty result, so in the
+    end-to-end join every populated gold cell of the study is a false negative.
+    """
+    failed = not rj.exists()
+    data = ({"granularity": "study_level", "fields": {}, "samples": []} if failed
+            else load_extraction(rj).model_dump())
     samples = data.get("samples", [])
     prov = data.get("sample_provenance") or []
     gold = load_gold_tsv(gold_path(m))
@@ -197,6 +202,7 @@ def score_study(m: dict, rj: Path, align_key: str = DEFAULT_ALIGN_KEY) -> dict:
     fr = e2e.faithfulness
     rec = {
         "study": m["study"], "pmid": m["pmid"], "n_gold": len(gold), "n_extracted": len(samples),
+        "extraction_failed": failed,
         "granularity": data.get("granularity"),
         "alignment": al.to_dict(),
         "end_to_end": {"content": agg_over(e2e.per_field, content), "meta": agg_over(e2e.per_field, meta)},
@@ -227,8 +233,6 @@ def cmd_eval(args: argparse.Namespace) -> None:
     per_study = []
     for m in load_manifest(limit=args.limit):
         rj = outdir / f"{m['study']}.json"
-        if not rj.exists():
-            per_study.append({"study": m["study"], "error": "no extraction output"}); continue
         rec = score_study(m, rj, args.align_key)
         if rec["_e2e"].per_cell:
             rec["_e2e"].to_cells_tsv(str(outdir / f"{m['study']}.cells.tsv"))
@@ -266,10 +270,8 @@ def write_report(outdir: Path, per_study: list[dict]) -> None:
           "| study | gold n | ext n | key | matched | unmatched | pooled | ambiguous | extra (keyed) | extra (no key) | TPc | TPw | FN | FP |",
           "|---|--:|--:|---|--:|--:|--:|--:|--:|--:|--:|--:|--:|--:|"]
     for s in per_study:
-        if "error" in s:
-            L.append(f"| {s['study']} | {s['error']} |" + " |" * 12); continue
         al, c = s["alignment"], s["end_to_end"]["content"]
-        L.append(f"| {s['study']} | {s['n_gold']} | {s['n_extracted']} | {al['key_used'] or '–'} | "
+        L.append(f"| {s['study']}{' (extraction failed)' if s.get('extraction_failed') else ''} | {s['n_gold']} | {s['n_extracted']} | {al['key_used'] or '–'} | "
                  f"{al['matched']} | {al['unmatched_gold']} | {al['pooled_gold']} | "
                  f"{al['ambiguous_gold']} | {al['unmatched_ext_with_key']} | "
                  f"{al['unmatched_ext_without_key']} | {c['tp_correct']} | {c['tp_wrong']} | "
@@ -385,13 +387,20 @@ def cmd_harmonize(args: argparse.Namespace) -> None:
             out["fields"][field]["models"][model] = {
                 "per_run": per_run,
                 "summary": {k: _mmm([pr[k] for pr in per_run.values()]) for k in keys},
+                # Ratios are undefined for a run with no cells; say how many runs contribute.
+                "runs_with_coded": sum(1 for pr in per_run.values() if pr["coded"]),
+                "runs": len(per_run),
+                "distinct_ext_terms": sorted({t for pr in per_run.values() for t in pr["ext_term_freq"]}),
+                "distinct_gold_codes": sorted({c for pr in per_run.values() for c in pr["gold_code_freq"]}),
+                "studies": sorted({st_ for pr in per_run.values() for st_ in pr["studies"]}),
             }
     (tree / "harmonization.json").write_text(json.dumps(out, indent=2))
     L = ["# Ontology harmonization (identity-matched cells)\n",
          "Median [min–max] over repeats. `raw` and `exact` on the **same coded cells** "
          "(both reported, gold carries a curated ontology id). `any-hit` is supplementary.\n",
-         "| field | model | TP cells | coded cells | raw acc (coded) | exact code-set correct | any-hit (suppl.) | concept P | concept R | agree (TP, exact) |",
-         "|---|---|--:|--:|--:|--:|--:|--:|--:|--:|"]
+         "Ratios are over runs with at least one coded cell (`runs coded`).\n",
+         "| field | model | TP cells | coded cells | runs coded | raw acc (coded) | exact code-set correct | any-hit (suppl.) | concept P | concept R | agree (TP, exact) | coded terms → curated codes | studies |",
+         "|---|---|--:|--:|--:|--:|--:|--:|--:|--:|--:|---|---|"]
     for field, fd in out["fields"].items():
         for model, md in fd["models"].items():
             s = md["summary"]
@@ -402,9 +411,13 @@ def cmd_harmonize(args: argparse.Namespace) -> None:
                 return (f"{v[0]:.{nd}f} [{v[1]:.{nd}f}–{v[2]:.{nd}f}]" if nd
                         else f"{v[0]:.0f} [{v[1]:.0f}–{v[2]:.0f}]")
             L.append(f"| {field} | {model} | {cell('tp', 0)} | {cell('coded', 0)} | "
+                     f"{md['runs_with_coded']}/{md['runs']} | "
                      f"{cell('raw_acc_coded')} | {cell('exact_correct')} | {cell('any_hit')} | "
                      f"{cell('concept_precision')} | {cell('concept_recall')} | "
-                     f"{cell('agree_exact_tp')} |")
+                     f"{cell('agree_exact_tp')} | "
+                     f"{', '.join(md['distinct_ext_terms']) or '–'} → "
+                     f"{', '.join(md['distinct_gold_codes']) or '–'} | "
+                     f"{', '.join(md['studies']) or '–'} |")
     (tree / "harmonization.md").write_text("\n".join(L) + "\n")
     print("\n".join(L))
     print(f"\nwrote {tree/'harmonization.json'} and {tree/'harmonization.md'}")

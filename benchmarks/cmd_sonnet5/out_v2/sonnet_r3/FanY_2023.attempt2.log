@@ -1,0 +1,582 @@
+cmd: /Users/sehyunoh/.pyenv/versions/3.14.0/bin/python -m metaextractor.cli --paper-id 37069399 --schema /Users/sehyunoh/OmicsMLRepo/MetaExtractor/benchmarks/cmd_sonnet5/cmd.clean.linkml.yaml --model claude-sonnet-5 --age-rules /Users/sehyunoh/OmicsMLRepo/MetaExtractor/benchmarks/cmd_sonnet5/age_rules_cmd.json --out /Users/sehyunoh/OmicsMLRepo/MetaExtractor/benchmarks/cmd_sonnet5/out_v2/sonnet_r3/FanY_2023.json --csv /Users/sehyunoh/OmicsMLRepo/MetaExtractor/benchmarks/cmd_sonnet5/out_v2/sonnet_r3/FanY_2023.csv --csv-provenance --save-text /Users/sehyunoh/OmicsMLRepo/MetaExtractor/benchmarks/cmd_sonnet5/out_v2/sonnet_r3/FanY_2023.text.txt --run-meta /Users/sehyunoh/OmicsMLRepo/MetaExtractor/benchmarks/cmd_sonnet5/out_v2/sonnet_r3/FanY_2023.meta.json --api-key file:/Users/sehyunoh/OmicsMLRepo/MetaHarmonizerEval/vignettes/keys/llm_baseline
+status: fail_rc2
+returncode: 2
+elapsed_s: 709.4
+--- stderr ---
+[fetched pmc_fulltext for 37069399]
+[supplementary included (17): 41564_2023_1355_MOESM1_ESM.pdf, 41564_2023_1355_MOESM2_ESM.pdf, 41564_2023_1355_MOESM3_ESM.xlsx, 41564_2023_1355_MOESM4_ESM.xlsx, 41564_2023_1355_MOESM10_ESM.xlsx, 41564_2023_1355_MOESM11_ESM.xlsx, 41564_2023_1355_MOESM12_ESM.xlsx, 41564_2023_1355_MOESM13_ESM.xlsx, 41564_2023_1355_MOESM14_ESM.xlsx, 41564_2023_1355_MOESM15_ESM.xlsx, 41564_2023_1355_MOESM16_ESM.xlsx, 41564_2023_1355_MOESM17_ESM.xlsx, 41564_2023_1355_MOESM5_ESM.xlsx, 41564_2023_1355_MOESM6_ESM.xlsx, 41564_2023_1355_MOESM7_ESM.xlsx, 41564_2023_1355_MOESM8_ESM.xlsx, 41564_2023_1355_MOESM9_ESM.xlsx]
+[supplementary tables parsed: 56 (deterministic path; LLM will not see them)]
+[supplementary skipped: 41564_2023_1355_Article_Equa.gif — europepmc: ValueError: image-only (.gif)]
+[supplementary skipped: 41564_2023_1355_Article_Equb.gif — europepmc: ValueError: image-only (.gif)]
+[supplementary skipped: 41564_2023_1355_Fig10_ESM.gif — europepmc: ValueError: image-only (.gif)]
+[supplementary skipped: 41564_2023_1355_Fig10_ESM.jpg — europepmc: ValueError: image-only (.jpg)]
+[supplementary skipped: 41564_2023_1355_Fig11_ESM.gif — europepmc: ValueError: image-only (.gif)]
+[supplementary skipped: 41564_2023_1355_Fig11_ESM.jpg — europepmc: ValueError: image-only (.jpg)]
+[supplementary skipped: 41564_2023_1355_Fig12_ESM.gif — europepmc: ValueError: image-only (.gif)]
+[supplementary skipped: 41564_2023_1355_Fig12_ESM.jpg — europepmc: ValueError: image-only (.jpg)]
+[supplementary skipped: 41564_2023_1355_Fig13_ESM.gif — europepmc: ValueError: image-only (.gif)]
+[supplementary skipped: 41564_2023_1355_Fig13_ESM.jpg — europepmc: ValueError: image-only (.jpg)]
+[supplementary skipped: 41564_2023_1355_Fig14_ESM.gif — europepmc: ValueError: image-only (.gif)]
+[supplementary skipped: 41564_2023_1355_Fig14_ESM.jpg — europepmc: ValueError: image-only (.jpg)]
+[supplementary skipped: 41564_2023_1355_Fig15_ESM.gif — europepmc: ValueError: image-only (.gif)]
+[supplementary skipped: 41564_2023_1355_Fig15_ESM.jpg — europepmc: ValueError: image-only (.jpg)]
+[supplementary skipped: 41564_2023_1355_Fig16_ESM.gif — europepmc: ValueError: image-only (.gif)]
+[supplementary skipped: 41564_2023_1355_Fig16_ESM.jpg — europepmc: ValueError: image-only (.jpg)]
+[supplementary skipped: 41564_2023_1355_Fig1_HTML.gif — europepmc: ValueError: image-only (.gif)]
+[supplementary skipped: 41564_2023_1355_Fig1_HTML.jpg — europepmc: ValueError: image-only (.jpg)]
+[supplementary skipped: 41564_2023_1355_Fig2_HTML.gif — europepmc: ValueError: image-only (.gif)]
+[supplementary skipped: 41564_2023_1355_Fig2_HTML.jpg — europepmc: ValueError: image-only (.jpg)]
+[supplementary skipped: 41564_2023_1355_Fig3_HTML.gif — europepmc: ValueError: image-only (.gif)]
+[supplementary skipped: 41564_2023_1355_Fig3_HTML.jpg — europepmc: ValueError: image-only (.jpg)]
+[supplementary skipped: 41564_2023_1355_Fig4_HTML.gif — europepmc: ValueError: image-only (.gif)]
+[supplementary skipped: 41564_2023_1355_Fig4_HTML.jpg — europepmc: ValueError: image-only (.jpg)]
+[supplementary skipped: 41564_2023_1355_Fig5_HTML.gif — europepmc: ValueError: image-only (.gif)]
+[supplementary skipped: 41564_2023_1355_Fig5_HTML.jpg — europepmc: ValueError: image-only (.jpg)]
+[supplementary skipped: 41564_2023_1355_Fig6_HTML.gif — europepmc: ValueError: image-only (.gif)]
+[supplementary skipped: 41564_2023_1355_Fig6_HTML.jpg — europepmc: ValueError: image-only (.jpg)]
+[supplementary skipped: 41564_2023_1355_Fig7_ESM.gif — europepmc: ValueError: image-only (.gif)]
+[supplementary skipped: 41564_2023_1355_Fig7_ESM.jpg — europepmc: ValueError: image-only (.jpg)]
+[supplementary skipped: 41564_2023_1355_Fig8_ESM.gif — europepmc: ValueError: image-only (.gif)]
+[supplementary skipped: 41564_2023_1355_Fig8_ESM.jpg — europepmc: ValueError: image-only (.jpg)]
+[supplementary skipped: 41564_2023_1355_Fig9_ESM.gif — europepmc: ValueError: image-only (.gif)]
+[supplementary skipped: 41564_2023_1355_Fig9_ESM.jpg — europepmc: ValueError: image-only (.jpg)]
+ERROR: Model returned non-JSON output: Expecting property name enclosed in double quotes: line 537 column 41 (char 18327)
+--- raw model response ---
+{
+  "paper_id": "37069399",
+  "granularity": "sample_level",
+  "subgroups": [],
+  "fields": {
+    "zigosity": {
+      "value": "not_reported",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "",
+      "section": "",
+      "notes": null
+    },
+    "age_min": {
+      "value": "not_reported",
+      "by_subgroup": null,
+      "unit": "years",
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "",
+      "section": "",
+      "notes": "Cohort described as 'age-matched' but no min/max age range given in main text; see Supplementary Table 2 (not provided)."
+    },
+    "age_max": {
+      "value": "not_reported",
+      "by_subgroup": null,
+      "unit": "years",
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "",
+      "section": "",
+      "notes": null
+    },
+    "age_years": {
+      "value": "not_reported",
+      "by_subgroup": null,
+      "unit": "years",
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "",
+      "section": "",
+      "notes": "No single cohort-level mean age is given in main text; individual ages reported only for the 6 FMT donors (see samples)."
+    },
+    "antibiotics_current_use": {
+      "value": "No",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "inferred",
+      "confidence": "medium",
+      "evidence_quote": "Exclusion criteria comprised antibiotic or antifungal treatment within the previous 3 months",
+      "section": "Methods — Study participants",
+      "notes": "Antibiotic use within the previous 3 months was an exclusion criterion for both AN and control participants, implying no current use."
+    },
+    "bmi": {
+      "value": "not_reported",
+      "by_subgroup": null,
+      "unit": "kg/m2",
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "medium",
+      "evidence_quote": "women with AN were much leaner",
+      "section": "Results — Phenotypes of women with AN and controls",
+      "notes": "Qualitative statement only; exact cohort-level BMI values reported in Supplementary Table 1/2 (not provided in extracted text). Control BMI eligibility range 18.5-25 kg/m2 given as exclusion criterion, not a descriptive statistic."
+    },
+    "dietary_restriction": {
+      "value": "not_reported",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "",
+      "section": "",
+      "notes": null
+    },
+    "disease": {
+      "value": ["Anorexia Nervosa", "Healthy"],
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "a cohort of 77 females with AN and 70 healthy females",
+      "section": "Abstract",
+      "notes": null
+    },
+    "disease_details": {
+      "value": ["Anorexia nervosa restricting (AN-RS) type", "Anorexia nervosa binge-eating or purging (AN-BP) type"],
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "the common restricting (AN-RS) type and the less prevalent binge-eating or purging (AN-BP) type",
+      "section": "Main",
+      "notes": "AN-RS n=56, AN-BP n=21 per Fig. 1 legend."
+    },
+    "disease_response_orr": {
+      "value": "not_reported",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "",
+      "section": "",
+      "notes": null
+    },
+    "disease_response_pfs": {
+      "value": "not_reported",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "",
+      "section": "",
+      "notes": null
+    },
+    "disease_response_pfs_month": {
+      "value": "not_reported",
+      "by_subgroup": null,
+      "unit": "months",
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "",
+      "section": "",
+      "notes": null
+    },
+    "disease_response_recist": {
+      "value": "not_reported",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "",
+      "section": "",
+      "notes": null
+    },
+    "feces_phenotype": {
+      "value": "not_reported",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "",
+      "section": "",
+      "notes": null
+    },
+    "fmt_id": {
+      "value": "not_reported",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "",
+      "section": "",
+      "notes": "No individual donor/recipient IDs given; groups referred to only as AN-T/HC-T."
+    },
+    "fmt_role": {
+      "value": "Donor",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "we transplanted faecal microbiota from three randomly chosen AN-RS cases ... and three age-matched HC participants",
+      "section": "Results — Gut microbiota induces reduced weight gain and altered energy metabolism in mice",
+      "notes": "Six human individuals (3 AN, 3 HC) served as fecal donors for GF mouse FMT experiments; see samples array."
+    },
+    "hla": {
+      "value": "not_reported",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "",
+      "section": "",
+      "notes": null
+    },
+    "neonatal_birth_weight": {
+      "value": "not_reported",
+      "by_subgroup": null,
+      "unit": "g",
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "",
+      "section": "",
+      "notes": null
+    },
+    "neonatal_delivery_procedure": {
+      "value": "not_reported",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "",
+      "section": "",
+      "notes": null
+    },
+    "neonatal_feeding_method": {
+      "value": "not_reported",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "",
+      "section": "",
+      "notes": null
+    },
+    "neonatal_gestational_age": {
+      "value": "not_reported",
+      "by_subgroup": null,
+      "unit": "weeks",
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "",
+      "section": "",
+      "notes": null
+    },
+    "neonatal_preterm_birth": {
+      "value": "not_reported",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "",
+      "section": "",
+      "notes": null
+    },
+    "obgyn_birth_control": {
+      "value": "not_reported",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "medium",
+      "evidence_quote": "regular medication of any kind apart from birth control pills",
+      "section": "Methods — Study participants",
+      "notes": "Birth control pills were an allowed exception to the medication exclusion criterion for controls, but actual usage status is not reported."
+    },
+    "obgyn_lactating": {
+      "value": "not_reported",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "",
+      "section": "",
+      "notes": null
+    },
+    "obgyn_menopause": {
+      "value": "not_reported",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "",
+      "section": "",
+      "notes": null
+    },
+    "obgyn_pregnancy": {
+      "value": "not_reported",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "",
+      "section": "",
+      "notes": null
+    },
+    "smoker": {
+      "value": "not_reported",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "medium",
+      "evidence_quote": "confounders including age, smoking and multiple drug intake",
+      "section": "Results — Associations between absolute bacterial abundance and bioclinical variables in AN",
+      "notes": "Smoking status was used as a covariate/confounder but specific smoking status categories per participant were not reported."
+    },
+    "treatment": {
+      "value": ["selective serotonin re-uptake inhibitors", "antipsychotics", "benzodiazepines", "cognitive behavioural therapy"],
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "medium",
+      "evidence_quote": "deconfounding interferences of multiple medications (selective serotonin re-uptake inhibitors, antipsychotics and benzodiazepines",
+      "section": "Results — Gut microbiota composition is altered in AN",
+      "notes": "Medications reported as confounders for some AN participants; CBT reported for out-patients (Methods — Out-patients: 'all out-patients were also enrolled in cognitive behavioural therapeutic treatment courses')."
+    },
+    "tumor_staging_ajcc": {
+      "value": "not_reported",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "",
+      "section": "",
+      "notes": null
+    },
+    "tumor_staging_tnm": {
+      "value": "not_reported",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "",
+      "section": "",
+      "notes": null
+    }
+  },
+  "samples": [
+    {
+      "zigosity": "not_reported",
+      "age_min": 20,
+      "age_max": 20,
+      "age_years": 20,
+      "antibiotics_current_use": "not_reported",
+      "bmi": 10.3,
+      "dietary_restriction": "not_reported",
+      "disease": "Anorexia Nervosa",
+      "disease_details": "Anorexia nervosa restricting type (AN-RS)",
+      "disease_response_orr": "not_reported",
+      "disease_response_pfs": "not_reported",
+      "disease_response_pfs_month": "not_reported",
+      "disease_response_recist": "not_reported",
+      "feces_phenotype": "not_reported",
+      "fmt_id": "not_reported",
+      "fmt_role": "Donor",
+      "hla": "not_reported",
+      "neonatal_birth_weight": "not_reported",
+      "neonatal_delivery_procedure": "not_reported",
+      "neonatal_feeding_method": "not_reported",
+      "neonatal_gestational_age": "not_reported",
+      "neonatal_preterm_birth": "not_reported",
+      "obgyn_birth_control": "not_reported",
+      "obgyn_lactating": "not_reported",
+      "obgyn_menopause": "not_reported",
+      "obgyn_pregnancy": "not_reported",
+      "smoker": "not_reported",
+      "treatment": "not_reported",
+      "tumor_staging_ajcc": "not_reported",
+      "tumor_staging_tnm": "not_reported"
+    },
+    {
+      "zigosity": "not_reported",
+      "age_min": 22,
+      "age_max": 22,
+      "age_years": 22,
+      "antibiotics_current_use": "not_reported",
+      "bmi": 11.5,
+      "dietary_restriction": "not_reported",
+      "disease": "Anorexia Nervosa",
+      "disease_details": "Anorexia nervosa restricting type (AN-RS)",
+      "disease_response_orr": "not_reported",
+      "disease_response_pfs": "not_reported",
+      "disease_response_pfs_month": "not_reported",
+      "disease_response_recist": "not_reported",
+      "feces_phenotype": "not_reported",
+      "fmt_id": "not_reported",
+      "fmt_role": "Donor",
+      "hla": "not_reported",
+      "neonatal_birth_weight": "not_reported",
+      "neonatal_delivery_procedure": "not_reported",
+      "neonatal_feeding_method": "not_reported",
+      "neonatal_gestational_age": "not_reported",
+      "neonatal_preterm_birth": "not_reported",
+      "obgyn_birth_control": "not_reported",
+      "obgyn_lactating": "not_reported",
+      "obgyn_menopause": "not_reported",
+      "obgyn_pregnancy": "not_reported",
+      "smoker": "not_reported",
+      "treatment": "not_reported",
+      "tumor_staging_ajcc": "not_reported",
+      "tumor_staging_tnm": "not_reported"
+    },
+    {
+      "zigosity": "not_reported",
+      "age_min": 20,
+      "age_max": 20,
+      "age_years": 20,
+      "antibiotics_current_use": "not_reported",
+      "bmi": 11.7,
+      "dietary_restriction": "not_reported",
+      "disease": "Anorexia Nervosa",
+      "disease_details": "Anorexia nervosa restricting type (AN-RS)",
+      "disease_response_orr": "not_reported",
+      "disease_response_pfs": "not_reported",
+      "disease_response_pfs_month": "not_reported",
+      "disease_response_recist": "not_reported",
+      "feces_phenotype": "not_reported",
+      "fmt_id": "not_reported",
+      "fmt_role": "Donor",
+      "hla": "not_reported",
+      "neonatal_birth_weight": "not_reported",
+      "neonatal_delivery_procedure": "not_reported",
+      "neonatal_feeding_method": "not_reported",
+      "neonatal_gestational_age": "not_reported",
+      "neonatal_preterm_birth": "not_reported",
+      "obgyn_birth_control": "not_reported",
+      "obgyn_lactating": "not_reported",
+      "obgyn_menopause": "not_reported",
+      "obgyn_pregnancy": "not_reported",
+      "smoker": "not_reported",
+      "treatment": "not_reported",
+      "tumor_staging_ajcc": "not_reported",
+      "tumor_staging_tnm": "not_reported"
+    },
+    {
+      "zigosity": "not_reported",
+      "age_min": 20,
+      "age_max": 20,
+      "age_years": 20,
+      "antibiotics_current_use": "not_reported",
+      "bmi": 22.6,
+      "dietary_restriction": "not_reported",
+      "disease": "Healthy",
+      "disease_details": "not_reported",
+      "disease_response_orr": "not_reported",
+      "disease_response_pfs": "not_reported",
+      "disease_response_pfs_month": "not_reported",
+      "disease_response_recist": "not_reported",
+      "feces_phenotype": "not_reported",
+      "fmt_id": "not_reported",
+      "fmt_role": "Donor",
+      "hla": "not_reported",
+      "neonatal_birth_weight": "not_reported",
+      "neonatal_delivery_procedure": "not_reported",
+      "neonatal_feeding_method": "not_reported",
+      "neonatal_gestational_age": "not_reported",
+      "neonatal_preterm_birth": "not_reported",
+      "obgyn_birth_control": "not_reported",
+      "obgyn_lactating": "not_reported",
+      "obgyn_menopause": "not_reported",
+      "obgyn_pregnancy": "not_reported",
+      "smoker": "not_reported",
+      "treatment": "not_reported",
+      "tumor_staging_ajcc": "not_reported",
+      "tumor_staging_tnm": "not_reported"
+    },
+    {
+      "zigosity": "not_reported",
+      "age_min": 22,
+      "age_max": 22,
+      "age_years": 22,
+      "antibiotics_current_use": "not_reported",
+      "bmi": 21.1,
+      "dietary_restriction": "not_reported",
+      "disease": "Healthy",
+      "disease_details": "not_reported",
+      "disease_response_orr": "not_reported",
+      "disease_response_pfs": "not_reported",
+      "disease_response_pfs_month": "not_reported",
+      "disease_response_recist": "not_reported",
+      "feces_phenotype": "not_reported",
+      "fmt_id": "not_reported",
+      "fmt_role": "Donor",
+      "hla": "not_reported",
+      "neonatal_birth_weight": "not_reported",
+      "neonatal_delivery_procedure": "not_reported",
+      "neonatal_feeding_method": "not_reported",
+      "neonatal_gestational_age": "not_reported",
+      "neonatal_preterm_birth": "not_reported",
+      "obgyn_birth_control": "not_reported",
+      "obgyn_lactating": "not_reported",
+      "obgyn_menopause": "not_reported",
+      "obgyn_pregnancy": "not_reported",
+      "smoker": "not_reported",
+      "treatment": "not_reported",
+      "tumor_staging_ajcc": "not_reported",
+      "tumor_staging_tnm": "not_reported"
+    },
+    {
+      "zigosity": "not_reported",
+      "age_min": 21,
+      "age_max": 21,
+      "age_years": 21,
+      "antibiotics_current_use": "not_reported",
+      "bmi": 21.2,
+      "dietary_restriction": "not_reported",
+      "disease": "Healthy",
+      "disease_details": "not_reported",
+

@@ -1,0 +1,29 @@
+cmd: /Users/sehyunoh/.pyenv/versions/3.14.0/bin/python -m metaextractor.cli --paper-id 31417531 --schema /Users/sehyunoh/OmicsMLRepo/MetaExtractor/benchmarks/cmd_sonnet5/cmd.clean.linkml.yaml --model claude-haiku-4-5 --age-rules /Users/sehyunoh/OmicsMLRepo/MetaExtractor/benchmarks/cmd_sonnet5/age_rules_cmd.json --out /Users/sehyunoh/OmicsMLRepo/MetaExtractor/benchmarks/cmd_sonnet5/out_v2/haiku_r1/ContevilleLC_2019.json --csv /Users/sehyunoh/OmicsMLRepo/MetaExtractor/benchmarks/cmd_sonnet5/out_v2/haiku_r1/ContevilleLC_2019.csv --csv-provenance --save-text /Users/sehyunoh/OmicsMLRepo/MetaExtractor/benchmarks/cmd_sonnet5/out_v2/haiku_r1/ContevilleLC_2019.text.txt --run-meta /Users/sehyunoh/OmicsMLRepo/MetaExtractor/benchmarks/cmd_sonnet5/out_v2/haiku_r1/ContevilleLC_2019.meta.json --api-key file:/Users/sehyunoh/OmicsMLRepo/MetaHarmonizerEval/vignettes/keys/llm_baseline
+status: ok
+returncode: 0
+elapsed_s: 82.4
+--- stderr ---
+[fetched pmc_fulltext for 31417531]
+[supplementary tables parsed: 1 (deterministic path; LLM will not see them)]
+[SRA/ENA run manifest: ena:PRJNA527208 (15 runs) (deterministic path)]
+[supplementary skipped: Image_1.TIFF — image-only (.tiff)]
+[supplementary skipped: Image_2.TIFF — image-only (.tiff)]
+[supplementary skipped: Image_3.TIFF — image-only (.tiff)]
+[supplementary skipped: Table_1.XLS — s3: ValueError: unsupported extension (.xls)]
+[supplementary skipped: Table_2.XLS — s3: ValueError: unsupported extension (.xls)]
+[supplementary skipped: Table_1.XLS — europepmc: ValueError: unsupported extension (.xls)]
+[supplementary skipped: Table_2.XLS — europepmc: ValueError: unsupported extension (.xls)]
+[supplementary skipped: fmicb-10-01743-g001.gif — europepmc: ValueError: image-only (.gif)]
+[supplementary skipped: fmicb-10-01743-g001.jpg — europepmc: ValueError: image-only (.jpg)]
+[supplementary skipped: fmicb-10-01743-g002.gif — europepmc: ValueError: image-only (.gif)]
+[supplementary skipped: fmicb-10-01743-g002.jpg — europepmc: ValueError: image-only (.jpg)]
+[supplementary skipped: fmicb-10-01743-g003.gif — europepmc: ValueError: image-only (.gif)]
+[supplementary skipped: fmicb-10-01743-g003.jpg — europepmc: ValueError: image-only (.jpg)]
+[supplementary skipped: fmicb-10-01743-g004.gif — europepmc: ValueError: image-only (.gif)]
+[supplementary skipped: fmicb-10-01743-g004.jpg — europepmc: ValueError: image-only (.jpg)]
+[table selection: 1 kept / 1 scored (gate=0.15)]
+[  PRJNA527208_ena_manifest.tsv: kept (score=0.47) — key-like column 'run_accession']
+[wrote CSV: /Users/sehyunoh/OmicsMLRepo/MetaExtractor/benchmarks/cmd_sonnet5/out_v2/haiku_r1/ContevilleLC_2019.csv]
+[usage: 4 call(s); input=10,299, cache_write=8,965, cache_read=17,930, output=10,242]
+[cost: $0.0745 (input $0.0103 + cache_w $0.0112 + cache_r $0.0018 + output $0.0512)]
+

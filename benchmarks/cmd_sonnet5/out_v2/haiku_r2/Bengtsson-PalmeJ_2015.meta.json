@@ -1,0 +1,101 @@
+{
+  "started_utc": "2026-09-14T15:31:08+00:00",
+  "finished_utc": "2026-09-14T15:32:16+00:00",
+  "paper_id": "26259788",
+  "request": {
+    "model_requested": "claude-haiku-4-5",
+    "models_returned": [
+      "claude-haiku-4-5-20251001"
+    ],
+    "max_tokens": 16384,
+    "batch_size": 30,
+    "sample_discovery": true,
+    "min_table_relevance": 0.15,
+    "sampling_and_thinking": "not set (API defaults: no temperature/top_p/top_k/thinking/effort parameters sent)",
+    "age_rules": "/Users/sehyunoh/OmicsMLRepo/MetaExtractor/benchmarks/cmd_sonnet5/age_rules_cmd.json"
+  },
+  "usage": {
+    "input_tokens": 11918,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 9123,
+    "n_calls": 3
+  },
+  "cost_estimate": {
+    "input_usd": 0.011918,
+    "output_usd": 0.045615,
+    "cache_read_usd": 0.0,
+    "cache_write_usd": 0.0,
+    "total_usd": 0.057533,
+    "pricing_as_of": "2026-06-24"
+  },
+  "retrieval": {
+    "source": "pmc_fulltext",
+    "has_body": false,
+    "pmid": "26259788",
+    "pmcid": "4576037",
+    "doi": "10.1128/AAC.00933-15",
+    "attempts": [
+      {
+        "rung": "pmc_fulltext",
+        "returned_text": true,
+        "is_body": false,
+        "chars": 1721
+      },
+      {
+        "rung": "pubmed_abstract",
+        "returned_text": true,
+        "is_body": false,
+        "chars": 1775
+      },
+      {
+        "rung": "europepmc_fulltext",
+        "returned_text": false,
+        "is_body": false,
+        "chars": 0
+      },
+      {
+        "rung": "europepmc_fulltext_by_doi",
+        "returned_text": false,
+        "is_body": false,
+        "chars": 0
+      },
+      {
+        "rung": "europepmc_pdf",
+        "returned_text": false,
+        "is_body": false,
+        "chars": 0
+      },
+      {
+        "rung": "unpaywall_pdf",
+        "returned_text": false,
+        "is_body": false,
+        "chars": 0
+      }
+    ],
+    "supplementary_included": [],
+    "supplementary_skipped": [
+      [
+        "(europepmc zip)",
+        "response was not a valid ZIP"
+      ]
+    ],
+    "sra_manifest_source": null,
+    "sra_manifest_warnings": []
+  },
+  "local_supplementary": [],
+  "paper_text_sha256": "f7a8c7ba647ae25bba1307d6a1369c47e2c5584da73e1f338c1252ab2b5917cd",
+  "paper_text_chars": 1721,
+  "n_tables": 0,
+  "output": {
+    "granularity": "study_level",
+    "n_samples": 0,
+    "n_fields": 71,
+    "n_warnings": 12
+  },
+  "versions": {
+    "metaextractor": "0.1.0",
+    "anthropic_sdk": "0.104.1",
+    "python": "3.14.0"
+  }
+}

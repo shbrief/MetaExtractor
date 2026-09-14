@@ -1,0 +1,11 @@
+cmd: /Users/sehyunoh/.pyenv/versions/3.14.0/bin/python -m metaextractor.cli --paper-id 23023125 --schema /Users/sehyunoh/OmicsMLRepo/MetaExtractor/benchmarks/cmd_sonnet5/cmd.clean.linkml.yaml --model claude-haiku-4-5 --age-rules /Users/sehyunoh/OmicsMLRepo/MetaExtractor/benchmarks/cmd_sonnet5/age_rules_cmd.json --out /Users/sehyunoh/OmicsMLRepo/MetaExtractor/benchmarks/cmd_sonnet5/out_v2/haiku_r1/QinJ_2012.json --csv /Users/sehyunoh/OmicsMLRepo/MetaExtractor/benchmarks/cmd_sonnet5/out_v2/haiku_r1/QinJ_2012.csv --csv-provenance --save-text /Users/sehyunoh/OmicsMLRepo/MetaExtractor/benchmarks/cmd_sonnet5/out_v2/haiku_r1/QinJ_2012.text.txt --run-meta /Users/sehyunoh/OmicsMLRepo/MetaExtractor/benchmarks/cmd_sonnet5/out_v2/haiku_r1/QinJ_2012.meta.json --api-key file:/Users/sehyunoh/OmicsMLRepo/MetaHarmonizerEval/vignettes/keys/llm_baseline
+status: ok
+returncode: 0
+elapsed_s: 59.9
+--- stderr ---
+[fetched pubmed_abstract for 23023125]
+[note: no article body was reachable for this paper — only an abstract was retrieved (NCBI PMC and Europe PMC full text were unavailable). For full text, download the publisher/bioRxiv PDF and pass it with --paper FILE.pdf (optionally keeping --paper-id for the identifier). Pass --supplementary PATH [PATH ...] to add locally-downloaded supplementary files.]
+[wrote CSV: /Users/sehyunoh/OmicsMLRepo/MetaExtractor/benchmarks/cmd_sonnet5/out_v2/haiku_r1/QinJ_2012.csv]
+[usage: 3 call(s); input=11,651, cache_write=0, cache_read=0, output=8,927]
+[cost: $0.0563 (input $0.0117 + cache_w $0.0000 + cache_r $0.0000 + output $0.0446)]
+

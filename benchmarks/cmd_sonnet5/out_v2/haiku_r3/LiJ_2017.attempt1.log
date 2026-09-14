@@ -1,0 +1,562 @@
+cmd: /Users/sehyunoh/.pyenv/versions/3.14.0/bin/python -m metaextractor.cli --paper-id 28143587 --schema /Users/sehyunoh/OmicsMLRepo/MetaExtractor/benchmarks/cmd_sonnet5/cmd.clean.linkml.yaml --model claude-haiku-4-5 --age-rules /Users/sehyunoh/OmicsMLRepo/MetaExtractor/benchmarks/cmd_sonnet5/age_rules_cmd.json --out /Users/sehyunoh/OmicsMLRepo/MetaExtractor/benchmarks/cmd_sonnet5/out_v2/haiku_r3/LiJ_2017.json --csv /Users/sehyunoh/OmicsMLRepo/MetaExtractor/benchmarks/cmd_sonnet5/out_v2/haiku_r3/LiJ_2017.csv --csv-provenance --save-text /Users/sehyunoh/OmicsMLRepo/MetaExtractor/benchmarks/cmd_sonnet5/out_v2/haiku_r3/LiJ_2017.text.txt --run-meta /Users/sehyunoh/OmicsMLRepo/MetaExtractor/benchmarks/cmd_sonnet5/out_v2/haiku_r3/LiJ_2017.meta.json --api-key file:/Users/sehyunoh/OmicsMLRepo/MetaHarmonizerEval/vignettes/keys/llm_baseline
+status: fail_rc2
+returncode: 2
+elapsed_s: 119.5
+--- stderr ---
+[fetched pmc_fulltext for 28143587]
+[supplementary included (9): 40168_2016_222_MOESM2_ESM.xlsx, 40168_2016_222_MOESM7_ESM.xlsx, 40168_2016_222_MOESM10_ESM.pdf, 40168_2016_222_MOESM3_ESM.pdf, 40168_2016_222_MOESM4_ESM.pdf, 40168_2016_222_MOESM5_ESM.pdf, 40168_2016_222_MOESM6_ESM.pdf, 40168_2016_222_MOESM8_ESM.pdf, 40168_2016_222_MOESM9_ESM.pdf]
+[supplementary tables parsed: 18 (deterministic path; LLM will not see them)]
+[supplementary skipped: 40168_2016_222_Fig1_HTML.gif — europepmc: ValueError: image-only (.gif)]
+[supplementary skipped: 40168_2016_222_Fig1_HTML.jpg — europepmc: ValueError: image-only (.jpg)]
+[supplementary skipped: 40168_2016_222_Fig2_HTML.gif — europepmc: ValueError: image-only (.gif)]
+[supplementary skipped: 40168_2016_222_Fig2_HTML.jpg — europepmc: ValueError: image-only (.jpg)]
+[supplementary skipped: 40168_2016_222_Fig3_HTML.gif — europepmc: ValueError: image-only (.gif)]
+[supplementary skipped: 40168_2016_222_Fig3_HTML.jpg — europepmc: ValueError: image-only (.jpg)]
+[supplementary skipped: 40168_2016_222_Fig4_HTML.gif — europepmc: ValueError: image-only (.gif)]
+[supplementary skipped: 40168_2016_222_Fig4_HTML.jpg — europepmc: ValueError: image-only (.jpg)]
+[supplementary skipped: 40168_2016_222_Fig5_HTML.gif — europepmc: ValueError: image-only (.gif)]
+[supplementary skipped: 40168_2016_222_Fig5_HTML.jpg — europepmc: ValueError: image-only (.jpg)]
+[supplementary skipped: 40168_2016_222_Fig6_HTML.gif — europepmc: ValueError: image-only (.gif)]
+[supplementary skipped: 40168_2016_222_Fig6_HTML.jpg — europepmc: ValueError: image-only (.jpg)]
+[supplementary skipped: 40168_2016_222_Fig7_HTML.gif — europepmc: ValueError: image-only (.gif)]
+[supplementary skipped: 40168_2016_222_Fig7_HTML.jpg — europepmc: ValueError: image-only (.jpg)]
+[supplementary skipped: 40168_2016_222_MOESM11_ESM.doc — europepmc: ValueError: unsupported extension (.doc)]
+[supplementary skipped: 40168_2016_222_MOESM1_ESM.doc — europepmc: ValueError: unsupported extension (.doc)]
+ERROR: Model output failed schema validation: 17 validation errors for ExtractionResult
+fields.subject_id.section
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_type
+fields.sample_id.section
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_type
+fields.curator.section
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_type
+fields.subcohort.section
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_type
+fields.body_site_details.section
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_type
+fields.days_from_first_collection.section
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_type
+fields.lifestyle.section
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_type
+fields.probing_pocket_depth.section
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_type
+fields.probing_pocket_depth_value.section
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_type
+fields.ncbi_accession.section
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_type
+fields.age.section
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_type
+fields.ancestry.section
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_type
+fields.ancestry_details.section
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_type
+fields.family.section
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_type
+fields.family_role.section
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_type
+fields.sex.section
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_type
+fields.control.section
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_type
+--- raw model response ---
+```json
+{
+  "paper_id": "28143587",
+  "granularity": "sample_level",
+  "subgroups": [],
+  "fields": {
+    "study_name": {
+      "value": "Kailuan",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "a cohort study among employees of the Kailuan Group Corporation",
+      "section": "Methods — Study cohort and patient characteristics",
+      "notes": null
+    },
+    "pmid": {
+      "value": 28143587,
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "",
+      "section": "Paper metadata",
+      "notes": "Extracted from paper_id parameter"
+    },
+    "target_condition": {
+      "value": [
+        "hypertension",
+        "pre-hypertension"
+      ],
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "Hypertension is one of the most prevalent cardiovascular diseases worldwide",
+      "section": "Abstract",
+      "notes": null
+    },
+    "country": {
+      "value": "China",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "a large modern city in northern China",
+      "section": "Results — GM diversity and enterotype in pHTN and HTN",
+      "notes": null
+    },
+    "body_site": {
+      "value": "feces",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "Stool samples freshly collected from each participant",
+      "section": "Methods — Stool sample collection and DNA extraction",
+      "notes": null
+    },
+    "antibiotics_exclusion_period": {
+      "value": 8,
+      "by_subgroup": null,
+      "unit": "Week",
+      "normalized_value": 8,
+      "normalized_unit": "Week",
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "received antibiotics or probiotics within the last 8 weeks",
+      "section": "Methods — Study cohort and patient characteristics",
+      "notes": null
+    },
+    "antibiotics_exclusion_period_unit": {
+      "value": "Week",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "received antibiotics or probiotics within the last 8 weeks",
+      "section": "Methods — Study cohort and patient characteristics",
+      "notes": null
+    },
+    "dna_extraction_kit": {
+      "value": "Tiangen",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "Bacterial DNA was extracted at Novogene using TIANGEN kit",
+      "section": "Methods — Stool sample collection and DNA extraction",
+      "notes": null
+    },
+    "sequencing_platform": {
+      "value": "IlluminaHiSeq",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "All samples were paired-end sequenced on the Illumina platform",
+      "section": "Methods — Metagenomic sequencing and gene catalogue construction",
+      "notes": null
+    },
+    "age_unit": {
+      "value": "Year",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "inferred",
+      "confidence": "medium",
+      "evidence_quote": "Male GF mice at 8–10 weeks",
+      "section": "Methods — Animal experiments",
+      "notes": "Age unit inferred as Year for human subjects based on standard reporting convention; mice were 8-10 weeks old"
+    },
+    "subject_id": {
+      "value": "not_reported",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "",
+      "section": null,
+      "notes": "Individual participant identifiers not provided in paper"
+    },
+    "sample_id": {
+      "value": "not_reported",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "",
+      "section": null,
+      "notes": "Individual sample identifiers not provided in paper"
+    },
+    "curator": {
+      "value": "not_reported",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "",
+      "section": null,
+      "notes": "Curator information not relevant to paper content"
+    },
+    "subcohort": {
+      "value": "not_reported",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "",
+      "section": null,
+      "notes": "No subcohort identifiers reported"
+    },
+    "body_site_details": {
+      "value": "not_reported",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "",
+      "section": null,
+      "notes": "No specific anatomical subsite details provided beyond feces"
+    },
+    "days_from_first_collection": {
+      "value": "not_reported",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "",
+      "section": null,
+      "notes": "Study design does not focus on longitudinal sampling intervals"
+    },
+    "lifestyle": {
+      "value": "not_reported",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "",
+      "section": null,
+      "notes": "Participants are from modern urban cohort; lifestyle category not applicable"
+    },
+    "location": {
+      "value": "Tangshan",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "Tangshan, a large modern city in northern China",
+      "section": "Results — GM diversity and enterotype in pHTN and HTN",
+      "notes": null
+    },
+    "probing_pocket_depth": {
+      "value": "not_reported",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "",
+      "section": null,
+      "notes": "Periodontal measurements not collected in this study"
+    },
+    "westernized": {
+      "value": "Yes",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "inferred",
+      "confidence": "medium",
+      "evidence_quote": "large modern city in northern China",
+      "section": "Methods — Study cohort and patient characteristics",
+      "notes": "Participants from modern urban cohort; inferred as westernized based on setting"
+    },
+    "probing_pocket_depth_value": {
+      "value": "not_reported",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "",
+      "section": null,
+      "notes": "Periodontal measurements not collected in this study"
+    },
+    "ncbi_accession": {
+      "value": "not_reported",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "",
+      "section": null,
+      "notes": "NCBI accessions not provided in this paper"
+    },
+    "age": {
+      "value": "not_reported",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "",
+      "section": null,
+      "notes": "Individual age values not reported; only age group analyzed for exploratory analysis"
+    },
+    "age_group": {
+      "value": "Adult",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "inferred",
+      "confidence": "medium",
+      "evidence_quote": "employees of the Kailuan Group Corporation",
+      "section": "Methods — Study cohort and patient characteristics",
+      "notes": "Participants are employed adults; inferred as Adult age group"
+    },
+    "ancestry": {
+      "value": "not_reported",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "",
+      "section": null,
+      "notes": "Ancestry not explicitly reported; all participants from Chinese cohort"
+    },
+    "ancestry_details": {
+      "value": "not_reported",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "",
+      "section": null,
+      "notes": "Specific ancestry details not reported"
+    },
+    "family": {
+      "value": "not_reported",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "",
+      "section": null,
+      "notes": "Family-based sampling not used in this study"
+    },
+    "family_role": {
+      "value": "not_reported",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "",
+      "section": null,
+      "notes": "Family-based sampling not used in this study"
+    },
+    "sex": {
+      "value": "not_reported",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "",
+      "section": null,
+      "notes": "Individual participant sex values not reported; gender ratio analyzed at group level"
+    },
+    "control": {
+      "value": "not_reported",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "",
+      "section": null,
+      "notes": "Control status varies by participant; sample-level data not provided in paper"
+    }
+  },
+  "samples": [
+    {
+      "study_name": "Kailuan",
+      "subject_id": "not_reported",
+      "sample_id": "not_reported",
+      "curator": "not_reported",
+      "pmid": 28143587,
+      "subcohort": "healthy control",
+      "target_condition": [
+        "hypertension"
+      ],
+      "control": "Study Control",
+      "country": "China",
+      "body_site": "feces",
+      "body_site_details": "not_reported",
+      "days_from_first_collection": "not_reported",
+      "lifestyle": "not_reported",
+      "location": "Tangshan",
+      "probing_pocket_depth": "not_reported",
+      "westernized": "Yes",
+      "antibiotics_exclusion_period": 8,
+      "antibiotics_exclusion_period_unit": "Week",
+      "probing_pocket_depth_value": "not_reported",
+      "dna_extraction_kit": "Tiangen",
+      "ncbi_accession": "not_reported",
+      "sequencing_platform": "IlluminaHiSeq",
+      "age": "not_reported",
+      "age_group": "Adult",
+      "age_unit": "Year",
+      "ancestry": "not_reported",
+      "ancestry_details": "not_reported",
+      "family": "not_reported",
+      "family_role": "not_reported",
+      "sex": "not_reported"
+    },
+    {
+      "study_name": "Kailuan",
+      "subject_id": "not_reported",
+      "sample_id": "not_reported",
+      "curator": "not_reported",
+      "pmid": 28143587,
+      "subcohort": "pre-hypertension",
+      "target_condition": [
+        "hypertension",
+        "pre-hypertension"
+      ],
+      "control": "Case",
+      "country": "China",
+      "body_site": "feces",
+      "body_site_details": "not_reported",
+      "days_from_first_collection": "not_reported",
+      "lifestyle": "not_reported",
+      "location": "Tangshan",
+      "probing_pocket_depth": "not_reported",
+      "westernized": "Yes",
+      "antibiotics_exclusion_period": 8,
+      "antibiotics_exclusion_period_unit": "Week",
+      "probing_pocket_depth_value": "not_reported",
+      "dna_extraction_kit": "Tiangen",
+      "ncbi_accession": "not_reported",
+      "sequencing_platform": "IlluminaHiSeq",
+      "age": "not_reported",
+      "age_group": "Adult",
+      "age_unit": "Year",
+      "ancestry": "not_reported",
+      "ancestry_details": "not_reported",
+      "family": "not_reported",
+      "family_role": "not_reported",
+      "sex": "not_reported"
+    },
+    {
+      "study_name": "Kailuan",
+      "subject_id": "not_reported",
+      "sample_id": "not_reported",
+      "curator": "not_reported",
+      "pmid": 28143587,
+      "subcohort": "primary hypertension",
+      "target_condition": [
+        "hypertension"
+      ],
+      "control": "Case",
+      "country": "China",
+      "body_site": "feces",
+      "body_site_details": "not_reported",
+      "days_from_first_collection": "not_reported",
+      "lifestyle": "not_reported",
+      "location": "Tangshan",
+      "probing_pocket_depth": "not_reported",
+      "westernized": "Yes",
+      "antibiotics_exclusion_period": 8,
+      "antibiotics_exclusion_period_unit": "Week",
+      "probing_pocket_depth_value": "not_reported",
+      "dna_extraction_kit": "Tiangen",
+      "ncbi_accession": "not_reported",
+      "sequencing_platform": "IlluminaHiSeq",
+      "age": "not_reported",
+      "age_group": "Adult",
+      "age_unit": "Year",
+      "ancestry": "not_reported",
+      "ancestry_details": "not_reported",
+      "family": "not_reported",
+      "family_role": "not_reported",
+      "sex": "not_reported"
+    }
+  ],
+  "extraction_warnings": [
+    "Individual participant-level metadata (subject_id, sample_id, age, sex) are not provided in the paper; samples are aggregated by study group (n=41 healthy controls, n=56 pre-hypertensive, n=99 hypertensive). Three representative sample entries are provided based on the three study groups.",
+    "Gender ratio noted as discrepant among groups but individual sex values not reported",
+    "Age and other demographic details analyzed at group level only; no per-sample values available",
+    "Paper reports metagenomic and metabolomic analyses but does not provide individual sample IDs or participant identifiers",
+    "Fecal transplantation experiment used separate donor/recipient mice; human subjects are the focus of granularity extraction"
+  ]
+}
+```
+

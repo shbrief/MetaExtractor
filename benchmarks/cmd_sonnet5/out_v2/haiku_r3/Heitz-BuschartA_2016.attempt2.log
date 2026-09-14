@@ -1,0 +1,14 @@
+cmd: /Users/sehyunoh/.pyenv/versions/3.14.0/bin/python -m metaextractor.cli --paper-id 27723761 --schema /Users/sehyunoh/OmicsMLRepo/MetaExtractor/benchmarks/cmd_sonnet5/cmd.clean.linkml.yaml --model claude-haiku-4-5 --age-rules /Users/sehyunoh/OmicsMLRepo/MetaExtractor/benchmarks/cmd_sonnet5/age_rules_cmd.json --out /Users/sehyunoh/OmicsMLRepo/MetaExtractor/benchmarks/cmd_sonnet5/out_v2/haiku_r3/Heitz-BuschartA_2016.json --csv /Users/sehyunoh/OmicsMLRepo/MetaExtractor/benchmarks/cmd_sonnet5/out_v2/haiku_r3/Heitz-BuschartA_2016.csv --csv-provenance --save-text /Users/sehyunoh/OmicsMLRepo/MetaExtractor/benchmarks/cmd_sonnet5/out_v2/haiku_r3/Heitz-BuschartA_2016.text.txt --run-meta /Users/sehyunoh/OmicsMLRepo/MetaExtractor/benchmarks/cmd_sonnet5/out_v2/haiku_r3/Heitz-BuschartA_2016.meta.json --api-key file:/Users/sehyunoh/OmicsMLRepo/MetaHarmonizerEval/vignettes/keys/llm_baseline
+status: ok
+returncode: 0
+elapsed_s: 86.6
+--- stderr ---
+[fetched unpaywall_pdf for 27723761]
+[supplementary tables parsed: 1 (deterministic path; LLM will not see them)]
+[SRA/ENA run manifest: ena:PRJNA289586 (221 runs) (deterministic path)]
+[table selection: 1 kept / 1 scored (gate=0.15)]
+[  PRJNA289586_ena_manifest.tsv: kept (score=0.47) — key-like column 'run_accession'; sex: values match enum in 'host_sex' (100%)]
+[wrote CSV: /Users/sehyunoh/OmicsMLRepo/MetaExtractor/benchmarks/cmd_sonnet5/out_v2/haiku_r3/Heitz-BuschartA_2016.csv]
+[usage: 4 call(s); input=11,025, cache_write=29,607, cache_read=59,214, output=12,162]
+[cost: $0.1148 (input $0.0110 + cache_w $0.0370 + cache_r $0.0059 + output $0.0608)]
+

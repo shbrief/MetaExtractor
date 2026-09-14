@@ -1,0 +1,221 @@
+{
+  "started_utc": "2026-09-14T15:25:41+00:00",
+  "finished_utc": "2026-09-14T15:29:47+00:00",
+  "paper_id": "37069399",
+  "request": {
+    "model_requested": "claude-haiku-4-5",
+    "models_returned": [
+      "claude-haiku-4-5-20251001"
+    ],
+    "max_tokens": 16384,
+    "batch_size": 30,
+    "sample_discovery": true,
+    "min_table_relevance": 0.15,
+    "sampling_and_thinking": "not set (API defaults: no temperature/top_p/top_k/thinking/effort parameters sent)",
+    "age_rules": "/Users/sehyunoh/OmicsMLRepo/MetaExtractor/benchmarks/cmd_sonnet5/age_rules_cmd.json"
+  },
+  "usage": {
+    "input_tokens": 114699,
+    "cache_creation_input_tokens": 23756,
+    "cache_read_input_tokens": 47512,
+    "output_tokens": 21273,
+    "n_calls": 53
+  },
+  "cost_estimate": {
+    "input_usd": 0.114699,
+    "output_usd": 0.106365,
+    "cache_read_usd": 0.0047512,
+    "cache_write_usd": 0.029695,
+    "total_usd": 0.2555102,
+    "pricing_as_of": "2026-06-24"
+  },
+  "retrieval": {
+    "source": "pmc_fulltext",
+    "has_body": true,
+    "pmid": "37069399",
+    "pmcid": "10159860",
+    "doi": null,
+    "attempts": [
+      {
+        "rung": "pmc_fulltext",
+        "returned_text": true,
+        "is_body": true,
+        "chars": 67289
+      }
+    ],
+    "supplementary_included": [
+      "41564_2023_1355_MOESM1_ESM.pdf",
+      "41564_2023_1355_MOESM2_ESM.pdf",
+      "41564_2023_1355_MOESM3_ESM.xlsx",
+      "41564_2023_1355_MOESM4_ESM.xlsx",
+      "41564_2023_1355_MOESM10_ESM.xlsx",
+      "41564_2023_1355_MOESM11_ESM.xlsx",
+      "41564_2023_1355_MOESM12_ESM.xlsx",
+      "41564_2023_1355_MOESM13_ESM.xlsx",
+      "41564_2023_1355_MOESM14_ESM.xlsx",
+      "41564_2023_1355_MOESM15_ESM.xlsx",
+      "41564_2023_1355_MOESM16_ESM.xlsx",
+      "41564_2023_1355_MOESM17_ESM.xlsx",
+      "41564_2023_1355_MOESM5_ESM.xlsx",
+      "41564_2023_1355_MOESM6_ESM.xlsx",
+      "41564_2023_1355_MOESM7_ESM.xlsx",
+      "41564_2023_1355_MOESM8_ESM.xlsx",
+      "41564_2023_1355_MOESM9_ESM.xlsx"
+    ],
+    "supplementary_skipped": [
+      [
+        "41564_2023_1355_Article_Equa.gif",
+        "europepmc: ValueError: image-only (.gif)"
+      ],
+      [
+        "41564_2023_1355_Article_Equb.gif",
+        "europepmc: ValueError: image-only (.gif)"
+      ],
+      [
+        "41564_2023_1355_Fig10_ESM.gif",
+        "europepmc: ValueError: image-only (.gif)"
+      ],
+      [
+        "41564_2023_1355_Fig10_ESM.jpg",
+        "europepmc: ValueError: image-only (.jpg)"
+      ],
+      [
+        "41564_2023_1355_Fig11_ESM.gif",
+        "europepmc: ValueError: image-only (.gif)"
+      ],
+      [
+        "41564_2023_1355_Fig11_ESM.jpg",
+        "europepmc: ValueError: image-only (.jpg)"
+      ],
+      [
+        "41564_2023_1355_Fig12_ESM.gif",
+        "europepmc: ValueError: image-only (.gif)"
+      ],
+      [
+        "41564_2023_1355_Fig12_ESM.jpg",
+        "europepmc: ValueError: image-only (.jpg)"
+      ],
+      [
+        "41564_2023_1355_Fig13_ESM.gif",
+        "europepmc: ValueError: image-only (.gif)"
+      ],
+      [
+        "41564_2023_1355_Fig13_ESM.jpg",
+        "europepmc: ValueError: image-only (.jpg)"
+      ],
+      [
+        "41564_2023_1355_Fig14_ESM.gif",
+        "europepmc: ValueError: image-only (.gif)"
+      ],
+      [
+        "41564_2023_1355_Fig14_ESM.jpg",
+        "europepmc: ValueError: image-only (.jpg)"
+      ],
+      [
+        "41564_2023_1355_Fig15_ESM.gif",
+        "europepmc: ValueError: image-only (.gif)"
+      ],
+      [
+        "41564_2023_1355_Fig15_ESM.jpg",
+        "europepmc: ValueError: image-only (.jpg)"
+      ],
+      [
+        "41564_2023_1355_Fig16_ESM.gif",
+        "europepmc: ValueError: image-only (.gif)"
+      ],
+      [
+        "41564_2023_1355_Fig16_ESM.jpg",
+        "europepmc: ValueError: image-only (.jpg)"
+      ],
+      [
+        "41564_2023_1355_Fig1_HTML.gif",
+        "europepmc: ValueError: image-only (.gif)"
+      ],
+      [
+        "41564_2023_1355_Fig1_HTML.jpg",
+        "europepmc: ValueError: image-only (.jpg)"
+      ],
+      [
+        "41564_2023_1355_Fig2_HTML.gif",
+        "europepmc: ValueError: image-only (.gif)"
+      ],
+      [
+        "41564_2023_1355_Fig2_HTML.jpg",
+        "europepmc: ValueError: image-only (.jpg)"
+      ],
+      [
+        "41564_2023_1355_Fig3_HTML.gif",
+        "europepmc: ValueError: image-only (.gif)"
+      ],
+      [
+        "41564_2023_1355_Fig3_HTML.jpg",
+        "europepmc: ValueError: image-only (.jpg)"
+      ],
+      [
+        "41564_2023_1355_Fig4_HTML.gif",
+        "europepmc: ValueError: image-only (.gif)"
+      ],
+      [
+        "41564_2023_1355_Fig4_HTML.jpg",
+        "europepmc: ValueError: image-only (.jpg)"
+      ],
+      [
+        "41564_2023_1355_Fig5_HTML.gif",
+        "europepmc: ValueError: image-only (.gif)"
+      ],
+      [
+        "41564_2023_1355_Fig5_HTML.jpg",
+        "europepmc: ValueError: image-only (.jpg)"
+      ],
+      [
+        "41564_2023_1355_Fig6_HTML.gif",
+        "europepmc: ValueError: image-only (.gif)"
+      ],
+      [
+        "41564_2023_1355_Fig6_HTML.jpg",
+        "europepmc: ValueError: image-only (.jpg)"
+      ],
+      [
+        "41564_2023_1355_Fig7_ESM.gif",
+        "europepmc: ValueError: image-only (.gif)"
+      ],
+      [
+        "41564_2023_1355_Fig7_ESM.jpg",
+        "europepmc: ValueError: image-only (.jpg)"
+      ],
+      [
+        "41564_2023_1355_Fig8_ESM.gif",
+        "europepmc: ValueError: image-only (.gif)"
+      ],
+      [
+        "41564_2023_1355_Fig8_ESM.jpg",
+        "europepmc: ValueError: image-only (.jpg)"
+      ],
+      [
+        "41564_2023_1355_Fig9_ESM.gif",
+        "europepmc: ValueError: image-only (.gif)"
+      ],
+      [
+        "41564_2023_1355_Fig9_ESM.jpg",
+        "europepmc: ValueError: image-only (.jpg)"
+      ]
+    ],
+    "sra_manifest_source": null,
+    "sra_manifest_warnings": []
+  },
+  "local_supplementary": [],
+  "paper_text_sha256": "a71f20e756f8a8ab744ec785873176da5831e7ea0db3490cea84468debc4ba79",
+  "paper_text_chars": 86389,
+  "n_tables": 56,
+  "output": {
+    "granularity": "sample_level",
+    "n_samples": 319,
+    "n_fields": 34,
+    "n_warnings": 194
+  },
+  "versions": {
+    "metaextractor": "0.1.0",
+    "anthropic_sdk": "0.104.1",
+    "python": "3.14.0"
+  }
+}

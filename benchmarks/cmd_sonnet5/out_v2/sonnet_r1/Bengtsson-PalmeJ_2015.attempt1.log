@@ -1,0 +1,15 @@
+cmd: /Users/sehyunoh/.pyenv/versions/3.14.0/bin/python -m metaextractor.cli --paper-id 26259788 --schema /Users/sehyunoh/OmicsMLRepo/MetaExtractor/benchmarks/cmd_sonnet5/cmd.clean.linkml.yaml --model claude-sonnet-5 --age-rules /Users/sehyunoh/OmicsMLRepo/MetaExtractor/benchmarks/cmd_sonnet5/age_rules_cmd.json --out /Users/sehyunoh/OmicsMLRepo/MetaExtractor/benchmarks/cmd_sonnet5/out_v2/sonnet_r1/Bengtsson-PalmeJ_2015.json --csv /Users/sehyunoh/OmicsMLRepo/MetaExtractor/benchmarks/cmd_sonnet5/out_v2/sonnet_r1/Bengtsson-PalmeJ_2015.csv --csv-provenance --save-text /Users/sehyunoh/OmicsMLRepo/MetaExtractor/benchmarks/cmd_sonnet5/out_v2/sonnet_r1/Bengtsson-PalmeJ_2015.text.txt --run-meta /Users/sehyunoh/OmicsMLRepo/MetaExtractor/benchmarks/cmd_sonnet5/out_v2/sonnet_r1/Bengtsson-PalmeJ_2015.meta.json --api-key file:/Users/sehyunoh/OmicsMLRepo/MetaHarmonizerEval/vignettes/keys/llm_baseline
+status: ok
+returncode: 0
+elapsed_s: 161.3
+--- stderr ---
+[fetched europepmc_pdf for 26259788]
+[supplementary tables parsed: 1 (deterministic path; LLM will not see them)]
+[SRA/ENA run manifest: ena:PRJEB7369 (70 runs) (deterministic path)]
+[supplementary skipped: (europepmc zip) — response was not a valid ZIP]
+[table selection: 1 kept / 1 scored (gate=0.15)]
+[  PRJEB7369_ena_manifest.tsv: kept (score=0.47) — key-like column 'run_accession']
+[wrote CSV: /Users/sehyunoh/OmicsMLRepo/MetaExtractor/benchmarks/cmd_sonnet5/out_v2/sonnet_r1/Bengtsson-PalmeJ_2015.csv]
+[usage: 4 call(s); input=13,078, cache_write=22,001, cache_read=44,002, output=18,962]
+[cost: $0.2796 (input $0.0262 + cache_w $0.0550 + cache_r $0.0088 + output $0.1896)]
+

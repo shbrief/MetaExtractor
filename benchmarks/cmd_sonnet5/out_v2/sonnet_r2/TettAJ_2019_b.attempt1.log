@@ -1,0 +1,384 @@
+cmd: /Users/sehyunoh/.pyenv/versions/3.14.0/bin/python -m metaextractor.cli --paper-id 31607556 --schema /Users/sehyunoh/OmicsMLRepo/MetaExtractor/benchmarks/cmd_sonnet5/cmd.clean.linkml.yaml --model claude-sonnet-5 --age-rules /Users/sehyunoh/OmicsMLRepo/MetaExtractor/benchmarks/cmd_sonnet5/age_rules_cmd.json --out /Users/sehyunoh/OmicsMLRepo/MetaExtractor/benchmarks/cmd_sonnet5/out_v2/sonnet_r2/TettAJ_2019_b.json --csv /Users/sehyunoh/OmicsMLRepo/MetaExtractor/benchmarks/cmd_sonnet5/out_v2/sonnet_r2/TettAJ_2019_b.csv --csv-provenance --save-text /Users/sehyunoh/OmicsMLRepo/MetaExtractor/benchmarks/cmd_sonnet5/out_v2/sonnet_r2/TettAJ_2019_b.text.txt --run-meta /Users/sehyunoh/OmicsMLRepo/MetaExtractor/benchmarks/cmd_sonnet5/out_v2/sonnet_r2/TettAJ_2019_b.meta.json --api-key file:/Users/sehyunoh/OmicsMLRepo/MetaHarmonizerEval/vignettes/keys/llm_baseline
+status: fail_rc2
+returncode: 2
+elapsed_s: 297.0
+--- stderr ---
+[fetched pmc_fulltext for 31607556]
+[supplementary included (7): mmc1.pdf, mmc2.xlsx, mmc3.xlsx, mmc4.xlsx, mmc5.xlsx, mmc6.xlsx, mmc7.pdf]
+[supplementary tables parsed: 23 (deterministic path; LLM will not see them)]
+[SRA/ENA run manifest: ena:PRJNA504891+PRJNA529124+PRJNA529400+PRJEB31971 (171 runs) (deterministic path)]
+[supplementary skipped: fx1.gif — europepmc: ValueError: image-only (.gif)]
+[supplementary skipped: fx1.jpg — europepmc: ValueError: image-only (.jpg)]
+[supplementary skipped: gr1.gif — europepmc: ValueError: image-only (.gif)]
+[supplementary skipped: gr1.jpg — europepmc: ValueError: image-only (.jpg)]
+[supplementary skipped: gr2.gif — europepmc: ValueError: image-only (.gif)]
+[supplementary skipped: gr2.jpg — europepmc: ValueError: image-only (.jpg)]
+[supplementary skipped: gr3.gif — europepmc: ValueError: image-only (.gif)]
+[supplementary skipped: gr3.jpg — europepmc: ValueError: image-only (.jpg)]
+[supplementary skipped: gr4.gif — europepmc: ValueError: image-only (.gif)]
+[supplementary skipped: gr4.jpg — europepmc: ValueError: image-only (.jpg)]
+[supplementary skipped: gr5.gif — europepmc: ValueError: image-only (.gif)]
+[supplementary skipped: gr5.jpg — europepmc: ValueError: image-only (.jpg)]
+ERROR: Model returned non-JSON output: Unterminated string starting at: line 359 column 9 (char 13293)
+--- raw model response ---
+```json
+{
+  "paper_id": "31607556",
+  "granularity": "subgroup_level",
+  "subgroups": [
+    "Ghana_adults",
+    "Ghana_children",
+    "Ethiopia_adults",
+    "Ethiopia_infants",
+    "Tanzania_adults",
+    "Tanzania_children"
+  ],
+  "fields": {
+    "study_name": {
+      "value": "TettA_2019",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "derived",
+      "confidence": "medium",
+      "evidence_quote": "Tett et al., 2019, Cell Host & Microbe 26, 666–679, November 13, 2019",
+      "section": "Header/Citation",
+      "notes": "Study name inferred from first author surname (Tett) and publication year (2019); no explicit study_name field was reported in the paper."
+    },
+    "subject_id": {
+      "value": "not_reported",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "",
+      "section": "",
+      "notes": "No individual subject identifiers were provided in the main text; only aggregate counts and demographics per subgroup (e.g., n=23 adults) were reported. Per-subject data may exist in Table S1/S2/S5, which were not included in the provided text."
+    },
+    "sample_id": {
+      "value": "not_reported",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "",
+      "section": "",
+      "notes": "No individual sample identifiers were provided in the main text for the Ghana/Ethiopia/Tanzania cohorts. Ancient sample IDs (2179, 2180) exist but do not correspond to the demographic subgroups extracted here."
+    },
+    "curator": {
+      "value": "not_reported",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "",
+      "section": "",
+      "notes": null
+    },
+    "pmid": {
+      "value": "not_reported",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "",
+      "section": "",
+      "notes": "No PMID was reported in the provided text."
+    },
+    "subcohort": {
+      "value": {
+        "Ghana_adults": "Ghana adults",
+        "Ghana_children": "Ghana children",
+        "Ethiopia_adults": "Ethiopia adults (mothers)",
+        "Ethiopia_infants": "Ethiopia infants",
+        "Tanzania_adults": "Tanzania adults",
+        "Tanzania_children": "Tanzania children"
+      },
+      "by_subgroup": {
+        "Ghana_adults": "Ghana adults",
+        "Ghana_children": "Ghana children",
+        "Ethiopia_adults": "Ethiopia adults (mothers)",
+        "Ethiopia_infants": "Ethiopia infants",
+        "Tanzania_adults": "Tanzania adults",
+        "Tanzania_children": "Tanzania children"
+      },
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "For Ghana, 44 individuals were included (23 adults... 25 children...)",
+      "section": "Experimental Model and Subject Details",
+      "notes": "Subcohorts derived from age-group/country stratification reported in the paper."
+    },
+    "target_condition": {
+      "value": "not_reported",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "All individuals sampled in this study were healthy defined as free of self-reported disease.",
+      "section": "Experimental Model and Subject Details",
+      "notes": "Participants were healthy volunteers; the study's overall target is P. copri population genomics rather than a specific disease phenotype for this subgroup."
+    },
+    "control": {
+      "value": "not_reported",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "inferred",
+      "confidence": "low",
+      "evidence_quote": "All individuals sampled in this study were healthy defined as free of self-reported disease.",
+      "section": "Experimental Model and Subject Details",
+      "notes": "No explicit case-control study design was described for the Ghana/Ethiopia/Tanzania cohorts; they were used as non-Westernized population samples rather than clinical controls."
+    },
+    "country": {
+      "value": {
+        "Ghana_adults": "Ghana",
+        "Ghana_children": "Ghana",
+        "Ethiopia_adults": "Ethiopia",
+        "Ethiopia_infants": "Ethiopia",
+        "Tanzania_adults": "Tanzania",
+        "Tanzania_children": "Tanzania"
+      },
+      "by_subgroup": {
+        "Ghana_adults": "Ghana",
+        "Ghana_children": "Ghana",
+        "Ethiopia_adults": "Ethiopia",
+        "Ethiopia_infants": "Ethiopia",
+        "Tanzania_adults": "Tanzania",
+        "Tanzania_children": "Tanzania"
+      },
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "For Ghana, 44 individuals were included... For Ethiopia 50 individuals... And for Tanzania 68 individuals",
+      "section": "Experimental Model and Subject Details",
+      "notes": null
+    },
+    "body_site": {
+      "value": "feces",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "Faecal samples from a Ghanaian cohort",
+      "section": "Key Resources Table",
+      "notes": "Applies to Ghana, Ethiopia and Tanzania cohorts; all are stool/gut microbiome samples."
+    },
+    "body_site_details": {
+      "value": "not_reported",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "",
+      "section": "",
+      "notes": null
+    },
+    "days_from_first_collection": {
+      "value": "not_reported",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "",
+      "section": "",
+      "notes": "Study is not explicitly longitudinal for these cohorts; only family-based cross-sectional sampling reported."
+    },
+    "lifestyle": {
+      "value": {
+        "Ghana_adults": "Agriculturalist",
+        "Ghana_children": "Agriculturalist",
+        "Ethiopia_adults": "not_reported",
+        "Ethiopia_infants": "not_reported",
+        "Tanzania_adults": "Agriculturalist",
+        "Tanzania_children": "Agriculturalist"
+      },
+      "by_subgroup": {
+        "Ghana_adults": "Agriculturalist",
+        "Ghana_children": "Agriculturalist",
+        "Ethiopia_adults": "not_reported",
+        "Ethiopia_infants": "not_reported",
+        "Tanzania_adults": "Agriculturalist",
+        "Tanzania_children": "Agriculturalist"
+      },
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "inferred",
+      "confidence": "medium",
+      "evidence_quote": "the local occupation is subsistence farming and the wider economy based on farming cash crops such as cocoa and plantain",
+      "section": "Method Details — Westernisation and Additional Non-Westernized Datasets",
+      "notes": "Ghana and Tanzania described as farming/agricultural economies; Ethiopia cohort occupation not detailed in main text."
+    },
+    "location": {
+      "value": {
+        "Ghana_adults": "Asante Akim North district region",
+        "Ghana_children": "Asante Akim North district region",
+        "Ethiopia_adults": "Gimbichu in the Oromia region",
+        "Ethiopia_infants": "Gimbichu in the Oromia region",
+        "Tanzania_adults": "Korogwe District region",
+        "Tanzania_children": "Korogwe District region"
+      },
+      "by_subgroup": {
+        "Ghana_adults": "Asante Akim North district region",
+        "Ghana_children": "Asante Akim North district region",
+        "Ethiopia_adults": "Gimbichu in the Oromia region",
+        "Ethiopia_infants": "Gimbichu in the Oromia region",
+        "Tanzania_adults": "Korogwe District region",
+        "Tanzania_children": "Korogwe District region"
+      },
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "In Ghana 12 extended families from the Asante Akim North district region were sampled",
+      "section": "Method Details — Westernisation and Additional Non-Westernized Datasets",
+      "notes": null
+    },
+    "probing_pocket_depth": {
+      "value": "not_reported",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "",
+      "section": "",
+      "notes": null
+    },
+    "westernized": {
+      "value": "No",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "we also sequenced two non-Westernized populations from Ghana and Tanzania",
+      "section": "Method Details — Westernisation and Additional Non-Westernized Datasets",
+      "notes": "Applies to Ghana, Tanzania, and Ethiopia cohorts, all classified as non-Westernized."
+    },
+    "antibiotics_exclusion_period": {
+      "value": "not_reported",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "",
+      "section": "",
+      "notes": null
+    },
+    "antibiotics_exclusion_period_unit": {
+      "value": "not_reported",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "",
+      "section": "",
+      "notes": null
+    },
+    "probing_pocket_depth_value": {
+      "value": "not_reported",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "",
+      "section": "",
+      "notes": null
+    },
+    "dna_extraction_kit": {
+      "value": "PowerSoil DNA isolation kit (Qiagen)",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "For all samples DNA was extracted using the PowerSoil DNA isolation kit (Qiagen) as previously described",
+      "section": "Method Details — Westernisation and Additional Non-Westernized Datasets",
+      "notes": "Applies to Ghana, Ethiopia, and Tanzania cohorts."
+    },
+    "ncbi_accession": {
+      "value": {
+        "Ghana_adults": "PRJNA529124",
+        "Ghana_children": "PRJNA529124",
+        "Ethiopia_adults": "PRJNA504891",
+        "Ethiopia_infants": "PRJNA504891",
+        "Tanzania_adults": "PRJNA529400",
+        "Tanzania_children": "PRJNA529400"
+      },
+      "by_subgroup": {
+        "Ghana_adults": "PRJNA529124",
+        "Ghana_children": "PRJNA529124",
+        "Ethiopia_adults": "PRJNA504891",
+        "Ethiopia_infants": "PRJNA504891",
+        "Tanzania_adults": "PRJNA529400",
+        "Tanzania_children": "PRJNA529400"
+      },
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "Raw sequencing data (Ghana) This study NCBI-SRA BioProject: PRJNA529124",
+      "section": "Key Resources Table",
+      "notes": null
+    },
+    "sequencing_platform": {
+      "value": "IlluminaHiSeq",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "sequenced on the Illumina HiSeq2500 100nt paired end platform with a target depth of 5Gb/sample",
+      "section": "Method Details — Westernisation and Additional Non-Westernized Datasets",
+      "notes": "Applies to Ghana, Ethiopia, and Tanzania cohorts."
+    },
+    "age": {
+      "value": {
+        "Ghana_adults": 33.14,
+        "Ghana_children": 6.81,
+        "Ethiopia_adults": 29.35,
+        "Ethiopia_infants": 1.31,
+        "Tanzania_adults": 29.27,
+        "Tanzania_children": 8.22
+      },
+      "by_subgroup": {
+        "Ghana_adults": 33.14,
+        "Ghana_children": 6.81,
+        "
+

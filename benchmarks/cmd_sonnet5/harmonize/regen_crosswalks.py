@@ -17,7 +17,7 @@ Usage:  CMD_CURATION_DIR=... python regen_crosswalks.py [--tree out_v2] [disease
         (no fields = all three)
 """
 from __future__ import annotations
-import csv, json, pathlib, sys, time
+import csv, json, os, pathlib, sys, time
 import pandas as pd
 
 HERE = pathlib.Path(__file__).resolve().parent
@@ -39,7 +39,9 @@ SPLIT = lambda s: [t.strip() for t in str(s).replace("/", ";").replace(",", ";")
 CORPUS_CSV = {
     "disease":   HERE / "disease_corpus_v041.csv",
     "body_site": HERE / "bodysite_corpus_v041.csv",
-    "treatment": RETRIEVED_ONTOLOGIES_DIR / "ncit_treatment_corpus.csv",
+    # Honour the same override as crosswalk.py so scoring and mapping share one corpus file.
+    "treatment": pathlib.Path(os.environ.get("METAHARMONIZER_ONTOLOGIES_DIR", RETRIEVED_ONTOLOGIES_DIR))
+                 / "ncit_treatment_corpus.csv",
 }
 OM_CATEGORY = {"disease": "disease", "body_site": "bodysite", "treatment": "treatment"}
 
@@ -86,9 +88,10 @@ def run_om(field: str, terms: list[str]):
     """Map terms through the field's corpus, reusing the persisted FAISS index."""
     kw = dict(corpus_category=OM_CATEGORY[field], query_ls=terms,
               s3_strategy=None, persist_corpus=True)
-    if field in ("disease", "body_site"):
-        kw["corpus_df"] = pd.read_csv(CORPUS_CSV[field])
-    else:  # treatment: NCIt registry corpus (persisted lm_ index)
+    # Every field passes its corpus explicitly, so mapping never depends on a
+    # registry-managed corpus path being present.
+    kw["corpus_df"] = pd.read_csv(CORPUS_CSV[field])
+    if field == "treatment":
         kw["ontology_source"] = "ncit"
     return OntoMapEngine(**kw).run()
 

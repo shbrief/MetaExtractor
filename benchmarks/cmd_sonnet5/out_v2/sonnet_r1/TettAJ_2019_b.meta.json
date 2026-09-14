@@ -1,0 +1,123 @@
+{
+  "started_utc": "2026-09-14T15:15:06+00:00",
+  "finished_utc": "2026-09-14T15:21:11+00:00",
+  "paper_id": "31607556",
+  "request": {
+    "model_requested": "claude-sonnet-5",
+    "models_returned": [
+      "claude-sonnet-5"
+    ],
+    "max_tokens": 16384,
+    "batch_size": 30,
+    "sample_discovery": true,
+    "min_table_relevance": 0.15,
+    "sampling_and_thinking": "not set (API defaults: no temperature/top_p/top_k/thinking/effort parameters sent)",
+    "age_rules": "/Users/sehyunoh/OmicsMLRepo/MetaExtractor/benchmarks/cmd_sonnet5/age_rules_cmd.json"
+  },
+  "usage": {
+    "input_tokens": 57298,
+    "cache_creation_input_tokens": 76354,
+    "cache_read_input_tokens": 157244,
+    "output_tokens": 37919,
+    "n_calls": 21
+  },
+  "cost_estimate": {
+    "input_usd": 0.114596,
+    "output_usd": 0.37919,
+    "cache_read_usd": 0.031448800000000006,
+    "cache_write_usd": 0.190885,
+    "total_usd": 0.7161198000000001,
+    "pricing_as_of": "2026-06-24"
+  },
+  "retrieval": {
+    "source": "pmc_fulltext",
+    "has_body": true,
+    "pmid": "31607556",
+    "pmcid": "6854460",
+    "doi": null,
+    "attempts": [
+      {
+        "rung": "pmc_fulltext",
+        "returned_text": true,
+        "is_body": true,
+        "chars": 70348
+      }
+    ],
+    "supplementary_included": [
+      "mmc1.pdf",
+      "mmc2.xlsx",
+      "mmc3.xlsx",
+      "mmc4.xlsx",
+      "mmc5.xlsx",
+      "mmc6.xlsx",
+      "mmc7.pdf"
+    ],
+    "supplementary_skipped": [
+      [
+        "fx1.gif",
+        "europepmc: ValueError: image-only (.gif)"
+      ],
+      [
+        "fx1.jpg",
+        "europepmc: ValueError: image-only (.jpg)"
+      ],
+      [
+        "gr1.gif",
+        "europepmc: ValueError: image-only (.gif)"
+      ],
+      [
+        "gr1.jpg",
+        "europepmc: ValueError: image-only (.jpg)"
+      ],
+      [
+        "gr2.gif",
+        "europepmc: ValueError: image-only (.gif)"
+      ],
+      [
+        "gr2.jpg",
+        "europepmc: ValueError: image-only (.jpg)"
+      ],
+      [
+        "gr3.gif",
+        "europepmc: ValueError: image-only (.gif)"
+      ],
+      [
+        "gr3.jpg",
+        "europepmc: ValueError: image-only (.jpg)"
+      ],
+      [
+        "gr4.gif",
+        "europepmc: ValueError: image-only (.gif)"
+      ],
+      [
+        "gr4.jpg",
+        "europepmc: ValueError: image-only (.jpg)"
+      ],
+      [
+        "gr5.gif",
+        "europepmc: ValueError: image-only (.gif)"
+      ],
+      [
+        "gr5.jpg",
+        "europepmc: ValueError: image-only (.jpg)"
+      ]
+    ],
+    "sra_manifest_source": "ena:PRJNA504891+PRJNA529124+PRJNA529400+PRJEB31971 (171 runs)",
+    "sra_manifest_warnings": []
+  },
+  "local_supplementary": [],
+  "paper_text_sha256": "62de06ec9cc5f3ed597201219cb59ae137fe6acb0a6a0e3ec2eb4d09d3a32d57",
+  "paper_text_chars": 168028,
+  "n_tables": 23,
+  "output": {
+    "granularity": "sample_level",
+    "n_samples": 50,
+    "n_fields": 71,
+    "n_warnings": 87
+  },
+  "versions": {
+    "metaextractor": "0.1.0",
+    "anthropic_sdk": "0.104.1",
+    "python": "3.14.0"
+  }
+}

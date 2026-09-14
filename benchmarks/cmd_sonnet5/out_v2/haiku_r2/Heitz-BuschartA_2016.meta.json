@@ -1,0 +1,90 @@
+{
+  "started_utc": "2026-09-14T15:45:22+00:00",
+  "finished_utc": "2026-09-14T15:46:50+00:00",
+  "paper_id": "27723761",
+  "request": {
+    "model_requested": "claude-haiku-4-5",
+    "models_returned": [
+      "claude-haiku-4-5-20251001"
+    ],
+    "max_tokens": 16384,
+    "batch_size": 30,
+    "sample_discovery": true,
+    "min_table_relevance": 0.15,
+    "sampling_and_thinking": "not set (API defaults: no temperature/top_p/top_k/thinking/effort parameters sent)",
+    "age_rules": "/Users/sehyunoh/OmicsMLRepo/MetaExtractor/benchmarks/cmd_sonnet5/age_rules_cmd.json"
+  },
+  "usage": {
+    "input_tokens": 11009,
+    "cache_creation_input_tokens": 29607,
+    "cache_read_input_tokens": 59214,
+    "output_tokens": 12729,
+    "n_calls": 4
+  },
+  "cost_estimate": {
+    "input_usd": 0.011009,
+    "output_usd": 0.063645,
+    "cache_read_usd": 0.0059214,
+    "cache_write_usd": 0.03700875,
+    "total_usd": 0.11758415,
+    "pricing_as_of": "2026-06-24"
+  },
+  "retrieval": {
+    "source": "unpaywall_pdf",
+    "has_body": true,
+    "pmid": "27723761",
+    "pmcid": null,
+    "doi": "10.1038/nmicrobiol.2016.180",
+    "attempts": [
+      {
+        "rung": "pmid_to_pmcid",
+        "returned_text": false,
+        "is_body": false,
+        "chars": 0
+      },
+      {
+        "rung": "pubmed_abstract",
+        "returned_text": true,
+        "is_body": false,
+        "chars": 1325
+      },
+      {
+        "rung": "europepmc_fulltext_by_doi",
+        "returned_text": false,
+        "is_body": false,
+        "chars": 0
+      },
+      {
+        "rung": "europepmc_pdf",
+        "returned_text": false,
+        "is_body": false,
+        "chars": 0
+      },
+      {
+        "rung": "unpaywall_pdf",
+        "returned_text": true,
+        "is_body": true,
+        "chars": 90208
+      }
+    ],
+    "supplementary_included": null,
+    "supplementary_skipped": null,
+    "sra_manifest_source": "ena:PRJNA289586 (221 runs)",
+    "sra_manifest_warnings": []
+  },
+  "local_supplementary": [],
+  "paper_text_sha256": "64e0d4b064c62b75ec1705dbf051ad67ed6c4f2bca46b82abe9cb48a3dacdef3",
+  "paper_text_chars": 90208,
+  "n_tables": 1,
+  "output": {
+    "granularity": "sample_level",
+    "n_samples": 221,
+    "n_fields": 47,
+    "n_warnings": 21
+  },
+  "versions": {
+    "metaextractor": "0.1.0",
+    "anthropic_sdk": "0.104.1",
+    "python": "3.14.0"
+  }
+}
