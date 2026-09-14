@@ -1,0 +1,279 @@
+{
+  "started_utc": "2026-09-14T20:03:55+00:00",
+  "finished_utc": "2026-09-14T20:05:39+00:00",
+  "paper_id": "31607556",
+  "status": "ok",
+  "error": null,
+  "request": {
+    "model_requested": "claude-haiku-4-5",
+    "models_returned": [
+      "claude-haiku-4-5-20251001"
+    ],
+    "max_tokens": 16384,
+    "max_tokens_ceiling": 64000,
+    "batch_size": 30,
+    "sample_discovery": true,
+    "min_table_relevance": 0.15,
+    "sampling_and_thinking": "not set (API defaults: no temperature/top_p/top_k/thinking/effort parameters sent)",
+    "age_rules": "/private/tmp/claude-501/-Users-sehyunoh-OmicsMLRepo-MetaExtractor/808c29a9-32c4-4814-a956-69024089f400/scratchpad/wt_bench_v3/benchmarks/cmd_sonnet5/age_rules_cmd.json"
+  },
+  "usage": {
+    "input_tokens": 46642,
+    "cache_creation_input_tokens": 59702,
+    "cache_read_input_tokens": 119404,
+    "output_tokens": 12059,
+    "n_calls": 21
+  },
+  "calls": [
+    {
+      "purpose": "table_plan",
+      "table": "mmc2.xlsx::Metagenomic_datasets_used",
+      "max_tokens": 2048,
+      "stop_reason": "end_turn",
+      "output_tokens": 161
+    },
+    {
+      "purpose": "table_plan",
+      "table": "mmc2.xlsx::1023_P_copri_genomes",
+      "max_tokens": 2048,
+      "stop_reason": "end_turn",
+      "output_tokens": 218
+    },
+    {
+      "purpose": "table_plan",
+      "table": "mmc2.xlsx::BMI",
+      "max_tokens": 2048,
+      "stop_reason": "end_turn",
+      "output_tokens": 294
+    },
+    {
+      "purpose": "table_plan",
+      "table": "mmc2.xlsx::AGE",
+      "max_tokens": 2048,
+      "stop_reason": "end_turn",
+      "output_tokens": 288
+    },
+    {
+      "purpose": "table_plan",
+      "table": "mmc3.xlsx::CM_Non_West_datasets",
+      "max_tokens": 2048,
+      "stop_reason": "end_turn",
+      "output_tokens": 189
+    },
+    {
+      "purpose": "table_plan",
+      "table": "mmc3.xlsx::98_Non_West_P_copri_genomes",
+      "max_tokens": 2048,
+      "stop_reason": "end_turn",
+      "output_tokens": 244
+    },
+    {
+      "purpose": "table_plan",
+      "table": "mmc3.xlsx::Prevalence_by_country",
+      "max_tokens": 2048,
+      "stop_reason": "end_turn",
+      "output_tokens": 279
+    },
+    {
+      "purpose": "table_plan",
+      "table": "mmc4.xlsx::CAZy_table",
+      "max_tokens": 2048,
+      "stop_reason": "end_turn",
+      "output_tokens": 267
+    },
+    {
+      "purpose": "table_plan",
+      "table": "mmc4.xlsx::CAZy_plant_carb_degradation",
+      "max_tokens": 2048,
+      "stop_reason": "end_turn",
+      "output_tokens": 266
+    },
+    {
+      "purpose": "table_plan",
+      "table": "mmc5.xlsx::Ancient_metagenomic_samples",
+      "max_tokens": 2048,
+      "stop_reason": "end_turn",
+      "output_tokens": 171
+    },
+    {
+      "purpose": "table_plan",
+      "table": "mmc5.xlsx::Ancient_read_mapping",
+      "max_tokens": 2048,
+      "stop_reason": "end_turn",
+      "output_tokens": 181
+    },
+    {
+      "purpose": "table_plan",
+      "table": "mmc5.xlsx::Model_selection_for_BEAST2",
+      "max_tokens": 2048,
+      "stop_reason": "end_turn",
+      "output_tokens": 146
+    },
+    {
+      "purpose": "table_plan",
+      "table": "mmc6.xlsx::CM_Tanzania",
+      "max_tokens": 2048,
+      "stop_reason": "end_turn",
+      "output_tokens": 264
+    },
+    {
+      "purpose": "table_plan",
+      "table": "mmc6.xlsx::CM_Ghana",
+      "max_tokens": 2048,
+      "stop_reason": "end_turn",
+      "output_tokens": 239
+    },
+    {
+      "purpose": "table_plan",
+      "table": "mmc6.xlsx::CM_Ethiopia",
+      "max_tokens": 2048,
+      "stop_reason": "end_turn",
+      "output_tokens": 293
+    },
+    {
+      "purpose": "table_plan",
+      "table": "mmc7.pdf::p16_t4",
+      "max_tokens": 2048,
+      "stop_reason": "end_turn",
+      "output_tokens": 172
+    },
+    {
+      "purpose": "table_plan",
+      "table": "mmc7.pdf::p16_t5",
+      "max_tokens": 2048,
+      "stop_reason": "end_turn",
+      "output_tokens": 175
+    },
+    {
+      "purpose": "table_plan",
+      "table": "mmc7.pdf::p17_t1",
+      "max_tokens": 2048,
+      "stop_reason": "end_turn",
+      "output_tokens": 122
+    },
+    {
+      "purpose": "fields",
+      "n_fields": 30,
+      "first_field": "study_name",
+      "max_tokens": 16384,
+      "stop_reason": "end_turn",
+      "output_tokens": 2056
+    },
+    {
+      "purpose": "fields",
+      "n_fields": 30,
+      "first_field": "zigosity",
+      "max_tokens": 16384,
+      "stop_reason": "end_turn",
+      "output_tokens": 3415
+    },
+    {
+      "purpose": "fields",
+      "n_fields": 11,
+      "first_field": "biomarker_name",
+      "max_tokens": 16384,
+      "stop_reason": "end_turn",
+      "output_tokens": 2619
+    }
+  ],
+  "cost_estimate": {
+    "input_usd": 0.046642,
+    "output_usd": 0.060295,
+    "cache_read_usd": 0.011940400000000002,
+    "cache_write_usd": 0.0746275,
+    "total_usd": 0.1935049,
+    "pricing_as_of": "2026-06-24"
+  },
+  "retrieval": {
+    "frozen_retrieval": "/Users/sehyunoh/OmicsMLRepo/MetaExtractor/benchmarks/cmd_sonnet5/out_v3/_fetch/TettAJ_2019_b",
+    "source": "pmc_fulltext",
+    "has_body": true,
+    "pmid": "31607556",
+    "pmcid": "6854460",
+    "doi": null,
+    "attempts": [
+      {
+        "rung": "pmc_fulltext",
+        "returned_text": true,
+        "is_body": true,
+        "chars": 70348
+      }
+    ],
+    "supplementary_included": [
+      "mmc1.pdf",
+      "mmc2.xlsx",
+      "mmc3.xlsx",
+      "mmc4.xlsx",
+      "mmc5.xlsx",
+      "mmc6.xlsx",
+      "mmc7.pdf"
+    ],
+    "supplementary_skipped": [
+      [
+        "fx1.gif",
+        "europepmc: ValueError: image-only (.gif)"
+      ],
+      [
+        "fx1.jpg",
+        "europepmc: ValueError: image-only (.jpg)"
+      ],
+      [
+        "gr1.gif",
+        "europepmc: ValueError: image-only (.gif)"
+      ],
+      [
+        "gr1.jpg",
+        "europepmc: ValueError: image-only (.jpg)"
+      ],
+      [
+        "gr2.gif",
+        "europepmc: ValueError: image-only (.gif)"
+      ],
+      [
+        "gr2.jpg",
+        "europepmc: ValueError: image-only (.jpg)"
+      ],
+      [
+        "gr3.gif",
+        "europepmc: ValueError: image-only (.gif)"
+      ],
+      [
+        "gr3.jpg",
+        "europepmc: ValueError: image-only (.jpg)"
+      ],
+      [
+        "gr4.gif",
+        "europepmc: ValueError: image-only (.gif)"
+      ],
+      [
+        "gr4.jpg",
+        "europepmc: ValueError: image-only (.jpg)"
+      ],
+      [
+        "gr5.gif",
+        "europepmc: ValueError: image-only (.gif)"
+      ],
+      [
+        "gr5.jpg",
+        "europepmc: ValueError: image-only (.jpg)"
+      ]
+    ],
+    "sra_manifest_source": "ena:PRJNA504891+PRJNA529124+PRJNA529400+PRJEB31971 (171 runs)",
+    "sra_manifest_warnings": []
+  },
+  "local_supplementary": [],
+  "paper_text_sha256": "62de06ec9cc5f3ed597201219cb59ae137fe6acb0a6a0e3ec2eb4d09d3a32d57",
+  "paper_text_chars": 168028,
+  "n_tables": 23,
+  "output": {
+    "granularity": "sample_level",
+    "n_samples": 50,
+    "n_fields": 45,
+    "n_warnings": 77
+  },
+  "versions": {
+    "metaextractor": "0.1.0",
+    "anthropic_sdk": "0.104.1",
+    "python": "3.14.0"
+  }
+}

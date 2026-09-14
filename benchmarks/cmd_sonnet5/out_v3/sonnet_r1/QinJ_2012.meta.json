@@ -1,0 +1,120 @@
+{
+  "started_utc": "2026-09-14T19:54:42+00:00",
+  "finished_utc": "2026-09-14T19:55:58+00:00",
+  "paper_id": "23023125",
+  "status": "ok",
+  "error": null,
+  "request": {
+    "model_requested": "claude-sonnet-5",
+    "models_returned": [
+      "claude-sonnet-5"
+    ],
+    "max_tokens": 16384,
+    "max_tokens_ceiling": 64000,
+    "batch_size": 30,
+    "sample_discovery": true,
+    "min_table_relevance": 0.15,
+    "sampling_and_thinking": "not set (API defaults: no temperature/top_p/top_k/thinking/effort parameters sent)",
+    "age_rules": "/private/tmp/claude-501/-Users-sehyunoh-OmicsMLRepo-MetaExtractor/808c29a9-32c4-4814-a956-69024089f400/scratchpad/wt_bench_v3/benchmarks/cmd_sonnet5/age_rules_cmd.json"
+  },
+  "usage": {
+    "input_tokens": 9011,
+    "cache_creation_input_tokens": 463,
+    "cache_read_input_tokens": 5462,
+    "output_tokens": 10627,
+    "n_calls": 3
+  },
+  "calls": [
+    {
+      "purpose": "fields",
+      "n_fields": 30,
+      "first_field": "study_name",
+      "max_tokens": 16384,
+      "stop_reason": "end_turn",
+      "output_tokens": 5681
+    },
+    {
+      "purpose": "fields",
+      "n_fields": 30,
+      "first_field": "zigosity",
+      "max_tokens": 16384,
+      "stop_reason": "end_turn",
+      "output_tokens": 3204
+    },
+    {
+      "purpose": "fields",
+      "n_fields": 11,
+      "first_field": "biomarker_name",
+      "max_tokens": 16384,
+      "stop_reason": "end_turn",
+      "output_tokens": 1742
+    }
+  ],
+  "cost_estimate": {
+    "input_usd": 0.018022,
+    "output_usd": 0.10627,
+    "cache_read_usd": 0.0010924,
+    "cache_write_usd": 0.0011575,
+    "total_usd": 0.1265419,
+    "pricing_as_of": "2026-06-24"
+  },
+  "retrieval": {
+    "frozen_retrieval": "/Users/sehyunoh/OmicsMLRepo/MetaExtractor/benchmarks/cmd_sonnet5/out_v3/_fetch/QinJ_2012",
+    "source": "pubmed_abstract",
+    "has_body": false,
+    "pmid": "23023125",
+    "pmcid": null,
+    "doi": "10.1038/nature11450",
+    "attempts": [
+      {
+        "rung": "pmid_to_pmcid",
+        "returned_text": false,
+        "is_body": false,
+        "chars": 0
+      },
+      {
+        "rung": "pubmed_abstract",
+        "returned_text": true,
+        "is_body": false,
+        "chars": 1254
+      },
+      {
+        "rung": "europepmc_fulltext_by_doi",
+        "returned_text": false,
+        "is_body": false,
+        "chars": 0
+      },
+      {
+        "rung": "europepmc_pdf",
+        "returned_text": false,
+        "is_body": false,
+        "chars": 0
+      },
+      {
+        "rung": "unpaywall_pdf",
+        "returned_text": false,
+        "is_body": false,
+        "chars": 0
+      }
+    ],
+    "supplementary_included": null,
+    "supplementary_skipped": [],
+    "sra_manifest_source": null,
+    "sra_manifest_warnings": []
+  },
+  "local_supplementary": [],
+  "paper_text_sha256": "57fc928826c11cae577ce120780bcc3520ed795250feab5e2cb1fa9ef16ebe1b",
+  "paper_text_chars": 1254,
+  "n_tables": 0,
+  "output": {
+    "granularity": "study_level",
+    "n_samples": 0,
+    "n_fields": 71,
+    "n_warnings": 8
+  },
+  "versions": {
+    "metaextractor": "0.1.0",
+    "anthropic_sdk": "0.104.1",
+    "python": "3.14.0"
+  }
+}

@@ -1,0 +1,394 @@
+{
+  "started_utc": "2026-09-14T19:49:17+00:00",
+  "finished_utc": "2026-09-14T20:02:49+00:00",
+  "paper_id": "30661755",
+  "status": "ok",
+  "error": null,
+  "request": {
+    "model_requested": "claude-sonnet-5",
+    "models_returned": [
+      "claude-sonnet-5"
+    ],
+    "max_tokens": 16384,
+    "max_tokens_ceiling": 64000,
+    "batch_size": 30,
+    "sample_discovery": true,
+    "min_table_relevance": 0.15,
+    "sampling_and_thinking": "not set (API defaults: no temperature/top_p/top_k/thinking/effort parameters sent)",
+    "age_rules": "/private/tmp/claude-501/-Users-sehyunoh-OmicsMLRepo-MetaExtractor/808c29a9-32c4-4814-a956-69024089f400/scratchpad/wt_bench_v3/benchmarks/cmd_sonnet5/age_rules_cmd.json"
+  },
+  "usage": {
+    "input_tokens": 364414,
+    "cache_creation_input_tokens": 35769,
+    "cache_read_input_tokens": 113355,
+    "output_tokens": 78596,
+    "n_calls": 27
+  },
+  "calls": [
+    {
+      "purpose": "table_plan",
+      "table": "mmc1.xlsx::Tab1 - PublicDatasets",
+      "max_tokens": 2048,
+      "stop_reason": "end_turn",
+      "output_tokens": 1116
+    },
+    {
+      "purpose": "table_plan",
+      "table": "mmc1.xlsx::Tab2 - PublicMetagenomes",
+      "max_tokens": 2048,
+      "stop_reason": "max_tokens",
+      "output_tokens": 2048
+    },
+    {
+      "purpose": "table_plan",
+      "table": "mmc1.xlsx::Tab2 - PublicMetagenomes",
+      "max_tokens": 4096,
+      "stop_reason": "end_turn",
+      "output_tokens": 3341
+    },
+    {
+      "purpose": "table_plan",
+      "table": "mmc1.xlsx::Tab3 - MadagascarDataset",
+      "max_tokens": 2048,
+      "stop_reason": "end_turn",
+      "output_tokens": 1166
+    },
+    {
+      "purpose": "table_plan",
+      "table": "mmc1.xlsx::Tab4 - Additional Datasets (map",
+      "max_tokens": 2048,
+      "stop_reason": "end_turn",
+      "output_tokens": 675
+    },
+    {
+      "purpose": "table_plan",
+      "table": "mmc2.xlsx::Tab1 - ComparisonWithIsolates",
+      "max_tokens": 2048,
+      "stop_reason": "end_turn",
+      "output_tokens": 877
+    },
+    {
+      "purpose": "table_plan",
+      "table": "mmc2.xlsx::Tab2 - ComparisonWithAnvio",
+      "max_tokens": 2048,
+      "stop_reason": "end_turn",
+      "output_tokens": 230
+    },
+    {
+      "purpose": "table_plan",
+      "table": "mmc2.xlsx::Tab3 - Coassembly",
+      "max_tokens": 2048,
+      "stop_reason": "end_turn",
+      "output_tokens": 1398
+    },
+    {
+      "purpose": "table_plan",
+      "table": "mmc2.xlsx::Tab4 - Coassembly",
+      "max_tokens": 2048,
+      "stop_reason": "end_turn",
+      "output_tokens": 553
+    },
+    {
+      "purpose": "table_plan",
+      "table": "mmc3.xlsx",
+      "max_tokens": 2048,
+      "stop_reason": "end_turn",
+      "output_tokens": 347
+    },
+    {
+      "purpose": "table_plan",
+      "table": "mmc4.xlsx::Tab1 - SGBs description",
+      "max_tokens": 2048,
+      "stop_reason": "end_turn",
+      "output_tokens": 419
+    },
+    {
+      "purpose": "table_plan",
+      "table": "mmc4.xlsx::Tab2 - SGBs relative ab",
+      "max_tokens": 2048,
+      "stop_reason": "end_turn",
+      "output_tokens": 210
+    },
+    {
+      "purpose": "table_plan",
+      "table": "mmc4.xlsx::Tab3 - Representatives",
+      "max_tokens": 2048,
+      "stop_reason": "end_turn",
+      "output_tokens": 537
+    },
+    {
+      "purpose": "table_plan",
+      "table": "mmc5.xlsx::Age category",
+      "max_tokens": 2048,
+      "stop_reason": "end_turn",
+      "output_tokens": 598
+    },
+    {
+      "purpose": "table_plan",
+      "table": "mmc5.xlsx::Body site",
+      "max_tokens": 2048,
+      "stop_reason": "end_turn",
+      "output_tokens": 173
+    },
+    {
+      "purpose": "table_plan",
+      "table": "mmc5.xlsx::Westernization",
+      "max_tokens": 2048,
+      "stop_reason": "end_turn",
+      "output_tokens": 155
+    },
+    {
+      "purpose": "table_plan",
+      "table": "mmc6.xlsx::Tab1 - Protocols",
+      "max_tokens": 2048,
+      "stop_reason": "end_turn",
+      "output_tokens": 1332
+    },
+    {
+      "purpose": "table_plan",
+      "table": "mmc6.xlsx::Tab2 - MadagascarSignifSGBs",
+      "max_tokens": 2048,
+      "stop_reason": "end_turn",
+      "output_tokens": 195
+    },
+    {
+      "purpose": "table_plan",
+      "table": "mmc6.xlsx::Tab3 - NonWesternizedSignifSGBs",
+      "max_tokens": 2048,
+      "stop_reason": "end_turn",
+      "output_tokens": 486
+    },
+    {
+      "purpose": "table_plan",
+      "table": "mmc7.xlsx",
+      "max_tokens": 2048,
+      "stop_reason": "max_tokens",
+      "output_tokens": 2048
+    },
+    {
+      "purpose": "table_plan",
+      "table": "mmc7.xlsx",
+      "max_tokens": 4096,
+      "stop_reason": "max_tokens",
+      "output_tokens": 4096
+    },
+    {
+      "purpose": "table_plan",
+      "table": "mmc7.xlsx",
+      "max_tokens": 8192,
+      "stop_reason": "max_tokens",
+      "output_tokens": 8192
+    },
+    {
+      "purpose": "table_plan",
+      "table": "mmc7.xlsx",
+      "max_tokens": 16384,
+      "stop_reason": "end_turn",
+      "output_tokens": 6206
+    },
+    {
+      "purpose": "fields",
+      "n_fields": 30,
+      "first_field": "study_name",
+      "max_tokens": 16384,
+      "stop_reason": "max_tokens",
+      "output_tokens": 16384
+    },
+    {
+      "purpose": "fields",
+      "n_fields": 30,
+      "first_field": "study_name",
+      "max_tokens": 32768,
+      "stop_reason": "end_turn",
+      "output_tokens": 15921
+    },
+    {
+      "purpose": "fields",
+      "n_fields": 30,
+      "first_field": "zigosity",
+      "max_tokens": 16384,
+      "stop_reason": "end_turn",
+      "output_tokens": 7095
+    },
+    {
+      "purpose": "fields",
+      "n_fields": 11,
+      "first_field": "biomarker_name",
+      "max_tokens": 16384,
+      "stop_reason": "end_turn",
+      "output_tokens": 2798
+    }
+  ],
+  "cost_estimate": {
+    "input_usd": 0.728828,
+    "output_usd": 0.78596,
+    "cache_read_usd": 0.022671,
+    "cache_write_usd": 0.0894225,
+    "total_usd": 1.6268815,
+    "pricing_as_of": "2026-06-24"
+  },
+  "retrieval": {
+    "frozen_retrieval": "/Users/sehyunoh/OmicsMLRepo/MetaExtractor/benchmarks/cmd_sonnet5/out_v3/_fetch/PasolliE_2019",
+    "source": "pmc_fulltext",
+    "has_body": true,
+    "pmid": "30661755",
+    "pmcid": "6349461",
+    "doi": null,
+    "attempts": [
+      {
+        "rung": "pmc_fulltext",
+        "returned_text": true,
+        "is_body": true,
+        "chars": 98276
+      }
+    ],
+    "supplementary_included": [
+      "mmc1.xlsx",
+      "mmc2.xlsx",
+      "mmc3.xlsx",
+      "mmc4.xlsx",
+      "mmc5.xlsx",
+      "mmc6.xlsx",
+      "mmc7.xlsx"
+    ],
+    "supplementary_skipped": [
+      [
+        "figs1.gif",
+        "europepmc: ValueError: image-only (.gif)"
+      ],
+      [
+        "figs1.jpg",
+        "europepmc: ValueError: image-only (.jpg)"
+      ],
+      [
+        "figs2.gif",
+        "europepmc: ValueError: image-only (.gif)"
+      ],
+      [
+        "figs2.jpg",
+        "europepmc: ValueError: image-only (.jpg)"
+      ],
+      [
+        "figs3.gif",
+        "europepmc: ValueError: image-only (.gif)"
+      ],
+      [
+        "figs3.jpg",
+        "europepmc: ValueError: image-only (.jpg)"
+      ],
+      [
+        "figs4.gif",
+        "europepmc: ValueError: image-only (.gif)"
+      ],
+      [
+        "figs4.jpg",
+        "europepmc: ValueError: image-only (.jpg)"
+      ],
+      [
+        "figs5.gif",
+        "europepmc: ValueError: image-only (.gif)"
+      ],
+      [
+        "figs5.jpg",
+        "europepmc: ValueError: image-only (.jpg)"
+      ],
+      [
+        "figs6.gif",
+        "europepmc: ValueError: image-only (.gif)"
+      ],
+      [
+        "figs6.jpg",
+        "europepmc: ValueError: image-only (.jpg)"
+      ],
+      [
+        "figs7.gif",
+        "europepmc: ValueError: image-only (.gif)"
+      ],
+      [
+        "figs7.jpg",
+        "europepmc: ValueError: image-only (.jpg)"
+      ],
+      [
+        "fx1.gif",
+        "europepmc: ValueError: image-only (.gif)"
+      ],
+      [
+        "fx1.jpg",
+        "europepmc: ValueError: image-only (.jpg)"
+      ],
+      [
+        "gr1.gif",
+        "europepmc: ValueError: image-only (.gif)"
+      ],
+      [
+        "gr1.jpg",
+        "europepmc: ValueError: image-only (.jpg)"
+      ],
+      [
+        "gr2.gif",
+        "europepmc: ValueError: image-only (.gif)"
+      ],
+      [
+        "gr2.jpg",
+        "europepmc: ValueError: image-only (.jpg)"
+      ],
+      [
+        "gr3.gif",
+        "europepmc: ValueError: image-only (.gif)"
+      ],
+      [
+        "gr3.jpg",
+        "europepmc: ValueError: image-only (.jpg)"
+      ],
+      [
+        "gr4.gif",
+        "europepmc: ValueError: image-only (.gif)"
+      ],
+      [
+        "gr4.jpg",
+        "europepmc: ValueError: image-only (.jpg)"
+      ],
+      [
+        "gr5.gif",
+        "europepmc: ValueError: image-only (.gif)"
+      ],
+      [
+        "gr5.jpg",
+        "europepmc: ValueError: image-only (.jpg)"
+      ],
+      [
+        "gr6.gif",
+        "europepmc: ValueError: image-only (.gif)"
+      ],
+      [
+        "gr6.jpg",
+        "europepmc: ValueError: image-only (.jpg)"
+      ],
+      [
+        "gr7.gif",
+        "europepmc: ValueError: image-only (.gif)"
+      ],
+      [
+        "gr7.jpg",
+        "europepmc: ValueError: image-only (.jpg)"
+      ]
+    ],
+    "sra_manifest_source": "ena:PRJNA485056+PRJNA504891 (164 runs)",
+    "sra_manifest_warnings": []
+  },
+  "local_supplementary": [],
+  "paper_text_sha256": "1cc39adcb8b6386cdec02b4417b8c706435f8f7b1a2ddc432f4f381604c11d7f",
+  "paper_text_chars": 98276,
+  "n_tables": 21,
+  "output": {
+    "granularity": "sample_level",
+    "n_samples": 112,
+    "n_fields": 71,
+    "n_warnings": 86
+  },
+  "versions": {
+    "metaextractor": "0.1.0",
+    "anthropic_sdk": "0.104.1",
+    "python": "3.14.0"
+  }
+}

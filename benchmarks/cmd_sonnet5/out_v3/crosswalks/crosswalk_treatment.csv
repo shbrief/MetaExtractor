@@ -1,0 +1,29 @@
+query,ref_match,stage,match1,match1_score,match1_code
+Methotrexate,Not Found,1.0,Not Found,1.0,
+Antimalarial chemoprophylaxis,Not Found,2.5,Antimalarial Agent,0.8215,NCIT:C271
+Antipsychotics,Not Found,2.0,Antipsychotic Agent,0.9517,NCIT:C29710
+Benzodiazepines,Not Found,2.0,Benzodiazepine,1.0000,NCIT:C1012
+Birth control pills,Not Found,2.5,Oral Contraceptive Preparation,0.8755,NCIT:C29640
+Cognitive behavioural therapeutic treatment,Not Found,2.5,Cytembena,0.5843,NCIT:C1360
+Fecal microbiota transplantation,Not Found,2.5,Fecal Microbiota Transplantation Capsule,0.8082,NCIT:C168520
+Fecal microbiota transplantation (FMT),Not Found,2.5,Fecal Microbiota Transplantation Capsule,0.7828,NCIT:C168520
+Folic acid,Not Found,2.5,Folic Acid Derivative,0.8160,NCIT:C2078
+Multidisciplinary treatment,Not Found,2.5,Allogeneic Multipotent Adult Progenitor Cells,0.5724,NCIT:C77874
+No antihypertensive treatment,Not Found,2.5,Antihypertensive Agent,0.7421,NCIT:C270
+No aspirin,Not Found,2.5,Low-Dose Aspirin,0.7098,NCIT:C94758
+No insulin,Not Found,2.0,Therapeutic Insulin,0.7656,NCIT:C581
+No metformin,Not Found,2.5,Metformin,0.7978,NCIT:C61612
+No metoprolol,Not Found,2.5,Metoprolol,0.7896,NCIT:C61845
+No nifedipine,Not Found,2.5,Nifedipine,0.7832,NCIT:C29290
+No statins,Not Found,2.5,Non-Statin Antilipidemic Agent,0.7259,NCIT:C80482
+None (antihypertensive treatment-naive),Not Found,2.5,Antihypertensive Agent,0.5292,NCIT:C270
+Selective serotonin re-uptake inhibitors,Not Found,2.0,Selective Serotonin Reuptake Inhibitor,0.9076,NCIT:C94725
+Selective serotonin re-uptake inhibitors (SSRIs),Not Found,2.0,Selective Serotonin Reuptake Inhibitor,0.9248,NCIT:C94725
+Specialized multidisciplinary treatment,Not Found,2.5,Allogeneic Multipotent Adult Progenitor Cells,0.5494,NCIT:C77874
+antimalarial chemoprophylaxis,Not Found,2.5,Antimalarial Agent,0.8215,NCIT:C271
+antipsychotics,Not Found,2.0,Antipsychotic Agent,0.9517,NCIT:C29710
+benzodiazepines,Not Found,2.0,Benzodiazepine,1.0000,NCIT:C1012
+fecal microbiota transplantation,Not Found,2.5,Fecal Microbiota Transplantation Capsule,0.8082,NCIT:C168520
+insulin replacement therapy,Not Found,2.5,Therapeutic Insulin,0.7572,NCIT:C581
+not_reported (untreated - prior to antihypertensive treatment),Not Found,2.5,Angiotensin II Receptor Antagonist,0.5798,NCIT:C66930
+selective serotonin re-uptake inhibitors,Not Found,2.0,Selective Serotonin Reuptake Inhibitor,0.9076,NCIT:C94725

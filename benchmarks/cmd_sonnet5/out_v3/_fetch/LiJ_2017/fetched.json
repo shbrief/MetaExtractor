@@ -1,0 +1,26 @@
+{
+  "source": "pmc_fulltext",
+  "has_body": true,
+  "pmid": "28143587",
+  "pmcid": "5286796",
+  "doi": null,
+  "retrieval_attempts": [
+    {
+      "rung": "pmc_fulltext",
+      "returned_text": true,
+      "is_body": true,
+      "chars": 64808
+    }
+  ],
+  "supplementary_included": [
+    "40168_2016_222_MOESM2_ESM.xlsx",
+    "40168_2016_222_MOESM7_ESM.xlsx"
+  ],
+  "supplementary_skipped": [],
+  "sra_manifest_source": null,
+  "sra_manifest_warnings": [],
+  "n_tables": 18,
+  "text_chars": 64808,
+  "text_sha256": "d4d7962b0e2ee1a8a56e18c26f5742e9310e02031943d511a547acd44c5467b0",
+  "tables_sha256": "720af3cedb5b79f82337c192bd35c8b2c1af3352fee35b1ef30a27ae2eb26a5e"
+}

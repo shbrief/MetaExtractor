@@ -1,0 +1,1538 @@
+sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonized	gold_harmonized	decision
+0	SAMN04571684	M01.1-V1-stool	study_name	PRJNA289586	Heitz-BuschartA_2016			TP_wrong
+0	SAMN04571684	M01.1-V1-stool	subject_id		M01.1			FN
+0	SAMN04571684	M01.1-V1-stool	sample_id	SAMN04571684	M01.1-V1-stool			TP_wrong
+0	SAMN04571684	M01.1-V1-stool	curator		Paolo_Manghi			FN
+0	SAMN04571684	M01.1-V1-stool	pmid	27723761	27723761			TP_correct
+0	SAMN04571684	M01.1-V1-stool	target_condition	Type 1 diabetes mellitus	Type 1 Diabetes Mellitus			TP_correct
+0	SAMN04571684	M01.1-V1-stool	control		Case			FN
+0	SAMN04571684	M01.1-V1-stool	country	Luxembourg	Luxembourg			TP_correct
+0	SAMN04571684	M01.1-V1-stool	body_site	feces	feces	UBERON:0001988	UBERON:0001988	TP_correct
+0	SAMN04571684	M01.1-V1-stool	days_from_first_collection		0			FN
+0	SAMN04571684	M01.1-V1-stool	westernized		Yes			FN
+0	SAMN04571684	M01.1-V1-stool	dna_extraction_kit	MoBio	NorgenBiotek			TP_wrong
+0	SAMN04571684	M01.1-V1-stool	ncbi_accession	SRR3313034	SRR3313034			TP_correct
+0	SAMN04571684	M01.1-V1-stool	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq			TP_wrong
+0	SAMN04571684	M01.1-V1-stool	age		62			FN
+0	SAMN04571684	M01.1-V1-stool	age_group		Adult			FN
+0	SAMN04571684	M01.1-V1-stool	age_unit		Year			FN
+0	SAMN04571684	M01.1-V1-stool	sex	male	Male			TP_correct
+0	SAMN04571684	M01.1-V1-stool	age_min		62			FN
+0	SAMN04571684	M01.1-V1-stool	age_max		62			FN
+0	SAMN04571684	M01.1-V1-stool	age_years		62			FN
+0	SAMN04571684	M01.1-V1-stool	antibiotics_current_use					TN
+0	SAMN04571684	M01.1-V1-stool	bmi		25.2			FN
+0	SAMN04571684	M01.1-V1-stool	disease	type 1 diabetes mellitus	Type 1 Diabetes Mellitus	NCIT:C2986	NCIT:C2986	TP_correct
+0	SAMN04571684	M01.1-V1-stool	treatment	insulin replacement therapy	Antihypertensive Agents;Anti-diabetic Agent	NCIT:C581	NCIT:C29711|SCDO:0000067	TP_wrong
+0	SAMN04571684	M01.1-V1-stool	biomarker_name		C-peptide;Cholesterol;Glucose			FN
+0	SAMN04571684	M01.1-V1-stool	biomarker_unit		ng/ml;mg/dL;mg/dL			FN
+0	SAMN04571684	M01.1-V1-stool	biomarker_value		2.1;184;117			FN
+0	SAMN04571684	M01.1-V1-stool	host_species	Homo sapiens	Homo sapiens			TP_correct
+1	SAMN04571685	M01.1-V2-stool	study_name	PRJNA289586	Heitz-BuschartA_2016			TP_wrong
+1	SAMN04571685	M01.1-V2-stool	subject_id		M01.1			FN
+1	SAMN04571685	M01.1-V2-stool	sample_id	SAMN04571685	M01.1-V2-stool			TP_wrong
+1	SAMN04571685	M01.1-V2-stool	curator		Paolo_Manghi			FN
+1	SAMN04571685	M01.1-V2-stool	pmid	27723761	27723761			TP_correct
+1	SAMN04571685	M01.1-V2-stool	target_condition	Type 1 diabetes mellitus	Type 1 Diabetes Mellitus			TP_correct
+1	SAMN04571685	M01.1-V2-stool	control		Case			FN
+1	SAMN04571685	M01.1-V2-stool	country	Luxembourg	Luxembourg			TP_correct
+1	SAMN04571685	M01.1-V2-stool	body_site	feces	feces	UBERON:0001988	UBERON:0001988	TP_correct
+1	SAMN04571685	M01.1-V2-stool	days_from_first_collection		28			FN
+1	SAMN04571685	M01.1-V2-stool	westernized		Yes			FN
+1	SAMN04571685	M01.1-V2-stool	dna_extraction_kit	MoBio	NorgenBiotek			TP_wrong
+1	SAMN04571685	M01.1-V2-stool	ncbi_accession	SRR3313035	SRR3313035			TP_correct
+1	SAMN04571685	M01.1-V2-stool	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq			TP_wrong
+1	SAMN04571685	M01.1-V2-stool	age		62			FN
+1	SAMN04571685	M01.1-V2-stool	age_group		Adult			FN
+1	SAMN04571685	M01.1-V2-stool	age_unit		Year			FN
+1	SAMN04571685	M01.1-V2-stool	sex	male	Male			TP_correct
+1	SAMN04571685	M01.1-V2-stool	age_min		62			FN
+1	SAMN04571685	M01.1-V2-stool	age_max		62			FN
+1	SAMN04571685	M01.1-V2-stool	age_years		62			FN
+1	SAMN04571685	M01.1-V2-stool	antibiotics_current_use					TN
+1	SAMN04571685	M01.1-V2-stool	bmi		27.19			FN
+1	SAMN04571685	M01.1-V2-stool	disease	type 1 diabetes mellitus	Type 1 Diabetes Mellitus	NCIT:C2986	NCIT:C2986	TP_correct
+1	SAMN04571685	M01.1-V2-stool	treatment	insulin replacement therapy	Antihypertensive Agents;Anti-diabetic Agent	NCIT:C581	NCIT:C29711|SCDO:0000067	TP_wrong
+1	SAMN04571685	M01.1-V2-stool	biomarker_name		C-peptide;Cholesterol;Glucose			FN
+1	SAMN04571685	M01.1-V2-stool	biomarker_unit		ng/ml;mg/dL;mg/dL			FN
+1	SAMN04571685	M01.1-V2-stool	biomarker_value		1.6;225;129			FN
+1	SAMN04571685	M01.1-V2-stool	host_species	Homo sapiens	Homo sapiens			TP_correct
+2	SAMN04571686	M01.1-V3-stool	study_name	PRJNA289586	Heitz-BuschartA_2016			TP_wrong
+2	SAMN04571686	M01.1-V3-stool	subject_id		M01.1			FN
+2	SAMN04571686	M01.1-V3-stool	sample_id	SAMN04571686	M01.1-V3-stool			TP_wrong
+2	SAMN04571686	M01.1-V3-stool	curator		Paolo_Manghi			FN
+2	SAMN04571686	M01.1-V3-stool	pmid	27723761	27723761			TP_correct
+2	SAMN04571686	M01.1-V3-stool	target_condition	Type 1 diabetes mellitus	Type 1 Diabetes Mellitus			TP_correct
+2	SAMN04571686	M01.1-V3-stool	control		Case			FN
+2	SAMN04571686	M01.1-V3-stool	country	Luxembourg	Luxembourg			TP_correct
+2	SAMN04571686	M01.1-V3-stool	body_site	feces	feces	UBERON:0001988	UBERON:0001988	TP_correct
+2	SAMN04571686	M01.1-V3-stool	days_from_first_collection		62			FN
+2	SAMN04571686	M01.1-V3-stool	westernized		Yes			FN
+2	SAMN04571686	M01.1-V3-stool	dna_extraction_kit	MoBio	NorgenBiotek			TP_wrong
+2	SAMN04571686	M01.1-V3-stool	ncbi_accession	SRR3313046	SRR3313046			TP_correct
+2	SAMN04571686	M01.1-V3-stool	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq			TP_wrong
+2	SAMN04571686	M01.1-V3-stool	age		62			FN
+2	SAMN04571686	M01.1-V3-stool	age_group		Adult			FN
+2	SAMN04571686	M01.1-V3-stool	age_unit		Year			FN
+2	SAMN04571686	M01.1-V3-stool	sex	male	Male			TP_correct
+2	SAMN04571686	M01.1-V3-stool	age_min		62			FN
+2	SAMN04571686	M01.1-V3-stool	age_max		62			FN
+2	SAMN04571686	M01.1-V3-stool	age_years		62			FN
+2	SAMN04571686	M01.1-V3-stool	antibiotics_current_use					TN
+2	SAMN04571686	M01.1-V3-stool	bmi					TN
+2	SAMN04571686	M01.1-V3-stool	disease	type 1 diabetes mellitus	Type 1 Diabetes Mellitus	NCIT:C2986	NCIT:C2986	TP_correct
+2	SAMN04571686	M01.1-V3-stool	treatment	insulin replacement therapy	Antihypertensive Agents;Anti-diabetic Agent	NCIT:C581	NCIT:C29711|SCDO:0000067	TP_wrong
+2	SAMN04571686	M01.1-V3-stool	biomarker_name		C-peptide;Cholesterol;Glucose			FN
+2	SAMN04571686	M01.1-V3-stool	biomarker_unit		ng/ml;mg/dL;mg/dL			FN
+2	SAMN04571686	M01.1-V3-stool	biomarker_value		1.4;225;122			FN
+2	SAMN04571686	M01.1-V3-stool	host_species	Homo sapiens	Homo sapiens			TP_correct
+3	SAMN04571687	M01.2-V1-stool	study_name	PRJNA289586	Heitz-BuschartA_2016			TP_wrong
+3	SAMN04571687	M01.2-V1-stool	subject_id		M01.2			FN
+3	SAMN04571687	M01.2-V1-stool	sample_id	SAMN04571687	M01.2-V1-stool			TP_wrong
+3	SAMN04571687	M01.2-V1-stool	curator		Paolo_Manghi			FN
+3	SAMN04571687	M01.2-V1-stool	pmid	27723761	27723761			TP_correct
+3	SAMN04571687	M01.2-V1-stool	target_condition	Type 1 diabetes mellitus	Type 1 Diabetes Mellitus			TP_correct
+3	SAMN04571687	M01.2-V1-stool	control		Study Control			FN
+3	SAMN04571687	M01.2-V1-stool	country	Luxembourg	Luxembourg			TP_correct
+3	SAMN04571687	M01.2-V1-stool	body_site	feces	feces	UBERON:0001988	UBERON:0001988	TP_correct
+3	SAMN04571687	M01.2-V1-stool	days_from_first_collection		0			FN
+3	SAMN04571687	M01.2-V1-stool	westernized		Yes			FN
+3	SAMN04571687	M01.2-V1-stool	dna_extraction_kit	MoBio	NorgenBiotek			TP_wrong
+3	SAMN04571687	M01.2-V1-stool	ncbi_accession	SRR3313057	SRR3313057			TP_correct
+3	SAMN04571687	M01.2-V1-stool	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq			TP_wrong
+3	SAMN04571687	M01.2-V1-stool	age		60			FN
+3	SAMN04571687	M01.2-V1-stool	age_group		Adult			FN
+3	SAMN04571687	M01.2-V1-stool	age_unit		Year			FN
+3	SAMN04571687	M01.2-V1-stool	sex	female	Female			TP_correct
+3	SAMN04571687	M01.2-V1-stool	age_min		60			FN
+3	SAMN04571687	M01.2-V1-stool	age_max		60			FN
+3	SAMN04571687	M01.2-V1-stool	age_years		60			FN
+3	SAMN04571687	M01.2-V1-stool	antibiotics_current_use		No			FN
+3	SAMN04571687	M01.2-V1-stool	bmi		26.39			FN
+3	SAMN04571687	M01.2-V1-stool	disease	type 1 diabetes mellitus	Healthy	NCIT:C2986	NCIT:C115935	TP_wrong
+3	SAMN04571687	M01.2-V1-stool	treatment	insulin replacement therapy		NCIT:C581		FP
+3	SAMN04571687	M01.2-V1-stool	biomarker_name		C-peptide;Cholesterol;Glucose			FN
+3	SAMN04571687	M01.2-V1-stool	biomarker_unit		ng/ml;mg/dL;mg/dL			FN
+3	SAMN04571687	M01.2-V1-stool	biomarker_value		1.7;296;86			FN
+3	SAMN04571687	M01.2-V1-stool	host_species	Homo sapiens	Homo sapiens			TP_correct
+4	SAMN04571688	M01.2-V2-stool	study_name	PRJNA289586	Heitz-BuschartA_2016			TP_wrong
+4	SAMN04571688	M01.2-V2-stool	subject_id		M01.2			FN
+4	SAMN04571688	M01.2-V2-stool	sample_id	SAMN04571688	M01.2-V2-stool			TP_wrong
+4	SAMN04571688	M01.2-V2-stool	curator		Paolo_Manghi			FN
+4	SAMN04571688	M01.2-V2-stool	pmid	27723761	27723761			TP_correct
+4	SAMN04571688	M01.2-V2-stool	target_condition	Type 1 diabetes mellitus	Type 1 Diabetes Mellitus			TP_correct
+4	SAMN04571688	M01.2-V2-stool	control		Study Control			FN
+4	SAMN04571688	M01.2-V2-stool	country	Luxembourg	Luxembourg			TP_correct
+4	SAMN04571688	M01.2-V2-stool	body_site	feces	feces	UBERON:0001988	UBERON:0001988	TP_correct
+4	SAMN04571688	M01.2-V2-stool	days_from_first_collection		28			FN
+4	SAMN04571688	M01.2-V2-stool	westernized		Yes			FN
+4	SAMN04571688	M01.2-V2-stool	dna_extraction_kit	MoBio	NorgenBiotek			TP_wrong
+4	SAMN04571688	M01.2-V2-stool	ncbi_accession	SRR3313068	SRR3313068			TP_correct
+4	SAMN04571688	M01.2-V2-stool	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq			TP_wrong
+4	SAMN04571688	M01.2-V2-stool	age		60			FN
+4	SAMN04571688	M01.2-V2-stool	age_group		Adult			FN
+4	SAMN04571688	M01.2-V2-stool	age_unit		Year			FN
+4	SAMN04571688	M01.2-V2-stool	sex	female	Female			TP_correct
+4	SAMN04571688	M01.2-V2-stool	age_min		60			FN
+4	SAMN04571688	M01.2-V2-stool	age_max		60			FN
+4	SAMN04571688	M01.2-V2-stool	age_years		60			FN
+4	SAMN04571688	M01.2-V2-stool	antibiotics_current_use		No			FN
+4	SAMN04571688	M01.2-V2-stool	bmi		26.24			FN
+4	SAMN04571688	M01.2-V2-stool	disease	type 1 diabetes mellitus	Healthy	NCIT:C2986	NCIT:C115935	TP_wrong
+4	SAMN04571688	M01.2-V2-stool	treatment	insulin replacement therapy		NCIT:C581		FP
+4	SAMN04571688	M01.2-V2-stool	biomarker_name		C-peptide;Cholesterol;Glucose			FN
+4	SAMN04571688	M01.2-V2-stool	biomarker_unit		ng/ml;mg/dL;mg/dL			FN
+4	SAMN04571688	M01.2-V2-stool	biomarker_value		1.9;282;90			FN
+4	SAMN04571688	M01.2-V2-stool	host_species	Homo sapiens	Homo sapiens			TP_correct
+5	SAMN04571689	M01.2-V3-stool	study_name	PRJNA289586	Heitz-BuschartA_2016			TP_wrong
+5	SAMN04571689	M01.2-V3-stool	subject_id		M01.2			FN
+5	SAMN04571689	M01.2-V3-stool	sample_id	SAMN04571689	M01.2-V3-stool			TP_wrong
+5	SAMN04571689	M01.2-V3-stool	curator		Paolo_Manghi			FN
+5	SAMN04571689	M01.2-V3-stool	pmid	27723761	27723761			TP_correct
+5	SAMN04571689	M01.2-V3-stool	target_condition	Type 1 diabetes mellitus	Type 1 Diabetes Mellitus			TP_correct
+5	SAMN04571689	M01.2-V3-stool	control		Study Control			FN
+5	SAMN04571689	M01.2-V3-stool	country	Luxembourg	Luxembourg			TP_correct
+5	SAMN04571689	M01.2-V3-stool	body_site	feces	feces	UBERON:0001988	UBERON:0001988	TP_correct
+5	SAMN04571689	M01.2-V3-stool	days_from_first_collection		62			FN
+5	SAMN04571689	M01.2-V3-stool	westernized		Yes			FN
+5	SAMN04571689	M01.2-V3-stool	dna_extraction_kit	MoBio	NorgenBiotek			TP_wrong
+5	SAMN04571689	M01.2-V3-stool	ncbi_accession	SRR3313079	SRR3313079			TP_correct
+5	SAMN04571689	M01.2-V3-stool	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq			TP_wrong
+5	SAMN04571689	M01.2-V3-stool	age		60			FN
+5	SAMN04571689	M01.2-V3-stool	age_group		Adult			FN
+5	SAMN04571689	M01.2-V3-stool	age_unit		Year			FN
+5	SAMN04571689	M01.2-V3-stool	sex	female	Female			TP_correct
+5	SAMN04571689	M01.2-V3-stool	age_min		60			FN
+5	SAMN04571689	M01.2-V3-stool	age_max		60			FN
+5	SAMN04571689	M01.2-V3-stool	age_years		60			FN
+5	SAMN04571689	M01.2-V3-stool	antibiotics_current_use		No			FN
+5	SAMN04571689	M01.2-V3-stool	bmi					TN
+5	SAMN04571689	M01.2-V3-stool	disease	type 1 diabetes mellitus	Healthy	NCIT:C2986	NCIT:C115935	TP_wrong
+5	SAMN04571689	M01.2-V3-stool	treatment	insulin replacement therapy		NCIT:C581		FP
+5	SAMN04571689	M01.2-V3-stool	biomarker_name		C-peptide;Cholesterol;Glucose			FN
+5	SAMN04571689	M01.2-V3-stool	biomarker_unit		ng/ml;mg/dL;mg/dL			FN
+5	SAMN04571689	M01.2-V3-stool	biomarker_value		1.7;323;94			FN
+5	SAMN04571689	M01.2-V3-stool	host_species	Homo sapiens	Homo sapiens			TP_correct
+6	SAMN04571690	M01.3-V1-stool	study_name	PRJNA289586	Heitz-BuschartA_2016			TP_wrong
+6	SAMN04571690	M01.3-V1-stool	subject_id		M01.3			FN
+6	SAMN04571690	M01.3-V1-stool	sample_id	SAMN04571690	M01.3-V1-stool			TP_wrong
+6	SAMN04571690	M01.3-V1-stool	curator		Paolo_Manghi			FN
+6	SAMN04571690	M01.3-V1-stool	pmid	27723761	27723761			TP_correct
+6	SAMN04571690	M01.3-V1-stool	target_condition	Type 1 diabetes mellitus	Type 1 Diabetes Mellitus			TP_correct
+6	SAMN04571690	M01.3-V1-stool	control		Study Control			FN
+6	SAMN04571690	M01.3-V1-stool	country	Luxembourg	Luxembourg			TP_correct
+6	SAMN04571690	M01.3-V1-stool	body_site	feces	feces	UBERON:0001988	UBERON:0001988	TP_correct
+6	SAMN04571690	M01.3-V1-stool	days_from_first_collection		0			FN
+6	SAMN04571690	M01.3-V1-stool	westernized		Yes			FN
+6	SAMN04571690	M01.3-V1-stool	dna_extraction_kit	MoBio	NorgenBiotek			TP_wrong
+6	SAMN04571690	M01.3-V1-stool	ncbi_accession	SRR3313090	SRR3313090			TP_correct
+6	SAMN04571690	M01.3-V1-stool	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq			TP_wrong
+6	SAMN04571690	M01.3-V1-stool	age		57			FN
+6	SAMN04571690	M01.3-V1-stool	age_group		Adult			FN
+6	SAMN04571690	M01.3-V1-stool	age_unit		Year			FN
+6	SAMN04571690	M01.3-V1-stool	sex	female	Female			TP_correct
+6	SAMN04571690	M01.3-V1-stool	age_min		57			FN
+6	SAMN04571690	M01.3-V1-stool	age_max		57			FN
+6	SAMN04571690	M01.3-V1-stool	age_years		57			FN
+6	SAMN04571690	M01.3-V1-stool	antibiotics_current_use					TN
+6	SAMN04571690	M01.3-V1-stool	bmi		37.12			FN
+6	SAMN04571690	M01.3-V1-stool	disease	type 1 diabetes mellitus	Healthy	NCIT:C2986	NCIT:C115935	TP_wrong
+6	SAMN04571690	M01.3-V1-stool	treatment	insulin replacement therapy	Antihypertensive Agents	NCIT:C581	SCDO:0000067	TP_wrong
+6	SAMN04571690	M01.3-V1-stool	biomarker_name		C-peptide;Cholesterol;Glucose			FN
+6	SAMN04571690	M01.3-V1-stool	biomarker_unit		ng/ml;mg/dL;mg/dL			FN
+6	SAMN04571690	M01.3-V1-stool	biomarker_value		2.4;218;104			FN
+6	SAMN04571690	M01.3-V1-stool	host_species	Homo sapiens	Homo sapiens			TP_correct
+7	SAMN04571691	M01.3-V2-stool	study_name	PRJNA289586	Heitz-BuschartA_2016			TP_wrong
+7	SAMN04571691	M01.3-V2-stool	subject_id		M01.3			FN
+7	SAMN04571691	M01.3-V2-stool	sample_id	SAMN04571691	M01.3-V2-stool			TP_wrong
+7	SAMN04571691	M01.3-V2-stool	curator		Paolo_Manghi			FN
+7	SAMN04571691	M01.3-V2-stool	pmid	27723761	27723761			TP_correct
+7	SAMN04571691	M01.3-V2-stool	target_condition	Type 1 diabetes mellitus	Type 1 Diabetes Mellitus			TP_correct
+7	SAMN04571691	M01.3-V2-stool	control		Study Control			FN
+7	SAMN04571691	M01.3-V2-stool	country	Luxembourg	Luxembourg			TP_correct
+7	SAMN04571691	M01.3-V2-stool	body_site	feces	feces	UBERON:0001988	UBERON:0001988	TP_correct
+7	SAMN04571691	M01.3-V2-stool	days_from_first_collection		28			FN
+7	SAMN04571691	M01.3-V2-stool	westernized		Yes			FN
+7	SAMN04571691	M01.3-V2-stool	dna_extraction_kit	MoBio	NorgenBiotek			TP_wrong
+7	SAMN04571691	M01.3-V2-stool	ncbi_accession	SRR3313102	SRR3313102			TP_correct
+7	SAMN04571691	M01.3-V2-stool	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq			TP_wrong
+7	SAMN04571691	M01.3-V2-stool	age		57			FN
+7	SAMN04571691	M01.3-V2-stool	age_group		Adult			FN
+7	SAMN04571691	M01.3-V2-stool	age_unit		Year			FN
+7	SAMN04571691	M01.3-V2-stool	sex	female	Female			TP_correct
+7	SAMN04571691	M01.3-V2-stool	age_min		57			FN
+7	SAMN04571691	M01.3-V2-stool	age_max		57			FN
+7	SAMN04571691	M01.3-V2-stool	age_years		57			FN
+7	SAMN04571691	M01.3-V2-stool	antibiotics_current_use					TN
+7	SAMN04571691	M01.3-V2-stool	bmi		37.21			FN
+7	SAMN04571691	M01.3-V2-stool	disease	type 1 diabetes mellitus	Healthy	NCIT:C2986	NCIT:C115935	TP_wrong
+7	SAMN04571691	M01.3-V2-stool	treatment	insulin replacement therapy	Antihypertensive Agents	NCIT:C581	SCDO:0000067	TP_wrong
+7	SAMN04571691	M01.3-V2-stool	biomarker_name		C-peptide;Cholesterol;Glucose			FN
+7	SAMN04571691	M01.3-V2-stool	biomarker_unit		ng/ml;mg/dL;mg/dL			FN
+7	SAMN04571691	M01.3-V2-stool	biomarker_value		2.4;202;89			FN
+7	SAMN04571691	M01.3-V2-stool	host_species	Homo sapiens	Homo sapiens			TP_correct
+8	SAMN04571692	M01.3-V3-stool	study_name	PRJNA289586	Heitz-BuschartA_2016			TP_wrong
+8	SAMN04571692	M01.3-V3-stool	subject_id		M01.3			FN
+8	SAMN04571692	M01.3-V3-stool	sample_id	SAMN04571692	M01.3-V3-stool			TP_wrong
+8	SAMN04571692	M01.3-V3-stool	curator		Paolo_Manghi			FN
+8	SAMN04571692	M01.3-V3-stool	pmid	27723761	27723761			TP_correct
+8	SAMN04571692	M01.3-V3-stool	target_condition	Type 1 diabetes mellitus	Type 1 Diabetes Mellitus			TP_correct
+8	SAMN04571692	M01.3-V3-stool	control		Study Control			FN
+8	SAMN04571692	M01.3-V3-stool	country	Luxembourg	Luxembourg			TP_correct
+8	SAMN04571692	M01.3-V3-stool	body_site	feces	feces	UBERON:0001988	UBERON:0001988	TP_correct
+8	SAMN04571692	M01.3-V3-stool	days_from_first_collection		62			FN
+8	SAMN04571692	M01.3-V3-stool	westernized		Yes			FN
+8	SAMN04571692	M01.3-V3-stool	dna_extraction_kit	MoBio	NorgenBiotek			TP_wrong
+8	SAMN04571692	M01.3-V3-stool	ncbi_accession	SRR3313113	SRR3313113			TP_correct
+8	SAMN04571692	M01.3-V3-stool	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq			TP_wrong
+8	SAMN04571692	M01.3-V3-stool	age		57			FN
+8	SAMN04571692	M01.3-V3-stool	age_group		Adult			FN
+8	SAMN04571692	M01.3-V3-stool	age_unit		Year			FN
+8	SAMN04571692	M01.3-V3-stool	sex	female	Female			TP_correct
+8	SAMN04571692	M01.3-V3-stool	age_min		57			FN
+8	SAMN04571692	M01.3-V3-stool	age_max		57			FN
+8	SAMN04571692	M01.3-V3-stool	age_years		57			FN
+8	SAMN04571692	M01.3-V3-stool	antibiotics_current_use		No			FN
+8	SAMN04571692	M01.3-V3-stool	bmi		36.99			FN
+8	SAMN04571692	M01.3-V3-stool	disease	type 1 diabetes mellitus	Healthy	NCIT:C2986	NCIT:C115935	TP_wrong
+8	SAMN04571692	M01.3-V3-stool	treatment	insulin replacement therapy		NCIT:C581		FP
+8	SAMN04571692	M01.3-V3-stool	biomarker_name		C-peptide;Cholesterol;Glucose			FN
+8	SAMN04571692	M01.3-V3-stool	biomarker_unit		ng/ml;mg/dL;mg/dL			FN
+8	SAMN04571692	M01.3-V3-stool	biomarker_value		2.3;305;92			FN
+8	SAMN04571692	M01.3-V3-stool	host_species	Homo sapiens	Homo sapiens			TP_correct
+9	SAMN04571693	M01.4-V1-stool	study_name	PRJNA289586	Heitz-BuschartA_2016			TP_wrong
+9	SAMN04571693	M01.4-V1-stool	subject_id		M01.4			FN
+9	SAMN04571693	M01.4-V1-stool	sample_id	SAMN04571693	M01.4-V1-stool			TP_wrong
+9	SAMN04571693	M01.4-V1-stool	curator		Paolo_Manghi			FN
+9	SAMN04571693	M01.4-V1-stool	pmid	27723761	27723761			TP_correct
+9	SAMN04571693	M01.4-V1-stool	target_condition	Type 1 diabetes mellitus	Type 1 Diabetes Mellitus			TP_correct
+9	SAMN04571693	M01.4-V1-stool	control		Case			FN
+9	SAMN04571693	M01.4-V1-stool	country	Luxembourg	Luxembourg			TP_correct
+9	SAMN04571693	M01.4-V1-stool	body_site	feces	feces	UBERON:0001988	UBERON:0001988	TP_correct
+9	SAMN04571693	M01.4-V1-stool	days_from_first_collection		0			FN
+9	SAMN04571693	M01.4-V1-stool	westernized		Yes			FN
+9	SAMN04571693	M01.4-V1-stool	dna_extraction_kit	MoBio	NorgenBiotek			TP_wrong
+9	SAMN04571693	M01.4-V1-stool	ncbi_accession	SRR3313123	SRR3313123			TP_correct
+9	SAMN04571693	M01.4-V1-stool	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq			TP_wrong
+9	SAMN04571693	M01.4-V1-stool	age		37			FN
+9	SAMN04571693	M01.4-V1-stool	age_group		Adult			FN
+9	SAMN04571693	M01.4-V1-stool	age_unit		Year			FN
+9	SAMN04571693	M01.4-V1-stool	sex	female	Female			TP_correct
+9	SAMN04571693	M01.4-V1-stool	age_min		37			FN
+9	SAMN04571693	M01.4-V1-stool	age_max		37			FN
+9	SAMN04571693	M01.4-V1-stool	age_years		37			FN
+9	SAMN04571693	M01.4-V1-stool	antibiotics_current_use					TN
+9	SAMN04571693	M01.4-V1-stool	bmi		36.52			FN
+9	SAMN04571693	M01.4-V1-stool	disease	type 1 diabetes mellitus	Type 1 Diabetes Mellitus	NCIT:C2986	NCIT:C2986	TP_correct
+9	SAMN04571693	M01.4-V1-stool	treatment	insulin replacement therapy	Antihypertensive Agents;Anti-diabetic Agent	NCIT:C581	NCIT:C29711|SCDO:0000067	TP_wrong
+9	SAMN04571693	M01.4-V1-stool	biomarker_name		Cholesterol;Glucose			FN
+9	SAMN04571693	M01.4-V1-stool	biomarker_unit		mg/dL;mg/dL			FN
+9	SAMN04571693	M01.4-V1-stool	biomarker_value		203;184			FN
+9	SAMN04571693	M01.4-V1-stool	host_species	Homo sapiens	Homo sapiens			TP_correct
+10	SAMN04571694	M01.4-V2-stool	study_name	PRJNA289586	Heitz-BuschartA_2016			TP_wrong
+10	SAMN04571694	M01.4-V2-stool	subject_id		M01.4			FN
+10	SAMN04571694	M01.4-V2-stool	sample_id	SAMN04571694	M01.4-V2-stool			TP_wrong
+10	SAMN04571694	M01.4-V2-stool	curator		Paolo_Manghi			FN
+10	SAMN04571694	M01.4-V2-stool	pmid	27723761	27723761			TP_correct
+10	SAMN04571694	M01.4-V2-stool	target_condition	Type 1 diabetes mellitus	Type 1 Diabetes Mellitus			TP_correct
+10	SAMN04571694	M01.4-V2-stool	control		Case			FN
+10	SAMN04571694	M01.4-V2-stool	country	Luxembourg	Luxembourg			TP_correct
+10	SAMN04571694	M01.4-V2-stool	body_site	feces	feces	UBERON:0001988	UBERON:0001988	TP_correct
+10	SAMN04571694	M01.4-V2-stool	days_from_first_collection		28			FN
+10	SAMN04571694	M01.4-V2-stool	westernized		Yes			FN
+10	SAMN04571694	M01.4-V2-stool	dna_extraction_kit	MoBio	NorgenBiotek			TP_wrong
+10	SAMN04571694	M01.4-V2-stool	ncbi_accession	SRR3313036	SRR3313036			TP_correct
+10	SAMN04571694	M01.4-V2-stool	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq			TP_wrong
+10	SAMN04571694	M01.4-V2-stool	age		37			FN
+10	SAMN04571694	M01.4-V2-stool	age_group		Adult			FN
+10	SAMN04571694	M01.4-V2-stool	age_unit		Year			FN
+10	SAMN04571694	M01.4-V2-stool	sex	female	Female			TP_correct
+10	SAMN04571694	M01.4-V2-stool	age_min		37			FN
+10	SAMN04571694	M01.4-V2-stool	age_max		37			FN
+10	SAMN04571694	M01.4-V2-stool	age_years		37			FN
+10	SAMN04571694	M01.4-V2-stool	antibiotics_current_use					TN
+10	SAMN04571694	M01.4-V2-stool	bmi		36.33			FN
+10	SAMN04571694	M01.4-V2-stool	disease	type 1 diabetes mellitus	Type 1 Diabetes Mellitus	NCIT:C2986	NCIT:C2986	TP_correct
+10	SAMN04571694	M01.4-V2-stool	treatment	insulin replacement therapy	Antihypertensive Agents;Anti-diabetic Agent	NCIT:C581	NCIT:C29711|SCDO:0000067	TP_wrong
+10	SAMN04571694	M01.4-V2-stool	biomarker_name		Cholesterol;Glucose			FN
+10	SAMN04571694	M01.4-V2-stool	biomarker_unit		mg/dL;mg/dL			FN
+10	SAMN04571694	M01.4-V2-stool	biomarker_value		198;151			FN
+10	SAMN04571694	M01.4-V2-stool	host_species	Homo sapiens	Homo sapiens			TP_correct
+11	SAMN04571695	M01.4-V3-stool	study_name	PRJNA289586	Heitz-BuschartA_2016			TP_wrong
+11	SAMN04571695	M01.4-V3-stool	subject_id		M01.4			FN
+11	SAMN04571695	M01.4-V3-stool	sample_id	SAMN04571695	M01.4-V3-stool			TP_wrong
+11	SAMN04571695	M01.4-V3-stool	curator		Paolo_Manghi			FN
+11	SAMN04571695	M01.4-V3-stool	pmid	27723761	27723761			TP_correct
+11	SAMN04571695	M01.4-V3-stool	target_condition	Type 1 diabetes mellitus	Type 1 Diabetes Mellitus			TP_correct
+11	SAMN04571695	M01.4-V3-stool	control		Case			FN
+11	SAMN04571695	M01.4-V3-stool	country	Luxembourg	Luxembourg			TP_correct
+11	SAMN04571695	M01.4-V3-stool	body_site	feces	feces	UBERON:0001988	UBERON:0001988	TP_correct
+11	SAMN04571695	M01.4-V3-stool	days_from_first_collection		62			FN
+11	SAMN04571695	M01.4-V3-stool	westernized		Yes			FN
+11	SAMN04571695	M01.4-V3-stool	dna_extraction_kit	MoBio	NorgenBiotek			TP_wrong
+11	SAMN04571695	M01.4-V3-stool	ncbi_accession	SRR3313037	SRR3313037			TP_correct
+11	SAMN04571695	M01.4-V3-stool	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq			TP_wrong
+11	SAMN04571695	M01.4-V3-stool	age		37			FN
+11	SAMN04571695	M01.4-V3-stool	age_group		Adult			FN
+11	SAMN04571695	M01.4-V3-stool	age_unit		Year			FN
+11	SAMN04571695	M01.4-V3-stool	sex	female	Female			TP_correct
+11	SAMN04571695	M01.4-V3-stool	age_min		37			FN
+11	SAMN04571695	M01.4-V3-stool	age_max		37			FN
+11	SAMN04571695	M01.4-V3-stool	age_years		37			FN
+11	SAMN04571695	M01.4-V3-stool	antibiotics_current_use					TN
+11	SAMN04571695	M01.4-V3-stool	bmi		37.11			FN
+11	SAMN04571695	M01.4-V3-stool	disease	type 1 diabetes mellitus	Type 1 Diabetes Mellitus	NCIT:C2986	NCIT:C2986	TP_correct
+11	SAMN04571695	M01.4-V3-stool	treatment	insulin replacement therapy	Antihypertensive Agents;Anti-diabetic Agent	NCIT:C581	NCIT:C29711|SCDO:0000067	TP_wrong
+11	SAMN04571695	M01.4-V3-stool	biomarker_name		Cholesterol;Glucose			FN
+11	SAMN04571695	M01.4-V3-stool	biomarker_unit		mg/dL;mg/dL			FN
+11	SAMN04571695	M01.4-V3-stool	biomarker_value		215;219			FN
+11	SAMN04571695	M01.4-V3-stool	host_species	Homo sapiens	Homo sapiens			TP_correct
+12	SAMN04571696	M01.5-V2-stool	study_name	PRJNA289586	Heitz-BuschartA_2016			TP_wrong
+12	SAMN04571696	M01.5-V2-stool	subject_id		M01.5			FN
+12	SAMN04571696	M01.5-V2-stool	sample_id	SAMN04571696	M01.5-V2-stool			TP_wrong
+12	SAMN04571696	M01.5-V2-stool	curator		Paolo_Manghi			FN
+12	SAMN04571696	M01.5-V2-stool	pmid	27723761	27723761			TP_correct
+12	SAMN04571696	M01.5-V2-stool	target_condition	Type 1 diabetes mellitus	Type 1 Diabetes Mellitus			TP_correct
+12	SAMN04571696	M01.5-V2-stool	control		Study Control			FN
+12	SAMN04571696	M01.5-V2-stool	country	Luxembourg	Luxembourg			TP_correct
+12	SAMN04571696	M01.5-V2-stool	body_site	feces	feces	UBERON:0001988	UBERON:0001988	TP_correct
+12	SAMN04571696	M01.5-V2-stool	days_from_first_collection		0			FN
+12	SAMN04571696	M01.5-V2-stool	westernized		Yes			FN
+12	SAMN04571696	M01.5-V2-stool	dna_extraction_kit	MoBio	NorgenBiotek			TP_wrong
+12	SAMN04571696	M01.5-V2-stool	ncbi_accession	SRR3313038	SRR3313038			TP_correct
+12	SAMN04571696	M01.5-V2-stool	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq			TP_wrong
+12	SAMN04571696	M01.5-V2-stool	age		6			FN
+12	SAMN04571696	M01.5-V2-stool	age_group		Child			FN
+12	SAMN04571696	M01.5-V2-stool	age_unit		Year			FN
+12	SAMN04571696	M01.5-V2-stool	sex	male	Male			TP_correct
+12	SAMN04571696	M01.5-V2-stool	age_min		6			FN
+12	SAMN04571696	M01.5-V2-stool	age_max		6			FN
+12	SAMN04571696	M01.5-V2-stool	age_years		6			FN
+12	SAMN04571696	M01.5-V2-stool	antibiotics_current_use		No			FN
+12	SAMN04571696	M01.5-V2-stool	bmi		18.31			FN
+12	SAMN04571696	M01.5-V2-stool	disease	type 1 diabetes mellitus	Healthy	NCIT:C2986	NCIT:C115935	TP_wrong
+12	SAMN04571696	M01.5-V2-stool	treatment	insulin replacement therapy		NCIT:C581		FP
+12	SAMN04571696	M01.5-V2-stool	biomarker_name		C-peptide;Cholesterol;Glucose			FN
+12	SAMN04571696	M01.5-V2-stool	biomarker_unit		ng/ml;mg/dL;mg/dL			FN
+12	SAMN04571696	M01.5-V2-stool	biomarker_value		1.4;194;90			FN
+12	SAMN04571696	M01.5-V2-stool	host_species	Homo sapiens	Homo sapiens			TP_correct
+13	SAMN04571697	M01.5-V3-stool	study_name	PRJNA289586	Heitz-BuschartA_2016			TP_wrong
+13	SAMN04571697	M01.5-V3-stool	subject_id		M01.5			FN
+13	SAMN04571697	M01.5-V3-stool	sample_id	SAMN04571697	M01.5-V3-stool			TP_wrong
+13	SAMN04571697	M01.5-V3-stool	curator		Paolo_Manghi			FN
+13	SAMN04571697	M01.5-V3-stool	pmid	27723761	27723761			TP_correct
+13	SAMN04571697	M01.5-V3-stool	target_condition	Type 1 diabetes mellitus	Type 1 Diabetes Mellitus			TP_correct
+13	SAMN04571697	M01.5-V3-stool	control		Study Control			FN
+13	SAMN04571697	M01.5-V3-stool	country	Luxembourg	Luxembourg			TP_correct
+13	SAMN04571697	M01.5-V3-stool	body_site	feces	feces	UBERON:0001988	UBERON:0001988	TP_correct
+13	SAMN04571697	M01.5-V3-stool	days_from_first_collection		34			FN
+13	SAMN04571697	M01.5-V3-stool	westernized		Yes			FN
+13	SAMN04571697	M01.5-V3-stool	dna_extraction_kit	MoBio	NorgenBiotek			TP_wrong
+13	SAMN04571697	M01.5-V3-stool	ncbi_accession	SRR3313039	SRR3313039			TP_correct
+13	SAMN04571697	M01.5-V3-stool	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq			TP_wrong
+13	SAMN04571697	M01.5-V3-stool	age		6			FN
+13	SAMN04571697	M01.5-V3-stool	age_group		Child			FN
+13	SAMN04571697	M01.5-V3-stool	age_unit		Year			FN
+13	SAMN04571697	M01.5-V3-stool	sex	male	Male			TP_correct
+13	SAMN04571697	M01.5-V3-stool	age_min		6			FN
+13	SAMN04571697	M01.5-V3-stool	age_max		6			FN
+13	SAMN04571697	M01.5-V3-stool	age_years		6			FN
+13	SAMN04571697	M01.5-V3-stool	antibiotics_current_use		No			FN
+13	SAMN04571697	M01.5-V3-stool	bmi					TN
+13	SAMN04571697	M01.5-V3-stool	disease	type 1 diabetes mellitus	Healthy	NCIT:C2986	NCIT:C115935	TP_wrong
+13	SAMN04571697	M01.5-V3-stool	treatment	insulin replacement therapy		NCIT:C581		FP
+13	SAMN04571697	M01.5-V3-stool	biomarker_name					TN
+13	SAMN04571697	M01.5-V3-stool	biomarker_unit					TN
+13	SAMN04571697	M01.5-V3-stool	biomarker_value					TN
+13	SAMN04571697	M01.5-V3-stool	host_species	Homo sapiens	Homo sapiens			TP_correct
+14	SAMN04571698	M02.1-V1-stool	study_name	PRJNA289586	Heitz-BuschartA_2016			TP_wrong
+14	SAMN04571698	M02.1-V1-stool	subject_id		M02.1			FN
+14	SAMN04571698	M02.1-V1-stool	sample_id	SAMN04571698	M02.1-V1-stool			TP_wrong
+14	SAMN04571698	M02.1-V1-stool	curator		Paolo_Manghi			FN
+14	SAMN04571698	M02.1-V1-stool	pmid	27723761	27723761			TP_correct
+14	SAMN04571698	M02.1-V1-stool	target_condition	Type 1 diabetes mellitus	Type 1 Diabetes Mellitus			TP_correct
+14	SAMN04571698	M02.1-V1-stool	control		Case			FN
+14	SAMN04571698	M02.1-V1-stool	country	Luxembourg	Luxembourg			TP_correct
+14	SAMN04571698	M02.1-V1-stool	body_site	feces	feces	UBERON:0001988	UBERON:0001988	TP_correct
+14	SAMN04571698	M02.1-V1-stool	days_from_first_collection		0			FN
+14	SAMN04571698	M02.1-V1-stool	westernized		Yes			FN
+14	SAMN04571698	M02.1-V1-stool	dna_extraction_kit	MoBio	NorgenBiotek			TP_wrong
+14	SAMN04571698	M02.1-V1-stool	ncbi_accession	SRR3313040	SRR3313040			TP_correct
+14	SAMN04571698	M02.1-V1-stool	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq			TP_wrong
+14	SAMN04571698	M02.1-V1-stool	age		58			FN
+14	SAMN04571698	M02.1-V1-stool	age_group		Adult			FN
+14	SAMN04571698	M02.1-V1-stool	age_unit		Year			FN
+14	SAMN04571698	M02.1-V1-stool	sex	male	Male			TP_correct
+14	SAMN04571698	M02.1-V1-stool	age_min		58			FN
+14	SAMN04571698	M02.1-V1-stool	age_max		58			FN
+14	SAMN04571698	M02.1-V1-stool	age_years		58			FN
+14	SAMN04571698	M02.1-V1-stool	antibiotics_current_use					TN
+14	SAMN04571698	M02.1-V1-stool	bmi		23.17			FN
+14	SAMN04571698	M02.1-V1-stool	disease	type 1 diabetes mellitus	Type 1 Diabetes Mellitus	NCIT:C2986	NCIT:C2986	TP_correct
+14	SAMN04571698	M02.1-V1-stool	treatment	insulin replacement therapy	Anti-diabetic Agent	NCIT:C581	NCIT:C29711	TP_wrong
+14	SAMN04571698	M02.1-V1-stool	biomarker_name		Cholesterol;Glucose			FN
+14	SAMN04571698	M02.1-V1-stool	biomarker_unit		mg/dL;mg/dL			FN
+14	SAMN04571698	M02.1-V1-stool	biomarker_value		200;174			FN
+14	SAMN04571698	M02.1-V1-stool	host_species	Homo sapiens	Homo sapiens			TP_correct
+15	SAMN04571699	M02.1-V2-stool	study_name	PRJNA289586	Heitz-BuschartA_2016			TP_wrong
+15	SAMN04571699	M02.1-V2-stool	subject_id		M02.1			FN
+15	SAMN04571699	M02.1-V2-stool	sample_id	SAMN04571699	M02.1-V2-stool			TP_wrong
+15	SAMN04571699	M02.1-V2-stool	curator		Paolo_Manghi			FN
+15	SAMN04571699	M02.1-V2-stool	pmid	27723761	27723761			TP_correct
+15	SAMN04571699	M02.1-V2-stool	target_condition	Type 1 diabetes mellitus	Type 1 Diabetes Mellitus			TP_correct
+15	SAMN04571699	M02.1-V2-stool	control		Case			FN
+15	SAMN04571699	M02.1-V2-stool	country	Luxembourg	Luxembourg			TP_correct
+15	SAMN04571699	M02.1-V2-stool	body_site	feces	feces	UBERON:0001988	UBERON:0001988	TP_correct
+15	SAMN04571699	M02.1-V2-stool	days_from_first_collection		28			FN
+15	SAMN04571699	M02.1-V2-stool	westernized		Yes			FN
+15	SAMN04571699	M02.1-V2-stool	dna_extraction_kit	MoBio	NorgenBiotek			TP_wrong
+15	SAMN04571699	M02.1-V2-stool	ncbi_accession	SRR3313041	SRR3313041			TP_correct
+15	SAMN04571699	M02.1-V2-stool	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq			TP_wrong
+15	SAMN04571699	M02.1-V2-stool	age		58			FN
+15	SAMN04571699	M02.1-V2-stool	age_group		Adult			FN
+15	SAMN04571699	M02.1-V2-stool	age_unit		Year			FN
+15	SAMN04571699	M02.1-V2-stool	sex	male	Male			TP_correct
+15	SAMN04571699	M02.1-V2-stool	age_min		58			FN
+15	SAMN04571699	M02.1-V2-stool	age_max		58			FN
+15	SAMN04571699	M02.1-V2-stool	age_years		58			FN
+15	SAMN04571699	M02.1-V2-stool	antibiotics_current_use					TN
+15	SAMN04571699	M02.1-V2-stool	bmi		23.13			FN
+15	SAMN04571699	M02.1-V2-stool	disease	type 1 diabetes mellitus	Type 1 Diabetes Mellitus	NCIT:C2986	NCIT:C2986	TP_correct
+15	SAMN04571699	M02.1-V2-stool	treatment	insulin replacement therapy	Anti-diabetic Agent	NCIT:C581	NCIT:C29711	TP_wrong
+15	SAMN04571699	M02.1-V2-stool	biomarker_name		Cholesterol;Glucose			FN
+15	SAMN04571699	M02.1-V2-stool	biomarker_unit		mg/dL;mg/dL			FN
+15	SAMN04571699	M02.1-V2-stool	biomarker_value		179;182			FN
+15	SAMN04571699	M02.1-V2-stool	host_species	Homo sapiens	Homo sapiens			TP_correct
+16	SAMN04571700	M02.1-V3-stool	study_name	PRJNA289586	Heitz-BuschartA_2016			TP_wrong
+16	SAMN04571700	M02.1-V3-stool	subject_id		M02.1			FN
+16	SAMN04571700	M02.1-V3-stool	sample_id	SAMN04571700	M02.1-V3-stool			TP_wrong
+16	SAMN04571700	M02.1-V3-stool	curator		Paolo_Manghi			FN
+16	SAMN04571700	M02.1-V3-stool	pmid	27723761	27723761			TP_correct
+16	SAMN04571700	M02.1-V3-stool	target_condition	Type 1 diabetes mellitus	Type 1 Diabetes Mellitus			TP_correct
+16	SAMN04571700	M02.1-V3-stool	control		Case			FN
+16	SAMN04571700	M02.1-V3-stool	country	Luxembourg	Luxembourg			TP_correct
+16	SAMN04571700	M02.1-V3-stool	body_site	feces	feces	UBERON:0001988	UBERON:0001988	TP_correct
+16	SAMN04571700	M02.1-V3-stool	days_from_first_collection		56			FN
+16	SAMN04571700	M02.1-V3-stool	westernized		Yes			FN
+16	SAMN04571700	M02.1-V3-stool	dna_extraction_kit	MoBio	NorgenBiotek			TP_wrong
+16	SAMN04571700	M02.1-V3-stool	ncbi_accession	SRR3313042	SRR3313042			TP_correct
+16	SAMN04571700	M02.1-V3-stool	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq			TP_wrong
+16	SAMN04571700	M02.1-V3-stool	age		58			FN
+16	SAMN04571700	M02.1-V3-stool	age_group		Adult			FN
+16	SAMN04571700	M02.1-V3-stool	age_unit		Year			FN
+16	SAMN04571700	M02.1-V3-stool	sex	male	Male			TP_correct
+16	SAMN04571700	M02.1-V3-stool	age_min		58			FN
+16	SAMN04571700	M02.1-V3-stool	age_max		58			FN
+16	SAMN04571700	M02.1-V3-stool	age_years		58			FN
+16	SAMN04571700	M02.1-V3-stool	antibiotics_current_use					TN
+16	SAMN04571700	M02.1-V3-stool	bmi		23.25			FN
+16	SAMN04571700	M02.1-V3-stool	disease	type 1 diabetes mellitus	Type 1 Diabetes Mellitus	NCIT:C2986	NCIT:C2986	TP_correct
+16	SAMN04571700	M02.1-V3-stool	treatment	insulin replacement therapy	Anti-diabetic Agent	NCIT:C581	NCIT:C29711	TP_wrong
+16	SAMN04571700	M02.1-V3-stool	biomarker_name		Cholesterol;Glucose			FN
+16	SAMN04571700	M02.1-V3-stool	biomarker_unit		mg/dL;mg/dL			FN
+16	SAMN04571700	M02.1-V3-stool	biomarker_value		163;165			FN
+16	SAMN04571700	M02.1-V3-stool	host_species	Homo sapiens	Homo sapiens			TP_correct
+17	SAMN04571701	M02.2-V1-stool	study_name	PRJNA289586	Heitz-BuschartA_2016			TP_wrong
+17	SAMN04571701	M02.2-V1-stool	subject_id		M02.2			FN
+17	SAMN04571701	M02.2-V1-stool	sample_id	SAMN04571701	M02.2-V1-stool			TP_wrong
+17	SAMN04571701	M02.2-V1-stool	curator		Paolo_Manghi			FN
+17	SAMN04571701	M02.2-V1-stool	pmid	27723761	27723761			TP_correct
+17	SAMN04571701	M02.2-V1-stool	target_condition	Type 1 diabetes mellitus	Type 1 Diabetes Mellitus			TP_correct
+17	SAMN04571701	M02.2-V1-stool	control		Case			FN
+17	SAMN04571701	M02.2-V1-stool	country	Luxembourg	Luxembourg			TP_correct
+17	SAMN04571701	M02.2-V1-stool	body_site	feces	feces	UBERON:0001988	UBERON:0001988	TP_correct
+17	SAMN04571701	M02.2-V1-stool	days_from_first_collection		0			FN
+17	SAMN04571701	M02.2-V1-stool	westernized		Yes			FN
+17	SAMN04571701	M02.2-V1-stool	dna_extraction_kit	MoBio	NorgenBiotek			TP_wrong
+17	SAMN04571701	M02.2-V1-stool	ncbi_accession	SRR3313043	SRR3313043			TP_correct
+17	SAMN04571701	M02.2-V1-stool	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq			TP_wrong
+17	SAMN04571701	M02.2-V1-stool	age		24			FN
+17	SAMN04571701	M02.2-V1-stool	age_group		Adult			FN
+17	SAMN04571701	M02.2-V1-stool	age_unit		Year			FN
+17	SAMN04571701	M02.2-V1-stool	sex	female	Female			TP_correct
+17	SAMN04571701	M02.2-V1-stool	age_min		24			FN
+17	SAMN04571701	M02.2-V1-stool	age_max		24			FN
+17	SAMN04571701	M02.2-V1-stool	age_years		24			FN
+17	SAMN04571701	M02.2-V1-stool	antibiotics_current_use					TN
+17	SAMN04571701	M02.2-V1-stool	bmi		19.54			FN
+17	SAMN04571701	M02.2-V1-stool	disease	type 1 diabetes mellitus	Type 1 Diabetes Mellitus	NCIT:C2986	NCIT:C2986	TP_correct
+17	SAMN04571701	M02.2-V1-stool	treatment	insulin replacement therapy	Anti-diabetic Agent	NCIT:C581	NCIT:C29711	TP_wrong
+17	SAMN04571701	M02.2-V1-stool	biomarker_name		Cholesterol;Glucose			FN
+17	SAMN04571701	M02.2-V1-stool	biomarker_unit		mg/dL;mg/dL			FN
+17	SAMN04571701	M02.2-V1-stool	biomarker_value		216;202			FN
+17	SAMN04571701	M02.2-V1-stool	host_species	Homo sapiens	Homo sapiens			TP_correct
+18	SAMN04571702	M02.2-V2-stool	study_name	PRJNA289586	Heitz-BuschartA_2016			TP_wrong
+18	SAMN04571702	M02.2-V2-stool	subject_id		M02.2			FN
+18	SAMN04571702	M02.2-V2-stool	sample_id	SAMN04571702	M02.2-V2-stool			TP_wrong
+18	SAMN04571702	M02.2-V2-stool	curator		Paolo_Manghi			FN
+18	SAMN04571702	M02.2-V2-stool	pmid	27723761	27723761			TP_correct
+18	SAMN04571702	M02.2-V2-stool	target_condition	Type 1 diabetes mellitus	Type 1 Diabetes Mellitus			TP_correct
+18	SAMN04571702	M02.2-V2-stool	control		Case			FN
+18	SAMN04571702	M02.2-V2-stool	country	Luxembourg	Luxembourg			TP_correct
+18	SAMN04571702	M02.2-V2-stool	body_site	feces	feces	UBERON:0001988	UBERON:0001988	TP_correct
+18	SAMN04571702	M02.2-V2-stool	days_from_first_collection		8			FN
+18	SAMN04571702	M02.2-V2-stool	westernized		Yes			FN
+18	SAMN04571702	M02.2-V2-stool	dna_extraction_kit	MoBio	NorgenBiotek			TP_wrong
+18	SAMN04571702	M02.2-V2-stool	ncbi_accession	SRR3313044	SRR3313044			TP_correct
+18	SAMN04571702	M02.2-V2-stool	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq			TP_wrong
+18	SAMN04571702	M02.2-V2-stool	age		24			FN
+18	SAMN04571702	M02.2-V2-stool	age_group		Adult			FN
+18	SAMN04571702	M02.2-V2-stool	age_unit		Year			FN
+18	SAMN04571702	M02.2-V2-stool	sex	female	Female			TP_correct
+18	SAMN04571702	M02.2-V2-stool	age_min		24			FN
+18	SAMN04571702	M02.2-V2-stool	age_max		24			FN
+18	SAMN04571702	M02.2-V2-stool	age_years		24			FN
+18	SAMN04571702	M02.2-V2-stool	antibiotics_current_use					TN
+18	SAMN04571702	M02.2-V2-stool	bmi		19.44			FN
+18	SAMN04571702	M02.2-V2-stool	disease	type 1 diabetes mellitus	Type 1 Diabetes Mellitus	NCIT:C2986	NCIT:C2986	TP_correct
+18	SAMN04571702	M02.2-V2-stool	treatment	insulin replacement therapy	Anti-diabetic Agent	NCIT:C581	NCIT:C29711	TP_wrong
+18	SAMN04571702	M02.2-V2-stool	biomarker_name		Cholesterol;Glucose			FN
+18	SAMN04571702	M02.2-V2-stool	biomarker_unit		mg/dL;mg/dL			FN
+18	SAMN04571702	M02.2-V2-stool	biomarker_value		213;162			FN
+18	SAMN04571702	M02.2-V2-stool	host_species	Homo sapiens	Homo sapiens			TP_correct
+19	SAMN04571703	M02.2-V3-stool	study_name	PRJNA289586	Heitz-BuschartA_2016			TP_wrong
+19	SAMN04571703	M02.2-V3-stool	subject_id		M02.2			FN
+19	SAMN04571703	M02.2-V3-stool	sample_id	SAMN04571703	M02.2-V3-stool			TP_wrong
+19	SAMN04571703	M02.2-V3-stool	curator		Paolo_Manghi			FN
+19	SAMN04571703	M02.2-V3-stool	pmid	27723761	27723761			TP_correct
+19	SAMN04571703	M02.2-V3-stool	target_condition	Type 1 diabetes mellitus	Type 1 Diabetes Mellitus			TP_correct
+19	SAMN04571703	M02.2-V3-stool	control		Case			FN
+19	SAMN04571703	M02.2-V3-stool	country	Luxembourg	Luxembourg			TP_correct
+19	SAMN04571703	M02.2-V3-stool	body_site	feces	feces	UBERON:0001988	UBERON:0001988	TP_correct
+19	SAMN04571703	M02.2-V3-stool	days_from_first_collection		31			FN
+19	SAMN04571703	M02.2-V3-stool	westernized		Yes			FN
+19	SAMN04571703	M02.2-V3-stool	dna_extraction_kit	MoBio	NorgenBiotek			TP_wrong
+19	SAMN04571703	M02.2-V3-stool	ncbi_accession	SRR3313045	SRR3313045			TP_correct
+19	SAMN04571703	M02.2-V3-stool	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq			TP_wrong
+19	SAMN04571703	M02.2-V3-stool	age		24			FN
+19	SAMN04571703	M02.2-V3-stool	age_group		Adult			FN
+19	SAMN04571703	M02.2-V3-stool	age_unit		Year			FN
+19	SAMN04571703	M02.2-V3-stool	sex	female	Female			TP_correct
+19	SAMN04571703	M02.2-V3-stool	age_min		24			FN
+19	SAMN04571703	M02.2-V3-stool	age_max		24			FN
+19	SAMN04571703	M02.2-V3-stool	age_years		24			FN
+19	SAMN04571703	M02.2-V3-stool	antibiotics_current_use					TN
+19	SAMN04571703	M02.2-V3-stool	bmi		19.22			FN
+19	SAMN04571703	M02.2-V3-stool	disease	type 1 diabetes mellitus	Type 1 Diabetes Mellitus	NCIT:C2986	NCIT:C2986	TP_correct
+19	SAMN04571703	M02.2-V3-stool	treatment	insulin replacement therapy	Anti-diabetic Agent	NCIT:C581	NCIT:C29711	TP_wrong
+19	SAMN04571703	M02.2-V3-stool	biomarker_name		Cholesterol;Glucose			FN
+19	SAMN04571703	M02.2-V3-stool	biomarker_unit		mg/dL;mg/dL			FN
+19	SAMN04571703	M02.2-V3-stool	biomarker_value		208;263			FN
+19	SAMN04571703	M02.2-V3-stool	host_species	Homo sapiens	Homo sapiens			TP_correct
+20	SAMN04571704	M02.3-V1-stool	study_name	PRJNA289586	Heitz-BuschartA_2016			TP_wrong
+20	SAMN04571704	M02.3-V1-stool	subject_id		M02.3			FN
+20	SAMN04571704	M02.3-V1-stool	sample_id	SAMN04571704	M02.3-V1-stool			TP_wrong
+20	SAMN04571704	M02.3-V1-stool	curator		Paolo_Manghi			FN
+20	SAMN04571704	M02.3-V1-stool	pmid	27723761	27723761			TP_correct
+20	SAMN04571704	M02.3-V1-stool	target_condition	Type 1 diabetes mellitus	Type 1 Diabetes Mellitus			TP_correct
+20	SAMN04571704	M02.3-V1-stool	control		Case			FN
+20	SAMN04571704	M02.3-V1-stool	country	Luxembourg	Luxembourg			TP_correct
+20	SAMN04571704	M02.3-V1-stool	body_site	feces	feces	UBERON:0001988	UBERON:0001988	TP_correct
+20	SAMN04571704	M02.3-V1-stool	days_from_first_collection		0			FN
+20	SAMN04571704	M02.3-V1-stool	westernized		Yes			FN
+20	SAMN04571704	M02.3-V1-stool	dna_extraction_kit	MoBio	NorgenBiotek			TP_wrong
+20	SAMN04571704	M02.3-V1-stool	ncbi_accession	SRR3313047	SRR3313047			TP_correct
+20	SAMN04571704	M02.3-V1-stool	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq			TP_wrong
+20	SAMN04571704	M02.3-V1-stool	age		30			FN
+20	SAMN04571704	M02.3-V1-stool	age_group		Adult			FN
+20	SAMN04571704	M02.3-V1-stool	age_unit		Year			FN
+20	SAMN04571704	M02.3-V1-stool	sex	male	Male			TP_correct
+20	SAMN04571704	M02.3-V1-stool	age_min		30			FN
+20	SAMN04571704	M02.3-V1-stool	age_max		30			FN
+20	SAMN04571704	M02.3-V1-stool	age_years		30			FN
+20	SAMN04571704	M02.3-V1-stool	antibiotics_current_use					TN
+20	SAMN04571704	M02.3-V1-stool	bmi		20.9			FN
+20	SAMN04571704	M02.3-V1-stool	disease	type 1 diabetes mellitus	Type 1 Diabetes Mellitus	NCIT:C2986	NCIT:C2986	TP_correct
+20	SAMN04571704	M02.3-V1-stool	treatment	insulin replacement therapy	Anti-diabetic Agent	NCIT:C581	NCIT:C29711	TP_wrong
+20	SAMN04571704	M02.3-V1-stool	biomarker_name		C-peptide;Cholesterol;Glucose			FN
+20	SAMN04571704	M02.3-V1-stool	biomarker_unit		ng/ml;mg/dL;mg/dL			FN
+20	SAMN04571704	M02.3-V1-stool	biomarker_value		0.19;181;128			FN
+20	SAMN04571704	M02.3-V1-stool	host_species	Homo sapiens	Homo sapiens			TP_correct
+21	SAMN04571705	M02.3-V2-stool	study_name	PRJNA289586	Heitz-BuschartA_2016			TP_wrong
+21	SAMN04571705	M02.3-V2-stool	subject_id		M02.3			FN
+21	SAMN04571705	M02.3-V2-stool	sample_id	SAMN04571705	M02.3-V2-stool			TP_wrong
+21	SAMN04571705	M02.3-V2-stool	curator		Paolo_Manghi			FN
+21	SAMN04571705	M02.3-V2-stool	pmid	27723761	27723761			TP_correct
+21	SAMN04571705	M02.3-V2-stool	target_condition	Type 1 diabetes mellitus	Type 1 Diabetes Mellitus			TP_correct
+21	SAMN04571705	M02.3-V2-stool	control		Case			FN
+21	SAMN04571705	M02.3-V2-stool	country	Luxembourg	Luxembourg			TP_correct
+21	SAMN04571705	M02.3-V2-stool	body_site	feces	feces	UBERON:0001988	UBERON:0001988	TP_correct
+21	SAMN04571705	M02.3-V2-stool	days_from_first_collection		28			FN
+21	SAMN04571705	M02.3-V2-stool	westernized		Yes			FN
+21	SAMN04571705	M02.3-V2-stool	dna_extraction_kit	MoBio	NorgenBiotek			TP_wrong
+21	SAMN04571705	M02.3-V2-stool	ncbi_accession	SRR3313048	SRR3313048			TP_correct
+21	SAMN04571705	M02.3-V2-stool	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq			TP_wrong
+21	SAMN04571705	M02.3-V2-stool	age		30			FN
+21	SAMN04571705	M02.3-V2-stool	age_group		Adult			FN
+21	SAMN04571705	M02.3-V2-stool	age_unit		Year			FN
+21	SAMN04571705	M02.3-V2-stool	sex	male	Male			TP_correct
+21	SAMN04571705	M02.3-V2-stool	age_min		30			FN
+21	SAMN04571705	M02.3-V2-stool	age_max		30			FN
+21	SAMN04571705	M02.3-V2-stool	age_years		30			FN
+21	SAMN04571705	M02.3-V2-stool	antibiotics_current_use					TN
+21	SAMN04571705	M02.3-V2-stool	bmi		20.23			FN
+21	SAMN04571705	M02.3-V2-stool	disease	type 1 diabetes mellitus	Type 1 Diabetes Mellitus	NCIT:C2986	NCIT:C2986	TP_correct
+21	SAMN04571705	M02.3-V2-stool	treatment	insulin replacement therapy	Anti-diabetic Agent	NCIT:C581	NCIT:C29711	TP_wrong
+21	SAMN04571705	M02.3-V2-stool	biomarker_name		C-peptide;Cholesterol;Glucose			FN
+21	SAMN04571705	M02.3-V2-stool	biomarker_unit		ng/ml;mg/dL;mg/dL			FN
+21	SAMN04571705	M02.3-V2-stool	biomarker_value		0.17;174;118			FN
+21	SAMN04571705	M02.3-V2-stool	host_species	Homo sapiens	Homo sapiens			TP_correct
+22	SAMN04571706	M02.3-V3-stool	study_name	PRJNA289586	Heitz-BuschartA_2016			TP_wrong
+22	SAMN04571706	M02.3-V3-stool	subject_id		M02.3			FN
+22	SAMN04571706	M02.3-V3-stool	sample_id	SAMN04571706	M02.3-V3-stool			TP_wrong
+22	SAMN04571706	M02.3-V3-stool	curator		Paolo_Manghi			FN
+22	SAMN04571706	M02.3-V3-stool	pmid	27723761	27723761			TP_correct
+22	SAMN04571706	M02.3-V3-stool	target_condition	Type 1 diabetes mellitus	Type 1 Diabetes Mellitus			TP_correct
+22	SAMN04571706	M02.3-V3-stool	control		Case			FN
+22	SAMN04571706	M02.3-V3-stool	country	Luxembourg	Luxembourg			TP_correct
+22	SAMN04571706	M02.3-V3-stool	body_site	feces	feces	UBERON:0001988	UBERON:0001988	TP_correct
+22	SAMN04571706	M02.3-V3-stool	days_from_first_collection		50			FN
+22	SAMN04571706	M02.3-V3-stool	westernized		Yes			FN
+22	SAMN04571706	M02.3-V3-stool	dna_extraction_kit	MoBio	NorgenBiotek			TP_wrong
+22	SAMN04571706	M02.3-V3-stool	ncbi_accession	SRR3313049	SRR3313049			TP_correct
+22	SAMN04571706	M02.3-V3-stool	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq			TP_wrong
+22	SAMN04571706	M02.3-V3-stool	age		30			FN
+22	SAMN04571706	M02.3-V3-stool	age_group		Adult			FN
+22	SAMN04571706	M02.3-V3-stool	age_unit		Year			FN
+22	SAMN04571706	M02.3-V3-stool	sex	male	Male			TP_correct
+22	SAMN04571706	M02.3-V3-stool	age_min		30			FN
+22	SAMN04571706	M02.3-V3-stool	age_max		30			FN
+22	SAMN04571706	M02.3-V3-stool	age_years		30			FN
+22	SAMN04571706	M02.3-V3-stool	antibiotics_current_use					TN
+22	SAMN04571706	M02.3-V3-stool	bmi		20.28			FN
+22	SAMN04571706	M02.3-V3-stool	disease	type 1 diabetes mellitus	Type 1 Diabetes Mellitus	NCIT:C2986	NCIT:C2986	TP_correct
+22	SAMN04571706	M02.3-V3-stool	treatment	insulin replacement therapy	Anti-diabetic Agent	NCIT:C581	NCIT:C29711	TP_wrong
+22	SAMN04571706	M02.3-V3-stool	biomarker_name		C-peptide;Cholesterol;Glucose			FN
+22	SAMN04571706	M02.3-V3-stool	biomarker_unit		ng/ml;mg/dL;mg/dL			FN
+22	SAMN04571706	M02.3-V3-stool	biomarker_value		0.18;167;119			FN
+22	SAMN04571706	M02.3-V3-stool	host_species	Homo sapiens	Homo sapiens			TP_correct
+23	SAMN04571707	M02.4-V1-stool	study_name	PRJNA289586	Heitz-BuschartA_2016			TP_wrong
+23	SAMN04571707	M02.4-V1-stool	subject_id		M02.4			FN
+23	SAMN04571707	M02.4-V1-stool	sample_id	SAMN04571707	M02.4-V1-stool			TP_wrong
+23	SAMN04571707	M02.4-V1-stool	curator		Paolo_Manghi			FN
+23	SAMN04571707	M02.4-V1-stool	pmid	27723761	27723761			TP_correct
+23	SAMN04571707	M02.4-V1-stool	target_condition	Type 1 diabetes mellitus	Type 1 Diabetes Mellitus			TP_correct
+23	SAMN04571707	M02.4-V1-stool	control		Study Control			FN
+23	SAMN04571707	M02.4-V1-stool	country	Luxembourg	Luxembourg			TP_correct
+23	SAMN04571707	M02.4-V1-stool	body_site	feces	feces	UBERON:0001988	UBERON:0001988	TP_correct
+23	SAMN04571707	M02.4-V1-stool	days_from_first_collection		0			FN
+23	SAMN04571707	M02.4-V1-stool	westernized		Yes			FN
+23	SAMN04571707	M02.4-V1-stool	dna_extraction_kit	MoBio	NorgenBiotek			TP_wrong
+23	SAMN04571707	M02.4-V1-stool	ncbi_accession	SRR3313050	SRR3313050			TP_correct
+23	SAMN04571707	M02.4-V1-stool	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq			TP_wrong
+23	SAMN04571707	M02.4-V1-stool	age		58			FN
+23	SAMN04571707	M02.4-V1-stool	age_group		Adult			FN
+23	SAMN04571707	M02.4-V1-stool	age_unit		Year			FN
+23	SAMN04571707	M02.4-V1-stool	sex	female	Female			TP_correct
+23	SAMN04571707	M02.4-V1-stool	age_min		58			FN
+23	SAMN04571707	M02.4-V1-stool	age_max		58			FN
+23	SAMN04571707	M02.4-V1-stool	age_years		58			FN
+23	SAMN04571707	M02.4-V1-stool	antibiotics_current_use		No			FN
+23	SAMN04571707	M02.4-V1-stool	bmi		20.76			FN
+23	SAMN04571707	M02.4-V1-stool	disease	type 1 diabetes mellitus	Healthy	NCIT:C2986	NCIT:C115935	TP_wrong
+23	SAMN04571707	M02.4-V1-stool	treatment	insulin replacement therapy		NCIT:C581		FP
+23	SAMN04571707	M02.4-V1-stool	biomarker_name		C-peptide;Cholesterol;Glucose			FN
+23	SAMN04571707	M02.4-V1-stool	biomarker_unit		ng/ml;mg/dL;mg/dL			FN
+23	SAMN04571707	M02.4-V1-stool	biomarker_value		1.5;215;81			FN
+23	SAMN04571707	M02.4-V1-stool	host_species	Homo sapiens	Homo sapiens			TP_correct
+24	SAMN04571708	M02.4-V2-stool	study_name	PRJNA289586	Heitz-BuschartA_2016			TP_wrong
+24	SAMN04571708	M02.4-V2-stool	subject_id		M02.4			FN
+24	SAMN04571708	M02.4-V2-stool	sample_id	SAMN04571708	M02.4-V2-stool			TP_wrong
+24	SAMN04571708	M02.4-V2-stool	curator		Paolo_Manghi			FN
+24	SAMN04571708	M02.4-V2-stool	pmid	27723761	27723761			TP_correct
+24	SAMN04571708	M02.4-V2-stool	target_condition	Type 1 diabetes mellitus	Type 1 Diabetes Mellitus			TP_correct
+24	SAMN04571708	M02.4-V2-stool	control		Study Control			FN
+24	SAMN04571708	M02.4-V2-stool	country	Luxembourg	Luxembourg			TP_correct
+24	SAMN04571708	M02.4-V2-stool	body_site	feces	feces	UBERON:0001988	UBERON:0001988	TP_correct
+24	SAMN04571708	M02.4-V2-stool	days_from_first_collection		28			FN
+24	SAMN04571708	M02.4-V2-stool	westernized		Yes			FN
+24	SAMN04571708	M02.4-V2-stool	dna_extraction_kit	MoBio	NorgenBiotek			TP_wrong
+24	SAMN04571708	M02.4-V2-stool	ncbi_accession	SRR3313051	SRR3313051			TP_correct
+24	SAMN04571708	M02.4-V2-stool	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq			TP_wrong
+24	SAMN04571708	M02.4-V2-stool	age		58			FN
+24	SAMN04571708	M02.4-V2-stool	age_group		Adult			FN
+24	SAMN04571708	M02.4-V2-stool	age_unit		Year			FN
+24	SAMN04571708	M02.4-V2-stool	sex	female	Female			TP_correct
+24	SAMN04571708	M02.4-V2-stool	age_min		58			FN
+24	SAMN04571708	M02.4-V2-stool	age_max		58			FN
+24	SAMN04571708	M02.4-V2-stool	age_years		58			FN
+24	SAMN04571708	M02.4-V2-stool	antibiotics_current_use		No			FN
+24	SAMN04571708	M02.4-V2-stool	bmi		20.59			FN
+24	SAMN04571708	M02.4-V2-stool	disease	type 1 diabetes mellitus	Healthy	NCIT:C2986	NCIT:C115935	TP_wrong
+24	SAMN04571708	M02.4-V2-stool	treatment	insulin replacement therapy		NCIT:C581		FP
+24	SAMN04571708	M02.4-V2-stool	biomarker_name		C-peptide;Cholesterol;Glucose			FN
+24	SAMN04571708	M02.4-V2-stool	biomarker_unit		ng/ml;mg/dL;mg/dL			FN
+24	SAMN04571708	M02.4-V2-stool	biomarker_value		2;212;89			FN
+24	SAMN04571708	M02.4-V2-stool	host_species	Homo sapiens	Homo sapiens			TP_correct
+25	SAMN04571709	M02.4-V3-stool	study_name	PRJNA289586	Heitz-BuschartA_2016			TP_wrong
+25	SAMN04571709	M02.4-V3-stool	subject_id		M02.4			FN
+25	SAMN04571709	M02.4-V3-stool	sample_id	SAMN04571709	M02.4-V3-stool			TP_wrong
+25	SAMN04571709	M02.4-V3-stool	curator		Paolo_Manghi			FN
+25	SAMN04571709	M02.4-V3-stool	pmid	27723761	27723761			TP_correct
+25	SAMN04571709	M02.4-V3-stool	target_condition	Type 1 diabetes mellitus	Type 1 Diabetes Mellitus			TP_correct
+25	SAMN04571709	M02.4-V3-stool	control		Study Control			FN
+25	SAMN04571709	M02.4-V3-stool	country	Luxembourg	Luxembourg			TP_correct
+25	SAMN04571709	M02.4-V3-stool	body_site	feces	feces	UBERON:0001988	UBERON:0001988	TP_correct
+25	SAMN04571709	M02.4-V3-stool	days_from_first_collection		56			FN
+25	SAMN04571709	M02.4-V3-stool	westernized		Yes			FN
+25	SAMN04571709	M02.4-V3-stool	dna_extraction_kit	MoBio	NorgenBiotek			TP_wrong
+25	SAMN04571709	M02.4-V3-stool	ncbi_accession	SRR3313052	SRR3313052			TP_correct
+25	SAMN04571709	M02.4-V3-stool	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq			TP_wrong
+25	SAMN04571709	M02.4-V3-stool	age		58			FN
+25	SAMN04571709	M02.4-V3-stool	age_group		Adult			FN
+25	SAMN04571709	M02.4-V3-stool	age_unit		Year			FN
+25	SAMN04571709	M02.4-V3-stool	sex	female	Female			TP_correct
+25	SAMN04571709	M02.4-V3-stool	age_min		58			FN
+25	SAMN04571709	M02.4-V3-stool	age_max		58			FN
+25	SAMN04571709	M02.4-V3-stool	age_years		58			FN
+25	SAMN04571709	M02.4-V3-stool	antibiotics_current_use		No			FN
+25	SAMN04571709	M02.4-V3-stool	bmi		20.57			FN
+25	SAMN04571709	M02.4-V3-stool	disease	type 1 diabetes mellitus	Healthy	NCIT:C2986	NCIT:C115935	TP_wrong
+25	SAMN04571709	M02.4-V3-stool	treatment	insulin replacement therapy		NCIT:C581		FP
+25	SAMN04571709	M02.4-V3-stool	biomarker_name		C-peptide;Cholesterol;Glucose			FN
+25	SAMN04571709	M02.4-V3-stool	biomarker_unit		ng/ml;mg/dL;mg/dL			FN
+25	SAMN04571709	M02.4-V3-stool	biomarker_value		1.7;206;81			FN
+25	SAMN04571709	M02.4-V3-stool	host_species	Homo sapiens	Homo sapiens			TP_correct
+26	SAMN04571710	M02.5-V1-stool	study_name	PRJNA289586	Heitz-BuschartA_2016			TP_wrong
+26	SAMN04571710	M02.5-V1-stool	subject_id		M02.5			FN
+26	SAMN04571710	M02.5-V1-stool	sample_id	SAMN04571710	M02.5-V1-stool			TP_wrong
+26	SAMN04571710	M02.5-V1-stool	curator		Paolo_Manghi			FN
+26	SAMN04571710	M02.5-V1-stool	pmid	27723761	27723761			TP_correct
+26	SAMN04571710	M02.5-V1-stool	target_condition	Type 1 diabetes mellitus	Type 1 Diabetes Mellitus			TP_correct
+26	SAMN04571710	M02.5-V1-stool	control		Case			FN
+26	SAMN04571710	M02.5-V1-stool	country	Luxembourg	Luxembourg			TP_correct
+26	SAMN04571710	M02.5-V1-stool	body_site	feces	feces	UBERON:0001988	UBERON:0001988	TP_correct
+26	SAMN04571710	M02.5-V1-stool	days_from_first_collection		0			FN
+26	SAMN04571710	M02.5-V1-stool	westernized		Yes			FN
+26	SAMN04571710	M02.5-V1-stool	dna_extraction_kit	MoBio	NorgenBiotek			TP_wrong
+26	SAMN04571710	M02.5-V1-stool	ncbi_accession	SRR3313053	SRR3313053			TP_correct
+26	SAMN04571710	M02.5-V1-stool	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq			TP_wrong
+26	SAMN04571710	M02.5-V1-stool	age		28			FN
+26	SAMN04571710	M02.5-V1-stool	age_group		Adult			FN
+26	SAMN04571710	M02.5-V1-stool	age_unit		Year			FN
+26	SAMN04571710	M02.5-V1-stool	sex	female	Female			TP_correct
+26	SAMN04571710	M02.5-V1-stool	age_min		28			FN
+26	SAMN04571710	M02.5-V1-stool	age_max		28			FN
+26	SAMN04571710	M02.5-V1-stool	age_years		28			FN
+26	SAMN04571710	M02.5-V1-stool	antibiotics_current_use					TN
+26	SAMN04571710	M02.5-V1-stool	bmi		21.37			FN
+26	SAMN04571710	M02.5-V1-stool	disease	type 1 diabetes mellitus	Type 1 Diabetes Mellitus	NCIT:C2986	NCIT:C2986	TP_correct
+26	SAMN04571710	M02.5-V1-stool	treatment	insulin replacement therapy	Anti-diabetic Agent	NCIT:C581	NCIT:C29711	TP_wrong
+26	SAMN04571710	M02.5-V1-stool	biomarker_name		Cholesterol;Glucose			FN
+26	SAMN04571710	M02.5-V1-stool	biomarker_unit		mg/dL;mg/dL			FN
+26	SAMN04571710	M02.5-V1-stool	biomarker_value		182;158			FN
+26	SAMN04571710	M02.5-V1-stool	host_species	Homo sapiens	Homo sapiens			TP_correct
+27	SAMN04571711	M02.5-V2-stool	study_name	PRJNA289586	Heitz-BuschartA_2016			TP_wrong
+27	SAMN04571711	M02.5-V2-stool	subject_id		M02.5			FN
+27	SAMN04571711	M02.5-V2-stool	sample_id	SAMN04571711	M02.5-V2-stool			TP_wrong
+27	SAMN04571711	M02.5-V2-stool	curator		Paolo_Manghi			FN
+27	SAMN04571711	M02.5-V2-stool	pmid	27723761	27723761			TP_correct
+27	SAMN04571711	M02.5-V2-stool	target_condition	Type 1 diabetes mellitus	Type 1 Diabetes Mellitus			TP_correct
+27	SAMN04571711	M02.5-V2-stool	control		Case			FN
+27	SAMN04571711	M02.5-V2-stool	country	Luxembourg	Luxembourg			TP_correct
+27	SAMN04571711	M02.5-V2-stool	body_site	feces	feces	UBERON:0001988	UBERON:0001988	TP_correct
+27	SAMN04571711	M02.5-V2-stool	days_from_first_collection		22			FN
+27	SAMN04571711	M02.5-V2-stool	westernized		Yes			FN
+27	SAMN04571711	M02.5-V2-stool	dna_extraction_kit	MoBio	NorgenBiotek			TP_wrong
+27	SAMN04571711	M02.5-V2-stool	ncbi_accession	SRR3313054	SRR3313054			TP_correct
+27	SAMN04571711	M02.5-V2-stool	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq			TP_wrong
+27	SAMN04571711	M02.5-V2-stool	age		28			FN
+27	SAMN04571711	M02.5-V2-stool	age_group		Adult			FN
+27	SAMN04571711	M02.5-V2-stool	age_unit		Year			FN
+27	SAMN04571711	M02.5-V2-stool	sex	female	Female			TP_correct
+27	SAMN04571711	M02.5-V2-stool	age_min		28			FN
+27	SAMN04571711	M02.5-V2-stool	age_max		28			FN
+27	SAMN04571711	M02.5-V2-stool	age_years		28			FN
+27	SAMN04571711	M02.5-V2-stool	antibiotics_current_use					TN
+27	SAMN04571711	M02.5-V2-stool	bmi		21.05			FN
+27	SAMN04571711	M02.5-V2-stool	disease	type 1 diabetes mellitus	Type 1 Diabetes Mellitus	NCIT:C2986	NCIT:C2986	TP_correct
+27	SAMN04571711	M02.5-V2-stool	treatment	insulin replacement therapy	Anti-diabetic Agent	NCIT:C581	NCIT:C29711	TP_wrong
+27	SAMN04571711	M02.5-V2-stool	biomarker_name		Cholesterol;Glucose			FN
+27	SAMN04571711	M02.5-V2-stool	biomarker_unit		mg/dL;mg/dL			FN
+27	SAMN04571711	M02.5-V2-stool	biomarker_value		195;150			FN
+27	SAMN04571711	M02.5-V2-stool	host_species	Homo sapiens	Homo sapiens			TP_correct
+28	SAMN04571712	M03.1-V2-stool	study_name	PRJNA289586	Heitz-BuschartA_2016			TP_wrong
+28	SAMN04571712	M03.1-V2-stool	subject_id		M03.1			FN
+28	SAMN04571712	M03.1-V2-stool	sample_id	SAMN04571712	M03.1-V2-stool			TP_wrong
+28	SAMN04571712	M03.1-V2-stool	curator		Paolo_Manghi			FN
+28	SAMN04571712	M03.1-V2-stool	pmid	27723761	27723761			TP_correct
+28	SAMN04571712	M03.1-V2-stool	target_condition	Type 1 diabetes mellitus	Type 1 Diabetes Mellitus			TP_correct
+28	SAMN04571712	M03.1-V2-stool	control		Study Control			FN
+28	SAMN04571712	M03.1-V2-stool	country	Luxembourg	Luxembourg			TP_correct
+28	SAMN04571712	M03.1-V2-stool	body_site	feces	feces	UBERON:0001988	UBERON:0001988	TP_correct
+28	SAMN04571712	M03.1-V2-stool	days_from_first_collection		0			FN
+28	SAMN04571712	M03.1-V2-stool	westernized		Yes			FN
+28	SAMN04571712	M03.1-V2-stool	dna_extraction_kit	MoBio	NorgenBiotek			TP_wrong
+28	SAMN04571712	M03.1-V2-stool	ncbi_accession	SRR3313055	SRR3313055			TP_correct
+28	SAMN04571712	M03.1-V2-stool	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq			TP_wrong
+28	SAMN04571712	M03.1-V2-stool	age		50			FN
+28	SAMN04571712	M03.1-V2-stool	age_group		Adult			FN
+28	SAMN04571712	M03.1-V2-stool	age_unit		Year			FN
+28	SAMN04571712	M03.1-V2-stool	sex	female	Female			TP_correct
+28	SAMN04571712	M03.1-V2-stool	age_min		50			FN
+28	SAMN04571712	M03.1-V2-stool	age_max		50			FN
+28	SAMN04571712	M03.1-V2-stool	age_years		50			FN
+28	SAMN04571712	M03.1-V2-stool	antibiotics_current_use					TN
+28	SAMN04571712	M03.1-V2-stool	bmi		16.93			FN
+28	SAMN04571712	M03.1-V2-stool	disease	type 1 diabetes mellitus	Healthy	NCIT:C2986	NCIT:C115935	TP_wrong
+28	SAMN04571712	M03.1-V2-stool	treatment	insulin replacement therapy	Antihypertensive Agents	NCIT:C581	SCDO:0000067	TP_wrong
+28	SAMN04571712	M03.1-V2-stool	biomarker_name		C-peptide;Cholesterol;Glucose			FN
+28	SAMN04571712	M03.1-V2-stool	biomarker_unit		ng/ml;mg/dL;mg/dL			FN
+28	SAMN04571712	M03.1-V2-stool	biomarker_value		1.2;201;81			FN
+28	SAMN04571712	M03.1-V2-stool	host_species	Homo sapiens	Homo sapiens			TP_correct
+29	SAMN04571713	M03.1-V3-stool	study_name	PRJNA289586	Heitz-BuschartA_2016			TP_wrong
+29	SAMN04571713	M03.1-V3-stool	subject_id		M03.1			FN
+29	SAMN04571713	M03.1-V3-stool	sample_id	SAMN04571713	M03.1-V3-stool			TP_wrong
+29	SAMN04571713	M03.1-V3-stool	curator		Paolo_Manghi			FN
+29	SAMN04571713	M03.1-V3-stool	pmid	27723761	27723761			TP_correct
+29	SAMN04571713	M03.1-V3-stool	target_condition	Type 1 diabetes mellitus	Type 1 Diabetes Mellitus			TP_correct
+29	SAMN04571713	M03.1-V3-stool	control		Study Control			FN
+29	SAMN04571713	M03.1-V3-stool	country	Luxembourg	Luxembourg			TP_correct
+29	SAMN04571713	M03.1-V3-stool	body_site	feces	feces	UBERON:0001988	UBERON:0001988	TP_correct
+29	SAMN04571713	M03.1-V3-stool	days_from_first_collection		28			FN
+29	SAMN04571713	M03.1-V3-stool	westernized		Yes			FN
+29	SAMN04571713	M03.1-V3-stool	dna_extraction_kit	MoBio	NorgenBiotek			TP_wrong
+29	SAMN04571713	M03.1-V3-stool	ncbi_accession	SRR3313056	SRR3313056			TP_correct
+29	SAMN04571713	M03.1-V3-stool	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq			TP_wrong
+29	SAMN04571713	M03.1-V3-stool	age		50			FN
+29	SAMN04571713	M03.1-V3-stool	age_group		Adult			FN
+29	SAMN04571713	M03.1-V3-stool	age_unit		Year			FN
+29	SAMN04571713	M03.1-V3-stool	sex	female	Female			TP_correct
+29	SAMN04571713	M03.1-V3-stool	age_min		50			FN
+29	SAMN04571713	M03.1-V3-stool	age_max		50			FN
+29	SAMN04571713	M03.1-V3-stool	age_years		50			FN
+29	SAMN04571713	M03.1-V3-stool	antibiotics_current_use					TN
+29	SAMN04571713	M03.1-V3-stool	bmi		17.03			FN
+29	SAMN04571713	M03.1-V3-stool	disease	type 1 diabetes mellitus	Healthy	NCIT:C2986	NCIT:C115935	TP_wrong
+29	SAMN04571713	M03.1-V3-stool	treatment	insulin replacement therapy	Antihypertensive Agents	NCIT:C581	SCDO:0000067	TP_wrong
+29	SAMN04571713	M03.1-V3-stool	biomarker_name		C-peptide;Cholesterol;Glucose			FN
+29	SAMN04571713	M03.1-V3-stool	biomarker_unit		ng/ml;mg/dL;mg/dL			FN
+29	SAMN04571713	M03.1-V3-stool	biomarker_value		1.2;190;81			FN
+29	SAMN04571713	M03.1-V3-stool	host_species	Homo sapiens	Homo sapiens			TP_correct
+30	SAMN04571714	M03.3-V1-stool	study_name	PRJNA289586	Heitz-BuschartA_2016			TP_wrong
+30	SAMN04571714	M03.3-V1-stool	subject_id		M03.3			FN
+30	SAMN04571714	M03.3-V1-stool	sample_id	SAMN04571714	M03.3-V1-stool			TP_wrong
+30	SAMN04571714	M03.3-V1-stool	curator		Paolo_Manghi			FN
+30	SAMN04571714	M03.3-V1-stool	pmid	27723761	27723761			TP_correct
+30	SAMN04571714	M03.3-V1-stool	target_condition	Type 1 diabetes mellitus	Type 1 Diabetes Mellitus			TP_correct
+30	SAMN04571714	M03.3-V1-stool	control		Study Control			FN
+30	SAMN04571714	M03.3-V1-stool	country	Luxembourg	Luxembourg			TP_correct
+30	SAMN04571714	M03.3-V1-stool	body_site	feces	feces	UBERON:0001988	UBERON:0001988	TP_correct
+30	SAMN04571714	M03.3-V1-stool	days_from_first_collection		0			FN
+30	SAMN04571714	M03.3-V1-stool	westernized		Yes			FN
+30	SAMN04571714	M03.3-V1-stool	dna_extraction_kit	MoBio	NorgenBiotek			TP_wrong
+30	SAMN04571714	M03.3-V1-stool	ncbi_accession	SRR3313058	SRR3313058			TP_correct
+30	SAMN04571714	M03.3-V1-stool	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq			TP_wrong
+30	SAMN04571714	M03.3-V1-stool	age		14			FN
+30	SAMN04571714	M03.3-V1-stool	age_group		Adolescent			FN
+30	SAMN04571714	M03.3-V1-stool	age_unit		Year			FN
+30	SAMN04571714	M03.3-V1-stool	sex	female	Female			TP_correct
+30	SAMN04571714	M03.3-V1-stool	age_min		14			FN
+30	SAMN04571714	M03.3-V1-stool	age_max		14			FN
+30	SAMN04571714	M03.3-V1-stool	age_years		14			FN
+30	SAMN04571714	M03.3-V1-stool	antibiotics_current_use		No			FN
+30	SAMN04571714	M03.3-V1-stool	bmi		19.72			FN
+30	SAMN04571714	M03.3-V1-stool	disease	type 1 diabetes mellitus	Healthy	NCIT:C2986	NCIT:C115935	TP_wrong
+30	SAMN04571714	M03.3-V1-stool	treatment	insulin replacement therapy		NCIT:C581		FP
+30	SAMN04571714	M03.3-V1-stool	biomarker_name		C-peptide;Cholesterol;Glucose			FN
+30	SAMN04571714	M03.3-V1-stool	biomarker_unit		ng/ml;mg/dL;mg/dL			FN
+30	SAMN04571714	M03.3-V1-stool	biomarker_value		1.8;141;88			FN
+30	SAMN04571714	M03.3-V1-stool	host_species	Homo sapiens	Homo sapiens			TP_correct
+31	SAMN04571715	M03.3-V2-stool	study_name	PRJNA289586	Heitz-BuschartA_2016			TP_wrong
+31	SAMN04571715	M03.3-V2-stool	subject_id		M03.3			FN
+31	SAMN04571715	M03.3-V2-stool	sample_id	SAMN04571715	M03.3-V2-stool			TP_wrong
+31	SAMN04571715	M03.3-V2-stool	curator		Paolo_Manghi			FN
+31	SAMN04571715	M03.3-V2-stool	pmid	27723761	27723761			TP_correct
+31	SAMN04571715	M03.3-V2-stool	target_condition	Type 1 diabetes mellitus	Type 1 Diabetes Mellitus			TP_correct
+31	SAMN04571715	M03.3-V2-stool	control		Study Control			FN
+31	SAMN04571715	M03.3-V2-stool	country	Luxembourg	Luxembourg			TP_correct
+31	SAMN04571715	M03.3-V2-stool	body_site	feces	feces	UBERON:0001988	UBERON:0001988	TP_correct
+31	SAMN04571715	M03.3-V2-stool	days_from_first_collection		34			FN
+31	SAMN04571715	M03.3-V2-stool	westernized		Yes			FN
+31	SAMN04571715	M03.3-V2-stool	dna_extraction_kit	MoBio	NorgenBiotek			TP_wrong
+31	SAMN04571715	M03.3-V2-stool	ncbi_accession	SRR3313059	SRR3313059			TP_correct
+31	SAMN04571715	M03.3-V2-stool	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq			TP_wrong
+31	SAMN04571715	M03.3-V2-stool	age		14			FN
+31	SAMN04571715	M03.3-V2-stool	age_group		Adolescent			FN
+31	SAMN04571715	M03.3-V2-stool	age_unit		Year			FN
+31	SAMN04571715	M03.3-V2-stool	sex	female	Female			TP_correct
+31	SAMN04571715	M03.3-V2-stool	age_min		14			FN
+31	SAMN04571715	M03.3-V2-stool	age_max		14			FN
+31	SAMN04571715	M03.3-V2-stool	age_years		14			FN
+31	SAMN04571715	M03.3-V2-stool	antibiotics_current_use		No			FN
+31	SAMN04571715	M03.3-V2-stool	bmi		18.65			FN
+31	SAMN04571715	M03.3-V2-stool	disease	type 1 diabetes mellitus	Healthy	NCIT:C2986	NCIT:C115935	TP_wrong
+31	SAMN04571715	M03.3-V2-stool	treatment	insulin replacement therapy		NCIT:C581		FP
+31	SAMN04571715	M03.3-V2-stool	biomarker_name		C-peptide;Cholesterol;Glucose			FN
+31	SAMN04571715	M03.3-V2-stool	biomarker_unit		ng/ml;mg/dL;mg/dL			FN
+31	SAMN04571715	M03.3-V2-stool	biomarker_value		1.6;169;84			FN
+31	SAMN04571715	M03.3-V2-stool	host_species	Homo sapiens	Homo sapiens			TP_correct
+32	SAMN04571716	M03.3-V3-stool	study_name	PRJNA289586	Heitz-BuschartA_2016			TP_wrong
+32	SAMN04571716	M03.3-V3-stool	subject_id		M03.3			FN
+32	SAMN04571716	M03.3-V3-stool	sample_id	SAMN04571716	M03.3-V3-stool			TP_wrong
+32	SAMN04571716	M03.3-V3-stool	curator		Paolo_Manghi			FN
+32	SAMN04571716	M03.3-V3-stool	pmid	27723761	27723761			TP_correct
+32	SAMN04571716	M03.3-V3-stool	target_condition	Type 1 diabetes mellitus	Type 1 Diabetes Mellitus			TP_correct
+32	SAMN04571716	M03.3-V3-stool	control		Study Control			FN
+32	SAMN04571716	M03.3-V3-stool	country	Luxembourg	Luxembourg			TP_correct
+32	SAMN04571716	M03.3-V3-stool	body_site	feces	feces	UBERON:0001988	UBERON:0001988	TP_correct
+32	SAMN04571716	M03.3-V3-stool	days_from_first_collection		62			FN
+32	SAMN04571716	M03.3-V3-stool	westernized		Yes			FN
+32	SAMN04571716	M03.3-V3-stool	dna_extraction_kit	MoBio	NorgenBiotek			TP_wrong
+32	SAMN04571716	M03.3-V3-stool	ncbi_accession	SRR3313060	SRR3313060			TP_correct
+32	SAMN04571716	M03.3-V3-stool	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq			TP_wrong
+32	SAMN04571716	M03.3-V3-stool	age		14			FN
+32	SAMN04571716	M03.3-V3-stool	age_group		Adolescent			FN
+32	SAMN04571716	M03.3-V3-stool	age_unit		Year			FN
+32	SAMN04571716	M03.3-V3-stool	sex	female	Female			TP_correct
+32	SAMN04571716	M03.3-V3-stool	age_min		14			FN
+32	SAMN04571716	M03.3-V3-stool	age_max		14			FN
+32	SAMN04571716	M03.3-V3-stool	age_years		14			FN
+32	SAMN04571716	M03.3-V3-stool	antibiotics_current_use		No			FN
+32	SAMN04571716	M03.3-V3-stool	bmi		20.51			FN
+32	SAMN04571716	M03.3-V3-stool	disease	type 1 diabetes mellitus	Healthy	NCIT:C2986	NCIT:C115935	TP_wrong
+32	SAMN04571716	M03.3-V3-stool	treatment	insulin replacement therapy		NCIT:C581		FP
+32	SAMN04571716	M03.3-V3-stool	biomarker_name		C-peptide;Cholesterol;Glucose			FN
+32	SAMN04571716	M03.3-V3-stool	biomarker_unit		ng/ml;mg/dL;mg/dL			FN
+32	SAMN04571716	M03.3-V3-stool	biomarker_value		0.59;161;141			FN
+32	SAMN04571716	M03.3-V3-stool	host_species	Homo sapiens	Homo sapiens			TP_correct
+33	SAMN04571717	M03.4-V1-stool	study_name	PRJNA289586	Heitz-BuschartA_2016			TP_wrong
+33	SAMN04571717	M03.4-V1-stool	subject_id		M03.4			FN
+33	SAMN04571717	M03.4-V1-stool	sample_id	SAMN04571717	M03.4-V1-stool			TP_wrong
+33	SAMN04571717	M03.4-V1-stool	curator		Paolo_Manghi			FN
+33	SAMN04571717	M03.4-V1-stool	pmid	27723761	27723761			TP_correct
+33	SAMN04571717	M03.4-V1-stool	target_condition	Type 1 diabetes mellitus	Type 1 Diabetes Mellitus			TP_correct
+33	SAMN04571717	M03.4-V1-stool	control		Case			FN
+33	SAMN04571717	M03.4-V1-stool	country	Luxembourg	Luxembourg			TP_correct
+33	SAMN04571717	M03.4-V1-stool	body_site	feces	feces	UBERON:0001988	UBERON:0001988	TP_correct
+33	SAMN04571717	M03.4-V1-stool	days_from_first_collection		0			FN
+33	SAMN04571717	M03.4-V1-stool	westernized		Yes			FN
+33	SAMN04571717	M03.4-V1-stool	dna_extraction_kit	MoBio	NorgenBiotek			TP_wrong
+33	SAMN04571717	M03.4-V1-stool	ncbi_accession	SRR3313061	SRR3313061			TP_correct
+33	SAMN04571717	M03.4-V1-stool	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq			TP_wrong
+33	SAMN04571717	M03.4-V1-stool	age		17			FN
+33	SAMN04571717	M03.4-V1-stool	age_group		Adolescent			FN
+33	SAMN04571717	M03.4-V1-stool	age_unit		Year			FN
+33	SAMN04571717	M03.4-V1-stool	sex	female	Female			TP_correct
+33	SAMN04571717	M03.4-V1-stool	age_min		17			FN
+33	SAMN04571717	M03.4-V1-stool	age_max		17			FN
+33	SAMN04571717	M03.4-V1-stool	age_years		17			FN
+33	SAMN04571717	M03.4-V1-stool	antibiotics_current_use					TN
+33	SAMN04571717	M03.4-V1-stool	bmi		21.07			FN
+33	SAMN04571717	M03.4-V1-stool	disease	type 1 diabetes mellitus	Type 1 Diabetes Mellitus	NCIT:C2986	NCIT:C2986	TP_correct
+33	SAMN04571717	M03.4-V1-stool	treatment	insulin replacement therapy	Anti-diabetic Agent	NCIT:C581	NCIT:C29711	TP_wrong
+33	SAMN04571717	M03.4-V1-stool	biomarker_name		C-peptide;Cholesterol;Glucose			FN
+33	SAMN04571717	M03.4-V1-stool	biomarker_unit		ng/ml;mg/dL;mg/dL			FN
+33	SAMN04571717	M03.4-V1-stool	biomarker_value		0.62;150;134			FN
+33	SAMN04571717	M03.4-V1-stool	host_species	Homo sapiens	Homo sapiens			TP_correct
+34	SAMN04571718	M03.4-V2-stool	study_name	PRJNA289586	Heitz-BuschartA_2016			TP_wrong
+34	SAMN04571718	M03.4-V2-stool	subject_id		M03.4			FN
+34	SAMN04571718	M03.4-V2-stool	sample_id	SAMN04571718	M03.4-V2-stool			TP_wrong
+34	SAMN04571718	M03.4-V2-stool	curator		Paolo_Manghi			FN
+34	SAMN04571718	M03.4-V2-stool	pmid	27723761	27723761			TP_correct
+34	SAMN04571718	M03.4-V2-stool	target_condition	Type 1 diabetes mellitus	Type 1 Diabetes Mellitus			TP_correct
+34	SAMN04571718	M03.4-V2-stool	control		Case			FN
+34	SAMN04571718	M03.4-V2-stool	country	Luxembourg	Luxembourg			TP_correct
+34	SAMN04571718	M03.4-V2-stool	body_site	feces	feces	UBERON:0001988	UBERON:0001988	TP_correct
+34	SAMN04571718	M03.4-V2-stool	days_from_first_collection		34			FN
+34	SAMN04571718	M03.4-V2-stool	westernized		Yes			FN
+34	SAMN04571718	M03.4-V2-stool	dna_extraction_kit	MoBio	NorgenBiotek			TP_wrong
+34	SAMN04571718	M03.4-V2-stool	ncbi_accession	SRR3313062	SRR3313062			TP_correct
+34	SAMN04571718	M03.4-V2-stool	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq			TP_wrong
+34	SAMN04571718	M03.4-V2-stool	age		17			FN
+34	SAMN04571718	M03.4-V2-stool	age_group		Adolescent			FN
+34	SAMN04571718	M03.4-V2-stool	age_unit		Year			FN
+34	SAMN04571718	M03.4-V2-stool	sex	female	Female			TP_correct
+34	SAMN04571718	M03.4-V2-stool	age_min		17			FN
+34	SAMN04571718	M03.4-V2-stool	age_max		17			FN
+34	SAMN04571718	M03.4-V2-stool	age_years		17			FN
+34	SAMN04571718	M03.4-V2-stool	antibiotics_current_use					TN
+34	SAMN04571718	M03.4-V2-stool	bmi		20.57			FN
+34	SAMN04571718	M03.4-V2-stool	disease	type 1 diabetes mellitus	Type 1 Diabetes Mellitus	NCIT:C2986	NCIT:C2986	TP_correct
+34	SAMN04571718	M03.4-V2-stool	treatment	insulin replacement therapy	Anti-diabetic Agent	NCIT:C581	NCIT:C29711	TP_wrong
+34	SAMN04571718	M03.4-V2-stool	biomarker_name		C-peptide;Cholesterol;Glucose			FN
+34	SAMN04571718	M03.4-V2-stool	biomarker_unit		ng/ml;mg/dL;mg/dL			FN
+34	SAMN04571718	M03.4-V2-stool	biomarker_value		0.53;166;152			FN
+34	SAMN04571718	M03.4-V2-stool	host_species	Homo sapiens	Homo sapiens			TP_correct
+35	SAMN04571719	M03.4-V3-stool	study_name	PRJNA289586	Heitz-BuschartA_2016			TP_wrong
+35	SAMN04571719	M03.4-V3-stool	subject_id		M03.4			FN
+35	SAMN04571719	M03.4-V3-stool	sample_id	SAMN04571719	M03.4-V3-stool			TP_wrong
+35	SAMN04571719	M03.4-V3-stool	curator		Paolo_Manghi			FN
+35	SAMN04571719	M03.4-V3-stool	pmid	27723761	27723761			TP_correct
+35	SAMN04571719	M03.4-V3-stool	target_condition	Type 1 diabetes mellitus	Type 1 Diabetes Mellitus			TP_correct
+35	SAMN04571719	M03.4-V3-stool	control		Case			FN
+35	SAMN04571719	M03.4-V3-stool	country	Luxembourg	Luxembourg			TP_correct
+35	SAMN04571719	M03.4-V3-stool	body_site	feces	feces	UBERON:0001988	UBERON:0001988	TP_correct
+35	SAMN04571719	M03.4-V3-stool	days_from_first_collection		62			FN
+35	SAMN04571719	M03.4-V3-stool	westernized		Yes			FN
+35	SAMN04571719	M03.4-V3-stool	dna_extraction_kit	MoBio	NorgenBiotek			TP_wrong
+35	SAMN04571719	M03.4-V3-stool	ncbi_accession	SRR3313063	SRR3313063			TP_correct
+35	SAMN04571719	M03.4-V3-stool	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq			TP_wrong
+35	SAMN04571719	M03.4-V3-stool	age		17			FN
+35	SAMN04571719	M03.4-V3-stool	age_group		Adolescent			FN
+35	SAMN04571719	M03.4-V3-stool	age_unit		Year			FN
+35	SAMN04571719	M03.4-V3-stool	sex	female	Female			TP_correct
+35	SAMN04571719	M03.4-V3-stool	age_min		17			FN
+35	SAMN04571719	M03.4-V3-stool	age_max		17			FN
+35	SAMN04571719	M03.4-V3-stool	age_years		17			FN
+35	SAMN04571719	M03.4-V3-stool	antibiotics_current_use					TN
+35	SAMN04571719	M03.4-V3-stool	bmi					TN
+35	SAMN04571719	M03.4-V3-stool	disease	type 1 diabetes mellitus	Type 1 Diabetes Mellitus	NCIT:C2986	NCIT:C2986	TP_correct
+35	SAMN04571719	M03.4-V3-stool	treatment	insulin replacement therapy	Anti-diabetic Agent	NCIT:C581	NCIT:C29711	TP_wrong
+35	SAMN04571719	M03.4-V3-stool	biomarker_name					TN
+35	SAMN04571719	M03.4-V3-stool	biomarker_unit					TN
+35	SAMN04571719	M03.4-V3-stool	biomarker_value					TN
+35	SAMN04571719	M03.4-V3-stool	host_species	Homo sapiens	Homo sapiens			TP_correct
+36	SAMN04571720	M03.5-V1-stool	study_name	PRJNA289586	Heitz-BuschartA_2016			TP_wrong
+36	SAMN04571720	M03.5-V1-stool	subject_id		M03.5			FN
+36	SAMN04571720	M03.5-V1-stool	sample_id	SAMN04571720	M03.5-V1-stool			TP_wrong
+36	SAMN04571720	M03.5-V1-stool	curator		Paolo_Manghi			FN
+36	SAMN04571720	M03.5-V1-stool	pmid	27723761	27723761			TP_correct
+36	SAMN04571720	M03.5-V1-stool	target_condition	Type 1 diabetes mellitus	Type 1 Diabetes Mellitus			TP_correct
+36	SAMN04571720	M03.5-V1-stool	control		Case			FN
+36	SAMN04571720	M03.5-V1-stool	country	Luxembourg	Luxembourg			TP_correct
+36	SAMN04571720	M03.5-V1-stool	body_site	feces	feces	UBERON:0001988	UBERON:0001988	TP_correct
+36	SAMN04571720	M03.5-V1-stool	days_from_first_collection		0			FN
+36	SAMN04571720	M03.5-V1-stool	westernized		Yes			FN
+36	SAMN04571720	M03.5-V1-stool	dna_extraction_kit	MoBio	NorgenBiotek			TP_wrong
+36	SAMN04571720	M03.5-V1-stool	ncbi_accession	SRR3313064	SRR3313064			TP_correct
+36	SAMN04571720	M03.5-V1-stool	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq			TP_wrong
+36	SAMN04571720	M03.5-V1-stool	age		19			FN
+36	SAMN04571720	M03.5-V1-stool	age_group		Adult			FN
+36	SAMN04571720	M03.5-V1-stool	age_unit		Year			FN
+36	SAMN04571720	M03.5-V1-stool	sex	female	Female			TP_correct
+36	SAMN04571720	M03.5-V1-stool	age_min		19			FN
+36	SAMN04571720	M03.5-V1-stool	age_max		19			FN
+36	SAMN04571720	M03.5-V1-stool	age_years		19			FN
+36	SAMN04571720	M03.5-V1-stool	antibiotics_current_use					TN
+36	SAMN04571720	M03.5-V1-stool	bmi		24.54			FN
+36	SAMN04571720	M03.5-V1-stool	disease	type 1 diabetes mellitus	Type 1 Diabetes Mellitus	NCIT:C2986	NCIT:C2986	TP_correct
+36	SAMN04571720	M03.5-V1-stool	treatment	insulin replacement therapy	Anti-diabetic Agent	NCIT:C581	NCIT:C29711	TP_wrong
+36	SAMN04571720	M03.5-V1-stool	biomarker_name		Cholesterol;Glucose			FN
+36	SAMN04571720	M03.5-V1-stool	biomarker_unit		mg/dL;mg/dL			FN
+36	SAMN04571720	M03.5-V1-stool	biomarker_value		142;90			FN
+36	SAMN04571720	M03.5-V1-stool	host_species	Homo sapiens	Homo sapiens			TP_correct
+37	SAMN04571721	M03.5-V2-stool	study_name	PRJNA289586	Heitz-BuschartA_2016			TP_wrong
+37	SAMN04571721	M03.5-V2-stool	subject_id		M03.5			FN
+37	SAMN04571721	M03.5-V2-stool	sample_id	SAMN04571721	M03.5-V2-stool			TP_wrong
+37	SAMN04571721	M03.5-V2-stool	curator		Paolo_Manghi			FN
+37	SAMN04571721	M03.5-V2-stool	pmid	27723761	27723761			TP_correct
+37	SAMN04571721	M03.5-V2-stool	target_condition	Type 1 diabetes mellitus	Type 1 Diabetes Mellitus			TP_correct
+37	SAMN04571721	M03.5-V2-stool	control		Case			FN
+37	SAMN04571721	M03.5-V2-stool	country	Luxembourg	Luxembourg			TP_correct
+37	SAMN04571721	M03.5-V2-stool	body_site	feces	feces	UBERON:0001988	UBERON:0001988	TP_correct
+37	SAMN04571721	M03.5-V2-stool	days_from_first_collection		33			FN
+37	SAMN04571721	M03.5-V2-stool	westernized		Yes			FN
+37	SAMN04571721	M03.5-V2-stool	dna_extraction_kit	MoBio	NorgenBiotek			TP_wrong
+37	SAMN04571721	M03.5-V2-stool	ncbi_accession	SRR3313065	SRR3313065			TP_correct
+37	SAMN04571721	M03.5-V2-stool	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq			TP_wrong
+37	SAMN04571721	M03.5-V2-stool	age		19			FN
+37	SAMN04571721	M03.5-V2-stool	age_group		Adult			FN
+37	SAMN04571721	M03.5-V2-stool	age_unit		Year			FN
+37	SAMN04571721	M03.5-V2-stool	sex	female	Female			TP_correct
+37	SAMN04571721	M03.5-V2-stool	age_min		19			FN
+37	SAMN04571721	M03.5-V2-stool	age_max		19			FN
+37	SAMN04571721	M03.5-V2-stool	age_years		19			FN
+37	SAMN04571721	M03.5-V2-stool	antibiotics_current_use					TN
+37	SAMN04571721	M03.5-V2-stool	bmi					TN
+37	SAMN04571721	M03.5-V2-stool	disease	type 1 diabetes mellitus	Type 1 Diabetes Mellitus	NCIT:C2986	NCIT:C2986	TP_correct
+37	SAMN04571721	M03.5-V2-stool	treatment	insulin replacement therapy	Anti-diabetic Agent	NCIT:C581	NCIT:C29711	TP_wrong
+37	SAMN04571721	M03.5-V2-stool	biomarker_name					TN
+37	SAMN04571721	M03.5-V2-stool	biomarker_unit					TN
+37	SAMN04571721	M03.5-V2-stool	biomarker_value					TN
+37	SAMN04571721	M03.5-V2-stool	host_species	Homo sapiens	Homo sapiens			TP_correct
+38	SAMN04571722	M04.1-V1-stool	study_name	PRJNA289586	Heitz-BuschartA_2016			TP_wrong
+38	SAMN04571722	M04.1-V1-stool	subject_id		M04.1			FN
+38	SAMN04571722	M04.1-V1-stool	sample_id	SAMN04571722	M04.1-V1-stool			TP_wrong
+38	SAMN04571722	M04.1-V1-stool	curator		Paolo_Manghi			FN
+38	SAMN04571722	M04.1-V1-stool	pmid	27723761	27723761			TP_correct
+38	SAMN04571722	M04.1-V1-stool	target_condition	Type 1 diabetes mellitus	Type 1 Diabetes Mellitus			TP_correct
+38	SAMN04571722	M04.1-V1-stool	control		Study Control			FN
+38	SAMN04571722	M04.1-V1-stool	country	Luxembourg	Luxembourg			TP_correct
+38	SAMN04571722	M04.1-V1-stool	body_site	feces	feces	UBERON:0001988	UBERON:0001988	TP_correct
+38	SAMN04571722	M04.1-V1-stool	days_from_first_collection		0			FN
+38	SAMN04571722	M04.1-V1-stool	westernized		Yes			FN
+38	SAMN04571722	M04.1-V1-stool	dna_extraction_kit	MoBio	NorgenBiotek			TP_wrong
+38	SAMN04571722	M04.1-V1-stool	ncbi_accession	SRR3313066	SRR3313066			TP_correct
+38	SAMN04571722	M04.1-V1-stool	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq			TP_wrong
+38	SAMN04571722	M04.1-V1-stool	age		34			FN
+38	SAMN04571722	M04.1-V1-stool	age_group		Adult			FN
+38	SAMN04571722	M04.1-V1-stool	age_unit		Year			FN
+38	SAMN04571722	M04.1-V1-stool	sex	female	Female			TP_correct
+38	SAMN04571722	M04.1-V1-stool	age_min		34			FN
+38	SAMN04571722	M04.1-V1-stool	age_max		34			FN
+38	SAMN04571722	M04.1-V1-stool	age_years		34			FN
+38	SAMN04571722	M04.1-V1-stool	antibiotics_current_use		No			FN
+38	SAMN04571722	M04.1-V1-stool	bmi		38.48			FN
+38	SAMN04571722	M04.1-V1-stool	disease	type 1 diabetes mellitus	Cytomegaloviral Infection;Celiac Disease;Gestational Diabetes	NCIT:C2986	NCIT:C26714|NCIT:C34942|NCIT:C53649	TP_wrong
+38	SAMN04571722	M04.1-V1-stool	treatment	insulin replacement therapy		NCIT:C581		FP
+38	SAMN04571722	M04.1-V1-stool	biomarker_name		C-peptide;Cholesterol;Glucose			FN
+38	SAMN04571722	M04.1-V1-stool	biomarker_unit		ng/ml;mg/dL;mg/dL			FN
+38	SAMN04571722	M04.1-V1-stool	biomarker_value		2.6;199;78			FN
+38	SAMN04571722	M04.1-V1-stool	host_species	Homo sapiens	Homo sapiens			TP_correct
+39	SAMN04571723	M04.1-V3-stool	study_name	PRJNA289586	Heitz-BuschartA_2016			TP_wrong
+39	SAMN04571723	M04.1-V3-stool	subject_id		M04.1			FN
+39	SAMN04571723	M04.1-V3-stool	sample_id	SAMN04571723	M04.1-V3-stool			TP_wrong
+39	SAMN04571723	M04.1-V3-stool	curator		Paolo_Manghi			FN
+39	SAMN04571723	M04.1-V3-stool	pmid	27723761	27723761			TP_correct
+39	SAMN04571723	M04.1-V3-stool	target_condition	Type 1 diabetes mellitus	Type 1 Diabetes Mellitus			TP_correct
+39	SAMN04571723	M04.1-V3-stool	control		Study Control			FN
+39	SAMN04571723	M04.1-V3-stool	country	Luxembourg	Luxembourg			TP_correct
+39	SAMN04571723	M04.1-V3-stool	body_site	feces	feces	UBERON:0001988	UBERON:0001988	TP_correct
+39	SAMN04571723	M04.1-V3-stool	days_from_first_collection		76			FN
+39	SAMN04571723	M04.1-V3-stool	westernized		Yes			FN
+39	SAMN04571723	M04.1-V3-stool	dna_extraction_kit	MoBio	NorgenBiotek			TP_wrong
+39	SAMN04571723	M04.1-V3-stool	ncbi_accession	SRR3313067	SRR3313067			TP_correct
+39	SAMN04571723	M04.1-V3-stool	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq			TP_wrong
+39	SAMN04571723	M04.1-V3-stool	age		34			FN
+39	SAMN04571723	M04.1-V3-stool	age_group		Adult			FN
+39	SAMN04571723	M04.1-V3-stool	age_unit		Year			FN
+39	SAMN04571723	M04.1-V3-stool	sex	female	Female			TP_correct
+39	SAMN04571723	M04.1-V3-stool	age_min		34			FN
+39	SAMN04571723	M04.1-V3-stool	age_max		34			FN
+39	SAMN04571723	M04.1-V3-stool	age_years		34			FN
+39	SAMN04571723	M04.1-V3-stool	antibiotics_current_use		No			FN
+39	SAMN04571723	M04.1-V3-stool	bmi		37.96			FN
+39	SAMN04571723	M04.1-V3-stool	disease	type 1 diabetes mellitus	Cytomegaloviral Infection;Celiac Disease;Gestational Diabetes	NCIT:C2986	NCIT:C26714|NCIT:C34942|NCIT:C53649	TP_wrong
+39	SAMN04571723	M04.1-V3-stool	treatment	insulin replacement therapy		NCIT:C581		FP
+39	SAMN04571723	M04.1-V3-stool	biomarker_name		C-peptide;Cholesterol;Glucose			FN
+39	SAMN04571723	M04.1-V3-stool	biomarker_unit		ng/ml;mg/dL;mg/dL			FN
+39	SAMN04571723	M04.1-V3-stool	biomarker_value		2.8;187;80			FN
+39	SAMN04571723	M04.1-V3-stool	host_species	Homo sapiens	Homo sapiens			TP_correct
+40	SAMN04571724	M04.2-V1-stool	study_name	PRJNA289586	Heitz-BuschartA_2016			TP_wrong
+40	SAMN04571724	M04.2-V1-stool	subject_id		M04.2			FN
+40	SAMN04571724	M04.2-V1-stool	sample_id	SAMN04571724	M04.2-V1-stool			TP_wrong
+40	SAMN04571724	M04.2-V1-stool	curator		Paolo_Manghi			FN
+40	SAMN04571724	M04.2-V1-stool	pmid	27723761	27723761			TP_correct
+40	SAMN04571724	M04.2-V1-stool	target_condition	Type 1 diabetes mellitus	Type 1 Diabetes Mellitus			TP_correct
+40	SAMN04571724	M04.2-V1-stool	control		Case			FN
+40	SAMN04571724	M04.2-V1-stool	country	Luxembourg	Luxembourg			TP_correct
+40	SAMN04571724	M04.2-V1-stool	body_site	feces	feces	UBERON:0001988	UBERON:0001988	TP_correct
+40	SAMN04571724	M04.2-V1-stool	days_from_first_collection		0			FN
+40	SAMN04571724	M04.2-V1-stool	westernized		Yes			FN
+40	SAMN04571724	M04.2-V1-stool	dna_extraction_kit	MoBio	NorgenBiotek			TP_wrong
+40	SAMN04571724	M04.2-V1-stool	ncbi_accession	SRR3313069	SRR3313069			TP_correct
+40	SAMN04571724	M04.2-V1-stool	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq			TP_wrong
+40	SAMN04571724	M04.2-V1-stool	age		5			FN
+40	SAMN04571724	M04.2-V1-stool	age_group		Child			FN
+40	SAMN04571724	M04.2-V1-stool	age_unit		Year			FN
+40	SAMN04571724	M04.2-V1-stool	sex	male	Male			TP_correct
+40	SAMN04571724	M04.2-V1-stool	age_min		5			FN
+40	SAMN04571724	M04.2-V1-stool	age_max		5			FN
+40	SAMN04571724	M04.2-V1-stool	age_years		5			FN
+40	SAMN04571724	M04.2-V1-stool	antibiotics_current_use					TN
+40	SAMN04571724	M04.2-V1-stool	bmi		14.01			FN
+40	SAMN04571724	M04.2-V1-stool	disease	type 1 diabetes mellitus	Type 1 Diabetes Mellitus;Celiac Disease;Irritable Bowel Syndrome	NCIT:C2986	NCIT:C26714|NCIT:C2986|NCIT:C82343	TP_wrong
+40	SAMN04571724	M04.2-V1-stool	treatment	insulin replacement therapy	Anti-diabetic Agent	NCIT:C581	NCIT:C29711	TP_wrong
+40	SAMN04571724	M04.2-V1-stool	biomarker_name		Cholesterol;Glucose			FN
+40	SAMN04571724	M04.2-V1-stool	biomarker_unit		mg/dL;mg/dL			FN
+40	SAMN04571724	M04.2-V1-stool	biomarker_value		207;315			FN
+40	SAMN04571724	M04.2-V1-stool	host_species	Homo sapiens	Homo sapiens			TP_correct
+41	SAMN04571725	M04.2-V2-stool	study_name	PRJNA289586	Heitz-BuschartA_2016			TP_wrong
+41	SAMN04571725	M04.2-V2-stool	subject_id		M04.2			FN
+41	SAMN04571725	M04.2-V2-stool	sample_id	SAMN04571725	M04.2-V2-stool			TP_wrong
+41	SAMN04571725	M04.2-V2-stool	curator		Paolo_Manghi			FN
+41	SAMN04571725	M04.2-V2-stool	pmid	27723761	27723761			TP_correct
+41	SAMN04571725	M04.2-V2-stool	target_condition	Type 1 diabetes mellitus	Type 1 Diabetes Mellitus			TP_correct
+41	SAMN04571725	M04.2-V2-stool	control		Case			FN
+41	SAMN04571725	M04.2-V2-stool	country	Luxembourg	Luxembourg			TP_correct
+41	SAMN04571725	M04.2-V2-stool	body_site	feces	feces	UBERON:0001988	UBERON:0001988	TP_correct
+41	SAMN04571725	M04.2-V2-stool	days_from_first_collection		32			FN
+41	SAMN04571725	M04.2-V2-stool	westernized		Yes			FN
+41	SAMN04571725	M04.2-V2-stool	dna_extraction_kit	MoBio	NorgenBiotek			TP_wrong
+41	SAMN04571725	M04.2-V2-stool	ncbi_accession	SRR3313070	SRR3313070			TP_correct
+41	SAMN04571725	M04.2-V2-stool	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq			TP_wrong
+41	SAMN04571725	M04.2-V2-stool	age		5			FN
+41	SAMN04571725	M04.2-V2-stool	age_group		Child			FN
+41	SAMN04571725	M04.2-V2-stool	age_unit		Year			FN
+41	SAMN04571725	M04.2-V2-stool	sex	male	Male			TP_correct
+41	SAMN04571725	M04.2-V2-stool	age_min		5			FN
+41	SAMN04571725	M04.2-V2-stool	age_max		5			FN
+41	SAMN04571725	M04.2-V2-stool	age_years		5			FN
+41	SAMN04571725	M04.2-V2-stool	antibiotics_current_use					TN
+41	SAMN04571725	M04.2-V2-stool	bmi		14.74			FN
+41	SAMN04571725	M04.2-V2-stool	disease	type 1 diabetes mellitus	Type 1 Diabetes Mellitus;Celiac Disease;Irritable Bowel Syndrome	NCIT:C2986	NCIT:C26714|NCIT:C2986|NCIT:C82343	TP_wrong
+41	SAMN04571725	M04.2-V2-stool	treatment	insulin replacement therapy	Anti-diabetic Agent	NCIT:C581	NCIT:C29711	TP_wrong
+41	SAMN04571725	M04.2-V2-stool	biomarker_name		Cholesterol;Glucose			FN
+41	SAMN04571725	M04.2-V2-stool	biomarker_unit		mg/dL;mg/dL			FN
+41	SAMN04571725	M04.2-V2-stool	biomarker_value		167;73			FN
+41	SAMN04571725	M04.2-V2-stool	host_species	Homo sapiens	Homo sapiens			TP_correct
+42	SAMN04571726	M04.2-V3-stool	study_name	PRJNA289586	Heitz-BuschartA_2016			TP_wrong
+42	SAMN04571726	M04.2-V3-stool	subject_id		M04.2			FN
+42	SAMN04571726	M04.2-V3-stool	sample_id	SAMN04571726	M04.2-V3-stool			TP_wrong
+42	SAMN04571726	M04.2-V3-stool	curator		Paolo_Manghi			FN
+42	SAMN04571726	M04.2-V3-stool	pmid	27723761	27723761			TP_correct
+42	SAMN04571726	M04.2-V3-stool	target_condition	Type 1 diabetes mellitus	Type 1 Diabetes Mellitus			TP_correct
+42	SAMN04571726	M04.2-V3-stool	control		Case			FN
+42	SAMN04571726	M04.2-V3-stool	country	Luxembourg	Luxembourg			TP_correct
+42	SAMN04571726	M04.2-V3-stool	body_site	feces	feces	UBERON:0001988	UBERON:0001988	TP_correct
+42	SAMN04571726	M04.2-V3-stool	days_from_first_collection		66			FN
+42	SAMN04571726	M04.2-V3-stool	westernized		Yes			FN
+42	SAMN04571726	M04.2-V3-stool	dna_extraction_kit	MoBio	NorgenBiotek			TP_wrong
+42	SAMN04571726	M04.2-V3-stool	ncbi_accession	SRR3313071	SRR3313071			TP_correct
+42	SAMN04571726	M04.2-V3-stool	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq			TP_wrong
+42	SAMN04571726	M04.2-V3-stool	age		5			FN
+42	SAMN04571726	M04.2-V3-stool	age_group		Child			FN
+42	SAMN04571726	M04.2-V3-stool	age_unit		Year			FN
+42	SAMN04571726	M04.2-V3-stool	sex	male	Male			TP_correct
+42	SAMN04571726	M04.2-V3-stool	age_min		5			FN
+42	SAMN04571726	M04.2-V3-stool	age_max		5			FN
+42	SAMN04571726	M04.2-V3-stool	age_years		5			FN
+42	SAMN04571726	M04.2-V3-stool	antibiotics_current_use					TN
+42	SAMN04571726	M04.2-V3-stool	bmi		14.65			FN
+42	SAMN04571726	M04.2-V3-stool	disease	type 1 diabetes mellitus	Type 1 Diabetes Mellitus;Celiac Disease;Irritable Bowel Syndrome	NCIT:C2986	NCIT:C26714|NCIT:C2986|NCIT:C82343	TP_wrong
+42	SAMN04571726	M04.2-V3-stool	treatment	insulin replacement therapy	Anti-diabetic Agent	NCIT:C581	NCIT:C29711	TP_wrong
+42	SAMN04571726	M04.2-V3-stool	biomarker_name		Cholesterol;Glucose			FN
+42	SAMN04571726	M04.2-V3-stool	biomarker_unit		mg/dL;mg/dL			FN
+42	SAMN04571726	M04.2-V3-stool	biomarker_value		145;182			FN
+42	SAMN04571726	M04.2-V3-stool	host_species	Homo sapiens	Homo sapiens			TP_correct
+43	SAMN04571727	M04.3-V1-stool	study_name	PRJNA289586	Heitz-BuschartA_2016			TP_wrong
+43	SAMN04571727	M04.3-V1-stool	subject_id		M04.3			FN
+43	SAMN04571727	M04.3-V1-stool	sample_id	SAMN04571727	M04.3-V1-stool			TP_wrong
+43	SAMN04571727	M04.3-V1-stool	curator		Paolo_Manghi			FN
+43	SAMN04571727	M04.3-V1-stool	pmid	27723761	27723761			TP_correct
+43	SAMN04571727	M04.3-V1-stool	target_condition	Type 1 diabetes mellitus	Type 1 Diabetes Mellitus			TP_correct
+43	SAMN04571727	M04.3-V1-stool	control		Case			FN
+43	SAMN04571727	M04.3-V1-stool	country	Luxembourg	Luxembourg			TP_correct
+43	SAMN04571727	M04.3-V1-stool	body_site	feces	feces	UBERON:0001988	UBERON:0001988	TP_correct
+43	SAMN04571727	M04.3-V1-stool	days_from_first_collection		0			FN
+43	SAMN04571727	M04.3-V1-stool	westernized		Yes			FN
+43	SAMN04571727	M04.3-V1-stool	dna_extraction_kit	MoBio	NorgenBiotek			TP_wrong
+43	SAMN04571727	M04.3-V1-stool	ncbi_accession	SRR3313072	SRR3313072			TP_correct
+43	SAMN04571727	M04.3-V1-stool	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq			TP_wrong
+43	SAMN04571727	M04.3-V1-stool	age		9			FN
+43	SAMN04571727	M04.3-V1-stool	age_group		Child			FN
+43	SAMN04571727	M04.3-V1-stool	age_unit		Year			FN
+43	SAMN04571727	M04.3-V1-stool	sex	male	Male			TP_correct
+43	SAMN04571727	M04.3-V1-stool	age_min		9			FN
+43	SAMN04571727	M04.3-V1-stool	age_max		9			FN
+43	SAMN04571727	M04.3-V1-stool	age_years		9			FN
+43	SAMN04571727	M04.3-V1-stool	antibiotics_current_use					TN
+43	SAMN04571727	M04.3-V1-stool	bmi		24.47			FN
+43	SAMN04571727	M04.3-V1-stool	disease	type 1 diabetes mellitus	Type 1 Diabetes Mellitus	NCIT:C2986	NCIT:C2986	TP_correct
+43	SAMN04571727	M04.3-V1-stool	treatment	insulin replacement therapy	Anti-diabetic Agent	NCIT:C581	NCIT:C29711	TP_wrong
+43	SAMN04571727	M04.3-V1-stool	biomarker_name		C-peptide;Cholesterol;Glucose			FN
+43	SAMN04571727	M04.3-V1-stool	biomarker_unit		ng/ml;mg/dL;mg/dL			FN
+43	SAMN04571727	M04.3-V1-stool	biomarker_value		1.7;161;78			FN
+43	SAMN04571727	M04.3-V1-stool	host_species	Homo sapiens	Homo sapiens			TP_correct
+44	SAMN04571728	M04.3-V3-stool	study_name	PRJNA289586	Heitz-BuschartA_2016			TP_wrong
+44	SAMN04571728	M04.3-V3-stool	subject_id		M04.3			FN
+44	SAMN04571728	M04.3-V3-stool	sample_id	SAMN04571728	M04.3-V3-stool			TP_wrong
+44	SAMN04571728	M04.3-V3-stool	curator		Paolo_Manghi			FN
+44	SAMN04571728	M04.3-V3-stool	pmid	27723761	27723761			TP_correct
+44	SAMN04571728	M04.3-V3-stool	target_condition	Type 1 diabetes mellitus	Type 1 Diabetes Mellitus			TP_correct
+44	SAMN04571728	M04.3-V3-stool	control		Case			FN
+44	SAMN04571728	M04.3-V3-stool	country	Luxembourg	Luxembourg			TP_correct
+44	SAMN04571728	M04.3-V3-stool	body_site	feces	feces	UBERON:0001988	UBERON:0001988	TP_correct
+44	SAMN04571728	M04.3-V3-stool	days_from_first_collection		78			FN
+44	SAMN04571728	M04.3-V3-stool	westernized		Yes			FN
+44	SAMN04571728	M04.3-V3-stool	dna_extraction_kit	MoBio	NorgenBiotek			TP_wrong
+44	SAMN04571728	M04.3-V3-stool	ncbi_accession	SRR3313073	SRR3313073			TP_correct
+44	SAMN04571728	M04.3-V3-stool	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq			TP_wrong
+44	SAMN04571728	M04.3-V3-stool	age		9			FN
+44	SAMN04571728	M04.3-V3-stool	age_group		Child			FN
+44	SAMN04571728	M04.3-V3-stool	age_unit		Year			FN
+44	SAMN04571728	M04.3-V3-stool	sex	male	Male			TP_correct
+44	SAMN04571728	M04.3-V3-stool	age_min		9			FN
+44	SAMN04571728	M04.3-V3-stool	age_max		9			FN
+44	SAMN04571728	M04.3-V3-stool	age_years		9			FN
+44	SAMN04571728	M04.3-V3-stool	antibiotics_current_use					TN
+44	SAMN04571728	M04.3-V3-stool	bmi		24.57			FN
+44	SAMN04571728	M04.3-V3-stool	disease	type 1 diabetes mellitus	Type 1 Diabetes Mellitus	NCIT:C2986	NCIT:C2986	TP_correct
+44	SAMN04571728	M04.3-V3-stool	treatment	insulin replacement therapy	Anti-diabetic Agent	NCIT:C581	NCIT:C29711	TP_wrong
+44	SAMN04571728	M04.3-V3-stool	biomarker_name		C-peptide;Cholesterol;Glucose			FN
+44	SAMN04571728	M04.3-V3-stool	biomarker_unit		ng/ml;mg/dL;mg/dL			FN
+44	SAMN04571728	M04.3-V3-stool	biomarker_value		1.5;156;75			FN
+44	SAMN04571728	M04.3-V3-stool	host_species	Homo sapiens	Homo sapiens			TP_correct
+45	SAMN04571729	M04.4-V1-stool	study_name	PRJNA289586	Heitz-BuschartA_2016			TP_wrong
+45	SAMN04571729	M04.4-V1-stool	subject_id		M04.4			FN
+45	SAMN04571729	M04.4-V1-stool	sample_id	SAMN04571729	M04.4-V1-stool			TP_wrong
+45	SAMN04571729	M04.4-V1-stool	curator		Paolo_Manghi			FN
+45	SAMN04571729	M04.4-V1-stool	pmid	27723761	27723761			TP_correct
+45	SAMN04571729	M04.4-V1-stool	target_condition	Type 1 diabetes mellitus	Type 1 Diabetes Mellitus			TP_correct
+45	SAMN04571729	M04.4-V1-stool	control		Study Control			FN
+45	SAMN04571729	M04.4-V1-stool	country	Luxembourg	Luxembourg			TP_correct
+45	SAMN04571729	M04.4-V1-stool	body_site	feces	feces	UBERON:0001988	UBERON:0001988	TP_correct
+45	SAMN04571729	M04.4-V1-stool	days_from_first_collection		0			FN
+45	SAMN04571729	M04.4-V1-stool	westernized		Yes			FN
+45	SAMN04571729	M04.4-V1-stool	dna_extraction_kit	MoBio	NorgenBiotek			TP_wrong
+45	SAMN04571729	M04.4-V1-stool	ncbi_accession	SRR3313074	SRR3313074			TP_correct
+45	SAMN04571729	M04.4-V1-stool	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq			TP_wrong
+45	SAMN04571729	M04.4-V1-stool	age		12			FN
+45	SAMN04571729	M04.4-V1-stool	age_group		Adolescent			FN
+45	SAMN04571729	M04.4-V1-stool	age_unit		Year			FN
+45	SAMN04571729	M04.4-V1-stool	sex	female	Female			TP_correct
+45	SAMN04571729	M04.4-V1-stool	age_min		12			FN
+45	SAMN04571729	M04.4-V1-stool	age_max		12			FN
+45	SAMN04571729	M04.4-V1-stool	age_years		12			FN
+45	SAMN04571729	M04.4-V1-stool	antibiotics_current_use		No			FN
+45	SAMN04571729	M04.4-V1-stool	bmi		29.9			FN
+45	SAMN04571729	M04.4-V1-stool	disease	type 1 diabetes mellitus	Healthy	NCIT:C2986	NCIT:C115935	TP_wrong
+45	SAMN04571729	M04.4-V1-stool	treatment	insulin replacement therapy		NCIT:C581		FP
+45	SAMN04571729	M04.4-V1-stool	biomarker_name		C-peptide;Cholesterol;Glucose			FN
+45	SAMN04571729	M04.4-V1-stool	biomarker_unit		ng/ml;mg/dL;mg/dL			FN
+45	SAMN04571729	M04.4-V1-stool	biomarker_value		3.5;155;80			FN
+45	SAMN04571729	M04.4-V1-stool	host_species	Homo sapiens	Homo sapiens			TP_correct
+46	SAMN04571730	M04.4-V3-stool	study_name	PRJNA289586	Heitz-BuschartA_2016			TP_wrong
+46	SAMN04571730	M04.4-V3-stool	subject_id		M04.4			FN
+46	SAMN04571730	M04.4-V3-stool	sample_id	SAMN04571730	M04.4-V3-stool			TP_wrong
+46	SAMN04571730	M04.4-V3-stool	curator		Paolo_Manghi			FN
+46	SAMN04571730	M04.4-V3-stool	pmid	27723761	27723761			TP_correct
+46	SAMN04571730	M04.4-V3-stool	target_condition	Type 1 diabetes mellitus	Type 1 Diabetes Mellitus			TP_correct
+46	SAMN04571730	M04.4-V3-stool	control		Study Control			FN
+46	SAMN04571730	M04.4-V3-stool	country	Luxembourg	Luxembourg			TP_correct
+46	SAMN04571730	M04.4-V3-stool	body_site	feces	feces	UBERON:0001988	UBERON:0001988	TP_correct
+46	SAMN04571730	M04.4-V3-stool	days_from_first_collection		78			FN
+46	SAMN04571730	M04.4-V3-stool	westernized		Yes			FN
+46	SAMN04571730	M04.4-V3-stool	dna_extraction_kit	MoBio	NorgenBiotek			TP_wrong
+46	SAMN04571730	M04.4-V3-stool	ncbi_accession	SRR3313075	SRR3313075			TP_correct
+46	SAMN04571730	M04.4-V3-stool	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq			TP_wrong
+46	SAMN04571730	M04.4-V3-stool	age		12			FN
+46	SAMN04571730	M04.4-V3-stool	age_group		Adolescent			FN
+46	SAMN04571730	M04.4-V3-stool	age_unit		Year			FN
+46	SAMN04571730	M04.4-V3-stool	sex	female	Female			TP_correct
+46	SAMN04571730	M04.4-V3-stool	age_min		12			FN
+46	SAMN04571730	M04.4-V3-stool	age_max		12			FN
+46	SAMN04571730	M04.4-V3-stool	age_years		12			FN
+46	SAMN04571730	M04.4-V3-stool	antibiotics_current_use		No			FN
+46	SAMN04571730	M04.4-V3-stool	bmi		29.84			FN
+46	SAMN04571730	M04.4-V3-stool	disease	type 1 diabetes mellitus	Healthy	NCIT:C2986	NCIT:C115935	TP_wrong
+46	SAMN04571730	M04.4-V3-stool	treatment	insulin replacement therapy		NCIT:C581		FP
+46	SAMN04571730	M04.4-V3-stool	biomarker_name		C-peptide;Cholesterol;Glucose			FN
+46	SAMN04571730	M04.4-V3-stool	biomarker_unit		ng/ml;mg/dL;mg/dL			FN
+46	SAMN04571730	M04.4-V3-stool	biomarker_value		3.2;145;87			FN
+46	SAMN04571730	M04.4-V3-stool	host_species	Homo sapiens	Homo sapiens			TP_correct
+47	SAMN04571731	M04.5-V1-stool	study_name	PRJNA289586	Heitz-BuschartA_2016			TP_wrong
+47	SAMN04571731	M04.5-V1-stool	subject_id		M04.5			FN
+47	SAMN04571731	M04.5-V1-stool	sample_id	SAMN04571731	M04.5-V1-stool			TP_wrong
+47	SAMN04571731	M04.5-V1-stool	curator		Paolo_Manghi			FN
+47	SAMN04571731	M04.5-V1-stool	pmid	27723761	27723761			TP_correct
+47	SAMN04571731	M04.5-V1-stool	target_condition	Type 1 diabetes mellitus	Type 1 Diabetes Mellitus			TP_correct
+47	SAMN04571731	M04.5-V1-stool	control		Study Control			FN
+47	SAMN04571731	M04.5-V1-stool	country	Luxembourg	Luxembourg			TP_correct
+47	SAMN04571731	M04.5-V1-stool	body_site	feces	feces	UBERON:0001988	UBERON:0001988	TP_correct
+47	SAMN04571731	M04.5-V1-stool	days_from_first_collection		0			FN
+47	SAMN04571731	M04.5-V1-stool	westernized		Yes			FN
+47	SAMN04571731	M04.5-V1-stool	dna_extraction_kit	MoBio	NorgenBiotek			TP_wrong
+47	SAMN04571731	M04.5-V1-stool	ncbi_accession	SRR3313076	SRR3313076			TP_correct
+47	SAMN04571731	M04.5-V1-stool	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq			TP_wrong
+47	SAMN04571731	M04.5-V1-stool	age		16			FN
+47	SAMN04571731	M04.5-V1-stool	age_group		Adolescent			FN
+47	SAMN04571731	M04.5-V1-stool	age_unit		Year			FN
+47	SAMN04571731	M04.5-V1-stool	sex	female	Female			TP_correct
+47	SAMN04571731	M04.5-V1-stool	age_min		16			FN
+47	SAMN04571731	M04.5-V1-stool	age_max		16			FN
+47	SAMN04571731	M04.5-V1-stool	age_years		16			FN
+47	SAMN04571731	M04.5-V1-stool	antibiotics_current_use		No			FN
+47	SAMN04571731	M04.5-V1-stool	bmi		29.32			FN
+47	SAMN04571731	M04.5-V1-stool	disease	type 1 diabetes mellitus	Healthy	NCIT:C2986	NCIT:C115935	TP_wrong
+47	SAMN04571731	M04.5-V1-stool	treatment	insulin replacement therapy		NCIT:C581		FP
+47	SAMN04571731	M04.5-V1-stool	biomarker_name		C-peptide;Cholesterol;Glucose			FN
+47	SAMN04571731	M04.5-V1-stool	biomarker_unit		ng/ml;mg/dL;mg/dL			FN
+47	SAMN04571731	M04.5-V1-stool	biomarker_value		2.1;160;79			FN
+47	SAMN04571731	M04.5-V1-stool	host_species	Homo sapiens	Homo sapiens			TP_correct
+48	SAMN04571732	M04.5-V2-stool	study_name	PRJNA289586	Heitz-BuschartA_2016			TP_wrong
+48	SAMN04571732	M04.5-V2-stool	subject_id		M04.5			FN
+48	SAMN04571732	M04.5-V2-stool	sample_id	SAMN04571732	M04.5-V2-stool			TP_wrong
+48	SAMN04571732	M04.5-V2-stool	curator		Paolo_Manghi			FN
+48	SAMN04571732	M04.5-V2-stool	pmid	27723761	27723761			TP_correct
+48	SAMN04571732	M04.5-V2-stool	target_condition	Type 1 diabetes mellitus	Type 1 Diabetes Mellitus			TP_correct
+48	SAMN04571732	M04.5-V2-stool	control		Study Control			FN
+48	SAMN04571732	M04.5-V2-stool	country	Luxembourg	Luxembourg			TP_correct
+48	SAMN04571732	M04.5-V2-stool	body_site	feces	feces	UBERON:0001988	UBERON:0001988	TP_correct
+48	SAMN04571732	M04.5-V2-stool	days_from_first_collection		49			FN
+48	SAMN04571732	M04.5-V2-stool	westernized		Yes			FN
+48	SAMN04571732	M04.5-V2-stool	dna_extraction_kit	MoBio	NorgenBiotek			TP_wrong
+48	SAMN04571732	M04.5-V2-stool	ncbi_accession	SRR3313077	SRR3313077			TP_correct
+48	SAMN04571732	M04.5-V2-stool	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq			TP_wrong
+48	SAMN04571732	M04.5-V2-stool	age		16			FN
+48	SAMN04571732	M04.5-V2-stool	age_group		Adolescent			FN
+48	SAMN04571732	M04.5-V2-stool	age_unit		Year			FN
+48	SAMN04571732	M04.5-V2-stool	sex	female	Female			TP_correct
+48	SAMN04571732	M04.5-V2-stool	age_min		16			FN
+48	SAMN04571732	M04.5-V2-stool	age_max		16			FN
+48	SAMN04571732	M04.5-V2-stool	age_years		16			FN
+48	SAMN04571732	M04.5-V2-stool	antibiotics_current_use		No			FN
+48	SAMN04571732	M04.5-V2-stool	bmi					TN
+48	SAMN04571732	M04.5-V2-stool	disease	type 1 diabetes mellitus	Healthy	NCIT:C2986	NCIT:C115935	TP_wrong
+48	SAMN04571732	M04.5-V2-stool	treatment	insulin replacement therapy		NCIT:C581		FP
+48	SAMN04571732	M04.5-V2-stool	biomarker_name		C-peptide;Cholesterol;Glucose			FN
+48	SAMN04571732	M04.5-V2-stool	biomarker_unit		ng/ml;mg/dL;mg/dL			FN
+48	SAMN04571732	M04.5-V2-stool	biomarker_value		3.6;150;95			FN
+48	SAMN04571732	M04.5-V2-stool	host_species	Homo sapiens	Homo sapiens			TP_correct
+49	SAMN04571733	M04.5-V3-stool	study_name	PRJNA289586	Heitz-BuschartA_2016			TP_wrong
+49	SAMN04571733	M04.5-V3-stool	subject_id		M04.5			FN
+49	SAMN04571733	M04.5-V3-stool	sample_id	SAMN04571733	M04.5-V3-stool			TP_wrong
+49	SAMN04571733	M04.5-V3-stool	curator		Paolo_Manghi			FN
+49	SAMN04571733	M04.5-V3-stool	pmid	27723761	27723761			TP_correct
+49	SAMN04571733	M04.5-V3-stool	target_condition	Type 1 diabetes mellitus	Type 1 Diabetes Mellitus			TP_correct
+49	SAMN04571733	M04.5-V3-stool	control		Study Control			FN
+49	SAMN04571733	M04.5-V3-stool	country	Luxembourg	Luxembourg			TP_correct
+49	SAMN04571733	M04.5-V3-stool	body_site	feces	feces	UBERON:0001988	UBERON:0001988	TP_correct
+49	SAMN04571733	M04.5-V3-stool	days_from_first_collection		82			FN
+49	SAMN04571733	M04.5-V3-stool	westernized		Yes			FN
+49	SAMN04571733	M04.5-V3-stool	dna_extraction_kit	MoBio	NorgenBiotek			TP_wrong
+49	SAMN04571733	M04.5-V3-stool	ncbi_accession	SRR3313078	SRR3313078			TP_correct
+49	SAMN04571733	M04.5-V3-stool	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq			TP_wrong
+49	SAMN04571733	M04.5-V3-stool	age		16			FN
+49	SAMN04571733	M04.5-V3-stool	age_group		Adolescent			FN
+49	SAMN04571733	M04.5-V3-stool	age_unit		Year			FN
+49	SAMN04571733	M04.5-V3-stool	sex	female	Female			TP_correct
+49	SAMN04571733	M04.5-V3-stool	age_min		16			FN
+49	SAMN04571733	M04.5-V3-stool	age_max		16			FN
+49	SAMN04571733	M04.5-V3-stool	age_years		16			FN
+49	SAMN04571733	M04.5-V3-stool	antibiotics_current_use		No			FN
+49	SAMN04571733	M04.5-V3-stool	bmi		28.7			FN
+49	SAMN04571733	M04.5-V3-stool	disease	type 1 diabetes mellitus	Healthy	NCIT:C2986	NCIT:C115935	TP_wrong
+49	SAMN04571733	M04.5-V3-stool	treatment	insulin replacement therapy		NCIT:C581		FP
+49	SAMN04571733	M04.5-V3-stool	biomarker_name		C-peptide;Cholesterol;Glucose			FN
+49	SAMN04571733	M04.5-V3-stool	biomarker_unit		ng/ml;mg/dL;mg/dL			FN
+49	SAMN04571733	M04.5-V3-stool	biomarker_value		2.1;137;77			FN
+49	SAMN04571733	M04.5-V3-stool	host_species	Homo sapiens	Homo sapiens			TP_correct
+50	SAMN04571734	M04.6-V1-stool	study_name	PRJNA289586	Heitz-BuschartA_2016			TP_wrong
+50	SAMN04571734	M04.6-V1-stool	subject_id		M04.6			FN
+50	SAMN04571734	M04.6-V1-stool	sample_id	SAMN04571734	M04.6-V1-stool			TP_wrong
+50	SAMN04571734	M04.6-V1-stool	curator		Paolo_Manghi			FN
+50	SAMN04571734	M04.6-V1-stool	pmid	27723761	27723761			TP_correct
+50	SAMN04571734	M04.6-V1-stool	target_condition	Type 1 diabetes mellitus	Type 1 Diabetes Mellitus			TP_correct
+50	SAMN04571734	M04.6-V1-stool	control		Study Control			FN
+50	SAMN04571734	M04.6-V1-stool	country	Luxembourg	Luxembourg			TP_correct
+50	SAMN04571734	M04.6-V1-stool	body_site	feces	feces	UBERON:0001988	UBERON:0001988	TP_correct
+50	SAMN04571734	M04.6-V1-stool	days_from_first_collection		0			FN
+50	SAMN04571734	M04.6-V1-stool	westernized		Yes			FN
+50	SAMN04571734	M04.6-V1-stool	dna_extraction_kit	MoBio	NorgenBiotek			TP_wrong
+50	SAMN04571734	M04.6-V1-stool	ncbi_accession	SRR3313080	SRR3313080			TP_correct
+50	SAMN04571734	M04.6-V1-stool	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq			TP_wrong
+50	SAMN04571734	M04.6-V1-stool	age		43			FN
+50	SAMN04571734	M04.6-V1-stool	age_group		Adult			FN
+50	SAMN04571734	M04.6-V1-stool	age_unit		Year			FN
+50	SAMN04571734	M04.6-V1-stool	sex	male	Male			TP_correct
+50	SAMN04571734	M04.6-V1-stool	age_min		43			FN
+50	SAMN04571734	M04.6-V1-stool	age_max		43			FN
+50	SAMN04571734	M04.6-V1-stool	age_years		43			FN
+50	SAMN04571734	M04.6-V1-stool	antibiotics_current_use		No			FN
+50	SAMN04571734	M04.6-V1-stool	bmi		35.35			FN
+50	SAMN04571734	M04.6-V1-stool	disease	type 1 diabetes mellitus	Hepatitis	NCIT:C2986	NCIT:C3095	TP_wrong
+50	SAMN04571734	M04.6-V1-stool	treatment	insulin replacement therapy		NCIT:C581		FP
+50	SAMN04571734	M04.6-V1-stool	biomarker_name		C-peptide;Cholesterol;Glucose			FN
+50	SAMN04571734	M04.6-V1-stool	biomarker_unit		ng/ml;mg/dL;mg/dL			FN
+50	SAMN04571734	M04.6-V1-stool	biomarker_value		1.8;149;94			FN
+50	SAMN04571734	M04.6-V1-stool	host_species	Homo sapiens	Homo sapiens			TP_correct
+51	SAMN04571735	M04.6-V2-stool	study_name	PRJNA289586	Heitz-BuschartA_2016			TP_wrong
+51	SAMN04571735	M04.6-V2-stool	subject_id		M04.6			FN
+51	SAMN04571735	M04.6-V2-stool	sample_id	SAMN04571735	M04.6-V2-stool			TP_wrong
+51	SAMN04571735	M04.6-V2-stool	curator		Paolo_Manghi			FN
+51	SAMN04571735	M04.6-V2-stool	pmid	27723761	27723761			TP_correct
+51	SAMN04571735	M04.6-V2-stool	target_condition	Type 1 diabetes mellitus	Type 1 Diabetes Mellitus			TP_correct
+51	SAMN04571735	M04.6-V2-stool	control		Study Control			FN
+51	SAMN04571735	M04.6-V2-stool	country	Luxembourg	Luxembourg			TP_correct
+51	SAMN04571735	M04.6-V2-stool	body_site	feces	feces	UBERON:0001988	UBERON:0001988	TP_correct
+51	SAMN04571735	M04.6-V2-stool	days_from_first_collection		27			FN
+51	SAMN04571735	M04.6-V2-stool	westernized		Yes			FN
+51	SAMN04571735	M04.6-V2-stool	dna_extraction_kit	MoBio	NorgenBiotek			TP_wrong
+51	SAMN04571735	M04.6-V2-stool	ncbi_accession	SRR3313081	SRR3313081			TP_correct
+51	SAMN04571735	M04.6-V2-stool	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq			TP_wrong
+51	SAMN04571735	M04.6-V2-stool	age		43			FN
+51	SAMN04571735	M04.6-V2-stool	age_group		Adult			FN
+51	SAMN04571735	M04.6-V2-stool	age_unit		Year			FN
+51	SAMN04571735	M04.6-V2-stool	sex	male	Male			TP_correct
+51	SAMN04571735	M04.6-V2-stool	age_min		43			FN
+51	SAMN04571735	M04.6-V2-stool	age_max		43			FN
+51	SAMN04571735	M04.6-V2-stool	age_years		43			FN
+51	SAMN04571735	M04.6-V2-stool	antibiotics_current_use		No			FN
+51	SAMN04571735	M04.6-V2-stool	bmi		34.89			FN
+51	SAMN04571735	M04.6-V2-stool	disease	type 1 diabetes mellitus	Hepatitis	NCIT:C2986	NCIT:C3095	TP_wrong
+51	SAMN04571735	M04.6-V2-stool	treatment	insulin replacement therapy		NCIT:C581		FP
+51	SAMN04571735	M04.6-V2-stool	biomarker_name		C-peptide;Cholesterol;Glucose			FN
+51	SAMN04571735	M04.6-V2-stool	biomarker_unit		ng/ml;mg/dL;mg/dL			FN
+51	SAMN04571735	M04.6-V2-stool	biomarker_value		1.4;169;88			FN
+51	SAMN04571735	M04.6-V2-stool	host_species	Homo sapiens	Homo sapiens			TP_correct
+52	SAMN04571736	M04.6-V3-stool	study_name	PRJNA289586	Heitz-BuschartA_2016			TP_wrong
+52	SAMN04571736	M04.6-V3-stool	subject_id		M04.6			FN
+52	SAMN04571736	M04.6-V3-stool	sample_id	SAMN04571736	M04.6-V3-stool			TP_wrong
+52	SAMN04571736	M04.6-V3-stool	curator		Paolo_Manghi			FN
+52	SAMN04571736	M04.6-V3-stool	pmid	27723761	27723761			TP_correct
+52	SAMN04571736	M04.6-V3-stool	target_condition	Type 1 diabetes mellitus	Type 1 Diabetes Mellitus			TP_correct
+52	SAMN04571736	M04.6-V3-stool	control		Study Control			FN
+52	SAMN04571736	M04.6-V3-stool	country	Luxembourg	Luxembourg			TP_correct
+52	SAMN04571736	M04.6-V3-stool	body_site	feces	feces	UBERON:0001988	UBERON:0001988	TP_correct
+52	SAMN04571736	M04.6-V3-stool	days_from_first_collection		63			FN
+52	SAMN04571736	M04.6-V3-stool	westernized		Yes			FN
+52	SAMN04571736	M04.6-V3-stool	dna_extraction_kit	MoBio	NorgenBiotek			TP_wrong
+52	SAMN04571736	M04.6-V3-stool	ncbi_accession	SRR3313082	SRR3313082			TP_correct
+52	SAMN04571736	M04.6-V3-stool	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq			TP_wrong
+52	SAMN04571736	M04.6-V3-stool	age		43			FN
+52	SAMN04571736	M04.6-V3-stool	age_group		Adult			FN
+52	SAMN04571736	M04.6-V3-stool	age_unit		Year			FN
+52	SAMN04571736	M04.6-V3-stool	sex	male	Male			TP_correct
+52	SAMN04571736	M04.6-V3-stool	age_min		43			FN
+52	SAMN04571736	M04.6-V3-stool	age_max		43			FN
+52	SAMN04571736	M04.6-V3-stool	age_years		43			FN
+52	SAMN04571736	M04.6-V3-stool	antibiotics_current_use		No			FN
+52	SAMN04571736	M04.6-V3-stool	bmi		35.82			FN
+52	SAMN04571736	M04.6-V3-stool	disease	type 1 diabetes mellitus	Hepatitis	NCIT:C2986	NCIT:C3095	TP_wrong
+52	SAMN04571736	M04.6-V3-stool	treatment	insulin replacement therapy		NCIT:C581		FP
+52	SAMN04571736	M04.6-V3-stool	biomarker_name		C-peptide;Cholesterol;Glucose			FN
+52	SAMN04571736	M04.6-V3-stool	biomarker_unit		ng/ml;mg/dL;mg/dL			FN
+52	SAMN04571736	M04.6-V3-stool	biomarker_value		1.8;192;93			FN
+52	SAMN04571736	M04.6-V3-stool	host_species	Homo sapiens	Homo sapiens			TP_correct

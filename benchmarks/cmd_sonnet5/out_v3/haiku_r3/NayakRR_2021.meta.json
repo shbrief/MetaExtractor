@@ -1,0 +1,140 @@
+{
+  "started_utc": "2026-09-14T20:29:01+00:00",
+  "finished_utc": "2026-09-14T20:30:55+00:00",
+  "paper_id": "33440172",
+  "status": "ok",
+  "error": null,
+  "request": {
+    "model_requested": "claude-haiku-4-5",
+    "models_returned": [
+      "claude-haiku-4-5-20251001"
+    ],
+    "max_tokens": 16384,
+    "max_tokens_ceiling": 64000,
+    "batch_size": 30,
+    "sample_discovery": true,
+    "min_table_relevance": 0.15,
+    "sampling_and_thinking": "not set (API defaults: no temperature/top_p/top_k/thinking/effort parameters sent)",
+    "age_rules": "/private/tmp/claude-501/-Users-sehyunoh-OmicsMLRepo-MetaExtractor/808c29a9-32c4-4814-a956-69024089f400/scratchpad/wt_bench_v3/benchmarks/cmd_sonnet5/age_rules_cmd.json"
+  },
+  "usage": {
+    "input_tokens": 10814,
+    "cache_creation_input_tokens": 23771,
+    "cache_read_input_tokens": 47542,
+    "output_tokens": 13628,
+    "n_calls": 4
+  },
+  "calls": [
+    {
+      "purpose": "table_plan",
+      "table": "PRJNA656577_ena_manifest.tsv",
+      "max_tokens": 2048,
+      "stop_reason": "end_turn",
+      "output_tokens": 337
+    },
+    {
+      "purpose": "fields",
+      "n_fields": 30,
+      "first_field": "study_name",
+      "max_tokens": 16384,
+      "stop_reason": "end_turn",
+      "output_tokens": 5051
+    },
+    {
+      "purpose": "fields",
+      "n_fields": 30,
+      "first_field": "zigosity",
+      "max_tokens": 16384,
+      "stop_reason": "end_turn",
+      "output_tokens": 5825
+    },
+    {
+      "purpose": "fields",
+      "n_fields": 11,
+      "first_field": "biomarker_name",
+      "max_tokens": 16384,
+      "stop_reason": "end_turn",
+      "output_tokens": 2415
+    }
+  ],
+  "cost_estimate": {
+    "input_usd": 0.010814,
+    "output_usd": 0.06814,
+    "cache_read_usd": 0.0047542,
+    "cache_write_usd": 0.02971375,
+    "total_usd": 0.11342195000000001,
+    "pricing_as_of": "2026-06-24"
+  },
+  "retrieval": {
+    "frozen_retrieval": "/Users/sehyunoh/OmicsMLRepo/MetaExtractor/benchmarks/cmd_sonnet5/out_v3/_fetch/NayakRR_2021",
+    "source": "pmc_fulltext",
+    "has_body": true,
+    "pmid": "33440172",
+    "pmcid": "7954989",
+    "doi": null,
+    "attempts": [
+      {
+        "rung": "pmc_fulltext",
+        "returned_text": true,
+        "is_body": true,
+        "chars": 81711
+      }
+    ],
+    "supplementary_included": [],
+    "supplementary_skipped": [
+      [
+        "NIHMS1655935-supplement-1.pdf",
+        "s3: HTTPError: HTTP Error 404: Not Found"
+      ],
+      [
+        "NIHMS1655935-supplement-3.xlsx",
+        "s3: HTTPError: HTTP Error 404: Not Found"
+      ],
+      [
+        "NIHMS1655935-supplement-4.xlsx",
+        "s3: HTTPError: HTTP Error 404: Not Found"
+      ],
+      [
+        "NIHMS1655935-supplement-5.xlsx",
+        "s3: HTTPError: HTTP Error 404: Not Found"
+      ],
+      [
+        "NIHMS1655935-supplement-6.xlsx",
+        "s3: HTTPError: HTTP Error 404: Not Found"
+      ],
+      [
+        "NIHMS1655935-supplement-7.xlsx",
+        "s3: HTTPError: HTTP Error 404: Not Found"
+      ],
+      [
+        "NIHMS1655935-supplement-8.xlsx",
+        "s3: HTTPError: HTTP Error 404: Not Found"
+      ],
+      [
+        "NIHMS1655935-supplement-9.xlsx",
+        "s3: HTTPError: HTTP Error 404: Not Found"
+      ],
+      [
+        "(europepmc zip)",
+        "response was not a valid ZIP"
+      ]
+    ],
+    "sra_manifest_source": "ena:PRJNA656577 (434 runs)",
+    "sra_manifest_warnings": []
+  },
+  "local_supplementary": [],
+  "paper_text_sha256": "f4a547463775ffc055c01e3462cb5fa38c691205a7c25b68b016f4aa8dfa5371",
+  "paper_text_chars": 81711,
+  "n_tables": 1,
+  "output": {
+    "granularity": "sample_level",
+    "n_samples": 434,
+    "n_fields": 71,
+    "n_warnings": 27
+  },
+  "versions": {
+    "metaextractor": "0.1.0",
+    "anthropic_sdk": "0.104.1",
+    "python": "3.14.0"
+  }
+}

@@ -1,0 +1,229 @@
+cmd: /Users/sehyunoh/.pyenv/versions/3.14.0/bin/python -m metaextractor.cli --paper-id 33440172 --schema /private/tmp/claude-501/-Users-sehyunoh-OmicsMLRepo-MetaExtractor/808c29a9-32c4-4814-a956-69024089f400/scratchpad/wt_bench_v3/benchmarks/cmd_sonnet5/cmd.clean.linkml.yaml --model claude-haiku-4-5 --age-rules /private/tmp/claude-501/-Users-sehyunoh-OmicsMLRepo-MetaExtractor/808c29a9-32c4-4814-a956-69024089f400/scratchpad/wt_bench_v3/benchmarks/cmd_sonnet5/age_rules_cmd.json --fetch-cache /Users/sehyunoh/OmicsMLRepo/MetaExtractor/benchmarks/cmd_sonnet5/out_v3/_fetch/NayakRR_2021 --require-fetch-cache --out /Users/sehyunoh/OmicsMLRepo/MetaExtractor/benchmarks/cmd_sonnet5/out_v3/haiku_r2/NayakRR_2021.json --csv /Users/sehyunoh/OmicsMLRepo/MetaExtractor/benchmarks/cmd_sonnet5/out_v3/haiku_r2/NayakRR_2021.csv --csv-provenance --save-text /Users/sehyunoh/OmicsMLRepo/MetaExtractor/benchmarks/cmd_sonnet5/out_v3/haiku_r2/NayakRR_2021.text.txt --run-meta /Users/sehyunoh/OmicsMLRepo/MetaExtractor/benchmarks/cmd_sonnet5/out_v3/haiku_r2/NayakRR_2021.meta.json --api-key file:/Users/sehyunoh/OmicsMLRepo/MetaHarmonizerEval/vignettes/keys/llm_baseline
+status: fail_rc2
+returncode: 2
+elapsed_s: 108.6
+--- stderr ---
+[loaded frozen retrieval pmc_fulltext for 33440172]
+[supplementary tables parsed: 1 (deterministic path; LLM will not see them)]
+[SRA/ENA run manifest: ena:PRJNA656577 (434 runs) (deterministic path)]
+[supplementary skipped: NIHMS1655935-supplement-1.pdf — s3: HTTPError: HTTP Error 404: Not Found]
+[supplementary skipped: NIHMS1655935-supplement-3.xlsx — s3: HTTPError: HTTP Error 404: Not Found]
+[supplementary skipped: NIHMS1655935-supplement-4.xlsx — s3: HTTPError: HTTP Error 404: Not Found]
+[supplementary skipped: NIHMS1655935-supplement-5.xlsx — s3: HTTPError: HTTP Error 404: Not Found]
+[supplementary skipped: NIHMS1655935-supplement-6.xlsx — s3: HTTPError: HTTP Error 404: Not Found]
+[supplementary skipped: NIHMS1655935-supplement-7.xlsx — s3: HTTPError: HTTP Error 404: Not Found]
+[supplementary skipped: NIHMS1655935-supplement-8.xlsx — s3: HTTPError: HTTP Error 404: Not Found]
+[supplementary skipped: NIHMS1655935-supplement-9.xlsx — s3: HTTPError: HTTP Error 404: Not Found]
+[supplementary skipped: (europepmc zip) — response was not a valid ZIP]
+ERROR: Model output failed schema validation: 5 validation errors for ExtractionResult
+fields.disease_response_os.section
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_type
+fields.disease_response_os_unit.section
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_type
+fields.ecog_performance_status.section
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_type
+fields.tumor_size_measurement.section
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_type
+fields.tumor_size_residual_measurement.section
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_type
+--- raw model response ---
+```json
+{
+  "paper_id": "33440172",
+  "granularity": "study_level",
+  "subgroups": [],
+  "fields": {
+    "biomarker_name": {
+      "value": [
+        "Bacteroidetes phylum abundance",
+        "Amplicon sequence variants (ASVs)",
+        "Gene families involved in purine metabolism",
+        "Gene families involved in pyrimidine metabolism",
+        "Dihydrofolate reductase (DHFR)",
+        "AICAR transformylase expression",
+        "Th17 cells",
+        "IFN-γ+ T cells",
+        "B220+ cells",
+        "Foxp3+ CD4+ cells",
+        "CD44+ CD69+ CD4+ cells",
+        "Gr1+ CD11b+ cells"
+      ],
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "High-dose MTX significantly decreased the Bacteroidetes phylum; purine and pyrimidine metabolism were significantly affected; reduced Th17 cells and myeloid cells in intestinal mucosa",
+      "section": "Results — Multiple sections",
+      "notes": "Biomarkers identified across different experimental systems: mouse microbiota changes, gene expression changes, and immune cell populations in transplant experiments."
+    },
+    "biomarker_unit": {
+      "value": [
+        "relative abundance",
+        "fold change",
+        "log2 fold change",
+        "percentage of cells"
+      ],
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "log2 fold changes; percentage of cells; fold change percentage in which values are normalized to the pre-MTX group",
+      "section": "Results; Methods — Quantification and Statistical Analysis",
+      "notes": "Units vary by biomarker type: taxa use fold changes or relative abundance; immune cells use percentage."
+    },
+    "biomarker_value": {
+      "value": [
+        "R=0.60 to R=0.75 (ANOSIM for community structure changes)",
+        "−0.066 slope (Bacteroidetes decrease)",
+        "11-33% of tested isolates inhibited at physiological concentrations",
+        "0.48–1.3 fold change (unchallenged immune cells)",
+        "0.64–1.33 fold change (challenged immune cells)",
+        "18 positive correlations and 1 negative correlation in spleen (p<0.05)"
+      ],
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "MTX significantly altered gut microbial community structure (ANOSIM, R=0.60, p=0.006; R=0.75, p=0.006); 18 significant positive correlations and 1 negative correlation (p<0.05, Spearman's correlation)",
+      "section": "Results — Multiple sections",
+      "notes": "Values represent statistical measures of change or association, not absolute measurements of single biomarkers."
+    },
+    "disease_response_os": {
+      "value": "not_reported",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "",
+      "section": null,
+      "notes": "This is a mechanistic study in RA patients and animal models; overall survival data not reported."
+    },
+    "disease_response_os_unit": {
+      "value": "not_reported",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "",
+      "section": null,
+      "notes": "No OS data reported."
+    },
+    "ecog_performance_status": {
+      "value": "not_reported",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "",
+      "section": null,
+      "notes": "ECOG performance status not reported in this study."
+    },
+    "feces_phenotype_value": {
+      "value": [
+        "Decreased richness",
+        "Shift in community structure",
+        "Decreased Bacteroidetes",
+        "Increased Actinobacteria",
+        "Altered 17 genera and 20 ASVs",
+        "Decreased carrying capacity",
+        "Delayed lag phase"
+      ],
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "MTX significantly impaired the growth of these complex microbial communities, resulting in a significant decrease in carrying capacity and a significant delay in the lag phase. 16S-seq of endpoint samples revealed a significant decrease in richness and shift in community structure",
+      "section": "Results — Clinical relevance of the interaction between methotrexate and the human gut microbiome",
+      "notes": "Fecal microbiota phenotypes measured ex vivo in samples from 30 MTX-naïve RA patients after 48-hour incubation with MTX."
+    },
+    "tumor_size_measurement": {
+      "value": "not_reported",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "",
+      "section": null,
+      "notes": "Not applicable; this is a mechanistic microbiome study, not an oncology trial."
+    },
+    "tumor_size_residual_measurement": {
+      "value": "not_reported",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "",
+      "section": null,
+      "notes": "Not applicable; this is a mechanistic microbiome study, not a surgical oncology trial."
+    },
+    "uncurated_metadata": {
+      "value": [
+        "Study uses multiple experimental systems: gnotobiotic mice, in vitro bacterial isolates, ex vivo RA patient stool samples, and longitudinal clinical samples",
+        "MTX doses tested: 1 mg/kg (low-dose) and 50 mg/kg (high-dose) in mice, 1.7–900 μg/ml in vitro",
+        "MTX physiological concentration range estimated: 22–220 μM (10–100 μg/ml) in proximal GI tract",
+        "45 bacterial isolates tested from 6 phyla; 42 commonly found in human gut",
+        "RNA-seq performed on 4 isolates with varying MTX sensitivity",
+        "Untargeted metabolomics on 2 isolates (B. theta and C. asparagiforme)",
+        "RA patient cohort: 23 patients with 16S-seq, 17 with metagenomics at baseline and 1 month post-MTX",
+        "Clinical response defined: DAS28 decrease ≥1.8 and continued oral MTX without addition of other DMARDs or biologics",
+        "MTX-responders (n=8) vs non-responders (n=15); no significant baseline differences in disease activity",
+        "Gnotobiotic mouse experiments included fecal transplantation from 3 MTX-responder RA patients (those with largest Bacteroidetes decrease)",
+        "DSS challenge used as inflammatory trigger in transplant experiments",
+        "Flow cytometry focused on T cell compartment in spleen and intestinal lamina propria"
+      ],
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "We colonized germ-free mice with a stool sample collected from a healthy human male (Donor 1) prior to oral administration of vehicle, low-dose MTX (1 mg/kg), or high-dose MTX (50 mg/kg); We assembled a panel of 45 bacterial isolates from 6 phyla, 42 of which are commonly found in the human gut microbiota",
+      "section": "Methods and Results — Multiple sections",
+      "notes": "Comprehensive experimental design combining multiple complementary approaches (in vivo, in vitro, ex vivo, and clinical)."
+    },
+    "host_species": {
+      "value": "Homo sapiens; Mus musculus",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "C57BL/6J mice (females, ages 6–16 weeks); consecutive patients from the New York University Langone Medical Center's rheumatology clinics",
+      "section": "Methods — Experimental Model and Subject Details",
+      "notes": "Study includes both human RA patients and gnotobiotic mice colonized with human microbiota."
+    }
+  },
+  "samples": [],
+  "extraction_warnings": [
+    "Paper is a mechanistic/basic science study combining multiple experimental systems; not a typical clinical trial with standard response metrics like ECOG or OS.",
+    "Biomarkers extracted are primarily microbiota composition and function measures plus immune cell phenotypes, not traditional disease biomarkers.",
+    "No individual patient-level data provided in tables; all reporting is aggregated at study or subgroup level (responders vs. non-responders).",
+    "Clinical response definition (DAS28 decrease ≥1.8) is reported but absolute values and detailed disease activity measures not fully presented in paper text."
+  ]
+}
+```
+

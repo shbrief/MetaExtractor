@@ -1,0 +1,11 @@
+query,ref_match,stage,match1,match1_score,match1_code
+feces,Not Found,1.0,Not Found,1.0,
+milk,Not Found,1.0,Not Found,1.0,
+nasal cavity,Not Found,1.0,Not Found,1.0,
+oral cavity,Not Found,1.0,Not Found,1.0,
+skin epidermis,Not Found,1.0,Not Found,1.0,
+vagina,Not Found,1.0,Not Found,1.0,
+Multiple body sites,Not Found,2.5,milk,0.4837,UBERON:0001913
+Stool,Not Found,2.5,feces,1.0000,UBERON:0001988
+Sweden,Not Found,2.5,feces,0.5216,UBERON:0001988
+USA,Not Found,2.5,skin epidermis,0.5115,UBERON:0001003

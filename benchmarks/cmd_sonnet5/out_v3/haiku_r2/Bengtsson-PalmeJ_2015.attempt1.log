@@ -1,0 +1,214 @@
+cmd: /Users/sehyunoh/.pyenv/versions/3.14.0/bin/python -m metaextractor.cli --paper-id 26259788 --schema /private/tmp/claude-501/-Users-sehyunoh-OmicsMLRepo-MetaExtractor/808c29a9-32c4-4814-a956-69024089f400/scratchpad/wt_bench_v3/benchmarks/cmd_sonnet5/cmd.clean.linkml.yaml --model claude-haiku-4-5 --age-rules /private/tmp/claude-501/-Users-sehyunoh-OmicsMLRepo-MetaExtractor/808c29a9-32c4-4814-a956-69024089f400/scratchpad/wt_bench_v3/benchmarks/cmd_sonnet5/age_rules_cmd.json --fetch-cache /Users/sehyunoh/OmicsMLRepo/MetaExtractor/benchmarks/cmd_sonnet5/out_v3/_fetch/Bengtsson-PalmeJ_2015 --require-fetch-cache --out /Users/sehyunoh/OmicsMLRepo/MetaExtractor/benchmarks/cmd_sonnet5/out_v3/haiku_r2/Bengtsson-PalmeJ_2015.json --csv /Users/sehyunoh/OmicsMLRepo/MetaExtractor/benchmarks/cmd_sonnet5/out_v3/haiku_r2/Bengtsson-PalmeJ_2015.csv --csv-provenance --save-text /Users/sehyunoh/OmicsMLRepo/MetaExtractor/benchmarks/cmd_sonnet5/out_v3/haiku_r2/Bengtsson-PalmeJ_2015.text.txt --run-meta /Users/sehyunoh/OmicsMLRepo/MetaExtractor/benchmarks/cmd_sonnet5/out_v3/haiku_r2/Bengtsson-PalmeJ_2015.meta.json --api-key file:/Users/sehyunoh/OmicsMLRepo/MetaHarmonizerEval/vignettes/keys/llm_baseline
+status: fail_rc2
+returncode: 2
+elapsed_s: 89.9
+--- stderr ---
+[loaded frozen retrieval pmc_html for 26259788]
+[supplementary tables parsed: 1 (deterministic path; LLM will not see them)]
+[SRA/ENA run manifest: ena:PRJEB7369 (70 runs) (deterministic path)]
+[supplementary skipped: (europepmc zip) — response was not a valid ZIP]
+ERROR: Model output failed schema validation: 5 validation errors for ExtractionResult
+fields.disease_response_os.section
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_type
+fields.disease_response_os_unit.section
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_type
+fields.ecog_performance_status.section
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_type
+fields.tumor_size_measurement.section
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_type
+fields.tumor_size_residual_measurement.section
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_type
+--- raw model response ---
+```json
+{
+  "paper_id": "26259788",
+  "granularity": "study_level",
+  "subgroups": [],
+  "fields": {
+    "biomarker_name": {
+      "value": [
+        "antibiotic resistance genes",
+        "extended-spectrum beta-lactamase (ESBL)-producing enterobacteria",
+        "Proteobacteria",
+        "sulfonamide resistance genes",
+        "trimethoprim resistance genes",
+        "beta-lactam resistance genes",
+        "tetracycline resistance genes",
+        "aminoglycoside resistance genes"
+      ],
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "explorative shotgun metagenomic sequencing to address the abundance of >300 antibiotic resistance genes",
+      "section": "Abstract",
+      "notes": "Multiple biomarkers measured in the study; listed in order of prominence in abstract and results."
+    },
+    "biomarker_unit": {
+      "value": [
+        "fold increase",
+        "relative abundance",
+        "resistance genes per 16S rRNA"
+      ],
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "7.7-fold increase for trimethoprim, 2.6-fold increase for beta-lactams; 0.2980 resistance genes per 16S rRNA",
+      "section": "Results; Table 1",
+      "notes": null
+    },
+    "biomarker_value": {
+      "value": [
+        "2.6-fold increase (sulfonamide)",
+        "7.7-fold increase (trimethoprim)",
+        "2.6-fold increase (beta-lactams)",
+        "0.2306 to 0.2980 (tetracycline, per 16S rRNA before/after)",
+        "0.0085 to 0.0129 (aminoglycoside, per 16S rRNA before/after)",
+        "0.0012 to 0.0031 (beta-lactam, per 16S rRNA before/after)",
+        "12/18 (67%) acquired ESBL-producing E. coli (Indian peninsula)",
+        "0/17 acquired ESBL-producing E. coli (Central Africa)",
+        "25/35 students had increasing abundance of Proteobacteria"
+      ],
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "2.6-fold increase for sulfonamide, 7.7-fold increase for trimethoprim, 2.6-fold increase for beta-lactams; 12/18 (67%) travelers carried ESBLA-positive isolates",
+      "section": "Abstract; Results; Table 1",
+      "notes": "Multiple biomarker values reported; specific fold-changes and counts provided."
+    },
+    "disease_response_os": {
+      "value": "not_reported",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "",
+      "section": null,
+      "notes": "This study focuses on antibiotic resistance dissemination in travelers; not a clinical trial with survival endpoints."
+    },
+    "disease_response_os_unit": {
+      "value": "not_reported",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "",
+      "section": null,
+      "notes": "Not applicable; no survival data reported."
+    },
+    "ecog_performance_status": {
+      "value": "not_reported",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "",
+      "section": null,
+      "notes": "Not a clinical trial; ECOG performance status not assessed."
+    },
+    "feces_phenotype_value": {
+      "value": [
+        "ESBL-producing Escherichia coli",
+        "CTX-M-15 gene",
+        "Increased Proteobacteria",
+        "Increased resistance gene abundance"
+      ],
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "all carried the CTX-M-15 gene; increased abundance of Proteobacteria in 25/35 students",
+      "section": "Results",
+      "notes": "Multiple fecal phenotypes reported; study primarily examined resistance genes in fecal microbiome."
+    },
+    "tumor_size_measurement": {
+      "value": "not_reported",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "",
+      "section": null,
+      "notes": "Not applicable; microbiome/antibiotic resistance study, not oncology."
+    },
+    "tumor_size_residual_measurement": {
+      "value": "not_reported",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "",
+      "section": null,
+      "notes": "Not applicable; microbiome/antibiotic resistance study, not oncology."
+    },
+    "uncurated_metadata": {
+      "value": [
+        "35 Swedish health care students (medical, nursing, dentistry) recruited from universities in Umeå, Stockholm, and Gothenburg",
+        "Ages 23 to 34 years; 74% female (26/35)",
+        "17 traveled to Central Africa; 18 to Indian peninsula",
+        "Median travel duration 34 days (range 14-150)",
+        "Fecal specimens collected median 4 days before departure and 22 days after return",
+        "69% (24/35) had travelers' diarrhea during trip",
+        "Two-thirds (23/35) participated in hospital-based patient work",
+        "None took antibiotics within 6 months prior to sampling or during travel",
+        "70 metagenomic sequencing libraries generated (57.7-463.8 million read pairs before quality filtering)",
+        "178 different resistance gene types detected across all specimens",
+        "Overall fold change increase of resistance genes modest at 1.06"
+      ],
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "35 subjects were included; Subjects were 23 to 34 years old, with a gender distribution of 74% females (26/35); Seventeen traveled to Central Africa and 18 to the Indian peninsula",
+      "section": "Abstract; Results — Subject description; Materials and Methods",
+      "notes": "Key study characteristics and participant information summarized for reference."
+    },
+    "host_species": {
+      "value": "Homo sapiens",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "inferred",
+      "confidence": "high",
+      "evidence_quote": "Swedish students from the universities; self-submission of separate fecal specimens",
+      "section": "Materials and Methods — Subject selection",
+      "notes": "Host species inferred from study population description as Swedish university students providing fecal specimens."
+    }
+  },
+  "samples": [],
+  "extraction_warnings": [
+    "Schema requests fields (ECOG status, overall survival, tumor size) that are not relevant to this microbiome/antibiotic resistance study. All such fields returned as 'not_reported'.",
+    "Biomarker values are aggregated at study level and include subgroup comparisons (Indian peninsula vs. Central Africa) but schema only supports study-level granularity.",
+    "The paper reports multiple resistance genes and phenotypes; comprehensive list provided in 'biomarker_name' and 'uncurated_metadata'."
+  ]
+}
+```
+

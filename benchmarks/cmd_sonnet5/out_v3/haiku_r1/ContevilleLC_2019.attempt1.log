@@ -1,0 +1,259 @@
+cmd: /Users/sehyunoh/.pyenv/versions/3.14.0/bin/python -m metaextractor.cli --paper-id 31417531 --schema /private/tmp/claude-501/-Users-sehyunoh-OmicsMLRepo-MetaExtractor/808c29a9-32c4-4814-a956-69024089f400/scratchpad/wt_bench_v3/benchmarks/cmd_sonnet5/cmd.clean.linkml.yaml --model claude-haiku-4-5 --age-rules /private/tmp/claude-501/-Users-sehyunoh-OmicsMLRepo-MetaExtractor/808c29a9-32c4-4814-a956-69024089f400/scratchpad/wt_bench_v3/benchmarks/cmd_sonnet5/age_rules_cmd.json --fetch-cache /Users/sehyunoh/OmicsMLRepo/MetaExtractor/benchmarks/cmd_sonnet5/out_v3/_fetch/ContevilleLC_2019 --require-fetch-cache --out /Users/sehyunoh/OmicsMLRepo/MetaExtractor/benchmarks/cmd_sonnet5/out_v3/haiku_r1/ContevilleLC_2019.json --csv /Users/sehyunoh/OmicsMLRepo/MetaExtractor/benchmarks/cmd_sonnet5/out_v3/haiku_r1/ContevilleLC_2019.csv --csv-provenance --save-text /Users/sehyunoh/OmicsMLRepo/MetaExtractor/benchmarks/cmd_sonnet5/out_v3/haiku_r1/ContevilleLC_2019.text.txt --run-meta /Users/sehyunoh/OmicsMLRepo/MetaExtractor/benchmarks/cmd_sonnet5/out_v3/haiku_r1/ContevilleLC_2019.meta.json --api-key file:/Users/sehyunoh/OmicsMLRepo/MetaHarmonizerEval/vignettes/keys/llm_baseline
+status: fail_rc2
+returncode: 2
+elapsed_s: 77.0
+--- stderr ---
+[loaded frozen retrieval pmc_fulltext for 31417531]
+[supplementary tables parsed: 1 (deterministic path; LLM will not see them)]
+[SRA/ENA run manifest: ena:PRJNA527208 (15 runs) (deterministic path)]
+[supplementary skipped: Image_1.TIFF — image-only (.tiff)]
+[supplementary skipped: Image_2.TIFF — image-only (.tiff)]
+[supplementary skipped: Image_3.TIFF — image-only (.tiff)]
+[supplementary skipped: Table_1.XLS — s3: ValueError: unsupported extension (.xls)]
+[supplementary skipped: Table_2.XLS — s3: ValueError: unsupported extension (.xls)]
+[supplementary skipped: Table_1.XLS — europepmc: ValueError: unsupported extension (.xls)]
+[supplementary skipped: Table_2.XLS — europepmc: ValueError: unsupported extension (.xls)]
+[supplementary skipped: fmicb-10-01743-g001.gif — europepmc: ValueError: image-only (.gif)]
+[supplementary skipped: fmicb-10-01743-g001.jpg — europepmc: ValueError: image-only (.jpg)]
+[supplementary skipped: fmicb-10-01743-g002.gif — europepmc: ValueError: image-only (.gif)]
+[supplementary skipped: fmicb-10-01743-g002.jpg — europepmc: ValueError: image-only (.jpg)]
+[supplementary skipped: fmicb-10-01743-g003.gif — europepmc: ValueError: image-only (.gif)]
+[supplementary skipped: fmicb-10-01743-g003.jpg — europepmc: ValueError: image-only (.jpg)]
+[supplementary skipped: fmicb-10-01743-g004.gif — europepmc: ValueError: image-only (.gif)]
+[supplementary skipped: fmicb-10-01743-g004.jpg — europepmc: ValueError: image-only (.jpg)]
+ERROR: Model output failed schema validation: 5 validation errors for ExtractionResult
+fields.disease_response_os.section
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_type
+fields.disease_response_os_unit.section
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_type
+fields.ecog_performance_status.section
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_type
+fields.tumor_size_measurement.section
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_type
+fields.tumor_size_residual_measurement.section
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_type
+--- raw model response ---
+```json
+{
+  "paper_id": "31417531",
+  "granularity": "study_level",
+  "subgroups": [],
+  "fields": {
+    "biomarker_name": {
+      "value": [
+        "Escherichia",
+        "Ralstonia",
+        "Neisseria",
+        "Desulfovibrio",
+        "Klebsiella",
+        "Cutibacterium",
+        "Akkermansia",
+        "Treponema",
+        "Brachyspira",
+        "Roseburia",
+        "Anaerostipes",
+        "Eubacterium",
+        "Flavonifactor",
+        "Enterococcus",
+        "Streptococcus",
+        "Methanobrevibacter",
+        "Methanoculleus",
+        "Methanothermobacter",
+        "pyruvate metabolism",
+        "glycolysis/gluconeogenesis",
+        "D-galacturonate/D-glucuronate",
+        "xylose utilization",
+        "mannose metabolism",
+        "lactose utilization",
+        "folate biosynthesis",
+        "riboflavin biosynthesis",
+        "tetrapyrroles",
+        "regulation/cell signaling",
+        "motility/chemotaxis",
+        "virulence",
+        "cobalt resistance",
+        "zinc resistance",
+        "cadmium resistance",
+        "programmed cell death",
+        "toxin-antitoxin systems",
+        "flagellar motility"
+      ],
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "Escherichia and Ralstonia genera in the Yanomami/Brazil, Neisseria and Desulfovibrio were Yanomami/Venezuela biomarkers, Klebsiella was Matses biomarker. Cutibacterium and Akkermansia were Yanomami/Brazil biomarkers.",
+      "section": "Results — Microbiomes Taxonomic Characterization",
+      "notes": "Biomarkers identified at multiple taxonomic and functional levels. Taxonomic biomarkers are bacterial genera; functional biomarkers are gene families/pathways from SEED database."
+    },
+    "biomarker_unit": {
+      "value": [
+        "relative abundance (%)",
+        "LDA score"
+      ],
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "Bar chart showing the LDA scores >4 of bacterial genera. Barplot representing the relative abundance (percentage)",
+      "section": "Results — Microbiomes Taxonomic Characterization; Figure 3",
+      "notes": "LDA scores used for taxonomic biomarker identification (threshold >4.0); relative abundance used to quantify biomarker levels."
+    },
+    "biomarker_value": {
+      "value": [
+        "higher abundance",
+        "LDA score >4.0",
+        "~70% of archaea classified reads (Methanobrevibacter in traditional groups)",
+        "P < 0.05"
+      ],
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "medium",
+      "evidence_quote": "LDA score of >4.0 were used as thresholds. Methanobrevibacter, comprising ∼70% of all archaea classified reads. significantly higher abundance (P < 0.05)",
+      "section": "Methods — Bioinformatics Processing; Results — Microbiomes Taxonomic Characterization",
+      "notes": "Specific quantitative values not always provided for all biomarkers; statistical significance reported as P-values."
+    },
+    "disease_response_os": {
+      "value": "not_reported",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "",
+      "section": null,
+      "notes": "Study is a descriptive microbiome characterization study, not a clinical trial. No disease outcomes or survival data reported."
+    },
+    "disease_response_os_unit": {
+      "value": "not_reported",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "",
+      "section": null,
+      "notes": "Not applicable; no overall survival data in this study."
+    },
+    "ecog_performance_status": {
+      "value": "not_reported",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "",
+      "section": null,
+      "notes": "This is a microbiome study of hunter-gatherer populations, not a clinical trial. ECOG performance status not applicable."
+    },
+    "feces_phenotype_value": {
+      "value": [
+        "higher bacterial alpha-diversity in traditional groups",
+        "lowest bacterial alpha-diversity in Yanomami individuals among traditional groups",
+        "higher bacterial diversity compared to urban individuals",
+        "highest interpersonal variation in Yanomami individuals",
+        "lowest interpersonal variation in urban individuals",
+        "higher Firmicutes and lower Bacteroidetes levels in traditional groups",
+        "higher Bacteroidetes and lower Firmicutes levels in urban individuals",
+        "Proteobacteria most prevalent phylum in Yanomami despite geographic origin"
+      ],
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "Yanomami individuals showed the lowest bacterial alpha-diversity among traditional groups; all traditional human groups presented higher bacterial diversity compared to urban individuals. Yanomami presented highest interpersonal variation; urbans presented lowest.",
+      "section": "Results — Intra- and Inter-Individual Diversity of the Gut Microbiomes",
+      "notes": "Fecal microbiome characteristics derived from metagenomic analysis including diversity indices and taxonomic composition."
+    },
+    "tumor_size_measurement": {
+      "value": "not_reported",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "",
+      "section": null,
+      "notes": "This is a microbiome study, not an oncology study. No tumor measurements reported."
+    },
+    "tumor_size_residual_measurement": {
+      "value": "not_reported",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "",
+      "section": null,
+      "notes": "Not applicable; this study does not involve tumor assessment."
+    },
+    "uncurated_metadata": {
+      "value": [
+        "Study population: Yanomami from Brazil (n=15), Yanomami from Venezuela (n=8), Matses (n=24), Tunapuco (n=12), US urban individuals (n=44)",
+        "Sequencing method: Illumina HiSeq 2500 sequencer; ~219 million total reads; ~14 million reads per sample average",
+        "Bioinformatic tools: Trimmomatic, Bowtie2, Kraken, LEfSe, SUPER-FOCUS",
+        "Taxonomic database: NCBI whole genomes of bacteria and archaea",
+        "Functional database: SEED database gene families",
+        "Lifestyle characterization: Yanomami are hunter-gatherers with swidden horticulture; diet low in fat/salt, high in fruits and fiber",
+        "Diet includes: snakes, wild pigs, monkeys, deer, jaguars, insects, larvae, fish, crabs, wild honey, roots, palm fruits",
+        "Housing: large communal huts constructed of thatched palm leaves and wood",
+        "Water source: unprotected wells and river streams",
+        "Chronic diseases virtually unknown among Yanomami: atherosclerosis, obesity",
+        "Ethics approval: Oswaldo Cruz Foundation Ethics Research Committee No. 638/11; CONEP No. 16907",
+        "Consent method: fingerprint consent obtained via bilingual interpreter",
+        "Sample collection: morning fecal samples collected in sterile containers",
+        "Geographic distribution: Yanomami inhabit Amazon region at sea level and high mountains spanning Brazil-Venezuela border"
+      ],
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "15 stool samples with FastDNA SPIN Kit; sequenced HiSeq 2500; ~219 million reads, ~14 million per sample. Yanomami diet low in fat and salt, high in fruits, fiber, sylvatic animals. Common chronic diseases virtually unknown among Yanomami.",
+      "section": "Methods — Study Participants and Sample Collection; Methods — DNA Extraction; Results — Lifestyle of the Human Group Studied; Introduction",
+      "notes": "Comprehensive study metadata including sequencing parameters, bioinformatic workflows, participant demographics, lifestyle factors, and ethical approvals."
+    },
+    "host_species": {
+      "value": "Homo sapiens",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "inferred",
+      "confidence": "high",
+      "evidence_quote": "semi-isolated Yanomami from Brazil; Yanomami from Venezuela; Matses; Tunapuco; urban individuals from the United States",
+      "section": "Introduction; Methods — Study Participants and Sample Collection",
+      "notes": "All study participants are human populations. Yanomami are described as indigenous semi-isolated group, other groups are traditional communities and urban populations."
+    }
+  },
+  "samples": [],
+  "extraction_warnings": [
+    "Tumor-related fields (tumor_size_measurement, tumor_size_residual_measurement) and disease_response_os are not applicable to this microbiome characterization study.",
+    "ECOG_performance_status is not applicable as this is not a clinical trial of patients with disease.",
+    "Biomarker values are reported as qualitative (higher/lower abundance) or as statistical thresholds (LDA score >4.0) rather than specific quantitative measurements per sample.",
+    "The study reports group-level analyses (study_level granularity) rather than individual sample-level biomarker measurements.",
+    "Feces_phenotype_value captures microbiome composition and diversity characteristics rather than classical fecal phenotypes."
+  ]
+}
+```
+
