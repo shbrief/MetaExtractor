@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "metaextractor"
 version = "0.1.0"
-description = "LLM-backed biomedical metadata extractor with verbatim provenance and no fabrication"
+description = "Schema-guided LLM metadata extraction from scientific literature and sequencing archives, with per-cell provenance"
 readme = "README.md"
 requires-python = ">=3.10"
 license = { text = "MIT" }

@@ -1,15 +1,22 @@
 # MetaExtractor
 
-A general-purpose, schema-driven metadata extractor for scientific literature.
-Given a research paper and *any* target schema (JSON, YAML, or LinkML), it
-returns structured metadata — one JSON object per paper, or one row per sample —
-with verbatim evidence quotes, section attributions, and explicit `not_reported`
-markers: no fabrication, no outside knowledge. A deterministic layer handles
-document retrieval, supplementary-table parsing, column mapping, and validation,
-so the LLM proposes values but never mints an identifier or edits a data value.
+A schema-guided metadata extractor for scientific literature and sequencing archives.
+Given a research paper and a target schema (JSON, YAML, or a supported subset of
+LinkML), it returns structured metadata — study-level fields and, where samples can be
+enumerated, one record per sample. Each study-level value carries the model's
+evidence quote, section, extraction type, and confidence, and each sample cell records
+its source (a table or run-manifest column, the model, or a deterministic rule).
+
+Model calls read prose, propose field values, and infer table structure. Retrieval,
+table execution, column mapping, joining, and propagation of study-level values are
+deterministic. Output validation is **structural** (the result envelope): it does not
+check values against the source text, the target schema's types, or its vocabularies,
+so extracted values should be reviewed or harmonized downstream.
+
 Ships with an evaluator that scores extractions against a gold-standard table.
-curatedMetagenomicData (cMD) is bundled as a worked example and used as the
-benchmark domain — but nothing in the tool is specific to microbiome data.
+curatedMetagenomicData (cMD) is bundled as a worked example and is the benchmark
+domain (`benchmarks/cmd_sonnet5/`); the code contains some cMD-oriented pieces
+(accession handling, column aliases, and an optional age-rule configuration).
 
 ## Install
 
@@ -154,8 +161,19 @@ See `metaextractor.output.ExtractionResult`. The result carries:
   `unit` / `normalized_value` / `normalized_unit`, `extraction_type`
   (`directly_stated` | `derived` | `inferred`), `confidence` band,
   `evidence_quote` (≤25 words, verbatim), `section`, and `notes`
-- `samples[]` — one dict per sample for sample-level extractions; each
-  sample inherits study-level fields and overrides per-sample ones
+- `samples[]` — one dict per sample for sample-level extractions. Study- and
+  subgroup-level values are copied into a sample only when they are known to apply to
+  it: `study`-scoped fields always; otherwise only single, non-aggregate values (never
+  cohort lists such as `"Healthy; Hypertension"` or summaries such as `"45 ± 10"`),
+  and for `sample`-scoped fields only when the model reported no subgroups. Scope comes
+  from the schema (`scope: study|sample`, or a LinkML slot annotation).
+- `sample_provenance[]` — parallel to `samples`; for each cell, its source:
+  `table:<table>:<column>`, `manifest:<table>:<column>`, `llm_sample`,
+  `study_fanout`, `subgroup_fanout:<label>`, or `age_rule:<rule>`
+- Optional age-bound rules (`--age-rules rules.json`, see
+  `metaextractor.sample_rules.AgeBoundRules`) fill `age_min`/`age_max` from a
+  per-sample age or an age-group definition; they are off unless configured and only
+  touch fields the schema declares.
 
 ## Evaluation
 
@@ -171,13 +189,29 @@ every `(sample, field)` cell it returns one of:
 | `FN`          | gold reported, extracted NR — omission               |
 | `FP`          | gold NR, extracted reported — over-claim             |
 
-From those it derives precision, recall, F1, value-accuracy on attempted
-cells, and total-cell accuracy — per field, aggregated, and stratified by
-`extraction_type` and `confidence` band.
+From those it derives, per field, aggregated, and stratified by
+`extraction_type` and `confidence` band:
 
-Equality is strict by design. Numeric values use a 5% relative tolerance
+| metric | definition |
+| --- | --- |
+| `value_precision` / `value_recall` / `value_f1` | TPc / (TPc+TPw+FP), TPc / (TPc+TPw+FN) — only a correct value is a hit |
+| `presence_precision` / `presence_recall` / `presence_f1` | (TPc+TPw) / (TPc+TPw+FP), (TPc+TPw) / (TPc+TPw+FN) — reporting status only |
+| `value_accuracy` | TPc / (TPc+TPw), conditional on both sides reporting |
+| `total_accuracy` | (TPc+TN) / all cells |
+
+`precision`, `recall`, and `f1` remain as aliases of the **presence** metrics for
+backward compatibility; prefer the explicit names. Samples are compared positionally
+(`samples[i]` ↔ `gold_rows[i]`); to compare by identity, align first with
+`metaextractor.alignment.align_by_identity`, which matches records one-to-one on
+identifier token sets (optionally compound keys such as `subject_id+timepoint`) and
+reports unmatched, pooled, ambiguous, and duplicate records. A `None` entry in
+`samples` is scored as a record that reports nothing. The scorer does not copy
+study-level values into samples unless `inherit_study_fields=True`.
+
+Equality is normalized, not byte-exact. Numeric values use a 5% relative tolerance
 after optional unit normalization (e.g. month → year). String values are
-compared after lowercasing, stripping, and sorting (for lists). There is
+compared after lowercasing and stripping; Python lists are sorted first
+(delimited strings are not split). There is
 no synonym table; surface-form mismatches surface as `TP_wrong` so they
 can be resolved upstream with an ontology crosswalk rather than masked.
 
@@ -200,7 +234,7 @@ result = evaluate(
 )
 
 print(result.summary())                                 # formatted text report
-print(result.aggregate.f1)                              # 0.80
+print(result.aggregate.value_f1, result.aggregate.presence_f1)
 print(result.per_field["dna_extraction_kit"].value_accuracy)
 result.to_cells_tsv("cells.tsv")                        # per-cell audit table
 
@@ -234,12 +268,18 @@ extractor's own contract:
   `evidence_quote` is substring-matched against the paper. Anything below
   ~95% indicates a system bug, not an extraction error.
 
-## Guarantees
+## Design properties and limits
 
-- The system prompt forbids outside knowledge; missing fields become
-  `"not_reported"` rather than guesses.
-- Output is validated with Pydantic — malformed responses raise
-  `ExtractionError` with the raw response attached for inspection.
+- The system prompt instructs the model not to use outside knowledge and to
+  return `"not_reported"` for absent fields. This is an instruction, not an
+  enforced check; use `evaluate(..., paper_text=...)` to test evidence quotes.
+- Responses are parsed as JSON and validated with Pydantic against the result
+  envelope. Malformed or truncated responses raise `ExtractionError` with the raw
+  response attached. Validation does not check field names, types, or enum
+  membership against the target schema.
+- `metaextract --run-meta meta.json --save-text text.txt` records request settings,
+  returned model ids, token usage, cost, and every retrieval attempt, plus the exact
+  text sent to the model.
 - The system prompt is cached (Anthropic ephemeral prompt cache), so
   repeated extractions against new papers reuse the cached prefix.
 - Schemas larger than `batch_size` fields are transparently split into
