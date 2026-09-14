@@ -5,10 +5,13 @@ The evaluator answers three orthogonal questions for every (sample, field) cell:
 
 1. **Reporting** — did the extractor attempt this field at all? Classified as
    ``TN`` (both NR), ``FN`` (gold reported, extracted NR), ``FP`` (gold NR,
-   extracted reported), or ``TP`` (both reported).
+   extracted reported), or ``TP`` (both reported). Presence precision/recall
+   are computed from these statuses alone.
 2. **Value correctness** — for ``TP`` cells, does the extracted value equal
    the gold value? Strings compared after lowercasing and stripping; numbers
-   compared with relative tolerance after optional unit normalization.
+   compared with relative tolerance after optional unit normalization (see
+   :func:`values_match`). Value-aware precision/recall count only
+   ``TP_correct`` as a hit (see :class:`FieldMetrics`).
 3. **Faithfulness** — does each non-NR claim carry an ``evidence_quote`` and
    does that quote appear verbatim in the paper text? (The latter check
    requires the paper text to be supplied.)
@@ -79,9 +82,34 @@ class CellResult:
     decision: Decision
 
 
+def _f1(p: float | None, r: float | None) -> float | None:
+    if p is None or r is None or (p + r) == 0:
+        return None
+    return 2 * p * r / (p + r)
+
+
 @dataclass
 class FieldMetrics:
-    """Confusion-matrix counts for a single field (or aggregated subset)."""
+    """Confusion-matrix counts for a single field (or aggregated subset).
+
+    Two metric families are derived from the same counts, and they answer
+    different questions:
+
+    * **Presence** (reporting status) — did the extractor report a value where
+      gold reports one, regardless of whether the value is right::
+
+          presence_precision = (TPc + TPw) / (TPc + TPw + FP)
+          presence_recall    = (TPc + TPw) / (TPc + TPw + FN)
+
+    * **Value-aware** — only a value-correct cell counts as a hit; a wrong
+      value is penalized in both precision and recall::
+
+          value_precision = TPc / (TPc + TPw + FP)
+          value_recall    = TPc / (TPc + TPw + FN)
+
+    ``precision``/``recall``/``f1`` are retained as aliases of the *presence*
+    metrics for backward compatibility; prefer the explicit names.
+    """
     label: str
     tn: int = 0
     tp_correct: int = 0
@@ -100,26 +128,50 @@ class FieldMetrics:
     def tp(self) -> int:
         return self.tp_correct + self.tp_wrong
 
+    # --- presence (reporting-status) metrics --------------------------------
+
     @property
-    def precision(self) -> float | None:
+    def presence_precision(self) -> float | None:
         d = self.tp + self.fp
         return self.tp / d if d else None
 
     @property
-    def recall(self) -> float | None:
+    def presence_recall(self) -> float | None:
         d = self.tp + self.fn
         return self.tp / d if d else None
 
     @property
-    def f1(self) -> float | None:
-        p, r = self.precision, self.recall
-        if p is None or r is None or (p + r) == 0:
-            return None
-        return 2 * p * r / (p + r)
+    def presence_f1(self) -> float | None:
+        return _f1(self.presence_precision, self.presence_recall)
+
+    # Backward-compatible aliases (presence semantics).
+    precision = presence_precision
+    recall = presence_recall
+    f1 = presence_f1
+
+    # --- value-aware metrics ------------------------------------------------
+
+    @property
+    def value_precision(self) -> float | None:
+        d = self.tp + self.fp
+        return self.tp_correct / d if d else None
+
+    @property
+    def value_recall(self) -> float | None:
+        d = self.tp + self.fn
+        return self.tp_correct / d if d else None
+
+    @property
+    def value_f1(self) -> float | None:
+        return _f1(self.value_precision, self.value_recall)
 
     @property
     def value_accuracy(self) -> float | None:
-        """Fraction of attempted-by-both cells where the value matched."""
+        """Fraction of cells reported by *both* sides (TP) whose value matched.
+
+        Conditional on gold being populated: cells the extractor asserted where
+        gold is blank (FP) are outside this denominator.
+        """
         return self.tp_correct / self.tp if self.tp else None
 
     @property
@@ -290,13 +342,20 @@ def values_match(
     gold_unit: str | None = None,
     unit_to_years: Mapping[str, float] = DEFAULT_UNIT_TO_YEARS,
 ) -> bool:
-    """Strict equality after type-aware normalization.
+    """Equality after type-aware normalization (not byte-verbatim equality).
 
-    Numeric values are compared with relative tolerance after converting
-    to a common base unit (years, when ``ext_unit``/``gold_unit`` are
-    supplied). String values are compared after lowercasing, stripping, and
-    sorting (for lists). No synonym table — surface-form differences are
-    reported as ``TP_wrong``.
+    The exact rules are:
+
+    * If both values parse as numbers, they are converted to years when
+      ``ext_unit``/``gold_unit`` name a unit in ``unit_to_years`` and match
+      when ``|e - g| / |g| <= numeric_tolerance`` (default 5%); a gold value
+      of 0 requires ``|e| < 1e-9``.
+    * Otherwise both are rendered as strings, stripped of surrounding
+      whitespace, and lowercased; Python lists are rendered as their
+      lowercased, stripped elements sorted and joined with ``", "``.
+      Delimited strings (``"a; b"``) are *not* split.
+
+    No synonym table — surface-form differences are reported as ``TP_wrong``.
     """
     e_num, g_num = _to_float(extracted), _to_float(gold)
     if e_num is not None and g_num is not None:
@@ -352,13 +411,17 @@ def evaluate(
     count_missing_gold_as_fn: bool = False,
     canonicalize: Canonicalizer | None = None,
     prefer_normalized: bool = False,
+    inherit_study_fields: bool = False,
 ) -> EvaluationResult:
     """Compare an extraction result against gold rows aligned by position.
 
     Parameters
     ----------
     extraction:
-        ``ExtractionResult`` (pydantic) or the equivalent dict.
+        ``ExtractionResult`` (pydantic) or the equivalent dict. A ``None``
+        entry in ``samples`` marks a gold row with no corresponding extracted
+        record (e.g. an unmatched row from
+        :func:`metaextractor.alignment.align_by_identity`); it reports nothing.
     gold_rows:
         Sequence of dicts, one per sample. Must be ordered to align
         positionally with ``extraction.samples``. Use
@@ -407,9 +470,15 @@ def evaluate(
         the verbatim ``value``) instead of the verbatim value — for scoring a
         result whose harmonized values were written back into the data. This
         is orthogonal to ``canonicalize`` (which harmonizes at scoring time).
+    inherit_study_fields:
+        When ``True``, a field absent from a sample row falls back to the
+        study-level value, re-applying fan-out at scoring time. Default
+        ``False``: the extractor already propagates study/subgroup values
+        under its scoping rules, so the scorer scores exactly the per-sample
+        cells the extractor emitted.
     """
     data = extraction.model_dump() if isinstance(extraction, ExtractionResult) else dict(extraction)
-    samples: list[dict[str, Any]] = list(data.get("samples", []))
+    samples: list[dict[str, Any] | None] = list(data.get("samples", []))
     study_fields: dict[str, Any] = data.get("fields", {})
     skip_fields = skip_fields or set()
     unit_fields = unit_fields or {}
@@ -427,16 +496,18 @@ def evaluate(
 
     for i in range(n):
         # ``sample is None`` marks a phantom row: a gold sample the extraction
-        # never enumerated (only reachable when count_missing_gold_as_fn=True).
-        # It reports nothing — no study-level fan-out — so every gold-reported
-        # cell becomes FN.
+        # never enumerated (beyond the extracted list with
+        # count_missing_gold_as_fn=True, or an explicit ``None`` placeholder for
+        # an identity-unmatched gold row). It reports nothing — no study-level
+        # fan-out — so every gold-reported cell becomes FN.
         sample = samples[i] if i < len(samples) else None
         gold = gold_rows[i]
         for ef, gf in field_map.items():
             if ef in skip_fields:
                 continue
             ev = (
-                _per_sample_value(study_fields, sample, ef, prefer_normalized=prefer_normalized)
+                _per_sample_value(study_fields, sample, ef, prefer_normalized=prefer_normalized,
+                                  inherit_study_fields=inherit_study_fields)
                 if sample is not None else None
             )
             gv = gold.get(gf)
@@ -611,14 +682,17 @@ def _per_sample_value(
     field: str,
     *,
     prefer_normalized: bool = False,
+    inherit_study_fields: bool = False,
 ) -> Any:
-    """Sample value wins; fall back to study-level so each sample inherits study facts.
+    """The sample's own cell; optionally fall back to the study-level value.
 
     A per-sample cell may carry the verbatim/normalized split as a
     ``{"value", "normalized_value"}`` object; it is unwrapped here.
     """
     if field in sample:
         return _unwrap_cell(sample[field], prefer_normalized=prefer_normalized)
+    if not inherit_study_fields:
+        return None
     study = study_fields.get(field)
     if not isinstance(study, Mapping):
         return None
@@ -663,8 +737,10 @@ def _format_row(fm: FieldMetrics) -> str:
         return f"{x:.2f}" if x is not None else " nan"
     return (
         f"{fm.label:<22} N={fm.n:<3} TN={fm.tn:<3} TPc={fm.tp_correct:<3} TPw={fm.tp_wrong:<3} "
-        f"FN={fm.fn:<3} FP={fm.fp:<3}  P={fmt(fm.precision)} R={fmt(fm.recall)} "
-        f"F1={fmt(fm.f1)} valAcc={fmt(fm.value_accuracy)} totalAcc={fmt(fm.total_accuracy)}"
+        f"FN={fm.fn:<3} FP={fm.fp:<3}  "
+        f"valueP={fmt(fm.value_precision)} valueR={fmt(fm.value_recall)} valueF1={fmt(fm.value_f1)}  "
+        f"presenceP={fmt(fm.presence_precision)} presenceR={fmt(fm.presence_recall)} "
+        f"valAcc={fmt(fm.value_accuracy)} totalAcc={fmt(fm.total_accuracy)}"
     )
 
 

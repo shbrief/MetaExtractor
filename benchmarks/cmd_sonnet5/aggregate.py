@@ -1,162 +1,238 @@
 #!/usr/bin/env python
-"""Aggregate the multi-seed benchmark (out_ms/<model>_r<k>) into per-study
-enumeration stability + per-model headline distributions, so run-to-run LLM
-variance is separated from the (now-fixed) fetch-source table-loss effect.
+"""Aggregate a multi-repeat run tree into the tables the manuscript reports.
 
-Writes out_ms/AGGREGATE.md and out_ms/aggregate.json. Run after `multiseed.py eval`.
+Reads ``TREE/<model>_r<k>/summary.json`` (written by ``bench.py eval``) and, when
+present, ``TREE/ledger.jsonl`` (written by ``run_frozen.py``). Writes
+``TREE/aggregate_v2.json`` and ``TREE/AGGREGATE.md`` with:
+
+* headline content metrics per join (end-to-end primary, conditional, positional),
+  value-aware and presence, median [min–max] across repeats;
+* a per-study × per-repeat error table (TPc / TPw / FN / FP / extra records);
+* identity-alignment diagnostics and per-study enumeration counts;
+* a study-cluster bootstrap CI for the paired model difference in end-to-end
+  value F1 (studies resampled with replacement; repeats pooled within study);
+* cell decisions for age_min/age_max split by value provenance (age rule vs other);
+* false-positive source checks and the attempt ledger summary.
+
+  python aggregate.py out_v2 [--models sonnet haiku] [--boot 2000]
 """
 from __future__ import annotations
 
+import argparse
 import json
-import re
+import random
 import statistics as st
-import sys
+from collections import defaultdict
 from pathlib import Path
 
-HERE = Path(__file__).resolve().parent
-# Optional first CLI arg selects the output tree (e.g. out_ms_refined); default out_ms.
-MS = Path(sys.argv[1]) if len(sys.argv) > 1 and not sys.argv[1].startswith("-") else HERE / "out_ms"
-if not MS.is_absolute():
-    MS = HERE / MS
-MODELS = ["sonnet", "haiku"]
-RUNS = 3
-ORDER = ["Bengtsson-PalmeJ_2015", "TettAJ_2019_b", "LiJ_2017", "NayakRR_2021",
-         "PasolliE_2019", "Heitz-BuschartA_2016", "FanY_2023", "QinJ_2012",
-         "ContevilleLC_2019", "LiSS_2016"]
+from bench import _add, _zero, metrics
+
+JOINS = ("end_to_end", "conditional", "positional")
+HEADLINE = ("value_precision", "value_recall", "value_f1", "presence_precision",
+            "presence_recall", "presence_f1", "value_accuracy", "fp", "fn")
 
 
-def _prf(a: dict):
-    tp = a["tp_correct"] + a["tp_wrong"]
-    P = tp / (tp + a["fp"]) if tp + a["fp"] else None
-    R = tp / (tp + a["fn"]) if tp + a["fn"] else None
-    F = 2 * P * R / (P + R) if P and R else None
-    V = a["tp_correct"] / tp if tp else None
-    return P, R, F, V
-
-
-def _content_agg(per_study: list[dict], key: str = "content") -> dict:
-    c = dict(tn=0, tp_correct=0, tp_wrong=0, fn=0, fp=0)
-    for s in per_study:
-        block = s.get(key)
-        if block:
-            for k in c:
-                c[k] += block[k]
-    return c
-
-
-def _fetch_source(runlog: Path) -> str:
-    if not runlog.exists():
-        return "?"
-    m = re.search(r"fetched (\w+)", runlog.read_text(errors="ignore"))
-    return m.group(1) if m else "?"
-
-
-def _run_dir(model: str, k: int) -> Path:
-    return MS / f"{model}_r{k}"
-
-
-def _fmt(x, nd=3):
-    return f"{x:.{nd}f}" if isinstance(x, float) else "–"
-
-
-def _rng(vals):
+def _mmm(vals):
     vals = [v for v in vals if v is not None]
-    if not vals:
-        return None, None, None
-    return (st.median(vals), min(vals), max(vals))
+    return [st.median(vals), min(vals), max(vals)] if vals else None
 
 
-def load_counts(model: str):
-    """study -> {'gold':g, 'runs':[n1,n2,n3], 'src':[s1,s2,s3], 'status':[...]}"""
-    out: dict[str, dict] = {}
-    for k in range(1, RUNS + 1):
-        d = _run_dir(model, k)
-        for study in ORDER:
-            rec = out.setdefault(study, {"gold": None, "runs": [], "src": [], "status": []})
-            j = d / f"{study}.json"
-            if j.exists():
-                data = json.loads(j.read_text())
-                rec["runs"].append(len(data.get("samples", [])))
-                rec["status"].append("ok")
-            else:
-                rec["runs"].append(None)
-                rec["status"].append("fail")
-            rec["src"].append(_fetch_source(d / f"{study}.runlog.txt"))
-    # gold counts from any summary
-    for k in range(1, RUNS + 1):
-        sj = _run_dir(model, k) / "summary.json"
+def load_runs(tree: Path, model: str) -> dict[str, dict]:
+    runs = {}
+    for d in sorted(tree.glob(f"{model}_r*")):
+        sj = d / "summary.json"
         if sj.exists():
-            for s in json.loads(sj.read_text())["per_study"]:
-                if "n_gold" in s and s["study"] in out:
-                    out[s["study"]]["gold"] = s["n_gold"]
-    return out
+            runs[d.name] = json.loads(sj.read_text())
+    return runs
 
 
-def headline_dist(model: str):
-    """Per-run content P/R/F1/vacc across the RUNS repeats -> (median,min,max) each."""
-    Ps, Rs, Fs, Vs, fps, Rcovs = [], [], [], [], [], []
-    per_run = []
-    for k in range(1, RUNS + 1):
-        sj = _run_dir(model, k) / "summary.json"
-        if not sj.exists():
-            continue
-        ps = json.loads(sj.read_text())["per_study"]
-        c = _content_agg(ps)
-        P, R, F, V = _prf(c)
-        # Coverage-aware recall (un/under-enumerated gold rows counted as FN);
-        # None on older summaries that predate the content_coverage block.
-        ccov = _content_agg(ps, "content_coverage")
-        _, Rcov, _, _ = _prf(ccov)
-        Ps.append(P); Rs.append(R); Fs.append(F); Vs.append(V); fps.append(c["fp"])
-        Rcovs.append(Rcov)
-        per_run.append({"run": k, "P": P, "R": R, "F1": F, "vacc": V,
-                        "R_cov": Rcov, "cells": c})
-    return {"P": _rng(Ps), "R": _rng(Rs), "F1": _rng(Fs), "vacc": _rng(Vs),
-            "fp": _rng(fps), "R_cov": _rng(Rcovs), "per_run": per_run}
+def pooled(per_study: list[dict], join: str, part: str = "content") -> dict:
+    a = _zero()
+    for s in per_study:
+        if "error" not in s:
+            _add(a, s[join][part])
+    return a
+
+
+def bootstrap_diff(runs_a: dict, runs_b: dict, B: int, seed: int = 0) -> dict:
+    """Paired study-cluster bootstrap of value-F1(a) − value-F1(b), end-to-end."""
+    def study_counts(runs):
+        out = defaultdict(_zero)
+        for summ in runs.values():
+            for s in summ["per_study"]:
+                if "error" not in s:
+                    _add(out[s["study"]], s["end_to_end"]["content"])
+        return out
+    ca, cb = study_counts(runs_a), study_counts(runs_b)
+    studies = sorted(set(ca) & set(cb))
+    def f1(counts, sample):
+        a = _zero()
+        for s in sample:
+            _add(a, counts[s])
+        return metrics(a)["value_f1"] or 0.0
+    point = f1(ca, studies) - f1(cb, studies)
+    rng = random.Random(seed)
+    diffs = []
+    for _ in range(B):
+        sample = [rng.choice(studies) for _ in studies]
+        diffs.append(f1(ca, sample) - f1(cb, sample))
+    diffs.sort()
+    return {"point": point, "ci95": [diffs[int(0.025 * B)], diffs[int(0.975 * B) - 1]],
+            "B": B, "n_studies": len(studies), "seed": seed}
+
+
+def ledger_summary(tree: Path) -> dict | None:
+    lp = tree / "ledger.jsonl"
+    if not lp.exists():
+        return None
+    rows = [json.loads(l) for l in lp.read_text().splitlines() if l.strip()]
+    by_task = defaultdict(list)
+    for r in rows:
+        by_task[(r["model_key"], r["repeat"], r["study"])].append(r)
+    final_ok = sum(1 for att in by_task.values() if att[-1]["status"] == "ok")
+    first_fail = [k for k, att in by_task.items() if att[0]["status"] != "ok"]
+    return {
+        "tasks": len(by_task), "attempts": len(rows),
+        "failed_attempts": sum(1 for r in rows if r["status"] != "ok"),
+        "initial_failures": len(first_fail),
+        "initial_failures_detail": [
+            {"task": "/".join(map(str, k)), "status": by_task[k][0]["status"],
+             "error_tail": by_task[k][0].get("stderr_tail", "")[-300:]} for k in first_fail],
+        "final_successes": final_ok,
+        "started": min(r["start_utc"] for r in rows), "ended": max(r["end_utc"] for r in rows),
+        "commits": sorted({r["git"]["commit"] for r in rows}),
+        "dirty_any": any(r["git"]["dirty"] for r in rows),
+    }
 
 
 def main() -> None:
-    agg = {"models": {}}
-    L = ["# Multi-seed benchmark — enumeration stability & headline distributions\n"]
-    L.append(f"Each study run **{RUNS}×** per model on the **fixed** fetcher "
-             "(Europe PMC fallback is strictly additive: S3 supplementary recovered "
-             "regardless of body source). Spread below is genuine LLM/pipeline "
-             "run-to-run variance.\n")
+    ap = argparse.ArgumentParser()
+    ap.add_argument("tree")
+    ap.add_argument("--models", nargs="+", default=["sonnet", "haiku"])
+    ap.add_argument("--boot", type=int, default=2000)
+    args = ap.parse_args()
+    tree = Path(args.tree)
 
-    for model in MODELS:
-        counts = load_counts(model)
-        hd = headline_dist(model)
-        agg["models"][model] = {"counts": counts, "headline": hd}
+    agg: dict = {"tree": str(tree), "models": {}}
+    runs_by_model = {m: load_runs(tree, m) for m in args.models}
+    for model, runs in runs_by_model.items():
+        md: dict = {"runs": list(runs), "headline": {}, "per_run": {}, "per_study": {}}
+        for join in JOINS:
+            per_run = {r: metrics(pooled(s["per_study"], join)) for r, s in runs.items()}
+            md["per_run"][join] = per_run
+            md["headline"][join] = {k: _mmm([pr[k] for pr in per_run.values()]) for k in HEADLINE}
+        cov = {r: metrics(pooled(s["per_study"], "positional", "content_coverage"))
+               for r, s in runs.items()}
+        md["headline"]["positional_coverage_recall"] = _mmm([c["presence_recall"] for c in cov.values()])
 
-        L.append(f"\n## {model}\n")
-        pr = hd["per_run"]
-        L.append("Headline content metrics per repeat (median [min–max] across "
-                 f"{len(pr)} run(s)):\n")
-        for key in ("P", "R", "F1", "vacc", "fp", "R_cov"):
-            med, lo, hi = hd[key]
-            if key == "R_cov" and med is None:
-                continue  # older summaries without the content_coverage block
-            nd = 0 if key == "fp" else 3
-            label = ("R_cov (coverage-aware recall; un/under-enumerated gold rows "
-                     "counted as FN)") if key == "R_cov" else key
-            L.append(f"- **{label}**: {_fmt(med, nd)} [{_fmt(lo, nd)}–{_fmt(hi, nd)}]")
-        L.append("\n### Per-study sample enumeration across repeats\n")
-        L.append("| study | gold | run1 | run2 | run3 | median | range | fetch src |")
-        L.append("|---|--:|--:|--:|--:|--:|--:|---|")
-        for study in ORDER:
-            rec = counts[study]
-            r = rec["runs"] + [None] * (RUNS - len(rec["runs"]))
-            med, lo, hi = _rng(rec["runs"])
-            rng = f"{lo}–{hi}" if lo is not None else "–"
-            srcs = ",".join(sorted(set(s[:4] for s in rec["src"])))
-            cells = " | ".join("fail" if x is None else str(x) for x in r[:RUNS])
-            L.append(f"| {study} | {rec['gold']} | {cells} | "
-                     f"{'' if med is None else int(med)} | {rng} | {srcs} |")
+        age_by_source = defaultdict(_zero)
+        fp_check = defaultdict(lambda: defaultdict(int))
+        for r, summ in runs.items():
+            for s in summ["per_study"]:
+                ps = md["per_study"].setdefault(s["study"], {"n_gold": s.get("n_gold"), "runs": {}})
+                if "error" in s:
+                    ps["runs"][r] = {"error": s["error"]}
+                    continue
+                al = s["alignment"]
+                ps["runs"][r] = {
+                    "n_extracted": s["n_extracted"], "granularity": s.get("granularity"),
+                    "alignment": al,
+                    "end_to_end": s["end_to_end"]["content"],
+                    "positional": s["positional"]["content"],
+                    "extra_records": al["unmatched_ext_with_key"] + al["unmatched_ext_without_key"],
+                }
+                for f in ("age_min", "age_max"):
+                    for kind, c in (s.get("by_source_end_to_end") or {}).get(f, {}).items():
+                        bucket = "age_rule" if kind == "age_rule" else "other"
+                        _add(age_by_source[f"{f}:{bucket}"], c)
+                for f, c in (s.get("fp_source_check") or {}).items():
+                    for k, v in c.items():
+                        fp_check[f][k] += v
+        md["age_by_source"] = {k: {**v, **metrics(v)} for k, v in age_by_source.items()}
+        md["fp_source_check"] = {f: dict(v) for f, v in fp_check.items()}
+        agg["models"][model] = md
 
-    (MS / "AGGREGATE.md").write_text("\n".join(L))
-    (MS / "aggregate.json").write_text(json.dumps(agg, indent=2, default=str))
-    print(f"wrote {MS/'AGGREGATE.md'} and {MS/'aggregate.json'}")
-    print("\n".join(L))
+    if len(args.models) == 2 and all(runs_by_model.values()):
+        a, b = args.models
+        agg["paired_value_f1_difference"] = {"a": a, "b": b,
+                                             **bootstrap_diff(runs_by_model[a], runs_by_model[b], args.boot)}
+    agg["ledger"] = ledger_summary(tree)
+    (tree / "aggregate_v2.json").write_text(json.dumps(agg, indent=2, default=str))
+    (tree / "AGGREGATE.md").write_text(render(agg))
+    print(render(agg))
+
+
+def _f(v, nd=3):
+    if v is None:
+        return "–"
+    if isinstance(v, list):
+        if nd == 0:
+            return f"{v[0]:.0f} [{v[1]:.0f}–{v[2]:.0f}]"
+        return f"{v[0]:.{nd}f} [{v[1]:.{nd}f}–{v[2]:.{nd}f}]"
+    return f"{v:.{nd}f}" if isinstance(v, float) else str(v)
+
+
+def render(agg: dict) -> str:
+    L = [f"# Aggregate — `{agg['tree']}`\n",
+         "Content fields, micro-averaged; median [min–max] across repeats. "
+         "Value-aware metrics count only value-correct cells as hits; presence metrics count "
+         "any reported value.\n"]
+    for join in JOINS:
+        L += [f"\n## {join.replace('_', '-')}\n",
+              "| model | value P | value R | value F1 | presence P | presence R | presence F1 | value acc (TP) | FP | FN |",
+              "|---|--:|--:|--:|--:|--:|--:|--:|--:|--:|"]
+        for model, md in agg["models"].items():
+            h = md["headline"][join]
+            L.append(f"| {model} | {_f(h['value_precision'])} | {_f(h['value_recall'])} | "
+                     f"{_f(h['value_f1'])} | {_f(h['presence_precision'])} | "
+                     f"{_f(h['presence_recall'])} | {_f(h['presence_f1'])} | "
+                     f"{_f(h['value_accuracy'])} | {_f(h['fp'], 0)} | {_f(h['fn'], 0)} |")
+    pd_ = agg.get("paired_value_f1_difference")
+    if pd_:
+        L.append(f"\nPaired end-to-end value-F1 difference ({pd_['a']} − {pd_['b']}): "
+                 f"{pd_['point']:+.3f}, 95% study-cluster bootstrap CI "
+                 f"[{pd_['ci95'][0]:+.3f}, {pd_['ci95'][1]:+.3f}] "
+                 f"({pd_['n_studies']} studies, B={pd_['B']}).\n")
+    for model, md in agg["models"].items():
+        L += [f"\n## {model}: per study × repeat (end-to-end content cells)\n",
+              "| study | gold n | repeat | ext n | key | matched | unmatched | pooled | ambiguous | extra | TPc | TPw | FN | FP | positional FP |",
+              "|---|--:|---|--:|---|--:|--:|--:|--:|--:|--:|--:|--:|--:|--:|"]
+        for study, ps in md["per_study"].items():
+            for r, x in ps["runs"].items():
+                if "error" in x:
+                    L.append(f"| {study} | {ps['n_gold']} | {r} | {x['error']} |" + " |" * 11)
+                    continue
+                al, c = x["alignment"], x["end_to_end"]
+                L.append(f"| {study} | {ps['n_gold']} | {r} | {x['n_extracted']} | "
+                         f"{al['key_used'] or '–'} | {al['matched']} | {al['unmatched_gold']} | "
+                         f"{al['pooled_gold']} | {al['ambiguous_gold']} | {x['extra_records']} | "
+                         f"{c['tp_correct']} | {c['tp_wrong']} | {c['fn']} | {c['fp']} | "
+                         f"{x['positional']['fp']} |")
+        if md["age_by_source"]:
+            L += [f"\n### {model}: age bounds by provenance (end-to-end, pooled over repeats)\n",
+                  "| field:source | TPc | TPw | FN | FP | value acc |", "|---|--:|--:|--:|--:|--:|"]
+            for k, v in sorted(md["age_by_source"].items()):
+                L.append(f"| {k} | {v['tp_correct']} | {v['tp_wrong']} | {v['fn']} | {v['fp']} | "
+                         f"{_f(v['value_accuracy'])} |")
+        if md["fp_source_check"]:
+            L += [f"\n### {model}: false-positive source check (pooled over repeats)\n",
+                  "Partial check only: whether the asserted value string, or the study-level "
+                  "evidence quote, occurs verbatim in the saved retrieved text. It does not "
+                  "establish fabrication or gold incompleteness.\n",
+                  "| field | FP cells | value in text | study evidence in text |", "|---|--:|--:|--:|"]
+            for f, v in sorted(md["fp_source_check"].items(), key=lambda kv: -kv[1]["fp"]):
+                L.append(f"| {f} | {v['fp']} | {v['value_in_text']} | {v['study_evidence_in_text']} |")
+    led = agg.get("ledger")
+    if led:
+        L += ["\n## Attempt ledger\n",
+              f"- tasks {led['tasks']}, attempts {led['attempts']}, failed attempts "
+              f"{led['failed_attempts']}, initial failures {led['initial_failures']}, "
+              f"final successes {led['final_successes']}",
+              f"- window {led['started']} → {led['ended']} (UTC); commits {led['commits']}; "
+              f"dirty tree: {led['dirty_any']}"]
+        for d in led["initial_failures_detail"]:
+            L.append(f"  - {d['task']}: {d['status']}")
+    return "\n".join(L) + "\n"
 
 
 if __name__ == "__main__":

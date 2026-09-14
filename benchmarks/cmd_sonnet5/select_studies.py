@@ -6,18 +6,25 @@ HEADER NAME (column order varies across studies):
   - pmid          -> drives extraction (metaextract --paper-id)
   - sample_id     -> BioSample IDs, used as the audit key in evaluation
 We keep only studies with a single clean numeric PMID and >=1 sample.
+
+Gold tables are read from ``$CMD_CURATION_DIR`` (a curatedMetagenomicDataCuration
+checkout); the manifest records repository-relative ``gold_rel`` paths.
+
+  CMD_CURATION_DIR=/path/to/curatedMetagenomicDataCuration python select_studies.py [OUT]
 """
 from __future__ import annotations
 
 import csv
 import json
 import random
+import subprocess
 import sys
 from pathlib import Path
 
-CURATED = Path.home() / "Projects/cMD_architecture/curatedMetagenomicDataCuration/inst/curated"
+from bench_paths import curation_dir
+
 SEED = 42
-N_TOTAL = 20
+N_TOTAL = 10  # the ten studies evaluated in MANUSCRIPT.md
 
 def read_tsv(path: Path) -> tuple[list[str], list[dict[str, str]]]:
     with path.open(newline="") as fh:
@@ -41,7 +48,8 @@ def clean_pmid(rows: list[dict[str, str]]) -> str | None:
     return None  # zero, or ambiguous multi-PMID studies -> skip
 
 def main() -> None:
-    tsvs = sorted(CURATED.glob("*/*_sample.tsv"))
+    root = curation_dir()
+    tsvs = sorted((root / "inst/curated").glob("*/*_sample.tsv"))
     print(f"found {len(tsvs)} *_sample.tsv studies", file=sys.stderr)
 
     rng = random.Random(SEED)
@@ -67,18 +75,20 @@ def main() -> None:
             "study": study,
             "pmid": pmid,
             "n_samples": len(sample_ids),
-            "gold_tsv": str(path),
+            "gold_rel": str(path.relative_to(root)),
             "sample_ids_head": sample_ids[:3],
         })
         if len(manifest) >= N_TOTAL:
             break
 
     out = Path(sys.argv[1]) if len(sys.argv) > 1 else Path("manifest.json")
-    out.write_text(json.dumps(manifest, indent=2))
-    print(f"\nselected {len(manifest)} studies (seed={SEED}) -> {out}", file=sys.stderr)
+    out.write_text(json.dumps(manifest, indent=2) + "\n")
+    commit = subprocess.run(["git", "-C", str(root), "rev-parse", "HEAD"],
+                            capture_output=True, text=True).stdout.strip()
+    print(f"\nselected {len(manifest)} studies (seed={SEED}, curation commit {commit or '?'}) "
+          f"-> {out}", file=sys.stderr)
     for i, m in enumerate(manifest):
-        tag = "PILOT" if i < 5 else "     "
-        print(f"  {tag} {i+1:>2}. {m['study']:<28} pmid={m['pmid']:<10} n_samples={m['n_samples']}", file=sys.stderr)
+        print(f"  {i+1:>2}. {m['study']:<28} pmid={m['pmid']:<10} n_samples={m['n_samples']}", file=sys.stderr)
     if skipped:
         print(f"\nskipped {len(skipped)} while drawing (showing first 10):", file=sys.stderr)
         for s, why in skipped[:10]:

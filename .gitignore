@@ -24,3 +24,6 @@ result.csv
 result.json
 .DS_Store
 .Rproj.user
+
+# Retrieved article text archived per run (checksummed in ledger.jsonl; not redistributed)
+benchmarks/cmd_sonnet5/out_v2/**/*.text.txt

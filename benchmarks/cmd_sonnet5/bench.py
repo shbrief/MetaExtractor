@@ -1,34 +1,48 @@
 #!/usr/bin/env python
 """MetaExtractor benchmark harness against curatedMetagenomicData gold tables.
 
-Two subcommands:
+Subcommands:
 
-  run   manifest.json OUTDIR [--limit N] [--model M]
-        For each study, fetch by PMID and extract sample-level metadata against
-        the curatedmetagenomicdata LinkML target schema. Writes OUTDIR/<study>.json,
-        OUTDIR/<study>.csv, and OUTDIR/<study>.runlog.txt (token usage / cost).
+  run        OUTDIR [--model M]    extract every manifest study by PMID (ad hoc;
+                                   the frozen benchmark uses run_frozen.py)
+  run-tables OUTDIR [--model M]    deterministic path: feed the study's raw
+                                   *_sra_meta.tsv as a local supplementary file
+  eval       OUTDIR                score OUTDIR/<study>.json against gold
+  harmonize  TREE                  ontology-harmonization scoring over run dirs
 
-  eval  manifest.json OUTDIR [--limit N]
-        Score each OUTDIR/<study>.json against its gold *_sample.tsv using an
-        identity field crosswalk over (target-schema fields) ∩ (gold columns).
-        Writes per-study cell TSVs, OUTDIR/summary.json and OUTDIR/REPORT.md.
+Scoring (``eval``) reports three joins, most to least rigorous:
 
-Evaluation joins extracted samples to gold rows POSITIONALLY (samples[i] ↔ gold[i]),
-so sample count / ordering alignment is itself a measured outcome.
+* **end-to-end** (primary) — extracted records are aligned to gold rows one-to-one
+  on a shared identifier (:func:`metaextractor.alignment.align_by_identity`);
+  every gold row is scored, so unmatched, pooled, or ambiguous gold rows count
+  their populated cells as false negatives. Extra extracted records are reported
+  separately and are not scored as cells.
+* **conditional** — the same alignment, restricted to matched gold rows.
+* **positional** (supplementary, legacy) — sample *i* ↔ gold row *i* over
+  ``min(n_extracted, n_gold)``; kept only for comparison with earlier reports.
+
+Each join reports value-aware and presence precision/recall (see
+:class:`metaextractor.evaluation.FieldMetrics`).
+
+Gold tables are resolved via ``$CMD_CURATION_DIR`` (see bench_paths.py).
 """
 from __future__ import annotations
 
 import argparse
-import csv
 import json
+import statistics as st
 import subprocess
 import sys
 import time
+from collections import Counter, defaultdict
 from pathlib import Path
 
-_HERE = Path(__file__).resolve().parent
-SCHEMA = _HERE / "cmd.clean.linkml.yaml"  # produced by make_clean_schema.py
-ATTRS = Path.home() / "OmicsMLRepo/MetaHarmonizerSchemaRegistry/schema/curatedmetagenomicdata/cmd_target_attrs.csv"
+from bench_paths import (HERE, SCHEMA, curation_dir, gold_path, load_manifest,
+                         schema_fields)
+
+from metaextractor.alignment import align_by_identity
+from metaextractor.evaluation import (evaluate, evaluate_both, is_not_reported,
+                                      load_extraction, load_gold_tsv)
 
 # Fields that are identifiers / provenance rather than scientific content.
 # Evaluated but reported in a separate bucket from the headline content metric.
@@ -37,427 +51,363 @@ META_FIELDS = {
     "curator", "ncbi_accession", "host_species", "uncurated_metadata",
 }
 UNIT_FIELDS_ALL = {"age": "age_unit", "age_min": "age_unit", "age_max": "age_unit"}
+DEFAULT_ALIGN_KEY = "ncbi_accession,sample_id,subject_id"
+COUNT_KEYS = ("tn", "tp_correct", "tp_wrong", "fn", "fp")
 
 
-def schema_fields() -> list[str]:
-    with ATTRS.open() as fh:
-        return [r["field_name"] for r in csv.DictReader(fh)]
+def _zero() -> dict:
+    return dict.fromkeys(COUNT_KEYS, 0)
 
 
-def load_manifest(path: Path, limit: int | None) -> list[dict]:
-    m = json.loads(Path(path).read_text())
-    return m[:limit] if limit else m
+def _add(dst: dict, src: dict) -> dict:
+    for k in COUNT_KEYS:
+        dst[k] += src[k]
+    return dst
 
 
-# --------------------------------------------------------------------------- run
-def cmd_run(args: argparse.Namespace) -> None:
-    outdir = Path(args.outdir); outdir.mkdir(parents=True, exist_ok=True)
-    manifest = load_manifest(args.manifest, args.limit)
-    print(f"running {len(manifest)} studies, model={args.model}, schema={SCHEMA.name}\n")
-    for i, m in enumerate(manifest, 1):
-        study, pmid = m["study"], m["pmid"]
-        out_json = outdir / f"{study}.json"
-        if out_json.exists() and not args.force:
-            print(f"[{i}/{len(manifest)}] {study}: exists, skip"); continue
-        cmd = [
-            "metaextract", "--paper-id", pmid, "--schema", str(SCHEMA),
-            "--model", args.model, "--out", str(out_json),
-            "--csv", str(outdir / f"{study}.csv"), "--csv-provenance",
-        ]
-        print(f"[{i}/{len(manifest)}] {study} pmid={pmid} (expect {m['n_samples']} samples) ...", flush=True)
-        t0 = time.time()
-        proc = subprocess.run(cmd, capture_output=True, text=True)
-        dt = time.time() - t0
-        (outdir / f"{study}.runlog.txt").write_text(
-            f"cmd: {' '.join(cmd)}\nreturncode: {proc.returncode}\nelapsed_s: {dt:.1f}\n"
-            f"--- stderr ---\n{proc.stderr}\n--- stdout(head) ---\n{proc.stdout[:2000]}\n"
-        )
-        tail = (proc.stderr.strip().splitlines() or ["<no stderr>"])[-1]
-        status = "ok" if proc.returncode == 0 and out_json.exists() else f"FAIL rc={proc.returncode}"
-        print(f"      -> {status} in {dt:.0f}s | {tail}")
+def agg_over(per_field, keys) -> dict:
+    a = _zero()
+    for k in keys:
+        fm = per_field.get(k)
+        if fm is not None:
+            a["tn"] += fm.tn; a["tp_correct"] += fm.tp_correct; a["tp_wrong"] += fm.tp_wrong
+            a["fn"] += fm.fn; a["fp"] += fm.fp
+    return a
 
 
-# --------------------------------------------------------------------- run-tables
-def _sra_meta_path(study: str) -> Path | None:
-    p = (Path.home() / "Projects/cMD_architecture/curatedMetagenomicDataCuration/inst/curated"
-         / study / f"{study}_sra_meta.tsv")
-    return p if p.exists() else None
-
-
-def cmd_run_tables(args: argparse.Namespace) -> None:
-    """Deterministic tables= path: feed the study's raw SRA metadata table as a
-    local supplementary file, skip the Europe PMC fetch. Per-sample rows come
-    from the column-map+join pipeline; the LLM only does prose study-level fields."""
-    outdir = Path(args.outdir); outdir.mkdir(parents=True, exist_ok=True)
-    manifest = load_manifest(args.manifest, args.limit)
-    print(f"running {len(manifest)} studies (tables= path), model={args.model}\n")
-    for i, m in enumerate(manifest, 1):
-        study, pmid = m["study"], m["pmid"]
-        sra = _sra_meta_path(study)
-        out_json = outdir / f"{study}.json"
-        if out_json.exists() and not args.force:
-            print(f"[{i}/{len(manifest)}] {study}: exists, skip"); continue
-        if sra is None:
-            print(f"[{i}/{len(manifest)}] {study}: NO sra_meta table, skip"); continue
-        cmd = [
-            "metaextract", "--paper-id", pmid, "--schema", str(SCHEMA),
-            "--model", args.model, "--supplementary", str(sra), "--no-supplementary",
-            "--out", str(out_json), "--csv", str(outdir / f"{study}.csv"), "--csv-provenance",
-        ]
-        print(f"[{i}/{len(manifest)}] {study} pmid={pmid} sra={sra.name} ...", flush=True)
-        t0 = time.time()
-        proc = subprocess.run(cmd, capture_output=True, text=True)
-        dt = time.time() - t0
-        (outdir / f"{study}.runlog.txt").write_text(
-            f"cmd: {' '.join(cmd)}\nreturncode: {proc.returncode}\nelapsed_s: {dt:.1f}\n"
-            f"--- stderr ---\n{proc.stderr}\n"
-        )
-        tail = (proc.stderr.strip().splitlines() or ["<no stderr>"])[-1]
-        status = "ok" if proc.returncode == 0 and out_json.exists() else f"FAIL rc={proc.returncode}"
-        print(f"      -> {status} in {dt:.0f}s | {tail}")
-
-
-# -------------------------------------------------------------------------- eval
-def _acc_key(v) -> str | None:
-    """Normalize an ncbi_accession cell to its first run/sample token for joining."""
-    if not v or str(v).strip().lower() in {"na", "nan", "not_reported", ""}:
-        return None
-    import re
-    tok = re.split(r"[;,\s]+", str(v).strip())[0]
-    return tok or None
-
-
-def align_samples(ext_samples: list[dict], gold_rows: list[dict], key):
-    """Reorder extracted samples to gold order by a shared unique-id key.
-
-    ``key`` may be a single column name or an ordered fallback of candidates
-    (a list, or a comma-separated string). The first candidate that yields any
-    match is used to align the whole study — so a study whose runs are keyed on
-    ``ncbi_accession`` and one keyed on ``sample_id`` are each aligned on their
-    own available id (e.g. PasolliE shares no accession with gold but matches
-    perfectly on ``sample_id``). Candidates that no study can match on (the
-    ingestion-ceiling studies carry no gold-overlapping id at all) simply
-    contribute nothing. Returns
-    (aligned_ext, matched_gold, n_matched, n_gold, n_ext, used_key)."""
-    keys = [k.strip() for k in key.split(",")] if isinstance(key, str) else list(key)
-    keys = [k for k in keys if k]
-    for kcol in keys:
-        idx: dict[str, dict] = {}
-        for s in ext_samples:
-            k = _acc_key(s.get(kcol))
-            if k and k not in idx:
-                idx[k] = s
-        aligned_ext, matched_gold = [], []
-        for g in gold_rows:
-            k = _acc_key(g.get(kcol))
-            if k and k in idx:
-                aligned_ext.append(idx[k]); matched_gold.append(g)
-        if matched_gold:  # first candidate with any overlap wins for this study
-            return aligned_ext, matched_gold, len(matched_gold), len(gold_rows), len(ext_samples), kcol
-    return [], [], 0, len(gold_rows), len(ext_samples), None
+def metrics(a: dict) -> dict:
+    """Value-aware and presence metrics from pooled counts."""
+    tp = a["tp_correct"] + a["tp_wrong"]
+    def ratio(n, d):
+        return n / d if d else None
+    def f1(p, r):
+        return 2 * p * r / (p + r) if p is not None and r is not None and (p + r) else None
+    vp, vr = ratio(a["tp_correct"], tp + a["fp"]), ratio(a["tp_correct"], tp + a["fn"])
+    pp, pr = ratio(tp, tp + a["fp"]), ratio(tp, tp + a["fn"])
+    return {"value_precision": vp, "value_recall": vr, "value_f1": f1(vp, vr),
+            "presence_precision": pp, "presence_recall": pr, "presence_f1": f1(pp, pr),
+            "value_accuracy": ratio(a["tp_correct"], tp), **a}
 
 
 def build_field_map(gold_cols: list[str]) -> dict[str, str]:
-    fields = schema_fields()
     gc = set(gold_cols)
-    return {f: f for f in fields if f in gc}
+    return {f: f for f in schema_fields() if f in gc}
+
+
+# --------------------------------------------------------------------------- run
+def _extract_cmd(pmid: str, out_json: Path, model: str, extra: list[str]) -> list[str]:
+    return ["metaextract", "--paper-id", pmid, "--schema", str(SCHEMA), "--model", model,
+            "--out", str(out_json), "--csv", str(out_json.with_suffix(".csv")),
+            "--csv-provenance", *extra]
+
+
+def _run_one(cmd: list[str], logfile: Path) -> str:
+    t0 = time.time()
+    proc = subprocess.run(cmd, capture_output=True, text=True)
+    dt = time.time() - t0
+    logfile.write_text(f"cmd: {' '.join(cmd)}\nreturncode: {proc.returncode}\n"
+                       f"elapsed_s: {dt:.1f}\n--- stderr ---\n{proc.stderr}\n")
+    tail = (proc.stderr.strip().splitlines() or ["<no stderr>"])[-1]
+    return f"{'ok' if proc.returncode == 0 else f'FAIL rc={proc.returncode}'} in {dt:.0f}s | {tail}"
+
+
+def cmd_run(args: argparse.Namespace) -> None:
+    outdir = Path(args.outdir); outdir.mkdir(parents=True, exist_ok=True)
+    for i, m in enumerate(load_manifest(limit=args.limit), 1):
+        out_json = outdir / f"{m['study']}.json"
+        if out_json.exists() and not args.force:
+            print(f"[{i}] {m['study']}: exists, skip"); continue
+        print(f"[{i}] {m['study']} pmid={m['pmid']} ...", flush=True)
+        print("   ->", _run_one(_extract_cmd(m["pmid"], out_json, args.model, []),
+                                 outdir / f"{m['study']}.runlog.txt"))
+
+
+def cmd_run_tables(args: argparse.Namespace) -> None:
+    outdir = Path(args.outdir); outdir.mkdir(parents=True, exist_ok=True)
+    for i, m in enumerate(load_manifest(limit=args.limit), 1):
+        sra = curation_dir() / "inst/curated" / m["study"] / f"{m['study']}_sra_meta.tsv"
+        out_json = outdir / f"{m['study']}.json"
+        if not sra.exists():
+            print(f"[{i}] {m['study']}: no sra_meta table, skip"); continue
+        if out_json.exists() and not args.force:
+            print(f"[{i}] {m['study']}: exists, skip"); continue
+        extra = ["--supplementary", str(sra), "--no-supplementary"]
+        print(f"[{i}] {m['study']} (tables path) ...", flush=True)
+        print("   ->", _run_one(_extract_cmd(m["pmid"], out_json, args.model, extra),
+                                 outdir / f"{m['study']}.runlog.txt"))
+
+
+# -------------------------------------------------------------------------- eval
+def _source_kind(prov: list, ext_idx: int | None, field: str) -> str:
+    if ext_idx is None:
+        return "no_record"
+    if ext_idx >= len(prov):
+        return "unrecorded"
+    src = (prov[ext_idx] or {}).get(field)
+    return src.split(":", 1)[0] if src else "unrecorded"
+
+
+def score_study(m: dict, rj: Path, align_key: str = DEFAULT_ALIGN_KEY) -> dict:
+    """Score one extraction on all three joins. Returns a JSON-able record plus
+    private ``_e2e``/``_gold``/``_alignment``/``_data`` handles for callers."""
+    ext = load_extraction(rj)
+    data = ext.model_dump()
+    samples = data.get("samples", [])
+    prov = data.get("sample_provenance") or []
+    gold = load_gold_tsv(gold_path(m))
+    gold_cols = list(gold[0].keys()) if gold else []
+    fmap = build_field_map(gold_cols)
+    ufields = {k: v for k, v in UNIT_FIELDS_ALL.items() if k in fmap and v in gold_cols}
+    content = [k for k in fmap if k not in META_FIELDS]
+    meta = [k for k in fmap if k in META_FIELDS]
+    text_path = rj.with_suffix(".text.txt")
+    paper_text = text_path.read_text(encoding="utf-8", errors="replace") if text_path.exists() else None
+
+    al = align_by_identity(samples, gold, [k for k in align_key.split(",")
+                                           if all(p in gold_cols for p in k.strip().split("+"))])
+    g_all, e_all = al.end_to_end_lists(gold, samples)
+    e2e = evaluate({**data, "samples": e_all}, g_all, fmap, unit_fields=ufields,
+                   paper_text=paper_text)
+    g_m, e_m = al.matched_lists(gold, samples)
+    cond = evaluate({**data, "samples": e_m}, g_m, fmap, unit_fields=ufields)
+    pos = evaluate(data, gold, fmap, unit_fields=ufields)
+    pos_cov = evaluate(data, gold, fmap, unit_fields=ufields, count_missing_gold_as_fn=True)
+
+    # Cell decisions by the provenance of the extracted value (end-to-end join).
+    by_gold = dict(al.pairs)
+    by_source: dict[str, dict[str, dict]] = defaultdict(lambda: defaultdict(_zero))
+    fp_audit: dict[str, dict] = defaultdict(lambda: {"fp": 0, "value_in_text": 0,
+                                                     "study_evidence_in_text": 0})
+    text_lc = paper_text.lower() if paper_text else None
+    for c in e2e.per_cell:
+        kind = _source_kind(prov, by_gold.get(c.sample_idx), c.field)
+        by_source[c.field][kind][{"TN": "tn", "TP_correct": "tp_correct", "TP_wrong": "tp_wrong",
+                                  "FN": "fn", "FP": "fp"}[c.decision]] += 1
+        if c.decision == "FP" and c.field in content:
+            a = fp_audit[c.field]
+            a["fp"] += 1
+            if text_lc is not None:
+                v = str(c.extracted).strip().lower()
+                if len(v) >= 3 and v in text_lc:
+                    a["value_in_text"] += 1
+                ev = ((data.get("fields") or {}).get(c.field) or {}).get("evidence_quote") or ""
+                if ev.strip() and ev.strip().lower() in text_lc:
+                    a["study_evidence_in_text"] += 1
+
+    fr = e2e.faithfulness
+    rec = {
+        "study": m["study"], "pmid": m["pmid"], "n_gold": len(gold), "n_extracted": len(samples),
+        "granularity": data.get("granularity"),
+        "alignment": al.to_dict(),
+        "end_to_end": {"content": agg_over(e2e.per_field, content), "meta": agg_over(e2e.per_field, meta)},
+        "conditional": {"content": agg_over(cond.per_field, content), "meta": agg_over(cond.per_field, meta)},
+        "positional": {"content": agg_over(pos.per_field, content), "meta": agg_over(pos.per_field, meta),
+                       "content_coverage": agg_over(pos_cov.per_field, content)},
+        "fields_end_to_end": {k: agg_over(e2e.per_field, [k]) for k in fmap},
+        "by_source_end_to_end": {f: dict(v) for f, v in by_source.items()},
+        "fp_source_check": dict(fp_audit) if paper_text is not None else None,
+        "faithfulness": {
+            "contract_violations": len(fr.contract_violations),
+            "evidence_checked": fr.evidence_checked,
+            "evidence_matched": fr.evidence_matched,
+            "paper_text_available": paper_text is not None,
+        },
+        "n_content_fields": len(content),
+    }
+    rec["_e2e"], rec["_gold"], rec["_alignment"], rec["_data"] = e2e, gold, al, data
+    return rec
+
+
+def _public(rec: dict) -> dict:
+    return {k: v for k, v in rec.items() if not k.startswith("_")}
 
 
 def cmd_eval(args: argparse.Namespace) -> None:
-    sys.path.insert(0, str(Path.home() / "OmicsMLRepo/MetaExtractor/src"))
-    from metaextractor.evaluation import evaluate, load_extraction, load_gold_tsv
-
     outdir = Path(args.outdir)
-    manifest = load_manifest(args.manifest, args.limit)
-
-    def agg_over(fms, keys):
-        a = dict(tn=0, tp_correct=0, tp_wrong=0, fn=0, fp=0)
-        for k in keys:
-            fm = fms.get(k)
-            if not fm:
-                continue
-            a["tn"] += fm.tn; a["tp_correct"] += fm.tp_correct; a["tp_wrong"] += fm.tp_wrong
-            a["fn"] += fm.fn; a["fp"] += fm.fp
-        return a
-
     per_study = []
-    field_totals: dict[str, dict] = {}
-    for m in manifest:
-        study = m["study"]
-        rj = outdir / f"{study}.json"
+    for m in load_manifest(limit=args.limit):
+        rj = outdir / f"{m['study']}.json"
         if not rj.exists():
-            per_study.append({"study": study, "error": "no extraction output"}); continue
-        ext = load_extraction(rj)
-        gold = load_gold_tsv(m["gold_tsv"])
-        gold_cols = list(gold[0].keys()) if gold else []
-        fmap = build_field_map(gold_cols)
-        ufields = {k: v for k, v in UNIT_FIELDS_ALL.items() if k in fmap and v in gold_cols}
-
-        data0 = ext.model_dump() if hasattr(ext, "model_dump") else dict(ext)
-        n_ext_raw = len(data0.get("samples", []))
-        align_note = None
-        eval_ext = ext
-        eval_gold = gold
-        # ``--align-key`` may name a single id column or an ordered fallback
-        # chain (comma-separated); a study aligns on the first candidate present
-        # in gold that it can match on.
-        align_keys = [k.strip() for k in (args.align_key or "").split(",") if k.strip()]
-        align_on = [k for k in align_keys if k in gold_cols]
-        if align_on:
-            a_ext, a_gold, nmatch, ngold, next_, used = align_samples(
-                data0.get("samples", []), gold, align_on)
-            data0 = {**data0, "samples": a_ext}
-            eval_ext = data0
-            eval_gold = a_gold
-            align_note = (f"aligned on {used}: {nmatch}/{ngold} gold matched (ext={next_})"
-                          if used else f"aligned: 0/{ngold} gold matched (ext={next_})")
-
-        res = evaluate(extraction=eval_ext, gold_rows=eval_gold, field_map=fmap, unit_fields=ufields)
-        if res.per_cell:
-            res.to_cells_tsv(str(outdir / f"{study}.cells.tsv"))
-
-        n_ext = n_ext_raw
-        content_keys = [k for k in fmap if k not in META_FIELDS]
-        meta_keys = [k for k in fmap if k in META_FIELDS]
-        for k, fm in res.per_field.items():
-            ft = field_totals.setdefault(k, dict(tn=0, tp_correct=0, tp_wrong=0, fn=0, fp=0))
-            ft["tn"] += fm.tn; ft["tp_correct"] += fm.tp_correct; ft["tp_wrong"] += fm.tp_wrong
-            ft["fn"] += fm.fn; ft["fp"] += fm.fp
-        # Coverage-aware recall: score over ALL gold rows (un/under-enumerated
-        # samples count as FN, not dropped). Only meaningful for the positional
-        # join — the accession-aligned pass already restricts to matched gold.
-        content_coverage = None
-        if not align_on:
-            res_cov = evaluate(extraction=ext, gold_rows=gold, field_map=fmap,
-                               unit_fields=ufields, count_missing_gold_as_fn=True)
-            content_coverage = agg_over(res_cov.per_field, content_keys)
-        per_study.append({
-            "study": study, "pmid": m["pmid"],
-            "n_gold": len(gold), "n_extracted": n_ext,
-            "sample_align": align_note or ("match" if n_ext == len(gold)
-                                           else f"MISMATCH ({n_ext} vs {len(gold)})"),
-            "content": agg_over(res.per_field, content_keys),
-            "content_coverage": content_coverage,
-            "meta": agg_over(res.per_field, meta_keys),
-            "n_content_fields": len(content_keys),
-            "faithfulness": {
-                "contract_violations": len(res.faithfulness.get("contract_violations", []))
-                if isinstance(res.faithfulness, dict) else None,
-            },
-        })
-
-    summary = {"per_study": per_study, "field_totals": field_totals}
+            per_study.append({"study": m["study"], "error": "no extraction output"}); continue
+        rec = score_study(m, rj, args.align_key)
+        if rec["_e2e"].per_cell:
+            rec["_e2e"].to_cells_tsv(str(outdir / f"{m['study']}.cells.tsv"))
+        per_study.append(_public(rec))
+    summary = {"align_key": args.align_key, "per_study": per_study}
     (outdir / "summary.json").write_text(json.dumps(summary, indent=2, default=str))
-    write_report(outdir, per_study, field_totals)
+    write_report(outdir, per_study)
     print(f"wrote {outdir/'summary.json'} and {outdir/'REPORT.md'}")
 
 
+def _fmt(x, nd: int = 3) -> str:
+    if x is None:
+        return "–"
+    return f"{x:.{nd}f}" if isinstance(x, float) else str(x)
+
+
+def write_report(outdir: Path, per_study: list[dict]) -> None:
+    ok = [s for s in per_study if "error" not in s]
+    L = ["# MetaExtractor × curatedMetagenomicData — evaluation\n",
+         f"Run dir: `{outdir.name}`. Gold: cMD `*_sample.tsv`. Content fields, micro-averaged.\n",
+         "| join | value P | value R | value F1 | presence P | presence R | TPc | TPw | FN | FP |",
+         "|---|--:|--:|--:|--:|--:|--:|--:|--:|--:|"]
+    for label, path in (("end-to-end (primary)", ("end_to_end", "content")),
+                        ("conditional (matched rows)", ("conditional", "content")),
+                        ("positional (supplementary)", ("positional", "content"))):
+        a = _zero()
+        for s in ok:
+            _add(a, s[path[0]][path[1]])
+        x = metrics(a)
+        L.append(f"| {label} | {_fmt(x['value_precision'])} | {_fmt(x['value_recall'])} | "
+                 f"{_fmt(x['value_f1'])} | {_fmt(x['presence_precision'])} | "
+                 f"{_fmt(x['presence_recall'])} | {a['tp_correct']} | {a['tp_wrong']} | "
+                 f"{a['fn']} | {a['fp']} |")
+    L += ["\n## Per study (end-to-end)\n",
+          "| study | gold n | ext n | key | matched | unmatched | pooled | ambiguous | extra (keyed) | extra (no key) | TPc | TPw | FN | FP |",
+          "|---|--:|--:|---|--:|--:|--:|--:|--:|--:|--:|--:|--:|--:|"]
+    for s in per_study:
+        if "error" in s:
+            L.append(f"| {s['study']} | {s['error']} |" + " |" * 12); continue
+        al, c = s["alignment"], s["end_to_end"]["content"]
+        L.append(f"| {s['study']} | {s['n_gold']} | {s['n_extracted']} | {al['key_used'] or '–'} | "
+                 f"{al['matched']} | {al['unmatched_gold']} | {al['pooled_gold']} | "
+                 f"{al['ambiguous_gold']} | {al['unmatched_ext_with_key']} | "
+                 f"{al['unmatched_ext_without_key']} | {c['tp_correct']} | {c['tp_wrong']} | "
+                 f"{c['fn']} | {c['fp']} |")
+    L.append("\nTPc = both reported, values match · TPw = both reported, values differ · "
+             "FN = gold reported, extraction did not · FP = extraction reported, gold blank. "
+             "A gold-blank cell is not by itself evidence of fabrication.\n")
+    (outdir / "REPORT.md").write_text("\n".join(L))
+
+
 # --------------------------------------------------------------------- harmonize
-def _resolve_dir(d: str) -> Path:
-    """Model output dir, relative to the benchmark root unless absolute."""
-    p = Path(d)
-    return p if p.is_absolute() else (_HERE / p)
+HARM_FIELDS = ("disease", "body_site", "treatment")
+
+
+def _canon_factory(cw, crosswalk):
+    def canon(value, _field):
+        codes = crosswalk.codes_of(value, cw)
+        return "|".join(sorted(codes)) if codes else crosswalk.norm(value)
+    return canon
+
+
+def harmonize_run(run_dir: Path, manifest: list[dict], field: str, cw, crosswalk,
+                  align_key: str) -> dict:
+    """Score one field on one run dir, on identity-matched cells only."""
+    idcol = crosswalk.GOLD_IDCOL[field]
+    canon = _canon_factory(cw, crosswalk)
+    tot = Counter()
+    terms, gold_codes, studies = Counter(), Counter(), Counter()
+    for m in manifest:
+        rj = run_dir / f"{m['study']}.json"
+        if not rj.exists():
+            continue
+        gold = load_gold_tsv(gold_path(m))
+        if not gold or field not in gold[0]:
+            continue
+        data = load_extraction(rj).model_dump()
+        samples = data.get("samples", [])
+        al = align_by_identity(samples, gold, [k for k in align_key.split(",")
+                                               if all(p in gold[0] for p in k.split("+"))])
+        g_m, e_m = al.matched_lists(gold, samples)
+        if not g_m:
+            continue
+        comp = evaluate_both({**data, "samples": e_m}, g_m, {field: field}, canonicalize=canon)
+        for rc, hc in zip(comp.raw.per_cell, comp.harmonized.per_cell):
+            if rc.decision not in ("TP_correct", "TP_wrong"):
+                continue
+            tot["tp"] += 1
+            tot["raw_correct_tp"] += rc.decision == "TP_correct"
+            tot["agree_exact_tp"] += hc.decision == "TP_correct"
+            gid = crosswalk.gold_id_codes(g_m[rc.sample_idx].get(idcol, ""))
+            if not gid:
+                continue
+            e = crosswalk.codes_of(rc.extracted, cw)
+            tot["coded"] += 1
+            tot["raw_correct_coded"] += rc.decision == "TP_correct"
+            tot["exact_correct"] += e == gid
+            tot["any_hit"] += bool(e & gid)
+            tot["ext_unmapped"] += not e
+            tot["inter"] += len(e & gid)
+            tot["ext_codes"] += len(e)
+            tot["gold_codes"] += len(gid)
+            terms[str(rc.extracted)] += 1
+            gold_codes.update(gid)
+            studies[m["study"]] += 1
+
+    def r(n, d):
+        return tot[n] / tot[d] if tot[d] else None
+    return {
+        "tp": tot["tp"], "coded": tot["coded"],
+        "raw_acc_tp": r("raw_correct_tp", "tp"),
+        "agree_exact_tp": r("agree_exact_tp", "tp"),
+        "raw_acc_coded": r("raw_correct_coded", "coded"),
+        "exact_correct": r("exact_correct", "coded"),
+        "any_hit": r("any_hit", "coded"),
+        "concept_precision": r("inter", "ext_codes"),
+        "concept_recall": r("inter", "gold_codes"),
+        "ext_unmapped": tot["ext_unmapped"],
+        "distinct_ext_terms": len(terms), "distinct_gold_codes": len(gold_codes),
+        "studies": dict(studies), "gold_code_freq": dict(gold_codes.most_common()),
+        "ext_term_freq": dict(terms.most_common()),
+    }
+
+
+def _mmm(vals):
+    vals = [v for v in vals if v is not None]
+    return [st.median(vals), min(vals), max(vals)] if vals else None
 
 
 def cmd_harmonize(args: argparse.Namespace) -> None:
-    """Regenerate the ontology-harmonization table (MANUSCRIPT Section 3.6).
+    sys.path.insert(0, str(HERE / "harmonize"))
+    import crosswalk  # noqa: E402
 
-    For disease / body_site / treatment, score each TP cell three ways on a
-    single code path built on ``evaluate_both``:
-
-      raw value-acc  — verbatim string match (the raw pass; = content TPc rate)
-      agree_acc      — extracted and gold values canonicalize to the SAME
-                       OntologyMapper code set (the harmonized pass; self-
-                       consistency, NOT correctness)
-      recoverable    — TP cells the harmonized pass flips TP_wrong -> TP_correct
-                       (== the raw->agree gain; surfaced natively by evaluate_both)
-      correct_acc    — OM code of the *extracted* value intersects the gold's own
-                       curated ``*_ontology_term_id`` (true correctness), over the
-                       cells carrying a gold identifier. Deliberately separate from
-                       agree_acc: agreement is not correctness (MANUSCRIPT 4.1).
-
-    The canonicalizer is built from the same crosswalk_<field>.csv /
-    crosswalk_gold_<field>.csv the standalone rescore.py used, so this is a
-    drop-in, library-backed replacement for that script.
-    """
-    sys.path.insert(0, str(_HERE / "harmonize"))
-    sys.path.insert(0, str(Path.home() / "OmicsMLRepo/MetaExtractor/src"))
-    from metaextractor.evaluation import evaluate_both, load_extraction, load_gold_tsv
-    import rescore  # crosswalk / corpus helpers — single source of truth
-
-    FIELDS = ("disease", "body_site", "treatment")
-    models = [("Sonnet5", args.sonnet_dir), ("Haiku", args.haiku_dir)]
-    manifest = load_manifest(args.manifest, args.limit)
-
-    def build_crosswalk(field: str) -> dict:
-        cm = rescore.corpus_code_map(field)
-        ext_cw = rescore.HERE / f"crosswalk_{field}.csv"
-        if not ext_cw.exists():
-            print(f"  WARNING: {ext_cw.name} missing — extracted values have no OM codes, so "
-                  f"agree_acc/correct_acc for '{field}' collapse toward the raw value-acc. "
-                  f"Re-run OntologyMapper (harmonize/run_om*.py) to regenerate it before "
-                  f"trusting the harmonized columns.", file=sys.stderr)
-        return {**rescore.crosswalk_map(rescore.HERE / f"crosswalk_gold_{field}.csv", cm),
-                **rescore.crosswalk_map(ext_cw, cm)}
-
-    def make_canon(cw: dict):
-        # Value -> stable string of its sorted OM code set; identical code sets
-        # compare equal under the evaluator's string comparator, so "agree" ==
-        # "both sides map to the same code(s)". Fall back to the normalized
-        # surface form when no code is found (so unmapped != spuriously equal).
-        def canon(value, _field):
-            codes = rescore.codes_of(value, cw)
-            return "|".join(sorted(codes)) if codes else rescore.norm(value)
-        return canon
-
-    rows = []
-    for field in FIELDS:
-        cw = build_crosswalk(field)
-        canon = make_canon(cw)
-        idcol = rescore.GOLD_IDCOL[field]
-        for label, mdir in models:
-            mroot = _resolve_dir(mdir)
-            tp = raw_correct = agree_correct = recover = n_gid = correct = 0
-            for m in manifest:
-                sj = mroot / f"{m['study']}.json"
-                if not sj.exists():
-                    continue
-                gold = load_gold_tsv(m["gold_tsv"])
-                gcols = list(gold[0].keys()) if gold else []
-                if field not in gcols:
-                    continue
-                comp = evaluate_both(load_extraction(sj), gold, {field: field}, canonicalize=canon)
-                rfm, hfm = comp.raw.per_field[field], comp.harmonized.per_field[field]
-                tp += rfm.tp
-                raw_correct += rfm.tp_correct
-                agree_correct += hfm.tp_correct
-                recover += comp.recoverable_count
-                # correct_acc: extracted OM code vs gold's own curated ontology id.
-                for c in comp.raw.per_cell:
-                    if c.decision not in ("TP_correct", "TP_wrong"):
-                        continue
-                    gid = (rescore.gold_id_codes(gold[c.sample_idx].get(idcol, ""))
-                           if c.sample_idx < len(gold) else set())
-                    if gid:
-                        n_gid += 1
-                        if rescore.codes_of(c.extracted, cw) & gid:
-                            correct += 1
-            rows.append(dict(
-                field=field, model=label, tp=tp,
-                raw_value_acc=round(raw_correct / tp, 3) if tp else None,
-                agree_acc=round(agree_correct / tp, 3) if tp else None,
-                recoverable=recover,
-                correct_acc=round(correct / n_gid, 3) if n_gid else None,
-                n_gold_id=n_gid,
-            ))
-
-    outdir = _resolve_dir(args.sonnet_dir).parent if not Path(args.sonnet_dir).is_absolute() else Path.cwd()
-    (outdir / "harmonization.json").write_text(json.dumps(rows, indent=2))
-    _write_harmonization_md(outdir / "harmonization.md", rows)
-    _print_harmonization(rows)
-    print(f"\nwrote {outdir/'harmonization.json'} and {outdir/'harmonization.md'}")
-
-
-def _harm_row_str(r: dict) -> str:
-    def f(x):
-        return f"{x:.3f}" if isinstance(x, float) else ("—" if x is None else str(x))
-    return (f"| {r['model']} | {r['field']} | {f(r['raw_value_acc'])} | {f(r['agree_acc'])} | "
-            f"{r['recoverable']} | {f(r['correct_acc'])} | {r['n_gold_id']} | {r['tp']} |")
-
-
-def _write_harmonization_md(path: Path, rows: list[dict]) -> None:
-    L = ["# Ontology harmonization — value-accuracy (MANUSCRIPT Section 3.6)\n",
-         "Scored on TP cells via `metaextractor.evaluation.evaluate_both`. "
-         "`raw value-acc` = verbatim string match; `agree_acc` = extracted and gold "
-         "canonicalize to the same OntologyMapper code (self-consistency, **not** "
-         "correctness); `recoverable` = TP cells harmonization flips to correct "
-         "(raw→agree); `correct_acc` = extracted OM code matches the gold's own "
-         "`*_ontology_term_id`, over `n with gold ID` cells.\n",
-         "| model | field | raw value-acc | `agree_acc` | recoverable | `correct_acc` | n with gold ID | TP cells |",
-         "|---|---|--:|--:|--:|--:|--:|--:|"]
-    L += [_harm_row_str(r) for r in rows]
-    path.write_text("\n".join(L) + "\n")
-
-
-def _print_harmonization(rows: list[dict]) -> None:
-    print(f"\n{'model':<8} {'field':<10} {'raw':>6} {'agree':>6} {'recov':>6} {'correct':>8} {'nGID':>5} {'TP':>5}")
-    for r in rows:
-        def f(x):
-            return f"{x:.3f}" if isinstance(x, float) else ("  –  " if x is None else str(x))
-        print(f"{r['model']:<8} {r['field']:<10} {f(r['raw_value_acc']):>6} {f(r['agree_acc']):>6} "
-              f"{str(r['recoverable']):>6} {f(r['correct_acc']):>8} {r['n_gold_id']:>5} {r['tp']:>5}")
-
-
-def _prf(a: dict) -> tuple[float | None, float | None, float | None, float | None]:
-    tp = a["tp_correct"] + a["tp_wrong"]
-    prec = tp / (tp + a["fp"]) if (tp + a["fp"]) else None
-    rec = tp / (tp + a["fn"]) if (tp + a["fn"]) else None
-    f1 = (2 * prec * rec / (prec + rec)) if (prec and rec) else None
-    vacc = a["tp_correct"] / tp if tp else None
-    return prec, rec, f1, vacc
-
-
-def _fmt(x): return f"{x:.2f}" if isinstance(x, float) else "  – "
-
-
-def write_report(outdir: Path, per_study: list[dict], field_totals: dict) -> None:
-    L = ["# MetaExtractor × curatedMetagenomicData — pilot evaluation\n"]
-    L.append("Target schema: `curatedmetagenomicdata/cmd.linkml.yaml`. "
-             "Gold: cMD `*_sample.tsv`. Samples joined **positionally**.\n")
-    # content aggregate
-    cagg = dict(tn=0, tp_correct=0, tp_wrong=0, fn=0, fp=0)
-    for s in per_study:
-        if "content" in s:
-            for k in cagg: cagg[k] += s["content"][k]
-    p, r, f1, v = _prf(cagg)
-    L.append("## Headline (content fields, micro-averaged)\n")
-    L.append(f"- Precision **{_fmt(p)}**, Recall **{_fmt(r)}**, F1 **{_fmt(f1)}**, "
-             f"value-accuracy-on-attempted **{_fmt(v)}**")
-    L.append(f"- cells: TN={cagg['tn']} TPc={cagg['tp_correct']} TPw={cagg['tp_wrong']} "
-             f"FN={cagg['fn']} FP={cagg['fp']}\n")
-    # Coverage-aware recall: counts gold rows the extraction never enumerated as FN.
-    ccov = dict(tn=0, tp_correct=0, tp_wrong=0, fn=0, fp=0)
-    have_cov = False
-    for s in per_study:
-        cc = s.get("content_coverage")
-        if cc:
-            have_cov = True
-            for k in ccov:
-                ccov[k] += cc[k]
-    if have_cov:
-        _, rcov, _, _ = _prf(ccov)
-        L.append(f"- **Coverage-aware recall {_fmt(rcov)}** — recall when un/under-enumerated "
-                 f"gold rows are counted as FN rather than dropped. The positional recall "
-                 f"above ({_fmt(r)}) scores only the overlap `min(n_extracted, n_gold)`, so "
-                 f"samples a study never enumerated do not enter the denominator.\n")
-    # per study
-    L.append("## Per study\n")
-    L.append("| study | pmid | gold n | ext n | align | content P | R | F1 | val-acc |")
-    L.append("|---|---|--:|--:|---|--:|--:|--:|--:|")
-    for s in per_study:
-        if "error" in s:
-            L.append(f"| {s['study']} | – | – | – | {s['error']} | – | – | – | – |"); continue
-        p, r, f1, v = _prf(s["content"])
-        L.append(f"| {s['study']} | {s['pmid']} | {s['n_gold']} | {s['n_extracted']} | "
-                 f"{s['sample_align']} | {_fmt(p)} | {_fmt(r)} | {_fmt(f1)} | {_fmt(v)} |")
-    # per field
-    L.append("\n## Per field (all studies, micro)\n")
-    L.append("| field | kind | N | TN | TPc | TPw | FN | FP | P | R | F1 | val-acc |")
-    L.append("|---|---|--:|--:|--:|--:|--:|--:|--:|--:|--:|--:|")
-    for k in sorted(field_totals, key=lambda x: (x in META_FIELDS, x)):
-        a = field_totals[k]
-        N = sum(a.values())
-        if N == 0:
-            continue
-        p, r, f1, v = _prf(a)
-        kind = "id/prov" if k in META_FIELDS else "content"
-        L.append(f"| {k} | {kind} | {N} | {a['tn']} | {a['tp_correct']} | {a['tp_wrong']} | "
-                 f"{a['fn']} | {a['fp']} | {_fmt(p)} | {_fmt(r)} | {_fmt(f1)} | {_fmt(v)} |")
-    L.append("\n### Decision legend\n"
-             "TN=both not-reported · TPc=both reported & match · TPw=both reported but differ "
-             "(often raw-vs-harmonized surface form) · FN=gold has it, extractor missed · "
-             "FP=extractor claims it, gold blank.\n")
-    (outdir / "REPORT.md").write_text("\n".join(L))
+    tree = Path(args.tree)
+    manifest = load_manifest(limit=args.limit)
+    out = {"tree": str(tree), "align_key": args.align_key, "semantics": {
+        "raw_acc": "string match after lowercase/strip (evaluation.values_match)",
+        "agree_exact_tp": "extracted and gold values map to the identical OntologyMapper code set",
+        "exact_correct": "extracted code set == gold's curated *_ontology_term_id set",
+        "any_hit": "SUPPLEMENTARY: extracted code set shares >=1 code with gold ids",
+        "concept_precision": "sum|E∩G| / sum|E| over coded cells",
+        "concept_recall": "sum|E∩G| / sum|G| over coded cells",
+        "population": "identity-matched rows; both sides reported; coded = gold id present"},
+        "fields": {}}
+    for field in HARM_FIELDS:
+        cw = crosswalk.load_field_crosswalk(field)
+        out["fields"][field] = {"crosswalk_terms": len(cw), "models": {}}
+        for model in args.models:
+            runs = sorted(tree.glob(f"{model}_r*"))
+            per_run = {d.name: harmonize_run(d, manifest, field, cw, crosswalk, args.align_key)
+                       for d in runs if d.is_dir()}
+            keys = ("tp", "coded", "raw_acc_tp", "agree_exact_tp", "raw_acc_coded",
+                    "exact_correct", "any_hit", "concept_precision", "concept_recall")
+            out["fields"][field]["models"][model] = {
+                "per_run": per_run,
+                "summary": {k: _mmm([pr[k] for pr in per_run.values()]) for k in keys},
+            }
+    (tree / "harmonization.json").write_text(json.dumps(out, indent=2))
+    L = ["# Ontology harmonization (identity-matched cells)\n",
+         "Median [min–max] over repeats. `raw` and `exact` on the **same coded cells** "
+         "(both reported, gold carries a curated ontology id). `any-hit` is supplementary.\n",
+         "| field | model | TP cells | coded cells | raw acc (coded) | exact code-set correct | any-hit (suppl.) | concept P | concept R | agree (TP, exact) |",
+         "|---|---|--:|--:|--:|--:|--:|--:|--:|--:|"]
+    for field, fd in out["fields"].items():
+        for model, md in fd["models"].items():
+            s = md["summary"]
+            def cell(k, nd=3):
+                v = s.get(k)
+                if not v:
+                    return "–"
+                return (f"{v[0]:.{nd}f} [{v[1]:.{nd}f}–{v[2]:.{nd}f}]" if nd
+                        else f"{v[0]:.0f} [{v[1]:.0f}–{v[2]:.0f}]")
+            L.append(f"| {field} | {model} | {cell('tp', 0)} | {cell('coded', 0)} | "
+                     f"{cell('raw_acc_coded')} | {cell('exact_correct')} | {cell('any_hit')} | "
+                     f"{cell('concept_precision')} | {cell('concept_recall')} | "
+                     f"{cell('agree_exact_tp')} |")
+    (tree / "harmonization.md").write_text("\n".join(L) + "\n")
+    print("\n".join(L))
+    print(f"\nwrote {tree/'harmonization.json'} and {tree/'harmonization.md'}")
 
 
 def main() -> None:
@@ -465,30 +415,24 @@ def main() -> None:
     sub = ap.add_subparsers(dest="cmd", required=True)
     for name in ("run", "run-tables", "eval"):
         s = sub.add_parser(name)
-        s.add_argument("manifest")
         s.add_argument("outdir")
         s.add_argument("--limit", type=int, default=None)
         if name in ("run", "run-tables"):
             s.add_argument("--model", default="claude-haiku-4-5")
             s.add_argument("--force", action="store_true")
         if name == "eval":
-            s.add_argument("--align-key", default=None,
-                           help="Reorder extracted samples to gold order by a shared unique-id "
-                                "column before scoring. Accepts a comma-separated fallback chain "
-                                "(e.g. 'ncbi_accession,sample_id,subject_id'); each study aligns on "
-                                "the first candidate it can match on.")
-    # harmonize: regenerate the Section 3.6 ontology-harmonization table via evaluate_both.
+            s.add_argument("--align-key", default=DEFAULT_ALIGN_KEY,
+                           help="Ordered identifier candidates (comma-separated; '+' joins a "
+                                "compound key). The candidate with the most one-to-one matches "
+                                "is used per study.")
     sh = sub.add_parser("harmonize")
-    sh.add_argument("manifest")
-    sh.add_argument("--sonnet-dir", dest="sonnet_dir", default="out_ms/sonnet_r1",
-                    help="Sonnet extraction dir (relative to benchmark root unless absolute).")
-    sh.add_argument("--haiku-dir", dest="haiku_dir", default="out_ms/haiku_r1",
-                    help="Haiku extraction dir (relative to benchmark root unless absolute).")
+    sh.add_argument("tree", help="Directory holding <model>_r<k>/ run dirs.")
+    sh.add_argument("--models", nargs="+", default=["sonnet", "haiku"])
+    sh.add_argument("--align-key", default=DEFAULT_ALIGN_KEY)
     sh.add_argument("--limit", type=int, default=None)
     args = ap.parse_args()
-    dispatch = {"run": cmd_run, "run-tables": cmd_run_tables, "eval": cmd_eval,
-                "harmonize": cmd_harmonize}
-    dispatch[args.cmd](args)
+    {"run": cmd_run, "run-tables": cmd_run_tables, "eval": cmd_eval,
+     "harmonize": cmd_harmonize}[args.cmd](args)
 
 
 if __name__ == "__main__":
