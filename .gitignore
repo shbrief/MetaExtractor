@@ -27,3 +27,4 @@ result.json
 
 # Retrieved article text archived per run (checksummed in ledger.jsonl; not redistributed)
 benchmarks/cmd_sonnet5/out_v2/**/*.text.txt
+!benchmarks/cmd_sonnet5/out_v2/**/*.log

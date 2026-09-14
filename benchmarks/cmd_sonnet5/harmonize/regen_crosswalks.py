@@ -8,14 +8,13 @@ and their sap-bert FAISS indexes are already persisted under ~/.metaharmonizer,
 so this only embeds the query terms and does the FAISS lookup — minutes, not the
 3.6 h the original corpus build took.
 
-Extracted terms are collected from the UNION of the single-run dirs (out, out_haiku)
-and the multi-seed representative runs actually scored in MANUSCRIPT Section 3.6
-(out_ms/sonnet_r1, out_ms/haiku_r1), so every value scored there has a crosswalk
-entry. Gold terms are run-independent. Both sides map through the SAME corpus, so
-code-level agreement is well defined.
+Extracted terms are collected from every ``<model>_r<k>`` run dir of the scored tree
+(``--tree``, default ``out_v2``), so every value scored by ``bench.py harmonize`` has
+a crosswalk entry. Gold terms are run-independent. Both sides map through the SAME
+corpus, so code-level agreement is well defined.
 
-Usage:  python regen_crosswalks.py [disease|body_site|treatment ...]
-        (no args = all three)
+Usage:  CMD_CURATION_DIR=... python regen_crosswalks.py [--tree out_v2] [disease|body_site|treatment ...]
+        (no fields = all three)
 """
 from __future__ import annotations
 import csv, json, pathlib, sys, time
@@ -23,13 +22,16 @@ import pandas as pd
 
 HERE = pathlib.Path(__file__).resolve().parent
 BENCH = HERE.parent
-MANI = json.loads((BENCH / "manifest.json").read_text())
+sys.path.insert(0, str(BENCH))
+from bench_paths import gold_path, load_manifest  # noqa: E402
+
+MANI = load_manifest()
 
 from metaharmonizer import OntoMapEngine
 from metaharmonizer._paths import RETRIEVED_ONTOLOGIES_DIR
 
-# Dirs whose extracted values must all be covered by the crosswalk.
-EXT_DIRS = ("out", "out_haiku", "out_ms/sonnet_r1", "out_ms/haiku_r1")
+# Run dirs whose extracted values must all be covered by the crosswalk (set in main).
+EXT_DIRS: list[pathlib.Path] = []
 SPLIT = lambda s: [t.strip() for t in str(s).replace("/", ";").replace(",", ";").split(";") if t.strip()]
 
 # Per-field corpus source. disease/body_site use the committed v041 corpus CSV as
@@ -56,7 +58,7 @@ def collect_extracted(field: str) -> list[str]:
     vals: set[str] = set()
     for outdir in EXT_DIRS:
         for m in MANI:
-            p = BENCH / outdir / f"{m['study']}.json"
+            p = outdir / f"{m['study']}.json"
             if not p.exists():
                 continue
             d = json.loads(p.read_text())
@@ -73,7 +75,7 @@ def collect_extracted(field: str) -> list[str]:
 def collect_gold(field: str) -> list[str]:
     vals: set[str] = set()
     for m in MANI:
-        for r in csv.DictReader(pathlib.Path(m["gold_tsv"]).open(), delimiter="\t"):
+        for r in csv.DictReader(gold_path(m).open(), delimiter="\t"):
             v = (r.get(field) or "").strip()
             if v and v.lower() not in ("na", "nan", "not_reported", ""):
                 vals.update(SPLIT(v))
@@ -112,5 +114,16 @@ def main(fields: list[str]) -> None:
 
 
 if __name__ == "__main__":
-    fields = [a for a in sys.argv[1:] if a in OM_CATEGORY] or list(OM_CATEGORY)
-    main(fields)
+    import argparse
+    ap = argparse.ArgumentParser()
+    ap.add_argument("fields", nargs="*", help=f"subset of {list(OM_CATEGORY)}")
+    ap.add_argument("--tree", default="out_v2")
+    a = ap.parse_args()
+    if bad := [f for f in a.fields if f not in OM_CATEGORY]:
+        raise SystemExit(f"unknown field(s): {bad}")
+    tree = pathlib.Path(a.tree)
+    tree = tree if tree.is_absolute() else BENCH / tree
+    EXT_DIRS[:] = sorted(d for d in tree.glob("*_r*") if d.is_dir())
+    if not EXT_DIRS:
+        raise SystemExit(f"no run dirs under {tree}")
+    main(a.fields or list(OM_CATEGORY))
