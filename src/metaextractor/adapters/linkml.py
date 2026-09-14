@@ -14,6 +14,8 @@ Mapping:
   slot.multivalued == True   -> "list"   (overrides scalar typing)
   slot.required              -> field.required
   slot.unit / slot.ucum_unit -> field.unit
+  slot.annotations.scope     -> field.scope ("study" | "sample"), used only for
+                                deterministic fan-out; other values are ignored
 """
 from __future__ import annotations
 
@@ -122,7 +124,17 @@ def _slot_to_field(name: str, slot: dict[str, Any], enums: dict[str, Any]) -> Fi
         value_descriptions=value_descriptions,
         unit=slot.get("unit") or slot.get("ucum_unit"),
         required=bool(slot.get("required", False)),
+        scope=_scope_annotation(slot),
     )
+
+
+def _scope_annotation(slot: dict[str, Any]) -> str | None:
+    """Read ``annotations: {scope: sample}`` or ``{scope: {tag: scope, value: sample}}``."""
+    ann = slot.get("annotations") or {}
+    raw = ann.get("scope") if isinstance(ann, dict) else None
+    if isinstance(raw, dict):
+        raw = raw.get("value")
+    return raw if raw in ("study", "sample") else None
 
 
 def linkml_to_schema(data: dict[str, Any], class_name: str | None = None) -> Schema:

@@ -51,6 +51,10 @@ def to_csv(
 
     If ``include_provenance`` is True, each field gets three extra
     columns: ``<field>__evidence``, ``<field>__section``, ``<field>__confidence``.
+    For sample-level output these describe the *study-level* claim the field
+    was extracted from, and each field additionally gets ``<field>__source``:
+    the per-cell origin recorded in ``sample_provenance`` (a table/manifest
+    column, the model, a fan-out rule, or an age rule).
     """
     path = Path(path)
     field_names = list(result.fields.keys())
@@ -60,7 +64,26 @@ def to_csv(
             {"paper_id": result.paper_id, **{k: _stringify(v) for k, v in sample.items()}}
             for sample in result.samples
         ]
-        header = ["paper_id"] + sorted({k for r in rows for k in r if k != "paper_id"})
+        data_cols = sorted({k for r in rows for k in r if k != "paper_id"})
+        header = ["paper_id"]
+        if not include_provenance:
+            header += data_cols
+        else:
+            prov = result.sample_provenance
+            for i, row in enumerate(rows):
+                p = prov[i] if i < len(prov) else {}
+                for col in data_cols:
+                    row[f"{col}__source"] = p.get(col, "")
+                    fr = result.fields.get(col)
+                    if fr is not None:
+                        row[f"{col}__evidence"] = fr.evidence_quote
+                        row[f"{col}__section"] = fr.section
+                        row[f"{col}__confidence"] = fr.confidence
+            for col in data_cols:
+                header.append(col)
+                header.append(f"{col}__source")
+                if col in result.fields:
+                    header.extend([f"{col}__evidence", f"{col}__section", f"{col}__confidence"])
         _write(path, header, rows)
         return
 

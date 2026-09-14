@@ -15,6 +15,7 @@ from metaextractor.extractor import (
     estimate_cost_usd,
 )
 from metaextractor.fetcher import FetchError, fetch_paper
+from metaextractor.sample_rules import AgeBoundRules
 from metaextractor.schema import Schema
 from metaextractor.writers import to_csv
 
@@ -95,11 +96,22 @@ def main(argv: list[str] | None = None) -> int:
                              f"{DEFAULT_MIN_TABLE_RELEVANCE}). Tables scoring below this against the "
                              f"schema are skipped before the LLM plan step; measurement/feature "
                              f"matrices are always skipped. Set 0 to keep all non-matrix tables.")
+    parser.add_argument("--age-rules", type=Path, default=None, metavar="JSON",
+                        help="Enable deterministic age_min/age_max filling with the rules in this "
+                             "JSON file (see metaextractor.sample_rules.AgeBoundRules). Off by default.")
+    parser.add_argument("--save-text", type=Path, default=None, metavar="PATH",
+                        help="Write the exact paper text sent to the model (body plus supplementary "
+                             "prose) to PATH, for auditing and evidence checks.")
+    parser.add_argument("--run-meta", type=Path, default=None, metavar="PATH",
+                        help="Write a JSON record of request settings, returned model ids, token "
+                             "usage, cost estimate, and retrieval provenance to PATH.")
     args = parser.parse_args(argv)
+    started_utc = _utc_now()
 
     api_key = _resolve_api_key(args.api_key)
 
     tables: list = []
+    fetched = None
     if args.paper:
         paper_text = _read_paper(args.paper)
     elif args.paper_id:
@@ -190,7 +202,10 @@ def main(argv: list[str] | None = None) -> int:
         sample_discovery=args.sample_discovery,
         api_key=api_key,
         min_table_relevance=args.min_table_relevance,
+        age_rules=AgeBoundRules.from_json(args.age_rules) if args.age_rules else None,
     )
+    if args.save_text:
+        args.save_text.write_text(paper_text, encoding="utf-8")
     try:
         result = extractor.extract(
             paper_text, schema_obj, paper_id=args.paper_id, tables=tables or None
@@ -240,7 +255,65 @@ def main(argv: list[str] | None = None) -> int:
             f"cache_r ${c['cache_read_usd']:.4f} + output ${c['output_usd']:.4f})]",
             file=sys.stderr,
         )
+    if args.run_meta:
+        _write_run_meta(args, extractor, result, fetched, paper_text, tables, c, started_utc)
     return 0
+
+
+def _utc_now() -> str:
+    from datetime import datetime, timezone
+    return datetime.now(timezone.utc).isoformat(timespec="seconds")
+
+
+def _write_run_meta(args, extractor, result, fetched, paper_text, tables, cost, started_utc) -> None:
+    import hashlib
+    import json
+    import platform
+
+    from metaextractor import __version__
+    from metaextractor.extractor import PRICING_AS_OF
+
+    try:
+        import anthropic
+        sdk_version = anthropic.__version__
+    except (ImportError, AttributeError):
+        sdk_version = None
+    meta = {
+        "started_utc": started_utc,
+        "finished_utc": _utc_now(),
+        "paper_id": args.paper_id,
+        "request": {
+            "model_requested": args.model,
+            "models_returned": sorted(extractor.last_response_models),
+            "max_tokens": args.max_tokens,
+            "batch_size": args.batch_size,
+            "sample_discovery": args.sample_discovery,
+            "min_table_relevance": args.min_table_relevance,
+            "sampling_and_thinking": "not set (API defaults: no temperature/top_p/top_k/"
+                                     "thinking/effort parameters sent)",
+            "age_rules": str(args.age_rules) if args.age_rules else None,
+        },
+        "usage": dict(extractor.last_usage),
+        "cost_estimate": {**cost, "pricing_as_of": PRICING_AS_OF},
+        "retrieval": None if fetched is None else {
+            "source": fetched.source, "has_body": fetched.has_body,
+            "pmid": fetched.pmid, "pmcid": fetched.pmcid, "doi": fetched.doi,
+            "attempts": fetched.retrieval_attempts,
+            "supplementary_included": fetched.supplementary_included,
+            "supplementary_skipped": fetched.supplementary_skipped,
+            "sra_manifest_source": fetched.sra_manifest_source,
+            "sra_manifest_warnings": fetched.sra_manifest_warnings,
+        },
+        "local_supplementary": [str(p) for p in (args.supplementary or [])],
+        "paper_text_sha256": hashlib.sha256(paper_text.encode("utf-8")).hexdigest(),
+        "paper_text_chars": len(paper_text),
+        "n_tables": len(tables),
+        "output": {"granularity": result.granularity, "n_samples": len(result.samples),
+                   "n_fields": len(result.fields), "n_warnings": len(result.extraction_warnings)},
+        "versions": {"metaextractor": __version__, "anthropic_sdk": sdk_version,
+                     "python": platform.python_version()},
+    }
+    args.run_meta.write_text(json.dumps(meta, indent=2, default=str), encoding="utf-8")
 
 
 if __name__ == "__main__":

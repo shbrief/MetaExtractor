@@ -46,5 +46,9 @@ class ExtractionResult(BaseModel):
     subgroups: list[str] = Field(default_factory=list)
     fields: dict[str, FieldResult]
     samples: list[dict[str, Any]] = Field(default_factory=list)
+    #: Parallel to ``samples``: ``{field: source}`` per sample, recording where each
+    #: cell came from (table/manifest cell, model, fan-out, or a derivation rule).
+    #: See ``metaextractor.sample_rules`` for the source descriptors.
+    sample_provenance: list[dict[str, str]] = Field(default_factory=list)
     table_selection: list[TableSelection] = Field(default_factory=list)
     extraction_warnings: list[str] = Field(default_factory=list)

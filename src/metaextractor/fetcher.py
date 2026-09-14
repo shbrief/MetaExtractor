@@ -70,6 +70,11 @@ class FetchedPaper:
     # else None. Warnings record ambiguous/failed resolution.
     sra_manifest_source: str | None = None
     sra_manifest_warnings: list[str] = field(default_factory=list)
+    # One entry per retrieval rung actually attempted, in order:
+    # {"rung", "returned_text", "is_body", "chars"} — an audit of which sources
+    # were tried and what each yielded at fetch time.
+    retrieval_attempts: list[dict] = field(default_factory=list)
+    doi: str | None = None
 
 
 @dataclass
@@ -521,9 +526,13 @@ def fetch_paper(
     # before a richer source is reached. Costlier rungs are attempted only while
     # no candidate is yet "clearly good", preserving the single-fetch common case.
     candidates: list[tuple[str, str, bool]] = []
+    attempts: list[dict] = []
 
-    def _add(src: str, txt: str | None, is_body: bool) -> None:
-        if txt and txt.strip():
+    def _add(src: str, txt: str | None, is_body: bool, rung: str | None = None) -> None:
+        ok = bool(txt and txt.strip())
+        attempts.append({"rung": rung or src, "returned_text": ok, "is_body": bool(ok and is_body),
+                         "chars": len(txt) if ok else 0})
+        if ok:
             candidates.append((src, txt, is_body))
 
     def _best_body_score() -> float:
@@ -537,7 +546,7 @@ def fetch_paper(
         pmc = _fetch_pmc_fulltext(bare)
         if pmc is not None:
             ncbi_supp_hrefs = pmc.supplementary_hrefs
-            _add("pmc_fulltext", pmc.text, pmc.has_body)
+        _add("pmc_fulltext", pmc.text if pmc else None, bool(pmc and pmc.has_body))
     else:
         pmid_used = bare
         pmcid = _pmid_to_pmcid(bare)
@@ -545,7 +554,10 @@ def fetch_paper(
             pmc = _fetch_pmc_fulltext(pmcid)
             if pmc is not None:
                 ncbi_supp_hrefs = pmc.supplementary_hrefs
-                _add("pmc_fulltext", pmc.text, pmc.has_body)
+            _add("pmc_fulltext", pmc.text if pmc else None, bool(pmc and pmc.has_body))
+        else:
+            attempts.append({"rung": "pmid_to_pmcid", "returned_text": False,
+                             "is_body": False, "chars": 0})
         # Fetch the abstract (+DOI) as an identity/floor candidate whenever NCBI
         # didn't already give a clearly-good body.
         if _best_body_score() < _GOOD_FULLTEXT_SCORE:
@@ -555,24 +567,23 @@ def fetch_paper(
     # Escalate through richer/costlier rungs only while no *body* is clearly good.
     if _best_body_score() < _GOOD_FULLTEXT_SCORE and pmcid:
         epmc = _fetch_europepmc_fulltext(pmcid)
-        if epmc is not None and epmc.has_body:
-            _add("europepmc_fulltext", epmc.text, True)
+        _add("europepmc_fulltext", epmc.text if epmc is not None and epmc.has_body else None, True)
     if _best_body_score() < _GOOD_FULLTEXT_SCORE and doi:
         epmc2, epmc_pmcid = _fetch_europepmc_by_doi(doi)
+        _add("europepmc_fulltext",
+             epmc2.text if epmc2 is not None and epmc2.has_body else None, True,
+             rung="europepmc_fulltext_by_doi")
         if epmc2 is not None and epmc2.has_body:
-            _add("europepmc_fulltext", epmc2.text, True)
             # A DOI that resolves to a PMC article gives us a PMCID even when
             # elink didn't — capture it so supplementary tables are still fetched.
             if epmc_pmcid and not pmcid:
                 pmcid = epmc_pmcid
     if _best_body_score() < _GOOD_FULLTEXT_SCORE:
         pdf_text = _fetch_europepmc_pdf(pmcid)  # non-OA PMC free rendered PDF
-        if pdf_text and len(pdf_text) > 1000:
-            _add("europepmc_pdf", pdf_text, True)
+        _add("europepmc_pdf", pdf_text if pdf_text and len(pdf_text) > 1000 else None, True)
     if _best_body_score() < _GOOD_FULLTEXT_SCORE and doi:
         up_text = _fetch_oa_pdf_via_unpaywall(doi)  # publisher/repository OA
-        if up_text and len(up_text) > 1000:
-            _add("unpaywall_pdf", up_text, True)
+        _add("unpaywall_pdf", up_text if up_text and len(up_text) > 1000 else None, True)
 
     if not candidates:
         raise FetchError(
@@ -587,7 +598,8 @@ def fetch_paper(
     )
 
     paper = FetchedPaper(
-        text=text, source=source, pmid=pmid_used, pmcid=pmcid, has_body=has_body
+        text=text, source=source, pmid=pmid_used, pmcid=pmcid, has_body=has_body,
+        retrieval_attempts=attempts, doi=doi,
     )
 
     if include_supplementary and pmcid:

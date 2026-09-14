@@ -20,6 +20,12 @@ from metaextractor.column_mapper import (
 )
 from metaextractor.output import ExtractionResult, TableSelection
 from metaextractor.prompts import SYSTEM_PROMPT, build_user_content
+from metaextractor.sample_rules import (
+    AgeBoundRules,
+    ensure_provenance,
+    fan_out_fields_to_samples,
+    normalize_age_bounds,
+)
 from metaextractor.schema import Field, Schema
 from metaextractor.supplementary import Table
 from metaextractor.table_plan import (
@@ -38,7 +44,11 @@ DEFAULT_MIN_TABLE_RELEVANCE = 0.15
 
 # USD per 1M tokens. Cache read / write follow Anthropic's standard 5m
 # ephemeral multipliers (0.1x / 1.25x of base input). Update as needed.
+#: Date the base input/output rates below were last checked against Anthropic's
+#: published model pricing table.
+PRICING_AS_OF = "2026-06-24"
 PRICING_USD_PER_MTOK: dict[str, dict[str, float]] = {
+    "claude-sonnet-5":   {"input": 2.0, "output": 10.0, "cache_read": 0.20, "cache_write": 2.50},
     "claude-sonnet-4-6": {"input": 3.0, "output": 15.0, "cache_read": 0.30, "cache_write": 3.75},
     "claude-opus-4-7":   {"input": 15.0, "output": 75.0, "cache_read": 1.50, "cache_write": 18.75},
     "claude-haiku-4-5":  {"input": 1.0, "output": 5.0,  "cache_read": 0.10, "cache_write": 1.25},
@@ -107,6 +117,7 @@ class MetaExtractor:
         sample_discovery: bool = True,
         api_key: str | None = None,
         min_table_relevance: float = DEFAULT_MIN_TABLE_RELEVANCE,
+        age_rules: AgeBoundRules | None = None,
     ):
         self.client = client or Anthropic(api_key=api_key or os.environ.get("ANTHROPIC_API_KEY"))
         self.model = model
@@ -114,6 +125,12 @@ class MetaExtractor:
         self.batch_size = batch_size
         self.sample_discovery = sample_discovery
         self.min_table_relevance = min_table_relevance
+        self.age_rules = age_rules
+        #: Model identifiers returned by the API across the last extract() call.
+        self.last_response_models: set[str] = set()
+        #: schema field -> "table:<name>:<column>" / "manifest:<name>:<column>"
+        #: for the table set that produced the last deterministic sample rows.
+        self.last_table_sources: dict[str, str] = {}
         self.last_usage: dict[str, int] = {
             "input_tokens": 0,
             "cache_creation_input_tokens": 0,
@@ -138,6 +155,8 @@ class MetaExtractor:
         """
         schema_obj = schema if isinstance(schema, Schema) else Schema.from_dict(schema)
         self.last_usage = {k: 0 for k in self.last_usage}
+        self.last_response_models = set()
+        self.last_table_sources = {}
 
         # Deterministic table path: produce sample rows from structured tables,
         # then run the LLM only for prose-derived study-level fields.
@@ -179,22 +198,29 @@ class MetaExtractor:
             result.table_selection = det_selections
             for w in det_warnings:
                 result.extraction_warnings.append(w)
+            result.sample_provenance = [
+                {k: self.last_table_sources.get(k, "table") for k, v in s.items()
+                 if not k.startswith("__") and v not in (None, "")}
+                for s in det_samples
+            ]
+        else:
+            result.sample_provenance = []
+            ensure_provenance(result, default="llm_sample")
 
         if result.granularity == "sample_level" and result.samples and result.fields:
-            n = _fan_out_fields_to_samples(result)
-            if n:
+            counts = fan_out_fields_to_samples(result, schema_obj)
+            if counts:
+                detail = ", ".join(f"{k}={v}" for k, v in sorted(counts.items()))
                 result.extraction_warnings.append(
-                    f"Fanned out {n} cell(s) of study/subgroup-level field values "
-                    f"into per-sample rows."
+                    f"Fan-out of study/subgroup-level values into sample rows: {detail}."
                 )
 
-        # Fill per-subject age_min/age_max deterministically (runs after fan-out
-        # so propagated records are covered too).
-        n_age = _normalize_age_bounds(result)
+        # Per-subject age_min/age_max (opt-in via age_rules; runs after fan-out so
+        # it can tell propagated ages from per-sample ones).
+        n_age = normalize_age_bounds(result, self.age_rules, schema_obj)
         if n_age:
             result.extraction_warnings.append(
-                f"Filled {n_age} age_min/age_max cell(s) by the age-bound rule "
-                f"(per-subject age, else reported range, else age_group definition)."
+                f"Set {n_age} age_min/age_max cell(s) by the configured age-bound rules."
             )
         return result
 
@@ -259,6 +285,8 @@ class MetaExtractor:
         ) as stream:
             response = stream.get_final_message()
 
+        if getattr(response, "model", None):
+            self.last_response_models.add(str(response.model))
         u = response.usage
         self.last_usage["input_tokens"] += getattr(u, "input_tokens", 0) or 0
         self.last_usage["cache_creation_input_tokens"] += getattr(u, "cache_creation_input_tokens", 0) or 0
@@ -300,6 +328,7 @@ class MetaExtractor:
         own_tables = [t for t in tables if getattr(t, "source", None) != "ena"]
 
         samples, warnings, selections = self._samples_from_table_set(own_tables, schema)
+        self.last_table_sources = dict(self._set_sources)
         if samples:
             if manifest_tables:
                 warnings.append(
@@ -315,6 +344,7 @@ class MetaExtractor:
             m_samples, m_warnings, m_selections = self._samples_from_table_set(
                 manifest_tables, schema
             )
+            self.last_table_sources = dict(self._set_sources)
             return m_samples, warnings + m_warnings, selections + m_selections
         return samples, warnings, selections
 
@@ -337,6 +367,7 @@ class MetaExtractor:
 
         Then left-join across all kept tables on shared canonical keys.
         """
+        self._set_sources: dict[str, str] = {}
         if not tables:
             return [], [], []
         schema_field_names = [f.name for f in schema.fields]
@@ -345,6 +376,8 @@ class MetaExtractor:
         # (name, rows, relevance): relevance is retained so the join can anchor
         # on the most schema-relevant sample table (see the sort before join_tables).
         scored_tables: list[tuple[str, list[dict], float]] = []
+        # table name -> (source kind, {schema field: source column})
+        table_columns: dict[str, tuple[str, dict[str, str]]] = {}
 
         for t in tables:
             rel = score_table(t, schema)
@@ -404,6 +437,12 @@ class MetaExtractor:
 
             m: ColumnMapping = map_columns(transformed.columns, schema_field_names)
             renamed = apply_mapping(transformed.rows, m)
+            kind = "manifest" if getattr(t, "source", None) == "ena" else "table"
+            table_columns[transformed.name] = (
+                kind,
+                {**{c: c for c in transformed.columns if c in schema_field_names},
+                 **{tgt: src for src, tgt in m.mapped.items()}},
+            )
             scored_tables.append((transformed.name, renamed, rel.score))
             if m.collisions:
                 for src, tgt in m.collisions:
@@ -428,6 +467,12 @@ class MetaExtractor:
         # so equal-relevance tables keep their original order.
         scored_tables.sort(key=lambda x: x[2], reverse=True)
         mapped_tables = [(name, rows) for name, rows, _ in scored_tables]
+        # Attribute each field to the most relevant table that maps it (the join
+        # keeps the primary's value on conflict, so this is the value's source).
+        for name, _rows, _score in scored_tables:
+            kind, cols = table_columns.get(name, ("table", {}))
+            for fname, col in cols.items():
+                self._set_sources.setdefault(fname, f"{kind}:{name}:{col}")
         merged, jplan = join_tables(mapped_tables)
         for j in jplan.joins:
             warnings.append(
@@ -590,183 +635,6 @@ def _accumulate_usage(target: dict[str, int], source: dict[str, int]) -> None:
         target[k] = target.get(k, 0) + (v or 0)
 
 
-def _normalize_subgroup(label: str) -> str:
-    """Compare subgroup labels case- and plural-insensitively.
-
-    Matches "mothers" (LLM subgroup) to "Mother" (table sample_type) and
-    similar variants. Conservative — only strips a trailing 's'.
-    """
-    s = label.strip().lower()
-    if s.endswith("s") and len(s) > 1:
-        s = s[:-1]
-    return s
-
-
-def _stringify_field_value(v: Any) -> str:
-    """Render a study/subgroup field value for insertion into a sample row."""
-    if v is None:
-        return ""
-    if isinstance(v, list):
-        return "; ".join(str(x) for x in v)
-    return str(v)
-
-
-def _fan_out_fields_to_samples(result: ExtractionResult) -> int:
-    """Propagate study-level and subgroup-level field values into each sample.
-
-    Per-sample values already present (from the supplementary-table path)
-    take precedence — they're more specific than the LLM's prose-derived
-    study/subgroup assignments. For each unfilled field on a sample:
-
-      - If the sample's subgroup can be identified (by matching one of its
-        string values against ``result.subgroups`` with plural- and case-
-        insensitive comparison) AND the field has a value for that
-        subgroup, that value is written.
-      - Otherwise the field's study-level value is written, when present
-        and not ``not_reported``.
-
-    Returns the number of (sample, field) cells written.
-    """
-    if not result.samples or not result.fields:
-        return 0
-
-    subgroup_norm: dict[str, str] = {
-        _normalize_subgroup(s): s for s in (result.subgroups or [])
-    }
-
-    def _sample_subgroup(sample: dict) -> str | None:
-        for v in sample.values():
-            if isinstance(v, str):
-                norm = _normalize_subgroup(v)
-                if norm in subgroup_norm:
-                    return subgroup_norm[norm]
-        return None
-
-    def _is_nr(v: Any) -> bool:
-        """A value counts as not-reported when it is empty, None, or any
-        case-variant of the literal 'not_reported' / 'not reported' token."""
-        if v is None:
-            return True
-        if isinstance(v, (list, dict)):
-            return not v
-        if isinstance(v, str):
-            s = v.strip().lower().replace(" ", "_")
-            return s in ("", "not_reported")
-        return False
-
-    n_written = 0
-    for sample in result.samples:
-        sg = _sample_subgroup(sample)
-        for fname, field in result.fields.items():
-            if not _is_nr(sample.get(fname)):
-                continue
-            value: str | None = None
-            if sg and field.by_subgroup and sg in field.by_subgroup:
-                v = field.by_subgroup[sg]
-                if not _is_nr(v):
-                    value = _stringify_field_value(v)
-            if value is None and not _is_nr(field.value):
-                value = _stringify_field_value(field.value)
-            if value is not None:
-                sample[fname] = value
-                n_written += 1
-    return n_written
-
-
-# Canonical age-group bounds in YEARS, from the cMD schema's age_group
-# definitions. Used only as a last-resort fallback (no per-subject age and no
-# reported numeric range): they derive age_min/age_max purely from the group
-# label. Not a match to the curated gold, which for range-reporting studies
-# records genuine per-subject ages — hence the fallback yields to a reported
-# range. Newborn (< 1 month) is intentionally omitted: it is defined in
-# sub-year units, so we leave it untouched.
-AGE_GROUP_BOUNDS: dict[str, tuple[float, float]] = {
-    "Infant":     (0.0, 2.0),
-    "Child":      (2.0, 11.0),
-    "Adolescent": (11.0, 18.0),
-    "Adult":      (18.0, 65.0),
-    "Elderly":    (65.0, 130.0),
-}
-
-
-def _fmt_age(x: float) -> str:
-    """Whole numbers render as ints ('18'); fractional values keep the float."""
-    return str(int(x)) if float(x).is_integer() else str(x)
-
-
-def _age_num(v: Any) -> float | None:
-    """Scalar age -> float, or None if missing / not_reported / non-numeric."""
-    if v is None:
-        return None
-    s = str(v).strip()
-    if s.lower().replace(" ", "_") in ("", "not_reported", "na", "nan"):
-        return None
-    try:
-        return float(s)
-    except ValueError:
-        return None
-
-
-def _normalize_age_bounds(result: ExtractionResult) -> int:
-    """Enforce the schema's age_min/age_max semantics on every record.
-
-    age_min/age_max are per-subject bounds. This fills them deterministically
-    from the best available evidence, by precedence:
-
-    Rules per record (study-level ``fields`` and each sample):
-      * specific age present -> fill any missing age_min/age_max with it
-        (existing values are left alone);
-      * else a reported numeric range present (either bound numeric) -> keep
-        it as-is (e.g. "Subjects were 23 to 34 years old" -> 23/34);
-      * else age_group in AGE_GROUP_BOUNDS -> set age_min/age_max to the
-        group's defining bounds (Adult -> 18/65) as a last-resort fallback.
-
-    Returns the number of age_min/age_max cells rewritten.
-    """
-    def _fix(get, set_) -> int:
-        spec = _age_num(get("age"))
-        if spec is None:
-            spec = _age_num(get("age_years"))
-        g = get("age_group")
-        group = g.strip() if isinstance(g, str) else None
-        written = 0
-        if spec is not None:
-            # A specific per-subject age wins: fill any missing bounds with it,
-            # leaving existing values alone.
-            for b in ("age_min", "age_max"):
-                if _age_num(get(b)) is None and set_(b, _fmt_age(spec)):
-                    written += 1
-        elif _age_num(get("age_min")) is None and _age_num(get("age_max")) is None:
-            # No specific age and no reported numeric range: fall back to the
-            # age_group definition (Adult -> 18/65). A reported range (either
-            # bound numeric) is kept as-is — see docstring.
-            if group in AGE_GROUP_BOUNDS:
-                lo, hi = AGE_GROUP_BOUNDS[group]
-                for b, want in (("age_min", _fmt_age(lo)), ("age_max", _fmt_age(hi))):
-                    if str(get(b) or "").strip() != want and set_(b, want):
-                        written += 1
-        return written
-
-    def _field_get(name):
-        fr = result.fields.get(name)
-        return None if fr is None else fr.value
-
-    def _field_set(name, val) -> bool:
-        fr = result.fields.get(name)
-        if fr is None:  # don't fabricate study-level fields the model never emitted
-            return False
-        fr.value = val
-        fr.extraction_type = "derived"
-        note = "age_min/age_max set from schema age-bound rule"
-        fr.notes = f"{fr.notes} [{note}]" if fr.notes else f"[{note}]"
-        return True
-
-    n = _fix(_field_get, _field_set)
-    for s in result.samples:
-        n += _fix(s.get, lambda k, v, s=s: (s.__setitem__(k, v), True)[1])
-    return n
-
-
 def estimate_cost_usd(usage: dict[str, int], model: str) -> dict[str, float]:
     """Estimate USD cost for a usage dict (input/output/cache tokens)."""
     rates = PRICING_USD_PER_MTOK.get(model)
@@ -794,8 +662,9 @@ def extract(
     tables: list | None = None,
     model: str = DEFAULT_MODEL,
     api_key: str | None = None,
+    age_rules: AgeBoundRules | None = None,
 ) -> ExtractionResult:
     """Convenience one-shot wrapper."""
-    return MetaExtractor(model=model, api_key=api_key).extract(
+    return MetaExtractor(model=model, api_key=api_key, age_rules=age_rules).extract(
         paper_text=paper_text, schema=schema, paper_id=paper_id, tables=tables
     )

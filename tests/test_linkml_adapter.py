@@ -64,3 +64,16 @@ def test_non_string_description_does_not_crash():
     assert f.name == "molecular_subtype"
     assert f.description == "molecular_subtype"  # falls back to the slot name
     assert f.type == "string"
+
+
+def test_scope_annotation_is_read_but_not_sent_to_model():
+    from metaextractor.adapters.linkml import linkml_to_schema
+    data = {
+        "classes": {"S": {"slots": ["a", "b", "c"]}},
+        "slots": {"a": {"annotations": {"scope": "study"}},
+                  "b": {"annotations": {"scope": {"tag": "scope", "value": "sample"}}},
+                  "c": {"annotations": {"scope": "other"}}},
+    }
+    s = linkml_to_schema(data)
+    assert [f.scope for f in s.fields] == ["study", "sample", None]
+    assert all("scope" not in f for f in s.to_prompt_json()["fields"])

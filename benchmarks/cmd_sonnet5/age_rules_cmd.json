@@ -1,0 +1,15 @@
+{
+  "min_field": "age_min",
+  "max_field": "age_max",
+  "age_fields": {"age": "age_unit", "age_years": null},
+  "group_field": "age_group",
+  "group_bounds": {
+    "Infant": [0, 2],
+    "Child": [2, 11],
+    "Adolescent": [11, 18],
+    "Adult": [18, 65],
+    "Elderly": [65, 130]
+  },
+  "assume_years_when_unit_missing": true,
+  "justification": "Lower bounds and the Infant/Child/Adolescent/Adult upper bounds follow the cMD age_group slot definition (Infant >=1 month & <2 yrs, Child >=2 & <11, Adolescent >=11 & <18, Adult >=18 & <65, Elderly >=65). The schema gives Elderly no upper bound; 130 is the curation convention used in the cMD gold tables (743 group-only Elderly rows encode age_max=130 at curatedMetagenomicDataCuration commit 41271711). Newborn (<1 month) is omitted because it is defined in sub-year units. age_min/age_max are in years; the cMD slot description states they are identical for a specific age."
+}

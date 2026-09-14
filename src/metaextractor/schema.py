@@ -6,6 +6,9 @@ from typing import Any, Literal
 from pydantic import BaseModel, Field as PydField, field_validator
 
 FieldType = Literal["string", "number", "enum", "boolean", "list"]
+#: Whether a field describes the whole study or an individual sample. Governs
+#: deterministic fan-out (``metaextractor.sample_rules``); ``None`` = undeclared.
+FieldScope = Literal["study", "sample"]
 
 
 class Field(BaseModel):
@@ -17,6 +20,7 @@ class Field(BaseModel):
     unit: str | None = None
     target_unit: str | None = None
     required: bool = False
+    scope: FieldScope | None = None
 
     @field_validator("allowed_values")
     @classmethod
@@ -38,4 +42,5 @@ class Schema(BaseModel):
         raise ValueError("Schema dict must contain 'fields' key or be a list of fields")
 
     def to_prompt_json(self) -> dict[str, Any]:
-        return {"fields": [f.model_dump(exclude_none=True) for f in self.fields]}
+        # ``scope`` drives deterministic post-processing only; it is not sent to the model.
+        return {"fields": [f.model_dump(exclude_none=True, exclude={"scope"}) for f in self.fields]}
