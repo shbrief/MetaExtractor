@@ -8,7 +8,8 @@ Figures 2 and 3 are generated from the scoring outputs of a run tree — no
 numbers are transcribed by hand:
 
   TREE/aggregate_v2.json   (benchmarks/cmd_sonnet5/aggregate.py)
-  TREE/harmonization.json  (benchmarks/cmd_sonnet5/bench.py harmonize)
+
+All scores are post-harmonization (values compared after MetaHarmonizer mapping).
 
   python figures/make_figures.py [--tree benchmarks/cmd_sonnet5/out_v2]
 """
@@ -144,62 +145,51 @@ def fig1_pipeline():
 MODEL_STYLE = {"sonnet": ("Sonnet 5", SONNET, "#07507c"), "haiku": ("Haiku 4.5", HAIKU, "#a9720f")}
 
 
-def _metrics(c):
+def _f1(c):
     tp = c["tp_correct"] + c["tp_wrong"]
-    vp = c["tp_correct"] / (tp + c["fp"]) if tp + c["fp"] else None
-    vr = c["tp_correct"] / (tp + c["fn"]) if tp + c["fn"] else None
-    f1 = 2 * vp * vr / (vp + vr) if vp is not None and vr is not None and vp + vr else None
-    return f1
+    p = c["tp_correct"] / (tp + c["fp"]) if tp + c["fp"] else None
+    r = c["tp_correct"] / (tp + c["fn"]) if tp + c["fn"] else None
+    return 2 * p * r / (p + r) if p is not None and r is not None and p + r else None
 
 
-# ---------------------------------------------------------------- Figure 2
-def fig2_model_compare(agg: dict):
+SCORES = (("end_to_end", "Score all curated"), ("conditional", "Score matched"))
+KEYS = (("precision", "precision"), ("recall", "recall"), ("f1", "F1"))
+
+
+def _bars(ax, agg, models, join, title):
     import numpy as np
-    models = [m for m in ("sonnet", "haiku") if m in agg["models"]]
-    keys = [("value_precision", "value\nprecision"), ("value_recall", "value\nrecall"),
-            ("value_f1", "value\nF1"), ("presence_precision", "presence\nprecision"),
-            ("presence_recall", "presence\nrecall")]
-    fig = plt.figure(figsize=(9.0, 6.6))
-    gs = fig.add_gridspec(2, 2, width_ratios=[3.4, 1], height_ratios=[1, 1.05],
-                          hspace=0.55, wspace=0.28)
-    ax, axfp, axs = fig.add_subplot(gs[0, 0]), fig.add_subplot(gs[0, 1]), fig.add_subplot(gs[1, :])
-
     _clean(ax)
-    x = np.arange(len(keys))
+    x = np.arange(len(KEYS))
     w = 0.36
     for j, m in enumerate(models):
         label, color, dark = MODEL_STYLE[m]
-        h = agg["models"][m]["headline"]["end_to_end"]
-        med = [h[k][0] for k, _ in keys]
-        lo = [h[k][0] - h[k][1] for k, _ in keys]
-        hi = [h[k][2] - h[k][0] for k, _ in keys]
+        h = agg["models"][m]["headline"][join]
+        med = [h[k][0] or 0.0 for k, _ in KEYS]
+        lo = [(h[k][0] or 0.0) - (h[k][1] or 0.0) for k, _ in KEYS]
+        hi = [(h[k][2] or 0.0) - (h[k][0] or 0.0) for k, _ in KEYS]
         xs = x + (j - 0.5) * w
         ax.bar(xs, med, w, color=color, edgecolor="white", linewidth=1.2, zorder=2, label=label,
                yerr=[lo, hi], capsize=3, error_kw=dict(ecolor=INK, lw=1, capthick=1))
         for xi, v, e in zip(xs, med, hi):
             ax.text(xi, v + e + 0.025, f"{v:.2f}", ha="center", fontsize=7.2, color=dark,
                     fontweight="bold")
-    ax.axvline(2.5, color=GRID, lw=1.2, zorder=0)
     ax.set_xticks(x)
-    ax.set_xticklabels([k[1] for k in keys], fontsize=8.2)
+    ax.set_xticklabels([k[1] for k in KEYS], fontsize=8.4)
     ax.set_ylim(0, 1.12)
-    ax.set_ylabel("end-to-end score\n(median; whiskers = min–max, 3 repeats)", fontsize=8.4)
-    ax.set_title("a  Content fields, identity-aligned end-to-end", loc="left", fontsize=9.2)
-    ax.legend(loc="upper left", bbox_to_anchor=(0.0, -0.2), frameon=False, fontsize=8.4, ncol=2)
+    ax.set_title(title, loc="left", fontsize=9.2)
 
-    _clean(axfp)
-    for j, m in enumerate(models):
-        label, color, dark = MODEL_STYLE[m]
-        med, lo, hi = agg["models"][m]["headline"]["end_to_end"]["fp"]
-        axfp.bar([j], [med], 0.6, color=color, edgecolor="white", zorder=2,
-                 yerr=[[med - lo], [hi - med]], capsize=3, error_kw=dict(ecolor=INK, lw=1))
-        axfp.text(j, hi * 1.04 + 1, f"{med:.0f}", ha="center", fontsize=8, color=dark,
-                  fontweight="bold")
-    axfp.set_xticks(range(len(models)))
-    axfp.set_xticklabels([MODEL_STYLE[m][0] for m in models], fontsize=8.2)
-    top = max(agg["models"][m]["headline"]["end_to_end"]["fp"][2] for m in models)
-    axfp.set_ylim(0, top * 1.25 + 5)
-    axfp.set_title("b  False-positive cells", loc="left", fontsize=9.2)
+
+# ---------------------------------------------------------------- Figure 2
+def fig2_model_compare(agg: dict):
+    models = [m for m in ("sonnet", "haiku") if m in agg["models"]]
+    fig = plt.figure(figsize=(9.0, 6.6))
+    gs = fig.add_gridspec(2, 2, height_ratios=[1, 1.05], hspace=0.55, wspace=0.22)
+    ax_all, ax_m, axs = fig.add_subplot(gs[0, 0]), fig.add_subplot(gs[0, 1]), fig.add_subplot(gs[1, :])
+    _bars(ax_all, agg, models, "end_to_end", "a  Score all curated (1,089 samples)")
+    _bars(ax_m, agg, models, "conditional", "b  Score matched (identifier-linked samples)")
+    ax_all.set_ylabel("post-harmonization score\n(median; whiskers = min–max, 3 repeats)",
+                      fontsize=8.4)
+    ax_all.legend(loc="upper left", bbox_to_anchor=(0.0, -0.14), frameon=False, fontsize=8.4, ncol=2)
 
     _clean(axs)
     studies = list(agg["models"][models[0]]["per_study"])
@@ -207,7 +197,7 @@ def fig2_model_compare(agg: dict):
         label, color, dark = MODEL_STYLE[m]
         for i, study in enumerate(studies):
             runs = agg["models"][m]["per_study"].get(study, {}).get("runs", {})
-            vals = [_metrics(r["end_to_end"]) for r in runs.values() if "end_to_end" in r]
+            vals = [_f1(r["end_to_end"]) for r in runs.values() if "end_to_end" in r]
             vals = [0.0 if v is None else v for v in vals]
             if not vals:
                 continue
@@ -217,7 +207,7 @@ def fig2_model_compare(agg: dict):
     axs.set_xticks(range(len(studies)))
     axs.set_xticklabels([s.replace("_", "\n", 1) for s in studies], fontsize=7.4)
     axs.set_ylim(-0.03, 1.0)
-    axs.set_ylabel("end-to-end value F1", fontsize=8.4)
+    axs.set_ylabel("F1, all curated samples", fontsize=8.4)
     axs.set_title("c  Per study (dot = median, line = min–max over repeats)", loc="left",
                   fontsize=9.2)
     fig.savefig(OUT / "fig2_model_compare.png")
@@ -225,48 +215,36 @@ def fig2_model_compare(agg: dict):
 
 
 # ---------------------------------------------------------------- Figure 3
-def fig3_harmonization(harm: dict):
-    from matplotlib.lines import Line2D
-    rows = []
-    for field in ("disease", "body_site", "treatment"):
-        fd = harm["fields"].get(field)
-        if not fd:
-            continue
-        for m in ("sonnet", "haiku"):
-            md = fd["models"].get(m) or {}
-            s = md.get("summary") or {}
-            if md.get("runs_with_coded"):
-                rows.append((field, m, {**s, "_runs": f"{md['runs_with_coded']}/{md['runs']}",
-                                        "_coded_total": sum(pr["coded"] for pr in md["per_run"].values())}))
-    fig, ax = plt.subplots(figsize=(8.0, 0.62 * len(rows) + 1.6))
-    _clean(ax, grid_axis="x")
-    for i, (field, m, s) in enumerate(reversed(rows)):
-        label, color, dark = MODEL_STYLE[m]
-        raw, exact, anyhit = s["raw_acc_coded"], s["exact_correct"], s["any_hit"]
-        ax.plot([raw[0], exact[0]], [i, i], color=color, lw=2.2, alpha=0.4, zorder=1)
-        for v, wc, kw in ((anyhit, MUTED, dict(s=52, marker="D", color="white", edgecolor=MUTED,
-                                                linewidth=1.2)),
-                          (raw, color, dict(s=62, color="white", edgecolor=color, linewidth=2)),
-                          (exact, dark, dict(s=80, color=color, edgecolor="white", linewidth=1.2))):
-            ax.plot([v[1], v[2]], [i + 0.12, i + 0.12], color=wc, lw=1.1, alpha=0.8, zorder=2)
-            ax.scatter([v[0]], [i], zorder=3, **kw)
-        ax.text(1.05, i, f"exact {exact[0]:.2f} · raw {raw[0]:.2f} · "
-                         f"{s['_coded_total']} cells, {s['_runs']} runs",
-                va="center", fontsize=7.6, color=dark)
-    ax.set_yticks(range(len(rows)))
-    ax.set_yticklabels([f"{f} · {MODEL_STYLE[m][0]}" for f, m, _ in reversed(rows)], fontsize=8.6)
-    ax.set_xlim(-0.03, 1.03)
-    ax.set_ylim(-0.6, len(rows) - 0.4)
-    ax.set_xlabel("fraction of coded cells (identity-matched; median over runs with coded cells, "
-                  "lines = range)", fontsize=8.4)
-    ax.legend(handles=[
-        Line2D([0], [0], marker="o", color="none", markerfacecolor="white", markeredgecolor=INK,
-               markersize=8, label="raw string match"),
-        Line2D([0], [0], marker="o", color="none", markerfacecolor=INK, markeredgecolor="white",
-               markersize=9, label="exact code-set match to curated ID"),
-        Line2D([0], [0], marker="D", color="none", markerfacecolor="white", markeredgecolor=MUTED,
-               markersize=7, label="any shared code (supplementary)"),
-    ], loc="upper center", bbox_to_anchor=(0.45, -0.22), frameon=False, fontsize=8, ncol=3)
+def fig3_harmonization(agg: dict):
+    """F1 of the harmonized fields, both scores."""
+    models = [m for m in ("sonnet", "haiku") if m in agg["models"]]
+    fields = sorted({f for m in models for f in agg["models"][m].get("per_field", {})})
+    if not fields:
+        return
+    fig, axes = plt.subplots(1, 2, figsize=(9.0, 0.7 * len(fields) * len(models) + 1.8),
+                             sharey=True)
+    for ax, (join, title) in zip(axes, SCORES):
+        _clean(ax, grid_axis="x")
+        labels, i = [], 0
+        for f in fields:
+            for m in models:
+                label, color, dark = MODEL_STYLE[m]
+                h = agg["models"][m].get("per_field", {}).get(f, {}).get(join)
+                labels.append(f"{f} · {label}")
+                if h and h["f1"]:
+                    med, lo, hi = h["f1"]
+                    ax.plot([lo, hi], [i, i], color=color, lw=2, alpha=0.6, zorder=2)
+                    ax.scatter([med], [i], s=70, color=color, edgecolor="white", zorder=3)
+                    ax.text(1.04, i, f"{med:.2f}", va="center", fontsize=7.8, color=dark)
+                else:
+                    ax.text(0.01, i, "no correct cells", va="center", fontsize=7.6, color=MUTED)
+                i += 1
+        ax.set_yticks(range(len(labels)))
+        ax.set_yticklabels(labels, fontsize=8.2)
+        ax.set_xlim(-0.03, 1.03)
+        ax.set_ylim(len(labels) - 0.4, -0.6)
+        ax.set_xlabel("F1 (median; line = min–max over repeats)", fontsize=8.4)
+        ax.set_title(title, loc="left", fontsize=9.2)
     fig.savefig(OUT / "fig3_harmonization.png")
     plt.close(fig)
 
@@ -278,5 +256,5 @@ if __name__ == "__main__":
     tree = pathlib.Path(a.tree)
     fig1_pipeline()
     fig2_model_compare(json.loads((tree / "aggregate_v2.json").read_text()))
-    fig3_harmonization(json.loads((tree / "harmonization.json").read_text()))
+    fig3_harmonization(json.loads((tree / "aggregate_v2.json").read_text()))
     print("wrote:", *[p.name for p in sorted(OUT.glob("*.png"))])

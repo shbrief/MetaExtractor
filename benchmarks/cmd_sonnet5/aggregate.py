@@ -5,12 +5,14 @@ Reads ``TREE/<model>_r<k>/summary.json`` (written by ``bench.py eval``) and, whe
 present, ``TREE/ledger.jsonl`` (written by ``run_frozen.py``). Writes
 ``TREE/aggregate_v2.json`` and ``TREE/AGGREGATE.md`` with:
 
-* headline content metrics per join (end-to-end primary, conditional, positional),
-  value-aware and presence, median [min–max] across repeats;
+* post-harmonization precision / recall / F1 of content fields for the two scores —
+  all curated samples (``end_to_end``) and matched samples (``conditional``) —
+  median [min–max] across repeats;
+* the same per harmonized field (MetaHarmonizer crosswalk fields);
 * a per-study × per-repeat error table (TPc / TPw / FN / FP / extra records);
 * identity-alignment diagnostics and per-study enumeration counts;
-* a study-cluster bootstrap CI for the paired model difference in end-to-end
-  value F1 (studies resampled with replacement; repeats pooled within study);
+* a study-cluster bootstrap CI for the paired model difference in all-curated F1
+  (studies resampled with replacement; repeats pooled within study);
 * cell decisions for age_min/age_max split by value provenance (age rule vs other);
 * false-positive source checks and the attempt ledger summary.
 
@@ -27,10 +29,10 @@ from pathlib import Path
 
 from bench import _add, _zero, metrics
 
-JOINS = ("end_to_end", "conditional", "positional")
-RENDER_JOINS = ("end_to_end", "end_to_end_successful_only", "conditional", "positional")
-HEADLINE = ("value_precision", "value_recall", "value_f1", "presence_precision",
-            "presence_recall", "presence_f1", "value_accuracy", "fp", "fn")
+JOINS = ("end_to_end", "conditional")
+RENDER_JOINS = (("end_to_end", "Score all curated"), ("conditional", "Score matched"),
+                ("end_to_end_successful_only", "Sensitivity: all curated, successful extractions only"))
+HEADLINE = ("precision", "recall", "f1", "tp_correct", "tp_wrong", "fp", "fn")
 
 
 def _mmm(vals):
@@ -58,7 +60,7 @@ def pooled(per_study: list[dict], join: str, part: str = "content",
 
 
 def bootstrap_diff(runs_a: dict, runs_b: dict, B: int, seed: int = 0) -> dict:
-    """Paired study-cluster bootstrap of value-F1(a) − value-F1(b), end-to-end."""
+    """Paired study-cluster bootstrap of F1(a) − F1(b), all curated."""
     def study_counts(runs):
         out = defaultdict(_zero)
         for summ in runs.values():
@@ -72,7 +74,7 @@ def bootstrap_diff(runs_a: dict, runs_b: dict, B: int, seed: int = 0) -> dict:
         a = _zero()
         for s in sample:
             _add(a, counts[s])
-        return metrics(a)["value_f1"] or 0.0
+        return metrics(a)["f1"] or 0.0
     point = f1(ca, studies) - f1(cb, studies)
     rng = random.Random(seed)
     diffs = []
@@ -133,9 +135,24 @@ def main() -> None:
         md["failed_extractions"] = sorted(
             f"{r}/{s['study']}" for r, summ in runs.items() for s in summ["per_study"]
             if s.get("extraction_failed"))
-        cov = {r: metrics(pooled(s["per_study"], "positional", "content_coverage"))
-               for r, s in runs.items()}
-        md["headline"]["positional_coverage_recall"] = _mmm([c["presence_recall"] for c in cov.values()])
+        harmonized = sorted({f for s in runs.values() for f in s.get("harmonized_fields", [])})
+        md["harmonized_fields"] = harmonized
+        md["per_field"] = {}
+        for f in harmonized:
+            md["per_field"][f] = {}
+            for join in JOINS:
+                per_run = {}
+                for r, summ in runs.items():
+                    a = _zero()
+                    for s in summ["per_study"]:
+                        if "error" not in s and f in s.get(f"fields_{join}", {}):
+                            _add(a, s[f"fields_{join}"][f])
+                    per_run[r] = metrics(a)
+                md["per_field"][f][join] = {k: _mmm([pr[k] for pr in per_run.values()])
+                                            for k in HEADLINE}
+        md["unqueried_terms"] = sorted({t for summ in runs.values() for s in summ["per_study"]
+                                        for d in (s.get("harmonization") or {}).values()
+                                        for t in d["unqueried_terms"]})
 
         age_by_source = defaultdict(_zero)
         fp_check = defaultdict(lambda: defaultdict(int))
@@ -151,7 +168,7 @@ def main() -> None:
                     "extraction_failed": s.get("extraction_failed", False),
                     "alignment": al,
                     "end_to_end": s["end_to_end"]["content"],
-                    "positional": s["positional"]["content"],
+                    "conditional": s["conditional"]["content"],
                     "extra_records": al["unmatched_ext_with_key"] + al["unmatched_ext_without_key"],
                 }
                 for f in ("age_min", "age_max"):
@@ -167,7 +184,7 @@ def main() -> None:
 
     if len(args.models) == 2 and all(runs_by_model.values()):
         a, b = args.models
-        agg["paired_value_f1_difference"] = {"a": a, "b": b,
+        agg["paired_f1_difference"] = {"a": a, "b": b,
                                              **bootstrap_diff(runs_by_model[a], runs_by_model[b], args.boot)}
     agg["ledger"] = ledger_summary(tree)
     (tree / "aggregate_v2.json").write_text(json.dumps(agg, indent=2, default=str))
@@ -187,51 +204,67 @@ def _f(v, nd=3):
 
 def render(agg: dict) -> str:
     L = [f"# Aggregate — `{agg['tree']}`\n",
-         "Content fields, micro-averaged; median [min–max] across repeats. "
-         "Value-aware metrics count only value-correct cells as hits; presence metrics count "
-         "any reported value.\n"]
-    for join in RENDER_JOINS:
-        L += [f"\n## {join.replace('_', '-')}\n",
-              "| model | value P | value R | value F1 | presence P | presence R | presence F1 | value acc (TP) | FP | FN |",
-              "|---|--:|--:|--:|--:|--:|--:|--:|--:|--:|"]
+         "Content fields, micro-averaged; median [min–max] across repeats. Values are compared "
+         "after harmonization: fields with a MetaHarmonizer crosswalk as ontology codes (against "
+         "the curated ontology id where present), other fields as extracted. Precision = "
+         "TPc/(TPc+TPw+FP), recall = TPc/(TPc+TPw+FN).\n"]
+    for model, md in agg["models"].items():
+        if md.get("harmonized_fields"):
+            L.append(f"Harmonized fields ({model}): {', '.join(md['harmonized_fields'])}.")
+        if md.get("unqueried_terms"):
+            L.append(f"\n**Warning ({model}):** extracted terms missing from the crosswalks "
+                     f"(scored as unmapped): {', '.join(md['unqueried_terms'])}")
+    for join, title in RENDER_JOINS:
+        L += [f"\n## {title}\n",
+              "| model | precision | recall | F1 | TPc | TPw | FP | FN |",
+              "|---|--:|--:|--:|--:|--:|--:|--:|"]
         for model, md in agg["models"].items():
             h = md["headline"][join]
-            L.append(f"| {model} | {_f(h['value_precision'])} | {_f(h['value_recall'])} | "
-                     f"{_f(h['value_f1'])} | {_f(h['presence_precision'])} | "
-                     f"{_f(h['presence_recall'])} | {_f(h['presence_f1'])} | "
-                     f"{_f(h['value_accuracy'])} | {_f(h['fp'], 0)} | {_f(h['fn'], 0)} |")
-    pd_ = agg.get("paired_value_f1_difference")
+            L.append(f"| {model} | {_f(h['precision'])} | {_f(h['recall'])} | {_f(h['f1'])} | "
+                     f"{_f(h['tp_correct'], 0)} | {_f(h['tp_wrong'], 0)} | {_f(h['fp'], 0)} | "
+                     f"{_f(h['fn'], 0)} |")
+    pd_ = agg.get("paired_f1_difference")
     if pd_:
-        L.append(f"\nPaired end-to-end value-F1 difference ({pd_['a']} − {pd_['b']}): "
+        L.append(f"\nPaired all-curated F1 difference ({pd_['a']} − {pd_['b']}): "
                  f"{pd_['point']:+.3f}, 95% study-cluster bootstrap CI "
                  f"[{pd_['ci95'][0]:+.3f}, {pd_['ci95'][1]:+.3f}] "
                  f"({pd_['n_studies']} studies, B={pd_['B']}).\n")
+    if any(md.get("per_field") for md in agg["models"].values()):
+        L += ["\n## Harmonized fields\n",
+              "| field | model | score | precision | recall | F1 | TPc | TPw | FP | FN |",
+              "|---|---|---|--:|--:|--:|--:|--:|--:|--:|"]
+        for model, md in agg["models"].items():
+            for f, joins in md.get("per_field", {}).items():
+                for join, title in (("end_to_end", "all curated"), ("conditional", "matched")):
+                    h = joins[join]
+                    L.append(f"| {f} | {model} | {title} | {_f(h['precision'])} | {_f(h['recall'])} | "
+                             f"{_f(h['f1'])} | {_f(h['tp_correct'], 0)} | {_f(h['tp_wrong'], 0)} | "
+                             f"{_f(h['fp'], 0)} | {_f(h['fn'], 0)} |")
     for model, md in agg["models"].items():
         if md.get("failed_extractions"):
             L.append(f"\n{model}: extractions with no output after the retry "
-                     f"(scored end-to-end as all-FN): {', '.join(md['failed_extractions'])}")
+                     f"(scored as producing no records): {', '.join(md['failed_extractions'])}")
     for model, md in agg["models"].items():
-        L += [f"\n## {model}: per study × repeat (end-to-end content cells)\n",
-              "| study | gold n | repeat | ext n | key | matched | unmatched | pooled | ambiguous | extra | TPc | TPw | FN | FP | positional FP |",
+        L += [f"\n## {model}: per study × repeat (content cells)\n",
+              "| study | gold n | repeat | ext n | key | matched | unmatched | pooled | ambiguous | extra | TPc | TPw | FN (all curated) | FN (matched) | FP |",
               "|---|--:|---|--:|---|--:|--:|--:|--:|--:|--:|--:|--:|--:|--:|"]
         for study, ps in md["per_study"].items():
             for r, x in ps["runs"].items():
                 if "error" in x:
                     L.append(f"| {study} | {ps['n_gold']} | {r} | {x['error']} |" + " |" * 11)
                     continue
-                al, c = x["alignment"], x["end_to_end"]
+                al, c, cm = x["alignment"], x["end_to_end"], x["conditional"]
                 tag = " (failed)" if x.get("extraction_failed") else ""
                 L.append(f"| {study} | {ps['n_gold']} | {r}{tag} | {x['n_extracted']} | "
                          f"{al['key_used'] or '–'} | {al['matched']} | {al['unmatched_gold']} | "
                          f"{al['pooled_gold']} | {al['ambiguous_gold']} | {x['extra_records']} | "
-                         f"{c['tp_correct']} | {c['tp_wrong']} | {c['fn']} | {c['fp']} | "
-                         f"{x['positional']['fp']} |")
+                         f"{c['tp_correct']} | {c['tp_wrong']} | {c['fn']} | {cm['fn']} | {c['fp']} |")
         if md["age_by_source"]:
-            L += [f"\n### {model}: age bounds by provenance (end-to-end, pooled over repeats)\n",
-                  "| field:source | TPc | TPw | FN | FP | value acc |", "|---|--:|--:|--:|--:|--:|"]
+            L += [f"\n### {model}: age bounds by provenance (all curated, pooled over repeats)\n",
+                  "| field:source | TPc | TPw | FN | FP | precision |", "|---|--:|--:|--:|--:|--:|"]
             for k, v in sorted(md["age_by_source"].items()):
                 L.append(f"| {k} | {v['tp_correct']} | {v['tp_wrong']} | {v['fn']} | {v['fp']} | "
-                         f"{_f(v['value_accuracy'])} |")
+                         f"{_f(v['precision'])} |")
         if md["fp_source_check"]:
             L += [f"\n### {model}: false-positive source check (pooled over repeats)\n",
                   "Partial check only: whether the asserted value string, or the study-level "

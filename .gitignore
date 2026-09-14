@@ -26,5 +26,9 @@ result.json
 .Rproj.user
 
 # Retrieved article text archived per run (checksummed in ledger.jsonl; not redistributed)
-benchmarks/cmd_sonnet5/out_v2/**/*.text.txt
-!benchmarks/cmd_sonnet5/out_v2/**/*.log
+benchmarks/cmd_sonnet5/out_v*/**/*.text.txt
+!benchmarks/cmd_sonnet5/out_v*/**/*.log
+# Frozen retrievals: paper text and parsed tables are not redistributed; fetched.json
+# (provenance + checksums) is committed.
+benchmarks/cmd_sonnet5/out_v*/_fetch/**/text.txt
+benchmarks/cmd_sonnet5/out_v*/_fetch/**/tables.json

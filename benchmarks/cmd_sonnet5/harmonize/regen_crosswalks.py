@@ -1,6 +1,6 @@
 #!/usr/bin/env python
-"""Regenerate the extracted-value (and gold) OntologyMapper crosswalks used by
-`bench.py harmonize` / rescore.py, WITHOUT rebuilding the corpora.
+"""Regenerate the extracted-value (and gold) OntologyMapper crosswalks used for
+post-harmonization scoring (`bench.py eval`), WITHOUT rebuilding the corpora.
 
 The corpora are the committed v0.4.1 artifacts (disease = C7057 + static Healthy;
 body_site = 6 UBERON terms; treatment = the NCIt Pharmacologic-Substance corpus),
@@ -9,9 +9,10 @@ so this only embeds the query terms and does the FAISS lookup — minutes, not t
 3.6 h the original corpus build took.
 
 Extracted terms are collected from every ``<model>_r<k>`` run dir of the scored tree
-(``--tree``, default ``out_v2``), so every value scored by ``bench.py harmonize`` has
-a crosswalk entry. Gold terms are run-independent. Both sides map through the SAME
-corpus, so code-level agreement is well defined.
+(``--tree``, default ``out_v2``), so every value scored by ``bench.py eval`` has a
+crosswalk entry. Gold terms are run-independent. Both sides map through the SAME
+corpus, so code-level agreement is well defined. Crosswalks are written to
+``TREE/crosswalks/`` next to the outputs they were generated from.
 
 Usage:  CMD_CURATION_DIR=... python regen_crosswalks.py [--tree out_v2] [disease|body_site|treatment ...]
         (no fields = all three)
@@ -32,6 +33,7 @@ from metaharmonizer._paths import RETRIEVED_ONTOLOGIES_DIR
 
 # Run dirs whose extracted values must all be covered by the crosswalk (set in main).
 EXT_DIRS: list[pathlib.Path] = []
+OUT_DIR: list[pathlib.Path] = []
 SPLIT = lambda s: [t.strip() for t in str(s).replace("/", ";").replace(",", ";").split(";") if t.strip()]
 
 # Per-field corpus source. disease/body_site use the committed v041 corpus CSV as
@@ -110,9 +112,9 @@ def main(fields: list[str]) -> None:
         ext, gold = collect_extracted(field), collect_gold(field)
         print(f"\n=== {field}: {len(ext)} extracted terms, {len(gold)} gold terms ===", flush=True)
 
-        to_crosswalk(run_om(field, ext), cmap).to_csv(HERE / f"crosswalk_{field}.csv", index=False)
+        to_crosswalk(run_om(field, ext), cmap).to_csv(OUT_DIR[0] / f"crosswalk_{field}.csv", index=False)
         print(f"  wrote crosswalk_{field}.csv", flush=True)
-        to_crosswalk(run_om(field, gold), cmap).to_csv(HERE / f"crosswalk_gold_{field}.csv", index=False)
+        to_crosswalk(run_om(field, gold), cmap).to_csv(OUT_DIR[0] / f"crosswalk_gold_{field}.csv", index=False)
         print(f"  wrote crosswalk_gold_{field}.csv  ({time.time()-t0:.0f}s)", flush=True)
 
 
@@ -129,4 +131,6 @@ if __name__ == "__main__":
     EXT_DIRS[:] = sorted(d for d in tree.glob("*_r*") if d.is_dir())
     if not EXT_DIRS:
         raise SystemExit(f"no run dirs under {tree}")
+    OUT_DIR[:] = [tree / "crosswalks"]
+    OUT_DIR[0].mkdir(exist_ok=True)
     main(a.fields or list(OM_CATEGORY))
