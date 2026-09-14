@@ -38,8 +38,15 @@ CORE RULES
 - Unit handling: preserve the original unit string exactly. If the
   schema specifies a target unit, also return a `normalized_value`
   and `normalized_unit`; otherwise leave those null.
-- Enum fields: the value MUST be one of allowed_values, or
-  "not_reported", or "other" with the original phrase in `notes`.
+- Enum fields: `allowed_values` and `value_descriptions` describe the
+  intended MEANING and SCOPE of the field. Use them ONLY to locate and
+  disambiguate the correct information in the paper — never to rewrite
+  what you extract. Return `value` using the wording AS IT APPEARS in
+  the source (the surface form), even when it differs from an allowed
+  value; do NOT snap it to the closest allowed value. Downstream
+  harmonization maps it to the controlled vocabulary. Leave
+  `normalized_value` null. Use "not_reported" only when the field is
+  genuinely absent from the text.
 - Conflicting values within the paper: report the most specific source
   (Table > Methods > Abstract) and note the conflict in `notes`.
 
@@ -69,6 +76,11 @@ OutputSchema:
      ...
   },
   "samples": [                          // populated only if sample_level
+     // Each cell is the VERBATIM source value (or "not_reported"), same
+     // as study-level `value`: extract the surface form, never snap to an
+     // allowed value. Leave harmonization to the downstream stage, which
+     // fills a companion normalized form as
+     // { "value": <verbatim>, "normalized_value": <canonical> }.
      { "<field_name>": <value>, ... },
      ...
   ],

@@ -9,12 +9,30 @@ from typing import Any
 from metaextractor.output import ExtractionResult
 
 
-def _stringify(value: Any) -> str:
+def cell_value(cell: Any, *, prefer_normalized: bool = False) -> Any:
+    """Unwrap a sample cell that carries the verbatim/normalized split.
+
+    A per-sample cell is normally the verbatim scalar the extractor emitted.
+    Downstream harmonization may replace it with a
+    ``{"value": <verbatim>, "normalized_value": <canonical>}`` object; this
+    returns the verbatim ``value`` by default, or ``normalized_value``
+    (falling back to ``value`` when absent) when ``prefer_normalized``.
+    """
+    if isinstance(cell, dict) and "value" in cell:
+        if prefer_normalized:
+            norm = cell.get("normalized_value")
+            return norm if norm is not None else cell.get("value")
+        return cell.get("value")
+    return cell
+
+
+def _stringify(value: Any, *, prefer_normalized: bool = False) -> str:
     """Render a field value for a CSV cell. Lists become '; '-joined."""
+    value = cell_value(value, prefer_normalized=prefer_normalized)
     if value is None:
         return ""
     if isinstance(value, list):
-        return "; ".join(_stringify(v) for v in value)
+        return "; ".join(_stringify(v, prefer_normalized=prefer_normalized) for v in value)
     return str(value)
 
 

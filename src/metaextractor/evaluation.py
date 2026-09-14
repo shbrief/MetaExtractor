@@ -17,9 +17,16 @@ Results are returned as a structured :class:`EvaluationResult` that callers
 can read programmatically or render via :meth:`EvaluationResult.summary`.
 
 Surface-form synonyms (e.g. ``QIAamp ↔ Qiagen``) are intentionally **not**
-handled here — they would obscure real differences between extractor output
-and the curator's encoding. Resolve those upstream with an ontology
-crosswalk or a per-field normalization layer.
+handled by the default comparator — they would obscure real differences
+between extractor output and the curator's encoding. Because MetaExtractor
+now emits values **verbatim** (harmonization is a downstream stage), a large
+``TP_wrong`` count is *expected*, not a defect. To measure the pipeline
+end-to-end, pass a ``canonicalize`` callable (an ontology crosswalk or the
+MetaHarmonizer mapper) to :func:`evaluate`; it is applied to both sides for
+the comparison only, leaving the raw values in every :class:`CellResult`.
+:func:`evaluate_both` runs the raw and harmonized passes together and reports
+both, plus the *recoverable* cells that harmonization flips ``TP_wrong`` →
+``TP_correct``.
 """
 from __future__ import annotations
 
@@ -28,7 +35,12 @@ import json
 from collections import Counter, defaultdict
 from dataclasses import dataclass, field
 from pathlib import Path
-from typing import Any, Literal, Mapping
+from typing import Any, Callable, Literal, Mapping
+
+#: A value canonicalizer: ``(raw_value, field_name) -> canonical value``.
+#: Applied to both extracted and gold values before comparison to score the
+#: harmonized (end-to-end) pipeline. ``None`` means identity (raw extraction).
+Canonicalizer = Callable[[Any, str], Any]
 
 from metaextractor.output import ExtractionResult
 
@@ -338,6 +350,8 @@ def evaluate(
     unit_to_years: Mapping[str, float] = DEFAULT_UNIT_TO_YEARS,
     skip_fields: set[str] | None = None,
     count_missing_gold_as_fn: bool = False,
+    canonicalize: Canonicalizer | None = None,
+    prefer_normalized: bool = False,
 ) -> EvaluationResult:
     """Compare an extraction result against gold rows aligned by position.
 
@@ -380,6 +394,19 @@ def evaluate(
         asserts nothing, so it can only add ``FN``/``TN``, never ``FP``.
         Study-level fan-out is *not* applied to phantom rows: a sample the
         extraction never enumerated is treated as reporting nothing.
+    canonicalize:
+        Optional ``(raw_value, field_name) -> canonical value`` callable
+        (ontology crosswalk / MetaHarmonizer mapper). When supplied, both the
+        extracted and gold values are canonicalized *before comparison only*
+        — the raw values are still recorded in each :class:`CellResult`. This
+        scores the harmonized, end-to-end pipeline; omit it (the default) to
+        score raw verbatim extraction. See :func:`evaluate_both` to get both
+        at once.
+    prefer_normalized:
+        When ``True``, read each cell's ``normalized_value`` (falling back to
+        the verbatim ``value``) instead of the verbatim value — for scoring a
+        result whose harmonized values were written back into the data. This
+        is orthogonal to ``canonicalize`` (which harmonizes at scoring time).
     """
     data = extraction.model_dump() if isinstance(extraction, ExtractionResult) else dict(extraction)
     samples: list[dict[str, Any]] = list(data.get("samples", []))
@@ -408,7 +435,10 @@ def evaluate(
         for ef, gf in field_map.items():
             if ef in skip_fields:
                 continue
-            ev = _per_sample_value(study_fields, sample, ef) if sample is not None else None
+            ev = (
+                _per_sample_value(study_fields, sample, ef, prefer_normalized=prefer_normalized)
+                if sample is not None else None
+            )
             gv = gold.get(gf)
 
             kw: dict[str, Any] = {}
@@ -421,8 +451,11 @@ def evaluate(
                     gold_u = None
                 kw = {"ext_unit": ext_u, "gold_unit": gold_u}
 
+            # Canonicalize for the comparison only; CellResult keeps raw values.
+            ev_cmp = canonicalize(ev, ef) if canonicalize else ev
+            gv_cmp = canonicalize(gv, ef) if canonicalize else gv
             decision = classify_cell(
-                ev, gv, numeric_tolerance=numeric_tolerance,
+                ev_cmp, gv_cmp, numeric_tolerance=numeric_tolerance,
                 unit_to_years=unit_to_years, **kw,
             )
             per_field[ef].add(decision)
@@ -468,6 +501,80 @@ def evaluate(
 
 
 # ---------------------------------------------------------------------------
+# Report-both wrapper
+# ---------------------------------------------------------------------------
+
+
+@dataclass
+class ComparisonResult:
+    """A raw (verbatim) and a harmonized (canonicalized) evaluation, side by side.
+
+    ``recoverable`` holds the cells that harmonization flipped from
+    ``TP_wrong`` to ``TP_correct`` — the surface-form mismatches that a
+    downstream vocabulary mapping resolves. Its size is exactly the gap
+    between the raw and harmonized value-accuracy.
+    """
+    raw: EvaluationResult
+    harmonized: EvaluationResult
+    recoverable: list[CellResult] = field(default_factory=list)
+
+    @property
+    def recoverable_count(self) -> int:
+        return len(self.recoverable)
+
+    def summary(self, *, max_mismatches: int = 20, max_recoverable: int = 20) -> str:
+        agg_r, agg_h = self.raw.aggregate, self.harmonized.aggregate
+        lines = [
+            "#" * 84,
+            "MetaExtractor evaluation — verbatim vs harmonized",
+            "#" * 84,
+            "",
+            "Raw = values scored as extracted (verbatim). Harmonized = scored after",
+            "canonicalization. Recoverable = TP_wrong under raw, TP_correct under harmonized.",
+            "",
+            "  " + _format_row(agg_r).replace("[AGGREGATE micro]", "[RAW  aggregate] "),
+            "  " + _format_row(agg_h).replace("[AGGREGATE micro]", "[HARM aggregate] "),
+            "",
+            f"  recoverable (TP_wrong -> TP_correct via harmonization): {self.recoverable_count}",
+        ]
+        for c in self.recoverable[:max_recoverable]:
+            lines.append(
+                f"    - sample={c.sample_idx:>2} field={c.field:<22} "
+                f"ext={str(c.extracted)[:30]!r:<32} gold={str(c.gold)[:30]!r}"
+            )
+        if self.recoverable_count > max_recoverable:
+            lines.append(f"    … +{self.recoverable_count - max_recoverable} more")
+        lines += ["", "=== RAW (verbatim) ===", "", self.raw.summary(max_mismatches=max_mismatches),
+                  "", "=== HARMONIZED ===", "", self.harmonized.summary(max_mismatches=max_mismatches)]
+        return "\n".join(lines)
+
+
+def evaluate_both(
+    extraction: ExtractionResult | Mapping[str, Any],
+    gold_rows: list[Mapping[str, Any]],
+    field_map: Mapping[str, str],
+    *,
+    canonicalize: Canonicalizer,
+    **kwargs: Any,
+) -> ComparisonResult:
+    """Run :func:`evaluate` twice — raw and harmonized — and report both.
+
+    The raw pass scores verbatim extraction (``canonicalize=None``); the
+    harmonized pass applies ``canonicalize``. Both passes share ``**kwargs``
+    (``paper_text``, ``unit_fields``, ``count_missing_gold_as_fn``, …), so
+    their cell orderings align and the ``TP_wrong -> TP_correct`` diff is a
+    well-defined per-cell set: the values harmonization recovers.
+    """
+    raw = evaluate(extraction, gold_rows, field_map, canonicalize=None, **kwargs)
+    harmonized = evaluate(extraction, gold_rows, field_map, canonicalize=canonicalize, **kwargs)
+    recoverable = [
+        r for r, h in zip(raw.per_cell, harmonized.per_cell)
+        if r.decision == "TP_wrong" and h.decision == "TP_correct"
+    ]
+    return ComparisonResult(raw=raw, harmonized=harmonized, recoverable=recoverable)
+
+
+# ---------------------------------------------------------------------------
 # I/O helpers
 # ---------------------------------------------------------------------------
 
@@ -488,12 +595,36 @@ def load_extraction(path: str | Path) -> ExtractionResult:
 # ---------------------------------------------------------------------------
 
 
-def _per_sample_value(study_fields: Mapping[str, Any], sample: Mapping[str, Any], field: str) -> Any:
-    """Sample value wins; fall back to study-level so each sample inherits study facts."""
+def _unwrap_cell(cell: Any, *, prefer_normalized: bool) -> Any:
+    """Unwrap a ``{"value", "normalized_value"}`` sample cell (see writers.cell_value)."""
+    if isinstance(cell, dict) and "value" in cell:
+        if prefer_normalized:
+            norm = cell.get("normalized_value")
+            return norm if norm is not None else cell.get("value")
+        return cell.get("value")
+    return cell
+
+
+def _per_sample_value(
+    study_fields: Mapping[str, Any],
+    sample: Mapping[str, Any],
+    field: str,
+    *,
+    prefer_normalized: bool = False,
+) -> Any:
+    """Sample value wins; fall back to study-level so each sample inherits study facts.
+
+    A per-sample cell may carry the verbatim/normalized split as a
+    ``{"value", "normalized_value"}`` object; it is unwrapped here.
+    """
     if field in sample:
-        return sample[field]
+        return _unwrap_cell(sample[field], prefer_normalized=prefer_normalized)
     study = study_fields.get(field)
-    return study.get("value") if isinstance(study, Mapping) else None
+    if not isinstance(study, Mapping):
+        return None
+    if prefer_normalized and study.get("normalized_value") is not None:
+        return study.get("normalized_value")
+    return study.get("value")
 
 
 def _faithfulness_checks(study_fields: Mapping[str, Any], paper_text: str | None) -> FaithfulnessReport:
@@ -542,7 +673,10 @@ __all__ = [
     "FieldMetrics",
     "FaithfulnessReport",
     "EvaluationResult",
+    "ComparisonResult",
+    "Canonicalizer",
     "evaluate",
+    "evaluate_both",
     "values_match",
     "classify_cell",
     "is_not_reported",

@@ -29,12 +29,13 @@ no longer reachable anywhere. On this pipeline the per-study sample counts are s
 across the three repeats.
 
 On this refined pipeline Sonnet 5 is more precise
-(precision 0.99, value accuracy 0.61, ~51 false positives), with an F1 now comparable to
+(precision 0.99, value accuracy 0.62 on the identity-aligned subset, ~51 false positives),
+with an F1 now comparable to
 Haiku's (0.77 vs 0.76); Haiku 4.5 is higher-recall (recall 0.66) but noisier
 (precision 0.90, ~784 false positives);
 the false positives decompose into a reproducible per-sample biomarker over-assertion on
 one study and a scoring artifact from three recovered studies that deposit more runs than
-the curated subset (under accession-keyed alignment their extra rows no longer count).
+the curated subset (under identity alignment their extra rows no longer count).
 These recall figures use a positional join that scores only the extracted-vs-gold
 overlap; counting the samples a study never enumerated as misses lowers recall to a
 coverage-aware 0.31 (Sonnet) / 0.42 (Haiku), which is the honest end-to-end ceiling set
@@ -313,8 +314,12 @@ ordering are themselves measured outcomes. Every (sample, field) cell was labell
 **TN** (both not reported), **TP_correct** (both reported and equal), **TP_wrong**
 (both reported but differ), **FN** (gold has a value, extraction missed it), **FP**
 (extraction asserts a value, gold blank). Content fields were micro-averaged into
-precision, recall, F1, and value-accuracy (fraction of attempted cells whose value
-matches gold exactly). Identifier/provenance fields were reported separately.
+precision, recall, and F1 on this positional join. **Value-accuracy** (fraction of
+attempted cells whose value matches gold exactly) is reported only on an **identity-aligned**
+join, where each extracted sample is matched to its gold row by a shared unique id — the
+first available of `ncbi_accession → sample_id → subject_id` — rather than by position, so
+a value is compared only when the two rows are confirmed to be the same physical sample
+(Section 3.1). Identifier/provenance fields were reported separately.
 
 The positional join scores only the overlap `min(n_extracted, n_gold)`, and this
 truncation cuts **both** ways. Extracted rows *beyond* the gold length are neither
@@ -383,8 +388,9 @@ All extractions, per-cell audits, crosswalks, corpora, and scoring scripts are u
 `benchmarks/cmd_sonnet5/`. The multi-seed runs are under `out_ms_refined/` (the refined
 pipeline reported here, with autonomous SRA/ENA manifest and non-Open-Access PDF
 recovery) and `out_ms/` (the same pipeline before that recovery, used for the
-run-independent harmonization scoring of Section 3.6). Both positional and
-accession-aligned content scorings are produced by the same `bench.py`/`aggregate.py`,
+run-independent harmonization scoring of Section 3.6). Positional content scoring is
+produced by `bench.py`/`aggregate.py`; the identity-aligned value-accuracy table by
+`bench.py eval --align-key ncbi_accession,sample_id,subject_id` and `aligned_table.py`,
 and the harmonization table (Section 3.6) regenerates from `bench.py harmonize`, which
 drives the shared `evaluate_both` over the field crosswalks — superseding the standalone
 `rescore.py`. Ontology corpora were built keyless from the NCI EVSREST and EBI OLS4 APIs.
@@ -398,28 +404,44 @@ drives the shared `evaluate_both` over the field crosswalks — superseding the 
 Content-field, micro-averaged metrics on the **refined pipeline** — the fault-tolerant
 retrieval of Section 2.2 plus autonomous SRA/ENA run-manifest fetch and non-Open-Access
 full-text recovery — as **median [min–max] over three repeats** per model.
-The positional join scores all ten studies; because three of the newly-enumerated studies
-deposit a *superset* of their curated samples (Section 3.3), we also report an
-**accession-keyed alignment** over the five manifest-fed studies, which matches each
-extracted run to its own gold row before scoring. Note that the two scorings are
-**not directly comparable on recall**: the positional pass scores the overlap across
-all ten studies, whereas the accession-keyed pass restricts to gold rows that matched an
-extracted accession within the five manifest-fed studies (unmatched gold rows are
-dropped), so its denominator is both smaller and differently composed. It is reported to
-isolate the over-enumeration false-positive artifact, not as a like-for-like recall:
+The **positional join** scores all ten studies for Precision, Recall, F1 and false
+positives (sample *i* ↔ gold row *i* over the overlap `min(n_extracted, n_gold)`). We
+deliberately do **not** report value-accuracy on this join: a field value is only
+meaningfully "correct" when the extracted sample is confirmed to be the *same physical
+sample* as the gold row it is compared against, and position cannot guarantee that once a
+study over-enumerates (Section 3.3). Value-accuracy is therefore reported only on an
+**identity-aligned** subset, where each extracted sample is matched to its gold row by a
+shared unique id — the first available of `ncbi_accession → sample_id → subject_id`. This
+is a scope choice for rigor, not a correction of the positional figure: where both *can*
+be computed the two agree to within ≈0.01 (extractions largely preserve gold order), but
+the aligned subset is the one whose per-sample comparisons we can verify. Six of the ten
+studies carry a gold-overlapping id and align; the remaining four do not, and their
+absence **is** the ingestion-ceiling result of Section 3.5 rather than a scoring gap —
+QinJ stays study-level (no per-sample rows), TettAJ and FanY enumerate under an id
+namespace disjoint from gold, and LiJ enumerates only 6 of 196. Because the aligned pass
+restricts to matched gold rows (unmatched rows dropped) over those six studies, its Recall
+denominator is smaller and differently composed than the positional one, so the two rows
+are **not directly comparable on recall**:
 
 | scoring | model | Precision | Recall | F1 | value-acc | false positives |
 |---|---|--:|--:|--:|--:|--:|
-| positional (10 studies) | Sonnet 5 | **0.990** [0.963–0.994] | 0.631 [0.609–0.632] | **0.772** [0.746–0.772] | **0.615** [0.600–0.628] | 51 [33–192] |
-| positional (10 studies) | Haiku 4.5 | 0.901 [0.898–0.906] | 0.660 [0.640–0.696] | 0.762 [0.748–0.787] | 0.512 [0.474–0.527] | 784 [781–785] |
-| accession-aligned (5 SRA-fed) | Sonnet 5 | 0.985 [0.906–0.985] | 0.564 [0.522–0.576] | 0.717 [0.662–0.727] | 0.576 [0.541–0.577] | 31 [31–190] |
-| accession-aligned (5 SRA-fed) | Haiku 4.5 | 0.916 [0.915–0.917] | 0.607 [0.589–0.618] | 0.730 [0.716–0.739] | 0.402 [0.357–0.406] | 196 [193–196] |
+| positional (10 studies) | Sonnet 5 | **0.990** [0.963–0.994] | 0.631 [0.609–0.632] | **0.772** [0.746–0.772] | — | 51 [33–192] |
+| positional (10 studies) | Haiku 4.5 | 0.901 [0.898–0.906] | 0.660 [0.640–0.696] | 0.762 [0.748–0.787] | — | 784 [781–785] |
+| identity-aligned (6 studies) | Sonnet 5 | **0.991** [0.945–0.991] | 0.597 [0.572–0.605] | 0.745 [0.713–0.751] | **0.625** [0.593–0.636] | 31 [31–190] |
+| identity-aligned (6 studies) | Haiku 4.5 | 0.952 [0.951–0.954] | 0.670 [0.663–0.691] | 0.786 [0.781–0.801] | 0.430 [0.383–0.433] | 196 [193–196] |
+
+Value-accuracy (`—`) is not defined on the positional join by design — see above. The
+identity-aligned row adds PasolliE (112 samples matched on `sample_id`) to the four
+accession-matched studies, so it also carries higher Recall/F1 than an accession-only
+alignment would.
 
 ![Model comparison](figures/fig2_model_compare.png)
 
-**Figure 2. Model comparison on the refined pipeline** (positional scoring; median of
-three repeats; whiskers = min–max). *Left:* content-field rate metrics — Sonnet 5 is more
-precise and value-accurate, Haiku 4.5 higher recall and F1. *Right:* false positives on a
+**Figure 2. Model comparison on the refined pipeline** (median of three repeats;
+whiskers = min–max). *Left:* content-field rate metrics — Precision/Recall/F1 from the
+positional join (ten studies); value-accuracy from the identity-aligned subset (six
+studies), the only join on which it is defined. Sonnet 5 is more precise and
+value-accurate, Haiku 4.5 higher recall and F1. *Right:* false positives on a
 log scale — Haiku emits ~784 against Sonnet's ~51; the gap in error *composition* remains
 wide even as both rise with the newly-enumerated studies.
 
@@ -433,7 +455,7 @@ over-enumeration scoring artifact — itemised once in Section 3.3. Sonnet's ris
 its magnitude varies across repeats (Section 4.3). Much of both increases is a **scoring
 artifact of over-enumeration**: three recovered studies deposit more runs than the curated
 subset, so their extra rows count as false positives under the positional join but not
-under accession alignment (where Sonnet FP falls to 31, Haiku to 196). Net, the refined
+under identity alignment (where Sonnet FP falls to 31, Haiku to 196). Net, the refined
 pipeline trades a modest, well-understood precision cost for per-sample coverage of five
 studies that previously contributed nothing.
 
@@ -507,10 +529,11 @@ manifest-fed studies now enumerate their samples but recover only the fields an 
 run manifest carries — run accession, instrument model, library strategy, and
 host/body-site/country where present — not the full clinical panel; `age`, `treatment`,
 `bmi`, and `dna_extraction_kit` are curated from paper text and remain false negatives.
-Scored with accession alignment over the five manifest-fed studies (Section 3.1),
-per-field recall is 0.56 (Sonnet) and 0.61 (Haiku) at precision 0.99 / 0.92. Under the
+Scored with identity alignment restricted to the five manifest-fed studies (a sub-cut of
+the six-study aligned set of Section 3.1), per-field recall is 0.56 (Sonnet) and 0.61
+(Haiku) at precision 0.99 / 0.92. Under the
 positional join the three *superset* studies are additionally penalized — their extra runs
-count as false positives and their unaligned cells depress value-accuracy — which is why
+count as false positives — which is why
 the positional headline carries a higher false-positive count than the aligned one
 (Sonnet 51 vs 31; Haiku 784 vs 196). Per-sample recall on these studies is therefore now
 bounded by **SRA field coverage and value harmonization** (the OntologyMapper step,
@@ -519,7 +542,7 @@ Sections 2.6/3.6), not by manifest availability.
 The 784 Haiku false positives decompose cleanly into the two mechanisms above: **588 from
 LiJ_2017** — biomarker over-assertion, three fields fabricated on every sample where gold
 is blank — plus **196 from the five newly-enumerated SRA studies**, confirmed by the
-accession-aligned pass returning exactly 196 over those five. The former is a
+identity-aligned pass returning exactly 196 over those five (PasolliE adds none). The former is a
 prompt/contract defect a deterministic enumeration path does not touch; the latter is
 largely the over-enumeration scoring artifact above.
 
@@ -660,13 +683,13 @@ evaluation is cheap insurance against both false alarms and false confidence.
 ### 4.3 Model choice is a precision/coverage decision, not a quality ranking
 
 On identical code, Sonnet 5 and Haiku 4.5 occupy opposite corners: Sonnet is precise and
-conservative (precision 0.99, value-accuracy 0.61, ~51 false positives, and it fails
+conservative (precision 0.99, value-accuracy 0.62 on the identity-aligned subset, ~51 false positives, and it fails
 *safe* by staying study-level rather than fabricating rows), while Haiku is
 higher-coverage and noisier (recall 0.66, F1 0.76, but ~784 false positives — a
 reproducible biomarker over-assertion on one study plus an over-enumeration scoring
 artifact on the recovered superset studies, not run-to-run noise — and a higher
 malformed-output rate) at a fraction of the cost. Both false-positive counts are inflated
-by the positional scoring of over-enumerated studies and fall under accession alignment
+by the positional scoring of over-enumerated studies and fall under identity alignment
 (Sonnet ~31, Haiku ~196; Section 3.1), so the *composition* of the gap matters more than
 its headline size. One asymmetry in reproducibility should be stated plainly: Haiku's
 false-positive count is tightly reproducible across the three repeats (781–785), but
