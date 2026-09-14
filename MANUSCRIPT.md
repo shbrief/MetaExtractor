@@ -8,33 +8,36 @@
 free text, supplementary tables, and sequence-archive records rather than in a structured form.
 We describe MetaExtractor, an open-source tool that combines large-language-model (LLM) extraction
 with deterministic retrieval, table handling, and record assembly to populate a user-supplied schema,
-and we evaluate it against manually curated metadata from curatedMetagenomicData (cMD).
+and we evaluate it, together with ontology harmonization by MetaHarmonizer, against manually curated
+metadata from curatedMetagenomicData (cMD).
 
-**Methods.** Ten cMD studies (1,089 curated samples, 71-field schema) were each extracted three times
-with Claude Sonnet 5 and Claude Haiku 4.5 from one tagged code snapshot (60 extractions), with every
-attempt logged. Extracted sample records were aligned to curated rows by shared identifiers under a
-one-to-one rule. We report value-aware precision and recall — in which only a correct value counts as
-a hit — over all curated rows (end-to-end) and over identifier-matched rows (conditional), together with
-presence metrics that ignore value correctness. Disease, body-site, and treatment values were mapped to
-ontology codes with MetaHarmonizer and compared with the curators' identifiers by exact code-set match.
+**Methods.** Ten cMD studies (1,089 curated samples, 71-field schema) were retrieved once each, and
+every study was then extracted three times with Claude Sonnet 5 and Claude Haiku 4.5 from the frozen
+retrieval and one tagged code snapshot (60 extractions), with every fetch and extraction attempt
+logged. Extracted sample records were aligned to curated rows by shared identifiers under a one-to-one
+rule. Values were scored after harmonization: disease, body site, and treatment were mapped to
+ontology codes with MetaHarmonizer and compared with the curators' ontology identifiers (or, where a
+curated row has none, with the curated value mapped the same way); other fields were compared as extracted. We report precision, recall, and F1 over all curated samples and over
+identifier-matched samples.
 
-**Results.** Fifty-six of 60 extractions produced output; the four failures were Sonnet 5 responses
-truncated in both attempts. Extracted records could be matched to curated rows for at most five studies
-per run (102–284 of 1,089 rows for Sonnet 5; 214 for Haiku 4.5). End-to-end value F1 was 0.03
-[range 0.03–0.15] for Sonnet 5 and 0.13 [0.13–0.14] for Haiku 4.5 (paired difference −0.06; 95%
-study-cluster bootstrap interval −0.19 to 0.06). On matched rows, value precision was 0.48 and 0.62 and
-value F1 0.26 and 0.42, whereas presence precision was ≥0.99 for both models. Two studies that had
-yielded per-sample records in development runs two months earlier yielded none in five (one study) or
-all six (the other) extractions, because the retrieval endpoints that had supplied their full text no
-longer did. Harmonization reproduced the curators' ontology identifiers for all coded disease and body-site cells,
-but these involved one disease term and two body-site synonyms; the single coded treatment term did not
-match.
+**Results.** Fifty-nine of 60 extractions produced output; the failure was a Haiku 4.5 response that
+did not pass result-model validation in either attempt. Three Sonnet 5 responses stopped at the
+16,384-token output cap and completed when re-requested with a larger cap. Extracted records were
+matched to curated rows in five studies: 284 of 1,089 rows in every Sonnet 5 run and 214–284 in the
+Haiku 4.5 runs. Over all curated samples, F1 was 0.203 [range 0.180–0.216] for Sonnet 5 and 0.193
+[0.148–0.193] for Haiku 4.5 (paired difference +0.021; 95% study-cluster bootstrap interval −0.013 to
+0.088); over matched samples it was 0.514 and 0.475, with precision 0.739 and 0.683. Among harmonized
+fields, matched-sample F1 was 0.86–0.94 for body site and 0.65–0.78 for disease, involving few
+distinct terms, and 0.34 or lower for treatment. Freezing retrieval removed the run-to-run text
+differences observed in an earlier run of the same day, in which one study's full text was retrieved in
+one of six extractions.
 
-**Conclusions.** On this microbiome case study, the dominant limits were sample enumeration, identifier
-resolution, and time-dependent retrieval rather than per-field value extraction; presence-based
-metrics substantially overstate accuracy. Propagating cohort-level values into sample records must be
-restricted, and every derived cell should carry its provenance. Broader claims require held-out studies,
-baselines, and additional domains.
+**Conclusions.** On this microbiome case study, post-harmonization accuracy was limited mainly by
+sample enumeration and identifier linkage — most curated samples were never linked to an extracted
+record — and, among linked samples, by values that no configured harmonization corpus covered.
+Retrieval must be frozen and logged for extraction benchmarks to be repeatable, and truncated model
+responses must be detected rather than parsed. Broader claims require held-out studies, baselines, and
+additional domains.
 
 ---
 
@@ -56,15 +59,22 @@ judged. Second, values stated for a cohort (a disease list, a mean age) must not
 individuals. Evaluations that score values positionally, or that count a reported-but-wrong value as a
 hit, can report high accuracy without establishing either property.
 
+A third issue is what counts as a correct value. A paper may call a sample "Stool" where the curated
+table says "feces", or "Rheumatoid Arthritis" where it says "RA". Mapping such surface forms to a
+controlled vocabulary is a separate harmonization step, and scoring verbatim extracted strings against
+curated labels charges the extractor for differences that harmonization is designed to remove. We
+therefore score the extraction-plus-harmonization pipeline: values are compared after ontology mapping
+with MetaHarmonizer [CITE: MetaHarmonizer], and the scorer itself applies no further normalization.
+
 MetaExtractor is a schema-guided extractor that confines model calls to reading prose and inferring table
 structure, and handles retrieval, table execution, joining, and propagation deterministically, recording a
 source for every sample cell. Here we (i) describe its design and its limits, including what its output
 validation does and does not check; (ii) evaluate it on ten cMD studies with two models and three repeated
-runs from a single logged snapshot, using identity-aligned, value-aware metrics; and (iii) assess ontology
-harmonization of three fields against the curators' own identifiers. We treat the evaluation as a case
-study of one domain and one reference resource.
+runs from a single logged snapshot and frozen retrieval, using identity-aligned scores after
+harmonization; and (iii) report which fields and terms harmonization covered. We treat the evaluation as
+a case study of one domain and one reference resource.
 
-[CITE: related extraction and harmonization systems; LinkML (schema framework); MetaHarmonizer]
+[CITE: related extraction and harmonization systems; LinkML (schema framework)]
 
 ---
 
@@ -100,8 +110,9 @@ and a table-selection log; a flat CSV is also written (Figure 1).
 calls, and grey boxes are inputs and outputs. The model proposes study-level values with provenance,
 optional sample identifiers, and a structural plan for each selected supplementary table. Retrieval,
 table execution, column mapping, joining, fan-out, and age rules are deterministic, and each sample cell
-records its source. The Pydantic check validates the structure of each model response, not its
-content.
+records its source. A retrieval can be frozen once and reused without network access. A response cut
+off at the output cap is re-requested with a larger cap. The Pydantic check validates the structure of
+each model response, not its content.
 
 **Schema input.** Schemas are read from JSON, YAML, or LinkML YAML (LinkML is detected by the
 presence of `classes`/`slots`/`enums`). The LinkML adapter supports a subset of LinkML: the slots
@@ -116,15 +127,21 @@ unannotated. The scope annotation is used only by the deterministic fan-out rule
 sent to the model.
 
 **Retrieval.** For a PMID, the retrieval layer collects candidate texts from NCBI PMC full text,
-Europe PMC full text (by PMCID, and by DOI), Europe PMC's rendered PDF for non-Open-Access PMC
-records, and an Open Access PDF located through Unpaywall [CITE: Europe PMC; Unpaywall], with the
-PubMed abstract as a floor. It scores each candidate for article-narrative quality and keeps the
-best body; costlier rungs are attempted only while no body scores as clearly substantive.
-Transient HTTP failures are retried. Supplementary files are listed from the PMC Open Data S3
-bucket and the Europe PMC supplementary archive. Separately, the layer resolves the study's own
-sequencing project from accessions in data-availability language (refusing ambiguous cases) and
-fetches its per-run manifest from the ENA `read_run` endpoint [CITE: ENA]. Every attempted
-retrieval rung and its outcome is recorded in the run metadata.
+Europe PMC full text (by PMCID, and by DOI), the PMC article web page and Europe PMC's rendered PDF
+for PMC records outside the Open Access subset (whose XML is abstract-only), and an Open Access PDF
+located through Unpaywall [CITE: Europe PMC; Unpaywall], with the PubMed abstract as a floor. It scores
+each candidate for article-narrative quality and keeps the best body; costlier rungs are attempted only
+while no body scores as clearly substantive. From the PMC article page only the article-body section
+up to the reference list is kept, without tables and figures. Transient HTTP failures are retried.
+Supplementary files are listed from the PMC Open Data S3 bucket and the Europe PMC supplementary
+archive. Separately, the layer resolves the study's own sequencing project from accessions in
+data-availability language (refusing ambiguous cases) and fetches its per-run manifest from the ENA
+`read_run` endpoint [CITE: ENA]. Every attempted retrieval rung and its outcome is recorded.
+
+A retrieval can be **frozen**: the text sent to the model, the parsed supplementary and manifest
+tables, and the retrieval record are written to a directory with SHA-256 checksums
+(`--fetch-cache`), and later extractions read them back — verifying the checksums — without network
+access (`--require-fetch-cache` refuses to fetch).
 
 **Model calls.** The model is reached through the Anthropic Messages API in three roles:
 (i) *field extraction*, one call per batch of at most 30 schema fields; (ii) optional *sample
@@ -135,14 +152,20 @@ sees a truncated preview and returns header rows, identifier columns, and an opt
 A fixed system prompt instructs the model to extract only what the supplied text supports, to
 return `not_reported` for absent fields, not to create per-sample rows from aggregates, to return
 enum values in the surface form used by the paper, and to attach an extraction type, confidence,
-a ≤25-word evidence quote, and a section to each study-level value. The response is parsed as JSON
-and validated with Pydantic against a fixed result model.
+a ≤25-word evidence quote, and a section to each study-level value.
 
-That validation is **structural**: it checks the result envelope (granularity, field records,
-provenance slots). It does not check that field names belong to the target schema, that required
-fields are present, that values have the declared type or belong to an enum, or that an evidence
-quote occurs in the source. Field values are model-generated text; the prompt contract, not code,
-is what asks the model to stay faithful to the source.
+The stop reason of every response is recorded. A response that stopped at the output cap
+(`max_tokens`) is not parsed; the same request is sent again with the cap doubled, up to 64,000 tokens
+for field extraction and sample discovery and 16,384 tokens for table plans, and a response still
+truncated at that ceiling is reported as an error (a failed table plan falls back to a row-0-header
+parse). Token usage of every call, including truncated ones, is counted.
+
+A complete response is parsed as JSON and validated with Pydantic against a fixed result model. That
+validation is **structural**: it checks the result envelope (granularity, field records, provenance
+slots). It does not check that field names belong to the target schema, that required fields are
+present, that values have the declared type or belong to an enum, or that an evidence quote occurs in
+the source. Field values are model-generated text; the prompt contract, not code, is what asks the
+model to stay faithful to the source.
 
 **Deterministic table path.** Parsed supplementary tables (xlsx/csv/tsv, PDF table regions) are
 scored for schema relevance (header-name and enum-value overlap, an identifier-column signal, and
@@ -180,24 +203,29 @@ use 130, the value encoded in 743 group-only Elderly rows of the curated tables.
 are never converted into bounds.
 
 **Output and cost.** Token usage across all calls is converted to a cost estimate from a price
-table dated 2026-06-24 (`PRICING_AS_OF`), including cache-read and cache-write rates.
+table dated 2026-06-24 (`PRICING_AS_OF`), including cache-read and cache-write rates. Usage and cost
+are also recorded for an extraction that fails.
 
-### 2.3 Extraction runs
+### 2.3 Retrieval and extraction runs
 
-The benchmark was run from the tagged commit `bench-v2` with `run_frozen.py`: 10 studies × 2 models
-(`claude-sonnet-5`, `claude-haiku-4-5`) × 3 repeated API runs = 60 extractions, by PMID, with sample
-discovery enabled, the 0.15 table-relevance threshold, the cMD age rules, `max_tokens` 16,384, and
-field batches of 30. No `temperature`, `top_p`, `top_k`, `thinking`, or `effort` parameters were
-sent, so each model ran at its API defaults; for Sonnet 5 the default is adaptive thinking
-[CITE: Anthropic model documentation]. The run refused a working tree with uncommitted changes and
-an output directory that was not empty, so no output was carried over from earlier pipeline
-versions. Each extraction had a 25-minute wall-clock cap and one retry after a failed attempt.
-Every attempt — including failures — was appended to `out_v2/ledger.jsonl` with UTC start and end
-times, status, its stderr log, the git commit, SHA-256 checksums of the schema, manifest, and age
-rules, and checksums of every output file. The model identifiers returned by the API, token usage,
-and retrieval attempts were written per extraction to `<study>.meta.json`, and the exact text sent
-to the model to `<study>.text.txt` (checksummed; not redistributed). Retrieval was live, so a re-run
-at a later date may retrieve different text.
+The benchmark was run from commit `c05c29a` (tag `bench-v3`) with `run_frozen.py`, from a clean
+checkout. **Retrieval** (`run_frozen.py fetch`) was performed once per study, by PMID, into
+`out_v3/_fetch/<study>/`; a retrieval without an article body was repeated up to twice at 20-second
+intervals, and every fetch attempt was appended to `fetch_ledger.jsonl`. **Extraction**
+(`run_frozen.py run`) then covered 10 studies × 2 models (`claude-sonnet-5`, `claude-haiku-4-5`) × 3
+repeated API runs = 60 extractions, each reading its study's frozen retrieval, with sample discovery
+enabled, the 0.15 table-relevance threshold, the cMD age rules, an initial `max_tokens` of 16,384, and
+field batches of 30. No `temperature`, `top_p`, `top_k`, `thinking`, or `effort` parameters were sent,
+so each model ran at its API defaults; for Sonnet 5 the default is adaptive thinking, whose tokens
+count against `max_tokens` [CITE: Anthropic model documentation].
+
+The run refused a working tree with uncommitted changes, a study without a frozen retrieval, and an
+output directory that already held extraction outputs. Each extraction had a 50-minute wall-clock cap
+and one retry after a failed attempt. Every attempt — including failures — was appended to
+`out_v3/ledger.jsonl` with UTC start and end times, status, its stderr log, the git commit, SHA-256
+checksums of the schema, manifest, age rules, and frozen retrieval, and checksums of every output file.
+The model identifiers returned by the API, per-call stop reasons, token usage, and the retrieval record
+were written per extraction to `<study>.meta.json`.
 
 ### 2.4 Scoring
 
@@ -205,23 +233,27 @@ at a later date may retrieve different text.
 `study_name`, `sample_id`, `subject_id`, `pmid`, `curator`, `ncbi_accession`, `host_species`,
 `uncurated_metadata` — are scored separately), a cell is TN (neither side reports a value), FN (gold
 reports, extraction does not), FP (extraction reports, gold is blank), TPc (both report and the
-values match), or TPw (both report, values differ). Values match when both parse as numbers within
-5% relative tolerance (after converting ages to years using the unit fields), or when their
-strings are equal after trimming and lowercasing (Python lists are sorted first). There is no
-synonym table. A sample record is scored only on the cells it contains; study-level values reach
-a sample only through the fan-out rule above.
+harmonized values match), or TPw (both report, harmonized values differ). A sample record is scored
+only on the cells it contains; study-level values reach a sample only through the fan-out rule above.
 
-**Metrics.** From pooled counts over content fields:
+**Harmonized comparison.** Values are compared after harmonization (Section 2.5), and the scorer
+applies no normalization of its own:
 
-- value precision = TPc / (TPc + TPw + FP); value recall = TPc / (TPc + TPw + FN); value F1 is their
-  harmonic mean;
-- presence precision = (TPc + TPw) / (TPc + TPw + FP); presence recall = (TPc + TPw) / (TPc + TPw + FN);
-- value accuracy = TPc / (TPc + TPw), conditional on both sides reporting a value.
+- For a **harmonized field** (a field with a MetaHarmonizer crosswalk: here `disease`, `body_site`, and
+  `treatment`), each value is split into its `;`/`,`/`/`-separated terms and mapped to the set of their
+  ontology codes. Where the curated row carries a `<field>_ontology_term_id`, the cell is correct only
+  if every extracted term maps and the extracted code set equals the curated identifier set. Where the
+  curated row has no identifier, the curated value is mapped through the same crosswalk and the two
+  code sets are compared; a value whose terms do not all map is compared as its string.
+- **Other fields** are compared as extracted: numbers within 5% relative tolerance (after converting
+  ages to years using the unit fields), otherwise strings equal after trimming and lowercasing. These
+  fields will be harmonized when corpora for them are added; until then, surface-form differences in
+  them (for example a country code against a country name) count as wrong.
 
-Presence metrics describe reporting status only: a wrong value counts as a hit. FP means the
-extraction asserted a value where the curated table has none; this may reflect over-assertion or
-an incomplete gold row, and the scorer cannot tell them apart (Section 3.5 reports a partial source
-check).
+**Scores.** From pooled counts over content fields, precision = TPc / (TPc + TPw + FP), recall =
+TPc / (TPc + TPw + FN), and F1 is their harmonic mean. FP means the extraction asserted a value where
+the curated table has none; this may reflect over-assertion or an incomplete gold row, and the scorer
+cannot tell them apart (Section 3.5 reports a partial source check).
 
 **Identity alignment.** Extracted records are aligned to gold rows by identifier
 (`metaextractor.alignment.align_by_identity`) using the candidate keys `ncbi_accession`, `sample_id`,
@@ -232,102 +264,95 @@ identify several distinct records is *pooled*, and one involving duplicated keys
 Neither is resolved by position or first occurrence. Per study, the candidate key yielding the most
 one-to-one matches is used.
 
-**Joins.** The primary **end-to-end** score covers every gold row: unmatched, pooled, and ambiguous
-gold rows contribute their populated cells as FN. Extracted records with no matching gold row are
-reported separately — split into those carrying an identifier (for example deposited runs outside
-the curated subset) and those without one — and are not scored as cells. The **conditional** score
-restricts to matched gold rows. A **positional** score (sample *i* ↔ gold row *i* over
-min(n extracted, n gold)), used in an earlier version of this analysis, is reported only as a
-supplementary comparison.
+**Score all curated and score matched.** *Score all curated* covers every curated row: unmatched,
+pooled, and ambiguous rows contribute their populated cells as FN, and a failed extraction counts as
+producing no records. Extracted records with no matching curated row are reported separately — split
+into those carrying an identifier (for example deposited runs outside the curated subset) and those
+without one — and are not scored as cells. *Score matched* restricts to the identifier-matched rows; it
+describes value accuracy on linked samples and says nothing about samples that were not linked.
 
 **Repeats and uncertainty.** We report the median and range across the three repeats. Because the
 repeats measure run-to-run variation on the same ten studies, we also report a paired
 study-cluster bootstrap (2,000 resamples of studies with replacement, repeats pooled within study,
-seed 0) for the difference in end-to-end value F1 between models. Neither quantity estimates
-performance on other studies.
+seed 0) for the difference in all-curated F1 between models. Neither quantity estimates performance on
+other studies.
 
 ### 2.5 Ontology harmonization
 
-Extracted and gold values for `disease`, `body_site`, and `treatment` were mapped with
+Extracted and curated terms for `disease`, `body_site`, and `treatment` were mapped with
 MetaHarmonizer's OntologyMapper (v0.4.1) [CITE: MetaHarmonizer] using its exact, embedding, and
-synonym stages (the retrieval-augmented and LLM-review stages were disabled). Corpora were field
-specific: for `disease`, the NCIt subtree C7057 ("Disease, Disorder or Finding") combined with the
-static term C115935 ("Healthy") [CITE: NCI Thesaurus]; for `body_site`, the six UBERON terms of the
-cMD `body_site` enum [CITE: UBERON]; for `treatment`, the NCIt "Pharmacologic Substance" subtree
-(C1909). These corpus choices were made after inspecting mismatches on these ten studies (for
-example, adding "Healthy"); they are not an independent test of corpus design.
-
-Each value maps to the set of codes of its `;`/`,`/`/`-separated terms. Scoring uses identity-matched
-rows only. On cells where both sides report a value and the gold row carries a curated
-`*_ontology_term_id` ("coded cells"), we report, on the same cells: raw accuracy (the string
-comparison above); **exact correctness**, the fraction whose extracted code set equals the curated
-identifier set; concept-level precision and recall (Σ|E∩G| / Σ|E| and Σ|E∩G| / Σ|G|); and, as a
-supplementary quantity only, the fraction sharing at least one code. Agreement — whether the
-extracted and gold *values* map to the identical code set — is reported over all both-reported
-cells; it measures consistency of the mapper, not correctness.
+synonym stages (the retrieval-augmented and LLM-review stages were disabled). Every distinct extracted
+term of the run tree and every distinct curated term was mapped, and the top-ranked corpus concept was
+taken as the term's code, without a similarity threshold. The resulting crosswalks are stored with the
+run outputs (`out_v3/crosswalks/`). Corpora were field specific: for `disease`, the NCIt subtree C7057
+("Disease, Disorder or Finding") combined with the static term C115935 ("Healthy") [CITE: NCI
+Thesaurus]; for `body_site`, the six UBERON terms of the cMD `body_site` enum [CITE: UBERON]; for
+`treatment`, the NCIt "Pharmacologic Substance" subtree (C1909). These corpus choices were made after
+inspecting mismatches on these ten studies (for example, adding "Healthy"); they are not an independent
+test of corpus design. Because the mapping has no threshold, a closed corpus assigns every term — even
+one that is not a body site — to its nearest concept (Section 3.6).
 
 ### 2.6 Reproducibility
 
-Code, schema, manifest, age rules, crosswalks, scoring outputs, and the attempt ledger are in the
-repository at tag `bench-v2` (extraction) and the subsequent analysis commit; `REPRODUCE.md` lists the
-commands. Extraction JSON/CSV and per-attempt logs are included; retrieved article text is not
-redistributed but is identified by checksum. Dependencies are listed in
-`benchmarks/cmd_sonnet5/requirements-lock.txt`.
+Code, schema, manifest, age rules, crosswalks, scoring outputs, and the fetch and attempt ledgers are in
+the repository at tag `bench-v3` (extraction) and the subsequent commit that added `out_v3/`;
+`REPRODUCE.md` lists the commands. Extraction JSON/CSV, per-attempt logs, and each study's retrieval
+record are included; the retrieved article text and parsed tables are not redistributed but are
+identified by checksum. Dependencies are listed in `benchmarks/cmd_sonnet5/requirements-lock.txt`.
 
 ---
 
 ## 3. Results
 
-All numbers below are generated by `aggregate.py` and `bench.py harmonize` from the `out_v2` run tree
-(`out_v2/AGGREGATE.md`, `out_v2/aggregate_v2.json`, `out_v2/harmonization.md`). Ranges are
-median [min–max] across the three repeats.
+All numbers below are generated by `bench.py eval` and `aggregate.py` from the `out_v3` run tree
+(`out_v3/AGGREGATE.md`, `out_v3/aggregate_v2.json`), or read from its ledgers and per-extraction
+metadata. Ranges are median [min–max] across the three repeats.
 
 ### 3.1 Run completion, failures, and cost
 
-The 60 extractions ran on 14 September 2026 between 15:15 and 17:22 UTC from commit `be6a7c1`
-(tag `bench-v2`), with no uncommitted changes. They required 68 attempts. Eight tasks failed on the
-first attempt and four of these failed again on the retry, so 56 of 60 extractions produced output
-(12 of 68 attempts failed).
+Retrieval ran on 14 September 2026 between 19:31 and 19:42 UTC (14 fetch attempts), and the 60
+extractions between 19:42 and 20:53 UTC, from commit `c05c29a` (tag `bench-v3`) with no uncommitted
+changes. The extractions required 64 attempts. Four tasks failed on the first attempt and one of these
+failed again on the retry, so 59 of 60 extractions produced output (5 of 64 attempts failed).
 
-| outcome | attempts | tasks |
-|---|--:|---|
-| response not parseable as JSON (truncated mid-object) | 9 | Sonnet 5: FanY_2023 r1 ×2, r3 ×2; PasolliE_2019 r2 ×2, r3 ×2; TettAJ_2019_b r2 ×1 |
-| response failed result-model validation | 1 | Haiku 4.5: LiJ_2017 r3 (succeeded on retry) |
-| API read timeout (Anthropic SDK) | 2 | both models: Heitz-BuschartA_2016 r3 (succeeded on retry) |
-| **no output after retry** | — | **Sonnet 5: FanY_2023 r1, r3; PasolliE_2019 r2, r3** |
+All five failed attempts were Haiku 4.5 responses that did not pass result-model validation, each for
+the same reason: the response gave `"section": null`, where a string is required, for five
+oncology-specific fields it reported as absent (`disease_response_os`, `disease_response_os_unit`,
+`ecog_performance_status`, `tumor_size_measurement`, `tumor_size_residual_measurement`). The affected
+tasks were Bengtsson-PalmeJ_2015 run 1 (both attempts; no output) and run 2, ContevilleLC_2019 run 1,
+and NayakRR_2021 run 2 (each succeeded on retry). The failed extraction is scored as producing no
+records; Table 2 also reports scores over successful extractions only.
 
-In each of the nine unparseable responses, the JSON parse error fell at the end of the returned text,
-between characters 7,600 and 18,300, inside an unfinished object: the responses were cut off rather
-than malformed. The requests set
-`max_tokens` to 16,384 and left Sonnet 5 at its default adaptive thinking, so thinking tokens may have
-consumed the output budget; the stop reason was not logged, so this remains a hypothesis. Failed
-extractions are scored end-to-end as producing no records (all curated cells of that study become false
-negatives); Table 2 also reports end-to-end metrics over successful extractions only. Some recorded
-attempt durations (maximum 3,452 s) exceeded the 25-minute cap; we did not determine why the cap did
-not bound wall-clock time.
+Three Sonnet 5 field-extraction responses stopped at the 16,384-token cap — the first field batch of
+PasolliE_2019 run 1 and of TettAJ_2019_b runs 1 and 2 — and each completed when re-requested with a
+32,768-token cap. Table-plan responses stopped at their 2,048-token cap 43 times for Sonnet 5 and 3 times
+for Haiku 4.5, in PasolliE_2019, FanY_2023, LiJ_2017, and TettAJ_2019_b; all but one completed at a
+larger cap, and the remaining Sonnet 5 plan (PasolliE_2019 run 2, `mmc7.xlsx`) was still truncated at
+16,384 tokens and fell back to the default table parse. Attempt durations were at most 1,170 s
+(Sonnet 5; median 207 s) and 241 s (Haiku 4.5; median 100 s), within the cap.
 
-The API returned the model identifiers `claude-sonnet-5` and `claude-haiku-4-5-20251001`. The 56
-successful extractions made 253 (Sonnet 5) and 402 (Haiku 4.5) model calls, with an estimated cost of
-US$9.67 and US$3.93 at list prices dated 2026-06-24. Failed attempts are not included, because usage
-was recorded only for completed extractions.
+The API returned the model identifiers `claude-sonnet-5` and `claude-haiku-4-5-20251001`. The successful
+extractions made 450 (Sonnet 5) and 404 (Haiku 4.5) model calls, with an estimated cost of US$18.12
+and US$3.98 at list prices dated 2026-06-24; the final failed Haiku 4.5 attempt made 4 calls
+(US$0.07). Usage of the four failed attempts that were followed by a successful retry was not retained,
+because the retry overwrote the per-extraction metadata file.
 
 ### 3.2 Retrieval and sample enumeration
 
-Table 1 lists, per study, the text source selected, the ENA manifest resolved, and the number of sample
-records extracted.
+Table 1 lists, per study, the frozen retrieval and the number of sample records extracted.
 
 **Table 1. Retrieval and sample enumeration.** Counts are records per repeat (r1/r2/r3); "—" marks a
 failed extraction. "Matched" is the number of curated rows aligned one-to-one (Section 3.3).
 
-| study | gold n | text source (runs) | ENA manifest | Sonnet 5 records | Haiku 4.5 records | key | matched rows (S / H) |
+| study | gold n | text source | ENA manifest | Sonnet 5 records | Haiku 4.5 records | key | matched rows (S / H) |
 |---|--:|---|---|---|---|---|---|
-| Bengtsson-PalmeJ_2015 | 70 | PMC abstract-only body (5); Europe PMC PDF (1) | PRJEB7369, 70 runs (1 run) | 70 / 0 / 0 | 0 / 0 / 0 | ncbi_accession | 70, 0, 0 / 0 |
-| TettAJ_2019_b | 44 | PMC full text | 4 projects, 171 runs (unused) | 50 / 50 / 50 | 50 / 50 / 50 | none | 0 / 0 |
-| LiJ_2017 | 196 | PMC full text | none | 12 / 6 / 6 | 1,448 ×3 | none | 0 / 0 |
+| Bengtsson-PalmeJ_2015 | 70 | PMC article page | PRJEB7369, 70 runs | 70 ×3 | — / 70 / 70 | ncbi_accession | 70 / 0, 70, 70 |
+| TettAJ_2019_b | 44 | PMC full text | 4 projects, 171 runs (unused) | 50 ×3 | 50 ×3 | none | 0 / 0 |
+| LiJ_2017 | 196 | PMC full text | none | 6 ×3 | 1,448 ×3 | none | 0 / 0 |
 | NayakRR_2021 | 34 | PMC full text | PRJNA656577, 434 runs | 434 ×3 | 434 ×3 | ncbi_accession | 34 / 34 |
-| PasolliE_2019 | 112 | PMC full text | 2 projects, 164 runs (unused) | 112 / — / — | 112 ×3 | sample_id | 112, 0, 0 / 112 |
+| PasolliE_2019 | 112 | PMC full text | 2 projects, 164 runs (unused) | 112 ×3 | 112 ×3 | sample_id | 112 / 112 |
 | Heitz-BuschartA_2016 | 53 | Unpaywall PDF | PRJNA289586, 221 runs | 221 ×3 | 221 ×3 | ncbi_accession | 53 / 53 |
-| FanY_2023 | 147 | PMC full text | none | — / 510 / — | 319 ×3 | none | 0 / 0 |
+| FanY_2023 | 147 | PMC full text | none | 510 / 319 / 319 | 319 ×3 | none | 0 / 0 |
 | QinJ_2012 | 363 | PubMed abstract | none | 0 ×3 | 0 ×3 | none | 0 / 0 |
 | ContevilleLC_2019 | 15 | PMC full text | PRJNA527208, 15 runs | 15 ×3 | 15 ×3 | ncbi_accession | 15 / 15 |
 | LiSS_2016 | 55 | PubMed abstract | none | 0 ×3 | 0 ×3 | none | 0 / 0 |
@@ -335,176 +360,183 @@ failed extraction. "Matched" is the number of curated rows aligned one-to-one (S
 *Manifest "unused": resolved and fetched, but the article's own tables produced rows, so the manifest
 was not used (Section 2.2).*
 
-Where a run manifest was used (NayakRR, Heitz-BuschartA, ContevilleLC, and Bengtsson-PalmeJ in one run),
-record counts were identical across repeats and models, and every curated accession was present among
-the extracted records. For NayakRR and Heitz-BuschartA the manifest also contained 400 and 168 runs
-outside the curated subset; these are reported as extra records carrying an identifier.
+Because every extraction of a study read the same frozen retrieval, the text, tables, and manifest
+behind each study were identical across repeats and models. For Bengtsson-PalmeJ_2015, whose PMC record
+is outside the Open Access subset, the PMC and Europe PMC XML endpoints returned only an abstract; the
+PMC article page supplied the body (29,883 characters) including the data-availability accession, from
+which the manifest was resolved. QinJ_2012 and LiSS_2016 have no PMC record; for both, three fetch
+attempts returned only the PubMed abstract, because Europe PMC (by DOI), the Europe PMC PDF, and Unpaywall
+yielded no text. We did not test other routes, such as BioProject links from the archive side.
+
+Where a run manifest was used (Bengtsson-PalmeJ, NayakRR, Heitz-BuschartA, ContevilleLC), record counts
+were identical across repeats and models, and every curated accession was present among the extracted
+records. For NayakRR and Heitz-BuschartA the manifest also contained 400 and 168 runs outside the
+curated subset; these are reported as extra records carrying an identifier.
 
 Enumeration from supplementary tables was less reliable. For LiJ_2017, Haiku 4.5 emitted 1,448 records
-(1,015 distinct identifiers) from a table of co-abundance gene groups — feature rows, not samples — in all
-three runs, whereas Sonnet 5 emitted 6–12 records (six with identifiers, e.g. "NLF006", "SZEY-103A") from a
-supplementary sample table whose identifiers do not correspond to the curated samples. For FanY_2023, Haiku 4.5
-emitted 319 records per run from a figure source-data table of metagenomic species (identifiers such as
-"msp_0015"), and the one successful Sonnet 5 extraction
-emitted 510 records carrying six distinct identifiers from a melted donor table. For TettAJ_2019_b both
-models emitted 50 records from a table describing another cohort (Ethiopia) rather than the curated
-subset. In these three studies no record could be matched to a curated row, and the extracted
-identifiers were not merely written in a different format.
-
-Two studies depended on retrieval rungs that changed. For Bengtsson-PalmeJ_2015, the PMC record exposes
-only an abstract-length body. The Europe PMC rendered PDF supplied the full text, data-availability
-accession, and manifest in the first extraction (15:15 UTC) and returned nothing in the other five;
-a request after the run received HTTP 403. For LiSS_2016, which has no PMC record, earlier development
-runs (July 2026) obtained a PDF through Unpaywall; during the benchmark and in a check afterwards,
-Unpaywall listed only repository landing pages without a PDF link, and extraction fell back to the
-abstract. For QinJ_2012 the configured sources — NCBI and Europe PMC by PMID and DOI, Europe PMC PDF,
-and Unpaywall — returned only the abstract at the time of the benchmark. We did not test other routes,
-such as BioProject links from the archive side.
+(1,015 distinct identifiers such as "CAG-2") from a table of co-abundance gene groups — feature rows, not
+samples — in all three runs, whereas Sonnet 5 emitted 6 records (e.g. "NLF006", "SZEY-103A") from a
+supplementary table whose identifiers do not correspond to the curated samples. For FanY_2023, both
+models emitted 319 records (37 distinct identifiers such as "msp_0015") from a figure source-data table of
+metagenomic species in five of six runs, and Sonnet 5 run 1 emitted 510 records with six donor
+identifiers from another table. For TettAJ_2019_b both models emitted 50 records from a sheet describing
+the Ethiopian cohort rather than the curated subset. In these three studies no record could be matched
+to a curated row.
 
 ### 3.3 Identity alignment
 
-The one-to-one alignment matched curated rows in five studies at most (Table 1): 284 rows in Sonnet 5
-run 1 and 102 in runs 2 and 3, and 214 rows in each Haiku 4.5 run (19.7% of 1,089). No curated row was
-classified as pooled or ambiguous in the studies that matched, because each matched study used a key that
-was unique on both sides (single run accessions for the manifest-fed studies; `sample_id` for PasolliE).
-FanY_2023 curated rows list up to four run accessions each; they would be reported as pooled, but no
-extracted record carried an accession. The remaining curated rows are unmatched because the study yielded
-no records, the records came from the wrong table, or the extraction failed.
+The one-to-one alignment matched curated rows in five studies (Table 1): 284 rows in every Sonnet 5
+run (26.1% of 1,089) and 214, 284, and 284 rows in the Haiku 4.5 runs. No curated row was classified as
+pooled or ambiguous in the studies that matched, because each matched study used a key that was unique
+on both sides (single run accessions for the manifest-fed studies; `sample_id` for PasolliE). FanY_2023
+curated rows list up to four run accessions each; they would be reported as pooled, but no extracted
+record carried an accession. The remaining curated rows are unmatched because the study yielded no
+records, the records came from the wrong table, or the extraction failed.
 
-### 3.4 Extraction accuracy
+### 3.4 Extraction accuracy after harmonization
 
-**Table 2. Content-field metrics** (median [min–max] over three repeats).
+**Table 2. Content fields after harmonization** (median [min–max] over three repeats).
 
-| join | model | value P | value R | value F1 | presence P | presence R | value accuracy |
-|---|---|--:|--:|--:|--:|--:|--:|
-| end-to-end (primary) | Sonnet 5 | 0.481 [0.383–0.582] | 0.017 [0.014–0.089] | 0.032 [0.027–0.154] | 1.000 [1.000–1.000] | 0.037 [0.035–0.153] | 0.481 [0.383–0.582] |
-| end-to-end (primary) | Haiku 4.5 | 0.621 [0.616–0.654] | 0.073 [0.072–0.076] | 0.131 [0.129–0.136] | 1.000 [0.989–1.000] | 0.117 [0.116–0.117] | 0.628 [0.616–0.654] |
-| end-to-end, successful extractions | Sonnet 5 | 0.481 [0.383–0.582] | 0.019 [0.018–0.098] | 0.037 [0.035–0.168] | 1.000 [1.000–1.000] | 0.048 [0.040–0.169] | 0.481 [0.383–0.582] |
-| conditional (matched rows) | Sonnet 5 | 0.481 [0.383–0.582] | 0.174 [0.149–0.298] | 0.256 [0.215–0.394] | 1.000 [1.000–1.000] | 0.390 [0.362–0.511] | 0.481 [0.383–0.582] |
-| conditional (matched rows) | Haiku 4.5 | 0.621 [0.616–0.654] | 0.321 [0.315–0.333] | 0.423 [0.417–0.441] | 1.000 [0.989–1.000] | 0.511 [0.508–0.511] | 0.628 [0.616–0.654] |
-| positional (supplementary) | Sonnet 5 | 0.428 [0.357–0.523] | 0.172 [0.149–0.281] | 0.232 [0.221–0.366] | 0.999 [0.998–0.999] | 0.482 [0.349–0.538] | 0.428 [0.357–0.523] |
-| positional (supplementary) | Haiku 4.5 | 0.679 [0.677–0.711] | 0.346 [0.336–0.384] | 0.458 [0.457–0.490] | 1.000 [0.995–1.000] | 0.510 [0.473–0.562] | 0.682 [0.677–0.711] |
+| score | model | precision | recall | F1 |
+|---|---|--:|--:|--:|
+| all curated | Sonnet 5 | 0.739 [0.637–0.739] | 0.118 [0.105–0.126] | 0.203 [0.180–0.216] |
+| all curated | Haiku 4.5 | 0.683 [0.601–0.691] | 0.112 [0.083–0.115] | 0.193 [0.148–0.193] |
+| all curated, successful extractions only | Haiku 4.5 | 0.683 [0.601–0.691] | 0.112 [0.089–0.115] | 0.193 [0.157–0.193] |
+| matched | Sonnet 5 | 0.739 [0.637–0.739] | 0.393 [0.350–0.423] | 0.514 [0.452–0.538] |
+| matched | Haiku 4.5 | 0.683 [0.601–0.691] | 0.375 [0.362–0.384] | 0.475 [0.468–0.484] |
 
-*Haiku 4.5 had no failed extractions, so its successful-only row equals its end-to-end row.*
+*Sonnet 5 had no failed extraction, so its successful-only scores equal its all-curated scores.
+Precision is the same for both scores because unmatched curated rows add only false negatives.*
 
-End-to-end recall was low for both models because most curated rows were never matched (Section 3.3).
-Presence precision was close to 1 on every join, but between 35% and 62% of the cells both sides
-reported had the wrong value (value accuracy 0.38–0.65). Value precision is therefore the more informative figure: it was 0.48 for
-Sonnet 5 and 0.62 for Haiku 4.5. These values reflect exact string comparison after lowercasing, so they
-include surface-form differences that harmonization may resolve (Section 3.7).
+Recall over all curated samples was low for both models because three quarters of the curated rows
+were never linked to an extracted record (Section 3.3): 6,756 of the 16,855 populated curated content
+cells belong to QinJ_2012 and LiSS_2016 alone, whose retrieval yielded only an abstract. On matched
+samples, 26–32% of the values both sides reported were wrong after harmonization (precision 0.74 and
+0.68 with no false positives in most runs). Most of these errors were in fields without a harmonization
+corpus (2,372 of 2,457 wrong or false-positive cells for Sonnet 5 and 2,701 of 2,783 for Haiku 4.5, pooled
+over runs), where the extracted value and the curated label differ in form rather than meaning — for
+example `country` "USA" against "United States", `sequencing_platform` "Illumina NovaSeq 6000" against
+"IlluminaNovaSeq", and `host_species` "Homo sapiens; Mus musculus" against "Homo sapiens" — and others
+were substantive, such as `dna_extraction_kit` "MoBio" against "ZymoBIOMICS96MagBead".
 
-Sonnet 5's end-to-end metrics varied far more across repeats than Haiku 4.5's. Its best run (run 1) was
-the only run in which Bengtsson-PalmeJ was retrieved in full and PasolliE did not fail. Across the ten
-studies, the paired difference in end-to-end value F1 (Sonnet 5 − Haiku 4.5) was −0.058 (95%
-study-cluster bootstrap interval −0.187 to 0.061). With ten studies and so much of the difference driven
-by retrieval and failures, the data do not establish that either model is more accurate. Per-study
-results are shown in Figure 2c.
+The paired difference in all-curated F1 (Sonnet 5 − Haiku 4.5) was +0.021 (95% study-cluster bootstrap
+interval −0.013 to 0.088). With ten studies, the data do not establish that either model is more
+accurate. Per-study results are shown in Figure 2c: of the five linked studies, the per-study F1 was
+highest for PasolliE_2019 and lowest for ContevilleLC_2019 (Sonnet 5) and NayakRR_2021 (Haiku 4.5, no
+correct content cell).
 
 ![Model comparison](figures/fig2_model_compare.png)
 
-**Figure 2. Extraction accuracy on the ten-study benchmark.** (a) End-to-end content-field metrics:
-value-aware precision, recall, and F1 (only value-correct cells count as hits) and presence precision and
-recall (any reported value counts). Bars show the median of three repeats; whiskers show the range.
-(b) False-positive cells, end-to-end. (c) End-to-end value F1 per study; dots are medians and lines ranges
-across repeats. A study with no matched rows has a value F1 of 0.
+**Figure 2. Extraction accuracy after harmonization on the ten-study benchmark.** (a) Score all curated
+and (b) score matched: precision, recall, and F1 of content fields, with harmonized fields compared as
+ontology codes and other fields as extracted. Bars show the median of three repeats; whiskers show the
+range. (c) All-curated F1 per study; dots are medians and lines ranges across repeats. A study with no
+matched rows has an F1 of 0.
 
 ### 3.5 False positives, propagation, and source checks
 
-End-to-end false-positive cells were 0 in all Sonnet 5 runs and 0, 0, and 22 in the Haiku 4.5 runs; the
-22 were `treatment` values on Heitz-BuschartA rows whose curated treatment cell is empty. In all 22 cells
-the asserted value string occurs verbatim in the retrieved text. That check shows the value was not
-invented from outside the text; it does not show that the value applies to those samples, nor that the
-curated cell should have been filled.
+False-positive cells were 0 in all Sonnet 5 runs and 0, 0, and 22 in the Haiku 4.5 runs; the 22 were
+`treatment` values on Heitz-BuschartA rows whose curated treatment cell is empty. In all 22 cells the
+asserted value string occurs verbatim in the retrieved text. That check shows the value was not invented
+from outside the text; it does not show that the value applies to those samples, nor that the curated
+cell should have been filled.
 
-The positional join, which ignores identity, found 2 false-positive cells per Sonnet 5 run and 1–23 per
-Haiku 4.5 run, all in TettAJ_2019_b and Heitz-BuschartA_2016.
+The fan-out rule propagated 40,302 (Sonnet 5) and 91,668 (Haiku 4.5) study-level cells into sample
+records across all repeats — counted over every extracted record, including extra and unmatched records —
+plus 27 subgroup-level cells for Sonnet 5. It blocked 8,715 and 52,871 propagations of multi-valued cohort
+values, 210 and 0 of aggregate statistics, and 6,381 and 31,901 propagations of sample-scoped values in
+cohorts with subgroups. In LiJ_2017, for example, Haiku 4.5 reported disease at study level as a
+three-item list (Healthy, Pre-hypertension, Hypertension) in every run; it was not copied to any record.
 
-The fan-out rule propagated 30,230 (Sonnet 5) and 88,690 (Haiku 4.5) study-level cells into sample
-records across all repeats — counted over every extracted record, including the extra and unmatched
-records above — plus 27 subgroup-level cells for Sonnet 5. It blocked 3,069 and 54,412 propagations of
-multi-valued cohort values, 580 and 0 of aggregate statistics, and 5,514 and 22,252 propagations of
-sample-scoped values in cohorts with subgroups. In LiJ_2017, for example, Haiku 4.5 reported disease at study level as the three-item list
-Hypertension, Pre-hypertension, Healthy; it was not copied to any record.
+The rule is not complete. Three kinds of single study-level value were propagated to every record:
 
-The rule is not complete. In the Sonnet 5 run that retrieved Bengtsson-PalmeJ, the paper states
-"Subjects were 23 to 34 years old"; the model placed 23 and 34 in the study-level `age_min` and `age_max`
-fields, and because each is a single number the rule propagated them to all 70 records. The resulting
-cells were mostly wrong against the curated per-subject bounds (Section 3.6).
+- **A cohort age range split into two fields.** For Bengtsson-PalmeJ_2015 the paper states "Subjects
+  were 23 to 34 years old"; the model placed 23 and 34 in the study-level `age_min` and `age_max` fields
+  (all three Sonnet 5 runs and both successful Haiku 4.5 runs), and each was propagated to all 70
+  records (Section 3.7).
+- **A study-level treatment.** In every Sonnet 5 run on NayakRR_2021, "Methotrexate" was propagated to
+  all 34 matched samples, of which 17 are curated "MTX" and 17 "no" (Section 3.6).
+- **A study-level disease and treatment without subgroups.** In Haiku 4.5 run 3 on Heitz-BuschartA_2016,
+  the model reported no subgroups, so "type 1 diabetes mellitus" and "insulin replacement therapy" were
+  propagated to all 221 records. Of the 53 matched samples, 24 are curated with type 1 diabetes alone, 3
+  with type 1 diabetes and further diagnoses, and 26 without it.
 
-### 3.6 Age bounds
+### 3.6 Harmonized fields
 
-Age bounds derived by the configured age rule were correct in every scored cell: 112 `age_min` and 112
-`age_max` cells in the one successful Sonnet 5 PasolliE extraction and 336 of each across the three Haiku
-4.5 PasolliE extractions, all set from per-sample ages in the supplementary table. The only other scored
-age bounds were the propagated Bengtsson-PalmeJ cohort range above: 26 of 70 `age_min` and 2 of 70
-`age_max` cells matched. The age rule was evaluated on one study only.
+**Table 3. Harmonized fields** (median [min–max] F1 over three repeats) and the terms involved in
+matched cells.
 
-### 3.7 Ontology harmonization
+| field | model | F1, all curated | F1, matched | extracted terms → codes on matched cells (outcome) |
+|---|---|--:|--:|---|
+| body_site | Sonnet 5 | 0.331 [0.279–0.396] | 0.864 [0.728–0.973] | "feces", "Stool" → UBERON:0001988 (correct); "USA" → UBERON:0001003 (wrong) |
+| body_site | Haiku 4.5 | 0.373 [0.284–0.373] | 0.936 [0.914–0.936] | "feces", "Stool", "Sweden" → UBERON:0001988 (correct) |
+| disease | Sonnet 5 | 0.286 [0.236–0.331] | 0.781 [0.679–0.864] | "Healthy" → NCIT:C115935; "Rheumatoid Arthritis" → NCIT:C2884 (curated "RA") |
+| disease | Haiku 4.5 | 0.209 [0.209–0.238] | 0.651 [0.618–0.745] | "Healthy" → NCIT:C115935; "type 1 diabetes mellitus" → NCIT:C2986 (24 correct, 29 wrong; one run) |
+| treatment | Sonnet 5 | 0.071 [0.071–0.071] | 0.343 [0.343–0.343] | "Methotrexate" → NCIT:C642 (correct for curated "MTX", wrong for "no"; no curated identifiers) |
+| treatment | Haiku 4.5 | – | – (no correct cell) | "insulin replacement therapy" → NCIT:C581 (curated NCIT:C29711 and/or SCDO:0000067) |
 
-Identity-matched cells carrying a curated ontology identifier were few and involved few distinct terms
-(Table 3, `out_v2/harmonization.md`).
+Of the five matched studies, Bengtsson-PalmeJ_2015, PasolliE_2019, and Heitz-BuschartA_2016 carry curated
+disease and body-site identifiers (and Heitz-BuschartA_2016 treatment identifiers); NayakRR_2021 and
+ContevilleLC_2019 carry none, so their cells were compared with the curated value mapped through the same
+crosswalk (Section 2.4). Harmonization made a difference in two ways. It resolved surface forms to the
+curated concept: "Stool" (PasolliE_2019) to the curated feces identifier, and "Rheumatoid Arthritis" to
+the code of the curated value "RA" (NayakRR_2021, 68 cells pooled over the Sonnet 5 runs). And it exposed disagreement in meaning: for
+Heitz-BuschartA_2016, "insulin replacement therapy" mapped to Therapeutic Insulin (NCIT:C581), whereas
+the curators coded an anti-diabetic agent class (NCIT:C29711) and SCDO:0000067, varying by sample.
 
-**Table 3. Ontology harmonization on identity-matched coded cells.** Accuracy columns are medians over the
-runs that had coded cells.
+The harmonized scores rest on few distinct concepts — one body site, three diseases, and two treatments
+among matched cells — and they include one artefact of the mapping. In Haiku 4.5 run 2 on
+Bengtsson-PalmeJ_2015, the table path mapped the manifest's country column to `body_site`, giving the
+value "Sweden" for all 70 records. With a six-term corpus and no similarity threshold, OntologyMapper
+assigned "Sweden" to feces (similarity 0.52), and the 70 cells scored as correct although the extracted
+value was not a body site. Likewise "USA" (Sonnet 5, NayakRR_2021) mapped to skin epidermis (similarity
+0.51) and scored as wrong. The mapper also assigned the curated NayakRR_2021 treatment value "no" to Nicotinamide
+Riboside (NCIT:C158078); an extracted "no" would match it through the same mapping, which is correct by
+construction rather than evidence that the mapping is right.
 
-| field | model | runs with coded cells | coded cells (total) | extracted terms → curated codes | raw accuracy | exact code-set correct | agreement on both-reported cells |
-|---|---|--:|--:|---|--:|--:|--:|
-| disease | Sonnet 5 | 1/3 | 112 | Healthy → NCIT:C115935 | 1.00 | 1.00 | 1.00 |
-| disease | Haiku 4.5 | 3/3 | 336 | Healthy → NCIT:C115935 | 1.00 | 1.00 | 1.00 |
-| body_site | Sonnet 5 | 1/3 | 182 | Stool, feces → UBERON:0001988 | 0.38 | 1.00 | 1.00 [0.31–1.00] |
-| body_site | Haiku 4.5 | 3/3 | 495 | Stool, feces → UBERON:0001988 | 0.32 | 1.00 | 0.92 [0.84–1.00] |
-| treatment | Sonnet 5 | 0/3 | 0 | — | — | — | 0.50 |
-| treatment | Haiku 4.5 | 1/3 | 31 | Insulin replacement therapy → NCIT:C29711, SCDO:0000067 | 0.00 | 0.00 | 0.00 |
+![Harmonized fields](figures/fig3_harmonization.png)
 
-For disease, every coded cell was a PasolliE_2019 control labelled "Healthy", and the extracted value
-already matched the curated label. For body site, harmonization resolved the surface forms "Stool" and
-"feces" to the curated UBERON code, so exact code-set correctness was 1.00 where raw string accuracy against the curated label was
-0.32–0.38. That is a real but narrow result: one concept and two surface forms. For
-treatment, the 31 coded cells came from one Haiku 4.5 run on Heitz-BuschartA_2016. The study-level value
-"Insulin replacement therapy" had been propagated to every matched sample and mapped to "Therapeutic
-Insulin" (NCIT:C581), whereas the curated codes were an anti-diabetic agent class (NCIT:C29711, 27 cells)
-and SCDO:0000067 (10 cells), varying by sample. No coded cell matched. Any-shared-code scoring gave the
-same values as exact matching on every row, because no coded cell had a multi-code value.
+**Figure 3. F1 of the harmonized fields.** For each field and model, F1 over all curated samples (left)
+and over matched samples (right); dots show the median of three repeats and lines the range. Cells are
+compared as ontology code sets — against the curators' identifiers where the curated row has them,
+otherwise against the curated value mapped through the same crosswalk. Haiku 4.5 had no correct treatment
+cell. The matched cells involve one body-site concept, three disease concepts, and two treatment
+concepts (Table 3).
 
-Agreement — whether the extracted and curated *values* map to the same code set — is not correctness.
-Sonnet 5's treatment agreement of 0.50 came from NayakRR_2021, where the study-level value "Methotrexate"
-was propagated to all 34 matched samples. It agreed with the 17 samples curated "MTX" (both NCIT:C642) and
-disagreed with the 17 curated "no". The mapper also assigned the curated values "no" and "Not applicable"
-to Nicotinamide Riboside (NCIT:C158078), so agreement between two such values would count as a match
-without either being correct. These cases do not arise in the correctness column, which compares with
-the curators' identifiers.
+### 3.7 Age bounds
 
-![Ontology harmonization](figures/fig3_harmonization.png)
+Age bounds derived by the configured age rule were correct in every scored cell: 336 `age_min` and 336
+`age_max` cells for each model, all from per-sample ages in the PasolliE_2019 supplementary table across
+three runs. All other scored age bounds were the propagated Bengtsson-PalmeJ cohort range
+(Section 3.5): 78 of 210 `age_min` and 6 of 210 `age_max` cells matched for Sonnet 5, and 52 of 140 and 4
+of 140 for Haiku 4.5. The age rule was evaluated on one study only.
 
-**Figure 3. Ontology harmonization on identity-matched coded cells.** For each field and model, open
-circles show raw string accuracy and filled circles show exact agreement between the extracted value's
-OntologyMapper code set and the curated ontology identifier, on the same cells. Diamonds (hidden where
-equal) show the supplementary any-shared-code measure. Values are medians over runs with coded cells;
-the annotation gives the number of coded cells and contributing runs. Rows without any coded cell
-(Sonnet 5 treatment) are omitted. The coded cells contain one disease term, two body-site terms, and one
-treatment term.
+### 3.8 Effect of frozen retrieval and truncation handling
 
-### 3.8 Comparison with the earlier analysis
+An earlier run of the same benchmark on the same day (`out_v2`, tag `bench-v2`) used live retrieval per
+extraction and parsed responses without checking the stop reason. Scored with the same post-harmonization
+rules, it gave all-curated F1 of 0.038 [0.033–0.171] (Sonnet 5) and 0.143 [0.141–0.148] (Haiku 4.5), and
+matched F1 of 0.302 and 0.462. Two differences account for most of the change to 0.203 and 0.193:
 
-An earlier version of this analysis reported presence precision of 0.99 (Sonnet 5) and 0.90 (Haiku 4.5)
-under positional scoring, 784 false positives for Haiku 4.5, and 100% ontology correctness. That analysis
-combined outputs from two pipeline versions and scored them with the rules this revision replaces. Three
-differences account for most of the change:
+1. **Truncated responses.** In `out_v2`, four Sonnet 5 extractions (FanY_2023 runs 1 and 3, PasolliE_2019
+   runs 2 and 3) produced no output because both attempts returned JSON cut off mid-object, and
+   PasolliE_2019 — the study with the most correct cells — contributed to only one Sonnet 5 run. With
+   the stop reason checked, the three truncated field batches in `out_v3` completed at a larger cap, and
+   PasolliE_2019 was matched in all six extractions.
+2. **Retrieval.** In `out_v2`, the Europe PMC rendered PDF — then the only source of the
+   Bengtsson-PalmeJ_2015 body — answered the first extraction and returned no PDF to the other five, so
+   the study's 70 samples were enumerated in one of six extractions; a request after that run received
+   HTTP 403 with a bot-check page. In
+   `out_v3` the body came from the PMC article page, was retrieved once, and was read by all six
+   extractions. The Unpaywall PDF that development runs in July 2026 had used for LiSS_2016 was no longer
+   listed in either run.
 
-1. **Metric semantics.** Presence metrics count a wrong value as a hit. On the earlier outputs and their
-   six-study identity-aligned subset, presence precision was 0.99 (Sonnet 5) and 0.95 (Haiku 4.5), but
-   value-aware precision was 0.62 and 0.41.
-2. **Propagation.** The 588 LiJ_2017 false positives attributed to per-sample biomarker over-assertion
-   were a 16-item list of cohort-level biomarker findings that the model had reported as a study-level
-   value and that fan-out then copied onto all 196 records (196 × 3 biomarker fields). Under the scoped
-   rule, the same kind of study-level list is not propagated.
-3. **Ontology scoring.** The earlier "100% correct" required only one shared code between the extracted
-   and curated code sets. Cohort-wide values such as "Healthy; Hypertension; Pre-hypertension" passed
-   for every individual; exact code-set matching on the same earlier cells gave 156 of 162 (Sonnet 5)
-   and 156 of 352 (Haiku 4.5) for disease.
-
-Retrieval also changed between the two analyses (Section 3.2), so the present per-study enumeration is
-not directly comparable to the earlier runs.
+An earlier version of this analysis, based on July 2026 outputs, reported metrics that counted any
+reported value as a hit, scored records by position, and counted an ontology match when the extracted and
+curated code sets shared any code. Under those rules, a 16-item list of cohort-level biomarker findings
+that fan-out had copied onto all 196 LiJ_2017 records appeared as 588 false positives, and cohort-wide
+disease lists such as "Healthy; Hypertension; Pre-hypertension" passed the ontology check for every
+individual. The present rules, the scoped fan-out, and the frozen, logged runs replace that analysis.
 
 ---
 
@@ -512,51 +544,62 @@ not directly comparable to the earlier runs.
 
 ### 4.1 What the benchmark supports
 
-On ten cMD studies, most curated samples were never represented by an extracted record that could be
-linked to them. Failures to enumerate, identify, or retrieve samples therefore dominated the end-to-end
-result, and they did so more than errors in the values of matched records. Where a machine-readable run
-manifest was retrieved, enumeration was complete for the curated accessions and identical across repeats
-and models. Where samples had to be inferred from supplementary tables, both models selected wrong tables
-— feature tables, figure source data, or another cohort — in three studies. Among matched records, value
-precision was 0.48–0.62: a large share of reported values differed from the curated value, and some of
-those differences are surface forms that harmonization addresses (Section 3.7).
+On ten cMD studies, about three quarters of the curated samples were never represented by an extracted
+record that could be linked to them. Failures to enumerate, identify, or retrieve samples therefore
+dominated the all-curated score. Where a machine-readable run manifest was retrieved, enumeration was
+complete for the curated accessions and identical across repeats and models. Where samples had to be
+inferred from supplementary tables, both models selected wrong tables — feature tables, figure source
+data, or another cohort — in three studies. Two studies yielded only an abstract from every configured
+source.
 
-Presence metrics would have described the same outputs as near-perfectly precise. We therefore report
-value-aware metrics as primary and recommend that evaluations of metadata extraction state which of the
-two they use. Likewise, a gold-blank cell with an extracted value is not by itself evidence of fabrication:
-in the 22 such cells here, the asserted value occurred in the source text, and deciding whether it applies
-to the sample requires reading the source.
+Among linked samples, precision after harmonization was 0.68–0.74. Harmonization resolved the surface
+forms it covered — "Stool" to feces, "Rheumatoid Arthritis" to RA — so the remaining errors in the three
+harmonized fields were mostly disagreements of meaning, such as a propagated treatment. Most remaining
+errors lay in fields without a corpus, several of which differ from the curated label only in form. The
+matched score is therefore a lower bound on what harmonization over more fields could reach, and it
+depends on the corpora as much as on the extractor; the treatment field shows that harmonization can
+also make a disagreement explicit rather than hide it.
 
-The two models differed in failure pattern more than in accuracy. All four failed extractions were Sonnet
-5 responses truncated at the configured output limit, and Haiku 4.5 produced the largest spurious
-enumeration (1,448 feature rows). The study-cluster interval for the difference in end-to-end value F1
-included zero, and with ten studies used during development these data do not support recommending one
-model over the other.
+A gold-blank cell with an extracted value is not by itself evidence of fabrication: in the 22 such cells
+here, the asserted value occurred in the source text, and deciding whether it applies to the sample
+requires reading the source.
 
-### 4.2 Retrieval is a time-dependent input
+The two models reached similar scores with different failure patterns. Sonnet 5 needed more than the
+default output budget for three field batches, and Haiku 4.5 returned structurally invalid responses in
+five attempts and produced the largest spurious enumeration (1,448 feature rows). The study-cluster
+interval for the difference in all-curated F1 included zero, and with ten studies used during development
+these data do not support recommending one model over the other.
 
-The same code retrieved full text for two studies in July 2026 and not in September 2026. For one of them,
-the endpoint changed within the benchmark: it answered the first request and refused later ones. Extraction
-benchmarks that retrieve documents live are therefore not reproducible from code alone. They should record
-every retrieval attempt, archive — or at least checksum — the text supplied to the model, and report
-retrieval outcomes alongside accuracy. The attempt ledger and per-extraction retrieval records introduced
-here made the two changes diagnosable; they do not make the runs repeatable. A study whose full text the
-configured sources did not return at one date may be reachable by other routes or at another date; we did
-not test, for example, whether archive-side BioProject links would have identified the QinJ_2012 cohort.
+### 4.2 Retrieval and output limits are part of the experiment
+
+Two sources of variation that are not properties of the extractor changed results between runs on the
+same day. The first was retrieval: an endpoint served a paper's full text to one request and a bot-check
+page to the next, and a PDF that a repository had listed in July was no longer listed in September.
+Extraction benchmarks that retrieve documents live are therefore not reproducible from code alone. Freezing
+the retrieval once per study — with checksums and a fetch ledger — made every repeat and model see the same
+input, turning retrieval into a recorded, reportable input rather than a hidden source of run-to-run
+variance. It does not make retrieval complete: a study whose full text the configured sources did not return
+may be reachable by other routes; we did not test, for example, whether archive-side BioProject links would
+have identified the QinJ_2012 cohort.
+
+The second was the output budget. With adaptive thinking, the tokens a model spends on reasoning count
+against the same cap as its answer, so a request that usually fits can occasionally be cut off. A truncated
+JSON response cannot be parsed; in the earlier run, treating the parse error as a model failure removed
+four Sonnet 5 extractions, including two of its three extractions of the study with the most correct
+cells. Checking the stop reason and re-requesting with a larger cap removed those failures at a small cost:
+of 858 recorded calls, 3 truncated field batches and 46 truncated table plans were re-requested.
 
 ### 4.3 Propagation must respect field scope
 
 Copying a study-level value into every sample record is convenient when the value genuinely describes every
 sample (sequencing platform, extraction kit) and wrong when it describes the cohort (a disease list, a range
-of ages, a set of biomarker findings). In the earlier analysis, unrestricted propagation turned a
-study-level list of biomarker findings into 588 per-sample assertions and let cohort disease lists pass an
-any-overlap ontology check. The scoped rule, together with a per-cell source record, blocked those cases
-and made the remaining propagated cells auditable. It did not catch a cohort age range that the model had
-already split into separate minimum and maximum fields, nor a single study-level treatment
-("Methotrexate") that the model reported without subgroups although half of the curated NayakRR_2021
-samples were untreated. Propagation rules therefore need information about
-field semantics — which fields describe individuals and which values are cohort summaries. A schema
-annotation supplies part of that information; the model's own output structure does not supply the rest.
+of ages, a set of biomarker findings). The scoped rule, together with a per-cell source record, blocked lists
+and aggregate statistics and made the remaining propagated cells auditable. It did not catch a cohort age
+range that the model had already split into separate minimum and maximum fields, nor a single study-level
+disease or treatment reported without subgroups although only part of the cohort had it. Propagation rules
+therefore need information about field semantics — which fields describe individuals and which values are
+cohort summaries. A schema annotation supplies part of that information; the model's own output structure
+does not supply the rest.
 
 ### 4.4 Limitations
 
@@ -566,47 +609,48 @@ annotation supplies part of that information; the model's own output structure d
 - **No baselines or ablations.** We did not compare against a deterministic manifest-only pipeline, direct
   extraction by an LLM without the deterministic components, or versions without individual components.
   The contribution of each component is therefore not established.
-- **Small, unstable matched set.** End-to-end metrics depend on 102–284 matched curated rows from at most
-  five studies, and the conditional metrics describe only those rows.
-- **Scoring rules.** Value matching is exact after lowercasing, with a 5% numeric tolerance and no synonym
-  handling, so value precision includes differences that curators would accept. Identity alignment uses
-  three identifier columns and did not need compound keys here; subjects with multiple samples would
-  require them.
+- **Small matched set.** Matched scores describe 214–284 curated rows from at most five studies.
+- **Harmonization coverage.** Only three fields were harmonized, with corpora chosen after inspecting these
+  studies; the matched cells involve few distinct concepts; mapping took the top-ranked concept without a
+  similarity threshold, so closed corpora assign unrelated values to a concept (one run's 70 body-site cells
+  scored as correct for "Sweden"); and the retrieval-augmented and LLM-review stages of OntologyMapper were
+  not used. Fields without a corpus are compared as extracted, so their surface-form differences count as
+  errors.
 - **Gold incompleteness.** Curated cells may be blank where the paper reports a value; the scorer counts
   such cells as false positives, and our source check is partial.
 - **Repeats.** Three repeats describe run-to-run variation on these studies, not sampling uncertainty for a
   population of studies. Requests used API defaults, including adaptive thinking for Sonnet 5; other
   settings may change failure rates and accuracy.
-- **Harmonization.** Corpora were chosen after inspecting these studies; the curated identifiers cover few
-  distinct terms (Section 3.7); and the retrieval-augmented and LLM-review stages of OntologyMapper were
-  not used.
 - **Validation.** Output validation is structural. The system does not verify that values appear in or
   follow from the source, that field names and types conform to the target schema, or that enum values
   belong to the vocabulary.
 
 ### 4.5 Engineering follow-ups
 
-The runs exposed defects that we did not fix during the benchmark, to keep the tagged snapshot fixed:
-(i) the stop reason of each model response should be logged and truncated responses retried with a larger
-output budget or a smaller field batch; (ii) usage for failed attempts should be recorded; (iii) when parsed
-tables yield no sample rows, the extractor currently discards any per-sample rows emitted by the model and
-does not run sample discovery; (iv) the wall-clock cap did not bound some attempts; and (v) the table path
-should reject feature and figure-source tables more reliably, since spurious enumeration accounted for three
-of the ten studies.
+The run exposed defects that we did not fix during the benchmark, to keep the tagged snapshot fixed:
+(i) the result model rejects a null `section` on a field reported as absent, which caused all five failed
+Haiku 4.5 attempts; (ii) a retry overwrites the per-extraction metadata of the failed attempt, so its usage
+is not retained; (iii) when parsed tables yield no sample rows, the extractor discards any per-sample rows
+emitted by the model and does not run sample discovery; (iv) the table path should reject feature and
+figure-source tables, and map manifest columns (for example a country column) to schema fields, more
+reliably, since spurious enumeration accounted for three of the ten studies; (v) sample-scoped values
+reported without subgroups are still propagated to every record; and (vi) harmonization should apply a
+similarity threshold, leaving values with no close concept unmapped.
 
 ---
 
 ## 5. Conclusion
 
 MetaExtractor populates a target schema from papers, supplementary tables, and sequence-archive manifests,
-and records the source of every sample cell. On a ten-study curatedMetagenomicData case study evaluated with
-identity-aligned, value-aware metrics, it recovered complete, stable sample sets where a run manifest was
-available, but most curated samples were not linked to any extracted record because of enumeration errors,
-missing identifiers, retrieval that changed over time, and truncated responses. Among linked records, value
-precision was 0.48–0.62. Ontology mapping reproduced the curated codes for the one disease term and two body-site terms that
-could be scored, which does not test harmonization beyond those terms. These results argue for reporting value-aware and end-to-end
-metrics, logging retrieval as part of the experiment, and restricting propagation of cohort-level values;
-they do not by themselves establish performance beyond the studies evaluated.
+and records the source of every sample cell. On a ten-study curatedMetagenomicData case study scored after
+MetaHarmonizer ontology mapping, with every study retrieved once and every run logged, it recovered complete,
+stable sample sets where a run manifest was available, but about three quarters of the curated samples were
+not linked to any extracted record because of enumeration errors, missing identifiers, and abstract-only
+retrieval. F1 was 0.19–0.20 over all curated samples and 0.48–0.51 over linked samples. Harmonization
+resolved the surface forms its corpora covered, and much of the remaining error on linked samples lies in
+fields that no corpus yet covers. These results argue for scoring extraction together with the harmonization
+it feeds, freezing and logging retrieval, checking model stop reasons, and restricting propagation of
+cohort-level values; they do not by themselves establish performance beyond the studies evaluated.
 
 ---
 
@@ -619,12 +663,12 @@ they do not by themselves establish performance beyond the studies evaluated.
 **Competing interests.** [COMPETING INTERESTS]
 
 **Data and code availability.** Source code, the target schema, study manifest, age-rule configuration,
-ontology crosswalks, extraction outputs (JSON/CSV), per-attempt logs, the attempt ledger, and all scoring
-outputs are available in the MetaExtractor repository [REPOSITORY URL AND ARCHIVAL DOI] at tag `bench-v2`
-(extraction snapshot) and the subsequent analysis commit. `benchmarks/cmd_sonnet5/REPRODUCE.md` gives the
-commands. The text retrieved for each extraction is identified by SHA-256 checksum in the ledger and is not
-redistributed. Curated reference tables are from curatedMetagenomicDataCuration commit `41271711`
-[CITE: curatedMetagenomicDataCuration repository].
+ontology crosswalks, extraction outputs (JSON/CSV), per-attempt logs, the fetch and attempt ledgers, each
+study's retrieval record, and all scoring outputs are available in the MetaExtractor repository
+[REPOSITORY URL AND ARCHIVAL DOI] at tag `bench-v3` (extraction snapshot) and the subsequent commit that
+added `out_v3/`. `benchmarks/cmd_sonnet5/REPRODUCE.md` gives the commands. The retrieved article text and
+parsed tables are identified by SHA-256 checksum and are not redistributed. Curated reference tables are
+from curatedMetagenomicDataCuration commit `41271711` [CITE: curatedMetagenomicDataCuration repository].
 
 ## References
 

@@ -88,10 +88,11 @@ def fig1_pipeline():
 
     paper = box(4, 90, 40, 8, "Paper\n(PMID · PMCID · DOI · PDF · text)", IO, IO_E, bold=True)
     schema = box(56, 90, 40, 8, "Target schema\n(JSON · YAML · LinkML subset)", IO, IO_E, bold=True)
-    fetch = box(4, 72, 40, 11,
-                "Document retrieval (best-scoring text)\nPMC · Europe PMC · Europe PMC PDF ·\n"
-                "Unpaywall PDF · abstract floor\n+ supplementary files · SRA/ENA run manifest",
-                DET, DET_E, fs=7.9)
+    fetch = box(4, 71, 40, 12.5,
+                "Document retrieval (best-scoring text)\nPMC · Europe PMC · PMC article page ·\n"
+                "Europe PMC PDF · Unpaywall PDF · abstract\n+ supplementary files · SRA/ENA manifest\n"
+                "(optionally frozen once, reused offline)",
+                DET, DET_E, fs=7.6)
     adapt = box(56, 74, 40, 8, "Schema adaptation\ntyped fields · static enums · scope",
                 DET, DET_E)
     gate = box(56, 58, 40, 7.5,
@@ -106,6 +107,7 @@ def fig1_pipeline():
                LLM, LLM_E, fs=7.9)
     llmx = box(4, 35, 40, 10,
                "LLM field-batch extraction\n≤30 fields/call · values + provenance\n"
+               "cut off at output cap → re-request, larger cap\n"
                "JSON parsed · Pydantic structural check",
                LLM, LLM_E, fs=7.9)
     rules = box(22, 16, 56, 8.5,
