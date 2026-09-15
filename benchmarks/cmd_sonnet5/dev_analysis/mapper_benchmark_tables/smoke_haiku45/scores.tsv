@@ -1,0 +1,13 @@
+mapper	study	run	n_records	matched_rows	all_tp_correct	all_tp_wrong	all_fp	all_fn	f1_all_curated	fn_matched	f1_matched
+lexical	LiJ_2017	haiku45_smoke	6	0	0	0	0	2744		0	
+sm_stage1	LiJ_2017	haiku45_smoke	6	0	0	0	0	2744		0	
+sm_stages12	LiJ_2017	haiku45_smoke	6	0	0	0	0	2744		0	
+sm_stages123	LiJ_2017	haiku45_smoke	6	0	0	0	0	2744		0	
+lexical	PasolliE_2019	haiku45_smoke	112	112	896	224	0	1120	0.5333	1120	0.5333
+sm_stage1	PasolliE_2019	haiku45_smoke	112	112	1006	226	0	1008	0.5795	1008	0.5795
+sm_stages12	PasolliE_2019	haiku45_smoke	112	112	1006	226	0	1008	0.5795	1008	0.5795
+sm_stages123	PasolliE_2019	haiku45_smoke	112	112	1006	307	0	927	0.5663	927	0.5663
+lexical	TettAJ_2019_b	haiku45_smoke	50	0	0	0	0	701		0	
+sm_stage1	TettAJ_2019_b	haiku45_smoke	50	0	0	0	0	701		0	
+sm_stages12	TettAJ_2019_b	haiku45_smoke	50	0	0	0	0	701		0	
+sm_stages123	TettAJ_2019_b	haiku45_smoke	50	0	0	0	0	701		0	

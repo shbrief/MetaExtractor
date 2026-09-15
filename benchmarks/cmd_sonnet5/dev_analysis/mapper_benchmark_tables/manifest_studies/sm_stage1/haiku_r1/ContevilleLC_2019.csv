@@ -1,0 +1,16 @@
+subject_id,sample_id,pmid,target_condition,country,body_site,lifestyle,location,westernized,dna_extraction_kit,ncbi_accession,sequencing_platform,ancestry_details,host_species
+CA60,Y9,31417531,Gut microbiome composition and diversity,Brazil:Amazon Forest,feces,Hunter-gatherer,"Amazon rainforest, Brazil",No,MPBio,SRR8732218,Illumina HiSeq 2500,Yanomami,Homo sapiens
+AL19,Y4,31417531,Gut microbiome composition and diversity,Brazil:Amazon Forest,feces,Hunter-gatherer,"Amazon rainforest, Brazil",No,MPBio,SRR8732221,Illumina HiSeq 2500,Yanomami,Homo sapiens
+CA09,Y6,31417531,Gut microbiome composition and diversity,Brazil:Amazon Forest,feces,Hunter-gatherer,"Amazon rainforest, Brazil",No,MPBio,SRR8732223,Illumina HiSeq 2500,Yanomami,Homo sapiens
+TA49,Y14,31417531,Gut microbiome composition and diversity,Brazil:Amazon Forest,feces,Hunter-gatherer,"Amazon rainforest, Brazil",No,MPBio,SRR8732227,Illumina HiSeq 2500,Yanomami,Homo sapiens
+CA46,Y8,31417531,Gut microbiome composition and diversity,Brazil:Amazon Forest,feces,Hunter-gatherer,"Amazon rainforest, Brazil",No,MPBio,SRR8732225,Illumina HiSeq 2500,Yanomami,Homo sapiens
+TA91,Y15,31417531,Gut microbiome composition and diversity,Brazil:Amazon Forest,feces,Hunter-gatherer,"Amazon rainforest, Brazil",No,MPBio,SRR8732231,Illumina HiSeq 2500,Yanomami,Homo sapiens
+AL18,Y3,31417531,Gut microbiome composition and diversity,Brazil:Amazon Forest,feces,Hunter-gatherer,"Amazon rainforest, Brazil",No,MPBio,SRR8732222,Illumina HiSeq 2500,Yanomami,Homo sapiens
+CA02,Y5,31417531,Gut microbiome composition and diversity,Brazil:Amazon Forest,feces,Hunter-gatherer,"Amazon rainforest, Brazil",No,MPBio,SRR8732224,Illumina HiSeq 2500,Yanomami,Homo sapiens
+TA39,Y12,31417531,Gut microbiome composition and diversity,Brazil:Amazon Forest,feces,Hunter-gatherer,"Amazon rainforest, Brazil",No,MPBio,SRR8732229,Illumina HiSeq 2500,Yanomami,Homo sapiens
+TA24,Y11,31417531,Gut microbiome composition and diversity,Brazil:Amazon Forest,feces,Hunter-gatherer,"Amazon rainforest, Brazil",No,MPBio,SRR8732230,Illumina HiSeq 2500,Yanomami,Homo sapiens
+TA41,Y13,31417531,Gut microbiome composition and diversity,Brazil:Amazon Forest,feces,Hunter-gatherer,"Amazon rainforest, Brazil",No,MPBio,SRR8732228,Illumina HiSeq 2500,Yanomami,Homo sapiens
+TA08,Y10,31417531,Gut microbiome composition and diversity,Brazil:Amazon Forest,feces,Hunter-gatherer,"Amazon rainforest, Brazil",No,MPBio,SRR8732217,Illumina HiSeq 2500,Yanomami,Homo sapiens
+AH19,Y2,31417531,Gut microbiome composition and diversity,Brazil:Amazon Forest,feces,Hunter-gatherer,"Amazon rainforest, Brazil",No,MPBio,SRR8732219,Illumina HiSeq 2500,Yanomami,Homo sapiens
+AH08,Y1,31417531,Gut microbiome composition and diversity,Brazil:Amazon Forest,feces,Hunter-gatherer,"Amazon rainforest, Brazil",No,MPBio,SRR8732220,Illumina HiSeq 2500,Yanomami,Homo sapiens
+CA103,Y7,31417531,Gut microbiome composition and diversity,Brazil:Amazon Forest,feces,Hunter-gatherer,"Amazon rainforest, Brazil",No,MPBio,SRR8732226,Illumina HiSeq 2500,Yanomami,Homo sapiens

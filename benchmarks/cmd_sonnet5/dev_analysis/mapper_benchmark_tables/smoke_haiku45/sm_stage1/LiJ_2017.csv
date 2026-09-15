@@ -1,0 +1,7 @@
+study_name,sample_id,pmid,target_condition,country,body_site,antibiotics_exclusion_period,antibiotics_exclusion_period_unit,dna_extraction_kit,sequencing_platform,age,sex,age_min,age_max,host_species
+Kailuan,NLF006,28143587,hypertension; pre-hypertension,China,feces,8,Week,Tiangen,IlluminaHiSeq,27,female,27,27,Homo sapiens
+Kailuan,SZEY-103A,28143587,hypertension; pre-hypertension,China,feces,8,Week,Tiangen,IlluminaHiSeq,50,male,50,50,Homo sapiens
+Kailuan,SZEY-104A,28143587,hypertension; pre-hypertension,China,feces,8,Week,Tiangen,IlluminaHiSeq,50,male,50,50,Homo sapiens
+Kailuan,NOM007,28143587,hypertension; pre-hypertension,China,feces,8,Week,Tiangen,IlluminaHiSeq,72,male,72,72,Homo sapiens
+Kailuan,SZEY-101A,28143587,hypertension; pre-hypertension,China,feces,8,Week,Tiangen,IlluminaHiSeq,47,male,47,47,Homo sapiens
+Kailuan,SZEY-99A,28143587,hypertension; pre-hypertension,China,feces,8,Week,Tiangen,IlluminaHiSeq,46,male,46,46,Homo sapiens

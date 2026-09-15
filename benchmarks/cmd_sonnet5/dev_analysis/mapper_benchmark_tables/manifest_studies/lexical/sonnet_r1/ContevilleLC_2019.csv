@@ -1,0 +1,16 @@
+subject_id,sample_id,country,body_site,lifestyle,location,westernized,dna_extraction_kit,ncbi_accession,sequencing_platform,host_species
+CA60,Y9,Brazil:Amazon Forest,feces,Hunter-gatherer,Brazilian Amazon,No,FastDNA ® SPIN Kit (MP Biomedicals),SRR8732218,Illumina HiSeq 2500,Homo sapiens
+AL19,Y4,Brazil:Amazon Forest,feces,Hunter-gatherer,Brazilian Amazon,No,FastDNA ® SPIN Kit (MP Biomedicals),SRR8732221,Illumina HiSeq 2500,Homo sapiens
+CA09,Y6,Brazil:Amazon Forest,feces,Hunter-gatherer,Brazilian Amazon,No,FastDNA ® SPIN Kit (MP Biomedicals),SRR8732223,Illumina HiSeq 2500,Homo sapiens
+TA49,Y14,Brazil:Amazon Forest,feces,Hunter-gatherer,Brazilian Amazon,No,FastDNA ® SPIN Kit (MP Biomedicals),SRR8732227,Illumina HiSeq 2500,Homo sapiens
+CA46,Y8,Brazil:Amazon Forest,feces,Hunter-gatherer,Brazilian Amazon,No,FastDNA ® SPIN Kit (MP Biomedicals),SRR8732225,Illumina HiSeq 2500,Homo sapiens
+TA91,Y15,Brazil:Amazon Forest,feces,Hunter-gatherer,Brazilian Amazon,No,FastDNA ® SPIN Kit (MP Biomedicals),SRR8732231,Illumina HiSeq 2500,Homo sapiens
+AL18,Y3,Brazil:Amazon Forest,feces,Hunter-gatherer,Brazilian Amazon,No,FastDNA ® SPIN Kit (MP Biomedicals),SRR8732222,Illumina HiSeq 2500,Homo sapiens
+CA02,Y5,Brazil:Amazon Forest,feces,Hunter-gatherer,Brazilian Amazon,No,FastDNA ® SPIN Kit (MP Biomedicals),SRR8732224,Illumina HiSeq 2500,Homo sapiens
+TA39,Y12,Brazil:Amazon Forest,feces,Hunter-gatherer,Brazilian Amazon,No,FastDNA ® SPIN Kit (MP Biomedicals),SRR8732229,Illumina HiSeq 2500,Homo sapiens
+TA24,Y11,Brazil:Amazon Forest,feces,Hunter-gatherer,Brazilian Amazon,No,FastDNA ® SPIN Kit (MP Biomedicals),SRR8732230,Illumina HiSeq 2500,Homo sapiens
+TA41,Y13,Brazil:Amazon Forest,feces,Hunter-gatherer,Brazilian Amazon,No,FastDNA ® SPIN Kit (MP Biomedicals),SRR8732228,Illumina HiSeq 2500,Homo sapiens
+TA08,Y10,Brazil:Amazon Forest,feces,Hunter-gatherer,Brazilian Amazon,No,FastDNA ® SPIN Kit (MP Biomedicals),SRR8732217,Illumina HiSeq 2500,Homo sapiens
+AH19,Y2,Brazil:Amazon Forest,feces,Hunter-gatherer,Brazilian Amazon,No,FastDNA ® SPIN Kit (MP Biomedicals),SRR8732219,Illumina HiSeq 2500,Homo sapiens
+AH08,Y1,Brazil:Amazon Forest,feces,Hunter-gatherer,Brazilian Amazon,No,FastDNA ® SPIN Kit (MP Biomedicals),SRR8732220,Illumina HiSeq 2500,Homo sapiens
+CA103,Y7,Brazil:Amazon Forest,feces,Hunter-gatherer,Brazilian Amazon,No,FastDNA ® SPIN Kit (MP Biomedicals),SRR8732226,Illumina HiSeq 2500,Homo sapiens

@@ -1,0 +1,7 @@
+study_name,sample_id,pmid,target_condition,country,body_site,days_from_first_collection,antibiotics_exclusion_period,antibiotics_exclusion_period_unit,probing_pocket_depth_value,dna_extraction_kit,sequencing_platform,age,sex,age_min,age_max,bmi,tumor_staging_ajcc,host_species
+Kailuan,NLF006,28143587,hypertension; pre-hypertension,China,feces,-,8,Week,115,Tiangen,IlluminaHiSeq,27,female,27,27,17.8,Control,Homo sapiens
+Kailuan,SZEY-103A,28143587,hypertension; pre-hypertension,China,feces,BMI,8,Week,124,Tiangen,IlluminaHiSeq,50,male,50,50,25.63,Control,Homo sapiens
+Kailuan,SZEY-104A,28143587,hypertension; pre-hypertension,China,feces,FBG,8,Week,118,Tiangen,IlluminaHiSeq,50,male,50,50,23.07,Control,Homo sapiens
+Kailuan,NOM007,28143587,hypertension; pre-hypertension,China,feces,SBP,8,Week,160,Tiangen,IlluminaHiSeq,72,male,72,72,23.66,Hypertension,Homo sapiens
+Kailuan,SZEY-101A,28143587,hypertension; pre-hypertension,China,feces,DBP,8,Week,151,Tiangen,IlluminaHiSeq,47,male,47,47,26.61,Hypertension,Homo sapiens
+Kailuan,SZEY-99A,28143587,hypertension; pre-hypertension,China,feces,FINS,8,Week,170,Tiangen,IlluminaHiSeq,46,male,46,46,22.76,Hypertension,Homo sapiens
