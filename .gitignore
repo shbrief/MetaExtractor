@@ -35,3 +35,7 @@ benchmarks/cmd_sonnet5/out_v*/_fetch/**/tables.json
 
 # Local reviewer notes (not part of the repository)
 MANUSCRIPT_REVIEW.md
+
+# dev_analysis smoke runs: retrieved text and parsed tables are not redistributed
+benchmarks/cmd_sonnet5/dev_analysis/**/_fetch/**/text.txt
+benchmarks/cmd_sonnet5/dev_analysis/**/_fetch/**/tables.json
