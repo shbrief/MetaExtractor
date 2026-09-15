@@ -3,11 +3,23 @@ from __future__ import annotations
 
 from typing import Any, Literal
 
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, Field, model_validator
 
 Granularity = Literal["study_level", "subgroup_level", "sample_level"]
 ExtractionType = Literal["directly_stated", "derived", "inferred", "not_reported"]
 Confidence = Literal["high", "medium", "low"]
+
+#: Provenance slots that locate a value in the source; meaningless for an absent value.
+LOCATION_SLOTS = ("evidence_quote", "section")
+
+
+def _is_absent(v: Any) -> bool:
+    """``None``, empty, or a case-variant of ``not_reported`` / ``not reported``."""
+    if v is None:
+        return True
+    if isinstance(v, (list, dict)):
+        return not v
+    return isinstance(v, str) and v.strip().lower().replace(" ", "_") in ("", "not_reported")
 
 
 class FieldResult(BaseModel):
@@ -18,9 +30,20 @@ class FieldResult(BaseModel):
     normalized_unit: str | None = None
     extraction_type: ExtractionType
     confidence: Confidence
-    evidence_quote: str
-    section: str
+    #: Required for a reported value; may be null when the value is ``not_reported``.
+    evidence_quote: str | None = None
+    #: Required for a reported value; may be null when the value is ``not_reported``.
+    section: str | None = None
     notes: str | None = None
+
+    @model_validator(mode="after")
+    def _location_required_for_reported_values(self) -> "FieldResult":
+        if _is_absent(self.value):
+            return self
+        missing = [s for s in LOCATION_SLOTS if getattr(self, s) is None]
+        if missing:
+            raise ValueError(f"{', '.join(missing)} must be a string for a reported value")
+        return self
 
 
 class TableSelection(BaseModel):
