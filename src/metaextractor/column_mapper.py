@@ -99,6 +99,21 @@ DEFAULT_ALIASES: dict[str, str] = {
     "westernised": "westernized",
 }
 
+# ENA ``read_run`` manifest fields (``sra_manifest._MANIFEST_FIELDS``) with a fixed
+# meaning in the INSDC sample model. A manifest has a known flat header, so it is
+# mapped with this map alone — no LLM table plan, which could rename a column to an
+# unrelated field (e.g. ``country`` → ``body_site``). Fields without an entry here or
+# in the lexical tiers (e.g. ``sample_title``, ``collection_date``) stay unmapped.
+ENA_MANIFEST_ALIASES: dict[str, str] = {
+    **DEFAULT_ALIASES,
+    "run_accession": "ncbi_accession",
+    "sample_alias": "sample_id",        # submitter's sample name
+    "instrument_model": "sequencing_platform",
+    "host_body_site": "body_site",
+    "host_sex": "sex",
+    "host": "host_species",
+}
+
 
 @dataclass
 class ColumnMapping:

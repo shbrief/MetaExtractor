@@ -235,6 +235,47 @@ def is_measurement_matrix(table: Table, schema: Schema | None = None) -> bool:
     return not matched  # numeric grid that matches a schema field is a real sample table
 
 
+_SOURCE_DATA_RE = re.compile(r"source[\s_-]*data", re.IGNORECASE)
+
+#: Identifier fields that name one sample (or one sequencing run) per row.
+PER_SAMPLE_KEYS = ("sample_id", "ncbi_accession")
+#: Distinct-value fraction below which an identifier column is not per-sample
+#: (same bar as the key-like column signal and the join overlap).
+PER_SAMPLE_UNIQUE_MIN = 0.9
+
+
+def is_figure_source_data(table: Table) -> bool:
+    """Is this a figure's underlying data (publisher "Source data" file or sheet)?
+
+    Such tables hold the plotted values — per feature, per panel — not the
+    study's sample metadata, so they are never a per-sample table.
+    """
+    return bool(_SOURCE_DATA_RE.search(table.name))
+
+
+def per_sample_identifier_check(rows: list[dict]) -> tuple[bool, str]:
+    """Do mapped rows carry a per-sample identifier?
+
+    Returns ``(False, reason)`` when the rows have at least one of
+    :data:`PER_SAMPLE_KEYS` but none of them is near-unique — the signature of a
+    feature table (one row per gene group or species, with a sample-like column)
+    or of a long-format table. Rows with no such key pass (they can only join on
+    other keys).
+    """
+    stats = []
+    for key in PER_SAMPLE_KEYS:
+        vals = [str(r.get(key)).strip() for r in rows if str(r.get(key) or "").strip()]
+        if len(vals) < 4:
+            continue
+        frac = len(set(vals)) / len(vals)
+        if frac >= PER_SAMPLE_UNIQUE_MIN:
+            return True, ""
+        stats.append(f"{key} {len(set(vals))} distinct / {len(vals)} rows")
+    if not stats:
+        return True, ""
+    return False, "identifier not per-sample (" + "; ".join(stats) + ")"
+
+
 # --------------------------------------------------------------------------- #
 # Combined score
 # --------------------------------------------------------------------------- #

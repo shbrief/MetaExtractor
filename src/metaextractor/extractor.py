@@ -13,6 +13,7 @@ from anthropic import Anthropic
 from pydantic import ValidationError
 
 from metaextractor.column_mapper import (
+    ENA_MANIFEST_ALIASES,
     ColumnMapping,
     apply_mapping,
     join_tables,
@@ -35,7 +36,11 @@ from metaextractor.table_plan import (
     execute_plan,
     propose_plan,
 )
-from metaextractor.table_select import score_table
+from metaextractor.table_select import (
+    is_figure_source_data,
+    per_sample_identifier_check,
+    score_table,
+)
 
 DEFAULT_MODEL = "claude-sonnet-4-6"
 DEFAULT_MAX_TOKENS = 16384
@@ -417,6 +422,13 @@ class MetaExtractor:
         table_columns: dict[str, tuple[str, dict[str, str]]] = {}
 
         for t in tables:
+            if is_figure_source_data(t):
+                warnings.append(f"Table {t.name!r}: skipped as figure source data.")
+                selections.append(TableSelection(
+                    name=t.name, selected=False, score=0.0,
+                    reasons=["figure source data (table name)"],
+                ))
+                continue
             rel = score_table(t, schema)
             if rel.is_matrix:
                 detail = rel.reasons[0] if rel.reasons else "feature × samples matrix"
@@ -449,33 +461,24 @@ class MetaExtractor:
                 matched_fields=rel.matched_fields, reasons=rel.reasons,
             ))
 
-            transformed: list = None  # type: ignore[assignment]
-            try:
-                plan, usage = propose_plan(self.client, self.model, t, schema_field_names,
-                                           calls=self.last_calls)
-                _accumulate_usage(self.last_usage, usage)
-                transformed = execute_plan(t, plan)
-                _reconcile_dropped_schema_columns(
-                    t, plan, transformed, schema_field_names, warnings
-                )
-                warnings.append(
-                    f"Table {t.name!r}: plan applied "
-                    f"(header_rows={plan.header_rows}, "
-                    f"melt={'yes' if plan.melt else 'no'}, "
-                    f"out_rows={len(transformed.rows)})."
-                )
-            except (PlanProposalError, PlanExecutionError) as e:
-                if isinstance(e, PlanProposalError) and e.usage:
-                    _accumulate_usage(self.last_usage, e.usage)
-                warnings.append(
-                    f"Table {t.name!r}: plan path failed ({type(e).__name__}: {e}); "
-                    f"falling back to row-0-header parse."
-                )
-                transformed = t
+            is_manifest = getattr(t, "source", None) == "ena"
+            if is_manifest:
+                # Known flat ENA header: fixed column map, no LLM plan.
+                transformed, aliases = t, ENA_MANIFEST_ALIASES
+                warnings.append(f"Table {t.name!r}: ENA run manifest mapped with the fixed "
+                                f"ENA column map (no table plan).")
+            else:
+                transformed, aliases = self._apply_table_plan(t, schema_field_names, warnings), None
 
-            m: ColumnMapping = map_columns(transformed.columns, schema_field_names)
+            m: ColumnMapping = map_columns(transformed.columns, schema_field_names, aliases=aliases)
             renamed = apply_mapping(transformed.rows, m)
-            kind = "manifest" if getattr(t, "source", None) == "ena" else "table"
+            per_sample, why = per_sample_identifier_check(renamed)
+            if not per_sample:
+                warnings.append(f"Table {transformed.name!r}: not used as a sample table: {why}.")
+                selections[-1].selected = False
+                selections[-1].reasons.append(why)
+                continue
+            kind = "manifest" if is_manifest else "table"
             table_columns[transformed.name] = (
                 kind,
                 {**{c: c for c in transformed.columns if c in schema_field_names},
@@ -522,6 +525,31 @@ class MetaExtractor:
                 f"Did not join table {s['right']!r} into {jplan.primary!r}: {s['reason']}."
             )
         return merged, warnings, selections
+
+    def _apply_table_plan(self, t, schema_field_names: list[str], warnings: list[str]):
+        """Ask the model for a structural plan and execute it; on failure, the
+        default row-0-header parse (``t`` itself)."""
+        try:
+            plan, usage = propose_plan(self.client, self.model, t, schema_field_names,
+                                       calls=self.last_calls)
+            _accumulate_usage(self.last_usage, usage)
+            transformed = execute_plan(t, plan)
+            _reconcile_dropped_schema_columns(t, plan, transformed, schema_field_names, warnings)
+            warnings.append(
+                f"Table {t.name!r}: plan applied "
+                f"(header_rows={plan.header_rows}, "
+                f"melt={'yes' if plan.melt else 'no'}, "
+                f"out_rows={len(transformed.rows)})."
+            )
+            return transformed
+        except (PlanProposalError, PlanExecutionError) as e:
+            if isinstance(e, PlanProposalError) and e.usage:
+                _accumulate_usage(self.last_usage, e.usage)
+            warnings.append(
+                f"Table {t.name!r}: plan path failed ({type(e).__name__}: {e}); "
+                f"falling back to row-0-header parse."
+            )
+            return t
 
 
 def _reconcile_dropped_schema_columns(
