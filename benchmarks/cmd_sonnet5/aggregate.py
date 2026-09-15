@@ -96,7 +96,25 @@ def ledger_summary(tree: Path) -> dict | None:
         by_task[(r["model_key"], r["repeat"], r["study"])].append(r)
     final_ok = sum(1 for att in by_task.values() if att[-1]["status"] == "ok")
     first_fail = [k for k, att in by_task.items() if att[0]["status"] != "ok"]
+    # Cost over every attempt, failed ones included (ledgers from run_frozen.py with
+    # per-attempt metadata; older ledgers have no ``attempt_meta``).
+    cost: dict = {}
+    for r in rows:
+        if "attempt_meta" not in r:
+            continue
+        c = cost.setdefault(r["model_key"], {"attempts": 0, "attempts_without_meta": 0,
+                                             "calls": 0, "usd": 0.0, "usd_failed_attempts": 0.0})
+        c["attempts"] += 1
+        am = r["attempt_meta"]
+        if am is None or am.get("cost_usd") is None:
+            c["attempts_without_meta"] += 1
+            continue
+        c["calls"] += (am.get("usage") or {}).get("n_calls", 0)
+        c["usd"] += am["cost_usd"]
+        if r["status"] != "ok":
+            c["usd_failed_attempts"] += am["cost_usd"]
     return {
+        "cost_all_attempts": cost or None,
         "tasks": len(by_task), "attempts": len(rows),
         "failed_attempts": sum(1 for r in rows if r["status"] != "ok"),
         "initial_failures": len(first_fail),
@@ -283,6 +301,10 @@ def render(agg: dict) -> str:
               f"dirty tree: {led['dirty_any']}"]
         for d in led["initial_failures_detail"]:
             L.append(f"  - {d['task']}: {d['status']}")
+        for mk, c in (led.get("cost_all_attempts") or {}).items():
+            L.append(f"- {mk}: estimated cost over all {c['attempts']} attempts US${c['usd']:.2f} "
+                     f"({c['calls']} calls), of which failed attempts US${c['usd_failed_attempts']:.2f}; "
+                     f"attempts without metadata {c['attempts_without_meta']}")
     return "\n".join(L) + "\n"
 
 

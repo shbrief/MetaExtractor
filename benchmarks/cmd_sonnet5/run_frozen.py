@@ -114,6 +114,7 @@ def _task(tree: Path, mkey: str, k: int, m: dict, args, static: dict) -> str:
             stderr = (e.stderr.decode() if isinstance(e.stderr, bytes) else (e.stderr or ""))
             status = f"timeout_{args.cap}s"
         elapsed = round(time.time() - t0, 1)
+        attempt_meta = _archive_attempt_meta(p["meta"], attempt)
         log.write_text(f"cmd: {' '.join(c if not c.startswith('sk-') else '<key>' for c in cmd)}\n"
                        f"status: {status}\nreturncode: {rc}\nelapsed_s: {elapsed}\n"
                        f"--- stderr ---\n{stderr}\n", encoding="utf-8")
@@ -123,12 +124,30 @@ def _task(tree: Path, mkey: str, k: int, m: dict, args, static: dict) -> str:
             "start_utc": start, "end_utc": _utc(), "elapsed_s": elapsed,
             "log": str(log.relative_to(tree)), "stderr_tail": stderr[-2000:],
             "outputs_sha256": {k2: sha256(f) for k2, f in p.items()},
+            "attempt_meta": attempt_meta,
             "frozen_retrieval": _fetch_checksums(fetch_dir),
             **static,
         })
         if status == "ok":
             break
     return f"{mkey}_r{k}/{m['study']}: {status} (attempt {attempt})"
+
+
+def _archive_attempt_meta(meta: Path, attempt: int) -> dict | None:
+    """Copy this attempt's ``<study>.meta.json`` to ``<study>.attempt<n>.meta.json``.
+
+    The next attempt deletes ``<study>.meta.json`` before it starts, so without this copy
+    the usage and cost of a failed attempt followed by a retry would be lost. Returns the
+    copy's path, checksum, status, usage, and cost for the ledger (``None`` when the attempt
+    wrote no metadata, e.g. it was killed at the wall-clock cap).
+    """
+    if not meta.exists():
+        return None
+    dst = meta.with_name(meta.name.replace(".meta.json", f".attempt{attempt}.meta.json"))
+    dst.write_bytes(meta.read_bytes())
+    d = json.loads(dst.read_text())
+    return {"path": dst.name, "sha256": sha256(dst), "status": d.get("status"),
+            "usage": d.get("usage"), "cost_usd": (d.get("cost_estimate") or {}).get("total_usd")}
 
 
 def _fetch_checksums(fetch_dir: Path) -> dict | None:
@@ -278,6 +297,10 @@ def cmd_verify(args) -> None:
             f = _paths(tree, *key)[kind]
             if digest is None or sha256(f) != digest:
                 problems.append(f"{key}: {kind} checksum mismatch or missing")
+    for r in rows:
+        am = r.get("attempt_meta")
+        if am and sha256(tree / f"{r['model_key']}_r{r['repeat']}" / am["path"]) != am["sha256"]:
+            problems.append(f"{r['model_key']}_r{r['repeat']}/{am['path']}: checksum mismatch or missing")
     for fr in sorted((tree / FETCH_DIR).glob("*/fetched.json")):
         try:
             load_fetched(fr.parent)
