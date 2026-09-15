@@ -16,6 +16,8 @@ Mapping:
   slot.unit / slot.ucum_unit -> field.unit
   slot.annotations.scope     -> field.scope ("study" | "sample"), used only for
                                 deterministic fan-out; other values are ignored
+  slot.annotations.propagate_study_value -> field.propagate_study_value (true/false),
+                                used only for deterministic fan-out
 """
 from __future__ import annotations
 
@@ -125,15 +127,19 @@ def _slot_to_field(name: str, slot: dict[str, Any], enums: dict[str, Any]) -> Fi
         unit=slot.get("unit") or slot.get("ucum_unit"),
         required=bool(slot.get("required", False)),
         scope=_scope_annotation(slot),
+        propagate_study_value=_annotation(slot, "propagate_study_value") in (True, "true", "True"),
     )
 
 
-def _scope_annotation(slot: dict[str, Any]) -> str | None:
-    """Read ``annotations: {scope: sample}`` or ``{scope: {tag: scope, value: sample}}``."""
+def _annotation(slot: dict[str, Any], tag: str) -> Any:
+    """Read ``annotations: {tag: value}`` or ``{tag: {tag: tag, value: value}}``."""
     ann = slot.get("annotations") or {}
-    raw = ann.get("scope") if isinstance(ann, dict) else None
-    if isinstance(raw, dict):
-        raw = raw.get("value")
+    raw = ann.get(tag) if isinstance(ann, dict) else None
+    return raw.get("value") if isinstance(raw, dict) else raw
+
+
+def _scope_annotation(slot: dict[str, Any]) -> str | None:
+    raw = _annotation(slot, "scope")
     return raw if raw in ("study", "sample") else None
 
 

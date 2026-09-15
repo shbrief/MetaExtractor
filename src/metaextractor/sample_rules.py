@@ -128,9 +128,14 @@ def fan_out_fields_to_samples(result: ExtractionResult, schema: Schema | None = 
     2. **Study value**, depending on the field's schema ``scope``:
 
        * ``"study"`` — written as-is (the value describes every sample).
-       * ``"sample"`` — written only when it is a single, non-aggregate value,
-         the result declares no subgroups, and the field has no per-subgroup
-         values (i.e. the model described a homogeneous cohort).
+       * ``"sample"`` — not written, unless the field is annotated
+         ``propagate_study_value`` *and* the value is a single, non-aggregate
+         value *and* the result declares no subgroups and the field has no
+         per-subgroup values. A sample-scoped field is otherwise filled only from
+         sample-level evidence (a table or manifest cell, a per-sample model
+         value, or a unique subgroup match): a cohort reported without
+         subgroups is not evidence that every sample shares a disease,
+         treatment, or age.
        * unset — written only when it is a single, non-aggregate value.
 
     A cohort list such as ``"Healthy; Hypertension; Pre-hypertension"`` or an
@@ -144,6 +149,8 @@ def fan_out_fields_to_samples(result: ExtractionResult, schema: Schema | None = 
         return counts
     ensure_provenance(result)
     scope = {f.name: f.scope for f in schema.fields} if schema is not None else {}
+    propagatable = ({f.name for f in schema.fields if f.propagate_study_value}
+                    if schema is not None else set())
     subgroup_norm = {_normalize_subgroup(s): s for s in (result.subgroups or [])}
 
     def sample_subgroup(sample: dict) -> str | None:
@@ -178,6 +185,9 @@ def fan_out_fields_to_samples(result: ExtractionResult, schema: Schema | None = 
                     continue
                 if is_aggregate(v):
                     counts["blocked_aggregate"] += 1
+                    continue
+                if fscope == "sample" and fname not in propagatable:
+                    counts["blocked_sample_scope_no_propagation"] += 1
                     continue
                 if fscope == "sample" and (result.subgroups or fr.by_subgroup):
                     counts["blocked_sample_scope"] += 1

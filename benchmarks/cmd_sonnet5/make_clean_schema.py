@@ -11,8 +11,10 @@ Two deterministic edits:
 2. Annotate each slot's ``scope`` (``study`` or ``sample``) per ``SCOPE`` below.
    Scope drives deterministic fan-out only (it is not sent to the model): a
    ``sample``-scoped study-level value is propagated to samples only when it is a
-   single, non-aggregate value for a homogeneous cohort. Slots not listed stay
-   unannotated (single non-aggregate values propagate).
+   single, non-aggregate value for a homogeneous cohort, and only for slots in
+   ``PROPAGATE_STUDY_VALUE`` (annotated ``propagate_study_value: true``); other
+   sample-scoped slots are filled only from sample-level evidence. Slots not listed
+   in ``SCOPE`` stay unannotated (single non-aggregate values propagate).
 
   python make_clean_schema.py --src /path/to/cmd.linkml.yaml [OUT]
 
@@ -47,6 +49,9 @@ SAMPLE = {
     "tumor_size_residual_measurement",
 }
 SCOPE = {**{s: "study" for s in STUDY}, **{s: "sample" for s in SAMPLE}}
+# Sample-scoped slots whose single study-level value may be written to every record of a
+# cohort reported without subgroups: the specimen type, usually stated once for all samples.
+PROPAGATE_STUDY_VALUE = {"body_site"}
 
 
 def main() -> None:
@@ -69,6 +74,8 @@ def main() -> None:
             slots[sn] = slots[sn] or {}
             slots[sn].setdefault("annotations", {})["scope"] = scope
             annotated += 1
+    for sn in sorted(PROPAGATE_STUDY_VALUE & set(slots)):
+        slots[sn]["annotations"]["propagate_study_value"] = True
     Path(args.out).write_text(yaml.safe_dump(data, sort_keys=False))
     print(f"downgraded {len(changed)} slots (dynamic enums -> string): {changed}")
     print(f"annotated scope on {annotated} slots "

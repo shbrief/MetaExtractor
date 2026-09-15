@@ -166,6 +166,7 @@ slots:
     required: true
     annotations:
       scope: sample
+      propagate_study_value: true
   body_site_details:
     description: 'More specific anatomical subsite for sample collection than body_site.
       Lookup seed ontology IDs: UBERON:0001062. Type: looked_up. Looked up: Yes. Includes

@@ -21,6 +21,11 @@ class Field(BaseModel):
     target_unit: str | None = None
     required: bool = False
     scope: FieldScope | None = None
+    #: For a ``sample``-scoped field: a single study-level value may be written to every
+    #: record of a cohort reported without subgroups (e.g. a specimen type stated once
+    #: for all samples). Without it, a sample-scoped field is filled only from
+    #: sample-level evidence. Governs fan-out only; not sent to the model.
+    propagate_study_value: bool = False
 
     @field_validator("allowed_values")
     @classmethod
@@ -42,5 +47,7 @@ class Schema(BaseModel):
         raise ValueError("Schema dict must contain 'fields' key or be a list of fields")
 
     def to_prompt_json(self) -> dict[str, Any]:
-        # ``scope`` drives deterministic post-processing only; it is not sent to the model.
-        return {"fields": [f.model_dump(exclude_none=True, exclude={"scope"}) for f in self.fields]}
+        # ``scope`` and ``propagate_study_value`` drive deterministic post-processing only;
+        # they are not sent to the model.
+        return {"fields": [f.model_dump(exclude_none=True, exclude={"scope", "propagate_study_value"})
+                           for f in self.fields]}

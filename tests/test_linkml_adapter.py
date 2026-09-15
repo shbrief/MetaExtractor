@@ -77,3 +77,17 @@ def test_scope_annotation_is_read_but_not_sent_to_model():
     s = linkml_to_schema(data)
     assert [f.scope for f in s.fields] == ["study", "sample", None]
     assert all("scope" not in f for f in s.to_prompt_json()["fields"])
+
+
+def test_propagate_study_value_annotation_is_read_but_not_sent_to_model():
+    data = {
+        "classes": {"R": {"slots": ["a", "b", "c"]}},
+        "slots": {"a": {"annotations": {"scope": "sample", "propagate_study_value": True}},
+                  "b": {"annotations": {"scope": "sample",
+                                        "propagate_study_value": {"tag": "propagate_study_value",
+                                                                  "value": "true"}}},
+                  "c": {"annotations": {"scope": "sample"}}},
+    }
+    s = linkml_to_schema(data)
+    assert [f.propagate_study_value for f in s.fields] == [True, True, False]
+    assert all("propagate_study_value" not in f for f in s.to_prompt_json()["fields"])
