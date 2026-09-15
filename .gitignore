@@ -32,3 +32,6 @@ benchmarks/cmd_sonnet5/out_v*/**/*.text.txt
 # (provenance + checksums) is committed.
 benchmarks/cmd_sonnet5/out_v*/_fetch/**/text.txt
 benchmarks/cmd_sonnet5/out_v*/_fetch/**/tables.json
+
+# Local reviewer notes (not part of the repository)
+MANUSCRIPT_REVIEW.md
