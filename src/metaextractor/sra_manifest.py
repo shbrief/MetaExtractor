@@ -18,6 +18,11 @@ Flow:
      ambiguous we return nothing rather than guess — a missing manifest is safe,
      a wrong one is not.
   3. :func:`fetch_run_manifest` — ENA ``filereport`` ``read_run`` TSV → Table.
+  4. :func:`add_biosample_attributes` — the submitter's BioSample attributes of each
+     run's sample (EBI BioSamples, which holds SAMN, SAMEA, and SAMD records), added
+     as manifest columns. ENA's ``read_run`` fields cover only a few of them (host,
+     sex, body site, country); per-sample attributes such as ``treatment`` or
+     ``day`` are otherwise lost.
 
 The resulting ``Table`` (``source="ena"``) flows into the deterministic tables
 path exactly like a supplementary table, so ``run_accession`` → ``ncbi_accession``
@@ -26,6 +31,8 @@ column aliases (see :mod:`metaextractor.column_mapper`).
 """
 from __future__ import annotations
 
+import concurrent.futures as cf
+import json
 import re
 from dataclasses import dataclass, field
 from typing import Callable
@@ -77,6 +84,18 @@ _CONTEXT_TERMS = (
     "have been made", "can be found", "are available", "was deposited",
 )
 _CONTEXT_WINDOW = 250  # chars either side of the accession to inspect
+
+# EBI BioSamples: every INSDC BioSample (SAMN from NCBI, SAMEA from ENA, SAMD from
+# DDBJ) by accession. NCBI's efetch is not used: given a SAMEA/SAMD accession it
+# can return a different record (it reads the digits as an NCBI UID).
+EBI_BIOSAMPLE = "https://www.ebi.ac.uk/biosamples/samples/{acc}.json"
+#: Characteristics that are archive bookkeeping rather than sample metadata.
+_BIOSAMPLE_ADMIN = re.compile(
+    r"^(insdc\b|ena-|ncbi submission|external id$|sra accession$|submitter id$)", re.I)
+#: INSDC missing-value terms, optionally with a reason ("missing: control sample").
+_INSDC_MISSING = re.compile(
+    r"^(missing|not applicable|not collected|not provided|restricted access)(\s*:.*)?$", re.I)
+_MAX_BIOSAMPLES = 5000
 
 HttpGet = Callable[[str], bytes]
 
@@ -261,15 +280,104 @@ def fetch_run_manifest(
     return None
 
 
+def _attribute_column(key: str) -> str:
+    """BioSample characteristic name → snake_case column ("patient id" → "patient_id")."""
+    return re.sub(r"[^a-z0-9]+", "_", key.strip().lower()).strip("_")
+
+
+def fetch_biosample_attributes(
+    accessions: list[str],
+    http_get: HttpGet | None = None,
+    workers: int = 4,
+) -> tuple[dict[str, dict[str, str]], list[str]]:
+    """Submitter attributes of each BioSample: ``{accession: {column: value}}``.
+
+    Bookkeeping characteristics are dropped, INSDC missing-value terms become empty,
+    and several values of one characteristic are joined with ``"; "``. A record whose
+    accession differs from the one requested is discarded. Failures are warnings.
+    """
+    http_get = http_get or _default_http_get
+    warnings: list[str] = []
+
+    def one(acc: str) -> tuple[str, dict[str, str] | None, str | None]:
+        try:
+            d = json.loads(http_get(EBI_BIOSAMPLE.format(acc=acc)).decode("utf-8", "replace"))
+        except Exception as e:  # network, 404, non-JSON
+            return acc, None, f"{type(e).__name__}"
+        if not isinstance(d, dict) or d.get("accession") != acc:
+            return acc, None, "accession mismatch"
+        attrs: dict[str, str] = {}
+        for key, items in (d.get("characteristics") or {}).items():
+            if _BIOSAMPLE_ADMIN.search(key):
+                continue
+            texts = [str(i.get("text", "")).strip() for i in items or [] if isinstance(i, dict)]
+            texts = [t for t in texts if t and not _INSDC_MISSING.match(t)]
+            attrs[_attribute_column(key)] = "; ".join(texts)
+        return acc, attrs, None
+
+    out: dict[str, dict[str, str]] = {}
+    failed: dict[str, int] = {}
+    with cf.ThreadPoolExecutor(max_workers=workers) as ex:
+        for acc, attrs, err in ex.map(one, accessions):
+            if attrs is None:
+                failed[err] = failed.get(err, 0) + 1
+            else:
+                out[acc] = attrs
+    for err, n in sorted(failed.items()):
+        warnings.append(f"BioSample attributes not retrieved for {n} sample(s): {err}.")
+    return out, warnings
+
+
+def add_biosample_attributes(
+    table: Table, http_get: HttpGet | None = None
+) -> tuple[Table, list[str]]:
+    """Add each run's BioSample attributes to a manifest as columns.
+
+    Manifest columns that are empty in every row are dropped first (e.g. an empty
+    ``host_sex`` would otherwise shadow a filled ``sex`` attribute in column mapping).
+    An attribute whose column name already exists in the manifest is not added (the
+    manifest field is ENA's projection of the same BioSample). Returns the new table
+    and warnings; the table is unchanged when no sample accession is present.
+    """
+    warnings: list[str] = []
+    samples = list(dict.fromkeys(r.get("sample_accession", "").strip() for r in table.rows))
+    samples = [s for s in samples if s]
+    if not samples:
+        return table, warnings
+    if len(samples) > _MAX_BIOSAMPLES:
+        warnings.append(f"BioSample attributes not fetched: {len(samples)} samples "
+                        f"exceed the limit of {_MAX_BIOSAMPLES}.")
+        return table, warnings
+    attrs, fetch_warnings = fetch_biosample_attributes(samples, http_get)
+    warnings.extend(fetch_warnings)
+    if not attrs:
+        return table, warnings
+
+    kept = [c for c in table.columns if any(str(r.get(c, "")).strip() for r in table.rows)]
+    existing = set(table.columns)
+    added = list(dict.fromkeys(k for s in samples for k in attrs.get(s, {}) if k not in existing))
+    columns = kept + added
+    rows = [{**{c: r.get(c, "") for c in kept},
+             **{c: attrs.get(r.get("sample_accession", "").strip(), {}).get(c, "") for c in added}}
+            for r in table.rows]
+    warnings.append(
+        f"BioSample attributes for {len(attrs)}/{len(samples)} samples added as columns "
+        f"{added}; empty manifest columns dropped: {[c for c in table.columns if c not in kept]}.")
+    return Table(name=table.name, source=table.source, columns=columns, rows=rows,
+                 raw_rows=[list(columns)] + [[r[c] for c in columns] for r in rows]), warnings
+
+
 def manifest_for_paper(
     text: str,
     explicit_project: str | None = None,
     http_get: HttpGet | None = None,
+    biosample_attributes: bool = True,
 ) -> ManifestResult:
     """Resolve a paper's own SRA/ENA project and fetch its run manifest.
 
     ``explicit_project`` (e.g. from a ``--sra-project`` CLI override) bypasses
-    resolution and is treated as authoritative.
+    resolution and is treated as authoritative. With ``biosample_attributes`` the
+    runs' BioSample attributes are added as columns (:func:`add_biosample_attributes`).
     """
     http_get = http_get or _default_http_get
     result = ManifestResult()
@@ -296,9 +404,14 @@ def manifest_for_paper(
         return result
 
     merged = _concat_tables(tables)
-    result.table = merged
     result.n_runs = len(merged.rows)
     result.source = f"ena:{'+'.join(result.projects)} ({result.n_runs} runs)"
+    if biosample_attributes:
+        merged, warns = add_biosample_attributes(merged, http_get)
+        result.warnings.extend(warns)
+        if any(w.startswith("BioSample attributes for") for w in warns):
+            result.source += " + BioSample attributes"
+    result.table = merged
     return result
 
 

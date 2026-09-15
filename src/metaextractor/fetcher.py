@@ -545,6 +545,7 @@ def fetch_paper(
     include_supplementary: bool = True,
     include_sra_manifest: bool = True,
     sra_project: str | None = None,
+    include_biosample_attributes: bool = True,
 ) -> FetchedPaper:
     """Fetch full text (PMC) or abstract (PubMed) for a PMID/PMCID.
 
@@ -673,7 +674,8 @@ def fetch_paper(
 
         # Resolve from the full paper text (body + any appended supplementary
         # prose), where the data-availability accession usually lives.
-        mres = manifest_for_paper(paper.text, explicit_project=sra_project)
+        mres = manifest_for_paper(paper.text, explicit_project=sra_project,
+                                  biosample_attributes=include_biosample_attributes)
         paper.sra_manifest_warnings = list(mres.warnings)
         if mres.table is not None:
             paper.supplementary_tables.append(mres.table)

@@ -112,6 +112,10 @@ ENA_MANIFEST_ALIASES: dict[str, str] = {
     "host_body_site": "body_site",
     "host_sex": "sex",
     "host": "host_species",
+    # INSDC / MIxS BioSample attribute names (added by sra_manifest.add_biosample_attributes).
+    "geo_loc_name": "country",
+    "geographic_location_country_and_or_sea": "country",
+    "host_subject_id": "subject_id",
 }
 
 

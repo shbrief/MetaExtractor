@@ -79,6 +79,9 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--no-sra-manifest", dest="include_sra_manifest",
                         action="store_false", default=True,
                         help="Skip the auto SRA/ENA per-sample run-manifest fetch (resolves the study's own project from its data-availability accessions and pulls the ENA read_run manifest). Only applies on the --paper-id fetch path.")
+    parser.add_argument("--no-biosample-attributes", dest="include_biosample_attributes",
+                        action="store_false", default=True,
+                        help="Do not add the runs' BioSample attributes (EBI BioSamples) to the SRA/ENA run manifest as columns.")
     parser.add_argument("--sra-project", default=None, metavar="PRJXXXXXX",
                         help="Explicit SRA/ENA project accession (e.g. PRJEB7369) to fetch the run manifest from, bypassing text resolution. Authoritative when you know the study's project.")
     parser.add_argument("--out", type=Path, default=None, help="Write JSON result to file (default stdout).")
@@ -146,6 +149,7 @@ def main(argv: list[str] | None = None) -> int:
                     include_supplementary=args.include_supplementary,
                     include_sra_manifest=args.include_sra_manifest,
                     sra_project=args.sra_project,
+                    include_biosample_attributes=args.include_biosample_attributes,
                 )
                 if args.fetch_cache is not None:
                     save_fetched(fetched, args.fetch_cache)
