@@ -258,6 +258,8 @@ slots:
     description: 'Unit used to report `age`. Static ontology IDs: NCIT:C25301; NCIT:C29844;
       NCIT:C29846; NCIT:C29848. Type: static.'
     range: age_unit_enum
+    annotations:
+      unit_of: age
   ancestry:
     description: 'Broad ancestry category (children of HANCESTRO:0004). Lookup seed
       ontology IDs: HANCESTRO:0004. Type: looked_up. Looked up: Yes. Includes child

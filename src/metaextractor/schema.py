@@ -26,6 +26,10 @@ class Field(BaseModel):
     #: for all samples). Without it, a sample-scoped field is filled only from
     #: sample-level evidence. Governs fan-out only; not sent to the model.
     propagate_study_value: bool = False
+    #: Name of the field this field is the unit of (e.g. ``age_unit`` → ``age``). A
+    #: study- or subgroup-level unit is written only to records that carry that value.
+    #: Governs fan-out only; not sent to the model.
+    unit_of: str | None = None
 
     @field_validator("allowed_values")
     @classmethod
@@ -47,7 +51,7 @@ class Schema(BaseModel):
         raise ValueError("Schema dict must contain 'fields' key or be a list of fields")
 
     def to_prompt_json(self) -> dict[str, Any]:
-        # ``scope`` and ``propagate_study_value`` drive deterministic post-processing only;
+        # ``scope``, ``propagate_study_value``, and ``unit_of`` drive deterministic post-processing only;
         # they are not sent to the model.
-        return {"fields": [f.model_dump(exclude_none=True, exclude={"scope", "propagate_study_value"})
+        return {"fields": [f.model_dump(exclude_none=True, exclude={"scope", "propagate_study_value", "unit_of"})
                            for f in self.fields]}

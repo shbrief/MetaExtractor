@@ -52,6 +52,8 @@ SCOPE = {**{s: "study" for s in STUDY}, **{s: "sample" for s in SAMPLE}}
 # Sample-scoped slots whose single study-level value may be written to every record of a
 # cohort reported without subgroups: the specimen type, usually stated once for all samples.
 PROPAGATE_STUDY_VALUE = {"body_site"}
+# Unit slot -> the slot it is the unit of: a study-level unit reaches only records with that value.
+UNIT_OF = {"age_unit": "age"}
 
 
 def main() -> None:
@@ -76,6 +78,9 @@ def main() -> None:
             annotated += 1
     for sn in sorted(PROPAGATE_STUDY_VALUE & set(slots)):
         slots[sn]["annotations"]["propagate_study_value"] = True
+    for sn, value_slot in sorted(UNIT_OF.items()):
+        slots[sn] = slots[sn] or {}
+        slots[sn].setdefault("annotations", {})["unit_of"] = value_slot
     Path(args.out).write_text(yaml.safe_dump(data, sort_keys=False))
     print(f"downgraded {len(changed)} slots (dynamic enums -> string): {changed}")
     print(f"annotated scope on {annotated} slots "

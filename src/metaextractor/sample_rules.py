@@ -138,6 +138,10 @@ def fan_out_fields_to_samples(result: ExtractionResult, schema: Schema | None = 
          treatment, or age.
        * unset — written only when it is a single, non-aggregate value.
 
+    A field annotated ``unit_of`` (e.g. ``age_unit`` for ``age``) receives a subgroup- or
+    study-level value only on samples that carry the value it is the unit of, after
+    the other fields have been propagated.
+
     A cohort list such as ``"Healthy; Hypertension; Pre-hypertension"`` or an
     aggregate such as ``"45 ± 12"`` is therefore never copied onto individual
     samples as if it were their own value.
@@ -151,6 +155,10 @@ def fan_out_fields_to_samples(result: ExtractionResult, schema: Schema | None = 
     scope = {f.name: f.scope for f in schema.fields} if schema is not None else {}
     propagatable = ({f.name for f in schema.fields if f.propagate_study_value}
                     if schema is not None else set())
+    unit_of = ({f.name: f.unit_of for f in schema.fields if f.unit_of}
+               if schema is not None else {})
+    # Units after every other field, so a unit sees the record's (propagated) value.
+    ordered = sorted(result.fields.items(), key=lambda kv: kv[0] in unit_of)
     subgroup_norm = {_normalize_subgroup(s): s for s in (result.subgroups or [])}
 
     def sample_subgroup(sample: dict) -> str | None:
@@ -163,8 +171,12 @@ def fan_out_fields_to_samples(result: ExtractionResult, schema: Schema | None = 
 
     for sample, prov in zip(result.samples, result.sample_provenance):
         sg = sample_subgroup(sample)
-        for fname, fr in result.fields.items():
+        for fname, fr in ordered:
             if not is_nr(sample.get(fname)):
+                continue
+            if fname in unit_of and is_nr(sample.get(unit_of[fname])):
+                if not is_nr(fr.value) or fr.by_subgroup:
+                    counts["blocked_unit_without_value"] += 1
                 continue
             fscope = scope.get(fname)
             if sg and fr.by_subgroup and sg in fr.by_subgroup and not is_nr(fr.by_subgroup[sg]):

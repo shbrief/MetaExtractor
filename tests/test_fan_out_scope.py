@@ -68,6 +68,17 @@ def test_sample_scoped_study_value_without_annotation_is_not_propagated():
     assert counts["blocked_sample_scope_no_propagation"] == 6 and counts["study_fanout"] == 0
 
 
+def test_unit_is_propagated_only_onto_records_with_its_value():
+    r = _result({"age_unit": _fr("Year")},
+                [{"sample_id": "s1", "age": "34"}, {"sample_id": "s2"}])
+    schema = Schema(fields=[Field(name="age", description="age", type="number", scope="sample"),
+                            Field(name="age_unit", description="unit", type="string",
+                                  unit_of="age")])
+    counts = fan_out_fields_to_samples(r, schema)
+    assert r.samples[0]["age_unit"] == "Year" and "age_unit" not in r.samples[1]
+    assert counts["blocked_unit_without_value"] == 1
+
+
 def test_unique_subgroup_match_propagates_subgroup_value():
     r = _result({"disease": _fr("RA; Healthy", by_subgroup={"cases": "RA", "controls": "Healthy"})},
                 [{"sample_id": "s1", "group": "Controls"}, {"sample_id": "s2", "group": "case"}],

@@ -18,6 +18,8 @@ Mapping:
                                 deterministic fan-out; other values are ignored
   slot.annotations.propagate_study_value -> field.propagate_study_value (true/false),
                                 used only for deterministic fan-out
+  slot.annotations.unit_of   -> field.unit_of (name of the value field), used only for
+                                deterministic fan-out
 """
 from __future__ import annotations
 
@@ -128,6 +130,7 @@ def _slot_to_field(name: str, slot: dict[str, Any], enums: dict[str, Any]) -> Fi
         required=bool(slot.get("required", False)),
         scope=_scope_annotation(slot),
         propagate_study_value=_annotation(slot, "propagate_study_value") in (True, "true", "True"),
+        unit_of=_str_or_none(_annotation(slot, "unit_of")),
     )
 
 
@@ -136,6 +139,10 @@ def _annotation(slot: dict[str, Any], tag: str) -> Any:
     ann = slot.get("annotations") or {}
     raw = ann.get(tag) if isinstance(ann, dict) else None
     return raw.get("value") if isinstance(raw, dict) else raw
+
+
+def _str_or_none(v: Any) -> str | None:
+    return v if isinstance(v, str) and v else None
 
 
 def _scope_annotation(slot: dict[str, Any]) -> str | None:

@@ -91,3 +91,12 @@ def test_propagate_study_value_annotation_is_read_but_not_sent_to_model():
     s = linkml_to_schema(data)
     assert [f.propagate_study_value for f in s.fields] == [True, True, False]
     assert all("propagate_study_value" not in f for f in s.to_prompt_json()["fields"])
+
+
+def test_unit_of_annotation_is_read_but_not_sent_to_model():
+    data = {"classes": {"R": {"slots": ["age", "age_unit"]}},
+            "slots": {"age": {"range": "float"},
+                      "age_unit": {"annotations": {"unit_of": "age"}}}}
+    s = linkml_to_schema(data)
+    assert [f.unit_of for f in s.fields] == [None, "age"]
+    assert all("unit_of" not in f for f in s.to_prompt_json()["fields"])
