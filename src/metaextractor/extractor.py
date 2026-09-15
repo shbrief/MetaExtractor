@@ -17,7 +17,7 @@ from metaextractor.column_mapper import (
     ColumnMapping,
     apply_mapping,
     join_tables,
-    map_columns,
+    map_columns_with_leaf_labels,
 )
 from metaextractor.output import ExtractionResult, TableSelection
 from metaextractor.prompts import SYSTEM_PROMPT, build_user_content
@@ -538,10 +538,12 @@ class MetaExtractor:
         return merged, warnings, selections
 
     def _map_columns(self, table, schema_field_names: list[str], is_manifest: bool) -> ColumnMapping:
-        """Header text → schema fields with the lexical cascade; a manifest's columns use
+        """Header text → schema fields with the lexical cascade (a column named by a stacked
+        header path is also tried by its unique bottom label); a manifest's columns use
         the fixed ENA map (ENA read_run fields and standard INSDC attribute names)."""
         aliases = ENA_MANIFEST_ALIASES if is_manifest else None
-        return map_columns(table.columns, schema_field_names, aliases=aliases)
+        return map_columns_with_leaf_labels(table.columns, getattr(table, "leaf_labels", {}),
+                                            schema_field_names, aliases=aliases)
 
     def _apply_table_plan(self, t, reason: str, warnings: list[str]):
         """Ask the model for a structure plan and execute it; on failure, the

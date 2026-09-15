@@ -362,7 +362,8 @@ def execute_plan(table: Table, plan: TablePlan) -> Table:
     """Apply a structural :class:`TablePlan` to a table's raw grid; return a new Table.
 
     Every raw column that is not a melt source is kept, named by its merged header
-    text; melted columns become the category column plus one value column per group.
+    text (its bottom header label is recorded in ``leaf_labels`` when that differs);
+    melted columns become the category column plus one value column per group.
     Cell values pass through verbatim — no casting, normalization, or invented data.
     """
     raw = table.raw_rows
@@ -399,6 +400,13 @@ def execute_plan(table: Table, plan: TablePlan) -> Table:
                    if plan.melt and plan.melt.groups else [])
     names = _unique_names([header[ci] for ci in kept] + melt_labels)
     kept_names, melt_names = names[: len(kept)], names[len(kept):]
+    # Bottom header label of each column named by a stacked header path.
+    leaf_row = list(raw[plan.header_rows[-1]]) if plan.header_rows else []
+    leaf_labels = {}
+    for name, ci in zip(kept_names, kept):
+        leaf = leaf_row[ci].strip() if ci < len(leaf_row) else ""
+        if leaf and leaf != name:
+            leaf_labels[name] = leaf
 
     drop_row_set = set(plan.drop_rows)
     data = [raw[ri] for ri in range(plan.data_starts_at, n_rows) if ri not in drop_row_set]
@@ -426,6 +434,7 @@ def execute_plan(table: Table, plan: TablePlan) -> Table:
         columns=kept_names + melt_names,
         rows=out_rows,
         raw_rows=table.raw_rows,
+        leaf_labels=leaf_labels,
     )
 
 

@@ -704,7 +704,10 @@ def save_fetched(paper: FetchedPaper, directory) -> dict:
     d = Path(directory)
     d.mkdir(parents=True, exist_ok=True)
     text_bytes = paper.text.encode("utf-8")
-    tables = [dataclasses.asdict(t) for t in paper.supplementary_tables]
+    # leaf_labels are set only by plan execution; omitted when empty so the frozen format
+    # of parsed tables is unchanged.
+    tables = [{k: v for k, v in dataclasses.asdict(t).items() if k != "leaf_labels" or v}
+              for t in paper.supplementary_tables]
     tables_bytes = json.dumps(tables, ensure_ascii=False, default=str).encode("utf-8")
     (d / FETCH_TEXT).write_bytes(text_bytes)
     (d / FETCH_TABLES).write_bytes(tables_bytes)

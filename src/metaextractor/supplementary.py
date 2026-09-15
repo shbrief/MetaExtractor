@@ -63,6 +63,9 @@ class Table:
     columns: list[str]
     rows: list[dict[str, Any]]
     raw_rows: list[list[str]] = field(default_factory=list)
+    #: column -> its bottom header label, for columns named by a stacked header path
+    #: (``"Data production | Sample ID"`` -> ``"Sample ID"``); set by ``execute_plan``.
+    leaf_labels: dict[str, str] = field(default_factory=dict)
 
 
 @dataclass

@@ -21,6 +21,7 @@ replaced per-schema by the caller.
 from __future__ import annotations
 
 import re
+from collections import Counter
 from dataclasses import dataclass, field
 
 try:
@@ -209,6 +210,50 @@ def map_columns(
         taken_targets.add(target)
 
     return result
+
+
+def map_columns_with_leaf_labels(
+    headers: list[str],
+    leaf_labels: dict[str, str],
+    schema_field_names: list[str],
+    aliases: dict[str, str] | None = None,
+    fuzzy_threshold: int = DEFAULT_FUZZY_THRESHOLD,
+) -> ColumnMapping:
+    """:func:`map_columns` on the full header text, then on bottom header labels.
+
+    A column named by a stacked header path (``"Data production | Sample ID"``) that
+    does not map is tried again by its bottom label (``"Sample ID"``) from
+    ``leaf_labels`` — only when that label is unique among the table's column labels,
+    so ``"Mother | Age"`` and ``"Infant | Age"`` are never collapsed, and only onto
+    schema fields no full header already mapped to. Such mappings are recorded with
+    tier ``leaf:<tier>``; the column keeps its full header text as its name.
+    """
+    m = map_columns(headers, schema_field_names, aliases=aliases, fuzzy_threshold=fuzzy_threshold)
+    if not leaf_labels:
+        return m
+    label_counts = Counter(leaf_labels.get(h, h).strip().lower() for h in headers)
+    collided = {h for h, _ in m.collisions}
+    candidates = [h for h in m.unmapped
+                  if h in leaf_labels and h not in collided
+                  and label_counts[leaf_labels[h].strip().lower()] == 1]
+    if not candidates:
+        return m
+    taken = set(m.mapped.values())
+    by_leaf = {leaf_labels[h]: h for h in candidates}
+    lm = map_columns(list(by_leaf), [f for f in schema_field_names if f not in taken],
+                     aliases=aliases, fuzzy_threshold=fuzzy_threshold)
+    mapped = dict(m.mapped)
+    tier_used = dict(m.tier_used)
+    for leaf, target in lm.mapped.items():
+        header = by_leaf[leaf]
+        mapped[header] = target
+        tier_used[header] = f"leaf:{lm.tier_used[leaf]}"
+    return ColumnMapping(
+        mapped=mapped,
+        unmapped=[h for h in m.unmapped if h not in mapped],
+        tier_used=tier_used,
+        collisions=m.collisions + [(by_leaf[leaf], t) for leaf, t in lm.collisions],
+    )
 
 
 def _best_fuzzy(

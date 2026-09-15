@@ -1,0 +1,16 @@
+# Leaf-label fallback, offline replay of the smoke_haiku45 structure plans (no model calls).
+# Smoke run records (commit 2882a2c) -> replay with the fallback; out_v3 crosswalks.
+
+== PasolliE_2019: records 112 -> 112; matched rows 112 -> 112; content TPc/TPw/FN 896/224/1120 -> 896/224/1120
+   leaf mappings: Table 'mmc7.xlsx': column mapping 'kos | Westernized'->westernized [leaf:exact].
+   anchor/joins: ["Joined table 'mmc3.xlsx' into 'mmc1.xlsx::Tab3 - MadagascarDataset' on key 'study_name' (overlap 1.0, 112 rows matched).", "Did not join table 'mmc1.xlsx::Tab2 - PublicMetagenomes' into 'mmc1.xlsx::Tab3 - MadagascarDataset': key 'sample_id' overlap 0.00 < 0.9.", "Did not join table 'mmc1.xlsx::Tab1 - PublicDatasets' into 'mmc1.xlsx::Tab3 - MadagascarDataset': key 'study_name' overlap 0.00 < 0.9.", "Did not join table 'mmc2.xlsx::Tab1 - ComparisonWithIsolates' into 'mmc1.xlsx::Tab3 - MadagascarDataset': no shared canonical key."]
+
+== TettAJ_2019_b: records 50 -> 50; matched rows 0 -> 0; content TPc/TPw/FN 0/0/701 -> 0/0/701
+   anchor/joins: ["Did not join table 'mmc2.xlsx::Metagenomic_datasets_used' into 'mmc6.xlsx::CM_Ethiopia': no shared canonical key.", "Did not join table 'mmc4.xlsx::CAZy_table' into 'mmc6.xlsx::CM_Ethiopia': no shared canonical key.", "Did not join table 'mmc4.xlsx::CAZy_plant_carb_degradation' into 'mmc6.xlsx::CM_Ethiopia': no shared canonical key.", "Did not join table 'mmc6.xlsx::CM_Ghana' into 'mmc6.xlsx::CM_Ethiopia': key 'sample_id' overlap 0.00 < 0.9."]
+
+== LiJ_2017: records 6 -> 6; matched rows 0 -> 0; content TPc/TPw/FN 0/0/2744 -> 0/0/2744
+   leaf mappings: Table '40168_2016_222_MOESM2_ESM.xlsx::Table S2': column mapping 'Data production | Sample ID'->sample_id [leaf:normalized].
+   leaf mappings: Table '40168_2016_222_MOESM2_ESM.xlsx::Table S18': column mapping 'Data production | Sample ID'->sample_id [leaf:normalized].
+   anchor/joins: ["Did not join table '40168_2016_222_MOESM2_ESM.xlsx::Table S10' into '40168_2016_222_MOESM2_ESM.xlsx::Table S6': no shared canonical key.", "Did not join table '40168_2016_222_MOESM2_ESM.xlsx::Table S11' into '40168_2016_222_MOESM2_ESM.xlsx::Table S6': no shared canonical key.", "Did not join table '40168_2016_222_MOESM2_ESM.xlsx::Table S14' into '40168_2016_222_MOESM2_ESM.xlsx::Table S6': no shared canonical key.", "Did not join table '40168_2016_222_MOESM2_ESM.xlsx::Table S2' into '40168_2016_222_MOESM2_ESM.xlsx::Table S6': key 'sample_id' overlap 0.00 < 0.9."]
+   Table S2: relevance (scored on the raw table) 0.4176
+   Table S6: relevance (scored on the raw table) 0.4613
