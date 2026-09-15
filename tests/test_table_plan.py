@@ -2,7 +2,6 @@
 import pytest
 from metaextractor.supplementary import Table
 from metaextractor.table_plan import (
-    IdColumn,
     Melt,
     MeltGroup,
     PlanExecutionError,
@@ -10,6 +9,7 @@ from metaextractor.table_plan import (
     TablePlan,
     execute_plan,
     is_feature_matrix,
+    needs_structure_plan,
 )
 
 
@@ -81,26 +81,34 @@ class TestIsFeatureMatrix:
 # ---------------------------------------------------------------------------
 
 class TestExecutePlan:
-    def test_simple_flat_plan(self):
+    def test_flat_plan_keeps_every_column_under_its_header(self):
         raw = [
-            ["sample_id", "age", "sex"],
+            ["Sample ID", "Age (years)", "Gender"],
             ["s1", "30", "male"],
             ["s2", "25", "female"],
         ]
-        plan = TablePlan(
-            header_rows=[0],
-            data_starts_at=1,
-            id_columns=[
-                IdColumn(col=0, name="sample_id"),
-                IdColumn(col=1, name="age"),
-                IdColumn(col=2, name="sex"),
-            ],
-        )
+        result = execute_plan(_table("t", raw), TablePlan(header_rows=[0], data_starts_at=1))
+        assert result.columns == ["Sample ID", "Age (years)", "Gender"]
+        assert [r["Gender"] for r in result.rows] == ["male", "female"]
+
+    def test_title_row_and_stacked_header(self):
+        raw = [
+            ["Table S1A. Donors / Patients", "", ""],
+            ["Patient", "Metagenomics", ""],
+            ["ID", "Day 0", "Day 30"],
+            ["347", "Yes", "Yes"],
+        ]
+        plan = TablePlan(header_rows=[1, 2], data_starts_at=3)
         result = execute_plan(_table("t", raw), plan)
-        assert result.columns == ["sample_id", "age", "sex"]
-        assert len(result.rows) == 2
-        assert result.rows[0]["sample_id"] == "s1"
-        assert result.rows[1]["sex"] == "female"
+        # super-header forward-filled over its span; the leaf row is not filled
+        assert result.columns == ["Patient | ID", "Metagenomics | Day 0", "Metagenomics | Day 30"]
+        assert result.rows == [{"Patient | ID": "347", "Metagenomics | Day 0": "Yes",
+                                "Metagenomics | Day 30": "Yes"}]
+
+    def test_blank_and_duplicate_leaf_labels_get_unique_names(self):
+        raw = [["id", "", "id"], ["a", "b", "c"]]
+        result = execute_plan(_table("t", raw), TablePlan(header_rows=[0], data_starts_at=1))
+        assert result.columns == ["id", "col_1", "id_1"]
 
     def test_drop_rows(self):
         raw = [
@@ -109,16 +117,9 @@ class TestExecutePlan:
             ["NOTE: summary row", ""],  # row index 2
             ["s2", "25"],
         ]
-        plan = TablePlan(
-            header_rows=[0],
-            data_starts_at=1,
-            id_columns=[IdColumn(col=0, name="sample_id"), IdColumn(col=1, name="age")],
-            drop_rows=[2],
-        )
+        plan = TablePlan(header_rows=[0], data_starts_at=1, drop_rows=[2])
         result = execute_plan(_table("t", raw), plan)
-        assert len(result.rows) == 2
-        ids = [r["sample_id"] for r in result.rows]
-        assert "NOTE: summary row" not in ids
+        assert [r["sample_id"] for r in result.rows] == ["s1", "s2"]
 
     def test_melt_wide_to_long(self):
         # Wide: one row per pair with Mother/Infant body-site columns
@@ -130,21 +131,15 @@ class TestExecutePlan:
         plan = TablePlan(
             header_rows=[0],
             data_starts_at=1,
-            id_columns=[IdColumn(col=0, name="subject_id")],
-            melt=Melt(
-                category_column="sample_type",
-                groups=[
-                    MeltGroup(value_column="body_site", sources={"Mother": 1, "Infant": 2}),
-                ],
-            ),
+            melt=Melt(category_label="sample type",
+                      groups=[MeltGroup(value_label="body site",
+                                        sources={"Mother": 1, "Infant": 2})]),
         )
         result = execute_plan(_table("t", raw), plan)
-        # 2 pairs × 2 categories = 4 rows
+        assert result.columns == ["pair_id", "sample type", "body site"]
         assert len(result.rows) == 4
-        types = {r["sample_type"] for r in result.rows}
-        assert types == {"Mother", "Infant"}
-        sites = {r["body_site"] for r in result.rows}
-        assert sites == {"stool", "feces", "oral"}
+        assert {r["sample type"] for r in result.rows} == {"Mother", "Infant"}
+        assert {r["body site"] for r in result.rows} == {"stool", "feces", "oral"}
 
     def test_skip_empty_category_rows(self):
         raw = [
@@ -154,57 +149,68 @@ class TestExecutePlan:
         plan = TablePlan(
             header_rows=[0],
             data_starts_at=1,
-            id_columns=[IdColumn(col=0, name="subject_id")],
-            melt=Melt(
-                category_column="sample_type",
-                groups=[MeltGroup(value_column="value", sources={"Mother": 1, "Infant": 2})],
-                skip_missing_categories=True,
-            ),
+            melt=Melt(category_label="sample type",
+                      groups=[MeltGroup(value_label="val", sources={"Mother": 1, "Infant": 2})],
+                      skip_missing_categories=True),
         )
         result = execute_plan(_table("t", raw), plan)
-        # Infant row skipped because value is ""
         assert len(result.rows) == 1
-        assert result.rows[0]["sample_type"] == "Mother"
+        assert result.rows[0]["sample type"] == "Mother"
 
     def test_invalid_header_row_raises(self):
         raw = [["a", "b"], ["1", "2"]]
-        plan = TablePlan(
-            header_rows=[5],  # out of bounds
-            data_starts_at=1,
-            id_columns=[IdColumn(col=0, name="a")],
-        )
         with pytest.raises(PlanExecutionError):
-            execute_plan(_table("t", raw), plan)
+            execute_plan(_table("t", raw), TablePlan(header_rows=[5], data_starts_at=1))
 
-    def test_invalid_column_index_raises(self):
+    def test_invalid_melt_column_raises(self):
         raw = [["a", "b"], ["1", "2"]]
-        plan = TablePlan(
-            header_rows=[0],
-            data_starts_at=1,
-            id_columns=[IdColumn(col=99, name="a")],  # out of range
-        )
+        plan = TablePlan(header_rows=[0], data_starts_at=1,
+                         melt=Melt(category_label="c",
+                                   groups=[MeltGroup(value_label="v", sources={"x": 99})]))
         with pytest.raises(PlanExecutionError):
             execute_plan(_table("t", raw), plan)
 
     def test_short_row_padded(self):
-        # Data rows shorter than header are padded with ""
-        raw = [
-            ["a", "b", "c"],
-            ["1"],  # missing b and c
-        ]
-        plan = TablePlan(
-            header_rows=[0],
-            data_starts_at=1,
-            id_columns=[
-                IdColumn(col=0, name="a"),
-                IdColumn(col=1, name="b"),
-                IdColumn(col=2, name="c"),
-            ],
-        )
-        result = execute_plan(_table("t", raw), plan)
-        assert result.rows[0]["a"] == "1"
-        assert result.rows[0]["b"] == ""
-        assert result.rows[0]["c"] == ""
+        raw = [["a", "b", "c"], ["1"]]
+        result = execute_plan(_table("t", raw), TablePlan(header_rows=[0], data_starts_at=1))
+        assert result.rows[0] == {"a": "1", "b": "", "c": ""}
+
+    def test_plan_names_and_legacy_id_columns_are_ignored(self):
+        # A response in the old format (with id_columns naming schema fields) does not
+        # rename anything: the structural fields are used and extra keys are ignored.
+        plan = TablePlan.model_validate({"header_rows": [0], "data_starts_at": 1,
+                                         "id_columns": [{"col": 1, "name": "body_site"}]})
+        raw = [["run", "country"], ["R1", "Sweden"]]
+        assert execute_plan(_table("t", raw), plan).columns == ["run", "country"]
+
+
+# ---------------------------------------------------------------------------
+# needs_structure_plan
+# ---------------------------------------------------------------------------
+
+class TestNeedsStructurePlan:
+    @pytest.mark.parametrize("raw", [
+        [["sample_id", "age", "sex"], ["s1", "30", "male"], ["s2", "25", "female"],
+         ["s3", "41", "male"]],
+        [["Run", "Treatment", "Day"], ["SRR1", "MTX", "30"], ["SRR2", "naive", "0"]],
+    ])
+    def test_single_clean_header_needs_no_plan(self, raw):
+        assert needs_structure_plan(_table("t", raw)) == (False, "single header row")
+
+    @pytest.mark.parametrize("raw, reason", [
+        ([["Table S1A. Donors", "", ""], ["ID", "Age", "Sex"], ["1", "30", "M"]],
+         "row 0 has fewer than two labels"),
+        ([["Patient", "Metagenomics", ""], ["ID", "Day 0", "Day 30"], ["347", "Yes", "No"],
+          ["348", "No", "Yes"]], "blank cells inside the header span (stacked or merged header)"),
+        ([["id", "value", "value"], ["a", "1", "2"]], "duplicate header labels"),
+        ([["s1", "30", "2.5"], ["s2", "25", "1.0"]], "numeric header labels"),
+        ([["Group", "Weight", "Height"], ["", "kg", "cm"], ["A", "70", "180"], ["B", "65", "170"]],
+         "row 1 looks like a second header row"),
+        ([["pair", "age_mother", "age_infant", "bmi_mother", "bmi_infant"],
+          ["p1", "30", "1", "22", "15"]], "repeated column groups ('mother'/'infant')"),
+    ])
+    def test_layouts_that_need_a_plan(self, raw, reason):
+        assert needs_structure_plan(_table("t", raw)) == (True, reason)
 
 
 # ---------------------------------------------------------------------------
@@ -225,4 +231,4 @@ class TestProposePlanFallback:
         table = _table("t", raw)
 
         with pytest.raises(PlanProposalError):
-            propose_plan(client, "claude-sonnet-4-6", table, ["sample_id", "age"])
+            propose_plan(client, "claude-sonnet-4-6", table)

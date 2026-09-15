@@ -14,6 +14,7 @@ from pydantic import ValidationError
 
 from metaextractor.column_mapper import (
     ENA_MANIFEST_ALIASES,
+    INSDC_ATTRIBUTE_ALIASES,
     ColumnMapping,
     apply_mapping,
     join_tables,
@@ -29,11 +30,12 @@ from metaextractor.sample_rules import (
 )
 from metaextractor.schema import Field, Schema
 from metaextractor.supplementary import Table
+from metaextractor.schema_mapping import LexicalColumnMapper, SchemaMapperColumnMapper
 from metaextractor.table_plan import (
     PlanExecutionError,
     PlanProposalError,
-    TablePlan,
     execute_plan,
+    needs_structure_plan,
     propose_plan,
 )
 from metaextractor.table_select import (
@@ -128,8 +130,11 @@ class MetaExtractor:
         min_table_relevance: float = DEFAULT_MIN_TABLE_RELEVANCE,
         age_rules: AgeBoundRules | None = None,
         max_tokens_ceiling: int = DEFAULT_MAX_TOKENS_CEILING,
+        column_mapper: LexicalColumnMapper | SchemaMapperColumnMapper | None = None,
     ):
         self.client = client or Anthropic(api_key=api_key or os.environ.get("ANTHROPIC_API_KEY"))
+        #: Maps table header text to schema fields (SchemaMapper or the lexical cascade).
+        self.column_mapper = column_mapper or LexicalColumnMapper()
         self.model = model
         self.max_tokens = max_tokens
         self.max_tokens_ceiling = max(max_tokens, max_tokens_ceiling)
@@ -398,14 +403,15 @@ class MetaExtractor:
         """Table → sample-rows pipeline for one set of tables.
 
         Per table:
-          1. Skip if it's a feature × samples matrix (taxa/genome × samples)
-             — these would otherwise pollute per-sample output with one row
-             per feature.
-          2. Ask the LLM to propose a structural plan (multi-row header
-             merge + optional long-format melt) and execute it. The plan
-             never touches cell values. On plan failure, fall back to the
-             default row-0-header parse.
-          3. Lexical-map the resulting columns to schema field names.
+          1. Skip figure source data, feature × samples matrices, and tables
+             below the relevance gate.
+          2. Read the structure: an ENA run manifest as is; a table whose row 0
+             is a clean single header as is (no model call); otherwise with an
+             LLM structure plan (header rows, data start, note rows, melt),
+             executed deterministically, falling back to the row-0 parse.
+          3. Map header text to schema fields: ENA read_run fields with the fixed
+             ENA map, every other column with ``self.column_mapper``.
+          4. Drop a table whose sample identifiers are not per-sample.
 
         Then left-join across all kept tables on shared canonical keys.
         """
@@ -463,15 +469,23 @@ class MetaExtractor:
 
             is_manifest = getattr(t, "source", None) == "ena"
             if is_manifest:
-                # Known flat ENA header: fixed column map, no LLM plan.
-                transformed, aliases = t, ENA_MANIFEST_ALIASES
-                warnings.append(f"Table {t.name!r}: ENA run manifest mapped with the fixed "
-                                f"ENA column map (no table plan).")
+                transformed = t
+                warnings.append(f"Table {t.name!r}: ENA run manifest read as is (no table plan).")
             else:
-                transformed, aliases = self._apply_table_plan(t, schema_field_names, warnings), None
+                need_plan, why_plan = needs_structure_plan(t)
+                if need_plan:
+                    transformed = self._apply_table_plan(t, why_plan, warnings)
+                else:
+                    transformed = t
+                    warnings.append(f"Table {t.name!r}: {why_plan}; read as is (no table plan).")
 
-            m: ColumnMapping = map_columns(transformed.columns, schema_field_names, aliases=aliases)
+            m = self._map_columns(transformed, schema_field_names, is_manifest)
             renamed = apply_mapping(transformed.rows, m)
+            if m.mapped:
+                warnings.append(
+                    f"Table {transformed.name!r}: column mapping "
+                    + "; ".join(f"{src!r}->{tgt} [{m.tier_used.get(src, '')}]"
+                                for src, tgt in m.mapped.items()) + ".")
             per_sample, why = per_sample_identifier_check(renamed)
             if not per_sample:
                 warnings.append(f"Table {transformed.name!r}: not used as a sample table: {why}.")
@@ -526,18 +540,36 @@ class MetaExtractor:
             )
         return merged, warnings, selections
 
-    def _apply_table_plan(self, t, schema_field_names: list[str], warnings: list[str]):
-        """Ask the model for a structural plan and execute it; on failure, the
+    def _map_columns(self, table, schema_field_names: list[str], is_manifest: bool) -> ColumnMapping:
+        """Header text → schema fields. A manifest's ENA read_run fields and standard
+        INSDC attribute columns use the fixed ENA map; its other columns (free-form
+        BioSample attributes) and every column of other tables use ``self.column_mapper``."""
+        if not is_manifest:
+            return self.column_mapper.map_table(table.columns, table.rows, schema_field_names)
+        from metaextractor.sra_manifest import MANIFEST_FIELDS
+        fixed_cols = [c for c in table.columns
+                      if c in MANIFEST_FIELDS or c in INSDC_ATTRIBUTE_ALIASES]
+        fixed = map_columns(fixed_cols, schema_field_names, aliases=ENA_MANIFEST_ALIASES)
+        rest = [c for c in table.columns if c not in fixed_cols]
+        other = self.column_mapper.map_table(rest, table.rows, schema_field_names,
+                                             exclude_targets=set(fixed.mapped.values()))
+        return ColumnMapping(
+            mapped={**fixed.mapped, **other.mapped},
+            unmapped=fixed.unmapped + other.unmapped,
+            tier_used={**{c: f"ena:{t}" for c, t in fixed.tier_used.items()}, **other.tier_used},
+            collisions=fixed.collisions + other.collisions,
+        )
+
+    def _apply_table_plan(self, t, reason: str, warnings: list[str]):
+        """Ask the model for a structure plan and execute it; on failure, the
         default row-0-header parse (``t`` itself)."""
         try:
-            plan, usage = propose_plan(self.client, self.model, t, schema_field_names,
-                                       calls=self.last_calls)
+            plan, usage = propose_plan(self.client, self.model, t, calls=self.last_calls)
             _accumulate_usage(self.last_usage, usage)
             transformed = execute_plan(t, plan)
-            _reconcile_dropped_schema_columns(t, plan, transformed, schema_field_names, warnings)
             warnings.append(
-                f"Table {t.name!r}: plan applied "
-                f"(header_rows={plan.header_rows}, "
+                f"Table {t.name!r}: structure plan applied ({reason}; "
+                f"header_rows={plan.header_rows}, "
                 f"melt={'yes' if plan.melt else 'no'}, "
                 f"out_rows={len(transformed.rows)})."
             )
@@ -550,65 +582,6 @@ class MetaExtractor:
                 f"falling back to row-0-header parse."
             )
             return t
-
-
-def _reconcile_dropped_schema_columns(
-    raw: Table,
-    plan: TablePlan,
-    transformed: Table,
-    schema_field_names: list[str],
-    warnings: list[str],
-) -> None:
-    """Re-attach raw columns the LLM plan dropped that map to a schema field.
-
-    ``execute_plan`` builds its output columns solely from the plan's
-    ``id_columns``, so a raw column that lexically or via alias resolves to a
-    schema field the plan didn't keep (e.g. an SRA/ENA manifest's
-    ``instrument_model`` → ``sequencing_platform``) is lost *before*
-    ``map_columns`` ever sees it. For a flat, single-header, un-melted table
-    the executor emits exactly one output row per surviving raw data row, in
-    order, so such a column can be spliced back by position and picked up by
-    the subsequent ``map_columns`` pass under its original header.
-
-    Mutates ``transformed`` in place. No-op for melted or multi-row-header
-    plans, where the raw-row↔output-row correspondence is not 1:1.
-    """
-    if plan.melt is not None or len(plan.header_rows) != 1:
-        return
-    covered = set(map_columns(transformed.columns, schema_field_names).mapped.values())
-    raw_map = map_columns(raw.columns, schema_field_names).mapped
-    # schema fields the raw table carries but the plan dropped
-    missing = {src: tgt for src, tgt in raw_map.items() if tgt not in covered}
-    if not missing:
-        return
-    n_cols = max((len(r) for r in raw.raw_rows), default=0)
-    drop_row_set = set(plan.drop_rows)
-    kept = [
-        ri for ri in range(plan.data_starts_at, len(raw.raw_rows))
-        if ri not in drop_row_set
-    ]
-    if len(kept) != len(transformed.rows):
-        return  # row alignment not guaranteed; bail rather than misattribute
-    added: list[str] = []
-    for src, tgt in missing.items():
-        if src in transformed.columns:
-            continue
-        try:
-            col_idx = raw.columns.index(src)
-        except ValueError:
-            continue
-        if col_idx >= n_cols:
-            continue
-        for k, out_row in enumerate(transformed.rows):
-            row = raw.raw_rows[kept[k]]
-            out_row[src] = row[col_idx] if col_idx < len(row) else ""
-        transformed.columns.append(src)
-        added.append(f"{src}→{tgt}")
-    if added:
-        warnings.append(
-            f"Table {transformed.name!r}: re-attached plan-dropped schema "
-            f"column(s) {', '.join(added)} for downstream mapping."
-        )
 
 
 def _merge_results(

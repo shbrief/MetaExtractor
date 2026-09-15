@@ -55,6 +55,8 @@ _MANIFEST_FIELDS = [
     "host", "host_sex", "host_body_site",
     "country", "collection_date", "first_public",
 ]
+#: The ENA read_run fields a manifest can carry (mapped with the fixed ENA column map).
+MANIFEST_FIELDS = frozenset(_MANIFEST_FIELDS)
 # Minimal fallback if ENA rejects the full field list (unknown field → HTTP 400).
 _MANIFEST_FIELDS_MIN = [
     "run_accession", "sample_accession", "study_accession",

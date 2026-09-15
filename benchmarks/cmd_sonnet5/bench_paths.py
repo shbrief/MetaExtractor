@@ -26,6 +26,16 @@ if str(SRC) not in sys.path:
 SCHEMA = HERE / "cmd.clean.linkml.yaml"
 MANIFEST = HERE / "manifest.json"
 AGE_RULES = HERE / "age_rules_cmd.json"
+#: SchemaMapper stages used by the frozen benchmark (subset of 1, 2, 3). Must be decided
+#: on the development studies (dev_analysis/table_path_mappers.py) before tagging a run;
+#: ``run_frozen.py run`` refuses while it is None.
+SCHEMAMAPPER_STAGES: tuple[int, ...] | None = None
+#: MetaHarmonizer SchemaMapper dictionaries for the cMD schema (copied from the registry).
+SCHEMAMAPPER_DICTS = {
+    "target": HERE / "schemamapper" / "cmd_target_attrs.csv",
+    "alias": HERE / "schemamapper" / "cmd_target_attrs_alias_haiku.csv",
+    "values": HERE / "schemamapper" / "cmd_target_attrs_allowed_values.json",
+}
 ORDER_KEY = "study"
 
 

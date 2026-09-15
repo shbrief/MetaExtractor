@@ -58,8 +58,7 @@ class _Client:
                 outer.budgets.append(kw["max_tokens"])
                 if kw["max_tokens"] < outer.needs:
                     return _msg('{"header_rows": [0', "max_tokens")
-                return _msg(json.dumps({"header_rows": [0], "data_starts_at": 1,
-                                        "id_columns": [{"col": 0, "name": "a"}]}), "end_turn")
+                return _msg(json.dumps({"header_rows": [0], "data_starts_at": 1}), "end_turn")
         self.messages = messages
 
 
@@ -88,8 +87,9 @@ def test_table_plan_rerequested_on_truncation():
     calls = []
     t = Table(name="t.xlsx", source="local", columns=["a"], rows=[{"a": "1"}],
               raw_rows=[["a"], ["1"]])
-    plan, usage = propose_plan(client, "m", t, ["sample_id"], calls=calls)
+    plan, usage = propose_plan(client, "m", t, calls=calls)
     assert plan.header_rows == [0]
     assert client.budgets == [2048, 4096, 8192]
     assert usage["n_calls"] == 3
     assert [c["purpose"] for c in calls] == ["table_plan"] * 3
+    assert calls[-1]["plan"] == {"header_rows": [0], "data_starts_at": 1}   # plan is logged

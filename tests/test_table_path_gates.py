@@ -64,7 +64,7 @@ def test_ena_manifest_uses_fixed_map_without_plan():
     assert s["body_site"] == ""          # from the empty host_body_site; never from country
     assert ex.last_table_sources["country"] == "manifest:PRJEB7369_ena_manifest.tsv:country"
     assert ex.last_table_sources["body_site"] == "manifest:PRJEB7369_ena_manifest.tsv:host_body_site"
-    assert any("fixed ENA column map" in w for w in warnings)
+    assert any("ENA run manifest read as is" in w for w in warnings)
 
 
 def test_figure_source_data_is_skipped_before_any_plan():
@@ -97,7 +97,7 @@ def test_feature_table_is_not_used_as_sample_table(monkeypatch):
     feature = _table("Table S10", ["sample_id", "disease"],
                      [{"sample_id": f"CAG-{i % 7}", "disease": "Hypertension"} for i in range(20)])
     ex = MetaExtractor(client=_NoCallClient())
-    monkeypatch.setattr(ex, "_apply_table_plan", lambda t, names, warnings: t)
+    monkeypatch.setattr(ex, "_apply_table_plan", lambda t, reason, warnings: t)
     samples, warnings, selections = ex._build_samples_from_tables([feature], _schema())
     assert samples == []
     assert not selections[0].selected

@@ -104,6 +104,13 @@ DEFAULT_ALIASES: dict[str, str] = {
 # mapped with this map alone — no LLM table plan, which could rename a column to an
 # unrelated field (e.g. ``country`` → ``body_site``). Fields without an entry here or
 # in the lexical tiers (e.g. ``sample_title``, ``collection_date``) stay unmapped.
+# INSDC BioSample attribute names with a fixed meaning (columns added to a manifest by
+# sra_manifest.add_biosample_attributes); mapped with the ENA map, not a column mapper.
+INSDC_ATTRIBUTE_ALIASES: dict[str, str] = {
+    "geo_loc_name": "country",
+    "geographic_location_country_and_or_sea": "country",
+    "host_subject_id": "subject_id",
+}
 ENA_MANIFEST_ALIASES: dict[str, str] = {
     **DEFAULT_ALIASES,
     "run_accession": "ncbi_accession",
@@ -112,10 +119,7 @@ ENA_MANIFEST_ALIASES: dict[str, str] = {
     "host_body_site": "body_site",
     "host_sex": "sex",
     "host": "host_species",
-    # INSDC / MIxS BioSample attribute names (added by sra_manifest.add_biosample_attributes).
-    "geo_loc_name": "country",
-    "geographic_location_country_and_or_sea": "country",
-    "host_subject_id": "subject_id",
+    **INSDC_ATTRIBUTE_ALIASES,
 }
 
 

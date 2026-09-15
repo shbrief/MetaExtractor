@@ -22,7 +22,9 @@ Guarantees of ``run``:
   for every study, and a tree that already holds extraction outputs, so no output is
   reused from an earlier pipeline version (``--resume`` only continues a tree whose
   ledger was written by the *same* commit);
-* runs the repository's own ``src`` (``python -m metaextractor.cli``);
+* runs the repository's own ``src`` (``python -m metaextractor.cli``), mapping table
+  columns with MetaHarmonizer SchemaMapper and the committed ``schemamapper/``
+  dictionaries; refuses when MetaHarmonizer is missing or its checkout is modified;
 * every attempt — failures included — is appended to ``TREE/ledger.jsonl`` with
   UTC times, status, its own stderr log, the git commit, checksums of the schema,
   manifest, and age rules, and checksums of every output file;
@@ -45,8 +47,8 @@ import time
 from datetime import datetime, timezone
 from pathlib import Path
 
-from bench_paths import (AGE_RULES, HERE, MANIFEST, SCHEMA, SRC, curation_dir, git_state,
-                         load_manifest, sha256)
+from bench_paths import (AGE_RULES, HERE, MANIFEST, SCHEMA, SCHEMAMAPPER_DICTS,
+                         SCHEMAMAPPER_STAGES, SRC, curation_dir, git_state, load_manifest, sha256)
 
 MODELS = {"sonnet": "claude-sonnet-5", "haiku": "claude-haiku-4-5"}
 FETCH_DIR = "_fetch"
@@ -58,6 +60,25 @@ _LOCK = threading.Lock()
 
 def _utc() -> str:
     return datetime.now(timezone.utc).isoformat(timespec="seconds")
+
+
+def _metaharmonizer_state() -> dict:
+    """Installed MetaHarmonizer version and, for a source checkout, its commit and dirtiness."""
+    try:
+        import metaharmonizer
+        from importlib.metadata import version
+    except ImportError:
+        return {"installed": False}
+    root = Path(metaharmonizer.__file__).resolve().parent
+    def _git(*a):
+        try:
+            return subprocess.run(["git", "-C", str(root), *a], capture_output=True, text=True,
+                                  check=True).stdout.strip()
+        except (subprocess.CalledProcessError, FileNotFoundError):
+            return ""
+    return {"installed": True, "version": version("metaharmonizer"), "path": str(root),
+            "commit": _git("rev-parse", "HEAD") or None,
+            "dirty": bool(_git("status", "--porcelain", "--untracked-files=no", "--", "."))}
 
 
 def _curation_commit() -> str:
@@ -95,10 +116,15 @@ def _task(tree: Path, mkey: str, k: int, m: dict, args, static: dict) -> str:
            "--age-rules", str(AGE_RULES),
            "--fetch-cache", str(fetch_dir), "--require-fetch-cache",
            "--out", str(p["json"]), "--csv", str(p["csv"]), "--csv-provenance",
-           "--save-text", str(p["text"]), "--run-meta", str(p["meta"])]
+           "--save-text", str(p["text"]), "--run-meta", str(p["meta"]),
+           "--column-mapper", "schemamapper", "--sm-target", str(SCHEMAMAPPER_DICTS["target"]),
+           "--sm-alias", str(SCHEMAMAPPER_DICTS["alias"]),
+           "--sm-values", str(SCHEMAMAPPER_DICTS["values"]),
+           "--sm-stages", ",".join(map(str, SCHEMAMAPPER_STAGES or ()))]
     if args.api_key:
         cmd += ["--api-key", args.api_key]
-    env = {**os.environ, "PYTHONPATH": str(SRC)}
+    # SchemaMapper's embedding model is loaded from the local cache, never re-downloaded.
+    env = {**os.environ, "PYTHONPATH": str(SRC), "HF_HUB_OFFLINE": "1"}
     status = "not_run"
     for attempt in range(1, args.retries + 2):
         for f in p.values():
@@ -214,6 +240,14 @@ def cmd_run(args) -> None:
     if gs["dirty"] and not args.allow_dirty:
         raise SystemExit("working tree has uncommitted changes to tracked files; commit first "
                          "(or --allow-dirty for a smoke test that is not the frozen run)")
+    if not SCHEMAMAPPER_STAGES:
+        raise SystemExit("bench_paths.SCHEMAMAPPER_STAGES is not set; decide the SchemaMapper stages "
+                         "on the development studies and commit it before a frozen run")
+    mh = _metaharmonizer_state()
+    if not mh["installed"]:
+        raise SystemExit("MetaHarmonizer is not installed; the table path maps columns with SchemaMapper")
+    if mh.get("dirty") and not args.allow_dirty:
+        raise SystemExit(f"MetaHarmonizer checkout {mh['path']} has uncommitted changes; commit first")
     existing = _ledger_rows(tree)
     if tree.exists() and any(p.name not in PRE_RUN_ENTRIES for p in tree.iterdir()):
         if not args.resume:
@@ -236,6 +270,9 @@ def cmd_run(args) -> None:
         "git": gs,
         "schema_sha256": sha256(SCHEMA), "manifest_sha256": sha256(MANIFEST),
         "age_rules_sha256": sha256(AGE_RULES), "curation_commit": _curation_commit(),
+        "schemamapper_dicts_sha256": {k: sha256(v) for k, v in SCHEMAMAPPER_DICTS.items()},
+        "schemamapper_stages": list(SCHEMAMAPPER_STAGES),
+        "metaharmonizer": _metaharmonizer_state(),
         "api_key_source": (args.api_key.split(":", 1)[0] if args.api_key and ":" in args.api_key
                            else ("literal" if args.api_key else "env")),
         "python": platform.python_version(), "platform": platform.platform(),

@@ -1,0 +1,73 @@
+== committed detector vs out_v3 LLM plans (tables that received a plan in out_v3)
+   34  out_v3 plans all flat -> read as is
+    5  out_v3 plans all flat -> structure plan
+    3  out_v3 plans all structured -> read as is
+   34  out_v3 plans all structured -> structure plan
+   16  out_v3 plans disagree -> read as is
+    9  out_v3 plans disagree -> structure plan
+== 48 development tables read as is: distinct header -> field mappings
+
+-- lexical: 15 distinct
+    Age (years)->age_years [lex]; BMI->bmi [lex]; Body Site->body_site [lex]; Country->country [lex]; Family->family [lex]; Sample->sample_id [lex]; Sample ID->sample_id [lex]; Study->study_name [lex]; Westernized->westernized [lex]; age->age [lex]; country->country [lex]; disease->disease [lex]; family->family [lex]; sampleID->sample_id [lex]; subjectID->subject_id [lex]
+
+-- sm_stage1: 18 distinct
+    Age (years)->age_years [std_exact]; Age Category->age_group [alias_exact]; BMI->bmi [std_exact]; Body Site->body_site [std_exact]; Country->country [std_exact]; Family->family [std_exact]; ID->subject_id [alias_exact]; Sample ID->sample_id [std_exact]; Species->host_species [alias_exact]; Study->study_name [alias_exact]; Subgroup->subcohort [alias_exact]; Subj_Id->subject_id [alias_exact]; Value->biomarker_value [alias_exact]; Westernized->westernized [std_exact]; age->age [std_exact]; country->country [std_exact]; disease->disease [std_exact]; family->family [std_exact]
+
+-- sm_stages12: 20 distinct
+    Age (years)->age_years [std_exact]; Age Category->age_group [alias_exact]; BMI->bmi [std_exact]; Body Site->body_site [std_exact]; Country->country [std_exact]; Family->family [std_exact]; ID->subject_id [alias_exact]; Main Age Categories->age_group [value]; Sample ID->sample_id [std_exact]; Species->host_species [alias_exact]; Study->study_name [alias_exact]; Subgroup->subcohort [alias_exact]; Subj_Id->subject_id [alias_exact]; Value->biomarker_value [alias_exact]; Westernized->westernized [std_exact]; age->age [std_exact]; class1->age_group [value]; country->country [std_exact]; disease->disease [std_exact]; family->family [std_exact]
+
+-- sm_stages123: 70 distinct
+    # Reference genomes->sequencing_platform [semantic]; # Samples->sample_id [semantic]; # samples->sample_id [semantic]; % genes->dna_extraction_kit [semantic]; Age (years)->age_years [std_exact]; Age Category->age_group [alias_exact]; Assembler->sequencing_platform [semantic]; BMI->bmi [std_exact]; Bin Id->subject_id [semantic]; Body Site->body_site [std_exact]; Category->age_group [semantic]; Clade->host_species [semantic]; Countries->country [semantic]; Countries (if known)->country [semantic]; Country->country [std_exact]; Dataset->uncurated_metadata [semantic]; Dataset_name->curator [semantic]; DistaHCe->disease_details [semantic]; Enriched group(s)(C=Control, P=Prehypertension, H=Hypertension)->disease [semantic]; Enterobacteriaceae->host_species [semantic]; Family->family [std_exact]; Frac->body_site_details [semantic]; Full taxonomic label of the closest genome->host_species [semantic]; GBM_ID->subject_id [semantic]; GC(%)->location [semantic]; GenBank Assembly Accession->ncbi_accession [semantic]; Gene ID->sample_id [semantic]; Genome Name->host_species [semantic]; Genus->host_species [semantic]; Group->control [semantic]; ID->subject_id [alias_exact]; Identity->subject_id [semantic]; Infant Age (days)->age_min [numeric]; MSP_ID->sample_id [semantic]; Main Age Categories->age_group [value]; Non-westernized enriched->westernized [semantic]; PC2->sequencing_platform [semantic]; PMID of Publication->pmid [numeric]; Population model->ancestry [semantic]; Project->study_name [semantic]; SGB ID->sample_id [semantic]; Same sample->sample_id [semantic]; Sample->sample_id [semantic]; Sample ID->sample_id [std_exact]; Sample Name->sample_id [semantic]; Samples->sample_id [semantic]; Score->ecog_performance_status [semantic]; Species->host_species [alias_exact]; Study->study_name [alias_exact]; Subgroup->subcohort [alias_exact]; Subj_Id->subject_id [alias_exact]; Subtype->subcohort [semantic]; Tax mark->biomarker_value [semantic]; Value->biomarker_value [alias_exact]; Variable->biomarker_value [semantic]; Virus->disease [semantic]; Westernized->westernized [std_exact]; age->age [std_exact]; class1->age_group [value]; col_365->days_from_first_collection [semantic]; country->country [std_exact]; dataset->uncurated_metadata [semantic]; description->disease_details [semantic]; disease->disease [std_exact]; family->family [std_exact]; max->age_max [numeric]; min->age_min [numeric]; p-value->biomarker_value [numeric]; sampleID->sample_id [semantic]; subjectID->subject_id [semantic]
+
+== manifest-only studies (out_v3 study-level answers reused; current fan-out and age rules in every variant)
+| study | model | variant | TPc | TPw | FP | FN | F1 all curated |
+| Bengtsson-PalmeJ_2015 | haiku | v3_rows_current_rules | 350 | 350 | 0 | 2870 | 0.164 |
+| Bengtsson-PalmeJ_2015 | haiku | lexical | 350 | 280 | 0 | 2940 | 0.167 |
+| Bengtsson-PalmeJ_2015 | haiku | sm_stage1 | 350 | 280 | 0 | 2940 | 0.167 |
+| Bengtsson-PalmeJ_2015 | haiku | sm_stages12 | 350 | 280 | 0 | 2940 | 0.167 |
+| Bengtsson-PalmeJ_2015 | haiku | sm_stages123 | 350 | 280 | 0 | 2940 | 0.167 |
+| Bengtsson-PalmeJ_2015 | sonnet | v3_rows_current_rules | 630 | 280 | 0 | 2660 | 0.281 |
+| Bengtsson-PalmeJ_2015 | sonnet | lexical | 630 | 280 | 0 | 2660 | 0.281 |
+| Bengtsson-PalmeJ_2015 | sonnet | sm_stage1 | 630 | 280 | 0 | 2660 | 0.281 |
+| Bengtsson-PalmeJ_2015 | sonnet | sm_stages12 | 630 | 280 | 0 | 2660 | 0.281 |
+| Bengtsson-PalmeJ_2015 | sonnet | sm_stages123 | 630 | 280 | 0 | 2660 | 0.281 |
+| ContevilleLC_2019 | haiku | v3_rows_current_rules | 135 | 135 | 0 | 135 | 0.400 |
+| ContevilleLC_2019 | haiku | lexical | 135 | 135 | 0 | 135 | 0.400 |
+| ContevilleLC_2019 | haiku | sm_stage1 | 135 | 135 | 0 | 135 | 0.400 |
+| ContevilleLC_2019 | haiku | sm_stages12 | 135 | 135 | 0 | 135 | 0.400 |
+| ContevilleLC_2019 | haiku | sm_stages123 | 135 | 135 | 0 | 135 | 0.400 |
+| ContevilleLC_2019 | sonnet | v3_rows_current_rules | 15 | 120 | 0 | 270 | 0.056 |
+| ContevilleLC_2019 | sonnet | lexical | 60 | 120 | 0 | 225 | 0.205 |
+| ContevilleLC_2019 | sonnet | sm_stage1 | 15 | 120 | 0 | 270 | 0.056 |
+| ContevilleLC_2019 | sonnet | sm_stages12 | 60 | 120 | 0 | 225 | 0.205 |
+| ContevilleLC_2019 | sonnet | sm_stages123 | 60 | 150 | 0 | 195 | 0.195 |
+| Heitz-BuschartA_2016 | haiku | v3_rows_current_rules | 689 | 318 | 0 | 2287 | 0.320 |
+| Heitz-BuschartA_2016 | haiku | lexical | 689 | 318 | 0 | 2287 | 0.320 |
+| Heitz-BuschartA_2016 | haiku | sm_stage1 | 689 | 318 | 0 | 2287 | 0.320 |
+| Heitz-BuschartA_2016 | haiku | sm_stages12 | 689 | 318 | 0 | 2287 | 0.320 |
+| Heitz-BuschartA_2016 | haiku | sm_stages123 | 830 | 477 | 9 | 1987 | 0.360 |
+| Heitz-BuschartA_2016 | sonnet | v3_rows_current_rules | 636 | 318 | 0 | 2340 | 0.299 |
+| Heitz-BuschartA_2016 | sonnet | lexical | 636 | 265 | 0 | 2393 | 0.303 |
+| Heitz-BuschartA_2016 | sonnet | sm_stage1 | 636 | 265 | 0 | 2393 | 0.303 |
+| Heitz-BuschartA_2016 | sonnet | sm_stages12 | 636 | 265 | 0 | 2393 | 0.303 |
+| Heitz-BuschartA_2016 | sonnet | sm_stages123 | 777 | 424 | 9 | 2093 | 0.345 |
+| NayakRR_2021 | haiku | v3_rows_current_rules | 0 | 340 | 0 | 782 | 0.000 |
+| NayakRR_2021 | haiku | lexical | 51 | 323 | 0 | 748 | 0.068 |
+| NayakRR_2021 | haiku | sm_stage1 | 51 | 323 | 0 | 748 | 0.068 |
+| NayakRR_2021 | haiku | sm_stages12 | 51 | 425 | 0 | 646 | 0.064 |
+| NayakRR_2021 | haiku | sm_stages123 | 51 | 425 | 0 | 646 | 0.064 |
+| NayakRR_2021 | sonnet | v3_rows_current_rules | 68 | 374 | 0 | 680 | 0.087 |
+| NayakRR_2021 | sonnet | lexical | 153 | 357 | 0 | 612 | 0.187 |
+| NayakRR_2021 | sonnet | sm_stage1 | 153 | 357 | 0 | 612 | 0.187 |
+| NayakRR_2021 | sonnet | sm_stages12 | 51 | 459 | 0 | 612 | 0.063 |
+| NayakRR_2021 | sonnet | sm_stages123 | 51 | 459 | 0 | 612 | 0.063 |
+
+== fields that differ from v3_rows_current_rules (pooled over the 4 studies and 3 repeats): TPc/TPw/FP
+- sonnet lexical: {'body_site': '331/34/0 -> 410/0/0', 'days_from_first_collection': '0/87/0 -> 0/0/0', 'treatment': '0/0/0 -> 51/51/0'}
+- sonnet sm_stage1: {'body_site': '331/34/0 -> 365/0/0', 'days_from_first_collection': '0/87/0 -> 0/0/0', 'treatment': '0/0/0 -> 51/51/0'}
+- sonnet sm_stages12: {'body_site': '331/34/0 -> 308/102/0', 'days_from_first_collection': '0/87/0 -> 0/0/0', 'treatment': '0/0/0 -> 51/51/0'}
+- sonnet sm_stages123: {'body_site': '331/34/0 -> 308/102/0', 'days_from_first_collection': '0/87/0 -> 0/0/0', 'age': '0/0/0 -> 0/159/0', 'treatment': '0/0/0 -> 51/51/0', 'bmi': '0/0/0 -> 141/0/9', 'location': '0/15/0 -> 0/45/0'}
+- haiku lexical: {'days_from_first_collection': '0/138/0 -> 0/0/0', 'treatment': '0/0/0 -> 51/51/0'}
+- haiku sm_stage1: {'days_from_first_collection': '0/138/0 -> 0/0/0', 'treatment': '0/0/0 -> 51/51/0'}
+- haiku sm_stages12: {'body_site': '344/0/0 -> 344/102/0', 'days_from_first_collection': '0/138/0 -> 0/0/0', 'treatment': '0/0/0 -> 51/51/0'}
+- haiku sm_stages123: {'body_site': '344/0/0 -> 344/102/0', 'days_from_first_collection': '0/138/0 -> 0/0/0', 'age': '0/0/0 -> 0/159/0', 'treatment': '0/0/0 -> 51/51/0', 'bmi': '0/0/0 -> 141/0/9'}
