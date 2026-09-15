@@ -1,0 +1,8 @@
+# Regression check: uncurated_metadata scope study -> sample (out_v3 development extractions, current rules, no API calls)
+# Old = cmd.clean.linkml.yaml at b2f1edb; new = regenerated from MetaHarmonizerSchemaRegistry HEAD (7c73848) with the edited SCOPE.
+uncurated_metadata cells by source: {'old (uncurated_metadata: study)': {'study_fanout': 9760, 'table:41564_2023_1355_MOESM4_ESM.xlsx::Source_data_for_Suppl_Figure_2b:uncurated_metadata': 504}, 'new (uncurated_metadata: sample)': {'table:41564_2023_1355_MOESM4_ESM.xlsx::Source_data_for_Suppl_Figure_2b:uncurated_metadata': 504}}
+per-field cell differences (old -> new): {('haiku', 'uncurated_metadata'): ({'tn': 0, 'tp_correct': 0, 'tp_wrong': 140, 'fn': 70, 'fp': 0}, {'tn': 0, 'tp_correct': 0, 'tp_wrong': 0, 'fn': 210, 'fp': 0}), ('sonnet', 'uncurated_metadata'): ({'tn': 0, 'tp_correct': 0, 'tp_wrong': 210, 'fn': 0, 'fp': 0}, {'tn': 0, 'tp_correct': 0, 'tp_wrong': 0, 'fn': 210, 'fp': 0})}
+sonnet content: old {'tn': 3960, 'tp_correct': 4703, 'tp_wrong': 1994, 'fn': 43868, 'fp': 0} -> new {'tn': 3960, 'tp_correct': 4703, 'tp_wrong': 1994, 'fn': 43868, 'fp': 0} (identical)
+sonnet meta: old {'tn': 0, 'tp_correct': 1177, 'tp_wrong': 2430, 'fn': 19472, 'fp': 0} -> new {'tn': 0, 'tp_correct': 1177, 'tp_wrong': 2220, 'fn': 19682, 'fp': 0} 
+haiku content: old {'tn': 3960, 'tp_correct': 4198, 'tp_wrong': 2263, 'fn': 44104, 'fp': 0} -> new {'tn': 3960, 'tp_correct': 4198, 'tp_wrong': 2263, 'fn': 44104, 'fp': 0} (identical)
+haiku meta: old {'tn': 0, 'tp_correct': 2221, 'tp_wrong': 1706, 'fn': 19152, 'fp': 0} -> new {'tn': 0, 'tp_correct': 2221, 'tp_wrong': 1566, 'fn': 19292, 'fp': 0} 

@@ -582,7 +582,7 @@ slots:
     multivalued: true
     pattern: .+
     annotations:
-      scope: study
+      scope: sample
   host_species:
     description: Host species of the participant.
     range: string

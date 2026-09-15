@@ -31,7 +31,7 @@ import yaml
 STUDY = {
     "study_name", "curator", "pmid", "target_condition", "antibiotics_exclusion_period",
     "antibiotics_exclusion_period_unit", "dna_extraction_kit", "sequencing_platform",
-    "host_species", "uncurated_metadata",
+    "host_species", 
 }
 SAMPLE = {
     "subject_id", "sample_id", "subcohort", "control", "body_site", "body_site_details",
@@ -46,7 +46,7 @@ SAMPLE = {
     "obgyn_pregnancy", "smoker", "treatment", "tumor_staging_ajcc", "tumor_staging_tnm",
     "biomarker_name", "biomarker_unit", "biomarker_value", "disease_response_os",
     "disease_response_os_unit", "ecog_performance_status", "tumor_size_measurement",
-    "tumor_size_residual_measurement",
+    "tumor_size_residual_measurement", "uncurated_metadata",
 }
 SCOPE = {**{s: "study" for s in STUDY}, **{s: "sample" for s in SAMPLE}}
 # Sample-scoped slots whose single study-level value may be written to every record of a
