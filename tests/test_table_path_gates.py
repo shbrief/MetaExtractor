@@ -102,3 +102,19 @@ def test_feature_table_is_not_used_as_sample_table(monkeypatch):
     assert samples == []
     assert not selections[0].selected
     assert "identifier not per-sample" in selections[0].reasons[-1]
+
+
+def test_unmapped_columns_keep_header_text_and_source():
+    # A column the lexical mapping does not recognise stays in the record under its header
+    # text, and its source table and column are recorded, so the saved table can be mapped
+    # downstream (e.g. by MetaHarmonizer SchemaMapper).
+    t = _table("S2.xlsx::Table S2", ["Sample ID", "Treatment status", "Insert size (bp)"],
+               [{"Sample ID": f"S{i}", "Treatment status": "MTX" if i % 2 else "naive",
+                 "Insert size (bp)": "300"} for i in range(6)])
+    ex = MetaExtractor(client=_NoCallClient())
+    samples, _, _ = ex._build_samples_from_tables([t], _schema())
+    assert samples[1] == {"sample_id": "S1", "Treatment status": "MTX", "Insert size (bp)": "300"}
+    assert ex.last_table_sources == {
+        "sample_id": "table:S2.xlsx::Table S2:Sample ID",
+        "Treatment status": "table:S2.xlsx::Table S2:Treatment status",
+        "Insert size (bp)": "table:S2.xlsx::Table S2:Insert size (bp)"}

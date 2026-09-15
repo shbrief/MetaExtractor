@@ -1,4 +1,8 @@
-"""Final scored tables (samples x schema attributes) for each column mapper, development studies.
+"""Historical analysis: uses ``metaextractor.schema_mapping.SchemaMapperColumnMapper``, which
+was removed from MetaExtractor afterwards (SchemaMapper now runs in MetaHarmonizer on the
+saved extraction table). Run it from a checkout of commit ``bc3b00b``.
+
+Final scored tables (samples x schema attributes) for each column mapper, development studies.
 
 For every mapper -- ``lexical`` (lexical cascade), ``sm_stage1`` (SchemaMapper name
 dictionaries), ``sm_stages12`` (+ value matching), ``sm_stages123`` (+ embedding matching;

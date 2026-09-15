@@ -24,8 +24,9 @@ The flow per kept supplementary table:
        named by its own merged header text; values are copied by index. Same
        plan + same raw grid → same output, every time.
 
-Mapping header text to schema fields happens afterwards, in the configured
-column mapper (MetaHarmonizer SchemaMapper or the lexical cascade).
+Mapping header text to schema fields happens afterwards, in the extractor's lexical
+column mapping; unmapped columns keep their header text in the saved records, so a
+schema mapper (e.g. MetaHarmonizer SchemaMapper) can map them from the saved table.
 
 Plan-execution failures (bad row or column references) surface as
 :class:`PlanExecutionError` so the caller can fall back to the row-0 parse.

@@ -14,7 +14,6 @@ from pydantic import ValidationError
 
 from metaextractor.column_mapper import (
     ENA_MANIFEST_ALIASES,
-    INSDC_ATTRIBUTE_ALIASES,
     ColumnMapping,
     apply_mapping,
     join_tables,
@@ -30,7 +29,6 @@ from metaextractor.sample_rules import (
 )
 from metaextractor.schema import Field, Schema
 from metaextractor.supplementary import Table
-from metaextractor.schema_mapping import LexicalColumnMapper, SchemaMapperColumnMapper
 from metaextractor.table_plan import (
     PlanExecutionError,
     PlanProposalError,
@@ -130,11 +128,8 @@ class MetaExtractor:
         min_table_relevance: float = DEFAULT_MIN_TABLE_RELEVANCE,
         age_rules: AgeBoundRules | None = None,
         max_tokens_ceiling: int = DEFAULT_MAX_TOKENS_CEILING,
-        column_mapper: LexicalColumnMapper | SchemaMapperColumnMapper | None = None,
     ):
         self.client = client or Anthropic(api_key=api_key or os.environ.get("ANTHROPIC_API_KEY"))
-        #: Maps table header text to schema fields (SchemaMapper or the lexical cascade).
-        self.column_mapper = column_mapper or LexicalColumnMapper()
         self.model = model
         self.max_tokens = max_tokens
         self.max_tokens_ceiling = max(max_tokens, max_tokens_ceiling)
@@ -148,8 +143,10 @@ class MetaExtractor:
         self.age_rules = age_rules
         #: Model identifiers returned by the API across the last extract() call.
         self.last_response_models: set[str] = set()
-        #: schema field -> "table:<name>:<column>" / "manifest:<name>:<column>"
-        #: for the table set that produced the last deterministic sample rows.
+        #: record key -> "table:<name>:<column>" / "manifest:<name>:<column>" for the table
+        #: set that produced the last deterministic sample rows. Keys are schema fields
+        #: for mapped columns and the original header text for unmapped ones, so every
+        #: column of the saved records keeps its source (for downstream schema mapping).
         self.last_table_sources: dict[str, str] = {}
         self.last_usage: dict[str, int] = {
             "input_tokens": 0,
@@ -409,8 +406,10 @@ class MetaExtractor:
              is a clean single header as is (no model call); otherwise with an
              LLM structure plan (header rows, data start, note rows, melt),
              executed deterministically, falling back to the row-0 parse.
-          3. Map header text to schema fields: ENA read_run fields with the fixed
-             ENA map, every other column with ``self.column_mapper``.
+          3. Map header text to schema fields with the lexical cascade (a manifest
+             with the fixed ENA map). Unmapped columns stay in the records under
+             their header text, with their source recorded, for downstream schema
+             mapping (e.g. MetaHarmonizer SchemaMapper on the saved table).
           4. Drop a table whose sample identifiers are not per-sample.
 
         Then left-join across all kept tables on shared canonical keys.
@@ -493,11 +492,9 @@ class MetaExtractor:
                 selections[-1].reasons.append(why)
                 continue
             kind = "manifest" if is_manifest else "table"
+            # record key (schema field, or header text when unmapped) -> source column
             table_columns[transformed.name] = (
-                kind,
-                {**{c: c for c in transformed.columns if c in schema_field_names},
-                 **{tgt: src for src, tgt in m.mapped.items()}},
-            )
+                kind, {m.mapped.get(c, c): c for c in transformed.columns})
             scored_tables.append((transformed.name, renamed, rel.score))
             if m.collisions:
                 for src, tgt in m.collisions:
@@ -522,8 +519,8 @@ class MetaExtractor:
         # so equal-relevance tables keep their original order.
         scored_tables.sort(key=lambda x: x[2], reverse=True)
         mapped_tables = [(name, rows) for name, rows, _ in scored_tables]
-        # Attribute each field to the most relevant table that maps it (the join
-        # keeps the primary's value on conflict, so this is the value's source).
+        # Attribute each record key to the most relevant table that carries it (the
+        # join keeps the primary's value on conflict, so this is the value's source).
         for name, _rows, _score in scored_tables:
             kind, cols = table_columns.get(name, ("table", {}))
             for fname, col in cols.items():
@@ -541,24 +538,10 @@ class MetaExtractor:
         return merged, warnings, selections
 
     def _map_columns(self, table, schema_field_names: list[str], is_manifest: bool) -> ColumnMapping:
-        """Header text → schema fields. A manifest's ENA read_run fields and standard
-        INSDC attribute columns use the fixed ENA map; its other columns (free-form
-        BioSample attributes) and every column of other tables use ``self.column_mapper``."""
-        if not is_manifest:
-            return self.column_mapper.map_table(table.columns, table.rows, schema_field_names)
-        from metaextractor.sra_manifest import MANIFEST_FIELDS
-        fixed_cols = [c for c in table.columns
-                      if c in MANIFEST_FIELDS or c in INSDC_ATTRIBUTE_ALIASES]
-        fixed = map_columns(fixed_cols, schema_field_names, aliases=ENA_MANIFEST_ALIASES)
-        rest = [c for c in table.columns if c not in fixed_cols]
-        other = self.column_mapper.map_table(rest, table.rows, schema_field_names,
-                                             exclude_targets=set(fixed.mapped.values()))
-        return ColumnMapping(
-            mapped={**fixed.mapped, **other.mapped},
-            unmapped=fixed.unmapped + other.unmapped,
-            tier_used={**{c: f"ena:{t}" for c, t in fixed.tier_used.items()}, **other.tier_used},
-            collisions=fixed.collisions + other.collisions,
-        )
+        """Header text → schema fields with the lexical cascade; a manifest's columns use
+        the fixed ENA map (ENA read_run fields and standard INSDC attribute names)."""
+        aliases = ENA_MANIFEST_ALIASES if is_manifest else None
+        return map_columns(table.columns, schema_field_names, aliases=aliases)
 
     def _apply_table_plan(self, t, reason: str, warnings: list[str]):
         """Ask the model for a structure plan and execute it; on failure, the

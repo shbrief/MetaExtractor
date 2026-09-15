@@ -8,7 +8,6 @@ from metaextractor.output import ExtractionResult
 class _FakeExtractor:
     def __init__(self, **kwargs):
         self.kwargs = kwargs
-        self.column_mapper = kwargs["column_mapper"]
         self.last_usage = {"input_tokens": 10, "cache_creation_input_tokens": 0,
                            "cache_read_input_tokens": 0, "output_tokens": 5, "n_calls": 1}
         self.last_response_models = {"claude-sonnet-5"}
@@ -36,7 +35,6 @@ def test_run_meta_and_saved_text(tmp_path, monkeypatch):
     m = json.loads(meta.read_text())
     assert m["request"]["models_returned"] == ["claude-sonnet-5"]
     assert m["request"]["sampling_and_thinking"].startswith("not set")
-    assert m["request"]["column_mapper"] == {"backend": "lexical"}
     assert m["cost_estimate"]["pricing_as_of"]
     assert m["cost_estimate"]["total_usd"] > 0
     assert m["retrieval"] is None

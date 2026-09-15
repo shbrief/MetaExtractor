@@ -1,4 +1,8 @@
-"""Development-study evaluation of the table-path split (no model calls; out_v3 read only).
+"""Historical analysis: uses ``metaextractor.schema_mapping.SchemaMapperColumnMapper``, which
+was removed from MetaExtractor afterwards (SchemaMapper now runs in MetaHarmonizer on the
+saved extraction table). Run it from a checkout of commit ``b2f1edb``.
+
+Development-study evaluation of the table-path split (no model calls; out_v3 read only).
 
 1. The committed needs_structure_plan decision for every selected development table,
    against the out_v3 LLM plans for the same table (both models, all repeats).

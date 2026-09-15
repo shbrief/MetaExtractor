@@ -79,16 +79,6 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--no-sra-manifest", dest="include_sra_manifest",
                         action="store_false", default=True,
                         help="Skip the auto SRA/ENA per-sample run-manifest fetch (resolves the study's own project from its data-availability accessions and pulls the ENA read_run manifest). Only applies on the --paper-id fetch path.")
-    parser.add_argument("--column-mapper", choices=["lexical", "schemamapper"], default="lexical",
-                        help="How table header text is mapped to schema fields: the built-in lexical cascade, or MetaHarmonizer SchemaMapper (stages 1-3, offline; needs --sm-target).")
-    parser.add_argument("--sm-target", type=Path, default=None, metavar="CSV",
-                        help="SchemaMapper target schema (field_name,is_numeric_field).")
-    parser.add_argument("--sm-alias", type=Path, default=None, metavar="CSV",
-                        help="SchemaMapper alias dictionary (optional).")
-    parser.add_argument("--sm-values", type=Path, default=None, metavar="JSON",
-                        help="SchemaMapper allowed-values dictionary (optional).")
-    parser.add_argument("--sm-stages", default="1,2,3", metavar="LIST",
-                        help="SchemaMapper stages to use, comma-separated subset of 1 (dictionary), 2 (values), 3 (embeddings). Default: 1,2,3.")
     parser.add_argument("--no-biosample-attributes", dest="include_biosample_attributes",
                         action="store_false", default=True,
                         help="Do not add the runs' BioSample attributes (EBI BioSamples) to the SRA/ENA run manifest as columns.")
@@ -237,18 +227,6 @@ def main(argv: list[str] | None = None) -> int:
 
     schema_obj = _load_schema(args.schema, class_name=args.linkml_class)
 
-    if args.column_mapper == "schemamapper":
-        if args.sm_target is None:
-            print("ERROR: --column-mapper schemamapper needs --sm-target", file=sys.stderr)
-            return 2
-        from metaextractor.schema_mapping import SchemaMapperColumnMapper
-        stages = tuple(int(x) for x in args.sm_stages.split(",") if x.strip())
-        column_mapper = SchemaMapperColumnMapper(args.sm_target, args.sm_alias, args.sm_values,
-                                                 stages=stages)
-    else:
-        from metaextractor.schema_mapping import LexicalColumnMapper
-        column_mapper = LexicalColumnMapper()
-
     extractor = MetaExtractor(
         model=args.model,
         max_tokens=args.max_tokens,
@@ -258,7 +236,6 @@ def main(argv: list[str] | None = None) -> int:
         min_table_relevance=args.min_table_relevance,
         age_rules=AgeBoundRules.from_json(args.age_rules) if args.age_rules else None,
         max_tokens_ceiling=args.max_tokens_ceiling,
-        column_mapper=column_mapper,
     )
     if args.save_text:
         args.save_text.write_text(paper_text, encoding="utf-8")
@@ -368,7 +345,6 @@ def _write_run_meta(args, extractor, result, fetched, paper_text, tables, cost, 
             "sampling_and_thinking": "not set (API defaults: no temperature/top_p/top_k/"
                                      "thinking/effort parameters sent)",
             "age_rules": str(args.age_rules) if args.age_rules else None,
-            "column_mapper": extractor.column_mapper.describe(),
         },
         "usage": dict(extractor.last_usage),
         "calls": list(extractor.last_calls),
