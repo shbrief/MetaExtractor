@@ -239,7 +239,12 @@ def _parse_manifest_tsv(project: str, raw: str) -> Table | None:
     if len(rows) < 2:
         return None
     header = [h.strip() for h in rows[0]]
+    # ENA does not guarantee a row order, and an unstable order would make a frozen
+    # retrieval irreproducible (it also drives the BioSample column order below).
     data = rows[1:]
+    if "run_accession" in header:
+        k = header.index("run_accession")
+        data = sorted(data, key=lambda r: r[k] if k < len(r) else "")
     dict_rows = [
         {header[i]: (r[i] if i < len(r) else "") for i in range(len(header))}
         for r in data
@@ -357,7 +362,9 @@ def add_biosample_attributes(
 
     kept = [c for c in table.columns if any(str(r.get(c, "")).strip() for r in table.rows)]
     existing = set(table.columns)
-    added = list(dict.fromkeys(k for s in samples for k in attrs.get(s, {}) if k not in existing))
+    # Sorted, not first-seen: the attribute order of a BioSample record is the
+    # server's, so a first-seen order would not reproduce between retrievals.
+    added = sorted({k for s in samples for k in attrs.get(s, {}) if k not in existing})
     columns = kept + added
     rows = [{**{c: r.get(c, "") for c in kept},
              **{c: attrs.get(r.get("sample_accession", "").strip(), {}).get(c, "") for c in added}}

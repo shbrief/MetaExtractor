@@ -106,3 +106,32 @@ def test_no_sample_accession_column_is_a_no_op():
     t = Table(name="m", source="ena", columns=["run_accession"], rows=[{"run_accession": "R1"}],
               raw_rows=[["run_accession"], ["R1"]])
     assert add_biosample_attributes(t, fake_get) == (t, [])
+
+
+def test_retrieval_is_order_independent():
+    """A different ENA row order must not change the frozen table (bytes must reproduce)."""
+    from metaextractor.sra_manifest import _parse_manifest_tsv, add_biosample_attributes
+
+    header = "run_accession\tsample_accession\thost\n"
+    runs = [("SRR3", "SAMN3"), ("SRR1", "SAMN1"), ("SRR2", "SAMN2")]
+    chars = {
+        "SAMN1": {"zeta": [{"text": "z1"}], "alpha": [{"text": "a1"}]},
+        "SAMN2": {"alpha": [{"text": "a2"}], "mid": [{"text": "m2"}]},
+        "SAMN3": {"mid": [{"text": "m3"}], "zeta": [{"text": "z3"}]},
+    }
+
+    def http_get(url):
+        acc = url.rsplit("/", 1)[-1].removesuffix(".json")
+        return json.dumps({"accession": acc, "characteristics": chars[acc]}).encode()
+
+    def build(order):
+        raw = header + "".join(f"{r}\t{s}\thuman\n" for r, s in order)
+        table, _ = add_biosample_attributes(_parse_manifest_tsv("PRJ1", raw), http_get)
+        return table.columns, table.raw_rows
+
+    shuffled = build([runs[2], runs[0], runs[1]])
+    assert build(runs) == shuffled == build(sorted(runs))
+    columns, raw_rows = shuffled
+    assert columns[:3] == ["run_accession", "sample_accession", "host"]
+    assert columns[3:] == ["alpha", "mid", "zeta"]          # sorted, not first-seen
+    assert [r[0] for r in raw_rows[1:]] == ["SRR1", "SRR2", "SRR3"]   # sorted by run
