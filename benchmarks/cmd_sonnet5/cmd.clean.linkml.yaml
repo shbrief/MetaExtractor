@@ -327,6 +327,7 @@ slots:
     range: antibiotics_current_use_enum
     annotations:
       scope: sample
+      propagate_study_value: true
   bmi:
     description: "Body mass index (BMI; EFO:0004340) calculated as weight (kg) divided\
       \ by height squared (m\xB2)."
@@ -352,6 +353,7 @@ slots:
     - 'Values should be descendants of: NCIT:C7057, MONDO:0000001'
     annotations:
       scope: sample
+      propagate_study_value: true
   disease_details:
     description: 'More specific disease or condition term(s) for the participant;
       use Healthy when appropriate. Lookup seed ontology IDs: NCIT:C7057; MONDO:0000001.

@@ -51,7 +51,7 @@ SAMPLE = {
 SCOPE = {**{s: "study" for s in STUDY}, **{s: "sample" for s in SAMPLE}}
 # Sample-scoped slots whose single study-level value may be written to every record of a
 # cohort reported without subgroups: the specimen type, usually stated once for all samples.
-PROPAGATE_STUDY_VALUE = {"body_site"}
+PROPAGATE_STUDY_VALUE = {"antibiotics_current_use", "body_site", "disease"}
 # Unit slot -> the slot it is the unit of: a study-level unit reaches only records with that value.
 UNIT_OF = {"age_unit": "age"}
 

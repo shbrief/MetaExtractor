@@ -1,0 +1,17 @@
+propagate_study_value = ['antibiotics_current_use', 'body_site', 'disease']
+
+study                      as run TPc/TPw   replayed TPc/TPw
+Bengtsson-PalmeJ_2015             140/140            210/140  <-
+TettAJ_2019_b                         0/0                0/0
+LiJ_2017                              0/0                0/0
+NayakRR_2021                       17/119             17/119
+PasolliE_2019                    1008/336           1008/336
+Heitz-BuschartA_2016              212/106            212/106
+FanY_2023                             0/0                0/0
+QinJ_2012                             0/0                0/0
+ContevilleLC_2019                   45/45              60/45  <-
+LiSS_2016                             0/0                0/0
+
+as run    pooled: TPc 1422 TPw 746 FN 14687 FP 0 F1 0.1495
+
+replayed  pooled: TPc 1507 TPw 746 FN 14602 FP 0 F1 0.1577

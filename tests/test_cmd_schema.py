@@ -19,7 +19,8 @@ def test_scope_and_propagation_annotations():
     assert Counter(f.scope for f in fields) == {"sample": 55, "study": 9, None: 7}
     by_name = {f.name: f for f in fields}
     assert by_name["uncurated_metadata"].scope == "sample"
-    assert [f.name for f in fields if f.propagate_study_value] == ["body_site"]
+    assert sorted(f.name for f in fields if f.propagate_study_value) == [
+        "antibiotics_current_use", "body_site", "disease"]
     assert {f.name: f.unit_of for f in fields if f.unit_of} == {"age_unit": "age"}
     assert sorted(f.name for f in fields if f.scope is None) == [
         "age_unit", "ancestry", "ancestry_details", "country", "lifestyle", "location", "westernized"]
