@@ -1,0 +1,86 @@
+{
+  "source": "pmc_fulltext",
+  "has_body": true,
+  "pmid": "31417531",
+  "pmcid": "6682603",
+  "doi": null,
+  "retrieval_attempts": [
+    {
+      "rung": "pmc_fulltext",
+      "returned_text": true,
+      "is_body": true,
+      "chars": 31579
+    }
+  ],
+  "supplementary_included": [],
+  "supplementary_skipped": [
+    [
+      "Image_1.TIFF",
+      "image-only (.tiff)"
+    ],
+    [
+      "Image_2.TIFF",
+      "image-only (.tiff)"
+    ],
+    [
+      "Image_3.TIFF",
+      "image-only (.tiff)"
+    ],
+    [
+      "Table_1.XLS",
+      "s3: ValueError: unsupported extension (.xls)"
+    ],
+    [
+      "Table_2.XLS",
+      "s3: ValueError: unsupported extension (.xls)"
+    ],
+    [
+      "Table_1.XLS",
+      "europepmc: ValueError: unsupported extension (.xls)"
+    ],
+    [
+      "Table_2.XLS",
+      "europepmc: ValueError: unsupported extension (.xls)"
+    ],
+    [
+      "fmicb-10-01743-g001.gif",
+      "europepmc: ValueError: image-only (.gif)"
+    ],
+    [
+      "fmicb-10-01743-g001.jpg",
+      "europepmc: ValueError: image-only (.jpg)"
+    ],
+    [
+      "fmicb-10-01743-g002.gif",
+      "europepmc: ValueError: image-only (.gif)"
+    ],
+    [
+      "fmicb-10-01743-g002.jpg",
+      "europepmc: ValueError: image-only (.jpg)"
+    ],
+    [
+      "fmicb-10-01743-g003.gif",
+      "europepmc: ValueError: image-only (.gif)"
+    ],
+    [
+      "fmicb-10-01743-g003.jpg",
+      "europepmc: ValueError: image-only (.jpg)"
+    ],
+    [
+      "fmicb-10-01743-g004.gif",
+      "europepmc: ValueError: image-only (.gif)"
+    ],
+    [
+      "fmicb-10-01743-g004.jpg",
+      "europepmc: ValueError: image-only (.jpg)"
+    ]
+  ],
+  "sra_manifest_source": "ena:PRJNA527208 (15 runs) + BioSample attributes",
+  "sra_manifest_warnings": [
+    "BioSample attributes for 15/15 samples added as columns ['geo_loc_name', 'host_subject_id', 'isolate', 'isolation_source', 'lat_lon', 'organism', 'title']; empty manifest columns dropped: ['host_sex', 'host_body_site']."
+  ],
+  "n_tables": 1,
+  "text_chars": 31579,
+  "text_sha256": "530684888e0290bd06c62f97b1dc1118f847d7823c11f8ec19101d74761c264e",
+  "tables_sha256": "fd96811061b993c6a944d428270c7d946a77f3a3fe2c8ba386912876968e3c6e"
+}

@@ -1,0 +1,24 @@
+query,ref_match,stage,match1,match1_score,match1_code
+Methotrexate,Not Found,1.0,Not Found,1.0,
+Antipsychotics,Not Found,2.0,Antipsychotic Agent,0.9517,NCIT:C29710
+Benzodiazepines,Not Found,2.0,Benzodiazepine,1.0000,NCIT:C1012
+DMSO,Not Found,2.5,Dimethyl Sulfone,0.7658,NCIT:C84616
+DSS,Not Found,2.5,Disulfiram,0.7203,NCIT:C447
+Fecal microbiota transplantation,Not Found,2.5,Fecal Microbiota Transplantation Capsule,0.8082,NCIT:C168520
+Folic acid,Not Found,2.5,Folic Acid Derivative,0.8160,NCIT:C2078
+Insulin replacement therapy,Not Found,2.5,Therapeutic Insulin,0.7572,NCIT:C581
+MTX,Not Found,2.0,Methotrexate,0.9071,NCIT:C642
+MTX_FA,Not Found,2.5,Methotrexate,0.8272,NCIT:C642
+MTX_IP,Not Found,2.5,Methotrexate,0.8260,NCIT:C642
+MTX_PO,Not Found,2.5,Methotrexate-E Therapeutic Implant,0.7810,NCIT:C17876
+No antihypertensive treatment,Not Found,2.5,Antihypertensive Agent,0.7421,NCIT:C270
+No aspirin,Not Found,2.5,Low-Dose Aspirin,0.7098,NCIT:C94758
+No insulin,Not Found,2.0,Therapeutic Insulin,0.7656,NCIT:C581
+No metformin,Not Found,2.5,Metformin,0.7978,NCIT:C61612
+No metoprolol,Not Found,2.5,Metoprolol,0.7896,NCIT:C61845
+No nifedipine,Not Found,2.5,Nifedipine,0.7832,NCIT:C29290
+No statins,Not Found,2.5,Non-Statin Antilipidemic Agent,0.7259,NCIT:C80482
+PBS,Not Found,2.5,Therapeutic Peripheral Blood Stem Cells,0.6998,NCIT:C201557
+Selective serotonin re-uptake inhibitors,Not Found,2.0,Selective Serotonin Reuptake Inhibitor,0.9076,NCIT:C94725
+gavage,Not Found,2.5,Fentanyl Citrate,0.6224,NCIT:C47994
+naive,Not Found,2.5,Naive/Stem Cell Memory T-cells,0.6658,NCIT:C215197

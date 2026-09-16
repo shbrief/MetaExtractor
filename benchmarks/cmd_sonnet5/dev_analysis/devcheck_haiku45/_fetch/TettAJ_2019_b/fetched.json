@@ -1,0 +1,82 @@
+{
+  "source": "pmc_fulltext",
+  "has_body": true,
+  "pmid": "31607556",
+  "pmcid": "6854460",
+  "doi": null,
+  "retrieval_attempts": [
+    {
+      "rung": "pmc_fulltext",
+      "returned_text": true,
+      "is_body": true,
+      "chars": 70348
+    }
+  ],
+  "supplementary_included": [
+    "mmc1.pdf",
+    "mmc2.xlsx",
+    "mmc3.xlsx",
+    "mmc4.xlsx",
+    "mmc5.xlsx",
+    "mmc6.xlsx",
+    "mmc7.pdf"
+  ],
+  "supplementary_skipped": [
+    [
+      "fx1.gif",
+      "europepmc: ValueError: image-only (.gif)"
+    ],
+    [
+      "fx1.jpg",
+      "europepmc: ValueError: image-only (.jpg)"
+    ],
+    [
+      "gr1.gif",
+      "europepmc: ValueError: image-only (.gif)"
+    ],
+    [
+      "gr1.jpg",
+      "europepmc: ValueError: image-only (.jpg)"
+    ],
+    [
+      "gr2.gif",
+      "europepmc: ValueError: image-only (.gif)"
+    ],
+    [
+      "gr2.jpg",
+      "europepmc: ValueError: image-only (.jpg)"
+    ],
+    [
+      "gr3.gif",
+      "europepmc: ValueError: image-only (.gif)"
+    ],
+    [
+      "gr3.jpg",
+      "europepmc: ValueError: image-only (.jpg)"
+    ],
+    [
+      "gr4.gif",
+      "europepmc: ValueError: image-only (.gif)"
+    ],
+    [
+      "gr4.jpg",
+      "europepmc: ValueError: image-only (.jpg)"
+    ],
+    [
+      "gr5.gif",
+      "europepmc: ValueError: image-only (.gif)"
+    ],
+    [
+      "gr5.jpg",
+      "europepmc: ValueError: image-only (.jpg)"
+    ]
+  ],
+  "sra_manifest_source": "ena:PRJNA504891+PRJNA529124+PRJNA529400+PRJEB31971 (171 runs) + BioSample attributes",
+  "sra_manifest_warnings": [
+    "BioSample attributes for 169/169 samples added as columns ['description', 'env_broad_scale', 'geo_loc_name', 'organism', 'subjectid', 'title', 'isolation_source', 'source_material_id', 'env_biome', 'samp_size', 'common_name']; empty manifest columns dropped: ['host_sex', 'host_body_site']."
+  ],
+  "n_tables": 23,
+  "text_chars": 168028,
+  "text_sha256": "62de06ec9cc5f3ed597201219cb59ae137fe6acb0a6a0e3ec2eb4d09d3a32d57",
+  "tables_sha256": "e76de93e04c95bd66cedfac6cac77e7532511ce4dad774f616a67329b80d02b5"
+}
