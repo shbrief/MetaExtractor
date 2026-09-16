@@ -1,0 +1,29 @@
+baseline pooled: TPc 1422 TPw 746 FN 14687 FP 0 F1 0.1495
+
+field                        +TPc   +TPw  pooled F1  studies (blocking rule)
+age                           +86    +54     0.1574  Bengtsson-PalmeJ_2015
+age_group                     +70   +140     0.1552  Bengtsson-PalmeJ_2015
+age_max                        +2    +68     0.1492  Bengtsson-PalmeJ_2015; NayakRR_2021; FanY_2023
+age_min                       +26    +44     0.1517  Bengtsson-PalmeJ_2015; NayakRR_2021; FanY_2023
+age_unit                      n/a    n/a        n/a  Bengtsson-PalmeJ_2015  [unit_of (needs the record to carry its value)]
+antibiotics_current_use       +70     +0     0.1563  Bengtsson-PalmeJ_2015; LiJ_2017; NayakRR_2021; FanY_2023
+biomarker_name                 +0     +0     0.1495  Bengtsson-PalmeJ_2015; TettAJ_2019_b; LiJ_2017; NayakRR_2021; Heitz-BuschartA_2016; FanY_2023; ContevilleLC_2019
+biomarker_unit                 +0     +0     0.1495  Bengtsson-PalmeJ_2015; TettAJ_2019_b; LiJ_2017; NayakRR_2021; Heitz-BuschartA_2016; FanY_2023; ContevilleLC_2019
+biomarker_value                +0     +0     0.1495  Bengtsson-PalmeJ_2015; TettAJ_2019_b; LiJ_2017; NayakRR_2021; Heitz-BuschartA_2016; FanY_2023
+body_site_details              +0     +0     0.1495  NayakRR_2021; Heitz-BuschartA_2016
+control                        +0    +70     0.1490  Bengtsson-PalmeJ_2015; LiJ_2017
+disease                       +15     +0     0.1510  LiJ_2017; NayakRR_2021; Heitz-BuschartA_2016; FanY_2023; ContevilleLC_2019
+disease_details                +0     +0     0.1495  LiJ_2017; NayakRR_2021; Heitz-BuschartA_2016; FanY_2023
+feces_phenotype                +0     +0     0.1495  FanY_2023; ContevilleLC_2019
+feces_phenotype_value          +0     +0     0.1495  Bengtsson-PalmeJ_2015; TettAJ_2019_b; LiJ_2017; NayakRR_2021; PasolliE_2019; Heitz-BuschartA_2016; FanY_2023; ContevilleLC_2019
+fmt_id                         +0     +0     0.1495  LiJ_2017; NayakRR_2021; FanY_2023
+fmt_role                       +0     +0     0.1495  LiJ_2017; NayakRR_2021
+ncbi_accession                 +0     +0     0.1495  PasolliE_2019
+obgyn_birth_control            +0     +0     0.1495  FanY_2023
+sex                           +52    +18     0.1544  Bengtsson-PalmeJ_2015; FanY_2023
+smoker                         +0     +0     0.1495  LiJ_2017
+treatment                      +0    +31     0.1491  LiJ_2017; NayakRR_2021; Heitz-BuschartA_2016; FanY_2023
+uncurated_metadata             +0     +0     0.1495  Bengtsson-PalmeJ_2015; TettAJ_2019_b; LiJ_2017; NayakRR_2021; PasolliE_2019; Heitz-BuschartA_2016; FanY_2023; ContevilleLC_2019
+
+(baseline)                                   0.1495
+ALL candidates together      +321   +285     0.1774

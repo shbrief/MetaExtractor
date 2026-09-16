@@ -83,32 +83,46 @@ def main() -> None:
         out.append(f"| **devcheck** | {label} | {t['tp_correct']} | {t['tp_wrong']} "
                    f"| {t['fn']} | {t['fp']} | **{f:.4f}** |")
 
-    gained, lost_const, lost_vary, rows = 0, 0, 0, []
+    # Per-field account. Repeats where the extraction failed carry no signal, so they are
+    # excluded; a field whose surviving repeats disagree is model variance, not a rule change.
+    import statistics
+    gained = lost_consistent = lost_variable = 0
+    rows = []
     for st in dev:
+        ok = [r for r in v3 if not r[st].get("extraction_failed")]
         for field, cell in dev[st]["fields_end_to_end"].items():
-            best = max((r[st]["fields_end_to_end"].get(field) or {}).get("tp_correct", 0) for r in v3)
-            cur = cell.get("tp_correct", 0)
-            if best == cur:
+            vals = [(r[st]["fields_end_to_end"].get(field) or {}).get("tp_correct", 0) for r in ok]
+            if not vals:
                 continue
+            ref = int(statistics.median(vals))
+            cur = cell.get("tp_correct", 0)
+            if ref == cur and len(set(vals)) == 1:
+                continue
+            varies = len(set(vals)) > 1
             nd = gold_distinct(mani, st, field)
-            rows.append((st, field, best, cur, nd))
-            if cur > best:
-                gained += cur - best
-            elif nd == 1:
-                lost_const += best - cur
-            else:
-                lost_vary += best - cur
+            rows.append((st, field, vals, ref, cur, nd, varies))
+            if cur > ref:
+                gained += cur - ref
+            elif cur < ref:
+                if varies:
+                    lost_variable += ref - cur
+                else:
+                    lost_consistent += ref - cur
     out += ["", "## Correct cells gained and lost, by field", "",
-            "`gold distinct` is the number of distinct values the field takes across that "
-            "study's curated rows; 1 means a single study-wide value, which blanket "
-            "study-to-sample propagation used to supply for free.", "",
-            "| study | field | best TPc in out_v3 | TPc dev | gold distinct |",
-            "|---|---|---|---|---|"]
-    for st, field, best, cur, nd in sorted(rows, key=lambda r: (r[0], r[1])):
-        out.append(f"| {st} | {field} | {best} | {cur} | {nd}{' (constant)' if nd == 1 else ''} |")
+            "`out_v3 TPc` lists the repeats whose extraction did not fail; the comparison uses "
+            "their median. Where those repeats disagree the difference is repeat-to-repeat model "
+            "variance, not a consequence of the rule changes, and is counted separately. "
+            "`gold distinct` is how many distinct values the field takes across the study's "
+            "curated rows; 1 means a single study-wide value, which blanket study-to-sample "
+            "propagation used to supply without per-sample evidence.", "",
+            "| study | field | out_v3 TPc (completed repeats) | median | TPc dev | gold distinct | v3 repeats agree |",
+            "|---|---|---|---|---|---|---|"]
+    for st, field, vals, ref, cur, nd, varies in sorted(rows, key=lambda r: (r[0], r[1])):
+        out.append(f"| {st} | {field} | {'/'.join(map(str, vals))} | {ref} | {cur} "
+                   f"| {nd}{' (constant)' if nd == 1 else ''} | {'no' if varies else 'yes'} |")
     out += ["", f"- correct cells **gained**: {gained}",
-            f"- correct cells **lost** where the gold field is constant within the study: {lost_const}",
-            f"- correct cells **lost** where the gold field varies within the study: {lost_vary}", ""]
+            f"- correct cells **lost** where the out_v3 repeats agreed (attributable to the rule changes): {lost_consistent}",
+            f"- correct cells **lost** where the out_v3 repeats disagreed (model variance): {lost_variable}", ""]
     (DEV.parent / "COMPARISON.md").write_text("\n".join(out))
     print(f"wrote {DEV.parent / 'COMPARISON.md'}")
 

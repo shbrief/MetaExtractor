@@ -33,31 +33,33 @@ against each tree's own crosswalks. out_v3 columns are its three Haiku repeats.
 
 ## Correct cells gained and lost, by field
 
-`gold distinct` is the number of distinct values the field takes across that study's curated rows; 1 means a single study-wide value, which blanket study-to-sample propagation used to supply for free.
+`out_v3 TPc` lists the repeats whose extraction did not fail; the comparison uses their median. Where those repeats disagree the difference is repeat-to-repeat model variance, not a consequence of the rule changes, and is counted separately. `gold distinct` is how many distinct values the field takes across the study's curated rows; 1 means a single study-wide value, which blanket study-to-sample propagation used to supply without per-sample evidence.
 
-| study | field | best TPc in out_v3 | TPc dev | gold distinct |
-|---|---|---|---|---|
-| Bengtsson-PalmeJ_2015 | age | 16 | 0 | 9 |
-| Bengtsson-PalmeJ_2015 | age_group | 70 | 0 | 1 (constant) |
-| Bengtsson-PalmeJ_2015 | age_max | 2 | 0 | 9 |
-| Bengtsson-PalmeJ_2015 | age_min | 26 | 0 | 9 |
-| Bengtsson-PalmeJ_2015 | age_unit | 70 | 0 | 1 (constant) |
-| Bengtsson-PalmeJ_2015 | antibiotics_current_use | 70 | 0 | 1 (constant) |
-| Bengtsson-PalmeJ_2015 | sample_id | 0 | 70 | 70 |
-| Bengtsson-PalmeJ_2015 | sex | 52 | 0 | 2 |
-| Bengtsson-PalmeJ_2015 | westernized | 70 | 0 | 1 (constant) |
-| ContevilleLC_2019 | disease | 15 | 0 | 1 (constant) |
-| ContevilleLC_2019 | sample_id | 0 | 15 | 15 |
-| ContevilleLC_2019 | subject_id | 15 | 0 | 15 |
-| Heitz-BuschartA_2016 | disease | 24 | 0 | 5 |
-| Heitz-BuschartA_2016 | sample_id | 0 | 53 | 53 |
-| Heitz-BuschartA_2016 | subject_id | 0 | 53 | 20 |
-| Heitz-BuschartA_2016 | westernized | 53 | 0 | 1 (constant) |
-| NayakRR_2021 | host_species | 0 | 34 | 1 (constant) |
-| NayakRR_2021 | sample_id | 0 | 34 | 34 |
-| NayakRR_2021 | treatment | 0 | 17 | 2 |
-| PasolliE_2019 | age_unit | 112 | 0 | 1 (constant) |
+| study | field | out_v3 TPc (completed repeats) | median | TPc dev | gold distinct | v3 repeats agree |
+|---|---|---|---|---|---|---|
+| Bengtsson-PalmeJ_2015 | age | 16/16 | 16 | 0 | 9 | yes |
+| Bengtsson-PalmeJ_2015 | age_group | 70/70 | 70 | 0 | 1 (constant) | yes |
+| Bengtsson-PalmeJ_2015 | age_max | 2/2 | 2 | 0 | 9 | yes |
+| Bengtsson-PalmeJ_2015 | age_min | 26/26 | 26 | 0 | 9 | yes |
+| Bengtsson-PalmeJ_2015 | age_unit | 70/70 | 70 | 0 | 1 (constant) | yes |
+| Bengtsson-PalmeJ_2015 | antibiotics_current_use | 70/70 | 70 | 0 | 1 (constant) | yes |
+| Bengtsson-PalmeJ_2015 | sample_id | 0/0 | 0 | 70 | 70 | yes |
+| Bengtsson-PalmeJ_2015 | sex | 52/52 | 52 | 0 | 2 | yes |
+| Bengtsson-PalmeJ_2015 | westernized | 0/70 | 35 | 0 | 1 (constant) | no |
+| ContevilleLC_2019 | disease | 15/15/15 | 15 | 0 | 1 (constant) | yes |
+| ContevilleLC_2019 | host_species | 15/0/15 | 15 | 15 | 1 (constant) | no |
+| ContevilleLC_2019 | sample_id | 0/0/0 | 0 | 15 | 15 | yes |
+| ContevilleLC_2019 | subject_id | 15/15/15 | 15 | 0 | 15 | yes |
+| Heitz-BuschartA_2016 | disease | 0/0/24 | 0 | 0 | 5 | no |
+| Heitz-BuschartA_2016 | host_species | 0/53/53 | 53 | 53 | 1 (constant) | no |
+| Heitz-BuschartA_2016 | sample_id | 0/0/0 | 0 | 53 | 53 | yes |
+| Heitz-BuschartA_2016 | subject_id | 0/0/0 | 0 | 53 | 20 | yes |
+| Heitz-BuschartA_2016 | westernized | 0/53/0 | 0 | 0 | 1 (constant) | no |
+| NayakRR_2021 | host_species | 0/0/0 | 0 | 34 | 1 (constant) | yes |
+| NayakRR_2021 | sample_id | 0/0/0 | 0 | 34 | 34 | yes |
+| NayakRR_2021 | treatment | 0/0/0 | 0 | 17 | 2 | yes |
+| PasolliE_2019 | age_unit | 112/112/112 | 112 | 0 | 1 (constant) | yes |
 
 - correct cells **gained**: 276
-- correct cells **lost** where the gold field is constant within the study: 460
-- correct cells **lost** where the gold field varies within the study: 135
+- correct cells **lost** where the out_v3 repeats agreed (attributable to the rule changes): 448
+- correct cells **lost** where the out_v3 repeats disagreed (model variance): 35
