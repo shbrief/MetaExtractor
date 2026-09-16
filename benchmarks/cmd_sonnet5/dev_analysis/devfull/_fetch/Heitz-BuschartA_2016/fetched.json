@@ -1,0 +1,49 @@
+{
+  "source": "unpaywall_pdf",
+  "has_body": true,
+  "pmid": "27723761",
+  "pmcid": null,
+  "doi": "10.1038/nmicrobiol.2016.180",
+  "retrieval_attempts": [
+    {
+      "rung": "pmid_to_pmcid",
+      "returned_text": false,
+      "is_body": false,
+      "chars": 0
+    },
+    {
+      "rung": "pubmed_abstract",
+      "returned_text": true,
+      "is_body": false,
+      "chars": 1325
+    },
+    {
+      "rung": "europepmc_fulltext_by_doi",
+      "returned_text": false,
+      "is_body": false,
+      "chars": 0
+    },
+    {
+      "rung": "europepmc_pdf",
+      "returned_text": false,
+      "is_body": false,
+      "chars": 0
+    },
+    {
+      "rung": "unpaywall_pdf",
+      "returned_text": true,
+      "is_body": true,
+      "chars": 90208
+    }
+  ],
+  "supplementary_included": null,
+  "supplementary_skipped": null,
+  "sra_manifest_source": "ena:PRJNA289586 (221 runs) + BioSample attributes",
+  "sra_manifest_warnings": [
+    "BioSample attributes for 184/184 samples added as columns ['description', 'env_biome', 'env_broad_scale', 'env_feature', 'env_local_scale', 'env_material', 'env_medium', 'geo_loc_name', 'host_age', 'host_body_mass_index', 'host_body_product', 'host_disease', 'host_family_relationship', 'host_height', 'host_last_meal', 'host_subject_id', 'host_tot_mass', 'lat_lon', 'medic_hist_perform', 'organism', 'samp_mat_process', 'samp_store_temp', 'source_material_id', 'temp', 'title']; empty manifest columns dropped: ['host_body_site']."
+  ],
+  "n_tables": 1,
+  "text_chars": 90208,
+  "text_sha256": "64e0d4b064c62b75ec1705dbf051ad67ed6c4f2bca46b82abe9cb48a3dacdef3",
+  "tables_sha256": "6a7b60b1c75211e3d90d91b2e828b812ef072eae080ee6be23e7604e8e549583"
+}

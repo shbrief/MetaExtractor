@@ -1,0 +1,54 @@
+{
+  "source": "pmc_html",
+  "has_body": true,
+  "pmid": "26259788",
+  "pmcid": "4576037",
+  "doi": "10.1128/AAC.00933-15",
+  "retrieval_attempts": [
+    {
+      "rung": "pmc_fulltext",
+      "returned_text": true,
+      "is_body": false,
+      "chars": 1721
+    },
+    {
+      "rung": "pubmed_abstract",
+      "returned_text": true,
+      "is_body": false,
+      "chars": 1775
+    },
+    {
+      "rung": "europepmc_fulltext",
+      "returned_text": false,
+      "is_body": false,
+      "chars": 0
+    },
+    {
+      "rung": "europepmc_fulltext_by_doi",
+      "returned_text": false,
+      "is_body": false,
+      "chars": 0
+    },
+    {
+      "rung": "pmc_html",
+      "returned_text": true,
+      "is_body": true,
+      "chars": 29883
+    }
+  ],
+  "supplementary_included": [],
+  "supplementary_skipped": [
+    [
+      "(europepmc zip)",
+      "response was not a valid ZIP"
+    ]
+  ],
+  "sra_manifest_source": "ena:PRJEB7369 (70 runs) + BioSample attributes",
+  "sra_manifest_warnings": [
+    "BioSample attributes for 70/70 samples added as columns ['environment_biome', 'environment_feature', 'environment_material', 'geographic_location_country_and_or_sea', 'geographic_location_latitude', 'geographic_location_longitude', 'human_gut_environmental_package', 'investigation_type', 'organism', 'project_name', 'sequencing_method', 'title']; empty manifest columns dropped: ['host', 'host_sex', 'host_body_site']."
+  ],
+  "n_tables": 1,
+  "text_chars": 29883,
+  "text_sha256": "30e84125476400c9ecfa8affa3652d85c1c276d25901325a0778036823f0b6e6",
+  "tables_sha256": "5b8627043901eb5f64108d3184960a63b78ea42193dba21c64d0f8d89ff577b6"
+}
