@@ -1,0 +1,127 @@
+{
+  "started_utc": "2026-09-16T17:48:39+00:00",
+  "finished_utc": "2026-09-16T17:50:04+00:00",
+  "paper_id": "26259788",
+  "status": "ok",
+  "error": null,
+  "request": {
+    "model_requested": "claude-haiku-4-5",
+    "models_returned": [
+      "claude-haiku-4-5-20251001"
+    ],
+    "max_tokens": 16384,
+    "max_tokens_ceiling": 64000,
+    "batch_size": 30,
+    "sample_discovery": true,
+    "min_table_relevance": 0.15,
+    "sampling_and_thinking": "not set (API defaults: no temperature/top_p/top_k/thinking/effort parameters sent)",
+    "age_rules": "/Users/sehyunoh/OmicsMLRepo/MetaExtractor/benchmarks/cmd_sonnet5/age_rules_cmd.json"
+  },
+  "usage": {
+    "input_tokens": 7268,
+    "cache_creation_input_tokens": 7999,
+    "cache_read_input_tokens": 15998,
+    "output_tokens": 9838,
+    "n_calls": 3
+  },
+  "calls": [
+    {
+      "purpose": "fields",
+      "n_fields": 30,
+      "first_field": "study_name",
+      "max_tokens": 16384,
+      "stop_reason": "end_turn",
+      "output_tokens": 4046
+    },
+    {
+      "purpose": "fields",
+      "n_fields": 30,
+      "first_field": "zigosity",
+      "max_tokens": 16384,
+      "stop_reason": "end_turn",
+      "output_tokens": 3539
+    },
+    {
+      "purpose": "fields",
+      "n_fields": 11,
+      "first_field": "biomarker_name",
+      "max_tokens": 16384,
+      "stop_reason": "end_turn",
+      "output_tokens": 2253
+    }
+  ],
+  "cost_estimate": {
+    "input_usd": 0.007268,
+    "output_usd": 0.04919,
+    "cache_read_usd": 0.0015998000000000002,
+    "cache_write_usd": 0.00999875,
+    "total_usd": 0.06805655,
+    "pricing_as_of": "2026-06-24"
+  },
+  "retrieval": {
+    "frozen_retrieval": "/Users/sehyunoh/OmicsMLRepo/MetaExtractor/benchmarks/cmd_sonnet5/dev_analysis/devfull/_fetch/Bengtsson-PalmeJ_2015",
+    "source": "pmc_html",
+    "has_body": true,
+    "pmid": "26259788",
+    "pmcid": "4576037",
+    "doi": "10.1128/AAC.00933-15",
+    "attempts": [
+      {
+        "rung": "pmc_fulltext",
+        "returned_text": true,
+        "is_body": false,
+        "chars": 1721
+      },
+      {
+        "rung": "pubmed_abstract",
+        "returned_text": true,
+        "is_body": false,
+        "chars": 1775
+      },
+      {
+        "rung": "europepmc_fulltext",
+        "returned_text": false,
+        "is_body": false,
+        "chars": 0
+      },
+      {
+        "rung": "europepmc_fulltext_by_doi",
+        "returned_text": false,
+        "is_body": false,
+        "chars": 0
+      },
+      {
+        "rung": "pmc_html",
+        "returned_text": true,
+        "is_body": true,
+        "chars": 29883
+      }
+    ],
+    "supplementary_included": [],
+    "supplementary_skipped": [
+      [
+        "(europepmc zip)",
+        "response was not a valid ZIP"
+      ]
+    ],
+    "sra_manifest_source": "ena:PRJEB7369 (70 runs) + BioSample attributes",
+    "sra_manifest_warnings": [
+      "BioSample attributes for 70/70 samples added as columns ['environment_biome', 'environment_feature', 'environment_material', 'geographic_location_country_and_or_sea', 'geographic_location_latitude', 'geographic_location_longitude', 'human_gut_environmental_package', 'investigation_type', 'organism', 'project_name', 'sequencing_method', 'title']; empty manifest columns dropped: ['host', 'host_sex', 'host_body_site']."
+    ]
+  },
+  "local_supplementary": [],
+  "paper_text_sha256": "30e84125476400c9ecfa8affa3652d85c1c276d25901325a0778036823f0b6e6",
+  "paper_text_chars": 29883,
+  "n_tables": 1,
+  "output": {
+    "granularity": "sample_level",
+    "n_samples": 70,
+    "n_fields": 71,
+    "n_warnings": 24
+  },
+  "versions": {
+    "metaextractor": "0.1.0",
+    "anthropic_sdk": "0.104.0",
+    "python": "3.13.5"
+  }
+}
