@@ -40,3 +40,6 @@ MANUSCRIPT_REVIEW.md
 benchmarks/cmd_sonnet5/dev_analysis/**/*.text.txt
 benchmarks/cmd_sonnet5/dev_analysis/**/_fetch/**/text.txt
 benchmarks/cmd_sonnet5/dev_analysis/**/_fetch/**/tables.json
+
+# Regenerable via harmonize/build_bodysite_uberon_full.py (~6.6 MB), like the disease corpus.
+benchmarks/cmd_sonnet5/harmonize/bodysite_corpus_uberon_full.csv

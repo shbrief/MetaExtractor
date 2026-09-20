@@ -54,10 +54,21 @@ def _treatment_corpus() -> pathlib.Path | None:
         return None
 
 
+def _bodysite_corpus() -> pathlib.Path:
+    """The six cMD enum meanings by default; ``$CMD_BODYSITE_CORPUS`` selects another.
+
+    Point it at ``bodysite_corpus_uberon_full.csv`` to score against the UBERON
+    "anatomical entity" subtree instead, so a value that is not a body site is not forced
+    onto one of six. Crosswalks must be regenerated against whichever corpus is selected.
+    """
+    env = os.environ.get("CMD_BODYSITE_CORPUS")
+    return pathlib.Path(env) if env else HERE / "bodysite_corpus_v041.csv"
+
+
 def corpus_csv(field: str) -> pathlib.Path | None:
     return {
         "disease": HERE / "disease_corpus_v041.csv",   # v0.4.1 combined: C7057 + static Healthy
-        "body_site": HERE / "bodysite_corpus_v041.csv",  # the six UBERON body_site enum meanings
+        "body_site": _bodysite_corpus(),
         "treatment": _treatment_corpus(),               # NCIt Pharmacologic Substance (C1909)
     }.get(field)
 
@@ -71,8 +82,19 @@ def corpus_code_map(field: str) -> dict[str, str]:
     return {norm(l): str(c) for l, c in zip(df[lab], df["obo_id"])}
 
 
-def crosswalk_map(path: pathlib.Path, code_map: dict[str, str]) -> dict[str, str]:
-    """term(norm) -> ontology code, backfilling exact-stage rows from the corpus."""
+def crosswalk_map(path: pathlib.Path, code_map: dict[str, str], *,
+                  min_score: float = 0.0,
+                  dropped: list[tuple[str, str, float]] | None = None) -> dict[str, str]:
+    """term(norm) -> ontology code, backfilling exact-stage rows from the corpus.
+
+    ``min_score`` discards a row whose OntologyMapper similarity is below the
+    threshold, leaving the term unmapped so the value falls back to a surface
+    string comparison. A closed corpus has no "no answer": without a threshold
+    every term is assigned its nearest concept, so ``USA`` becomes a body site.
+    Rows resolved from the corpus label map are exact by construction (the query
+    *is* a corpus label) and are never discarded. Discarded rows are appended to
+    ``dropped`` as ``(term, match_label, score)`` for reporting.
+    """
     m: dict[str, str] = {}
     if not path.exists():
         return m
@@ -80,18 +102,32 @@ def crosswalk_map(path: pathlib.Path, code_map: dict[str, str]) -> dict[str, str
         q = norm(r["query"])
         raw = r.get("match1_code")
         code = str(raw).strip() if pd.notna(raw) else ""
+        exact = False
         if not code or code.lower() == "nan":
             code = code_map.get(q, "")
-        if code and code.lower() != "nan":
-            m[q] = code
+            exact = bool(code)
+        if not code or code.lower() == "nan":
+            continue
+        if min_score > 0 and not exact:
+            raw_score = r.get("match1_score")
+            score = float(raw_score) if pd.notna(raw_score) else 0.0
+            if score < min_score:
+                if dropped is not None:
+                    dropped.append((q, str(r.get("match1", "")), score))
+                continue
+        m[q] = code
     return m
 
 
-def load_field_crosswalk(field: str, directory: pathlib.Path) -> dict[str, str]:
+def load_field_crosswalk(field: str, directory: pathlib.Path, *,
+                         min_score: float = 0.0,
+                         dropped: list[tuple[str, str, float]] | None = None) -> dict[str, str]:
     """Union of the gold and extracted crosswalks for ``field`` (same corpus)."""
     cm = corpus_code_map(field)
-    return {**crosswalk_map(directory / f"crosswalk_gold_{field}.csv", cm),
-            **crosswalk_map(directory / f"crosswalk_{field}.csv", cm)}
+    return {**crosswalk_map(directory / f"crosswalk_gold_{field}.csv", cm,
+                            min_score=min_score, dropped=dropped),
+            **crosswalk_map(directory / f"crosswalk_{field}.csv", cm,
+                            min_score=min_score, dropped=dropped)}
 
 
 def queried_terms(field: str, directory: pathlib.Path) -> set[str]:
@@ -125,15 +161,25 @@ def _is_nr(value) -> bool:
 class Harmonizer:
     """Post-harmonization comparison for the fields that have a crosswalk in ``directory``."""
 
-    def __init__(self, directory: pathlib.Path):
+    def __init__(self, directory: pathlib.Path, *, min_score: float = 0.0):
+        """``min_score`` is the OntologyMapper similarity below which a term is left
+        unmapped (0.0, the default, keeps every match and reproduces the frozen runs)."""
         self.directory = pathlib.Path(directory)
         if not self.directory.is_dir():
             raise FileNotFoundError(
                 f"no crosswalk directory {self.directory}; run "
                 f"harmonize/regen_crosswalks.py --tree <tree> first")
+        self.min_score = float(min_score)
         self.fields = sorted(p.stem[len("crosswalk_"):] for p in self.directory.glob("crosswalk_*.csv")
                              if not p.stem.startswith("crosswalk_gold_"))
-        self.crosswalks = {f: load_field_crosswalk(f, self.directory) for f in self.fields}
+        self.crosswalks = {}
+        self.below_threshold: dict[str, list[tuple[str, str, float]]] = {}
+        for f in self.fields:
+            dropped: list[tuple[str, str, float]] = []
+            self.crosswalks[f] = load_field_crosswalk(
+                f, self.directory, min_score=self.min_score, dropped=dropped)
+            if dropped:
+                self.below_threshold[f] = sorted(set(dropped), key=lambda t: t[2])
         self.queried = {f: queried_terms(f, self.directory) for f in self.fields}
 
     def codes(self, value, field: str) -> set[str] | None:

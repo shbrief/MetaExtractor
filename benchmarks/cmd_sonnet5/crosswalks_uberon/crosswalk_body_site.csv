@@ -1,0 +1,11 @@
+query,ref_match,stage,match1,match1_score,match1_code
+feces,Not Found,1.0,Not Found,1.0,
+milk,Not Found,1.0,Not Found,1.0,
+nasal cavity,Not Found,1.0,Not Found,1.0,
+oral cavity,Not Found,1.0,Not Found,1.0,
+skin epidermis,Not Found,1.0,Not Found,1.0,
+vagina,Not Found,1.0,Not Found,1.0,
+Multiple body sites,Not Found,2.5,multi organ part structure,0.6791,UBERON:0034921
+Stool,Not Found,2.5,feces,1.0000,UBERON:0001988
+Sweden,Not Found,2.5,systemic artery,0.5944,UBERON:0004573
+USA,Not Found,2.5,stria medullaris,0.5700,UBERON:0006086

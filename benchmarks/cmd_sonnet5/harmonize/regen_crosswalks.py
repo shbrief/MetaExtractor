@@ -24,7 +24,7 @@ import pandas as pd
 HERE = pathlib.Path(__file__).resolve().parent
 BENCH = HERE.parent
 sys.path.insert(0, str(BENCH))
-from bench_paths import gold_path, load_manifest  # noqa: E402
+from bench_paths import gold_paths, load_manifest  # noqa: E402
 
 MANI = load_manifest()
 
@@ -40,7 +40,10 @@ SPLIT = lambda s: [t.strip() for t in str(s).replace("/", ";").replace(",", ";")
 # an explicit corpus_df; treatment uses the NCIt registry corpus (as run_om.py did).
 CORPUS_CSV = {
     "disease":   HERE / "disease_corpus_v041.csv",
-    "body_site": HERE / "bodysite_corpus_v041.csv",
+    # Same override as crosswalk.py, so mapping and scoring always share one corpus file.
+    "body_site": pathlib.Path(os.environ["CMD_BODYSITE_CORPUS"])
+                 if os.environ.get("CMD_BODYSITE_CORPUS")
+                 else HERE / "bodysite_corpus_v041.csv",
     # Honour the same override as crosswalk.py so scoring and mapping share one corpus file.
     "treatment": pathlib.Path(os.environ.get("METAHARMONIZER_ONTOLOGIES_DIR", RETRIEVED_ONTOLOGIES_DIR))
                  / "ncit_treatment_corpus.csv",
@@ -79,7 +82,8 @@ def collect_extracted(field: str) -> list[str]:
 def collect_gold(field: str) -> list[str]:
     vals: set[str] = set()
     for m in MANI:
-        for r in csv.DictReader(gold_path(m).open(), delimiter="\t"):
+        for r in (row for gp in gold_paths(m)
+                  for row in csv.DictReader(gp.open(), delimiter="\t")):
             v = (r.get(field) or "").strip()
             if v and v.lower() not in ("na", "nan", "not_reported", ""):
                 vals.update(SPLIT(v))
@@ -123,6 +127,9 @@ if __name__ == "__main__":
     ap = argparse.ArgumentParser()
     ap.add_argument("fields", nargs="*", help=f"subset of {list(OM_CATEGORY)}")
     ap.add_argument("--tree", default="out_v2")
+    ap.add_argument("--out", default=None,
+                    help="crosswalk output directory (default: TREE/crosswalks). Use it to "
+                         "regenerate against a different corpus without touching a frozen tree.")
     a = ap.parse_args()
     if bad := [f for f in a.fields if f not in OM_CATEGORY]:
         raise SystemExit(f"unknown field(s): {bad}")
@@ -131,6 +138,7 @@ if __name__ == "__main__":
     EXT_DIRS[:] = sorted(d for d in tree.glob("*_r*") if d.is_dir())
     if not EXT_DIRS:
         raise SystemExit(f"no run dirs under {tree}")
-    OUT_DIR[:] = [tree / "crosswalks"]
-    OUT_DIR[0].mkdir(exist_ok=True)
+    out = pathlib.Path(a.out) if a.out else tree / "crosswalks"
+    OUT_DIR[:] = [out if out.is_absolute() else BENCH / out]
+    OUT_DIR[0].mkdir(parents=True, exist_ok=True)
     main(a.fields or list(OM_CATEGORY))

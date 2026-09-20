@@ -1,0 +1,973 @@
+---
+title: "MetaExtractor benchmark: how the manuscript's coverage and agreement numbers are derived"
+subtitle: "Derivation notebook for `out_v3` (Sonnet 5 and Haiku 4.5, three repeats each, ten cMD studies)"
+date: today
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    embed-resources: true
+    code-fold: false
+    df-print: kable
+execute:
+  warning: false
+  message: false
+---
+
+## What this document is
+
+Every number in the manuscript's coverage, agreement, and alignment results is recomputed here
+from the committed run outputs, so a reader can see exactly which files each figure comes from
+and which conventions were applied. Nothing is read from a cached summary table that this
+notebook does not also rebuild from the per-cell records.
+
+The notebook is **read-only**: it never writes into `benchmarks/cmd_sonnet5/out_v3/`, which is
+frozen (see `REPRODUCE.md`).
+
+Three axes are computed, and they answer different questions. Keeping them apart matters,
+because the same pair of methods looks very different on each:
+
+| axis | unit | question |
+|---|---|---|
+| **sample** | a curated row | does the other method describe this sample at all? |
+| **field** | a (study, schema field) pair | does the other method populate this field for this study? |
+| **cell** | a (sample, field) pair | do the two methods agree on the value? |
+
+Throughout, *manual* means the curated cMD table and *automatic* means MetaExtractor +
+MetaHarmonizer. Neither is treated as ground truth: the counts are reported symmetrically, and
+which side is right where they disagree is a separate adjudication question this notebook does
+not settle.
+
+### Rendering
+
+Gold tables are resolved against a checkout of
+[`waldronlab/curatedMetagenomicDataCuration`](https://github.com/waldronlab/curatedMetagenomicDataCuration),
+exactly as `benchmarks/cmd_sonnet5/bench_paths.py` does:
+
+```sh
+CMD_CURATION_DIR=/path/to/curatedMetagenomicDataCuration quarto render manuscript_data.qmd
+```
+
+```{r}
+#| label: setup
+suppressPackageStartupMessages({
+  library(jsonlite); library(yaml); library(dplyr); library(tidyr)
+  library(readr); library(purrr); library(tibble); library(stringr)
+  library(ggplot2); library(knitr); library(DT)
+})
+
+BENCH    <- "benchmarks/cmd_sonnet5"
+RUNS_DIR <- file.path(BENCH, "out_v3")
+SCHEMA   <- file.path(BENCH, "cmd.clean.linkml.yaml")
+MANIFEST <- file.path(BENCH, "manifest.json")
+
+CURATION <- "~/Projects/cMD_architecture/curatedMetagenomicDataCuration"
+# CURATION <- Sys.getenv("CMD_CURATION_DIR")
+if (!nzchar(CURATION)) {
+  stop("Set CMD_CURATION_DIR to a checkout of waldronlab/curatedMetagenomicDataCuration")
+}
+
+RUNS <- c("sonnet_r1", "sonnet_r2", "sonnet_r3", "haiku_r1", "haiku_r2", "haiku_r3")
+model_of <- function(run) ifelse(str_starts(run, "sonnet"), "Sonnet 5", "Haiku 4.5")
+```
+
+## 1. Inputs
+
+### 1.1 The target schema
+
+Both methods aim at the same schema, so it bounds what either can populate. The field names come
+from the committed LinkML file — the same file the extractor was run against.
+
+```{r}
+#| label: schema
+schema_fields <- yaml::read_yaml(SCHEMA)$classes$CmdRecord$slots |> unlist()
+
+# Identifier / provenance fields. `bench.py::META_FIELDS` — scored, but reported in a
+# separate bucket from the scientific-content metric.
+META_FIELDS <- c("study_name", "sample_id", "subject_id", "pmid",
+                 "curator", "ncbi_accession", "host_species", "uncurated_metadata")
+
+# Unit and bound companions of another field. These are not independent observations: a
+# populated `age_unit` only exists because `age` was populated, so counting them as separate
+# field-level discoveries would double-count. Excluded from the field axis, kept in the cell axis
+# (where the scorer uses them to convert values before comparison).
+DERIVED_FIELDS <- c("age_unit", "age_min", "age_max", "age_years",
+                    "antibiotics_exclusion_period_unit", "biomarker_unit",
+                    "disease_response_os_unit")
+
+content_fields <- setdiff(schema_fields, c(META_FIELDS, DERIVED_FIELDS))
+
+tibble(
+  set = c("schema slots", "identifier / provenance", "unit & bound companions", "content fields"),
+  n   = c(length(schema_fields), length(META_FIELDS), length(DERIVED_FIELDS), length(content_fields))
+)
+```
+
+### 1.2 The ten studies
+
+```{r}
+#| label: manifest
+manifest <- fromJSON(MANIFEST, simplifyDataFrame = TRUE) |>
+  as_tibble() |>
+  select(study, pmid, n_samples, gold_rel)
+
+manifest |> select(study, pmid, n_samples)
+```
+
+### 1.3 The "not reported" convention
+
+A slot present in the output but filled with a not-reported sentinel is **not** a populated
+value. This matters more than it sounds: the extractor emits all `r length(schema_fields)` schema
+slots in its study-level `fields` object regardless of what it found, most of them carrying
+`"not_reported"`. Counting key presence instead of value presence inflates automatic coverage
+roughly fourfold.
+
+The predicate below reproduces `metaextractor.evaluation.is_not_reported`, including its
+treatment of lists (an empty list is not-reported; a non-empty list is a value), plus `NA` for
+R's TSV reader.
+
+```{r}
+#| label: not-reported
+NR_TOKENS <- c("not_reported", "na", "n/a", "", "none", "null")
+
+# A sample cell is a bare scalar; a study-level cell is an object carrying $value.
+cell_value <- function(x) if (is.list(x) && "value" %in% names(x)) x[["value"]] else x
+
+is_nr <- function(x) {
+  x <- cell_value(x)
+  if (is.null(x)) return(TRUE)
+  if (is.list(x)) return(length(x) == 0L)
+  if (length(x) == 0L) return(TRUE)
+  if (length(x) > 1L)  return(FALSE)
+  if (is.na(x))        return(TRUE)
+  if (is.character(x)) return(tolower(trimws(x)) %in% NR_TOKENS)
+  FALSE
+}
+
+is_nr_vec <- function(x) {
+  x <- as.character(x)
+  is.na(x) | tolower(trimws(x)) %in% NR_TOKENS
+}
+
+# Demonstration on a real record.
+demo <- fromJSON(file.path(RUNS_DIR, "sonnet_r1", "ContevilleLC_2019.json"),
+                 simplifyVector = FALSE)
+tibble(
+  quantity = c("schema slots emitted in study-level `fields`",
+               "of those, carrying a value",
+               "distinct content fields populated on >= 1 sample"),
+  n = c(length(demo$fields),
+        sum(!map_lgl(demo$fields, is_nr)),
+        length(intersect(content_fields,
+                         unique(unlist(map(demo$samples,
+                                           ~ names(keep(.x, \(c) !is_nr(c)))))))))
+)
+```
+
+### 1.4 Loading gold and extracted records
+
+```{r}
+#| label: loaders
+read_gold <- function(gold_rel) {
+  read_tsv(file.path(CURATION, gold_rel),
+           col_types = cols(.default = col_character()), na = character())
+}
+
+# Fields the curated table populates for at least one row of this study, and the columns it
+# carries at all. The distinction is load-bearing in section 3.
+gold_field_sets <- function(g) {
+  cols <- intersect(names(g), schema_fields)
+  list(populated = cols[map_lgl(cols, ~ any(!is_nr_vec(g[[.x]])))],
+       columns   = names(g))
+}
+
+# Per-field sample counts for one extraction. A field populated only at study level appears with
+# n_samples_with_value = 0; the extractor's fan-out rule decides whether it reaches sample rows.
+ext_field_counts <- function(path) {
+  if (!file.exists(path)) {
+    return(tibble(field = character(), n_with_value = integer(), n_samples = integer()))
+  }
+  d  <- fromJSON(path, simplifyVector = FALSE)
+  sm <- compact(d$samples %||% list())
+  hits <- unlist(map(sm, ~ names(keep(.x, \(c) !is_nr(c)))))
+  counts <- if (length(hits)) {
+    tb <- table(hits); set_names(as.integer(tb), names(tb))
+  } else set_names(integer(0), character(0))
+  study_only <- names(keep(d$fields %||% list(), \(c) !is_nr(c)))
+  tibble(field = union(names(counts), study_only)) |>
+    mutate(n_with_value = coalesce(unname(counts[field]), 0L),
+           n_samples    = length(sm))
+}
+```
+
+### 1.5 The per-cell records
+
+`write_cells_tsv` emits one row per scored cell of the all-curated join, for each of the 60
+(model x repeat x study) combinations.
+
+```{r}
+#| label: cells
+cells <- map_dfr(RUNS, \(run) {
+  list.files(file.path(RUNS_DIR, run), pattern = "\\.cells\\.tsv$", full.names = TRUE) |>
+    map_dfr(\(p) read_tsv(p, col_types = cols(.default = col_character())) |>
+              mutate(study = str_remove(basename(p), "\\.cells\\.tsv$"))) |>
+    mutate(run = run)
+}) |>
+  mutate(model = model_of(run),
+         is_content = !field %in% META_FIELDS)
+
+cat(sprintf("%s cell rows across %d run x study files\n",
+            format(nrow(cells), big.mark = ","),
+            n_distinct(paste(cells$run, cells$study))))
+```
+
+## 2. Sample axis — which samples does each method describe?
+
+### 2.1 One-to-one alignment by identifier
+
+This is the alignment reported in manuscript §3.3. A curated row is *matched* when its
+identifier tokens pick out exactly one extracted record that no other curated row claims;
+*pooled* when they pick out several; *ambiguous* when duplicated keys are involved. Neither
+pooled nor ambiguous is resolved by position. Extracted records with no curated row are split by
+whether they carry an identifier at all — the ones that do are candidate automatic-only samples
+(for example deposited runs outside the curated subset).
+
+```{r}
+#| label: sample-axis
+summaries <- map(set_names(RUNS), \(r) fromJSON(file.path(RUNS_DIR, r, "summary.json"),
+                                                simplifyVector = FALSE))
+
+alignment <- imap_dfr(summaries, \(s, run) {
+  map_dfr(s$per_study, \(st) {
+    a <- st$alignment
+    tibble(run = run, study = st$study,
+           n_gold = a$n_gold, matched = a$matched,
+           unmatched_gold = a$unmatched_gold,
+           pooled_gold = a$pooled_gold, ambiguous_gold = a$ambiguous_gold,
+           ext_only_with_key = a$unmatched_ext_with_key,
+           ext_only_without_key = a$unmatched_ext_without_key)
+  })
+}) |> mutate(model = model_of(run), .after = run)
+
+alignment |>
+  group_by(model, run) |>
+  summarise(across(c(n_gold, matched, unmatched_gold, pooled_gold, ambiguous_gold,
+                     ext_only_with_key, ext_only_without_key), sum), .groups = "drop") |>
+  mutate(pct_matched = sprintf("%.1f%%", 100 * matched / n_gold))
+```
+
+Read symmetrically: `matched` are samples both methods describe, `unmatched_gold` are
+manual-only, and `ext_only_with_key` are automatic-only samples carrying an identifier. The
+manuscript reports the matched counts as 284 in every Sonnet run and 214/284/284 for Haiku.
+
+```{r}
+#| label: sample-axis-check
+stopifnot(
+  alignment |> filter(model == "Sonnet 5") |> group_by(run) |>
+    summarise(m = sum(matched)) |> pull(m) |> identical(c(284L, 284L, 284L)),
+  alignment |> filter(model == "Haiku 4.5") |> group_by(run) |>
+    summarise(m = sum(matched)) |> pull(m) |> identical(c(214L, 284L, 284L))
+)
+cat("matched-row counts reproduce manuscript section 3.3\n")
+```
+
+Per study, which studies contribute the matched rows:
+
+```{r}
+#| label: sample-axis-per-study
+alignment |>
+  select(run, study, n_gold, matched) |>
+  pivot_wider(names_from = run, values_from = matched) |>
+  arrange(desc(n_gold))
+```
+
+### 2.2 Which identifier carried the match, and why `sample_id` usually cannot
+
+Alignment is **deterministic string matching, not a model call.** `metaextractor.alignment`
+imports only `re`, `dataclasses`, and `typing`: it makes no network request and asks no LLM to
+judge whether two samples are the same. Each identifier cell is split on `[;,\s]+` into a token
+set, not-reported tokens are dropped, and a gold row matches a record only when their token sets
+intersect on exactly one record that no other gold row claims. Every candidate key is tried and
+the one yielding the most one-to-one matches is used for the whole study; ties in the token space
+become *pooled* or *ambiguous* rather than being resolved. So the LLM decides what each sample's
+identifiers **are**; nothing downstream negotiates what they **mean**.
+
+That makes the `ext_sample_id` and `gold_sample_id` columns of `cells.tsv` worth reading
+carefully, because neither is the matching key — both are simply each side's own `sample_id`
+value (`evaluation.py`, `CellResult`). They differ whenever a study matched on some *other* key,
+so comparing them reports the identifier vocabularies of the two methods, not the quality of
+the match.
+
+```{r}
+#| label: id-vocabularies
+key_used <- imap_dfr(summaries, \(s, run) {
+  map_dfr(s$per_study, \(st) tibble(run = run, study = st$study,
+                                    key_used = st$alignment$key_used %||% "(no match)"))
+})
+
+# An unmatched gold row has no extracted record, so `ext_sample_id` is empty and readr reads it
+# as NA. `nzchar(NA)` is TRUE, so the NAs must be excluded explicitly or they survive the filter
+# and poison the comparison.
+id_pairs <- cells |>
+  filter(!is.na(ext_sample_id), !is.na(gold_sample_id),
+         nzchar(ext_sample_id), nzchar(gold_sample_id)) |>
+  distinct(run, study, ext_sample_id, gold_sample_id) |>
+  mutate(same = ext_sample_id == gold_sample_id)
+stopifnot(!any(is.na(id_pairs$same)))
+
+id_summary <- key_used |>
+  left_join(id_pairs |> group_by(run, study) |>
+              summarise(pairs = n(), identical = sum(same), .groups = "drop"),
+            by = c("run", "study")) |>
+  mutate(across(c(pairs, identical), \(x) coalesce(x, 0L)),
+         differ = pairs - identical)
+
+id_summary |> filter(run == "sonnet_r1") |> select(-run)
+```
+
+The split is entirely determined by the key: where the match ran on `ncbi_accession` the two
+`sample_id` values differ for *every* pair, and where it ran on `sample_id` they are identical by
+construction. There is no partial case in any run.
+
+```{r}
+#| label: id-vocabularies-all-runs
+id_summary |>
+  group_by(key_used) |>
+  summarise(`run x study cells` = n(), pairs = sum(pairs),
+            identical = sum(identical), differ = sum(differ), .groups = "drop")
+```
+
+What the differing pairs actually look like — the extractor writes the archive BioSample
+accession into `sample_id`, while the curation writes the study's own internal label:
+
+```{r}
+#| label: id-examples
+id_pairs |>
+  filter(run == "sonnet_r1") |>
+  group_by(study) |>
+  slice_head(n = 3) |>
+  ungroup() |>
+  left_join(key_used |> filter(run == "sonnet_r1") |> select(study, key_used), by = "study") |>
+  select(study, key_used, extractor = ext_sample_id, curated = gold_sample_id, same)
+```
+
+Two consequences. The two methods share a `sample_id` vocabulary in exactly one study of ten,
+which is why alignment falls back to `ncbi_accession` elsewhere — and why FanY_2023 matches
+nothing at all: its curated rows list up to four run accessions each, but no extracted record
+carried an accession, so neither key has anything to intersect. And because `sample_id` is an
+identifier field, these systematic mismatches are scored in the `META_FIELDS` bucket rather than
+the content metric, so they do not move the headline F1. Reading a specific sample's cells means
+joining on `key_used`, not on the `sample_id` columns.
+
+## 3. Field axis — which fields does each method populate?
+
+### 3.1 Why this is not visible in the scorer's output
+
+The scored field set is the schema intersected with **that study's gold columns**
+(`bench.py::build_field_map`):
+
+```r
+build_field_map <- function(gold_cols) intersect(schema_fields, gold_cols)  # mirrors bench.py:91
+```
+
+A schema field the curated table does not carry as a column is therefore dropped before
+scoring: the extractor's values for it produce no cells, and in particular are never counted as
+false positives. Only the narrower case — column present, every row blank — reaches the scorer
+as FP. Section 3.3 quantifies how much falls in the gap.
+
+### 3.2 The three-way split
+
+```{r}
+#| label: field-axis
+field_axis <- map_dfr(seq_len(nrow(manifest)), \(i) {
+  m  <- manifest[i, ]
+  gs <- gold_field_sets(read_gold(m$gold_rel))
+  gold_pop <- intersect(gs$populated, content_fields)
+
+  map_dfr(RUNS, \(run) {
+    fc <- ext_field_counts(file.path(RUNS_DIR, run, paste0(m$study, ".json")))
+    ext_pop <- intersect(fc$field, content_fields)
+    auto_only <- setdiff(ext_pop, gold_pop)
+    tibble(
+      run = run, study = m$study,
+      both        = length(intersect(gold_pop, ext_pop)),
+      manual_only = length(setdiff(gold_pop, ext_pop)),
+      auto_only   = length(auto_only),
+      # of the automatic-only fields, those the scorer cannot see at all
+      auto_only_unscored = length(setdiff(ext_pop, gs$columns)),
+      auto_only_fields   = list(fc |> filter(field %in% auto_only))
+    )
+  })
+}) |> mutate(model = model_of(run), .after = run)
+
+field_totals <- field_axis |>
+  group_by(model, run) |>
+  summarise(across(c(both, manual_only, auto_only, auto_only_unscored), sum), .groups = "drop") |>
+  mutate(manual_populated = both + manual_only,
+         auto_populated   = both + auto_only,
+         auto_only_share  = sprintf("%.0f%%", 100 * auto_only / auto_populated))
+
+field_totals |>
+  select(model, run, both, manual_only, auto_only, auto_only_unscored,
+         manual_populated, auto_populated, auto_only_share)
+```
+
+Units are (study, field) pairs summed over the ten studies, out of
+`r length(content_fields)` content fields x 10 studies = `r length(content_fields) * 10`
+possible pairs.
+
+### 3.3 One run in full
+
+```{r}
+#| label: field-axis-diagram
+#| fig-width: 9
+#| fig-height: 2.6
+FOCUS <- "haiku_r1"
+f <- field_totals |> filter(run == FOCUS)
+
+seg <- tibble(
+  segment = factor(c("manual only", "both", "automatic only"),
+                   levels = c("manual only", "both", "automatic only")),
+  n = c(f$manual_only, f$both, f$auto_only)
+) |>
+  mutate(end = cumsum(n), start = end - n, mid = (start + end) / 2)
+
+brk <- tibble(
+  label = c(sprintf("manual (curated): %d", f$manual_populated),
+            sprintf("automatic (MetaExtractor): %d", f$auto_populated)),
+  start = c(0, f$manual_only),
+  end   = c(f$manual_only + f$both, sum(seg$n)),
+  y     = c(1.85, -0.85)
+) |> mutate(mid = (start + end) / 2)
+
+ggplot() +
+  geom_rect(data = seg, aes(xmin = start, xmax = end, ymin = 0, ymax = 1, fill = segment),
+            colour = "white", linewidth = 1) +
+  geom_text(data = seg, aes(x = mid, y = 0.5, label = sprintf("%s\n%d", segment, n)),
+            size = 3.6, lineheight = 1.1) +
+  geom_segment(data = brk, aes(x = start, xend = end, y = y, yend = y), linewidth = 0.4) +
+  geom_text(data = brk, aes(x = mid, y = y, label = label), vjust = -0.6, size = 3.4) +
+  scale_fill_manual(values = c("manual only" = "#dce6f1", "both" = "#b8cfe6",
+                               "automatic only" = "#f2d9c2"), guide = "none") +
+  scale_y_continuous(limits = c(-1.6, 2.6), expand = c(0, 0)) +
+  labs(x = "(study, field) pairs populated by at least one method",
+       title = sprintf("%s: field-level coverage", FOCUS),
+       subtitle = sprintf("%d of %d possible pairs populated; %d of the %d automatic-only pairs are never scored",
+                          sum(seg$n), length(content_fields) * 10, f$auto_only_unscored, f$auto_only)) +
+  theme_minimal(base_size = 11) +
+  theme(axis.text.y = element_blank(), panel.grid = element_blank(),
+        plot.title.position = "plot")
+```
+
+The two methods populate almost the same *number* of pairs, but overlap on well under half of
+them. Note that "both" means both put something in the slot — not that they agree on the value.
+Value agreement is section 4.
+
+### 3.4 Which fields are automatic-only, and are they plausible?
+
+Presence alone cannot distinguish a field the curation genuinely missed from a schema slot the
+extractor filled speculatively. Two diagnostics help triage: how many of the six runs recover the
+field (reproducibility), and what fraction of the study's samples carry a value (a field asserted
+only at study level, never reaching a sample row, is the signature of a slot-fill).
+
+```{r}
+#| label: auto-only-fields
+auto_only_detail <- field_axis |>
+  select(run, study, auto_only_fields) |>
+  unnest(auto_only_fields) |>
+  group_by(field) |>
+  summarise(n_studies = n_distinct(study),
+            n_runs = n_distinct(run),
+            mean_sample_coverage = mean(if_else(n_samples > 0, n_with_value / n_samples, NA_real_),
+                                        na.rm = TRUE),
+            .groups = "drop") |>
+  arrange(desc(n_studies), desc(n_runs))
+
+auto_only_detail |>
+  mutate(runs = sprintf("%d/6", n_runs),
+         mean_sample_coverage = sprintf("%.0f%%", 100 * mean_sample_coverage)) |>
+  select(field, n_studies, runs, mean_sample_coverage)
+```
+
+```{r}
+#| label: auto-only-triage
+#| fig-width: 8
+#| fig-height: 5
+ggplot(auto_only_detail,
+       aes(x = mean_sample_coverage, y = n_runs, size = n_studies, label = field)) +
+  geom_point(alpha = 0.55, colour = "#c0764a") +
+  ggrepel::geom_text_repel(size = 2.9, max.overlaps = 30, seed = 0) +
+  scale_x_continuous(labels = scales::percent, limits = c(-0.05, 1.05)) +
+  scale_y_continuous(breaks = 1:6, limits = c(0.5, 6.5)) +
+  scale_size_continuous(range = c(2, 7), breaks = c(1, 3, 6, 10)) +
+  labs(x = "mean fraction of the study's samples carrying a value",
+       y = "runs recovering the field (of 6)", size = "studies",
+       title = "Automatic-only fields: reproducible and sample-level, or study-level slot-fill?",
+       subtitle = "Upper right = recovered by every run and reaching most samples. Left edge = asserted at study level only.") +
+  theme_minimal(base_size = 11) +
+  theme(plot.title.position = "plot")
+```
+
+Fields in the upper right are recovered by every run and reach nearly every sample — the
+strongest candidates for genuine coverage the curation does not have. Fields on the left edge
+never reach a sample row despite being asserted, and fields low on the y axis appear in only one
+or two runs; both patterns are consistent with speculative slot-filling rather than extraction.
+Deciding which is which requires reading the source article and is **not** settled here.
+
+## 4. Cell axis — where both methods report, do they agree?
+
+### 4.1 The same counts, read as coverage
+
+The scorer's five decisions carry a direction — they name one side "gold". Relabelled
+symmetrically they are a coverage table, with no assumption about which method is right:
+
+| decision | symmetric reading |
+|---|---|
+| `TP_correct` + `TP_wrong` | both methods populated the cell |
+| `FN` | manual only |
+| `FP` | automatic only |
+| `TN` | neither |
+
+```{r}
+#| label: cell-coverage
+cell_counts <- cells |>
+  filter(is_content) |>
+  count(model, run, decision) |>
+  pivot_wider(names_from = decision, values_from = n, values_fill = 0)
+
+cell_coverage <- cell_counts |>
+  transmute(model, run,
+            both = TP_correct + TP_wrong,
+            manual_only = FN,
+            automatic_only = FP,
+            neither = TN,
+            populated = both + manual_only + automatic_only,
+            both_share = sprintf("%.1f%%", 100 * both / populated),
+            agreement_given_both = sprintf("%.1f%%", 100 * TP_correct / (TP_correct + TP_wrong)))
+
+cell_coverage
+```
+
+`agreement_given_both` is deliberately conditioned on cells both methods populated. A
+chance-corrected statistic over the full table would be dominated by cells neither method is
+really deciding — `manual_only` outnumbers `both` by roughly five to one — and would describe
+the sparsity of the curated table more than the behaviour of either method.
+
+### 4.2 Reproducing the manuscript's precision, recall, and F1
+
+The directional scores of §2.4 follow from the same counts, with the curated table as
+reference. Reproducing them here confirms the per-cell records this notebook uses are the ones
+Table 2 was computed from.
+
+```{r}
+#| label: prf
+prf <- cell_counts |>
+  transmute(model, run,
+            precision = TP_correct / (TP_correct + TP_wrong + FP),
+            recall    = TP_correct / (TP_correct + TP_wrong + FN),
+            f1        = 2 * precision * recall / (precision + recall))
+
+fmt_range <- function(x) sprintf("%.3f [%.3f-%.3f]", median(x), min(x), max(x))
+
+all_curated <- prf |>
+  group_by(model) |>
+  summarise(precision = fmt_range(precision), recall = fmt_range(recall),
+            f1 = fmt_range(f1), .groups = "drop")
+
+all_curated
+```
+
+The matched join is not in `cells.tsv`; its counts come from each study's `conditional` block in
+`summary.json`.
+
+```{r}
+#| label: prf-matched
+matched <- imap_dfr(summaries, \(s, run) {
+  cc <- map(s$per_study, \(st) st$conditional$content)
+  tibble(run = run,
+         tp_correct = sum(map_dbl(cc, "tp_correct")),
+         tp_wrong   = sum(map_dbl(cc, "tp_wrong")),
+         fn         = sum(map_dbl(cc, "fn")),
+         fp         = sum(map_dbl(cc, "fp")))
+}) |>
+  mutate(model = model_of(run),
+         precision = tp_correct / (tp_correct + tp_wrong + fp),
+         recall    = tp_correct / (tp_correct + tp_wrong + fn),
+         f1        = 2 * precision * recall / (precision + recall)) |>
+  group_by(model) |>
+  summarise(f1 = fmt_range(f1), .groups = "drop")
+
+matched
+```
+
+### 4.3 Consistency checks against the frozen outputs
+
+Two assertions. First, the per-cell rows aggregate to the content counts stored in each run's
+`summary.json` — so the cell axis and the scorer agree cell for cell. Second, the recomputed F1
+matches the values reported in manuscript Table 2.
+
+```{r}
+#| label: checks
+from_summary <- imap_dfr(summaries, \(s, run) {
+  cc <- map(s$per_study, \(st) st$end_to_end$content)
+  tibble(run = run, tn = sum(map_dbl(cc, "tn")), tp_correct = sum(map_dbl(cc, "tp_correct")),
+         tp_wrong = sum(map_dbl(cc, "tp_wrong")), fn = sum(map_dbl(cc, "fn")),
+         fp = sum(map_dbl(cc, "fp")))
+})
+
+from_cells <- cell_counts |>
+  transmute(run, tn = TN, tp_correct = TP_correct, tp_wrong = TP_wrong, fn = FN, fp = FP)
+
+comparison <- inner_join(from_summary, from_cells, by = "run", suffix = c("_summary", "_cells"))
+stopifnot(all(map_lgl(c("tn", "tp_correct", "tp_wrong", "fn", "fp"),
+                      \(k) all(comparison[[paste0(k, "_summary")]] ==
+                               comparison[[paste0(k, "_cells")]]))))
+cat("cells.tsv aggregates to summary.json content counts for all 6 runs\n")
+
+published <- tribble(
+  ~model,      ~score,        ~value,
+  "Sonnet 5",  "all curated", "0.203 [0.180-0.216]",
+  "Haiku 4.5", "all curated", "0.193 [0.148-0.193]",
+  "Sonnet 5",  "matched",     "0.514 [0.452-0.538]",
+  "Haiku 4.5", "matched",     "0.475 [0.468-0.484]"
+)
+
+recomputed <- bind_rows(
+  all_curated |> transmute(model, score = "all curated", recomputed = f1),
+  matched     |> transmute(model, score = "matched",     recomputed = f1)
+)
+
+left_join(published, recomputed, by = c("model", "score")) |>
+  mutate(agrees = value == recomputed) |>
+  rename(manuscript = value)
+```
+
+## 5. The values themselves
+
+The counts above say how often the two methods meet; this section shows *what they actually
+said*. Every table here is browsable — use the search box to filter to a field, a study, or a
+value you want to check.
+
+### 5.1 Where they both reported and disagreed
+
+One row per distinct value pair, pooled over the six runs, most frequent first. The harmonized
+columns show what each side became after MetaHarmonizer; they are blank for fields with no
+crosswalk (only `disease`, `body_site`, and `treatment` have one), which are compared as
+surface strings.
+
+```{r}
+#| label: disagreements
+disagreements <- cells |>
+  filter(is_content, decision == "TP_wrong") |>
+  group_by(field, manual = gold, automatic = extracted,
+           manual_harmonized = gold_harmonized, automatic_harmonized = extracted_harmonized) |>
+  summarise(cells = n(), studies = n_distinct(study),
+            models = paste(sort(unique(model)), collapse = ", "), .groups = "drop") |>
+  arrange(desc(cells))
+
+cat(sprintf("%s disagreeing cells collapse to %s distinct value pairs; the 10 most common pairs are %.0f%% of them\n",
+            format(sum(disagreements$cells), big.mark = ","),
+            format(nrow(disagreements), big.mark = ","),
+            100 * sum(slice_max(disagreements, cells, n = 10, with_ties = FALSE)$cells) /
+              sum(disagreements$cells)))
+
+DT::datatable(disagreements, rownames = FALSE, filter = "top",
+              options = list(pageLength = 15, autoWidth = TRUE,
+                             order = list(list(5, "desc"))))
+```
+
+The disagreements are far more concentrated than the raw cell count suggests, and the largest
+groups are disagreements of *naming convention* or *granularity* rather than fact — a country
+name against its ISO-3166 code, a curated platform enum against the specific instrument the
+paper names, a kit's manufacturer against its product name. All of them fall in fields that
+§2.4 compares as surface strings, so a difference of convention scores exactly like a difference
+of fact:
+
+```{r}
+#| label: disagreement-top
+disagreements |>
+  slice_max(cells, n = 12, with_ties = FALSE) |>
+  select(field, manual, automatic, cells, studies, models)
+```
+
+### 5.2 Why those fields were not standardized
+
+Two different causes sit behind the surface-string comparisons above, and they call for
+different fixes.
+
+**No vocabulary exists.** `Harmonizer` discovers its fields from the crosswalk files present in
+the run tree (`crosswalk.py`: `self.fields = ... glob("crosswalk_*.csv")`), and
+`regen_crosswalks.py` builds exactly three — `disease`, `body_site`, `treatment`.
+`Harmonizer.canonicalize()` returns the value untouched for any other field, so MetaHarmonizer
+was never asked about `country`: `MDG` and `Madagascar` reach the comparison verbatim. Nor could
+it have been asked — the schema's `country_enum` carries no permissible values, so the extractor
+received no vocabulary either and is free to emit an ISO code, a country name, or
+`Brazil:Amazon Forest`. The slot's description does declare an intent (values should be
+descendants of NCIT:C25464), but no corpus was built from it.
+
+**A vocabulary exists and was supplied, but the output does not conform.** `sequencing_platform`
+and `dna_extraction_kit` *do* carry static enums, and the schema loader passes them to the
+extractor. Their disagreements are therefore not a harmonization gap at all — they are the model
+declining to use an enum it was given.
+
+```{r}
+#| label: enum-conformance
+enum_values <- yaml::read_yaml(SCHEMA)$enums |>
+  map(\(e) names(e$permissible_values %||% list())) |>
+  keep(\(v) length(v) > 0)
+
+slot_enum <- yaml::read_yaml(SCHEMA)$slots |>
+  map_chr(\(sl) sl$range %||% NA_character_)
+
+conformance <- cells |>
+  filter(is_content, decision %in% c("TP_correct", "TP_wrong"), !is.na(extracted),
+         nzchar(extracted)) |>
+  mutate(enum = slot_enum[field]) |>
+  filter(!is.na(enum), enum %in% names(enum_values)) |>
+  group_by(field, enum) |>
+  summarise(reported = n(),
+            # the scorer compares strings after trimming and lowercasing, so test membership
+            # the same way rather than requiring an exact-case match
+            conforming = sum(map2_lgl(extracted, enum,
+                                      \(v, e) tolower(trimws(v)) %in% tolower(enum_values[[e]]))),
+            .groups = "drop") |>
+  mutate(non_conforming = reported - conforming,
+         pct_non_conforming = sprintf("%.0f%%", 100 * non_conforming / reported),
+         enum_size = lengths(enum_values[enum]),
+         harmonized = if_else(field %in% c("disease", "body_site", "treatment"),
+                              "yes - recovered by crosswalk", "no")) |>
+  arrange(desc(non_conforming))
+
+conformance |> select(field, enum_size, reported, conforming, non_conforming,
+                      pct_non_conforming, harmonized)
+```
+
+Non-conformance only becomes a scored disagreement where the field has no crosswalk. `body_site`
+appears here with a high rate, but its values are compared as ontology codes, so an extracted
+`stool` against a curated `feces` maps to the same UBERON concept and scores correct. For
+`sequencing_platform` and `dna_extraction_kit` there is no such recovery: the surface string is
+the comparison.
+
+The values the extractor emitted instead, for the two largest:
+
+```{r}
+#| label: enum-non-conforming-values
+cells |>
+  filter(is_content, field %in% c("sequencing_platform", "dna_extraction_kit"),
+         decision %in% c("TP_correct", "TP_wrong"), !is.na(extracted), nzchar(extracted)) |>
+  mutate(enum = slot_enum[field],
+         conforms = map2_lgl(extracted, enum,
+                             \(v, e) tolower(trimws(v)) %in% tolower(enum_values[[e]]))) |>
+  filter(!conforms) |>
+  count(field, extracted, name = "cells") |>
+  arrange(desc(cells)) |>
+  slice_head(n = 10)
+```
+
+Note that not every disagreement in these fields is a conformance failure: `NorgenBiotek`
+against `MoBio` is a disagreement about which kit the study used, with both values inside the
+enum. Separating the two is what the adjudication step is for.
+
+### 5.3 Where the disagreements concentrate
+
+Which fields the disagreements concentrate in:
+
+```{r}
+#| label: disagreement-by-field
+#| fig-width: 8
+#| fig-height: 4.5
+by_field <- cells |>
+  filter(is_content, decision %in% c("TP_correct", "TP_wrong")) |>
+  count(field, decision) |>
+  pivot_wider(names_from = decision, values_from = n, values_fill = 0) |>
+  mutate(both = TP_correct + TP_wrong, agreement = TP_correct / both) |>
+  filter(both >= 50) |>
+  arrange(desc(both))
+
+ggplot(by_field, aes(x = agreement, y = reorder(field, both), size = both)) +
+  geom_point(alpha = 0.6, colour = "#4a6fa5") +
+  scale_x_continuous(labels = scales::percent, limits = c(0, 1)) +
+  scale_size_continuous(range = c(2, 8)) +
+  labs(x = "agreement where both reported", y = NULL, size = "cells",
+       title = "Agreement by field, cells where both methods reported",
+       subtitle = "Fields with at least 50 such cells, pooled over six runs") +
+  theme_minimal(base_size = 11) +
+  theme(plot.title.position = "plot", panel.grid.minor = element_blank())
+```
+
+### 5.4 Where they both reported and agreed
+
+Shown for calibration: what the scorer counts as a match, so the disagreements above can be read
+against it.
+
+```{r}
+#| label: agreements
+cells |>
+  filter(is_content, decision == "TP_correct") |>
+  count(field, manual = gold, automatic = extracted, name = "cells") |>
+  arrange(desc(cells)) |>
+  slice_head(n = 15)
+```
+
+### 5.5 What only the curation reported
+
+The manual-only cells, as distinct curated values. This is the largest population in the
+benchmark, and much of it reflects what retrieval never reached rather than what extraction got
+wrong — `QinJ_2012` and `LiSS_2016` returned abstracts only, so every populated curated cell in
+them lands here.
+
+```{r}
+#| label: manual-only-values
+manual_only <- cells |>
+  filter(is_content, decision == "FN") |>
+  group_by(field, manual = gold) |>
+  summarise(cells = n(), studies = n_distinct(study), .groups = "drop") |>
+  arrange(desc(cells))
+
+DT::datatable(manual_only, rownames = FALSE, filter = "top",
+              options = list(pageLength = 10, order = list(list(2, "desc"))))
+```
+
+### 5.6 What only the extractor reported, in a field the scorer can see
+
+The entire automatic-only *cell* population — every such cell in all six runs, listed in full.
+These are the cases where the curated table carries the column but leaves it blank.
+
+```{r}
+#| label: automatic-only-cells
+cells |>
+  filter(is_content, decision == "FP") |>
+  select(model, run, study, sample = gold_sample_id, field, automatic = extracted)
+```
+
+### 5.7 What only the extractor reported, in a field the scorer cannot see
+
+This is the population from section 3, and it does not appear in `cells.tsv` at all — these
+fields are absent from the curated table's columns, so `build_field_map` drops them before
+scoring. The values are read back out of the extraction JSONs.
+
+`level` distinguishes a value asserted on sample rows from one asserted only at study level; a
+study-level value that never reached a sample row is the slot-fill signature discussed in
+section 3.4.
+
+```{r}
+#| label: automatic-only-field-values
+as_text <- function(x) paste(as.character(unlist(cell_value(x))), collapse = "; ")
+
+ext_field_values <- function(path, fields) {
+  empty <- tibble(field = character(), value = character(), level = character())
+  if (!file.exists(path) || !length(fields)) return(empty)
+  d  <- fromJSON(path, simplifyVector = FALSE)
+  sm <- compact(d$samples %||% list())
+  samp <- map_dfr(sm, \(s) {
+    k <- intersect(names(s), fields)
+    k <- k[map_lgl(s[k], \(c) !is_nr(c))]
+    if (!length(k)) return(tibble())
+    tibble(field = k, value = map_chr(s[k], as_text), level = "sample")
+  })
+  fl <- d$fields %||% list()
+  k  <- intersect(names(fl), fields)
+  k  <- k[map_lgl(fl[k], \(c) !is_nr(c))]
+  stud <- if (length(k)) tibble(field = k, value = map_chr(fl[k], as_text), level = "study") else tibble()
+  bind_rows(samp, stud)
+}
+
+automatic_only_values <- field_axis |>
+  transmute(run, study, fields = map(auto_only_fields, "field")) |>
+  pmap_dfr(\(run, study, fields) {
+    ext_field_values(file.path(RUNS_DIR, run, paste0(study, ".json")), fields) |>
+      mutate(run = run, study = study)
+  }) |>
+  group_by(field, study, level, value) |>
+  summarise(runs = n_distinct(run), records = n(), .groups = "drop") |>
+  arrange(field, study, desc(records))
+
+DT::datatable(automatic_only_values, rownames = FALSE, filter = "top",
+              options = list(pageLength = 15, order = list(list(4, "desc"))))
+```
+
+A concrete contrast between the two patterns — one field recovered by every run on nearly every
+sample, and one asserted at study level and never propagated:
+
+```{r}
+#| label: automatic-only-contrast
+automatic_only_values |>
+  filter(field %in% c("location", "fmt_id")) |>
+  arrange(field, study)
+```
+
+### 5.8 The ontology mapping, automatic terms and curated terms side by side
+
+For the three harmonized fields, both sides' terms are mapped through the same OntologyMapper
+corpora before comparison (§2.5). The crosswalks are stored with the run outputs, so the exact
+term-to-code assignment behind every harmonized comparison can be read directly. Curated terms
+appear here only where the curated row carried no `<field>_ontology_term_id` of its own — where
+it did, the stored identifier is used and no mapping is needed.
+
+```{r}
+#| label: crosswalks
+read_crosswalk <- function(path) {
+  read_csv(path, show_col_types = FALSE) |>
+    transmute(term = query, mapped_to = match1,
+              code = match1_code, score = match1_score, stage = stage)
+}
+
+crosswalks <- list.files(file.path(RUNS_DIR, "crosswalks"), full.names = TRUE) |>
+  set_names(\(p) basename(p)) |>
+  imap_dfr(\(p, nm) read_crosswalk(p) |>
+             mutate(side  = if_else(str_detect(nm, "_gold_"), "curated", "automatic"),
+                    field = nm |> str_remove("^crosswalk_(gold_)?") |> str_remove("\\.csv$")))
+
+crosswalks |>
+  group_by(field, side) |>
+  summarise(terms = n(), mapped = sum(!is.na(code) & code != ""), .groups = "drop") |>
+  mutate(mapped = sprintf("%d / %d", mapped, terms)) |>
+  select(field, side, terms, mapped)
+```
+
+```{r}
+#| label: crosswalk-terms
+DT::datatable(crosswalks |> select(field, side, term, mapped_to, code, score, stage),
+              rownames = FALSE, filter = "top",
+              options = list(pageLength = 15))
+```
+
+Because the mapping has no similarity threshold, a closed corpus assigns every term to its
+nearest concept; a term with no genuine counterpart is recorded as `Not Found` and compared as
+its surface string instead. The `mapped` column above shows how often that happens on each side.
+
+## 6. The three axes side by side
+
+```{r}
+#| label: three-axes
+axis_summary <- bind_rows(
+  alignment |> group_by(model, run) |>
+    summarise(both = sum(matched), manual_only = sum(unmatched_gold + pooled_gold + ambiguous_gold),
+              automatic_only = sum(ext_only_with_key), .groups = "drop") |>
+    mutate(axis = "sample (curated rows)"),
+  field_totals |> transmute(model, run, both, manual_only, automatic_only = auto_only,
+                            axis = "field (study x field)"),
+  cell_counts |> transmute(model, run, both = TP_correct + TP_wrong, manual_only = FN,
+                           automatic_only = FP, axis = "cell (sample x field)")
+) |>
+  mutate(overlap = both / (both + manual_only + automatic_only)) |>
+  select(axis, model, run, both, manual_only, automatic_only, overlap)
+
+axis_summary |>
+  mutate(overlap = sprintf("%.1f%%", 100 * overlap)) |>
+  arrange(factor(axis, levels = c("sample (curated rows)", "field (study x field)",
+                                  "cell (sample x field)")), run)
+```
+
+The overlap fraction falls sharply from the field axis to the cell axis: the two methods reach
+for many of the same fields, describe a minority of the same samples, and populate a small
+minority of the same cells. The automatic-only column is near-zero on the cell axis and
+substantial on the field axis for the reason given in section 3.1 — most automatic-only content
+sits in fields the scorer never opens.
+
+## Session
+
+```{r}
+#| label: session
+sessionInfo()
+```

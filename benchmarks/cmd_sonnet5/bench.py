@@ -38,7 +38,7 @@ import time
 from collections import defaultdict
 from pathlib import Path
 
-from bench_paths import (HERE, SCHEMA, curation_dir, gold_path, load_manifest,
+from bench_paths import (HERE, SCHEMA, curation_dir, gold_paths, load_manifest,
                          schema_fields)
 
 from metaextractor.alignment import align_by_identity
@@ -146,6 +146,22 @@ def _source_kind(prov: list, ext_idx: int | None, field: str) -> str:
     return src.split(":", 1)[0] if src else "unrecorded"
 
 
+def load_gold_rows(m: dict) -> list[dict]:
+    """The manifest entry's curated rows, concatenating a split-table study.
+
+    Columns are unioned across the tables and a row missing a column reads as blank, the
+    same as any uncurated cell: ``TettAJ_2019_c`` carries ``sex``/``sex_ontology_term_id``
+    and the other two tables do not.
+    """
+    tables = [load_gold_tsv(p) for p in gold_paths(m)]
+    cols: list[str] = []
+    for t in tables:
+        for c in (t[0].keys() if t else []):
+            if c not in cols:
+                cols.append(c)
+    return [{c: row.get(c, "") for c in cols} for t in tables for row in t]
+
+
 def score_study(m: dict, rj: Path, harm: Harmonizer, align_key: str = DEFAULT_ALIGN_KEY) -> dict:
     """Score one extraction after harmonization on both joins. Returns a JSON-able
     record plus private ``_e2e``/``_gold``/``_alignment``/``_data`` handles (``_gold`` is
@@ -159,7 +175,7 @@ def score_study(m: dict, rj: Path, harm: Harmonizer, align_key: str = DEFAULT_AL
             else load_extraction(rj).model_dump())
     samples = data.get("samples", [])
     prov = data.get("sample_provenance") or []
-    gold = load_gold_tsv(gold_path(m))
+    gold = load_gold_rows(m)
     gold_h = harm.gold_rows(gold)
     gold_cols = list(gold[0].keys()) if gold else []
     fmap = build_field_map(gold_cols)
@@ -258,7 +274,15 @@ def write_cells_tsv(rec: dict, harm: Harmonizer, path: Path) -> None:
 
 def cmd_eval(args: argparse.Namespace) -> None:
     outdir = Path(args.outdir)
-    harm = Harmonizer(Path(args.crosswalks) if args.crosswalks else outdir.parent / "crosswalks")
+    harm = Harmonizer(Path(args.crosswalks) if args.crosswalks else outdir.parent / "crosswalks",
+                      min_score=args.min_score)
+    if harm.below_threshold:
+        n = sum(len(v) for v in harm.below_threshold.values())
+        print(f"min-score {harm.min_score}: {n} term(s) left unmapped (compared as strings):",
+              file=sys.stderr)
+        for f, rows in sorted(harm.below_threshold.items()):
+            for term, match, score in rows[:5]:
+                print(f"  {f}: {term!r} -> {match!r} ({score:.3f})", file=sys.stderr)
     per_study = []
     for m in load_manifest(limit=args.limit):
         rj = outdir / f"{m['study']}.json"
@@ -272,7 +296,10 @@ def cmd_eval(args: argparse.Namespace) -> None:
         print(f"WARNING: {len(unqueried)} extracted term(s) were never sent to MetaHarmonizer "
               f"(stale crosswalks; they score as unmapped): {unqueried[:10]}", file=sys.stderr)
     summary = {"align_key": args.align_key, "crosswalks": str(harm.directory),
-               "harmonized_fields": harm.fields, "per_study": per_study}
+               "harmonized_fields": harm.fields, "min_score": harm.min_score,
+               "below_threshold": {f: [list(r) for r in rows]
+                                   for f, rows in harm.below_threshold.items()},
+               "per_study": per_study}
     (outdir / "summary.json").write_text(json.dumps(summary, indent=2, default=str))
     write_report(outdir, per_study, harm.fields)
     print(f"wrote {outdir/'summary.json'} and {outdir/'REPORT.md'}")
@@ -332,6 +359,13 @@ def main() -> None:
                                 "is used per study.")
             s.add_argument("--crosswalks", default=None,
                            help="MetaHarmonizer crosswalk directory (default: OUTDIR/../crosswalks).")
+            s.add_argument("--min-score", type=float, default=0.0,
+                           help="OntologyMapper similarity below which a term is left unmapped "
+                                "and compared as its surface string. The corpora are closed and "
+                                "the mapping has no threshold of its own, so every term is "
+                                "otherwise assigned its nearest concept. Default 0.0 (no "
+                                "threshold), which reproduces the frozen runs; exact-stage "
+                                "matches are never dropped.")
     args = ap.parse_args()
     {"run": cmd_run, "run-tables": cmd_run_tables, "eval": cmd_eval}[args.cmd](args)
 

@@ -75,6 +75,26 @@ def is_aggregate(v: Any) -> bool:
     return isinstance(v, str) and bool(_AGGREGATE_RE.search(v))
 
 
+#: A study-level value that reports cohort *variety* rather than a value every sample shares.
+#: These are single, plain strings, so ``is_multi_valued`` and ``is_aggregate`` both miss them.
+_HETEROGENEOUS_RE = re.compile(
+    r"^(mixed|multiple|various|several|varies|varied|both)\b", re.IGNORECASE)
+
+
+def is_heterogeneous(v: Any) -> bool:
+    """A cohort-variety statement (``"Mixed"``, ``"Multiple countries"``) rather than a value.
+
+    Papers rarely quantify a shared attribute explicitly ("all participants were
+    non-westernized"); they describe the cohort ("Swedish students from ..."), so the
+    evidence text cannot be used to decide whether a study-level value applies to every
+    sample. A study that is *not* homogeneous does say so, in the value itself — and such a
+    value describes the cohort, not any individual sample, so it is never fanned out.
+    """
+    if isinstance(v, (list, tuple, set)):
+        return any(is_heterogeneous(x) for x in v)
+    return isinstance(v, str) and bool(_HETEROGENEOUS_RE.match(v.strip()))
+
+
 def stringify(v: Any) -> str:
     if v is None:
         return ""
@@ -138,6 +158,10 @@ def fan_out_fields_to_samples(result: ExtractionResult, schema: Schema | None = 
          treatment, or age.
        * unset — written only when it is a single, non-aggregate value.
 
+       In every non-``study`` case the value must also not be a *cohort-variety*
+       statement (:func:`is_heterogeneous`): ``westernized = "Mixed"`` or
+       ``country = "Multiple countries"`` describes the cohort, not any sample in it.
+
     A field annotated ``unit_of`` (e.g. ``age_unit`` for ``age``) receives a subgroup- or
     study-level value only on samples that carry the value it is the unit of, after
     the other fields have been propagated.
@@ -181,7 +205,8 @@ def fan_out_fields_to_samples(result: ExtractionResult, schema: Schema | None = 
             fscope = scope.get(fname)
             if sg and fr.by_subgroup and sg in fr.by_subgroup and not is_nr(fr.by_subgroup[sg]):
                 v = fr.by_subgroup[sg]
-                if fscope != "study" and (is_multi_valued(v) or is_aggregate(v)):
+                if fscope != "study" and (is_multi_valued(v) or is_aggregate(v)
+                                          or is_heterogeneous(v)):
                     counts["blocked_subgroup_value"] += 1
                     continue
                 sample[fname] = stringify(v)
@@ -197,6 +222,9 @@ def fan_out_fields_to_samples(result: ExtractionResult, schema: Schema | None = 
                     continue
                 if is_aggregate(v):
                     counts["blocked_aggregate"] += 1
+                    continue
+                if is_heterogeneous(v):
+                    counts["blocked_heterogeneous"] += 1
                     continue
                 if fscope == "sample" and fname not in propagatable:
                     counts["blocked_sample_scope_no_propagation"] += 1
@@ -375,6 +403,7 @@ __all__ = [
     "ensure_provenance",
     "fan_out_fields_to_samples",
     "is_aggregate",
+    "is_heterogeneous",
     "is_multi_valued",
     "is_nr",
     "normalize_age_bounds",

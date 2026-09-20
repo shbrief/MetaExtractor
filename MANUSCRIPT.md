@@ -95,6 +95,12 @@ committed `manifest.json`). The set spans 15–363 gold samples per study (1,089
 Bengtsson-PalmeJ_2015, TettAJ_2019_b, LiJ_2017, NayakRR_2021, PasolliE_2019,
 Heitz-BuschartA_2016, FanY_2023, QinJ_2012, ContevilleLC_2019, LiSS_2016.
 
+One selected table is a partial reference. cMD splits the curation of PMID 31607556 across
+`TettAJ_2019_a`, `_b` and `_c` (68, 44 and 50 samples), and the sampler drew `_b`; because one
+extraction covers the whole publication, scoring it against `_b` alone understates the reference.
+Section 3.9 reports the corrected gold set of all three tables (162 samples, 1,207 in total).
+Table 2 and Sections 3.1–3.8 report the run as frozen, against `_b`.
+
 These ten studies were also used while the retrieval layer, table path, and harmonization
 corpora were being developed. They are therefore not a held-out test set (Section 4.4).
 
@@ -540,6 +546,96 @@ individual. The present rules, the scoped fan-out, and the frozen, logged runs r
 
 ---
 
+### 3.9 Corrections identified after the frozen run
+
+Four defects found after `out_v3` was scored affect scoring only, not extraction: the partial
+TettAJ reference (Section 2.1); fan-out annotations that have since moved into the schema table
+and gained a heterogeneity gate; the absence of a similarity threshold on harmonization
+(Section 2.5); and the six-term `body_site` corpus (reported separately below). Because none of them changes the prompt, their effect is measurable on the same
+saved model responses. `dev_analysis/scoring_addendum.py` replays them cumulatively
+(`benchmarks/cmd_sonnet5/addendum_v3/`); the first row reproduces Table 2 exactly.
+
+**Table 4. Scoring corrections, applied cumulatively to the frozen responses**
+(median [min–max] over three repeats).
+
+| stage | model | precision | recall | F1 | matched F1 |
+|---|---|--:|--:|--:|--:|
+| `out_v3` as published | Sonnet 5 | 0.739 [0.637–0.739] | 0.118 [0.105–0.126] | 0.203 [0.180–0.216] | 0.514 [0.452–0.538] |
+| `out_v3` as published | Haiku 4.5 | 0.683 [0.601–0.691] | 0.112 [0.083–0.115] | 0.193 [0.148–0.193] | 0.475 [0.468–0.484] |
+| + TettAJ gold union | Sonnet 5 | 0.691 [0.602–0.694] | 0.121 [0.105–0.128] | 0.205 [0.178–0.217] | 0.494 [0.430–0.515] |
+| + TettAJ gold union | Haiku 4.5 | 0.640 [0.575–0.651] | 0.111 [0.082–0.114] | 0.190 [0.146–0.190] | 0.445 [0.435–0.460] |
+| + current fan-out rules | Sonnet 5 | 0.690 [0.601–0.715] | 0.102 [0.092–0.113] | 0.178 [0.160–0.195] | 0.442 [0.395–0.479] |
+| + current fan-out rules | Haiku 4.5 | 0.623 [0.608–0.651] | 0.093 [0.076–0.095] | 0.163 [0.136–0.165] | 0.408 [0.405–0.410] |
+| + threshold 0.80 | Sonnet 5 | 0.690 [0.601–0.715] | 0.102 [0.092–0.113] | 0.178 [0.160–0.195] | 0.442 [0.395–0.479] |
+| + threshold 0.80 | Haiku 4.5 | 0.623 [0.608–0.625] | 0.089 [0.076–0.095] | 0.156 [0.136–0.165] | 0.405 [0.391–0.410] |
+
+**The partial reference cost the benchmark a whole study.** Against `_b` alone, TettAJ matched no
+curated row at all — the extraction enumerated `_c`'s samples — so every one of its populated
+curated cells was a false negative and every extracted record was discarded as unmatched. Against
+all three tables, 50 rows match and contribute 204 correct and 293 wrong cells (Sonnet 5 run 1).
+The headline F1 barely moves, because the study adds correct cells and a proportionally larger
+false-negative denominator at once; what moves is precision (−0.048 and −0.043) and matched F1
+(−0.020 and −0.030), since the newly matched rows are about 41% correct and were previously
+excluded from the matched score entirely. The correction makes the benchmark harder, not kinder.
+
+**Replaying fan-out requires undoing it first.** `fan_out_fields_to_samples` never overwrites a
+filled cell, so replaying it over saved records can only add cells; a value the older rules
+propagated is already written and would survive any new gate. The addendum therefore strips every
+cell whose recorded provenance is `study_fanout` or `subgroup_fanout` before replaying, so the
+current rules decide each propagated cell from scratch. Pooled over the six runs this rewrites
+131,801 propagated cells as 91,199 (14,296 as 8,059 in Sonnet 5 run 1), and is the reason recall
+falls: the seven slots left unannotated when `out_v3` ran are now
+`scope: sample`, which subjects them to both the propagation allowlist and the subgroup gate, and
+`uncurated_metadata` became sample-scoped after tag `bench-v3`. This row therefore measures every
+fan-out annotation change since that tag, not one rule.
+
+**The heterogeneity gate fires but never decides**, which is worth stating rather than implying.
+It blocks 896 cells across the six runs, yet forcing it off reproduces this row exactly and leaves
+every sample cell identical. The gate sits ahead of the allowlist and subgroup checks, so each
+value it blocks would have been withheld by one of those anyway: the only study reporting cohort
+variety is PasolliE_2019 (`westernized` "Mixed", `country` "Multiple countries", `ancestry`
+"Multiple ancestries"), and it declares subgroups, which alone stops a sample-scoped value from
+being propagated. On these ten studies the gate therefore changes the recorded reason a cell is
+withheld, not whether it is. It guards a case the set does not contain: a cohort-variety value on
+an allowlisted field in a study that declares no subgroups.
+
+**The threshold only binds on Haiku 4.5.** At 0.80 it leaves 22 low-similarity mappings unmapped
+— among them `body_site` "USA" → *skin epidermis* (0.51) and "Sweden" → *feces* (0.52), and
+`treatment` "no" → *Nicotinamide Riboside* (0.68) — and costs Haiku 4.5 0.007 F1. Sonnet 5 is
+unchanged, because none of its mapped terms in these runs fell below the threshold. The dropped
+list also exposes a failure mode a threshold cannot fix: embedding similarity is blind to
+negation, and "no aspirin" → *Low-Dose Aspirin* (0.71), "no insulin" → *Therapeutic Insulin*
+(0.77) and "no metformin" → *Metformin* (0.80) invert the value's meaning while scoring in the
+same band as correct mappings such as "healthy controls" → *Healthy* (0.77).
+
+**A six-term corpus cannot say "not a body site".** `body_site` was mapped against exactly the six
+UBERON meanings of the cMD enum, so every queried string was assigned one of six anatomical terms.
+Rebuilding the corpus as the UBERON "anatomical entity" subtree the schema's own `body_site_details`
+slot names (`UBERON:0001062`, 14,916 terms after restricting to UBERON; the subtree also returns
+Cell Ontology, GO, NCBITaxon and contributor-ORCID rows, none of them body sites) and regenerating
+the crosswalks changes only where a value is not a body site:
+
+| term | six-term corpus | full UBERON |
+|---|---|---|
+| `Stool` | feces (1.00) | feces (1.00) |
+| `Sweden` | **feces** (0.52) | systemic artery (0.59) |
+| `USA` | **skin epidermis** (0.51) | stria medullaris (0.57) |
+| `Multiple body sites` | **milk** (0.48) | multi organ part structure (0.68) |
+
+Genuine body sites still resolve exactly; the others no longer land on a value the enum contains.
+The effect is confined to one model, and it removes credit rather than adding it: pooled over three
+repeats, Haiku 4.5's `body_site` cells go from 680 correct and 0 wrong (F1 0.343) to 610 and 70
+(F1 0.260), while Sonnet 5 is unchanged at 667 and 34 (F1 0.304). The 70 cells are the ones
+Section 4.4 names — "Sweden" extracted as a body site and mapped onto *feces*, which happened to be
+the curated value. Headline F1 moves accordingly for Haiku 4.5 only (all-curated 0.193 to 0.186,
+matched 0.475 to 0.468 at the first row of Table 4). Once the 0.80 threshold is applied the two
+corpora agree exactly, because the threshold discards the same low-similarity assignments; the
+corpus fix is the more principled of the two, since it does not depend on a tuned cutoff.
+
+Table 4 is a re-scoring of the frozen responses, not a new experiment: the schema changes that
+would alter the prompt — the `host_species`, `sequencing_platform` and `dna_extraction_kit`
+vocabularies — cannot be evaluated this way and require a fresh run.
+
 ## 4. Discussion
 
 ### 4.1 What the benchmark supports
@@ -614,13 +710,21 @@ does not supply the rest.
   studies; the matched cells involve few distinct concepts; mapping took the top-ranked concept without a
   similarity threshold, so closed corpora assign unrelated values to a concept (one run's 70 body-site cells
   scored as correct for "Sweden"); and the retrieval-augmented and LLM-review stages of OntologyMapper were
-  not used. Fields without a corpus are compared as extracted, so their surface-form differences count as
+  not used. Section 3.9 shows a full UBERON corpus withdraws exactly those 70 cells, and that a threshold
+  added afterwards reaches the same result; neither fixes negated values, which embedding similarity maps
+  onto the very term they negate. Fields without a corpus are compared as extracted, so their surface-form differences count as
   errors.
 - **Gold incompleteness.** Curated cells may be blank where the paper reports a value; the scorer counts
-  such cells as false positives, and our source check is partial.
+  such cells as false positives, and our source check is partial. The reference can also be *partial* in a
+  second sense: cMD may split one publication's curation across several study tables, and the sampler drew
+  only one third of PMID 31607556, which cost that study every match it had (Sections 2.1 and 3.9). We did
+  not audit the other nine selections for the same pattern.
 - **Repeats.** Three repeats describe run-to-run variation on these studies, not sampling uncertainty for a
   population of studies. Requests used API defaults, including adaptive thinking for Sonnet 5; other
   settings may change failure rates and accuracy.
+- **Scoring corrections are not a re-run.** Section 3.9 re-scores the frozen responses under corrected gold,
+  fan-out, and harmonization settings, so it isolates scoring defects from extraction quality. Schema changes
+  that alter the prompt are outside its reach and remain unevaluated.
 - **Validation.** Output validation is structural. The system does not verify that values appear in or
   follow from the source, that field names and types conform to the target schema, or that enum values
   belong to the vocabulary.

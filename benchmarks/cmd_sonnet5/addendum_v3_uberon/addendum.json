@@ -1,0 +1,674 @@
+{
+  "source_tree": "/Users/sehyunoh/OmicsMLRepo/MetaExtractor/benchmarks/cmd_sonnet5/out_v3",
+  "crosswalks": "/Users/sehyunoh/OmicsMLRepo/MetaExtractor/benchmarks/cmd_sonnet5/crosswalks_uberon",
+  "min_score": 0.8,
+  "below_threshold": {
+    "body_site": [
+      [
+        "usa",
+        "stria medullaris",
+        0.57
+      ],
+      [
+        "sweden",
+        "systemic artery",
+        0.5944
+      ],
+      [
+        "multiple body sites",
+        "multi organ part structure",
+        0.6791
+      ]
+    ],
+    "disease": [
+      [
+        "fecal microbiota transplantation",
+        "Bacterial Colonization",
+        0.5688
+      ],
+      [
+        "healthy controls",
+        "Healthy",
+        0.7657
+      ],
+      [
+        "recurrent clostridium difficile infection",
+        "Recurrent Immune-Mediated Colitis",
+        0.7797
+      ]
+    ],
+    "treatment": [
+      [
+        "none (antihypertensive treatment-naive)",
+        "Antihypertensive Agent",
+        0.5292
+      ],
+      [
+        "specialized multidisciplinary treatment",
+        "Allogeneic Multipotent Adult Progenitor Cells",
+        0.5494
+      ],
+      [
+        "multidisciplinary treatment",
+        "Allogeneic Multipotent Adult Progenitor Cells",
+        0.5724
+      ],
+      [
+        "not_reported (untreated - prior to antihypertensive treatment)",
+        "Angiotensin II Receptor Antagonist",
+        0.5798
+      ],
+      [
+        "cognitive behavioural therapeutic treatment",
+        "Cytembena",
+        0.5843
+      ],
+      [
+        "not applicable",
+        "Nicotinamide Riboside",
+        0.6716
+      ],
+      [
+        "no",
+        "Nicotinamide Riboside",
+        0.682
+      ],
+      [
+        "no aspirin",
+        "Low-Dose Aspirin",
+        0.7098
+      ],
+      [
+        "no statins",
+        "Non-Statin Antilipidemic Agent",
+        0.7259
+      ],
+      [
+        "no antihypertensive treatment",
+        "Antihypertensive Agent",
+        0.7421
+      ],
+      [
+        "insulin replacement therapy",
+        "Therapeutic Insulin",
+        0.7572
+      ],
+      [
+        "no insulin",
+        "Therapeutic Insulin",
+        0.7656
+      ],
+      [
+        "fecal microbiota transplantation (fmt)",
+        "Fecal Microbiota Transplantation Capsule",
+        0.7828
+      ],
+      [
+        "no nifedipine",
+        "Nifedipine",
+        0.7832
+      ],
+      [
+        "no metoprolol",
+        "Metoprolol",
+        0.7896
+      ],
+      [
+        "no metformin",
+        "Metformin",
+        0.7978
+      ]
+    ]
+  },
+  "fanout_tally": {
+    "before": 131801,
+    "after": 91199,
+    "study_fanout": 91172,
+    "blocked_aggregate": 210,
+    "blocked_sample_scope_no_propagation": 41801,
+    "blocked_multi_valued": 64041,
+    "blocked_unit_without_value": 10784,
+    "blocked_sample_scope": 22264,
+    "subgroup_fanout": 27,
+    "blocked_subgroup_value": 3,
+    "blocked_heterogeneous": 896
+  },
+  "stages": {
+    "baseline": {
+      "sonnet_r1": {
+        "all_curated": {
+          "precision": 0.6365606936416185,
+          "recall": 0.10453871254820528,
+          "f1": 0.1795851806553534,
+          "tn": 1320,
+          "tp_correct": 1762,
+          "tp_wrong": 1006,
+          "fn": 14087,
+          "fp": 0
+        },
+        "matched": {
+          "precision": 0.6365606936416185,
+          "recall": 0.349811395672027,
+          "f1": 0.4515054452274183,
+          "tn": 434,
+          "tp_correct": 1762,
+          "tp_wrong": 1006,
+          "fn": 2269,
+          "fp": 0
+        }
+      },
+      "sonnet_r2": {
+        "all_curated": {
+          "precision": 0.7390700902151284,
+          "recall": 0.12637199644022545,
+          "f1": 0.21583827329381366,
+          "tn": 1320,
+          "tp_correct": 2130,
+          "tp_wrong": 752,
+          "fn": 13973,
+          "fp": 0
+        },
+        "matched": {
+          "precision": 0.7390700902151284,
+          "recall": 0.4228707564026206,
+          "f1": 0.5379467104432377,
+          "tn": 434,
+          "tp_correct": 2130,
+          "tp_wrong": 752,
+          "fn": 2155,
+          "fp": 0
+        }
+      },
+      "sonnet_r3": {
+        "all_curated": {
+          "precision": 0.7392763894069377,
+          "recall": 0.11759121922278255,
+          "f1": 0.2029074529074529,
+          "tn": 1320,
+          "tp_correct": 1982,
+          "tp_wrong": 699,
+          "fn": 14174,
+          "fp": 0
+        },
+        "matched": {
+          "precision": 0.7392763894069377,
+          "recall": 0.39348818741314273,
+          "f1": 0.5136045607670381,
+          "tn": 434,
+          "tp_correct": 1982,
+          "tp_wrong": 699,
+          "fn": 2356,
+          "fp": 0
+        }
+      },
+      "haiku_r1": {
+        "all_curated": {
+          "precision": 0.6908188585607941,
+          "recall": 0.08258676950459805,
+          "f1": 0.14753577106518284,
+          "tn": 1320,
+          "tp_correct": 1392,
+          "tp_wrong": 623,
+          "fn": 14840,
+          "fp": 0
+        },
+        "matched": {
+          "precision": 0.6908188585607941,
+          "recall": 0.36184039511307514,
+          "f1": 0.4749232343909928,
+          "tn": 434,
+          "tp_correct": 1392,
+          "tp_wrong": 623,
+          "fn": 1832,
+          "fp": 0
+        }
+      },
+      "haiku_r2": {
+        "all_curated": {
+          "precision": 0.6574007220216607,
+          "recall": 0.10803915752002373,
+          "f1": 0.1855796178343949,
+          "tn": 1320,
+          "tp_correct": 1821,
+          "tp_wrong": 949,
+          "fn": 14085,
+          "fp": 0
+        },
+        "matched": {
+          "precision": 0.6574007220216607,
+          "recall": 0.36152471709350803,
+          "f1": 0.4665044191110541,
+          "tn": 434,
+          "tp_correct": 1821,
+          "tp_wrong": 949,
+          "fn": 2267,
+          "fp": 0
+        }
+      },
+      "haiku_r3": {
+        "all_curated": {
+          "precision": 0.6013071895424836,
+          "recall": 0.1146247404331059,
+          "f1": 0.19254534582419772,
+          "tn": 1298,
+          "tp_correct": 1932,
+          "tp_wrong": 1259,
+          "fn": 13664,
+          "fp": 22
+        },
+        "matched": {
+          "precision": 0.6013071895424836,
+          "recall": 0.3835616438356164,
+          "f1": 0.46836363636363637,
+          "tn": 412,
+          "tp_correct": 1932,
+          "tp_wrong": 1259,
+          "fn": 1846,
+          "fp": 22
+        }
+      }
+    },
+    "gold_union": {
+      "sonnet_r1": {
+        "all_curated": {
+          "precision": 0.6021439509954059,
+          "recall": 0.10463012240553486,
+          "f1": 0.17828156880525958,
+          "tn": 1435,
+          "tp_correct": 1966,
+          "tp_wrong": 1299,
+          "fn": 15525,
+          "fp": 0
+        },
+        "matched": {
+          "precision": 0.6021439509954059,
+          "recall": 0.3341264445955133,
+          "f1": 0.4297737457645645,
+          "tn": 437,
+          "tp_correct": 1966,
+          "tp_wrong": 1299,
+          "fn": 2619,
+          "fp": 0
+        }
+      },
+      "sonnet_r2": {
+        "all_curated": {
+          "precision": 0.6935901121011785,
+          "recall": 0.12841937200638637,
+          "f1": 0.21671381741434279,
+          "tn": 1434,
+          "tp_correct": 2413,
+          "tp_wrong": 1065,
+          "fn": 15312,
+          "fp": 1
+        },
+        "matched": {
+          "precision": 0.6935901121011785,
+          "recall": 0.4100951733514616,
+          "f1": 0.5154330876855708,
+          "tn": 436,
+          "tp_correct": 2413,
+          "tp_wrong": 1065,
+          "fn": 2406,
+          "fp": 1
+        }
+      },
+      "sonnet_r3": {
+        "all_curated": {
+          "precision": 0.6909701037217816,
+          "recall": 0.12054284193720063,
+          "f1": 0.20527460576400214,
+          "tn": 1434,
+          "tp_correct": 2265,
+          "tp_wrong": 1012,
+          "fn": 15513,
+          "fp": 1
+        },
+        "matched": {
+          "precision": 0.6909701037217816,
+          "recall": 0.3849422161794698,
+          "f1": 0.4944335297969875,
+          "tn": 436,
+          "tp_correct": 2265,
+          "tp_wrong": 1012,
+          "fn": 2607,
+          "fp": 1
+        }
+      },
+      "haiku_r1": {
+        "all_curated": {
+          "precision": 0.6404308202154101,
+          "recall": 0.08227780734433209,
+          "f1": 0.1458215431050745,
+          "tn": 1435,
+          "tp_correct": 1546,
+          "tp_wrong": 868,
+          "fn": 16376,
+          "fp": 0
+        },
+        "matched": {
+          "precision": 0.6404308202154101,
+          "recall": 0.3293566254793353,
+          "f1": 0.4350028137310073,
+          "tn": 437,
+          "tp_correct": 1546,
+          "tp_wrong": 868,
+          "fn": 2280,
+          "fp": 0
+        }
+      },
+      "haiku_r2": {
+        "all_curated": {
+          "precision": 0.6294684488654025,
+          "recall": 0.1077700904736562,
+          "f1": 0.18403235334211843,
+          "tn": 1435,
+          "tp_correct": 2025,
+          "tp_wrong": 1192,
+          "fn": 15573,
+          "fp": 0
+        },
+        "matched": {
+          "precision": 0.6294684488654025,
+          "recall": 0.34415363698164514,
+          "f1": 0.44500604329194593,
+          "tn": 437,
+          "tp_correct": 2025,
+          "tp_wrong": 1192,
+          "fn": 2667,
+          "fp": 0
+        }
+      },
+      "haiku_r3": {
+        "all_curated": {
+          "precision": 0.5754310344827587,
+          "recall": 0.1136774880255455,
+          "f1": 0.18984979112967734,
+          "tn": 1413,
+          "tp_correct": 2136,
+          "tp_wrong": 1554,
+          "fn": 15100,
+          "fp": 22
+        },
+        "matched": {
+          "precision": 0.5754310344827587,
+          "recall": 0.36301835486063905,
+          "f1": 0.44518549395581497,
+          "tn": 415,
+          "tp_correct": 2136,
+          "tp_wrong": 1554,
+          "fn": 2194,
+          "fp": 22
+        }
+      }
+    },
+    "fanout": {
+      "sonnet_r1": {
+        "all_curated": {
+          "precision": 0.6006234845860755,
+          "recall": 0.09228312932410856,
+          "f1": 0.15998523780966,
+          "tn": 1435,
+          "tp_correct": 1734,
+          "tp_wrong": 1153,
+          "fn": 15903,
+          "fp": 0
+        },
+        "matched": {
+          "precision": 0.6006234845860755,
+          "recall": 0.2946974847042828,
+          "f1": 0.395393911754646,
+          "tn": 437,
+          "tp_correct": 1734,
+          "tp_wrong": 1153,
+          "fn": 2997,
+          "fp": 0
+        }
+      },
+      "sonnet_r2": {
+        "all_curated": {
+          "precision": 0.7149611617696724,
+          "recall": 0.1126663118680149,
+          "f1": 0.1946577168865799,
+          "tn": 1435,
+          "tp_correct": 2117,
+          "tp_wrong": 844,
+          "fn": 15829,
+          "fp": 0
+        },
+        "matched": {
+          "precision": 0.7149611617696724,
+          "recall": 0.3597892590074779,
+          "f1": 0.4786885245901639,
+          "tn": 437,
+          "tp_correct": 2117,
+          "tp_wrong": 844,
+          "fn": 2923,
+          "fp": 0
+        }
+      },
+      "sonnet_r3": {
+        "all_curated": {
+          "precision": 0.6899531868923299,
+          "recall": 0.10196913251729643,
+          "f1": 0.177678861223165,
+          "tn": 1435,
+          "tp_correct": 1916,
+          "tp_wrong": 861,
+          "fn": 16013,
+          "fp": 0
+        },
+        "matched": {
+          "precision": 0.6899531868923299,
+          "recall": 0.3256288239292998,
+          "f1": 0.4424431358965478,
+          "tn": 437,
+          "tp_correct": 1916,
+          "tp_wrong": 861,
+          "fn": 3107,
+          "fp": 0
+        }
+      },
+      "haiku_r1": {
+        "all_curated": {
+          "precision": 0.6234782608695653,
+          "recall": 0.07631718999467801,
+          "f1": 0.13598862019914654,
+          "tn": 1435,
+          "tp_correct": 1434,
+          "tp_wrong": 866,
+          "fn": 16490,
+          "fp": 0
+        },
+        "matched": {
+          "precision": 0.6234782608695653,
+          "recall": 0.30549637835534726,
+          "f1": 0.4100657706605662,
+          "tn": 437,
+          "tp_correct": 1434,
+          "tp_wrong": 866,
+          "fn": 2394,
+          "fp": 0
+        }
+      },
+      "haiku_r2": {
+        "all_curated": {
+          "precision": 0.6245810055865921,
+          "recall": 0.08924960085151676,
+          "f1": 0.15618160651920837,
+          "tn": 1435,
+          "tp_correct": 1677,
+          "tp_wrong": 1008,
+          "fn": 16105,
+          "fp": 0
+        },
+        "matched": {
+          "precision": 0.6245810055865921,
+          "recall": 0.28501019714479947,
+          "f1": 0.39141089975493054,
+          "tn": 437,
+          "tp_correct": 1677,
+          "tp_wrong": 1008,
+          "fn": 3199,
+          "fp": 0
+        }
+      },
+      "haiku_r3": {
+        "all_curated": {
+          "precision": 0.6075433231396534,
+          "recall": 0.09515699840340607,
+          "f1": 0.1645424009570699,
+          "tn": 1435,
+          "tp_correct": 1788,
+          "tp_wrong": 1155,
+          "fn": 15847,
+          "fp": 0
+        },
+        "matched": {
+          "precision": 0.6075433231396534,
+          "recall": 0.3038749150237933,
+          "f1": 0.4051206525433329,
+          "tn": 437,
+          "tp_correct": 1788,
+          "tp_wrong": 1155,
+          "fn": 2941,
+          "fp": 0
+        }
+      }
+    },
+    "threshold": {
+      "sonnet_r1": {
+        "all_curated": {
+          "precision": 0.6006234845860755,
+          "recall": 0.09228312932410856,
+          "f1": 0.15998523780966,
+          "tn": 1435,
+          "tp_correct": 1734,
+          "tp_wrong": 1153,
+          "fn": 15903,
+          "fp": 0
+        },
+        "matched": {
+          "precision": 0.6006234845860755,
+          "recall": 0.2946974847042828,
+          "f1": 0.395393911754646,
+          "tn": 437,
+          "tp_correct": 1734,
+          "tp_wrong": 1153,
+          "fn": 2997,
+          "fp": 0
+        }
+      },
+      "sonnet_r2": {
+        "all_curated": {
+          "precision": 0.7149611617696724,
+          "recall": 0.1126663118680149,
+          "f1": 0.1946577168865799,
+          "tn": 1435,
+          "tp_correct": 2117,
+          "tp_wrong": 844,
+          "fn": 15829,
+          "fp": 0
+        },
+        "matched": {
+          "precision": 0.7149611617696724,
+          "recall": 0.3597892590074779,
+          "f1": 0.4786885245901639,
+          "tn": 437,
+          "tp_correct": 2117,
+          "tp_wrong": 844,
+          "fn": 2923,
+          "fp": 0
+        }
+      },
+      "sonnet_r3": {
+        "all_curated": {
+          "precision": 0.6899531868923299,
+          "recall": 0.10196913251729643,
+          "f1": 0.177678861223165,
+          "tn": 1435,
+          "tp_correct": 1916,
+          "tp_wrong": 861,
+          "fn": 16013,
+          "fp": 0
+        },
+        "matched": {
+          "precision": 0.6899531868923299,
+          "recall": 0.3256288239292998,
+          "f1": 0.4424431358965478,
+          "tn": 437,
+          "tp_correct": 1916,
+          "tp_wrong": 861,
+          "fn": 3107,
+          "fp": 0
+        }
+      },
+      "haiku_r1": {
+        "all_curated": {
+          "precision": 0.6234782608695653,
+          "recall": 0.07631718999467801,
+          "f1": 0.13598862019914654,
+          "tn": 1435,
+          "tp_correct": 1434,
+          "tp_wrong": 866,
+          "fn": 16490,
+          "fp": 0
+        },
+        "matched": {
+          "precision": 0.6234782608695653,
+          "recall": 0.30549637835534726,
+          "f1": 0.4100657706605662,
+          "tn": 437,
+          "tp_correct": 1434,
+          "tp_wrong": 866,
+          "fn": 2394,
+          "fp": 0
+        }
+      },
+      "haiku_r2": {
+        "all_curated": {
+          "precision": 0.6245810055865921,
+          "recall": 0.08924960085151676,
+          "f1": 0.15618160651920837,
+          "tn": 1435,
+          "tp_correct": 1677,
+          "tp_wrong": 1008,
+          "fn": 16105,
+          "fp": 0
+        },
+        "matched": {
+          "precision": 0.6245810055865921,
+          "recall": 0.28501019714479947,
+          "f1": 0.39141089975493054,
+          "tn": 437,
+          "tp_correct": 1677,
+          "tp_wrong": 1008,
+          "fn": 3199,
+          "fp": 0
+        }
+      },
+      "haiku_r3": {
+        "all_curated": {
+          "precision": 0.6075433231396534,
+          "recall": 0.09515699840340607,
+          "f1": 0.1645424009570699,
+          "tn": 1435,
+          "tp_correct": 1788,
+          "tp_wrong": 1155,
+          "fn": 15847,
+          "fp": 0
+        },
+        "matched": {
+          "precision": 0.6075433231396534,
+          "recall": 0.3038749150237933,
+          "f1": 0.4051206525433329,
+          "tn": 437,
+          "tp_correct": 1788,
+          "tp_wrong": 1155,
+          "fn": 2941,
+          "fp": 0
+        }
+      }
+    }
+  }
+}

@@ -52,11 +52,23 @@ def load_manifest(path: Path | str = MANIFEST, limit: int | None = None) -> list
     return m[:limit] if limit else m
 
 
+def gold_paths(entry: dict) -> list[Path]:
+    """Every gold ``*_sample.tsv`` of a manifest entry, in manifest order.
+
+    ``gold_rel`` may be a list when one publication's curation is split across several
+    cMD study tables (``TettAJ_2019_a``/``_b``/``_c`` share PMID 31607556); the tables
+    are then scored as one gold set, since one extraction covers the whole paper.
+    """
+    rel = entry.get("gold_rel")
+    if rel:
+        rels = [rel] if isinstance(rel, str) else list(rel)
+        return [curation_dir() / r for r in rels]
+    return [Path(entry["gold_tsv"])]  # legacy absolute path
+
+
 def gold_path(entry: dict) -> Path:
-    """Resolve a manifest entry's gold ``*_sample.tsv``."""
-    if entry.get("gold_rel"):
-        return curation_dir() / entry["gold_rel"]
-    return Path(entry["gold_tsv"])  # legacy absolute path
+    """The entry's first gold table (callers that assume a single table)."""
+    return gold_paths(entry)[0]
 
 
 def schema_fields() -> list[str]:

@@ -1,0 +1,10 @@
+query,ref_match,stage,match1,match1_score,match1_code
+Anti-diabetic Agent,Not Found,1.0,Not Found,1.0,
+Metformin,Not Found,1.0,Not Found,1.0,
+Antihypertensive Agents,Not Found,2.0,Antihypertensive Agent,1.0000,NCIT:C270
+MTX,Not Found,2.0,Methotrexate,0.9071,NCIT:C642
+Not applicable,Not Found,2.5,Nicotinamide Riboside,0.6716,NCIT:C158078
+antipsychotics,Not Found,2.0,Antipsychotic Agent,0.9517,NCIT:C29710
+benzodiazepines,Not Found,2.0,Benzodiazepine,1.0000,NCIT:C1012
+no,Not Found,2.5,Nicotinamide Riboside,0.6820,NCIT:C158078
+ssri,Not Found,2.5,Selective Serotonin Reuptake Inhibitor,1.0000,NCIT:C94725

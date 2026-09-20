@@ -8,13 +8,15 @@ Two deterministic edits:
    ``permissible_values``; enums defined via ``reachable_from`` (dynamic ontology
    subtrees) have nothing to enumerate, so those slots become free text
    (``range: string``), treated as string (single) or list (multivalued).
-2. Annotate each slot's ``scope`` (``study`` or ``sample``) per ``SCOPE`` below.
-   Scope drives deterministic fan-out only (it is not sent to the model): a
-   ``sample``-scoped study-level value is propagated to samples only when it is a
-   single, non-aggregate value for a homogeneous cohort, and only for slots in
-   ``PROPAGATE_STUDY_VALUE`` (annotated ``propagate_study_value: true``); other
-   sample-scoped slots are filled only from sample-level evidence. Slots not listed
-   in ``SCOPE`` stay unannotated (single non-aggregate values propagate).
+2. Nothing else. The fan-out annotations (``scope``, ``propagate_study_value``,
+   ``unit_of``) now come from the schema table itself — the ``scope``,
+   ``propagate.study.value`` and ``unit.of`` columns of ``cmd_schema.csv``, emitted
+   into ``--src`` by the registry's ``build_schema_artifacts.py`` — so they are no
+   longer duplicated here. Scope drives deterministic fan-out only (it is not sent to
+   the model): a ``sample``-scoped study-level value is propagated to samples only when
+   it is a single, non-aggregate, non-heterogeneous value for a cohort reported without
+   subgroups, and only for slots annotated ``propagate_study_value``; other
+   sample-scoped slots are filled only from sample-level evidence.
 
   python make_clean_schema.py --src /path/to/cmd.linkml.yaml [OUT]
 
@@ -28,32 +30,6 @@ from pathlib import Path
 
 import yaml
 
-STUDY = {
-    "study_name", "curator", "pmid", "target_condition", "antibiotics_exclusion_period",
-    "antibiotics_exclusion_period_unit", "dna_extraction_kit", "sequencing_platform",
-    "host_species", 
-}
-SAMPLE = {
-    "subject_id", "sample_id", "subcohort", "control", "body_site", "body_site_details",
-    "days_from_first_collection", "probing_pocket_depth", "probing_pocket_depth_value",
-    "ncbi_accession", "age", "age_group", "age_min", "age_max", "age_years", "family",
-    "family_role", "sex", "zigosity", "antibiotics_current_use", "bmi", "dietary_restriction",
-    "disease", "disease_details", "disease_response_orr", "disease_response_pfs",
-    "disease_response_pfs_month", "disease_response_recist", "feces_phenotype",
-    "feces_phenotype_value", "fmt_id", "fmt_role", "hla", "neonatal_birth_weight",
-    "neonatal_delivery_procedure", "neonatal_feeding_method", "neonatal_gestational_age",
-    "neonatal_preterm_birth", "obgyn_birth_control", "obgyn_lactating", "obgyn_menopause",
-    "obgyn_pregnancy", "smoker", "treatment", "tumor_staging_ajcc", "tumor_staging_tnm",
-    "biomarker_name", "biomarker_unit", "biomarker_value", "disease_response_os",
-    "disease_response_os_unit", "ecog_performance_status", "tumor_size_measurement",
-    "tumor_size_residual_measurement", "uncurated_metadata",
-}
-SCOPE = {**{s: "study" for s in STUDY}, **{s: "sample" for s in SAMPLE}}
-# Sample-scoped slots whose single study-level value may be written to every record of a
-# cohort reported without subgroups: the specimen type, usually stated once for all samples.
-PROPAGATE_STUDY_VALUE = {"antibiotics_current_use", "body_site", "disease"}
-# Unit slot -> the slot it is the unit of: a study-level unit reaches only records with that value.
-UNIT_OF = {"age_unit": "age"}
 
 
 def main() -> None:
@@ -70,21 +46,15 @@ def main() -> None:
     changed = [sn for sn, sd in slots.items() if sd and sd.get("range") in dynamic]
     for sn in changed:
         slots[sn]["range"] = "string"
-    annotated = 0
-    for sn, scope in SCOPE.items():
-        if sn in slots:
-            slots[sn] = slots[sn] or {}
-            slots[sn].setdefault("annotations", {})["scope"] = scope
-            annotated += 1
-    for sn in sorted(PROPAGATE_STUDY_VALUE & set(slots)):
-        slots[sn]["annotations"]["propagate_study_value"] = True
-    for sn, value_slot in sorted(UNIT_OF.items()):
-        slots[sn] = slots[sn] or {}
-        slots[sn].setdefault("annotations", {})["unit_of"] = value_slot
+    ann = {sn: (sd or {}).get("annotations") or {} for sn, sd in slots.items()}
+    scoped = sorted(sn for sn, a in ann.items() if a.get("scope"))
     Path(args.out).write_text(yaml.safe_dump(data, sort_keys=False))
     print(f"downgraded {len(changed)} slots (dynamic enums -> string): {changed}")
-    print(f"annotated scope on {annotated} slots "
-          f"(unannotated: {sorted(set(slots) - set(SCOPE))})")
+    print(f"scope from source on {len(scoped)} slots "
+          f"(unannotated: {sorted(set(slots) - set(scoped))})")
+    print(f"propagate_study_value: "
+          f"{sorted(sn for sn, a in ann.items() if a.get('propagate_study_value'))}")
+    print(f"unit_of: {({sn: a['unit_of'] for sn, a in ann.items() if a.get('unit_of')})}")
     print(f"wrote {args.out}")
 
 
