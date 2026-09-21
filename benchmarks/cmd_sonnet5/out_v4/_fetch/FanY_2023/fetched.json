@@ -1,0 +1,178 @@
+{
+  "source": "pmc_fulltext",
+  "has_body": true,
+  "pmid": "37069399",
+  "pmcid": "10159860",
+  "doi": null,
+  "retrieval_attempts": [
+    {
+      "rung": "pmc_fulltext",
+      "returned_text": true,
+      "is_body": true,
+      "chars": 67289
+    }
+  ],
+  "supplementary_included": [
+    "41564_2023_1355_MOESM1_ESM.pdf",
+    "41564_2023_1355_MOESM2_ESM.pdf",
+    "41564_2023_1355_MOESM3_ESM.xlsx",
+    "41564_2023_1355_MOESM4_ESM.xlsx",
+    "41564_2023_1355_MOESM10_ESM.xlsx",
+    "41564_2023_1355_MOESM11_ESM.xlsx",
+    "41564_2023_1355_MOESM12_ESM.xlsx",
+    "41564_2023_1355_MOESM13_ESM.xlsx",
+    "41564_2023_1355_MOESM14_ESM.xlsx",
+    "41564_2023_1355_MOESM15_ESM.xlsx",
+    "41564_2023_1355_MOESM16_ESM.xlsx",
+    "41564_2023_1355_MOESM17_ESM.xlsx",
+    "41564_2023_1355_MOESM5_ESM.xlsx",
+    "41564_2023_1355_MOESM6_ESM.xlsx",
+    "41564_2023_1355_MOESM7_ESM.xlsx",
+    "41564_2023_1355_MOESM8_ESM.xlsx",
+    "41564_2023_1355_MOESM9_ESM.xlsx"
+  ],
+  "supplementary_skipped": [
+    [
+      "41564_2023_1355_Article_Equa.gif",
+      "europepmc: ValueError: image-only (.gif)"
+    ],
+    [
+      "41564_2023_1355_Article_Equb.gif",
+      "europepmc: ValueError: image-only (.gif)"
+    ],
+    [
+      "41564_2023_1355_Fig10_ESM.gif",
+      "europepmc: ValueError: image-only (.gif)"
+    ],
+    [
+      "41564_2023_1355_Fig10_ESM.jpg",
+      "europepmc: ValueError: image-only (.jpg)"
+    ],
+    [
+      "41564_2023_1355_Fig11_ESM.gif",
+      "europepmc: ValueError: image-only (.gif)"
+    ],
+    [
+      "41564_2023_1355_Fig11_ESM.jpg",
+      "europepmc: ValueError: image-only (.jpg)"
+    ],
+    [
+      "41564_2023_1355_Fig12_ESM.gif",
+      "europepmc: ValueError: image-only (.gif)"
+    ],
+    [
+      "41564_2023_1355_Fig12_ESM.jpg",
+      "europepmc: ValueError: image-only (.jpg)"
+    ],
+    [
+      "41564_2023_1355_Fig13_ESM.gif",
+      "europepmc: ValueError: image-only (.gif)"
+    ],
+    [
+      "41564_2023_1355_Fig13_ESM.jpg",
+      "europepmc: ValueError: image-only (.jpg)"
+    ],
+    [
+      "41564_2023_1355_Fig14_ESM.gif",
+      "europepmc: ValueError: image-only (.gif)"
+    ],
+    [
+      "41564_2023_1355_Fig14_ESM.jpg",
+      "europepmc: ValueError: image-only (.jpg)"
+    ],
+    [
+      "41564_2023_1355_Fig15_ESM.gif",
+      "europepmc: ValueError: image-only (.gif)"
+    ],
+    [
+      "41564_2023_1355_Fig15_ESM.jpg",
+      "europepmc: ValueError: image-only (.jpg)"
+    ],
+    [
+      "41564_2023_1355_Fig16_ESM.gif",
+      "europepmc: ValueError: image-only (.gif)"
+    ],
+    [
+      "41564_2023_1355_Fig16_ESM.jpg",
+      "europepmc: ValueError: image-only (.jpg)"
+    ],
+    [
+      "41564_2023_1355_Fig1_HTML.gif",
+      "europepmc: ValueError: image-only (.gif)"
+    ],
+    [
+      "41564_2023_1355_Fig1_HTML.jpg",
+      "europepmc: ValueError: image-only (.jpg)"
+    ],
+    [
+      "41564_2023_1355_Fig2_HTML.gif",
+      "europepmc: ValueError: image-only (.gif)"
+    ],
+    [
+      "41564_2023_1355_Fig2_HTML.jpg",
+      "europepmc: ValueError: image-only (.jpg)"
+    ],
+    [
+      "41564_2023_1355_Fig3_HTML.gif",
+      "europepmc: ValueError: image-only (.gif)"
+    ],
+    [
+      "41564_2023_1355_Fig3_HTML.jpg",
+      "europepmc: ValueError: image-only (.jpg)"
+    ],
+    [
+      "41564_2023_1355_Fig4_HTML.gif",
+      "europepmc: ValueError: image-only (.gif)"
+    ],
+    [
+      "41564_2023_1355_Fig4_HTML.jpg",
+      "europepmc: ValueError: image-only (.jpg)"
+    ],
+    [
+      "41564_2023_1355_Fig5_HTML.gif",
+      "europepmc: ValueError: image-only (.gif)"
+    ],
+    [
+      "41564_2023_1355_Fig5_HTML.jpg",
+      "europepmc: ValueError: image-only (.jpg)"
+    ],
+    [
+      "41564_2023_1355_Fig6_HTML.gif",
+      "europepmc: ValueError: image-only (.gif)"
+    ],
+    [
+      "41564_2023_1355_Fig6_HTML.jpg",
+      "europepmc: ValueError: image-only (.jpg)"
+    ],
+    [
+      "41564_2023_1355_Fig7_ESM.gif",
+      "europepmc: ValueError: image-only (.gif)"
+    ],
+    [
+      "41564_2023_1355_Fig7_ESM.jpg",
+      "europepmc: ValueError: image-only (.jpg)"
+    ],
+    [
+      "41564_2023_1355_Fig8_ESM.gif",
+      "europepmc: ValueError: image-only (.gif)"
+    ],
+    [
+      "41564_2023_1355_Fig8_ESM.jpg",
+      "europepmc: ValueError: image-only (.jpg)"
+    ],
+    [
+      "41564_2023_1355_Fig9_ESM.gif",
+      "europepmc: ValueError: image-only (.gif)"
+    ],
+    [
+      "41564_2023_1355_Fig9_ESM.jpg",
+      "europepmc: ValueError: image-only (.jpg)"
+    ]
+  ],
+  "sra_manifest_source": null,
+  "sra_manifest_warnings": [],
+  "n_tables": 56,
+  "text_chars": 86389,
+  "text_sha256": "a71f20e756f8a8ab744ec785873176da5831e7ea0db3490cea84468debc4ba79",
+  "tables_sha256": "de07f5cee4432d23cc2b6429a57c4cf712c486b3bf71730f44407ed5c72bdd0d"
+}

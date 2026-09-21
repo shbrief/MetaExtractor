@@ -1,0 +1,23 @@
+cmd: /Users/sehyunoh/.pyenv/versions/3.14.0/bin/python3 -m metaextractor.cli --paper-id 33440172 --schema /Users/sehyunoh/OmicsMLRepo/MetaExtractor/benchmarks/cmd_sonnet5/cmd.clean.linkml.yaml --model claude-sonnet-5 --age-rules /Users/sehyunoh/OmicsMLRepo/MetaExtractor/benchmarks/cmd_sonnet5/age_rules_cmd.json --fetch-cache /Users/sehyunoh/OmicsMLRepo/MetaExtractor/benchmarks/cmd_sonnet5/out_v4/_fetch/NayakRR_2021 --require-fetch-cache --out /Users/sehyunoh/OmicsMLRepo/MetaExtractor/benchmarks/cmd_sonnet5/out_v4/sonnet_r1/NayakRR_2021.json --csv /Users/sehyunoh/OmicsMLRepo/MetaExtractor/benchmarks/cmd_sonnet5/out_v4/sonnet_r1/NayakRR_2021.csv --csv-provenance --save-text /Users/sehyunoh/OmicsMLRepo/MetaExtractor/benchmarks/cmd_sonnet5/out_v4/sonnet_r1/NayakRR_2021.text.txt --run-meta /Users/sehyunoh/OmicsMLRepo/MetaExtractor/benchmarks/cmd_sonnet5/out_v4/sonnet_r1/NayakRR_2021.meta.json --api-key file:/Users/sehyunoh/OmicsMLRepo/MetaHarmonizerEval/vignettes/keys/llm_baseline
+status: ok
+returncode: 0
+elapsed_s: 200.0
+--- stderr ---
+[loaded frozen retrieval pmc_fulltext for 33440172]
+[supplementary tables parsed: 1 (deterministic path; LLM will not see them)]
+[SRA/ENA run manifest: ena:PRJNA656577 (434 runs) (deterministic path)]
+[supplementary skipped: NIHMS1655935-supplement-1.pdf — s3: HTTPError: HTTP Error 404: Not Found]
+[supplementary skipped: NIHMS1655935-supplement-3.xlsx — s3: HTTPError: HTTP Error 404: Not Found]
+[supplementary skipped: NIHMS1655935-supplement-4.xlsx — s3: HTTPError: HTTP Error 404: Not Found]
+[supplementary skipped: NIHMS1655935-supplement-5.xlsx — s3: HTTPError: HTTP Error 404: Not Found]
+[supplementary skipped: NIHMS1655935-supplement-6.xlsx — s3: HTTPError: HTTP Error 404: Not Found]
+[supplementary skipped: NIHMS1655935-supplement-7.xlsx — s3: HTTPError: HTTP Error 404: Not Found]
+[supplementary skipped: NIHMS1655935-supplement-8.xlsx — s3: HTTPError: HTTP Error 404: Not Found]
+[supplementary skipped: NIHMS1655935-supplement-9.xlsx — s3: HTTPError: HTTP Error 404: Not Found]
+[supplementary skipped: (europepmc zip) — response was not a valid ZIP]
+[table selection: 1 kept / 1 scored (gate=0.15)]
+[  PRJNA656577_ena_manifest.tsv: kept (score=0.47) — key-like column 'run_accession'; sequencing_platform: values match enum in 'instrument_model' (33%); host_species: values match enum in 'host' (50%)]
+[wrote CSV: /Users/sehyunoh/OmicsMLRepo/MetaExtractor/benchmarks/cmd_sonnet5/out_v4/sonnet_r1/NayakRR_2021.csv]
+[usage: 3 call(s); input=9,105, cache_write=31,585, cache_read=67,706, output=23,566]
+[cost: $0.3464 (input $0.0182 + cache_w $0.0790 + cache_r $0.0135 + output $0.2357)]
+

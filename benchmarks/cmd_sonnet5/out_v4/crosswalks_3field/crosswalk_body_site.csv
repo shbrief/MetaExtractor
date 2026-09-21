@@ -1,0 +1,12 @@
+query,ref_match,stage,match1,match1_score,match1_code
+feces,Not Found,1.0,Not Found,1.0,
+oral cavity,Not Found,1.0,Not Found,1.0,
+vagina,Not Found,1.0,Not Found,1.0,
+Stool,Not Found,2.5,feces,1.0000,UBERON:0001988
+gut (stool samples),Not Found,2.5,feces,0.8555,UBERON:0001988
+gut (stool),Not Found,2.5,feces,0.9065,UBERON:0001988
+maternal milk,Not Found,2.0,milk,0.8558,UBERON:0001913
+skin,Not Found,2.5,skin of body,1.0000,UBERON:0002097
+skin (including anterior nares),Not Found,2.5,naris epithelium,0.7920,UBERON:0035036
+stool,Not Found,2.5,feces,1.0000,UBERON:0001988
+stool samples,Not Found,2.5,feces,0.8970,UBERON:0001988

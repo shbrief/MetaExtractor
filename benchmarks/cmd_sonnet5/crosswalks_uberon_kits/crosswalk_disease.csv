@@ -1,0 +1,22 @@
+query,ref_match,stage,match1,match1_score,match1_code
+Anorexia Nervosa,Not Found,1.0,Not Found,1.0,
+Healthy,Not Found,1.0,Not Found,1.0,
+Hypertension,Not Found,1.0,Not Found,1.0,
+Metabolic syndrome,Not Found,1.0,Not Found,1.0,
+Rheumatoid Arthritis,Not Found,1.0,Not Found,1.0,
+Rheumatoid arthritis,Not Found,1.0,Not Found,1.0,
+Type 1 diabetes mellitus,Not Found,1.0,Not Found,1.0,
+Type 2 Diabetes Mellitus,Not Found,1.0,Not Found,1.0,
+healthy,Not Found,1.0,Not Found,1.0,
+metabolic syndrome,Not Found,1.0,Not Found,1.0,
+type 1 diabetes mellitus,Not Found,1.0,Not Found,1.0,
+Healthy controls,Not Found,2.5,Healthy,0.7657,NCIT:C115935
+Pre-hypertension,Not Found,2.5,Essential Hypertension,0.8140,NCIT:C3478
+Primary hypertension,Not Found,2.5,Essential Hypertension,1.0000,NCIT:C3478
+Recurrent Clostridium difficile infection,Not Found,2.0,Recurrent Immune-Mediated Colitis,0.7797,NCIT:C224816
+Type 2 Diabetes,Not Found,2.0,Type 2 Diabetes Mellitus,0.9827,NCIT:C26747
+healthy controls,Not Found,2.5,Healthy,0.7657,NCIT:C115935
+pre-hypertension,Not Found,2.5,Essential Hypertension,0.8140,NCIT:C3478
+primary hypertension,Not Found,2.5,Essential Hypertension,1.0000,NCIT:C3478
+type 1 diabetes mellitus (T1DM),Not Found,2.0,Type 1 Diabetes Mellitus,0.9137,NCIT:C2986
+type 2 diabetes,Not Found,2.0,Type 2 Diabetes Mellitus,0.9827,NCIT:C26747

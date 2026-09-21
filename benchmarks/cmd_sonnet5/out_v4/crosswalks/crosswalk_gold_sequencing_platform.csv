@@ -1,0 +1,4 @@
+query,ref_match,stage,match1,match1_score,match1_code
+IlluminaHiSeq,Not Found,1.0,Not Found,1.0,
+IlluminaNovaSeq,Not Found,1.0,Not Found,1.0,
+IonProton,Not Found,1.0,Not Found,1.0,

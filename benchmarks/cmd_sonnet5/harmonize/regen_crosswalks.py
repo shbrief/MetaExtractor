@@ -47,8 +47,17 @@ CORPUS_CSV = {
     # Honour the same override as crosswalk.py so scoring and mapping share one corpus file.
     "treatment": pathlib.Path(os.environ.get("METAHARMONIZER_ONTOLOGIES_DIR", RETRIEVED_ONTOLOGIES_DIR))
                  / "ncit_treatment_corpus.csv",
+    # Local custom_enum corpora (harmonize/build_custom_enum_corpora.py).
+    "sequencing_platform": HERE / "sequencing_platform_corpus.csv",
+    "dna_extraction_kit":  HERE / "dna_extraction_kit_corpus.csv",
 }
-OM_CATEGORY = {"disease": "disease", "body_site": "bodysite", "treatment": "treatment"}
+OM_CATEGORY = {"disease": "disease", "body_site": "bodysite", "treatment": "treatment",
+               "sequencing_platform": "sequencing_platform",
+               "dna_extraction_kit": "dna_extraction_kit"}
+# Local corpora carry local codes (CMDPLAT:/CMDKIT:), which no ontology API can resolve,
+# so the synonym-boost stage has nothing to look up and is skipped. Stages 1.0 (exact,
+# which is what the alias rows are for) and 2.0 (sap-bert embedding) still run.
+LOCAL_CORPUS = {"sequencing_platform", "dna_extraction_kit"}
 
 
 def _lab_col(df: pd.DataFrame) -> str:
@@ -94,6 +103,8 @@ def run_om(field: str, terms: list[str]):
     """Map terms through the field's corpus, reusing the persisted FAISS index."""
     kw = dict(corpus_category=OM_CATEGORY[field], query_ls=terms,
               s3_strategy=None, persist_corpus=True)
+    if field in LOCAL_CORPUS:
+        kw["skip_stage25"] = True
     # Every field passes its corpus explicitly, so mapping never depends on a
     # registry-managed corpus path being present.
     kw["corpus_df"] = pd.read_csv(CORPUS_CSV[field])

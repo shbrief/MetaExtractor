@@ -1,0 +1,52 @@
+{
+  "source": "pmc_html",
+  "has_body": true,
+  "pmid": "26259788",
+  "pmcid": "4576037",
+  "doi": "10.1128/AAC.00933-15",
+  "retrieval_attempts": [
+    {
+      "rung": "pmc_fulltext",
+      "returned_text": true,
+      "is_body": false,
+      "chars": 1721
+    },
+    {
+      "rung": "pubmed_abstract",
+      "returned_text": true,
+      "is_body": false,
+      "chars": 1775
+    },
+    {
+      "rung": "europepmc_fulltext",
+      "returned_text": false,
+      "is_body": false,
+      "chars": 0
+    },
+    {
+      "rung": "europepmc_fulltext_by_doi",
+      "returned_text": false,
+      "is_body": false,
+      "chars": 0
+    },
+    {
+      "rung": "pmc_html",
+      "returned_text": true,
+      "is_body": true,
+      "chars": 29883
+    }
+  ],
+  "supplementary_included": [],
+  "supplementary_skipped": [
+    [
+      "(europepmc zip)",
+      "response was not a valid ZIP"
+    ]
+  ],
+  "sra_manifest_source": "ena:PRJEB7369 (70 runs)",
+  "sra_manifest_warnings": [],
+  "n_tables": 1,
+  "text_chars": 29883,
+  "text_sha256": "30e84125476400c9ecfa8affa3652d85c1c276d25901325a0778036823f0b6e6",
+  "tables_sha256": "1e514d31f30ec86fdd539e78f14390d50ebf14f29a331af7ed4a9a9b66fcc2f3"
+}

@@ -285,7 +285,8 @@ other studies.
 
 ### 2.5 Ontology harmonization
 
-Extracted and curated terms for `disease`, `body_site`, and `treatment` were mapped with
+Extracted and curated terms for `disease`, `body_site`, `treatment`, `sequencing_platform`
+and `dna_extraction_kit` were mapped with
 MetaHarmonizer's OntologyMapper (v0.4.1) [CITE: MetaHarmonizer] using its exact, embedding, and
 synonym stages (the retrieval-augmented and LLM-review stages were disabled). Every distinct extracted
 term of the run tree and every distinct curated term was mapped, and the top-ranked corpus concept was
@@ -293,7 +294,9 @@ taken as the term's code, without a similarity threshold. The resulting crosswal
 run outputs (`out_v3/crosswalks/`). Corpora were field specific: for `disease`, the NCIt subtree C7057
 ("Disease, Disorder or Finding") combined with the static term C115935 ("Healthy") [CITE: NCI
 Thesaurus]; for `body_site`, the six UBERON terms of the cMD `body_site` enum [CITE: UBERON]; for
-`treatment`, the NCIt "Pharmacologic Substance" subtree (C1909). These corpus choices were made after
+`treatment`, the NCIt "Pharmacologic Substance" subtree (C1909); and for the two fields that
+declare a custom enumeration instead of an ontology node, a local corpus generated from the
+schema's allowed values and the curated vocabulary (Section 3.9). These corpus choices were made after
 inspecting mismatches on these ten studies (for example, adding "Healthy"); they are not an independent
 test of corpus design. Because the mapping has no threshold, a closed corpus assigns every term — even
 one that is not a body site — to its nearest concept (Section 3.6).
@@ -548,10 +551,12 @@ individual. The present rules, the scoped fan-out, and the frozen, logged runs r
 
 ### 3.9 Corrections identified after the frozen run
 
-Four defects found after `out_v3` was scored affect scoring only, not extraction: the partial
+Five defects found after `out_v3` was scored affect scoring only, not extraction: the partial
 TettAJ reference (Section 2.1); fan-out annotations that have since moved into the schema table
 and gained a heterogeneity gate; the absence of a similarity threshold on harmonization
-(Section 2.5); and the six-term `body_site` corpus (reported separately below). Because none of them changes the prompt, their effect is measurable on the same
+(Section 2.5); the six-term `body_site` corpus; and the two fields left unharmonized because they
+declare a custom enumeration rather than an ontology node (the last two reported separately below).
+Because none of them changes the prompt, their effect is measurable on the same
 saved model responses. `dev_analysis/scoring_addendum.py` replays them cumulatively
 (`benchmarks/cmd_sonnet5/addendum_v3/`); the first row reproduces Table 2 exactly.
 
@@ -568,6 +573,8 @@ saved model responses. `dev_analysis/scoring_addendum.py` replays them cumulativ
 | + current fan-out rules | Haiku 4.5 | 0.623 [0.608–0.651] | 0.093 [0.076–0.095] | 0.163 [0.136–0.165] | 0.408 [0.405–0.410] |
 | + threshold 0.80 | Sonnet 5 | 0.690 [0.601–0.715] | 0.102 [0.092–0.113] | 0.178 [0.160–0.195] | 0.442 [0.395–0.479] |
 | + threshold 0.80 | Haiku 4.5 | 0.623 [0.608–0.625] | 0.089 [0.076–0.095] | 0.156 [0.136–0.165] | 0.405 [0.391–0.410] |
+| + custom-enum crosswalks | Sonnet 5 | 0.752 [0.681–0.773] | 0.111 [0.105–0.122] | 0.194 [0.181–0.210] | 0.482 [0.448–0.518] |
+| + custom-enum crosswalks | Haiku 4.5 | 0.668 [0.666–0.689] | 0.098 [0.082–0.104] | 0.172 [0.146–0.180] | 0.439 [0.432–0.444] |
 
 **The partial reference cost the benchmark a whole study.** Against `_b` alone, TettAJ matched no
 curated row at all — the extraction enumerated `_c`'s samples — so every one of its populated
@@ -632,9 +639,39 @@ matched 0.475 to 0.468 at the first row of Table 4). Once the 0.80 threshold is 
 corpora agree exactly, because the threshold discards the same low-similarity assignments; the
 corpus fix is the more principled of the two, since it does not depend on a tuned cutoff.
 
+**Two fields were scored on spelling.** `sequencing_platform` and `dna_extraction_kit` declare
+`corpus.type = custom_enum` in the registry — a controlled vocabulary with no ontology node — so
+neither had a corpus and both were compared as surface strings. That makes the comparison sensitive
+to a difference carrying no information: the schema writes `Illumina HiSeq`, the curated tables
+write `IlluminaHiSeq`, and an extraction naming the right instrument in the schema's own vocabulary
+is counted wrong. We built a local corpus for each field in the same CSV shape as the ontology
+corpora (6 concepts over 12 surface forms; 15 over 26) from two inputs only: the schema's
+`allowedvalues` and the curated vocabulary present in the reference tables. Extracted values were
+never consulted, so the alignment cannot be tuned to a run. Three rules generate it — one concept
+per allowed value; a whitespace-insensitive alias for every concept, applied uniformly rather than
+per token; and a short explicit list for curated abbreviations the whitespace rule cannot reach
+(`IonProton`, `MPBio`). Alignments are orthographic only: `QIAamp` is not folded into `QIAGEN`, and
+`PowerSoil DNA Isolation Kit` is not folded into `Qiagen`, so a disagreement about which kit was
+used still scores as one. A curated token with no schema counterpart (`ZymoBIOMICS96MagBead`)
+becomes its own concept rather than being forced onto a schema term.
+
+The gain is confined to `sequencing_platform`, where it is close to total: pooled over the six runs
+its wrong cells fall from 1,074 to 53. `dna_extraction_kit` is unchanged at 1,269, because the 53
+cells the crosswalk newly resolves there all map below the 0.80 threshold and are discarded by it.
+The residual is the informative part. On a run whose prompt carries the display vocabulary, where
+the model writes `Illumina HiSeq` throughout, `sequencing_platform` reaches **zero** wrong cells
+while `dna_extraction_kit` falls only from 1,584 to 1,395; of what remains, 922 cells are curated
+`Qiagen` against extracted `PowerSoil DNA Isolation Kit` — the two vocabularies naming one kit at
+different levels, Qiagen having acquired MO BIO in 2015 — 204 are a genuine manufacturer
+disagreement against curated `ZymoBIOMICS96MagBead`, and 159 are multi-valued extractions
+("MOBIO Power Soil Kit; Norgen Biotek All-In-One kit") on a field the schema declares single
+valued. None of these is a spelling problem, and a crosswalk should not hide them.
+
 Table 4 is a re-scoring of the frozen responses, not a new experiment: the schema changes that
 would alter the prompt — the `host_species`, `sequencing_platform` and `dna_extraction_kit`
-vocabularies — cannot be evaluated this way and require a fresh run.
+vocabularies the model is shown — cannot be evaluated this way and require a fresh run. The
+crosswalk above is their scoring-side counterpart: it makes the comparison vocabulary-neutral, but
+it cannot say whether the model will use the vocabulary it is given.
 
 ## 4. Discussion
 

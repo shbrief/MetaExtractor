@@ -1,0 +1,344 @@
+{
+  "started_utc": "2026-09-21T00:01:27+00:00",
+  "finished_utc": "2026-09-21T00:09:28+00:00",
+  "paper_id": "30661755",
+  "status": "ok",
+  "error": null,
+  "request": {
+    "model_requested": "claude-sonnet-5",
+    "models_returned": [
+      "claude-sonnet-5"
+    ],
+    "max_tokens": 16384,
+    "max_tokens_ceiling": 64000,
+    "batch_size": 30,
+    "sample_discovery": true,
+    "min_table_relevance": 0.15,
+    "sampling_and_thinking": "not set (API defaults: no temperature/top_p/top_k/thinking/effort parameters sent)",
+    "age_rules": "/Users/sehyunoh/OmicsMLRepo/MetaExtractor/benchmarks/cmd_sonnet5/age_rules_cmd.json"
+  },
+  "usage": {
+    "input_tokens": 94101,
+    "cache_creation_input_tokens": 35769,
+    "cache_read_input_tokens": 113355,
+    "output_tokens": 46158,
+    "n_calls": 10
+  },
+  "calls": [
+    {
+      "purpose": "table_plan",
+      "table": "mmc1.xlsx::Tab3 - MadagascarDataset",
+      "max_tokens": 2048,
+      "stop_reason": "end_turn",
+      "output_tokens": 1278,
+      "plan": {
+        "header_rows": [
+          0
+        ],
+        "header_merge_sep": " | ",
+        "data_starts_at": 1,
+        "melt": null,
+        "drop_rows": [],
+        "notes": "Each row is one sample with metadata in c0-c15; columns c17-c24 contain unrelated summary/statistics sub-tables embedded in the same rows (only populated for a few rows) but are passed through unchanged as extra columns since no sample-distinguishing attribute is spread horizontally."
+      }
+    },
+    {
+      "purpose": "table_plan",
+      "table": "mmc1.xlsx::Tab4 - Additional Datasets (map",
+      "max_tokens": 2048,
+      "stop_reason": "end_turn",
+      "output_tokens": 100,
+      "plan": {
+        "header_rows": [
+          0
+        ],
+        "header_merge_sep": " | ",
+        "data_starts_at": 1,
+        "melt": null,
+        "drop_rows": [],
+        "notes": "Flat single header; each row is one study/dataset, no horizontal sample-type split to melt."
+      }
+    },
+    {
+      "purpose": "table_plan",
+      "table": "mmc2.xlsx::Tab2 - ComparisonWithAnvio",
+      "max_tokens": 2048,
+      "stop_reason": "end_turn",
+      "output_tokens": 125,
+      "plan": {
+        "header_rows": [
+          0,
+          1
+        ],
+        "header_merge_sep": " | ",
+        "data_starts_at": 2,
+        "melt": null,
+        "drop_rows": [],
+        "notes": "Each row is one sample (SampleID) with paired automatic-binning and Anvi'o genome stats side by side as separate columns; no horizontal melt needed."
+      }
+    },
+    {
+      "purpose": "table_plan",
+      "table": "mmc2.xlsx::Tab3 - Coassembly",
+      "max_tokens": 2048,
+      "stop_reason": "end_turn",
+      "output_tokens": 790,
+      "plan": {
+        "header_rows": [
+          0,
+          1,
+          2
+        ],
+        "header_merge_sep": " | ",
+        "data_starts_at": 3,
+        "melt": null,
+        "drop_rows": [],
+        "notes": "Each row is one subject (Subj_Id); columns are three-level stacked headers (assembly type / metric / quality tier) describing multiple metrics per subject, not separate samples, so no melt is applied."
+      }
+    },
+    {
+      "purpose": "table_plan",
+      "table": "mmc6.xlsx::Tab1 - Protocols",
+      "max_tokens": 2048,
+      "stop_reason": "end_turn",
+      "output_tokens": 97,
+      "plan": {
+        "header_rows": [
+          1
+        ],
+        "header_merge_sep": " | ",
+        "data_starts_at": 2,
+        "melt": null,
+        "drop_rows": [
+          0,
+          8,
+          9
+        ],
+        "notes": "Section title and repeated header rows interleaved with data; each remaining row is one dataset/protocol record."
+      }
+    },
+    {
+      "purpose": "table_plan",
+      "table": "mmc7.xlsx",
+      "max_tokens": 2048,
+      "stop_reason": "end_turn",
+      "output_tokens": 1138,
+      "plan": {
+        "header_rows": [
+          0
+        ],
+        "header_merge_sep": " | ",
+        "data_starts_at": 2,
+        "melt": null,
+        "drop_rows": [
+          1
+        ],
+        "notes": "Row0 gives sample IDs as column headers (c1..c994), c0 holds KO/pathway annotation text; row1 is a per-sample 'Westernized' metadata flag (not a KO data row) and is dropped; rows from 2 onward are KO presence/absence values per sample-column, so columns (not rows) represent samples and no horizontal category melt applies."
+      }
+    },
+    {
+      "purpose": "fields",
+      "n_fields": 30,
+      "first_field": "location",
+      "max_tokens": 16384,
+      "stop_reason": "max_tokens",
+      "output_tokens": 16384
+    },
+    {
+      "purpose": "fields",
+      "n_fields": 30,
+      "first_field": "location",
+      "max_tokens": 32768,
+      "stop_reason": "end_turn",
+      "output_tokens": 18743
+    },
+    {
+      "purpose": "fields",
+      "n_fields": 30,
+      "first_field": "disease_details",
+      "max_tokens": 16384,
+      "stop_reason": "end_turn",
+      "output_tokens": 4048
+    },
+    {
+      "purpose": "fields",
+      "n_fields": 11,
+      "first_field": "tumor_size_residual_measurement",
+      "max_tokens": 16384,
+      "stop_reason": "end_turn",
+      "output_tokens": 3455
+    }
+  ],
+  "cost_estimate": {
+    "input_usd": 0.188202,
+    "output_usd": 0.46158,
+    "cache_read_usd": 0.022671,
+    "cache_write_usd": 0.0894225,
+    "total_usd": 0.7618754999999999,
+    "pricing_as_of": "2026-06-24"
+  },
+  "retrieval": {
+    "frozen_retrieval": "/Users/sehyunoh/OmicsMLRepo/MetaExtractor/benchmarks/cmd_sonnet5/out_v4/_fetch/PasolliE_2019",
+    "source": "pmc_fulltext",
+    "has_body": true,
+    "pmid": "30661755",
+    "pmcid": "6349461",
+    "doi": null,
+    "attempts": [
+      {
+        "rung": "pmc_fulltext",
+        "returned_text": true,
+        "is_body": true,
+        "chars": 98276
+      }
+    ],
+    "supplementary_included": [
+      "mmc1.xlsx",
+      "mmc2.xlsx",
+      "mmc3.xlsx",
+      "mmc4.xlsx",
+      "mmc5.xlsx",
+      "mmc6.xlsx",
+      "mmc7.xlsx"
+    ],
+    "supplementary_skipped": [
+      [
+        "figs1.gif",
+        "europepmc: ValueError: image-only (.gif)"
+      ],
+      [
+        "figs1.jpg",
+        "europepmc: ValueError: image-only (.jpg)"
+      ],
+      [
+        "figs2.gif",
+        "europepmc: ValueError: image-only (.gif)"
+      ],
+      [
+        "figs2.jpg",
+        "europepmc: ValueError: image-only (.jpg)"
+      ],
+      [
+        "figs3.gif",
+        "europepmc: ValueError: image-only (.gif)"
+      ],
+      [
+        "figs3.jpg",
+        "europepmc: ValueError: image-only (.jpg)"
+      ],
+      [
+        "figs4.gif",
+        "europepmc: ValueError: image-only (.gif)"
+      ],
+      [
+        "figs4.jpg",
+        "europepmc: ValueError: image-only (.jpg)"
+      ],
+      [
+        "figs5.gif",
+        "europepmc: ValueError: image-only (.gif)"
+      ],
+      [
+        "figs5.jpg",
+        "europepmc: ValueError: image-only (.jpg)"
+      ],
+      [
+        "figs6.gif",
+        "europepmc: ValueError: image-only (.gif)"
+      ],
+      [
+        "figs6.jpg",
+        "europepmc: ValueError: image-only (.jpg)"
+      ],
+      [
+        "figs7.gif",
+        "europepmc: ValueError: image-only (.gif)"
+      ],
+      [
+        "figs7.jpg",
+        "europepmc: ValueError: image-only (.jpg)"
+      ],
+      [
+        "fx1.gif",
+        "europepmc: ValueError: image-only (.gif)"
+      ],
+      [
+        "fx1.jpg",
+        "europepmc: ValueError: image-only (.jpg)"
+      ],
+      [
+        "gr1.gif",
+        "europepmc: ValueError: image-only (.gif)"
+      ],
+      [
+        "gr1.jpg",
+        "europepmc: ValueError: image-only (.jpg)"
+      ],
+      [
+        "gr2.gif",
+        "europepmc: ValueError: image-only (.gif)"
+      ],
+      [
+        "gr2.jpg",
+        "europepmc: ValueError: image-only (.jpg)"
+      ],
+      [
+        "gr3.gif",
+        "europepmc: ValueError: image-only (.gif)"
+      ],
+      [
+        "gr3.jpg",
+        "europepmc: ValueError: image-only (.jpg)"
+      ],
+      [
+        "gr4.gif",
+        "europepmc: ValueError: image-only (.gif)"
+      ],
+      [
+        "gr4.jpg",
+        "europepmc: ValueError: image-only (.jpg)"
+      ],
+      [
+        "gr5.gif",
+        "europepmc: ValueError: image-only (.gif)"
+      ],
+      [
+        "gr5.jpg",
+        "europepmc: ValueError: image-only (.jpg)"
+      ],
+      [
+        "gr6.gif",
+        "europepmc: ValueError: image-only (.gif)"
+      ],
+      [
+        "gr6.jpg",
+        "europepmc: ValueError: image-only (.jpg)"
+      ],
+      [
+        "gr7.gif",
+        "europepmc: ValueError: image-only (.gif)"
+      ],
+      [
+        "gr7.jpg",
+        "europepmc: ValueError: image-only (.jpg)"
+      ]
+    ],
+    "sra_manifest_source": "ena:PRJNA485056+PRJNA504891 (164 runs)",
+    "sra_manifest_warnings": []
+  },
+  "local_supplementary": [],
+  "paper_text_sha256": "1cc39adcb8b6386cdec02b4417b8c706435f8f7b1a2ddc432f4f381604c11d7f",
+  "paper_text_chars": 98276,
+  "n_tables": 21,
+  "output": {
+    "granularity": "sample_level",
+    "n_samples": 112,
+    "n_fields": 71,
+    "n_warnings": 100
+  },
+  "versions": {
+    "metaextractor": "0.1.0",
+    "anthropic_sdk": "0.104.1",
+    "python": "3.14.0"
+  }
+}

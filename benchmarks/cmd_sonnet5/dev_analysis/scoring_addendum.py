@@ -125,6 +125,10 @@ def main() -> None:
                     help="crosswalk directory (default: out_v3/crosswalks). Point it at a "
                          "directory regenerated against a different corpus to rescore on that "
                          "corpus; set $CMD_BODYSITE_CORPUS to the matching body_site corpus.")
+    ap.add_argument("--kit-crosswalks", default=None,
+                    help="crosswalk directory that additionally covers the two custom_enum "
+                         "fields (sequencing_platform, dna_extraction_kit), for stage 5. "
+                         "Default: crosswalks_uberon_kits. Pass '' to skip stage 5.")
     args = ap.parse_args()
     outdir = Path(args.outdir); outdir.mkdir(parents=True, exist_ok=True)
     tmpdir = outdir / "_replay"; tmpdir.mkdir(exist_ok=True)
@@ -148,23 +152,39 @@ def main() -> None:
 
     single = [as_published(m) for m in manifest]
 
+    kit_cw = (BENCH / "crosswalks_uberon_kits" if args.kit_crosswalks is None
+              else Path(args.kit_crosswalks) if args.kit_crosswalks else None)
+    if kit_cw is not None and not kit_cw.is_absolute():
+        kit_cw = BENCH / kit_cw
+    n = 5 if kit_cw is not None else 4
+
     stages = {}
-    print("stage 1/4  baseline (gold = TettAJ_2019_b only, records as saved)", flush=True)
+    print(f"stage 1/{n}  baseline (gold = TettAJ_2019_b only, records as saved)", flush=True)
     stages["baseline"] = score_tree(single, Harmonizer(cw), tmpdir=tmpdir)
-    print("stage 2/4  + TettAJ gold union", flush=True)
+    print(f"stage 2/{n}  + TettAJ gold union", flush=True)
     stages["gold_union"] = score_tree(manifest, Harmonizer(cw), tmpdir=tmpdir)
-    print("stage 3/4  + fan-out under the current rules", flush=True)
+    print(f"stage 3/{n}  + fan-out under the current rules", flush=True)
     tally = {"before": 0, "after": 0}
     stages["fanout"] = score_tree(manifest, Harmonizer(cw), schema=schema, rules=rules,
                                   tmpdir=tmpdir, tally=tally)
-    print(f"stage 4/4  + harmonization threshold (min_score={args.min_score})", flush=True)
+    print(f"stage 4/{n}  + harmonization threshold (min_score={args.min_score})", flush=True)
     harm_t = Harmonizer(cw, min_score=args.min_score)
     stages["threshold"] = score_tree(manifest, harm_t, schema=schema, rules=rules,
                                      tmpdir=tmpdir)
+    if kit_cw is not None:
+        # The two corpus.type = custom_enum fields were compared as surface strings, so the
+        # schema's display vocabulary scored wrong against cMD's curated tokens even when the
+        # extraction named the right instrument. Same threshold, five harmonized fields.
+        print(f"stage 5/{n}  + crosswalks for the two custom_enum fields", flush=True)
+        harm_k = Harmonizer(kit_cw, min_score=args.min_score)
+        assert {"sequencing_platform", "dna_extraction_kit"} <= set(harm_k.fields), harm_k.fields
+        stages["custom_enum_crosswalks"] = score_tree(
+            manifest, harm_k, schema=schema, rules=rules, tmpdir=tmpdir)
 
     payload = {
         "source_tree": str(BENCH / "out_v3"),
         "crosswalks": str(cw),
+        "kit_crosswalks": str(kit_cw) if kit_cw else None,
         "min_score": args.min_score,
         "below_threshold": {f: [list(r) for r in rows]
                             for f, rows in harm_t.below_threshold.items()},
@@ -174,7 +194,9 @@ def main() -> None:
     (outdir / "addendum.json").write_text(json.dumps(payload, indent=2, default=str))
 
     labels = {"baseline": "out_v3 as published", "gold_union": "+ TettAJ gold union",
-              "fanout": "+ current fan-out rules", "threshold": f"+ threshold {args.min_score}"}
+              "fanout": "+ current fan-out rules", "threshold": f"+ threshold {args.min_score}",
+              "custom_enum_crosswalks": "+ custom-enum crosswalks"}
+    labels = {k: v for k, v in labels.items() if k in stages}
     lines = ["| stage | model | all-curated P | all-curated R | all-curated F1 | matched F1 |",
              "|---|---|---|---|---|---|"]
     for key, label in labels.items():

@@ -1,0 +1,4158 @@
+{
+  "paper_id": "37069399",
+  "granularity": "sample_level",
+  "subgroups": [
+    "AN",
+    "HC"
+  ],
+  "fields": {
+    "location": {
+      "value": "Odense University Hospital, Aarhus University Hospital, Aalborg University Hospital",
+      "by_subgroup": {
+        "AN": "Center for Eating Disorders (Odense), Child and Adolescent Psychiatric Unit (Aarhus), Unit for Psychiatric Research (Aalborg)",
+        "HC": "not_reported"
+      },
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "Center for Eating Disorders (Odense University Hospital), Child and Adolescent Psychiatric Unit (Aarhus University Hospital) and Unit for Psychiatric Research (Aalborg University Hospital)",
+      "section": "Methods — Study participants",
+      "notes": "AN cases recruited from three named clinical centres in Denmark; recruitment location for HC not specified beyond 'public advertisement'."
+    },
+    "subject_id": {
+      "value": "not_reported",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "",
+      "section": "",
+      "notes": "No individual participant identifiers reported in the provided text; Supplementary Tables 1-2 (which may contain per-subject data) were not included."
+    },
+    "sample_id": {
+      "value": "not_reported",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "",
+      "section": "",
+      "notes": "No unique biospecimen identifiers reported."
+    },
+    "subcohort": {
+      "value": "not_reported",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "medium",
+      "evidence_quote": "AN-RS n = 56, AN-BP n = 21",
+      "section": "Fig. 1 legend",
+      "notes": "AN cases were further divided into restricting (AN-RS, n=56) and binge-eating/purging (AN-BP, n=21) subtypes; not modelled as separate subgroup in this extraction which focuses on AN vs HC."
+    },
+    "control": {
+      "value": "not_reported",
+      "by_subgroup": {
+        "AN": "Case",
+        "HC": "Study Control"
+      },
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "77 females with AN and 70 healthy females",
+      "section": "Abstract",
+      "notes": null
+    },
+    "country": {
+      "value": "Denmark",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "recruited from three specialized centres in Denmark from 1 September 2014 to 31 July 2016",
+      "section": "Methods — Study participants",
+      "notes": null
+    },
+    "body_site": {
+      "value": "feces",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "Shotgun metagenomics and metabolomics were performed on faecal and serum samples",
+      "section": "Abstract",
+      "notes": "Serum samples also collected for metabolomics but body_site schema only covers gut-microbiome-relevant sites; feces reported."
+    },
+    "body_site_details": {
+      "value": "not_reported",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "",
+      "section": "",
+      "notes": null
+    },
+    "days_from_first_collection": {
+      "value": "not_reported",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "",
+      "section": "",
+      "notes": "Study is cross-sectional for human cohort; no longitudinal sample collection days reported."
+    },
+    "lifestyle": {
+      "value": "not_reported",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "",
+      "section": "",
+      "notes": null
+    },
+    "probing_pocket_depth": {
+      "value": "not_reported",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "",
+      "section": "",
+      "notes": null
+    },
+    "westernized": {
+      "value": "not_reported",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "",
+      "section": "",
+      "notes": "Not explicitly labelled, though Danish cohort would typically be considered westernized; left as not_reported per rules against inference without support."
+    },
+    "probing_pocket_depth_value": {
+      "value": "not_reported",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "",
+      "section": "",
+      "notes": null
+    },
+    "ncbi_accession": {
+      "value": "not_reported",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "",
+      "section": "",
+      "notes": null
+    },
+    "age": {
+      "value": "not_reported",
+      "by_subgroup": null,
+      "unit": "Year",
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "medium",
+      "evidence_quote": "females aged 20, 22 and 20 yr with BMI of 10.3, 11.5 and 11.7 kg m−2, respectively",
+      "section": "Methods — Animal experiments",
+      "notes": "Aggregate mean age for the full 77 AN/70 HC cohort not reported in the provided text (likely in Supplementary Table 2, not included). Individual ages were reported only for the 3 AN and 3 HC faecal donors used for mouse FMT: AN donors 20, 22, 20 yr; HC donors 20, 22, 21 yr."
+    },
+    "age_group": {
+      "value": "not_reported",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "medium",
+      "evidence_quote": "Child and Adolescent Psychiatric Unit (Aarhus University Hospital)",
+      "section": "Methods — Study participants",
+      "notes": "Recruitment from a Child and Adolescent Psychiatric Unit suggests some adolescent participants may be included, but overall cohort age-group composition is not explicitly stated."
+    },
+    "age_unit": {
+      "value": "Year",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "females aged 20, 22 and 20 yr",
+      "section": "Methods — Animal experiments",
+      "notes": "Unit confirmed only from the FMT donor subset description; whole-cohort age unit not separately restated but assumed consistent."
+    },
+    "ancestry": {
+      "value": "not_reported",
+      "by_subgroup": {
+        "AN": "Caucasian",
+        "HC": "not_reported"
+      },
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "medium",
+      "evidence_quote": "we only included Danish Caucasian women with AN cases",
+      "section": "Methods — Study participants",
+      "notes": "Ancestry explicitly stated only for AN cases; not explicitly restated for HC group, though HC were recruited from the same Danish population."
+    },
+    "ancestry_details": {
+      "value": [
+        "Danish"
+      ],
+      "by_subgroup": {
+        "AN": [
+          "Danish"
+        ],
+        "HC": "not_reported"
+      },
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "medium",
+      "evidence_quote": "we only included Danish Caucasian women with AN cases",
+      "section": "Methods — Study participants",
+      "notes": null
+    },
+    "family": {
+      "value": "not_reported",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "",
+      "section": "",
+      "notes": null
+    },
+    "family_role": {
+      "value": "not_reported",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "",
+      "section": "",
+      "notes": null
+    },
+    "sex": {
+      "value": "Female",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "we decided to include only women in the present study",
+      "section": "Methods — Study participants",
+      "notes": "Applies to both AN and HC groups."
+    },
+    "zigosity": {
+      "value": "not_reported",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "",
+      "section": "",
+      "notes": null
+    },
+    "age_min": {
+      "value": "not_reported",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "",
+      "section": "",
+      "notes": null
+    },
+    "age_max": {
+      "value": "not_reported",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "",
+      "section": "",
+      "notes": null
+    },
+    "age_years": {
+      "value": "not_reported",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "",
+      "section": "",
+      "notes": null
+    },
+    "antibiotics_current_use": {
+      "value": "not_reported",
+      "by_subgroup": {
+        "AN": "No",
+        "HC": "No"
+      },
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "derived",
+      "confidence": "medium",
+      "evidence_quote": "Exclusion criteria comprised antibiotic or antifungal treatment within the previous 3 months",
+      "section": "Methods — Study participants",
+      "notes": "Derived from exclusion criteria excluding recent antibiotic use (within 3 months) for both AN and HC groups; does not explicitly confirm zero current use at sampling, only recent-use exclusion."
+    },
+    "bmi": {
+      "value": "not_reported",
+      "by_subgroup": null,
+      "unit": "kg m−2",
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "medium",
+      "evidence_quote": "BMI of 10.3, 11.5 and 11.7 kg m −2 , respectively) and three HC ... with BMI of 22.6, 21.1 and 21.2 kg m −2",
+      "section": "Methods — Animal experiments",
+      "notes": "Aggregate cohort BMI not given in provided text (likely in Supplementary Table 1/2, not included); exact BMI values reported only for the 3 AN and 3 HC individuals whose stool was used for mouse FMT."
+    },
+    "dietary_restriction": {
+      "value": "not_reported",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "medium",
+      "evidence_quote": "",
+      "section": "",
+      "notes": "AN involves self-restricted food intake as part of the disorder, and inpatients received individualized calorie-controlled diets, but no standard dietary-restriction category (e.g., vegetarian/vegan) was reported."
+    },
+    "disease": {
+      "value": "not_reported",
+      "by_subgroup": {
+        "AN": "Anorexia nervosa",
+        "HC": "Healthy"
+      },
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "a cohort of 77 females with AN and 70 healthy females",
+      "section": "Abstract",
+      "notes": "AN patients further subdivided into AN-RS (restricting, n=56) and AN-BP (binge-eating/purging, n=21) subtypes per DSM-5 criteria."
+    },
+    "disease_details": {
+      "value": [
+        "Anorexia Nervosa",
+        "Anorexia Nervosa, Restricting Type",
+        "Anorexia Nervosa, Binge-Eating/Purging Type",
+        "Healthy"
+      ],
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "the common restricting (AN-RS) type and the less prevalent binge-eating or purging (AN-BP) type",
+      "section": "Main",
+      "notes": "Cohort comprised 77 AN cases (further subdivided into AN-RS and AN-BP subtypes) and 70 healthy control females."
+    },
+    "disease_response_orr": {
+      "value": "not_reported",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "",
+      "section": "",
+      "notes": "Study does not evaluate treatment response rate; not an oncology treatment trial."
+    },
+    "disease_response_pfs": {
+      "value": "not_reported",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "",
+      "section": "",
+      "notes": "Not applicable to this study design."
+    },
+    "disease_response_pfs_month": {
+      "value": "not_reported",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "",
+      "section": "",
+      "notes": ""
+    },
+    "disease_response_recist": {
+      "value": "not_reported",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "",
+      "section": "",
+      "notes": "Not a solid tumor study."
+    },
+    "feces_phenotype": {
+      "value": "not_reported",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "medium",
+      "evidence_quote": "",
+      "section": "",
+      "notes": "Fecal microbiome and metabolome measures are reported extensively but not in the specific structured phenotype/value pairing intended by this field."
+    },
+    "fmt_id": {
+      "value": "not_reported",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "medium",
+      "evidence_quote": "",
+      "section": "",
+      "notes": "Only group-level labels (AN-T, HC-T) reported for mouse recipients; no individual donor/recipient IDs given."
+    },
+    "fmt_role": {
+      "value": "Donor",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "faecal microbiota from three randomly chosen AN-RS cases and three age-matched HC participants",
+      "section": "Results — Gut microbiota induces reduced weight gain and altered energy metabolism in mice",
+      "notes": "Human AN and HC participants served as fecal microbiota donors for FMT into germ-free mice; recipients were mice, not human participants."
+    },
+    "hla": {
+      "value": "not_reported",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "",
+      "section": "",
+      "notes": ""
+    },
+    "neonatal_birth_weight": {
+      "value": "not_reported",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "",
+      "section": "",
+      "notes": ""
+    },
+    "neonatal_delivery_procedure": {
+      "value": "not_reported",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "",
+      "section": "",
+      "notes": ""
+    },
+    "neonatal_feeding_method": {
+      "value": "not_reported",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "",
+      "section": "",
+      "notes": ""
+    },
+    "neonatal_gestational_age": {
+      "value": "not_reported",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "",
+      "section": "",
+      "notes": ""
+    },
+    "neonatal_preterm_birth": {
+      "value": "not_reported",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "",
+      "section": "",
+      "notes": ""
+    },
+    "obgyn_birth_control": {
+      "value": "not_reported",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "medium",
+      "evidence_quote": "",
+      "section": "",
+      "notes": "Exclusion criteria for controls mention regular medication apart from birth control pills, but individual usage status is not reported."
+    },
+    "obgyn_lactating": {
+      "value": "not_reported",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "",
+      "section": "",
+      "notes": ""
+    },
+    "obgyn_menopause": {
+      "value": "not_reported",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "",
+      "section": "",
+      "notes": ""
+    },
+    "obgyn_pregnancy": {
+      "value": "not_reported",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "",
+      "section": "",
+      "notes": ""
+    },
+    "smoker": {
+      "value": "not_reported",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "medium",
+      "evidence_quote": "adjusting for confounders including age, smoking and multiple drug intake",
+      "section": "Results — Associations between absolute bacterial abundance and bioclinical variables in AN",
+      "notes": "Smoking history was collected and used as a covariate, but specific smoker status categories/counts are not reported in the provided text."
+    },
+    "treatment": {
+      "value": [
+        "selective serotonin re-uptake inhibitors",
+        "antipsychotics",
+        "benzodiazepines"
+      ],
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "Medication included selective serotonin re-uptake inhibitors, antipsychotics and benzodiazepines.",
+      "section": "Methods — Association analysis",
+      "notes": "These medications were used as confounders/covariates in statistical models, indicating they were administered to some AN participants."
+    },
+    "tumor_staging_ajcc": {
+      "value": "not_reported",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "",
+      "section": "",
+      "notes": "No tumor/cancer staging in this study."
+    },
+    "tumor_staging_tnm": {
+      "value": "not_reported",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "",
+      "section": "",
+      "notes": ""
+    },
+    "biomarker_name": {
+      "value": "not_reported",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "medium",
+      "evidence_quote": "",
+      "section": "",
+      "notes": "Directional differences in glucose, insulin, HOMA-IR and CRP are described qualitatively, but exact numeric biomarker values with units are reported only in Supplementary Tables not included in provided text."
+    },
+    "biomarker_unit": {
+      "value": "not_reported",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "medium",
+      "evidence_quote": "",
+      "section": "",
+      "notes": ""
+    },
+    "biomarker_value": {
+      "value": "not_reported",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "medium",
+      "evidence_quote": "",
+      "section": "",
+      "notes": ""
+    },
+    "disease_response_os": {
+      "value": "not_reported",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "",
+      "section": "",
+      "notes": "Only a population-level mortality rate (5.6% per decade) is cited from prior literature, not participant-level overall survival."
+    },
+    "disease_response_os_unit": {
+      "value": "not_reported",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "",
+      "section": "",
+      "notes": ""
+    },
+    "ecog_performance_status": {
+      "value": "not_reported",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "",
+      "section": "",
+      "notes": "Not applicable; ECOG status not assessed in this eating disorder cohort."
+    },
+    "feces_phenotype_value": {
+      "value": "not_reported",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "medium",
+      "evidence_quote": "",
+      "section": "",
+      "notes": ""
+    },
+    "tumor_size_measurement": {
+      "value": "not_reported",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "",
+      "section": "",
+      "notes": ""
+    },
+    "tumor_size_residual_measurement": {
+      "value": "not_reported",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "",
+      "section": "",
+      "notes": "No tumor-related measurements reported in this study (eating disorder/microbiome paper)."
+    },
+    "uncurated_metadata": {
+      "value": [
+        "Cross-sectional Danish AN cohort recruited from three specialized centres in Denmark (Odense, Aarhus, Aalborg University Hospitals)",
+        "All participants were Danish Caucasian women",
+        "Faecal microbiota transplantation performed using 3 AN-RS donors and 3 HC donors to female germ-free Swiss Webster mice",
+        "Study registered at ClinicalTrials.gov (NCT02217384)"
+      ],
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "we only included Danish Caucasian women with AN cases, recruited from three specialized centres in Denmark",
+      "section": "Methods — Study participants",
+      "notes": "Compiled ancillary study details not captured in other schema fields."
+    },
+    "study_name": {
+      "value": "not_reported",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "",
+      "section": "",
+      "notes": "No canonical study identifier (e.g., 'AuthorX_Year') is given in the provided text; only the ClinicalTrials.gov ID NCT02217384 is mentioned."
+    },
+    "curator": {
+      "value": "not_reported",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "",
+      "section": "",
+      "notes": "Curator identity not applicable/reported in paper text."
+    },
+    "pmid": {
+      "value": 37069399,
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "derived",
+      "confidence": "medium",
+      "evidence_quote": "",
+      "section": "Metadata — paper_id",
+      "notes": "PMID inferred from the provided paper_id (37069399), which matches PubMed ID format; not explicitly stated within the body text of the paper."
+    },
+    "target_condition": {
+      "value": [
+        "Anorexia nervosa"
+      ],
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "Anorexia nervosa (AN) is an eating disorder with a high mortality.",
+      "section": "Abstract",
+      "notes": null
+    },
+    "antibiotics_exclusion_period": {
+      "value": 3,
+      "by_subgroup": {
+        "Human cohort": 3,
+        "Mouse FMT experiment": "not_reported"
+      },
+      "unit": "Month",
+      "normalized_value": 3,
+      "normalized_unit": "Month",
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "Exclusion criteria comprised antibiotic or antifungal treatment within the previous 3 months",
+      "section": "Methods — Study participants",
+      "notes": "Same 3-month antibiotic exclusion criterion also applied to age-matched healthy controls ('antibiotics within the last 3 months')."
+    },
+    "antibiotics_exclusion_period_unit": {
+      "value": "Month",
+      "by_subgroup": {
+        "Human cohort": "Month",
+        "Mouse FMT experiment": "not_reported"
+      },
+      "unit": null,
+      "normalized_value": "Month",
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "antibiotic or antifungal treatment within the previous 3 months",
+      "section": "Methods — Study participants",
+      "notes": null
+    },
+    "dna_extraction_kit": {
+      "value": "not_reported",
+      "by_subgroup": {
+        "Human cohort": "not_reported",
+        "Mouse FMT experiment": "not_reported"
+      },
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "medium",
+      "evidence_quote": "DNA extraction from aliquots of faecal samples was performed following IHMS SOP P7 V2",
+      "section": "Methods — Faecal sample collection and DNA extraction",
+      "notes": "Human samples used IHMS SOP P7 V2 protocol; mouse samples used NucleoSpin soil mini kit (MACHEREY-NAGEL). Neither matches the allowed enum values, so reported as not_reported per schema constraints; evidence provided for reference."
+    },
+    "sequencing_platform": {
+      "value": "Ion Torrent Proton",
+      "by_subgroup": {
+        "Human cohort": "Ion Torrent Proton",
+        "Mouse FMT experiment": "Illumina MiSeq"
+      },
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "Purified and amplified DNA fragment libraries were sequenced using the Ion Proton Sequencer (Thermo Fisher)",
+      "section": "Methods — Shotgun sequencing",
+      "notes": "Human faecal shotgun metagenomics used Ion Proton (Ion Torrent Proton); mouse 16S rRNA sequencing used an Illumina MiSeq desktop sequencer, as stated in Methods — DNA extraction, 16S rRNA sequencing and data analyses in mice experiments."
+    },
+    "host_species": {
+      "value": "Human",
+      "by_subgroup": {
+        "Human cohort": "Human",
+        "Mouse FMT experiment": "Mouse"
+      },
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "Female germ-free Swiss Webster mice were bred and maintained in flexible film gnotobiotic isolators",
+      "section": "Methods — Animal experiments",
+      "notes": "Study includes both human participants (AN cases and healthy controls) and germ-free mouse recipients of human faecal microbiota transplants."
+    }
+  },
+  "samples": [
+    {
+      "Day": "0",
+      "Batch 3": "",
+      "subject_id": "HC_T_1",
+      "Value": "0",
+      "pmid": "37069399",
+      "target_condition": "Anorexia nervosa",
+      "antibiotics_exclusion_period": "3",
+      "sequencing_platform": "Ion Torrent Proton",
+      "host_species": "Human",
+      "antibiotics_exclusion_period_unit": "Month"
+    },
+    {
+      "Day": "0",
+      "Batch 3": "",
+      "subject_id": "HC_T_2",
+      "Value": "0",
+      "pmid": "37069399",
+      "target_condition": "Anorexia nervosa",
+      "antibiotics_exclusion_period": "3",
+      "sequencing_platform": "Ion Torrent Proton",
+      "host_species": "Human",
+      "antibiotics_exclusion_period_unit": "Month"
+    },
+    {
+      "Day": "0",
+      "Batch 3": "",
+      "subject_id": "HC_T_3",
+      "Value": "0",
+      "pmid": "37069399",
+      "target_condition": "Anorexia nervosa",
+      "antibiotics_exclusion_period": "3",
+      "sequencing_platform": "Ion Torrent Proton",
+      "host_species": "Human",
+      "antibiotics_exclusion_period_unit": "Month"
+    },
+    {
+      "Day": "0",
+      "Batch 3": "",
+      "subject_id": "HC_T_4",
+      "Value": "0",
+      "pmid": "37069399",
+      "target_condition": "Anorexia nervosa",
+      "antibiotics_exclusion_period": "3",
+      "sequencing_platform": "Ion Torrent Proton",
+      "host_species": "Human",
+      "antibiotics_exclusion_period_unit": "Month"
+    },
+    {
+      "Day": "0",
+      "Batch 3": "",
+      "subject_id": "HC_T_5",
+      "Value": "0",
+      "pmid": "37069399",
+      "target_condition": "Anorexia nervosa",
+      "antibiotics_exclusion_period": "3",
+      "sequencing_platform": "Ion Torrent Proton",
+      "host_species": "Human",
+      "antibiotics_exclusion_period_unit": "Month"
+    },
+    {
+      "Day": "0",
+      "Batch 3": "",
+      "subject_id": "HC_T_6",
+      "Value": "0",
+      "pmid": "37069399",
+      "target_condition": "Anorexia nervosa",
+      "antibiotics_exclusion_period": "3",
+      "sequencing_platform": "Ion Torrent Proton",
+      "host_species": "Human",
+      "antibiotics_exclusion_period_unit": "Month"
+    },
+    {
+      "Day": "0",
+      "Batch 3": "",
+      "subject_id": "HC_T_7",
+      "Value": "0",
+      "pmid": "37069399",
+      "target_condition": "Anorexia nervosa",
+      "antibiotics_exclusion_period": "3",
+      "sequencing_platform": "Ion Torrent Proton",
+      "host_species": "Human",
+      "antibiotics_exclusion_period_unit": "Month"
+    },
+    {
+      "Day": "0",
+      "Batch 3": "",
+      "subject_id": "HC_T_8",
+      "Value": "0",
+      "pmid": "37069399",
+      "target_condition": "Anorexia nervosa",
+      "antibiotics_exclusion_period": "3",
+      "sequencing_platform": "Ion Torrent Proton",
+      "host_species": "Human",
+      "antibiotics_exclusion_period_unit": "Month"
+    },
+    {
+      "Day": "0",
+      "Batch 3": "",
+      "subject_id": "HC_T_9",
+      "Value": "0",
+      "pmid": "37069399",
+      "target_condition": "Anorexia nervosa",
+      "antibiotics_exclusion_period": "3",
+      "sequencing_platform": "Ion Torrent Proton",
+      "host_species": "Human",
+      "antibiotics_exclusion_period_unit": "Month"
+    },
+    {
+      "Day": "0",
+      "Batch 3": "",
+      "subject_id": "HC_T_10",
+      "Value": "0",
+      "pmid": "37069399",
+      "target_condition": "Anorexia nervosa",
+      "antibiotics_exclusion_period": "3",
+      "sequencing_platform": "Ion Torrent Proton",
+      "host_species": "Human",
+      "antibiotics_exclusion_period_unit": "Month"
+    },
+    {
+      "Day": "0",
+      "Batch 3": "",
+      "subject_id": "AN_T_1",
+      "Value": "0",
+      "pmid": "37069399",
+      "target_condition": "Anorexia nervosa",
+      "antibiotics_exclusion_period": "3",
+      "sequencing_platform": "Ion Torrent Proton",
+      "host_species": "Human",
+      "antibiotics_exclusion_period_unit": "Month"
+    },
+    {
+      "Day": "0",
+      "Batch 3": "",
+      "subject_id": "AN_T_2",
+      "Value": "0",
+      "pmid": "37069399",
+      "target_condition": "Anorexia nervosa",
+      "antibiotics_exclusion_period": "3",
+      "sequencing_platform": "Ion Torrent Proton",
+      "host_species": "Human",
+      "antibiotics_exclusion_period_unit": "Month"
+    },
+    {
+      "Day": "0",
+      "Batch 3": "",
+      "subject_id": "AN_T_3",
+      "Value": "0",
+      "pmid": "37069399",
+      "target_condition": "Anorexia nervosa",
+      "antibiotics_exclusion_period": "3",
+      "sequencing_platform": "Ion Torrent Proton",
+      "host_species": "Human",
+      "antibiotics_exclusion_period_unit": "Month"
+    },
+    {
+      "Day": "0",
+      "Batch 3": "",
+      "subject_id": "AN_T_4",
+      "Value": "0",
+      "pmid": "37069399",
+      "target_condition": "Anorexia nervosa",
+      "antibiotics_exclusion_period": "3",
+      "sequencing_platform": "Ion Torrent Proton",
+      "host_species": "Human",
+      "antibiotics_exclusion_period_unit": "Month"
+    },
+    {
+      "Day": "0",
+      "Batch 3": "",
+      "subject_id": "AN_T_5",
+      "Value": "0",
+      "pmid": "37069399",
+      "target_condition": "Anorexia nervosa",
+      "antibiotics_exclusion_period": "3",
+      "sequencing_platform": "Ion Torrent Proton",
+      "host_species": "Human",
+      "antibiotics_exclusion_period_unit": "Month"
+    },
+    {
+      "Day": "0",
+      "Batch 3": "",
+      "subject_id": "AN_T_6",
+      "Value": "0",
+      "pmid": "37069399",
+      "target_condition": "Anorexia nervosa",
+      "antibiotics_exclusion_period": "3",
+      "sequencing_platform": "Ion Torrent Proton",
+      "host_species": "Human",
+      "antibiotics_exclusion_period_unit": "Month"
+    },
+    {
+      "Day": "0",
+      "Batch 3": "",
+      "subject_id": "AN_T_7",
+      "Value": "0",
+      "pmid": "37069399",
+      "target_condition": "Anorexia nervosa",
+      "antibiotics_exclusion_period": "3",
+      "sequencing_platform": "Ion Torrent Proton",
+      "host_species": "Human",
+      "antibiotics_exclusion_period_unit": "Month"
+    },
+    {
+      "Day": "0",
+      "Batch 3": "",
+      "subject_id": "AN_T_8",
+      "Value": "0",
+      "pmid": "37069399",
+      "target_condition": "Anorexia nervosa",
+      "antibiotics_exclusion_period": "3",
+      "sequencing_platform": "Ion Torrent Proton",
+      "host_species": "Human",
+      "antibiotics_exclusion_period_unit": "Month"
+    },
+    {
+      "Day": "0",
+      "Batch 3": "",
+      "subject_id": "AN_T_9",
+      "Value": "0",
+      "pmid": "37069399",
+      "target_condition": "Anorexia nervosa",
+      "antibiotics_exclusion_period": "3",
+      "sequencing_platform": "Ion Torrent Proton",
+      "host_species": "Human",
+      "antibiotics_exclusion_period_unit": "Month"
+    },
+    {
+      "Day": "0",
+      "Batch 3": "",
+      "subject_id": "AN_T_10",
+      "Value": "0",
+      "pmid": "37069399",
+      "target_condition": "Anorexia nervosa",
+      "antibiotics_exclusion_period": "3",
+      "sequencing_platform": "Ion Torrent Proton",
+      "host_species": "Human",
+      "antibiotics_exclusion_period_unit": "Month"
+    },
+    {
+      "Day": "5",
+      "Batch 3": "",
+      "subject_id": "HC_T_1",
+      "Value": "2.5",
+      "pmid": "37069399",
+      "target_condition": "Anorexia nervosa",
+      "antibiotics_exclusion_period": "3",
+      "sequencing_platform": "Ion Torrent Proton",
+      "host_species": "Human",
+      "antibiotics_exclusion_period_unit": "Month"
+    },
+    {
+      "Day": "5",
+      "Batch 3": "",
+      "subject_id": "HC_T_2",
+      "Value": "1.520913",
+      "pmid": "37069399",
+      "target_condition": "Anorexia nervosa",
+      "antibiotics_exclusion_period": "3",
+      "sequencing_platform": "Ion Torrent Proton",
+      "host_species": "Human",
+      "antibiotics_exclusion_period_unit": "Month"
+    },
+    {
+      "Day": "5",
+      "Batch 3": "",
+      "subject_id": "HC_T_3",
+      "Value": "-2.11268",
+      "pmid": "37069399",
+      "target_condition": "Anorexia nervosa",
+      "antibiotics_exclusion_period": "3",
+      "sequencing_platform": "Ion Torrent Proton",
+      "host_species": "Human",
+      "antibiotics_exclusion_period_unit": "Month"
+    },
+    {
+      "Day": "5",
+      "Batch 3": "",
+      "subject_id": "HC_T_4",
+      "Value": "-3.72881",
+      "pmid": "37069399",
+      "target_condition": "Anorexia nervosa",
+      "antibiotics_exclusion_period": "3",
+      "sequencing_platform": "Ion Torrent Proton",
+      "host_species": "Human",
+      "antibiotics_exclusion_period_unit": "Month"
+    },
+    {
+      "Day": "5",
+      "Batch 3": "",
+      "subject_id": "HC_T_5",
+      "Value": "-10.7438",
+      "pmid": "37069399",
+      "target_condition": "Anorexia nervosa",
+      "antibiotics_exclusion_period": "3",
+      "sequencing_platform": "Ion Torrent Proton",
+      "host_species": "Human",
+      "antibiotics_exclusion_period_unit": "Month"
+    },
+    {
+      "Day": "5",
+      "Batch 3": "",
+      "subject_id": "HC_T_6",
+      "Value": "-10.6299",
+      "pmid": "37069399",
+      "target_condition": "Anorexia nervosa",
+      "antibiotics_exclusion_period": "3",
+      "sequencing_platform": "Ion Torrent Proton",
+      "host_species": "Human",
+      "antibiotics_exclusion_period_unit": "Month"
+    },
+    {
+      "Day": "5",
+      "Batch 3": "",
+      "subject_id": "HC_T_7",
+      "Value": "-6.34921",
+      "pmid": "37069399",
+      "target_condition": "Anorexia nervosa",
+      "antibiotics_exclusion_period": "3",
+      "sequencing_platform": "Ion Torrent Proton",
+      "host_species": "Human",
+      "antibiotics_exclusion_period_unit": "Month"
+    },
+    {
+      "Day": "5",
+      "Batch 3": "",
+      "subject_id": "HC_T_8",
+      "Value": "-1.1194",
+      "pmid": "37069399",
+      "target_condition": "Anorexia nervosa",
+      "antibiotics_exclusion_period": "3",
+      "sequencing_platform": "Ion Torrent Proton",
+      "host_species": "Human",
+      "antibiotics_exclusion_period_unit": "Month"
+    },
+    {
+      "Day": "5",
+      "Batch 3": "",
+      "subject_id": "HC_T_9",
+      "Value": "-4.5977",
+      "pmid": "37069399",
+      "target_condition": "Anorexia nervosa",
+      "antibiotics_exclusion_period": "3",
+      "sequencing_platform": "Ion Torrent Proton",
+      "host_species": "Human",
+      "antibiotics_exclusion_period_unit": "Month"
+    },
+    {
+      "Day": "5",
+      "Batch 3": "",
+      "subject_id": "HC_T_10",
+      "Value": "-1.09489",
+      "pmid": "37069399",
+      "target_condition": "Anorexia nervosa",
+      "antibiotics_exclusion_period": "3",
+      "sequencing_platform": "Ion Torrent Proton",
+      "host_species": "Human",
+      "antibiotics_exclusion_period_unit": "Month"
+    },
+    {
+      "Day": "5",
+      "Batch 3": "",
+      "subject_id": "AN_T_1",
+      "Value": "-8",
+      "pmid": "37069399",
+      "target_condition": "Anorexia nervosa",
+      "antibiotics_exclusion_period": "3",
+      "sequencing_platform": "Ion Torrent Proton",
+      "host_species": "Human",
+      "antibiotics_exclusion_period_unit": "Month"
+    },
+    {
+      "Day": "5",
+      "Batch 3": "",
+      "subject_id": "AN_T_2",
+      "Value": "-9.19118",
+      "pmid": "37069399",
+      "target_condition": "Anorexia nervosa",
+      "antibiotics_exclusion_period": "3",
+      "sequencing_platform": "Ion Torrent Proton",
+      "host_species": "Human",
+      "antibiotics_exclusion_period_unit": "Month"
+    },
+    {
+      "Day": "5",
+      "Batch 3": "",
+      "subject_id": "AN_T_3",
+      "Value": "-4.33213",
+      "pmid": "37069399",
+      "target_condition": "Anorexia nervosa",
+      "antibiotics_exclusion_period": "3",
+      "sequencing_platform": "Ion Torrent Proton",
+      "host_species": "Human",
+      "antibiotics_exclusion_period_unit": "Month"
+    },
+    {
+      "Day": "5",
+      "Batch 3": "",
+      "subject_id": "AN_T_4",
+      "Value": "-1.74216",
+      "pmid": "37069399",
+      "target_condition": "Anorexia nervosa",
+      "antibiotics_exclusion_period": "3",
+      "sequencing_platform": "Ion Torrent Proton",
+      "host_species": "Human",
+      "antibiotics_exclusion_period_unit": "Month"
+    },
+    {
+      "Day": "5",
+      "Batch 3": "",
+      "subject_id": "AN_T_5",
+      "Value": "-17.8988",
+      "pmid": "37069399",
+      "target_condition": "Anorexia nervosa",
+      "antibiotics_exclusion_period": "3",
+      "sequencing_platform": "Ion Torrent Proton",
+      "host_species": "Human",
+      "antibiotics_exclusion_period_unit": "Month"
+    },
+    {
+      "Day": "5",
+      "Batch 3": "",
+      "subject_id": "AN_T_6",
+      "Value": "-14.0684",
+      "pmid": "37069399",
+      "target_condition": "Anorexia nervosa",
+      "antibiotics_exclusion_period": "3",
+      "sequencing_platform": "Ion Torrent Proton",
+      "host_species": "Human",
+      "antibiotics_exclusion_period_unit": "Month"
+    },
+    {
+      "Day": "5",
+      "Batch 3": "",
+      "subject_id": "AN_T_7",
+      "Value": "-11.284",
+      "pmid": "37069399",
+      "target_condition": "Anorexia nervosa",
+      "antibiotics_exclusion_period": "3",
+      "sequencing_platform": "Ion Torrent Proton",
+      "host_species": "Human",
+      "antibiotics_exclusion_period_unit": "Month"
+    },
+    {
+      "Day": "5",
+      "Batch 3": "",
+      "subject_id": "AN_T_8",
+      "Value": "-0.89286",
+      "pmid": "37069399",
+      "target_condition": "Anorexia nervosa",
+      "antibiotics_exclusion_period": "3",
+      "sequencing_platform": "Ion Torrent Proton",
+      "host_species": "Human",
+      "antibiotics_exclusion_period_unit": "Month"
+    },
+    {
+      "Day": "5",
+      "Batch 3": "",
+      "subject_id": "AN_T_9",
+      "Value": "-4.68085",
+      "pmid": "37069399",
+      "target_condition": "Anorexia nervosa",
+      "antibiotics_exclusion_period": "3",
+      "sequencing_platform": "Ion Torrent Proton",
+      "host_species": "Human",
+      "antibiotics_exclusion_period_unit": "Month"
+    },
+    {
+      "Day": "5",
+      "Batch 3": "",
+      "subject_id": "AN_T_10",
+      "Value": "-4.51389",
+      "pmid": "37069399",
+      "target_condition": "Anorexia nervosa",
+      "antibiotics_exclusion_period": "3",
+      "sequencing_platform": "Ion Torrent Proton",
+      "host_species": "Human",
+      "antibiotics_exclusion_period_unit": "Month"
+    },
+    {
+      "Day": "10",
+      "Batch 3": "",
+      "subject_id": "HC_T_1",
+      "Value": "4.642857",
+      "pmid": "37069399",
+      "target_condition": "Anorexia nervosa",
+      "antibiotics_exclusion_period": "3",
+      "sequencing_platform": "Ion Torrent Proton",
+      "host_species": "Human",
+      "antibiotics_exclusion_period_unit": "Month"
+    },
+    {
+      "Day": "10",
+      "Batch 3": "",
+      "subject_id": "HC_T_2",
+      "Value": "7.984791",
+      "pmid": "37069399",
+      "target_condition": "Anorexia nervosa",
+      "antibiotics_exclusion_period": "3",
+      "sequencing_platform": "Ion Torrent Proton",
+      "host_species": "Human",
+      "antibiotics_exclusion_period_unit": "Month"
+    },
+    {
+      "Day": "10",
+      "Batch 3": "",
+      "subject_id": "HC_T_3",
+      "Value": "-4.22535",
+      "pmid": "37069399",
+      "target_condition": "Anorexia nervosa",
+      "antibiotics_exclusion_period": "3",
+      "sequencing_platform": "Ion Torrent Proton",
+      "host_species": "Human",
+      "antibiotics_exclusion_period_unit": "Month"
+    },
+    {
+      "Day": "10",
+      "Batch 3": "",
+      "subject_id": "HC_T_4",
+      "Value": "0",
+      "pmid": "37069399",
+      "target_condition": "Anorexia nervosa",
+      "antibiotics_exclusion_period": "3",
+      "sequencing_platform": "Ion Torrent Proton",
+      "host_species": "Human",
+      "antibiotics_exclusion_period_unit": "Month"
+    },
+    {
+      "Day": "10",
+      "Batch 3": "",
+      "subject_id": "HC_T_5",
+      "Value": "-10.3306",
+      "pmid": "37069399",
+      "target_condition": "Anorexia nervosa",
+      "antibiotics_exclusion_period": "3",
+      "sequencing_platform": "Ion Torrent Proton",
+      "host_species": "Human",
+      "antibiotics_exclusion_period_unit": "Month"
+    },
+    {
+      "Day": "10",
+      "Batch 3": "",
+      "subject_id": "HC_T_6",
+      "Value": "-5.11811",
+      "pmid": "37069399",
+      "target_condition": "Anorexia nervosa",
+      "antibiotics_exclusion_period": "3",
+      "sequencing_platform": "Ion Torrent Proton",
+      "host_species": "Human",
+      "antibiotics_exclusion_period_unit": "Month"
+    },
+    {
+      "Day": "10",
+      "Batch 3": "",
+      "subject_id": "HC_T_7",
+      "Value": "-0.79365",
+      "pmid": "37069399",
+      "target_condition": "Anorexia nervosa",
+      "antibiotics_exclusion_period": "3",
+      "sequencing_platform": "Ion Torrent Proton",
+      "host_species": "Human",
+      "antibiotics_exclusion_period_unit": "Month"
+    },
+    {
+      "Day": "10",
+      "Batch 3": "",
+      "subject_id": "HC_T_8",
+      "Value": "7.462687",
+      "pmid": "37069399",
+      "target_condition": "Anorexia nervosa",
+      "antibiotics_exclusion_period": "3",
+      "sequencing_platform": "Ion Torrent Proton",
+      "host_species": "Human",
+      "antibiotics_exclusion_period_unit": "Month"
+    },
+    {
+      "Day": "10",
+      "Batch 3": "",
+      "subject_id": "HC_T_9",
+      "Value": "-1.14943",
+      "pmid": "37069399",
+      "target_condition": "Anorexia nervosa",
+      "antibiotics_exclusion_period": "3",
+      "sequencing_platform": "Ion Torrent Proton",
+      "host_species": "Human",
+      "antibiotics_exclusion_period_unit": "Month"
+    },
+    {
+      "Day": "10",
+      "Batch 3": "",
+      "subject_id": "HC_T_10",
+      "Value": "8.029197",
+      "pmid": "37069399",
+      "target_condition": "Anorexia nervosa",
+      "antibiotics_exclusion_period": "3",
+      "sequencing_platform": "Ion Torrent Proton",
+      "host_species": "Human",
+      "antibiotics_exclusion_period_unit": "Month"
+    },
+    {
+      "Day": "10",
+      "Batch 3": "",
+      "subject_id": "AN_T_1",
+      "Value": "-5.33333",
+      "pmid": "37069399",
+      "target_condition": "Anorexia nervosa",
+      "antibiotics_exclusion_period": "3",
+      "sequencing_platform": "Ion Torrent Proton",
+      "host_species": "Human",
+      "antibiotics_exclusion_period_unit": "Month"
+    },
+    {
+      "Day": "10",
+      "Batch 3": "",
+      "subject_id": "AN_T_2",
+      "Value": "-7.35294",
+      "pmid": "37069399",
+      "target_condition": "Anorexia nervosa",
+      "antibiotics_exclusion_period": "3",
+      "sequencing_platform": "Ion Torrent Proton",
+      "host_species": "Human",
+      "antibiotics_exclusion_period_unit": "Month"
+    },
+    {
+      "Day": "10",
+      "Batch 3": "",
+      "subject_id": "AN_T_3",
+      "Value": "-2.88809",
+      "pmid": "37069399",
+      "target_condition": "Anorexia nervosa",
+      "antibiotics_exclusion_period": "3",
+      "sequencing_platform": "Ion Torrent Proton",
+      "host_species": "Human",
+      "antibiotics_exclusion_period_unit": "Month"
+    },
+    {
+      "Day": "10",
+      "Batch 3": "",
+      "subject_id": "AN_T_4",
+      "Value": "-1.39373",
+      "pmid": "37069399",
+      "target_condition": "Anorexia nervosa",
+      "antibiotics_exclusion_period": "3",
+      "sequencing_platform": "Ion Torrent Proton",
+      "host_species": "Human",
+      "antibiotics_exclusion_period_unit": "Month"
+    },
+    {
+      "Day": "10",
+      "Batch 3": "",
+      "subject_id": "AN_T_5",
+      "Value": "-13.6187",
+      "pmid": "37069399",
+      "target_condition": "Anorexia nervosa",
+      "antibiotics_exclusion_period": "3",
+      "sequencing_platform": "Ion Torrent Proton",
+      "host_species": "Human",
+      "antibiotics_exclusion_period_unit": "Month"
+    },
+    {
+      "Day": "10",
+      "Batch 3": "",
+      "subject_id": "AN_T_6",
+      "Value": "-23.5741",
+      "pmid": "37069399",
+      "target_condition": "Anorexia nervosa",
+      "antibiotics_exclusion_period": "3",
+      "sequencing_platform": "Ion Torrent Proton",
+      "host_species": "Human",
+      "antibiotics_exclusion_period_unit": "Month"
+    },
+    {
+      "Day": "10",
+      "Batch 3": "",
+      "subject_id": "AN_T_7",
+      "Value": "-6.61479",
+      "pmid": "37069399",
+      "target_condition": "Anorexia nervosa",
+      "antibiotics_exclusion_period": "3",
+      "sequencing_platform": "Ion Torrent Proton",
+      "host_species": "Human",
+      "antibiotics_exclusion_period_unit": "Month"
+    },
+    {
+      "Day": "10",
+      "Batch 3": "",
+      "subject_id": "AN_T_8",
+      "Value": "-1.33929",
+      "pmid": "37069399",
+      "target_condition": "Anorexia nervosa",
+      "antibiotics_exclusion_period": "3",
+      "sequencing_platform": "Ion Torrent Proton",
+      "host_species": "Human",
+      "antibiotics_exclusion_period_unit": "Month"
+    },
+    {
+      "Day": "10",
+      "Batch 3": "",
+      "subject_id": "AN_T_9",
+      "Value": "-0.42553",
+      "pmid": "37069399",
+      "target_condition": "Anorexia nervosa",
+      "antibiotics_exclusion_period": "3",
+      "sequencing_platform": "Ion Torrent Proton",
+      "host_species": "Human",
+      "antibiotics_exclusion_period_unit": "Month"
+    },
+    {
+      "Day": "10",
+      "Batch 3": "",
+      "subject_id": "AN_T_10",
+      "Value": "-6.59722",
+      "pmid": "37069399",
+      "target_condition": "Anorexia nervosa",
+      "antibiotics_exclusion_period": "3",
+      "sequencing_platform": "Ion Torrent Proton",
+      "host_species": "Human",
+      "antibiotics_exclusion_period_unit": "Month"
+    },
+    {
+      "Day": "15",
+      "Batch 3": "",
+      "subject_id": "HC_T_1",
+      "Value": "5",
+      "pmid": "37069399",
+      "target_condition": "Anorexia nervosa",
+      "antibiotics_exclusion_period": "3",
+      "sequencing_platform": "Ion Torrent Proton",
+      "host_species": "Human",
+      "antibiotics_exclusion_period_unit": "Month"
+    },
+    {
+      "Day": "15",
+      "Batch 3": "",
+      "subject_id": "HC_T_2",
+      "Value": "9.125475",
+      "pmid": "37069399",
+      "target_condition": "Anorexia nervosa",
+      "antibiotics_exclusion_period": "3",
+      "sequencing_platform": "Ion Torrent Proton",
+      "host_species": "Human",
+      "antibiotics_exclusion_period_unit": "Month"
+    },
+    {
+      "Day": "15",
+      "Batch 3": "",
+      "subject_id": "HC_T_3",
+      "Value": "-5.98592",
+      "pmid": "37069399",
+      "target_condition": "Anorexia nervosa",
+      "antibiotics_exclusion_period": "3",
+      "sequencing_platform": "Ion Torrent Proton",
+      "host_species": "Human",
+      "antibiotics_exclusion_period_unit": "Month"
+    },
+    {
+      "Day": "15",
+      "Batch 3": "",
+      "subject_id": "HC_T_4",
+      "Value": "2.033898",
+      "pmid": "37069399",
+      "target_condition": "Anorexia nervosa",
+      "antibiotics_exclusion_period": "3",
+      "sequencing_platform": "Ion Torrent Proton",
+      "host_species": "Human",
+      "antibiotics_exclusion_period_unit": "Month"
+    },
+    {
+      "Day": "15",
+      "Batch 3": "",
+      "subject_id": "HC_T_5",
+      "Value": "-13.2231",
+      "pmid": "37069399",
+      "target_condition": "Anorexia nervosa",
+      "antibiotics_exclusion_period": "3",
+      "sequencing_platform": "Ion Torrent Proton",
+      "host_species": "Human",
+      "antibiotics_exclusion_period_unit": "Month"
+    },
+    {
+      "Day": "15",
+      "Batch 3": "",
+      "subject_id": "HC_T_6",
+      "Value": "1.574803",
+      "pmid": "37069399",
+      "target_condition": "Anorexia nervosa",
+      "antibiotics_exclusion_period": "3",
+      "sequencing_platform": "Ion Torrent Proton",
+      "host_species": "Human",
+      "antibiotics_exclusion_period_unit": "Month"
+    },
+    {
+      "Day": "15",
+      "Batch 3": "",
+      "subject_id": "HC_T_7",
+      "Value": "4.365079",
+      "pmid": "37069399",
+      "target_condition": "Anorexia nervosa",
+      "antibiotics_exclusion_period": "3",
+      "sequencing_platform": "Ion Torrent Proton",
+      "host_species": "Human",
+      "antibiotics_exclusion_period_unit": "Month"
+    },
+    {
+      "Day": "15",
+      "Batch 3": "",
+      "subject_id": "HC_T_8",
+      "Value": "8.58209",
+      "pmid": "37069399",
+      "target_condition": "Anorexia nervosa",
+      "antibiotics_exclusion_period": "3",
+      "sequencing_platform": "Ion Torrent Proton",
+      "host_species": "Human",
+      "antibiotics_exclusion_period_unit": "Month"
+    },
+    {
+      "Day": "15",
+      "Batch 3": "",
+      "subject_id": "HC_T_9",
+      "Value": "0",
+      "pmid": "37069399",
+      "target_condition": "Anorexia nervosa",
+      "antibiotics_exclusion_period": "3",
+      "sequencing_platform": "Ion Torrent Proton",
+      "host_species": "Human",
+      "antibiotics_exclusion_period_unit": "Month"
+    },
+    {
+      "Day": "15",
+      "Batch 3": "",
+      "subject_id": "HC_T_10",
+      "Value": "8.759124",
+      "pmid": "37069399",
+      "target_condition": "Anorexia nervosa",
+      "antibiotics_exclusion_period": "3",
+      "sequencing_platform": "Ion Torrent Proton",
+      "host_species": "Human",
+      "antibiotics_exclusion_period_unit": "Month"
+    },
+    {
+      "Day": "15",
+      "Batch 3": "",
+      "subject_id": "AN_T_1",
+      "Value": "-5.33333",
+      "pmid": "37069399",
+      "target_condition": "Anorexia nervosa",
+      "antibiotics_exclusion_period": "3",
+      "sequencing_platform": "Ion Torrent Proton",
+      "host_species": "Human",
+      "antibiotics_exclusion_period_unit": "Month"
+    },
+    {
+      "Day": "15",
+      "Batch 3": "",
+      "subject_id": "AN_T_2",
+      "Value": "-6.98529",
+      "pmid": "37069399",
+      "target_condition": "Anorexia nervosa",
+      "antibiotics_exclusion_period": "3",
+      "sequencing_platform": "Ion Torrent Proton",
+      "host_species": "Human",
+      "antibiotics_exclusion_period_unit": "Month"
+    },
+    {
+      "Day": "15",
+      "Batch 3": "",
+      "subject_id": "AN_T_3",
+      "Value": "-3.97112",
+      "pmid": "37069399",
+      "target_condition": "Anorexia nervosa",
+      "antibiotics_exclusion_period": "3",
+      "sequencing_platform": "Ion Torrent Proton",
+      "host_species": "Human",
+      "antibiotics_exclusion_period_unit": "Month"
+    },
+    {
+      "Day": "15",
+      "Batch 3": "",
+      "subject_id": "AN_T_4",
+      "Value": "-1.39373",
+      "pmid": "37069399",
+      "target_condition": "Anorexia nervosa",
+      "antibiotics_exclusion_period": "3",
+      "sequencing_platform": "Ion Torrent Proton",
+      "host_species": "Human",
+      "antibiotics_exclusion_period_unit": "Month"
+    },
+    {
+      "Day": "15",
+      "Batch 3": "",
+      "subject_id": "AN_T_5",
+      "Value": "-6.61479",
+      "pmid": "37069399",
+      "target_condition": "Anorexia nervosa",
+      "antibiotics_exclusion_period": "3",
+      "sequencing_platform": "Ion Torrent Proton",
+      "host_species": "Human",
+      "antibiotics_exclusion_period_unit": "Month"
+    },
+    {
+      "Day": "15",
+      "Batch 3": "",
+      "subject_id": "AN_T_6",
+      "Value": "-19.0114",
+      "pmid": "37069399",
+      "target_condition": "Anorexia nervosa",
+      "antibiotics_exclusion_period": "3",
+      "sequencing_platform": "Ion Torrent Proton",
+      "host_species": "Human",
+      "antibiotics_exclusion_period_unit": "Month"
+    },
+    {
+      "Day": "15",
+      "Batch 3": "",
+      "subject_id": "AN_T_7",
+      "Value": "3.891051",
+      "pmid": "37069399",
+      "target_condition": "Anorexia nervosa",
+      "antibiotics_exclusion_period": "3",
+      "sequencing_platform": "Ion Torrent Proton",
+      "host_species": "Human",
+      "antibiotics_exclusion_period_unit": "Month"
+    },
+    {
+      "Day": "15",
+      "Batch 3": "",
+      "subject_id": "AN_T_8",
+      "Value": "0",
+      "pmid": "37069399",
+      "target_condition": "Anorexia nervosa",
+      "antibiotics_exclusion_period": "3",
+      "sequencing_platform": "Ion Torrent Proton",
+      "host_species": "Human",
+      "antibiotics_exclusion_period_unit": "Month"
+    },
+    {
+      "Day": "15",
+      "Batch 3": "",
+      "subject_id": "AN_T_9",
+      "Value": "2.12766",
+      "pmid": "37069399",
+      "target_condition": "Anorexia nervosa",
+      "antibiotics_exclusion_period": "3",
+      "sequencing_platform": "Ion Torrent Proton",
+      "host_species": "Human",
+      "antibiotics_exclusion_period_unit": "Month"
+    },
+    {
+      "Day": "15",
+      "Batch 3": "",
+      "subject_id": "AN_T_10",
+      "Value": "-5.55556",
+      "pmid": "37069399",
+      "target_condition": "Anorexia nervosa",
+      "antibiotics_exclusion_period": "3",
+      "sequencing_platform": "Ion Torrent Proton",
+      "host_species": "Human",
+      "antibiotics_exclusion_period_unit": "Month"
+    },
+    {
+      "Day": "20",
+      "Batch 3": "",
+      "subject_id": "HC_T_1",
+      "Value": "8.571429",
+      "pmid": "37069399",
+      "target_condition": "Anorexia nervosa",
+      "antibiotics_exclusion_period": "3",
+      "sequencing_platform": "Ion Torrent Proton",
+      "host_species": "Human",
+      "antibiotics_exclusion_period_unit": "Month"
+    },
+    {
+      "Day": "20",
+      "Batch 3": "",
+      "subject_id": "HC_T_2",
+      "Value": "12.1673",
+      "pmid": "37069399",
+      "target_condition": "Anorexia nervosa",
+      "antibiotics_exclusion_period": "3",
+      "sequencing_platform": "Ion Torrent Proton",
+      "host_species": "Human",
+      "antibiotics_exclusion_period_unit": "Month"
+    },
+    {
+      "Day": "20",
+      "Batch 3": "",
+      "subject_id": "HC_T_3",
+      "Value": "-1.05634",
+      "pmid": "37069399",
+      "target_condition": "Anorexia nervosa",
+      "antibiotics_exclusion_period": "3",
+      "sequencing_platform": "Ion Torrent Proton",
+      "host_species": "Human",
+      "antibiotics_exclusion_period_unit": "Month"
+    },
+    {
+      "Day": "20",
+      "Batch 3": "",
+      "subject_id": "HC_T_4",
+      "Value": "5.423729",
+      "pmid": "37069399",
+      "target_condition": "Anorexia nervosa",
+      "antibiotics_exclusion_period": "3",
+      "sequencing_platform": "Ion Torrent Proton",
+      "host_species": "Human",
+      "antibiotics_exclusion_period_unit": "Month"
+    },
+    {
+      "Day": "20",
+      "Batch 3": "",
+      "subject_id": "HC_T_5",
+      "Value": "-7.85124",
+      "pmid": "37069399",
+      "target_condition": "Anorexia nervosa",
+      "antibiotics_exclusion_period": "3",
+      "sequencing_platform": "Ion Torrent Proton",
+      "host_species": "Human",
+      "antibiotics_exclusion_period_unit": "Month"
+    },
+    {
+      "Day": "20",
+      "Batch 3": "",
+      "subject_id": "HC_T_6",
+      "Value": "7.480315",
+      "pmid": "37069399",
+      "target_condition": "Anorexia nervosa",
+      "antibiotics_exclusion_period": "3",
+      "sequencing_platform": "Ion Torrent Proton",
+      "host_species": "Human",
+      "antibiotics_exclusion_period_unit": "Month"
+    },
+    {
+      "Day": "20",
+      "Batch 3": "",
+      "subject_id": "HC_T_7",
+      "Value": "14.28571",
+      "pmid": "37069399",
+      "target_condition": "Anorexia nervosa",
+      "antibiotics_exclusion_period": "3",
+      "sequencing_platform": "Ion Torrent Proton",
+      "host_species": "Human",
+      "antibiotics_exclusion_period_unit": "Month"
+    },
+    {
+      "Day": "20",
+      "Batch 3": "",
+      "subject_id": "HC_T_8",
+      "Value": "16.04478",
+      "pmid": "37069399",
+      "target_condition": "Anorexia nervosa",
+      "antibiotics_exclusion_period": "3",
+      "sequencing_platform": "Ion Torrent Proton",
+      "host_species": "Human",
+      "antibiotics_exclusion_period_unit": "Month"
+    },
+    {
+      "Day": "20",
+      "Batch 3": "",
+      "subject_id": "HC_T_9",
+      "Value": "4.214559",
+      "pmid": "37069399",
+      "target_condition": "Anorexia nervosa",
+      "antibiotics_exclusion_period": "3",
+      "sequencing_platform": "Ion Torrent Proton",
+      "host_species": "Human",
+      "antibiotics_exclusion_period_unit": "Month"
+    },
+    {
+      "Day": "20",
+      "Batch 3": "",
+      "subject_id": "HC_T_10",
+      "Value": "13.50365",
+      "pmid": "37069399",
+      "target_condition": "Anorexia nervosa",
+      "antibiotics_exclusion_period": "3",
+      "sequencing_platform": "Ion Torrent Proton",
+      "host_species": "Human",
+      "antibiotics_exclusion_period_unit": "Month"
+    },
+    {
+      "Day": "20",
+      "Batch 3": "",
+      "subject_id": "AN_T_1",
+      "Value": "-3",
+      "pmid": "37069399",
+      "target_condition": "Anorexia nervosa",
+      "antibiotics_exclusion_period": "3",
+      "sequencing_platform": "Ion Torrent Proton",
+      "host_species": "Human",
+      "antibiotics_exclusion_period_unit": "Month"
+    },
+    {
+      "Day": "20",
+      "Batch 3": "",
+      "subject_id": "AN_T_2",
+      "Value": "-3.30882",
+      "pmid": "37069399",
+      "target_condition": "Anorexia nervosa",
+      "antibiotics_exclusion_period": "3",
+      "sequencing_platform": "Ion Torrent Proton",
+      "host_species": "Human",
+      "antibiotics_exclusion_period_unit": "Month"
+    },
+    {
+      "Day": "20",
+      "Batch 3": "",
+      "subject_id": "AN_T_3",
+      "Value": "0.361011",
+      "pmid": "37069399",
+      "target_condition": "Anorexia nervosa",
+      "antibiotics_exclusion_period": "3",
+      "sequencing_platform": "Ion Torrent Proton",
+      "host_species": "Human",
+      "antibiotics_exclusion_period_unit": "Month"
+    },
+    {
+      "Day": "20",
+      "Batch 3": "",
+      "subject_id": "AN_T_4",
+      "Value": "2.787456",
+      "pmid": "37069399",
+      "target_condition": "Anorexia nervosa",
+      "antibiotics_exclusion_period": "3",
+      "sequencing_platform": "Ion Torrent Proton",
+      "host_species": "Human",
+      "antibiotics_exclusion_period_unit": "Month"
+    },
+    {
+      "Day": "20",
+      "Batch 3": "",
+      "subject_id": "AN_T_5",
+      "Value": "3.891051",
+      "pmid": "37069399",
+      "target_condition": "Anorexia nervosa",
+      "antibiotics_exclusion_period": "3",
+      "sequencing_platform": "Ion Torrent Proton",
+      "host_species": "Human",
+      "antibiotics_exclusion_period_unit": "Month"
+    },
+    {
+      "Day": "20",
+      "Batch 3": "",
+      "subject_id": "AN_T_6",
+      "Value": "-4.18251",
+      "pmid": "37069399",
+      "target_condition": "Anorexia nervosa",
+      "antibiotics_exclusion_period": "3",
+      "sequencing_platform": "Ion Torrent Proton",
+      "host_species": "Human",
+      "antibiotics_exclusion_period_unit": "Month"
+    },
+    {
+      "Day": "20",
+      "Batch 3": "",
+      "subject_id": "AN_T_7",
+      "Value": "8.171206",
+      "pmid": "37069399",
+      "target_condition": "Anorexia nervosa",
+      "antibiotics_exclusion_period": "3",
+      "sequencing_platform": "Ion Torrent Proton",
+      "host_species": "Human",
+      "antibiotics_exclusion_period_unit": "Month"
+    },
+    {
+      "Day": "20",
+      "Batch 3": "",
+      "subject_id": "AN_T_8",
+      "Value": "6.696429",
+      "pmid": "37069399",
+      "target_condition": "Anorexia nervosa",
+      "antibiotics_exclusion_period": "3",
+      "sequencing_platform": "Ion Torrent Proton",
+      "host_species": "Human",
+      "antibiotics_exclusion_period_unit": "Month"
+    },
+    {
+      "Day": "20",
+      "Batch 3": "",
+      "subject_id": "AN_T_9",
+      "Value": "5.531915",
+      "pmid": "37069399",
+      "target_condition": "Anorexia nervosa",
+      "antibiotics_exclusion_period": "3",
+      "sequencing_platform": "Ion Torrent Proton",
+      "host_species": "Human",
+      "antibiotics_exclusion_period_unit": "Month"
+    },
+    {
+      "Day": "20",
+      "Batch 3": "",
+      "subject_id": "AN_T_10",
+      "Value": "0.694444",
+      "pmid": "37069399",
+      "target_condition": "Anorexia nervosa",
+      "antibiotics_exclusion_period": "3",
+      "sequencing_platform": "Ion Torrent Proton",
+      "host_species": "Human",
+      "antibiotics_exclusion_period_unit": "Month"
+    }
+  ],
+  "sample_provenance": [
+    {
+      "Day": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Day",
+      "subject_id": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Subject",
+      "Value": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Value",
+      "pmid": "study_fanout",
+      "target_condition": "study_fanout",
+      "antibiotics_exclusion_period": "study_fanout",
+      "sequencing_platform": "study_fanout",
+      "host_species": "study_fanout",
+      "antibiotics_exclusion_period_unit": "study_fanout"
+    },
+    {
+      "Day": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Day",
+      "subject_id": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Subject",
+      "Value": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Value",
+      "pmid": "study_fanout",
+      "target_condition": "study_fanout",
+      "antibiotics_exclusion_period": "study_fanout",
+      "sequencing_platform": "study_fanout",
+      "host_species": "study_fanout",
+      "antibiotics_exclusion_period_unit": "study_fanout"
+    },
+    {
+      "Day": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Day",
+      "subject_id": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Subject",
+      "Value": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Value",
+      "pmid": "study_fanout",
+      "target_condition": "study_fanout",
+      "antibiotics_exclusion_period": "study_fanout",
+      "sequencing_platform": "study_fanout",
+      "host_species": "study_fanout",
+      "antibiotics_exclusion_period_unit": "study_fanout"
+    },
+    {
+      "Day": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Day",
+      "subject_id": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Subject",
+      "Value": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Value",
+      "pmid": "study_fanout",
+      "target_condition": "study_fanout",
+      "antibiotics_exclusion_period": "study_fanout",
+      "sequencing_platform": "study_fanout",
+      "host_species": "study_fanout",
+      "antibiotics_exclusion_period_unit": "study_fanout"
+    },
+    {
+      "Day": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Day",
+      "subject_id": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Subject",
+      "Value": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Value",
+      "pmid": "study_fanout",
+      "target_condition": "study_fanout",
+      "antibiotics_exclusion_period": "study_fanout",
+      "sequencing_platform": "study_fanout",
+      "host_species": "study_fanout",
+      "antibiotics_exclusion_period_unit": "study_fanout"
+    },
+    {
+      "Day": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Day",
+      "subject_id": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Subject",
+      "Value": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Value",
+      "pmid": "study_fanout",
+      "target_condition": "study_fanout",
+      "antibiotics_exclusion_period": "study_fanout",
+      "sequencing_platform": "study_fanout",
+      "host_species": "study_fanout",
+      "antibiotics_exclusion_period_unit": "study_fanout"
+    },
+    {
+      "Day": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Day",
+      "subject_id": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Subject",
+      "Value": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Value",
+      "pmid": "study_fanout",
+      "target_condition": "study_fanout",
+      "antibiotics_exclusion_period": "study_fanout",
+      "sequencing_platform": "study_fanout",
+      "host_species": "study_fanout",
+      "antibiotics_exclusion_period_unit": "study_fanout"
+    },
+    {
+      "Day": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Day",
+      "subject_id": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Subject",
+      "Value": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Value",
+      "pmid": "study_fanout",
+      "target_condition": "study_fanout",
+      "antibiotics_exclusion_period": "study_fanout",
+      "sequencing_platform": "study_fanout",
+      "host_species": "study_fanout",
+      "antibiotics_exclusion_period_unit": "study_fanout"
+    },
+    {
+      "Day": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Day",
+      "subject_id": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Subject",
+      "Value": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Value",
+      "pmid": "study_fanout",
+      "target_condition": "study_fanout",
+      "antibiotics_exclusion_period": "study_fanout",
+      "sequencing_platform": "study_fanout",
+      "host_species": "study_fanout",
+      "antibiotics_exclusion_period_unit": "study_fanout"
+    },
+    {
+      "Day": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Day",
+      "subject_id": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Subject",
+      "Value": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Value",
+      "pmid": "study_fanout",
+      "target_condition": "study_fanout",
+      "antibiotics_exclusion_period": "study_fanout",
+      "sequencing_platform": "study_fanout",
+      "host_species": "study_fanout",
+      "antibiotics_exclusion_period_unit": "study_fanout"
+    },
+    {
+      "Day": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Day",
+      "subject_id": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Subject",
+      "Value": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Value",
+      "pmid": "study_fanout",
+      "target_condition": "study_fanout",
+      "antibiotics_exclusion_period": "study_fanout",
+      "sequencing_platform": "study_fanout",
+      "host_species": "study_fanout",
+      "antibiotics_exclusion_period_unit": "study_fanout"
+    },
+    {
+      "Day": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Day",
+      "subject_id": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Subject",
+      "Value": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Value",
+      "pmid": "study_fanout",
+      "target_condition": "study_fanout",
+      "antibiotics_exclusion_period": "study_fanout",
+      "sequencing_platform": "study_fanout",
+      "host_species": "study_fanout",
+      "antibiotics_exclusion_period_unit": "study_fanout"
+    },
+    {
+      "Day": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Day",
+      "subject_id": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Subject",
+      "Value": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Value",
+      "pmid": "study_fanout",
+      "target_condition": "study_fanout",
+      "antibiotics_exclusion_period": "study_fanout",
+      "sequencing_platform": "study_fanout",
+      "host_species": "study_fanout",
+      "antibiotics_exclusion_period_unit": "study_fanout"
+    },
+    {
+      "Day": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Day",
+      "subject_id": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Subject",
+      "Value": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Value",
+      "pmid": "study_fanout",
+      "target_condition": "study_fanout",
+      "antibiotics_exclusion_period": "study_fanout",
+      "sequencing_platform": "study_fanout",
+      "host_species": "study_fanout",
+      "antibiotics_exclusion_period_unit": "study_fanout"
+    },
+    {
+      "Day": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Day",
+      "subject_id": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Subject",
+      "Value": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Value",
+      "pmid": "study_fanout",
+      "target_condition": "study_fanout",
+      "antibiotics_exclusion_period": "study_fanout",
+      "sequencing_platform": "study_fanout",
+      "host_species": "study_fanout",
+      "antibiotics_exclusion_period_unit": "study_fanout"
+    },
+    {
+      "Day": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Day",
+      "subject_id": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Subject",
+      "Value": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Value",
+      "pmid": "study_fanout",
+      "target_condition": "study_fanout",
+      "antibiotics_exclusion_period": "study_fanout",
+      "sequencing_platform": "study_fanout",
+      "host_species": "study_fanout",
+      "antibiotics_exclusion_period_unit": "study_fanout"
+    },
+    {
+      "Day": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Day",
+      "subject_id": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Subject",
+      "Value": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Value",
+      "pmid": "study_fanout",
+      "target_condition": "study_fanout",
+      "antibiotics_exclusion_period": "study_fanout",
+      "sequencing_platform": "study_fanout",
+      "host_species": "study_fanout",
+      "antibiotics_exclusion_period_unit": "study_fanout"
+    },
+    {
+      "Day": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Day",
+      "subject_id": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Subject",
+      "Value": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Value",
+      "pmid": "study_fanout",
+      "target_condition": "study_fanout",
+      "antibiotics_exclusion_period": "study_fanout",
+      "sequencing_platform": "study_fanout",
+      "host_species": "study_fanout",
+      "antibiotics_exclusion_period_unit": "study_fanout"
+    },
+    {
+      "Day": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Day",
+      "subject_id": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Subject",
+      "Value": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Value",
+      "pmid": "study_fanout",
+      "target_condition": "study_fanout",
+      "antibiotics_exclusion_period": "study_fanout",
+      "sequencing_platform": "study_fanout",
+      "host_species": "study_fanout",
+      "antibiotics_exclusion_period_unit": "study_fanout"
+    },
+    {
+      "Day": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Day",
+      "subject_id": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Subject",
+      "Value": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Value",
+      "pmid": "study_fanout",
+      "target_condition": "study_fanout",
+      "antibiotics_exclusion_period": "study_fanout",
+      "sequencing_platform": "study_fanout",
+      "host_species": "study_fanout",
+      "antibiotics_exclusion_period_unit": "study_fanout"
+    },
+    {
+      "Day": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Day",
+      "subject_id": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Subject",
+      "Value": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Value",
+      "pmid": "study_fanout",
+      "target_condition": "study_fanout",
+      "antibiotics_exclusion_period": "study_fanout",
+      "sequencing_platform": "study_fanout",
+      "host_species": "study_fanout",
+      "antibiotics_exclusion_period_unit": "study_fanout"
+    },
+    {
+      "Day": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Day",
+      "subject_id": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Subject",
+      "Value": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Value",
+      "pmid": "study_fanout",
+      "target_condition": "study_fanout",
+      "antibiotics_exclusion_period": "study_fanout",
+      "sequencing_platform": "study_fanout",
+      "host_species": "study_fanout",
+      "antibiotics_exclusion_period_unit": "study_fanout"
+    },
+    {
+      "Day": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Day",
+      "subject_id": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Subject",
+      "Value": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Value",
+      "pmid": "study_fanout",
+      "target_condition": "study_fanout",
+      "antibiotics_exclusion_period": "study_fanout",
+      "sequencing_platform": "study_fanout",
+      "host_species": "study_fanout",
+      "antibiotics_exclusion_period_unit": "study_fanout"
+    },
+    {
+      "Day": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Day",
+      "subject_id": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Subject",
+      "Value": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Value",
+      "pmid": "study_fanout",
+      "target_condition": "study_fanout",
+      "antibiotics_exclusion_period": "study_fanout",
+      "sequencing_platform": "study_fanout",
+      "host_species": "study_fanout",
+      "antibiotics_exclusion_period_unit": "study_fanout"
+    },
+    {
+      "Day": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Day",
+      "subject_id": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Subject",
+      "Value": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Value",
+      "pmid": "study_fanout",
+      "target_condition": "study_fanout",
+      "antibiotics_exclusion_period": "study_fanout",
+      "sequencing_platform": "study_fanout",
+      "host_species": "study_fanout",
+      "antibiotics_exclusion_period_unit": "study_fanout"
+    },
+    {
+      "Day": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Day",
+      "subject_id": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Subject",
+      "Value": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Value",
+      "pmid": "study_fanout",
+      "target_condition": "study_fanout",
+      "antibiotics_exclusion_period": "study_fanout",
+      "sequencing_platform": "study_fanout",
+      "host_species": "study_fanout",
+      "antibiotics_exclusion_period_unit": "study_fanout"
+    },
+    {
+      "Day": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Day",
+      "subject_id": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Subject",
+      "Value": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Value",
+      "pmid": "study_fanout",
+      "target_condition": "study_fanout",
+      "antibiotics_exclusion_period": "study_fanout",
+      "sequencing_platform": "study_fanout",
+      "host_species": "study_fanout",
+      "antibiotics_exclusion_period_unit": "study_fanout"
+    },
+    {
+      "Day": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Day",
+      "subject_id": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Subject",
+      "Value": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Value",
+      "pmid": "study_fanout",
+      "target_condition": "study_fanout",
+      "antibiotics_exclusion_period": "study_fanout",
+      "sequencing_platform": "study_fanout",
+      "host_species": "study_fanout",
+      "antibiotics_exclusion_period_unit": "study_fanout"
+    },
+    {
+      "Day": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Day",
+      "subject_id": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Subject",
+      "Value": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Value",
+      "pmid": "study_fanout",
+      "target_condition": "study_fanout",
+      "antibiotics_exclusion_period": "study_fanout",
+      "sequencing_platform": "study_fanout",
+      "host_species": "study_fanout",
+      "antibiotics_exclusion_period_unit": "study_fanout"
+    },
+    {
+      "Day": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Day",
+      "subject_id": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Subject",
+      "Value": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Value",
+      "pmid": "study_fanout",
+      "target_condition": "study_fanout",
+      "antibiotics_exclusion_period": "study_fanout",
+      "sequencing_platform": "study_fanout",
+      "host_species": "study_fanout",
+      "antibiotics_exclusion_period_unit": "study_fanout"
+    },
+    {
+      "Day": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Day",
+      "subject_id": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Subject",
+      "Value": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Value",
+      "pmid": "study_fanout",
+      "target_condition": "study_fanout",
+      "antibiotics_exclusion_period": "study_fanout",
+      "sequencing_platform": "study_fanout",
+      "host_species": "study_fanout",
+      "antibiotics_exclusion_period_unit": "study_fanout"
+    },
+    {
+      "Day": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Day",
+      "subject_id": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Subject",
+      "Value": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Value",
+      "pmid": "study_fanout",
+      "target_condition": "study_fanout",
+      "antibiotics_exclusion_period": "study_fanout",
+      "sequencing_platform": "study_fanout",
+      "host_species": "study_fanout",
+      "antibiotics_exclusion_period_unit": "study_fanout"
+    },
+    {
+      "Day": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Day",
+      "subject_id": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Subject",
+      "Value": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Value",
+      "pmid": "study_fanout",
+      "target_condition": "study_fanout",
+      "antibiotics_exclusion_period": "study_fanout",
+      "sequencing_platform": "study_fanout",
+      "host_species": "study_fanout",
+      "antibiotics_exclusion_period_unit": "study_fanout"
+    },
+    {
+      "Day": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Day",
+      "subject_id": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Subject",
+      "Value": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Value",
+      "pmid": "study_fanout",
+      "target_condition": "study_fanout",
+      "antibiotics_exclusion_period": "study_fanout",
+      "sequencing_platform": "study_fanout",
+      "host_species": "study_fanout",
+      "antibiotics_exclusion_period_unit": "study_fanout"
+    },
+    {
+      "Day": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Day",
+      "subject_id": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Subject",
+      "Value": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Value",
+      "pmid": "study_fanout",
+      "target_condition": "study_fanout",
+      "antibiotics_exclusion_period": "study_fanout",
+      "sequencing_platform": "study_fanout",
+      "host_species": "study_fanout",
+      "antibiotics_exclusion_period_unit": "study_fanout"
+    },
+    {
+      "Day": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Day",
+      "subject_id": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Subject",
+      "Value": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Value",
+      "pmid": "study_fanout",
+      "target_condition": "study_fanout",
+      "antibiotics_exclusion_period": "study_fanout",
+      "sequencing_platform": "study_fanout",
+      "host_species": "study_fanout",
+      "antibiotics_exclusion_period_unit": "study_fanout"
+    },
+    {
+      "Day": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Day",
+      "subject_id": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Subject",
+      "Value": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Value",
+      "pmid": "study_fanout",
+      "target_condition": "study_fanout",
+      "antibiotics_exclusion_period": "study_fanout",
+      "sequencing_platform": "study_fanout",
+      "host_species": "study_fanout",
+      "antibiotics_exclusion_period_unit": "study_fanout"
+    },
+    {
+      "Day": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Day",
+      "subject_id": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Subject",
+      "Value": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Value",
+      "pmid": "study_fanout",
+      "target_condition": "study_fanout",
+      "antibiotics_exclusion_period": "study_fanout",
+      "sequencing_platform": "study_fanout",
+      "host_species": "study_fanout",
+      "antibiotics_exclusion_period_unit": "study_fanout"
+    },
+    {
+      "Day": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Day",
+      "subject_id": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Subject",
+      "Value": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Value",
+      "pmid": "study_fanout",
+      "target_condition": "study_fanout",
+      "antibiotics_exclusion_period": "study_fanout",
+      "sequencing_platform": "study_fanout",
+      "host_species": "study_fanout",
+      "antibiotics_exclusion_period_unit": "study_fanout"
+    },
+    {
+      "Day": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Day",
+      "subject_id": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Subject",
+      "Value": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Value",
+      "pmid": "study_fanout",
+      "target_condition": "study_fanout",
+      "antibiotics_exclusion_period": "study_fanout",
+      "sequencing_platform": "study_fanout",
+      "host_species": "study_fanout",
+      "antibiotics_exclusion_period_unit": "study_fanout"
+    },
+    {
+      "Day": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Day",
+      "subject_id": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Subject",
+      "Value": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Value",
+      "pmid": "study_fanout",
+      "target_condition": "study_fanout",
+      "antibiotics_exclusion_period": "study_fanout",
+      "sequencing_platform": "study_fanout",
+      "host_species": "study_fanout",
+      "antibiotics_exclusion_period_unit": "study_fanout"
+    },
+    {
+      "Day": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Day",
+      "subject_id": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Subject",
+      "Value": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Value",
+      "pmid": "study_fanout",
+      "target_condition": "study_fanout",
+      "antibiotics_exclusion_period": "study_fanout",
+      "sequencing_platform": "study_fanout",
+      "host_species": "study_fanout",
+      "antibiotics_exclusion_period_unit": "study_fanout"
+    },
+    {
+      "Day": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Day",
+      "subject_id": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Subject",
+      "Value": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Value",
+      "pmid": "study_fanout",
+      "target_condition": "study_fanout",
+      "antibiotics_exclusion_period": "study_fanout",
+      "sequencing_platform": "study_fanout",
+      "host_species": "study_fanout",
+      "antibiotics_exclusion_period_unit": "study_fanout"
+    },
+    {
+      "Day": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Day",
+      "subject_id": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Subject",
+      "Value": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Value",
+      "pmid": "study_fanout",
+      "target_condition": "study_fanout",
+      "antibiotics_exclusion_period": "study_fanout",
+      "sequencing_platform": "study_fanout",
+      "host_species": "study_fanout",
+      "antibiotics_exclusion_period_unit": "study_fanout"
+    },
+    {
+      "Day": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Day",
+      "subject_id": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Subject",
+      "Value": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Value",
+      "pmid": "study_fanout",
+      "target_condition": "study_fanout",
+      "antibiotics_exclusion_period": "study_fanout",
+      "sequencing_platform": "study_fanout",
+      "host_species": "study_fanout",
+      "antibiotics_exclusion_period_unit": "study_fanout"
+    },
+    {
+      "Day": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Day",
+      "subject_id": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Subject",
+      "Value": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Value",
+      "pmid": "study_fanout",
+      "target_condition": "study_fanout",
+      "antibiotics_exclusion_period": "study_fanout",
+      "sequencing_platform": "study_fanout",
+      "host_species": "study_fanout",
+      "antibiotics_exclusion_period_unit": "study_fanout"
+    },
+    {
+      "Day": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Day",
+      "subject_id": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Subject",
+      "Value": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Value",
+      "pmid": "study_fanout",
+      "target_condition": "study_fanout",
+      "antibiotics_exclusion_period": "study_fanout",
+      "sequencing_platform": "study_fanout",
+      "host_species": "study_fanout",
+      "antibiotics_exclusion_period_unit": "study_fanout"
+    },
+    {
+      "Day": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Day",
+      "subject_id": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Subject",
+      "Value": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Value",
+      "pmid": "study_fanout",
+      "target_condition": "study_fanout",
+      "antibiotics_exclusion_period": "study_fanout",
+      "sequencing_platform": "study_fanout",
+      "host_species": "study_fanout",
+      "antibiotics_exclusion_period_unit": "study_fanout"
+    },
+    {
+      "Day": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Day",
+      "subject_id": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Subject",
+      "Value": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Value",
+      "pmid": "study_fanout",
+      "target_condition": "study_fanout",
+      "antibiotics_exclusion_period": "study_fanout",
+      "sequencing_platform": "study_fanout",
+      "host_species": "study_fanout",
+      "antibiotics_exclusion_period_unit": "study_fanout"
+    },
+    {
+      "Day": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Day",
+      "subject_id": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Subject",
+      "Value": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Value",
+      "pmid": "study_fanout",
+      "target_condition": "study_fanout",
+      "antibiotics_exclusion_period": "study_fanout",
+      "sequencing_platform": "study_fanout",
+      "host_species": "study_fanout",
+      "antibiotics_exclusion_period_unit": "study_fanout"
+    },
+    {
+      "Day": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Day",
+      "subject_id": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Subject",
+      "Value": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Value",
+      "pmid": "study_fanout",
+      "target_condition": "study_fanout",
+      "antibiotics_exclusion_period": "study_fanout",
+      "sequencing_platform": "study_fanout",
+      "host_species": "study_fanout",
+      "antibiotics_exclusion_period_unit": "study_fanout"
+    },
+    {
+      "Day": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Day",
+      "subject_id": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Subject",
+      "Value": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Value",
+      "pmid": "study_fanout",
+      "target_condition": "study_fanout",
+      "antibiotics_exclusion_period": "study_fanout",
+      "sequencing_platform": "study_fanout",
+      "host_species": "study_fanout",
+      "antibiotics_exclusion_period_unit": "study_fanout"
+    },
+    {
+      "Day": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Day",
+      "subject_id": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Subject",
+      "Value": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Value",
+      "pmid": "study_fanout",
+      "target_condition": "study_fanout",
+      "antibiotics_exclusion_period": "study_fanout",
+      "sequencing_platform": "study_fanout",
+      "host_species": "study_fanout",
+      "antibiotics_exclusion_period_unit": "study_fanout"
+    },
+    {
+      "Day": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Day",
+      "subject_id": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Subject",
+      "Value": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Value",
+      "pmid": "study_fanout",
+      "target_condition": "study_fanout",
+      "antibiotics_exclusion_period": "study_fanout",
+      "sequencing_platform": "study_fanout",
+      "host_species": "study_fanout",
+      "antibiotics_exclusion_period_unit": "study_fanout"
+    },
+    {
+      "Day": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Day",
+      "subject_id": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Subject",
+      "Value": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Value",
+      "pmid": "study_fanout",
+      "target_condition": "study_fanout",
+      "antibiotics_exclusion_period": "study_fanout",
+      "sequencing_platform": "study_fanout",
+      "host_species": "study_fanout",
+      "antibiotics_exclusion_period_unit": "study_fanout"
+    },
+    {
+      "Day": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Day",
+      "subject_id": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Subject",
+      "Value": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Value",
+      "pmid": "study_fanout",
+      "target_condition": "study_fanout",
+      "antibiotics_exclusion_period": "study_fanout",
+      "sequencing_platform": "study_fanout",
+      "host_species": "study_fanout",
+      "antibiotics_exclusion_period_unit": "study_fanout"
+    },
+    {
+      "Day": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Day",
+      "subject_id": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Subject",
+      "Value": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Value",
+      "pmid": "study_fanout",
+      "target_condition": "study_fanout",
+      "antibiotics_exclusion_period": "study_fanout",
+      "sequencing_platform": "study_fanout",
+      "host_species": "study_fanout",
+      "antibiotics_exclusion_period_unit": "study_fanout"
+    },
+    {
+      "Day": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Day",
+      "subject_id": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Subject",
+      "Value": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Value",
+      "pmid": "study_fanout",
+      "target_condition": "study_fanout",
+      "antibiotics_exclusion_period": "study_fanout",
+      "sequencing_platform": "study_fanout",
+      "host_species": "study_fanout",
+      "antibiotics_exclusion_period_unit": "study_fanout"
+    },
+    {
+      "Day": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Day",
+      "subject_id": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Subject",
+      "Value": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Value",
+      "pmid": "study_fanout",
+      "target_condition": "study_fanout",
+      "antibiotics_exclusion_period": "study_fanout",
+      "sequencing_platform": "study_fanout",
+      "host_species": "study_fanout",
+      "antibiotics_exclusion_period_unit": "study_fanout"
+    },
+    {
+      "Day": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Day",
+      "subject_id": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Subject",
+      "Value": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Value",
+      "pmid": "study_fanout",
+      "target_condition": "study_fanout",
+      "antibiotics_exclusion_period": "study_fanout",
+      "sequencing_platform": "study_fanout",
+      "host_species": "study_fanout",
+      "antibiotics_exclusion_period_unit": "study_fanout"
+    },
+    {
+      "Day": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Day",
+      "subject_id": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Subject",
+      "Value": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Value",
+      "pmid": "study_fanout",
+      "target_condition": "study_fanout",
+      "antibiotics_exclusion_period": "study_fanout",
+      "sequencing_platform": "study_fanout",
+      "host_species": "study_fanout",
+      "antibiotics_exclusion_period_unit": "study_fanout"
+    },
+    {
+      "Day": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Day",
+      "subject_id": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Subject",
+      "Value": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Value",
+      "pmid": "study_fanout",
+      "target_condition": "study_fanout",
+      "antibiotics_exclusion_period": "study_fanout",
+      "sequencing_platform": "study_fanout",
+      "host_species": "study_fanout",
+      "antibiotics_exclusion_period_unit": "study_fanout"
+    },
+    {
+      "Day": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Day",
+      "subject_id": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Subject",
+      "Value": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Value",
+      "pmid": "study_fanout",
+      "target_condition": "study_fanout",
+      "antibiotics_exclusion_period": "study_fanout",
+      "sequencing_platform": "study_fanout",
+      "host_species": "study_fanout",
+      "antibiotics_exclusion_period_unit": "study_fanout"
+    },
+    {
+      "Day": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Day",
+      "subject_id": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Subject",
+      "Value": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Value",
+      "pmid": "study_fanout",
+      "target_condition": "study_fanout",
+      "antibiotics_exclusion_period": "study_fanout",
+      "sequencing_platform": "study_fanout",
+      "host_species": "study_fanout",
+      "antibiotics_exclusion_period_unit": "study_fanout"
+    },
+    {
+      "Day": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Day",
+      "subject_id": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Subject",
+      "Value": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Value",
+      "pmid": "study_fanout",
+      "target_condition": "study_fanout",
+      "antibiotics_exclusion_period": "study_fanout",
+      "sequencing_platform": "study_fanout",
+      "host_species": "study_fanout",
+      "antibiotics_exclusion_period_unit": "study_fanout"
+    },
+    {
+      "Day": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Day",
+      "subject_id": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Subject",
+      "Value": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Value",
+      "pmid": "study_fanout",
+      "target_condition": "study_fanout",
+      "antibiotics_exclusion_period": "study_fanout",
+      "sequencing_platform": "study_fanout",
+      "host_species": "study_fanout",
+      "antibiotics_exclusion_period_unit": "study_fanout"
+    },
+    {
+      "Day": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Day",
+      "subject_id": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Subject",
+      "Value": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Value",
+      "pmid": "study_fanout",
+      "target_condition": "study_fanout",
+      "antibiotics_exclusion_period": "study_fanout",
+      "sequencing_platform": "study_fanout",
+      "host_species": "study_fanout",
+      "antibiotics_exclusion_period_unit": "study_fanout"
+    },
+    {
+      "Day": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Day",
+      "subject_id": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Subject",
+      "Value": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Value",
+      "pmid": "study_fanout",
+      "target_condition": "study_fanout",
+      "antibiotics_exclusion_period": "study_fanout",
+      "sequencing_platform": "study_fanout",
+      "host_species": "study_fanout",
+      "antibiotics_exclusion_period_unit": "study_fanout"
+    },
+    {
+      "Day": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Day",
+      "subject_id": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Subject",
+      "Value": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Value",
+      "pmid": "study_fanout",
+      "target_condition": "study_fanout",
+      "antibiotics_exclusion_period": "study_fanout",
+      "sequencing_platform": "study_fanout",
+      "host_species": "study_fanout",
+      "antibiotics_exclusion_period_unit": "study_fanout"
+    },
+    {
+      "Day": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Day",
+      "subject_id": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Subject",
+      "Value": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Value",
+      "pmid": "study_fanout",
+      "target_condition": "study_fanout",
+      "antibiotics_exclusion_period": "study_fanout",
+      "sequencing_platform": "study_fanout",
+      "host_species": "study_fanout",
+      "antibiotics_exclusion_period_unit": "study_fanout"
+    },
+    {
+      "Day": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Day",
+      "subject_id": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Subject",
+      "Value": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Value",
+      "pmid": "study_fanout",
+      "target_condition": "study_fanout",
+      "antibiotics_exclusion_period": "study_fanout",
+      "sequencing_platform": "study_fanout",
+      "host_species": "study_fanout",
+      "antibiotics_exclusion_period_unit": "study_fanout"
+    },
+    {
+      "Day": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Day",
+      "subject_id": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Subject",
+      "Value": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Value",
+      "pmid": "study_fanout",
+      "target_condition": "study_fanout",
+      "antibiotics_exclusion_period": "study_fanout",
+      "sequencing_platform": "study_fanout",
+      "host_species": "study_fanout",
+      "antibiotics_exclusion_period_unit": "study_fanout"
+    },
+    {
+      "Day": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Day",
+      "subject_id": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Subject",
+      "Value": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Value",
+      "pmid": "study_fanout",
+      "target_condition": "study_fanout",
+      "antibiotics_exclusion_period": "study_fanout",
+      "sequencing_platform": "study_fanout",
+      "host_species": "study_fanout",
+      "antibiotics_exclusion_period_unit": "study_fanout"
+    },
+    {
+      "Day": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Day",
+      "subject_id": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Subject",
+      "Value": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Value",
+      "pmid": "study_fanout",
+      "target_condition": "study_fanout",
+      "antibiotics_exclusion_period": "study_fanout",
+      "sequencing_platform": "study_fanout",
+      "host_species": "study_fanout",
+      "antibiotics_exclusion_period_unit": "study_fanout"
+    },
+    {
+      "Day": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Day",
+      "subject_id": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Subject",
+      "Value": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Value",
+      "pmid": "study_fanout",
+      "target_condition": "study_fanout",
+      "antibiotics_exclusion_period": "study_fanout",
+      "sequencing_platform": "study_fanout",
+      "host_species": "study_fanout",
+      "antibiotics_exclusion_period_unit": "study_fanout"
+    },
+    {
+      "Day": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Day",
+      "subject_id": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Subject",
+      "Value": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Value",
+      "pmid": "study_fanout",
+      "target_condition": "study_fanout",
+      "antibiotics_exclusion_period": "study_fanout",
+      "sequencing_platform": "study_fanout",
+      "host_species": "study_fanout",
+      "antibiotics_exclusion_period_unit": "study_fanout"
+    },
+    {
+      "Day": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Day",
+      "subject_id": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Subject",
+      "Value": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Value",
+      "pmid": "study_fanout",
+      "target_condition": "study_fanout",
+      "antibiotics_exclusion_period": "study_fanout",
+      "sequencing_platform": "study_fanout",
+      "host_species": "study_fanout",
+      "antibiotics_exclusion_period_unit": "study_fanout"
+    },
+    {
+      "Day": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Day",
+      "subject_id": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Subject",
+      "Value": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Value",
+      "pmid": "study_fanout",
+      "target_condition": "study_fanout",
+      "antibiotics_exclusion_period": "study_fanout",
+      "sequencing_platform": "study_fanout",
+      "host_species": "study_fanout",
+      "antibiotics_exclusion_period_unit": "study_fanout"
+    },
+    {
+      "Day": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Day",
+      "subject_id": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Subject",
+      "Value": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Value",
+      "pmid": "study_fanout",
+      "target_condition": "study_fanout",
+      "antibiotics_exclusion_period": "study_fanout",
+      "sequencing_platform": "study_fanout",
+      "host_species": "study_fanout",
+      "antibiotics_exclusion_period_unit": "study_fanout"
+    },
+    {
+      "Day": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Day",
+      "subject_id": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Subject",
+      "Value": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Value",
+      "pmid": "study_fanout",
+      "target_condition": "study_fanout",
+      "antibiotics_exclusion_period": "study_fanout",
+      "sequencing_platform": "study_fanout",
+      "host_species": "study_fanout",
+      "antibiotics_exclusion_period_unit": "study_fanout"
+    },
+    {
+      "Day": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Day",
+      "subject_id": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Subject",
+      "Value": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Value",
+      "pmid": "study_fanout",
+      "target_condition": "study_fanout",
+      "antibiotics_exclusion_period": "study_fanout",
+      "sequencing_platform": "study_fanout",
+      "host_species": "study_fanout",
+      "antibiotics_exclusion_period_unit": "study_fanout"
+    },
+    {
+      "Day": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Day",
+      "subject_id": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Subject",
+      "Value": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Value",
+      "pmid": "study_fanout",
+      "target_condition": "study_fanout",
+      "antibiotics_exclusion_period": "study_fanout",
+      "sequencing_platform": "study_fanout",
+      "host_species": "study_fanout",
+      "antibiotics_exclusion_period_unit": "study_fanout"
+    },
+    {
+      "Day": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Day",
+      "subject_id": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Subject",
+      "Value": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Value",
+      "pmid": "study_fanout",
+      "target_condition": "study_fanout",
+      "antibiotics_exclusion_period": "study_fanout",
+      "sequencing_platform": "study_fanout",
+      "host_species": "study_fanout",
+      "antibiotics_exclusion_period_unit": "study_fanout"
+    },
+    {
+      "Day": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Day",
+      "subject_id": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Subject",
+      "Value": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Value",
+      "pmid": "study_fanout",
+      "target_condition": "study_fanout",
+      "antibiotics_exclusion_period": "study_fanout",
+      "sequencing_platform": "study_fanout",
+      "host_species": "study_fanout",
+      "antibiotics_exclusion_period_unit": "study_fanout"
+    },
+    {
+      "Day": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Day",
+      "subject_id": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Subject",
+      "Value": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Value",
+      "pmid": "study_fanout",
+      "target_condition": "study_fanout",
+      "antibiotics_exclusion_period": "study_fanout",
+      "sequencing_platform": "study_fanout",
+      "host_species": "study_fanout",
+      "antibiotics_exclusion_period_unit": "study_fanout"
+    },
+    {
+      "Day": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Day",
+      "subject_id": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Subject",
+      "Value": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Value",
+      "pmid": "study_fanout",
+      "target_condition": "study_fanout",
+      "antibiotics_exclusion_period": "study_fanout",
+      "sequencing_platform": "study_fanout",
+      "host_species": "study_fanout",
+      "antibiotics_exclusion_period_unit": "study_fanout"
+    },
+    {
+      "Day": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Day",
+      "subject_id": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Subject",
+      "Value": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Value",
+      "pmid": "study_fanout",
+      "target_condition": "study_fanout",
+      "antibiotics_exclusion_period": "study_fanout",
+      "sequencing_platform": "study_fanout",
+      "host_species": "study_fanout",
+      "antibiotics_exclusion_period_unit": "study_fanout"
+    },
+    {
+      "Day": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Day",
+      "subject_id": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Subject",
+      "Value": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Value",
+      "pmid": "study_fanout",
+      "target_condition": "study_fanout",
+      "antibiotics_exclusion_period": "study_fanout",
+      "sequencing_platform": "study_fanout",
+      "host_species": "study_fanout",
+      "antibiotics_exclusion_period_unit": "study_fanout"
+    },
+    {
+      "Day": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Day",
+      "subject_id": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Subject",
+      "Value": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Value",
+      "pmid": "study_fanout",
+      "target_condition": "study_fanout",
+      "antibiotics_exclusion_period": "study_fanout",
+      "sequencing_platform": "study_fanout",
+      "host_species": "study_fanout",
+      "antibiotics_exclusion_period_unit": "study_fanout"
+    },
+    {
+      "Day": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Day",
+      "subject_id": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Subject",
+      "Value": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Value",
+      "pmid": "study_fanout",
+      "target_condition": "study_fanout",
+      "antibiotics_exclusion_period": "study_fanout",
+      "sequencing_platform": "study_fanout",
+      "host_species": "study_fanout",
+      "antibiotics_exclusion_period_unit": "study_fanout"
+    },
+    {
+      "Day": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Day",
+      "subject_id": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Subject",
+      "Value": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Value",
+      "pmid": "study_fanout",
+      "target_condition": "study_fanout",
+      "antibiotics_exclusion_period": "study_fanout",
+      "sequencing_platform": "study_fanout",
+      "host_species": "study_fanout",
+      "antibiotics_exclusion_period_unit": "study_fanout"
+    },
+    {
+      "Day": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Day",
+      "subject_id": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Subject",
+      "Value": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Value",
+      "pmid": "study_fanout",
+      "target_condition": "study_fanout",
+      "antibiotics_exclusion_period": "study_fanout",
+      "sequencing_platform": "study_fanout",
+      "host_species": "study_fanout",
+      "antibiotics_exclusion_period_unit": "study_fanout"
+    },
+    {
+      "Day": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Day",
+      "subject_id": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Subject",
+      "Value": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Value",
+      "pmid": "study_fanout",
+      "target_condition": "study_fanout",
+      "antibiotics_exclusion_period": "study_fanout",
+      "sequencing_platform": "study_fanout",
+      "host_species": "study_fanout",
+      "antibiotics_exclusion_period_unit": "study_fanout"
+    },
+    {
+      "Day": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Day",
+      "subject_id": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Subject",
+      "Value": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Value",
+      "pmid": "study_fanout",
+      "target_condition": "study_fanout",
+      "antibiotics_exclusion_period": "study_fanout",
+      "sequencing_platform": "study_fanout",
+      "host_species": "study_fanout",
+      "antibiotics_exclusion_period_unit": "study_fanout"
+    },
+    {
+      "Day": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Day",
+      "subject_id": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Subject",
+      "Value": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Value",
+      "pmid": "study_fanout",
+      "target_condition": "study_fanout",
+      "antibiotics_exclusion_period": "study_fanout",
+      "sequencing_platform": "study_fanout",
+      "host_species": "study_fanout",
+      "antibiotics_exclusion_period_unit": "study_fanout"
+    },
+    {
+      "Day": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Day",
+      "subject_id": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Subject",
+      "Value": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Value",
+      "pmid": "study_fanout",
+      "target_condition": "study_fanout",
+      "antibiotics_exclusion_period": "study_fanout",
+      "sequencing_platform": "study_fanout",
+      "host_species": "study_fanout",
+      "antibiotics_exclusion_period_unit": "study_fanout"
+    },
+    {
+      "Day": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Day",
+      "subject_id": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Subject",
+      "Value": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Value",
+      "pmid": "study_fanout",
+      "target_condition": "study_fanout",
+      "antibiotics_exclusion_period": "study_fanout",
+      "sequencing_platform": "study_fanout",
+      "host_species": "study_fanout",
+      "antibiotics_exclusion_period_unit": "study_fanout"
+    },
+    {
+      "Day": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Day",
+      "subject_id": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Subject",
+      "Value": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Value",
+      "pmid": "study_fanout",
+      "target_condition": "study_fanout",
+      "antibiotics_exclusion_period": "study_fanout",
+      "sequencing_platform": "study_fanout",
+      "host_species": "study_fanout",
+      "antibiotics_exclusion_period_unit": "study_fanout"
+    },
+    {
+      "Day": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Day",
+      "subject_id": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Subject",
+      "Value": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Value",
+      "pmid": "study_fanout",
+      "target_condition": "study_fanout",
+      "antibiotics_exclusion_period": "study_fanout",
+      "sequencing_platform": "study_fanout",
+      "host_species": "study_fanout",
+      "antibiotics_exclusion_period_unit": "study_fanout"
+    },
+    {
+      "Day": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Day",
+      "subject_id": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Subject",
+      "Value": "table:41564_2023_1355_MOESM17_ESM.xlsx::10b:Value",
+      "pmid": "study_fanout",
+      "target_condition": "study_fanout",
+      "antibiotics_exclusion_period": "study_fanout",
+      "sequencing_platform": "study_fanout",
+      "host_species": "study_fanout",
+      "antibiotics_exclusion_period_unit": "study_fanout"
+    }
+  ],
+  "table_selection": [
+    {
+      "name": "41564_2023_1355_MOESM3_ESM.xlsx::Legends",
+      "selected": true,
+      "score": 0.4035,
+      "is_matrix": false,
+      "matched_fields": {
+        "age_group": "col_1"
+      },
+      "reasons": [
+        "key-like column 'Supplementary Tables'"
+      ]
+    },
+    {
+      "name": "41564_2023_1355_MOESM3_ESM.xlsx::Supplementary Table 1",
+      "selected": true,
+      "score": 0.4035,
+      "is_matrix": false,
+      "matched_fields": {
+        "age_group": "col_1"
+      },
+      "reasons": [
+        "key-like column 'Supplementary Table 1. Bioclinical characteristics of anorexia nervosa cases and healthy controls'"
+      ]
+    },
+    {
+      "name": "41564_2023_1355_MOESM3_ESM.xlsx::Supplementary Table 2",
+      "selected": true,
+      "score": 0.419,
+      "is_matrix": false,
+      "matched_fields": {
+        "age_group": "col_1",
+        "neonatal_preterm_birth": "col_37",
+        "tumor_staging_ajcc": "col_34",
+        "uncurated_metadata": "Supplementary Table 2. Detailed metadata of participants of this study",
+        "study_name": "Supplementary Table 2. Detailed metadata of participants of this study"
+      },
+      "reasons": [
+        "key-like column 'Supplementary Table 2. Detailed metadata of participants of this study'",
+        "tumor_staging_ajcc: values match enum in 'col_34' (50%)"
+      ]
+    },
+    {
+      "name": "41564_2023_1355_MOESM3_ESM.xlsx::Supplementary Table 3",
+      "selected": false,
+      "score": 0.0,
+      "is_matrix": true,
+      "matched_fields": {},
+      "reasons": [
+        "feature × samples matrix (taxonomy/genome or transposed fast-path)"
+      ]
+    },
+    {
+      "name": "41564_2023_1355_MOESM3_ESM.xlsx::Supplementary Table 4",
+      "selected": true,
+      "score": 0.332,
+      "is_matrix": false,
+      "matched_fields": {
+        "body_site": "Supplementary Table 4. Results of associations between recent body weight change and gut bacteriome and virome",
+        "age_group": "col_1"
+      },
+      "reasons": [
+        "key-like column 'Supplementary Table 4. Results of associations between recent body weight change and gut bacteriome and virome'"
+      ]
+    },
+    {
+      "name": "41564_2023_1355_MOESM3_ESM.xlsx::Supplementary Table 5",
+      "selected": true,
+      "score": 0.407,
+      "is_matrix": false,
+      "matched_fields": {
+        "control": "Supplementary Table 5. Results of differential analysis of gut metabolic modules between normal control and anorexia nervosa patients",
+        "age_group": "col_1"
+      },
+      "reasons": [
+        "key-like column 'Supplementary Table 5. Results of differential analysis of gut metabolic modules between normal control and anorexia nervosa patients'"
+      ]
+    },
+    {
+      "name": "41564_2023_1355_MOESM3_ESM.xlsx::Supplementary Table 6",
+      "selected": true,
+      "score": 0.4035,
+      "is_matrix": false,
+      "matched_fields": {
+        "age_group": "col_1"
+      },
+      "reasons": [
+        "key-like column 'Supplementary Table 6. List of genes in the 10-kbp deletion structural variants of Bacterodes uniformis genome'"
+      ]
+    },
+    {
+      "name": "41564_2023_1355_MOESM3_ESM.xlsx::Supplementary Table 7",
+      "selected": true,
+      "score": 0.407,
+      "is_matrix": false,
+      "matched_fields": {
+        "age_group": "col_1",
+        "host_species": "Supplementary Table 7. Results of bidirectional mediation analysis for host phenotypes, serum metabolites, and gut microbial features"
+      },
+      "reasons": [
+        "key-like column 'col_3'"
+      ]
+    },
+    {
+      "name": "41564_2023_1355_MOESM3_ESM.xlsx::Supplementary Table 8",
+      "selected": true,
+      "score": 0.407,
+      "is_matrix": false,
+      "matched_fields": {
+        "age_group": "col_1",
+        "study_name": "Supplementary Table 8: Sequences of oligonucleotides used in this study"
+      },
+      "reasons": [
+        "key-like column 'Supplementary Table 8: Sequences of oligonucleotides used in this study'"
+      ]
+    },
+    {
+      "name": "41564_2023_1355_MOESM4_ESM.xlsx::Source_data_for_Suppl_Figure_1",
+      "selected": false,
+      "score": 0.0,
+      "is_matrix": false,
+      "matched_fields": {},
+      "reasons": [
+        "figure source data (table name)"
+      ]
+    },
+    {
+      "name": "41564_2023_1355_MOESM4_ESM.xlsx::Source_data_for_Suppl_Figure_2a",
+      "selected": false,
+      "score": 0.0,
+      "is_matrix": false,
+      "matched_fields": {},
+      "reasons": [
+        "figure source data (table name)"
+      ]
+    },
+    {
+      "name": "41564_2023_1355_MOESM4_ESM.xlsx::Source_data_for_Suppl_Figure_2b",
+      "selected": false,
+      "score": 0.0,
+      "is_matrix": false,
+      "matched_fields": {},
+      "reasons": [
+        "figure source data (table name)"
+      ]
+    },
+    {
+      "name": "41564_2023_1355_MOESM4_ESM.xlsx::Source_data_for_Suppl_Figure_3",
+      "selected": false,
+      "score": 0.0,
+      "is_matrix": false,
+      "matched_fields": {},
+      "reasons": [
+        "figure source data (table name)"
+      ]
+    },
+    {
+      "name": "41564_2023_1355_MOESM4_ESM.xlsx::Source_data_for_Suppl_Figure_4",
+      "selected": false,
+      "score": 0.0,
+      "is_matrix": false,
+      "matched_fields": {},
+      "reasons": [
+        "figure source data (table name)"
+      ]
+    },
+    {
+      "name": "41564_2023_1355_MOESM4_ESM.xlsx::Source_data_for_Suppl_Figure_5",
+      "selected": false,
+      "score": 0.0,
+      "is_matrix": false,
+      "matched_fields": {},
+      "reasons": [
+        "figure source data (table name)"
+      ]
+    },
+    {
+      "name": "41564_2023_1355_MOESM4_ESM.xlsx::Source_data_for_Suppl_Figure_6",
+      "selected": false,
+      "score": 0.0,
+      "is_matrix": false,
+      "matched_fields": {},
+      "reasons": [
+        "figure source data (table name)"
+      ]
+    },
+    {
+      "name": "41564_2023_1355_MOESM10_ESM.xlsx::6a",
+      "selected": false,
+      "score": 0.0,
+      "is_matrix": true,
+      "matched_fields": {},
+      "reasons": [
+        "feature × samples matrix (taxonomy/genome or transposed fast-path)"
+      ]
+    },
+    {
+      "name": "41564_2023_1355_MOESM10_ESM.xlsx::6b",
+      "selected": true,
+      "score": 0.3606,
+      "is_matrix": false,
+      "matched_fields": {
+        "age_group": "col_2",
+        "obgyn_lactating": "AN-T",
+        "biomarker_name": "AN-T"
+      },
+      "reasons": [
+        "key-like column 'Gene'"
+      ]
+    },
+    {
+      "name": "41564_2023_1355_MOESM10_ESM.xlsx::6c",
+      "selected": true,
+      "score": 0.3356,
+      "is_matrix": false,
+      "matched_fields": {
+        "age_group": "col_2",
+        "obgyn_lactating": "AN-T",
+        "biomarker_name": "AN-T"
+      },
+      "reasons": [
+        "key-like column 'Gene'"
+      ]
+    },
+    {
+      "name": "41564_2023_1355_MOESM10_ESM.xlsx::6d",
+      "selected": true,
+      "score": 0.4,
+      "is_matrix": false,
+      "matched_fields": {},
+      "reasons": [
+        "key-like column 'ASVs found in human donors'"
+      ]
+    },
+    {
+      "name": "41564_2023_1355_MOESM10_ESM.xlsx::6e",
+      "selected": true,
+      "score": 0.4401,
+      "is_matrix": false,
+      "matched_fields": {
+        "subject_id": "ASV_ID",
+        "sample_id": "ASV_ID",
+        "westernized": "Color",
+        "antibiotics_current_use": "Color",
+        "disease_response_orr": "Color",
+        "disease_response_pfs": "Color",
+        "fmt_id": "ASV_ID",
+        "obgyn_birth_control": "Color",
+        "obgyn_lactating": "Color"
+      },
+      "reasons": [
+        "key-like column 'ASV_ID'",
+        "westernized: values match enum in 'Color' (100%)",
+        "antibiotics_current_use: values match enum in 'Color' (100%)",
+        "disease_response_orr: values match enum in 'Color' (100%)",
+        "disease_response_pfs: values match enum in 'Color' (100%)",
+        "obgyn_birth_control: values match enum in 'Color' (100%)",
+        "obgyn_lactating: values match enum in 'Color' (100%)"
+      ]
+    },
+    {
+      "name": "41564_2023_1355_MOESM11_ESM.xlsx::2a",
+      "selected": true,
+      "score": 0.4,
+      "is_matrix": false,
+      "matched_fields": {},
+      "reasons": [
+        "key-like column 'Phylum'"
+      ]
+    },
+    {
+      "name": "41564_2023_1355_MOESM11_ESM.xlsx::2b and 2c",
+      "selected": true,
+      "score": 0.407,
+      "is_matrix": false,
+      "matched_fields": {
+        "family": "Family",
+        "family_role": "Family"
+      },
+      "reasons": [
+        "key-like column 'Family'"
+      ]
+    },
+    {
+      "name": "41564_2023_1355_MOESM11_ESM.xlsx::2d",
+      "selected": true,
+      "score": 0.4035,
+      "is_matrix": false,
+      "matched_fields": {
+        "age_group": "Group"
+      },
+      "reasons": [
+        "key-like column 'Distance'"
+      ]
+    },
+    {
+      "name": "41564_2023_1355_MOESM11_ESM.xlsx::2e and 2f",
+      "selected": true,
+      "score": 0.4,
+      "is_matrix": false,
+      "matched_fields": {},
+      "reasons": [
+        "key-like column 'Genus'"
+      ]
+    },
+    {
+      "name": "41564_2023_1355_MOESM11_ESM.xlsx::2g",
+      "selected": true,
+      "score": 0.4141,
+      "is_matrix": false,
+      "matched_fields": {
+        "subject_id": "ID",
+        "sample_id": "ID",
+        "age_group": "Group",
+        "fmt_id": "ID"
+      },
+      "reasons": [
+        "key-like column 'ID'"
+      ]
+    },
+    {
+      "name": "41564_2023_1355_MOESM11_ESM.xlsx::2h and 2i",
+      "selected": true,
+      "score": 0.2035,
+      "is_matrix": false,
+      "matched_fields": {
+        "age_group": "col_1"
+      },
+      "reasons": []
+    },
+    {
+      "name": "41564_2023_1355_MOESM12_ESM.xlsx",
+      "selected": true,
+      "score": 0.4211,
+      "is_matrix": false,
+      "matched_fields": {
+        "body_site": "Body dissatisfaction",
+        "body_site_details": "Body dissatisfaction",
+        "bmi": "Body dissatisfaction",
+        "neonatal_preterm_birth": "col_0",
+        "tumor_staging_ajcc": "Body dissatisfaction",
+        "tumor_staging_tnm": "Body dissatisfaction"
+      },
+      "reasons": [
+        "key-like column 'Cliff.delta'"
+      ]
+    },
+    {
+      "name": "41564_2023_1355_MOESM13_ESM.xlsx::5a",
+      "selected": true,
+      "score": 0.4106,
+      "is_matrix": false,
+      "matched_fields": {
+        "subject_id": "ID",
+        "sample_id": "ID",
+        "fmt_id": "ID"
+      },
+      "reasons": [
+        "key-like column 'ID'"
+      ]
+    },
+    {
+      "name": "41564_2023_1355_MOESM13_ESM.xlsx::5b and 5c",
+      "selected": true,
+      "score": 0.4106,
+      "is_matrix": false,
+      "matched_fields": {
+        "subject_id": "ID",
+        "sample_id": "ID",
+        "fmt_id": "ID"
+      },
+      "reasons": [
+        "key-like column 'ID'"
+      ]
+    },
+    {
+      "name": "41564_2023_1355_MOESM14_ESM.xlsx",
+      "selected": true,
+      "score": 0.4106,
+      "is_matrix": false,
+      "matched_fields": {
+        "subject_id": "ID",
+        "sample_id": "ID",
+        "fmt_id": "ID"
+      },
+      "reasons": [
+        "key-like column 'ID'"
+      ]
+    },
+    {
+      "name": "41564_2023_1355_MOESM15_ESM.xlsx",
+      "selected": false,
+      "score": 0.0785,
+      "is_matrix": false,
+      "matched_fields": {
+        "feces_phenotype": "Phenotype"
+      },
+      "reasons": []
+    },
+    {
+      "name": "41564_2023_1355_MOESM16_ESM.xlsx::8a",
+      "selected": true,
+      "score": 0.4106,
+      "is_matrix": false,
+      "matched_fields": {
+        "subject_id": "ID",
+        "sample_id": "ID",
+        "fmt_id": "ID"
+      },
+      "reasons": [
+        "key-like column 'ID'"
+      ]
+    },
+    {
+      "name": "41564_2023_1355_MOESM16_ESM.xlsx::8d and 8e",
+      "selected": true,
+      "score": 0.4085,
+      "is_matrix": false,
+      "matched_fields": {
+        "treatment": "Treatment",
+        "tumor_staging_ajcc": "d1.Prop_p"
+      },
+      "reasons": [
+        "key-like column 'd1.Prop'",
+        "tumor_staging_ajcc: values match enum in 'd1.Prop_p' (100%)"
+      ]
+    },
+    {
+      "name": "41564_2023_1355_MOESM17_ESM.xlsx::10a",
+      "selected": false,
+      "score": 0.0,
+      "is_matrix": true,
+      "matched_fields": {},
+      "reasons": [
+        "feature × samples matrix (taxonomy/genome or transposed fast-path)"
+      ]
+    },
+    {
+      "name": "41564_2023_1355_MOESM17_ESM.xlsx::10b",
+      "selected": true,
+      "score": 0.357,
+      "is_matrix": false,
+      "matched_fields": {
+        "age_group": "Batch 2_1",
+        "neonatal_preterm_birth": "col_0"
+      },
+      "reasons": [
+        "key-like column 'col_0'"
+      ]
+    },
+    {
+      "name": "41564_2023_1355_MOESM17_ESM.xlsx::10c",
+      "selected": true,
+      "score": 0.4296,
+      "is_matrix": false,
+      "matched_fields": {
+        "westernized": "Color",
+        "antibiotics_current_use": "Color",
+        "disease_response_orr": "Color",
+        "disease_response_pfs": "Color",
+        "obgyn_birth_control": "Color",
+        "obgyn_lactating": "Color"
+      },
+      "reasons": [
+        "key-like column 'Metabolite'",
+        "westernized: values match enum in 'Color' (100%)",
+        "antibiotics_current_use: values match enum in 'Color' (100%)",
+        "disease_response_orr: values match enum in 'Color' (100%)",
+        "disease_response_pfs: values match enum in 'Color' (100%)",
+        "obgyn_birth_control: values match enum in 'Color' (100%)",
+        "obgyn_lactating: values match enum in 'Color' (100%)"
+      ]
+    },
+    {
+      "name": "41564_2023_1355_MOESM17_ESM.xlsx::10d",
+      "selected": true,
+      "score": 0.2035,
+      "is_matrix": false,
+      "matched_fields": {
+        "neonatal_preterm_birth": "col_0"
+      },
+      "reasons": []
+    },
+    {
+      "name": "41564_2023_1355_MOESM5_ESM.xlsx::1a",
+      "selected": true,
+      "score": 0.4035,
+      "is_matrix": false,
+      "matched_fields": {
+        "age_group": "Group"
+      },
+      "reasons": [
+        "key-like column 'Distance'"
+      ]
+    },
+    {
+      "name": "41564_2023_1355_MOESM5_ESM.xlsx::1b",
+      "selected": true,
+      "score": 0.2035,
+      "is_matrix": false,
+      "matched_fields": {
+        "age_group": "Group"
+      },
+      "reasons": []
+    },
+    {
+      "name": "41564_2023_1355_MOESM5_ESM.xlsx::1c",
+      "selected": true,
+      "score": 0.4282,
+      "is_matrix": false,
+      "matched_fields": {
+        "subject_id": "MSP_ID",
+        "sample_id": "MSP_ID",
+        "probing_pocket_depth_value": "q_value",
+        "fmt_id": "MSP_ID",
+        "obgyn_lactating": "Prevalence_AN",
+        "biomarker_name": "Prevalence_AN",
+        "biomarker_value": "q_value",
+        "feces_phenotype_value": "q_value"
+      },
+      "reasons": [
+        "key-like column 'MSP_ID'"
+      ]
+    },
+    {
+      "name": "41564_2023_1355_MOESM5_ESM.xlsx::1d",
+      "selected": true,
+      "score": 0.4131,
+      "is_matrix": false,
+      "matched_fields": {
+        "body_site": "Body dissatisfaction",
+        "body_site_details": "Body dissatisfaction",
+        "bmi": "Body dissatisfaction",
+        "neonatal_preterm_birth": "col_0",
+        "tumor_staging_ajcc": "Body dissatisfaction",
+        "tumor_staging_tnm": "Body dissatisfaction"
+      },
+      "reasons": [
+        "key-like column 'Cliff.delta'"
+      ]
+    },
+    {
+      "name": "41564_2023_1355_MOESM6_ESM.xlsx::2a and 2b",
+      "selected": true,
+      "score": 0.4141,
+      "is_matrix": false,
+      "matched_fields": {
+        "subject_id": "ID",
+        "sample_id": "ID",
+        "age_group": "Group",
+        "fmt_id": "ID"
+      },
+      "reasons": [
+        "key-like column 'ID'"
+      ]
+    },
+    {
+      "name": "41564_2023_1355_MOESM6_ESM.xlsx::2c",
+      "selected": true,
+      "score": 0.4176,
+      "is_matrix": false,
+      "matched_fields": {
+        "probing_pocket_depth_value": "q_value",
+        "obgyn_lactating": "Prevalence_AN",
+        "biomarker_name": "Prevalence_AN",
+        "biomarker_value": "q_value",
+        "feces_phenotype_value": "q_value"
+      },
+      "reasons": [
+        "key-like column 'Bacteriophage'"
+      ]
+    },
+    {
+      "name": "41564_2023_1355_MOESM6_ESM.xlsx::2d",
+      "selected": true,
+      "score": 0.2035,
+      "is_matrix": false,
+      "matched_fields": {
+        "age_group": "col_1"
+      },
+      "reasons": []
+    },
+    {
+      "name": "41564_2023_1355_MOESM7_ESM.xlsx::3a",
+      "selected": true,
+      "score": 0.4282,
+      "is_matrix": false,
+      "matched_fields": {
+        "subject_id": "GBM_ID",
+        "sample_id": "GBM_ID",
+        "probing_pocket_depth_value": "q_value",
+        "fmt_id": "GBM_ID",
+        "obgyn_lactating": "Prevalence_AN",
+        "biomarker_name": "Prevalence_AN",
+        "biomarker_value": "q_value",
+        "feces_phenotype_value": "q_value"
+      },
+      "reasons": [
+        "key-like column 'GBM_ID'"
+      ]
+    },
+    {
+      "name": "41564_2023_1355_MOESM7_ESM.xlsx::3b",
+      "selected": true,
+      "score": 0.2035,
+      "is_matrix": false,
+      "matched_fields": {
+        "bmi": "BMI"
+      },
+      "reasons": []
+    },
+    {
+      "name": "41564_2023_1355_MOESM8_ESM.xlsx::4a",
+      "selected": true,
+      "score": 0.207,
+      "is_matrix": false,
+      "matched_fields": {
+        "biomarker_value": "Value",
+        "host_species": "Species"
+      },
+      "reasons": []
+    },
+    {
+      "name": "41564_2023_1355_MOESM8_ESM.xlsx::4b",
+      "selected": false,
+      "score": 0.0535,
+      "is_matrix": false,
+      "matched_fields": {
+        "biomarker_value": "Value"
+      },
+      "reasons": []
+    },
+    {
+      "name": "41564_2023_1355_MOESM8_ESM.xlsx::4c",
+      "selected": true,
+      "score": 0.4035,
+      "is_matrix": false,
+      "matched_fields": {
+        "age_group": "Group"
+      },
+      "reasons": [
+        "key-like column 'Distance'"
+      ]
+    },
+    {
+      "name": "41564_2023_1355_MOESM8_ESM.xlsx::4d",
+      "selected": true,
+      "score": 0.4085,
+      "is_matrix": false,
+      "matched_fields": {
+        "neonatal_preterm_birth": "col_0",
+        "tumor_staging_ajcc": "Lachnospira.eligens"
+      },
+      "reasons": [
+        "key-like column 'col_0'",
+        "tumor_staging_ajcc: values match enum in 'Lachnospira.eligens' (33%)"
+      ]
+    },
+    {
+      "name": "41564_2023_1355_MOESM8_ESM.xlsx::4e",
+      "selected": false,
+      "score": 0.0,
+      "is_matrix": true,
+      "matched_fields": {},
+      "reasons": [
+        "feature × samples matrix (taxonomy/genome or transposed fast-path)"
+      ]
+    },
+    {
+      "name": "41564_2023_1355_MOESM8_ESM.xlsx::4g",
+      "selected": true,
+      "score": 0.2155,
+      "is_matrix": false,
+      "matched_fields": {
+        "subject_id": "ID",
+        "sample_id": "ID",
+        "fmt_id": "ID",
+        "tumor_staging_ajcc": "Bacteroides.uniformis.3212_3222"
+      },
+      "reasons": [
+        "tumor_staging_ajcc: values match enum in 'Bacteroides.uniformis.3212_3222' (50%)"
+      ]
+    },
+    {
+      "name": "41564_2023_1355_MOESM9_ESM.xlsx::5a",
+      "selected": true,
+      "score": 0.4106,
+      "is_matrix": false,
+      "matched_fields": {
+        "subject_id": "ID",
+        "sample_id": "ID",
+        "fmt_id": "ID"
+      },
+      "reasons": [
+        "key-like column 'ID'"
+      ]
+    },
+    {
+      "name": "41564_2023_1355_MOESM9_ESM.xlsx::5b",
+      "selected": true,
+      "score": 0.4176,
+      "is_matrix": false,
+      "matched_fields": {
+        "probing_pocket_depth_value": "q_value",
+        "obgyn_lactating": "Prevalence_AN",
+        "biomarker_name": "Prevalence_AN",
+        "biomarker_value": "q_value",
+        "feces_phenotype_value": "q_value"
+      },
+      "reasons": [
+        "key-like column 'Metabolite'"
+      ]
+    },
+    {
+      "name": "41564_2023_1355_MOESM9_ESM.xlsx::5c and 5d",
+      "selected": true,
+      "score": 0.4085,
+      "is_matrix": false,
+      "matched_fields": {
+        "treatment": "Treatment",
+        "tumor_staging_ajcc": "d1.Prop_p"
+      },
+      "reasons": [
+        "key-like column 'Treatment'",
+        "tumor_staging_ajcc: values match enum in 'd1.Prop_p' (100%)"
+      ]
+    }
+  ],
+  "extraction_warnings": [
+    "Supplementary Tables 1-4 (containing detailed clinical/baseline characteristics such as age, BMI, and biochemical markers for the full cohort) were referenced in the text but their actual content was not included in the provided document, limiting extraction of quantitative study-level/subgroup-level demographic values.",
+    "No individual subject or sample identifiers (subject_id, sample_id, ncbi_accession) were found anywhere in the provided text.",
+    "Exact age and BMI values were only available in the text for 6 individuals (3 AN, 3 HC) whose faecal samples were used for mouse FMT experiments (Methods — Animal experiments); these were noted in field 'notes' rather than treated as full sample-level rows because they lack unique subject/sample IDs and represent only a small non-random-for-metadata-purposes subset, not the full 147-participant cohort.",
+    "Ancestry was explicitly reported only for AN cases ('Danish Caucasian women with AN cases'); it is unclear if the same ancestry applies uniformly to HC.",
+    "AN-RS/AN-BP subtype stratification exists in the paper but was not used as the primary subgroup breakdown in this extraction (AN vs HC was used instead).",
+    "Batch 1 returned granularity='study_level', differs from batch 0 ('subgroup_level'); kept batch 0.",
+    "Batch 1 subgroups [] differ from batch 0 ['AN', 'HC']; kept batch 0.",
+    "This paper is a gut microbiota/metabolomics study of anorexia nervosa, not an oncology or perinatal study; most oncology-specific fields (RECIST, TNM/AJCC staging, ECOG, ORR, PFS, OS) and neonatal/obstetric fields are not applicable and were marked not_reported.",
+    "Quantitative clinical biomarker values (glucose, insulin, HOMA-IR, CRP) are described only qualitatively (higher/lower) in the main text; exact numeric values with units reside in Supplementary Tables 1-2, which were not included in the provided text, so biomarker fields were left as not_reported.",
+    "fmt_role field was populated only for human donors (AN/HC participants); mouse recipients are not human participants and were excluded from this field.",
+    "smoker field: smoking status was used as a statistical covariate but specific smoker/non-smoker classifications or counts were not given in the provided text.",
+    "Batch 2 subgroups ['Human cohort', 'Mouse FMT experiment'] differ from batch 0 ['AN', 'HC']; kept batch 0.",
+    "study_name field could not be determined from the provided text; no canonical identifier format (e.g., AuthorYear) was found.",
+    "pmid was inferred from the provided paper_id rather than extracted from in-text content.",
+    "dna_extraction_kit values reported in the paper (IHMS SOP P7 V2 for human stool; NucleoSpin soil mini kit for mouse stool) do not match any allowed enum value, so both were marked not_reported despite being explicitly described in Methods.",
+    "sequencing_platform differs by experimental subgroup (Ion Torrent Proton for human shotgun metagenomics vs Illumina MiSeq for mouse 16S rRNA sequencing); both were captured via by_subgroup.",
+    "host_species applies to two distinct experimental components (human cohort and mouse FMT recipients); granularity was set to subgroup_level to reflect this.",
+    "Table '41564_2023_1355_MOESM3_ESM.xlsx::Legends': selected (relevance=0.40; matched 1/71 schema fields).",
+    "Table '41564_2023_1355_MOESM3_ESM.xlsx::Legends': structure plan applied (row 0 has fewer than two labels; header_rows=[], melt=no, out_rows=0).",
+    "Table '41564_2023_1355_MOESM3_ESM.xlsx::Legends': 5 column(s) passed through under original names (schema didn't match): ['col_0', 'col_1', 'col_2', 'col_3', 'col_4']",
+    "Table '41564_2023_1355_MOESM3_ESM.xlsx::Supplementary Table 1': selected (relevance=0.40; matched 1/71 schema fields).",
+    "Table '41564_2023_1355_MOESM3_ESM.xlsx::Supplementary Table 1': structure plan applied (row 0 has fewer than two labels; header_rows=[1, 2, 3, 4], melt=no, out_rows=25).",
+    "Table '41564_2023_1355_MOESM3_ESM.xlsx::Supplementary Table 1': 7 column(s) passed through under original names (schema didn't match): ['col_0', 'Anorexia | (n=77)', 'Controls | (n=70)', 'p | Anorexia vs Controls', 'AN subtype | Restricting | AN-RS | (n=56)']...",
+    "Table '41564_2023_1355_MOESM3_ESM.xlsx::Supplementary Table 2': selected (relevance=0.42; matched 5/71 schema fields).",
+    "Table '41564_2023_1355_MOESM3_ESM.xlsx::Supplementary Table 2': structure plan applied (row 0 has fewer than two labels; header_rows=[1], melt=no, out_rows=147).",
+    "Table '41564_2023_1355_MOESM3_ESM.xlsx::Supplementary Table 2': column mapping 'BMI'->bmi [exact]; 'Age'->age [exact]; 'Smoking'->smoker [alias].",
+    "Table '41564_2023_1355_MOESM3_ESM.xlsx::Supplementary Table 2': 46 column(s) passed through under original names (schema didn't match): ['ID', 'S-C_reactive_protein', 'S-Creatinine', 'S-HDL', 'S-LDL']...",
+    "Table '41564_2023_1355_MOESM3_ESM.xlsx::Supplementary Table 3': skipped as measurement matrix (149 rows × 1991 cols; feature × samples matrix (taxonomy/genome or transposed fast-path)).",
+    "Table '41564_2023_1355_MOESM3_ESM.xlsx::Supplementary Table 4': selected (relevance=0.33; matched 2/71 schema fields).",
+    "Table '41564_2023_1355_MOESM3_ESM.xlsx::Supplementary Table 4': structure plan applied (row 0 has fewer than two labels; header_rows=[1], melt=no, out_rows=4).",
+    "Table '41564_2023_1355_MOESM3_ESM.xlsx::Supplementary Table 4': 3 column(s) passed through under original names (schema didn't match): ['Association', 'Spearman’s rank correlation rho', 'P value']",
+    "Table '41564_2023_1355_MOESM3_ESM.xlsx::Supplementary Table 5': selected (relevance=0.41; matched 2/71 schema fields).",
+    "Table '41564_2023_1355_MOESM3_ESM.xlsx::Supplementary Table 5': structure plan applied (row 0 has fewer than two labels; header_rows=[1], melt=no, out_rows=102).",
+    "Table '41564_2023_1355_MOESM3_ESM.xlsx::Supplementary Table 5': 8 column(s) passed through under original names (schema didn't match): ['ID', 'p_value', 'q_value', 'Cliff Delta', 'Prevalence_all']...",
+    "Table '41564_2023_1355_MOESM3_ESM.xlsx::Supplementary Table 6': selected (relevance=0.40; matched 1/71 schema fields).",
+    "Table '41564_2023_1355_MOESM3_ESM.xlsx::Supplementary Table 6': structure plan applied (row 0 has fewer than two labels; header_rows=[1], melt=no, out_rows=22).",
+    "Table '41564_2023_1355_MOESM3_ESM.xlsx::Supplementary Table 6': 7 column(s) passed through under original names (schema didn't match): ['GENE_ID', 'TYPE', 'LENGTH', 'START', 'END']...",
+    "Table '41564_2023_1355_MOESM3_ESM.xlsx::Supplementary Table 7': selected (relevance=0.41; matched 2/71 schema fields).",
+    "Table '41564_2023_1355_MOESM3_ESM.xlsx::Supplementary Table 7': structure plan applied (row 0 has fewer than two labels; header_rows=[1], melt=no, out_rows=16).",
+    "Table '41564_2023_1355_MOESM3_ESM.xlsx::Supplementary Table 7': column mapping 'Treatment'->treatment [exact].",
+    "Table '41564_2023_1355_MOESM3_ESM.xlsx::Supplementary Table 7': 9 column(s) passed through under original names (schema didn't match): ['Mediator', 'Outcome', 'd1.Prop', 'd1.Prop_p', 'd1.Prop_p.adj']...",
+    "Table '41564_2023_1355_MOESM3_ESM.xlsx::Supplementary Table 8': selected (relevance=0.41; matched 2/71 schema fields).",
+    "Table '41564_2023_1355_MOESM3_ESM.xlsx::Supplementary Table 8': structure plan applied (row 0 has fewer than two labels; header_rows=[1], melt=no, out_rows=14).",
+    "Table '41564_2023_1355_MOESM3_ESM.xlsx::Supplementary Table 8': 3 column(s) passed through under original names (schema didn't match): ['Transcript', 'Forward sequence', 'Reverse sequence']",
+    "Table '41564_2023_1355_MOESM4_ESM.xlsx::Source_data_for_Suppl_Figure_1': skipped as figure source data.",
+    "Table '41564_2023_1355_MOESM4_ESM.xlsx::Source_data_for_Suppl_Figure_2a': skipped as figure source data.",
+    "Table '41564_2023_1355_MOESM4_ESM.xlsx::Source_data_for_Suppl_Figure_2b': skipped as figure source data.",
+    "Table '41564_2023_1355_MOESM4_ESM.xlsx::Source_data_for_Suppl_Figure_3': skipped as figure source data.",
+    "Table '41564_2023_1355_MOESM4_ESM.xlsx::Source_data_for_Suppl_Figure_4': skipped as figure source data.",
+    "Table '41564_2023_1355_MOESM4_ESM.xlsx::Source_data_for_Suppl_Figure_5': skipped as figure source data.",
+    "Table '41564_2023_1355_MOESM4_ESM.xlsx::Source_data_for_Suppl_Figure_6': skipped as figure source data.",
+    "Table '41564_2023_1355_MOESM10_ESM.xlsx::6a': skipped as measurement matrix (6 rows × 22 cols; feature × samples matrix (taxonomy/genome or transposed fast-path)).",
+    "Table '41564_2023_1355_MOESM10_ESM.xlsx::6b': selected (relevance=0.36; matched 3/71 schema fields).",
+    "Table '41564_2023_1355_MOESM10_ESM.xlsx::6b': structure plan applied (blank cells inside the header span (stacked or merged header); header_rows=[0], melt=no, out_rows=6).",
+    "Table '41564_2023_1355_MOESM10_ESM.xlsx::6b': 21 column(s) passed through under original names (schema didn't match): ['Gene', 'HC-T', 'col_2', 'col_3', 'col_4']...",
+    "Table '41564_2023_1355_MOESM10_ESM.xlsx::6c': selected (relevance=0.34; matched 3/71 schema fields).",
+    "Table '41564_2023_1355_MOESM10_ESM.xlsx::6c': structure plan applied (blank cells inside the header span (stacked or merged header); header_rows=[0], melt=no, out_rows=5).",
+    "Table '41564_2023_1355_MOESM10_ESM.xlsx::6c': 21 column(s) passed through under original names (schema didn't match): ['Gene', 'HC-T', 'col_2', 'col_3', 'col_4']...",
+    "Table '41564_2023_1355_MOESM10_ESM.xlsx::6d': selected (relevance=0.40; matched 0/71 schema fields).",
+    "Table '41564_2023_1355_MOESM10_ESM.xlsx::6d': single header row; read as is (no table plan).",
+    "Table '41564_2023_1355_MOESM10_ESM.xlsx::6d': 2 column(s) passed through under original names (schema didn't match): ['ASVs found in human donors', 'ASVs found in mouse recipients']",
+    "Table '41564_2023_1355_MOESM10_ESM.xlsx::6e': selected (relevance=0.44; matched 9/71 schema fields).",
+    "Table '41564_2023_1355_MOESM10_ESM.xlsx::6e': structure plan applied (blank cells inside the header span (stacked or merged header); header_rows=[0], melt=yes, out_rows=510).",
+    "Table '41564_2023_1355_MOESM10_ESM.xlsx::6e': 14 column(s) passed through under original names (schema didn't match): ['ASV_ID', 'col_1', 'col_2', 'ASV_ID_1', 'CliffDelta_Recipients']...",
+    "Table '41564_2023_1355_MOESM11_ESM.xlsx::2a': selected (relevance=0.40; matched 0/71 schema fields).",
+    "Table '41564_2023_1355_MOESM11_ESM.xlsx::2a': single header row; read as is (no table plan).",
+    "Table '41564_2023_1355_MOESM11_ESM.xlsx::2a': 4 column(s) passed through under original names (schema didn't match): ['Phylum', 'p', 'q', 'CliffDelta']",
+    "Table '41564_2023_1355_MOESM11_ESM.xlsx::2b and 2c': selected (relevance=0.41; matched 2/71 schema fields).",
+    "Table '41564_2023_1355_MOESM11_ESM.xlsx::2b and 2c': single header row; read as is (no table plan).",
+    "Table '41564_2023_1355_MOESM11_ESM.xlsx::2b and 2c': column mapping 'Family'->family [exact].",
+    "Table '41564_2023_1355_MOESM11_ESM.xlsx::2b and 2c': 3 column(s) passed through under original names (schema didn't match): ['p', 'q', 'CliffDelta']",
+    "Table '41564_2023_1355_MOESM11_ESM.xlsx::2d': selected (relevance=0.40; matched 1/71 schema fields).",
+    "Table '41564_2023_1355_MOESM11_ESM.xlsx::2d': single header row; read as is (no table plan).",
+    "Table '41564_2023_1355_MOESM11_ESM.xlsx::2d': 4 column(s) passed through under original names (schema didn't match): ['From', 'To', 'Distance', 'Group']",
+    "Table '41564_2023_1355_MOESM11_ESM.xlsx::2e and 2f': selected (relevance=0.40; matched 0/71 schema fields).",
+    "Table '41564_2023_1355_MOESM11_ESM.xlsx::2e and 2f': single header row; read as is (no table plan).",
+    "Table '41564_2023_1355_MOESM11_ESM.xlsx::2e and 2f': 4 column(s) passed through under original names (schema didn't match): ['Genus', 'p', 'q', 'CliffDelta']",
+    "Table '41564_2023_1355_MOESM11_ESM.xlsx::2g': selected (relevance=0.41; matched 4/71 schema fields).",
+    "Table '41564_2023_1355_MOESM11_ESM.xlsx::2g': single header row; read as is (no table plan).",
+    "Table '41564_2023_1355_MOESM11_ESM.xlsx::2g': 3 column(s) passed through under original names (schema didn't match): ['ID', 'msp_richness', 'Group']",
+    "Table '41564_2023_1355_MOESM11_ESM.xlsx::2h and 2i': selected (relevance=0.20; matched 1/71 schema fields).",
+    "Table '41564_2023_1355_MOESM11_ESM.xlsx::2h and 2i': structure plan applied (row 0 has fewer than two labels; header_rows=[1], melt=no, out_rows=20).",
+    "Table '41564_2023_1355_MOESM11_ESM.xlsx::2h and 2i': 3 column(s) passed through under original names (schema didn't match): ['Group', 'Enterotype', 'Fraction']",
+    "Table '41564_2023_1355_MOESM12_ESM.xlsx': selected (relevance=0.42; matched 6/71 schema fields).",
+    "Table '41564_2023_1355_MOESM12_ESM.xlsx': structure plan applied (blank cells inside the header span (stacked or merged header); header_rows=[0], melt=no, out_rows=50).",
+    "Table '41564_2023_1355_MOESM12_ESM.xlsx': 15 column(s) passed through under original names (schema didn't match): ['col_0', 'Drive for thinness', 'Bulimia', 'Body dissatisfaction', 'Low self-esteem']...",
+    "Table '41564_2023_1355_MOESM13_ESM.xlsx::5a': selected (relevance=0.41; matched 3/71 schema fields).",
+    "Table '41564_2023_1355_MOESM13_ESM.xlsx::5a': single header row; read as is (no table plan).",
+    "Table '41564_2023_1355_MOESM13_ESM.xlsx::5a': 3 column(s) passed through under original names (schema didn't match): ['ID', 'Enterobacteriaceae', 'Category']",
+    "Table '41564_2023_1355_MOESM13_ESM.xlsx::5b and 5c': selected (relevance=0.41; matched 3/71 schema fields).",
+    "Table '41564_2023_1355_MOESM13_ESM.xlsx::5b and 5c': single header row; read as is (no table plan).",
+    "Table '41564_2023_1355_MOESM13_ESM.xlsx::5b and 5c': 5 column(s) passed through under original names (schema didn't match): ['ID', 'Category', 'Subtype', 'Clbp.pg.ml', 'log10_ClpB']",
+    "Table '41564_2023_1355_MOESM14_ESM.xlsx': selected (relevance=0.41; matched 3/71 schema fields).",
+    "Table '41564_2023_1355_MOESM14_ESM.xlsx': single header row; read as is (no table plan).",
+    "Table '41564_2023_1355_MOESM14_ESM.xlsx': 9 column(s) passed through under original names (schema didn't match): ['ID', 'Median***', 'Akkermansia muciniphila*', 'Alistipes finegoldii*', 'Coprococcus catus*']...",
+    "Table '41564_2023_1355_MOESM15_ESM.xlsx': skipped, low schema relevance (score=0.08 < 0.15; no schema-matching columns).",
+    "Table '41564_2023_1355_MOESM16_ESM.xlsx::8a': selected (relevance=0.41; matched 3/71 schema fields).",
+    "Table '41564_2023_1355_MOESM16_ESM.xlsx::8a': single header row; read as is (no table plan).",
+    "Table '41564_2023_1355_MOESM16_ESM.xlsx::8a': 3 column(s) passed through under original names (schema didn't match): ['ID', 'PC1', 'PC2']",
+    "Table '41564_2023_1355_MOESM16_ESM.xlsx::8d and 8e': selected (relevance=0.41; matched 2/71 schema fields).",
+    "Table '41564_2023_1355_MOESM16_ESM.xlsx::8d and 8e': structure plan applied (repeated column groups ('d1'/'d2'); header_rows=[0], melt=no, out_rows=17).",
+    "Table '41564_2023_1355_MOESM16_ESM.xlsx::8d and 8e': column mapping 'Treatment'->treatment [exact].",
+    "Table '41564_2023_1355_MOESM16_ESM.xlsx::8d and 8e': 9 column(s) passed through under original names (schema didn't match): ['Mediator', 'Outcome', 'd1.Prop', 'd1.Prop_p', 'd1.Prop_p.adj']...",
+    "Table '41564_2023_1355_MOESM17_ESM.xlsx::10a': skipped as measurement matrix (16 rows × 5 cols; feature × samples matrix (taxonomy/genome or transposed fast-path)).",
+    "Table '41564_2023_1355_MOESM17_ESM.xlsx::10b': selected (relevance=0.36; matched 2/71 schema fields).",
+    "Table '41564_2023_1355_MOESM17_ESM.xlsx::10b': structure plan applied (blank cells inside the header span (stacked or merged header); header_rows=[0, 1], melt=yes, out_rows=100).",
+    "Table '41564_2023_1355_MOESM17_ESM.xlsx::10b': column mapping 'Subject'->subject_id [alias].",
+    "Table '41564_2023_1355_MOESM17_ESM.xlsx::10b': 3 column(s) passed through under original names (schema didn't match): ['Day', 'Batch 3', 'Value']",
+    "Table '41564_2023_1355_MOESM17_ESM.xlsx::10c': selected (relevance=0.43; matched 6/71 schema fields).",
+    "Table '41564_2023_1355_MOESM17_ESM.xlsx::10c': structure plan applied (repeated column groups ('d'/'r'); header_rows=[0], melt=no, out_rows=31).",
+    "Table '41564_2023_1355_MOESM17_ESM.xlsx::10c': 6 column(s) passed through under original names (schema didn't match): ['Metabolite', 'Log2FC_D', 'p_D', 'p_R', 'log2FC_R']...",
+    "Table '41564_2023_1355_MOESM17_ESM.xlsx::10d': selected (relevance=0.20; matched 1/71 schema fields).",
+    "Table '41564_2023_1355_MOESM17_ESM.xlsx::10d': structure plan applied (blank cells inside the header span (stacked or merged header); header_rows=[0], melt=no, out_rows=26).",
+    "Table '41564_2023_1355_MOESM17_ESM.xlsx::10d': 5 column(s) passed through under original names (schema didn't match): ['col_0', 'Snca', 'Htr1b', 'Ucp1', 'Elovl3']",
+    "Table '41564_2023_1355_MOESM5_ESM.xlsx::1a': selected (relevance=0.40; matched 1/71 schema fields).",
+    "Table '41564_2023_1355_MOESM5_ESM.xlsx::1a': single header row; read as is (no table plan).",
+    "Table '41564_2023_1355_MOESM5_ESM.xlsx::1a': 4 column(s) passed through under original names (schema didn't match): ['From', 'To', 'Distance', 'Group']",
+    "Table '41564_2023_1355_MOESM5_ESM.xlsx::1b': selected (relevance=0.20; matched 1/71 schema fields).",
+    "Table '41564_2023_1355_MOESM5_ESM.xlsx::1b': single header row; read as is (no table plan).",
+    "Table '41564_2023_1355_MOESM5_ESM.xlsx::1b': 4 column(s) passed through under original names (schema didn't match): ['From', 'To', 'DistaHCe', 'Group']",
+    "Table '41564_2023_1355_MOESM5_ESM.xlsx::1c': selected (relevance=0.43; matched 8/71 schema fields).",
+    "Table '41564_2023_1355_MOESM5_ESM.xlsx::1c': single header row; read as is (no table plan).",
+    "Table '41564_2023_1355_MOESM5_ESM.xlsx::1c': 8 column(s) passed through under original names (schema didn't match): ['MSP_ID', 'q_value', 'cliff', 'Prevalence_all', 'Prevalence_HC']...",
+    "Table '41564_2023_1355_MOESM5_ESM.xlsx::1d': selected (relevance=0.41; matched 6/71 schema fields).",
+    "Table '41564_2023_1355_MOESM5_ESM.xlsx::1d': structure plan applied (blank cells inside the header span (stacked or merged header); header_rows=[0], melt=no, out_rows=102).",
+    "Table '41564_2023_1355_MOESM5_ESM.xlsx::1d': 16 column(s) passed through under original names (schema didn't match): ['col_0', 'Drive for thinness', 'Bulimia', 'Body dissatisfaction', 'Low self-esteem']...",
+    "Table '41564_2023_1355_MOESM6_ESM.xlsx::2a and 2b': selected (relevance=0.41; matched 4/71 schema fields).",
+    "Table '41564_2023_1355_MOESM6_ESM.xlsx::2a and 2b': single header row; read as is (no table plan).",
+    "Table '41564_2023_1355_MOESM6_ESM.xlsx::2a and 2b': 5 column(s) passed through under original names (schema didn't match): ['ID', 'Richness', 'Alpha diversity', 'Subgroup', 'Group']",
+    "Table '41564_2023_1355_MOESM6_ESM.xlsx::2c': selected (relevance=0.42; matched 5/71 schema fields).",
+    "Table '41564_2023_1355_MOESM6_ESM.xlsx::2c': single header row; read as is (no table plan).",
+    "Table '41564_2023_1355_MOESM6_ESM.xlsx::2c': 8 column(s) passed through under original names (schema didn't match): ['Bacteriophage', 'q_value', 'cliff', 'Prevalence_all', 'Prevalence_HC']...",
+    "Table '41564_2023_1355_MOESM6_ESM.xlsx::2d': selected (relevance=0.20; matched 1/71 schema fields).",
+    "Table '41564_2023_1355_MOESM6_ESM.xlsx::2d': structure plan applied (row 0 has fewer than two labels; header_rows=[1], melt=no, out_rows=8).",
+    "Table '41564_2023_1355_MOESM6_ESM.xlsx::2d': 4 column(s) passed through under original names (schema didn't match): ['col_0', 'Group', 'Value', 'Correlation']",
+    "Table '41564_2023_1355_MOESM7_ESM.xlsx::3a': selected (relevance=0.43; matched 8/71 schema fields).",
+    "Table '41564_2023_1355_MOESM7_ESM.xlsx::3a': single header row; read as is (no table plan).",
+    "Table '41564_2023_1355_MOESM7_ESM.xlsx::3a': 8 column(s) passed through under original names (schema didn't match): ['GBM_ID', 'q_value', 'cliff', 'Prevalence_all', 'Prevalence_HC']...",
+    "Table '41564_2023_1355_MOESM7_ESM.xlsx::3b': selected (relevance=0.20; matched 1/71 schema fields).",
+    "Table '41564_2023_1355_MOESM7_ESM.xlsx::3b': single header row; read as is (no table plan).",
+    "Table '41564_2023_1355_MOESM7_ESM.xlsx::3b': column mapping 'BMI'->bmi [exact].",
+    "Table '41564_2023_1355_MOESM7_ESM.xlsx::3b': 5 column(s) passed through under original names (schema didn't match): ['GBM', 'S.C_reactive_protein', 'P.insulin', 'P.glucose', 'HOMA.IR']",
+    "Table '41564_2023_1355_MOESM8_ESM.xlsx::4a': selected (relevance=0.21; matched 2/71 schema fields).",
+    "Table '41564_2023_1355_MOESM8_ESM.xlsx::4a': single header row; read as is (no table plan).",
+    "Table '41564_2023_1355_MOESM8_ESM.xlsx::4a': 3 column(s) passed through under original names (schema didn't match): ['Species', 'Variable', 'Value']",
+    "Table '41564_2023_1355_MOESM8_ESM.xlsx::4b': skipped, low schema relevance (score=0.05 < 0.15; no schema-matching columns).",
+    "Table '41564_2023_1355_MOESM8_ESM.xlsx::4c': selected (relevance=0.40; matched 1/71 schema fields).",
+    "Table '41564_2023_1355_MOESM8_ESM.xlsx::4c': single header row; read as is (no table plan).",
+    "Table '41564_2023_1355_MOESM8_ESM.xlsx::4c': 4 column(s) passed through under original names (schema didn't match): ['From', 'To', 'Distance', 'Group']",
+    "Table '41564_2023_1355_MOESM8_ESM.xlsx::4d': selected (relevance=0.41; matched 2/71 schema fields).",
+    "Table '41564_2023_1355_MOESM8_ESM.xlsx::4d': structure plan applied (blank cells inside the header span (stacked or merged header); header_rows=[0], melt=no, out_rows=12).",
+    "Table '41564_2023_1355_MOESM8_ESM.xlsx::4d': 15 column(s) passed through under original names (schema didn't match): ['col_0', 'Alistipes.communis', 'Alistipes.putredinis', 'Alistipes.shahii', 'Anaerostipes.hadrus']...",
+    "Table '41564_2023_1355_MOESM8_ESM.xlsx::4e': skipped as measurement matrix (43 rows × 12 cols; feature × samples matrix (taxonomy/genome or transposed fast-path)).",
+    "Table '41564_2023_1355_MOESM8_ESM.xlsx::4g': selected (relevance=0.22; matched 4/71 schema fields).",
+    "Table '41564_2023_1355_MOESM8_ESM.xlsx::4g': single header row; read as is (no table plan).",
+    "Table '41564_2023_1355_MOESM8_ESM.xlsx::4g': 4 column(s) passed through under original names (schema didn't match): ['Bacteroides.uniformis.3212_3222', 'ID', 'Variable', 'Score']",
+    "Table '41564_2023_1355_MOESM9_ESM.xlsx::5a': selected (relevance=0.41; matched 3/71 schema fields).",
+    "Table '41564_2023_1355_MOESM9_ESM.xlsx::5a': single header row; read as is (no table plan).",
+    "Table '41564_2023_1355_MOESM9_ESM.xlsx::5a': 3 column(s) passed through under original names (schema didn't match): ['ID', 'PC1', 'PC2']",
+    "Table '41564_2023_1355_MOESM9_ESM.xlsx::5b': selected (relevance=0.42; matched 5/71 schema fields).",
+    "Table '41564_2023_1355_MOESM9_ESM.xlsx::5b': single header row; read as is (no table plan).",
+    "Table '41564_2023_1355_MOESM9_ESM.xlsx::5b': 6 column(s) passed through under original names (schema didn't match): ['Metabolite', 'q_value', 'cliff', 'Prevalence_all', 'Prevalence_HC']...",
+    "Table '41564_2023_1355_MOESM9_ESM.xlsx::5c and 5d': selected (relevance=0.41; matched 2/71 schema fields).",
+    "Table '41564_2023_1355_MOESM9_ESM.xlsx::5c and 5d': structure plan applied (repeated column groups ('d1'/'d2'); header_rows=[0], melt=no, out_rows=13).",
+    "Table '41564_2023_1355_MOESM9_ESM.xlsx::5c and 5d': column mapping 'Treatment'->treatment [exact].",
+    "Table '41564_2023_1355_MOESM9_ESM.xlsx::5c and 5d': 9 column(s) passed through under original names (schema didn't match): ['Mediator', 'Outcome', 'd1.Prop', 'd1.Prop_p', 'd1.Prop_p.adj']...",
+    "Did not join table '41564_2023_1355_MOESM10_ESM.xlsx::6e' into '41564_2023_1355_MOESM17_ESM.xlsx::10b': no shared canonical key.",
+    "Did not join table '41564_2023_1355_MOESM17_ESM.xlsx::10c' into '41564_2023_1355_MOESM17_ESM.xlsx::10b': no shared canonical key.",
+    "Did not join table '41564_2023_1355_MOESM5_ESM.xlsx::1c' into '41564_2023_1355_MOESM17_ESM.xlsx::10b': no shared canonical key.",
+    "Did not join table '41564_2023_1355_MOESM7_ESM.xlsx::3a' into '41564_2023_1355_MOESM17_ESM.xlsx::10b': no shared canonical key.",
+    "Did not join table '41564_2023_1355_MOESM12_ESM.xlsx' into '41564_2023_1355_MOESM17_ESM.xlsx::10b': no shared canonical key.",
+    "Did not join table '41564_2023_1355_MOESM3_ESM.xlsx::Supplementary Table 2' into '41564_2023_1355_MOESM17_ESM.xlsx::10b': no shared canonical key.",
+    "Did not join table '41564_2023_1355_MOESM6_ESM.xlsx::2c' into '41564_2023_1355_MOESM17_ESM.xlsx::10b': no shared canonical key.",
+    "Did not join table '41564_2023_1355_MOESM9_ESM.xlsx::5b' into '41564_2023_1355_MOESM17_ESM.xlsx::10b': no shared canonical key.",
+    "Did not join table '41564_2023_1355_MOESM11_ESM.xlsx::2g' into '41564_2023_1355_MOESM17_ESM.xlsx::10b': no shared canonical key.",
+    "Did not join table '41564_2023_1355_MOESM6_ESM.xlsx::2a and 2b' into '41564_2023_1355_MOESM17_ESM.xlsx::10b': no shared canonical key.",
+    "Did not join table '41564_2023_1355_MOESM5_ESM.xlsx::1d' into '41564_2023_1355_MOESM17_ESM.xlsx::10b': no shared canonical key.",
+    "Did not join table '41564_2023_1355_MOESM13_ESM.xlsx::5a' into '41564_2023_1355_MOESM17_ESM.xlsx::10b': no shared canonical key.",
+    "Did not join table '41564_2023_1355_MOESM13_ESM.xlsx::5b and 5c' into '41564_2023_1355_MOESM17_ESM.xlsx::10b': no shared canonical key.",
+    "Did not join table '41564_2023_1355_MOESM14_ESM.xlsx' into '41564_2023_1355_MOESM17_ESM.xlsx::10b': no shared canonical key.",
+    "Did not join table '41564_2023_1355_MOESM16_ESM.xlsx::8a' into '41564_2023_1355_MOESM17_ESM.xlsx::10b': no shared canonical key.",
+    "Did not join table '41564_2023_1355_MOESM9_ESM.xlsx::5a' into '41564_2023_1355_MOESM17_ESM.xlsx::10b': no shared canonical key.",
+    "Did not join table '41564_2023_1355_MOESM16_ESM.xlsx::8d and 8e' into '41564_2023_1355_MOESM17_ESM.xlsx::10b': no shared canonical key.",
+    "Did not join table '41564_2023_1355_MOESM8_ESM.xlsx::4d' into '41564_2023_1355_MOESM17_ESM.xlsx::10b': no shared canonical key.",
+    "Did not join table '41564_2023_1355_MOESM9_ESM.xlsx::5c and 5d' into '41564_2023_1355_MOESM17_ESM.xlsx::10b': no shared canonical key.",
+    "Did not join table '41564_2023_1355_MOESM3_ESM.xlsx::Supplementary Table 5' into '41564_2023_1355_MOESM17_ESM.xlsx::10b': no shared canonical key.",
+    "Did not join table '41564_2023_1355_MOESM3_ESM.xlsx::Supplementary Table 7' into '41564_2023_1355_MOESM17_ESM.xlsx::10b': no shared canonical key.",
+    "Did not join table '41564_2023_1355_MOESM3_ESM.xlsx::Supplementary Table 8' into '41564_2023_1355_MOESM17_ESM.xlsx::10b': no shared canonical key.",
+    "Did not join table '41564_2023_1355_MOESM11_ESM.xlsx::2b and 2c' into '41564_2023_1355_MOESM17_ESM.xlsx::10b': no shared canonical key.",
+    "Did not join table '41564_2023_1355_MOESM3_ESM.xlsx::Legends' into '41564_2023_1355_MOESM17_ESM.xlsx::10b': no shared canonical key.",
+    "Did not join table '41564_2023_1355_MOESM3_ESM.xlsx::Supplementary Table 1' into '41564_2023_1355_MOESM17_ESM.xlsx::10b': no shared canonical key.",
+    "Did not join table '41564_2023_1355_MOESM3_ESM.xlsx::Supplementary Table 6' into '41564_2023_1355_MOESM17_ESM.xlsx::10b': no shared canonical key.",
+    "Did not join table '41564_2023_1355_MOESM11_ESM.xlsx::2d' into '41564_2023_1355_MOESM17_ESM.xlsx::10b': no shared canonical key.",
+    "Did not join table '41564_2023_1355_MOESM5_ESM.xlsx::1a' into '41564_2023_1355_MOESM17_ESM.xlsx::10b': no shared canonical key.",
+    "Did not join table '41564_2023_1355_MOESM8_ESM.xlsx::4c' into '41564_2023_1355_MOESM17_ESM.xlsx::10b': no shared canonical key.",
+    "Did not join table '41564_2023_1355_MOESM10_ESM.xlsx::6d' into '41564_2023_1355_MOESM17_ESM.xlsx::10b': no shared canonical key.",
+    "Did not join table '41564_2023_1355_MOESM11_ESM.xlsx::2a' into '41564_2023_1355_MOESM17_ESM.xlsx::10b': no shared canonical key.",
+    "Did not join table '41564_2023_1355_MOESM11_ESM.xlsx::2e and 2f' into '41564_2023_1355_MOESM17_ESM.xlsx::10b': no shared canonical key.",
+    "Did not join table '41564_2023_1355_MOESM10_ESM.xlsx::6b' into '41564_2023_1355_MOESM17_ESM.xlsx::10b': no shared canonical key.",
+    "Did not join table '41564_2023_1355_MOESM10_ESM.xlsx::6c' into '41564_2023_1355_MOESM17_ESM.xlsx::10b': no shared canonical key.",
+    "Did not join table '41564_2023_1355_MOESM3_ESM.xlsx::Supplementary Table 4' into '41564_2023_1355_MOESM17_ESM.xlsx::10b': no shared canonical key.",
+    "Did not join table '41564_2023_1355_MOESM8_ESM.xlsx::4g' into '41564_2023_1355_MOESM17_ESM.xlsx::10b': no shared canonical key.",
+    "Did not join table '41564_2023_1355_MOESM8_ESM.xlsx::4a' into '41564_2023_1355_MOESM17_ESM.xlsx::10b': no shared canonical key.",
+    "Did not join table '41564_2023_1355_MOESM11_ESM.xlsx::2h and 2i' into '41564_2023_1355_MOESM17_ESM.xlsx::10b': no shared canonical key.",
+    "Did not join table '41564_2023_1355_MOESM17_ESM.xlsx::10d' into '41564_2023_1355_MOESM17_ESM.xlsx::10b': no shared canonical key.",
+    "Did not join table '41564_2023_1355_MOESM5_ESM.xlsx::1b' into '41564_2023_1355_MOESM17_ESM.xlsx::10b': no shared canonical key.",
+    "Did not join table '41564_2023_1355_MOESM6_ESM.xlsx::2d' into '41564_2023_1355_MOESM17_ESM.xlsx::10b': no shared canonical key.",
+    "Did not join table '41564_2023_1355_MOESM7_ESM.xlsx::3b' into '41564_2023_1355_MOESM17_ESM.xlsx::10b': no shared canonical key.",
+    "Fan-out of study/subgroup-level values into sample rows: blocked_multi_valued=300, blocked_sample_scope=300, blocked_sample_scope_no_propagation=300, blocked_unit_without_value=100, study_fanout=600."
+  ]
+}

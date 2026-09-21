@@ -1,0 +1,47 @@
+{
+  "source": "unpaywall_pdf",
+  "has_body": true,
+  "pmid": "27723761",
+  "pmcid": null,
+  "doi": "10.1038/nmicrobiol.2016.180",
+  "retrieval_attempts": [
+    {
+      "rung": "pmid_to_pmcid",
+      "returned_text": false,
+      "is_body": false,
+      "chars": 0
+    },
+    {
+      "rung": "pubmed_abstract",
+      "returned_text": true,
+      "is_body": false,
+      "chars": 1325
+    },
+    {
+      "rung": "europepmc_fulltext_by_doi",
+      "returned_text": false,
+      "is_body": false,
+      "chars": 0
+    },
+    {
+      "rung": "europepmc_pdf",
+      "returned_text": false,
+      "is_body": false,
+      "chars": 0
+    },
+    {
+      "rung": "unpaywall_pdf",
+      "returned_text": true,
+      "is_body": true,
+      "chars": 90208
+    }
+  ],
+  "supplementary_included": null,
+  "supplementary_skipped": null,
+  "sra_manifest_source": "ena:PRJNA289586 (221 runs)",
+  "sra_manifest_warnings": [],
+  "n_tables": 1,
+  "text_chars": 90208,
+  "text_sha256": "64e0d4b064c62b75ec1705dbf051ad67ed6c4f2bca46b82abe9cb48a3dacdef3",
+  "tables_sha256": "36f8ad56dc4b6071164aea8cc83600b25350ebbef07a927aa857e7eaf9f09c0a"
+}

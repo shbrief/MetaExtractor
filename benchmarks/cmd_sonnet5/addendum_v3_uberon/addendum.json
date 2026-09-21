@@ -1,6 +1,7 @@
 {
   "source_tree": "/Users/sehyunoh/OmicsMLRepo/MetaExtractor/benchmarks/cmd_sonnet5/out_v3",
   "crosswalks": "/Users/sehyunoh/OmicsMLRepo/MetaExtractor/benchmarks/cmd_sonnet5/crosswalks_uberon",
+  "kit_crosswalks": "/Users/sehyunoh/OmicsMLRepo/MetaExtractor/benchmarks/cmd_sonnet5/crosswalks_uberon_kits",
   "min_score": 0.8,
   "below_threshold": {
     "body_site": [
@@ -665,6 +666,140 @@
           "tn": 437,
           "tp_correct": 1788,
           "tp_wrong": 1155,
+          "fn": 2941,
+          "fp": 0
+        }
+      }
+    },
+    "custom_enum_crosswalks": {
+      "sonnet_r1": {
+        "all_curated": {
+          "precision": 0.6806373397990995,
+          "recall": 0.10457690260777008,
+          "f1": 0.18129815011302303,
+          "tn": 1435,
+          "tp_correct": 1965,
+          "tp_wrong": 922,
+          "fn": 15903,
+          "fp": 0
+        },
+        "matched": {
+          "precision": 0.6806373397990995,
+          "recall": 0.333956492182189,
+          "f1": 0.4480674951544864,
+          "tn": 437,
+          "tp_correct": 1965,
+          "tp_wrong": 922,
+          "fn": 2997,
+          "fp": 0
+        }
+      },
+      "sonnet_r2": {
+        "all_curated": {
+          "precision": 0.7730496453900709,
+          "recall": 0.12182011708355509,
+          "f1": 0.21047308169739323,
+          "tn": 1435,
+          "tp_correct": 2289,
+          "tp_wrong": 672,
+          "fn": 15829,
+          "fp": 0
+        },
+        "matched": {
+          "precision": 0.7730496453900709,
+          "recall": 0.3890210740992522,
+          "f1": 0.5175805539853023,
+          "tn": 437,
+          "tp_correct": 2289,
+          "tp_wrong": 672,
+          "fn": 2923,
+          "fp": 0
+        }
+      },
+      "sonnet_r3": {
+        "all_curated": {
+          "precision": 0.7518905293482175,
+          "recall": 0.11112293773283662,
+          "f1": 0.1936291556544721,
+          "tn": 1435,
+          "tp_correct": 2088,
+          "tp_wrong": 689,
+          "fn": 16013,
+          "fp": 0
+        },
+        "matched": {
+          "precision": 0.7518905293482175,
+          "recall": 0.3548606390210741,
+          "f1": 0.4821614132317285,
+          "tn": 437,
+          "tp_correct": 2088,
+          "tp_wrong": 689,
+          "fn": 3107,
+          "fp": 0
+        }
+      },
+      "haiku_r1": {
+        "all_curated": {
+          "precision": 0.6678260869565218,
+          "recall": 0.0817456093666844,
+          "f1": 0.1456614509246088,
+          "tn": 1435,
+          "tp_correct": 1536,
+          "tp_wrong": 764,
+          "fn": 16490,
+          "fp": 0
+        },
+        "matched": {
+          "precision": 0.6678260869565218,
+          "recall": 0.3272262462718364,
+          "f1": 0.4392336288247069,
+          "tn": 437,
+          "tp_correct": 1536,
+          "tp_wrong": 764,
+          "fn": 2394,
+          "fp": 0
+        }
+      },
+      "haiku_r2": {
+        "all_curated": {
+          "precision": 0.6886405959031657,
+          "recall": 0.09840340606705694,
+          "f1": 0.17220023282887076,
+          "tn": 1435,
+          "tp_correct": 1849,
+          "tp_wrong": 836,
+          "fn": 16105,
+          "fp": 0
+        },
+        "matched": {
+          "precision": 0.6886405959031657,
+          "recall": 0.3142420122365738,
+          "f1": 0.4315556074221029,
+          "tn": 437,
+          "tp_correct": 1849,
+          "tp_wrong": 836,
+          "fn": 3199,
+          "fp": 0
+        }
+      },
+      "haiku_r3": {
+        "all_curated": {
+          "precision": 0.6659870880054366,
+          "recall": 0.10431080361894625,
+          "f1": 0.18037086458381263,
+          "tn": 1435,
+          "tp_correct": 1960,
+          "tp_wrong": 983,
+          "fn": 15847,
+          "fp": 0
+        },
+        "matched": {
+          "precision": 0.6659870880054366,
+          "recall": 0.33310673011556763,
+          "f1": 0.44409199048374304,
+          "tn": 437,
+          "tp_correct": 1960,
+          "tp_wrong": 983,
           "fn": 2941,
           "fp": 0
         }

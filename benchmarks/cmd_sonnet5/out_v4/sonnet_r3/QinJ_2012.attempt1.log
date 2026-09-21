@@ -1,0 +1,11 @@
+cmd: /Users/sehyunoh/.pyenv/versions/3.14.0/bin/python3 -m metaextractor.cli --paper-id 23023125 --schema /Users/sehyunoh/OmicsMLRepo/MetaExtractor/benchmarks/cmd_sonnet5/cmd.clean.linkml.yaml --model claude-sonnet-5 --age-rules /Users/sehyunoh/OmicsMLRepo/MetaExtractor/benchmarks/cmd_sonnet5/age_rules_cmd.json --fetch-cache /Users/sehyunoh/OmicsMLRepo/MetaExtractor/benchmarks/cmd_sonnet5/out_v4/_fetch/QinJ_2012 --require-fetch-cache --out /Users/sehyunoh/OmicsMLRepo/MetaExtractor/benchmarks/cmd_sonnet5/out_v4/sonnet_r3/QinJ_2012.json --csv /Users/sehyunoh/OmicsMLRepo/MetaExtractor/benchmarks/cmd_sonnet5/out_v4/sonnet_r3/QinJ_2012.csv --csv-provenance --save-text /Users/sehyunoh/OmicsMLRepo/MetaExtractor/benchmarks/cmd_sonnet5/out_v4/sonnet_r3/QinJ_2012.text.txt --run-meta /Users/sehyunoh/OmicsMLRepo/MetaExtractor/benchmarks/cmd_sonnet5/out_v4/sonnet_r3/QinJ_2012.meta.json --api-key file:/Users/sehyunoh/OmicsMLRepo/MetaHarmonizerEval/vignettes/keys/llm_baseline
+status: ok
+returncode: 0
+elapsed_s: 83.5
+--- stderr ---
+[loaded frozen retrieval pubmed_abstract for 23023125]
+[note: no article body was reachable for this paper — only an abstract was retrieved (NCBI PMC and Europe PMC full text were unavailable). For full text, download the publisher/bioRxiv PDF and pass it with --paper FILE.pdf (optionally keeping --paper-id for the identifier). Pass --supplementary PATH [PATH ...] to add locally-downloaded supplementary files.]
+[wrote CSV: /Users/sehyunoh/OmicsMLRepo/MetaExtractor/benchmarks/cmd_sonnet5/out_v4/sonnet_r3/QinJ_2012.csv]
+[usage: 3 call(s); input=9,105, cache_write=463, cache_read=5,462, output=11,678]
+[cost: $0.1372 (input $0.0182 + cache_w $0.0012 + cache_r $0.0011 + output $0.1168)]
+

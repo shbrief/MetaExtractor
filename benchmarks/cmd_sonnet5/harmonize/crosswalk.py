@@ -70,6 +70,11 @@ def corpus_csv(field: str) -> pathlib.Path | None:
         "disease": HERE / "disease_corpus_v041.csv",   # v0.4.1 combined: C7057 + static Healthy
         "body_site": _bodysite_corpus(),
         "treatment": _treatment_corpus(),               # NCIt Pharmacologic Substance (C1909)
+        # The two corpus.type = custom_enum fields: a local vocabulary aligning the
+        # schema's allowed values with cMD's curated tokens, so "Illumina HiSeq" and
+        # "IlluminaHiSeq" compare as one concept (harmonize/build_custom_enum_corpora.py).
+        "sequencing_platform": HERE / "sequencing_platform_corpus.csv",
+        "dna_extraction_kit": HERE / "dna_extraction_kit_corpus.csv",
     }.get(field)
 
 

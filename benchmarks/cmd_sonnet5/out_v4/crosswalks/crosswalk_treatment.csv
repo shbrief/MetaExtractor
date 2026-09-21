@@ -1,0 +1,30 @@
+query,ref_match,stage,match1,match1_score,match1_code
+Leucovorin,Not Found,1.0,Not Found,1.0,
+Methotrexate,Not Found,1.0,Not Found,1.0,
+atovaquone,Not Found,1.0,Not Found,1.0,
+mefloquine,Not Found,1.0,Not Found,1.0,
+proguanil,Not Found,1.0,Not Found,1.0,
+Antimalarial chemoprophylaxis,Not Found,2.5,Antimalarial Agent,0.8215,NCIT:C271
+Antipsychotics,Not Found,2.0,Antipsychotic Agent,0.9517,NCIT:C29710
+Benzodiazepines,Not Found,2.0,Benzodiazepine,1.0000,NCIT:C1012
+Cognitive behavioural therapy,Not Found,2.5,Cytembena,0.5729,NCIT:C1360
+Dextran sodium sulfate,Not Found,2.5,Dextran 70,0.7695,NCIT:C87482
+Dextran sodium sulfate (DSS),Not Found,2.0,Dextran 70,0.7495,NCIT:C87482
+Duodenal tube feeding,Not Found,2.5,Diphtheria Toxoid/Tetanus Toxoid Vaccine Adsorbed,0.5766,NCIT:C91718
+Fecal microbiota transplantation,Not Found,2.5,Fecal Microbiota Transplantation Capsule,0.8082,NCIT:C168520
+Fecal microbiota transplantation (FMT),Not Found,2.5,Fecal Microbiota Transplantation Capsule,0.7828,NCIT:C168520
+Folic acid,Not Found,2.5,Folic Acid Derivative,0.8160,NCIT:C2078
+Insulin replacement therapy,Not Found,2.5,Therapeutic Insulin,0.7572,NCIT:C581
+Methotrexate (MTX),Not Found,2.0,Methotrexate,0.9605,NCIT:C642
+Multidisciplinary specialized treatment,Not Found,2.5,Donor Derived HIV-Specific T-cells with Non-escaped Epitope Targets,0.5768,NCIT:C178128
+Not treated (no antihypertensive treatment),Not Found,2.5,Antihypertensive Agent,0.6715,NCIT:C270
+Selective serotonin re-uptake inhibitors,Not Found,2.0,Selective Serotonin Reuptake Inhibitor,0.9076,NCIT:C94725
+Selective serotonin reuptake inhibitors (SSRIs),Not Found,2.0,Selective Serotonin Reuptake Inhibitor,0.9289,NCIT:C94725
+Specialized multidisciplinary treatment,Not Found,2.5,Allogeneic Multipotent Adult Progenitor Cells,0.5494,NCIT:C77874
+Supplemental nutrition drinks,Not Found,2.5,Jing Si Herbal Tea,0.6083,NCIT:C189811
+antimalarial chemoprophylaxis,Not Found,2.5,Antimalarial Agent,0.8215,NCIT:C271
+antipsychotics,Not Found,2.0,Antipsychotic Agent,0.9517,NCIT:C29710
+benzodiazepines,Not Found,2.0,Benzodiazepine,1.0000,NCIT:C1012
+fecal microbiota transplantation,Not Found,2.5,Fecal Microbiota Transplantation Capsule,0.8082,NCIT:C168520
+insulin replacement therapy,Not Found,2.5,Therapeutic Insulin,0.7572,NCIT:C581
+selective serotonin re-uptake inhibitors,Not Found,2.0,Selective Serotonin Reuptake Inhibitor,0.9076,NCIT:C94725

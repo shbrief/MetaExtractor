@@ -1,0 +1,152 @@
+{
+  "source": "pmc_fulltext",
+  "has_body": true,
+  "pmid": "30661755",
+  "pmcid": "6349461",
+  "doi": null,
+  "retrieval_attempts": [
+    {
+      "rung": "pmc_fulltext",
+      "returned_text": true,
+      "is_body": true,
+      "chars": 98276
+    }
+  ],
+  "supplementary_included": [
+    "mmc1.xlsx",
+    "mmc2.xlsx",
+    "mmc3.xlsx",
+    "mmc4.xlsx",
+    "mmc5.xlsx",
+    "mmc6.xlsx",
+    "mmc7.xlsx"
+  ],
+  "supplementary_skipped": [
+    [
+      "figs1.gif",
+      "europepmc: ValueError: image-only (.gif)"
+    ],
+    [
+      "figs1.jpg",
+      "europepmc: ValueError: image-only (.jpg)"
+    ],
+    [
+      "figs2.gif",
+      "europepmc: ValueError: image-only (.gif)"
+    ],
+    [
+      "figs2.jpg",
+      "europepmc: ValueError: image-only (.jpg)"
+    ],
+    [
+      "figs3.gif",
+      "europepmc: ValueError: image-only (.gif)"
+    ],
+    [
+      "figs3.jpg",
+      "europepmc: ValueError: image-only (.jpg)"
+    ],
+    [
+      "figs4.gif",
+      "europepmc: ValueError: image-only (.gif)"
+    ],
+    [
+      "figs4.jpg",
+      "europepmc: ValueError: image-only (.jpg)"
+    ],
+    [
+      "figs5.gif",
+      "europepmc: ValueError: image-only (.gif)"
+    ],
+    [
+      "figs5.jpg",
+      "europepmc: ValueError: image-only (.jpg)"
+    ],
+    [
+      "figs6.gif",
+      "europepmc: ValueError: image-only (.gif)"
+    ],
+    [
+      "figs6.jpg",
+      "europepmc: ValueError: image-only (.jpg)"
+    ],
+    [
+      "figs7.gif",
+      "europepmc: ValueError: image-only (.gif)"
+    ],
+    [
+      "figs7.jpg",
+      "europepmc: ValueError: image-only (.jpg)"
+    ],
+    [
+      "fx1.gif",
+      "europepmc: ValueError: image-only (.gif)"
+    ],
+    [
+      "fx1.jpg",
+      "europepmc: ValueError: image-only (.jpg)"
+    ],
+    [
+      "gr1.gif",
+      "europepmc: ValueError: image-only (.gif)"
+    ],
+    [
+      "gr1.jpg",
+      "europepmc: ValueError: image-only (.jpg)"
+    ],
+    [
+      "gr2.gif",
+      "europepmc: ValueError: image-only (.gif)"
+    ],
+    [
+      "gr2.jpg",
+      "europepmc: ValueError: image-only (.jpg)"
+    ],
+    [
+      "gr3.gif",
+      "europepmc: ValueError: image-only (.gif)"
+    ],
+    [
+      "gr3.jpg",
+      "europepmc: ValueError: image-only (.jpg)"
+    ],
+    [
+      "gr4.gif",
+      "europepmc: ValueError: image-only (.gif)"
+    ],
+    [
+      "gr4.jpg",
+      "europepmc: ValueError: image-only (.jpg)"
+    ],
+    [
+      "gr5.gif",
+      "europepmc: ValueError: image-only (.gif)"
+    ],
+    [
+      "gr5.jpg",
+      "europepmc: ValueError: image-only (.jpg)"
+    ],
+    [
+      "gr6.gif",
+      "europepmc: ValueError: image-only (.gif)"
+    ],
+    [
+      "gr6.jpg",
+      "europepmc: ValueError: image-only (.jpg)"
+    ],
+    [
+      "gr7.gif",
+      "europepmc: ValueError: image-only (.gif)"
+    ],
+    [
+      "gr7.jpg",
+      "europepmc: ValueError: image-only (.jpg)"
+    ]
+  ],
+  "sra_manifest_source": "ena:PRJNA485056+PRJNA504891 (164 runs)",
+  "sra_manifest_warnings": [],
+  "n_tables": 21,
+  "text_chars": 98276,
+  "text_sha256": "1cc39adcb8b6386cdec02b4417b8c706435f8f7b1a2ddc432f4f381604c11d7f",
+  "tables_sha256": "17b282ea738fdc53cabe77cd4a3fa9b2601e935505e8be6f17506fb2d8b9650a"
+}

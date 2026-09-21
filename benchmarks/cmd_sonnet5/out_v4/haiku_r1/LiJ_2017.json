@@ -1,0 +1,1416 @@
+{
+  "paper_id": "28143587",
+  "granularity": "sample_level",
+  "subgroups": [],
+  "fields": {
+    "disease_details": {
+      "value": [
+        "Hypertension",
+        "Pre-hypertension",
+        "Healthy"
+      ],
+      "by_subgroup": {
+        "healthy controls": [
+          "Healthy"
+        ],
+        "pre-hypertension": [
+          "Pre-hypertension"
+        ],
+        "primary hypertension": [
+          "Hypertension"
+        ],
+        "HTN mice": [
+          "Hypertension"
+        ],
+        "control mice": [
+          "Healthy"
+        ]
+      },
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "41 healthy controls, 56 subjects with pre-hypertension, 99 individuals with primary hypertension",
+      "section": "Abstract",
+      "notes": null
+    },
+    "disease_response_orr": {
+      "value": "not_reported",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "",
+      "section": "",
+      "notes": "Study is observational/mechanistic; no treatment response or overall response rate reported."
+    },
+    "disease_response_pfs": {
+      "value": "not_reported",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "",
+      "section": "",
+      "notes": "Not applicable; this is a microbiome/metabolomics study, not an oncology treatment trial."
+    },
+    "disease_response_pfs_month": {
+      "value": "not_reported",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "",
+      "section": "",
+      "notes": "Not applicable; no PFS data reported."
+    },
+    "disease_response_recist": {
+      "value": "not_reported",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "",
+      "section": "",
+      "notes": "Not applicable; not an oncology study using RECIST criteria."
+    },
+    "feces_phenotype": {
+      "value": [
+        "Microbial richness",
+        "Microbial diversity",
+        "Enterotype",
+        "Bacterial composition",
+        "Metagenomic composition",
+        "Metabolic profiling"
+      ],
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "dramatically decreased microbial richness and diversity, Prevotella-dominated gut enterotype, distinct metagenomic composition",
+      "section": "Abstract",
+      "notes": null
+    },
+    "fmt_id": {
+      "value": [
+        "HTN donor 1",
+        "HTN donor 2",
+        "Control donor 1"
+      ],
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "inferred",
+      "confidence": "medium",
+      "evidence_quote": "fecal bacteria from hypertensive patients were transplanted to GF mice; two patients of HTN and one normotensive control",
+      "section": "Results — High BP is transferrable by fecal transplant",
+      "notes": "Paper does not assign explicit IDs; inferred numbering based on donor count (2 HTN, 1 control)."
+    },
+    "fmt_role": {
+      "value": [
+        "Donor",
+        "Recipient (after procedure)"
+      ],
+      "by_subgroup": {
+        "healthy controls": [
+          "Donor"
+        ],
+        "primary hypertension": [
+          "Donor"
+        ],
+        "HTN mice": [
+          "Recipient (after procedure)"
+        ],
+        "control mice": [
+          "Recipient (after procedure)"
+        ]
+      },
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "fecal bacteria from hypertensive patients were transplanted to GF mice; Male GF mice aged 8–10 weeks were orally inoculated with prepared fecal contents",
+      "section": "Results — High BP is transferrable by fecal transplant",
+      "notes": null
+    },
+    "hla": {
+      "value": "not_reported",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "",
+      "section": "",
+      "notes": "No HLA typing information reported in the paper."
+    },
+    "neonatal_birth_weight": {
+      "value": "not_reported",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "",
+      "section": "",
+      "notes": "Not applicable; study involves adult and mouse populations, not neonates."
+    },
+    "neonatal_delivery_procedure": {
+      "value": "not_reported",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "",
+      "section": "",
+      "notes": "Not applicable; no neonatal delivery information reported."
+    },
+    "neonatal_feeding_method": {
+      "value": "not_reported",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "",
+      "section": "",
+      "notes": "Not applicable; no infant feeding method data reported."
+    },
+    "neonatal_gestational_age": {
+      "value": "not_reported",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "",
+      "section": "",
+      "notes": "Not applicable; study involves adults and mice."
+    },
+    "neonatal_preterm_birth": {
+      "value": "not_reported",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "",
+      "section": "",
+      "notes": "Not applicable; no neonatal birth data reported."
+    },
+    "obgyn_birth_control": {
+      "value": "not_reported",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "",
+      "section": "",
+      "notes": "Not reported in the paper."
+    },
+    "obgyn_lactating": {
+      "value": "not_reported",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "",
+      "section": "",
+      "notes": "Not reported in the paper."
+    },
+    "obgyn_menopause": {
+      "value": "not_reported",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "",
+      "section": "",
+      "notes": "Not reported in the paper."
+    },
+    "obgyn_pregnancy": {
+      "value": "not_reported",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "",
+      "section": "",
+      "notes": "Not reported; no pregnancy status data available."
+    },
+    "smoker": {
+      "value": [
+        "Non-smoker"
+      ],
+      "by_subgroup": {
+        "healthy controls": [
+          "Non-smoker"
+        ],
+        "pre-hypertension": [
+          "Non-smoker"
+        ],
+        "primary hypertension": [
+          "Non-smoker"
+        ]
+      },
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "Patients suffering from cancer, heart failure, renal failure, smoking, stroke, peripheral artery disease, and chronic inflammatory disease were all excluded.",
+      "section": "Methods — Study cohort and patient characteristics",
+      "notes": "Smoking was an exclusion criterion; all participants were non-smokers."
+    },
+    "treatment": {
+      "value": [
+        "not_reported"
+      ],
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "All the subjects in the hypertension group were newly diagnosed hypertensive patients prior to antihypertensive treatment.",
+      "section": "Results — GM diversity and enterotype in pHTN and HTN",
+      "notes": "Participants were treatment-naive at enrollment; no active antihypertensive treatment was administered during the study."
+    },
+    "tumor_staging_ajcc": {
+      "value": "not_reported",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "",
+      "section": "",
+      "notes": "Not applicable; this is not an oncology study."
+    },
+    "tumor_staging_tnm": {
+      "value": "not_reported",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "",
+      "section": "",
+      "notes": "Not applicable; no tumor staging data reported."
+    },
+    "biomarker_name": {
+      "value": [
+        "Shannon index (alpha diversity)",
+        "Gene richness",
+        "Prevotella abundance",
+        "Klebsiella abundance",
+        "Faecalibacterium abundance",
+        "Roseburia abundance",
+        "Bifidobacterium abundance",
+        "Blood pressure (SBP)",
+        "Blood pressure (DBP)",
+        "Phosphatidylserine",
+        "Lysophosphatidylcholine",
+        "Lysophosphatidylethanolamine",
+        "N-acetyl-L-arginine",
+        "Stearic acid",
+        "Phosphatidic acid"
+      ],
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "Shannon index, gene richness, Prevotella, Klebsiella, Faecalibacterium, Roseburia, Bifidobacterium; phosphatidylserine, lysophosphatidylcholine",
+      "section": "Results — Multiple sections",
+      "notes": null
+    },
+    "biomarker_unit": {
+      "value": [
+        "index",
+        "genes",
+        "relative abundance",
+        "mmHg",
+        "ng/mL"
+      ],
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "inferred",
+      "confidence": "medium",
+      "evidence_quote": "Shannon index based on the genera profile; The number of genes; SBP, DBP; serum samples",
+      "section": "Results — Multiple sections",
+      "notes": "Units inferred from methodology; not all explicitly stated for all biomarkers."
+    },
+    "biomarker_value": {
+      "value": [
+        "P = 0.023 (C vs P); P = 0.016 (C vs H) for Shannon index",
+        "P = 0.024 (C vs P); P = 0.04 (C vs H) for gene count",
+        "Decreased in pHTN and HTN",
+        "Elevated in pHTN and HTN",
+        "Declined in pHTN and HTN",
+        "SBP higher in HTN mice (P = 0.018)",
+        "DBP higher in HTN mice (P = 0.019)"
+      ],
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "α diversity at the genus level was much lower in pHTN and HTN groups (P = 0.023, C vs P; P = 0.016, C vs H); HTN mice exhibited significantly higher SBP, DBP (P < 0.05)",
+      "section": "Results — Multiple sections",
+      "notes": null
+    },
+    "disease_response_os": {
+      "value": "not_reported",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "",
+      "section": "",
+      "notes": "Not applicable; this is not a mortality-tracking treatment trial."
+    },
+    "disease_response_os_unit": {
+      "value": "not_reported",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "",
+      "section": "",
+      "notes": "Not applicable; no overall survival data."
+    },
+    "ecog_performance_status": {
+      "value": "not_reported",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "",
+      "section": "",
+      "notes": "Not reported; ECOG performance status is not relevant to this hypertension microbiome study."
+    },
+    "feces_phenotype_value": {
+      "value": [
+        "Decreased microbial richness and diversity in pHTN and HTN",
+        "48.21% pHTN and 45.45% HTN in enterotype 1 (Prevotella-dominated)",
+        "73.17% controls in enterotype 2 (Bacteroides-dominated)",
+        "Reduced alpha diversity in HTN mice (P = 0.048)",
+        "128 genera colonized in HTN mice; 110 in control mice"
+      ],
+      "by_subgroup": {
+        "healthy controls": [
+          "Higher microbial richness and diversity",
+          "73.17% in enterotype 2 (Bacteroides-dominated)"
+        ],
+        "pre-hypertension": [
+          "Dramatically decreased microbial richness and diversity",
+          "48.21% in enterotype 1 (Prevotella-dominated)"
+        ],
+        "primary hypertension": [
+          "Dramatically decreased microbial richness and diversity",
+          "45.45% in enterotype 1 (Prevotella-dominated)"
+        ],
+        "HTN mice": [
+          "Reduced alpha diversity (P = 0.048)",
+          "128 genera colonized"
+        ],
+        "control mice": [
+          "Higher alpha diversity",
+          "110 genera colonized"
+        ]
+      },
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "dramatically decreased microbial richness and diversity; 26.83% normotensive controls, 48.21% pHTN, and 45.45% HTN are found in enterotype 1",
+      "section": "Results — GM diversity and enterotype in pHTN and HTN",
+      "notes": null
+    },
+    "tumor_size_measurement": {
+      "value": "not_reported",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "",
+      "section": "",
+      "notes": "Not applicable; this is not an oncology study."
+    },
+    "tumor_size_residual_measurement": {
+      "value": "not_reported",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "",
+      "section": "",
+      "notes": "Field not applicable to this study; paper focuses on gut microbiota and hypertension, not tumor treatment."
+    },
+    "uncurated_metadata": {
+      "value": [
+        "Cohort study among employees of Kailuan Group Corporation in Tangshan, China",
+        "Metagenomic sequencing of 196 participants: 41 controls, 56 pre-hypertensive, 99 hypertensive",
+        "Fecal microbiota transplantation performed into germ-free mice",
+        "Metabolomic analysis of 124 serum samples via LC/MS",
+        "Newly diagnosed hypertensive patients prior to antihypertensive treatment",
+        "Excluded: cancer, heart failure, renal failure, smoking, stroke, peripheral artery disease, chronic inflammatory disease"
+      ],
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "All the individuals in the present study were from a cohort study among employees of the Kailuan Group Corporation.",
+      "section": "Methods — Study cohort and patient characteristics",
+      "notes": null
+    },
+    "study_name": {
+      "value": "Kailuan",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "The Kailuan study is a prospective cohort study focusing on the Kailuan community.",
+      "section": "Methods — Study cohort and patient characteristics",
+      "notes": null
+    },
+    "curator": {
+      "value": "not_reported",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "",
+      "section": "",
+      "notes": "No curator information provided in paper."
+    },
+    "pmid": {
+      "value": 28143587,
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "",
+      "section": "Paper ID",
+      "notes": null
+    },
+    "target_condition": {
+      "value": [
+        "Hypertension",
+        "Pre-hypertension"
+      ],
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "Gut microbiota dysbiosis contributes to the development of hypertension. Hypertension is one of the most prevalent cardiovascular diseases worldwide.",
+      "section": "Title and Abstract",
+      "notes": null
+    },
+    "antibiotics_exclusion_period": {
+      "value": 8,
+      "by_subgroup": null,
+      "unit": "Week",
+      "normalized_value": 8,
+      "normalized_unit": "Week",
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "Individuals were also excluded if they had received antibiotics or probiotics within the last 8 weeks.",
+      "section": "Methods — Study cohort and patient characteristics",
+      "notes": null
+    },
+    "antibiotics_exclusion_period_unit": {
+      "value": "Week",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "Individuals were also excluded if they had received antibiotics or probiotics within the last 8 weeks.",
+      "section": "Methods — Study cohort and patient characteristics",
+      "notes": null
+    },
+    "dna_extraction_kit": {
+      "value": "TIANGEN",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "Bacterial DNA was extracted at Novogene Bioinformatics Technology Co., Ltd using TIANGEN kit according to the manufacturer's recommendations.",
+      "section": "Methods — Stool sample collection and DNA extraction",
+      "notes": null
+    },
+    "sequencing_platform": {
+      "value": "Illumina HiSeq",
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "All samples were paired-end sequenced on the Illumina platform (insert size 300 bp, read length 125 bp).",
+      "section": "Methods — Metagenomic sequencing and gene catalogue construction",
+      "notes": "Metagenomic analysis used Illumina platform; 16S sequencing used Illumina HiSeq V4 region."
+    },
+    "host_species": {
+      "value": [
+        "Human",
+        "Mouse"
+      ],
+      "by_subgroup": null,
+      "unit": null,
+      "normalized_value": null,
+      "normalized_unit": null,
+      "extraction_type": "directly_stated",
+      "confidence": "high",
+      "evidence_quote": "We performed deep metagenomic sequencing of stool samples from 196 participants. Male GF mice at 8–10 weeks were divided into groups and orally inoculated.",
+      "section": "Methods and Results",
+      "notes": "Study includes both human participants (196 individuals) and mouse models (germ-free C57BL/6L mice) for fecal microbiota transplantation experiments."
+    }
+  },
+  "samples": [
+    {
+      "Stage": "Control",
+      "sample_id": "NLF006",
+      "Shannon index": "2.63812456",
+      "sex": "female",
+      "age": "27",
+      "Height (cm)": "159",
+      "Weight (kg)": "45",
+      "BMI (kg/m2)": "17.8",
+      "Diabetic (Y or N)": "N",
+      "FBG (mmol/L)": "5.23",
+      "SBP (mm Hg)": "115",
+      "DBP (mm Hg)": "70",
+      "FINS (mU/L)": "15.57",
+      "FCP (ng/ml)": "-",
+      "HBALC (%)": "5.6",
+      "TG (mmol/L)": "0.68",
+      "TCHO (mmol/L)": "4.76",
+      "HDL (mmol/L)": "1.13",
+      "LDL (mmol/L)": "2.9",
+      "col_19": "",
+      "col_20": "-",
+      "col_21": "Missing data",
+      "col_22": "",
+      "study_name": "Kailuan",
+      "pmid": "28143587",
+      "target_condition": "Hypertension; Pre-hypertension",
+      "antibiotics_exclusion_period": "8",
+      "dna_extraction_kit": "TIANGEN",
+      "sequencing_platform": "Illumina HiSeq",
+      "host_species": "Human; Mouse",
+      "antibiotics_exclusion_period_unit": "Week",
+      "age_min": "27",
+      "age_max": "27"
+    },
+    {
+      "Stage": "Control",
+      "sample_id": "SZEY-103A",
+      "Shannon index": "2.888387249",
+      "sex": "male",
+      "age": "50",
+      "Height (cm)": "153",
+      "Weight (kg)": "60",
+      "BMI (kg/m2)": "25.63",
+      "Diabetic (Y or N)": "N",
+      "FBG (mmol/L)": "4.89",
+      "SBP (mm Hg)": "124",
+      "DBP (mm Hg)": "70",
+      "FINS (mU/L)": "2.74",
+      "FCP (ng/ml)": "-",
+      "HBALC (%)": "5.1",
+      "TG (mmol/L)": "1.08",
+      "TCHO (mmol/L)": "4.93",
+      "HDL (mmol/L)": "1.3",
+      "LDL (mmol/L)": "2.71",
+      "col_19": "",
+      "col_20": "BMI",
+      "col_21": "Body mass index",
+      "col_22": "",
+      "study_name": "Kailuan",
+      "pmid": "28143587",
+      "target_condition": "Hypertension; Pre-hypertension",
+      "antibiotics_exclusion_period": "8",
+      "dna_extraction_kit": "TIANGEN",
+      "sequencing_platform": "Illumina HiSeq",
+      "host_species": "Human; Mouse",
+      "antibiotics_exclusion_period_unit": "Week",
+      "age_min": "50",
+      "age_max": "50"
+    },
+    {
+      "Stage": "Control",
+      "sample_id": "SZEY-104A",
+      "Shannon index": "2.532238967",
+      "sex": "male",
+      "age": "50",
+      "Height (cm)": "153",
+      "Weight (kg)": "54",
+      "BMI (kg/m2)": "23.07",
+      "Diabetic (Y or N)": "N",
+      "FBG (mmol/L)": "5.67",
+      "SBP (mm Hg)": "118",
+      "DBP (mm Hg)": "74",
+      "FINS (mU/L)": "5.54",
+      "FCP (ng/ml)": "-",
+      "HBALC (%)": "5.6",
+      "TG (mmol/L)": "0.79",
+      "TCHO (mmol/L)": "4.19",
+      "HDL (mmol/L)": "0.96",
+      "LDL (mmol/L)": "2.26",
+      "col_19": "",
+      "col_20": "FBG",
+      "col_21": "Fasting blood glucose",
+      "col_22": "",
+      "study_name": "Kailuan",
+      "pmid": "28143587",
+      "target_condition": "Hypertension; Pre-hypertension",
+      "antibiotics_exclusion_period": "8",
+      "dna_extraction_kit": "TIANGEN",
+      "sequencing_platform": "Illumina HiSeq",
+      "host_species": "Human; Mouse",
+      "antibiotics_exclusion_period_unit": "Week",
+      "age_min": "50",
+      "age_max": "50"
+    },
+    {
+      "Stage": "Hypertension",
+      "sample_id": "NOM007",
+      "Shannon index": "2.520849691",
+      "sex": "male",
+      "age": "72",
+      "Height (cm)": "172",
+      "Weight (kg)": "70",
+      "BMI (kg/m2)": "23.66",
+      "Diabetic (Y or N)": "N",
+      "FBG (mmol/L)": "5.62",
+      "SBP (mm Hg)": "160",
+      "DBP (mm Hg)": "100",
+      "FINS (mU/L)": "14.48",
+      "FCP (ng/ml)": "-",
+      "HBALC (%)": "5.6",
+      "TG (mmol/L)": "2",
+      "TCHO (mmol/L)": "5.04",
+      "HDL (mmol/L)": "0.96",
+      "LDL (mmol/L)": "3.33",
+      "col_19": "",
+      "col_20": "SBP",
+      "col_21": "Systolic blood pressure",
+      "col_22": "",
+      "study_name": "Kailuan",
+      "pmid": "28143587",
+      "target_condition": "Hypertension; Pre-hypertension",
+      "antibiotics_exclusion_period": "8",
+      "dna_extraction_kit": "TIANGEN",
+      "sequencing_platform": "Illumina HiSeq",
+      "host_species": "Human; Mouse",
+      "antibiotics_exclusion_period_unit": "Week",
+      "age_min": "72",
+      "age_max": "72"
+    },
+    {
+      "Stage": "Hypertension",
+      "sample_id": "SZEY-101A",
+      "Shannon index": "2.347318772",
+      "sex": "male",
+      "age": "47",
+      "Height (cm)": "169",
+      "Weight (kg)": "76",
+      "BMI (kg/m2)": "26.61",
+      "Diabetic (Y or N)": "N",
+      "FBG (mmol/L)": "4.53",
+      "SBP (mm Hg)": "151",
+      "DBP (mm Hg)": "97",
+      "FINS (mU/L)": "4.32",
+      "FCP (ng/ml)": "-",
+      "HBALC (%)": "5.2",
+      "TG (mmol/L)": "1.12",
+      "TCHO (mmol/L)": "4.56",
+      "HDL (mmol/L)": "0.7",
+      "LDL (mmol/L)": "2.87",
+      "col_19": "",
+      "col_20": "DBP",
+      "col_21": "Diastolic blood pressure",
+      "col_22": "",
+      "study_name": "Kailuan",
+      "pmid": "28143587",
+      "target_condition": "Hypertension; Pre-hypertension",
+      "antibiotics_exclusion_period": "8",
+      "dna_extraction_kit": "TIANGEN",
+      "sequencing_platform": "Illumina HiSeq",
+      "host_species": "Human; Mouse",
+      "antibiotics_exclusion_period_unit": "Week",
+      "age_min": "47",
+      "age_max": "47"
+    },
+    {
+      "Stage": "Hypertension",
+      "sample_id": "SZEY-99A",
+      "Shannon index": "2.45083481",
+      "sex": "male",
+      "age": "46",
+      "Height (cm)": "161",
+      "Weight (kg)": "59",
+      "BMI (kg/m2)": "22.76",
+      "Diabetic (Y or N)": "N",
+      "FBG (mmol/L)": "4.96",
+      "SBP (mm Hg)": "170",
+      "DBP (mm Hg)": "94",
+      "FINS (mU/L)": "5.72",
+      "FCP (ng/ml)": "-",
+      "HBALC (%)": "5",
+      "TG (mmol/L)": "0.85",
+      "TCHO (mmol/L)": "4.52",
+      "HDL (mmol/L)": "1.41",
+      "LDL (mmol/L)": "2.11",
+      "col_19": "",
+      "col_20": "FINS",
+      "col_21": "Fasting serum insulin",
+      "col_22": "",
+      "study_name": "Kailuan",
+      "pmid": "28143587",
+      "target_condition": "Hypertension; Pre-hypertension",
+      "antibiotics_exclusion_period": "8",
+      "dna_extraction_kit": "TIANGEN",
+      "sequencing_platform": "Illumina HiSeq",
+      "host_species": "Human; Mouse",
+      "antibiotics_exclusion_period_unit": "Week",
+      "age_min": "46",
+      "age_max": "46"
+    }
+  ],
+  "sample_provenance": [
+    {
+      "Stage": "table:40168_2016_222_MOESM2_ESM.xlsx::Table S6:Stage",
+      "sample_id": "table:40168_2016_222_MOESM2_ESM.xlsx::Table S6:Sample ID",
+      "Shannon index": "table:40168_2016_222_MOESM2_ESM.xlsx::Table S6:Shannon index",
+      "sex": "table:40168_2016_222_MOESM2_ESM.xlsx::Table S6:Gender",
+      "age": "table:40168_2016_222_MOESM2_ESM.xlsx::Table S6:Age",
+      "Height (cm)": "table:40168_2016_222_MOESM2_ESM.xlsx::Table S6:Height (cm)",
+      "Weight (kg)": "table:40168_2016_222_MOESM2_ESM.xlsx::Table S6:Weight (kg)",
+      "BMI (kg/m2)": "table:40168_2016_222_MOESM2_ESM.xlsx::Table S6:BMI (kg/m2)",
+      "Diabetic (Y or N)": "table:40168_2016_222_MOESM2_ESM.xlsx::Table S6:Diabetic (Y or N)",
+      "FBG (mmol/L)": "table:40168_2016_222_MOESM2_ESM.xlsx::Table S6:FBG (mmol/L)",
+      "SBP (mm Hg)": "table:40168_2016_222_MOESM2_ESM.xlsx::Table S6:SBP (mm Hg)",
+      "DBP (mm Hg)": "table:40168_2016_222_MOESM2_ESM.xlsx::Table S6:DBP (mm Hg)",
+      "FINS (mU/L)": "table:40168_2016_222_MOESM2_ESM.xlsx::Table S6:FINS (mU/L)",
+      "FCP (ng/ml)": "table:40168_2016_222_MOESM2_ESM.xlsx::Table S6:FCP (ng/ml)",
+      "HBALC (%)": "table:40168_2016_222_MOESM2_ESM.xlsx::Table S6:HBALC (%)",
+      "TG (mmol/L)": "table:40168_2016_222_MOESM2_ESM.xlsx::Table S6:TG (mmol/L)",
+      "TCHO (mmol/L)": "table:40168_2016_222_MOESM2_ESM.xlsx::Table S6:TCHO (mmol/L)",
+      "HDL (mmol/L)": "table:40168_2016_222_MOESM2_ESM.xlsx::Table S6:HDL (mmol/L)",
+      "LDL (mmol/L)": "table:40168_2016_222_MOESM2_ESM.xlsx::Table S6:LDL (mmol/L)",
+      "col_20": "table:40168_2016_222_MOESM2_ESM.xlsx::Table S6:col_20",
+      "col_21": "table:40168_2016_222_MOESM2_ESM.xlsx::Table S6:col_21",
+      "study_name": "study_fanout",
+      "pmid": "study_fanout",
+      "target_condition": "study_fanout",
+      "antibiotics_exclusion_period": "study_fanout",
+      "dna_extraction_kit": "study_fanout",
+      "sequencing_platform": "study_fanout",
+      "host_species": "study_fanout",
+      "antibiotics_exclusion_period_unit": "study_fanout",
+      "age_min": "age_rule:specific_age",
+      "age_max": "age_rule:specific_age"
+    },
+    {
+      "Stage": "table:40168_2016_222_MOESM2_ESM.xlsx::Table S6:Stage",
+      "sample_id": "table:40168_2016_222_MOESM2_ESM.xlsx::Table S6:Sample ID",
+      "Shannon index": "table:40168_2016_222_MOESM2_ESM.xlsx::Table S6:Shannon index",
+      "sex": "table:40168_2016_222_MOESM2_ESM.xlsx::Table S6:Gender",
+      "age": "table:40168_2016_222_MOESM2_ESM.xlsx::Table S6:Age",
+      "Height (cm)": "table:40168_2016_222_MOESM2_ESM.xlsx::Table S6:Height (cm)",
+      "Weight (kg)": "table:40168_2016_222_MOESM2_ESM.xlsx::Table S6:Weight (kg)",
+      "BMI (kg/m2)": "table:40168_2016_222_MOESM2_ESM.xlsx::Table S6:BMI (kg/m2)",
+      "Diabetic (Y or N)": "table:40168_2016_222_MOESM2_ESM.xlsx::Table S6:Diabetic (Y or N)",
+      "FBG (mmol/L)": "table:40168_2016_222_MOESM2_ESM.xlsx::Table S6:FBG (mmol/L)",
+      "SBP (mm Hg)": "table:40168_2016_222_MOESM2_ESM.xlsx::Table S6:SBP (mm Hg)",
+      "DBP (mm Hg)": "table:40168_2016_222_MOESM2_ESM.xlsx::Table S6:DBP (mm Hg)",
+      "FINS (mU/L)": "table:40168_2016_222_MOESM2_ESM.xlsx::Table S6:FINS (mU/L)",
+      "FCP (ng/ml)": "table:40168_2016_222_MOESM2_ESM.xlsx::Table S6:FCP (ng/ml)",
+      "HBALC (%)": "table:40168_2016_222_MOESM2_ESM.xlsx::Table S6:HBALC (%)",
+      "TG (mmol/L)": "table:40168_2016_222_MOESM2_ESM.xlsx::Table S6:TG (mmol/L)",
+      "TCHO (mmol/L)": "table:40168_2016_222_MOESM2_ESM.xlsx::Table S6:TCHO (mmol/L)",
+      "HDL (mmol/L)": "table:40168_2016_222_MOESM2_ESM.xlsx::Table S6:HDL (mmol/L)",
+      "LDL (mmol/L)": "table:40168_2016_222_MOESM2_ESM.xlsx::Table S6:LDL (mmol/L)",
+      "col_20": "table:40168_2016_222_MOESM2_ESM.xlsx::Table S6:col_20",
+      "col_21": "table:40168_2016_222_MOESM2_ESM.xlsx::Table S6:col_21",
+      "study_name": "study_fanout",
+      "pmid": "study_fanout",
+      "target_condition": "study_fanout",
+      "antibiotics_exclusion_period": "study_fanout",
+      "dna_extraction_kit": "study_fanout",
+      "sequencing_platform": "study_fanout",
+      "host_species": "study_fanout",
+      "antibiotics_exclusion_period_unit": "study_fanout",
+      "age_min": "age_rule:specific_age",
+      "age_max": "age_rule:specific_age"
+    },
+    {
+      "Stage": "table:40168_2016_222_MOESM2_ESM.xlsx::Table S6:Stage",
+      "sample_id": "table:40168_2016_222_MOESM2_ESM.xlsx::Table S6:Sample ID",
+      "Shannon index": "table:40168_2016_222_MOESM2_ESM.xlsx::Table S6:Shannon index",
+      "sex": "table:40168_2016_222_MOESM2_ESM.xlsx::Table S6:Gender",
+      "age": "table:40168_2016_222_MOESM2_ESM.xlsx::Table S6:Age",
+      "Height (cm)": "table:40168_2016_222_MOESM2_ESM.xlsx::Table S6:Height (cm)",
+      "Weight (kg)": "table:40168_2016_222_MOESM2_ESM.xlsx::Table S6:Weight (kg)",
+      "BMI (kg/m2)": "table:40168_2016_222_MOESM2_ESM.xlsx::Table S6:BMI (kg/m2)",
+      "Diabetic (Y or N)": "table:40168_2016_222_MOESM2_ESM.xlsx::Table S6:Diabetic (Y or N)",
+      "FBG (mmol/L)": "table:40168_2016_222_MOESM2_ESM.xlsx::Table S6:FBG (mmol/L)",
+      "SBP (mm Hg)": "table:40168_2016_222_MOESM2_ESM.xlsx::Table S6:SBP (mm Hg)",
+      "DBP (mm Hg)": "table:40168_2016_222_MOESM2_ESM.xlsx::Table S6:DBP (mm Hg)",
+      "FINS (mU/L)": "table:40168_2016_222_MOESM2_ESM.xlsx::Table S6:FINS (mU/L)",
+      "FCP (ng/ml)": "table:40168_2016_222_MOESM2_ESM.xlsx::Table S6:FCP (ng/ml)",
+      "HBALC (%)": "table:40168_2016_222_MOESM2_ESM.xlsx::Table S6:HBALC (%)",
+      "TG (mmol/L)": "table:40168_2016_222_MOESM2_ESM.xlsx::Table S6:TG (mmol/L)",
+      "TCHO (mmol/L)": "table:40168_2016_222_MOESM2_ESM.xlsx::Table S6:TCHO (mmol/L)",
+      "HDL (mmol/L)": "table:40168_2016_222_MOESM2_ESM.xlsx::Table S6:HDL (mmol/L)",
+      "LDL (mmol/L)": "table:40168_2016_222_MOESM2_ESM.xlsx::Table S6:LDL (mmol/L)",
+      "col_20": "table:40168_2016_222_MOESM2_ESM.xlsx::Table S6:col_20",
+      "col_21": "table:40168_2016_222_MOESM2_ESM.xlsx::Table S6:col_21",
+      "study_name": "study_fanout",
+      "pmid": "study_fanout",
+      "target_condition": "study_fanout",
+      "antibiotics_exclusion_period": "study_fanout",
+      "dna_extraction_kit": "study_fanout",
+      "sequencing_platform": "study_fanout",
+      "host_species": "study_fanout",
+      "antibiotics_exclusion_period_unit": "study_fanout",
+      "age_min": "age_rule:specific_age",
+      "age_max": "age_rule:specific_age"
+    },
+    {
+      "Stage": "table:40168_2016_222_MOESM2_ESM.xlsx::Table S6:Stage",
+      "sample_id": "table:40168_2016_222_MOESM2_ESM.xlsx::Table S6:Sample ID",
+      "Shannon index": "table:40168_2016_222_MOESM2_ESM.xlsx::Table S6:Shannon index",
+      "sex": "table:40168_2016_222_MOESM2_ESM.xlsx::Table S6:Gender",
+      "age": "table:40168_2016_222_MOESM2_ESM.xlsx::Table S6:Age",
+      "Height (cm)": "table:40168_2016_222_MOESM2_ESM.xlsx::Table S6:Height (cm)",
+      "Weight (kg)": "table:40168_2016_222_MOESM2_ESM.xlsx::Table S6:Weight (kg)",
+      "BMI (kg/m2)": "table:40168_2016_222_MOESM2_ESM.xlsx::Table S6:BMI (kg/m2)",
+      "Diabetic (Y or N)": "table:40168_2016_222_MOESM2_ESM.xlsx::Table S6:Diabetic (Y or N)",
+      "FBG (mmol/L)": "table:40168_2016_222_MOESM2_ESM.xlsx::Table S6:FBG (mmol/L)",
+      "SBP (mm Hg)": "table:40168_2016_222_MOESM2_ESM.xlsx::Table S6:SBP (mm Hg)",
+      "DBP (mm Hg)": "table:40168_2016_222_MOESM2_ESM.xlsx::Table S6:DBP (mm Hg)",
+      "FINS (mU/L)": "table:40168_2016_222_MOESM2_ESM.xlsx::Table S6:FINS (mU/L)",
+      "FCP (ng/ml)": "table:40168_2016_222_MOESM2_ESM.xlsx::Table S6:FCP (ng/ml)",
+      "HBALC (%)": "table:40168_2016_222_MOESM2_ESM.xlsx::Table S6:HBALC (%)",
+      "TG (mmol/L)": "table:40168_2016_222_MOESM2_ESM.xlsx::Table S6:TG (mmol/L)",
+      "TCHO (mmol/L)": "table:40168_2016_222_MOESM2_ESM.xlsx::Table S6:TCHO (mmol/L)",
+      "HDL (mmol/L)": "table:40168_2016_222_MOESM2_ESM.xlsx::Table S6:HDL (mmol/L)",
+      "LDL (mmol/L)": "table:40168_2016_222_MOESM2_ESM.xlsx::Table S6:LDL (mmol/L)",
+      "col_20": "table:40168_2016_222_MOESM2_ESM.xlsx::Table S6:col_20",
+      "col_21": "table:40168_2016_222_MOESM2_ESM.xlsx::Table S6:col_21",
+      "study_name": "study_fanout",
+      "pmid": "study_fanout",
+      "target_condition": "study_fanout",
+      "antibiotics_exclusion_period": "study_fanout",
+      "dna_extraction_kit": "study_fanout",
+      "sequencing_platform": "study_fanout",
+      "host_species": "study_fanout",
+      "antibiotics_exclusion_period_unit": "study_fanout",
+      "age_min": "age_rule:specific_age",
+      "age_max": "age_rule:specific_age"
+    },
+    {
+      "Stage": "table:40168_2016_222_MOESM2_ESM.xlsx::Table S6:Stage",
+      "sample_id": "table:40168_2016_222_MOESM2_ESM.xlsx::Table S6:Sample ID",
+      "Shannon index": "table:40168_2016_222_MOESM2_ESM.xlsx::Table S6:Shannon index",
+      "sex": "table:40168_2016_222_MOESM2_ESM.xlsx::Table S6:Gender",
+      "age": "table:40168_2016_222_MOESM2_ESM.xlsx::Table S6:Age",
+      "Height (cm)": "table:40168_2016_222_MOESM2_ESM.xlsx::Table S6:Height (cm)",
+      "Weight (kg)": "table:40168_2016_222_MOESM2_ESM.xlsx::Table S6:Weight (kg)",
+      "BMI (kg/m2)": "table:40168_2016_222_MOESM2_ESM.xlsx::Table S6:BMI (kg/m2)",
+      "Diabetic (Y or N)": "table:40168_2016_222_MOESM2_ESM.xlsx::Table S6:Diabetic (Y or N)",
+      "FBG (mmol/L)": "table:40168_2016_222_MOESM2_ESM.xlsx::Table S6:FBG (mmol/L)",
+      "SBP (mm Hg)": "table:40168_2016_222_MOESM2_ESM.xlsx::Table S6:SBP (mm Hg)",
+      "DBP (mm Hg)": "table:40168_2016_222_MOESM2_ESM.xlsx::Table S6:DBP (mm Hg)",
+      "FINS (mU/L)": "table:40168_2016_222_MOESM2_ESM.xlsx::Table S6:FINS (mU/L)",
+      "FCP (ng/ml)": "table:40168_2016_222_MOESM2_ESM.xlsx::Table S6:FCP (ng/ml)",
+      "HBALC (%)": "table:40168_2016_222_MOESM2_ESM.xlsx::Table S6:HBALC (%)",
+      "TG (mmol/L)": "table:40168_2016_222_MOESM2_ESM.xlsx::Table S6:TG (mmol/L)",
+      "TCHO (mmol/L)": "table:40168_2016_222_MOESM2_ESM.xlsx::Table S6:TCHO (mmol/L)",
+      "HDL (mmol/L)": "table:40168_2016_222_MOESM2_ESM.xlsx::Table S6:HDL (mmol/L)",
+      "LDL (mmol/L)": "table:40168_2016_222_MOESM2_ESM.xlsx::Table S6:LDL (mmol/L)",
+      "col_20": "table:40168_2016_222_MOESM2_ESM.xlsx::Table S6:col_20",
+      "col_21": "table:40168_2016_222_MOESM2_ESM.xlsx::Table S6:col_21",
+      "study_name": "study_fanout",
+      "pmid": "study_fanout",
+      "target_condition": "study_fanout",
+      "antibiotics_exclusion_period": "study_fanout",
+      "dna_extraction_kit": "study_fanout",
+      "sequencing_platform": "study_fanout",
+      "host_species": "study_fanout",
+      "antibiotics_exclusion_period_unit": "study_fanout",
+      "age_min": "age_rule:specific_age",
+      "age_max": "age_rule:specific_age"
+    },
+    {
+      "Stage": "table:40168_2016_222_MOESM2_ESM.xlsx::Table S6:Stage",
+      "sample_id": "table:40168_2016_222_MOESM2_ESM.xlsx::Table S6:Sample ID",
+      "Shannon index": "table:40168_2016_222_MOESM2_ESM.xlsx::Table S6:Shannon index",
+      "sex": "table:40168_2016_222_MOESM2_ESM.xlsx::Table S6:Gender",
+      "age": "table:40168_2016_222_MOESM2_ESM.xlsx::Table S6:Age",
+      "Height (cm)": "table:40168_2016_222_MOESM2_ESM.xlsx::Table S6:Height (cm)",
+      "Weight (kg)": "table:40168_2016_222_MOESM2_ESM.xlsx::Table S6:Weight (kg)",
+      "BMI (kg/m2)": "table:40168_2016_222_MOESM2_ESM.xlsx::Table S6:BMI (kg/m2)",
+      "Diabetic (Y or N)": "table:40168_2016_222_MOESM2_ESM.xlsx::Table S6:Diabetic (Y or N)",
+      "FBG (mmol/L)": "table:40168_2016_222_MOESM2_ESM.xlsx::Table S6:FBG (mmol/L)",
+      "SBP (mm Hg)": "table:40168_2016_222_MOESM2_ESM.xlsx::Table S6:SBP (mm Hg)",
+      "DBP (mm Hg)": "table:40168_2016_222_MOESM2_ESM.xlsx::Table S6:DBP (mm Hg)",
+      "FINS (mU/L)": "table:40168_2016_222_MOESM2_ESM.xlsx::Table S6:FINS (mU/L)",
+      "FCP (ng/ml)": "table:40168_2016_222_MOESM2_ESM.xlsx::Table S6:FCP (ng/ml)",
+      "HBALC (%)": "table:40168_2016_222_MOESM2_ESM.xlsx::Table S6:HBALC (%)",
+      "TG (mmol/L)": "table:40168_2016_222_MOESM2_ESM.xlsx::Table S6:TG (mmol/L)",
+      "TCHO (mmol/L)": "table:40168_2016_222_MOESM2_ESM.xlsx::Table S6:TCHO (mmol/L)",
+      "HDL (mmol/L)": "table:40168_2016_222_MOESM2_ESM.xlsx::Table S6:HDL (mmol/L)",
+      "LDL (mmol/L)": "table:40168_2016_222_MOESM2_ESM.xlsx::Table S6:LDL (mmol/L)",
+      "col_20": "table:40168_2016_222_MOESM2_ESM.xlsx::Table S6:col_20",
+      "col_21": "table:40168_2016_222_MOESM2_ESM.xlsx::Table S6:col_21",
+      "study_name": "study_fanout",
+      "pmid": "study_fanout",
+      "target_condition": "study_fanout",
+      "antibiotics_exclusion_period": "study_fanout",
+      "dna_extraction_kit": "study_fanout",
+      "sequencing_platform": "study_fanout",
+      "host_species": "study_fanout",
+      "antibiotics_exclusion_period_unit": "study_fanout",
+      "age_min": "age_rule:specific_age",
+      "age_max": "age_rule:specific_age"
+    }
+  ],
+  "table_selection": [
+    {
+      "name": "40168_2016_222_MOESM2_ESM.xlsx::Additional Table Legends",
+      "selected": true,
+      "score": 0.4035,
+      "is_matrix": false,
+      "matched_fields": {
+        "control": "Data production of 196 samples in control, pHTN and HTN."
+      },
+      "reasons": [
+        "key-like column 'Table S2'"
+      ]
+    },
+    {
+      "name": "40168_2016_222_MOESM2_ESM.xlsx::Table S2",
+      "selected": true,
+      "score": 0.4176,
+      "is_matrix": false,
+      "matched_fields": {
+        "sample_id": "Single-sample assembly",
+        "age_group": "col_2",
+        "bmi": "Shannon\nIndex",
+        "disease_response_recist": "Mapping to reference set",
+        "sequencing_platform": "Data production"
+      },
+      "reasons": [
+        "key-like column 'Data production'"
+      ]
+    },
+    {
+      "name": "40168_2016_222_MOESM2_ESM.xlsx::Table S3",
+      "selected": false,
+      "score": 0.0,
+      "is_matrix": true,
+      "matched_fields": {},
+      "reasons": [
+        "feature × samples matrix (taxonomy/genome or transposed fast-path)"
+      ]
+    },
+    {
+      "name": "40168_2016_222_MOESM2_ESM.xlsx::Table S4",
+      "selected": false,
+      "score": 0.0,
+      "is_matrix": true,
+      "matched_fields": {},
+      "reasons": [
+        "feature × samples matrix (taxonomy/genome or transposed fast-path)"
+      ]
+    },
+    {
+      "name": "40168_2016_222_MOESM2_ESM.xlsx::Table S5",
+      "selected": false,
+      "score": 0.0,
+      "is_matrix": true,
+      "matched_fields": {},
+      "reasons": [
+        "feature × samples matrix (taxonomy/genome or transposed fast-path)"
+      ]
+    },
+    {
+      "name": "40168_2016_222_MOESM2_ESM.xlsx::Table S6",
+      "selected": true,
+      "score": 0.4613,
+      "is_matrix": false,
+      "matched_fields": {
+        "subject_id": "Sample ID",
+        "sample_id": "Sample ID",
+        "control": "Sample ID",
+        "country": "Sample ID",
+        "body_site": "Sample ID",
+        "body_site_details": "Sample ID",
+        "ncbi_accession": "Sample ID",
+        "age": "Age",
+        "age_group": "Age",
+        "age_unit": "Age",
+        "sex": "Gender",
+        "age_min": "Age",
+        "age_max": "Age",
+        "age_years": "Age",
+        "bmi": "Weight (kg)",
+        "fmt_id": "Sample ID",
+        "neonatal_birth_weight": "Weight (kg)"
+      },
+      "reasons": [
+        "key-like column 'Sample ID'",
+        "sex: values match enum in 'Gender' (100%)"
+      ]
+    },
+    {
+      "name": "40168_2016_222_MOESM2_ESM.xlsx::Table S7",
+      "selected": false,
+      "score": 0.0,
+      "is_matrix": true,
+      "matched_fields": {},
+      "reasons": [
+        "dense numeric measurement grid with no schema-matching columns"
+      ]
+    },
+    {
+      "name": "40168_2016_222_MOESM2_ESM.xlsx::Table S9",
+      "selected": true,
+      "score": 0.4106,
+      "is_matrix": false,
+      "matched_fields": {
+        "ncbi_accession": "GenBank Assembly Accession",
+        "biomarker_name": "Taxon_display_name",
+        "study_name": "Taxon_display_name"
+      },
+      "reasons": [
+        "key-like column 'Taxid'"
+      ]
+    },
+    {
+      "name": "40168_2016_222_MOESM2_ESM.xlsx::Table S10",
+      "selected": true,
+      "score": 0.4739,
+      "is_matrix": false,
+      "matched_fields": {
+        "location": "OR score",
+        "subject_id": "CAG ID",
+        "sample_id": "CAG ID",
+        "country": "OR score",
+        "lifestyle": "OR score",
+        "ncbi_accession": "OR score",
+        "family": "Family",
+        "family_role": "Family",
+        "dietary_restriction": "OR score",
+        "disease": "OR score",
+        "disease_details": "OR score",
+        "disease_response_recist": "OR score",
+        "feces_phenotype": "OR score",
+        "fmt_id": "CAG ID",
+        "fmt_role": "OR score",
+        "treatment": "OR score",
+        "biomarker_name": "OR score",
+        "tumor_size_measurement": "OR score",
+        "target_condition": "OR score",
+        "dna_extraction_kit": "OR score",
+        "host_species": "Species"
+      },
+      "reasons": [
+        "key-like column 'OR score'"
+      ]
+    },
+    {
+      "name": "40168_2016_222_MOESM2_ESM.xlsx::Table S11",
+      "selected": true,
+      "score": 0.4282,
+      "is_matrix": false,
+      "matched_fields": {
+        "subject_id": "CAG ID",
+        "sample_id": "CAG ID",
+        "control": "No. of gene in the CAG",
+        "disease_response_pfs": "No. of gene in the CAG",
+        "disease_response_recist": "No. of gene in the CAG",
+        "fmt_id": "CAG ID",
+        "tumor_staging_ajcc": "No. of gene in the CAG",
+        "tumor_staging_tnm": "No. of gene in the CAG"
+      },
+      "reasons": [
+        "key-like column 'CAG ID'"
+      ]
+    },
+    {
+      "name": "40168_2016_222_MOESM2_ESM.xlsx::Table S12",
+      "selected": true,
+      "score": 0.2176,
+      "is_matrix": false,
+      "matched_fields": {
+        "subject_id": "CAG ID",
+        "sample_id": "CAG ID",
+        "age_group": "Index_1",
+        "bmi": "Index_1",
+        "fmt_id": "CAG ID"
+      },
+      "reasons": []
+    },
+    {
+      "name": "40168_2016_222_MOESM2_ESM.xlsx::Table S13",
+      "selected": true,
+      "score": 0.4176,
+      "is_matrix": false,
+      "matched_fields": {
+        "subject_id": "Module ID",
+        "sample_id": "Module ID",
+        "control": "AVG\n(Control)",
+        "fmt_id": "Module ID",
+        "obgyn_birth_control": "AVG\n(Control)"
+      },
+      "reasons": [
+        "key-like column 'Module ID'"
+      ]
+    },
+    {
+      "name": "40168_2016_222_MOESM2_ESM.xlsx::Table S14",
+      "selected": true,
+      "score": 0.4246,
+      "is_matrix": false,
+      "matched_fields": {
+        "subject_id": "KO ID",
+        "sample_id": "KO ID",
+        "control": "AVG\n(Control)",
+        "fmt_id": "KO ID",
+        "obgyn_birth_control": "AVG\n(Control)",
+        "biomarker_name": "Name",
+        "study_name": "Name"
+      },
+      "reasons": [
+        "key-like column 'KO ID'"
+      ]
+    },
+    {
+      "name": "40168_2016_222_MOESM2_ESM.xlsx::Table S15",
+      "selected": true,
+      "score": 0.4176,
+      "is_matrix": false,
+      "matched_fields": {
+        "control": "AVG\n(Control)",
+        "age_group": "col_11",
+        "family": "CAZy family",
+        "family_role": "CAZy family",
+        "obgyn_birth_control": "AVG\n(Control)"
+      },
+      "reasons": [
+        "key-like column 'CAZy family'"
+      ]
+    },
+    {
+      "name": "40168_2016_222_MOESM2_ESM.xlsx::Table S16",
+      "selected": true,
+      "score": 0.4176,
+      "is_matrix": false,
+      "matched_fields": {
+        "subject_id": "ID",
+        "sample_id": "ID",
+        "age_group": "col_11",
+        "bmi": "m/z",
+        "fmt_id": "ID"
+      },
+      "reasons": [
+        "key-like column 'm/z'"
+      ]
+    },
+    {
+      "name": "40168_2016_222_MOESM2_ESM.xlsx::Table S18",
+      "selected": true,
+      "score": 0.4106,
+      "is_matrix": false,
+      "matched_fields": {
+        "age_group": "col_2",
+        "bmi": "Shannon\nIndex",
+        "sequencing_platform": "Data production"
+      },
+      "reasons": [
+        "key-like column 'Data production'"
+      ]
+    },
+    {
+      "name": "40168_2016_222_MOESM2_ESM.xlsx::Table S19",
+      "selected": true,
+      "score": 0.407,
+      "is_matrix": false,
+      "matched_fields": {
+        "location": "Tax_detail",
+        "hla": "H1_human"
+      },
+      "reasons": [
+        "key-like column 'Tax_detail'"
+      ]
+    },
+    {
+      "name": "40168_2016_222_MOESM7_ESM.xlsx",
+      "selected": true,
+      "score": 0.4176,
+      "is_matrix": false,
+      "matched_fields": {
+        "subject_id": "Gene ID",
+        "sample_id": "Gene ID",
+        "control": "Enriched group(s)(C=Control, P=Prehypertension, H=Hypertension)",
+        "age_group": "Enriched group(s)(C=Control, P=Prehypertension, H=Hypertension)",
+        "fmt_id": "Gene ID"
+      },
+      "reasons": [
+        "key-like column 'Gene ID'"
+      ]
+    }
+  ],
+  "extraction_warnings": [
+    "The paper reports study-level cohort data (41 healthy controls, 56 pre-hypertensive subjects, 99 hypertensive patients) rather than per-sample metadata rows. Granularity set to sample_level with three representative sample records corresponding to the three cohort groups. Individual subject_id and sample_id are not reported in the paper.",
+    "Sex information is not explicitly reported for the cohort overall, though gender ratio discrepancy among groups is mentioned (Additional file 1: Table S1).",
+    "Age is not explicitly reported as individual values or group means in the provided text; inferred as 'Adult' based on study cohort description (Kailuan Group Corporation employees in a modern city).",
+    "BMI, dietary restrictions, and ancestry are mentioned as measured but specific values are not provided in the extracted text sections.",
+    "Antibiotic use exclusion criterion: 'Individuals were also excluded if they had received antibiotics or probiotics within the last 8 weeks' indicates baseline non-use; coded as 'No'.",
+    "Batch 1 returned granularity='subgroup_level', differs from batch 0 ('sample_level'); kept batch 0.",
+    "Batch 1 subgroups ['healthy controls', 'pre-hypertension', 'primary hypertension', 'HTN mice', 'control mice'] differ from batch 0 []; kept batch 0.",
+    "Schema includes many oncology-specific fields (RECIST, tumor staging, ECOG, overall response rate) that are not applicable to this hypertension/microbiome study. All such fields return 'not_reported'.",
+    "FMT participants (donors and recipient mice) are identified by role and disease status, but the paper does not assign explicit participant IDs; study-specific IDs were inferred based on donor counts.",
+    "The paper stratifies data by four human groups (healthy controls, pre-hypertension, primary hypertension) and two mouse groups (HTN mice, control mice); granularity is subgroup_level.",
+    "Biomarker values are reported as statistical comparisons (P-values, fold-changes) rather than absolute point estimates; actual numeric ranges appear in supplementary tables not fully transcribed.",
+    "Some clinical parameters (e.g., age, BMI) are mentioned as not significantly different among groups but exact values are relegated to supplementary Table S1, which is referenced but not fully reproduced in the provided text.",
+    "Batch 2 returned granularity='study_level', differs from batch 0 ('sample_level'); kept batch 0.",
+    "The schema field 'tumor_size_residual_measurement' is not applicable to this study, which focuses on gut microbiota and hypertension, not oncology.",
+    "Multiple host species are present in this study: humans (main cohort) and mice (FMT recipient models). The field allows only a list and both values are represented.",
+    "For sequencing_platform: the paper reports both Illumina platform for metagenomic sequencing (main analysis) and Illumina HiSeq for 16S rRNA sequencing (mouse microbiota analysis). The more commonly used platform in the human cohort is represented.",
+    "Table '40168_2016_222_MOESM2_ESM.xlsx::Additional Table Legends': selected (relevance=0.40; matched 1/71 schema fields).",
+    "Table '40168_2016_222_MOESM2_ESM.xlsx::Additional Table Legends': single header row; read as is (no table plan).",
+    "Table '40168_2016_222_MOESM2_ESM.xlsx::Additional Table Legends': 2 column(s) passed through under original names (schema didn't match): ['Table S2', 'Data production of 196 samples in control, pHTN and HTN.']",
+    "Table '40168_2016_222_MOESM2_ESM.xlsx::Table S2': selected (relevance=0.42; matched 5/71 schema fields).",
+    "Table '40168_2016_222_MOESM2_ESM.xlsx::Table S2': structure plan applied (blank cells inside the header span (stacked or merged header); header_rows=[0, 1], melt=no, out_rows=196).",
+    "Table '40168_2016_222_MOESM2_ESM.xlsx::Table S2': column mapping 'Data production | Sample ID'->sample_id [leaf:normalized].",
+    "Table '40168_2016_222_MOESM2_ESM.xlsx::Table S2': 17 column(s) passed through under original names (schema didn't match): ['Stage', 'Data production | Insert\\xa0size\\xa0(bp)', 'Data production | Read\\xa0 length (bp)', 'Data production | # of reads', 'Data production | Raw data (Gb)']...",
+    "Table '40168_2016_222_MOESM2_ESM.xlsx::Table S3': skipped as measurement matrix (60 rows × 198 cols; feature × samples matrix (taxonomy/genome or transposed fast-path)).",
+    "Table '40168_2016_222_MOESM2_ESM.xlsx::Table S4': skipped as measurement matrix (1470 rows × 198 cols; feature × samples matrix (taxonomy/genome or transposed fast-path)).",
+    "Table '40168_2016_222_MOESM2_ESM.xlsx::Table S5': skipped as measurement matrix (45 rows × 14 cols; feature × samples matrix (taxonomy/genome or transposed fast-path)).",
+    "Table '40168_2016_222_MOESM2_ESM.xlsx::Table S6': selected (relevance=0.46; matched 17/71 schema fields).",
+    "Table '40168_2016_222_MOESM2_ESM.xlsx::Table S6': structure plan applied (blank cells inside the header span (stacked or merged header); header_rows=[0], melt=no, out_rows=6).",
+    "Table '40168_2016_222_MOESM2_ESM.xlsx::Table S6': column mapping 'Sample ID'->sample_id [normalized]; 'Gender'->sex [alias]; 'Age'->age [exact].",
+    "Table '40168_2016_222_MOESM2_ESM.xlsx::Table S6': 20 column(s) passed through under original names (schema didn't match): ['Stage', 'Shannon index', 'Height (cm)', 'Weight (kg)', 'BMI (kg/m2)']...",
+    "Table '40168_2016_222_MOESM2_ESM.xlsx::Table S7': skipped as measurement matrix (249 rows × 25 cols; dense numeric measurement grid with no schema-matching columns).",
+    "Table '40168_2016_222_MOESM2_ESM.xlsx::Table S9': selected (relevance=0.41; matched 3/71 schema fields).",
+    "Table '40168_2016_222_MOESM2_ESM.xlsx::Table S9': single header row; read as is (no table plan).",
+    "Table '40168_2016_222_MOESM2_ESM.xlsx::Table S9': 5 column(s) passed through under original names (schema didn't match): ['Taxid', 'Taxon_display_name', 'Domain', 'GenBank Assembly Accession', 'Assembly level']",
+    "Table '40168_2016_222_MOESM2_ESM.xlsx::Table S10': selected (relevance=0.47; matched 21/71 schema fields).",
+    "Table '40168_2016_222_MOESM2_ESM.xlsx::Table S10': single header row; read as is (no table plan).",
+    "Table '40168_2016_222_MOESM2_ESM.xlsx::Table S10': column mapping 'Family'->family [exact].",
+    "Table '40168_2016_222_MOESM2_ESM.xlsx::Table S10': 9 column(s) passed through under original names (schema didn't match): ['CAG ID', 'Species', 'Genus', 'Phylum', 'Tax mark']...",
+    "Table '40168_2016_222_MOESM2_ESM.xlsx::Table S11': selected (relevance=0.43; matched 8/71 schema fields).",
+    "Table '40168_2016_222_MOESM2_ESM.xlsx::Table S11': structure plan applied (blank cells inside the header span (stacked or merged header); header_rows=[0], melt=no, out_rows=1099).",
+    "Table '40168_2016_222_MOESM2_ESM.xlsx::Table S11': 10 column(s) passed through under original names (schema didn't match): ['CAG ID', 'Tax mark', '% genes', 'Identity', 'Taxonomy assignment']...",
+    "Table '40168_2016_222_MOESM2_ESM.xlsx::Table S12': selected (relevance=0.22; matched 5/71 schema fields).",
+    "Table '40168_2016_222_MOESM2_ESM.xlsx::Table S12': structure plan applied (blank cells inside the header span (stacked or merged header); header_rows=[0, 1], melt=yes, out_rows=35610).",
+    "Table '40168_2016_222_MOESM2_ESM.xlsx::Table S12': 15 column(s) passed through under original names (schema didn't match): ['CAG ID | Control-enriched (Control--VS--pHTN)', 'Index', 'CAG ID | Control-enriched (Control--VS--HTN)', 'Index_1', 'CAG ID | pHTN-enriched (Control--VS--Preypertension)']...",
+    "Table '40168_2016_222_MOESM2_ESM.xlsx::Table S13': selected (relevance=0.42; matched 5/71 schema fields).",
+    "Table '40168_2016_222_MOESM2_ESM.xlsx::Table S13': structure plan applied (blank cells inside the header span (stacked or merged header); header_rows=[0], melt=yes, out_rows=130).",
+    "Table '40168_2016_222_MOESM2_ESM.xlsx::Table S13': column mapping 'Control'->control [exact].",
+    "Table '40168_2016_222_MOESM2_ESM.xlsx::Table S13': 12 column(s) passed through under original names (schema didn't match): ['Module ID', 'DiffNum', 'DiffPairs', 'Pairs-P-values', 'Pairs-Q-values']...",
+    "Table '40168_2016_222_MOESM2_ESM.xlsx::Table S14': selected (relevance=0.42; matched 7/71 schema fields).",
+    "Table '40168_2016_222_MOESM2_ESM.xlsx::Table S14': structure plan applied (blank cells inside the header span (stacked or merged header); header_rows=[0], melt=yes, out_rows=1017).",
+    "Table '40168_2016_222_MOESM2_ESM.xlsx::Table S14': column mapping 'Control'->control [exact].",
+    "Table '40168_2016_222_MOESM2_ESM.xlsx::Table S14': 18 column(s) passed through under original names (schema didn't match): ['KO ID', 'AVG\\n(Control)', 'AVG\\n(pHTN)', 'AVG\\n(HTN)', 'DiffNum']...",
+    "Table '40168_2016_222_MOESM2_ESM.xlsx::Table S15': selected (relevance=0.42; matched 5/71 schema fields).",
+    "Table '40168_2016_222_MOESM2_ESM.xlsx::Table S15': structure plan applied (blank cells inside the header span (stacked or merged header); header_rows=[0], melt=yes, out_rows=22).",
+    "Table '40168_2016_222_MOESM2_ESM.xlsx::Table S15': column mapping 'Control'->control [exact].",
+    "Table '40168_2016_222_MOESM2_ESM.xlsx::Table S15': 11 column(s) passed through under original names (schema didn't match): ['CAZy family', 'DiffNum', 'DiffPairs', 'Pairs-P-values', 'Pairs-Q-values']...",
+    "Table '40168_2016_222_MOESM2_ESM.xlsx::Table S16': selected (relevance=0.42; matched 5/71 schema fields).",
+    "Table '40168_2016_222_MOESM2_ESM.xlsx::Table S16': structure plan applied (blank cells inside the header span (stacked or merged header); header_rows=[0, 1], melt=yes, out_rows=81).",
+    "Table '40168_2016_222_MOESM2_ESM.xlsx::Table S16': column mapping 'control'->control [exact].",
+    "Table '40168_2016_222_MOESM2_ESM.xlsx::Table S16': 13 column(s) passed through under original names (schema didn't match): ['mode', 'ID', 'm/z', 'rt', 'peak intensities | control']...",
+    "Table '40168_2016_222_MOESM2_ESM.xlsx::Table S18': selected (relevance=0.41; matched 3/71 schema fields).",
+    "Table '40168_2016_222_MOESM2_ESM.xlsx::Table S18': structure plan applied (blank cells inside the header span (stacked or merged header); header_rows=[0, 1], melt=no, out_rows=12).",
+    "Table '40168_2016_222_MOESM2_ESM.xlsx::Table S18': column mapping 'Data production | Sample ID'->sample_id [leaf:normalized].",
+    "Table '40168_2016_222_MOESM2_ESM.xlsx::Table S18': 5 column(s) passed through under original names (schema didn't match): ['Stage', 'Data production | Raw PE(#)', 'Data production | Nochime(#)', 'Data production | AvgLen(nt)', 'Shannon\\nIndex']",
+    "Table '40168_2016_222_MOESM2_ESM.xlsx::Table S19': selected (relevance=0.41; matched 2/71 schema fields).",
+    "Table '40168_2016_222_MOESM2_ESM.xlsx::Table S19': structure plan applied (repeated column groups ('h2'/'c'); header_rows=[0], melt=yes, out_rows=3084).",
+    "Table '40168_2016_222_MOESM2_ESM.xlsx::Table S19': 15 column(s) passed through under original names (schema didn't match): ['Genera', 'Tax_detail', 'Sample Type', 'H1_human', 'H1_mice1']...",
+    "Table '40168_2016_222_MOESM7_ESM.xlsx': selected (relevance=0.42; matched 5/71 schema fields).",
+    "Table '40168_2016_222_MOESM7_ESM.xlsx': single header row; read as is (no table plan).",
+    "Table '40168_2016_222_MOESM7_ESM.xlsx': 4 column(s) passed through under original names (schema didn't match): ['Gene ID', 'Enriched group(s)(C=Control, P=Prehypertension, H=Hypertension)', 'Taxonomy assignment', 'Tax rank']",
+    "Did not join table '40168_2016_222_MOESM2_ESM.xlsx::Table S10' into '40168_2016_222_MOESM2_ESM.xlsx::Table S6': no shared canonical key.",
+    "Did not join table '40168_2016_222_MOESM2_ESM.xlsx::Table S11' into '40168_2016_222_MOESM2_ESM.xlsx::Table S6': no shared canonical key.",
+    "Did not join table '40168_2016_222_MOESM2_ESM.xlsx::Table S14' into '40168_2016_222_MOESM2_ESM.xlsx::Table S6': no shared canonical key.",
+    "Did not join table '40168_2016_222_MOESM2_ESM.xlsx::Table S2' into '40168_2016_222_MOESM2_ESM.xlsx::Table S6': key 'sample_id' overlap 0.00 < 0.9.",
+    "Did not join table '40168_2016_222_MOESM2_ESM.xlsx::Table S13' into '40168_2016_222_MOESM2_ESM.xlsx::Table S6': no shared canonical key.",
+    "Did not join table '40168_2016_222_MOESM2_ESM.xlsx::Table S15' into '40168_2016_222_MOESM2_ESM.xlsx::Table S6': no shared canonical key.",
+    "Did not join table '40168_2016_222_MOESM2_ESM.xlsx::Table S16' into '40168_2016_222_MOESM2_ESM.xlsx::Table S6': no shared canonical key.",
+    "Did not join table '40168_2016_222_MOESM7_ESM.xlsx' into '40168_2016_222_MOESM2_ESM.xlsx::Table S6': no shared canonical key.",
+    "Did not join table '40168_2016_222_MOESM2_ESM.xlsx::Table S9' into '40168_2016_222_MOESM2_ESM.xlsx::Table S6': no shared canonical key.",
+    "Did not join table '40168_2016_222_MOESM2_ESM.xlsx::Table S18' into '40168_2016_222_MOESM2_ESM.xlsx::Table S6': key 'sample_id' overlap 0.00 < 0.9.",
+    "Did not join table '40168_2016_222_MOESM2_ESM.xlsx::Table S19' into '40168_2016_222_MOESM2_ESM.xlsx::Table S6': no shared canonical key.",
+    "Did not join table '40168_2016_222_MOESM2_ESM.xlsx::Additional Table Legends' into '40168_2016_222_MOESM2_ESM.xlsx::Table S6': no shared canonical key.",
+    "Did not join table '40168_2016_222_MOESM2_ESM.xlsx::Table S12' into '40168_2016_222_MOESM2_ESM.xlsx::Table S6': no shared canonical key.",
+    "Fan-out of study/subgroup-level values into sample rows: blocked_multi_valued=48, blocked_sample_scope_no_propagation=12, blocked_unit_without_value=6, study_fanout=48.",
+    "Set 12 age_min/age_max cell(s) by the configured age-bound rules."
+  ]
+}

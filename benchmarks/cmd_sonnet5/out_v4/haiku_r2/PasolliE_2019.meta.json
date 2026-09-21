@@ -1,0 +1,380 @@
+{
+  "started_utc": "2026-09-21T00:01:56+00:00",
+  "finished_utc": "2026-09-21T00:04:23+00:00",
+  "paper_id": "30661755",
+  "status": "ok",
+  "error": null,
+  "request": {
+    "model_requested": "claude-haiku-4-5",
+    "models_returned": [
+      "claude-haiku-4-5-20251001"
+    ],
+    "max_tokens": 16384,
+    "max_tokens_ceiling": 64000,
+    "batch_size": 30,
+    "sample_discovery": true,
+    "min_table_relevance": 0.15,
+    "sampling_and_thinking": "not set (API defaults: no temperature/top_p/top_k/thinking/effort parameters sent)",
+    "age_rules": "/Users/sehyunoh/OmicsMLRepo/MetaExtractor/benchmarks/cmd_sonnet5/age_rules_cmd.json"
+  },
+  "usage": {
+    "input_tokens": 81375,
+    "cache_creation_input_tokens": 27474,
+    "cache_read_input_tokens": 54948,
+    "output_tokens": 10590,
+    "n_calls": 9
+  },
+  "calls": [
+    {
+      "purpose": "table_plan",
+      "table": "mmc1.xlsx::Tab3 - MadagascarDataset",
+      "max_tokens": 2048,
+      "stop_reason": "end_turn",
+      "output_tokens": 149,
+      "plan": {
+        "header_rows": [
+          0
+        ],
+        "header_merge_sep": " | ",
+        "data_starts_at": 1,
+        "melt": null,
+        "drop_rows": [],
+        "notes": "Each row is one biological sample with metadata (Study, Sample ID, NCBI Accession, body site, disease status, demographics, sequencing metrics). Columns c17\u2013c24 contain aggregate statistics and summary information that span multiple samples; these are separate summary sections, not part of individual sample rows, but are retained as-is per the instruction to pass through all column values unchanged."
+      }
+    },
+    {
+      "purpose": "table_plan",
+      "table": "mmc1.xlsx::Tab4 - Additional Datasets (map",
+      "max_tokens": 2048,
+      "stop_reason": "end_turn",
+      "output_tokens": 98,
+      "plan": {
+        "header_rows": [
+          0
+        ],
+        "header_merge_sep": " | ",
+        "data_starts_at": 1,
+        "melt": null,
+        "drop_rows": [],
+        "notes": "Flat header; each row represents one study/dataset with its metadata (PMID, body site, westernization status, sample count)."
+      }
+    },
+    {
+      "purpose": "table_plan",
+      "table": "mmc2.xlsx::Tab2 - ComparisonWithAnvio",
+      "max_tokens": 2048,
+      "stop_reason": "end_turn",
+      "output_tokens": 336,
+      "plan": {
+        "header_rows": [
+          0,
+          1
+        ],
+        "header_merge_sep": " | ",
+        "data_starts_at": 2,
+        "melt": {
+          "category_label": "Genomes from automatic binning | Genomes from Anvi'o",
+          "groups": [
+            {
+              "value_label": "Genomes from automatic binning",
+              "sources": {
+                "Genome Name": 1,
+                "Genome Size": 2,
+                "N50": 3,
+                "# Contigs": 4,
+                "Completeness": 5,
+                "Contamination": 6
+              }
+            },
+            {
+              "value_label": "Genomes from Anvi'o",
+              "sources": {
+                "Genome Name": 7,
+                "Genome Size": 8,
+                "N50": 9,
+                "# Contigs": 10,
+                "Completeness": 11,
+                "Contamination": 12
+              }
+            }
+          ],
+          "skip_missing_categories": true
+        },
+        "drop_rows": [],
+        "notes": "Each row represents one SampleID with two genome binning methods (automatic vs Anvi'o) spread horizontally; melt to create one row per method per sample."
+      }
+    },
+    {
+      "purpose": "table_plan",
+      "table": "mmc2.xlsx::Tab3 - Coassembly",
+      "max_tokens": 2048,
+      "stop_reason": "end_turn",
+      "output_tokens": 243,
+      "plan": {
+        "header_rows": [
+          0,
+          1,
+          2
+        ],
+        "header_merge_sep": " | ",
+        "data_starts_at": 3,
+        "melt": {
+          "category_label": "Co-assembly | Single-sample assembly",
+          "groups": [
+            {
+              "value_label": "HQ",
+              "sources": {
+                "Co-assembly": 1,
+                "Single-sample assembly": 11
+              }
+            },
+            {
+              "value_label": "MQ",
+              "sources": {
+                "Co-assembly": 2,
+                "Single-sample assembly": 13
+              }
+            }
+          ],
+          "skip_missing_categories": false
+        },
+        "drop_rows": [],
+        "notes": "Each subject (Subj_Id) has HQ and MQ quality metrics spread across Co-assembly and Single-sample assembly sections; melting converts these into separate rows per quality category."
+      }
+    },
+    {
+      "purpose": "table_plan",
+      "table": "mmc6.xlsx::Tab1 - Protocols",
+      "max_tokens": 2048,
+      "stop_reason": "end_turn",
+      "output_tokens": 117,
+      "plan": {
+        "header_rows": [
+          0,
+          1
+        ],
+        "header_merge_sep": " | ",
+        "data_starts_at": 2,
+        "melt": null,
+        "drop_rows": [
+          8,
+          9
+        ],
+        "notes": "Two cohort sections (Non-Westernized and Chinese) separated by category headers at rows 0-1 and 8-9; each protocol row represents one dataset/sample preparation protocol."
+      }
+    },
+    {
+      "purpose": "table_plan",
+      "table": "mmc7.xlsx",
+      "max_tokens": 2048,
+      "stop_reason": "end_turn",
+      "output_tokens": 135,
+      "plan": {
+        "header_rows": [
+          0
+        ],
+        "header_merge_sep": " | ",
+        "data_starts_at": 1,
+        "melt": null,
+        "drop_rows": [],
+        "notes": "Each row is a KO (KEGG ortholog) with metabolic pathway annotations in row 0 headers (sample identifiers); columns c1-c994 are metagenomic bin samples; data values are presence/absence counts or abundance metrics; each output row represents one KO's functional profile across samples."
+      }
+    },
+    {
+      "purpose": "fields",
+      "n_fields": 30,
+      "first_field": "location",
+      "max_tokens": 16384,
+      "stop_reason": "end_turn",
+      "output_tokens": 4025
+    },
+    {
+      "purpose": "fields",
+      "n_fields": 30,
+      "first_field": "disease_details",
+      "max_tokens": 16384,
+      "stop_reason": "end_turn",
+      "output_tokens": 3554
+    },
+    {
+      "purpose": "fields",
+      "n_fields": 11,
+      "first_field": "tumor_size_residual_measurement",
+      "max_tokens": 16384,
+      "stop_reason": "end_turn",
+      "output_tokens": 1933
+    }
+  ],
+  "cost_estimate": {
+    "input_usd": 0.081375,
+    "output_usd": 0.05295,
+    "cache_read_usd": 0.0054948,
+    "cache_write_usd": 0.0343425,
+    "total_usd": 0.1741623,
+    "pricing_as_of": "2026-06-24"
+  },
+  "retrieval": {
+    "frozen_retrieval": "/Users/sehyunoh/OmicsMLRepo/MetaExtractor/benchmarks/cmd_sonnet5/out_v4/_fetch/PasolliE_2019",
+    "source": "pmc_fulltext",
+    "has_body": true,
+    "pmid": "30661755",
+    "pmcid": "6349461",
+    "doi": null,
+    "attempts": [
+      {
+        "rung": "pmc_fulltext",
+        "returned_text": true,
+        "is_body": true,
+        "chars": 98276
+      }
+    ],
+    "supplementary_included": [
+      "mmc1.xlsx",
+      "mmc2.xlsx",
+      "mmc3.xlsx",
+      "mmc4.xlsx",
+      "mmc5.xlsx",
+      "mmc6.xlsx",
+      "mmc7.xlsx"
+    ],
+    "supplementary_skipped": [
+      [
+        "figs1.gif",
+        "europepmc: ValueError: image-only (.gif)"
+      ],
+      [
+        "figs1.jpg",
+        "europepmc: ValueError: image-only (.jpg)"
+      ],
+      [
+        "figs2.gif",
+        "europepmc: ValueError: image-only (.gif)"
+      ],
+      [
+        "figs2.jpg",
+        "europepmc: ValueError: image-only (.jpg)"
+      ],
+      [
+        "figs3.gif",
+        "europepmc: ValueError: image-only (.gif)"
+      ],
+      [
+        "figs3.jpg",
+        "europepmc: ValueError: image-only (.jpg)"
+      ],
+      [
+        "figs4.gif",
+        "europepmc: ValueError: image-only (.gif)"
+      ],
+      [
+        "figs4.jpg",
+        "europepmc: ValueError: image-only (.jpg)"
+      ],
+      [
+        "figs5.gif",
+        "europepmc: ValueError: image-only (.gif)"
+      ],
+      [
+        "figs5.jpg",
+        "europepmc: ValueError: image-only (.jpg)"
+      ],
+      [
+        "figs6.gif",
+        "europepmc: ValueError: image-only (.gif)"
+      ],
+      [
+        "figs6.jpg",
+        "europepmc: ValueError: image-only (.jpg)"
+      ],
+      [
+        "figs7.gif",
+        "europepmc: ValueError: image-only (.gif)"
+      ],
+      [
+        "figs7.jpg",
+        "europepmc: ValueError: image-only (.jpg)"
+      ],
+      [
+        "fx1.gif",
+        "europepmc: ValueError: image-only (.gif)"
+      ],
+      [
+        "fx1.jpg",
+        "europepmc: ValueError: image-only (.jpg)"
+      ],
+      [
+        "gr1.gif",
+        "europepmc: ValueError: image-only (.gif)"
+      ],
+      [
+        "gr1.jpg",
+        "europepmc: ValueError: image-only (.jpg)"
+      ],
+      [
+        "gr2.gif",
+        "europepmc: ValueError: image-only (.gif)"
+      ],
+      [
+        "gr2.jpg",
+        "europepmc: ValueError: image-only (.jpg)"
+      ],
+      [
+        "gr3.gif",
+        "europepmc: ValueError: image-only (.gif)"
+      ],
+      [
+        "gr3.jpg",
+        "europepmc: ValueError: image-only (.jpg)"
+      ],
+      [
+        "gr4.gif",
+        "europepmc: ValueError: image-only (.gif)"
+      ],
+      [
+        "gr4.jpg",
+        "europepmc: ValueError: image-only (.jpg)"
+      ],
+      [
+        "gr5.gif",
+        "europepmc: ValueError: image-only (.gif)"
+      ],
+      [
+        "gr5.jpg",
+        "europepmc: ValueError: image-only (.jpg)"
+      ],
+      [
+        "gr6.gif",
+        "europepmc: ValueError: image-only (.gif)"
+      ],
+      [
+        "gr6.jpg",
+        "europepmc: ValueError: image-only (.jpg)"
+      ],
+      [
+        "gr7.gif",
+        "europepmc: ValueError: image-only (.gif)"
+      ],
+      [
+        "gr7.jpg",
+        "europepmc: ValueError: image-only (.jpg)"
+      ]
+    ],
+    "sra_manifest_source": "ena:PRJNA485056+PRJNA504891 (164 runs)",
+    "sra_manifest_warnings": []
+  },
+  "local_supplementary": [],
+  "paper_text_sha256": "1cc39adcb8b6386cdec02b4417b8c706435f8f7b1a2ddc432f4f381604c11d7f",
+  "paper_text_chars": 98276,
+  "n_tables": 21,
+  "output": {
+    "granularity": "sample_level",
+    "n_samples": 112,
+    "n_fields": 71,
+    "n_warnings": 98
+  },
+  "versions": {
+    "metaextractor": "0.1.0",
+    "anthropic_sdk": "0.104.1",
+    "python": "3.14.0"
+  }
+}

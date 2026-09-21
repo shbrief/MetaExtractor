@@ -1,0 +1,139 @@
+cmd: /Users/sehyunoh/.pyenv/versions/3.14.0/bin/python3 -m metaextractor.cli --paper-id 37069399 --schema /Users/sehyunoh/OmicsMLRepo/MetaExtractor/benchmarks/cmd_sonnet5/cmd.clean.linkml.yaml --model claude-sonnet-5 --age-rules /Users/sehyunoh/OmicsMLRepo/MetaExtractor/benchmarks/cmd_sonnet5/age_rules_cmd.json --fetch-cache /Users/sehyunoh/OmicsMLRepo/MetaExtractor/benchmarks/cmd_sonnet5/out_v4/_fetch/FanY_2023 --require-fetch-cache --out /Users/sehyunoh/OmicsMLRepo/MetaExtractor/benchmarks/cmd_sonnet5/out_v4/sonnet_r3/FanY_2023.json --csv /Users/sehyunoh/OmicsMLRepo/MetaExtractor/benchmarks/cmd_sonnet5/out_v4/sonnet_r3/FanY_2023.csv --csv-provenance --save-text /Users/sehyunoh/OmicsMLRepo/MetaExtractor/benchmarks/cmd_sonnet5/out_v4/sonnet_r3/FanY_2023.text.txt --run-meta /Users/sehyunoh/OmicsMLRepo/MetaExtractor/benchmarks/cmd_sonnet5/out_v4/sonnet_r3/FanY_2023.meta.json --api-key file:/Users/sehyunoh/OmicsMLRepo/MetaHarmonizerEval/vignettes/keys/llm_baseline
+status: fail_rc1
+returncode: 1
+elapsed_s: 3269.0
+--- stderr ---
+[loaded frozen retrieval pmc_fulltext for 37069399]
+[supplementary included (17): 41564_2023_1355_MOESM1_ESM.pdf, 41564_2023_1355_MOESM2_ESM.pdf, 41564_2023_1355_MOESM3_ESM.xlsx, 41564_2023_1355_MOESM4_ESM.xlsx, 41564_2023_1355_MOESM10_ESM.xlsx, 41564_2023_1355_MOESM11_ESM.xlsx, 41564_2023_1355_MOESM12_ESM.xlsx, 41564_2023_1355_MOESM13_ESM.xlsx, 41564_2023_1355_MOESM14_ESM.xlsx, 41564_2023_1355_MOESM15_ESM.xlsx, 41564_2023_1355_MOESM16_ESM.xlsx, 41564_2023_1355_MOESM17_ESM.xlsx, 41564_2023_1355_MOESM5_ESM.xlsx, 41564_2023_1355_MOESM6_ESM.xlsx, 41564_2023_1355_MOESM7_ESM.xlsx, 41564_2023_1355_MOESM8_ESM.xlsx, 41564_2023_1355_MOESM9_ESM.xlsx]
+[supplementary tables parsed: 56 (deterministic path; LLM will not see them)]
+[supplementary skipped: 41564_2023_1355_Article_Equa.gif — europepmc: ValueError: image-only (.gif)]
+[supplementary skipped: 41564_2023_1355_Article_Equb.gif — europepmc: ValueError: image-only (.gif)]
+[supplementary skipped: 41564_2023_1355_Fig10_ESM.gif — europepmc: ValueError: image-only (.gif)]
+[supplementary skipped: 41564_2023_1355_Fig10_ESM.jpg — europepmc: ValueError: image-only (.jpg)]
+[supplementary skipped: 41564_2023_1355_Fig11_ESM.gif — europepmc: ValueError: image-only (.gif)]
+[supplementary skipped: 41564_2023_1355_Fig11_ESM.jpg — europepmc: ValueError: image-only (.jpg)]
+[supplementary skipped: 41564_2023_1355_Fig12_ESM.gif — europepmc: ValueError: image-only (.gif)]
+[supplementary skipped: 41564_2023_1355_Fig12_ESM.jpg — europepmc: ValueError: image-only (.jpg)]
+[supplementary skipped: 41564_2023_1355_Fig13_ESM.gif — europepmc: ValueError: image-only (.gif)]
+[supplementary skipped: 41564_2023_1355_Fig13_ESM.jpg — europepmc: ValueError: image-only (.jpg)]
+[supplementary skipped: 41564_2023_1355_Fig14_ESM.gif — europepmc: ValueError: image-only (.gif)]
+[supplementary skipped: 41564_2023_1355_Fig14_ESM.jpg — europepmc: ValueError: image-only (.jpg)]
+[supplementary skipped: 41564_2023_1355_Fig15_ESM.gif — europepmc: ValueError: image-only (.gif)]
+[supplementary skipped: 41564_2023_1355_Fig15_ESM.jpg — europepmc: ValueError: image-only (.jpg)]
+[supplementary skipped: 41564_2023_1355_Fig16_ESM.gif — europepmc: ValueError: image-only (.gif)]
+[supplementary skipped: 41564_2023_1355_Fig16_ESM.jpg — europepmc: ValueError: image-only (.jpg)]
+[supplementary skipped: 41564_2023_1355_Fig1_HTML.gif — europepmc: ValueError: image-only (.gif)]
+[supplementary skipped: 41564_2023_1355_Fig1_HTML.jpg — europepmc: ValueError: image-only (.jpg)]
+[supplementary skipped: 41564_2023_1355_Fig2_HTML.gif — europepmc: ValueError: image-only (.gif)]
+[supplementary skipped: 41564_2023_1355_Fig2_HTML.jpg — europepmc: ValueError: image-only (.jpg)]
+[supplementary skipped: 41564_2023_1355_Fig3_HTML.gif — europepmc: ValueError: image-only (.gif)]
+[supplementary skipped: 41564_2023_1355_Fig3_HTML.jpg — europepmc: ValueError: image-only (.jpg)]
+[supplementary skipped: 41564_2023_1355_Fig4_HTML.gif — europepmc: ValueError: image-only (.gif)]
+[supplementary skipped: 41564_2023_1355_Fig4_HTML.jpg — europepmc: ValueError: image-only (.jpg)]
+[supplementary skipped: 41564_2023_1355_Fig5_HTML.gif — europepmc: ValueError: image-only (.gif)]
+[supplementary skipped: 41564_2023_1355_Fig5_HTML.jpg — europepmc: ValueError: image-only (.jpg)]
+[supplementary skipped: 41564_2023_1355_Fig6_HTML.gif — europepmc: ValueError: image-only (.gif)]
+[supplementary skipped: 41564_2023_1355_Fig6_HTML.jpg — europepmc: ValueError: image-only (.jpg)]
+[supplementary skipped: 41564_2023_1355_Fig7_ESM.gif — europepmc: ValueError: image-only (.gif)]
+[supplementary skipped: 41564_2023_1355_Fig7_ESM.jpg — europepmc: ValueError: image-only (.jpg)]
+[supplementary skipped: 41564_2023_1355_Fig8_ESM.gif — europepmc: ValueError: image-only (.gif)]
+[supplementary skipped: 41564_2023_1355_Fig8_ESM.jpg — europepmc: ValueError: image-only (.jpg)]
+[supplementary skipped: 41564_2023_1355_Fig9_ESM.gif — europepmc: ValueError: image-only (.gif)]
+[supplementary skipped: 41564_2023_1355_Fig9_ESM.jpg — europepmc: ValueError: image-only (.jpg)]
+Traceback (most recent call last):
+  File "/Users/sehyunoh/.pyenv/versions/3.14.0/lib/python3.14/site-packages/httpx/_transports/default.py", line 101, in map_httpcore_exceptions
+    yield
+  File "/Users/sehyunoh/.pyenv/versions/3.14.0/lib/python3.14/site-packages/httpx/_transports/default.py", line 127, in __iter__
+    for part in self._httpcore_stream:
+                ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sehyunoh/.pyenv/versions/3.14.0/lib/python3.14/site-packages/httpcore/_sync/connection_pool.py", line 407, in __iter__
+    raise exc from None
+  File "/Users/sehyunoh/.pyenv/versions/3.14.0/lib/python3.14/site-packages/httpcore/_sync/connection_pool.py", line 403, in __iter__
+    for part in self._stream:
+                ^^^^^^^^^^^^
+  File "/Users/sehyunoh/.pyenv/versions/3.14.0/lib/python3.14/site-packages/httpcore/_sync/http11.py", line 342, in __iter__
+    raise exc
+  File "/Users/sehyunoh/.pyenv/versions/3.14.0/lib/python3.14/site-packages/httpcore/_sync/http11.py", line 334, in __iter__
+    for chunk in self._connection._receive_response_body(**kwargs):
+                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/Users/sehyunoh/.pyenv/versions/3.14.0/lib/python3.14/site-packages/httpcore/_sync/http11.py", line 203, in _receive_response_body
+    event = self._receive_event(timeout=timeout)
+  File "/Users/sehyunoh/.pyenv/versions/3.14.0/lib/python3.14/site-packages/httpcore/_sync/http11.py", line 217, in _receive_event
+    data = self._network_stream.read(
+        self.READ_NUM_BYTES, timeout=timeout
+    )
+  File "/Users/sehyunoh/.pyenv/versions/3.14.0/lib/python3.14/site-packages/httpcore/_backends/sync.py", line 126, in read
+    with map_exceptions(exc_map):
+         ~~~~~~~~~~~~~~^^^^^^^^^
+  File "/Users/sehyunoh/.pyenv/versions/3.14.0/lib/python3.14/contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "/Users/sehyunoh/.pyenv/versions/3.14.0/lib/python3.14/site-packages/httpcore/_exceptions.py", line 14, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore.ReadTimeout: The read operation timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/Users/sehyunoh/OmicsMLRepo/MetaExtractor/src/metaextractor/cli.py", line 376, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "/Users/sehyunoh/OmicsMLRepo/MetaExtractor/src/metaextractor/cli.py", line 243, in main
+    result = extractor.extract(
+        paper_text, schema_obj, paper_id=args.paper_id, tables=tables or None
+    )
+  File "/Users/sehyunoh/OmicsMLRepo/MetaExtractor/src/metaextractor/extractor.py", line 205, in extract
+    results = [self._extract_one(paper_text, b, paper_id, sample_ids) for b in batches]
+               ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sehyunoh/OmicsMLRepo/MetaExtractor/src/metaextractor/extractor.py", line 308, in _extract_one
+    response = stream.get_final_message()
+  File "/Users/sehyunoh/.pyenv/versions/3.14.0/lib/python3.14/site-packages/anthropic/lib/streaming/_messages.py", line 93, in get_final_message
+    self.until_done()
+    ~~~~~~~~~~~~~~~^^
+  File "/Users/sehyunoh/.pyenv/versions/3.14.0/lib/python3.14/site-packages/anthropic/lib/streaming/_messages.py", line 120, in until_done
+    consume_sync_iterator(self)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/Users/sehyunoh/.pyenv/versions/3.14.0/lib/python3.14/site-packages/anthropic/_utils/_streams.py", line 6, in consume_sync_iterator
+    for _ in iterator:
+             ^^^^^^^^
+  File "/Users/sehyunoh/.pyenv/versions/3.14.0/lib/python3.14/site-packages/anthropic/lib/streaming/_messages.py", line 67, in __iter__
+    for item in self._iterator:
+                ^^^^^^^^^^^^^^
+  File "/Users/sehyunoh/.pyenv/versions/3.14.0/lib/python3.14/site-packages/anthropic/lib/streaming/_messages.py", line 129, in __stream__
+    for sse_event in self._raw_stream:
+                     ^^^^^^^^^^^^^^^^
+  File "/Users/sehyunoh/.pyenv/versions/3.14.0/lib/python3.14/site-packages/anthropic/_streaming.py", line 71, in __iter__
+    for item in self._iterator:
+                ^^^^^^^^^^^^^^
+  File "/Users/sehyunoh/.pyenv/versions/3.14.0/lib/python3.14/site-packages/anthropic/_streaming.py", line 84, in __stream__
+    for sse in iterator:
+               ^^^^^^^^
+  File "/Users/sehyunoh/.pyenv/versions/3.14.0/lib/python3.14/site-packages/anthropic/_streaming.py", line 75, in _iter_events
+    yield from self._decoder.iter_bytes(self.response.iter_bytes())
+  File "/Users/sehyunoh/.pyenv/versions/3.14.0/lib/python3.14/site-packages/anthropic/_streaming.py", line 392, in iter_bytes
+    for chunk in self._iter_chunks(iterator):
+                 ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/Users/sehyunoh/.pyenv/versions/3.14.0/lib/python3.14/site-packages/anthropic/_streaming.py", line 403, in _iter_chunks
+    for chunk in iterator:
+                 ^^^^^^^^
+  File "/Users/sehyunoh/.pyenv/versions/3.14.0/lib/python3.14/site-packages/httpx/_models.py", line 897, in iter_bytes
+    for raw_bytes in self.iter_raw():
+                     ~~~~~~~~~~~~~^^
+  File "/Users/sehyunoh/.pyenv/versions/3.14.0/lib/python3.14/site-packages/httpx/_models.py", line 951, in iter_raw
+    for raw_stream_bytes in self.stream:
+                            ^^^^^^^^^^^
+  File "/Users/sehyunoh/.pyenv/versions/3.14.0/lib/python3.14/site-packages/httpx/_client.py", line 153, in __iter__
+    for chunk in self._stream:
+                 ^^^^^^^^^^^^
+  File "/Users/sehyunoh/.pyenv/versions/3.14.0/lib/python3.14/site-packages/httpx/_transports/default.py", line 126, in __iter__
+    with map_httpcore_exceptions():
+         ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/sehyunoh/.pyenv/versions/3.14.0/lib/python3.14/contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "/Users/sehyunoh/.pyenv/versions/3.14.0/lib/python3.14/site-packages/httpx/_transports/default.py", line 118, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ReadTimeout: The read operation timed out
+

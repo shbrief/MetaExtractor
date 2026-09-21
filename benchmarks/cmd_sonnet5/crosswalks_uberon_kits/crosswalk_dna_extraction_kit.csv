@@ -1,0 +1,11 @@
+query,ref_match,stage,match1,match1_score,match1_code
+MPBio,Not Found,1.0,Not Found,1.0,
+NorgenBiotek,Not Found,1.0,Not Found,1.0,
+Tiangen,Not Found,1.0,Not Found,1.0,
+All-In-One kit (Norgen Biotek),Not Found,2.0,Norgen Biotek,0.6334,CMDKIT:0010
+FastDNA ® SPIN Kit (MP Biomedicals),Not Found,2.0,PowerSoil DNA Isolation Kit,0.6742,CMDKIT:0002
+MoBio,Not Found,2.0,mobiolaboratories,0.6662,CMDKIT:0008
+MoBio Powersoil DNA extraction kit,Not Found,2.0,PowerSoil DNA Isolation Kit,0.8482,CMDKIT:0002
+PowerSoil,Not Found,2.0,powersoildnaisolationkit,0.6030,CMDKIT:0002
+PowerSoil DNA Isolation Kit (MoBio Laboratories),Not Found,2.0,PowerSoil DNA Isolation Kit,0.9486,CMDKIT:0002
+TIANGEN kit,Not Found,2.0,TIANGEN,0.6285,CMDKIT:0011

@@ -1,0 +1,125 @@
+{
+  "started_utc": "2026-09-20T23:56:11+00:00",
+  "finished_utc": "2026-09-20T23:57:12+00:00",
+  "paper_id": "26259788",
+  "status": "ok",
+  "error": null,
+  "request": {
+    "model_requested": "claude-haiku-4-5",
+    "models_returned": [
+      "claude-haiku-4-5-20251001"
+    ],
+    "max_tokens": 16384,
+    "max_tokens_ceiling": 64000,
+    "batch_size": 30,
+    "sample_discovery": true,
+    "min_table_relevance": 0.15,
+    "sampling_and_thinking": "not set (API defaults: no temperature/top_p/top_k/thinking/effort parameters sent)",
+    "age_rules": "/Users/sehyunoh/OmicsMLRepo/MetaExtractor/benchmarks/cmd_sonnet5/age_rules_cmd.json"
+  },
+  "usage": {
+    "input_tokens": 7321,
+    "cache_creation_input_tokens": 7999,
+    "cache_read_input_tokens": 15998,
+    "output_tokens": 10367,
+    "n_calls": 3
+  },
+  "calls": [
+    {
+      "purpose": "fields",
+      "n_fields": 30,
+      "first_field": "location",
+      "max_tokens": 16384,
+      "stop_reason": "end_turn",
+      "output_tokens": 4213
+    },
+    {
+      "purpose": "fields",
+      "n_fields": 30,
+      "first_field": "disease_details",
+      "max_tokens": 16384,
+      "stop_reason": "end_turn",
+      "output_tokens": 4264
+    },
+    {
+      "purpose": "fields",
+      "n_fields": 11,
+      "first_field": "tumor_size_residual_measurement",
+      "max_tokens": 16384,
+      "stop_reason": "end_turn",
+      "output_tokens": 1890
+    }
+  ],
+  "cost_estimate": {
+    "input_usd": 0.007321,
+    "output_usd": 0.051835,
+    "cache_read_usd": 0.0015998000000000002,
+    "cache_write_usd": 0.00999875,
+    "total_usd": 0.07075455,
+    "pricing_as_of": "2026-06-24"
+  },
+  "retrieval": {
+    "frozen_retrieval": "/Users/sehyunoh/OmicsMLRepo/MetaExtractor/benchmarks/cmd_sonnet5/out_v4/_fetch/Bengtsson-PalmeJ_2015",
+    "source": "pmc_html",
+    "has_body": true,
+    "pmid": "26259788",
+    "pmcid": "4576037",
+    "doi": "10.1128/AAC.00933-15",
+    "attempts": [
+      {
+        "rung": "pmc_fulltext",
+        "returned_text": true,
+        "is_body": false,
+        "chars": 1721
+      },
+      {
+        "rung": "pubmed_abstract",
+        "returned_text": true,
+        "is_body": false,
+        "chars": 1775
+      },
+      {
+        "rung": "europepmc_fulltext",
+        "returned_text": false,
+        "is_body": false,
+        "chars": 0
+      },
+      {
+        "rung": "europepmc_fulltext_by_doi",
+        "returned_text": false,
+        "is_body": false,
+        "chars": 0
+      },
+      {
+        "rung": "pmc_html",
+        "returned_text": true,
+        "is_body": true,
+        "chars": 29883
+      }
+    ],
+    "supplementary_included": [],
+    "supplementary_skipped": [
+      [
+        "(europepmc zip)",
+        "response was not a valid ZIP"
+      ]
+    ],
+    "sra_manifest_source": "ena:PRJEB7369 (70 runs)",
+    "sra_manifest_warnings": []
+  },
+  "local_supplementary": [],
+  "paper_text_sha256": "30e84125476400c9ecfa8affa3652d85c1c276d25901325a0778036823f0b6e6",
+  "paper_text_chars": 29883,
+  "n_tables": 1,
+  "output": {
+    "granularity": "sample_level",
+    "n_samples": 70,
+    "n_fields": 71,
+    "n_warnings": 19
+  },
+  "versions": {
+    "metaextractor": "0.1.0",
+    "anthropic_sdk": "0.104.1",
+    "python": "3.14.0"
+  }
+}

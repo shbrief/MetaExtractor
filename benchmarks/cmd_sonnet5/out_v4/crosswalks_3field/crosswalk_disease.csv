@@ -1,0 +1,16 @@
+query,ref_match,stage,match1,match1_score,match1_code
+Healthy,Not Found,1.0,Not Found,1.0,
+Rheumatoid Arthritis,Not Found,1.0,Not Found,1.0,
+Rheumatoid arthritis,Not Found,1.0,Not Found,1.0,
+Type 1 diabetes mellitus,Not Found,1.0,Not Found,1.0,
+healthy,Not Found,1.0,Not Found,1.0,
+metabolic syndrome,Not Found,1.0,Not Found,1.0,
+rheumatoid arthritis,Not Found,1.0,Not Found,1.0,
+type 1 diabetes mellitus,Not Found,1.0,Not Found,1.0,
+'HTN': 'primary hypertension'},Not Found,2.5,Essential Hypertension,0.9312,NCIT:C3478
+'pHTN': 'pre-hypertension',Not Found,2.5,Essential Hypertension,0.7718,NCIT:C3478
+Travelers' diarrhea,Not Found,2.5,Motion Sickness,0.7345,NCIT:C34824
+type 2 diabetes,Not Found,2.0,Type 2 Diabetes Mellitus,0.9827,NCIT:C26747
+varies by subgroup (T1DM vs Healthy),Not Found,2.5,Moderate Baseline Fetal Heart Rate Variability,0.5684,NCIT:C111777
+varies by subgroup (see by_subgroup),Not Found,2.5,Gene Variant Positive,0.6337,NCIT:C177686
+{'control': 'Healthy',Not Found,2.5,Healthy,0.7072,NCIT:C115935

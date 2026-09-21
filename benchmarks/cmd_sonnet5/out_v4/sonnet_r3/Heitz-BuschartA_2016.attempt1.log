@@ -1,0 +1,14 @@
+cmd: /Users/sehyunoh/.pyenv/versions/3.14.0/bin/python3 -m metaextractor.cli --paper-id 27723761 --schema /Users/sehyunoh/OmicsMLRepo/MetaExtractor/benchmarks/cmd_sonnet5/cmd.clean.linkml.yaml --model claude-sonnet-5 --age-rules /Users/sehyunoh/OmicsMLRepo/MetaExtractor/benchmarks/cmd_sonnet5/age_rules_cmd.json --fetch-cache /Users/sehyunoh/OmicsMLRepo/MetaExtractor/benchmarks/cmd_sonnet5/out_v4/_fetch/Heitz-BuschartA_2016 --require-fetch-cache --out /Users/sehyunoh/OmicsMLRepo/MetaExtractor/benchmarks/cmd_sonnet5/out_v4/sonnet_r3/Heitz-BuschartA_2016.json --csv /Users/sehyunoh/OmicsMLRepo/MetaExtractor/benchmarks/cmd_sonnet5/out_v4/sonnet_r3/Heitz-BuschartA_2016.csv --csv-provenance --save-text /Users/sehyunoh/OmicsMLRepo/MetaExtractor/benchmarks/cmd_sonnet5/out_v4/sonnet_r3/Heitz-BuschartA_2016.text.txt --run-meta /Users/sehyunoh/OmicsMLRepo/MetaExtractor/benchmarks/cmd_sonnet5/out_v4/sonnet_r3/Heitz-BuschartA_2016.meta.json --api-key file:/Users/sehyunoh/OmicsMLRepo/MetaHarmonizerEval/vignettes/keys/llm_baseline
+status: ok
+returncode: 0
+elapsed_s: 175.2
+--- stderr ---
+[loaded frozen retrieval unpaywall_pdf for 27723761]
+[supplementary tables parsed: 1 (deterministic path; LLM will not see them)]
+[SRA/ENA run manifest: ena:PRJNA289586 (221 runs) (deterministic path)]
+[table selection: 1 kept / 1 scored (gate=0.15)]
+[  PRJNA289586_ena_manifest.tsv: kept (score=0.47) — key-like column 'run_accession'; sex: values match enum in 'host_sex' (100%)]
+[wrote CSV: /Users/sehyunoh/OmicsMLRepo/MetaExtractor/benchmarks/cmd_sonnet5/out_v4/sonnet_r3/Heitz-BuschartA_2016.csv]
+[usage: 3 call(s); input=9,105, cache_write=37,159, cache_read=78,854, output=20,893]
+[cost: $0.3358 (input $0.0182 + cache_w $0.0929 + cache_r $0.0158 + output $0.2089)]
+
