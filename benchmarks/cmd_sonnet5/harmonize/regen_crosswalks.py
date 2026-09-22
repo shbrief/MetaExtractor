@@ -50,10 +50,13 @@ CORPUS_CSV = {
     # Local custom_enum corpora (harmonize/build_custom_enum_corpora.py).
     "sequencing_platform": HERE / "sequencing_platform_corpus.csv",
     "dna_extraction_kit":  HERE / "dna_extraction_kit_corpus.csv",
+    # Real NCIt codes (C14225/C14238), so this one is not a local corpus.
+    "host_species":        HERE / "host_species_corpus.csv",
 }
 OM_CATEGORY = {"disease": "disease", "body_site": "bodysite", "treatment": "treatment",
                "sequencing_platform": "sequencing_platform",
-               "dna_extraction_kit": "dna_extraction_kit"}
+               "dna_extraction_kit": "dna_extraction_kit",
+               "host_species": "host_species"}
 # Local corpora carry local codes (CMDPLAT:/CMDKIT:), which no ontology API can resolve,
 # so the synonym-boost stage has nothing to look up and is skipped. Stages 1.0 (exact,
 # which is what the alias rows are for) and 2.0 (sap-bert embedding) still run.
@@ -108,7 +111,7 @@ def run_om(field: str, terms: list[str]):
     # Every field passes its corpus explicitly, so mapping never depends on a
     # registry-managed corpus path being present.
     kw["corpus_df"] = pd.read_csv(CORPUS_CSV[field])
-    if field == "treatment":
+    if field in ("treatment", "host_species"):
         kw["ontology_source"] = "ncit"
     return OntoMapEngine(**kw).run()
 

@@ -285,8 +285,8 @@ other studies.
 
 ### 2.5 Ontology harmonization
 
-Extracted and curated terms for `disease`, `body_site`, `treatment`, `sequencing_platform`
-and `dna_extraction_kit` were mapped with
+Extracted and curated terms for `disease`, `body_site`, `treatment`, `sequencing_platform`,
+`dna_extraction_kit` and `host_species` were mapped with
 MetaHarmonizer's OntologyMapper (v0.4.1) [CITE: MetaHarmonizer] using its exact, embedding, and
 synonym stages (the retrieval-augmented and LLM-review stages were disabled). Every distinct extracted
 term of the run tree and every distinct curated term was mapped, and the top-ranked corpus concept was
@@ -294,9 +294,10 @@ taken as the term's code, without a similarity threshold. The resulting crosswal
 run outputs (`out_v3/crosswalks/`). Corpora were field specific: for `disease`, the NCIt subtree C7057
 ("Disease, Disorder or Finding") combined with the static term C115935 ("Healthy") [CITE: NCI
 Thesaurus]; for `body_site`, the six UBERON terms of the cMD `body_site` enum [CITE: UBERON]; for
-`treatment`, the NCIt "Pharmacologic Substance" subtree (C1909); and for the two fields that
-declare a custom enumeration instead of an ontology node, a local corpus generated from the
-schema's allowed values and the curated vocabulary (Section 3.9). These corpus choices were made after
+`treatment`, the NCIt "Pharmacologic Substance" subtree (C1909); for `host_species`, the two
+NCIt concepts its `static.enum` names (C14225 *Human*, C14238 *Mouse*) with NCIt's own synonyms;
+and for the two fields that declare a custom enumeration instead of an ontology node, a local
+corpus generated from the schema's allowed values and the curated vocabulary (Section 3.9). These corpus choices were made after
 inspecting mismatches on these ten studies (for example, adding "Healthy"); they are not an independent
 test of corpus design. Because the mapping has no threshold, a closed corpus assigns every term — even
 one that is not a body site — to its nearest concept (Section 3.6).
@@ -667,9 +668,19 @@ disagreement against curated `ZymoBIOMICS96MagBead`, and 159 are multi-valued ex
 ("MOBIO Power Soil Kit; Norgen Biotek All-In-One kit") on a field the schema declares single
 valued. None of these is a spelling problem, and a crosswalk should not hide them.
 
+`host_species` has the same disagreement and a stronger remedy. The schema shows the model
+`Human`; cMD curates `Homo sapiens`; and `Homo sapiens` is a recorded NCIt synonym of C14225
+*Human*, so nothing has to be authored — the corpus is the two NCIt concepts the field's
+`static.enum` already names, with NCIt's synonyms as its alias rows. Wrong cells fall from 968 to
+102 on `out_v3` and from 1,392 to zero on the display-vocabulary run. This changes no number in
+Table 4: `host_species` is one of the eight identifier fields scored as metadata rather than
+content (Section 2.4), so the correction lands on the meta score, where it is large — pooled meta
+F1 rises from 0.158 to 0.225 (Sonnet 5) and 0.204 to 0.245 (Haiku 4.5).
+
 Table 4 is a re-scoring of the frozen responses, not a new experiment: the schema changes that
-would alter the prompt — the `host_species`, `sequencing_platform` and `dna_extraction_kit`
-vocabularies the model is shown — cannot be evaluated this way and require a fresh run. The
+would alter the prompt — the vocabularies the model is shown for `host_species`,
+`sequencing_platform` and `dna_extraction_kit` — cannot be evaluated this way and require a
+fresh run. The
 crosswalk above is their scoring-side counterpart: it makes the comparison vocabulary-neutral, but
 it cannot say whether the model will use the vocabulary it is given.
 

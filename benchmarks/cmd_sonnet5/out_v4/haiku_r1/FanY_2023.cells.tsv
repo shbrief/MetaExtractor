@@ -16,7 +16,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 0		DKAN_01	curator		Linda_Cova			FN
 0		DKAN_01	pmid		37069399			FN
 0		DKAN_01	sequencing_platform		IonProton		CMDPLAT:0005	FN
-0		DKAN_01	host_species		Homo sapiens			FN
+0		DKAN_01	host_species		Homo sapiens		NCIT:C14225	FN
 1		DKAN_02	subject_id		DKAN_02			FN
 1		DKAN_02	sample_id		DKAN_02			FN
 1		DKAN_02	country		Denmark			FN
@@ -34,7 +34,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 1		DKAN_02	curator		Linda_Cova			FN
 1		DKAN_02	pmid		37069399			FN
 1		DKAN_02	sequencing_platform		IonProton		CMDPLAT:0005	FN
-1		DKAN_02	host_species		Homo sapiens			FN
+1		DKAN_02	host_species		Homo sapiens		NCIT:C14225	FN
 2		DKAN_03	subject_id		DKAN_03			FN
 2		DKAN_03	sample_id		DKAN_03			FN
 2		DKAN_03	country		Denmark			FN
@@ -52,7 +52,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 2		DKAN_03	curator		Linda_Cova			FN
 2		DKAN_03	pmid		37069399			FN
 2		DKAN_03	sequencing_platform		IonProton		CMDPLAT:0005	FN
-2		DKAN_03	host_species		Homo sapiens			FN
+2		DKAN_03	host_species		Homo sapiens		NCIT:C14225	FN
 3		DKAN_04	subject_id		DKAN_04			FN
 3		DKAN_04	sample_id		DKAN_04			FN
 3		DKAN_04	country		Denmark			FN
@@ -70,7 +70,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 3		DKAN_04	curator		Linda_Cova			FN
 3		DKAN_04	pmid		37069399			FN
 3		DKAN_04	sequencing_platform		IonProton		CMDPLAT:0005	FN
-3		DKAN_04	host_species		Homo sapiens			FN
+3		DKAN_04	host_species		Homo sapiens		NCIT:C14225	FN
 4		DKAN_05	subject_id		DKAN_05			FN
 4		DKAN_05	sample_id		DKAN_05			FN
 4		DKAN_05	country		Denmark			FN
@@ -88,7 +88,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 4		DKAN_05	curator		Linda_Cova			FN
 4		DKAN_05	pmid		37069399			FN
 4		DKAN_05	sequencing_platform		IonProton		CMDPLAT:0005	FN
-4		DKAN_05	host_species		Homo sapiens			FN
+4		DKAN_05	host_species		Homo sapiens		NCIT:C14225	FN
 5		DKAN_06	subject_id		DKAN_06			FN
 5		DKAN_06	sample_id		DKAN_06			FN
 5		DKAN_06	country		Denmark			FN
@@ -106,7 +106,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 5		DKAN_06	curator		Linda_Cova			FN
 5		DKAN_06	pmid		37069399			FN
 5		DKAN_06	sequencing_platform		IonProton		CMDPLAT:0005	FN
-5		DKAN_06	host_species		Homo sapiens			FN
+5		DKAN_06	host_species		Homo sapiens		NCIT:C14225	FN
 6		DKAN_07	subject_id		DKAN_07			FN
 6		DKAN_07	sample_id		DKAN_07			FN
 6		DKAN_07	country		Denmark			FN
@@ -124,7 +124,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 6		DKAN_07	curator		Linda_Cova			FN
 6		DKAN_07	pmid		37069399			FN
 6		DKAN_07	sequencing_platform		IonProton		CMDPLAT:0005	FN
-6		DKAN_07	host_species		Homo sapiens			FN
+6		DKAN_07	host_species		Homo sapiens		NCIT:C14225	FN
 7		DKAN_08	subject_id		DKAN_08			FN
 7		DKAN_08	sample_id		DKAN_08			FN
 7		DKAN_08	country		Denmark			FN
@@ -142,7 +142,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 7		DKAN_08	curator		Linda_Cova			FN
 7		DKAN_08	pmid		37069399			FN
 7		DKAN_08	sequencing_platform		IonProton		CMDPLAT:0005	FN
-7		DKAN_08	host_species		Homo sapiens			FN
+7		DKAN_08	host_species		Homo sapiens		NCIT:C14225	FN
 8		DKAN_09	subject_id		DKAN_09			FN
 8		DKAN_09	sample_id		DKAN_09			FN
 8		DKAN_09	country		Denmark			FN
@@ -160,7 +160,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 8		DKAN_09	curator		Linda_Cova			FN
 8		DKAN_09	pmid		37069399			FN
 8		DKAN_09	sequencing_platform		IonProton		CMDPLAT:0005	FN
-8		DKAN_09	host_species		Homo sapiens			FN
+8		DKAN_09	host_species		Homo sapiens		NCIT:C14225	FN
 9		DKAN_10	subject_id		DKAN_10			FN
 9		DKAN_10	sample_id		DKAN_10			FN
 9		DKAN_10	country		Denmark			FN
@@ -178,7 +178,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 9		DKAN_10	curator		Linda_Cova			FN
 9		DKAN_10	pmid		37069399			FN
 9		DKAN_10	sequencing_platform		IonProton		CMDPLAT:0005	FN
-9		DKAN_10	host_species		Homo sapiens			FN
+9		DKAN_10	host_species		Homo sapiens		NCIT:C14225	FN
 10		DKAN_100	subject_id		DKAN_100			FN
 10		DKAN_100	sample_id		DKAN_100			FN
 10		DKAN_100	country		Denmark			FN
@@ -196,7 +196,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 10		DKAN_100	curator		Linda_Cova			FN
 10		DKAN_100	pmid		37069399			FN
 10		DKAN_100	sequencing_platform		IonProton		CMDPLAT:0005	FN
-10		DKAN_100	host_species		Homo sapiens			FN
+10		DKAN_100	host_species		Homo sapiens		NCIT:C14225	FN
 11		DKAN_101	subject_id		DKAN_101			FN
 11		DKAN_101	sample_id		DKAN_101			FN
 11		DKAN_101	country		Denmark			FN
@@ -214,7 +214,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 11		DKAN_101	curator		Linda_Cova			FN
 11		DKAN_101	pmid		37069399			FN
 11		DKAN_101	sequencing_platform		IonProton		CMDPLAT:0005	FN
-11		DKAN_101	host_species		Homo sapiens			FN
+11		DKAN_101	host_species		Homo sapiens		NCIT:C14225	FN
 12		DKAN_102	subject_id		DKAN_102			FN
 12		DKAN_102	sample_id		DKAN_102			FN
 12		DKAN_102	country		Denmark			FN
@@ -232,7 +232,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 12		DKAN_102	curator		Linda_Cova			FN
 12		DKAN_102	pmid		37069399			FN
 12		DKAN_102	sequencing_platform		IonProton		CMDPLAT:0005	FN
-12		DKAN_102	host_species		Homo sapiens			FN
+12		DKAN_102	host_species		Homo sapiens		NCIT:C14225	FN
 13		DKAN_103	subject_id		DKAN_103			FN
 13		DKAN_103	sample_id		DKAN_103			FN
 13		DKAN_103	country		Denmark			FN
@@ -250,7 +250,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 13		DKAN_103	curator		Linda_Cova			FN
 13		DKAN_103	pmid		37069399			FN
 13		DKAN_103	sequencing_platform		IonProton		CMDPLAT:0005	FN
-13		DKAN_103	host_species		Homo sapiens			FN
+13		DKAN_103	host_species		Homo sapiens		NCIT:C14225	FN
 14		DKAN_104	subject_id		DKAN_104			FN
 14		DKAN_104	sample_id		DKAN_104			FN
 14		DKAN_104	country		Denmark			FN
@@ -268,7 +268,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 14		DKAN_104	curator		Linda_Cova			FN
 14		DKAN_104	pmid		37069399			FN
 14		DKAN_104	sequencing_platform		IonProton		CMDPLAT:0005	FN
-14		DKAN_104	host_species		Homo sapiens			FN
+14		DKAN_104	host_species		Homo sapiens		NCIT:C14225	FN
 15		DKAN_105	subject_id		DKAN_105			FN
 15		DKAN_105	sample_id		DKAN_105			FN
 15		DKAN_105	country		Denmark			FN
@@ -286,7 +286,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 15		DKAN_105	curator		Linda_Cova			FN
 15		DKAN_105	pmid		37069399			FN
 15		DKAN_105	sequencing_platform		IonProton		CMDPLAT:0005	FN
-15		DKAN_105	host_species		Homo sapiens			FN
+15		DKAN_105	host_species		Homo sapiens		NCIT:C14225	FN
 16		DKAN_106	subject_id		DKAN_106			FN
 16		DKAN_106	sample_id		DKAN_106			FN
 16		DKAN_106	country		Denmark			FN
@@ -304,7 +304,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 16		DKAN_106	curator		Linda_Cova			FN
 16		DKAN_106	pmid		37069399			FN
 16		DKAN_106	sequencing_platform		IonProton		CMDPLAT:0005	FN
-16		DKAN_106	host_species		Homo sapiens			FN
+16		DKAN_106	host_species		Homo sapiens		NCIT:C14225	FN
 17		DKAN_107	subject_id		DKAN_107			FN
 17		DKAN_107	sample_id		DKAN_107			FN
 17		DKAN_107	country		Denmark			FN
@@ -322,7 +322,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 17		DKAN_107	curator		Linda_Cova			FN
 17		DKAN_107	pmid		37069399			FN
 17		DKAN_107	sequencing_platform		IonProton		CMDPLAT:0005	FN
-17		DKAN_107	host_species		Homo sapiens			FN
+17		DKAN_107	host_species		Homo sapiens		NCIT:C14225	FN
 18		DKAN_108	subject_id		DKAN_108			FN
 18		DKAN_108	sample_id		DKAN_108			FN
 18		DKAN_108	country		Denmark			FN
@@ -340,7 +340,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 18		DKAN_108	curator		Linda_Cova			FN
 18		DKAN_108	pmid		37069399			FN
 18		DKAN_108	sequencing_platform		IonProton		CMDPLAT:0005	FN
-18		DKAN_108	host_species		Homo sapiens			FN
+18		DKAN_108	host_species		Homo sapiens		NCIT:C14225	FN
 19		DKAN_109	subject_id		DKAN_109			FN
 19		DKAN_109	sample_id		DKAN_109			FN
 19		DKAN_109	country		Denmark			FN
@@ -358,7 +358,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 19		DKAN_109	curator		Linda_Cova			FN
 19		DKAN_109	pmid		37069399			FN
 19		DKAN_109	sequencing_platform		IonProton		CMDPLAT:0005	FN
-19		DKAN_109	host_species		Homo sapiens			FN
+19		DKAN_109	host_species		Homo sapiens		NCIT:C14225	FN
 20		DKAN_11	subject_id		DKAN_11			FN
 20		DKAN_11	sample_id		DKAN_11			FN
 20		DKAN_11	country		Denmark			FN
@@ -376,7 +376,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 20		DKAN_11	curator		Linda_Cova			FN
 20		DKAN_11	pmid		37069399			FN
 20		DKAN_11	sequencing_platform		IonProton		CMDPLAT:0005	FN
-20		DKAN_11	host_species		Homo sapiens			FN
+20		DKAN_11	host_species		Homo sapiens		NCIT:C14225	FN
 21		DKAN_110	subject_id		DKAN_110			FN
 21		DKAN_110	sample_id		DKAN_110			FN
 21		DKAN_110	country		Denmark			FN
@@ -394,7 +394,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 21		DKAN_110	curator		Linda_Cova			FN
 21		DKAN_110	pmid		37069399			FN
 21		DKAN_110	sequencing_platform		IonProton		CMDPLAT:0005	FN
-21		DKAN_110	host_species		Homo sapiens			FN
+21		DKAN_110	host_species		Homo sapiens		NCIT:C14225	FN
 22		DKAN_111	subject_id		DKAN_111			FN
 22		DKAN_111	sample_id		DKAN_111			FN
 22		DKAN_111	country		Denmark			FN
@@ -412,7 +412,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 22		DKAN_111	curator		Linda_Cova			FN
 22		DKAN_111	pmid		37069399			FN
 22		DKAN_111	sequencing_platform		IonProton		CMDPLAT:0005	FN
-22		DKAN_111	host_species		Homo sapiens			FN
+22		DKAN_111	host_species		Homo sapiens		NCIT:C14225	FN
 23		DKAN_112	subject_id		DKAN_112			FN
 23		DKAN_112	sample_id		DKAN_112			FN
 23		DKAN_112	country		Denmark			FN
@@ -430,7 +430,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 23		DKAN_112	curator		Linda_Cova			FN
 23		DKAN_112	pmid		37069399			FN
 23		DKAN_112	sequencing_platform		IonProton		CMDPLAT:0005	FN
-23		DKAN_112	host_species		Homo sapiens			FN
+23		DKAN_112	host_species		Homo sapiens		NCIT:C14225	FN
 24		DKAN_113	subject_id		DKAN_113			FN
 24		DKAN_113	sample_id		DKAN_113			FN
 24		DKAN_113	country		Denmark			FN
@@ -448,7 +448,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 24		DKAN_113	curator		Linda_Cova			FN
 24		DKAN_113	pmid		37069399			FN
 24		DKAN_113	sequencing_platform		IonProton		CMDPLAT:0005	FN
-24		DKAN_113	host_species		Homo sapiens			FN
+24		DKAN_113	host_species		Homo sapiens		NCIT:C14225	FN
 25		DKAN_114	subject_id		DKAN_114			FN
 25		DKAN_114	sample_id		DKAN_114			FN
 25		DKAN_114	country		Denmark			FN
@@ -466,7 +466,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 25		DKAN_114	curator		Linda_Cova			FN
 25		DKAN_114	pmid		37069399			FN
 25		DKAN_114	sequencing_platform		IonProton		CMDPLAT:0005	FN
-25		DKAN_114	host_species		Homo sapiens			FN
+25		DKAN_114	host_species		Homo sapiens		NCIT:C14225	FN
 26		DKAN_115	subject_id		DKAN_115			FN
 26		DKAN_115	sample_id		DKAN_115			FN
 26		DKAN_115	country		Denmark			FN
@@ -484,7 +484,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 26		DKAN_115	curator		Linda_Cova			FN
 26		DKAN_115	pmid		37069399			FN
 26		DKAN_115	sequencing_platform		IonProton		CMDPLAT:0005	FN
-26		DKAN_115	host_species		Homo sapiens			FN
+26		DKAN_115	host_species		Homo sapiens		NCIT:C14225	FN
 27		DKAN_116	subject_id		DKAN_116			FN
 27		DKAN_116	sample_id		DKAN_116			FN
 27		DKAN_116	country		Denmark			FN
@@ -502,7 +502,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 27		DKAN_116	curator		Linda_Cova			FN
 27		DKAN_116	pmid		37069399			FN
 27		DKAN_116	sequencing_platform		IonProton		CMDPLAT:0005	FN
-27		DKAN_116	host_species		Homo sapiens			FN
+27		DKAN_116	host_species		Homo sapiens		NCIT:C14225	FN
 28		DKAN_117	subject_id		DKAN_117			FN
 28		DKAN_117	sample_id		DKAN_117			FN
 28		DKAN_117	country		Denmark			FN
@@ -520,7 +520,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 28		DKAN_117	curator		Linda_Cova			FN
 28		DKAN_117	pmid		37069399			FN
 28		DKAN_117	sequencing_platform		IonProton		CMDPLAT:0005	FN
-28		DKAN_117	host_species		Homo sapiens			FN
+28		DKAN_117	host_species		Homo sapiens		NCIT:C14225	FN
 29		DKAN_118	subject_id		DKAN_118			FN
 29		DKAN_118	sample_id		DKAN_118			FN
 29		DKAN_118	country		Denmark			FN
@@ -538,7 +538,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 29		DKAN_118	curator		Linda_Cova			FN
 29		DKAN_118	pmid		37069399			FN
 29		DKAN_118	sequencing_platform		IonProton		CMDPLAT:0005	FN
-29		DKAN_118	host_species		Homo sapiens			FN
+29		DKAN_118	host_species		Homo sapiens		NCIT:C14225	FN
 30		DKAN_119	subject_id		DKAN_119			FN
 30		DKAN_119	sample_id		DKAN_119			FN
 30		DKAN_119	country		Denmark			FN
@@ -556,7 +556,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 30		DKAN_119	curator		Linda_Cova			FN
 30		DKAN_119	pmid		37069399			FN
 30		DKAN_119	sequencing_platform		IonProton		CMDPLAT:0005	FN
-30		DKAN_119	host_species		Homo sapiens			FN
+30		DKAN_119	host_species		Homo sapiens		NCIT:C14225	FN
 31		DKAN_12	subject_id		DKAN_12			FN
 31		DKAN_12	sample_id		DKAN_12			FN
 31		DKAN_12	country		Denmark			FN
@@ -574,7 +574,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 31		DKAN_12	curator		Linda_Cova			FN
 31		DKAN_12	pmid		37069399			FN
 31		DKAN_12	sequencing_platform		IonProton		CMDPLAT:0005	FN
-31		DKAN_12	host_species		Homo sapiens			FN
+31		DKAN_12	host_species		Homo sapiens		NCIT:C14225	FN
 32		DKAN_120	subject_id		DKAN_120			FN
 32		DKAN_120	sample_id		DKAN_120			FN
 32		DKAN_120	country		Denmark			FN
@@ -592,7 +592,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 32		DKAN_120	curator		Linda_Cova			FN
 32		DKAN_120	pmid		37069399			FN
 32		DKAN_120	sequencing_platform		IonProton		CMDPLAT:0005	FN
-32		DKAN_120	host_species		Homo sapiens			FN
+32		DKAN_120	host_species		Homo sapiens		NCIT:C14225	FN
 33		DKAN_121	subject_id		DKAN_121			FN
 33		DKAN_121	sample_id		DKAN_121			FN
 33		DKAN_121	country		Denmark			FN
@@ -610,7 +610,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 33		DKAN_121	curator		Linda_Cova			FN
 33		DKAN_121	pmid		37069399			FN
 33		DKAN_121	sequencing_platform		IonProton		CMDPLAT:0005	FN
-33		DKAN_121	host_species		Homo sapiens			FN
+33		DKAN_121	host_species		Homo sapiens		NCIT:C14225	FN
 34		DKAN_122	subject_id		DKAN_122			FN
 34		DKAN_122	sample_id		DKAN_122			FN
 34		DKAN_122	country		Denmark			FN
@@ -628,7 +628,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 34		DKAN_122	curator		Linda_Cova			FN
 34		DKAN_122	pmid		37069399			FN
 34		DKAN_122	sequencing_platform		IonProton		CMDPLAT:0005	FN
-34		DKAN_122	host_species		Homo sapiens			FN
+34		DKAN_122	host_species		Homo sapiens		NCIT:C14225	FN
 35		DKAN_123	subject_id		DKAN_123			FN
 35		DKAN_123	sample_id		DKAN_123			FN
 35		DKAN_123	country		Denmark			FN
@@ -646,7 +646,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 35		DKAN_123	curator		Linda_Cova			FN
 35		DKAN_123	pmid		37069399			FN
 35		DKAN_123	sequencing_platform		IonProton		CMDPLAT:0005	FN
-35		DKAN_123	host_species		Homo sapiens			FN
+35		DKAN_123	host_species		Homo sapiens		NCIT:C14225	FN
 36		DKAN_124	subject_id		DKAN_124			FN
 36		DKAN_124	sample_id		DKAN_124			FN
 36		DKAN_124	country		Denmark			FN
@@ -664,7 +664,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 36		DKAN_124	curator		Linda_Cova			FN
 36		DKAN_124	pmid		37069399			FN
 36		DKAN_124	sequencing_platform		IonProton		CMDPLAT:0005	FN
-36		DKAN_124	host_species		Homo sapiens			FN
+36		DKAN_124	host_species		Homo sapiens		NCIT:C14225	FN
 37		DKAN_125	subject_id		DKAN_125			FN
 37		DKAN_125	sample_id		DKAN_125			FN
 37		DKAN_125	country		Denmark			FN
@@ -682,7 +682,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 37		DKAN_125	curator		Linda_Cova			FN
 37		DKAN_125	pmid		37069399			FN
 37		DKAN_125	sequencing_platform		IonProton		CMDPLAT:0005	FN
-37		DKAN_125	host_species		Homo sapiens			FN
+37		DKAN_125	host_species		Homo sapiens		NCIT:C14225	FN
 38		DKAN_126	subject_id		DKAN_126			FN
 38		DKAN_126	sample_id		DKAN_126			FN
 38		DKAN_126	country		Denmark			FN
@@ -700,7 +700,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 38		DKAN_126	curator		Linda_Cova			FN
 38		DKAN_126	pmid		37069399			FN
 38		DKAN_126	sequencing_platform		IonProton		CMDPLAT:0005	FN
-38		DKAN_126	host_species		Homo sapiens			FN
+38		DKAN_126	host_species		Homo sapiens		NCIT:C14225	FN
 39		DKAN_127	subject_id		DKAN_127			FN
 39		DKAN_127	sample_id		DKAN_127			FN
 39		DKAN_127	country		Denmark			FN
@@ -718,7 +718,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 39		DKAN_127	curator		Linda_Cova			FN
 39		DKAN_127	pmid		37069399			FN
 39		DKAN_127	sequencing_platform		IonProton		CMDPLAT:0005	FN
-39		DKAN_127	host_species		Homo sapiens			FN
+39		DKAN_127	host_species		Homo sapiens		NCIT:C14225	FN
 40		DKAN_128	subject_id		DKAN_128			FN
 40		DKAN_128	sample_id		DKAN_128			FN
 40		DKAN_128	country		Denmark			FN
@@ -736,7 +736,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 40		DKAN_128	curator		Linda_Cova			FN
 40		DKAN_128	pmid		37069399			FN
 40		DKAN_128	sequencing_platform		IonProton		CMDPLAT:0005	FN
-40		DKAN_128	host_species		Homo sapiens			FN
+40		DKAN_128	host_species		Homo sapiens		NCIT:C14225	FN
 41		DKAN_129	subject_id		DKAN_129			FN
 41		DKAN_129	sample_id		DKAN_129			FN
 41		DKAN_129	country		Denmark			FN
@@ -754,7 +754,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 41		DKAN_129	curator		Linda_Cova			FN
 41		DKAN_129	pmid		37069399			FN
 41		DKAN_129	sequencing_platform		IonProton		CMDPLAT:0005	FN
-41		DKAN_129	host_species		Homo sapiens			FN
+41		DKAN_129	host_species		Homo sapiens		NCIT:C14225	FN
 42		DKAN_13	subject_id		DKAN_13			FN
 42		DKAN_13	sample_id		DKAN_13			FN
 42		DKAN_13	country		Denmark			FN
@@ -772,7 +772,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 42		DKAN_13	curator		Linda_Cova			FN
 42		DKAN_13	pmid		37069399			FN
 42		DKAN_13	sequencing_platform		IonProton		CMDPLAT:0005	FN
-42		DKAN_13	host_species		Homo sapiens			FN
+42		DKAN_13	host_species		Homo sapiens		NCIT:C14225	FN
 43		DKAN_130	subject_id		DKAN_130			FN
 43		DKAN_130	sample_id		DKAN_130			FN
 43		DKAN_130	country		Denmark			FN
@@ -790,7 +790,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 43		DKAN_130	curator		Linda_Cova			FN
 43		DKAN_130	pmid		37069399			FN
 43		DKAN_130	sequencing_platform		IonProton		CMDPLAT:0005	FN
-43		DKAN_130	host_species		Homo sapiens			FN
+43		DKAN_130	host_species		Homo sapiens		NCIT:C14225	FN
 44		DKAN_131	subject_id		DKAN_131			FN
 44		DKAN_131	sample_id		DKAN_131			FN
 44		DKAN_131	country		Denmark			FN
@@ -808,7 +808,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 44		DKAN_131	curator		Linda_Cova			FN
 44		DKAN_131	pmid		37069399			FN
 44		DKAN_131	sequencing_platform		IonProton		CMDPLAT:0005	FN
-44		DKAN_131	host_species		Homo sapiens			FN
+44		DKAN_131	host_species		Homo sapiens		NCIT:C14225	FN
 45		DKAN_132	subject_id		DKAN_132			FN
 45		DKAN_132	sample_id		DKAN_132			FN
 45		DKAN_132	country		Denmark			FN
@@ -826,7 +826,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 45		DKAN_132	curator		Linda_Cova			FN
 45		DKAN_132	pmid		37069399			FN
 45		DKAN_132	sequencing_platform		IonProton		CMDPLAT:0005	FN
-45		DKAN_132	host_species		Homo sapiens			FN
+45		DKAN_132	host_species		Homo sapiens		NCIT:C14225	FN
 46		DKAN_133	subject_id		DKAN_133			FN
 46		DKAN_133	sample_id		DKAN_133			FN
 46		DKAN_133	country		Denmark			FN
@@ -844,7 +844,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 46		DKAN_133	curator		Linda_Cova			FN
 46		DKAN_133	pmid		37069399			FN
 46		DKAN_133	sequencing_platform		IonProton		CMDPLAT:0005	FN
-46		DKAN_133	host_species		Homo sapiens			FN
+46		DKAN_133	host_species		Homo sapiens		NCIT:C14225	FN
 47		DKAN_134	subject_id		DKAN_134			FN
 47		DKAN_134	sample_id		DKAN_134			FN
 47		DKAN_134	country		Denmark			FN
@@ -862,7 +862,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 47		DKAN_134	curator		Linda_Cova			FN
 47		DKAN_134	pmid		37069399			FN
 47		DKAN_134	sequencing_platform		IonProton		CMDPLAT:0005	FN
-47		DKAN_134	host_species		Homo sapiens			FN
+47		DKAN_134	host_species		Homo sapiens		NCIT:C14225	FN
 48		DKAN_135	subject_id		DKAN_135			FN
 48		DKAN_135	sample_id		DKAN_135			FN
 48		DKAN_135	country		Denmark			FN
@@ -880,7 +880,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 48		DKAN_135	curator		Linda_Cova			FN
 48		DKAN_135	pmid		37069399			FN
 48		DKAN_135	sequencing_platform		IonProton		CMDPLAT:0005	FN
-48		DKAN_135	host_species		Homo sapiens			FN
+48		DKAN_135	host_species		Homo sapiens		NCIT:C14225	FN
 49		DKAN_136	subject_id		DKAN_136			FN
 49		DKAN_136	sample_id		DKAN_136			FN
 49		DKAN_136	country		Denmark			FN
@@ -898,7 +898,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 49		DKAN_136	curator		Linda_Cova			FN
 49		DKAN_136	pmid		37069399			FN
 49		DKAN_136	sequencing_platform		IonProton		CMDPLAT:0005	FN
-49		DKAN_136	host_species		Homo sapiens			FN
+49		DKAN_136	host_species		Homo sapiens		NCIT:C14225	FN
 50		DKAN_137	subject_id		DKAN_137			FN
 50		DKAN_137	sample_id		DKAN_137			FN
 50		DKAN_137	country		Denmark			FN
@@ -916,7 +916,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 50		DKAN_137	curator		Linda_Cova			FN
 50		DKAN_137	pmid		37069399			FN
 50		DKAN_137	sequencing_platform		IonProton		CMDPLAT:0005	FN
-50		DKAN_137	host_species		Homo sapiens			FN
+50		DKAN_137	host_species		Homo sapiens		NCIT:C14225	FN
 51		DKAN_138	subject_id		DKAN_138			FN
 51		DKAN_138	sample_id		DKAN_138			FN
 51		DKAN_138	country		Denmark			FN
@@ -934,7 +934,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 51		DKAN_138	curator		Linda_Cova			FN
 51		DKAN_138	pmid		37069399			FN
 51		DKAN_138	sequencing_platform		IonProton		CMDPLAT:0005	FN
-51		DKAN_138	host_species		Homo sapiens			FN
+51		DKAN_138	host_species		Homo sapiens		NCIT:C14225	FN
 52		DKAN_139	subject_id		DKAN_139			FN
 52		DKAN_139	sample_id		DKAN_139			FN
 52		DKAN_139	country		Denmark			FN
@@ -952,7 +952,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 52		DKAN_139	curator		Linda_Cova			FN
 52		DKAN_139	pmid		37069399			FN
 52		DKAN_139	sequencing_platform		IonProton		CMDPLAT:0005	FN
-52		DKAN_139	host_species		Homo sapiens			FN
+52		DKAN_139	host_species		Homo sapiens		NCIT:C14225	FN
 53		DKAN_14	subject_id		DKAN_14			FN
 53		DKAN_14	sample_id		DKAN_14			FN
 53		DKAN_14	country		Denmark			FN
@@ -970,7 +970,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 53		DKAN_14	curator		Linda_Cova			FN
 53		DKAN_14	pmid		37069399			FN
 53		DKAN_14	sequencing_platform		IonProton		CMDPLAT:0005	FN
-53		DKAN_14	host_species		Homo sapiens			FN
+53		DKAN_14	host_species		Homo sapiens		NCIT:C14225	FN
 54		DKAN_140	subject_id		DKAN_140			FN
 54		DKAN_140	sample_id		DKAN_140			FN
 54		DKAN_140	country		Denmark			FN
@@ -988,7 +988,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 54		DKAN_140	curator		Linda_Cova			FN
 54		DKAN_140	pmid		37069399			FN
 54		DKAN_140	sequencing_platform		IonProton		CMDPLAT:0005	FN
-54		DKAN_140	host_species		Homo sapiens			FN
+54		DKAN_140	host_species		Homo sapiens		NCIT:C14225	FN
 55		DKAN_141	subject_id		DKAN_141			FN
 55		DKAN_141	sample_id		DKAN_141			FN
 55		DKAN_141	country		Denmark			FN
@@ -1006,7 +1006,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 55		DKAN_141	curator		Linda_Cova			FN
 55		DKAN_141	pmid		37069399			FN
 55		DKAN_141	sequencing_platform		IonProton		CMDPLAT:0005	FN
-55		DKAN_141	host_species		Homo sapiens			FN
+55		DKAN_141	host_species		Homo sapiens		NCIT:C14225	FN
 56		DKAN_142	subject_id		DKAN_142			FN
 56		DKAN_142	sample_id		DKAN_142			FN
 56		DKAN_142	country		Denmark			FN
@@ -1024,7 +1024,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 56		DKAN_142	curator		Linda_Cova			FN
 56		DKAN_142	pmid		37069399			FN
 56		DKAN_142	sequencing_platform		IonProton		CMDPLAT:0005	FN
-56		DKAN_142	host_species		Homo sapiens			FN
+56		DKAN_142	host_species		Homo sapiens		NCIT:C14225	FN
 57		DKAN_143	subject_id		DKAN_143			FN
 57		DKAN_143	sample_id		DKAN_143			FN
 57		DKAN_143	country		Denmark			FN
@@ -1042,7 +1042,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 57		DKAN_143	curator		Linda_Cova			FN
 57		DKAN_143	pmid		37069399			FN
 57		DKAN_143	sequencing_platform		IonProton		CMDPLAT:0005	FN
-57		DKAN_143	host_species		Homo sapiens			FN
+57		DKAN_143	host_species		Homo sapiens		NCIT:C14225	FN
 58		DKAN_144	subject_id		DKAN_144			FN
 58		DKAN_144	sample_id		DKAN_144			FN
 58		DKAN_144	country		Denmark			FN
@@ -1060,7 +1060,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 58		DKAN_144	curator		Linda_Cova			FN
 58		DKAN_144	pmid		37069399			FN
 58		DKAN_144	sequencing_platform		IonProton		CMDPLAT:0005	FN
-58		DKAN_144	host_species		Homo sapiens			FN
+58		DKAN_144	host_species		Homo sapiens		NCIT:C14225	FN
 59		DKAN_145	subject_id		DKAN_145			FN
 59		DKAN_145	sample_id		DKAN_145			FN
 59		DKAN_145	country		Denmark			FN
@@ -1078,7 +1078,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 59		DKAN_145	curator		Linda_Cova			FN
 59		DKAN_145	pmid		37069399			FN
 59		DKAN_145	sequencing_platform		IonProton		CMDPLAT:0005	FN
-59		DKAN_145	host_species		Homo sapiens			FN
+59		DKAN_145	host_species		Homo sapiens		NCIT:C14225	FN
 60		DKAN_146	subject_id		DKAN_146			FN
 60		DKAN_146	sample_id		DKAN_146			FN
 60		DKAN_146	country		Denmark			FN
@@ -1096,7 +1096,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 60		DKAN_146	curator		Linda_Cova			FN
 60		DKAN_146	pmid		37069399			FN
 60		DKAN_146	sequencing_platform		IonProton		CMDPLAT:0005	FN
-60		DKAN_146	host_species		Homo sapiens			FN
+60		DKAN_146	host_species		Homo sapiens		NCIT:C14225	FN
 61		DKAN_147	subject_id		DKAN_147			FN
 61		DKAN_147	sample_id		DKAN_147			FN
 61		DKAN_147	country		Denmark			FN
@@ -1114,7 +1114,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 61		DKAN_147	curator		Linda_Cova			FN
 61		DKAN_147	pmid		37069399			FN
 61		DKAN_147	sequencing_platform		IonProton		CMDPLAT:0005	FN
-61		DKAN_147	host_species		Homo sapiens			FN
+61		DKAN_147	host_species		Homo sapiens		NCIT:C14225	FN
 62		DKAN_15	subject_id		DKAN_15			FN
 62		DKAN_15	sample_id		DKAN_15			FN
 62		DKAN_15	country		Denmark			FN
@@ -1132,7 +1132,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 62		DKAN_15	curator		Linda_Cova			FN
 62		DKAN_15	pmid		37069399			FN
 62		DKAN_15	sequencing_platform		IonProton		CMDPLAT:0005	FN
-62		DKAN_15	host_species		Homo sapiens			FN
+62		DKAN_15	host_species		Homo sapiens		NCIT:C14225	FN
 63		DKAN_16	subject_id		DKAN_16			FN
 63		DKAN_16	sample_id		DKAN_16			FN
 63		DKAN_16	country		Denmark			FN
@@ -1150,7 +1150,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 63		DKAN_16	curator		Linda_Cova			FN
 63		DKAN_16	pmid		37069399			FN
 63		DKAN_16	sequencing_platform		IonProton		CMDPLAT:0005	FN
-63		DKAN_16	host_species		Homo sapiens			FN
+63		DKAN_16	host_species		Homo sapiens		NCIT:C14225	FN
 64		DKAN_17	subject_id		DKAN_17			FN
 64		DKAN_17	sample_id		DKAN_17			FN
 64		DKAN_17	country		Denmark			FN
@@ -1168,7 +1168,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 64		DKAN_17	curator		Linda_Cova			FN
 64		DKAN_17	pmid		37069399			FN
 64		DKAN_17	sequencing_platform		IonProton		CMDPLAT:0005	FN
-64		DKAN_17	host_species		Homo sapiens			FN
+64		DKAN_17	host_species		Homo sapiens		NCIT:C14225	FN
 65		DKAN_18	subject_id		DKAN_18			FN
 65		DKAN_18	sample_id		DKAN_18			FN
 65		DKAN_18	country		Denmark			FN
@@ -1186,7 +1186,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 65		DKAN_18	curator		Linda_Cova			FN
 65		DKAN_18	pmid		37069399			FN
 65		DKAN_18	sequencing_platform		IonProton		CMDPLAT:0005	FN
-65		DKAN_18	host_species		Homo sapiens			FN
+65		DKAN_18	host_species		Homo sapiens		NCIT:C14225	FN
 66		DKAN_19	subject_id		DKAN_19			FN
 66		DKAN_19	sample_id		DKAN_19			FN
 66		DKAN_19	country		Denmark			FN
@@ -1204,7 +1204,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 66		DKAN_19	curator		Linda_Cova			FN
 66		DKAN_19	pmid		37069399			FN
 66		DKAN_19	sequencing_platform		IonProton		CMDPLAT:0005	FN
-66		DKAN_19	host_species		Homo sapiens			FN
+66		DKAN_19	host_species		Homo sapiens		NCIT:C14225	FN
 67		DKAN_20	subject_id		DKAN_20			FN
 67		DKAN_20	sample_id		DKAN_20			FN
 67		DKAN_20	country		Denmark			FN
@@ -1222,7 +1222,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 67		DKAN_20	curator		Linda_Cova			FN
 67		DKAN_20	pmid		37069399			FN
 67		DKAN_20	sequencing_platform		IonProton		CMDPLAT:0005	FN
-67		DKAN_20	host_species		Homo sapiens			FN
+67		DKAN_20	host_species		Homo sapiens		NCIT:C14225	FN
 68		DKAN_21	subject_id		DKAN_21			FN
 68		DKAN_21	sample_id		DKAN_21			FN
 68		DKAN_21	country		Denmark			FN
@@ -1240,7 +1240,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 68		DKAN_21	curator		Linda_Cova			FN
 68		DKAN_21	pmid		37069399			FN
 68		DKAN_21	sequencing_platform		IonProton		CMDPLAT:0005	FN
-68		DKAN_21	host_species		Homo sapiens			FN
+68		DKAN_21	host_species		Homo sapiens		NCIT:C14225	FN
 69		DKAN_22	subject_id		DKAN_22			FN
 69		DKAN_22	sample_id		DKAN_22			FN
 69		DKAN_22	country		Denmark			FN
@@ -1258,7 +1258,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 69		DKAN_22	curator		Linda_Cova			FN
 69		DKAN_22	pmid		37069399			FN
 69		DKAN_22	sequencing_platform		IonProton		CMDPLAT:0005	FN
-69		DKAN_22	host_species		Homo sapiens			FN
+69		DKAN_22	host_species		Homo sapiens		NCIT:C14225	FN
 70		DKAN_23	subject_id		DKAN_23			FN
 70		DKAN_23	sample_id		DKAN_23			FN
 70		DKAN_23	country		Denmark			FN
@@ -1276,7 +1276,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 70		DKAN_23	curator		Linda_Cova			FN
 70		DKAN_23	pmid		37069399			FN
 70		DKAN_23	sequencing_platform		IonProton		CMDPLAT:0005	FN
-70		DKAN_23	host_species		Homo sapiens			FN
+70		DKAN_23	host_species		Homo sapiens		NCIT:C14225	FN
 71		DKAN_24	subject_id		DKAN_24			FN
 71		DKAN_24	sample_id		DKAN_24			FN
 71		DKAN_24	country		Denmark			FN
@@ -1294,7 +1294,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 71		DKAN_24	curator		Linda_Cova			FN
 71		DKAN_24	pmid		37069399			FN
 71		DKAN_24	sequencing_platform		IonProton		CMDPLAT:0005	FN
-71		DKAN_24	host_species		Homo sapiens			FN
+71		DKAN_24	host_species		Homo sapiens		NCIT:C14225	FN
 72		DKAN_25	subject_id		DKAN_25			FN
 72		DKAN_25	sample_id		DKAN_25			FN
 72		DKAN_25	country		Denmark			FN
@@ -1312,7 +1312,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 72		DKAN_25	curator		Linda_Cova			FN
 72		DKAN_25	pmid		37069399			FN
 72		DKAN_25	sequencing_platform		IonProton		CMDPLAT:0005	FN
-72		DKAN_25	host_species		Homo sapiens			FN
+72		DKAN_25	host_species		Homo sapiens		NCIT:C14225	FN
 73		DKAN_26	subject_id		DKAN_26			FN
 73		DKAN_26	sample_id		DKAN_26			FN
 73		DKAN_26	country		Denmark			FN
@@ -1330,7 +1330,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 73		DKAN_26	curator		Linda_Cova			FN
 73		DKAN_26	pmid		37069399			FN
 73		DKAN_26	sequencing_platform		IonProton		CMDPLAT:0005	FN
-73		DKAN_26	host_species		Homo sapiens			FN
+73		DKAN_26	host_species		Homo sapiens		NCIT:C14225	FN
 74		DKAN_27	subject_id		DKAN_27			FN
 74		DKAN_27	sample_id		DKAN_27			FN
 74		DKAN_27	country		Denmark			FN
@@ -1348,7 +1348,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 74		DKAN_27	curator		Linda_Cova			FN
 74		DKAN_27	pmid		37069399			FN
 74		DKAN_27	sequencing_platform		IonProton		CMDPLAT:0005	FN
-74		DKAN_27	host_species		Homo sapiens			FN
+74		DKAN_27	host_species		Homo sapiens		NCIT:C14225	FN
 75		DKAN_28	subject_id		DKAN_28			FN
 75		DKAN_28	sample_id		DKAN_28			FN
 75		DKAN_28	country		Denmark			FN
@@ -1366,7 +1366,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 75		DKAN_28	curator		Linda_Cova			FN
 75		DKAN_28	pmid		37069399			FN
 75		DKAN_28	sequencing_platform		IonProton		CMDPLAT:0005	FN
-75		DKAN_28	host_species		Homo sapiens			FN
+75		DKAN_28	host_species		Homo sapiens		NCIT:C14225	FN
 76		DKAN_29	subject_id		DKAN_29			FN
 76		DKAN_29	sample_id		DKAN_29			FN
 76		DKAN_29	country		Denmark			FN
@@ -1384,7 +1384,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 76		DKAN_29	curator		Linda_Cova			FN
 76		DKAN_29	pmid		37069399			FN
 76		DKAN_29	sequencing_platform		IonProton		CMDPLAT:0005	FN
-76		DKAN_29	host_species		Homo sapiens			FN
+76		DKAN_29	host_species		Homo sapiens		NCIT:C14225	FN
 77		DKAN_30	subject_id		DKAN_30			FN
 77		DKAN_30	sample_id		DKAN_30			FN
 77		DKAN_30	country		Denmark			FN
@@ -1402,7 +1402,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 77		DKAN_30	curator		Linda_Cova			FN
 77		DKAN_30	pmid		37069399			FN
 77		DKAN_30	sequencing_platform		IonProton		CMDPLAT:0005	FN
-77		DKAN_30	host_species		Homo sapiens			FN
+77		DKAN_30	host_species		Homo sapiens		NCIT:C14225	FN
 78		DKAN_31	subject_id		DKAN_31			FN
 78		DKAN_31	sample_id		DKAN_31			FN
 78		DKAN_31	country		Denmark			FN
@@ -1420,7 +1420,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 78		DKAN_31	curator		Linda_Cova			FN
 78		DKAN_31	pmid		37069399			FN
 78		DKAN_31	sequencing_platform		IonProton		CMDPLAT:0005	FN
-78		DKAN_31	host_species		Homo sapiens			FN
+78		DKAN_31	host_species		Homo sapiens		NCIT:C14225	FN
 79		DKAN_32	subject_id		DKAN_32			FN
 79		DKAN_32	sample_id		DKAN_32			FN
 79		DKAN_32	country		Denmark			FN
@@ -1438,7 +1438,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 79		DKAN_32	curator		Linda_Cova			FN
 79		DKAN_32	pmid		37069399			FN
 79		DKAN_32	sequencing_platform		IonProton		CMDPLAT:0005	FN
-79		DKAN_32	host_species		Homo sapiens			FN
+79		DKAN_32	host_species		Homo sapiens		NCIT:C14225	FN
 80		DKAN_33	subject_id		DKAN_33			FN
 80		DKAN_33	sample_id		DKAN_33			FN
 80		DKAN_33	country		Denmark			FN
@@ -1456,7 +1456,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 80		DKAN_33	curator		Linda_Cova			FN
 80		DKAN_33	pmid		37069399			FN
 80		DKAN_33	sequencing_platform		IonProton		CMDPLAT:0005	FN
-80		DKAN_33	host_species		Homo sapiens			FN
+80		DKAN_33	host_species		Homo sapiens		NCIT:C14225	FN
 81		DKAN_34	subject_id		DKAN_34			FN
 81		DKAN_34	sample_id		DKAN_34			FN
 81		DKAN_34	country		Denmark			FN
@@ -1474,7 +1474,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 81		DKAN_34	curator		Linda_Cova			FN
 81		DKAN_34	pmid		37069399			FN
 81		DKAN_34	sequencing_platform		IonProton		CMDPLAT:0005	FN
-81		DKAN_34	host_species		Homo sapiens			FN
+81		DKAN_34	host_species		Homo sapiens		NCIT:C14225	FN
 82		DKAN_35	subject_id		DKAN_35			FN
 82		DKAN_35	sample_id		DKAN_35			FN
 82		DKAN_35	country		Denmark			FN
@@ -1492,7 +1492,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 82		DKAN_35	curator		Linda_Cova			FN
 82		DKAN_35	pmid		37069399			FN
 82		DKAN_35	sequencing_platform		IonProton		CMDPLAT:0005	FN
-82		DKAN_35	host_species		Homo sapiens			FN
+82		DKAN_35	host_species		Homo sapiens		NCIT:C14225	FN
 83		DKAN_36	subject_id		DKAN_36			FN
 83		DKAN_36	sample_id		DKAN_36			FN
 83		DKAN_36	country		Denmark			FN
@@ -1510,7 +1510,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 83		DKAN_36	curator		Linda_Cova			FN
 83		DKAN_36	pmid		37069399			FN
 83		DKAN_36	sequencing_platform		IonProton		CMDPLAT:0005	FN
-83		DKAN_36	host_species		Homo sapiens			FN
+83		DKAN_36	host_species		Homo sapiens		NCIT:C14225	FN
 84		DKAN_37	subject_id		DKAN_37			FN
 84		DKAN_37	sample_id		DKAN_37			FN
 84		DKAN_37	country		Denmark			FN
@@ -1528,7 +1528,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 84		DKAN_37	curator		Linda_Cova			FN
 84		DKAN_37	pmid		37069399			FN
 84		DKAN_37	sequencing_platform		IonProton		CMDPLAT:0005	FN
-84		DKAN_37	host_species		Homo sapiens			FN
+84		DKAN_37	host_species		Homo sapiens		NCIT:C14225	FN
 85		DKAN_38	subject_id		DKAN_38			FN
 85		DKAN_38	sample_id		DKAN_38			FN
 85		DKAN_38	country		Denmark			FN
@@ -1546,7 +1546,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 85		DKAN_38	curator		Linda_Cova			FN
 85		DKAN_38	pmid		37069399			FN
 85		DKAN_38	sequencing_platform		IonProton		CMDPLAT:0005	FN
-85		DKAN_38	host_species		Homo sapiens			FN
+85		DKAN_38	host_species		Homo sapiens		NCIT:C14225	FN
 86		DKAN_39	subject_id		DKAN_39			FN
 86		DKAN_39	sample_id		DKAN_39			FN
 86		DKAN_39	country		Denmark			FN
@@ -1564,7 +1564,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 86		DKAN_39	curator		Linda_Cova			FN
 86		DKAN_39	pmid		37069399			FN
 86		DKAN_39	sequencing_platform		IonProton		CMDPLAT:0005	FN
-86		DKAN_39	host_species		Homo sapiens			FN
+86		DKAN_39	host_species		Homo sapiens		NCIT:C14225	FN
 87		DKAN_40	subject_id		DKAN_40			FN
 87		DKAN_40	sample_id		DKAN_40			FN
 87		DKAN_40	country		Denmark			FN
@@ -1582,7 +1582,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 87		DKAN_40	curator		Linda_Cova			FN
 87		DKAN_40	pmid		37069399			FN
 87		DKAN_40	sequencing_platform		IonProton		CMDPLAT:0005	FN
-87		DKAN_40	host_species		Homo sapiens			FN
+87		DKAN_40	host_species		Homo sapiens		NCIT:C14225	FN
 88		DKAN_41	subject_id		DKAN_41			FN
 88		DKAN_41	sample_id		DKAN_41			FN
 88		DKAN_41	country		Denmark			FN
@@ -1600,7 +1600,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 88		DKAN_41	curator		Linda_Cova			FN
 88		DKAN_41	pmid		37069399			FN
 88		DKAN_41	sequencing_platform		IonProton		CMDPLAT:0005	FN
-88		DKAN_41	host_species		Homo sapiens			FN
+88		DKAN_41	host_species		Homo sapiens		NCIT:C14225	FN
 89		DKAN_42	subject_id		DKAN_42			FN
 89		DKAN_42	sample_id		DKAN_42			FN
 89		DKAN_42	country		Denmark			FN
@@ -1618,7 +1618,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 89		DKAN_42	curator		Linda_Cova			FN
 89		DKAN_42	pmid		37069399			FN
 89		DKAN_42	sequencing_platform		IonProton		CMDPLAT:0005	FN
-89		DKAN_42	host_species		Homo sapiens			FN
+89		DKAN_42	host_species		Homo sapiens		NCIT:C14225	FN
 90		DKAN_43	subject_id		DKAN_43			FN
 90		DKAN_43	sample_id		DKAN_43			FN
 90		DKAN_43	country		Denmark			FN
@@ -1636,7 +1636,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 90		DKAN_43	curator		Linda_Cova			FN
 90		DKAN_43	pmid		37069399			FN
 90		DKAN_43	sequencing_platform		IonProton		CMDPLAT:0005	FN
-90		DKAN_43	host_species		Homo sapiens			FN
+90		DKAN_43	host_species		Homo sapiens		NCIT:C14225	FN
 91		DKAN_44	subject_id		DKAN_44			FN
 91		DKAN_44	sample_id		DKAN_44			FN
 91		DKAN_44	country		Denmark			FN
@@ -1654,7 +1654,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 91		DKAN_44	curator		Linda_Cova			FN
 91		DKAN_44	pmid		37069399			FN
 91		DKAN_44	sequencing_platform		IonProton		CMDPLAT:0005	FN
-91		DKAN_44	host_species		Homo sapiens			FN
+91		DKAN_44	host_species		Homo sapiens		NCIT:C14225	FN
 92		DKAN_45	subject_id		DKAN_45			FN
 92		DKAN_45	sample_id		DKAN_45			FN
 92		DKAN_45	country		Denmark			FN
@@ -1672,7 +1672,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 92		DKAN_45	curator		Linda_Cova			FN
 92		DKAN_45	pmid		37069399			FN
 92		DKAN_45	sequencing_platform		IonProton		CMDPLAT:0005	FN
-92		DKAN_45	host_species		Homo sapiens			FN
+92		DKAN_45	host_species		Homo sapiens		NCIT:C14225	FN
 93		DKAN_46	subject_id		DKAN_46			FN
 93		DKAN_46	sample_id		DKAN_46			FN
 93		DKAN_46	country		Denmark			FN
@@ -1690,7 +1690,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 93		DKAN_46	curator		Linda_Cova			FN
 93		DKAN_46	pmid		37069399			FN
 93		DKAN_46	sequencing_platform		IonProton		CMDPLAT:0005	FN
-93		DKAN_46	host_species		Homo sapiens			FN
+93		DKAN_46	host_species		Homo sapiens		NCIT:C14225	FN
 94		DKAN_47	subject_id		DKAN_47			FN
 94		DKAN_47	sample_id		DKAN_47			FN
 94		DKAN_47	country		Denmark			FN
@@ -1708,7 +1708,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 94		DKAN_47	curator		Linda_Cova			FN
 94		DKAN_47	pmid		37069399			FN
 94		DKAN_47	sequencing_platform		IonProton		CMDPLAT:0005	FN
-94		DKAN_47	host_species		Homo sapiens			FN
+94		DKAN_47	host_species		Homo sapiens		NCIT:C14225	FN
 95		DKAN_48	subject_id		DKAN_48			FN
 95		DKAN_48	sample_id		DKAN_48			FN
 95		DKAN_48	country		Denmark			FN
@@ -1726,7 +1726,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 95		DKAN_48	curator		Linda_Cova			FN
 95		DKAN_48	pmid		37069399			FN
 95		DKAN_48	sequencing_platform		IonProton		CMDPLAT:0005	FN
-95		DKAN_48	host_species		Homo sapiens			FN
+95		DKAN_48	host_species		Homo sapiens		NCIT:C14225	FN
 96		DKAN_49	subject_id		DKAN_49			FN
 96		DKAN_49	sample_id		DKAN_49			FN
 96		DKAN_49	country		Denmark			FN
@@ -1744,7 +1744,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 96		DKAN_49	curator		Linda_Cova			FN
 96		DKAN_49	pmid		37069399			FN
 96		DKAN_49	sequencing_platform		IonProton		CMDPLAT:0005	FN
-96		DKAN_49	host_species		Homo sapiens			FN
+96		DKAN_49	host_species		Homo sapiens		NCIT:C14225	FN
 97		DKAN_50	subject_id		DKAN_50			FN
 97		DKAN_50	sample_id		DKAN_50			FN
 97		DKAN_50	country		Denmark			FN
@@ -1762,7 +1762,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 97		DKAN_50	curator		Linda_Cova			FN
 97		DKAN_50	pmid		37069399			FN
 97		DKAN_50	sequencing_platform		IonProton		CMDPLAT:0005	FN
-97		DKAN_50	host_species		Homo sapiens			FN
+97		DKAN_50	host_species		Homo sapiens		NCIT:C14225	FN
 98		DKAN_51	subject_id		DKAN_51			FN
 98		DKAN_51	sample_id		DKAN_51			FN
 98		DKAN_51	country		Denmark			FN
@@ -1780,7 +1780,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 98		DKAN_51	curator		Linda_Cova			FN
 98		DKAN_51	pmid		37069399			FN
 98		DKAN_51	sequencing_platform		IonProton		CMDPLAT:0005	FN
-98		DKAN_51	host_species		Homo sapiens			FN
+98		DKAN_51	host_species		Homo sapiens		NCIT:C14225	FN
 99		DKAN_52	subject_id		DKAN_52			FN
 99		DKAN_52	sample_id		DKAN_52			FN
 99		DKAN_52	country		Denmark			FN
@@ -1798,7 +1798,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 99		DKAN_52	curator		Linda_Cova			FN
 99		DKAN_52	pmid		37069399			FN
 99		DKAN_52	sequencing_platform		IonProton		CMDPLAT:0005	FN
-99		DKAN_52	host_species		Homo sapiens			FN
+99		DKAN_52	host_species		Homo sapiens		NCIT:C14225	FN
 100		DKAN_53	subject_id		DKAN_53			FN
 100		DKAN_53	sample_id		DKAN_53			FN
 100		DKAN_53	country		Denmark			FN
@@ -1816,7 +1816,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 100		DKAN_53	curator		Linda_Cova			FN
 100		DKAN_53	pmid		37069399			FN
 100		DKAN_53	sequencing_platform		IonProton		CMDPLAT:0005	FN
-100		DKAN_53	host_species		Homo sapiens			FN
+100		DKAN_53	host_species		Homo sapiens		NCIT:C14225	FN
 101		DKAN_54	subject_id		DKAN_54			FN
 101		DKAN_54	sample_id		DKAN_54			FN
 101		DKAN_54	country		Denmark			FN
@@ -1834,7 +1834,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 101		DKAN_54	curator		Linda_Cova			FN
 101		DKAN_54	pmid		37069399			FN
 101		DKAN_54	sequencing_platform		IonProton		CMDPLAT:0005	FN
-101		DKAN_54	host_species		Homo sapiens			FN
+101		DKAN_54	host_species		Homo sapiens		NCIT:C14225	FN
 102		DKAN_55	subject_id		DKAN_55			FN
 102		DKAN_55	sample_id		DKAN_55			FN
 102		DKAN_55	country		Denmark			FN
@@ -1852,7 +1852,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 102		DKAN_55	curator		Linda_Cova			FN
 102		DKAN_55	pmid		37069399			FN
 102		DKAN_55	sequencing_platform		IonProton		CMDPLAT:0005	FN
-102		DKAN_55	host_species		Homo sapiens			FN
+102		DKAN_55	host_species		Homo sapiens		NCIT:C14225	FN
 103		DKAN_56	subject_id		DKAN_56			FN
 103		DKAN_56	sample_id		DKAN_56			FN
 103		DKAN_56	country		Denmark			FN
@@ -1870,7 +1870,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 103		DKAN_56	curator		Linda_Cova			FN
 103		DKAN_56	pmid		37069399			FN
 103		DKAN_56	sequencing_platform		IonProton		CMDPLAT:0005	FN
-103		DKAN_56	host_species		Homo sapiens			FN
+103		DKAN_56	host_species		Homo sapiens		NCIT:C14225	FN
 104		DKAN_57	subject_id		DKAN_57			FN
 104		DKAN_57	sample_id		DKAN_57			FN
 104		DKAN_57	country		Denmark			FN
@@ -1888,7 +1888,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 104		DKAN_57	curator		Linda_Cova			FN
 104		DKAN_57	pmid		37069399			FN
 104		DKAN_57	sequencing_platform		IonProton		CMDPLAT:0005	FN
-104		DKAN_57	host_species		Homo sapiens			FN
+104		DKAN_57	host_species		Homo sapiens		NCIT:C14225	FN
 105		DKAN_58	subject_id		DKAN_58			FN
 105		DKAN_58	sample_id		DKAN_58			FN
 105		DKAN_58	country		Denmark			FN
@@ -1906,7 +1906,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 105		DKAN_58	curator		Linda_Cova			FN
 105		DKAN_58	pmid		37069399			FN
 105		DKAN_58	sequencing_platform		IonProton		CMDPLAT:0005	FN
-105		DKAN_58	host_species		Homo sapiens			FN
+105		DKAN_58	host_species		Homo sapiens		NCIT:C14225	FN
 106		DKAN_59	subject_id		DKAN_59			FN
 106		DKAN_59	sample_id		DKAN_59			FN
 106		DKAN_59	country		Denmark			FN
@@ -1924,7 +1924,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 106		DKAN_59	curator		Linda_Cova			FN
 106		DKAN_59	pmid		37069399			FN
 106		DKAN_59	sequencing_platform		IonProton		CMDPLAT:0005	FN
-106		DKAN_59	host_species		Homo sapiens			FN
+106		DKAN_59	host_species		Homo sapiens		NCIT:C14225	FN
 107		DKAN_60	subject_id		DKAN_60			FN
 107		DKAN_60	sample_id		DKAN_60			FN
 107		DKAN_60	country		Denmark			FN
@@ -1942,7 +1942,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 107		DKAN_60	curator		Linda_Cova			FN
 107		DKAN_60	pmid		37069399			FN
 107		DKAN_60	sequencing_platform		IonProton		CMDPLAT:0005	FN
-107		DKAN_60	host_species		Homo sapiens			FN
+107		DKAN_60	host_species		Homo sapiens		NCIT:C14225	FN
 108		DKAN_61	subject_id		DKAN_61			FN
 108		DKAN_61	sample_id		DKAN_61			FN
 108		DKAN_61	country		Denmark			FN
@@ -1960,7 +1960,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 108		DKAN_61	curator		Linda_Cova			FN
 108		DKAN_61	pmid		37069399			FN
 108		DKAN_61	sequencing_platform		IonProton		CMDPLAT:0005	FN
-108		DKAN_61	host_species		Homo sapiens			FN
+108		DKAN_61	host_species		Homo sapiens		NCIT:C14225	FN
 109		DKAN_62	subject_id		DKAN_62			FN
 109		DKAN_62	sample_id		DKAN_62			FN
 109		DKAN_62	country		Denmark			FN
@@ -1978,7 +1978,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 109		DKAN_62	curator		Linda_Cova			FN
 109		DKAN_62	pmid		37069399			FN
 109		DKAN_62	sequencing_platform		IonProton		CMDPLAT:0005	FN
-109		DKAN_62	host_species		Homo sapiens			FN
+109		DKAN_62	host_species		Homo sapiens		NCIT:C14225	FN
 110		DKAN_63	subject_id		DKAN_63			FN
 110		DKAN_63	sample_id		DKAN_63			FN
 110		DKAN_63	country		Denmark			FN
@@ -1996,7 +1996,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 110		DKAN_63	curator		Linda_Cova			FN
 110		DKAN_63	pmid		37069399			FN
 110		DKAN_63	sequencing_platform		IonProton		CMDPLAT:0005	FN
-110		DKAN_63	host_species		Homo sapiens			FN
+110		DKAN_63	host_species		Homo sapiens		NCIT:C14225	FN
 111		DKAN_64	subject_id		DKAN_64			FN
 111		DKAN_64	sample_id		DKAN_64			FN
 111		DKAN_64	country		Denmark			FN
@@ -2014,7 +2014,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 111		DKAN_64	curator		Linda_Cova			FN
 111		DKAN_64	pmid		37069399			FN
 111		DKAN_64	sequencing_platform		IonProton		CMDPLAT:0005	FN
-111		DKAN_64	host_species		Homo sapiens			FN
+111		DKAN_64	host_species		Homo sapiens		NCIT:C14225	FN
 112		DKAN_65	subject_id		DKAN_65			FN
 112		DKAN_65	sample_id		DKAN_65			FN
 112		DKAN_65	country		Denmark			FN
@@ -2032,7 +2032,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 112		DKAN_65	curator		Linda_Cova			FN
 112		DKAN_65	pmid		37069399			FN
 112		DKAN_65	sequencing_platform		IonProton		CMDPLAT:0005	FN
-112		DKAN_65	host_species		Homo sapiens			FN
+112		DKAN_65	host_species		Homo sapiens		NCIT:C14225	FN
 113		DKAN_66	subject_id		DKAN_66			FN
 113		DKAN_66	sample_id		DKAN_66			FN
 113		DKAN_66	country		Denmark			FN
@@ -2050,7 +2050,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 113		DKAN_66	curator		Linda_Cova			FN
 113		DKAN_66	pmid		37069399			FN
 113		DKAN_66	sequencing_platform		IonProton		CMDPLAT:0005	FN
-113		DKAN_66	host_species		Homo sapiens			FN
+113		DKAN_66	host_species		Homo sapiens		NCIT:C14225	FN
 114		DKAN_67	subject_id		DKAN_67			FN
 114		DKAN_67	sample_id		DKAN_67			FN
 114		DKAN_67	country		Denmark			FN
@@ -2068,7 +2068,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 114		DKAN_67	curator		Linda_Cova			FN
 114		DKAN_67	pmid		37069399			FN
 114		DKAN_67	sequencing_platform		IonProton		CMDPLAT:0005	FN
-114		DKAN_67	host_species		Homo sapiens			FN
+114		DKAN_67	host_species		Homo sapiens		NCIT:C14225	FN
 115		DKAN_68	subject_id		DKAN_68			FN
 115		DKAN_68	sample_id		DKAN_68			FN
 115		DKAN_68	country		Denmark			FN
@@ -2086,7 +2086,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 115		DKAN_68	curator		Linda_Cova			FN
 115		DKAN_68	pmid		37069399			FN
 115		DKAN_68	sequencing_platform		IonProton		CMDPLAT:0005	FN
-115		DKAN_68	host_species		Homo sapiens			FN
+115		DKAN_68	host_species		Homo sapiens		NCIT:C14225	FN
 116		DKAN_69	subject_id		DKAN_69			FN
 116		DKAN_69	sample_id		DKAN_69			FN
 116		DKAN_69	country		Denmark			FN
@@ -2104,7 +2104,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 116		DKAN_69	curator		Linda_Cova			FN
 116		DKAN_69	pmid		37069399			FN
 116		DKAN_69	sequencing_platform		IonProton		CMDPLAT:0005	FN
-116		DKAN_69	host_species		Homo sapiens			FN
+116		DKAN_69	host_species		Homo sapiens		NCIT:C14225	FN
 117		DKAN_70	subject_id		DKAN_70			FN
 117		DKAN_70	sample_id		DKAN_70			FN
 117		DKAN_70	country		Denmark			FN
@@ -2122,7 +2122,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 117		DKAN_70	curator		Linda_Cova			FN
 117		DKAN_70	pmid		37069399			FN
 117		DKAN_70	sequencing_platform		IonProton		CMDPLAT:0005	FN
-117		DKAN_70	host_species		Homo sapiens			FN
+117		DKAN_70	host_species		Homo sapiens		NCIT:C14225	FN
 118		DKAN_71	subject_id		DKAN_71			FN
 118		DKAN_71	sample_id		DKAN_71			FN
 118		DKAN_71	country		Denmark			FN
@@ -2140,7 +2140,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 118		DKAN_71	curator		Linda_Cova			FN
 118		DKAN_71	pmid		37069399			FN
 118		DKAN_71	sequencing_platform		IonProton		CMDPLAT:0005	FN
-118		DKAN_71	host_species		Homo sapiens			FN
+118		DKAN_71	host_species		Homo sapiens		NCIT:C14225	FN
 119		DKAN_72	subject_id		DKAN_72			FN
 119		DKAN_72	sample_id		DKAN_72			FN
 119		DKAN_72	country		Denmark			FN
@@ -2158,7 +2158,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 119		DKAN_72	curator		Linda_Cova			FN
 119		DKAN_72	pmid		37069399			FN
 119		DKAN_72	sequencing_platform		IonProton		CMDPLAT:0005	FN
-119		DKAN_72	host_species		Homo sapiens			FN
+119		DKAN_72	host_species		Homo sapiens		NCIT:C14225	FN
 120		DKAN_73	subject_id		DKAN_73			FN
 120		DKAN_73	sample_id		DKAN_73			FN
 120		DKAN_73	country		Denmark			FN
@@ -2176,7 +2176,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 120		DKAN_73	curator		Linda_Cova			FN
 120		DKAN_73	pmid		37069399			FN
 120		DKAN_73	sequencing_platform		IonProton		CMDPLAT:0005	FN
-120		DKAN_73	host_species		Homo sapiens			FN
+120		DKAN_73	host_species		Homo sapiens		NCIT:C14225	FN
 121		DKAN_74	subject_id		DKAN_74			FN
 121		DKAN_74	sample_id		DKAN_74			FN
 121		DKAN_74	country		Denmark			FN
@@ -2194,7 +2194,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 121		DKAN_74	curator		Linda_Cova			FN
 121		DKAN_74	pmid		37069399			FN
 121		DKAN_74	sequencing_platform		IonProton		CMDPLAT:0005	FN
-121		DKAN_74	host_species		Homo sapiens			FN
+121		DKAN_74	host_species		Homo sapiens		NCIT:C14225	FN
 122		DKAN_75	subject_id		DKAN_75			FN
 122		DKAN_75	sample_id		DKAN_75			FN
 122		DKAN_75	country		Denmark			FN
@@ -2212,7 +2212,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 122		DKAN_75	curator		Linda_Cova			FN
 122		DKAN_75	pmid		37069399			FN
 122		DKAN_75	sequencing_platform		IonProton		CMDPLAT:0005	FN
-122		DKAN_75	host_species		Homo sapiens			FN
+122		DKAN_75	host_species		Homo sapiens		NCIT:C14225	FN
 123		DKAN_76	subject_id		DKAN_76			FN
 123		DKAN_76	sample_id		DKAN_76			FN
 123		DKAN_76	country		Denmark			FN
@@ -2230,7 +2230,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 123		DKAN_76	curator		Linda_Cova			FN
 123		DKAN_76	pmid		37069399			FN
 123		DKAN_76	sequencing_platform		IonProton		CMDPLAT:0005	FN
-123		DKAN_76	host_species		Homo sapiens			FN
+123		DKAN_76	host_species		Homo sapiens		NCIT:C14225	FN
 124		DKAN_77	subject_id		DKAN_77			FN
 124		DKAN_77	sample_id		DKAN_77			FN
 124		DKAN_77	country		Denmark			FN
@@ -2248,7 +2248,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 124		DKAN_77	curator		Linda_Cova			FN
 124		DKAN_77	pmid		37069399			FN
 124		DKAN_77	sequencing_platform		IonProton		CMDPLAT:0005	FN
-124		DKAN_77	host_species		Homo sapiens			FN
+124		DKAN_77	host_species		Homo sapiens		NCIT:C14225	FN
 125		DKAN_78	subject_id		DKAN_78			FN
 125		DKAN_78	sample_id		DKAN_78			FN
 125		DKAN_78	country		Denmark			FN
@@ -2266,7 +2266,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 125		DKAN_78	curator		Linda_Cova			FN
 125		DKAN_78	pmid		37069399			FN
 125		DKAN_78	sequencing_platform		IonProton		CMDPLAT:0005	FN
-125		DKAN_78	host_species		Homo sapiens			FN
+125		DKAN_78	host_species		Homo sapiens		NCIT:C14225	FN
 126		DKAN_79	subject_id		DKAN_79			FN
 126		DKAN_79	sample_id		DKAN_79			FN
 126		DKAN_79	country		Denmark			FN
@@ -2284,7 +2284,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 126		DKAN_79	curator		Linda_Cova			FN
 126		DKAN_79	pmid		37069399			FN
 126		DKAN_79	sequencing_platform		IonProton		CMDPLAT:0005	FN
-126		DKAN_79	host_species		Homo sapiens			FN
+126		DKAN_79	host_species		Homo sapiens		NCIT:C14225	FN
 127		DKAN_80	subject_id		DKAN_80			FN
 127		DKAN_80	sample_id		DKAN_80			FN
 127		DKAN_80	country		Denmark			FN
@@ -2302,7 +2302,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 127		DKAN_80	curator		Linda_Cova			FN
 127		DKAN_80	pmid		37069399			FN
 127		DKAN_80	sequencing_platform		IonProton		CMDPLAT:0005	FN
-127		DKAN_80	host_species		Homo sapiens			FN
+127		DKAN_80	host_species		Homo sapiens		NCIT:C14225	FN
 128		DKAN_81	subject_id		DKAN_81			FN
 128		DKAN_81	sample_id		DKAN_81			FN
 128		DKAN_81	country		Denmark			FN
@@ -2320,7 +2320,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 128		DKAN_81	curator		Linda_Cova			FN
 128		DKAN_81	pmid		37069399			FN
 128		DKAN_81	sequencing_platform		IonProton		CMDPLAT:0005	FN
-128		DKAN_81	host_species		Homo sapiens			FN
+128		DKAN_81	host_species		Homo sapiens		NCIT:C14225	FN
 129		DKAN_82	subject_id		DKAN_82			FN
 129		DKAN_82	sample_id		DKAN_82			FN
 129		DKAN_82	country		Denmark			FN
@@ -2338,7 +2338,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 129		DKAN_82	curator		Linda_Cova			FN
 129		DKAN_82	pmid		37069399			FN
 129		DKAN_82	sequencing_platform		IonProton		CMDPLAT:0005	FN
-129		DKAN_82	host_species		Homo sapiens			FN
+129		DKAN_82	host_species		Homo sapiens		NCIT:C14225	FN
 130		DKAN_83	subject_id		DKAN_83			FN
 130		DKAN_83	sample_id		DKAN_83			FN
 130		DKAN_83	country		Denmark			FN
@@ -2356,7 +2356,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 130		DKAN_83	curator		Linda_Cova			FN
 130		DKAN_83	pmid		37069399			FN
 130		DKAN_83	sequencing_platform		IonProton		CMDPLAT:0005	FN
-130		DKAN_83	host_species		Homo sapiens			FN
+130		DKAN_83	host_species		Homo sapiens		NCIT:C14225	FN
 131		DKAN_84	subject_id		DKAN_84			FN
 131		DKAN_84	sample_id		DKAN_84			FN
 131		DKAN_84	country		Denmark			FN
@@ -2374,7 +2374,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 131		DKAN_84	curator		Linda_Cova			FN
 131		DKAN_84	pmid		37069399			FN
 131		DKAN_84	sequencing_platform		IonProton		CMDPLAT:0005	FN
-131		DKAN_84	host_species		Homo sapiens			FN
+131		DKAN_84	host_species		Homo sapiens		NCIT:C14225	FN
 132		DKAN_85	subject_id		DKAN_85			FN
 132		DKAN_85	sample_id		DKAN_85			FN
 132		DKAN_85	country		Denmark			FN
@@ -2392,7 +2392,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 132		DKAN_85	curator		Linda_Cova			FN
 132		DKAN_85	pmid		37069399			FN
 132		DKAN_85	sequencing_platform		IonProton		CMDPLAT:0005	FN
-132		DKAN_85	host_species		Homo sapiens			FN
+132		DKAN_85	host_species		Homo sapiens		NCIT:C14225	FN
 133		DKAN_86	subject_id		DKAN_86			FN
 133		DKAN_86	sample_id		DKAN_86			FN
 133		DKAN_86	country		Denmark			FN
@@ -2410,7 +2410,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 133		DKAN_86	curator		Linda_Cova			FN
 133		DKAN_86	pmid		37069399			FN
 133		DKAN_86	sequencing_platform		IonProton		CMDPLAT:0005	FN
-133		DKAN_86	host_species		Homo sapiens			FN
+133		DKAN_86	host_species		Homo sapiens		NCIT:C14225	FN
 134		DKAN_87	subject_id		DKAN_87			FN
 134		DKAN_87	sample_id		DKAN_87			FN
 134		DKAN_87	country		Denmark			FN
@@ -2428,7 +2428,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 134		DKAN_87	curator		Linda_Cova			FN
 134		DKAN_87	pmid		37069399			FN
 134		DKAN_87	sequencing_platform		IonProton		CMDPLAT:0005	FN
-134		DKAN_87	host_species		Homo sapiens			FN
+134		DKAN_87	host_species		Homo sapiens		NCIT:C14225	FN
 135		DKAN_88	subject_id		DKAN_88			FN
 135		DKAN_88	sample_id		DKAN_88			FN
 135		DKAN_88	country		Denmark			FN
@@ -2446,7 +2446,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 135		DKAN_88	curator		Linda_Cova			FN
 135		DKAN_88	pmid		37069399			FN
 135		DKAN_88	sequencing_platform		IonProton		CMDPLAT:0005	FN
-135		DKAN_88	host_species		Homo sapiens			FN
+135		DKAN_88	host_species		Homo sapiens		NCIT:C14225	FN
 136		DKAN_89	subject_id		DKAN_89			FN
 136		DKAN_89	sample_id		DKAN_89			FN
 136		DKAN_89	country		Denmark			FN
@@ -2464,7 +2464,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 136		DKAN_89	curator		Linda_Cova			FN
 136		DKAN_89	pmid		37069399			FN
 136		DKAN_89	sequencing_platform		IonProton		CMDPLAT:0005	FN
-136		DKAN_89	host_species		Homo sapiens			FN
+136		DKAN_89	host_species		Homo sapiens		NCIT:C14225	FN
 137		DKAN_90	subject_id		DKAN_90			FN
 137		DKAN_90	sample_id		DKAN_90			FN
 137		DKAN_90	country		Denmark			FN
@@ -2482,7 +2482,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 137		DKAN_90	curator		Linda_Cova			FN
 137		DKAN_90	pmid		37069399			FN
 137		DKAN_90	sequencing_platform		IonProton		CMDPLAT:0005	FN
-137		DKAN_90	host_species		Homo sapiens			FN
+137		DKAN_90	host_species		Homo sapiens		NCIT:C14225	FN
 138		DKAN_91	subject_id		DKAN_91			FN
 138		DKAN_91	sample_id		DKAN_91			FN
 138		DKAN_91	country		Denmark			FN
@@ -2500,7 +2500,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 138		DKAN_91	curator		Linda_Cova			FN
 138		DKAN_91	pmid		37069399			FN
 138		DKAN_91	sequencing_platform		IonProton		CMDPLAT:0005	FN
-138		DKAN_91	host_species		Homo sapiens			FN
+138		DKAN_91	host_species		Homo sapiens		NCIT:C14225	FN
 139		DKAN_92	subject_id		DKAN_92			FN
 139		DKAN_92	sample_id		DKAN_92			FN
 139		DKAN_92	country		Denmark			FN
@@ -2518,7 +2518,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 139		DKAN_92	curator		Linda_Cova			FN
 139		DKAN_92	pmid		37069399			FN
 139		DKAN_92	sequencing_platform		IonProton		CMDPLAT:0005	FN
-139		DKAN_92	host_species		Homo sapiens			FN
+139		DKAN_92	host_species		Homo sapiens		NCIT:C14225	FN
 140		DKAN_93	subject_id		DKAN_93			FN
 140		DKAN_93	sample_id		DKAN_93			FN
 140		DKAN_93	country		Denmark			FN
@@ -2536,7 +2536,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 140		DKAN_93	curator		Linda_Cova			FN
 140		DKAN_93	pmid		37069399			FN
 140		DKAN_93	sequencing_platform		IonProton		CMDPLAT:0005	FN
-140		DKAN_93	host_species		Homo sapiens			FN
+140		DKAN_93	host_species		Homo sapiens		NCIT:C14225	FN
 141		DKAN_94	subject_id		DKAN_94			FN
 141		DKAN_94	sample_id		DKAN_94			FN
 141		DKAN_94	country		Denmark			FN
@@ -2554,7 +2554,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 141		DKAN_94	curator		Linda_Cova			FN
 141		DKAN_94	pmid		37069399			FN
 141		DKAN_94	sequencing_platform		IonProton		CMDPLAT:0005	FN
-141		DKAN_94	host_species		Homo sapiens			FN
+141		DKAN_94	host_species		Homo sapiens		NCIT:C14225	FN
 142		DKAN_95	subject_id		DKAN_95			FN
 142		DKAN_95	sample_id		DKAN_95			FN
 142		DKAN_95	country		Denmark			FN
@@ -2572,7 +2572,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 142		DKAN_95	curator		Linda_Cova			FN
 142		DKAN_95	pmid		37069399			FN
 142		DKAN_95	sequencing_platform		IonProton		CMDPLAT:0005	FN
-142		DKAN_95	host_species		Homo sapiens			FN
+142		DKAN_95	host_species		Homo sapiens		NCIT:C14225	FN
 143		DKAN_96	subject_id		DKAN_96			FN
 143		DKAN_96	sample_id		DKAN_96			FN
 143		DKAN_96	country		Denmark			FN
@@ -2590,7 +2590,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 143		DKAN_96	curator		Linda_Cova			FN
 143		DKAN_96	pmid		37069399			FN
 143		DKAN_96	sequencing_platform		IonProton		CMDPLAT:0005	FN
-143		DKAN_96	host_species		Homo sapiens			FN
+143		DKAN_96	host_species		Homo sapiens		NCIT:C14225	FN
 144		DKAN_97	subject_id		DKAN_97			FN
 144		DKAN_97	sample_id		DKAN_97			FN
 144		DKAN_97	country		Denmark			FN
@@ -2608,7 +2608,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 144		DKAN_97	curator		Linda_Cova			FN
 144		DKAN_97	pmid		37069399			FN
 144		DKAN_97	sequencing_platform		IonProton		CMDPLAT:0005	FN
-144		DKAN_97	host_species		Homo sapiens			FN
+144		DKAN_97	host_species		Homo sapiens		NCIT:C14225	FN
 145		DKAN_98	subject_id		DKAN_98			FN
 145		DKAN_98	sample_id		DKAN_98			FN
 145		DKAN_98	country		Denmark			FN
@@ -2626,7 +2626,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 145		DKAN_98	curator		Linda_Cova			FN
 145		DKAN_98	pmid		37069399			FN
 145		DKAN_98	sequencing_platform		IonProton		CMDPLAT:0005	FN
-145		DKAN_98	host_species		Homo sapiens			FN
+145		DKAN_98	host_species		Homo sapiens		NCIT:C14225	FN
 146		DKAN_99	subject_id		DKAN_99			FN
 146		DKAN_99	sample_id		DKAN_99			FN
 146		DKAN_99	country		Denmark			FN
@@ -2644,4 +2644,4 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 146		DKAN_99	curator		Linda_Cova			FN
 146		DKAN_99	pmid		37069399			FN
 146		DKAN_99	sequencing_platform		IonProton		CMDPLAT:0005	FN
-146		DKAN_99	host_species		Homo sapiens			FN
+146		DKAN_99	host_species		Homo sapiens		NCIT:C14225	FN

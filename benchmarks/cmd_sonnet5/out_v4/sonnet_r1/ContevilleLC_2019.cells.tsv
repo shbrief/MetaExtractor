@@ -16,7 +16,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 0	Y1	Y1	pmid		31417531			FN
 0	Y1	Y1	dna_extraction_kit	FastDNA® SPIN Kit (MP Biomedicals)	MPBio	CMDKIT:0002	CMDKIT:0009	TP_wrong
 0	Y1	Y1	sequencing_platform	Illumina HiSeq 2500	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-0	Y1	Y1	host_species	Homo sapiens	Homo sapiens			TP_correct
+0	Y1	Y1	host_species	Homo sapiens	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 1	Y2	Y2	location		Amazon			FN
 1	Y2	Y2	subject_id		Y2			FN
 1	Y2	Y2	sample_id	Y2	Y2			TP_correct
@@ -34,7 +34,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 1	Y2	Y2	pmid		31417531			FN
 1	Y2	Y2	dna_extraction_kit	FastDNA® SPIN Kit (MP Biomedicals)	MPBio	CMDKIT:0002	CMDKIT:0009	TP_wrong
 1	Y2	Y2	sequencing_platform	Illumina HiSeq 2500	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-1	Y2	Y2	host_species	Homo sapiens	Homo sapiens			TP_correct
+1	Y2	Y2	host_species	Homo sapiens	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 2	Y3	Y3	location		Amazon			FN
 2	Y3	Y3	subject_id		Y3			FN
 2	Y3	Y3	sample_id	Y3	Y3			TP_correct
@@ -52,7 +52,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 2	Y3	Y3	pmid		31417531			FN
 2	Y3	Y3	dna_extraction_kit	FastDNA® SPIN Kit (MP Biomedicals)	MPBio	CMDKIT:0002	CMDKIT:0009	TP_wrong
 2	Y3	Y3	sequencing_platform	Illumina HiSeq 2500	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-2	Y3	Y3	host_species	Homo sapiens	Homo sapiens			TP_correct
+2	Y3	Y3	host_species	Homo sapiens	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 3	Y4	Y4	location		Amazon			FN
 3	Y4	Y4	subject_id		Y4			FN
 3	Y4	Y4	sample_id	Y4	Y4			TP_correct
@@ -70,7 +70,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 3	Y4	Y4	pmid		31417531			FN
 3	Y4	Y4	dna_extraction_kit	FastDNA® SPIN Kit (MP Biomedicals)	MPBio	CMDKIT:0002	CMDKIT:0009	TP_wrong
 3	Y4	Y4	sequencing_platform	Illumina HiSeq 2500	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-3	Y4	Y4	host_species	Homo sapiens	Homo sapiens			TP_correct
+3	Y4	Y4	host_species	Homo sapiens	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 4	Y5	Y5	location		Amazon			FN
 4	Y5	Y5	subject_id		Y5			FN
 4	Y5	Y5	sample_id	Y5	Y5			TP_correct
@@ -88,7 +88,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 4	Y5	Y5	pmid		31417531			FN
 4	Y5	Y5	dna_extraction_kit	FastDNA® SPIN Kit (MP Biomedicals)	MPBio	CMDKIT:0002	CMDKIT:0009	TP_wrong
 4	Y5	Y5	sequencing_platform	Illumina HiSeq 2500	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-4	Y5	Y5	host_species	Homo sapiens	Homo sapiens			TP_correct
+4	Y5	Y5	host_species	Homo sapiens	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 5	Y6	Y6	location		Amazon			FN
 5	Y6	Y6	subject_id		Y6			FN
 5	Y6	Y6	sample_id	Y6	Y6			TP_correct
@@ -106,7 +106,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 5	Y6	Y6	pmid		31417531			FN
 5	Y6	Y6	dna_extraction_kit	FastDNA® SPIN Kit (MP Biomedicals)	MPBio	CMDKIT:0002	CMDKIT:0009	TP_wrong
 5	Y6	Y6	sequencing_platform	Illumina HiSeq 2500	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-5	Y6	Y6	host_species	Homo sapiens	Homo sapiens			TP_correct
+5	Y6	Y6	host_species	Homo sapiens	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 6	Y7	Y7	location		Amazon			FN
 6	Y7	Y7	subject_id		Y7			FN
 6	Y7	Y7	sample_id	Y7	Y7			TP_correct
@@ -124,7 +124,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 6	Y7	Y7	pmid		31417531			FN
 6	Y7	Y7	dna_extraction_kit	FastDNA® SPIN Kit (MP Biomedicals)	MPBio	CMDKIT:0002	CMDKIT:0009	TP_wrong
 6	Y7	Y7	sequencing_platform	Illumina HiSeq 2500	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-6	Y7	Y7	host_species	Homo sapiens	Homo sapiens			TP_correct
+6	Y7	Y7	host_species	Homo sapiens	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 7	Y8	Y8	location		Amazon			FN
 7	Y8	Y8	subject_id		Y8			FN
 7	Y8	Y8	sample_id	Y8	Y8			TP_correct
@@ -142,7 +142,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 7	Y8	Y8	pmid		31417531			FN
 7	Y8	Y8	dna_extraction_kit	FastDNA® SPIN Kit (MP Biomedicals)	MPBio	CMDKIT:0002	CMDKIT:0009	TP_wrong
 7	Y8	Y8	sequencing_platform	Illumina HiSeq 2500	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-7	Y8	Y8	host_species	Homo sapiens	Homo sapiens			TP_correct
+7	Y8	Y8	host_species	Homo sapiens	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 8	Y9	Y9	location		Amazon			FN
 8	Y9	Y9	subject_id		Y9			FN
 8	Y9	Y9	sample_id	Y9	Y9			TP_correct
@@ -160,7 +160,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 8	Y9	Y9	pmid		31417531			FN
 8	Y9	Y9	dna_extraction_kit	FastDNA® SPIN Kit (MP Biomedicals)	MPBio	CMDKIT:0002	CMDKIT:0009	TP_wrong
 8	Y9	Y9	sequencing_platform	Illumina HiSeq 2500	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-8	Y9	Y9	host_species	Homo sapiens	Homo sapiens			TP_correct
+8	Y9	Y9	host_species	Homo sapiens	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 9	Y10	Y10	location		Amazon			FN
 9	Y10	Y10	subject_id		Y10			FN
 9	Y10	Y10	sample_id	Y10	Y10			TP_correct
@@ -178,7 +178,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 9	Y10	Y10	pmid		31417531			FN
 9	Y10	Y10	dna_extraction_kit	FastDNA® SPIN Kit (MP Biomedicals)	MPBio	CMDKIT:0002	CMDKIT:0009	TP_wrong
 9	Y10	Y10	sequencing_platform	Illumina HiSeq 2500	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-9	Y10	Y10	host_species	Homo sapiens	Homo sapiens			TP_correct
+9	Y10	Y10	host_species	Homo sapiens	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 10	Y11	Y11	location		Amazon			FN
 10	Y11	Y11	subject_id		Y11			FN
 10	Y11	Y11	sample_id	Y11	Y11			TP_correct
@@ -196,7 +196,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 10	Y11	Y11	pmid		31417531			FN
 10	Y11	Y11	dna_extraction_kit	FastDNA® SPIN Kit (MP Biomedicals)	MPBio	CMDKIT:0002	CMDKIT:0009	TP_wrong
 10	Y11	Y11	sequencing_platform	Illumina HiSeq 2500	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-10	Y11	Y11	host_species	Homo sapiens	Homo sapiens			TP_correct
+10	Y11	Y11	host_species	Homo sapiens	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 11	Y12	Y12	location		Amazon			FN
 11	Y12	Y12	subject_id		Y12			FN
 11	Y12	Y12	sample_id	Y12	Y12			TP_correct
@@ -214,7 +214,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 11	Y12	Y12	pmid		31417531			FN
 11	Y12	Y12	dna_extraction_kit	FastDNA® SPIN Kit (MP Biomedicals)	MPBio	CMDKIT:0002	CMDKIT:0009	TP_wrong
 11	Y12	Y12	sequencing_platform	Illumina HiSeq 2500	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-11	Y12	Y12	host_species	Homo sapiens	Homo sapiens			TP_correct
+11	Y12	Y12	host_species	Homo sapiens	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 12	Y13	Y13	location		Amazon			FN
 12	Y13	Y13	subject_id		Y13			FN
 12	Y13	Y13	sample_id	Y13	Y13			TP_correct
@@ -232,7 +232,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 12	Y13	Y13	pmid		31417531			FN
 12	Y13	Y13	dna_extraction_kit	FastDNA® SPIN Kit (MP Biomedicals)	MPBio	CMDKIT:0002	CMDKIT:0009	TP_wrong
 12	Y13	Y13	sequencing_platform	Illumina HiSeq 2500	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-12	Y13	Y13	host_species	Homo sapiens	Homo sapiens			TP_correct
+12	Y13	Y13	host_species	Homo sapiens	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 13	Y14	Y14	location		Amazon			FN
 13	Y14	Y14	subject_id		Y14			FN
 13	Y14	Y14	sample_id	Y14	Y14			TP_correct
@@ -250,7 +250,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 13	Y14	Y14	pmid		31417531			FN
 13	Y14	Y14	dna_extraction_kit	FastDNA® SPIN Kit (MP Biomedicals)	MPBio	CMDKIT:0002	CMDKIT:0009	TP_wrong
 13	Y14	Y14	sequencing_platform	Illumina HiSeq 2500	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-13	Y14	Y14	host_species	Homo sapiens	Homo sapiens			TP_correct
+13	Y14	Y14	host_species	Homo sapiens	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 14	Y15	Y15	location		Amazon			FN
 14	Y15	Y15	subject_id		Y15			FN
 14	Y15	Y15	sample_id	Y15	Y15			TP_correct
@@ -268,4 +268,4 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 14	Y15	Y15	pmid		31417531			FN
 14	Y15	Y15	dna_extraction_kit	FastDNA® SPIN Kit (MP Biomedicals)	MPBio	CMDKIT:0002	CMDKIT:0009	TP_wrong
 14	Y15	Y15	sequencing_platform	Illumina HiSeq 2500	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-14	Y15	Y15	host_species	Homo sapiens	Homo sapiens			TP_correct
+14	Y15	Y15	host_species	Homo sapiens	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct

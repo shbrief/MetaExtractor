@@ -5,6 +5,7 @@
     "body_site",
     "disease",
     "dna_extraction_kit",
+    "host_species",
     "sequencing_platform",
     "treatment"
   ],
@@ -46,8 +47,8 @@
         },
         "meta": {
           "tn": 0,
-          "tp_correct": 210,
-          "tp_wrong": 140,
+          "tp_correct": 280,
+          "tp_wrong": 70,
           "fn": 210,
           "fp": 0
         }
@@ -62,8 +63,8 @@
         },
         "meta": {
           "tn": 0,
-          "tp_correct": 210,
-          "tp_wrong": 140,
+          "tp_correct": 280,
+          "tp_wrong": 70,
           "fn": 210,
           "fp": 0
         }
@@ -239,8 +240,8 @@
         },
         "host_species": {
           "tn": 0,
-          "tp_correct": 0,
-          "tp_wrong": 70,
+          "tp_correct": 70,
+          "tp_wrong": 0,
           "fn": 0,
           "fp": 0
         }
@@ -416,8 +417,8 @@
         },
         "host_species": {
           "tn": 0,
-          "tp_correct": 0,
-          "tp_wrong": 70,
+          "tp_correct": 70,
+          "tp_wrong": 0,
           "fn": 0,
           "fp": 0
         }
@@ -426,6 +427,7 @@
         "body_site",
         "disease",
         "dna_extraction_kit",
+        "host_species",
         "sequencing_platform"
       ],
       "harmonization": {
@@ -443,6 +445,12 @@
         },
         "dna_extraction_kit": {
           "reported_cells": 0,
+          "gold_curated_id": 0,
+          "extracted_unmapped": 0,
+          "unqueried_terms": []
+        },
+        "host_species": {
+          "reported_cells": 70,
           "gold_curated_id": 0,
           "extracted_unmapped": 0,
           "unqueried_terms": []
@@ -674,8 +682,8 @@
         "host_species": {
           "study_fanout": {
             "tn": 0,
-            "tp_correct": 0,
-            "tp_wrong": 70,
+            "tp_correct": 70,
+            "tp_wrong": 0,
             "fn": 0,
             "fp": 0
           }
@@ -725,8 +733,8 @@
         },
         "meta": {
           "tn": 0,
-          "tp_correct": 150,
-          "tp_wrong": 100,
+          "tp_correct": 200,
+          "tp_wrong": 50,
           "fn": 884,
           "fp": 0
         }
@@ -741,8 +749,8 @@
         },
         "meta": {
           "tn": 0,
-          "tp_correct": 150,
-          "tp_wrong": 100,
+          "tp_correct": 200,
+          "tp_wrong": 50,
           "fn": 100,
           "fp": 0
         }
@@ -911,8 +919,8 @@
         },
         "host_species": {
           "tn": 0,
-          "tp_correct": 0,
-          "tp_wrong": 50,
+          "tp_correct": 50,
+          "tp_wrong": 0,
           "fn": 112,
           "fp": 0
         }
@@ -1081,8 +1089,8 @@
         },
         "host_species": {
           "tn": 0,
-          "tp_correct": 0,
-          "tp_wrong": 50,
+          "tp_correct": 50,
+          "tp_wrong": 0,
           "fn": 0,
           "fp": 0
         }
@@ -1091,6 +1099,7 @@
         "body_site",
         "disease",
         "dna_extraction_kit",
+        "host_species",
         "sequencing_platform"
       ],
       "harmonization": {
@@ -1107,6 +1116,12 @@
           "unqueried_terms": []
         },
         "dna_extraction_kit": {
+          "reported_cells": 50,
+          "gold_curated_id": 0,
+          "extracted_unmapped": 0,
+          "unqueried_terms": []
+        },
+        "host_species": {
           "reported_cells": 50,
           "gold_curated_id": 0,
           "extracted_unmapped": 0,
@@ -1512,8 +1527,8 @@
           },
           "study_fanout": {
             "tn": 0,
-            "tp_correct": 0,
-            "tp_wrong": 50,
+            "tp_correct": 50,
+            "tp_wrong": 0,
             "fn": 0,
             "fp": 0
           }
@@ -1929,6 +1944,7 @@
         "body_site",
         "disease",
         "dna_extraction_kit",
+        "host_species",
         "sequencing_platform"
       ],
       "harmonization": {
@@ -1945,6 +1961,12 @@
           "unqueried_terms": []
         },
         "dna_extraction_kit": {
+          "reported_cells": 0,
+          "gold_curated_id": 0,
+          "extracted_unmapped": 0,
+          "unqueried_terms": []
+        },
+        "host_species": {
           "reported_cells": 0,
           "gold_curated_id": 0,
           "extracted_unmapped": 0,
@@ -2501,6 +2523,7 @@
         "body_site",
         "disease",
         "dna_extraction_kit",
+        "host_species",
         "sequencing_platform",
         "treatment"
       ],
@@ -2518,6 +2541,12 @@
           "unqueried_terms": []
         },
         "dna_extraction_kit": {
+          "reported_cells": 34,
+          "gold_curated_id": 0,
+          "extracted_unmapped": 0,
+          "unqueried_terms": []
+        },
+        "host_species": {
           "reported_cells": 34,
           "gold_curated_id": 0,
           "extracted_unmapped": 0,
@@ -2744,8 +2773,8 @@
         },
         "meta": {
           "tn": 0,
-          "tp_correct": 224,
-          "tp_wrong": 224,
+          "tp_correct": 336,
+          "tp_wrong": 112,
           "fn": 336,
           "fp": 0
         }
@@ -2760,8 +2789,8 @@
         },
         "meta": {
           "tn": 0,
-          "tp_correct": 224,
-          "tp_wrong": 224,
+          "tp_correct": 336,
+          "tp_wrong": 112,
           "fn": 336,
           "fp": 0
         }
@@ -2972,8 +3001,8 @@
         },
         "host_species": {
           "tn": 0,
-          "tp_correct": 0,
-          "tp_wrong": 112,
+          "tp_correct": 112,
+          "tp_wrong": 0,
           "fn": 0,
           "fp": 0
         }
@@ -3184,8 +3213,8 @@
         },
         "host_species": {
           "tn": 0,
-          "tp_correct": 0,
-          "tp_wrong": 112,
+          "tp_correct": 112,
+          "tp_wrong": 0,
           "fn": 0,
           "fp": 0
         }
@@ -3194,6 +3223,7 @@
         "body_site",
         "disease",
         "dna_extraction_kit",
+        "host_species",
         "sequencing_platform"
       ],
       "harmonization": {
@@ -3210,6 +3240,12 @@
           "unqueried_terms": []
         },
         "dna_extraction_kit": {
+          "reported_cells": 112,
+          "gold_curated_id": 0,
+          "extracted_unmapped": 0,
+          "unqueried_terms": []
+        },
+        "host_species": {
           "reported_cells": 112,
           "gold_curated_id": 0,
           "extracted_unmapped": 0,
@@ -3487,8 +3523,8 @@
         "host_species": {
           "study_fanout": {
             "tn": 0,
-            "tp_correct": 0,
-            "tp_wrong": 112,
+            "tp_correct": 112,
+            "tp_wrong": 0,
             "fn": 0,
             "fp": 0
           }
@@ -3974,6 +4010,7 @@
         "body_site",
         "disease",
         "dna_extraction_kit",
+        "host_species",
         "sequencing_platform",
         "treatment"
       ],
@@ -3991,6 +4028,12 @@
           "unqueried_terms": []
         },
         "dna_extraction_kit": {
+          "reported_cells": 53,
+          "gold_curated_id": 0,
+          "extracted_unmapped": 0,
+          "unqueried_terms": []
+        },
+        "host_species": {
           "reported_cells": 53,
           "gold_curated_id": 0,
           "extracted_unmapped": 0,
@@ -4597,6 +4640,7 @@
       "harmonized_fields": [
         "body_site",
         "disease",
+        "host_species",
         "sequencing_platform",
         "treatment"
       ],
@@ -4608,6 +4652,12 @@
           "unqueried_terms": []
         },
         "disease": {
+          "reported_cells": 0,
+          "gold_curated_id": 0,
+          "extracted_unmapped": 0,
+          "unqueried_terms": []
+        },
+        "host_species": {
           "reported_cells": 0,
           "gold_curated_id": 0,
           "extracted_unmapped": 0,
@@ -5199,6 +5249,7 @@
       "harmonized_fields": [
         "body_site",
         "disease",
+        "host_species",
         "sequencing_platform",
         "treatment"
       ],
@@ -5210,6 +5261,12 @@
           "unqueried_terms": []
         },
         "disease": {
+          "reported_cells": 0,
+          "gold_curated_id": 0,
+          "extracted_unmapped": 0,
+          "unqueried_terms": []
+        },
+        "host_species": {
           "reported_cells": 0,
           "gold_curated_id": 0,
           "extracted_unmapped": 0,
@@ -5772,6 +5829,7 @@
         "body_site",
         "disease",
         "dna_extraction_kit",
+        "host_species",
         "sequencing_platform"
       ],
       "harmonization": {
@@ -5788,6 +5846,12 @@
           "unqueried_terms": []
         },
         "dna_extraction_kit": {
+          "reported_cells": 15,
+          "gold_curated_id": 0,
+          "extracted_unmapped": 0,
+          "unqueried_terms": []
+        },
+        "host_species": {
           "reported_cells": 15,
           "gold_curated_id": 0,
           "extracted_unmapped": 0,
@@ -6359,6 +6423,7 @@
       "harmonized_fields": [
         "body_site",
         "disease",
+        "host_species",
         "sequencing_platform"
       ],
       "harmonization": {
@@ -6369,6 +6434,12 @@
           "unqueried_terms": []
         },
         "disease": {
+          "reported_cells": 0,
+          "gold_curated_id": 0,
+          "extracted_unmapped": 0,
+          "unqueried_terms": []
+        },
+        "host_species": {
           "reported_cells": 0,
           "gold_curated_id": 0,
           "extracted_unmapped": 0,

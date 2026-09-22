@@ -1,0 +1,16 @@
+query,ref_match,stage,match1,match1_score,match1_code
+Homo sapiens,Not Found,1.0,Not Found,1.0,
+Human,Not Found,1.0,Not Found,1.0,
+human,Not Found,1.0,Not Found,1.0,
+mouse,Not Found,1.0,Not Found,1.0,
+6J mice),Not Found,2.5,Mouse,0.6162,NCIT:C14238
+Chinese individuals (human),Not Found,2.0,Homo sapiens,0.6856,NCIT:C14225
+Homo sapiens (also Mus musculus for FMT,Not Found,2.0,Homo sapiens,0.7637,NCIT:C14225
+Homo sapiens (human),Not Found,2.0,Homo sapiens,0.9915,NCIT:C14225
+Homo sapiens (humans) and Mus musculus (mice),Not Found,2.0,Mus,0.7297,NCIT:C14238
+Homo sapiens and Mus musculus,Not Found,2.0,Mus,0.7246,NCIT:C14238
+Mus musculus,Not Found,2.5,Mouse,0.8119,NCIT:C14238
+Mus musculus (C57BL,Not Found,2.5,Mouse,0.7534,NCIT:C14238
+germ-free mouse experiments),Not Found,2.0,Mice,0.6237,NCIT:C14238
+human gut metagenome,Not Found,2.5,Human,0.4809,NCIT:C14225
+human oral metagenome,Not Found,2.5,Human,0.5022,NCIT:C14225

@@ -27,7 +27,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 0	M01.1-V1-stool	M01.1-V1-stool	target_condition	type 1 diabetes mellitus (T1DM)	Type 1 Diabetes Mellitus			TP_wrong
 0	M01.1-V1-stool	M01.1-V1-stool	dna_extraction_kit	Norgen Biotek	NorgenBiotek	CMDKIT:0010	CMDKIT:0010	TP_correct
 0	M01.1-V1-stool	M01.1-V1-stool	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-0	M01.1-V1-stool	M01.1-V1-stool	host_species	Homo sapiens	Homo sapiens			TP_correct
+0	M01.1-V1-stool	M01.1-V1-stool	host_species	Homo sapiens	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 1	M01.1-V2-stool	M01.1-V2-stool	subject_id		M01.1			FN
 1	M01.1-V2-stool	M01.1-V2-stool	sample_id	M01.1-V2-stool	M01.1-V2-stool			TP_correct
 1	M01.1-V2-stool	M01.1-V2-stool	control		Case			FN
@@ -56,7 +56,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 1	M01.1-V2-stool	M01.1-V2-stool	target_condition	type 1 diabetes mellitus (T1DM)	Type 1 Diabetes Mellitus			TP_wrong
 1	M01.1-V2-stool	M01.1-V2-stool	dna_extraction_kit	Norgen Biotek	NorgenBiotek	CMDKIT:0010	CMDKIT:0010	TP_correct
 1	M01.1-V2-stool	M01.1-V2-stool	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-1	M01.1-V2-stool	M01.1-V2-stool	host_species	Homo sapiens	Homo sapiens			TP_correct
+1	M01.1-V2-stool	M01.1-V2-stool	host_species	Homo sapiens	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 2	M01.1-V3-stool	M01.1-V3-stool	subject_id		M01.1			FN
 2	M01.1-V3-stool	M01.1-V3-stool	sample_id	M01.1-V3-stool	M01.1-V3-stool			TP_correct
 2	M01.1-V3-stool	M01.1-V3-stool	control		Case			FN
@@ -85,7 +85,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 2	M01.1-V3-stool	M01.1-V3-stool	target_condition	type 1 diabetes mellitus (T1DM)	Type 1 Diabetes Mellitus			TP_wrong
 2	M01.1-V3-stool	M01.1-V3-stool	dna_extraction_kit	Norgen Biotek	NorgenBiotek	CMDKIT:0010	CMDKIT:0010	TP_correct
 2	M01.1-V3-stool	M01.1-V3-stool	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-2	M01.1-V3-stool	M01.1-V3-stool	host_species	Homo sapiens	Homo sapiens			TP_correct
+2	M01.1-V3-stool	M01.1-V3-stool	host_species	Homo sapiens	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 3	M01.2-V1-stool	M01.2-V1-stool	subject_id		M01.2			FN
 3	M01.2-V1-stool	M01.2-V1-stool	sample_id	M01.2-V1-stool	M01.2-V1-stool			TP_correct
 3	M01.2-V1-stool	M01.2-V1-stool	control		Study Control			FN
@@ -114,7 +114,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 3	M01.2-V1-stool	M01.2-V1-stool	target_condition	type 1 diabetes mellitus (T1DM)	Type 1 Diabetes Mellitus			TP_wrong
 3	M01.2-V1-stool	M01.2-V1-stool	dna_extraction_kit	Norgen Biotek	NorgenBiotek	CMDKIT:0010	CMDKIT:0010	TP_correct
 3	M01.2-V1-stool	M01.2-V1-stool	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-3	M01.2-V1-stool	M01.2-V1-stool	host_species	Homo sapiens	Homo sapiens			TP_correct
+3	M01.2-V1-stool	M01.2-V1-stool	host_species	Homo sapiens	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 4	M01.2-V2-stool	M01.2-V2-stool	subject_id		M01.2			FN
 4	M01.2-V2-stool	M01.2-V2-stool	sample_id	M01.2-V2-stool	M01.2-V2-stool			TP_correct
 4	M01.2-V2-stool	M01.2-V2-stool	control		Study Control			FN
@@ -143,7 +143,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 4	M01.2-V2-stool	M01.2-V2-stool	target_condition	type 1 diabetes mellitus (T1DM)	Type 1 Diabetes Mellitus			TP_wrong
 4	M01.2-V2-stool	M01.2-V2-stool	dna_extraction_kit	Norgen Biotek	NorgenBiotek	CMDKIT:0010	CMDKIT:0010	TP_correct
 4	M01.2-V2-stool	M01.2-V2-stool	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-4	M01.2-V2-stool	M01.2-V2-stool	host_species	Homo sapiens	Homo sapiens			TP_correct
+4	M01.2-V2-stool	M01.2-V2-stool	host_species	Homo sapiens	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 5	M01.2-V3-stool	M01.2-V3-stool	subject_id		M01.2			FN
 5	M01.2-V3-stool	M01.2-V3-stool	sample_id	M01.2-V3-stool	M01.2-V3-stool			TP_correct
 5	M01.2-V3-stool	M01.2-V3-stool	control		Study Control			FN
@@ -172,7 +172,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 5	M01.2-V3-stool	M01.2-V3-stool	target_condition	type 1 diabetes mellitus (T1DM)	Type 1 Diabetes Mellitus			TP_wrong
 5	M01.2-V3-stool	M01.2-V3-stool	dna_extraction_kit	Norgen Biotek	NorgenBiotek	CMDKIT:0010	CMDKIT:0010	TP_correct
 5	M01.2-V3-stool	M01.2-V3-stool	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-5	M01.2-V3-stool	M01.2-V3-stool	host_species	Homo sapiens	Homo sapiens			TP_correct
+5	M01.2-V3-stool	M01.2-V3-stool	host_species	Homo sapiens	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 6	M01.3-V1-stool	M01.3-V1-stool	subject_id		M01.3			FN
 6	M01.3-V1-stool	M01.3-V1-stool	sample_id	M01.3-V1-stool	M01.3-V1-stool			TP_correct
 6	M01.3-V1-stool	M01.3-V1-stool	control		Study Control			FN
@@ -201,7 +201,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 6	M01.3-V1-stool	M01.3-V1-stool	target_condition	type 1 diabetes mellitus (T1DM)	Type 1 Diabetes Mellitus			TP_wrong
 6	M01.3-V1-stool	M01.3-V1-stool	dna_extraction_kit	Norgen Biotek	NorgenBiotek	CMDKIT:0010	CMDKIT:0010	TP_correct
 6	M01.3-V1-stool	M01.3-V1-stool	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-6	M01.3-V1-stool	M01.3-V1-stool	host_species	Homo sapiens	Homo sapiens			TP_correct
+6	M01.3-V1-stool	M01.3-V1-stool	host_species	Homo sapiens	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 7	M01.3-V2-stool	M01.3-V2-stool	subject_id		M01.3			FN
 7	M01.3-V2-stool	M01.3-V2-stool	sample_id	M01.3-V2-stool	M01.3-V2-stool			TP_correct
 7	M01.3-V2-stool	M01.3-V2-stool	control		Study Control			FN
@@ -230,7 +230,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 7	M01.3-V2-stool	M01.3-V2-stool	target_condition	type 1 diabetes mellitus (T1DM)	Type 1 Diabetes Mellitus			TP_wrong
 7	M01.3-V2-stool	M01.3-V2-stool	dna_extraction_kit	Norgen Biotek	NorgenBiotek	CMDKIT:0010	CMDKIT:0010	TP_correct
 7	M01.3-V2-stool	M01.3-V2-stool	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-7	M01.3-V2-stool	M01.3-V2-stool	host_species	Homo sapiens	Homo sapiens			TP_correct
+7	M01.3-V2-stool	M01.3-V2-stool	host_species	Homo sapiens	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 8	M01.3-V3-stool	M01.3-V3-stool	subject_id		M01.3			FN
 8	M01.3-V3-stool	M01.3-V3-stool	sample_id	M01.3-V3-stool	M01.3-V3-stool			TP_correct
 8	M01.3-V3-stool	M01.3-V3-stool	control		Study Control			FN
@@ -259,7 +259,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 8	M01.3-V3-stool	M01.3-V3-stool	target_condition	type 1 diabetes mellitus (T1DM)	Type 1 Diabetes Mellitus			TP_wrong
 8	M01.3-V3-stool	M01.3-V3-stool	dna_extraction_kit	Norgen Biotek	NorgenBiotek	CMDKIT:0010	CMDKIT:0010	TP_correct
 8	M01.3-V3-stool	M01.3-V3-stool	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-8	M01.3-V3-stool	M01.3-V3-stool	host_species	Homo sapiens	Homo sapiens			TP_correct
+8	M01.3-V3-stool	M01.3-V3-stool	host_species	Homo sapiens	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 9	M01.4-V1-stool	M01.4-V1-stool	subject_id		M01.4			FN
 9	M01.4-V1-stool	M01.4-V1-stool	sample_id	M01.4-V1-stool	M01.4-V1-stool			TP_correct
 9	M01.4-V1-stool	M01.4-V1-stool	control		Case			FN
@@ -288,7 +288,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 9	M01.4-V1-stool	M01.4-V1-stool	target_condition	type 1 diabetes mellitus (T1DM)	Type 1 Diabetes Mellitus			TP_wrong
 9	M01.4-V1-stool	M01.4-V1-stool	dna_extraction_kit	Norgen Biotek	NorgenBiotek	CMDKIT:0010	CMDKIT:0010	TP_correct
 9	M01.4-V1-stool	M01.4-V1-stool	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-9	M01.4-V1-stool	M01.4-V1-stool	host_species	Homo sapiens	Homo sapiens			TP_correct
+9	M01.4-V1-stool	M01.4-V1-stool	host_species	Homo sapiens	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 10	M01.4-V2-stool	M01.4-V2-stool	subject_id		M01.4			FN
 10	M01.4-V2-stool	M01.4-V2-stool	sample_id	M01.4-V2-stool	M01.4-V2-stool			TP_correct
 10	M01.4-V2-stool	M01.4-V2-stool	control		Case			FN
@@ -317,7 +317,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 10	M01.4-V2-stool	M01.4-V2-stool	target_condition	type 1 diabetes mellitus (T1DM)	Type 1 Diabetes Mellitus			TP_wrong
 10	M01.4-V2-stool	M01.4-V2-stool	dna_extraction_kit	Norgen Biotek	NorgenBiotek	CMDKIT:0010	CMDKIT:0010	TP_correct
 10	M01.4-V2-stool	M01.4-V2-stool	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-10	M01.4-V2-stool	M01.4-V2-stool	host_species	Homo sapiens	Homo sapiens			TP_correct
+10	M01.4-V2-stool	M01.4-V2-stool	host_species	Homo sapiens	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 11	M01.4-V3-stool	M01.4-V3-stool	subject_id		M01.4			FN
 11	M01.4-V3-stool	M01.4-V3-stool	sample_id	M01.4-V3-stool	M01.4-V3-stool			TP_correct
 11	M01.4-V3-stool	M01.4-V3-stool	control		Case			FN
@@ -346,7 +346,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 11	M01.4-V3-stool	M01.4-V3-stool	target_condition	type 1 diabetes mellitus (T1DM)	Type 1 Diabetes Mellitus			TP_wrong
 11	M01.4-V3-stool	M01.4-V3-stool	dna_extraction_kit	Norgen Biotek	NorgenBiotek	CMDKIT:0010	CMDKIT:0010	TP_correct
 11	M01.4-V3-stool	M01.4-V3-stool	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-11	M01.4-V3-stool	M01.4-V3-stool	host_species	Homo sapiens	Homo sapiens			TP_correct
+11	M01.4-V3-stool	M01.4-V3-stool	host_species	Homo sapiens	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 12	M01.5-V2-stool	M01.5-V2-stool	subject_id		M01.5			FN
 12	M01.5-V2-stool	M01.5-V2-stool	sample_id	M01.5-V2-stool	M01.5-V2-stool			TP_correct
 12	M01.5-V2-stool	M01.5-V2-stool	control		Study Control			FN
@@ -375,7 +375,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 12	M01.5-V2-stool	M01.5-V2-stool	target_condition	type 1 diabetes mellitus (T1DM)	Type 1 Diabetes Mellitus			TP_wrong
 12	M01.5-V2-stool	M01.5-V2-stool	dna_extraction_kit	Norgen Biotek	NorgenBiotek	CMDKIT:0010	CMDKIT:0010	TP_correct
 12	M01.5-V2-stool	M01.5-V2-stool	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-12	M01.5-V2-stool	M01.5-V2-stool	host_species	Homo sapiens	Homo sapiens			TP_correct
+12	M01.5-V2-stool	M01.5-V2-stool	host_species	Homo sapiens	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 13	M01.5-V3-stool	M01.5-V3-stool	subject_id		M01.5			FN
 13	M01.5-V3-stool	M01.5-V3-stool	sample_id	M01.5-V3-stool	M01.5-V3-stool			TP_correct
 13	M01.5-V3-stool	M01.5-V3-stool	control		Study Control			FN
@@ -404,7 +404,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 13	M01.5-V3-stool	M01.5-V3-stool	target_condition	type 1 diabetes mellitus (T1DM)	Type 1 Diabetes Mellitus			TP_wrong
 13	M01.5-V3-stool	M01.5-V3-stool	dna_extraction_kit	Norgen Biotek	NorgenBiotek	CMDKIT:0010	CMDKIT:0010	TP_correct
 13	M01.5-V3-stool	M01.5-V3-stool	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-13	M01.5-V3-stool	M01.5-V3-stool	host_species	Homo sapiens	Homo sapiens			TP_correct
+13	M01.5-V3-stool	M01.5-V3-stool	host_species	Homo sapiens	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 14	M02.1-V1-stool	M02.1-V1-stool	subject_id		M02.1			FN
 14	M02.1-V1-stool	M02.1-V1-stool	sample_id	M02.1-V1-stool	M02.1-V1-stool			TP_correct
 14	M02.1-V1-stool	M02.1-V1-stool	control		Case			FN
@@ -433,7 +433,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 14	M02.1-V1-stool	M02.1-V1-stool	target_condition	type 1 diabetes mellitus (T1DM)	Type 1 Diabetes Mellitus			TP_wrong
 14	M02.1-V1-stool	M02.1-V1-stool	dna_extraction_kit	Norgen Biotek	NorgenBiotek	CMDKIT:0010	CMDKIT:0010	TP_correct
 14	M02.1-V1-stool	M02.1-V1-stool	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-14	M02.1-V1-stool	M02.1-V1-stool	host_species	Homo sapiens	Homo sapiens			TP_correct
+14	M02.1-V1-stool	M02.1-V1-stool	host_species	Homo sapiens	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 15	M02.1-V2-stool	M02.1-V2-stool	subject_id		M02.1			FN
 15	M02.1-V2-stool	M02.1-V2-stool	sample_id	M02.1-V2-stool	M02.1-V2-stool			TP_correct
 15	M02.1-V2-stool	M02.1-V2-stool	control		Case			FN
@@ -462,7 +462,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 15	M02.1-V2-stool	M02.1-V2-stool	target_condition	type 1 diabetes mellitus (T1DM)	Type 1 Diabetes Mellitus			TP_wrong
 15	M02.1-V2-stool	M02.1-V2-stool	dna_extraction_kit	Norgen Biotek	NorgenBiotek	CMDKIT:0010	CMDKIT:0010	TP_correct
 15	M02.1-V2-stool	M02.1-V2-stool	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-15	M02.1-V2-stool	M02.1-V2-stool	host_species	Homo sapiens	Homo sapiens			TP_correct
+15	M02.1-V2-stool	M02.1-V2-stool	host_species	Homo sapiens	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 16	M02.1-V3-stool	M02.1-V3-stool	subject_id		M02.1			FN
 16	M02.1-V3-stool	M02.1-V3-stool	sample_id	M02.1-V3-stool	M02.1-V3-stool			TP_correct
 16	M02.1-V3-stool	M02.1-V3-stool	control		Case			FN
@@ -491,7 +491,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 16	M02.1-V3-stool	M02.1-V3-stool	target_condition	type 1 diabetes mellitus (T1DM)	Type 1 Diabetes Mellitus			TP_wrong
 16	M02.1-V3-stool	M02.1-V3-stool	dna_extraction_kit	Norgen Biotek	NorgenBiotek	CMDKIT:0010	CMDKIT:0010	TP_correct
 16	M02.1-V3-stool	M02.1-V3-stool	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-16	M02.1-V3-stool	M02.1-V3-stool	host_species	Homo sapiens	Homo sapiens			TP_correct
+16	M02.1-V3-stool	M02.1-V3-stool	host_species	Homo sapiens	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 17	M02.2-V1-stool	M02.2-V1-stool	subject_id		M02.2			FN
 17	M02.2-V1-stool	M02.2-V1-stool	sample_id	M02.2-V1-stool	M02.2-V1-stool			TP_correct
 17	M02.2-V1-stool	M02.2-V1-stool	control		Case			FN
@@ -520,7 +520,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 17	M02.2-V1-stool	M02.2-V1-stool	target_condition	type 1 diabetes mellitus (T1DM)	Type 1 Diabetes Mellitus			TP_wrong
 17	M02.2-V1-stool	M02.2-V1-stool	dna_extraction_kit	Norgen Biotek	NorgenBiotek	CMDKIT:0010	CMDKIT:0010	TP_correct
 17	M02.2-V1-stool	M02.2-V1-stool	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-17	M02.2-V1-stool	M02.2-V1-stool	host_species	Homo sapiens	Homo sapiens			TP_correct
+17	M02.2-V1-stool	M02.2-V1-stool	host_species	Homo sapiens	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 18	M02.2-V2-stool	M02.2-V2-stool	subject_id		M02.2			FN
 18	M02.2-V2-stool	M02.2-V2-stool	sample_id	M02.2-V2-stool	M02.2-V2-stool			TP_correct
 18	M02.2-V2-stool	M02.2-V2-stool	control		Case			FN
@@ -549,7 +549,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 18	M02.2-V2-stool	M02.2-V2-stool	target_condition	type 1 diabetes mellitus (T1DM)	Type 1 Diabetes Mellitus			TP_wrong
 18	M02.2-V2-stool	M02.2-V2-stool	dna_extraction_kit	Norgen Biotek	NorgenBiotek	CMDKIT:0010	CMDKIT:0010	TP_correct
 18	M02.2-V2-stool	M02.2-V2-stool	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-18	M02.2-V2-stool	M02.2-V2-stool	host_species	Homo sapiens	Homo sapiens			TP_correct
+18	M02.2-V2-stool	M02.2-V2-stool	host_species	Homo sapiens	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 19	M02.2-V3-stool	M02.2-V3-stool	subject_id		M02.2			FN
 19	M02.2-V3-stool	M02.2-V3-stool	sample_id	M02.2-V3-stool	M02.2-V3-stool			TP_correct
 19	M02.2-V3-stool	M02.2-V3-stool	control		Case			FN
@@ -578,7 +578,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 19	M02.2-V3-stool	M02.2-V3-stool	target_condition	type 1 diabetes mellitus (T1DM)	Type 1 Diabetes Mellitus			TP_wrong
 19	M02.2-V3-stool	M02.2-V3-stool	dna_extraction_kit	Norgen Biotek	NorgenBiotek	CMDKIT:0010	CMDKIT:0010	TP_correct
 19	M02.2-V3-stool	M02.2-V3-stool	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-19	M02.2-V3-stool	M02.2-V3-stool	host_species	Homo sapiens	Homo sapiens			TP_correct
+19	M02.2-V3-stool	M02.2-V3-stool	host_species	Homo sapiens	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 20	M02.3-V1-stool	M02.3-V1-stool	subject_id		M02.3			FN
 20	M02.3-V1-stool	M02.3-V1-stool	sample_id	M02.3-V1-stool	M02.3-V1-stool			TP_correct
 20	M02.3-V1-stool	M02.3-V1-stool	control		Case			FN
@@ -607,7 +607,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 20	M02.3-V1-stool	M02.3-V1-stool	target_condition	type 1 diabetes mellitus (T1DM)	Type 1 Diabetes Mellitus			TP_wrong
 20	M02.3-V1-stool	M02.3-V1-stool	dna_extraction_kit	Norgen Biotek	NorgenBiotek	CMDKIT:0010	CMDKIT:0010	TP_correct
 20	M02.3-V1-stool	M02.3-V1-stool	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-20	M02.3-V1-stool	M02.3-V1-stool	host_species	Homo sapiens	Homo sapiens			TP_correct
+20	M02.3-V1-stool	M02.3-V1-stool	host_species	Homo sapiens	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 21	M02.3-V2-stool	M02.3-V2-stool	subject_id		M02.3			FN
 21	M02.3-V2-stool	M02.3-V2-stool	sample_id	M02.3-V2-stool	M02.3-V2-stool			TP_correct
 21	M02.3-V2-stool	M02.3-V2-stool	control		Case			FN
@@ -636,7 +636,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 21	M02.3-V2-stool	M02.3-V2-stool	target_condition	type 1 diabetes mellitus (T1DM)	Type 1 Diabetes Mellitus			TP_wrong
 21	M02.3-V2-stool	M02.3-V2-stool	dna_extraction_kit	Norgen Biotek	NorgenBiotek	CMDKIT:0010	CMDKIT:0010	TP_correct
 21	M02.3-V2-stool	M02.3-V2-stool	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-21	M02.3-V2-stool	M02.3-V2-stool	host_species	Homo sapiens	Homo sapiens			TP_correct
+21	M02.3-V2-stool	M02.3-V2-stool	host_species	Homo sapiens	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 22	M02.3-V3-stool	M02.3-V3-stool	subject_id		M02.3			FN
 22	M02.3-V3-stool	M02.3-V3-stool	sample_id	M02.3-V3-stool	M02.3-V3-stool			TP_correct
 22	M02.3-V3-stool	M02.3-V3-stool	control		Case			FN
@@ -665,7 +665,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 22	M02.3-V3-stool	M02.3-V3-stool	target_condition	type 1 diabetes mellitus (T1DM)	Type 1 Diabetes Mellitus			TP_wrong
 22	M02.3-V3-stool	M02.3-V3-stool	dna_extraction_kit	Norgen Biotek	NorgenBiotek	CMDKIT:0010	CMDKIT:0010	TP_correct
 22	M02.3-V3-stool	M02.3-V3-stool	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-22	M02.3-V3-stool	M02.3-V3-stool	host_species	Homo sapiens	Homo sapiens			TP_correct
+22	M02.3-V3-stool	M02.3-V3-stool	host_species	Homo sapiens	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 23	M02.4-V1-stool	M02.4-V1-stool	subject_id		M02.4			FN
 23	M02.4-V1-stool	M02.4-V1-stool	sample_id	M02.4-V1-stool	M02.4-V1-stool			TP_correct
 23	M02.4-V1-stool	M02.4-V1-stool	control		Study Control			FN
@@ -694,7 +694,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 23	M02.4-V1-stool	M02.4-V1-stool	target_condition	type 1 diabetes mellitus (T1DM)	Type 1 Diabetes Mellitus			TP_wrong
 23	M02.4-V1-stool	M02.4-V1-stool	dna_extraction_kit	Norgen Biotek	NorgenBiotek	CMDKIT:0010	CMDKIT:0010	TP_correct
 23	M02.4-V1-stool	M02.4-V1-stool	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-23	M02.4-V1-stool	M02.4-V1-stool	host_species	Homo sapiens	Homo sapiens			TP_correct
+23	M02.4-V1-stool	M02.4-V1-stool	host_species	Homo sapiens	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 24	M02.4-V2-stool	M02.4-V2-stool	subject_id		M02.4			FN
 24	M02.4-V2-stool	M02.4-V2-stool	sample_id	M02.4-V2-stool	M02.4-V2-stool			TP_correct
 24	M02.4-V2-stool	M02.4-V2-stool	control		Study Control			FN
@@ -723,7 +723,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 24	M02.4-V2-stool	M02.4-V2-stool	target_condition	type 1 diabetes mellitus (T1DM)	Type 1 Diabetes Mellitus			TP_wrong
 24	M02.4-V2-stool	M02.4-V2-stool	dna_extraction_kit	Norgen Biotek	NorgenBiotek	CMDKIT:0010	CMDKIT:0010	TP_correct
 24	M02.4-V2-stool	M02.4-V2-stool	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-24	M02.4-V2-stool	M02.4-V2-stool	host_species	Homo sapiens	Homo sapiens			TP_correct
+24	M02.4-V2-stool	M02.4-V2-stool	host_species	Homo sapiens	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 25	M02.4-V3-stool	M02.4-V3-stool	subject_id		M02.4			FN
 25	M02.4-V3-stool	M02.4-V3-stool	sample_id	M02.4-V3-stool	M02.4-V3-stool			TP_correct
 25	M02.4-V3-stool	M02.4-V3-stool	control		Study Control			FN
@@ -752,7 +752,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 25	M02.4-V3-stool	M02.4-V3-stool	target_condition	type 1 diabetes mellitus (T1DM)	Type 1 Diabetes Mellitus			TP_wrong
 25	M02.4-V3-stool	M02.4-V3-stool	dna_extraction_kit	Norgen Biotek	NorgenBiotek	CMDKIT:0010	CMDKIT:0010	TP_correct
 25	M02.4-V3-stool	M02.4-V3-stool	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-25	M02.4-V3-stool	M02.4-V3-stool	host_species	Homo sapiens	Homo sapiens			TP_correct
+25	M02.4-V3-stool	M02.4-V3-stool	host_species	Homo sapiens	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 26	M02.5-V1-stool	M02.5-V1-stool	subject_id		M02.5			FN
 26	M02.5-V1-stool	M02.5-V1-stool	sample_id	M02.5-V1-stool	M02.5-V1-stool			TP_correct
 26	M02.5-V1-stool	M02.5-V1-stool	control		Case			FN
@@ -781,7 +781,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 26	M02.5-V1-stool	M02.5-V1-stool	target_condition	type 1 diabetes mellitus (T1DM)	Type 1 Diabetes Mellitus			TP_wrong
 26	M02.5-V1-stool	M02.5-V1-stool	dna_extraction_kit	Norgen Biotek	NorgenBiotek	CMDKIT:0010	CMDKIT:0010	TP_correct
 26	M02.5-V1-stool	M02.5-V1-stool	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-26	M02.5-V1-stool	M02.5-V1-stool	host_species	Homo sapiens	Homo sapiens			TP_correct
+26	M02.5-V1-stool	M02.5-V1-stool	host_species	Homo sapiens	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 27	M02.5-V2-stool	M02.5-V2-stool	subject_id		M02.5			FN
 27	M02.5-V2-stool	M02.5-V2-stool	sample_id	M02.5-V2-stool	M02.5-V2-stool			TP_correct
 27	M02.5-V2-stool	M02.5-V2-stool	control		Case			FN
@@ -810,7 +810,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 27	M02.5-V2-stool	M02.5-V2-stool	target_condition	type 1 diabetes mellitus (T1DM)	Type 1 Diabetes Mellitus			TP_wrong
 27	M02.5-V2-stool	M02.5-V2-stool	dna_extraction_kit	Norgen Biotek	NorgenBiotek	CMDKIT:0010	CMDKIT:0010	TP_correct
 27	M02.5-V2-stool	M02.5-V2-stool	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-27	M02.5-V2-stool	M02.5-V2-stool	host_species	Homo sapiens	Homo sapiens			TP_correct
+27	M02.5-V2-stool	M02.5-V2-stool	host_species	Homo sapiens	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 28	M03.1-V2-stool	M03.1-V2-stool	subject_id		M03.1			FN
 28	M03.1-V2-stool	M03.1-V2-stool	sample_id	M03.1-V2-stool	M03.1-V2-stool			TP_correct
 28	M03.1-V2-stool	M03.1-V2-stool	control		Study Control			FN
@@ -839,7 +839,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 28	M03.1-V2-stool	M03.1-V2-stool	target_condition	type 1 diabetes mellitus (T1DM)	Type 1 Diabetes Mellitus			TP_wrong
 28	M03.1-V2-stool	M03.1-V2-stool	dna_extraction_kit	Norgen Biotek	NorgenBiotek	CMDKIT:0010	CMDKIT:0010	TP_correct
 28	M03.1-V2-stool	M03.1-V2-stool	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-28	M03.1-V2-stool	M03.1-V2-stool	host_species	Homo sapiens	Homo sapiens			TP_correct
+28	M03.1-V2-stool	M03.1-V2-stool	host_species	Homo sapiens	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 29	M03.1-V3-stool	M03.1-V3-stool	subject_id		M03.1			FN
 29	M03.1-V3-stool	M03.1-V3-stool	sample_id	M03.1-V3-stool	M03.1-V3-stool			TP_correct
 29	M03.1-V3-stool	M03.1-V3-stool	control		Study Control			FN
@@ -868,7 +868,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 29	M03.1-V3-stool	M03.1-V3-stool	target_condition	type 1 diabetes mellitus (T1DM)	Type 1 Diabetes Mellitus			TP_wrong
 29	M03.1-V3-stool	M03.1-V3-stool	dna_extraction_kit	Norgen Biotek	NorgenBiotek	CMDKIT:0010	CMDKIT:0010	TP_correct
 29	M03.1-V3-stool	M03.1-V3-stool	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-29	M03.1-V3-stool	M03.1-V3-stool	host_species	Homo sapiens	Homo sapiens			TP_correct
+29	M03.1-V3-stool	M03.1-V3-stool	host_species	Homo sapiens	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 30	M03.3-V1-stool	M03.3-V1-stool	subject_id		M03.3			FN
 30	M03.3-V1-stool	M03.3-V1-stool	sample_id	M03.3-V1-stool	M03.3-V1-stool			TP_correct
 30	M03.3-V1-stool	M03.3-V1-stool	control		Study Control			FN
@@ -897,7 +897,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 30	M03.3-V1-stool	M03.3-V1-stool	target_condition	type 1 diabetes mellitus (T1DM)	Type 1 Diabetes Mellitus			TP_wrong
 30	M03.3-V1-stool	M03.3-V1-stool	dna_extraction_kit	Norgen Biotek	NorgenBiotek	CMDKIT:0010	CMDKIT:0010	TP_correct
 30	M03.3-V1-stool	M03.3-V1-stool	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-30	M03.3-V1-stool	M03.3-V1-stool	host_species	Homo sapiens	Homo sapiens			TP_correct
+30	M03.3-V1-stool	M03.3-V1-stool	host_species	Homo sapiens	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 31	M03.3-V2-stool	M03.3-V2-stool	subject_id		M03.3			FN
 31	M03.3-V2-stool	M03.3-V2-stool	sample_id	M03.3-V2-stool	M03.3-V2-stool			TP_correct
 31	M03.3-V2-stool	M03.3-V2-stool	control		Study Control			FN
@@ -926,7 +926,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 31	M03.3-V2-stool	M03.3-V2-stool	target_condition	type 1 diabetes mellitus (T1DM)	Type 1 Diabetes Mellitus			TP_wrong
 31	M03.3-V2-stool	M03.3-V2-stool	dna_extraction_kit	Norgen Biotek	NorgenBiotek	CMDKIT:0010	CMDKIT:0010	TP_correct
 31	M03.3-V2-stool	M03.3-V2-stool	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-31	M03.3-V2-stool	M03.3-V2-stool	host_species	Homo sapiens	Homo sapiens			TP_correct
+31	M03.3-V2-stool	M03.3-V2-stool	host_species	Homo sapiens	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 32	M03.3-V3-stool	M03.3-V3-stool	subject_id		M03.3			FN
 32	M03.3-V3-stool	M03.3-V3-stool	sample_id	M03.3-V3-stool	M03.3-V3-stool			TP_correct
 32	M03.3-V3-stool	M03.3-V3-stool	control		Study Control			FN
@@ -955,7 +955,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 32	M03.3-V3-stool	M03.3-V3-stool	target_condition	type 1 diabetes mellitus (T1DM)	Type 1 Diabetes Mellitus			TP_wrong
 32	M03.3-V3-stool	M03.3-V3-stool	dna_extraction_kit	Norgen Biotek	NorgenBiotek	CMDKIT:0010	CMDKIT:0010	TP_correct
 32	M03.3-V3-stool	M03.3-V3-stool	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-32	M03.3-V3-stool	M03.3-V3-stool	host_species	Homo sapiens	Homo sapiens			TP_correct
+32	M03.3-V3-stool	M03.3-V3-stool	host_species	Homo sapiens	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 33	M03.4-V1-stool	M03.4-V1-stool	subject_id		M03.4			FN
 33	M03.4-V1-stool	M03.4-V1-stool	sample_id	M03.4-V1-stool	M03.4-V1-stool			TP_correct
 33	M03.4-V1-stool	M03.4-V1-stool	control		Case			FN
@@ -984,7 +984,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 33	M03.4-V1-stool	M03.4-V1-stool	target_condition	type 1 diabetes mellitus (T1DM)	Type 1 Diabetes Mellitus			TP_wrong
 33	M03.4-V1-stool	M03.4-V1-stool	dna_extraction_kit	Norgen Biotek	NorgenBiotek	CMDKIT:0010	CMDKIT:0010	TP_correct
 33	M03.4-V1-stool	M03.4-V1-stool	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-33	M03.4-V1-stool	M03.4-V1-stool	host_species	Homo sapiens	Homo sapiens			TP_correct
+33	M03.4-V1-stool	M03.4-V1-stool	host_species	Homo sapiens	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 34	M03.4-V2-stool	M03.4-V2-stool	subject_id		M03.4			FN
 34	M03.4-V2-stool	M03.4-V2-stool	sample_id	M03.4-V2-stool	M03.4-V2-stool			TP_correct
 34	M03.4-V2-stool	M03.4-V2-stool	control		Case			FN
@@ -1013,7 +1013,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 34	M03.4-V2-stool	M03.4-V2-stool	target_condition	type 1 diabetes mellitus (T1DM)	Type 1 Diabetes Mellitus			TP_wrong
 34	M03.4-V2-stool	M03.4-V2-stool	dna_extraction_kit	Norgen Biotek	NorgenBiotek	CMDKIT:0010	CMDKIT:0010	TP_correct
 34	M03.4-V2-stool	M03.4-V2-stool	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-34	M03.4-V2-stool	M03.4-V2-stool	host_species	Homo sapiens	Homo sapiens			TP_correct
+34	M03.4-V2-stool	M03.4-V2-stool	host_species	Homo sapiens	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 35	M03.4-V3-stool	M03.4-V3-stool	subject_id		M03.4			FN
 35	M03.4-V3-stool	M03.4-V3-stool	sample_id	M03.4-V3-stool	M03.4-V3-stool			TP_correct
 35	M03.4-V3-stool	M03.4-V3-stool	control		Case			FN
@@ -1042,7 +1042,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 35	M03.4-V3-stool	M03.4-V3-stool	target_condition	type 1 diabetes mellitus (T1DM)	Type 1 Diabetes Mellitus			TP_wrong
 35	M03.4-V3-stool	M03.4-V3-stool	dna_extraction_kit	Norgen Biotek	NorgenBiotek	CMDKIT:0010	CMDKIT:0010	TP_correct
 35	M03.4-V3-stool	M03.4-V3-stool	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-35	M03.4-V3-stool	M03.4-V3-stool	host_species	Homo sapiens	Homo sapiens			TP_correct
+35	M03.4-V3-stool	M03.4-V3-stool	host_species	Homo sapiens	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 36	M03.5-V1-stool	M03.5-V1-stool	subject_id		M03.5			FN
 36	M03.5-V1-stool	M03.5-V1-stool	sample_id	M03.5-V1-stool	M03.5-V1-stool			TP_correct
 36	M03.5-V1-stool	M03.5-V1-stool	control		Case			FN
@@ -1071,7 +1071,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 36	M03.5-V1-stool	M03.5-V1-stool	target_condition	type 1 diabetes mellitus (T1DM)	Type 1 Diabetes Mellitus			TP_wrong
 36	M03.5-V1-stool	M03.5-V1-stool	dna_extraction_kit	Norgen Biotek	NorgenBiotek	CMDKIT:0010	CMDKIT:0010	TP_correct
 36	M03.5-V1-stool	M03.5-V1-stool	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-36	M03.5-V1-stool	M03.5-V1-stool	host_species	Homo sapiens	Homo sapiens			TP_correct
+36	M03.5-V1-stool	M03.5-V1-stool	host_species	Homo sapiens	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 37	M03.5-V2-stool	M03.5-V2-stool	subject_id		M03.5			FN
 37	M03.5-V2-stool	M03.5-V2-stool	sample_id	M03.5-V2-stool	M03.5-V2-stool			TP_correct
 37	M03.5-V2-stool	M03.5-V2-stool	control		Case			FN
@@ -1100,7 +1100,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 37	M03.5-V2-stool	M03.5-V2-stool	target_condition	type 1 diabetes mellitus (T1DM)	Type 1 Diabetes Mellitus			TP_wrong
 37	M03.5-V2-stool	M03.5-V2-stool	dna_extraction_kit	Norgen Biotek	NorgenBiotek	CMDKIT:0010	CMDKIT:0010	TP_correct
 37	M03.5-V2-stool	M03.5-V2-stool	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-37	M03.5-V2-stool	M03.5-V2-stool	host_species	Homo sapiens	Homo sapiens			TP_correct
+37	M03.5-V2-stool	M03.5-V2-stool	host_species	Homo sapiens	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 38	M04.1-V1-stool	M04.1-V1-stool	subject_id		M04.1			FN
 38	M04.1-V1-stool	M04.1-V1-stool	sample_id	M04.1-V1-stool	M04.1-V1-stool			TP_correct
 38	M04.1-V1-stool	M04.1-V1-stool	control		Study Control			FN
@@ -1129,7 +1129,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 38	M04.1-V1-stool	M04.1-V1-stool	target_condition	type 1 diabetes mellitus (T1DM)	Type 1 Diabetes Mellitus			TP_wrong
 38	M04.1-V1-stool	M04.1-V1-stool	dna_extraction_kit	Norgen Biotek	NorgenBiotek	CMDKIT:0010	CMDKIT:0010	TP_correct
 38	M04.1-V1-stool	M04.1-V1-stool	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-38	M04.1-V1-stool	M04.1-V1-stool	host_species	Homo sapiens	Homo sapiens			TP_correct
+38	M04.1-V1-stool	M04.1-V1-stool	host_species	Homo sapiens	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 39	M04.1-V3-stool	M04.1-V3-stool	subject_id		M04.1			FN
 39	M04.1-V3-stool	M04.1-V3-stool	sample_id	M04.1-V3-stool	M04.1-V3-stool			TP_correct
 39	M04.1-V3-stool	M04.1-V3-stool	control		Study Control			FN
@@ -1158,7 +1158,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 39	M04.1-V3-stool	M04.1-V3-stool	target_condition	type 1 diabetes mellitus (T1DM)	Type 1 Diabetes Mellitus			TP_wrong
 39	M04.1-V3-stool	M04.1-V3-stool	dna_extraction_kit	Norgen Biotek	NorgenBiotek	CMDKIT:0010	CMDKIT:0010	TP_correct
 39	M04.1-V3-stool	M04.1-V3-stool	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-39	M04.1-V3-stool	M04.1-V3-stool	host_species	Homo sapiens	Homo sapiens			TP_correct
+39	M04.1-V3-stool	M04.1-V3-stool	host_species	Homo sapiens	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 40	M04.2-V1-stool	M04.2-V1-stool	subject_id		M04.2			FN
 40	M04.2-V1-stool	M04.2-V1-stool	sample_id	M04.2-V1-stool	M04.2-V1-stool			TP_correct
 40	M04.2-V1-stool	M04.2-V1-stool	control		Case			FN
@@ -1187,7 +1187,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 40	M04.2-V1-stool	M04.2-V1-stool	target_condition	type 1 diabetes mellitus (T1DM)	Type 1 Diabetes Mellitus			TP_wrong
 40	M04.2-V1-stool	M04.2-V1-stool	dna_extraction_kit	Norgen Biotek	NorgenBiotek	CMDKIT:0010	CMDKIT:0010	TP_correct
 40	M04.2-V1-stool	M04.2-V1-stool	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-40	M04.2-V1-stool	M04.2-V1-stool	host_species	Homo sapiens	Homo sapiens			TP_correct
+40	M04.2-V1-stool	M04.2-V1-stool	host_species	Homo sapiens	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 41	M04.2-V2-stool	M04.2-V2-stool	subject_id		M04.2			FN
 41	M04.2-V2-stool	M04.2-V2-stool	sample_id	M04.2-V2-stool	M04.2-V2-stool			TP_correct
 41	M04.2-V2-stool	M04.2-V2-stool	control		Case			FN
@@ -1216,7 +1216,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 41	M04.2-V2-stool	M04.2-V2-stool	target_condition	type 1 diabetes mellitus (T1DM)	Type 1 Diabetes Mellitus			TP_wrong
 41	M04.2-V2-stool	M04.2-V2-stool	dna_extraction_kit	Norgen Biotek	NorgenBiotek	CMDKIT:0010	CMDKIT:0010	TP_correct
 41	M04.2-V2-stool	M04.2-V2-stool	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-41	M04.2-V2-stool	M04.2-V2-stool	host_species	Homo sapiens	Homo sapiens			TP_correct
+41	M04.2-V2-stool	M04.2-V2-stool	host_species	Homo sapiens	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 42	M04.2-V3-stool	M04.2-V3-stool	subject_id		M04.2			FN
 42	M04.2-V3-stool	M04.2-V3-stool	sample_id	M04.2-V3-stool	M04.2-V3-stool			TP_correct
 42	M04.2-V3-stool	M04.2-V3-stool	control		Case			FN
@@ -1245,7 +1245,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 42	M04.2-V3-stool	M04.2-V3-stool	target_condition	type 1 diabetes mellitus (T1DM)	Type 1 Diabetes Mellitus			TP_wrong
 42	M04.2-V3-stool	M04.2-V3-stool	dna_extraction_kit	Norgen Biotek	NorgenBiotek	CMDKIT:0010	CMDKIT:0010	TP_correct
 42	M04.2-V3-stool	M04.2-V3-stool	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-42	M04.2-V3-stool	M04.2-V3-stool	host_species	Homo sapiens	Homo sapiens			TP_correct
+42	M04.2-V3-stool	M04.2-V3-stool	host_species	Homo sapiens	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 43	M04.3-V1-stool	M04.3-V1-stool	subject_id		M04.3			FN
 43	M04.3-V1-stool	M04.3-V1-stool	sample_id	M04.3-V1-stool	M04.3-V1-stool			TP_correct
 43	M04.3-V1-stool	M04.3-V1-stool	control		Case			FN
@@ -1274,7 +1274,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 43	M04.3-V1-stool	M04.3-V1-stool	target_condition	type 1 diabetes mellitus (T1DM)	Type 1 Diabetes Mellitus			TP_wrong
 43	M04.3-V1-stool	M04.3-V1-stool	dna_extraction_kit	Norgen Biotek	NorgenBiotek	CMDKIT:0010	CMDKIT:0010	TP_correct
 43	M04.3-V1-stool	M04.3-V1-stool	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-43	M04.3-V1-stool	M04.3-V1-stool	host_species	Homo sapiens	Homo sapiens			TP_correct
+43	M04.3-V1-stool	M04.3-V1-stool	host_species	Homo sapiens	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 44	M04.3-V3-stool	M04.3-V3-stool	subject_id		M04.3			FN
 44	M04.3-V3-stool	M04.3-V3-stool	sample_id	M04.3-V3-stool	M04.3-V3-stool			TP_correct
 44	M04.3-V3-stool	M04.3-V3-stool	control		Case			FN
@@ -1303,7 +1303,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 44	M04.3-V3-stool	M04.3-V3-stool	target_condition	type 1 diabetes mellitus (T1DM)	Type 1 Diabetes Mellitus			TP_wrong
 44	M04.3-V3-stool	M04.3-V3-stool	dna_extraction_kit	Norgen Biotek	NorgenBiotek	CMDKIT:0010	CMDKIT:0010	TP_correct
 44	M04.3-V3-stool	M04.3-V3-stool	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-44	M04.3-V3-stool	M04.3-V3-stool	host_species	Homo sapiens	Homo sapiens			TP_correct
+44	M04.3-V3-stool	M04.3-V3-stool	host_species	Homo sapiens	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 45	M04.4-V1-stool	M04.4-V1-stool	subject_id		M04.4			FN
 45	M04.4-V1-stool	M04.4-V1-stool	sample_id	M04.4-V1-stool	M04.4-V1-stool			TP_correct
 45	M04.4-V1-stool	M04.4-V1-stool	control		Study Control			FN
@@ -1332,7 +1332,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 45	M04.4-V1-stool	M04.4-V1-stool	target_condition	type 1 diabetes mellitus (T1DM)	Type 1 Diabetes Mellitus			TP_wrong
 45	M04.4-V1-stool	M04.4-V1-stool	dna_extraction_kit	Norgen Biotek	NorgenBiotek	CMDKIT:0010	CMDKIT:0010	TP_correct
 45	M04.4-V1-stool	M04.4-V1-stool	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-45	M04.4-V1-stool	M04.4-V1-stool	host_species	Homo sapiens	Homo sapiens			TP_correct
+45	M04.4-V1-stool	M04.4-V1-stool	host_species	Homo sapiens	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 46	M04.4-V3-stool	M04.4-V3-stool	subject_id		M04.4			FN
 46	M04.4-V3-stool	M04.4-V3-stool	sample_id	M04.4-V3-stool	M04.4-V3-stool			TP_correct
 46	M04.4-V3-stool	M04.4-V3-stool	control		Study Control			FN
@@ -1361,7 +1361,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 46	M04.4-V3-stool	M04.4-V3-stool	target_condition	type 1 diabetes mellitus (T1DM)	Type 1 Diabetes Mellitus			TP_wrong
 46	M04.4-V3-stool	M04.4-V3-stool	dna_extraction_kit	Norgen Biotek	NorgenBiotek	CMDKIT:0010	CMDKIT:0010	TP_correct
 46	M04.4-V3-stool	M04.4-V3-stool	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-46	M04.4-V3-stool	M04.4-V3-stool	host_species	Homo sapiens	Homo sapiens			TP_correct
+46	M04.4-V3-stool	M04.4-V3-stool	host_species	Homo sapiens	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 47	M04.5-V1-stool	M04.5-V1-stool	subject_id		M04.5			FN
 47	M04.5-V1-stool	M04.5-V1-stool	sample_id	M04.5-V1-stool	M04.5-V1-stool			TP_correct
 47	M04.5-V1-stool	M04.5-V1-stool	control		Study Control			FN
@@ -1390,7 +1390,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 47	M04.5-V1-stool	M04.5-V1-stool	target_condition	type 1 diabetes mellitus (T1DM)	Type 1 Diabetes Mellitus			TP_wrong
 47	M04.5-V1-stool	M04.5-V1-stool	dna_extraction_kit	Norgen Biotek	NorgenBiotek	CMDKIT:0010	CMDKIT:0010	TP_correct
 47	M04.5-V1-stool	M04.5-V1-stool	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-47	M04.5-V1-stool	M04.5-V1-stool	host_species	Homo sapiens	Homo sapiens			TP_correct
+47	M04.5-V1-stool	M04.5-V1-stool	host_species	Homo sapiens	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 48	M04.5-V2-stool	M04.5-V2-stool	subject_id		M04.5			FN
 48	M04.5-V2-stool	M04.5-V2-stool	sample_id	M04.5-V2-stool	M04.5-V2-stool			TP_correct
 48	M04.5-V2-stool	M04.5-V2-stool	control		Study Control			FN
@@ -1419,7 +1419,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 48	M04.5-V2-stool	M04.5-V2-stool	target_condition	type 1 diabetes mellitus (T1DM)	Type 1 Diabetes Mellitus			TP_wrong
 48	M04.5-V2-stool	M04.5-V2-stool	dna_extraction_kit	Norgen Biotek	NorgenBiotek	CMDKIT:0010	CMDKIT:0010	TP_correct
 48	M04.5-V2-stool	M04.5-V2-stool	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-48	M04.5-V2-stool	M04.5-V2-stool	host_species	Homo sapiens	Homo sapiens			TP_correct
+48	M04.5-V2-stool	M04.5-V2-stool	host_species	Homo sapiens	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 49	M04.5-V3-stool	M04.5-V3-stool	subject_id		M04.5			FN
 49	M04.5-V3-stool	M04.5-V3-stool	sample_id	M04.5-V3-stool	M04.5-V3-stool			TP_correct
 49	M04.5-V3-stool	M04.5-V3-stool	control		Study Control			FN
@@ -1448,7 +1448,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 49	M04.5-V3-stool	M04.5-V3-stool	target_condition	type 1 diabetes mellitus (T1DM)	Type 1 Diabetes Mellitus			TP_wrong
 49	M04.5-V3-stool	M04.5-V3-stool	dna_extraction_kit	Norgen Biotek	NorgenBiotek	CMDKIT:0010	CMDKIT:0010	TP_correct
 49	M04.5-V3-stool	M04.5-V3-stool	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-49	M04.5-V3-stool	M04.5-V3-stool	host_species	Homo sapiens	Homo sapiens			TP_correct
+49	M04.5-V3-stool	M04.5-V3-stool	host_species	Homo sapiens	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 50	M04.6-V1-stool	M04.6-V1-stool	subject_id		M04.6			FN
 50	M04.6-V1-stool	M04.6-V1-stool	sample_id	M04.6-V1-stool	M04.6-V1-stool			TP_correct
 50	M04.6-V1-stool	M04.6-V1-stool	control		Study Control			FN
@@ -1477,7 +1477,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 50	M04.6-V1-stool	M04.6-V1-stool	target_condition	type 1 diabetes mellitus (T1DM)	Type 1 Diabetes Mellitus			TP_wrong
 50	M04.6-V1-stool	M04.6-V1-stool	dna_extraction_kit	Norgen Biotek	NorgenBiotek	CMDKIT:0010	CMDKIT:0010	TP_correct
 50	M04.6-V1-stool	M04.6-V1-stool	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-50	M04.6-V1-stool	M04.6-V1-stool	host_species	Homo sapiens	Homo sapiens			TP_correct
+50	M04.6-V1-stool	M04.6-V1-stool	host_species	Homo sapiens	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 51	M04.6-V2-stool	M04.6-V2-stool	subject_id		M04.6			FN
 51	M04.6-V2-stool	M04.6-V2-stool	sample_id	M04.6-V2-stool	M04.6-V2-stool			TP_correct
 51	M04.6-V2-stool	M04.6-V2-stool	control		Study Control			FN
@@ -1506,7 +1506,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 51	M04.6-V2-stool	M04.6-V2-stool	target_condition	type 1 diabetes mellitus (T1DM)	Type 1 Diabetes Mellitus			TP_wrong
 51	M04.6-V2-stool	M04.6-V2-stool	dna_extraction_kit	Norgen Biotek	NorgenBiotek	CMDKIT:0010	CMDKIT:0010	TP_correct
 51	M04.6-V2-stool	M04.6-V2-stool	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-51	M04.6-V2-stool	M04.6-V2-stool	host_species	Homo sapiens	Homo sapiens			TP_correct
+51	M04.6-V2-stool	M04.6-V2-stool	host_species	Homo sapiens	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 52	M04.6-V3-stool	M04.6-V3-stool	subject_id		M04.6			FN
 52	M04.6-V3-stool	M04.6-V3-stool	sample_id	M04.6-V3-stool	M04.6-V3-stool			TP_correct
 52	M04.6-V3-stool	M04.6-V3-stool	control		Study Control			FN
@@ -1535,4 +1535,4 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 52	M04.6-V3-stool	M04.6-V3-stool	target_condition	type 1 diabetes mellitus (T1DM)	Type 1 Diabetes Mellitus			TP_wrong
 52	M04.6-V3-stool	M04.6-V3-stool	dna_extraction_kit	Norgen Biotek	NorgenBiotek	CMDKIT:0010	CMDKIT:0010	TP_correct
 52	M04.6-V3-stool	M04.6-V3-stool	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-52	M04.6-V3-stool	M04.6-V3-stool	host_species	Homo sapiens	Homo sapiens			TP_correct
+52	M04.6-V3-stool	M04.6-V3-stool	host_species	Homo sapiens	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct

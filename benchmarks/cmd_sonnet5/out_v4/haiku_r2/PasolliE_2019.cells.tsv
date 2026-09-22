@@ -28,7 +28,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 0	A01_02_1FE	A01_02_1FE	target_condition	Human microbiome composition and diversity; Microbiome-associated health conditions; Microbial diversity across body sites; Geographic and lifestyle effects on microbiome; Westernization effects on microbiome	Microbiome			TP_wrong
 0	A01_02_1FE	A01_02_1FE	dna_extraction_kit	PowerSoil DNA Isolation Kit	Qiagen	CMDKIT:0002	CMDKIT:0007	TP_wrong
 0	A01_02_1FE	A01_02_1FE	sequencing_platform	Illumina HiSeq	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-0	A01_02_1FE	A01_02_1FE	host_species	Human	Homo sapiens			TP_wrong
+0	A01_02_1FE	A01_02_1FE	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 1	A02_01_1FE	A02_01_1FE	subject_id		A02_01_1FE			FN
 1	A02_01_1FE	A02_01_1FE	sample_id	A02_01_1FE	A02_01_1FE			TP_correct
 1	A02_01_1FE	A02_01_1FE	control		Study Control			FN
@@ -58,7 +58,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 1	A02_01_1FE	A02_01_1FE	target_condition	Human microbiome composition and diversity; Microbiome-associated health conditions; Microbial diversity across body sites; Geographic and lifestyle effects on microbiome; Westernization effects on microbiome	Microbiome			TP_wrong
 1	A02_01_1FE	A02_01_1FE	dna_extraction_kit	PowerSoil DNA Isolation Kit	Qiagen	CMDKIT:0002	CMDKIT:0007	TP_wrong
 1	A02_01_1FE	A02_01_1FE	sequencing_platform	Illumina HiSeq	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-1	A02_01_1FE	A02_01_1FE	host_species	Human	Homo sapiens			TP_wrong
+1	A02_01_1FE	A02_01_1FE	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 2	A03_01_1FE	A03_01_1FE	subject_id		A03_01_1FE			FN
 2	A03_01_1FE	A03_01_1FE	sample_id	A03_01_1FE	A03_01_1FE			TP_correct
 2	A03_01_1FE	A03_01_1FE	control		Study Control			FN
@@ -88,7 +88,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 2	A03_01_1FE	A03_01_1FE	target_condition	Human microbiome composition and diversity; Microbiome-associated health conditions; Microbial diversity across body sites; Geographic and lifestyle effects on microbiome; Westernization effects on microbiome	Microbiome			TP_wrong
 2	A03_01_1FE	A03_01_1FE	dna_extraction_kit	PowerSoil DNA Isolation Kit	Qiagen	CMDKIT:0002	CMDKIT:0007	TP_wrong
 2	A03_01_1FE	A03_01_1FE	sequencing_platform	Illumina HiSeq	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-2	A03_01_1FE	A03_01_1FE	host_species	Human	Homo sapiens			TP_wrong
+2	A03_01_1FE	A03_01_1FE	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 3	A04_01_1FE	A04_01_1FE	subject_id		A04_01_1FE			FN
 3	A04_01_1FE	A04_01_1FE	sample_id	A04_01_1FE	A04_01_1FE			TP_correct
 3	A04_01_1FE	A04_01_1FE	control		Study Control			FN
@@ -118,7 +118,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 3	A04_01_1FE	A04_01_1FE	target_condition	Human microbiome composition and diversity; Microbiome-associated health conditions; Microbial diversity across body sites; Geographic and lifestyle effects on microbiome; Westernization effects on microbiome	Microbiome			TP_wrong
 3	A04_01_1FE	A04_01_1FE	dna_extraction_kit	PowerSoil DNA Isolation Kit	Qiagen	CMDKIT:0002	CMDKIT:0007	TP_wrong
 3	A04_01_1FE	A04_01_1FE	sequencing_platform	Illumina HiSeq	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-3	A04_01_1FE	A04_01_1FE	host_species	Human	Homo sapiens			TP_wrong
+3	A04_01_1FE	A04_01_1FE	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 4	A04_04_1FE	A04_04_1FE	subject_id		A04_04_1FE			FN
 4	A04_04_1FE	A04_04_1FE	sample_id	A04_04_1FE	A04_04_1FE			TP_correct
 4	A04_04_1FE	A04_04_1FE	control		Study Control			FN
@@ -148,7 +148,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 4	A04_04_1FE	A04_04_1FE	target_condition	Human microbiome composition and diversity; Microbiome-associated health conditions; Microbial diversity across body sites; Geographic and lifestyle effects on microbiome; Westernization effects on microbiome	Microbiome			TP_wrong
 4	A04_04_1FE	A04_04_1FE	dna_extraction_kit	PowerSoil DNA Isolation Kit	Qiagen	CMDKIT:0002	CMDKIT:0007	TP_wrong
 4	A04_04_1FE	A04_04_1FE	sequencing_platform	Illumina HiSeq	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-4	A04_04_1FE	A04_04_1FE	host_species	Human	Homo sapiens			TP_wrong
+4	A04_04_1FE	A04_04_1FE	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 5	A05_01_1FE	A05_01_1FE	subject_id		A05_01_1FE			FN
 5	A05_01_1FE	A05_01_1FE	sample_id	A05_01_1FE	A05_01_1FE			TP_correct
 5	A05_01_1FE	A05_01_1FE	control		Study Control			FN
@@ -178,7 +178,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 5	A05_01_1FE	A05_01_1FE	target_condition	Human microbiome composition and diversity; Microbiome-associated health conditions; Microbial diversity across body sites; Geographic and lifestyle effects on microbiome; Westernization effects on microbiome	Microbiome			TP_wrong
 5	A05_01_1FE	A05_01_1FE	dna_extraction_kit	PowerSoil DNA Isolation Kit	Qiagen	CMDKIT:0002	CMDKIT:0007	TP_wrong
 5	A05_01_1FE	A05_01_1FE	sequencing_platform	Illumina HiSeq	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-5	A05_01_1FE	A05_01_1FE	host_species	Human	Homo sapiens			TP_wrong
+5	A05_01_1FE	A05_01_1FE	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 6	A06_01_1FE	A06_01_1FE	subject_id		A06_01_1FE			FN
 6	A06_01_1FE	A06_01_1FE	sample_id	A06_01_1FE	A06_01_1FE			TP_correct
 6	A06_01_1FE	A06_01_1FE	control		Study Control			FN
@@ -208,7 +208,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 6	A06_01_1FE	A06_01_1FE	target_condition	Human microbiome composition and diversity; Microbiome-associated health conditions; Microbial diversity across body sites; Geographic and lifestyle effects on microbiome; Westernization effects on microbiome	Microbiome			TP_wrong
 6	A06_01_1FE	A06_01_1FE	dna_extraction_kit	PowerSoil DNA Isolation Kit	Qiagen	CMDKIT:0002	CMDKIT:0007	TP_wrong
 6	A06_01_1FE	A06_01_1FE	sequencing_platform	Illumina HiSeq	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-6	A06_01_1FE	A06_01_1FE	host_species	Human	Homo sapiens			TP_wrong
+6	A06_01_1FE	A06_01_1FE	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 7	A07_01_1FE	A07_01_1FE	subject_id		A07_01_1FE			FN
 7	A07_01_1FE	A07_01_1FE	sample_id	A07_01_1FE	A07_01_1FE			TP_correct
 7	A07_01_1FE	A07_01_1FE	control		Study Control			FN
@@ -238,7 +238,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 7	A07_01_1FE	A07_01_1FE	target_condition	Human microbiome composition and diversity; Microbiome-associated health conditions; Microbial diversity across body sites; Geographic and lifestyle effects on microbiome; Westernization effects on microbiome	Microbiome			TP_wrong
 7	A07_01_1FE	A07_01_1FE	dna_extraction_kit	PowerSoil DNA Isolation Kit	Qiagen	CMDKIT:0002	CMDKIT:0007	TP_wrong
 7	A07_01_1FE	A07_01_1FE	sequencing_platform	Illumina HiSeq	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-7	A07_01_1FE	A07_01_1FE	host_species	Human	Homo sapiens			TP_wrong
+7	A07_01_1FE	A07_01_1FE	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 8	A08_01_1FE	A08_01_1FE	subject_id		A08_01_1FE			FN
 8	A08_01_1FE	A08_01_1FE	sample_id	A08_01_1FE	A08_01_1FE			TP_correct
 8	A08_01_1FE	A08_01_1FE	control		Study Control			FN
@@ -268,7 +268,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 8	A08_01_1FE	A08_01_1FE	target_condition	Human microbiome composition and diversity; Microbiome-associated health conditions; Microbial diversity across body sites; Geographic and lifestyle effects on microbiome; Westernization effects on microbiome	Microbiome			TP_wrong
 8	A08_01_1FE	A08_01_1FE	dna_extraction_kit	PowerSoil DNA Isolation Kit	Qiagen	CMDKIT:0002	CMDKIT:0007	TP_wrong
 8	A08_01_1FE	A08_01_1FE	sequencing_platform	Illumina HiSeq	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-8	A08_01_1FE	A08_01_1FE	host_species	Human	Homo sapiens			TP_wrong
+8	A08_01_1FE	A08_01_1FE	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 9	A09_01_1FE	A09_01_1FE	subject_id		A09_01_1FE			FN
 9	A09_01_1FE	A09_01_1FE	sample_id	A09_01_1FE	A09_01_1FE			TP_correct
 9	A09_01_1FE	A09_01_1FE	control		Study Control			FN
@@ -298,7 +298,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 9	A09_01_1FE	A09_01_1FE	target_condition	Human microbiome composition and diversity; Microbiome-associated health conditions; Microbial diversity across body sites; Geographic and lifestyle effects on microbiome; Westernization effects on microbiome	Microbiome			TP_wrong
 9	A09_01_1FE	A09_01_1FE	dna_extraction_kit	PowerSoil DNA Isolation Kit	Qiagen	CMDKIT:0002	CMDKIT:0007	TP_wrong
 9	A09_01_1FE	A09_01_1FE	sequencing_platform	Illumina HiSeq	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-9	A09_01_1FE	A09_01_1FE	host_species	Human	Homo sapiens			TP_wrong
+9	A09_01_1FE	A09_01_1FE	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 10	A09_02_1FE	A09_02_1FE	subject_id		A09_02_1FE			FN
 10	A09_02_1FE	A09_02_1FE	sample_id	A09_02_1FE	A09_02_1FE			TP_correct
 10	A09_02_1FE	A09_02_1FE	control		Study Control			FN
@@ -328,7 +328,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 10	A09_02_1FE	A09_02_1FE	target_condition	Human microbiome composition and diversity; Microbiome-associated health conditions; Microbial diversity across body sites; Geographic and lifestyle effects on microbiome; Westernization effects on microbiome	Microbiome			TP_wrong
 10	A09_02_1FE	A09_02_1FE	dna_extraction_kit	PowerSoil DNA Isolation Kit	Qiagen	CMDKIT:0002	CMDKIT:0007	TP_wrong
 10	A09_02_1FE	A09_02_1FE	sequencing_platform	Illumina HiSeq	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-10	A09_02_1FE	A09_02_1FE	host_species	Human	Homo sapiens			TP_wrong
+10	A09_02_1FE	A09_02_1FE	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 11	A10_01_1FE	A10_01_1FE	subject_id		A10_01_1FE			FN
 11	A10_01_1FE	A10_01_1FE	sample_id	A10_01_1FE	A10_01_1FE			TP_correct
 11	A10_01_1FE	A10_01_1FE	control		Study Control			FN
@@ -358,7 +358,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 11	A10_01_1FE	A10_01_1FE	target_condition	Human microbiome composition and diversity; Microbiome-associated health conditions; Microbial diversity across body sites; Geographic and lifestyle effects on microbiome; Westernization effects on microbiome	Microbiome			TP_wrong
 11	A10_01_1FE	A10_01_1FE	dna_extraction_kit	PowerSoil DNA Isolation Kit	Qiagen	CMDKIT:0002	CMDKIT:0007	TP_wrong
 11	A10_01_1FE	A10_01_1FE	sequencing_platform	Illumina HiSeq	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-11	A10_01_1FE	A10_01_1FE	host_species	Human	Homo sapiens			TP_wrong
+11	A10_01_1FE	A10_01_1FE	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 12	A10_02_1FE	A10_02_1FE	subject_id		A10_02_1FE			FN
 12	A10_02_1FE	A10_02_1FE	sample_id	A10_02_1FE	A10_02_1FE			TP_correct
 12	A10_02_1FE	A10_02_1FE	control		Study Control			FN
@@ -388,7 +388,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 12	A10_02_1FE	A10_02_1FE	target_condition	Human microbiome composition and diversity; Microbiome-associated health conditions; Microbial diversity across body sites; Geographic and lifestyle effects on microbiome; Westernization effects on microbiome	Microbiome			TP_wrong
 12	A10_02_1FE	A10_02_1FE	dna_extraction_kit	PowerSoil DNA Isolation Kit	Qiagen	CMDKIT:0002	CMDKIT:0007	TP_wrong
 12	A10_02_1FE	A10_02_1FE	sequencing_platform	Illumina HiSeq	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-12	A10_02_1FE	A10_02_1FE	host_species	Human	Homo sapiens			TP_wrong
+12	A10_02_1FE	A10_02_1FE	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 13	A11_01_1FE	A11_01_1FE	subject_id		A11_01_1FE			FN
 13	A11_01_1FE	A11_01_1FE	sample_id	A11_01_1FE	A11_01_1FE			TP_correct
 13	A11_01_1FE	A11_01_1FE	control		Study Control			FN
@@ -418,7 +418,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 13	A11_01_1FE	A11_01_1FE	target_condition	Human microbiome composition and diversity; Microbiome-associated health conditions; Microbial diversity across body sites; Geographic and lifestyle effects on microbiome; Westernization effects on microbiome	Microbiome			TP_wrong
 13	A11_01_1FE	A11_01_1FE	dna_extraction_kit	PowerSoil DNA Isolation Kit	Qiagen	CMDKIT:0002	CMDKIT:0007	TP_wrong
 13	A11_01_1FE	A11_01_1FE	sequencing_platform	Illumina HiSeq	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-13	A11_01_1FE	A11_01_1FE	host_species	Human	Homo sapiens			TP_wrong
+13	A11_01_1FE	A11_01_1FE	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 14	A13_01_1FE	A13_01_1FE	subject_id		A13_01_1FE			FN
 14	A13_01_1FE	A13_01_1FE	sample_id	A13_01_1FE	A13_01_1FE			TP_correct
 14	A13_01_1FE	A13_01_1FE	control		Study Control			FN
@@ -448,7 +448,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 14	A13_01_1FE	A13_01_1FE	target_condition	Human microbiome composition and diversity; Microbiome-associated health conditions; Microbial diversity across body sites; Geographic and lifestyle effects on microbiome; Westernization effects on microbiome	Microbiome			TP_wrong
 14	A13_01_1FE	A13_01_1FE	dna_extraction_kit	PowerSoil DNA Isolation Kit	Qiagen	CMDKIT:0002	CMDKIT:0007	TP_wrong
 14	A13_01_1FE	A13_01_1FE	sequencing_platform	Illumina HiSeq	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-14	A13_01_1FE	A13_01_1FE	host_species	Human	Homo sapiens			TP_wrong
+14	A13_01_1FE	A13_01_1FE	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 15	A13_03_1FE	A13_03_1FE	subject_id		A13_03_1FE			FN
 15	A13_03_1FE	A13_03_1FE	sample_id	A13_03_1FE	A13_03_1FE			TP_correct
 15	A13_03_1FE	A13_03_1FE	control		Study Control			FN
@@ -478,7 +478,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 15	A13_03_1FE	A13_03_1FE	target_condition	Human microbiome composition and diversity; Microbiome-associated health conditions; Microbial diversity across body sites; Geographic and lifestyle effects on microbiome; Westernization effects on microbiome	Microbiome			TP_wrong
 15	A13_03_1FE	A13_03_1FE	dna_extraction_kit	PowerSoil DNA Isolation Kit	Qiagen	CMDKIT:0002	CMDKIT:0007	TP_wrong
 15	A13_03_1FE	A13_03_1FE	sequencing_platform	Illumina HiSeq	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-15	A13_03_1FE	A13_03_1FE	host_species	Human	Homo sapiens			TP_wrong
+15	A13_03_1FE	A13_03_1FE	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 16	A14_01_1FE	A14_01_1FE	subject_id		A14_01_1FE			FN
 16	A14_01_1FE	A14_01_1FE	sample_id	A14_01_1FE	A14_01_1FE			TP_correct
 16	A14_01_1FE	A14_01_1FE	control		Study Control			FN
@@ -508,7 +508,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 16	A14_01_1FE	A14_01_1FE	target_condition	Human microbiome composition and diversity; Microbiome-associated health conditions; Microbial diversity across body sites; Geographic and lifestyle effects on microbiome; Westernization effects on microbiome	Microbiome			TP_wrong
 16	A14_01_1FE	A14_01_1FE	dna_extraction_kit	PowerSoil DNA Isolation Kit	Qiagen	CMDKIT:0002	CMDKIT:0007	TP_wrong
 16	A14_01_1FE	A14_01_1FE	sequencing_platform	Illumina HiSeq	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-16	A14_01_1FE	A14_01_1FE	host_species	Human	Homo sapiens			TP_wrong
+16	A14_01_1FE	A14_01_1FE	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 17	A15_02_1FE	A15_02_1FE	subject_id		A15_02_1FE			FN
 17	A15_02_1FE	A15_02_1FE	sample_id	A15_02_1FE	A15_02_1FE			TP_correct
 17	A15_02_1FE	A15_02_1FE	control		Study Control			FN
@@ -538,7 +538,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 17	A15_02_1FE	A15_02_1FE	target_condition	Human microbiome composition and diversity; Microbiome-associated health conditions; Microbial diversity across body sites; Geographic and lifestyle effects on microbiome; Westernization effects on microbiome	Microbiome			TP_wrong
 17	A15_02_1FE	A15_02_1FE	dna_extraction_kit	PowerSoil DNA Isolation Kit	Qiagen	CMDKIT:0002	CMDKIT:0007	TP_wrong
 17	A15_02_1FE	A15_02_1FE	sequencing_platform	Illumina HiSeq	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-17	A15_02_1FE	A15_02_1FE	host_species	Human	Homo sapiens			TP_wrong
+17	A15_02_1FE	A15_02_1FE	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 18	A19_01_1FE	A19_01_1FE	subject_id		A19_01_1FE			FN
 18	A19_01_1FE	A19_01_1FE	sample_id	A19_01_1FE	A19_01_1FE			TP_correct
 18	A19_01_1FE	A19_01_1FE	control		Study Control			FN
@@ -568,7 +568,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 18	A19_01_1FE	A19_01_1FE	target_condition	Human microbiome composition and diversity; Microbiome-associated health conditions; Microbial diversity across body sites; Geographic and lifestyle effects on microbiome; Westernization effects on microbiome	Microbiome			TP_wrong
 18	A19_01_1FE	A19_01_1FE	dna_extraction_kit	PowerSoil DNA Isolation Kit	Qiagen	CMDKIT:0002	CMDKIT:0007	TP_wrong
 18	A19_01_1FE	A19_01_1FE	sequencing_platform	Illumina HiSeq	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-18	A19_01_1FE	A19_01_1FE	host_species	Human	Homo sapiens			TP_wrong
+18	A19_01_1FE	A19_01_1FE	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 19	A19_03_1FE	A19_03_1FE	subject_id		A19_03_1FE			FN
 19	A19_03_1FE	A19_03_1FE	sample_id	A19_03_1FE	A19_03_1FE			TP_correct
 19	A19_03_1FE	A19_03_1FE	control		Study Control			FN
@@ -598,7 +598,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 19	A19_03_1FE	A19_03_1FE	target_condition	Human microbiome composition and diversity; Microbiome-associated health conditions; Microbial diversity across body sites; Geographic and lifestyle effects on microbiome; Westernization effects on microbiome	Microbiome			TP_wrong
 19	A19_03_1FE	A19_03_1FE	dna_extraction_kit	PowerSoil DNA Isolation Kit	Qiagen	CMDKIT:0002	CMDKIT:0007	TP_wrong
 19	A19_03_1FE	A19_03_1FE	sequencing_platform	Illumina HiSeq	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-19	A19_03_1FE	A19_03_1FE	host_species	Human	Homo sapiens			TP_wrong
+19	A19_03_1FE	A19_03_1FE	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 20	A20_01_1FE	A20_01_1FE	subject_id		A20_01_1FE			FN
 20	A20_01_1FE	A20_01_1FE	sample_id	A20_01_1FE	A20_01_1FE			TP_correct
 20	A20_01_1FE	A20_01_1FE	control		Study Control			FN
@@ -628,7 +628,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 20	A20_01_1FE	A20_01_1FE	target_condition	Human microbiome composition and diversity; Microbiome-associated health conditions; Microbial diversity across body sites; Geographic and lifestyle effects on microbiome; Westernization effects on microbiome	Microbiome			TP_wrong
 20	A20_01_1FE	A20_01_1FE	dna_extraction_kit	PowerSoil DNA Isolation Kit	Qiagen	CMDKIT:0002	CMDKIT:0007	TP_wrong
 20	A20_01_1FE	A20_01_1FE	sequencing_platform	Illumina HiSeq	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-20	A20_01_1FE	A20_01_1FE	host_species	Human	Homo sapiens			TP_wrong
+20	A20_01_1FE	A20_01_1FE	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 21	A20_03_1FE	A20_03_1FE	subject_id		A20_03_1FE			FN
 21	A20_03_1FE	A20_03_1FE	sample_id	A20_03_1FE	A20_03_1FE			TP_correct
 21	A20_03_1FE	A20_03_1FE	control		Study Control			FN
@@ -658,7 +658,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 21	A20_03_1FE	A20_03_1FE	target_condition	Human microbiome composition and diversity; Microbiome-associated health conditions; Microbial diversity across body sites; Geographic and lifestyle effects on microbiome; Westernization effects on microbiome	Microbiome			TP_wrong
 21	A20_03_1FE	A20_03_1FE	dna_extraction_kit	PowerSoil DNA Isolation Kit	Qiagen	CMDKIT:0002	CMDKIT:0007	TP_wrong
 21	A20_03_1FE	A20_03_1FE	sequencing_platform	Illumina HiSeq	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-21	A20_03_1FE	A20_03_1FE	host_species	Human	Homo sapiens			TP_wrong
+21	A20_03_1FE	A20_03_1FE	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 22	A22_01_1FE	A22_01_1FE	subject_id		A22_01_1FE			FN
 22	A22_01_1FE	A22_01_1FE	sample_id	A22_01_1FE	A22_01_1FE			TP_correct
 22	A22_01_1FE	A22_01_1FE	control		Study Control			FN
@@ -688,7 +688,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 22	A22_01_1FE	A22_01_1FE	target_condition	Human microbiome composition and diversity; Microbiome-associated health conditions; Microbial diversity across body sites; Geographic and lifestyle effects on microbiome; Westernization effects on microbiome	Microbiome			TP_wrong
 22	A22_01_1FE	A22_01_1FE	dna_extraction_kit	PowerSoil DNA Isolation Kit	Qiagen	CMDKIT:0002	CMDKIT:0007	TP_wrong
 22	A22_01_1FE	A22_01_1FE	sequencing_platform	Illumina HiSeq	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-22	A22_01_1FE	A22_01_1FE	host_species	Human	Homo sapiens			TP_wrong
+22	A22_01_1FE	A22_01_1FE	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 23	A23_01_1FE	A23_01_1FE	subject_id		A23_01_1FE			FN
 23	A23_01_1FE	A23_01_1FE	sample_id	A23_01_1FE	A23_01_1FE			TP_correct
 23	A23_01_1FE	A23_01_1FE	control		Study Control			FN
@@ -718,7 +718,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 23	A23_01_1FE	A23_01_1FE	target_condition	Human microbiome composition and diversity; Microbiome-associated health conditions; Microbial diversity across body sites; Geographic and lifestyle effects on microbiome; Westernization effects on microbiome	Microbiome			TP_wrong
 23	A23_01_1FE	A23_01_1FE	dna_extraction_kit	PowerSoil DNA Isolation Kit	Qiagen	CMDKIT:0002	CMDKIT:0007	TP_wrong
 23	A23_01_1FE	A23_01_1FE	sequencing_platform	Illumina HiSeq	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-23	A23_01_1FE	A23_01_1FE	host_species	Human	Homo sapiens			TP_wrong
+23	A23_01_1FE	A23_01_1FE	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 24	A24_02_1FE	A24_02_1FE	subject_id		A24_02_1FE			FN
 24	A24_02_1FE	A24_02_1FE	sample_id	A24_02_1FE	A24_02_1FE			TP_correct
 24	A24_02_1FE	A24_02_1FE	control		Study Control			FN
@@ -748,7 +748,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 24	A24_02_1FE	A24_02_1FE	target_condition	Human microbiome composition and diversity; Microbiome-associated health conditions; Microbial diversity across body sites; Geographic and lifestyle effects on microbiome; Westernization effects on microbiome	Microbiome			TP_wrong
 24	A24_02_1FE	A24_02_1FE	dna_extraction_kit	PowerSoil DNA Isolation Kit	Qiagen	CMDKIT:0002	CMDKIT:0007	TP_wrong
 24	A24_02_1FE	A24_02_1FE	sequencing_platform	Illumina HiSeq	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-24	A24_02_1FE	A24_02_1FE	host_species	Human	Homo sapiens			TP_wrong
+24	A24_02_1FE	A24_02_1FE	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 25	A24_04_1FE	A24_04_1FE	subject_id		A24_04_1FE			FN
 25	A24_04_1FE	A24_04_1FE	sample_id	A24_04_1FE	A24_04_1FE			TP_correct
 25	A24_04_1FE	A24_04_1FE	control		Study Control			FN
@@ -778,7 +778,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 25	A24_04_1FE	A24_04_1FE	target_condition	Human microbiome composition and diversity; Microbiome-associated health conditions; Microbial diversity across body sites; Geographic and lifestyle effects on microbiome; Westernization effects on microbiome	Microbiome			TP_wrong
 25	A24_04_1FE	A24_04_1FE	dna_extraction_kit	PowerSoil DNA Isolation Kit	Qiagen	CMDKIT:0002	CMDKIT:0007	TP_wrong
 25	A24_04_1FE	A24_04_1FE	sequencing_platform	Illumina HiSeq	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-25	A24_04_1FE	A24_04_1FE	host_species	Human	Homo sapiens			TP_wrong
+25	A24_04_1FE	A24_04_1FE	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 26	A25_01_1FE	A25_01_1FE	subject_id		A25_01_1FE			FN
 26	A25_01_1FE	A25_01_1FE	sample_id	A25_01_1FE	A25_01_1FE			TP_correct
 26	A25_01_1FE	A25_01_1FE	control		Study Control			FN
@@ -808,7 +808,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 26	A25_01_1FE	A25_01_1FE	target_condition	Human microbiome composition and diversity; Microbiome-associated health conditions; Microbial diversity across body sites; Geographic and lifestyle effects on microbiome; Westernization effects on microbiome	Microbiome			TP_wrong
 26	A25_01_1FE	A25_01_1FE	dna_extraction_kit	PowerSoil DNA Isolation Kit	Qiagen	CMDKIT:0002	CMDKIT:0007	TP_wrong
 26	A25_01_1FE	A25_01_1FE	sequencing_platform	Illumina HiSeq	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-26	A25_01_1FE	A25_01_1FE	host_species	Human	Homo sapiens			TP_wrong
+26	A25_01_1FE	A25_01_1FE	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 27	A27_02_1FE	A27_02_1FE	subject_id		A27_02_1FE			FN
 27	A27_02_1FE	A27_02_1FE	sample_id	A27_02_1FE	A27_02_1FE			TP_correct
 27	A27_02_1FE	A27_02_1FE	control		Study Control			FN
@@ -838,7 +838,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 27	A27_02_1FE	A27_02_1FE	target_condition	Human microbiome composition and diversity; Microbiome-associated health conditions; Microbial diversity across body sites; Geographic and lifestyle effects on microbiome; Westernization effects on microbiome	Microbiome			TP_wrong
 27	A27_02_1FE	A27_02_1FE	dna_extraction_kit	PowerSoil DNA Isolation Kit	Qiagen	CMDKIT:0002	CMDKIT:0007	TP_wrong
 27	A27_02_1FE	A27_02_1FE	sequencing_platform	Illumina HiSeq	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-27	A27_02_1FE	A27_02_1FE	host_species	Human	Homo sapiens			TP_wrong
+27	A27_02_1FE	A27_02_1FE	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 28	A28_02_1FE	A28_02_1FE	subject_id		A28_02_1FE			FN
 28	A28_02_1FE	A28_02_1FE	sample_id	A28_02_1FE	A28_02_1FE			TP_correct
 28	A28_02_1FE	A28_02_1FE	control		Study Control			FN
@@ -868,7 +868,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 28	A28_02_1FE	A28_02_1FE	target_condition	Human microbiome composition and diversity; Microbiome-associated health conditions; Microbial diversity across body sites; Geographic and lifestyle effects on microbiome; Westernization effects on microbiome	Microbiome			TP_wrong
 28	A28_02_1FE	A28_02_1FE	dna_extraction_kit	PowerSoil DNA Isolation Kit	Qiagen	CMDKIT:0002	CMDKIT:0007	TP_wrong
 28	A28_02_1FE	A28_02_1FE	sequencing_platform	Illumina HiSeq	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-28	A28_02_1FE	A28_02_1FE	host_species	Human	Homo sapiens			TP_wrong
+28	A28_02_1FE	A28_02_1FE	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 29	A29_01_1FE	A29_01_1FE	subject_id		A29_01_1FE			FN
 29	A29_01_1FE	A29_01_1FE	sample_id	A29_01_1FE	A29_01_1FE			TP_correct
 29	A29_01_1FE	A29_01_1FE	control		Study Control			FN
@@ -898,7 +898,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 29	A29_01_1FE	A29_01_1FE	target_condition	Human microbiome composition and diversity; Microbiome-associated health conditions; Microbial diversity across body sites; Geographic and lifestyle effects on microbiome; Westernization effects on microbiome	Microbiome			TP_wrong
 29	A29_01_1FE	A29_01_1FE	dna_extraction_kit	PowerSoil DNA Isolation Kit	Qiagen	CMDKIT:0002	CMDKIT:0007	TP_wrong
 29	A29_01_1FE	A29_01_1FE	sequencing_platform	Illumina HiSeq	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-29	A29_01_1FE	A29_01_1FE	host_species	Human	Homo sapiens			TP_wrong
+29	A29_01_1FE	A29_01_1FE	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 30	A32_01_1FE	A32_01_1FE	subject_id		A32_01_1FE			FN
 30	A32_01_1FE	A32_01_1FE	sample_id	A32_01_1FE	A32_01_1FE			TP_correct
 30	A32_01_1FE	A32_01_1FE	control		Study Control			FN
@@ -928,7 +928,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 30	A32_01_1FE	A32_01_1FE	target_condition	Human microbiome composition and diversity; Microbiome-associated health conditions; Microbial diversity across body sites; Geographic and lifestyle effects on microbiome; Westernization effects on microbiome	Microbiome			TP_wrong
 30	A32_01_1FE	A32_01_1FE	dna_extraction_kit	PowerSoil DNA Isolation Kit	Qiagen	CMDKIT:0002	CMDKIT:0007	TP_wrong
 30	A32_01_1FE	A32_01_1FE	sequencing_platform	Illumina HiSeq	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-30	A32_01_1FE	A32_01_1FE	host_species	Human	Homo sapiens			TP_wrong
+30	A32_01_1FE	A32_01_1FE	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 31	A34_01_1FE	A34_01_1FE	subject_id		A34_01_1FE			FN
 31	A34_01_1FE	A34_01_1FE	sample_id	A34_01_1FE	A34_01_1FE			TP_correct
 31	A34_01_1FE	A34_01_1FE	control		Study Control			FN
@@ -958,7 +958,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 31	A34_01_1FE	A34_01_1FE	target_condition	Human microbiome composition and diversity; Microbiome-associated health conditions; Microbial diversity across body sites; Geographic and lifestyle effects on microbiome; Westernization effects on microbiome	Microbiome			TP_wrong
 31	A34_01_1FE	A34_01_1FE	dna_extraction_kit	PowerSoil DNA Isolation Kit	Qiagen	CMDKIT:0002	CMDKIT:0007	TP_wrong
 31	A34_01_1FE	A34_01_1FE	sequencing_platform	Illumina HiSeq	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-31	A34_01_1FE	A34_01_1FE	host_species	Human	Homo sapiens			TP_wrong
+31	A34_01_1FE	A34_01_1FE	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 32	A34_02_1FE	A34_02_1FE	subject_id		A34_02_1FE			FN
 32	A34_02_1FE	A34_02_1FE	sample_id	A34_02_1FE	A34_02_1FE			TP_correct
 32	A34_02_1FE	A34_02_1FE	control		Study Control			FN
@@ -988,7 +988,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 32	A34_02_1FE	A34_02_1FE	target_condition	Human microbiome composition and diversity; Microbiome-associated health conditions; Microbial diversity across body sites; Geographic and lifestyle effects on microbiome; Westernization effects on microbiome	Microbiome			TP_wrong
 32	A34_02_1FE	A34_02_1FE	dna_extraction_kit	PowerSoil DNA Isolation Kit	Qiagen	CMDKIT:0002	CMDKIT:0007	TP_wrong
 32	A34_02_1FE	A34_02_1FE	sequencing_platform	Illumina HiSeq	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-32	A34_02_1FE	A34_02_1FE	host_species	Human	Homo sapiens			TP_wrong
+32	A34_02_1FE	A34_02_1FE	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 33	A35_01_1FE	A35_01_1FE	subject_id		A35_01_1FE			FN
 33	A35_01_1FE	A35_01_1FE	sample_id	A35_01_1FE	A35_01_1FE			TP_correct
 33	A35_01_1FE	A35_01_1FE	control		Study Control			FN
@@ -1018,7 +1018,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 33	A35_01_1FE	A35_01_1FE	target_condition	Human microbiome composition and diversity; Microbiome-associated health conditions; Microbial diversity across body sites; Geographic and lifestyle effects on microbiome; Westernization effects on microbiome	Microbiome			TP_wrong
 33	A35_01_1FE	A35_01_1FE	dna_extraction_kit	PowerSoil DNA Isolation Kit	Qiagen	CMDKIT:0002	CMDKIT:0007	TP_wrong
 33	A35_01_1FE	A35_01_1FE	sequencing_platform	Illumina HiSeq	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-33	A35_01_1FE	A35_01_1FE	host_species	Human	Homo sapiens			TP_wrong
+33	A35_01_1FE	A35_01_1FE	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 34	A36_01_1FE	A36_01_1FE	subject_id		A36_01_1FE			FN
 34	A36_01_1FE	A36_01_1FE	sample_id	A36_01_1FE	A36_01_1FE			TP_correct
 34	A36_01_1FE	A36_01_1FE	control		Study Control			FN
@@ -1048,7 +1048,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 34	A36_01_1FE	A36_01_1FE	target_condition	Human microbiome composition and diversity; Microbiome-associated health conditions; Microbial diversity across body sites; Geographic and lifestyle effects on microbiome; Westernization effects on microbiome	Microbiome			TP_wrong
 34	A36_01_1FE	A36_01_1FE	dna_extraction_kit	PowerSoil DNA Isolation Kit	Qiagen	CMDKIT:0002	CMDKIT:0007	TP_wrong
 34	A36_01_1FE	A36_01_1FE	sequencing_platform	Illumina HiSeq	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-34	A36_01_1FE	A36_01_1FE	host_species	Human	Homo sapiens			TP_wrong
+34	A36_01_1FE	A36_01_1FE	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 35	A36_02_1FE	A36_02_1FE	subject_id		A36_02_1FE			FN
 35	A36_02_1FE	A36_02_1FE	sample_id	A36_02_1FE	A36_02_1FE			TP_correct
 35	A36_02_1FE	A36_02_1FE	control		Study Control			FN
@@ -1078,7 +1078,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 35	A36_02_1FE	A36_02_1FE	target_condition	Human microbiome composition and diversity; Microbiome-associated health conditions; Microbial diversity across body sites; Geographic and lifestyle effects on microbiome; Westernization effects on microbiome	Microbiome			TP_wrong
 35	A36_02_1FE	A36_02_1FE	dna_extraction_kit	PowerSoil DNA Isolation Kit	Qiagen	CMDKIT:0002	CMDKIT:0007	TP_wrong
 35	A36_02_1FE	A36_02_1FE	sequencing_platform	Illumina HiSeq	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-35	A36_02_1FE	A36_02_1FE	host_species	Human	Homo sapiens			TP_wrong
+35	A36_02_1FE	A36_02_1FE	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 36	A39_01_1FE	A39_01_1FE	subject_id		A39_01_1FE			FN
 36	A39_01_1FE	A39_01_1FE	sample_id	A39_01_1FE	A39_01_1FE			TP_correct
 36	A39_01_1FE	A39_01_1FE	control		Study Control			FN
@@ -1108,7 +1108,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 36	A39_01_1FE	A39_01_1FE	target_condition	Human microbiome composition and diversity; Microbiome-associated health conditions; Microbial diversity across body sites; Geographic and lifestyle effects on microbiome; Westernization effects on microbiome	Microbiome			TP_wrong
 36	A39_01_1FE	A39_01_1FE	dna_extraction_kit	PowerSoil DNA Isolation Kit	Qiagen	CMDKIT:0002	CMDKIT:0007	TP_wrong
 36	A39_01_1FE	A39_01_1FE	sequencing_platform	Illumina HiSeq	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-36	A39_01_1FE	A39_01_1FE	host_species	Human	Homo sapiens			TP_wrong
+36	A39_01_1FE	A39_01_1FE	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 37	A39_02_1FE	A39_02_1FE	subject_id		A39_02_1FE			FN
 37	A39_02_1FE	A39_02_1FE	sample_id	A39_02_1FE	A39_02_1FE			TP_correct
 37	A39_02_1FE	A39_02_1FE	control		Study Control			FN
@@ -1138,7 +1138,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 37	A39_02_1FE	A39_02_1FE	target_condition	Human microbiome composition and diversity; Microbiome-associated health conditions; Microbial diversity across body sites; Geographic and lifestyle effects on microbiome; Westernization effects on microbiome	Microbiome			TP_wrong
 37	A39_02_1FE	A39_02_1FE	dna_extraction_kit	PowerSoil DNA Isolation Kit	Qiagen	CMDKIT:0002	CMDKIT:0007	TP_wrong
 37	A39_02_1FE	A39_02_1FE	sequencing_platform	Illumina HiSeq	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-37	A39_02_1FE	A39_02_1FE	host_species	Human	Homo sapiens			TP_wrong
+37	A39_02_1FE	A39_02_1FE	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 38	A39_04_1FE	A39_04_1FE	subject_id		A39_04_1FE			FN
 38	A39_04_1FE	A39_04_1FE	sample_id	A39_04_1FE	A39_04_1FE			TP_correct
 38	A39_04_1FE	A39_04_1FE	control		Study Control			FN
@@ -1168,7 +1168,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 38	A39_04_1FE	A39_04_1FE	target_condition	Human microbiome composition and diversity; Microbiome-associated health conditions; Microbial diversity across body sites; Geographic and lifestyle effects on microbiome; Westernization effects on microbiome	Microbiome			TP_wrong
 38	A39_04_1FE	A39_04_1FE	dna_extraction_kit	PowerSoil DNA Isolation Kit	Qiagen	CMDKIT:0002	CMDKIT:0007	TP_wrong
 38	A39_04_1FE	A39_04_1FE	sequencing_platform	Illumina HiSeq	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-38	A39_04_1FE	A39_04_1FE	host_species	Human	Homo sapiens			TP_wrong
+38	A39_04_1FE	A39_04_1FE	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 39	A40_02_1FE	A40_02_1FE	subject_id		A40_02_1FE			FN
 39	A40_02_1FE	A40_02_1FE	sample_id	A40_02_1FE	A40_02_1FE			TP_correct
 39	A40_02_1FE	A40_02_1FE	control		Study Control			FN
@@ -1198,7 +1198,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 39	A40_02_1FE	A40_02_1FE	target_condition	Human microbiome composition and diversity; Microbiome-associated health conditions; Microbial diversity across body sites; Geographic and lifestyle effects on microbiome; Westernization effects on microbiome	Microbiome			TP_wrong
 39	A40_02_1FE	A40_02_1FE	dna_extraction_kit	PowerSoil DNA Isolation Kit	Qiagen	CMDKIT:0002	CMDKIT:0007	TP_wrong
 39	A40_02_1FE	A40_02_1FE	sequencing_platform	Illumina HiSeq	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-39	A40_02_1FE	A40_02_1FE	host_species	Human	Homo sapiens			TP_wrong
+39	A40_02_1FE	A40_02_1FE	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 40	A41_01_1FE	A41_01_1FE	subject_id		A41_01_1FE			FN
 40	A41_01_1FE	A41_01_1FE	sample_id	A41_01_1FE	A41_01_1FE			TP_correct
 40	A41_01_1FE	A41_01_1FE	control		Study Control			FN
@@ -1228,7 +1228,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 40	A41_01_1FE	A41_01_1FE	target_condition	Human microbiome composition and diversity; Microbiome-associated health conditions; Microbial diversity across body sites; Geographic and lifestyle effects on microbiome; Westernization effects on microbiome	Microbiome			TP_wrong
 40	A41_01_1FE	A41_01_1FE	dna_extraction_kit	PowerSoil DNA Isolation Kit	Qiagen	CMDKIT:0002	CMDKIT:0007	TP_wrong
 40	A41_01_1FE	A41_01_1FE	sequencing_platform	Illumina HiSeq	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-40	A41_01_1FE	A41_01_1FE	host_species	Human	Homo sapiens			TP_wrong
+40	A41_01_1FE	A41_01_1FE	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 41	A42_02_1FE	A42_02_1FE	subject_id		A42_02_1FE			FN
 41	A42_02_1FE	A42_02_1FE	sample_id	A42_02_1FE	A42_02_1FE			TP_correct
 41	A42_02_1FE	A42_02_1FE	control		Study Control			FN
@@ -1258,7 +1258,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 41	A42_02_1FE	A42_02_1FE	target_condition	Human microbiome composition and diversity; Microbiome-associated health conditions; Microbial diversity across body sites; Geographic and lifestyle effects on microbiome; Westernization effects on microbiome	Microbiome			TP_wrong
 41	A42_02_1FE	A42_02_1FE	dna_extraction_kit	PowerSoil DNA Isolation Kit	Qiagen	CMDKIT:0002	CMDKIT:0007	TP_wrong
 41	A42_02_1FE	A42_02_1FE	sequencing_platform	Illumina HiSeq	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-41	A42_02_1FE	A42_02_1FE	host_species	Human	Homo sapiens			TP_wrong
+41	A42_02_1FE	A42_02_1FE	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 42	A43_02_1FE	A43_02_1FE	subject_id		A43_02_1FE			FN
 42	A43_02_1FE	A43_02_1FE	sample_id	A43_02_1FE	A43_02_1FE			TP_correct
 42	A43_02_1FE	A43_02_1FE	control		Study Control			FN
@@ -1288,7 +1288,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 42	A43_02_1FE	A43_02_1FE	target_condition	Human microbiome composition and diversity; Microbiome-associated health conditions; Microbial diversity across body sites; Geographic and lifestyle effects on microbiome; Westernization effects on microbiome	Microbiome			TP_wrong
 42	A43_02_1FE	A43_02_1FE	dna_extraction_kit	PowerSoil DNA Isolation Kit	Qiagen	CMDKIT:0002	CMDKIT:0007	TP_wrong
 42	A43_02_1FE	A43_02_1FE	sequencing_platform	Illumina HiSeq	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-42	A43_02_1FE	A43_02_1FE	host_species	Human	Homo sapiens			TP_wrong
+42	A43_02_1FE	A43_02_1FE	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 43	A44_01_1FE	A44_01_1FE	subject_id		A44_01_1FE			FN
 43	A44_01_1FE	A44_01_1FE	sample_id	A44_01_1FE	A44_01_1FE			TP_correct
 43	A44_01_1FE	A44_01_1FE	control		Study Control			FN
@@ -1318,7 +1318,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 43	A44_01_1FE	A44_01_1FE	target_condition	Human microbiome composition and diversity; Microbiome-associated health conditions; Microbial diversity across body sites; Geographic and lifestyle effects on microbiome; Westernization effects on microbiome	Microbiome			TP_wrong
 43	A44_01_1FE	A44_01_1FE	dna_extraction_kit	PowerSoil DNA Isolation Kit	Qiagen	CMDKIT:0002	CMDKIT:0007	TP_wrong
 43	A44_01_1FE	A44_01_1FE	sequencing_platform	Illumina HiSeq	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-43	A44_01_1FE	A44_01_1FE	host_species	Human	Homo sapiens			TP_wrong
+43	A44_01_1FE	A44_01_1FE	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 44	A45_02_1FE	A45_02_1FE	subject_id		A45_02_1FE			FN
 44	A45_02_1FE	A45_02_1FE	sample_id	A45_02_1FE	A45_02_1FE			TP_correct
 44	A45_02_1FE	A45_02_1FE	control		Study Control			FN
@@ -1348,7 +1348,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 44	A45_02_1FE	A45_02_1FE	target_condition	Human microbiome composition and diversity; Microbiome-associated health conditions; Microbial diversity across body sites; Geographic and lifestyle effects on microbiome; Westernization effects on microbiome	Microbiome			TP_wrong
 44	A45_02_1FE	A45_02_1FE	dna_extraction_kit	PowerSoil DNA Isolation Kit	Qiagen	CMDKIT:0002	CMDKIT:0007	TP_wrong
 44	A45_02_1FE	A45_02_1FE	sequencing_platform	Illumina HiSeq	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-44	A45_02_1FE	A45_02_1FE	host_species	Human	Homo sapiens			TP_wrong
+44	A45_02_1FE	A45_02_1FE	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 45	A46_01_1FE	A46_01_1FE	subject_id		A46_01_1FE			FN
 45	A46_01_1FE	A46_01_1FE	sample_id	A46_01_1FE	A46_01_1FE			TP_correct
 45	A46_01_1FE	A46_01_1FE	control		Study Control			FN
@@ -1378,7 +1378,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 45	A46_01_1FE	A46_01_1FE	target_condition	Human microbiome composition and diversity; Microbiome-associated health conditions; Microbial diversity across body sites; Geographic and lifestyle effects on microbiome; Westernization effects on microbiome	Microbiome			TP_wrong
 45	A46_01_1FE	A46_01_1FE	dna_extraction_kit	PowerSoil DNA Isolation Kit	Qiagen	CMDKIT:0002	CMDKIT:0007	TP_wrong
 45	A46_01_1FE	A46_01_1FE	sequencing_platform	Illumina HiSeq	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-45	A46_01_1FE	A46_01_1FE	host_species	Human	Homo sapiens			TP_wrong
+45	A46_01_1FE	A46_01_1FE	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 46	A46_02_1FE	A46_02_1FE	subject_id		A46_02_1FE			FN
 46	A46_02_1FE	A46_02_1FE	sample_id	A46_02_1FE	A46_02_1FE			TP_correct
 46	A46_02_1FE	A46_02_1FE	control		Study Control			FN
@@ -1408,7 +1408,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 46	A46_02_1FE	A46_02_1FE	target_condition	Human microbiome composition and diversity; Microbiome-associated health conditions; Microbial diversity across body sites; Geographic and lifestyle effects on microbiome; Westernization effects on microbiome	Microbiome			TP_wrong
 46	A46_02_1FE	A46_02_1FE	dna_extraction_kit	PowerSoil DNA Isolation Kit	Qiagen	CMDKIT:0002	CMDKIT:0007	TP_wrong
 46	A46_02_1FE	A46_02_1FE	sequencing_platform	Illumina HiSeq	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-46	A46_02_1FE	A46_02_1FE	host_species	Human	Homo sapiens			TP_wrong
+46	A46_02_1FE	A46_02_1FE	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 47	A47_01_1FE	A47_01_1FE	subject_id		A47_01_1FE			FN
 47	A47_01_1FE	A47_01_1FE	sample_id	A47_01_1FE	A47_01_1FE			TP_correct
 47	A47_01_1FE	A47_01_1FE	control		Study Control			FN
@@ -1438,7 +1438,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 47	A47_01_1FE	A47_01_1FE	target_condition	Human microbiome composition and diversity; Microbiome-associated health conditions; Microbial diversity across body sites; Geographic and lifestyle effects on microbiome; Westernization effects on microbiome	Microbiome			TP_wrong
 47	A47_01_1FE	A47_01_1FE	dna_extraction_kit	PowerSoil DNA Isolation Kit	Qiagen	CMDKIT:0002	CMDKIT:0007	TP_wrong
 47	A47_01_1FE	A47_01_1FE	sequencing_platform	Illumina HiSeq	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-47	A47_01_1FE	A47_01_1FE	host_species	Human	Homo sapiens			TP_wrong
+47	A47_01_1FE	A47_01_1FE	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 48	A47_02_1FE	A47_02_1FE	subject_id		A47_02_1FE			FN
 48	A47_02_1FE	A47_02_1FE	sample_id	A47_02_1FE	A47_02_1FE			TP_correct
 48	A47_02_1FE	A47_02_1FE	control		Study Control			FN
@@ -1468,7 +1468,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 48	A47_02_1FE	A47_02_1FE	target_condition	Human microbiome composition and diversity; Microbiome-associated health conditions; Microbial diversity across body sites; Geographic and lifestyle effects on microbiome; Westernization effects on microbiome	Microbiome			TP_wrong
 48	A47_02_1FE	A47_02_1FE	dna_extraction_kit	PowerSoil DNA Isolation Kit	Qiagen	CMDKIT:0002	CMDKIT:0007	TP_wrong
 48	A47_02_1FE	A47_02_1FE	sequencing_platform	Illumina HiSeq	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-48	A47_02_1FE	A47_02_1FE	host_species	Human	Homo sapiens			TP_wrong
+48	A47_02_1FE	A47_02_1FE	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 49	A48_01_1FE	A48_01_1FE	subject_id		A48_01_1FE			FN
 49	A48_01_1FE	A48_01_1FE	sample_id	A48_01_1FE	A48_01_1FE			TP_correct
 49	A48_01_1FE	A48_01_1FE	control		Study Control			FN
@@ -1498,7 +1498,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 49	A48_01_1FE	A48_01_1FE	target_condition	Human microbiome composition and diversity; Microbiome-associated health conditions; Microbial diversity across body sites; Geographic and lifestyle effects on microbiome; Westernization effects on microbiome	Microbiome			TP_wrong
 49	A48_01_1FE	A48_01_1FE	dna_extraction_kit	PowerSoil DNA Isolation Kit	Qiagen	CMDKIT:0002	CMDKIT:0007	TP_wrong
 49	A48_01_1FE	A48_01_1FE	sequencing_platform	Illumina HiSeq	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-49	A48_01_1FE	A48_01_1FE	host_species	Human	Homo sapiens			TP_wrong
+49	A48_01_1FE	A48_01_1FE	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 50	A48_05_1FE	A48_05_1FE	subject_id		A48_05_1FE			FN
 50	A48_05_1FE	A48_05_1FE	sample_id	A48_05_1FE	A48_05_1FE			TP_correct
 50	A48_05_1FE	A48_05_1FE	control		Study Control			FN
@@ -1528,7 +1528,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 50	A48_05_1FE	A48_05_1FE	target_condition	Human microbiome composition and diversity; Microbiome-associated health conditions; Microbial diversity across body sites; Geographic and lifestyle effects on microbiome; Westernization effects on microbiome	Microbiome			TP_wrong
 50	A48_05_1FE	A48_05_1FE	dna_extraction_kit	PowerSoil DNA Isolation Kit	Qiagen	CMDKIT:0002	CMDKIT:0007	TP_wrong
 50	A48_05_1FE	A48_05_1FE	sequencing_platform	Illumina HiSeq	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-50	A48_05_1FE	A48_05_1FE	host_species	Human	Homo sapiens			TP_wrong
+50	A48_05_1FE	A48_05_1FE	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 51	A49_01_1FE	A49_01_1FE	subject_id		A49_01_1FE			FN
 51	A49_01_1FE	A49_01_1FE	sample_id	A49_01_1FE	A49_01_1FE			TP_correct
 51	A49_01_1FE	A49_01_1FE	control		Study Control			FN
@@ -1558,7 +1558,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 51	A49_01_1FE	A49_01_1FE	target_condition	Human microbiome composition and diversity; Microbiome-associated health conditions; Microbial diversity across body sites; Geographic and lifestyle effects on microbiome; Westernization effects on microbiome	Microbiome			TP_wrong
 51	A49_01_1FE	A49_01_1FE	dna_extraction_kit	PowerSoil DNA Isolation Kit	Qiagen	CMDKIT:0002	CMDKIT:0007	TP_wrong
 51	A49_01_1FE	A49_01_1FE	sequencing_platform	Illumina HiSeq	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-51	A49_01_1FE	A49_01_1FE	host_species	Human	Homo sapiens			TP_wrong
+51	A49_01_1FE	A49_01_1FE	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 52	A53_01_1FE	A53_01_1FE	subject_id		A53_01_1FE			FN
 52	A53_01_1FE	A53_01_1FE	sample_id	A53_01_1FE	A53_01_1FE			TP_correct
 52	A53_01_1FE	A53_01_1FE	control		Study Control			FN
@@ -1588,7 +1588,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 52	A53_01_1FE	A53_01_1FE	target_condition	Human microbiome composition and diversity; Microbiome-associated health conditions; Microbial diversity across body sites; Geographic and lifestyle effects on microbiome; Westernization effects on microbiome	Microbiome			TP_wrong
 52	A53_01_1FE	A53_01_1FE	dna_extraction_kit	PowerSoil DNA Isolation Kit	Qiagen	CMDKIT:0002	CMDKIT:0007	TP_wrong
 52	A53_01_1FE	A53_01_1FE	sequencing_platform	Illumina HiSeq	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-52	A53_01_1FE	A53_01_1FE	host_species	Human	Homo sapiens			TP_wrong
+52	A53_01_1FE	A53_01_1FE	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 53	A54_02_1FE	A54_02_1FE	subject_id		A54_02_1FE			FN
 53	A54_02_1FE	A54_02_1FE	sample_id	A54_02_1FE	A54_02_1FE			TP_correct
 53	A54_02_1FE	A54_02_1FE	control		Study Control			FN
@@ -1618,7 +1618,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 53	A54_02_1FE	A54_02_1FE	target_condition	Human microbiome composition and diversity; Microbiome-associated health conditions; Microbial diversity across body sites; Geographic and lifestyle effects on microbiome; Westernization effects on microbiome	Microbiome			TP_wrong
 53	A54_02_1FE	A54_02_1FE	dna_extraction_kit	PowerSoil DNA Isolation Kit	Qiagen	CMDKIT:0002	CMDKIT:0007	TP_wrong
 53	A54_02_1FE	A54_02_1FE	sequencing_platform	Illumina HiSeq	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-53	A54_02_1FE	A54_02_1FE	host_species	Human	Homo sapiens			TP_wrong
+53	A54_02_1FE	A54_02_1FE	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 54	A55_01_1FE	A55_01_1FE	subject_id		A55_01_1FE			FN
 54	A55_01_1FE	A55_01_1FE	sample_id	A55_01_1FE	A55_01_1FE			TP_correct
 54	A55_01_1FE	A55_01_1FE	control		Study Control			FN
@@ -1648,7 +1648,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 54	A55_01_1FE	A55_01_1FE	target_condition	Human microbiome composition and diversity; Microbiome-associated health conditions; Microbial diversity across body sites; Geographic and lifestyle effects on microbiome; Westernization effects on microbiome	Microbiome			TP_wrong
 54	A55_01_1FE	A55_01_1FE	dna_extraction_kit	PowerSoil DNA Isolation Kit	Qiagen	CMDKIT:0002	CMDKIT:0007	TP_wrong
 54	A55_01_1FE	A55_01_1FE	sequencing_platform	Illumina HiSeq	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-54	A55_01_1FE	A55_01_1FE	host_species	Human	Homo sapiens			TP_wrong
+54	A55_01_1FE	A55_01_1FE	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 55	A55_02_1FE	A55_02_1FE	subject_id		A55_02_1FE			FN
 55	A55_02_1FE	A55_02_1FE	sample_id	A55_02_1FE	A55_02_1FE			TP_correct
 55	A55_02_1FE	A55_02_1FE	control		Study Control			FN
@@ -1678,7 +1678,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 55	A55_02_1FE	A55_02_1FE	target_condition	Human microbiome composition and diversity; Microbiome-associated health conditions; Microbial diversity across body sites; Geographic and lifestyle effects on microbiome; Westernization effects on microbiome	Microbiome			TP_wrong
 55	A55_02_1FE	A55_02_1FE	dna_extraction_kit	PowerSoil DNA Isolation Kit	Qiagen	CMDKIT:0002	CMDKIT:0007	TP_wrong
 55	A55_02_1FE	A55_02_1FE	sequencing_platform	Illumina HiSeq	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-55	A55_02_1FE	A55_02_1FE	host_species	Human	Homo sapiens			TP_wrong
+55	A55_02_1FE	A55_02_1FE	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 56	A56_01_1FE	A56_01_1FE	subject_id		A56_01_1FE			FN
 56	A56_01_1FE	A56_01_1FE	sample_id	A56_01_1FE	A56_01_1FE			TP_correct
 56	A56_01_1FE	A56_01_1FE	control		Study Control			FN
@@ -1708,7 +1708,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 56	A56_01_1FE	A56_01_1FE	target_condition	Human microbiome composition and diversity; Microbiome-associated health conditions; Microbial diversity across body sites; Geographic and lifestyle effects on microbiome; Westernization effects on microbiome	Microbiome			TP_wrong
 56	A56_01_1FE	A56_01_1FE	dna_extraction_kit	PowerSoil DNA Isolation Kit	Qiagen	CMDKIT:0002	CMDKIT:0007	TP_wrong
 56	A56_01_1FE	A56_01_1FE	sequencing_platform	Illumina HiSeq	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-56	A56_01_1FE	A56_01_1FE	host_species	Human	Homo sapiens			TP_wrong
+56	A56_01_1FE	A56_01_1FE	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 57	A58_01_1FE	A58_01_1FE	subject_id		A58_01_1FE			FN
 57	A58_01_1FE	A58_01_1FE	sample_id	A58_01_1FE	A58_01_1FE			TP_correct
 57	A58_01_1FE	A58_01_1FE	control		Study Control			FN
@@ -1738,7 +1738,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 57	A58_01_1FE	A58_01_1FE	target_condition	Human microbiome composition and diversity; Microbiome-associated health conditions; Microbial diversity across body sites; Geographic and lifestyle effects on microbiome; Westernization effects on microbiome	Microbiome			TP_wrong
 57	A58_01_1FE	A58_01_1FE	dna_extraction_kit	PowerSoil DNA Isolation Kit	Qiagen	CMDKIT:0002	CMDKIT:0007	TP_wrong
 57	A58_01_1FE	A58_01_1FE	sequencing_platform	Illumina HiSeq	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-57	A58_01_1FE	A58_01_1FE	host_species	Human	Homo sapiens			TP_wrong
+57	A58_01_1FE	A58_01_1FE	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 58	A58_03_1FE	A58_03_1FE	subject_id		A58_03_1FE			FN
 58	A58_03_1FE	A58_03_1FE	sample_id	A58_03_1FE	A58_03_1FE			TP_correct
 58	A58_03_1FE	A58_03_1FE	control		Study Control			FN
@@ -1768,7 +1768,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 58	A58_03_1FE	A58_03_1FE	target_condition	Human microbiome composition and diversity; Microbiome-associated health conditions; Microbial diversity across body sites; Geographic and lifestyle effects on microbiome; Westernization effects on microbiome	Microbiome			TP_wrong
 58	A58_03_1FE	A58_03_1FE	dna_extraction_kit	PowerSoil DNA Isolation Kit	Qiagen	CMDKIT:0002	CMDKIT:0007	TP_wrong
 58	A58_03_1FE	A58_03_1FE	sequencing_platform	Illumina HiSeq	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-58	A58_03_1FE	A58_03_1FE	host_species	Human	Homo sapiens			TP_wrong
+58	A58_03_1FE	A58_03_1FE	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 59	A59_01_1FE	A59_01_1FE	subject_id		A59_01_1FE			FN
 59	A59_01_1FE	A59_01_1FE	sample_id	A59_01_1FE	A59_01_1FE			TP_correct
 59	A59_01_1FE	A59_01_1FE	control		Study Control			FN
@@ -1798,7 +1798,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 59	A59_01_1FE	A59_01_1FE	target_condition	Human microbiome composition and diversity; Microbiome-associated health conditions; Microbial diversity across body sites; Geographic and lifestyle effects on microbiome; Westernization effects on microbiome	Microbiome			TP_wrong
 59	A59_01_1FE	A59_01_1FE	dna_extraction_kit	PowerSoil DNA Isolation Kit	Qiagen	CMDKIT:0002	CMDKIT:0007	TP_wrong
 59	A59_01_1FE	A59_01_1FE	sequencing_platform	Illumina HiSeq	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-59	A59_01_1FE	A59_01_1FE	host_species	Human	Homo sapiens			TP_wrong
+59	A59_01_1FE	A59_01_1FE	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 60	A62_01_1FE	A62_01_1FE	subject_id		A62_01_1FE			FN
 60	A62_01_1FE	A62_01_1FE	sample_id	A62_01_1FE	A62_01_1FE			TP_correct
 60	A62_01_1FE	A62_01_1FE	control		Study Control			FN
@@ -1828,7 +1828,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 60	A62_01_1FE	A62_01_1FE	target_condition	Human microbiome composition and diversity; Microbiome-associated health conditions; Microbial diversity across body sites; Geographic and lifestyle effects on microbiome; Westernization effects on microbiome	Microbiome			TP_wrong
 60	A62_01_1FE	A62_01_1FE	dna_extraction_kit	PowerSoil DNA Isolation Kit	Qiagen	CMDKIT:0002	CMDKIT:0007	TP_wrong
 60	A62_01_1FE	A62_01_1FE	sequencing_platform	Illumina HiSeq	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-60	A62_01_1FE	A62_01_1FE	host_species	Human	Homo sapiens			TP_wrong
+60	A62_01_1FE	A62_01_1FE	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 61	A62_03_1FE	A62_03_1FE	subject_id		A62_03_1FE			FN
 61	A62_03_1FE	A62_03_1FE	sample_id	A62_03_1FE	A62_03_1FE			TP_correct
 61	A62_03_1FE	A62_03_1FE	control		Study Control			FN
@@ -1858,7 +1858,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 61	A62_03_1FE	A62_03_1FE	target_condition	Human microbiome composition and diversity; Microbiome-associated health conditions; Microbial diversity across body sites; Geographic and lifestyle effects on microbiome; Westernization effects on microbiome	Microbiome			TP_wrong
 61	A62_03_1FE	A62_03_1FE	dna_extraction_kit	PowerSoil DNA Isolation Kit	Qiagen	CMDKIT:0002	CMDKIT:0007	TP_wrong
 61	A62_03_1FE	A62_03_1FE	sequencing_platform	Illumina HiSeq	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-61	A62_03_1FE	A62_03_1FE	host_species	Human	Homo sapiens			TP_wrong
+61	A62_03_1FE	A62_03_1FE	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 62	A66_02_1FE	A66_02_1FE	subject_id		A66_02_1FE			FN
 62	A66_02_1FE	A66_02_1FE	sample_id	A66_02_1FE	A66_02_1FE			TP_correct
 62	A66_02_1FE	A66_02_1FE	control		Study Control			FN
@@ -1888,7 +1888,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 62	A66_02_1FE	A66_02_1FE	target_condition	Human microbiome composition and diversity; Microbiome-associated health conditions; Microbial diversity across body sites; Geographic and lifestyle effects on microbiome; Westernization effects on microbiome	Microbiome			TP_wrong
 62	A66_02_1FE	A66_02_1FE	dna_extraction_kit	PowerSoil DNA Isolation Kit	Qiagen	CMDKIT:0002	CMDKIT:0007	TP_wrong
 62	A66_02_1FE	A66_02_1FE	sequencing_platform	Illumina HiSeq	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-62	A66_02_1FE	A66_02_1FE	host_species	Human	Homo sapiens			TP_wrong
+62	A66_02_1FE	A66_02_1FE	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 63	A67_01_1FE	A67_01_1FE	subject_id		A67_01_1FE			FN
 63	A67_01_1FE	A67_01_1FE	sample_id	A67_01_1FE	A67_01_1FE			TP_correct
 63	A67_01_1FE	A67_01_1FE	control		Study Control			FN
@@ -1918,7 +1918,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 63	A67_01_1FE	A67_01_1FE	target_condition	Human microbiome composition and diversity; Microbiome-associated health conditions; Microbial diversity across body sites; Geographic and lifestyle effects on microbiome; Westernization effects on microbiome	Microbiome			TP_wrong
 63	A67_01_1FE	A67_01_1FE	dna_extraction_kit	PowerSoil DNA Isolation Kit	Qiagen	CMDKIT:0002	CMDKIT:0007	TP_wrong
 63	A67_01_1FE	A67_01_1FE	sequencing_platform	Illumina HiSeq	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-63	A67_01_1FE	A67_01_1FE	host_species	Human	Homo sapiens			TP_wrong
+63	A67_01_1FE	A67_01_1FE	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 64	A68_01_1FE	A68_01_1FE	subject_id		A68_01_1FE			FN
 64	A68_01_1FE	A68_01_1FE	sample_id	A68_01_1FE	A68_01_1FE			TP_correct
 64	A68_01_1FE	A68_01_1FE	control		Study Control			FN
@@ -1948,7 +1948,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 64	A68_01_1FE	A68_01_1FE	target_condition	Human microbiome composition and diversity; Microbiome-associated health conditions; Microbial diversity across body sites; Geographic and lifestyle effects on microbiome; Westernization effects on microbiome	Microbiome			TP_wrong
 64	A68_01_1FE	A68_01_1FE	dna_extraction_kit	PowerSoil DNA Isolation Kit	Qiagen	CMDKIT:0002	CMDKIT:0007	TP_wrong
 64	A68_01_1FE	A68_01_1FE	sequencing_platform	Illumina HiSeq	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-64	A68_01_1FE	A68_01_1FE	host_species	Human	Homo sapiens			TP_wrong
+64	A68_01_1FE	A68_01_1FE	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 65	A69_01_1FE	A69_01_1FE	subject_id		A69_01_1FE			FN
 65	A69_01_1FE	A69_01_1FE	sample_id	A69_01_1FE	A69_01_1FE			TP_correct
 65	A69_01_1FE	A69_01_1FE	control		Study Control			FN
@@ -1978,7 +1978,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 65	A69_01_1FE	A69_01_1FE	target_condition	Human microbiome composition and diversity; Microbiome-associated health conditions; Microbial diversity across body sites; Geographic and lifestyle effects on microbiome; Westernization effects on microbiome	Microbiome			TP_wrong
 65	A69_01_1FE	A69_01_1FE	dna_extraction_kit	PowerSoil DNA Isolation Kit	Qiagen	CMDKIT:0002	CMDKIT:0007	TP_wrong
 65	A69_01_1FE	A69_01_1FE	sequencing_platform	Illumina HiSeq	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-65	A69_01_1FE	A69_01_1FE	host_species	Human	Homo sapiens			TP_wrong
+65	A69_01_1FE	A69_01_1FE	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 66	A69_02_1FE	A69_02_1FE	subject_id		A69_02_1FE			FN
 66	A69_02_1FE	A69_02_1FE	sample_id	A69_02_1FE	A69_02_1FE			TP_correct
 66	A69_02_1FE	A69_02_1FE	control		Study Control			FN
@@ -2008,7 +2008,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 66	A69_02_1FE	A69_02_1FE	target_condition	Human microbiome composition and diversity; Microbiome-associated health conditions; Microbial diversity across body sites; Geographic and lifestyle effects on microbiome; Westernization effects on microbiome	Microbiome			TP_wrong
 66	A69_02_1FE	A69_02_1FE	dna_extraction_kit	PowerSoil DNA Isolation Kit	Qiagen	CMDKIT:0002	CMDKIT:0007	TP_wrong
 66	A69_02_1FE	A69_02_1FE	sequencing_platform	Illumina HiSeq	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-66	A69_02_1FE	A69_02_1FE	host_species	Human	Homo sapiens			TP_wrong
+66	A69_02_1FE	A69_02_1FE	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 67	A70_01_1FE	A70_01_1FE	subject_id		A70_01_1FE			FN
 67	A70_01_1FE	A70_01_1FE	sample_id	A70_01_1FE	A70_01_1FE			TP_correct
 67	A70_01_1FE	A70_01_1FE	control		Study Control			FN
@@ -2038,7 +2038,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 67	A70_01_1FE	A70_01_1FE	target_condition	Human microbiome composition and diversity; Microbiome-associated health conditions; Microbial diversity across body sites; Geographic and lifestyle effects on microbiome; Westernization effects on microbiome	Microbiome			TP_wrong
 67	A70_01_1FE	A70_01_1FE	dna_extraction_kit	PowerSoil DNA Isolation Kit	Qiagen	CMDKIT:0002	CMDKIT:0007	TP_wrong
 67	A70_01_1FE	A70_01_1FE	sequencing_platform	Illumina HiSeq	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-67	A70_01_1FE	A70_01_1FE	host_species	Human	Homo sapiens			TP_wrong
+67	A70_01_1FE	A70_01_1FE	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 68	A70_03_1FE	A70_03_1FE	subject_id		A70_03_1FE			FN
 68	A70_03_1FE	A70_03_1FE	sample_id	A70_03_1FE	A70_03_1FE			TP_correct
 68	A70_03_1FE	A70_03_1FE	control		Study Control			FN
@@ -2068,7 +2068,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 68	A70_03_1FE	A70_03_1FE	target_condition	Human microbiome composition and diversity; Microbiome-associated health conditions; Microbial diversity across body sites; Geographic and lifestyle effects on microbiome; Westernization effects on microbiome	Microbiome			TP_wrong
 68	A70_03_1FE	A70_03_1FE	dna_extraction_kit	PowerSoil DNA Isolation Kit	Qiagen	CMDKIT:0002	CMDKIT:0007	TP_wrong
 68	A70_03_1FE	A70_03_1FE	sequencing_platform	Illumina HiSeq	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-68	A70_03_1FE	A70_03_1FE	host_species	Human	Homo sapiens			TP_wrong
+68	A70_03_1FE	A70_03_1FE	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 69	A72_01_1FE	A72_01_1FE	subject_id		A72_01_1FE			FN
 69	A72_01_1FE	A72_01_1FE	sample_id	A72_01_1FE	A72_01_1FE			TP_correct
 69	A72_01_1FE	A72_01_1FE	control		Study Control			FN
@@ -2098,7 +2098,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 69	A72_01_1FE	A72_01_1FE	target_condition	Human microbiome composition and diversity; Microbiome-associated health conditions; Microbial diversity across body sites; Geographic and lifestyle effects on microbiome; Westernization effects on microbiome	Microbiome			TP_wrong
 69	A72_01_1FE	A72_01_1FE	dna_extraction_kit	PowerSoil DNA Isolation Kit	Qiagen	CMDKIT:0002	CMDKIT:0007	TP_wrong
 69	A72_01_1FE	A72_01_1FE	sequencing_platform	Illumina HiSeq	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-69	A72_01_1FE	A72_01_1FE	host_species	Human	Homo sapiens			TP_wrong
+69	A72_01_1FE	A72_01_1FE	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 70	A72_02_1FE	A72_02_1FE	subject_id		A72_02_1FE			FN
 70	A72_02_1FE	A72_02_1FE	sample_id	A72_02_1FE	A72_02_1FE			TP_correct
 70	A72_02_1FE	A72_02_1FE	control		Study Control			FN
@@ -2128,7 +2128,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 70	A72_02_1FE	A72_02_1FE	target_condition	Human microbiome composition and diversity; Microbiome-associated health conditions; Microbial diversity across body sites; Geographic and lifestyle effects on microbiome; Westernization effects on microbiome	Microbiome			TP_wrong
 70	A72_02_1FE	A72_02_1FE	dna_extraction_kit	PowerSoil DNA Isolation Kit	Qiagen	CMDKIT:0002	CMDKIT:0007	TP_wrong
 70	A72_02_1FE	A72_02_1FE	sequencing_platform	Illumina HiSeq	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-70	A72_02_1FE	A72_02_1FE	host_species	Human	Homo sapiens			TP_wrong
+70	A72_02_1FE	A72_02_1FE	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 71	A73_01_1FE	A73_01_1FE	subject_id		A73_01_1FE			FN
 71	A73_01_1FE	A73_01_1FE	sample_id	A73_01_1FE	A73_01_1FE			TP_correct
 71	A73_01_1FE	A73_01_1FE	control		Study Control			FN
@@ -2158,7 +2158,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 71	A73_01_1FE	A73_01_1FE	target_condition	Human microbiome composition and diversity; Microbiome-associated health conditions; Microbial diversity across body sites; Geographic and lifestyle effects on microbiome; Westernization effects on microbiome	Microbiome			TP_wrong
 71	A73_01_1FE	A73_01_1FE	dna_extraction_kit	PowerSoil DNA Isolation Kit	Qiagen	CMDKIT:0002	CMDKIT:0007	TP_wrong
 71	A73_01_1FE	A73_01_1FE	sequencing_platform	Illumina HiSeq	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-71	A73_01_1FE	A73_01_1FE	host_species	Human	Homo sapiens			TP_wrong
+71	A73_01_1FE	A73_01_1FE	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 72	A73_02_1FE	A73_02_1FE	subject_id		A73_02_1FE			FN
 72	A73_02_1FE	A73_02_1FE	sample_id	A73_02_1FE	A73_02_1FE			TP_correct
 72	A73_02_1FE	A73_02_1FE	control		Study Control			FN
@@ -2188,7 +2188,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 72	A73_02_1FE	A73_02_1FE	target_condition	Human microbiome composition and diversity; Microbiome-associated health conditions; Microbial diversity across body sites; Geographic and lifestyle effects on microbiome; Westernization effects on microbiome	Microbiome			TP_wrong
 72	A73_02_1FE	A73_02_1FE	dna_extraction_kit	PowerSoil DNA Isolation Kit	Qiagen	CMDKIT:0002	CMDKIT:0007	TP_wrong
 72	A73_02_1FE	A73_02_1FE	sequencing_platform	Illumina HiSeq	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-72	A73_02_1FE	A73_02_1FE	host_species	Human	Homo sapiens			TP_wrong
+72	A73_02_1FE	A73_02_1FE	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 73	A75_02_1FE	A75_02_1FE	subject_id		A75_02_1FE			FN
 73	A75_02_1FE	A75_02_1FE	sample_id	A75_02_1FE	A75_02_1FE			TP_correct
 73	A75_02_1FE	A75_02_1FE	control		Study Control			FN
@@ -2218,7 +2218,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 73	A75_02_1FE	A75_02_1FE	target_condition	Human microbiome composition and diversity; Microbiome-associated health conditions; Microbial diversity across body sites; Geographic and lifestyle effects on microbiome; Westernization effects on microbiome	Microbiome			TP_wrong
 73	A75_02_1FE	A75_02_1FE	dna_extraction_kit	PowerSoil DNA Isolation Kit	Qiagen	CMDKIT:0002	CMDKIT:0007	TP_wrong
 73	A75_02_1FE	A75_02_1FE	sequencing_platform	Illumina HiSeq	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-73	A75_02_1FE	A75_02_1FE	host_species	Human	Homo sapiens			TP_wrong
+73	A75_02_1FE	A75_02_1FE	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 74	A79_02_1FE	A79_02_1FE	subject_id		A79_02_1FE			FN
 74	A79_02_1FE	A79_02_1FE	sample_id	A79_02_1FE	A79_02_1FE			TP_correct
 74	A79_02_1FE	A79_02_1FE	control		Study Control			FN
@@ -2248,7 +2248,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 74	A79_02_1FE	A79_02_1FE	target_condition	Human microbiome composition and diversity; Microbiome-associated health conditions; Microbial diversity across body sites; Geographic and lifestyle effects on microbiome; Westernization effects on microbiome	Microbiome			TP_wrong
 74	A79_02_1FE	A79_02_1FE	dna_extraction_kit	PowerSoil DNA Isolation Kit	Qiagen	CMDKIT:0002	CMDKIT:0007	TP_wrong
 74	A79_02_1FE	A79_02_1FE	sequencing_platform	Illumina HiSeq	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-74	A79_02_1FE	A79_02_1FE	host_species	Human	Homo sapiens			TP_wrong
+74	A79_02_1FE	A79_02_1FE	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 75	A81_01_1FE	A81_01_1FE	subject_id		A81_01_1FE			FN
 75	A81_01_1FE	A81_01_1FE	sample_id	A81_01_1FE	A81_01_1FE			TP_correct
 75	A81_01_1FE	A81_01_1FE	control		Study Control			FN
@@ -2278,7 +2278,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 75	A81_01_1FE	A81_01_1FE	target_condition	Human microbiome composition and diversity; Microbiome-associated health conditions; Microbial diversity across body sites; Geographic and lifestyle effects on microbiome; Westernization effects on microbiome	Microbiome			TP_wrong
 75	A81_01_1FE	A81_01_1FE	dna_extraction_kit	PowerSoil DNA Isolation Kit	Qiagen	CMDKIT:0002	CMDKIT:0007	TP_wrong
 75	A81_01_1FE	A81_01_1FE	sequencing_platform	Illumina HiSeq	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-75	A81_01_1FE	A81_01_1FE	host_species	Human	Homo sapiens			TP_wrong
+75	A81_01_1FE	A81_01_1FE	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 76	A81_03_1FE	A81_03_1FE	subject_id		A81_03_1FE			FN
 76	A81_03_1FE	A81_03_1FE	sample_id	A81_03_1FE	A81_03_1FE			TP_correct
 76	A81_03_1FE	A81_03_1FE	control		Study Control			FN
@@ -2308,7 +2308,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 76	A81_03_1FE	A81_03_1FE	target_condition	Human microbiome composition and diversity; Microbiome-associated health conditions; Microbial diversity across body sites; Geographic and lifestyle effects on microbiome; Westernization effects on microbiome	Microbiome			TP_wrong
 76	A81_03_1FE	A81_03_1FE	dna_extraction_kit	PowerSoil DNA Isolation Kit	Qiagen	CMDKIT:0002	CMDKIT:0007	TP_wrong
 76	A81_03_1FE	A81_03_1FE	sequencing_platform	Illumina HiSeq	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-76	A81_03_1FE	A81_03_1FE	host_species	Human	Homo sapiens			TP_wrong
+76	A81_03_1FE	A81_03_1FE	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 77	A82_02_1FE	A82_02_1FE	subject_id		A82_02_1FE			FN
 77	A82_02_1FE	A82_02_1FE	sample_id	A82_02_1FE	A82_02_1FE			TP_correct
 77	A82_02_1FE	A82_02_1FE	control		Study Control			FN
@@ -2338,7 +2338,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 77	A82_02_1FE	A82_02_1FE	target_condition	Human microbiome composition and diversity; Microbiome-associated health conditions; Microbial diversity across body sites; Geographic and lifestyle effects on microbiome; Westernization effects on microbiome	Microbiome			TP_wrong
 77	A82_02_1FE	A82_02_1FE	dna_extraction_kit	PowerSoil DNA Isolation Kit	Qiagen	CMDKIT:0002	CMDKIT:0007	TP_wrong
 77	A82_02_1FE	A82_02_1FE	sequencing_platform	Illumina HiSeq	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-77	A82_02_1FE	A82_02_1FE	host_species	Human	Homo sapiens			TP_wrong
+77	A82_02_1FE	A82_02_1FE	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 78	A83_02_1FE	A83_02_1FE	subject_id		A83_02_1FE			FN
 78	A83_02_1FE	A83_02_1FE	sample_id	A83_02_1FE	A83_02_1FE			TP_correct
 78	A83_02_1FE	A83_02_1FE	control		Study Control			FN
@@ -2368,7 +2368,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 78	A83_02_1FE	A83_02_1FE	target_condition	Human microbiome composition and diversity; Microbiome-associated health conditions; Microbial diversity across body sites; Geographic and lifestyle effects on microbiome; Westernization effects on microbiome	Microbiome			TP_wrong
 78	A83_02_1FE	A83_02_1FE	dna_extraction_kit	PowerSoil DNA Isolation Kit	Qiagen	CMDKIT:0002	CMDKIT:0007	TP_wrong
 78	A83_02_1FE	A83_02_1FE	sequencing_platform	Illumina HiSeq	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-78	A83_02_1FE	A83_02_1FE	host_species	Human	Homo sapiens			TP_wrong
+78	A83_02_1FE	A83_02_1FE	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 79	A85_01_1FE	A85_01_1FE	subject_id		A85_01_1FE			FN
 79	A85_01_1FE	A85_01_1FE	sample_id	A85_01_1FE	A85_01_1FE			TP_correct
 79	A85_01_1FE	A85_01_1FE	control		Study Control			FN
@@ -2398,7 +2398,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 79	A85_01_1FE	A85_01_1FE	target_condition	Human microbiome composition and diversity; Microbiome-associated health conditions; Microbial diversity across body sites; Geographic and lifestyle effects on microbiome; Westernization effects on microbiome	Microbiome			TP_wrong
 79	A85_01_1FE	A85_01_1FE	dna_extraction_kit	PowerSoil DNA Isolation Kit	Qiagen	CMDKIT:0002	CMDKIT:0007	TP_wrong
 79	A85_01_1FE	A85_01_1FE	sequencing_platform	Illumina HiSeq	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-79	A85_01_1FE	A85_01_1FE	host_species	Human	Homo sapiens			TP_wrong
+79	A85_01_1FE	A85_01_1FE	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 80	A88_02_1FE	A88_02_1FE	subject_id		A88_02_1FE			FN
 80	A88_02_1FE	A88_02_1FE	sample_id	A88_02_1FE	A88_02_1FE			TP_correct
 80	A88_02_1FE	A88_02_1FE	control		Study Control			FN
@@ -2428,7 +2428,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 80	A88_02_1FE	A88_02_1FE	target_condition	Human microbiome composition and diversity; Microbiome-associated health conditions; Microbial diversity across body sites; Geographic and lifestyle effects on microbiome; Westernization effects on microbiome	Microbiome			TP_wrong
 80	A88_02_1FE	A88_02_1FE	dna_extraction_kit	PowerSoil DNA Isolation Kit	Qiagen	CMDKIT:0002	CMDKIT:0007	TP_wrong
 80	A88_02_1FE	A88_02_1FE	sequencing_platform	Illumina HiSeq	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-80	A88_02_1FE	A88_02_1FE	host_species	Human	Homo sapiens			TP_wrong
+80	A88_02_1FE	A88_02_1FE	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 81	A89_01_1FE	A89_01_1FE	subject_id		A89_01_1FE			FN
 81	A89_01_1FE	A89_01_1FE	sample_id	A89_01_1FE	A89_01_1FE			TP_correct
 81	A89_01_1FE	A89_01_1FE	control		Study Control			FN
@@ -2458,7 +2458,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 81	A89_01_1FE	A89_01_1FE	target_condition	Human microbiome composition and diversity; Microbiome-associated health conditions; Microbial diversity across body sites; Geographic and lifestyle effects on microbiome; Westernization effects on microbiome	Microbiome			TP_wrong
 81	A89_01_1FE	A89_01_1FE	dna_extraction_kit	PowerSoil DNA Isolation Kit	Qiagen	CMDKIT:0002	CMDKIT:0007	TP_wrong
 81	A89_01_1FE	A89_01_1FE	sequencing_platform	Illumina HiSeq	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-81	A89_01_1FE	A89_01_1FE	host_species	Human	Homo sapiens			TP_wrong
+81	A89_01_1FE	A89_01_1FE	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 82	A89_02_1FE	A89_02_1FE	subject_id		A89_02_1FE			FN
 82	A89_02_1FE	A89_02_1FE	sample_id	A89_02_1FE	A89_02_1FE			TP_correct
 82	A89_02_1FE	A89_02_1FE	control		Study Control			FN
@@ -2488,7 +2488,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 82	A89_02_1FE	A89_02_1FE	target_condition	Human microbiome composition and diversity; Microbiome-associated health conditions; Microbial diversity across body sites; Geographic and lifestyle effects on microbiome; Westernization effects on microbiome	Microbiome			TP_wrong
 82	A89_02_1FE	A89_02_1FE	dna_extraction_kit	PowerSoil DNA Isolation Kit	Qiagen	CMDKIT:0002	CMDKIT:0007	TP_wrong
 82	A89_02_1FE	A89_02_1FE	sequencing_platform	Illumina HiSeq	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-82	A89_02_1FE	A89_02_1FE	host_species	Human	Homo sapiens			TP_wrong
+82	A89_02_1FE	A89_02_1FE	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 83	A90_03_1FE	A90_03_1FE	subject_id		A90_03_1FE			FN
 83	A90_03_1FE	A90_03_1FE	sample_id	A90_03_1FE	A90_03_1FE			TP_correct
 83	A90_03_1FE	A90_03_1FE	control		Study Control			FN
@@ -2518,7 +2518,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 83	A90_03_1FE	A90_03_1FE	target_condition	Human microbiome composition and diversity; Microbiome-associated health conditions; Microbial diversity across body sites; Geographic and lifestyle effects on microbiome; Westernization effects on microbiome	Microbiome			TP_wrong
 83	A90_03_1FE	A90_03_1FE	dna_extraction_kit	PowerSoil DNA Isolation Kit	Qiagen	CMDKIT:0002	CMDKIT:0007	TP_wrong
 83	A90_03_1FE	A90_03_1FE	sequencing_platform	Illumina HiSeq	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-83	A90_03_1FE	A90_03_1FE	host_species	Human	Homo sapiens			TP_wrong
+83	A90_03_1FE	A90_03_1FE	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 84	A90_04_1FE	A90_04_1FE	subject_id		A90_04_1FE			FN
 84	A90_04_1FE	A90_04_1FE	sample_id	A90_04_1FE	A90_04_1FE			TP_correct
 84	A90_04_1FE	A90_04_1FE	control		Study Control			FN
@@ -2548,7 +2548,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 84	A90_04_1FE	A90_04_1FE	target_condition	Human microbiome composition and diversity; Microbiome-associated health conditions; Microbial diversity across body sites; Geographic and lifestyle effects on microbiome; Westernization effects on microbiome	Microbiome			TP_wrong
 84	A90_04_1FE	A90_04_1FE	dna_extraction_kit	PowerSoil DNA Isolation Kit	Qiagen	CMDKIT:0002	CMDKIT:0007	TP_wrong
 84	A90_04_1FE	A90_04_1FE	sequencing_platform	Illumina HiSeq	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-84	A90_04_1FE	A90_04_1FE	host_species	Human	Homo sapiens			TP_wrong
+84	A90_04_1FE	A90_04_1FE	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 85	A91_01_1FE	A91_01_1FE	subject_id		A91_01_1FE			FN
 85	A91_01_1FE	A91_01_1FE	sample_id	A91_01_1FE	A91_01_1FE			TP_correct
 85	A91_01_1FE	A91_01_1FE	control		Study Control			FN
@@ -2578,7 +2578,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 85	A91_01_1FE	A91_01_1FE	target_condition	Human microbiome composition and diversity; Microbiome-associated health conditions; Microbial diversity across body sites; Geographic and lifestyle effects on microbiome; Westernization effects on microbiome	Microbiome			TP_wrong
 85	A91_01_1FE	A91_01_1FE	dna_extraction_kit	PowerSoil DNA Isolation Kit	Qiagen	CMDKIT:0002	CMDKIT:0007	TP_wrong
 85	A91_01_1FE	A91_01_1FE	sequencing_platform	Illumina HiSeq	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-85	A91_01_1FE	A91_01_1FE	host_species	Human	Homo sapiens			TP_wrong
+85	A91_01_1FE	A91_01_1FE	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 86	A91_02_1FE	A91_02_1FE	subject_id		A91_02_1FE			FN
 86	A91_02_1FE	A91_02_1FE	sample_id	A91_02_1FE	A91_02_1FE			TP_correct
 86	A91_02_1FE	A91_02_1FE	control		Study Control			FN
@@ -2608,7 +2608,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 86	A91_02_1FE	A91_02_1FE	target_condition	Human microbiome composition and diversity; Microbiome-associated health conditions; Microbial diversity across body sites; Geographic and lifestyle effects on microbiome; Westernization effects on microbiome	Microbiome			TP_wrong
 86	A91_02_1FE	A91_02_1FE	dna_extraction_kit	PowerSoil DNA Isolation Kit	Qiagen	CMDKIT:0002	CMDKIT:0007	TP_wrong
 86	A91_02_1FE	A91_02_1FE	sequencing_platform	Illumina HiSeq	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-86	A91_02_1FE	A91_02_1FE	host_species	Human	Homo sapiens			TP_wrong
+86	A91_02_1FE	A91_02_1FE	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 87	A92_01_1FE	A92_01_1FE	subject_id		A92_01_1FE			FN
 87	A92_01_1FE	A92_01_1FE	sample_id	A92_01_1FE	A92_01_1FE			TP_correct
 87	A92_01_1FE	A92_01_1FE	control		Study Control			FN
@@ -2638,7 +2638,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 87	A92_01_1FE	A92_01_1FE	target_condition	Human microbiome composition and diversity; Microbiome-associated health conditions; Microbial diversity across body sites; Geographic and lifestyle effects on microbiome; Westernization effects on microbiome	Microbiome			TP_wrong
 87	A92_01_1FE	A92_01_1FE	dna_extraction_kit	PowerSoil DNA Isolation Kit	Qiagen	CMDKIT:0002	CMDKIT:0007	TP_wrong
 87	A92_01_1FE	A92_01_1FE	sequencing_platform	Illumina HiSeq	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-87	A92_01_1FE	A92_01_1FE	host_species	Human	Homo sapiens			TP_wrong
+87	A92_01_1FE	A92_01_1FE	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 88	A93_01_1FE	A93_01_1FE	subject_id		A93_01_1FE			FN
 88	A93_01_1FE	A93_01_1FE	sample_id	A93_01_1FE	A93_01_1FE			TP_correct
 88	A93_01_1FE	A93_01_1FE	control		Study Control			FN
@@ -2668,7 +2668,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 88	A93_01_1FE	A93_01_1FE	target_condition	Human microbiome composition and diversity; Microbiome-associated health conditions; Microbial diversity across body sites; Geographic and lifestyle effects on microbiome; Westernization effects on microbiome	Microbiome			TP_wrong
 88	A93_01_1FE	A93_01_1FE	dna_extraction_kit	PowerSoil DNA Isolation Kit	Qiagen	CMDKIT:0002	CMDKIT:0007	TP_wrong
 88	A93_01_1FE	A93_01_1FE	sequencing_platform	Illumina HiSeq	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-88	A93_01_1FE	A93_01_1FE	host_species	Human	Homo sapiens			TP_wrong
+88	A93_01_1FE	A93_01_1FE	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 89	A94_01_1FE	A94_01_1FE	subject_id		A94_01_1FE			FN
 89	A94_01_1FE	A94_01_1FE	sample_id	A94_01_1FE	A94_01_1FE			TP_correct
 89	A94_01_1FE	A94_01_1FE	control		Study Control			FN
@@ -2698,7 +2698,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 89	A94_01_1FE	A94_01_1FE	target_condition	Human microbiome composition and diversity; Microbiome-associated health conditions; Microbial diversity across body sites; Geographic and lifestyle effects on microbiome; Westernization effects on microbiome	Microbiome			TP_wrong
 89	A94_01_1FE	A94_01_1FE	dna_extraction_kit	PowerSoil DNA Isolation Kit	Qiagen	CMDKIT:0002	CMDKIT:0007	TP_wrong
 89	A94_01_1FE	A94_01_1FE	sequencing_platform	Illumina HiSeq	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-89	A94_01_1FE	A94_01_1FE	host_species	Human	Homo sapiens			TP_wrong
+89	A94_01_1FE	A94_01_1FE	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 90	A94_02_1FE	A94_02_1FE	subject_id		A94_02_1FE			FN
 90	A94_02_1FE	A94_02_1FE	sample_id	A94_02_1FE	A94_02_1FE			TP_correct
 90	A94_02_1FE	A94_02_1FE	control		Study Control			FN
@@ -2728,7 +2728,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 90	A94_02_1FE	A94_02_1FE	target_condition	Human microbiome composition and diversity; Microbiome-associated health conditions; Microbial diversity across body sites; Geographic and lifestyle effects on microbiome; Westernization effects on microbiome	Microbiome			TP_wrong
 90	A94_02_1FE	A94_02_1FE	dna_extraction_kit	PowerSoil DNA Isolation Kit	Qiagen	CMDKIT:0002	CMDKIT:0007	TP_wrong
 90	A94_02_1FE	A94_02_1FE	sequencing_platform	Illumina HiSeq	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-90	A94_02_1FE	A94_02_1FE	host_species	Human	Homo sapiens			TP_wrong
+90	A94_02_1FE	A94_02_1FE	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 91	A94_03_1FE	A94_03_1FE	subject_id		A94_03_1FE			FN
 91	A94_03_1FE	A94_03_1FE	sample_id	A94_03_1FE	A94_03_1FE			TP_correct
 91	A94_03_1FE	A94_03_1FE	control		Study Control			FN
@@ -2758,7 +2758,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 91	A94_03_1FE	A94_03_1FE	target_condition	Human microbiome composition and diversity; Microbiome-associated health conditions; Microbial diversity across body sites; Geographic and lifestyle effects on microbiome; Westernization effects on microbiome	Microbiome			TP_wrong
 91	A94_03_1FE	A94_03_1FE	dna_extraction_kit	PowerSoil DNA Isolation Kit	Qiagen	CMDKIT:0002	CMDKIT:0007	TP_wrong
 91	A94_03_1FE	A94_03_1FE	sequencing_platform	Illumina HiSeq	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-91	A94_03_1FE	A94_03_1FE	host_species	Human	Homo sapiens			TP_wrong
+91	A94_03_1FE	A94_03_1FE	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 92	A95_01_1FE	A95_01_1FE	subject_id		A95_01_1FE			FN
 92	A95_01_1FE	A95_01_1FE	sample_id	A95_01_1FE	A95_01_1FE			TP_correct
 92	A95_01_1FE	A95_01_1FE	control		Study Control			FN
@@ -2788,7 +2788,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 92	A95_01_1FE	A95_01_1FE	target_condition	Human microbiome composition and diversity; Microbiome-associated health conditions; Microbial diversity across body sites; Geographic and lifestyle effects on microbiome; Westernization effects on microbiome	Microbiome			TP_wrong
 92	A95_01_1FE	A95_01_1FE	dna_extraction_kit	PowerSoil DNA Isolation Kit	Qiagen	CMDKIT:0002	CMDKIT:0007	TP_wrong
 92	A95_01_1FE	A95_01_1FE	sequencing_platform	Illumina HiSeq	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-92	A95_01_1FE	A95_01_1FE	host_species	Human	Homo sapiens			TP_wrong
+92	A95_01_1FE	A95_01_1FE	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 93	V01_01_1FE	V01_01_1FE	subject_id		V01_01_1FE			FN
 93	V01_01_1FE	V01_01_1FE	sample_id	V01_01_1FE	V01_01_1FE			TP_correct
 93	V01_01_1FE	V01_01_1FE	control		Study Control			FN
@@ -2818,7 +2818,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 93	V01_01_1FE	V01_01_1FE	target_condition	Human microbiome composition and diversity; Microbiome-associated health conditions; Microbial diversity across body sites; Geographic and lifestyle effects on microbiome; Westernization effects on microbiome	Microbiome			TP_wrong
 93	V01_01_1FE	V01_01_1FE	dna_extraction_kit	PowerSoil DNA Isolation Kit	Qiagen	CMDKIT:0002	CMDKIT:0007	TP_wrong
 93	V01_01_1FE	V01_01_1FE	sequencing_platform	Illumina HiSeq	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-93	V01_01_1FE	V01_01_1FE	host_species	Human	Homo sapiens			TP_wrong
+93	V01_01_1FE	V01_01_1FE	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 94	V06_02_1FE	V06_02_1FE	subject_id		V06_02_1FE			FN
 94	V06_02_1FE	V06_02_1FE	sample_id	V06_02_1FE	V06_02_1FE			TP_correct
 94	V06_02_1FE	V06_02_1FE	control		Study Control			FN
@@ -2848,7 +2848,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 94	V06_02_1FE	V06_02_1FE	target_condition	Human microbiome composition and diversity; Microbiome-associated health conditions; Microbial diversity across body sites; Geographic and lifestyle effects on microbiome; Westernization effects on microbiome	Microbiome			TP_wrong
 94	V06_02_1FE	V06_02_1FE	dna_extraction_kit	PowerSoil DNA Isolation Kit	Qiagen	CMDKIT:0002	CMDKIT:0007	TP_wrong
 94	V06_02_1FE	V06_02_1FE	sequencing_platform	Illumina HiSeq	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-94	V06_02_1FE	V06_02_1FE	host_species	Human	Homo sapiens			TP_wrong
+94	V06_02_1FE	V06_02_1FE	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 95	V07_01_2FE	V07_01_2FE	subject_id		V07_01_2FE			FN
 95	V07_01_2FE	V07_01_2FE	sample_id	V07_01_2FE	V07_01_2FE			TP_correct
 95	V07_01_2FE	V07_01_2FE	control		Study Control			FN
@@ -2878,7 +2878,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 95	V07_01_2FE	V07_01_2FE	target_condition	Human microbiome composition and diversity; Microbiome-associated health conditions; Microbial diversity across body sites; Geographic and lifestyle effects on microbiome; Westernization effects on microbiome	Microbiome			TP_wrong
 95	V07_01_2FE	V07_01_2FE	dna_extraction_kit	PowerSoil DNA Isolation Kit	Qiagen	CMDKIT:0002	CMDKIT:0007	TP_wrong
 95	V07_01_2FE	V07_01_2FE	sequencing_platform	Illumina HiSeq	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-95	V07_01_2FE	V07_01_2FE	host_species	Human	Homo sapiens			TP_wrong
+95	V07_01_2FE	V07_01_2FE	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 96	V07_02_2FE	V07_02_2FE	subject_id		V07_02_2FE			FN
 96	V07_02_2FE	V07_02_2FE	sample_id	V07_02_2FE	V07_02_2FE			TP_correct
 96	V07_02_2FE	V07_02_2FE	control		Study Control			FN
@@ -2908,7 +2908,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 96	V07_02_2FE	V07_02_2FE	target_condition	Human microbiome composition and diversity; Microbiome-associated health conditions; Microbial diversity across body sites; Geographic and lifestyle effects on microbiome; Westernization effects on microbiome	Microbiome			TP_wrong
 96	V07_02_2FE	V07_02_2FE	dna_extraction_kit	PowerSoil DNA Isolation Kit	Qiagen	CMDKIT:0002	CMDKIT:0007	TP_wrong
 96	V07_02_2FE	V07_02_2FE	sequencing_platform	Illumina HiSeq	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-96	V07_02_2FE	V07_02_2FE	host_species	Human	Homo sapiens			TP_wrong
+96	V07_02_2FE	V07_02_2FE	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 97	V12_01_2FE	V12_01_2FE	subject_id		V12_01_2FE			FN
 97	V12_01_2FE	V12_01_2FE	sample_id	V12_01_2FE	V12_01_2FE			TP_correct
 97	V12_01_2FE	V12_01_2FE	control		Study Control			FN
@@ -2938,7 +2938,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 97	V12_01_2FE	V12_01_2FE	target_condition	Human microbiome composition and diversity; Microbiome-associated health conditions; Microbial diversity across body sites; Geographic and lifestyle effects on microbiome; Westernization effects on microbiome	Microbiome			TP_wrong
 97	V12_01_2FE	V12_01_2FE	dna_extraction_kit	PowerSoil DNA Isolation Kit	Qiagen	CMDKIT:0002	CMDKIT:0007	TP_wrong
 97	V12_01_2FE	V12_01_2FE	sequencing_platform	Illumina HiSeq	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-97	V12_01_2FE	V12_01_2FE	host_species	Human	Homo sapiens			TP_wrong
+97	V12_01_2FE	V12_01_2FE	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 98	V18_02_1FE	V18_02_1FE	subject_id		V18_02_1FE			FN
 98	V18_02_1FE	V18_02_1FE	sample_id	V18_02_1FE	V18_02_1FE			TP_correct
 98	V18_02_1FE	V18_02_1FE	control		Study Control			FN
@@ -2968,7 +2968,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 98	V18_02_1FE	V18_02_1FE	target_condition	Human microbiome composition and diversity; Microbiome-associated health conditions; Microbial diversity across body sites; Geographic and lifestyle effects on microbiome; Westernization effects on microbiome	Microbiome			TP_wrong
 98	V18_02_1FE	V18_02_1FE	dna_extraction_kit	PowerSoil DNA Isolation Kit	Qiagen	CMDKIT:0002	CMDKIT:0007	TP_wrong
 98	V18_02_1FE	V18_02_1FE	sequencing_platform	Illumina HiSeq	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-98	V18_02_1FE	V18_02_1FE	host_species	Human	Homo sapiens			TP_wrong
+98	V18_02_1FE	V18_02_1FE	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 99	V19_01_2FE	V19_01_2FE	subject_id		V19_01_2FE			FN
 99	V19_01_2FE	V19_01_2FE	sample_id	V19_01_2FE	V19_01_2FE			TP_correct
 99	V19_01_2FE	V19_01_2FE	control		Study Control			FN
@@ -2998,7 +2998,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 99	V19_01_2FE	V19_01_2FE	target_condition	Human microbiome composition and diversity; Microbiome-associated health conditions; Microbial diversity across body sites; Geographic and lifestyle effects on microbiome; Westernization effects on microbiome	Microbiome			TP_wrong
 99	V19_01_2FE	V19_01_2FE	dna_extraction_kit	PowerSoil DNA Isolation Kit	Qiagen	CMDKIT:0002	CMDKIT:0007	TP_wrong
 99	V19_01_2FE	V19_01_2FE	sequencing_platform	Illumina HiSeq	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-99	V19_01_2FE	V19_01_2FE	host_species	Human	Homo sapiens			TP_wrong
+99	V19_01_2FE	V19_01_2FE	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 100	V19_02_2FE	V19_02_2FE	subject_id		V19_02_2FE			FN
 100	V19_02_2FE	V19_02_2FE	sample_id	V19_02_2FE	V19_02_2FE			TP_correct
 100	V19_02_2FE	V19_02_2FE	control		Study Control			FN
@@ -3028,7 +3028,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 100	V19_02_2FE	V19_02_2FE	target_condition	Human microbiome composition and diversity; Microbiome-associated health conditions; Microbial diversity across body sites; Geographic and lifestyle effects on microbiome; Westernization effects on microbiome	Microbiome			TP_wrong
 100	V19_02_2FE	V19_02_2FE	dna_extraction_kit	PowerSoil DNA Isolation Kit	Qiagen	CMDKIT:0002	CMDKIT:0007	TP_wrong
 100	V19_02_2FE	V19_02_2FE	sequencing_platform	Illumina HiSeq	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-100	V19_02_2FE	V19_02_2FE	host_species	Human	Homo sapiens			TP_wrong
+100	V19_02_2FE	V19_02_2FE	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 101	V30_01_1FE	V30_01_1FE	subject_id		V30_01_1FE			FN
 101	V30_01_1FE	V30_01_1FE	sample_id	V30_01_1FE	V30_01_1FE			TP_correct
 101	V30_01_1FE	V30_01_1FE	control		Study Control			FN
@@ -3058,7 +3058,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 101	V30_01_1FE	V30_01_1FE	target_condition	Human microbiome composition and diversity; Microbiome-associated health conditions; Microbial diversity across body sites; Geographic and lifestyle effects on microbiome; Westernization effects on microbiome	Microbiome			TP_wrong
 101	V30_01_1FE	V30_01_1FE	dna_extraction_kit	PowerSoil DNA Isolation Kit	Qiagen	CMDKIT:0002	CMDKIT:0007	TP_wrong
 101	V30_01_1FE	V30_01_1FE	sequencing_platform	Illumina HiSeq	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-101	V30_01_1FE	V30_01_1FE	host_species	Human	Homo sapiens			TP_wrong
+101	V30_01_1FE	V30_01_1FE	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 102	V31_01_2FE	V31_01_2FE	subject_id		V31_01_2FE			FN
 102	V31_01_2FE	V31_01_2FE	sample_id	V31_01_2FE	V31_01_2FE			TP_correct
 102	V31_01_2FE	V31_01_2FE	control		Study Control			FN
@@ -3088,7 +3088,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 102	V31_01_2FE	V31_01_2FE	target_condition	Human microbiome composition and diversity; Microbiome-associated health conditions; Microbial diversity across body sites; Geographic and lifestyle effects on microbiome; Westernization effects on microbiome	Microbiome			TP_wrong
 102	V31_01_2FE	V31_01_2FE	dna_extraction_kit	PowerSoil DNA Isolation Kit	Qiagen	CMDKIT:0002	CMDKIT:0007	TP_wrong
 102	V31_01_2FE	V31_01_2FE	sequencing_platform	Illumina HiSeq	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-102	V31_01_2FE	V31_01_2FE	host_species	Human	Homo sapiens			TP_wrong
+102	V31_01_2FE	V31_01_2FE	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 103	V32_02_2FE	V32_02_2FE	subject_id		V32_02_2FE			FN
 103	V32_02_2FE	V32_02_2FE	sample_id	V32_02_2FE	V32_02_2FE			TP_correct
 103	V32_02_2FE	V32_02_2FE	control		Study Control			FN
@@ -3118,7 +3118,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 103	V32_02_2FE	V32_02_2FE	target_condition	Human microbiome composition and diversity; Microbiome-associated health conditions; Microbial diversity across body sites; Geographic and lifestyle effects on microbiome; Westernization effects on microbiome	Microbiome			TP_wrong
 103	V32_02_2FE	V32_02_2FE	dna_extraction_kit	PowerSoil DNA Isolation Kit	Qiagen	CMDKIT:0002	CMDKIT:0007	TP_wrong
 103	V32_02_2FE	V32_02_2FE	sequencing_platform	Illumina HiSeq	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-103	V32_02_2FE	V32_02_2FE	host_species	Human	Homo sapiens			TP_wrong
+103	V32_02_2FE	V32_02_2FE	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 104	V36_02_2FE	V36_02_2FE	subject_id		V36_02_2FE			FN
 104	V36_02_2FE	V36_02_2FE	sample_id	V36_02_2FE	V36_02_2FE			TP_correct
 104	V36_02_2FE	V36_02_2FE	control		Study Control			FN
@@ -3148,7 +3148,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 104	V36_02_2FE	V36_02_2FE	target_condition	Human microbiome composition and diversity; Microbiome-associated health conditions; Microbial diversity across body sites; Geographic and lifestyle effects on microbiome; Westernization effects on microbiome	Microbiome			TP_wrong
 104	V36_02_2FE	V36_02_2FE	dna_extraction_kit	PowerSoil DNA Isolation Kit	Qiagen	CMDKIT:0002	CMDKIT:0007	TP_wrong
 104	V36_02_2FE	V36_02_2FE	sequencing_platform	Illumina HiSeq	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-104	V36_02_2FE	V36_02_2FE	host_species	Human	Homo sapiens			TP_wrong
+104	V36_02_2FE	V36_02_2FE	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 105	V40_01_1FE	V40_01_1FE	subject_id		V40_01_1FE			FN
 105	V40_01_1FE	V40_01_1FE	sample_id	V40_01_1FE	V40_01_1FE			TP_correct
 105	V40_01_1FE	V40_01_1FE	control		Study Control			FN
@@ -3178,7 +3178,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 105	V40_01_1FE	V40_01_1FE	target_condition	Human microbiome composition and diversity; Microbiome-associated health conditions; Microbial diversity across body sites; Geographic and lifestyle effects on microbiome; Westernization effects on microbiome	Microbiome			TP_wrong
 105	V40_01_1FE	V40_01_1FE	dna_extraction_kit	PowerSoil DNA Isolation Kit	Qiagen	CMDKIT:0002	CMDKIT:0007	TP_wrong
 105	V40_01_1FE	V40_01_1FE	sequencing_platform	Illumina HiSeq	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-105	V40_01_1FE	V40_01_1FE	host_species	Human	Homo sapiens			TP_wrong
+105	V40_01_1FE	V40_01_1FE	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 106	V48_03_2FE	V48_03_2FE	subject_id		V48_03_2FE			FN
 106	V48_03_2FE	V48_03_2FE	sample_id	V48_03_2FE	V48_03_2FE			TP_correct
 106	V48_03_2FE	V48_03_2FE	control		Study Control			FN
@@ -3208,7 +3208,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 106	V48_03_2FE	V48_03_2FE	target_condition	Human microbiome composition and diversity; Microbiome-associated health conditions; Microbial diversity across body sites; Geographic and lifestyle effects on microbiome; Westernization effects on microbiome	Microbiome			TP_wrong
 106	V48_03_2FE	V48_03_2FE	dna_extraction_kit	PowerSoil DNA Isolation Kit	Qiagen	CMDKIT:0002	CMDKIT:0007	TP_wrong
 106	V48_03_2FE	V48_03_2FE	sequencing_platform	Illumina HiSeq	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-106	V48_03_2FE	V48_03_2FE	host_species	Human	Homo sapiens			TP_wrong
+106	V48_03_2FE	V48_03_2FE	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 107	V50_01_1FE	V50_01_1FE	subject_id		V50_01_1FE			FN
 107	V50_01_1FE	V50_01_1FE	sample_id	V50_01_1FE	V50_01_1FE			TP_correct
 107	V50_01_1FE	V50_01_1FE	control		Study Control			FN
@@ -3238,7 +3238,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 107	V50_01_1FE	V50_01_1FE	target_condition	Human microbiome composition and diversity; Microbiome-associated health conditions; Microbial diversity across body sites; Geographic and lifestyle effects on microbiome; Westernization effects on microbiome	Microbiome			TP_wrong
 107	V50_01_1FE	V50_01_1FE	dna_extraction_kit	PowerSoil DNA Isolation Kit	Qiagen	CMDKIT:0002	CMDKIT:0007	TP_wrong
 107	V50_01_1FE	V50_01_1FE	sequencing_platform	Illumina HiSeq	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-107	V50_01_1FE	V50_01_1FE	host_species	Human	Homo sapiens			TP_wrong
+107	V50_01_1FE	V50_01_1FE	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 108	V50_01_2FE	V50_01_2FE	subject_id		V50_01_2FE			FN
 108	V50_01_2FE	V50_01_2FE	sample_id	V50_01_2FE	V50_01_2FE			TP_correct
 108	V50_01_2FE	V50_01_2FE	control		Study Control			FN
@@ -3268,7 +3268,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 108	V50_01_2FE	V50_01_2FE	target_condition	Human microbiome composition and diversity; Microbiome-associated health conditions; Microbial diversity across body sites; Geographic and lifestyle effects on microbiome; Westernization effects on microbiome	Microbiome			TP_wrong
 108	V50_01_2FE	V50_01_2FE	dna_extraction_kit	PowerSoil DNA Isolation Kit	Qiagen	CMDKIT:0002	CMDKIT:0007	TP_wrong
 108	V50_01_2FE	V50_01_2FE	sequencing_platform	Illumina HiSeq	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-108	V50_01_2FE	V50_01_2FE	host_species	Human	Homo sapiens			TP_wrong
+108	V50_01_2FE	V50_01_2FE	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 109	V50_02_1FE	V50_02_1FE	subject_id		V50_02_1FE			FN
 109	V50_02_1FE	V50_02_1FE	sample_id	V50_02_1FE	V50_02_1FE			TP_correct
 109	V50_02_1FE	V50_02_1FE	control		Study Control			FN
@@ -3298,7 +3298,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 109	V50_02_1FE	V50_02_1FE	target_condition	Human microbiome composition and diversity; Microbiome-associated health conditions; Microbial diversity across body sites; Geographic and lifestyle effects on microbiome; Westernization effects on microbiome	Microbiome			TP_wrong
 109	V50_02_1FE	V50_02_1FE	dna_extraction_kit	PowerSoil DNA Isolation Kit	Qiagen	CMDKIT:0002	CMDKIT:0007	TP_wrong
 109	V50_02_1FE	V50_02_1FE	sequencing_platform	Illumina HiSeq	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-109	V50_02_1FE	V50_02_1FE	host_species	Human	Homo sapiens			TP_wrong
+109	V50_02_1FE	V50_02_1FE	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 110	V53_02_1FE	V53_02_1FE	subject_id		V53_02_1FE			FN
 110	V53_02_1FE	V53_02_1FE	sample_id	V53_02_1FE	V53_02_1FE			TP_correct
 110	V53_02_1FE	V53_02_1FE	control		Study Control			FN
@@ -3328,7 +3328,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 110	V53_02_1FE	V53_02_1FE	target_condition	Human microbiome composition and diversity; Microbiome-associated health conditions; Microbial diversity across body sites; Geographic and lifestyle effects on microbiome; Westernization effects on microbiome	Microbiome			TP_wrong
 110	V53_02_1FE	V53_02_1FE	dna_extraction_kit	PowerSoil DNA Isolation Kit	Qiagen	CMDKIT:0002	CMDKIT:0007	TP_wrong
 110	V53_02_1FE	V53_02_1FE	sequencing_platform	Illumina HiSeq	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-110	V53_02_1FE	V53_02_1FE	host_species	Human	Homo sapiens			TP_wrong
+110	V53_02_1FE	V53_02_1FE	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 111	V54_01_1FE	V54_01_1FE	subject_id		V54_01_1FE			FN
 111	V54_01_1FE	V54_01_1FE	sample_id	V54_01_1FE	V54_01_1FE			TP_correct
 111	V54_01_1FE	V54_01_1FE	control		Study Control			FN
@@ -3358,4 +3358,4 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 111	V54_01_1FE	V54_01_1FE	target_condition	Human microbiome composition and diversity; Microbiome-associated health conditions; Microbial diversity across body sites; Geographic and lifestyle effects on microbiome; Westernization effects on microbiome	Microbiome			TP_wrong
 111	V54_01_1FE	V54_01_1FE	dna_extraction_kit	PowerSoil DNA Isolation Kit	Qiagen	CMDKIT:0002	CMDKIT:0007	TP_wrong
 111	V54_01_1FE	V54_01_1FE	sequencing_platform	Illumina HiSeq	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-111	V54_01_1FE	V54_01_1FE	host_species	Human	Homo sapiens			TP_wrong
+111	V54_01_1FE	V54_01_1FE	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct

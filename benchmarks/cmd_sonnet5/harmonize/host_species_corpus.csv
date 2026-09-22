@@ -1,0 +1,7 @@
+iri,ontology_name,ontology_prefix,short_form,label,obo_id,definitions,description,synonyms,parents,children,roles,type
+http://purl.obolibrary.org/obo/NCIT_C14225,ncit,NCIT,NCIT_C14225,Human,NCIT:C14225,[],,"['HUMAN', 'Homo sapiens', 'Human', 'Human, General']",[],[],[],class
+http://purl.obolibrary.org/obo/NCIT_C14225,ncit,NCIT,NCIT_C14225,Homo sapiens,NCIT:C14225,[],,"['HUMAN', 'Homo sapiens', 'Human', 'Human, General']",[],[],[],class
+http://purl.obolibrary.org/obo/NCIT_C14238,ncit,NCIT,NCIT_C14238,Mouse,NCIT:C14238,[],,"['MOUSE', 'Mammals, Mice', 'Mice', 'Mouse', 'Murine', 'Mus']",[],[],[],class
+http://purl.obolibrary.org/obo/NCIT_C14238,ncit,NCIT,NCIT_C14238,Mice,NCIT:C14238,[],,"['MOUSE', 'Mammals, Mice', 'Mice', 'Mouse', 'Murine', 'Mus']",[],[],[],class
+http://purl.obolibrary.org/obo/NCIT_C14238,ncit,NCIT,NCIT_C14238,Murine,NCIT:C14238,[],,"['MOUSE', 'Mammals, Mice', 'Mice', 'Mouse', 'Murine', 'Mus']",[],[],[],class
+http://purl.obolibrary.org/obo/NCIT_C14238,ncit,NCIT,NCIT_C14238,Mus,NCIT:C14238,[],,"['MOUSE', 'Mammals, Mice', 'Mice', 'Mouse', 'Murine', 'Mus']",[],[],[],class

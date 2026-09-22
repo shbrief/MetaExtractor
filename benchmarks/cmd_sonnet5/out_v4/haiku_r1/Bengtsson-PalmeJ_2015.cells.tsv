@@ -23,7 +23,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 0	TRAVELRES1	TRAVELRES1	target_condition	antibiotic resistance; extended-spectrum beta-lactamase (ESBL)-producing enterobacteria; gut microbiome composition	Intestinal Flora			TP_wrong
 0	TRAVELRES1	TRAVELRES1	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 0	TRAVELRES1	TRAVELRES1	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-0	TRAVELRES1	TRAVELRES1	host_species	Human	Homo sapiens			TP_wrong
+0	TRAVELRES1	TRAVELRES1	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 1	TRAVELRES10	TRAVELRES10	subject_id		TRAVELRES9_10			FN
 1	TRAVELRES10	TRAVELRES10	sample_id	TRAVELRES10	TRAVELRES10			TP_correct
 1	TRAVELRES10	TRAVELRES10	control		Study Control			FN
@@ -48,7 +48,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 1	TRAVELRES10	TRAVELRES10	target_condition	antibiotic resistance; extended-spectrum beta-lactamase (ESBL)-producing enterobacteria; gut microbiome composition	Intestinal Flora			TP_wrong
 1	TRAVELRES10	TRAVELRES10	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 1	TRAVELRES10	TRAVELRES10	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-1	TRAVELRES10	TRAVELRES10	host_species	Human	Homo sapiens			TP_wrong
+1	TRAVELRES10	TRAVELRES10	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 2	TRAVELRES11	TRAVELRES11	subject_id		TRAVELRES11_12			FN
 2	TRAVELRES11	TRAVELRES11	sample_id	TRAVELRES11	TRAVELRES11			TP_correct
 2	TRAVELRES11	TRAVELRES11	control		Study Control			FN
@@ -73,7 +73,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 2	TRAVELRES11	TRAVELRES11	target_condition	antibiotic resistance; extended-spectrum beta-lactamase (ESBL)-producing enterobacteria; gut microbiome composition	Intestinal Flora			TP_wrong
 2	TRAVELRES11	TRAVELRES11	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 2	TRAVELRES11	TRAVELRES11	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-2	TRAVELRES11	TRAVELRES11	host_species	Human	Homo sapiens			TP_wrong
+2	TRAVELRES11	TRAVELRES11	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 3	TRAVELRES12	TRAVELRES12	subject_id		TRAVELRES11_12			FN
 3	TRAVELRES12	TRAVELRES12	sample_id	TRAVELRES12	TRAVELRES12			TP_correct
 3	TRAVELRES12	TRAVELRES12	control		Study Control			FN
@@ -98,7 +98,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 3	TRAVELRES12	TRAVELRES12	target_condition	antibiotic resistance; extended-spectrum beta-lactamase (ESBL)-producing enterobacteria; gut microbiome composition	Intestinal Flora			TP_wrong
 3	TRAVELRES12	TRAVELRES12	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 3	TRAVELRES12	TRAVELRES12	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-3	TRAVELRES12	TRAVELRES12	host_species	Human	Homo sapiens			TP_wrong
+3	TRAVELRES12	TRAVELRES12	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 4	TRAVELRES13	TRAVELRES13	subject_id		TRAVELRES13_14			FN
 4	TRAVELRES13	TRAVELRES13	sample_id	TRAVELRES13	TRAVELRES13			TP_correct
 4	TRAVELRES13	TRAVELRES13	control		Study Control			FN
@@ -123,7 +123,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 4	TRAVELRES13	TRAVELRES13	target_condition	antibiotic resistance; extended-spectrum beta-lactamase (ESBL)-producing enterobacteria; gut microbiome composition	Intestinal Flora			TP_wrong
 4	TRAVELRES13	TRAVELRES13	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 4	TRAVELRES13	TRAVELRES13	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-4	TRAVELRES13	TRAVELRES13	host_species	Human	Homo sapiens			TP_wrong
+4	TRAVELRES13	TRAVELRES13	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 5	TRAVELRES14	TRAVELRES14	subject_id		TRAVELRES13_14			FN
 5	TRAVELRES14	TRAVELRES14	sample_id	TRAVELRES14	TRAVELRES14			TP_correct
 5	TRAVELRES14	TRAVELRES14	control		Study Control			FN
@@ -148,7 +148,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 5	TRAVELRES14	TRAVELRES14	target_condition	antibiotic resistance; extended-spectrum beta-lactamase (ESBL)-producing enterobacteria; gut microbiome composition	Intestinal Flora			TP_wrong
 5	TRAVELRES14	TRAVELRES14	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 5	TRAVELRES14	TRAVELRES14	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-5	TRAVELRES14	TRAVELRES14	host_species	Human	Homo sapiens			TP_wrong
+5	TRAVELRES14	TRAVELRES14	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 6	TRAVELRES15	TRAVELRES15	subject_id		TRAVELRES15_16			FN
 6	TRAVELRES15	TRAVELRES15	sample_id	TRAVELRES15	TRAVELRES15			TP_correct
 6	TRAVELRES15	TRAVELRES15	control		Study Control			FN
@@ -173,7 +173,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 6	TRAVELRES15	TRAVELRES15	target_condition	antibiotic resistance; extended-spectrum beta-lactamase (ESBL)-producing enterobacteria; gut microbiome composition	Intestinal Flora			TP_wrong
 6	TRAVELRES15	TRAVELRES15	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 6	TRAVELRES15	TRAVELRES15	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-6	TRAVELRES15	TRAVELRES15	host_species	Human	Homo sapiens			TP_wrong
+6	TRAVELRES15	TRAVELRES15	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 7	TRAVELRES16	TRAVELRES16	subject_id		TRAVELRES15_16			FN
 7	TRAVELRES16	TRAVELRES16	sample_id	TRAVELRES16	TRAVELRES16			TP_correct
 7	TRAVELRES16	TRAVELRES16	control		Study Control			FN
@@ -198,7 +198,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 7	TRAVELRES16	TRAVELRES16	target_condition	antibiotic resistance; extended-spectrum beta-lactamase (ESBL)-producing enterobacteria; gut microbiome composition	Intestinal Flora			TP_wrong
 7	TRAVELRES16	TRAVELRES16	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 7	TRAVELRES16	TRAVELRES16	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-7	TRAVELRES16	TRAVELRES16	host_species	Human	Homo sapiens			TP_wrong
+7	TRAVELRES16	TRAVELRES16	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 8	TRAVELRES17	TRAVELRES17	subject_id		TRAVELRES17_18			FN
 8	TRAVELRES17	TRAVELRES17	sample_id	TRAVELRES17	TRAVELRES17			TP_correct
 8	TRAVELRES17	TRAVELRES17	control		Study Control			FN
@@ -223,7 +223,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 8	TRAVELRES17	TRAVELRES17	target_condition	antibiotic resistance; extended-spectrum beta-lactamase (ESBL)-producing enterobacteria; gut microbiome composition	Intestinal Flora			TP_wrong
 8	TRAVELRES17	TRAVELRES17	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 8	TRAVELRES17	TRAVELRES17	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-8	TRAVELRES17	TRAVELRES17	host_species	Human	Homo sapiens			TP_wrong
+8	TRAVELRES17	TRAVELRES17	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 9	TRAVELRES18	TRAVELRES18	subject_id		TRAVELRES17_18			FN
 9	TRAVELRES18	TRAVELRES18	sample_id	TRAVELRES18	TRAVELRES18			TP_correct
 9	TRAVELRES18	TRAVELRES18	control		Study Control			FN
@@ -248,7 +248,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 9	TRAVELRES18	TRAVELRES18	target_condition	antibiotic resistance; extended-spectrum beta-lactamase (ESBL)-producing enterobacteria; gut microbiome composition	Intestinal Flora			TP_wrong
 9	TRAVELRES18	TRAVELRES18	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 9	TRAVELRES18	TRAVELRES18	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-9	TRAVELRES18	TRAVELRES18	host_species	Human	Homo sapiens			TP_wrong
+9	TRAVELRES18	TRAVELRES18	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 10	TRAVELRES19	TRAVELRES19	subject_id		TRAVELRES19_20			FN
 10	TRAVELRES19	TRAVELRES19	sample_id	TRAVELRES19	TRAVELRES19			TP_correct
 10	TRAVELRES19	TRAVELRES19	control		Study Control			FN
@@ -273,7 +273,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 10	TRAVELRES19	TRAVELRES19	target_condition	antibiotic resistance; extended-spectrum beta-lactamase (ESBL)-producing enterobacteria; gut microbiome composition	Intestinal Flora			TP_wrong
 10	TRAVELRES19	TRAVELRES19	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 10	TRAVELRES19	TRAVELRES19	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-10	TRAVELRES19	TRAVELRES19	host_species	Human	Homo sapiens			TP_wrong
+10	TRAVELRES19	TRAVELRES19	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 11	TRAVELRES2	TRAVELRES2	subject_id		TRAVELRES1_2			FN
 11	TRAVELRES2	TRAVELRES2	sample_id	TRAVELRES2	TRAVELRES2			TP_correct
 11	TRAVELRES2	TRAVELRES2	control		Study Control			FN
@@ -298,7 +298,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 11	TRAVELRES2	TRAVELRES2	target_condition	antibiotic resistance; extended-spectrum beta-lactamase (ESBL)-producing enterobacteria; gut microbiome composition	Intestinal Flora			TP_wrong
 11	TRAVELRES2	TRAVELRES2	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 11	TRAVELRES2	TRAVELRES2	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-11	TRAVELRES2	TRAVELRES2	host_species	Human	Homo sapiens			TP_wrong
+11	TRAVELRES2	TRAVELRES2	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 12	TRAVELRES20	TRAVELRES20	subject_id		TRAVELRES19_20			FN
 12	TRAVELRES20	TRAVELRES20	sample_id	TRAVELRES20	TRAVELRES20			TP_correct
 12	TRAVELRES20	TRAVELRES20	control		Study Control			FN
@@ -323,7 +323,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 12	TRAVELRES20	TRAVELRES20	target_condition	antibiotic resistance; extended-spectrum beta-lactamase (ESBL)-producing enterobacteria; gut microbiome composition	Intestinal Flora			TP_wrong
 12	TRAVELRES20	TRAVELRES20	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 12	TRAVELRES20	TRAVELRES20	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-12	TRAVELRES20	TRAVELRES20	host_species	Human	Homo sapiens			TP_wrong
+12	TRAVELRES20	TRAVELRES20	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 13	TRAVELRES21	TRAVELRES21	subject_id		TRAVELRES21_22			FN
 13	TRAVELRES21	TRAVELRES21	sample_id	TRAVELRES21	TRAVELRES21			TP_correct
 13	TRAVELRES21	TRAVELRES21	control		Study Control			FN
@@ -348,7 +348,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 13	TRAVELRES21	TRAVELRES21	target_condition	antibiotic resistance; extended-spectrum beta-lactamase (ESBL)-producing enterobacteria; gut microbiome composition	Intestinal Flora			TP_wrong
 13	TRAVELRES21	TRAVELRES21	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 13	TRAVELRES21	TRAVELRES21	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-13	TRAVELRES21	TRAVELRES21	host_species	Human	Homo sapiens			TP_wrong
+13	TRAVELRES21	TRAVELRES21	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 14	TRAVELRES22	TRAVELRES22	subject_id		TRAVELRES21_22			FN
 14	TRAVELRES22	TRAVELRES22	sample_id	TRAVELRES22	TRAVELRES22			TP_correct
 14	TRAVELRES22	TRAVELRES22	control		Study Control			FN
@@ -373,7 +373,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 14	TRAVELRES22	TRAVELRES22	target_condition	antibiotic resistance; extended-spectrum beta-lactamase (ESBL)-producing enterobacteria; gut microbiome composition	Intestinal Flora			TP_wrong
 14	TRAVELRES22	TRAVELRES22	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 14	TRAVELRES22	TRAVELRES22	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-14	TRAVELRES22	TRAVELRES22	host_species	Human	Homo sapiens			TP_wrong
+14	TRAVELRES22	TRAVELRES22	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 15	TRAVELRES23	TRAVELRES23	subject_id		TRAVELRES23_24			FN
 15	TRAVELRES23	TRAVELRES23	sample_id	TRAVELRES23	TRAVELRES23			TP_correct
 15	TRAVELRES23	TRAVELRES23	control		Study Control			FN
@@ -398,7 +398,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 15	TRAVELRES23	TRAVELRES23	target_condition	antibiotic resistance; extended-spectrum beta-lactamase (ESBL)-producing enterobacteria; gut microbiome composition	Intestinal Flora			TP_wrong
 15	TRAVELRES23	TRAVELRES23	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 15	TRAVELRES23	TRAVELRES23	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-15	TRAVELRES23	TRAVELRES23	host_species	Human	Homo sapiens			TP_wrong
+15	TRAVELRES23	TRAVELRES23	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 16	TRAVELRES24	TRAVELRES24	subject_id		TRAVELRES23_24			FN
 16	TRAVELRES24	TRAVELRES24	sample_id	TRAVELRES24	TRAVELRES24			TP_correct
 16	TRAVELRES24	TRAVELRES24	control		Study Control			FN
@@ -423,7 +423,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 16	TRAVELRES24	TRAVELRES24	target_condition	antibiotic resistance; extended-spectrum beta-lactamase (ESBL)-producing enterobacteria; gut microbiome composition	Intestinal Flora			TP_wrong
 16	TRAVELRES24	TRAVELRES24	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 16	TRAVELRES24	TRAVELRES24	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-16	TRAVELRES24	TRAVELRES24	host_species	Human	Homo sapiens			TP_wrong
+16	TRAVELRES24	TRAVELRES24	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 17	TRAVELRES25	TRAVELRES25	subject_id		TRAVELRES25_26			FN
 17	TRAVELRES25	TRAVELRES25	sample_id	TRAVELRES25	TRAVELRES25			TP_correct
 17	TRAVELRES25	TRAVELRES25	control		Study Control			FN
@@ -448,7 +448,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 17	TRAVELRES25	TRAVELRES25	target_condition	antibiotic resistance; extended-spectrum beta-lactamase (ESBL)-producing enterobacteria; gut microbiome composition	Intestinal Flora			TP_wrong
 17	TRAVELRES25	TRAVELRES25	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 17	TRAVELRES25	TRAVELRES25	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-17	TRAVELRES25	TRAVELRES25	host_species	Human	Homo sapiens			TP_wrong
+17	TRAVELRES25	TRAVELRES25	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 18	TRAVELRES26	TRAVELRES26	subject_id		TRAVELRES25_26			FN
 18	TRAVELRES26	TRAVELRES26	sample_id	TRAVELRES26	TRAVELRES26			TP_correct
 18	TRAVELRES26	TRAVELRES26	control		Study Control			FN
@@ -473,7 +473,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 18	TRAVELRES26	TRAVELRES26	target_condition	antibiotic resistance; extended-spectrum beta-lactamase (ESBL)-producing enterobacteria; gut microbiome composition	Intestinal Flora			TP_wrong
 18	TRAVELRES26	TRAVELRES26	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 18	TRAVELRES26	TRAVELRES26	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-18	TRAVELRES26	TRAVELRES26	host_species	Human	Homo sapiens			TP_wrong
+18	TRAVELRES26	TRAVELRES26	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 19	TRAVELRES27	TRAVELRES27	subject_id		TRAVELRES27_28			FN
 19	TRAVELRES27	TRAVELRES27	sample_id	TRAVELRES27	TRAVELRES27			TP_correct
 19	TRAVELRES27	TRAVELRES27	control		Study Control			FN
@@ -498,7 +498,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 19	TRAVELRES27	TRAVELRES27	target_condition	antibiotic resistance; extended-spectrum beta-lactamase (ESBL)-producing enterobacteria; gut microbiome composition	Intestinal Flora			TP_wrong
 19	TRAVELRES27	TRAVELRES27	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 19	TRAVELRES27	TRAVELRES27	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-19	TRAVELRES27	TRAVELRES27	host_species	Human	Homo sapiens			TP_wrong
+19	TRAVELRES27	TRAVELRES27	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 20	TRAVELRES28	TRAVELRES28	subject_id		TRAVELRES27_28			FN
 20	TRAVELRES28	TRAVELRES28	sample_id	TRAVELRES28	TRAVELRES28			TP_correct
 20	TRAVELRES28	TRAVELRES28	control		Study Control			FN
@@ -523,7 +523,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 20	TRAVELRES28	TRAVELRES28	target_condition	antibiotic resistance; extended-spectrum beta-lactamase (ESBL)-producing enterobacteria; gut microbiome composition	Intestinal Flora			TP_wrong
 20	TRAVELRES28	TRAVELRES28	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 20	TRAVELRES28	TRAVELRES28	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-20	TRAVELRES28	TRAVELRES28	host_species	Human	Homo sapiens			TP_wrong
+20	TRAVELRES28	TRAVELRES28	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 21	TRAVELRES29	TRAVELRES29	subject_id		TRAVELRES29_30			FN
 21	TRAVELRES29	TRAVELRES29	sample_id	TRAVELRES29	TRAVELRES29			TP_correct
 21	TRAVELRES29	TRAVELRES29	control		Study Control			FN
@@ -548,7 +548,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 21	TRAVELRES29	TRAVELRES29	target_condition	antibiotic resistance; extended-spectrum beta-lactamase (ESBL)-producing enterobacteria; gut microbiome composition	Intestinal Flora			TP_wrong
 21	TRAVELRES29	TRAVELRES29	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 21	TRAVELRES29	TRAVELRES29	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-21	TRAVELRES29	TRAVELRES29	host_species	Human	Homo sapiens			TP_wrong
+21	TRAVELRES29	TRAVELRES29	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 22	TRAVELRES3	TRAVELRES3	subject_id		TRAVELRES3_4			FN
 22	TRAVELRES3	TRAVELRES3	sample_id	TRAVELRES3	TRAVELRES3			TP_correct
 22	TRAVELRES3	TRAVELRES3	control		Study Control			FN
@@ -573,7 +573,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 22	TRAVELRES3	TRAVELRES3	target_condition	antibiotic resistance; extended-spectrum beta-lactamase (ESBL)-producing enterobacteria; gut microbiome composition	Intestinal Flora			TP_wrong
 22	TRAVELRES3	TRAVELRES3	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 22	TRAVELRES3	TRAVELRES3	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-22	TRAVELRES3	TRAVELRES3	host_species	Human	Homo sapiens			TP_wrong
+22	TRAVELRES3	TRAVELRES3	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 23	TRAVELRES30	TRAVELRES30	subject_id		TRAVELRES29_30			FN
 23	TRAVELRES30	TRAVELRES30	sample_id	TRAVELRES30	TRAVELRES30			TP_correct
 23	TRAVELRES30	TRAVELRES30	control		Study Control			FN
@@ -598,7 +598,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 23	TRAVELRES30	TRAVELRES30	target_condition	antibiotic resistance; extended-spectrum beta-lactamase (ESBL)-producing enterobacteria; gut microbiome composition	Intestinal Flora			TP_wrong
 23	TRAVELRES30	TRAVELRES30	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 23	TRAVELRES30	TRAVELRES30	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-23	TRAVELRES30	TRAVELRES30	host_species	Human	Homo sapiens			TP_wrong
+23	TRAVELRES30	TRAVELRES30	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 24	TRAVELRES31	TRAVELRES31	subject_id		TRAVELRES31_32			FN
 24	TRAVELRES31	TRAVELRES31	sample_id	TRAVELRES31	TRAVELRES31			TP_correct
 24	TRAVELRES31	TRAVELRES31	control		Study Control			FN
@@ -623,7 +623,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 24	TRAVELRES31	TRAVELRES31	target_condition	antibiotic resistance; extended-spectrum beta-lactamase (ESBL)-producing enterobacteria; gut microbiome composition	Intestinal Flora			TP_wrong
 24	TRAVELRES31	TRAVELRES31	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 24	TRAVELRES31	TRAVELRES31	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-24	TRAVELRES31	TRAVELRES31	host_species	Human	Homo sapiens			TP_wrong
+24	TRAVELRES31	TRAVELRES31	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 25	TRAVELRES32	TRAVELRES32	subject_id		TRAVELRES31_32			FN
 25	TRAVELRES32	TRAVELRES32	sample_id	TRAVELRES32	TRAVELRES32			TP_correct
 25	TRAVELRES32	TRAVELRES32	control		Study Control			FN
@@ -648,7 +648,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 25	TRAVELRES32	TRAVELRES32	target_condition	antibiotic resistance; extended-spectrum beta-lactamase (ESBL)-producing enterobacteria; gut microbiome composition	Intestinal Flora			TP_wrong
 25	TRAVELRES32	TRAVELRES32	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 25	TRAVELRES32	TRAVELRES32	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-25	TRAVELRES32	TRAVELRES32	host_species	Human	Homo sapiens			TP_wrong
+25	TRAVELRES32	TRAVELRES32	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 26	TRAVELRES33	TRAVELRES33	subject_id		TRAVELRES33_34			FN
 26	TRAVELRES33	TRAVELRES33	sample_id	TRAVELRES33	TRAVELRES33			TP_correct
 26	TRAVELRES33	TRAVELRES33	control		Study Control			FN
@@ -673,7 +673,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 26	TRAVELRES33	TRAVELRES33	target_condition	antibiotic resistance; extended-spectrum beta-lactamase (ESBL)-producing enterobacteria; gut microbiome composition	Intestinal Flora			TP_wrong
 26	TRAVELRES33	TRAVELRES33	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 26	TRAVELRES33	TRAVELRES33	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-26	TRAVELRES33	TRAVELRES33	host_species	Human	Homo sapiens			TP_wrong
+26	TRAVELRES33	TRAVELRES33	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 27	TRAVELRES34	TRAVELRES34	subject_id		TRAVELRES33_34			FN
 27	TRAVELRES34	TRAVELRES34	sample_id	TRAVELRES34	TRAVELRES34			TP_correct
 27	TRAVELRES34	TRAVELRES34	control		Study Control			FN
@@ -698,7 +698,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 27	TRAVELRES34	TRAVELRES34	target_condition	antibiotic resistance; extended-spectrum beta-lactamase (ESBL)-producing enterobacteria; gut microbiome composition	Intestinal Flora			TP_wrong
 27	TRAVELRES34	TRAVELRES34	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 27	TRAVELRES34	TRAVELRES34	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-27	TRAVELRES34	TRAVELRES34	host_species	Human	Homo sapiens			TP_wrong
+27	TRAVELRES34	TRAVELRES34	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 28	TRAVELRES35	TRAVELRES35	subject_id		TRAVELRES35_36			FN
 28	TRAVELRES35	TRAVELRES35	sample_id	TRAVELRES35	TRAVELRES35			TP_correct
 28	TRAVELRES35	TRAVELRES35	control		Study Control			FN
@@ -723,7 +723,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 28	TRAVELRES35	TRAVELRES35	target_condition	antibiotic resistance; extended-spectrum beta-lactamase (ESBL)-producing enterobacteria; gut microbiome composition	Intestinal Flora			TP_wrong
 28	TRAVELRES35	TRAVELRES35	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 28	TRAVELRES35	TRAVELRES35	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-28	TRAVELRES35	TRAVELRES35	host_species	Human	Homo sapiens			TP_wrong
+28	TRAVELRES35	TRAVELRES35	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 29	TRAVELRES36	TRAVELRES36	subject_id		TRAVELRES35_36			FN
 29	TRAVELRES36	TRAVELRES36	sample_id	TRAVELRES36	TRAVELRES36			TP_correct
 29	TRAVELRES36	TRAVELRES36	control		Study Control			FN
@@ -748,7 +748,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 29	TRAVELRES36	TRAVELRES36	target_condition	antibiotic resistance; extended-spectrum beta-lactamase (ESBL)-producing enterobacteria; gut microbiome composition	Intestinal Flora			TP_wrong
 29	TRAVELRES36	TRAVELRES36	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 29	TRAVELRES36	TRAVELRES36	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-29	TRAVELRES36	TRAVELRES36	host_species	Human	Homo sapiens			TP_wrong
+29	TRAVELRES36	TRAVELRES36	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 30	TRAVELRES37	TRAVELRES37	subject_id		TRAVELRES37_38			FN
 30	TRAVELRES37	TRAVELRES37	sample_id	TRAVELRES37	TRAVELRES37			TP_correct
 30	TRAVELRES37	TRAVELRES37	control		Study Control			FN
@@ -773,7 +773,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 30	TRAVELRES37	TRAVELRES37	target_condition	antibiotic resistance; extended-spectrum beta-lactamase (ESBL)-producing enterobacteria; gut microbiome composition	Intestinal Flora			TP_wrong
 30	TRAVELRES37	TRAVELRES37	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 30	TRAVELRES37	TRAVELRES37	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-30	TRAVELRES37	TRAVELRES37	host_species	Human	Homo sapiens			TP_wrong
+30	TRAVELRES37	TRAVELRES37	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 31	TRAVELRES38	TRAVELRES38	subject_id		TRAVELRES37_38			FN
 31	TRAVELRES38	TRAVELRES38	sample_id	TRAVELRES38	TRAVELRES38			TP_correct
 31	TRAVELRES38	TRAVELRES38	control		Study Control			FN
@@ -798,7 +798,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 31	TRAVELRES38	TRAVELRES38	target_condition	antibiotic resistance; extended-spectrum beta-lactamase (ESBL)-producing enterobacteria; gut microbiome composition	Intestinal Flora			TP_wrong
 31	TRAVELRES38	TRAVELRES38	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 31	TRAVELRES38	TRAVELRES38	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-31	TRAVELRES38	TRAVELRES38	host_species	Human	Homo sapiens			TP_wrong
+31	TRAVELRES38	TRAVELRES38	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 32	TRAVELRES39	TRAVELRES39	subject_id		TRAVELRES39_40			FN
 32	TRAVELRES39	TRAVELRES39	sample_id	TRAVELRES39	TRAVELRES39			TP_correct
 32	TRAVELRES39	TRAVELRES39	control		Study Control			FN
@@ -823,7 +823,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 32	TRAVELRES39	TRAVELRES39	target_condition	antibiotic resistance; extended-spectrum beta-lactamase (ESBL)-producing enterobacteria; gut microbiome composition	Intestinal Flora			TP_wrong
 32	TRAVELRES39	TRAVELRES39	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 32	TRAVELRES39	TRAVELRES39	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-32	TRAVELRES39	TRAVELRES39	host_species	Human	Homo sapiens			TP_wrong
+32	TRAVELRES39	TRAVELRES39	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 33	TRAVELRES4	TRAVELRES4	subject_id		TRAVELRES3_4			FN
 33	TRAVELRES4	TRAVELRES4	sample_id	TRAVELRES4	TRAVELRES4			TP_correct
 33	TRAVELRES4	TRAVELRES4	control		Study Control			FN
@@ -848,7 +848,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 33	TRAVELRES4	TRAVELRES4	target_condition	antibiotic resistance; extended-spectrum beta-lactamase (ESBL)-producing enterobacteria; gut microbiome composition	Intestinal Flora			TP_wrong
 33	TRAVELRES4	TRAVELRES4	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 33	TRAVELRES4	TRAVELRES4	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-33	TRAVELRES4	TRAVELRES4	host_species	Human	Homo sapiens			TP_wrong
+33	TRAVELRES4	TRAVELRES4	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 34	TRAVELRES40	TRAVELRES40	subject_id		TRAVELRES39_40			FN
 34	TRAVELRES40	TRAVELRES40	sample_id	TRAVELRES40	TRAVELRES40			TP_correct
 34	TRAVELRES40	TRAVELRES40	control		Study Control			FN
@@ -873,7 +873,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 34	TRAVELRES40	TRAVELRES40	target_condition	antibiotic resistance; extended-spectrum beta-lactamase (ESBL)-producing enterobacteria; gut microbiome composition	Intestinal Flora			TP_wrong
 34	TRAVELRES40	TRAVELRES40	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 34	TRAVELRES40	TRAVELRES40	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-34	TRAVELRES40	TRAVELRES40	host_species	Human	Homo sapiens			TP_wrong
+34	TRAVELRES40	TRAVELRES40	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 35	TRAVELRES41	TRAVELRES41	subject_id		TRAVELRES41_42			FN
 35	TRAVELRES41	TRAVELRES41	sample_id	TRAVELRES41	TRAVELRES41			TP_correct
 35	TRAVELRES41	TRAVELRES41	control		Study Control			FN
@@ -898,7 +898,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 35	TRAVELRES41	TRAVELRES41	target_condition	antibiotic resistance; extended-spectrum beta-lactamase (ESBL)-producing enterobacteria; gut microbiome composition	Intestinal Flora			TP_wrong
 35	TRAVELRES41	TRAVELRES41	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 35	TRAVELRES41	TRAVELRES41	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-35	TRAVELRES41	TRAVELRES41	host_species	Human	Homo sapiens			TP_wrong
+35	TRAVELRES41	TRAVELRES41	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 36	TRAVELRES42	TRAVELRES42	subject_id		TRAVELRES41_42			FN
 36	TRAVELRES42	TRAVELRES42	sample_id	TRAVELRES42	TRAVELRES42			TP_correct
 36	TRAVELRES42	TRAVELRES42	control		Study Control			FN
@@ -923,7 +923,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 36	TRAVELRES42	TRAVELRES42	target_condition	antibiotic resistance; extended-spectrum beta-lactamase (ESBL)-producing enterobacteria; gut microbiome composition	Intestinal Flora			TP_wrong
 36	TRAVELRES42	TRAVELRES42	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 36	TRAVELRES42	TRAVELRES42	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-36	TRAVELRES42	TRAVELRES42	host_species	Human	Homo sapiens			TP_wrong
+36	TRAVELRES42	TRAVELRES42	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 37	TRAVELRES43	TRAVELRES43	subject_id		TRAVELRES43_44			FN
 37	TRAVELRES43	TRAVELRES43	sample_id	TRAVELRES43	TRAVELRES43			TP_correct
 37	TRAVELRES43	TRAVELRES43	control		Study Control			FN
@@ -948,7 +948,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 37	TRAVELRES43	TRAVELRES43	target_condition	antibiotic resistance; extended-spectrum beta-lactamase (ESBL)-producing enterobacteria; gut microbiome composition	Intestinal Flora			TP_wrong
 37	TRAVELRES43	TRAVELRES43	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 37	TRAVELRES43	TRAVELRES43	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-37	TRAVELRES43	TRAVELRES43	host_species	Human	Homo sapiens			TP_wrong
+37	TRAVELRES43	TRAVELRES43	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 38	TRAVELRES44	TRAVELRES44	subject_id		TRAVELRES43_44			FN
 38	TRAVELRES44	TRAVELRES44	sample_id	TRAVELRES44	TRAVELRES44			TP_correct
 38	TRAVELRES44	TRAVELRES44	control		Study Control			FN
@@ -973,7 +973,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 38	TRAVELRES44	TRAVELRES44	target_condition	antibiotic resistance; extended-spectrum beta-lactamase (ESBL)-producing enterobacteria; gut microbiome composition	Intestinal Flora			TP_wrong
 38	TRAVELRES44	TRAVELRES44	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 38	TRAVELRES44	TRAVELRES44	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-38	TRAVELRES44	TRAVELRES44	host_species	Human	Homo sapiens			TP_wrong
+38	TRAVELRES44	TRAVELRES44	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 39	TRAVELRES45	TRAVELRES45	subject_id		TRAVELRES45_46			FN
 39	TRAVELRES45	TRAVELRES45	sample_id	TRAVELRES45	TRAVELRES45			TP_correct
 39	TRAVELRES45	TRAVELRES45	control		Study Control			FN
@@ -998,7 +998,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 39	TRAVELRES45	TRAVELRES45	target_condition	antibiotic resistance; extended-spectrum beta-lactamase (ESBL)-producing enterobacteria; gut microbiome composition	Intestinal Flora			TP_wrong
 39	TRAVELRES45	TRAVELRES45	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 39	TRAVELRES45	TRAVELRES45	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-39	TRAVELRES45	TRAVELRES45	host_species	Human	Homo sapiens			TP_wrong
+39	TRAVELRES45	TRAVELRES45	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 40	TRAVELRES46	TRAVELRES46	subject_id		TRAVELRES45_46			FN
 40	TRAVELRES46	TRAVELRES46	sample_id	TRAVELRES46	TRAVELRES46			TP_correct
 40	TRAVELRES46	TRAVELRES46	control		Study Control			FN
@@ -1023,7 +1023,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 40	TRAVELRES46	TRAVELRES46	target_condition	antibiotic resistance; extended-spectrum beta-lactamase (ESBL)-producing enterobacteria; gut microbiome composition	Intestinal Flora			TP_wrong
 40	TRAVELRES46	TRAVELRES46	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 40	TRAVELRES46	TRAVELRES46	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-40	TRAVELRES46	TRAVELRES46	host_species	Human	Homo sapiens			TP_wrong
+40	TRAVELRES46	TRAVELRES46	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 41	TRAVELRES47	TRAVELRES47	subject_id		TRAVELRES47_48			FN
 41	TRAVELRES47	TRAVELRES47	sample_id	TRAVELRES47	TRAVELRES47			TP_correct
 41	TRAVELRES47	TRAVELRES47	control		Study Control			FN
@@ -1048,7 +1048,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 41	TRAVELRES47	TRAVELRES47	target_condition	antibiotic resistance; extended-spectrum beta-lactamase (ESBL)-producing enterobacteria; gut microbiome composition	Intestinal Flora			TP_wrong
 41	TRAVELRES47	TRAVELRES47	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 41	TRAVELRES47	TRAVELRES47	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-41	TRAVELRES47	TRAVELRES47	host_species	Human	Homo sapiens			TP_wrong
+41	TRAVELRES47	TRAVELRES47	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 42	TRAVELRES48	TRAVELRES48	subject_id		TRAVELRES47_48			FN
 42	TRAVELRES48	TRAVELRES48	sample_id	TRAVELRES48	TRAVELRES48			TP_correct
 42	TRAVELRES48	TRAVELRES48	control		Study Control			FN
@@ -1073,7 +1073,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 42	TRAVELRES48	TRAVELRES48	target_condition	antibiotic resistance; extended-spectrum beta-lactamase (ESBL)-producing enterobacteria; gut microbiome composition	Intestinal Flora			TP_wrong
 42	TRAVELRES48	TRAVELRES48	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 42	TRAVELRES48	TRAVELRES48	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-42	TRAVELRES48	TRAVELRES48	host_species	Human	Homo sapiens			TP_wrong
+42	TRAVELRES48	TRAVELRES48	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 43	TRAVELRES49	TRAVELRES49	subject_id		TRAVELRES49_50			FN
 43	TRAVELRES49	TRAVELRES49	sample_id	TRAVELRES49	TRAVELRES49			TP_correct
 43	TRAVELRES49	TRAVELRES49	control		Study Control			FN
@@ -1098,7 +1098,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 43	TRAVELRES49	TRAVELRES49	target_condition	antibiotic resistance; extended-spectrum beta-lactamase (ESBL)-producing enterobacteria; gut microbiome composition	Intestinal Flora			TP_wrong
 43	TRAVELRES49	TRAVELRES49	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 43	TRAVELRES49	TRAVELRES49	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-43	TRAVELRES49	TRAVELRES49	host_species	Human	Homo sapiens			TP_wrong
+43	TRAVELRES49	TRAVELRES49	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 44	TRAVELRES5	TRAVELRES5	subject_id		TRAVELRES5_6			FN
 44	TRAVELRES5	TRAVELRES5	sample_id	TRAVELRES5	TRAVELRES5			TP_correct
 44	TRAVELRES5	TRAVELRES5	control		Study Control			FN
@@ -1123,7 +1123,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 44	TRAVELRES5	TRAVELRES5	target_condition	antibiotic resistance; extended-spectrum beta-lactamase (ESBL)-producing enterobacteria; gut microbiome composition	Intestinal Flora			TP_wrong
 44	TRAVELRES5	TRAVELRES5	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 44	TRAVELRES5	TRAVELRES5	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-44	TRAVELRES5	TRAVELRES5	host_species	Human	Homo sapiens			TP_wrong
+44	TRAVELRES5	TRAVELRES5	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 45	TRAVELRES50	TRAVELRES50	subject_id		TRAVELRES49_50			FN
 45	TRAVELRES50	TRAVELRES50	sample_id	TRAVELRES50	TRAVELRES50			TP_correct
 45	TRAVELRES50	TRAVELRES50	control		Study Control			FN
@@ -1148,7 +1148,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 45	TRAVELRES50	TRAVELRES50	target_condition	antibiotic resistance; extended-spectrum beta-lactamase (ESBL)-producing enterobacteria; gut microbiome composition	Intestinal Flora			TP_wrong
 45	TRAVELRES50	TRAVELRES50	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 45	TRAVELRES50	TRAVELRES50	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-45	TRAVELRES50	TRAVELRES50	host_species	Human	Homo sapiens			TP_wrong
+45	TRAVELRES50	TRAVELRES50	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 46	TRAVELRES51	TRAVELRES51	subject_id		TRAVELRES51_52			FN
 46	TRAVELRES51	TRAVELRES51	sample_id	TRAVELRES51	TRAVELRES51			TP_correct
 46	TRAVELRES51	TRAVELRES51	control		Study Control			FN
@@ -1173,7 +1173,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 46	TRAVELRES51	TRAVELRES51	target_condition	antibiotic resistance; extended-spectrum beta-lactamase (ESBL)-producing enterobacteria; gut microbiome composition	Intestinal Flora			TP_wrong
 46	TRAVELRES51	TRAVELRES51	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 46	TRAVELRES51	TRAVELRES51	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-46	TRAVELRES51	TRAVELRES51	host_species	Human	Homo sapiens			TP_wrong
+46	TRAVELRES51	TRAVELRES51	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 47	TRAVELRES52	TRAVELRES52	subject_id		TRAVELRES51_52			FN
 47	TRAVELRES52	TRAVELRES52	sample_id	TRAVELRES52	TRAVELRES52			TP_correct
 47	TRAVELRES52	TRAVELRES52	control		Study Control			FN
@@ -1198,7 +1198,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 47	TRAVELRES52	TRAVELRES52	target_condition	antibiotic resistance; extended-spectrum beta-lactamase (ESBL)-producing enterobacteria; gut microbiome composition	Intestinal Flora			TP_wrong
 47	TRAVELRES52	TRAVELRES52	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 47	TRAVELRES52	TRAVELRES52	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-47	TRAVELRES52	TRAVELRES52	host_species	Human	Homo sapiens			TP_wrong
+47	TRAVELRES52	TRAVELRES52	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 48	TRAVELRES53	TRAVELRES53	subject_id		TRAVELRES53_54			FN
 48	TRAVELRES53	TRAVELRES53	sample_id	TRAVELRES53	TRAVELRES53			TP_correct
 48	TRAVELRES53	TRAVELRES53	control		Study Control			FN
@@ -1223,7 +1223,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 48	TRAVELRES53	TRAVELRES53	target_condition	antibiotic resistance; extended-spectrum beta-lactamase (ESBL)-producing enterobacteria; gut microbiome composition	Intestinal Flora			TP_wrong
 48	TRAVELRES53	TRAVELRES53	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 48	TRAVELRES53	TRAVELRES53	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-48	TRAVELRES53	TRAVELRES53	host_species	Human	Homo sapiens			TP_wrong
+48	TRAVELRES53	TRAVELRES53	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 49	TRAVELRES54	TRAVELRES54	subject_id		TRAVELRES53_54			FN
 49	TRAVELRES54	TRAVELRES54	sample_id	TRAVELRES54	TRAVELRES54			TP_correct
 49	TRAVELRES54	TRAVELRES54	control		Study Control			FN
@@ -1248,7 +1248,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 49	TRAVELRES54	TRAVELRES54	target_condition	antibiotic resistance; extended-spectrum beta-lactamase (ESBL)-producing enterobacteria; gut microbiome composition	Intestinal Flora			TP_wrong
 49	TRAVELRES54	TRAVELRES54	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 49	TRAVELRES54	TRAVELRES54	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-49	TRAVELRES54	TRAVELRES54	host_species	Human	Homo sapiens			TP_wrong
+49	TRAVELRES54	TRAVELRES54	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 50	TRAVELRES55	TRAVELRES55	subject_id		TRAVELRES55_56			FN
 50	TRAVELRES55	TRAVELRES55	sample_id	TRAVELRES55	TRAVELRES55			TP_correct
 50	TRAVELRES55	TRAVELRES55	control		Study Control			FN
@@ -1273,7 +1273,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 50	TRAVELRES55	TRAVELRES55	target_condition	antibiotic resistance; extended-spectrum beta-lactamase (ESBL)-producing enterobacteria; gut microbiome composition	Intestinal Flora			TP_wrong
 50	TRAVELRES55	TRAVELRES55	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 50	TRAVELRES55	TRAVELRES55	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-50	TRAVELRES55	TRAVELRES55	host_species	Human	Homo sapiens			TP_wrong
+50	TRAVELRES55	TRAVELRES55	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 51	TRAVELRES56	TRAVELRES56	subject_id		TRAVELRES55_56			FN
 51	TRAVELRES56	TRAVELRES56	sample_id	TRAVELRES56	TRAVELRES56			TP_correct
 51	TRAVELRES56	TRAVELRES56	control		Study Control			FN
@@ -1298,7 +1298,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 51	TRAVELRES56	TRAVELRES56	target_condition	antibiotic resistance; extended-spectrum beta-lactamase (ESBL)-producing enterobacteria; gut microbiome composition	Intestinal Flora			TP_wrong
 51	TRAVELRES56	TRAVELRES56	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 51	TRAVELRES56	TRAVELRES56	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-51	TRAVELRES56	TRAVELRES56	host_species	Human	Homo sapiens			TP_wrong
+51	TRAVELRES56	TRAVELRES56	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 52	TRAVELRES57	TRAVELRES57	subject_id		TRAVELRES57_58			FN
 52	TRAVELRES57	TRAVELRES57	sample_id	TRAVELRES57	TRAVELRES57			TP_correct
 52	TRAVELRES57	TRAVELRES57	control		Study Control			FN
@@ -1323,7 +1323,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 52	TRAVELRES57	TRAVELRES57	target_condition	antibiotic resistance; extended-spectrum beta-lactamase (ESBL)-producing enterobacteria; gut microbiome composition	Intestinal Flora			TP_wrong
 52	TRAVELRES57	TRAVELRES57	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 52	TRAVELRES57	TRAVELRES57	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-52	TRAVELRES57	TRAVELRES57	host_species	Human	Homo sapiens			TP_wrong
+52	TRAVELRES57	TRAVELRES57	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 53	TRAVELRES58	TRAVELRES58	subject_id		TRAVELRES57_58			FN
 53	TRAVELRES58	TRAVELRES58	sample_id	TRAVELRES58	TRAVELRES58			TP_correct
 53	TRAVELRES58	TRAVELRES58	control		Study Control			FN
@@ -1348,7 +1348,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 53	TRAVELRES58	TRAVELRES58	target_condition	antibiotic resistance; extended-spectrum beta-lactamase (ESBL)-producing enterobacteria; gut microbiome composition	Intestinal Flora			TP_wrong
 53	TRAVELRES58	TRAVELRES58	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 53	TRAVELRES58	TRAVELRES58	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-53	TRAVELRES58	TRAVELRES58	host_species	Human	Homo sapiens			TP_wrong
+53	TRAVELRES58	TRAVELRES58	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 54	TRAVELRES59	TRAVELRES59	subject_id		TRAVELRES59_60			FN
 54	TRAVELRES59	TRAVELRES59	sample_id	TRAVELRES59	TRAVELRES59			TP_correct
 54	TRAVELRES59	TRAVELRES59	control		Study Control			FN
@@ -1373,7 +1373,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 54	TRAVELRES59	TRAVELRES59	target_condition	antibiotic resistance; extended-spectrum beta-lactamase (ESBL)-producing enterobacteria; gut microbiome composition	Intestinal Flora			TP_wrong
 54	TRAVELRES59	TRAVELRES59	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 54	TRAVELRES59	TRAVELRES59	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-54	TRAVELRES59	TRAVELRES59	host_species	Human	Homo sapiens			TP_wrong
+54	TRAVELRES59	TRAVELRES59	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 55	TRAVELRES6	TRAVELRES6	subject_id		TRAVELRES5_6			FN
 55	TRAVELRES6	TRAVELRES6	sample_id	TRAVELRES6	TRAVELRES6			TP_correct
 55	TRAVELRES6	TRAVELRES6	control		Study Control			FN
@@ -1398,7 +1398,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 55	TRAVELRES6	TRAVELRES6	target_condition	antibiotic resistance; extended-spectrum beta-lactamase (ESBL)-producing enterobacteria; gut microbiome composition	Intestinal Flora			TP_wrong
 55	TRAVELRES6	TRAVELRES6	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 55	TRAVELRES6	TRAVELRES6	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-55	TRAVELRES6	TRAVELRES6	host_species	Human	Homo sapiens			TP_wrong
+55	TRAVELRES6	TRAVELRES6	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 56	TRAVELRES60	TRAVELRES60	subject_id		TRAVELRES59_60			FN
 56	TRAVELRES60	TRAVELRES60	sample_id	TRAVELRES60	TRAVELRES60			TP_correct
 56	TRAVELRES60	TRAVELRES60	control		Study Control			FN
@@ -1423,7 +1423,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 56	TRAVELRES60	TRAVELRES60	target_condition	antibiotic resistance; extended-spectrum beta-lactamase (ESBL)-producing enterobacteria; gut microbiome composition	Intestinal Flora			TP_wrong
 56	TRAVELRES60	TRAVELRES60	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 56	TRAVELRES60	TRAVELRES60	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-56	TRAVELRES60	TRAVELRES60	host_species	Human	Homo sapiens			TP_wrong
+56	TRAVELRES60	TRAVELRES60	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 57	TRAVELRES61	TRAVELRES61	subject_id		TRAVELRES61_62			FN
 57	TRAVELRES61	TRAVELRES61	sample_id	TRAVELRES61	TRAVELRES61			TP_correct
 57	TRAVELRES61	TRAVELRES61	control		Study Control			FN
@@ -1448,7 +1448,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 57	TRAVELRES61	TRAVELRES61	target_condition	antibiotic resistance; extended-spectrum beta-lactamase (ESBL)-producing enterobacteria; gut microbiome composition	Intestinal Flora			TP_wrong
 57	TRAVELRES61	TRAVELRES61	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 57	TRAVELRES61	TRAVELRES61	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-57	TRAVELRES61	TRAVELRES61	host_species	Human	Homo sapiens			TP_wrong
+57	TRAVELRES61	TRAVELRES61	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 58	TRAVELRES62	TRAVELRES62	subject_id		TRAVELRES61_62			FN
 58	TRAVELRES62	TRAVELRES62	sample_id	TRAVELRES62	TRAVELRES62			TP_correct
 58	TRAVELRES62	TRAVELRES62	control		Study Control			FN
@@ -1473,7 +1473,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 58	TRAVELRES62	TRAVELRES62	target_condition	antibiotic resistance; extended-spectrum beta-lactamase (ESBL)-producing enterobacteria; gut microbiome composition	Intestinal Flora			TP_wrong
 58	TRAVELRES62	TRAVELRES62	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 58	TRAVELRES62	TRAVELRES62	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-58	TRAVELRES62	TRAVELRES62	host_species	Human	Homo sapiens			TP_wrong
+58	TRAVELRES62	TRAVELRES62	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 59	TRAVELRES63	TRAVELRES63	subject_id		TRAVELRES63_64			FN
 59	TRAVELRES63	TRAVELRES63	sample_id	TRAVELRES63	TRAVELRES63			TP_correct
 59	TRAVELRES63	TRAVELRES63	control		Study Control			FN
@@ -1498,7 +1498,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 59	TRAVELRES63	TRAVELRES63	target_condition	antibiotic resistance; extended-spectrum beta-lactamase (ESBL)-producing enterobacteria; gut microbiome composition	Intestinal Flora			TP_wrong
 59	TRAVELRES63	TRAVELRES63	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 59	TRAVELRES63	TRAVELRES63	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-59	TRAVELRES63	TRAVELRES63	host_species	Human	Homo sapiens			TP_wrong
+59	TRAVELRES63	TRAVELRES63	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 60	TRAVELRES64	TRAVELRES64	subject_id		TRAVELRES63_64			FN
 60	TRAVELRES64	TRAVELRES64	sample_id	TRAVELRES64	TRAVELRES64			TP_correct
 60	TRAVELRES64	TRAVELRES64	control		Study Control			FN
@@ -1523,7 +1523,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 60	TRAVELRES64	TRAVELRES64	target_condition	antibiotic resistance; extended-spectrum beta-lactamase (ESBL)-producing enterobacteria; gut microbiome composition	Intestinal Flora			TP_wrong
 60	TRAVELRES64	TRAVELRES64	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 60	TRAVELRES64	TRAVELRES64	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-60	TRAVELRES64	TRAVELRES64	host_species	Human	Homo sapiens			TP_wrong
+60	TRAVELRES64	TRAVELRES64	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 61	TRAVELRES65	TRAVELRES65	subject_id		TRAVELRES65_66			FN
 61	TRAVELRES65	TRAVELRES65	sample_id	TRAVELRES65	TRAVELRES65			TP_correct
 61	TRAVELRES65	TRAVELRES65	control		Study Control			FN
@@ -1548,7 +1548,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 61	TRAVELRES65	TRAVELRES65	target_condition	antibiotic resistance; extended-spectrum beta-lactamase (ESBL)-producing enterobacteria; gut microbiome composition	Intestinal Flora			TP_wrong
 61	TRAVELRES65	TRAVELRES65	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 61	TRAVELRES65	TRAVELRES65	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-61	TRAVELRES65	TRAVELRES65	host_species	Human	Homo sapiens			TP_wrong
+61	TRAVELRES65	TRAVELRES65	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 62	TRAVELRES66	TRAVELRES66	subject_id		TRAVELRES65_66			FN
 62	TRAVELRES66	TRAVELRES66	sample_id	TRAVELRES66	TRAVELRES66			TP_correct
 62	TRAVELRES66	TRAVELRES66	control		Study Control			FN
@@ -1573,7 +1573,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 62	TRAVELRES66	TRAVELRES66	target_condition	antibiotic resistance; extended-spectrum beta-lactamase (ESBL)-producing enterobacteria; gut microbiome composition	Intestinal Flora			TP_wrong
 62	TRAVELRES66	TRAVELRES66	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 62	TRAVELRES66	TRAVELRES66	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-62	TRAVELRES66	TRAVELRES66	host_species	Human	Homo sapiens			TP_wrong
+62	TRAVELRES66	TRAVELRES66	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 63	TRAVELRES67	TRAVELRES67	subject_id		TRAVELRES67_68			FN
 63	TRAVELRES67	TRAVELRES67	sample_id	TRAVELRES67	TRAVELRES67			TP_correct
 63	TRAVELRES67	TRAVELRES67	control		Study Control			FN
@@ -1598,7 +1598,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 63	TRAVELRES67	TRAVELRES67	target_condition	antibiotic resistance; extended-spectrum beta-lactamase (ESBL)-producing enterobacteria; gut microbiome composition	Intestinal Flora			TP_wrong
 63	TRAVELRES67	TRAVELRES67	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 63	TRAVELRES67	TRAVELRES67	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-63	TRAVELRES67	TRAVELRES67	host_species	Human	Homo sapiens			TP_wrong
+63	TRAVELRES67	TRAVELRES67	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 64	TRAVELRES68	TRAVELRES68	subject_id		TRAVELRES67_68			FN
 64	TRAVELRES68	TRAVELRES68	sample_id	TRAVELRES68	TRAVELRES68			TP_correct
 64	TRAVELRES68	TRAVELRES68	control		Study Control			FN
@@ -1623,7 +1623,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 64	TRAVELRES68	TRAVELRES68	target_condition	antibiotic resistance; extended-spectrum beta-lactamase (ESBL)-producing enterobacteria; gut microbiome composition	Intestinal Flora			TP_wrong
 64	TRAVELRES68	TRAVELRES68	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 64	TRAVELRES68	TRAVELRES68	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-64	TRAVELRES68	TRAVELRES68	host_species	Human	Homo sapiens			TP_wrong
+64	TRAVELRES68	TRAVELRES68	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 65	TRAVELRES69	TRAVELRES69	subject_id		TRAVELRES69_70			FN
 65	TRAVELRES69	TRAVELRES69	sample_id	TRAVELRES69	TRAVELRES69			TP_correct
 65	TRAVELRES69	TRAVELRES69	control		Study Control			FN
@@ -1648,7 +1648,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 65	TRAVELRES69	TRAVELRES69	target_condition	antibiotic resistance; extended-spectrum beta-lactamase (ESBL)-producing enterobacteria; gut microbiome composition	Intestinal Flora			TP_wrong
 65	TRAVELRES69	TRAVELRES69	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 65	TRAVELRES69	TRAVELRES69	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-65	TRAVELRES69	TRAVELRES69	host_species	Human	Homo sapiens			TP_wrong
+65	TRAVELRES69	TRAVELRES69	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 66	TRAVELRES7	TRAVELRES7	subject_id		TRAVELRES7_8			FN
 66	TRAVELRES7	TRAVELRES7	sample_id	TRAVELRES7	TRAVELRES7			TP_correct
 66	TRAVELRES7	TRAVELRES7	control		Study Control			FN
@@ -1673,7 +1673,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 66	TRAVELRES7	TRAVELRES7	target_condition	antibiotic resistance; extended-spectrum beta-lactamase (ESBL)-producing enterobacteria; gut microbiome composition	Intestinal Flora			TP_wrong
 66	TRAVELRES7	TRAVELRES7	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 66	TRAVELRES7	TRAVELRES7	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-66	TRAVELRES7	TRAVELRES7	host_species	Human	Homo sapiens			TP_wrong
+66	TRAVELRES7	TRAVELRES7	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 67	TRAVELRES70	TRAVELRES70	subject_id		TRAVELRES69_70			FN
 67	TRAVELRES70	TRAVELRES70	sample_id	TRAVELRES70	TRAVELRES70			TP_correct
 67	TRAVELRES70	TRAVELRES70	control		Study Control			FN
@@ -1698,7 +1698,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 67	TRAVELRES70	TRAVELRES70	target_condition	antibiotic resistance; extended-spectrum beta-lactamase (ESBL)-producing enterobacteria; gut microbiome composition	Intestinal Flora			TP_wrong
 67	TRAVELRES70	TRAVELRES70	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 67	TRAVELRES70	TRAVELRES70	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-67	TRAVELRES70	TRAVELRES70	host_species	Human	Homo sapiens			TP_wrong
+67	TRAVELRES70	TRAVELRES70	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 68	TRAVELRES8	TRAVELRES8	subject_id		TRAVELRES7_8			FN
 68	TRAVELRES8	TRAVELRES8	sample_id	TRAVELRES8	TRAVELRES8			TP_correct
 68	TRAVELRES8	TRAVELRES8	control		Study Control			FN
@@ -1723,7 +1723,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 68	TRAVELRES8	TRAVELRES8	target_condition	antibiotic resistance; extended-spectrum beta-lactamase (ESBL)-producing enterobacteria; gut microbiome composition	Intestinal Flora			TP_wrong
 68	TRAVELRES8	TRAVELRES8	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 68	TRAVELRES8	TRAVELRES8	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-68	TRAVELRES8	TRAVELRES8	host_species	Human	Homo sapiens			TP_wrong
+68	TRAVELRES8	TRAVELRES8	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 69	TRAVELRES9	TRAVELRES9	subject_id		TRAVELRES9_10			FN
 69	TRAVELRES9	TRAVELRES9	sample_id	TRAVELRES9	TRAVELRES9			TP_correct
 69	TRAVELRES9	TRAVELRES9	control		Study Control			FN
@@ -1748,4 +1748,4 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 69	TRAVELRES9	TRAVELRES9	target_condition	antibiotic resistance; extended-spectrum beta-lactamase (ESBL)-producing enterobacteria; gut microbiome composition	Intestinal Flora			TP_wrong
 69	TRAVELRES9	TRAVELRES9	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 69	TRAVELRES9	TRAVELRES9	sequencing_platform	Illumina HiSeq 2000	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-69	TRAVELRES9	TRAVELRES9	host_species	Human	Homo sapiens			TP_wrong
+69	TRAVELRES9	TRAVELRES9	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct

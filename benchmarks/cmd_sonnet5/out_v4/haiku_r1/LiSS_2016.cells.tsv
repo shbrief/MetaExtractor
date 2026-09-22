@@ -21,7 +21,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 0		FAT_006-22-0-0	pmid		27126044			FN
 0		FAT_006-22-0-0	target_condition		Metabolic Syndrome			FN
 0		FAT_006-22-0-0	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-0		FAT_006-22-0-0	host_species		Homo sapiens			FN
+0		FAT_006-22-0-0	host_species		Homo sapiens		NCIT:C14225	FN
 1		FAT_006-22-14-0	subject_id		FAT_006			FN
 1		FAT_006-22-14-0	sample_id		FAT_006-22-14-0			FN
 1		FAT_006-22-14-0	control		Case			FN
@@ -44,7 +44,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 1		FAT_006-22-14-0	pmid		27126044			FN
 1		FAT_006-22-14-0	target_condition		Metabolic Syndrome			FN
 1		FAT_006-22-14-0	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-1		FAT_006-22-14-0	host_species		Homo sapiens			FN
+1		FAT_006-22-14-0	host_species		Homo sapiens		NCIT:C14225	FN
 2		FAT_006-22-2-0	subject_id		FAT_006			FN
 2		FAT_006-22-2-0	sample_id		FAT_006-22-2-0			FN
 2		FAT_006-22-2-0	control		Case			FN
@@ -67,7 +67,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 2		FAT_006-22-2-0	pmid		27126044			FN
 2		FAT_006-22-2-0	target_condition		Metabolic Syndrome			FN
 2		FAT_006-22-2-0	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-2		FAT_006-22-2-0	host_species		Homo sapiens			FN
+2		FAT_006-22-2-0	host_species		Homo sapiens		NCIT:C14225	FN
 3		FAT_006-22-42-0	subject_id		FAT_006			FN
 3		FAT_006-22-42-0	sample_id		FAT_006-22-42-0			FN
 3		FAT_006-22-42-0	control		Case			FN
@@ -90,7 +90,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 3		FAT_006-22-42-0	pmid		27126044			FN
 3		FAT_006-22-42-0	target_condition		Metabolic Syndrome			FN
 3		FAT_006-22-42-0	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-3		FAT_006-22-42-0	host_species		Homo sapiens			FN
+3		FAT_006-22-42-0	host_species		Homo sapiens		NCIT:C14225	FN
 4		FAT_006-22-84-0	subject_id		FAT_006			FN
 4		FAT_006-22-84-0	sample_id		FAT_006-22-84-0			FN
 4		FAT_006-22-84-0	control		Case			FN
@@ -113,7 +113,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 4		FAT_006-22-84-0	pmid		27126044			FN
 4		FAT_006-22-84-0	target_condition		Metabolic Syndrome			FN
 4		FAT_006-22-84-0	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-4		FAT_006-22-84-0	host_species		Homo sapiens			FN
+4		FAT_006-22-84-0	host_species		Homo sapiens		NCIT:C14225	FN
 5		FAT_008-22-0-0	subject_id		FAT_008			FN
 5		FAT_008-22-0-0	sample_id		FAT_008-22-0-0			FN
 5		FAT_008-22-0-0	control		Case			FN
@@ -136,7 +136,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 5		FAT_008-22-0-0	pmid		27126044			FN
 5		FAT_008-22-0-0	target_condition		Metabolic Syndrome			FN
 5		FAT_008-22-0-0	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-5		FAT_008-22-0-0	host_species		Homo sapiens			FN
+5		FAT_008-22-0-0	host_species		Homo sapiens		NCIT:C14225	FN
 6		FAT_008-22-14-0	subject_id		FAT_008			FN
 6		FAT_008-22-14-0	sample_id		FAT_008-22-14-0			FN
 6		FAT_008-22-14-0	control		Case			FN
@@ -159,7 +159,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 6		FAT_008-22-14-0	pmid		27126044			FN
 6		FAT_008-22-14-0	target_condition		Metabolic Syndrome			FN
 6		FAT_008-22-14-0	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-6		FAT_008-22-14-0	host_species		Homo sapiens			FN
+6		FAT_008-22-14-0	host_species		Homo sapiens		NCIT:C14225	FN
 7		FAT_008-22-2-0	subject_id		FAT_008			FN
 7		FAT_008-22-2-0	sample_id		FAT_008-22-2-0			FN
 7		FAT_008-22-2-0	control		Case			FN
@@ -182,7 +182,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 7		FAT_008-22-2-0	pmid		27126044			FN
 7		FAT_008-22-2-0	target_condition		Metabolic Syndrome			FN
 7		FAT_008-22-2-0	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-7		FAT_008-22-2-0	host_species		Homo sapiens			FN
+7		FAT_008-22-2-0	host_species		Homo sapiens		NCIT:C14225	FN
 8		FAT_008-22-42-0	subject_id		FAT_008			FN
 8		FAT_008-22-42-0	sample_id		FAT_008-22-42-0			FN
 8		FAT_008-22-42-0	control		Case			FN
@@ -205,7 +205,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 8		FAT_008-22-42-0	pmid		27126044			FN
 8		FAT_008-22-42-0	target_condition		Metabolic Syndrome			FN
 8		FAT_008-22-42-0	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-8		FAT_008-22-42-0	host_species		Homo sapiens			FN
+8		FAT_008-22-42-0	host_species		Homo sapiens		NCIT:C14225	FN
 9		FAT_008-22-84-0	subject_id		FAT_008			FN
 9		FAT_008-22-84-0	sample_id		FAT_008-22-84-0			FN
 9		FAT_008-22-84-0	control		Case			FN
@@ -228,7 +228,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 9		FAT_008-22-84-0	pmid		27126044			FN
 9		FAT_008-22-84-0	target_condition		Metabolic Syndrome			FN
 9		FAT_008-22-84-0	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-9		FAT_008-22-84-0	host_species		Homo sapiens			FN
+9		FAT_008-22-84-0	host_species		Homo sapiens		NCIT:C14225	FN
 10		FAT_010-22-0-0	subject_id		FAT_010			FN
 10		FAT_010-22-0-0	sample_id		FAT_010-22-0-0			FN
 10		FAT_010-22-0-0	control		Case			FN
@@ -251,7 +251,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 10		FAT_010-22-0-0	pmid		27126044			FN
 10		FAT_010-22-0-0	target_condition		Metabolic Syndrome			FN
 10		FAT_010-22-0-0	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-10		FAT_010-22-0-0	host_species		Homo sapiens			FN
+10		FAT_010-22-0-0	host_species		Homo sapiens		NCIT:C14225	FN
 11		FAT_010-22-14-0	subject_id		FAT_010			FN
 11		FAT_010-22-14-0	sample_id		FAT_010-22-14-0			FN
 11		FAT_010-22-14-0	control		Case			FN
@@ -274,7 +274,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 11		FAT_010-22-14-0	pmid		27126044			FN
 11		FAT_010-22-14-0	target_condition		Metabolic Syndrome			FN
 11		FAT_010-22-14-0	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-11		FAT_010-22-14-0	host_species		Homo sapiens			FN
+11		FAT_010-22-14-0	host_species		Homo sapiens		NCIT:C14225	FN
 12		FAT_010-22-2-0	subject_id		FAT_010			FN
 12		FAT_010-22-2-0	sample_id		FAT_010-22-2-0			FN
 12		FAT_010-22-2-0	control		Case			FN
@@ -297,7 +297,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 12		FAT_010-22-2-0	pmid		27126044			FN
 12		FAT_010-22-2-0	target_condition		Metabolic Syndrome			FN
 12		FAT_010-22-2-0	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-12		FAT_010-22-2-0	host_species		Homo sapiens			FN
+12		FAT_010-22-2-0	host_species		Homo sapiens		NCIT:C14225	FN
 13		FAT_010-22-42-0	subject_id		FAT_010			FN
 13		FAT_010-22-42-0	sample_id		FAT_010-22-42-0			FN
 13		FAT_010-22-42-0	control		Case			FN
@@ -320,7 +320,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 13		FAT_010-22-42-0	pmid		27126044			FN
 13		FAT_010-22-42-0	target_condition		Metabolic Syndrome			FN
 13		FAT_010-22-42-0	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-13		FAT_010-22-42-0	host_species		Homo sapiens			FN
+13		FAT_010-22-42-0	host_species		Homo sapiens		NCIT:C14225	FN
 14		FAT_010-22-84-0	subject_id		FAT_010			FN
 14		FAT_010-22-84-0	sample_id		FAT_010-22-84-0			FN
 14		FAT_010-22-84-0	control		Case			FN
@@ -343,7 +343,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 14		FAT_010-22-84-0	pmid		27126044			FN
 14		FAT_010-22-84-0	target_condition		Metabolic Syndrome			FN
 14		FAT_010-22-84-0	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-14		FAT_010-22-84-0	host_species		Homo sapiens			FN
+14		FAT_010-22-84-0	host_species		Homo sapiens		NCIT:C14225	FN
 15		FAT_012-22-0-0	subject_id		FAT_012			FN
 15		FAT_012-22-0-0	sample_id		FAT_012-22-0-0			FN
 15		FAT_012-22-0-0	control		Case			FN
@@ -366,7 +366,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 15		FAT_012-22-0-0	pmid		27126044			FN
 15		FAT_012-22-0-0	target_condition		Metabolic Syndrome			FN
 15		FAT_012-22-0-0	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-15		FAT_012-22-0-0	host_species		Homo sapiens			FN
+15		FAT_012-22-0-0	host_species		Homo sapiens		NCIT:C14225	FN
 16		FAT_012-22-14-0	subject_id		FAT_012			FN
 16		FAT_012-22-14-0	sample_id		FAT_012-22-14-0			FN
 16		FAT_012-22-14-0	control		Case			FN
@@ -389,7 +389,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 16		FAT_012-22-14-0	pmid		27126044			FN
 16		FAT_012-22-14-0	target_condition		Metabolic Syndrome			FN
 16		FAT_012-22-14-0	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-16		FAT_012-22-14-0	host_species		Homo sapiens			FN
+16		FAT_012-22-14-0	host_species		Homo sapiens		NCIT:C14225	FN
 17		FAT_012-22-2-0	subject_id		FAT_012			FN
 17		FAT_012-22-2-0	sample_id		FAT_012-22-2-0			FN
 17		FAT_012-22-2-0	control		Case			FN
@@ -412,7 +412,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 17		FAT_012-22-2-0	pmid		27126044			FN
 17		FAT_012-22-2-0	target_condition		Metabolic Syndrome			FN
 17		FAT_012-22-2-0	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-17		FAT_012-22-2-0	host_species		Homo sapiens			FN
+17		FAT_012-22-2-0	host_species		Homo sapiens		NCIT:C14225	FN
 18		FAT_012-22-42-0	subject_id		FAT_012			FN
 18		FAT_012-22-42-0	sample_id		FAT_012-22-42-0			FN
 18		FAT_012-22-42-0	control		Case			FN
@@ -435,7 +435,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 18		FAT_012-22-42-0	pmid		27126044			FN
 18		FAT_012-22-42-0	target_condition		Metabolic Syndrome			FN
 18		FAT_012-22-42-0	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-18		FAT_012-22-42-0	host_species		Homo sapiens			FN
+18		FAT_012-22-42-0	host_species		Homo sapiens		NCIT:C14225	FN
 19		FAT_012-22-84-0	subject_id		FAT_012			FN
 19		FAT_012-22-84-0	sample_id		FAT_012-22-84-0			FN
 19		FAT_012-22-84-0	control		Case			FN
@@ -458,7 +458,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 19		FAT_012-22-84-0	pmid		27126044			FN
 19		FAT_012-22-84-0	target_condition		Metabolic Syndrome			FN
 19		FAT_012-22-84-0	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-19		FAT_012-22-84-0	host_species		Homo sapiens			FN
+19		FAT_012-22-84-0	host_species		Homo sapiens		NCIT:C14225	FN
 20		FAT_014-22-0-0	subject_id		FAT_014			FN
 20		FAT_014-22-0-0	sample_id		FAT_014-22-0-0			FN
 20		FAT_014-22-0-0	control		Case			FN
@@ -481,7 +481,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 20		FAT_014-22-0-0	pmid		27126044			FN
 20		FAT_014-22-0-0	target_condition		Metabolic Syndrome			FN
 20		FAT_014-22-0-0	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-20		FAT_014-22-0-0	host_species		Homo sapiens			FN
+20		FAT_014-22-0-0	host_species		Homo sapiens		NCIT:C14225	FN
 21		FAT_014-22-14-0	subject_id		FAT_014			FN
 21		FAT_014-22-14-0	sample_id		FAT_014-22-14-0			FN
 21		FAT_014-22-14-0	control		Case			FN
@@ -504,7 +504,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 21		FAT_014-22-14-0	pmid		27126044			FN
 21		FAT_014-22-14-0	target_condition		Metabolic Syndrome			FN
 21		FAT_014-22-14-0	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-21		FAT_014-22-14-0	host_species		Homo sapiens			FN
+21		FAT_014-22-14-0	host_species		Homo sapiens		NCIT:C14225	FN
 22		FAT_014-22-2-0	subject_id		FAT_014			FN
 22		FAT_014-22-2-0	sample_id		FAT_014-22-2-0			FN
 22		FAT_014-22-2-0	control		Case			FN
@@ -527,7 +527,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 22		FAT_014-22-2-0	pmid		27126044			FN
 22		FAT_014-22-2-0	target_condition		Metabolic Syndrome			FN
 22		FAT_014-22-2-0	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-22		FAT_014-22-2-0	host_species		Homo sapiens			FN
+22		FAT_014-22-2-0	host_species		Homo sapiens		NCIT:C14225	FN
 23		FAT_014-22-42-0	subject_id		FAT_014			FN
 23		FAT_014-22-42-0	sample_id		FAT_014-22-42-0			FN
 23		FAT_014-22-42-0	control		Case			FN
@@ -550,7 +550,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 23		FAT_014-22-42-0	pmid		27126044			FN
 23		FAT_014-22-42-0	target_condition		Metabolic Syndrome			FN
 23		FAT_014-22-42-0	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-23		FAT_014-22-42-0	host_species		Homo sapiens			FN
+23		FAT_014-22-42-0	host_species		Homo sapiens		NCIT:C14225	FN
 24		FAT_014-22-84-0	subject_id		FAT_014			FN
 24		FAT_014-22-84-0	sample_id		FAT_014-22-84-0			FN
 24		FAT_014-22-84-0	control		Case			FN
@@ -573,7 +573,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 24		FAT_014-22-84-0	pmid		27126044			FN
 24		FAT_014-22-84-0	target_condition		Metabolic Syndrome			FN
 24		FAT_014-22-84-0	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-24		FAT_014-22-84-0	host_species		Homo sapiens			FN
+24		FAT_014-22-84-0	host_species		Homo sapiens		NCIT:C14225	FN
 25		FAT_015-22-0-0	subject_id		FAT_015			FN
 25		FAT_015-22-0-0	sample_id		FAT_015-22-0-0			FN
 25		FAT_015-22-0-0	control		Case			FN
@@ -596,7 +596,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 25		FAT_015-22-0-0	pmid		27126044			FN
 25		FAT_015-22-0-0	target_condition		Metabolic Syndrome			FN
 25		FAT_015-22-0-0	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-25		FAT_015-22-0-0	host_species		Homo sapiens			FN
+25		FAT_015-22-0-0	host_species		Homo sapiens		NCIT:C14225	FN
 26		FAT_015-22-14-0	subject_id		FAT_015			FN
 26		FAT_015-22-14-0	sample_id		FAT_015-22-14-0			FN
 26		FAT_015-22-14-0	control		Case			FN
@@ -619,7 +619,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 26		FAT_015-22-14-0	pmid		27126044			FN
 26		FAT_015-22-14-0	target_condition		Metabolic Syndrome			FN
 26		FAT_015-22-14-0	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-26		FAT_015-22-14-0	host_species		Homo sapiens			FN
+26		FAT_015-22-14-0	host_species		Homo sapiens		NCIT:C14225	FN
 27		FAT_015-22-2-0	subject_id		FAT_015			FN
 27		FAT_015-22-2-0	sample_id		FAT_015-22-2-0			FN
 27		FAT_015-22-2-0	control		Case			FN
@@ -642,7 +642,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 27		FAT_015-22-2-0	pmid		27126044			FN
 27		FAT_015-22-2-0	target_condition		Metabolic Syndrome			FN
 27		FAT_015-22-2-0	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-27		FAT_015-22-2-0	host_species		Homo sapiens			FN
+27		FAT_015-22-2-0	host_species		Homo sapiens		NCIT:C14225	FN
 28		FAT_015-22-42-0	subject_id		FAT_015			FN
 28		FAT_015-22-42-0	sample_id		FAT_015-22-42-0			FN
 28		FAT_015-22-42-0	control		Case			FN
@@ -665,7 +665,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 28		FAT_015-22-42-0	pmid		27126044			FN
 28		FAT_015-22-42-0	target_condition		Metabolic Syndrome			FN
 28		FAT_015-22-42-0	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-28		FAT_015-22-42-0	host_species		Homo sapiens			FN
+28		FAT_015-22-42-0	host_species		Homo sapiens		NCIT:C14225	FN
 29		FAT_015-22-84-0	subject_id		FAT_015			FN
 29		FAT_015-22-84-0	sample_id		FAT_015-22-84-0			FN
 29		FAT_015-22-84-0	control		Case			FN
@@ -688,7 +688,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 29		FAT_015-22-84-0	pmid		27126044			FN
 29		FAT_015-22-84-0	target_condition		Metabolic Syndrome			FN
 29		FAT_015-22-84-0	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-29		FAT_015-22-84-0	host_species		Homo sapiens			FN
+29		FAT_015-22-84-0	host_species		Homo sapiens		NCIT:C14225	FN
 30		FAT_017-22-0-0	subject_id		FAT_017			FN
 30		FAT_017-22-0-0	sample_id		FAT_017-22-0-0			FN
 30		FAT_017-22-0-0	control		Case			FN
@@ -711,7 +711,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 30		FAT_017-22-0-0	pmid		27126044			FN
 30		FAT_017-22-0-0	target_condition		Metabolic Syndrome			FN
 30		FAT_017-22-0-0	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-30		FAT_017-22-0-0	host_species		Homo sapiens			FN
+30		FAT_017-22-0-0	host_species		Homo sapiens		NCIT:C14225	FN
 31		FAT_017-22-14-0	subject_id		FAT_017			FN
 31		FAT_017-22-14-0	sample_id		FAT_017-22-14-0			FN
 31		FAT_017-22-14-0	control		Case			FN
@@ -734,7 +734,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 31		FAT_017-22-14-0	pmid		27126044			FN
 31		FAT_017-22-14-0	target_condition		Metabolic Syndrome			FN
 31		FAT_017-22-14-0	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-31		FAT_017-22-14-0	host_species		Homo sapiens			FN
+31		FAT_017-22-14-0	host_species		Homo sapiens		NCIT:C14225	FN
 32		FAT_017-22-2-0	subject_id		FAT_017			FN
 32		FAT_017-22-2-0	sample_id		FAT_017-22-2-0			FN
 32		FAT_017-22-2-0	control		Case			FN
@@ -757,7 +757,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 32		FAT_017-22-2-0	pmid		27126044			FN
 32		FAT_017-22-2-0	target_condition		Metabolic Syndrome			FN
 32		FAT_017-22-2-0	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-32		FAT_017-22-2-0	host_species		Homo sapiens			FN
+32		FAT_017-22-2-0	host_species		Homo sapiens		NCIT:C14225	FN
 33		FAT_017-22-42-0	subject_id		FAT_017			FN
 33		FAT_017-22-42-0	sample_id		FAT_017-22-42-0			FN
 33		FAT_017-22-42-0	control		Case			FN
@@ -780,7 +780,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 33		FAT_017-22-42-0	pmid		27126044			FN
 33		FAT_017-22-42-0	target_condition		Metabolic Syndrome			FN
 33		FAT_017-22-42-0	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-33		FAT_017-22-42-0	host_species		Homo sapiens			FN
+33		FAT_017-22-42-0	host_species		Homo sapiens		NCIT:C14225	FN
 34		FAT_017-22-84-0	subject_id		FAT_017			FN
 34		FAT_017-22-84-0	sample_id		FAT_017-22-84-0			FN
 34		FAT_017-22-84-0	control		Case			FN
@@ -803,7 +803,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 34		FAT_017-22-84-0	pmid		27126044			FN
 34		FAT_017-22-84-0	target_condition		Metabolic Syndrome			FN
 34		FAT_017-22-84-0	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-34		FAT_017-22-84-0	host_species		Homo sapiens			FN
+34		FAT_017-22-84-0	host_species		Homo sapiens		NCIT:C14225	FN
 35		FAT_020-22-0-0	subject_id		FAT_020			FN
 35		FAT_020-22-0-0	sample_id		FAT_020-22-0-0			FN
 35		FAT_020-22-0-0	control		Case			FN
@@ -826,7 +826,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 35		FAT_020-22-0-0	pmid		27126044			FN
 35		FAT_020-22-0-0	target_condition		Metabolic Syndrome			FN
 35		FAT_020-22-0-0	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-35		FAT_020-22-0-0	host_species		Homo sapiens			FN
+35		FAT_020-22-0-0	host_species		Homo sapiens		NCIT:C14225	FN
 36		FAT_020-22-14-0	subject_id		FAT_020			FN
 36		FAT_020-22-14-0	sample_id		FAT_020-22-14-0			FN
 36		FAT_020-22-14-0	control		Case			FN
@@ -849,7 +849,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 36		FAT_020-22-14-0	pmid		27126044			FN
 36		FAT_020-22-14-0	target_condition		Metabolic Syndrome			FN
 36		FAT_020-22-14-0	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-36		FAT_020-22-14-0	host_species		Homo sapiens			FN
+36		FAT_020-22-14-0	host_species		Homo sapiens		NCIT:C14225	FN
 37		FAT_020-22-2-0	subject_id		FAT_020			FN
 37		FAT_020-22-2-0	sample_id		FAT_020-22-2-0			FN
 37		FAT_020-22-2-0	control		Case			FN
@@ -872,7 +872,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 37		FAT_020-22-2-0	pmid		27126044			FN
 37		FAT_020-22-2-0	target_condition		Metabolic Syndrome			FN
 37		FAT_020-22-2-0	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-37		FAT_020-22-2-0	host_species		Homo sapiens			FN
+37		FAT_020-22-2-0	host_species		Homo sapiens		NCIT:C14225	FN
 38		FAT_020-22-42-0	subject_id		FAT_020			FN
 38		FAT_020-22-42-0	sample_id		FAT_020-22-42-0			FN
 38		FAT_020-22-42-0	control		Case			FN
@@ -895,7 +895,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 38		FAT_020-22-42-0	pmid		27126044			FN
 38		FAT_020-22-42-0	target_condition		Metabolic Syndrome			FN
 38		FAT_020-22-42-0	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-38		FAT_020-22-42-0	host_species		Homo sapiens			FN
+38		FAT_020-22-42-0	host_species		Homo sapiens		NCIT:C14225	FN
 39		FAT_020-22-84-0	subject_id		FAT_020			FN
 39		FAT_020-22-84-0	sample_id		FAT_020-22-84-0			FN
 39		FAT_020-22-84-0	control		Case			FN
@@ -918,7 +918,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 39		FAT_020-22-84-0	pmid		27126044			FN
 39		FAT_020-22-84-0	target_condition		Metabolic Syndrome			FN
 39		FAT_020-22-84-0	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-39		FAT_020-22-84-0	host_species		Homo sapiens			FN
+39		FAT_020-22-84-0	host_species		Homo sapiens		NCIT:C14225	FN
 40		FAT_023-22-0-0	subject_id		FAT_023			FN
 40		FAT_023-22-0-0	sample_id		FAT_023-22-0-0			FN
 40		FAT_023-22-0-0	control		Case			FN
@@ -941,7 +941,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 40		FAT_023-22-0-0	pmid		27126044			FN
 40		FAT_023-22-0-0	target_condition		Metabolic Syndrome			FN
 40		FAT_023-22-0-0	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-40		FAT_023-22-0-0	host_species		Homo sapiens			FN
+40		FAT_023-22-0-0	host_species		Homo sapiens		NCIT:C14225	FN
 41		FAT_023-22-14-0	subject_id		FAT_023			FN
 41		FAT_023-22-14-0	sample_id		FAT_023-22-14-0			FN
 41		FAT_023-22-14-0	control		Case			FN
@@ -964,7 +964,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 41		FAT_023-22-14-0	pmid		27126044			FN
 41		FAT_023-22-14-0	target_condition		Metabolic Syndrome			FN
 41		FAT_023-22-14-0	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-41		FAT_023-22-14-0	host_species		Homo sapiens			FN
+41		FAT_023-22-14-0	host_species		Homo sapiens		NCIT:C14225	FN
 42		FAT_023-22-2-0	subject_id		FAT_023			FN
 42		FAT_023-22-2-0	sample_id		FAT_023-22-2-0			FN
 42		FAT_023-22-2-0	control		Case			FN
@@ -987,7 +987,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 42		FAT_023-22-2-0	pmid		27126044			FN
 42		FAT_023-22-2-0	target_condition		Metabolic Syndrome			FN
 42		FAT_023-22-2-0	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-42		FAT_023-22-2-0	host_species		Homo sapiens			FN
+42		FAT_023-22-2-0	host_species		Homo sapiens		NCIT:C14225	FN
 43		FAT_023-22-42-0	subject_id		FAT_023			FN
 43		FAT_023-22-42-0	sample_id		FAT_023-22-42-0			FN
 43		FAT_023-22-42-0	control		Case			FN
@@ -1010,7 +1010,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 43		FAT_023-22-42-0	pmid		27126044			FN
 43		FAT_023-22-42-0	target_condition		Metabolic Syndrome			FN
 43		FAT_023-22-42-0	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-43		FAT_023-22-42-0	host_species		Homo sapiens			FN
+43		FAT_023-22-42-0	host_species		Homo sapiens		NCIT:C14225	FN
 44		FAT_023-22-84-0	subject_id		FAT_023			FN
 44		FAT_023-22-84-0	sample_id		FAT_023-22-84-0			FN
 44		FAT_023-22-84-0	control		Case			FN
@@ -1033,7 +1033,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 44		FAT_023-22-84-0	pmid		27126044			FN
 44		FAT_023-22-84-0	target_condition		Metabolic Syndrome			FN
 44		FAT_023-22-84-0	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-44		FAT_023-22-84-0	host_species		Homo sapiens			FN
+44		FAT_023-22-84-0	host_species		Homo sapiens		NCIT:C14225	FN
 45		FAT_024-22-0-0	subject_id		FAT_024			FN
 45		FAT_024-22-0-0	sample_id		FAT_024-22-0-0			FN
 45		FAT_024-22-0-0	control		Case			FN
@@ -1056,7 +1056,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 45		FAT_024-22-0-0	pmid		27126044			FN
 45		FAT_024-22-0-0	target_condition		Metabolic Syndrome			FN
 45		FAT_024-22-0-0	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-45		FAT_024-22-0-0	host_species		Homo sapiens			FN
+45		FAT_024-22-0-0	host_species		Homo sapiens		NCIT:C14225	FN
 46		FAT_024-22-14-0	subject_id		FAT_024			FN
 46		FAT_024-22-14-0	sample_id		FAT_024-22-14-0			FN
 46		FAT_024-22-14-0	control		Case			FN
@@ -1079,7 +1079,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 46		FAT_024-22-14-0	pmid		27126044			FN
 46		FAT_024-22-14-0	target_condition		Metabolic Syndrome			FN
 46		FAT_024-22-14-0	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-46		FAT_024-22-14-0	host_species		Homo sapiens			FN
+46		FAT_024-22-14-0	host_species		Homo sapiens		NCIT:C14225	FN
 47		FAT_024-22-2-0	subject_id		FAT_024			FN
 47		FAT_024-22-2-0	sample_id		FAT_024-22-2-0			FN
 47		FAT_024-22-2-0	control		Case			FN
@@ -1102,7 +1102,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 47		FAT_024-22-2-0	pmid		27126044			FN
 47		FAT_024-22-2-0	target_condition		Metabolic Syndrome			FN
 47		FAT_024-22-2-0	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-47		FAT_024-22-2-0	host_species		Homo sapiens			FN
+47		FAT_024-22-2-0	host_species		Homo sapiens		NCIT:C14225	FN
 48		FAT_024-22-42-0	subject_id		FAT_024			FN
 48		FAT_024-22-42-0	sample_id		FAT_024-22-42-0			FN
 48		FAT_024-22-42-0	control		Case			FN
@@ -1125,7 +1125,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 48		FAT_024-22-42-0	pmid		27126044			FN
 48		FAT_024-22-42-0	target_condition		Metabolic Syndrome			FN
 48		FAT_024-22-42-0	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-48		FAT_024-22-42-0	host_species		Homo sapiens			FN
+48		FAT_024-22-42-0	host_species		Homo sapiens		NCIT:C14225	FN
 49		FAT_024-22-84-0	subject_id		FAT_024			FN
 49		FAT_024-22-84-0	sample_id		FAT_024-22-84-0			FN
 49		FAT_024-22-84-0	control		Case			FN
@@ -1148,7 +1148,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 49		FAT_024-22-84-0	pmid		27126044			FN
 49		FAT_024-22-84-0	target_condition		Metabolic Syndrome			FN
 49		FAT_024-22-84-0	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-49		FAT_024-22-84-0	host_species		Homo sapiens			FN
+49		FAT_024-22-84-0	host_species		Homo sapiens		NCIT:C14225	FN
 50		FAT_DON_11-22-0-4	subject_id		FAT_DON_11_4			FN
 50		FAT_DON_11-22-0-4	sample_id		FAT_DON_11-22-0-4			FN
 50		FAT_DON_11-22-0-4	control		Study Control			FN
@@ -1171,7 +1171,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 50		FAT_DON_11-22-0-4	pmid		27126044			FN
 50		FAT_DON_11-22-0-4	target_condition		Metabolic Syndrome			FN
 50		FAT_DON_11-22-0-4	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-50		FAT_DON_11-22-0-4	host_species		Homo sapiens			FN
+50		FAT_DON_11-22-0-4	host_species		Homo sapiens		NCIT:C14225	FN
 51		FAT_DON_11-22-0-5	subject_id		FAT_DON_11_5			FN
 51		FAT_DON_11-22-0-5	sample_id		FAT_DON_11-22-0-5			FN
 51		FAT_DON_11-22-0-5	control		Study Control			FN
@@ -1194,7 +1194,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 51		FAT_DON_11-22-0-5	pmid		27126044			FN
 51		FAT_DON_11-22-0-5	target_condition		Metabolic Syndrome			FN
 51		FAT_DON_11-22-0-5	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-51		FAT_DON_11-22-0-5	host_species		Homo sapiens			FN
+51		FAT_DON_11-22-0-5	host_species		Homo sapiens		NCIT:C14225	FN
 52		FAT_DON_11-22-0-6	subject_id		FAT_DON_11_6			FN
 52		FAT_DON_11-22-0-6	sample_id		FAT_DON_11-22-0-6			FN
 52		FAT_DON_11-22-0-6	control		Study Control			FN
@@ -1217,7 +1217,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 52		FAT_DON_11-22-0-6	pmid		27126044			FN
 52		FAT_DON_11-22-0-6	target_condition		Metabolic Syndrome			FN
 52		FAT_DON_11-22-0-6	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-52		FAT_DON_11-22-0-6	host_species		Homo sapiens			FN
+52		FAT_DON_11-22-0-6	host_species		Homo sapiens		NCIT:C14225	FN
 53		FAT_DON_19-22-0-0	subject_id		FAT_DON_19			FN
 53		FAT_DON_19-22-0-0	sample_id		FAT_DON_19-22-0-0			FN
 53		FAT_DON_19-22-0-0	control		Study Control			FN
@@ -1240,7 +1240,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 53		FAT_DON_19-22-0-0	pmid		27126044			FN
 53		FAT_DON_19-22-0-0	target_condition		Metabolic Syndrome			FN
 53		FAT_DON_19-22-0-0	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-53		FAT_DON_19-22-0-0	host_species		Homo sapiens			FN
+53		FAT_DON_19-22-0-0	host_species		Homo sapiens		NCIT:C14225	FN
 54		FAT_DON_8-22-0-0	subject_id		FAT_DON_8			FN
 54		FAT_DON_8-22-0-0	sample_id		FAT_DON_8-22-0-0			FN
 54		FAT_DON_8-22-0-0	control		Study Control			FN
@@ -1263,4 +1263,4 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 54		FAT_DON_8-22-0-0	pmid		27126044			FN
 54		FAT_DON_8-22-0-0	target_condition		Metabolic Syndrome			FN
 54		FAT_DON_8-22-0-0	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-54		FAT_DON_8-22-0-0	host_species		Homo sapiens			FN
+54		FAT_DON_8-22-0-0	host_species		Homo sapiens		NCIT:C14225	FN

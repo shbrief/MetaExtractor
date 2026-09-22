@@ -1,6 +1,6 @@
 # MetaExtractor × curatedMetagenomicData — evaluation
 
-Run dir: `sonnet_r3`. Gold: cMD `*_sample.tsv`. Content fields, micro-averaged. Values compared after harmonization; harmonized fields: body_site, disease, dna_extraction_kit, sequencing_platform, treatment (other fields as extracted).
+Run dir: `sonnet_r3`. Gold: cMD `*_sample.tsv`. Content fields, micro-averaged. Values compared after harmonization; harmonized fields: body_site, disease, dna_extraction_kit, host_species, sequencing_platform, treatment (other fields as extracted).
 
 | score | precision | recall | F1 | TPc | TPw | FN | FP |
 |---|--:|--:|--:|--:|--:|--:|--:|

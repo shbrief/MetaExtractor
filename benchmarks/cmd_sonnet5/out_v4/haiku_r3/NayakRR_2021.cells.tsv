@@ -16,7 +16,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 0	NYU_RA_347C	NYU_RA_347C	pmid	33440172	33440172			TP_correct
 0	NYU_RA_347C	NYU_RA_347C	dna_extraction_kit	MO BIO Laboratories	ZymoBIOMICS96MagBead	CMDKIT:0008	CMDKIT:0015	TP_wrong
 0	NYU_RA_347C	NYU_RA_347C	sequencing_platform	Illumina NovaSeq 6000	IlluminaNovaSeq	CMDPLAT:0004	CMDPLAT:0004	TP_correct
-0	NYU_RA_347C	NYU_RA_347C	host_species	Homo sapiens	Homo sapiens			TP_correct
+0	NYU_RA_347C	NYU_RA_347C	host_species	Homo sapiens	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 1	NYU_RA_215C	NYU_RA_215C	subject_id		s_215			FN
 1	NYU_RA_215C	NYU_RA_215C	sample_id	NYU_RA_215C	NYU_RA_215C			TP_correct
 1	NYU_RA_215C	NYU_RA_215C	country	USA	United States			TP_wrong
@@ -34,7 +34,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 1	NYU_RA_215C	NYU_RA_215C	pmid	33440172	33440172			TP_correct
 1	NYU_RA_215C	NYU_RA_215C	dna_extraction_kit	MO BIO Laboratories	ZymoBIOMICS96MagBead	CMDKIT:0008	CMDKIT:0015	TP_wrong
 1	NYU_RA_215C	NYU_RA_215C	sequencing_platform	Illumina NovaSeq 6000	IlluminaNovaSeq	CMDPLAT:0004	CMDPLAT:0004	TP_correct
-1	NYU_RA_215C	NYU_RA_215C	host_species	Homo sapiens	Homo sapiens			TP_correct
+1	NYU_RA_215C	NYU_RA_215C	host_species	Homo sapiens	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 2	NYU_RA_88B	NYU_RA_88B	subject_id		s_88			FN
 2	NYU_RA_88B	NYU_RA_88B	sample_id	NYU_RA_88B	NYU_RA_88B			TP_correct
 2	NYU_RA_88B	NYU_RA_88B	country	USA	United States			TP_wrong
@@ -52,7 +52,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 2	NYU_RA_88B	NYU_RA_88B	pmid	33440172	33440172			TP_correct
 2	NYU_RA_88B	NYU_RA_88B	dna_extraction_kit	MO BIO Laboratories	ZymoBIOMICS96MagBead	CMDKIT:0008	CMDKIT:0015	TP_wrong
 2	NYU_RA_88B	NYU_RA_88B	sequencing_platform	Illumina NovaSeq 6000	IlluminaNovaSeq	CMDPLAT:0004	CMDPLAT:0004	TP_correct
-2	NYU_RA_88B	NYU_RA_88B	host_species	Homo sapiens	Homo sapiens			TP_correct
+2	NYU_RA_88B	NYU_RA_88B	host_species	Homo sapiens	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 3	NYU_RA_140C	NYU_RA_140C	subject_id		s_140			FN
 3	NYU_RA_140C	NYU_RA_140C	sample_id	NYU_RA_140C	NYU_RA_140C			TP_correct
 3	NYU_RA_140C	NYU_RA_140C	country	USA	United States			TP_wrong
@@ -70,7 +70,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 3	NYU_RA_140C	NYU_RA_140C	pmid	33440172	33440172			TP_correct
 3	NYU_RA_140C	NYU_RA_140C	dna_extraction_kit	MO BIO Laboratories	ZymoBIOMICS96MagBead	CMDKIT:0008	CMDKIT:0015	TP_wrong
 3	NYU_RA_140C	NYU_RA_140C	sequencing_platform	Illumina NovaSeq 6000	IlluminaNovaSeq	CMDPLAT:0004	CMDPLAT:0004	TP_correct
-3	NYU_RA_140C	NYU_RA_140C	host_species	Homo sapiens	Homo sapiens			TP_correct
+3	NYU_RA_140C	NYU_RA_140C	host_species	Homo sapiens	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 4	NYU_RA_72B	NYU_RA_72B	subject_id		s_72			FN
 4	NYU_RA_72B	NYU_RA_72B	sample_id	NYU_RA_72B	NYU_RA_72B			TP_correct
 4	NYU_RA_72B	NYU_RA_72B	country	USA	United States			TP_wrong
@@ -88,7 +88,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 4	NYU_RA_72B	NYU_RA_72B	pmid	33440172	33440172			TP_correct
 4	NYU_RA_72B	NYU_RA_72B	dna_extraction_kit	MO BIO Laboratories	ZymoBIOMICS96MagBead	CMDKIT:0008	CMDKIT:0015	TP_wrong
 4	NYU_RA_72B	NYU_RA_72B	sequencing_platform	Illumina NovaSeq 6000	IlluminaNovaSeq	CMDPLAT:0004	CMDPLAT:0004	TP_correct
-4	NYU_RA_72B	NYU_RA_72B	host_species	Homo sapiens	Homo sapiens			TP_correct
+4	NYU_RA_72B	NYU_RA_72B	host_species	Homo sapiens	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 5	NYU_RA_5C	NYU_RA_5C	subject_id		s_5			FN
 5	NYU_RA_5C	NYU_RA_5C	sample_id	NYU_RA_5C	NYU_RA_5C			TP_correct
 5	NYU_RA_5C	NYU_RA_5C	country	USA	United States			TP_wrong
@@ -106,7 +106,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 5	NYU_RA_5C	NYU_RA_5C	pmid	33440172	33440172			TP_correct
 5	NYU_RA_5C	NYU_RA_5C	dna_extraction_kit	MO BIO Laboratories	ZymoBIOMICS96MagBead	CMDKIT:0008	CMDKIT:0015	TP_wrong
 5	NYU_RA_5C	NYU_RA_5C	sequencing_platform	Illumina NovaSeq 6000	IlluminaNovaSeq	CMDPLAT:0004	CMDPLAT:0004	TP_correct
-5	NYU_RA_5C	NYU_RA_5C	host_species	Homo sapiens	Homo sapiens			TP_correct
+5	NYU_RA_5C	NYU_RA_5C	host_species	Homo sapiens	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 6	NYU_RA_356C	NYU_RA_356C	subject_id		s_356			FN
 6	NYU_RA_356C	NYU_RA_356C	sample_id	NYU_RA_356C	NYU_RA_356C			TP_correct
 6	NYU_RA_356C	NYU_RA_356C	country	USA	United States			TP_wrong
@@ -124,7 +124,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 6	NYU_RA_356C	NYU_RA_356C	pmid	33440172	33440172			TP_correct
 6	NYU_RA_356C	NYU_RA_356C	dna_extraction_kit	MO BIO Laboratories	ZymoBIOMICS96MagBead	CMDKIT:0008	CMDKIT:0015	TP_wrong
 6	NYU_RA_356C	NYU_RA_356C	sequencing_platform	Illumina NovaSeq 6000	IlluminaNovaSeq	CMDPLAT:0004	CMDPLAT:0004	TP_correct
-6	NYU_RA_356C	NYU_RA_356C	host_species	Homo sapiens	Homo sapiens			TP_correct
+6	NYU_RA_356C	NYU_RA_356C	host_species	Homo sapiens	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 7	NYU_RA_263B	NYU_RA_263B	subject_id		s_263			FN
 7	NYU_RA_263B	NYU_RA_263B	sample_id	NYU_RA_263B	NYU_RA_263B			TP_correct
 7	NYU_RA_263B	NYU_RA_263B	country	USA	United States			TP_wrong
@@ -142,7 +142,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 7	NYU_RA_263B	NYU_RA_263B	pmid	33440172	33440172			TP_correct
 7	NYU_RA_263B	NYU_RA_263B	dna_extraction_kit	MO BIO Laboratories	ZymoBIOMICS96MagBead	CMDKIT:0008	CMDKIT:0015	TP_wrong
 7	NYU_RA_263B	NYU_RA_263B	sequencing_platform	Illumina NovaSeq 6000	IlluminaNovaSeq	CMDPLAT:0004	CMDPLAT:0004	TP_correct
-7	NYU_RA_263B	NYU_RA_263B	host_species	Homo sapiens	Homo sapiens			TP_correct
+7	NYU_RA_263B	NYU_RA_263B	host_species	Homo sapiens	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 8	NYU_RA_360C	NYU_RA_360C	subject_id		s_360			FN
 8	NYU_RA_360C	NYU_RA_360C	sample_id	NYU_RA_360C	NYU_RA_360C			TP_correct
 8	NYU_RA_360C	NYU_RA_360C	country	USA	United States			TP_wrong
@@ -160,7 +160,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 8	NYU_RA_360C	NYU_RA_360C	pmid	33440172	33440172			TP_correct
 8	NYU_RA_360C	NYU_RA_360C	dna_extraction_kit	MO BIO Laboratories	ZymoBIOMICS96MagBead	CMDKIT:0008	CMDKIT:0015	TP_wrong
 8	NYU_RA_360C	NYU_RA_360C	sequencing_platform	Illumina NovaSeq 6000	IlluminaNovaSeq	CMDPLAT:0004	CMDPLAT:0004	TP_correct
-8	NYU_RA_360C	NYU_RA_360C	host_species	Homo sapiens	Homo sapiens			TP_correct
+8	NYU_RA_360C	NYU_RA_360C	host_species	Homo sapiens	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 9	NYU_RA_347B	NYU_RA_347B	subject_id		s_347			FN
 9	NYU_RA_347B	NYU_RA_347B	sample_id	NYU_RA_347B	NYU_RA_347B			TP_correct
 9	NYU_RA_347B	NYU_RA_347B	country	USA	United States			TP_wrong
@@ -178,7 +178,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 9	NYU_RA_347B	NYU_RA_347B	pmid	33440172	33440172			TP_correct
 9	NYU_RA_347B	NYU_RA_347B	dna_extraction_kit	MO BIO Laboratories	ZymoBIOMICS96MagBead	CMDKIT:0008	CMDKIT:0015	TP_wrong
 9	NYU_RA_347B	NYU_RA_347B	sequencing_platform	Illumina NovaSeq 6000	IlluminaNovaSeq	CMDPLAT:0004	CMDPLAT:0004	TP_correct
-9	NYU_RA_347B	NYU_RA_347B	host_species	Homo sapiens	Homo sapiens			TP_correct
+9	NYU_RA_347B	NYU_RA_347B	host_species	Homo sapiens	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 10	NYU_RA_140B	NYU_RA_140B	subject_id		s_140			FN
 10	NYU_RA_140B	NYU_RA_140B	sample_id	NYU_RA_140B	NYU_RA_140B			TP_correct
 10	NYU_RA_140B	NYU_RA_140B	country	USA	United States			TP_wrong
@@ -196,7 +196,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 10	NYU_RA_140B	NYU_RA_140B	pmid	33440172	33440172			TP_correct
 10	NYU_RA_140B	NYU_RA_140B	dna_extraction_kit	MO BIO Laboratories	ZymoBIOMICS96MagBead	CMDKIT:0008	CMDKIT:0015	TP_wrong
 10	NYU_RA_140B	NYU_RA_140B	sequencing_platform	Illumina NovaSeq 6000	IlluminaNovaSeq	CMDPLAT:0004	CMDPLAT:0004	TP_correct
-10	NYU_RA_140B	NYU_RA_140B	host_species	Homo sapiens	Homo sapiens			TP_correct
+10	NYU_RA_140B	NYU_RA_140B	host_species	Homo sapiens	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 11	NYU_RA_72C	NYU_RA_72C	subject_id		s_72			FN
 11	NYU_RA_72C	NYU_RA_72C	sample_id	NYU_RA_72C	NYU_RA_72C			TP_correct
 11	NYU_RA_72C	NYU_RA_72C	country	USA	United States			TP_wrong
@@ -214,7 +214,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 11	NYU_RA_72C	NYU_RA_72C	pmid	33440172	33440172			TP_correct
 11	NYU_RA_72C	NYU_RA_72C	dna_extraction_kit	MO BIO Laboratories	ZymoBIOMICS96MagBead	CMDKIT:0008	CMDKIT:0015	TP_wrong
 11	NYU_RA_72C	NYU_RA_72C	sequencing_platform	Illumina NovaSeq 6000	IlluminaNovaSeq	CMDPLAT:0004	CMDPLAT:0004	TP_correct
-11	NYU_RA_72C	NYU_RA_72C	host_species	Homo sapiens	Homo sapiens			TP_correct
+11	NYU_RA_72C	NYU_RA_72C	host_species	Homo sapiens	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 12	NYU_RA_215B	NYU_RA_215B	subject_id		s_215			FN
 12	NYU_RA_215B	NYU_RA_215B	sample_id	NYU_RA_215B	NYU_RA_215B			TP_correct
 12	NYU_RA_215B	NYU_RA_215B	country	USA	United States			TP_wrong
@@ -232,7 +232,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 12	NYU_RA_215B	NYU_RA_215B	pmid	33440172	33440172			TP_correct
 12	NYU_RA_215B	NYU_RA_215B	dna_extraction_kit	MO BIO Laboratories	ZymoBIOMICS96MagBead	CMDKIT:0008	CMDKIT:0015	TP_wrong
 12	NYU_RA_215B	NYU_RA_215B	sequencing_platform	Illumina NovaSeq 6000	IlluminaNovaSeq	CMDPLAT:0004	CMDPLAT:0004	TP_correct
-12	NYU_RA_215B	NYU_RA_215B	host_species	Homo sapiens	Homo sapiens			TP_correct
+12	NYU_RA_215B	NYU_RA_215B	host_species	Homo sapiens	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 13	NYU_RA_371C	NYU_RA_371C	subject_id		s_371			FN
 13	NYU_RA_371C	NYU_RA_371C	sample_id	NYU_RA_371C	NYU_RA_371C			TP_correct
 13	NYU_RA_371C	NYU_RA_371C	country	USA	United States			TP_wrong
@@ -250,7 +250,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 13	NYU_RA_371C	NYU_RA_371C	pmid	33440172	33440172			TP_correct
 13	NYU_RA_371C	NYU_RA_371C	dna_extraction_kit	MO BIO Laboratories	ZymoBIOMICS96MagBead	CMDKIT:0008	CMDKIT:0015	TP_wrong
 13	NYU_RA_371C	NYU_RA_371C	sequencing_platform	Illumina NovaSeq 6000	IlluminaNovaSeq	CMDPLAT:0004	CMDPLAT:0004	TP_correct
-13	NYU_RA_371C	NYU_RA_371C	host_species	Homo sapiens	Homo sapiens			TP_correct
+13	NYU_RA_371C	NYU_RA_371C	host_species	Homo sapiens	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 14	NYU_RA_126B	NYU_RA_126B	subject_id		s_126			FN
 14	NYU_RA_126B	NYU_RA_126B	sample_id	NYU_RA_126B	NYU_RA_126B			TP_correct
 14	NYU_RA_126B	NYU_RA_126B	country	USA	United States			TP_wrong
@@ -268,7 +268,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 14	NYU_RA_126B	NYU_RA_126B	pmid	33440172	33440172			TP_correct
 14	NYU_RA_126B	NYU_RA_126B	dna_extraction_kit	MO BIO Laboratories	ZymoBIOMICS96MagBead	CMDKIT:0008	CMDKIT:0015	TP_wrong
 14	NYU_RA_126B	NYU_RA_126B	sequencing_platform	Illumina NovaSeq 6000	IlluminaNovaSeq	CMDPLAT:0004	CMDPLAT:0004	TP_correct
-14	NYU_RA_126B	NYU_RA_126B	host_species	Homo sapiens	Homo sapiens			TP_correct
+14	NYU_RA_126B	NYU_RA_126B	host_species	Homo sapiens	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 15	NYU_RA_107B	NYU_RA_107B	subject_id		s_107			FN
 15	NYU_RA_107B	NYU_RA_107B	sample_id	NYU_RA_107B	NYU_RA_107B			TP_correct
 15	NYU_RA_107B	NYU_RA_107B	country	USA	United States			TP_wrong
@@ -286,7 +286,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 15	NYU_RA_107B	NYU_RA_107B	pmid	33440172	33440172			TP_correct
 15	NYU_RA_107B	NYU_RA_107B	dna_extraction_kit	MO BIO Laboratories	ZymoBIOMICS96MagBead	CMDKIT:0008	CMDKIT:0015	TP_wrong
 15	NYU_RA_107B	NYU_RA_107B	sequencing_platform	Illumina NovaSeq 6000	IlluminaNovaSeq	CMDPLAT:0004	CMDPLAT:0004	TP_correct
-15	NYU_RA_107B	NYU_RA_107B	host_species	Homo sapiens	Homo sapiens			TP_correct
+15	NYU_RA_107B	NYU_RA_107B	host_species	Homo sapiens	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 16	NYU_RA_5B	NYU_RA_5B	subject_id		s_5			FN
 16	NYU_RA_5B	NYU_RA_5B	sample_id	NYU_RA_5B	NYU_RA_5B			TP_correct
 16	NYU_RA_5B	NYU_RA_5B	country	USA	United States			TP_wrong
@@ -304,7 +304,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 16	NYU_RA_5B	NYU_RA_5B	pmid	33440172	33440172			TP_correct
 16	NYU_RA_5B	NYU_RA_5B	dna_extraction_kit	MO BIO Laboratories	ZymoBIOMICS96MagBead	CMDKIT:0008	CMDKIT:0015	TP_wrong
 16	NYU_RA_5B	NYU_RA_5B	sequencing_platform	Illumina NovaSeq 6000	IlluminaNovaSeq	CMDPLAT:0004	CMDPLAT:0004	TP_correct
-16	NYU_RA_5B	NYU_RA_5B	host_species	Homo sapiens	Homo sapiens			TP_correct
+16	NYU_RA_5B	NYU_RA_5B	host_species	Homo sapiens	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 17	NYU_RA_360B	NYU_RA_360B	subject_id		s_360			FN
 17	NYU_RA_360B	NYU_RA_360B	sample_id	NYU_RA_360B	NYU_RA_360B			TP_correct
 17	NYU_RA_360B	NYU_RA_360B	country	USA	United States			TP_wrong
@@ -322,7 +322,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 17	NYU_RA_360B	NYU_RA_360B	pmid	33440172	33440172			TP_correct
 17	NYU_RA_360B	NYU_RA_360B	dna_extraction_kit	MO BIO Laboratories	ZymoBIOMICS96MagBead	CMDKIT:0008	CMDKIT:0015	TP_wrong
 17	NYU_RA_360B	NYU_RA_360B	sequencing_platform	Illumina NovaSeq 6000	IlluminaNovaSeq	CMDPLAT:0004	CMDPLAT:0004	TP_correct
-17	NYU_RA_360B	NYU_RA_360B	host_species	Homo sapiens	Homo sapiens			TP_correct
+17	NYU_RA_360B	NYU_RA_360B	host_species	Homo sapiens	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 18	NYU_RA_88C	NYU_RA_88C	subject_id		s_88			FN
 18	NYU_RA_88C	NYU_RA_88C	sample_id	NYU_RA_88C	NYU_RA_88C			TP_correct
 18	NYU_RA_88C	NYU_RA_88C	country	USA	United States			TP_wrong
@@ -340,7 +340,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 18	NYU_RA_88C	NYU_RA_88C	pmid	33440172	33440172			TP_correct
 18	NYU_RA_88C	NYU_RA_88C	dna_extraction_kit	MO BIO Laboratories	ZymoBIOMICS96MagBead	CMDKIT:0008	CMDKIT:0015	TP_wrong
 18	NYU_RA_88C	NYU_RA_88C	sequencing_platform	Illumina NovaSeq 6000	IlluminaNovaSeq	CMDPLAT:0004	CMDPLAT:0004	TP_correct
-18	NYU_RA_88C	NYU_RA_88C	host_species	Homo sapiens	Homo sapiens			TP_correct
+18	NYU_RA_88C	NYU_RA_88C	host_species	Homo sapiens	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 19	NYU_RA_334B	NYU_RA_334B	subject_id		s_334			FN
 19	NYU_RA_334B	NYU_RA_334B	sample_id	NYU_RA_334B	NYU_RA_334B			TP_correct
 19	NYU_RA_334B	NYU_RA_334B	country	USA	United States			TP_wrong
@@ -358,7 +358,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 19	NYU_RA_334B	NYU_RA_334B	pmid	33440172	33440172			TP_correct
 19	NYU_RA_334B	NYU_RA_334B	dna_extraction_kit	MO BIO Laboratories	ZymoBIOMICS96MagBead	CMDKIT:0008	CMDKIT:0015	TP_wrong
 19	NYU_RA_334B	NYU_RA_334B	sequencing_platform	Illumina NovaSeq 6000	IlluminaNovaSeq	CMDPLAT:0004	CMDPLAT:0004	TP_correct
-19	NYU_RA_334B	NYU_RA_334B	host_species	Homo sapiens	Homo sapiens			TP_correct
+19	NYU_RA_334B	NYU_RA_334B	host_species	Homo sapiens	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 20	NYU_RA_82C	NYU_RA_82C	subject_id		s_82			FN
 20	NYU_RA_82C	NYU_RA_82C	sample_id	NYU_RA_82C	NYU_RA_82C			TP_correct
 20	NYU_RA_82C	NYU_RA_82C	country	USA	United States			TP_wrong
@@ -376,7 +376,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 20	NYU_RA_82C	NYU_RA_82C	pmid	33440172	33440172			TP_correct
 20	NYU_RA_82C	NYU_RA_82C	dna_extraction_kit	MO BIO Laboratories	ZymoBIOMICS96MagBead	CMDKIT:0008	CMDKIT:0015	TP_wrong
 20	NYU_RA_82C	NYU_RA_82C	sequencing_platform	Illumina NovaSeq 6000	IlluminaNovaSeq	CMDPLAT:0004	CMDPLAT:0004	TP_correct
-20	NYU_RA_82C	NYU_RA_82C	host_species	Homo sapiens	Homo sapiens			TP_correct
+20	NYU_RA_82C	NYU_RA_82C	host_species	Homo sapiens	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 21	NYU_RA_283C	NYU_RA_283C	subject_id		s_283			FN
 21	NYU_RA_283C	NYU_RA_283C	sample_id	NYU_RA_283C	NYU_RA_283C			TP_correct
 21	NYU_RA_283C	NYU_RA_283C	country	USA	United States			TP_wrong
@@ -394,7 +394,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 21	NYU_RA_283C	NYU_RA_283C	pmid	33440172	33440172			TP_correct
 21	NYU_RA_283C	NYU_RA_283C	dna_extraction_kit	MO BIO Laboratories	ZymoBIOMICS96MagBead	CMDKIT:0008	CMDKIT:0015	TP_wrong
 21	NYU_RA_283C	NYU_RA_283C	sequencing_platform	Illumina NovaSeq 6000	IlluminaNovaSeq	CMDPLAT:0004	CMDPLAT:0004	TP_correct
-21	NYU_RA_283C	NYU_RA_283C	host_species	Homo sapiens	Homo sapiens			TP_correct
+21	NYU_RA_283C	NYU_RA_283C	host_species	Homo sapiens	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 22	NYU_RA_371B	NYU_RA_371B	subject_id		s_371			FN
 22	NYU_RA_371B	NYU_RA_371B	sample_id	NYU_RA_371B	NYU_RA_371B			TP_correct
 22	NYU_RA_371B	NYU_RA_371B	country	USA	United States			TP_wrong
@@ -412,7 +412,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 22	NYU_RA_371B	NYU_RA_371B	pmid	33440172	33440172			TP_correct
 22	NYU_RA_371B	NYU_RA_371B	dna_extraction_kit	MO BIO Laboratories	ZymoBIOMICS96MagBead	CMDKIT:0008	CMDKIT:0015	TP_wrong
 22	NYU_RA_371B	NYU_RA_371B	sequencing_platform	Illumina NovaSeq 6000	IlluminaNovaSeq	CMDPLAT:0004	CMDPLAT:0004	TP_correct
-22	NYU_RA_371B	NYU_RA_371B	host_species	Homo sapiens	Homo sapiens			TP_correct
+22	NYU_RA_371B	NYU_RA_371B	host_species	Homo sapiens	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 23	NYU_RA_263C	NYU_RA_263C	subject_id		s_263			FN
 23	NYU_RA_263C	NYU_RA_263C	sample_id	NYU_RA_263C	NYU_RA_263C			TP_correct
 23	NYU_RA_263C	NYU_RA_263C	country	USA	United States			TP_wrong
@@ -430,7 +430,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 23	NYU_RA_263C	NYU_RA_263C	pmid	33440172	33440172			TP_correct
 23	NYU_RA_263C	NYU_RA_263C	dna_extraction_kit	MO BIO Laboratories	ZymoBIOMICS96MagBead	CMDKIT:0008	CMDKIT:0015	TP_wrong
 23	NYU_RA_263C	NYU_RA_263C	sequencing_platform	Illumina NovaSeq 6000	IlluminaNovaSeq	CMDPLAT:0004	CMDPLAT:0004	TP_correct
-23	NYU_RA_263C	NYU_RA_263C	host_species	Homo sapiens	Homo sapiens			TP_correct
+23	NYU_RA_263C	NYU_RA_263C	host_species	Homo sapiens	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 24	NYU_RA_334C	NYU_RA_334C	subject_id		s_334			FN
 24	NYU_RA_334C	NYU_RA_334C	sample_id	NYU_RA_334C	NYU_RA_334C			TP_correct
 24	NYU_RA_334C	NYU_RA_334C	country	USA	United States			TP_wrong
@@ -448,7 +448,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 24	NYU_RA_334C	NYU_RA_334C	pmid	33440172	33440172			TP_correct
 24	NYU_RA_334C	NYU_RA_334C	dna_extraction_kit	MO BIO Laboratories	ZymoBIOMICS96MagBead	CMDKIT:0008	CMDKIT:0015	TP_wrong
 24	NYU_RA_334C	NYU_RA_334C	sequencing_platform	Illumina NovaSeq 6000	IlluminaNovaSeq	CMDPLAT:0004	CMDPLAT:0004	TP_correct
-24	NYU_RA_334C	NYU_RA_334C	host_species	Homo sapiens	Homo sapiens			TP_correct
+24	NYU_RA_334C	NYU_RA_334C	host_species	Homo sapiens	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 25	NYU_RA_82B	NYU_RA_82B	subject_id		s_82			FN
 25	NYU_RA_82B	NYU_RA_82B	sample_id	NYU_RA_82B	NYU_RA_82B			TP_correct
 25	NYU_RA_82B	NYU_RA_82B	country	USA	United States			TP_wrong
@@ -466,7 +466,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 25	NYU_RA_82B	NYU_RA_82B	pmid	33440172	33440172			TP_correct
 25	NYU_RA_82B	NYU_RA_82B	dna_extraction_kit	MO BIO Laboratories	ZymoBIOMICS96MagBead	CMDKIT:0008	CMDKIT:0015	TP_wrong
 25	NYU_RA_82B	NYU_RA_82B	sequencing_platform	Illumina NovaSeq 6000	IlluminaNovaSeq	CMDPLAT:0004	CMDPLAT:0004	TP_correct
-25	NYU_RA_82B	NYU_RA_82B	host_species	Homo sapiens	Homo sapiens			TP_correct
+25	NYU_RA_82B	NYU_RA_82B	host_species	Homo sapiens	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 26	NYU_RA_90C	NYU_RA_90C	subject_id		s_90			FN
 26	NYU_RA_90C	NYU_RA_90C	sample_id	NYU_RA_90C	NYU_RA_90C			TP_correct
 26	NYU_RA_90C	NYU_RA_90C	country	USA	United States			TP_wrong
@@ -484,7 +484,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 26	NYU_RA_90C	NYU_RA_90C	pmid	33440172	33440172			TP_correct
 26	NYU_RA_90C	NYU_RA_90C	dna_extraction_kit	MO BIO Laboratories	ZymoBIOMICS96MagBead	CMDKIT:0008	CMDKIT:0015	TP_wrong
 26	NYU_RA_90C	NYU_RA_90C	sequencing_platform	Illumina NovaSeq 6000	IlluminaNovaSeq	CMDPLAT:0004	CMDPLAT:0004	TP_correct
-26	NYU_RA_90C	NYU_RA_90C	host_species	Homo sapiens	Homo sapiens			TP_correct
+26	NYU_RA_90C	NYU_RA_90C	host_species	Homo sapiens	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 27	NYU_RA_90B	NYU_RA_90B	subject_id		s_90			FN
 27	NYU_RA_90B	NYU_RA_90B	sample_id	NYU_RA_90B	NYU_RA_90B			TP_correct
 27	NYU_RA_90B	NYU_RA_90B	country	USA	United States			TP_wrong
@@ -502,7 +502,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 27	NYU_RA_90B	NYU_RA_90B	pmid	33440172	33440172			TP_correct
 27	NYU_RA_90B	NYU_RA_90B	dna_extraction_kit	MO BIO Laboratories	ZymoBIOMICS96MagBead	CMDKIT:0008	CMDKIT:0015	TP_wrong
 27	NYU_RA_90B	NYU_RA_90B	sequencing_platform	Illumina NovaSeq 6000	IlluminaNovaSeq	CMDPLAT:0004	CMDPLAT:0004	TP_correct
-27	NYU_RA_90B	NYU_RA_90B	host_species	Homo sapiens	Homo sapiens			TP_correct
+27	NYU_RA_90B	NYU_RA_90B	host_species	Homo sapiens	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 28	NYU_RA_107C	NYU_RA_107C	subject_id		s_107			FN
 28	NYU_RA_107C	NYU_RA_107C	sample_id	NYU_RA_107C	NYU_RA_107C			TP_correct
 28	NYU_RA_107C	NYU_RA_107C	country	USA	United States			TP_wrong
@@ -520,7 +520,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 28	NYU_RA_107C	NYU_RA_107C	pmid	33440172	33440172			TP_correct
 28	NYU_RA_107C	NYU_RA_107C	dna_extraction_kit	MO BIO Laboratories	ZymoBIOMICS96MagBead	CMDKIT:0008	CMDKIT:0015	TP_wrong
 28	NYU_RA_107C	NYU_RA_107C	sequencing_platform	Illumina NovaSeq 6000	IlluminaNovaSeq	CMDPLAT:0004	CMDPLAT:0004	TP_correct
-28	NYU_RA_107C	NYU_RA_107C	host_species	Homo sapiens	Homo sapiens			TP_correct
+28	NYU_RA_107C	NYU_RA_107C	host_species	Homo sapiens	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 29	NYU_RA_356B	NYU_RA_356B	subject_id		s_356			FN
 29	NYU_RA_356B	NYU_RA_356B	sample_id	NYU_RA_356B	NYU_RA_356B			TP_correct
 29	NYU_RA_356B	NYU_RA_356B	country	USA	United States			TP_wrong
@@ -538,7 +538,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 29	NYU_RA_356B	NYU_RA_356B	pmid	33440172	33440172			TP_correct
 29	NYU_RA_356B	NYU_RA_356B	dna_extraction_kit	MO BIO Laboratories	ZymoBIOMICS96MagBead	CMDKIT:0008	CMDKIT:0015	TP_wrong
 29	NYU_RA_356B	NYU_RA_356B	sequencing_platform	Illumina NovaSeq 6000	IlluminaNovaSeq	CMDPLAT:0004	CMDPLAT:0004	TP_correct
-29	NYU_RA_356B	NYU_RA_356B	host_species	Homo sapiens	Homo sapiens			TP_correct
+29	NYU_RA_356B	NYU_RA_356B	host_species	Homo sapiens	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 30	NYU_RA_126C	NYU_RA_126C	subject_id		s_126			FN
 30	NYU_RA_126C	NYU_RA_126C	sample_id	NYU_RA_126C	NYU_RA_126C			TP_correct
 30	NYU_RA_126C	NYU_RA_126C	country	USA	United States			TP_wrong
@@ -556,7 +556,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 30	NYU_RA_126C	NYU_RA_126C	pmid	33440172	33440172			TP_correct
 30	NYU_RA_126C	NYU_RA_126C	dna_extraction_kit	MO BIO Laboratories	ZymoBIOMICS96MagBead	CMDKIT:0008	CMDKIT:0015	TP_wrong
 30	NYU_RA_126C	NYU_RA_126C	sequencing_platform	Illumina NovaSeq 6000	IlluminaNovaSeq	CMDPLAT:0004	CMDPLAT:0004	TP_correct
-30	NYU_RA_126C	NYU_RA_126C	host_species	Homo sapiens	Homo sapiens			TP_correct
+30	NYU_RA_126C	NYU_RA_126C	host_species	Homo sapiens	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 31	NYU_RA_317C	NYU_RA_317C	subject_id		s_317			FN
 31	NYU_RA_317C	NYU_RA_317C	sample_id	NYU_RA_317C	NYU_RA_317C			TP_correct
 31	NYU_RA_317C	NYU_RA_317C	country	USA	United States			TP_wrong
@@ -574,7 +574,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 31	NYU_RA_317C	NYU_RA_317C	pmid	33440172	33440172			TP_correct
 31	NYU_RA_317C	NYU_RA_317C	dna_extraction_kit	MO BIO Laboratories	ZymoBIOMICS96MagBead	CMDKIT:0008	CMDKIT:0015	TP_wrong
 31	NYU_RA_317C	NYU_RA_317C	sequencing_platform	Illumina NovaSeq 6000	IlluminaNovaSeq	CMDPLAT:0004	CMDPLAT:0004	TP_correct
-31	NYU_RA_317C	NYU_RA_317C	host_species	Homo sapiens	Homo sapiens			TP_correct
+31	NYU_RA_317C	NYU_RA_317C	host_species	Homo sapiens	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 32	NYU_RA_317B	NYU_RA_317B	subject_id		s_317			FN
 32	NYU_RA_317B	NYU_RA_317B	sample_id	NYU_RA_317B	NYU_RA_317B			TP_correct
 32	NYU_RA_317B	NYU_RA_317B	country	USA	United States			TP_wrong
@@ -592,7 +592,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 32	NYU_RA_317B	NYU_RA_317B	pmid	33440172	33440172			TP_correct
 32	NYU_RA_317B	NYU_RA_317B	dna_extraction_kit	MO BIO Laboratories	ZymoBIOMICS96MagBead	CMDKIT:0008	CMDKIT:0015	TP_wrong
 32	NYU_RA_317B	NYU_RA_317B	sequencing_platform	Illumina NovaSeq 6000	IlluminaNovaSeq	CMDPLAT:0004	CMDPLAT:0004	TP_correct
-32	NYU_RA_317B	NYU_RA_317B	host_species	Homo sapiens	Homo sapiens			TP_correct
+32	NYU_RA_317B	NYU_RA_317B	host_species	Homo sapiens	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 33	NYU_RA_283B	NYU_RA_283B	subject_id		s_283			FN
 33	NYU_RA_283B	NYU_RA_283B	sample_id	NYU_RA_283B	NYU_RA_283B			TP_correct
 33	NYU_RA_283B	NYU_RA_283B	country	USA	United States			TP_wrong
@@ -610,4 +610,4 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 33	NYU_RA_283B	NYU_RA_283B	pmid	33440172	33440172			TP_correct
 33	NYU_RA_283B	NYU_RA_283B	dna_extraction_kit	MO BIO Laboratories	ZymoBIOMICS96MagBead	CMDKIT:0008	CMDKIT:0015	TP_wrong
 33	NYU_RA_283B	NYU_RA_283B	sequencing_platform	Illumina NovaSeq 6000	IlluminaNovaSeq	CMDPLAT:0004	CMDPLAT:0004	TP_correct
-33	NYU_RA_283B	NYU_RA_283B	host_species	Homo sapiens	Homo sapiens			TP_correct
+33	NYU_RA_283B	NYU_RA_283B	host_species	Homo sapiens	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct

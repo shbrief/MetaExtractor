@@ -22,7 +22,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 0		CON-001	pmid		23023125			FN
 0		CON-001	target_condition		Type 2 Diabetes Mellitus			FN
 0		CON-001	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-0		CON-001	host_species		Homo sapiens			FN
+0		CON-001	host_species		Homo sapiens		NCIT:C14225	FN
 1		CON-002	subject_id		CON-002			FN
 1		CON-002	sample_id		CON-002			FN
 1		CON-002	control		Study Control			FN
@@ -46,7 +46,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 1		CON-002	pmid		23023125			FN
 1		CON-002	target_condition		Type 2 Diabetes Mellitus			FN
 1		CON-002	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-1		CON-002	host_species		Homo sapiens			FN
+1		CON-002	host_species		Homo sapiens		NCIT:C14225	FN
 2		CON-003	subject_id		CON-003			FN
 2		CON-003	sample_id		CON-003			FN
 2		CON-003	control		Study Control			FN
@@ -70,7 +70,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 2		CON-003	pmid		23023125			FN
 2		CON-003	target_condition		Type 2 Diabetes Mellitus			FN
 2		CON-003	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-2		CON-003	host_species		Homo sapiens			FN
+2		CON-003	host_species		Homo sapiens		NCIT:C14225	FN
 3		CON-004	subject_id		CON-004			FN
 3		CON-004	sample_id		CON-004			FN
 3		CON-004	control		Study Control			FN
@@ -94,7 +94,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 3		CON-004	pmid		23023125			FN
 3		CON-004	target_condition		Type 2 Diabetes Mellitus			FN
 3		CON-004	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-3		CON-004	host_species		Homo sapiens			FN
+3		CON-004	host_species		Homo sapiens		NCIT:C14225	FN
 4		CON-005	subject_id		CON-005			FN
 4		CON-005	sample_id		CON-005			FN
 4		CON-005	control		Study Control			FN
@@ -118,7 +118,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 4		CON-005	pmid		23023125			FN
 4		CON-005	target_condition		Type 2 Diabetes Mellitus			FN
 4		CON-005	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-4		CON-005	host_species		Homo sapiens			FN
+4		CON-005	host_species		Homo sapiens		NCIT:C14225	FN
 5		CON-006	subject_id		CON-006			FN
 5		CON-006	sample_id		CON-006			FN
 5		CON-006	control		Study Control			FN
@@ -142,7 +142,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 5		CON-006	pmid		23023125			FN
 5		CON-006	target_condition		Type 2 Diabetes Mellitus			FN
 5		CON-006	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-5		CON-006	host_species		Homo sapiens			FN
+5		CON-006	host_species		Homo sapiens		NCIT:C14225	FN
 6		CON-007	subject_id		CON-007			FN
 6		CON-007	sample_id		CON-007			FN
 6		CON-007	control		Study Control			FN
@@ -166,7 +166,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 6		CON-007	pmid		23023125			FN
 6		CON-007	target_condition		Type 2 Diabetes Mellitus			FN
 6		CON-007	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-6		CON-007	host_species		Homo sapiens			FN
+6		CON-007	host_species		Homo sapiens		NCIT:C14225	FN
 7		CON-008	subject_id		CON-008			FN
 7		CON-008	sample_id		CON-008			FN
 7		CON-008	control		Study Control			FN
@@ -190,7 +190,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 7		CON-008	pmid		23023125			FN
 7		CON-008	target_condition		Type 2 Diabetes Mellitus			FN
 7		CON-008	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-7		CON-008	host_species		Homo sapiens			FN
+7		CON-008	host_species		Homo sapiens		NCIT:C14225	FN
 8		CON-009	subject_id		CON-009			FN
 8		CON-009	sample_id		CON-009			FN
 8		CON-009	control		Study Control			FN
@@ -214,7 +214,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 8		CON-009	pmid		23023125			FN
 8		CON-009	target_condition		Type 2 Diabetes Mellitus			FN
 8		CON-009	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-8		CON-009	host_species		Homo sapiens			FN
+8		CON-009	host_species		Homo sapiens		NCIT:C14225	FN
 9		CON-010	subject_id		CON-010			FN
 9		CON-010	sample_id		CON-010			FN
 9		CON-010	control		Study Control			FN
@@ -238,7 +238,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 9		CON-010	pmid		23023125			FN
 9		CON-010	target_condition		Type 2 Diabetes Mellitus			FN
 9		CON-010	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-9		CON-010	host_species		Homo sapiens			FN
+9		CON-010	host_species		Homo sapiens		NCIT:C14225	FN
 10		CON-011	subject_id		CON-011			FN
 10		CON-011	sample_id		CON-011			FN
 10		CON-011	control		Study Control			FN
@@ -262,7 +262,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 10		CON-011	pmid		23023125			FN
 10		CON-011	target_condition		Type 2 Diabetes Mellitus			FN
 10		CON-011	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-10		CON-011	host_species		Homo sapiens			FN
+10		CON-011	host_species		Homo sapiens		NCIT:C14225	FN
 11		CON-012	subject_id		CON-012			FN
 11		CON-012	sample_id		CON-012			FN
 11		CON-012	control		Study Control			FN
@@ -286,7 +286,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 11		CON-012	pmid		23023125			FN
 11		CON-012	target_condition		Type 2 Diabetes Mellitus			FN
 11		CON-012	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-11		CON-012	host_species		Homo sapiens			FN
+11		CON-012	host_species		Homo sapiens		NCIT:C14225	FN
 12		CON-013	subject_id		CON-013			FN
 12		CON-013	sample_id		CON-013			FN
 12		CON-013	control		Study Control			FN
@@ -310,7 +310,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 12		CON-013	pmid		23023125			FN
 12		CON-013	target_condition		Type 2 Diabetes Mellitus			FN
 12		CON-013	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-12		CON-013	host_species		Homo sapiens			FN
+12		CON-013	host_species		Homo sapiens		NCIT:C14225	FN
 13		CON-014	subject_id		CON-014			FN
 13		CON-014	sample_id		CON-014			FN
 13		CON-014	control		Study Control			FN
@@ -334,7 +334,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 13		CON-014	pmid		23023125			FN
 13		CON-014	target_condition		Type 2 Diabetes Mellitus			FN
 13		CON-014	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-13		CON-014	host_species		Homo sapiens			FN
+13		CON-014	host_species		Homo sapiens		NCIT:C14225	FN
 14		CON-015	subject_id		CON-015			FN
 14		CON-015	sample_id		CON-015			FN
 14		CON-015	control		Study Control			FN
@@ -358,7 +358,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 14		CON-015	pmid		23023125			FN
 14		CON-015	target_condition		Type 2 Diabetes Mellitus			FN
 14		CON-015	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-14		CON-015	host_species		Homo sapiens			FN
+14		CON-015	host_species		Homo sapiens		NCIT:C14225	FN
 15		CON-016	subject_id		CON-016			FN
 15		CON-016	sample_id		CON-016			FN
 15		CON-016	control		Study Control			FN
@@ -382,7 +382,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 15		CON-016	pmid		23023125			FN
 15		CON-016	target_condition		Type 2 Diabetes Mellitus			FN
 15		CON-016	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-15		CON-016	host_species		Homo sapiens			FN
+15		CON-016	host_species		Homo sapiens		NCIT:C14225	FN
 16		CON-017	subject_id		CON-017			FN
 16		CON-017	sample_id		CON-017			FN
 16		CON-017	control		Study Control			FN
@@ -406,7 +406,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 16		CON-017	pmid		23023125			FN
 16		CON-017	target_condition		Type 2 Diabetes Mellitus			FN
 16		CON-017	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-16		CON-017	host_species		Homo sapiens			FN
+16		CON-017	host_species		Homo sapiens		NCIT:C14225	FN
 17		CON-018	subject_id		CON-018			FN
 17		CON-018	sample_id		CON-018			FN
 17		CON-018	control		Study Control			FN
@@ -430,7 +430,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 17		CON-018	pmid		23023125			FN
 17		CON-018	target_condition		Type 2 Diabetes Mellitus			FN
 17		CON-018	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-17		CON-018	host_species		Homo sapiens			FN
+17		CON-018	host_species		Homo sapiens		NCIT:C14225	FN
 18		CON-019	subject_id		CON-019			FN
 18		CON-019	sample_id		CON-019			FN
 18		CON-019	control		Study Control			FN
@@ -454,7 +454,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 18		CON-019	pmid		23023125			FN
 18		CON-019	target_condition		Type 2 Diabetes Mellitus			FN
 18		CON-019	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-18		CON-019	host_species		Homo sapiens			FN
+18		CON-019	host_species		Homo sapiens		NCIT:C14225	FN
 19		CON-020	subject_id		CON-020			FN
 19		CON-020	sample_id		CON-020			FN
 19		CON-020	control		Study Control			FN
@@ -478,7 +478,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 19		CON-020	pmid		23023125			FN
 19		CON-020	target_condition		Type 2 Diabetes Mellitus			FN
 19		CON-020	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-19		CON-020	host_species		Homo sapiens			FN
+19		CON-020	host_species		Homo sapiens		NCIT:C14225	FN
 20		CON-021	subject_id		CON-021			FN
 20		CON-021	sample_id		CON-021			FN
 20		CON-021	control		Study Control			FN
@@ -502,7 +502,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 20		CON-021	pmid		23023125			FN
 20		CON-021	target_condition		Type 2 Diabetes Mellitus			FN
 20		CON-021	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-20		CON-021	host_species		Homo sapiens			FN
+20		CON-021	host_species		Homo sapiens		NCIT:C14225	FN
 21		CON-022	subject_id		CON-022			FN
 21		CON-022	sample_id		CON-022			FN
 21		CON-022	control		Study Control			FN
@@ -526,7 +526,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 21		CON-022	pmid		23023125			FN
 21		CON-022	target_condition		Type 2 Diabetes Mellitus			FN
 21		CON-022	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-21		CON-022	host_species		Homo sapiens			FN
+21		CON-022	host_species		Homo sapiens		NCIT:C14225	FN
 22		CON-023	subject_id		CON-023			FN
 22		CON-023	sample_id		CON-023			FN
 22		CON-023	control		Study Control			FN
@@ -550,7 +550,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 22		CON-023	pmid		23023125			FN
 22		CON-023	target_condition		Type 2 Diabetes Mellitus			FN
 22		CON-023	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-22		CON-023	host_species		Homo sapiens			FN
+22		CON-023	host_species		Homo sapiens		NCIT:C14225	FN
 23		CON-024	subject_id		CON-024			FN
 23		CON-024	sample_id		CON-024			FN
 23		CON-024	control		Not Used			FN
@@ -574,7 +574,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 23		CON-024	pmid		23023125			FN
 23		CON-024	target_condition		Type 2 Diabetes Mellitus			FN
 23		CON-024	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-23		CON-024	host_species		Homo sapiens			FN
+23		CON-024	host_species		Homo sapiens		NCIT:C14225	FN
 24		CON-025	subject_id		CON-025			FN
 24		CON-025	sample_id		CON-025			FN
 24		CON-025	control		Not Used			FN
@@ -598,7 +598,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 24		CON-025	pmid		23023125			FN
 24		CON-025	target_condition		Type 2 Diabetes Mellitus			FN
 24		CON-025	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-24		CON-025	host_species		Homo sapiens			FN
+24		CON-025	host_species		Homo sapiens		NCIT:C14225	FN
 25		CON-026	subject_id		CON-026			FN
 25		CON-026	sample_id		CON-026			FN
 25		CON-026	control		Study Control			FN
@@ -622,7 +622,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 25		CON-026	pmid		23023125			FN
 25		CON-026	target_condition		Type 2 Diabetes Mellitus			FN
 25		CON-026	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-25		CON-026	host_species		Homo sapiens			FN
+25		CON-026	host_species		Homo sapiens		NCIT:C14225	FN
 26		CON-027	subject_id		CON-027			FN
 26		CON-027	sample_id		CON-027			FN
 26		CON-027	control		Study Control			FN
@@ -646,7 +646,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 26		CON-027	pmid		23023125			FN
 26		CON-027	target_condition		Type 2 Diabetes Mellitus			FN
 26		CON-027	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-26		CON-027	host_species		Homo sapiens			FN
+26		CON-027	host_species		Homo sapiens		NCIT:C14225	FN
 27		CON-028	subject_id		CON-028			FN
 27		CON-028	sample_id		CON-028			FN
 27		CON-028	control		Study Control			FN
@@ -670,7 +670,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 27		CON-028	pmid		23023125			FN
 27		CON-028	target_condition		Type 2 Diabetes Mellitus			FN
 27		CON-028	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-27		CON-028	host_species		Homo sapiens			FN
+27		CON-028	host_species		Homo sapiens		NCIT:C14225	FN
 28		CON-029	subject_id		CON-029			FN
 28		CON-029	sample_id		CON-029			FN
 28		CON-029	control		Study Control			FN
@@ -694,7 +694,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 28		CON-029	pmid		23023125			FN
 28		CON-029	target_condition		Type 2 Diabetes Mellitus			FN
 28		CON-029	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-28		CON-029	host_species		Homo sapiens			FN
+28		CON-029	host_species		Homo sapiens		NCIT:C14225	FN
 29		CON-030	subject_id		CON-030			FN
 29		CON-030	sample_id		CON-030			FN
 29		CON-030	control		Not Used			FN
@@ -718,7 +718,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 29		CON-030	pmid		23023125			FN
 29		CON-030	target_condition		Type 2 Diabetes Mellitus			FN
 29		CON-030	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-29		CON-030	host_species		Homo sapiens			FN
+29		CON-030	host_species		Homo sapiens		NCIT:C14225	FN
 30		CON-031	subject_id		CON-031			FN
 30		CON-031	sample_id		CON-031			FN
 30		CON-031	control		Study Control			FN
@@ -742,7 +742,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 30		CON-031	pmid		23023125			FN
 30		CON-031	target_condition		Type 2 Diabetes Mellitus			FN
 30		CON-031	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-30		CON-031	host_species		Homo sapiens			FN
+30		CON-031	host_species		Homo sapiens		NCIT:C14225	FN
 31		CON-032	subject_id		CON-032			FN
 31		CON-032	sample_id		CON-032			FN
 31		CON-032	control		Study Control			FN
@@ -766,7 +766,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 31		CON-032	pmid		23023125			FN
 31		CON-032	target_condition		Type 2 Diabetes Mellitus			FN
 31		CON-032	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-31		CON-032	host_species		Homo sapiens			FN
+31		CON-032	host_species		Homo sapiens		NCIT:C14225	FN
 32		CON-033	subject_id		CON-033			FN
 32		CON-033	sample_id		CON-033			FN
 32		CON-033	control		Study Control			FN
@@ -790,7 +790,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 32		CON-033	pmid		23023125			FN
 32		CON-033	target_condition		Type 2 Diabetes Mellitus			FN
 32		CON-033	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-32		CON-033	host_species		Homo sapiens			FN
+32		CON-033	host_species		Homo sapiens		NCIT:C14225	FN
 33		CON-034	subject_id		CON-034			FN
 33		CON-034	sample_id		CON-034			FN
 33		CON-034	control		Study Control			FN
@@ -814,7 +814,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 33		CON-034	pmid		23023125			FN
 33		CON-034	target_condition		Type 2 Diabetes Mellitus			FN
 33		CON-034	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-33		CON-034	host_species		Homo sapiens			FN
+33		CON-034	host_species		Homo sapiens		NCIT:C14225	FN
 34		CON-035	subject_id		CON-035			FN
 34		CON-035	sample_id		CON-035			FN
 34		CON-035	control		Study Control			FN
@@ -838,7 +838,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 34		CON-035	pmid		23023125			FN
 34		CON-035	target_condition		Type 2 Diabetes Mellitus			FN
 34		CON-035	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-34		CON-035	host_species		Homo sapiens			FN
+34		CON-035	host_species		Homo sapiens		NCIT:C14225	FN
 35		CON-036	subject_id		CON-036			FN
 35		CON-036	sample_id		CON-036			FN
 35		CON-036	control		Study Control			FN
@@ -862,7 +862,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 35		CON-036	pmid		23023125			FN
 35		CON-036	target_condition		Type 2 Diabetes Mellitus			FN
 35		CON-036	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-35		CON-036	host_species		Homo sapiens			FN
+35		CON-036	host_species		Homo sapiens		NCIT:C14225	FN
 36		CON-037	subject_id		CON-037			FN
 36		CON-037	sample_id		CON-037			FN
 36		CON-037	control		Study Control			FN
@@ -886,7 +886,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 36		CON-037	pmid		23023125			FN
 36		CON-037	target_condition		Type 2 Diabetes Mellitus			FN
 36		CON-037	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-36		CON-037	host_species		Homo sapiens			FN
+36		CON-037	host_species		Homo sapiens		NCIT:C14225	FN
 37		CON-038	subject_id		CON-038			FN
 37		CON-038	sample_id		CON-038			FN
 37		CON-038	control		Study Control			FN
@@ -910,7 +910,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 37		CON-038	pmid		23023125			FN
 37		CON-038	target_condition		Type 2 Diabetes Mellitus			FN
 37		CON-038	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-37		CON-038	host_species		Homo sapiens			FN
+37		CON-038	host_species		Homo sapiens		NCIT:C14225	FN
 38		CON-039	subject_id		CON-039			FN
 38		CON-039	sample_id		CON-039			FN
 38		CON-039	control		Study Control			FN
@@ -934,7 +934,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 38		CON-039	pmid		23023125			FN
 38		CON-039	target_condition		Type 2 Diabetes Mellitus			FN
 38		CON-039	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-38		CON-039	host_species		Homo sapiens			FN
+38		CON-039	host_species		Homo sapiens		NCIT:C14225	FN
 39		CON-040	subject_id		CON-040			FN
 39		CON-040	sample_id		CON-040			FN
 39		CON-040	control		Study Control			FN
@@ -958,7 +958,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 39		CON-040	pmid		23023125			FN
 39		CON-040	target_condition		Type 2 Diabetes Mellitus			FN
 39		CON-040	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-39		CON-040	host_species		Homo sapiens			FN
+39		CON-040	host_species		Homo sapiens		NCIT:C14225	FN
 40		CON-041	subject_id		CON-041			FN
 40		CON-041	sample_id		CON-041			FN
 40		CON-041	control		Study Control			FN
@@ -982,7 +982,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 40		CON-041	pmid		23023125			FN
 40		CON-041	target_condition		Type 2 Diabetes Mellitus			FN
 40		CON-041	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-40		CON-041	host_species		Homo sapiens			FN
+40		CON-041	host_species		Homo sapiens		NCIT:C14225	FN
 41		CON-042	subject_id		CON-042			FN
 41		CON-042	sample_id		CON-042			FN
 41		CON-042	control		Study Control			FN
@@ -1006,7 +1006,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 41		CON-042	pmid		23023125			FN
 41		CON-042	target_condition		Type 2 Diabetes Mellitus			FN
 41		CON-042	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-41		CON-042	host_species		Homo sapiens			FN
+41		CON-042	host_species		Homo sapiens		NCIT:C14225	FN
 42		CON-043	subject_id		CON-043			FN
 42		CON-043	sample_id		CON-043			FN
 42		CON-043	control		Study Control			FN
@@ -1030,7 +1030,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 42		CON-043	pmid		23023125			FN
 42		CON-043	target_condition		Type 2 Diabetes Mellitus			FN
 42		CON-043	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-42		CON-043	host_species		Homo sapiens			FN
+42		CON-043	host_species		Homo sapiens		NCIT:C14225	FN
 43		CON-044	subject_id		CON-044			FN
 43		CON-044	sample_id		CON-044			FN
 43		CON-044	control		Study Control			FN
@@ -1054,7 +1054,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 43		CON-044	pmid		23023125			FN
 43		CON-044	target_condition		Type 2 Diabetes Mellitus			FN
 43		CON-044	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-43		CON-044	host_species		Homo sapiens			FN
+43		CON-044	host_species		Homo sapiens		NCIT:C14225	FN
 44		CON-045	subject_id		CON-045			FN
 44		CON-045	sample_id		CON-045			FN
 44		CON-045	control		Study Control			FN
@@ -1078,7 +1078,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 44		CON-045	pmid		23023125			FN
 44		CON-045	target_condition		Type 2 Diabetes Mellitus			FN
 44		CON-045	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-44		CON-045	host_species		Homo sapiens			FN
+44		CON-045	host_species		Homo sapiens		NCIT:C14225	FN
 45		CON-046	subject_id		CON-046			FN
 45		CON-046	sample_id		CON-046			FN
 45		CON-046	control		Study Control			FN
@@ -1102,7 +1102,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 45		CON-046	pmid		23023125			FN
 45		CON-046	target_condition		Type 2 Diabetes Mellitus			FN
 45		CON-046	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-45		CON-046	host_species		Homo sapiens			FN
+45		CON-046	host_species		Homo sapiens		NCIT:C14225	FN
 46		CON-047	subject_id		CON-047			FN
 46		CON-047	sample_id		CON-047			FN
 46		CON-047	control		Study Control			FN
@@ -1126,7 +1126,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 46		CON-047	pmid		23023125			FN
 46		CON-047	target_condition		Type 2 Diabetes Mellitus			FN
 46		CON-047	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-46		CON-047	host_species		Homo sapiens			FN
+46		CON-047	host_species		Homo sapiens		NCIT:C14225	FN
 47		CON-048	subject_id		CON-048			FN
 47		CON-048	sample_id		CON-048			FN
 47		CON-048	control		Study Control			FN
@@ -1150,7 +1150,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 47		CON-048	pmid		23023125			FN
 47		CON-048	target_condition		Type 2 Diabetes Mellitus			FN
 47		CON-048	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-47		CON-048	host_species		Homo sapiens			FN
+47		CON-048	host_species		Homo sapiens		NCIT:C14225	FN
 48		CON-049	subject_id		CON-049			FN
 48		CON-049	sample_id		CON-049			FN
 48		CON-049	control		Study Control			FN
@@ -1174,7 +1174,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 48		CON-049	pmid		23023125			FN
 48		CON-049	target_condition		Type 2 Diabetes Mellitus			FN
 48		CON-049	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-48		CON-049	host_species		Homo sapiens			FN
+48		CON-049	host_species		Homo sapiens		NCIT:C14225	FN
 49		CON-050	subject_id		CON-050			FN
 49		CON-050	sample_id		CON-050			FN
 49		CON-050	control		Study Control			FN
@@ -1198,7 +1198,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 49		CON-050	pmid		23023125			FN
 49		CON-050	target_condition		Type 2 Diabetes Mellitus			FN
 49		CON-050	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-49		CON-050	host_species		Homo sapiens			FN
+49		CON-050	host_species		Homo sapiens		NCIT:C14225	FN
 50		CON-051	subject_id		CON-051			FN
 50		CON-051	sample_id		CON-051			FN
 50		CON-051	control		Study Control			FN
@@ -1222,7 +1222,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 50		CON-051	pmid		23023125			FN
 50		CON-051	target_condition		Type 2 Diabetes Mellitus			FN
 50		CON-051	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-50		CON-051	host_species		Homo sapiens			FN
+50		CON-051	host_species		Homo sapiens		NCIT:C14225	FN
 51		CON-052	subject_id		CON-052			FN
 51		CON-052	sample_id		CON-052			FN
 51		CON-052	control		Study Control			FN
@@ -1246,7 +1246,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 51		CON-052	pmid		23023125			FN
 51		CON-052	target_condition		Type 2 Diabetes Mellitus			FN
 51		CON-052	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-51		CON-052	host_species		Homo sapiens			FN
+51		CON-052	host_species		Homo sapiens		NCIT:C14225	FN
 52		CON-053	subject_id		CON-053			FN
 52		CON-053	sample_id		CON-053			FN
 52		CON-053	control		Study Control			FN
@@ -1270,7 +1270,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 52		CON-053	pmid		23023125			FN
 52		CON-053	target_condition		Type 2 Diabetes Mellitus			FN
 52		CON-053	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-52		CON-053	host_species		Homo sapiens			FN
+52		CON-053	host_species		Homo sapiens		NCIT:C14225	FN
 53		CON-054	subject_id		CON-054			FN
 53		CON-054	sample_id		CON-054			FN
 53		CON-054	control		Study Control			FN
@@ -1294,7 +1294,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 53		CON-054	pmid		23023125			FN
 53		CON-054	target_condition		Type 2 Diabetes Mellitus			FN
 53		CON-054	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-53		CON-054	host_species		Homo sapiens			FN
+53		CON-054	host_species		Homo sapiens		NCIT:C14225	FN
 54		CON-055	subject_id		CON-055			FN
 54		CON-055	sample_id		CON-055			FN
 54		CON-055	control		Study Control			FN
@@ -1318,7 +1318,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 54		CON-055	pmid		23023125			FN
 54		CON-055	target_condition		Type 2 Diabetes Mellitus			FN
 54		CON-055	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-54		CON-055	host_species		Homo sapiens			FN
+54		CON-055	host_species		Homo sapiens		NCIT:C14225	FN
 55		CON-056	subject_id		CON-056			FN
 55		CON-056	sample_id		CON-056			FN
 55		CON-056	control		Study Control			FN
@@ -1342,7 +1342,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 55		CON-056	pmid		23023125			FN
 55		CON-056	target_condition		Type 2 Diabetes Mellitus			FN
 55		CON-056	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-55		CON-056	host_species		Homo sapiens			FN
+55		CON-056	host_species		Homo sapiens		NCIT:C14225	FN
 56		CON-057	subject_id		CON-057			FN
 56		CON-057	sample_id		CON-057			FN
 56		CON-057	control		Study Control			FN
@@ -1366,7 +1366,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 56		CON-057	pmid		23023125			FN
 56		CON-057	target_condition		Type 2 Diabetes Mellitus			FN
 56		CON-057	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-56		CON-057	host_species		Homo sapiens			FN
+56		CON-057	host_species		Homo sapiens		NCIT:C14225	FN
 57		CON-058	subject_id		CON-058			FN
 57		CON-058	sample_id		CON-058			FN
 57		CON-058	control		Study Control			FN
@@ -1390,7 +1390,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 57		CON-058	pmid		23023125			FN
 57		CON-058	target_condition		Type 2 Diabetes Mellitus			FN
 57		CON-058	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-57		CON-058	host_species		Homo sapiens			FN
+57		CON-058	host_species		Homo sapiens		NCIT:C14225	FN
 58		CON-059	subject_id		CON-059			FN
 58		CON-059	sample_id		CON-059			FN
 58		CON-059	control		Study Control			FN
@@ -1414,7 +1414,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 58		CON-059	pmid		23023125			FN
 58		CON-059	target_condition		Type 2 Diabetes Mellitus			FN
 58		CON-059	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-58		CON-059	host_species		Homo sapiens			FN
+58		CON-059	host_species		Homo sapiens		NCIT:C14225	FN
 59		CON-060	subject_id		CON-060			FN
 59		CON-060	sample_id		CON-060			FN
 59		CON-060	control		Study Control			FN
@@ -1438,7 +1438,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 59		CON-060	pmid		23023125			FN
 59		CON-060	target_condition		Type 2 Diabetes Mellitus			FN
 59		CON-060	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-59		CON-060	host_species		Homo sapiens			FN
+59		CON-060	host_species		Homo sapiens		NCIT:C14225	FN
 60		CON-061	subject_id		CON-061			FN
 60		CON-061	sample_id		CON-061			FN
 60		CON-061	control		Study Control			FN
@@ -1462,7 +1462,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 60		CON-061	pmid		23023125			FN
 60		CON-061	target_condition		Type 2 Diabetes Mellitus			FN
 60		CON-061	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-60		CON-061	host_species		Homo sapiens			FN
+60		CON-061	host_species		Homo sapiens		NCIT:C14225	FN
 61		CON-062	subject_id		CON-062			FN
 61		CON-062	sample_id		CON-062			FN
 61		CON-062	control		Study Control			FN
@@ -1486,7 +1486,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 61		CON-062	pmid		23023125			FN
 61		CON-062	target_condition		Type 2 Diabetes Mellitus			FN
 61		CON-062	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-61		CON-062	host_species		Homo sapiens			FN
+61		CON-062	host_species		Homo sapiens		NCIT:C14225	FN
 62		CON-063	subject_id		CON-063			FN
 62		CON-063	sample_id		CON-063			FN
 62		CON-063	control		Study Control			FN
@@ -1510,7 +1510,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 62		CON-063	pmid		23023125			FN
 62		CON-063	target_condition		Type 2 Diabetes Mellitus			FN
 62		CON-063	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-62		CON-063	host_species		Homo sapiens			FN
+62		CON-063	host_species		Homo sapiens		NCIT:C14225	FN
 63		CON-064	subject_id		CON-064			FN
 63		CON-064	sample_id		CON-064			FN
 63		CON-064	control		Study Control			FN
@@ -1534,7 +1534,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 63		CON-064	pmid		23023125			FN
 63		CON-064	target_condition		Type 2 Diabetes Mellitus			FN
 63		CON-064	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-63		CON-064	host_species		Homo sapiens			FN
+63		CON-064	host_species		Homo sapiens		NCIT:C14225	FN
 64		CON-065	subject_id		CON-065			FN
 64		CON-065	sample_id		CON-065			FN
 64		CON-065	control		Study Control			FN
@@ -1558,7 +1558,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 64		CON-065	pmid		23023125			FN
 64		CON-065	target_condition		Type 2 Diabetes Mellitus			FN
 64		CON-065	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-64		CON-065	host_species		Homo sapiens			FN
+64		CON-065	host_species		Homo sapiens		NCIT:C14225	FN
 65		CON-066	subject_id		CON-066			FN
 65		CON-066	sample_id		CON-066			FN
 65		CON-066	control		Study Control			FN
@@ -1582,7 +1582,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 65		CON-066	pmid		23023125			FN
 65		CON-066	target_condition		Type 2 Diabetes Mellitus			FN
 65		CON-066	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-65		CON-066	host_species		Homo sapiens			FN
+65		CON-066	host_species		Homo sapiens		NCIT:C14225	FN
 66		CON-067	subject_id		CON-067			FN
 66		CON-067	sample_id		CON-067			FN
 66		CON-067	control		Study Control			FN
@@ -1606,7 +1606,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 66		CON-067	pmid		23023125			FN
 66		CON-067	target_condition		Type 2 Diabetes Mellitus			FN
 66		CON-067	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-66		CON-067	host_species		Homo sapiens			FN
+66		CON-067	host_species		Homo sapiens		NCIT:C14225	FN
 67		CON-068	subject_id		CON-068			FN
 67		CON-068	sample_id		CON-068			FN
 67		CON-068	control		Study Control			FN
@@ -1630,7 +1630,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 67		CON-068	pmid		23023125			FN
 67		CON-068	target_condition		Type 2 Diabetes Mellitus			FN
 67		CON-068	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-67		CON-068	host_species		Homo sapiens			FN
+67		CON-068	host_species		Homo sapiens		NCIT:C14225	FN
 68		CON-069	subject_id		CON-069			FN
 68		CON-069	sample_id		CON-069			FN
 68		CON-069	control		Study Control			FN
@@ -1654,7 +1654,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 68		CON-069	pmid		23023125			FN
 68		CON-069	target_condition		Type 2 Diabetes Mellitus			FN
 68		CON-069	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-68		CON-069	host_species		Homo sapiens			FN
+68		CON-069	host_species		Homo sapiens		NCIT:C14225	FN
 69		CON-070	subject_id		CON-070			FN
 69		CON-070	sample_id		CON-070			FN
 69		CON-070	control		Study Control			FN
@@ -1678,7 +1678,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 69		CON-070	pmid		23023125			FN
 69		CON-070	target_condition		Type 2 Diabetes Mellitus			FN
 69		CON-070	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-69		CON-070	host_species		Homo sapiens			FN
+69		CON-070	host_species		Homo sapiens		NCIT:C14225	FN
 70		CON-071	subject_id		CON-071			FN
 70		CON-071	sample_id		CON-071			FN
 70		CON-071	control		Study Control			FN
@@ -1702,7 +1702,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 70		CON-071	pmid		23023125			FN
 70		CON-071	target_condition		Type 2 Diabetes Mellitus			FN
 70		CON-071	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-70		CON-071	host_species		Homo sapiens			FN
+70		CON-071	host_species		Homo sapiens		NCIT:C14225	FN
 71		CON-072	subject_id		CON-072			FN
 71		CON-072	sample_id		CON-072			FN
 71		CON-072	control		Study Control			FN
@@ -1726,7 +1726,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 71		CON-072	pmid		23023125			FN
 71		CON-072	target_condition		Type 2 Diabetes Mellitus			FN
 71		CON-072	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-71		CON-072	host_species		Homo sapiens			FN
+71		CON-072	host_species		Homo sapiens		NCIT:C14225	FN
 72		CON-073	subject_id		CON-073			FN
 72		CON-073	sample_id		CON-073			FN
 72		CON-073	control		Study Control			FN
@@ -1750,7 +1750,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 72		CON-073	pmid		23023125			FN
 72		CON-073	target_condition		Type 2 Diabetes Mellitus			FN
 72		CON-073	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-72		CON-073	host_species		Homo sapiens			FN
+72		CON-073	host_species		Homo sapiens		NCIT:C14225	FN
 73		CON-074	subject_id		CON-074			FN
 73		CON-074	sample_id		CON-074			FN
 73		CON-074	control		Study Control			FN
@@ -1774,7 +1774,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 73		CON-074	pmid		23023125			FN
 73		CON-074	target_condition		Type 2 Diabetes Mellitus			FN
 73		CON-074	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-73		CON-074	host_species		Homo sapiens			FN
+73		CON-074	host_species		Homo sapiens		NCIT:C14225	FN
 74		CON-075	subject_id		CON-075			FN
 74		CON-075	sample_id		CON-075			FN
 74		CON-075	control		Study Control			FN
@@ -1798,7 +1798,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 74		CON-075	pmid		23023125			FN
 74		CON-075	target_condition		Type 2 Diabetes Mellitus			FN
 74		CON-075	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-74		CON-075	host_species		Homo sapiens			FN
+74		CON-075	host_species		Homo sapiens		NCIT:C14225	FN
 75		CON-076	subject_id		CON-076			FN
 75		CON-076	sample_id		CON-076			FN
 75		CON-076	control		Study Control			FN
@@ -1822,7 +1822,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 75		CON-076	pmid		23023125			FN
 75		CON-076	target_condition		Type 2 Diabetes Mellitus			FN
 75		CON-076	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-75		CON-076	host_species		Homo sapiens			FN
+75		CON-076	host_species		Homo sapiens		NCIT:C14225	FN
 76		CON-077	subject_id		CON-077			FN
 76		CON-077	sample_id		CON-077			FN
 76		CON-077	control		Study Control			FN
@@ -1846,7 +1846,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 76		CON-077	pmid		23023125			FN
 76		CON-077	target_condition		Type 2 Diabetes Mellitus			FN
 76		CON-077	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-76		CON-077	host_species		Homo sapiens			FN
+76		CON-077	host_species		Homo sapiens		NCIT:C14225	FN
 77		CON-078	subject_id		CON-078			FN
 77		CON-078	sample_id		CON-078			FN
 77		CON-078	control		Study Control			FN
@@ -1870,7 +1870,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 77		CON-078	pmid		23023125			FN
 77		CON-078	target_condition		Type 2 Diabetes Mellitus			FN
 77		CON-078	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-77		CON-078	host_species		Homo sapiens			FN
+77		CON-078	host_species		Homo sapiens		NCIT:C14225	FN
 78		CON-079	subject_id		CON-079			FN
 78		CON-079	sample_id		CON-079			FN
 78		CON-079	control		Study Control			FN
@@ -1894,7 +1894,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 78		CON-079	pmid		23023125			FN
 78		CON-079	target_condition		Type 2 Diabetes Mellitus			FN
 78		CON-079	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-78		CON-079	host_species		Homo sapiens			FN
+78		CON-079	host_species		Homo sapiens		NCIT:C14225	FN
 79		CON-080	subject_id		CON-080			FN
 79		CON-080	sample_id		CON-080			FN
 79		CON-080	control		Study Control			FN
@@ -1918,7 +1918,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 79		CON-080	pmid		23023125			FN
 79		CON-080	target_condition		Type 2 Diabetes Mellitus			FN
 79		CON-080	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-79		CON-080	host_species		Homo sapiens			FN
+79		CON-080	host_species		Homo sapiens		NCIT:C14225	FN
 80		CON-081	subject_id		CON-081			FN
 80		CON-081	sample_id		CON-081			FN
 80		CON-081	control		Study Control			FN
@@ -1942,7 +1942,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 80		CON-081	pmid		23023125			FN
 80		CON-081	target_condition		Type 2 Diabetes Mellitus			FN
 80		CON-081	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-80		CON-081	host_species		Homo sapiens			FN
+80		CON-081	host_species		Homo sapiens		NCIT:C14225	FN
 81		CON-082	subject_id		CON-082			FN
 81		CON-082	sample_id		CON-082			FN
 81		CON-082	control		Study Control			FN
@@ -1966,7 +1966,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 81		CON-082	pmid		23023125			FN
 81		CON-082	target_condition		Type 2 Diabetes Mellitus			FN
 81		CON-082	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-81		CON-082	host_species		Homo sapiens			FN
+81		CON-082	host_species		Homo sapiens		NCIT:C14225	FN
 82		CON-083	subject_id		CON-083			FN
 82		CON-083	sample_id		CON-083			FN
 82		CON-083	control		Study Control			FN
@@ -1990,7 +1990,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 82		CON-083	pmid		23023125			FN
 82		CON-083	target_condition		Type 2 Diabetes Mellitus			FN
 82		CON-083	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-82		CON-083	host_species		Homo sapiens			FN
+82		CON-083	host_species		Homo sapiens		NCIT:C14225	FN
 83		CON-084	subject_id		CON-084			FN
 83		CON-084	sample_id		CON-084			FN
 83		CON-084	control		Study Control			FN
@@ -2014,7 +2014,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 83		CON-084	pmid		23023125			FN
 83		CON-084	target_condition		Type 2 Diabetes Mellitus			FN
 83		CON-084	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-83		CON-084	host_species		Homo sapiens			FN
+83		CON-084	host_species		Homo sapiens		NCIT:C14225	FN
 84		CON-085	subject_id		CON-085			FN
 84		CON-085	sample_id		CON-085			FN
 84		CON-085	control		Study Control			FN
@@ -2038,7 +2038,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 84		CON-085	pmid		23023125			FN
 84		CON-085	target_condition		Type 2 Diabetes Mellitus			FN
 84		CON-085	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-84		CON-085	host_species		Homo sapiens			FN
+84		CON-085	host_species		Homo sapiens		NCIT:C14225	FN
 85		CON-086	subject_id		CON-086			FN
 85		CON-086	sample_id		CON-086			FN
 85		CON-086	control		Study Control			FN
@@ -2062,7 +2062,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 85		CON-086	pmid		23023125			FN
 85		CON-086	target_condition		Type 2 Diabetes Mellitus			FN
 85		CON-086	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-85		CON-086	host_species		Homo sapiens			FN
+85		CON-086	host_species		Homo sapiens		NCIT:C14225	FN
 86		CON-087	subject_id		CON-087			FN
 86		CON-087	sample_id		CON-087			FN
 86		CON-087	control		Study Control			FN
@@ -2086,7 +2086,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 86		CON-087	pmid		23023125			FN
 86		CON-087	target_condition		Type 2 Diabetes Mellitus			FN
 86		CON-087	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-86		CON-087	host_species		Homo sapiens			FN
+86		CON-087	host_species		Homo sapiens		NCIT:C14225	FN
 87		CON-088	subject_id		CON-088			FN
 87		CON-088	sample_id		CON-088			FN
 87		CON-088	control		Study Control			FN
@@ -2110,7 +2110,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 87		CON-088	pmid		23023125			FN
 87		CON-088	target_condition		Type 2 Diabetes Mellitus			FN
 87		CON-088	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-87		CON-088	host_species		Homo sapiens			FN
+87		CON-088	host_species		Homo sapiens		NCIT:C14225	FN
 88		CON-089	subject_id		CON-089			FN
 88		CON-089	sample_id		CON-089			FN
 88		CON-089	control		Study Control			FN
@@ -2134,7 +2134,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 88		CON-089	pmid		23023125			FN
 88		CON-089	target_condition		Type 2 Diabetes Mellitus			FN
 88		CON-089	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-88		CON-089	host_species		Homo sapiens			FN
+88		CON-089	host_species		Homo sapiens		NCIT:C14225	FN
 89		CON-090	subject_id		CON-090			FN
 89		CON-090	sample_id		CON-090			FN
 89		CON-090	control		Study Control			FN
@@ -2158,7 +2158,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 89		CON-090	pmid		23023125			FN
 89		CON-090	target_condition		Type 2 Diabetes Mellitus			FN
 89		CON-090	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-89		CON-090	host_species		Homo sapiens			FN
+89		CON-090	host_species		Homo sapiens		NCIT:C14225	FN
 90		CON-091	subject_id		CON-091			FN
 90		CON-091	sample_id		CON-091			FN
 90		CON-091	control		Study Control			FN
@@ -2182,7 +2182,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 90		CON-091	pmid		23023125			FN
 90		CON-091	target_condition		Type 2 Diabetes Mellitus			FN
 90		CON-091	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-90		CON-091	host_species		Homo sapiens			FN
+90		CON-091	host_species		Homo sapiens		NCIT:C14225	FN
 91		CON-092	subject_id		CON-092			FN
 91		CON-092	sample_id		CON-092			FN
 91		CON-092	control		Study Control			FN
@@ -2206,7 +2206,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 91		CON-092	pmid		23023125			FN
 91		CON-092	target_condition		Type 2 Diabetes Mellitus			FN
 91		CON-092	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-91		CON-092	host_species		Homo sapiens			FN
+91		CON-092	host_species		Homo sapiens		NCIT:C14225	FN
 92		CON-093	subject_id		CON-093			FN
 92		CON-093	sample_id		CON-093			FN
 92		CON-093	control		Study Control			FN
@@ -2230,7 +2230,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 92		CON-093	pmid		23023125			FN
 92		CON-093	target_condition		Type 2 Diabetes Mellitus			FN
 92		CON-093	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-92		CON-093	host_species		Homo sapiens			FN
+92		CON-093	host_species		Homo sapiens		NCIT:C14225	FN
 93		CON-094	subject_id		CON-094			FN
 93		CON-094	sample_id		CON-094			FN
 93		CON-094	control		Not Used			FN
@@ -2254,7 +2254,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 93		CON-094	pmid		23023125			FN
 93		CON-094	target_condition		Type 2 Diabetes Mellitus			FN
 93		CON-094	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-93		CON-094	host_species		Homo sapiens			FN
+93		CON-094	host_species		Homo sapiens		NCIT:C14225	FN
 94		CON-095	subject_id		CON-095			FN
 94		CON-095	sample_id		CON-095			FN
 94		CON-095	control		Study Control			FN
@@ -2278,7 +2278,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 94		CON-095	pmid		23023125			FN
 94		CON-095	target_condition		Type 2 Diabetes Mellitus			FN
 94		CON-095	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-94		CON-095	host_species		Homo sapiens			FN
+94		CON-095	host_species		Homo sapiens		NCIT:C14225	FN
 95		CON-096	subject_id		CON-096			FN
 95		CON-096	sample_id		CON-096			FN
 95		CON-096	control		Study Control			FN
@@ -2302,7 +2302,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 95		CON-096	pmid		23023125			FN
 95		CON-096	target_condition		Type 2 Diabetes Mellitus			FN
 95		CON-096	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-95		CON-096	host_species		Homo sapiens			FN
+95		CON-096	host_species		Homo sapiens		NCIT:C14225	FN
 96		CON-097	subject_id		CON-097			FN
 96		CON-097	sample_id		CON-097			FN
 96		CON-097	control		Study Control			FN
@@ -2326,7 +2326,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 96		CON-097	pmid		23023125			FN
 96		CON-097	target_condition		Type 2 Diabetes Mellitus			FN
 96		CON-097	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-96		CON-097	host_species		Homo sapiens			FN
+96		CON-097	host_species		Homo sapiens		NCIT:C14225	FN
 97		CON-098	subject_id		CON-098			FN
 97		CON-098	sample_id		CON-098			FN
 97		CON-098	control		Study Control			FN
@@ -2350,7 +2350,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 97		CON-098	pmid		23023125			FN
 97		CON-098	target_condition		Type 2 Diabetes Mellitus			FN
 97		CON-098	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-97		CON-098	host_species		Homo sapiens			FN
+97		CON-098	host_species		Homo sapiens		NCIT:C14225	FN
 98		CON-099	subject_id		CON-099			FN
 98		CON-099	sample_id		CON-099			FN
 98		CON-099	control		Study Control			FN
@@ -2374,7 +2374,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 98		CON-099	pmid		23023125			FN
 98		CON-099	target_condition		Type 2 Diabetes Mellitus			FN
 98		CON-099	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-98		CON-099	host_species		Homo sapiens			FN
+98		CON-099	host_species		Homo sapiens		NCIT:C14225	FN
 99		CON-100	subject_id		CON-100			FN
 99		CON-100	sample_id		CON-100			FN
 99		CON-100	control		Not Used			FN
@@ -2398,7 +2398,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 99		CON-100	pmid		23023125			FN
 99		CON-100	target_condition		Type 2 Diabetes Mellitus			FN
 99		CON-100	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-99		CON-100	host_species		Homo sapiens			FN
+99		CON-100	host_species		Homo sapiens		NCIT:C14225	FN
 100		CON-101	subject_id		CON-101			FN
 100		CON-101	sample_id		CON-101			FN
 100		CON-101	control		Study Control			FN
@@ -2422,7 +2422,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 100		CON-101	pmid		23023125			FN
 100		CON-101	target_condition		Type 2 Diabetes Mellitus			FN
 100		CON-101	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-100		CON-101	host_species		Homo sapiens			FN
+100		CON-101	host_species		Homo sapiens		NCIT:C14225	FN
 101		CON-102	subject_id		CON-102			FN
 101		CON-102	sample_id		CON-102			FN
 101		CON-102	control		Not Used			FN
@@ -2446,7 +2446,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 101		CON-102	pmid		23023125			FN
 101		CON-102	target_condition		Type 2 Diabetes Mellitus			FN
 101		CON-102	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-101		CON-102	host_species		Homo sapiens			FN
+101		CON-102	host_species		Homo sapiens		NCIT:C14225	FN
 102		CON-103	subject_id		CON-103			FN
 102		CON-103	sample_id		CON-103			FN
 102		CON-103	control		Not Used			FN
@@ -2470,7 +2470,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 102		CON-103	pmid		23023125			FN
 102		CON-103	target_condition		Type 2 Diabetes Mellitus			FN
 102		CON-103	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-102		CON-103	host_species		Homo sapiens			FN
+102		CON-103	host_species		Homo sapiens		NCIT:C14225	FN
 103		CON-104	subject_id		CON-104			FN
 103		CON-104	sample_id		CON-104			FN
 103		CON-104	control		Study Control			FN
@@ -2494,7 +2494,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 103		CON-104	pmid		23023125			FN
 103		CON-104	target_condition		Type 2 Diabetes Mellitus			FN
 103		CON-104	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-103		CON-104	host_species		Homo sapiens			FN
+103		CON-104	host_species		Homo sapiens		NCIT:C14225	FN
 104		CON-105	subject_id		CON-105			FN
 104		CON-105	sample_id		CON-105			FN
 104		CON-105	control		Study Control			FN
@@ -2518,7 +2518,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 104		CON-105	pmid		23023125			FN
 104		CON-105	target_condition		Type 2 Diabetes Mellitus			FN
 104		CON-105	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-104		CON-105	host_species		Homo sapiens			FN
+104		CON-105	host_species		Homo sapiens		NCIT:C14225	FN
 105		CON-106	subject_id		CON-106			FN
 105		CON-106	sample_id		CON-106			FN
 105		CON-106	control		Study Control			FN
@@ -2542,7 +2542,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 105		CON-106	pmid		23023125			FN
 105		CON-106	target_condition		Type 2 Diabetes Mellitus			FN
 105		CON-106	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-105		CON-106	host_species		Homo sapiens			FN
+105		CON-106	host_species		Homo sapiens		NCIT:C14225	FN
 106		CON-107	subject_id		CON-107			FN
 106		CON-107	sample_id		CON-107			FN
 106		CON-107	control		Study Control			FN
@@ -2566,7 +2566,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 106		CON-107	pmid		23023125			FN
 106		CON-107	target_condition		Type 2 Diabetes Mellitus			FN
 106		CON-107	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-106		CON-107	host_species		Homo sapiens			FN
+106		CON-107	host_species		Homo sapiens		NCIT:C14225	FN
 107		CON-108	subject_id		CON-108			FN
 107		CON-108	sample_id		CON-108			FN
 107		CON-108	control		Not Used			FN
@@ -2590,7 +2590,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 107		CON-108	pmid		23023125			FN
 107		CON-108	target_condition		Type 2 Diabetes Mellitus			FN
 107		CON-108	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-107		CON-108	host_species		Homo sapiens			FN
+107		CON-108	host_species		Homo sapiens		NCIT:C14225	FN
 108		CON-109	subject_id		CON-109			FN
 108		CON-109	sample_id		CON-109			FN
 108		CON-109	control		Not Used			FN
@@ -2614,7 +2614,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 108		CON-109	pmid		23023125			FN
 108		CON-109	target_condition		Type 2 Diabetes Mellitus			FN
 108		CON-109	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-108		CON-109	host_species		Homo sapiens			FN
+108		CON-109	host_species		Homo sapiens		NCIT:C14225	FN
 109		CON-110	subject_id		CON-110			FN
 109		CON-110	sample_id		CON-110			FN
 109		CON-110	control		Not Used			FN
@@ -2638,7 +2638,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 109		CON-110	pmid		23023125			FN
 109		CON-110	target_condition		Type 2 Diabetes Mellitus			FN
 109		CON-110	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-109		CON-110	host_species		Homo sapiens			FN
+109		CON-110	host_species		Homo sapiens		NCIT:C14225	FN
 110		CON-111	subject_id		CON-111			FN
 110		CON-111	sample_id		CON-111			FN
 110		CON-111	control		Not Used			FN
@@ -2662,7 +2662,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 110		CON-111	pmid		23023125			FN
 110		CON-111	target_condition		Type 2 Diabetes Mellitus			FN
 110		CON-111	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-110		CON-111	host_species		Homo sapiens			FN
+110		CON-111	host_species		Homo sapiens		NCIT:C14225	FN
 111		DLF001	subject_id		DLF001			FN
 111		DLF001	sample_id		DLF001			FN
 111		DLF001	control		Case			FN
@@ -2686,7 +2686,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 111		DLF001	pmid		23023125			FN
 111		DLF001	target_condition		Type 2 Diabetes Mellitus			FN
 111		DLF001	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-111		DLF001	host_species		Homo sapiens			FN
+111		DLF001	host_species		Homo sapiens		NCIT:C14225	FN
 112		DLF002	subject_id		DLF002			FN
 112		DLF002	sample_id		DLF002			FN
 112		DLF002	control		Case			FN
@@ -2710,7 +2710,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 112		DLF002	pmid		23023125			FN
 112		DLF002	target_condition		Type 2 Diabetes Mellitus			FN
 112		DLF002	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-112		DLF002	host_species		Homo sapiens			FN
+112		DLF002	host_species		Homo sapiens		NCIT:C14225	FN
 113		DLF003	subject_id		DLF003			FN
 113		DLF003	sample_id		DLF003			FN
 113		DLF003	control		Case			FN
@@ -2734,7 +2734,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 113		DLF003	pmid		23023125			FN
 113		DLF003	target_condition		Type 2 Diabetes Mellitus			FN
 113		DLF003	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-113		DLF003	host_species		Homo sapiens			FN
+113		DLF003	host_species		Homo sapiens		NCIT:C14225	FN
 114		DLF004	subject_id		DLF004			FN
 114		DLF004	sample_id		DLF004			FN
 114		DLF004	control		Case			FN
@@ -2758,7 +2758,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 114		DLF004	pmid		23023125			FN
 114		DLF004	target_condition		Type 2 Diabetes Mellitus			FN
 114		DLF004	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-114		DLF004	host_species		Homo sapiens			FN
+114		DLF004	host_species		Homo sapiens		NCIT:C14225	FN
 115		DLF005	subject_id		DLF005			FN
 115		DLF005	sample_id		DLF005			FN
 115		DLF005	control		Case			FN
@@ -2782,7 +2782,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 115		DLF005	pmid		23023125			FN
 115		DLF005	target_condition		Type 2 Diabetes Mellitus			FN
 115		DLF005	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-115		DLF005	host_species		Homo sapiens			FN
+115		DLF005	host_species		Homo sapiens		NCIT:C14225	FN
 116		DLF006	subject_id		DLF006			FN
 116		DLF006	sample_id		DLF006			FN
 116		DLF006	control		Case			FN
@@ -2806,7 +2806,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 116		DLF006	pmid		23023125			FN
 116		DLF006	target_condition		Type 2 Diabetes Mellitus			FN
 116		DLF006	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-116		DLF006	host_species		Homo sapiens			FN
+116		DLF006	host_species		Homo sapiens		NCIT:C14225	FN
 117		DLF007	subject_id		DLF007			FN
 117		DLF007	sample_id		DLF007			FN
 117		DLF007	control		Case			FN
@@ -2830,7 +2830,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 117		DLF007	pmid		23023125			FN
 117		DLF007	target_condition		Type 2 Diabetes Mellitus			FN
 117		DLF007	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-117		DLF007	host_species		Homo sapiens			FN
+117		DLF007	host_species		Homo sapiens		NCIT:C14225	FN
 118		DLF008	subject_id		DLF008			FN
 118		DLF008	sample_id		DLF008			FN
 118		DLF008	control		Case			FN
@@ -2854,7 +2854,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 118		DLF008	pmid		23023125			FN
 118		DLF008	target_condition		Type 2 Diabetes Mellitus			FN
 118		DLF008	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-118		DLF008	host_species		Homo sapiens			FN
+118		DLF008	host_species		Homo sapiens		NCIT:C14225	FN
 119		DLF009	subject_id		DLF009			FN
 119		DLF009	sample_id		DLF009			FN
 119		DLF009	control		Case			FN
@@ -2878,7 +2878,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 119		DLF009	pmid		23023125			FN
 119		DLF009	target_condition		Type 2 Diabetes Mellitus			FN
 119		DLF009	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-119		DLF009	host_species		Homo sapiens			FN
+119		DLF009	host_species		Homo sapiens		NCIT:C14225	FN
 120		DLF010	subject_id		DLF010			FN
 120		DLF010	sample_id		DLF010			FN
 120		DLF010	control		Case			FN
@@ -2902,7 +2902,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 120		DLF010	pmid		23023125			FN
 120		DLF010	target_condition		Type 2 Diabetes Mellitus			FN
 120		DLF010	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-120		DLF010	host_species		Homo sapiens			FN
+120		DLF010	host_species		Homo sapiens		NCIT:C14225	FN
 121		DLF012	subject_id		DLF012			FN
 121		DLF012	sample_id		DLF012			FN
 121		DLF012	control		Case			FN
@@ -2926,7 +2926,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 121		DLF012	pmid		23023125			FN
 121		DLF012	target_condition		Type 2 Diabetes Mellitus			FN
 121		DLF012	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-121		DLF012	host_species		Homo sapiens			FN
+121		DLF012	host_species		Homo sapiens		NCIT:C14225	FN
 122		DLF013	subject_id		DLF013			FN
 122		DLF013	sample_id		DLF013			FN
 122		DLF013	control		Case			FN
@@ -2950,7 +2950,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 122		DLF013	pmid		23023125			FN
 122		DLF013	target_condition		Type 2 Diabetes Mellitus			FN
 122		DLF013	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-122		DLF013	host_species		Homo sapiens			FN
+122		DLF013	host_species		Homo sapiens		NCIT:C14225	FN
 123		DLF014	subject_id		DLF014			FN
 123		DLF014	sample_id		DLF014			FN
 123		DLF014	control		Case			FN
@@ -2974,7 +2974,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 123		DLF014	pmid		23023125			FN
 123		DLF014	target_condition		Type 2 Diabetes Mellitus			FN
 123		DLF014	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-123		DLF014	host_species		Homo sapiens			FN
+123		DLF014	host_species		Homo sapiens		NCIT:C14225	FN
 124		DLM001	subject_id		DLM001			FN
 124		DLM001	sample_id		DLM001			FN
 124		DLM001	control		Case			FN
@@ -2998,7 +2998,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 124		DLM001	pmid		23023125			FN
 124		DLM001	target_condition		Type 2 Diabetes Mellitus			FN
 124		DLM001	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-124		DLM001	host_species		Homo sapiens			FN
+124		DLM001	host_species		Homo sapiens		NCIT:C14225	FN
 125		DLM002	subject_id		DLM002			FN
 125		DLM002	sample_id		DLM002			FN
 125		DLM002	control		Case			FN
@@ -3022,7 +3022,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 125		DLM002	pmid		23023125			FN
 125		DLM002	target_condition		Type 2 Diabetes Mellitus			FN
 125		DLM002	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-125		DLM002	host_species		Homo sapiens			FN
+125		DLM002	host_species		Homo sapiens		NCIT:C14225	FN
 126		DLM003	subject_id		DLM003			FN
 126		DLM003	sample_id		DLM003			FN
 126		DLM003	control		Case			FN
@@ -3046,7 +3046,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 126		DLM003	pmid		23023125			FN
 126		DLM003	target_condition		Type 2 Diabetes Mellitus			FN
 126		DLM003	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-126		DLM003	host_species		Homo sapiens			FN
+126		DLM003	host_species		Homo sapiens		NCIT:C14225	FN
 127		DLM004	subject_id		DLM004			FN
 127		DLM004	sample_id		DLM004			FN
 127		DLM004	control		Case			FN
@@ -3070,7 +3070,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 127		DLM004	pmid		23023125			FN
 127		DLM004	target_condition		Type 2 Diabetes Mellitus			FN
 127		DLM004	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-127		DLM004	host_species		Homo sapiens			FN
+127		DLM004	host_species		Homo sapiens		NCIT:C14225	FN
 128		DLM005	subject_id		DLM005			FN
 128		DLM005	sample_id		DLM005			FN
 128		DLM005	control		Case			FN
@@ -3094,7 +3094,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 128		DLM005	pmid		23023125			FN
 128		DLM005	target_condition		Type 2 Diabetes Mellitus			FN
 128		DLM005	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-128		DLM005	host_species		Homo sapiens			FN
+128		DLM005	host_species		Homo sapiens		NCIT:C14225	FN
 129		DLM006	subject_id		DLM006			FN
 129		DLM006	sample_id		DLM006			FN
 129		DLM006	control		Case			FN
@@ -3118,7 +3118,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 129		DLM006	pmid		23023125			FN
 129		DLM006	target_condition		Type 2 Diabetes Mellitus			FN
 129		DLM006	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-129		DLM006	host_species		Homo sapiens			FN
+129		DLM006	host_species		Homo sapiens		NCIT:C14225	FN
 130		DLM007	subject_id		DLM007			FN
 130		DLM007	sample_id		DLM007			FN
 130		DLM007	control		Case			FN
@@ -3142,7 +3142,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 130		DLM007	pmid		23023125			FN
 130		DLM007	target_condition		Type 2 Diabetes Mellitus			FN
 130		DLM007	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-130		DLM007	host_species		Homo sapiens			FN
+130		DLM007	host_species		Homo sapiens		NCIT:C14225	FN
 131		DLM008	subject_id		DLM008			FN
 131		DLM008	sample_id		DLM008			FN
 131		DLM008	control		Case			FN
@@ -3166,7 +3166,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 131		DLM008	pmid		23023125			FN
 131		DLM008	target_condition		Type 2 Diabetes Mellitus			FN
 131		DLM008	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-131		DLM008	host_species		Homo sapiens			FN
+131		DLM008	host_species		Homo sapiens		NCIT:C14225	FN
 132		DLM009	subject_id		DLM009			FN
 132		DLM009	sample_id		DLM009			FN
 132		DLM009	control		Case			FN
@@ -3190,7 +3190,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 132		DLM009	pmid		23023125			FN
 132		DLM009	target_condition		Type 2 Diabetes Mellitus			FN
 132		DLM009	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-132		DLM009	host_species		Homo sapiens			FN
+132		DLM009	host_species		Homo sapiens		NCIT:C14225	FN
 133		DLM010	subject_id		DLM010			FN
 133		DLM010	sample_id		DLM010			FN
 133		DLM010	control		Case			FN
@@ -3214,7 +3214,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 133		DLM010	pmid		23023125			FN
 133		DLM010	target_condition		Type 2 Diabetes Mellitus			FN
 133		DLM010	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-133		DLM010	host_species		Homo sapiens			FN
+133		DLM010	host_species		Homo sapiens		NCIT:C14225	FN
 134		DLM011	subject_id		DLM011			FN
 134		DLM011	sample_id		DLM011			FN
 134		DLM011	control		Case			FN
@@ -3238,7 +3238,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 134		DLM011	pmid		23023125			FN
 134		DLM011	target_condition		Type 2 Diabetes Mellitus			FN
 134		DLM011	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-134		DLM011	host_species		Homo sapiens			FN
+134		DLM011	host_species		Homo sapiens		NCIT:C14225	FN
 135		DLM012	subject_id		DLM012			FN
 135		DLM012	sample_id		DLM012			FN
 135		DLM012	control		Case			FN
@@ -3262,7 +3262,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 135		DLM012	pmid		23023125			FN
 135		DLM012	target_condition		Type 2 Diabetes Mellitus			FN
 135		DLM012	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-135		DLM012	host_species		Homo sapiens			FN
+135		DLM012	host_species		Homo sapiens		NCIT:C14225	FN
 136		DLM013	subject_id		DLM013			FN
 136		DLM013	sample_id		DLM013			FN
 136		DLM013	control		Case			FN
@@ -3286,7 +3286,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 136		DLM013	pmid		23023125			FN
 136		DLM013	target_condition		Type 2 Diabetes Mellitus			FN
 136		DLM013	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-136		DLM013	host_species		Homo sapiens			FN
+136		DLM013	host_species		Homo sapiens		NCIT:C14225	FN
 137		DLM014	subject_id		DLM014			FN
 137		DLM014	sample_id		DLM014			FN
 137		DLM014	control		Case			FN
@@ -3310,7 +3310,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 137		DLM014	pmid		23023125			FN
 137		DLM014	target_condition		Type 2 Diabetes Mellitus			FN
 137		DLM014	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-137		DLM014	host_species		Homo sapiens			FN
+137		DLM014	host_species		Homo sapiens		NCIT:C14225	FN
 138		DLM015	subject_id		DLM015			FN
 138		DLM015	sample_id		DLM015			FN
 138		DLM015	control		Case			FN
@@ -3334,7 +3334,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 138		DLM015	pmid		23023125			FN
 138		DLM015	target_condition		Type 2 Diabetes Mellitus			FN
 138		DLM015	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-138		DLM015	host_species		Homo sapiens			FN
+138		DLM015	host_species		Homo sapiens		NCIT:C14225	FN
 139		DLM016	subject_id		DLM016			FN
 139		DLM016	sample_id		DLM016			FN
 139		DLM016	control		Case			FN
@@ -3358,7 +3358,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 139		DLM016	pmid		23023125			FN
 139		DLM016	target_condition		Type 2 Diabetes Mellitus			FN
 139		DLM016	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-139		DLM016	host_species		Homo sapiens			FN
+139		DLM016	host_species		Homo sapiens		NCIT:C14225	FN
 140		DLM017	subject_id		DLM017			FN
 140		DLM017	sample_id		DLM017			FN
 140		DLM017	control		Case			FN
@@ -3382,7 +3382,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 140		DLM017	pmid		23023125			FN
 140		DLM017	target_condition		Type 2 Diabetes Mellitus			FN
 140		DLM017	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-140		DLM017	host_species		Homo sapiens			FN
+140		DLM017	host_species		Homo sapiens		NCIT:C14225	FN
 141		DLM018	subject_id		DLM018			FN
 141		DLM018	sample_id		DLM018			FN
 141		DLM018	control		Case			FN
@@ -3406,7 +3406,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 141		DLM018	pmid		23023125			FN
 141		DLM018	target_condition		Type 2 Diabetes Mellitus			FN
 141		DLM018	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-141		DLM018	host_species		Homo sapiens			FN
+141		DLM018	host_species		Homo sapiens		NCIT:C14225	FN
 142		DLM019	subject_id		DLM019			FN
 142		DLM019	sample_id		DLM019			FN
 142		DLM019	control		Case			FN
@@ -3430,7 +3430,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 142		DLM019	pmid		23023125			FN
 142		DLM019	target_condition		Type 2 Diabetes Mellitus			FN
 142		DLM019	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-142		DLM019	host_species		Homo sapiens			FN
+142		DLM019	host_species		Homo sapiens		NCIT:C14225	FN
 143		DLM020	subject_id		DLM020			FN
 143		DLM020	sample_id		DLM020			FN
 143		DLM020	control		Case			FN
@@ -3454,7 +3454,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 143		DLM020	pmid		23023125			FN
 143		DLM020	target_condition		Type 2 Diabetes Mellitus			FN
 143		DLM020	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-143		DLM020	host_species		Homo sapiens			FN
+143		DLM020	host_species		Homo sapiens		NCIT:C14225	FN
 144		DLM021	subject_id		DLM021			FN
 144		DLM021	sample_id		DLM021			FN
 144		DLM021	control		Case			FN
@@ -3478,7 +3478,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 144		DLM021	pmid		23023125			FN
 144		DLM021	target_condition		Type 2 Diabetes Mellitus			FN
 144		DLM021	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-144		DLM021	host_species		Homo sapiens			FN
+144		DLM021	host_species		Homo sapiens		NCIT:C14225	FN
 145		DLM022	subject_id		DLM022			FN
 145		DLM022	sample_id		DLM022			FN
 145		DLM022	control		Case			FN
@@ -3502,7 +3502,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 145		DLM022	pmid		23023125			FN
 145		DLM022	target_condition		Type 2 Diabetes Mellitus			FN
 145		DLM022	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-145		DLM022	host_species		Homo sapiens			FN
+145		DLM022	host_species		Homo sapiens		NCIT:C14225	FN
 146		DLM023	subject_id		DLM023			FN
 146		DLM023	sample_id		DLM023			FN
 146		DLM023	control		Case			FN
@@ -3526,7 +3526,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 146		DLM023	pmid		23023125			FN
 146		DLM023	target_condition		Type 2 Diabetes Mellitus			FN
 146		DLM023	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-146		DLM023	host_species		Homo sapiens			FN
+146		DLM023	host_species		Homo sapiens		NCIT:C14225	FN
 147		DLM024	subject_id		DLM024			FN
 147		DLM024	sample_id		DLM024			FN
 147		DLM024	control		Case			FN
@@ -3550,7 +3550,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 147		DLM024	pmid		23023125			FN
 147		DLM024	target_condition		Type 2 Diabetes Mellitus			FN
 147		DLM024	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-147		DLM024	host_species		Homo sapiens			FN
+147		DLM024	host_species		Homo sapiens		NCIT:C14225	FN
 148		DLM027	subject_id		DLM027			FN
 148		DLM027	sample_id		DLM027			FN
 148		DLM027	control		Case			FN
@@ -3574,7 +3574,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 148		DLM027	pmid		23023125			FN
 148		DLM027	target_condition		Type 2 Diabetes Mellitus			FN
 148		DLM027	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-148		DLM027	host_species		Homo sapiens			FN
+148		DLM027	host_species		Homo sapiens		NCIT:C14225	FN
 149		DLM028	subject_id		DLM028			FN
 149		DLM028	sample_id		DLM028			FN
 149		DLM028	control		Case			FN
@@ -3598,7 +3598,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 149		DLM028	pmid		23023125			FN
 149		DLM028	target_condition		Type 2 Diabetes Mellitus			FN
 149		DLM028	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-149		DLM028	host_species		Homo sapiens			FN
+149		DLM028	host_species		Homo sapiens		NCIT:C14225	FN
 150		DOF002	subject_id		DOF002			FN
 150		DOF002	sample_id		DOF002			FN
 150		DOF002	control		Case			FN
@@ -3622,7 +3622,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 150		DOF002	pmid		23023125			FN
 150		DOF002	target_condition		Type 2 Diabetes Mellitus			FN
 150		DOF002	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-150		DOF002	host_species		Homo sapiens			FN
+150		DOF002	host_species		Homo sapiens		NCIT:C14225	FN
 151		DOF003	subject_id		DOF003			FN
 151		DOF003	sample_id		DOF003			FN
 151		DOF003	control		Case			FN
@@ -3646,7 +3646,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 151		DOF003	pmid		23023125			FN
 151		DOF003	target_condition		Type 2 Diabetes Mellitus			FN
 151		DOF003	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-151		DOF003	host_species		Homo sapiens			FN
+151		DOF003	host_species		Homo sapiens		NCIT:C14225	FN
 152		DOF004	subject_id		DOF004			FN
 152		DOF004	sample_id		DOF004			FN
 152		DOF004	control		Case			FN
@@ -3670,7 +3670,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 152		DOF004	pmid		23023125			FN
 152		DOF004	target_condition		Type 2 Diabetes Mellitus			FN
 152		DOF004	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-152		DOF004	host_species		Homo sapiens			FN
+152		DOF004	host_species		Homo sapiens		NCIT:C14225	FN
 153		DOF006	subject_id		DOF006			FN
 153		DOF006	sample_id		DOF006			FN
 153		DOF006	control		Case			FN
@@ -3694,7 +3694,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 153		DOF006	pmid		23023125			FN
 153		DOF006	target_condition		Type 2 Diabetes Mellitus			FN
 153		DOF006	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-153		DOF006	host_species		Homo sapiens			FN
+153		DOF006	host_species		Homo sapiens		NCIT:C14225	FN
 154		DOF007	subject_id		DOF007			FN
 154		DOF007	sample_id		DOF007			FN
 154		DOF007	control		Case			FN
@@ -3718,7 +3718,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 154		DOF007	pmid		23023125			FN
 154		DOF007	target_condition		Type 2 Diabetes Mellitus			FN
 154		DOF007	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-154		DOF007	host_species		Homo sapiens			FN
+154		DOF007	host_species		Homo sapiens		NCIT:C14225	FN
 155		DOF008	subject_id		DOF008			FN
 155		DOF008	sample_id		DOF008			FN
 155		DOF008	control		Case			FN
@@ -3742,7 +3742,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 155		DOF008	pmid		23023125			FN
 155		DOF008	target_condition		Type 2 Diabetes Mellitus			FN
 155		DOF008	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-155		DOF008	host_species		Homo sapiens			FN
+155		DOF008	host_species		Homo sapiens		NCIT:C14225	FN
 156		DOF009	subject_id		DOF009			FN
 156		DOF009	sample_id		DOF009			FN
 156		DOF009	control		Case			FN
@@ -3766,7 +3766,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 156		DOF009	pmid		23023125			FN
 156		DOF009	target_condition		Type 2 Diabetes Mellitus			FN
 156		DOF009	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-156		DOF009	host_species		Homo sapiens			FN
+156		DOF009	host_species		Homo sapiens		NCIT:C14225	FN
 157		DOF010	subject_id		DOF010			FN
 157		DOF010	sample_id		DOF010			FN
 157		DOF010	control		Case			FN
@@ -3790,7 +3790,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 157		DOF010	pmid		23023125			FN
 157		DOF010	target_condition		Type 2 Diabetes Mellitus			FN
 157		DOF010	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-157		DOF010	host_species		Homo sapiens			FN
+157		DOF010	host_species		Homo sapiens		NCIT:C14225	FN
 158		DOF011	subject_id		DOF011			FN
 158		DOF011	sample_id		DOF011			FN
 158		DOF011	control		Case			FN
@@ -3814,7 +3814,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 158		DOF011	pmid		23023125			FN
 158		DOF011	target_condition		Type 2 Diabetes Mellitus			FN
 158		DOF011	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-158		DOF011	host_species		Homo sapiens			FN
+158		DOF011	host_species		Homo sapiens		NCIT:C14225	FN
 159		DOF012	subject_id		DOF012			FN
 159		DOF012	sample_id		DOF012			FN
 159		DOF012	control		Case			FN
@@ -3838,7 +3838,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 159		DOF012	pmid		23023125			FN
 159		DOF012	target_condition		Type 2 Diabetes Mellitus			FN
 159		DOF012	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-159		DOF012	host_species		Homo sapiens			FN
+159		DOF012	host_species		Homo sapiens		NCIT:C14225	FN
 160		DOF013	subject_id		DOF013			FN
 160		DOF013	sample_id		DOF013			FN
 160		DOF013	control		Case			FN
@@ -3862,7 +3862,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 160		DOF013	pmid		23023125			FN
 160		DOF013	target_condition		Type 2 Diabetes Mellitus			FN
 160		DOF013	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-160		DOF013	host_species		Homo sapiens			FN
+160		DOF013	host_species		Homo sapiens		NCIT:C14225	FN
 161		DOF014	subject_id		DOF014			FN
 161		DOF014	sample_id		DOF014			FN
 161		DOF014	control		Case			FN
@@ -3886,7 +3886,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 161		DOF014	pmid		23023125			FN
 161		DOF014	target_condition		Type 2 Diabetes Mellitus			FN
 161		DOF014	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-161		DOF014	host_species		Homo sapiens			FN
+161		DOF014	host_species		Homo sapiens		NCIT:C14225	FN
 162		DOM001	subject_id		DOM001			FN
 162		DOM001	sample_id		DOM001			FN
 162		DOM001	control		Case			FN
@@ -3910,7 +3910,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 162		DOM001	pmid		23023125			FN
 162		DOM001	target_condition		Type 2 Diabetes Mellitus			FN
 162		DOM001	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-162		DOM001	host_species		Homo sapiens			FN
+162		DOM001	host_species		Homo sapiens		NCIT:C14225	FN
 163		DOM003	subject_id		DOM003			FN
 163		DOM003	sample_id		DOM003			FN
 163		DOM003	control		Case			FN
@@ -3934,7 +3934,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 163		DOM003	pmid		23023125			FN
 163		DOM003	target_condition		Type 2 Diabetes Mellitus			FN
 163		DOM003	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-163		DOM003	host_species		Homo sapiens			FN
+163		DOM003	host_species		Homo sapiens		NCIT:C14225	FN
 164		DOM005	subject_id		DOM005			FN
 164		DOM005	sample_id		DOM005			FN
 164		DOM005	control		Case			FN
@@ -3958,7 +3958,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 164		DOM005	pmid		23023125			FN
 164		DOM005	target_condition		Type 2 Diabetes Mellitus			FN
 164		DOM005	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-164		DOM005	host_species		Homo sapiens			FN
+164		DOM005	host_species		Homo sapiens		NCIT:C14225	FN
 165		DOM008	subject_id		DOM008			FN
 165		DOM008	sample_id		DOM008			FN
 165		DOM008	control		Case			FN
@@ -3982,7 +3982,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 165		DOM008	pmid		23023125			FN
 165		DOM008	target_condition		Type 2 Diabetes Mellitus			FN
 165		DOM008	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-165		DOM008	host_species		Homo sapiens			FN
+165		DOM008	host_species		Homo sapiens		NCIT:C14225	FN
 166		DOM010	subject_id		DOM010			FN
 166		DOM010	sample_id		DOM010			FN
 166		DOM010	control		Case			FN
@@ -4006,7 +4006,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 166		DOM010	pmid		23023125			FN
 166		DOM010	target_condition		Type 2 Diabetes Mellitus			FN
 166		DOM010	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-166		DOM010	host_species		Homo sapiens			FN
+166		DOM010	host_species		Homo sapiens		NCIT:C14225	FN
 167		DOM012	subject_id		DOM012			FN
 167		DOM012	sample_id		DOM012			FN
 167		DOM012	control		Case			FN
@@ -4030,7 +4030,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 167		DOM012	pmid		23023125			FN
 167		DOM012	target_condition		Type 2 Diabetes Mellitus			FN
 167		DOM012	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-167		DOM012	host_species		Homo sapiens			FN
+167		DOM012	host_species		Homo sapiens		NCIT:C14225	FN
 168		DOM013	subject_id		DOM013			FN
 168		DOM013	sample_id		DOM013			FN
 168		DOM013	control		Case			FN
@@ -4054,7 +4054,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 168		DOM013	pmid		23023125			FN
 168		DOM013	target_condition		Type 2 Diabetes Mellitus			FN
 168		DOM013	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-168		DOM013	host_species		Homo sapiens			FN
+168		DOM013	host_species		Homo sapiens		NCIT:C14225	FN
 169		DOM014	subject_id		DOM014			FN
 169		DOM014	sample_id		DOM014			FN
 169		DOM014	control		Case			FN
@@ -4078,7 +4078,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 169		DOM014	pmid		23023125			FN
 169		DOM014	target_condition		Type 2 Diabetes Mellitus			FN
 169		DOM014	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-169		DOM014	host_species		Homo sapiens			FN
+169		DOM014	host_species		Homo sapiens		NCIT:C14225	FN
 170		DOM015	subject_id		DOM015			FN
 170		DOM015	sample_id		DOM015			FN
 170		DOM015	control		Case			FN
@@ -4102,7 +4102,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 170		DOM015	pmid		23023125			FN
 170		DOM015	target_condition		Type 2 Diabetes Mellitus			FN
 170		DOM015	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-170		DOM015	host_species		Homo sapiens			FN
+170		DOM015	host_species		Homo sapiens		NCIT:C14225	FN
 171		DOM016	subject_id		DOM016			FN
 171		DOM016	sample_id		DOM016			FN
 171		DOM016	control		Case			FN
@@ -4126,7 +4126,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 171		DOM016	pmid		23023125			FN
 171		DOM016	target_condition		Type 2 Diabetes Mellitus			FN
 171		DOM016	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-171		DOM016	host_species		Homo sapiens			FN
+171		DOM016	host_species		Homo sapiens		NCIT:C14225	FN
 172		DOM017	subject_id		DOM017			FN
 172		DOM017	sample_id		DOM017			FN
 172		DOM017	control		Case			FN
@@ -4150,7 +4150,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 172		DOM017	pmid		23023125			FN
 172		DOM017	target_condition		Type 2 Diabetes Mellitus			FN
 172		DOM017	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-172		DOM017	host_species		Homo sapiens			FN
+172		DOM017	host_species		Homo sapiens		NCIT:C14225	FN
 173		DOM018	subject_id		DOM018			FN
 173		DOM018	sample_id		DOM018			FN
 173		DOM018	control		Case			FN
@@ -4174,7 +4174,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 173		DOM018	pmid		23023125			FN
 173		DOM018	target_condition		Type 2 Diabetes Mellitus			FN
 173		DOM018	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-173		DOM018	host_species		Homo sapiens			FN
+173		DOM018	host_species		Homo sapiens		NCIT:C14225	FN
 174		DOM019	subject_id		DOM019			FN
 174		DOM019	sample_id		DOM019			FN
 174		DOM019	control		Case			FN
@@ -4198,7 +4198,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 174		DOM019	pmid		23023125			FN
 174		DOM019	target_condition		Type 2 Diabetes Mellitus			FN
 174		DOM019	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-174		DOM019	host_species		Homo sapiens			FN
+174		DOM019	host_species		Homo sapiens		NCIT:C14225	FN
 175		DOM020	subject_id		DOM020			FN
 175		DOM020	sample_id		DOM020			FN
 175		DOM020	control		Case			FN
@@ -4222,7 +4222,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 175		DOM020	pmid		23023125			FN
 175		DOM020	target_condition		Type 2 Diabetes Mellitus			FN
 175		DOM020	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-175		DOM020	host_species		Homo sapiens			FN
+175		DOM020	host_species		Homo sapiens		NCIT:C14225	FN
 176		DOM021	subject_id		DOM021			FN
 176		DOM021	sample_id		DOM021			FN
 176		DOM021	control		Case			FN
@@ -4246,7 +4246,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 176		DOM021	pmid		23023125			FN
 176		DOM021	target_condition		Type 2 Diabetes Mellitus			FN
 176		DOM021	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-176		DOM021	host_species		Homo sapiens			FN
+176		DOM021	host_species		Homo sapiens		NCIT:C14225	FN
 177		DOM022	subject_id		DOM022			FN
 177		DOM022	sample_id		DOM022			FN
 177		DOM022	control		Case			FN
@@ -4270,7 +4270,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 177		DOM022	pmid		23023125			FN
 177		DOM022	target_condition		Type 2 Diabetes Mellitus			FN
 177		DOM022	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-177		DOM022	host_species		Homo sapiens			FN
+177		DOM022	host_species		Homo sapiens		NCIT:C14225	FN
 178		DOM023	subject_id		DOM023			FN
 178		DOM023	sample_id		DOM023			FN
 178		DOM023	control		Case			FN
@@ -4294,7 +4294,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 178		DOM023	pmid		23023125			FN
 178		DOM023	target_condition		Type 2 Diabetes Mellitus			FN
 178		DOM023	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-178		DOM023	host_species		Homo sapiens			FN
+178		DOM023	host_species		Homo sapiens		NCIT:C14225	FN
 179		DOM024	subject_id		DOM024			FN
 179		DOM024	sample_id		DOM024			FN
 179		DOM024	control		Case			FN
@@ -4318,7 +4318,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 179		DOM024	pmid		23023125			FN
 179		DOM024	target_condition		Type 2 Diabetes Mellitus			FN
 179		DOM024	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-179		DOM024	host_species		Homo sapiens			FN
+179		DOM024	host_species		Homo sapiens		NCIT:C14225	FN
 180		DOM025	subject_id		DOM025			FN
 180		DOM025	sample_id		DOM025			FN
 180		DOM025	control		Case			FN
@@ -4342,7 +4342,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 180		DOM025	pmid		23023125			FN
 180		DOM025	target_condition		Type 2 Diabetes Mellitus			FN
 180		DOM025	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-180		DOM025	host_species		Homo sapiens			FN
+180		DOM025	host_species		Homo sapiens		NCIT:C14225	FN
 181		DOM026	subject_id		DOM026			FN
 181		DOM026	sample_id		DOM026			FN
 181		DOM026	control		Case			FN
@@ -4366,7 +4366,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 181		DOM026	pmid		23023125			FN
 181		DOM026	target_condition		Type 2 Diabetes Mellitus			FN
 181		DOM026	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-181		DOM026	host_species		Homo sapiens			FN
+181		DOM026	host_species		Homo sapiens		NCIT:C14225	FN
 182		NLF001	subject_id		NLF001			FN
 182		NLF001	sample_id		NLF001			FN
 182		NLF001	control		Study Control			FN
@@ -4390,7 +4390,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 182		NLF001	pmid		23023125			FN
 182		NLF001	target_condition		Type 2 Diabetes Mellitus			FN
 182		NLF001	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-182		NLF001	host_species		Homo sapiens			FN
+182		NLF001	host_species		Homo sapiens		NCIT:C14225	FN
 183		NLF002	subject_id		NLF002			FN
 183		NLF002	sample_id		NLF002			FN
 183		NLF002	control		Study Control			FN
@@ -4414,7 +4414,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 183		NLF002	pmid		23023125			FN
 183		NLF002	target_condition		Type 2 Diabetes Mellitus			FN
 183		NLF002	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-183		NLF002	host_species		Homo sapiens			FN
+183		NLF002	host_species		Homo sapiens		NCIT:C14225	FN
 184		NLF005	subject_id		NLF005			FN
 184		NLF005	sample_id		NLF005			FN
 184		NLF005	control		Study Control			FN
@@ -4438,7 +4438,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 184		NLF005	pmid		23023125			FN
 184		NLF005	target_condition		Type 2 Diabetes Mellitus			FN
 184		NLF005	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-184		NLF005	host_species		Homo sapiens			FN
+184		NLF005	host_species		Homo sapiens		NCIT:C14225	FN
 185		NLF006	subject_id		NLF006			FN
 185		NLF006	sample_id		NLF006			FN
 185		NLF006	control		Study Control			FN
@@ -4462,7 +4462,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 185		NLF006	pmid		23023125			FN
 185		NLF006	target_condition		Type 2 Diabetes Mellitus			FN
 185		NLF006	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-185		NLF006	host_species		Homo sapiens			FN
+185		NLF006	host_species		Homo sapiens		NCIT:C14225	FN
 186		NLF007	subject_id		NLF007			FN
 186		NLF007	sample_id		NLF007			FN
 186		NLF007	control		Study Control			FN
@@ -4486,7 +4486,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 186		NLF007	pmid		23023125			FN
 186		NLF007	target_condition		Type 2 Diabetes Mellitus			FN
 186		NLF007	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-186		NLF007	host_species		Homo sapiens			FN
+186		NLF007	host_species		Homo sapiens		NCIT:C14225	FN
 187		NLF008	subject_id		NLF008			FN
 187		NLF008	sample_id		NLF008			FN
 187		NLF008	control		Study Control			FN
@@ -4510,7 +4510,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 187		NLF008	pmid		23023125			FN
 187		NLF008	target_condition		Type 2 Diabetes Mellitus			FN
 187		NLF008	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-187		NLF008	host_species		Homo sapiens			FN
+187		NLF008	host_species		Homo sapiens		NCIT:C14225	FN
 188		NLF009	subject_id		NLF009			FN
 188		NLF009	sample_id		NLF009			FN
 188		NLF009	control		Study Control			FN
@@ -4534,7 +4534,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 188		NLF009	pmid		23023125			FN
 188		NLF009	target_condition		Type 2 Diabetes Mellitus			FN
 188		NLF009	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-188		NLF009	host_species		Homo sapiens			FN
+188		NLF009	host_species		Homo sapiens		NCIT:C14225	FN
 189		NLF010	subject_id		NLF010			FN
 189		NLF010	sample_id		NLF010			FN
 189		NLF010	control		Study Control			FN
@@ -4558,7 +4558,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 189		NLF010	pmid		23023125			FN
 189		NLF010	target_condition		Type 2 Diabetes Mellitus			FN
 189		NLF010	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-189		NLF010	host_species		Homo sapiens			FN
+189		NLF010	host_species		Homo sapiens		NCIT:C14225	FN
 190		NLF011	subject_id		NLF011			FN
 190		NLF011	sample_id		NLF011			FN
 190		NLF011	control		Study Control			FN
@@ -4582,7 +4582,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 190		NLF011	pmid		23023125			FN
 190		NLF011	target_condition		Type 2 Diabetes Mellitus			FN
 190		NLF011	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-190		NLF011	host_species		Homo sapiens			FN
+190		NLF011	host_species		Homo sapiens		NCIT:C14225	FN
 191		NLF012	subject_id		NLF012			FN
 191		NLF012	sample_id		NLF012			FN
 191		NLF012	control		Study Control			FN
@@ -4606,7 +4606,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 191		NLF012	pmid		23023125			FN
 191		NLF012	target_condition		Type 2 Diabetes Mellitus			FN
 191		NLF012	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-191		NLF012	host_species		Homo sapiens			FN
+191		NLF012	host_species		Homo sapiens		NCIT:C14225	FN
 192		NLF013	subject_id		NLF013			FN
 192		NLF013	sample_id		NLF013			FN
 192		NLF013	control		Study Control			FN
@@ -4630,7 +4630,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 192		NLF013	pmid		23023125			FN
 192		NLF013	target_condition		Type 2 Diabetes Mellitus			FN
 192		NLF013	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-192		NLF013	host_species		Homo sapiens			FN
+192		NLF013	host_species		Homo sapiens		NCIT:C14225	FN
 193		NLF014	subject_id		NLF014			FN
 193		NLF014	sample_id		NLF014			FN
 193		NLF014	control		Study Control			FN
@@ -4654,7 +4654,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 193		NLF014	pmid		23023125			FN
 193		NLF014	target_condition		Type 2 Diabetes Mellitus			FN
 193		NLF014	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-193		NLF014	host_species		Homo sapiens			FN
+193		NLF014	host_species		Homo sapiens		NCIT:C14225	FN
 194		NLF015	subject_id		NLF015			FN
 194		NLF015	sample_id		NLF015			FN
 194		NLF015	control		Study Control			FN
@@ -4678,7 +4678,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 194		NLF015	pmid		23023125			FN
 194		NLF015	target_condition		Type 2 Diabetes Mellitus			FN
 194		NLF015	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-194		NLF015	host_species		Homo sapiens			FN
+194		NLF015	host_species		Homo sapiens		NCIT:C14225	FN
 195		NLM001	subject_id		NLM001			FN
 195		NLM001	sample_id		NLM001			FN
 195		NLM001	control		Study Control			FN
@@ -4702,7 +4702,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 195		NLM001	pmid		23023125			FN
 195		NLM001	target_condition		Type 2 Diabetes Mellitus			FN
 195		NLM001	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-195		NLM001	host_species		Homo sapiens			FN
+195		NLM001	host_species		Homo sapiens		NCIT:C14225	FN
 196		NLM002	subject_id		NLM002			FN
 196		NLM002	sample_id		NLM002			FN
 196		NLM002	control		Study Control			FN
@@ -4726,7 +4726,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 196		NLM002	pmid		23023125			FN
 196		NLM002	target_condition		Type 2 Diabetes Mellitus			FN
 196		NLM002	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-196		NLM002	host_species		Homo sapiens			FN
+196		NLM002	host_species		Homo sapiens		NCIT:C14225	FN
 197		NLM003	subject_id		NLM003			FN
 197		NLM003	sample_id		NLM003			FN
 197		NLM003	control		Study Control			FN
@@ -4750,7 +4750,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 197		NLM003	pmid		23023125			FN
 197		NLM003	target_condition		Type 2 Diabetes Mellitus			FN
 197		NLM003	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-197		NLM003	host_species		Homo sapiens			FN
+197		NLM003	host_species		Homo sapiens		NCIT:C14225	FN
 198		NLM004	subject_id		NLM004			FN
 198		NLM004	sample_id		NLM004			FN
 198		NLM004	control		Study Control			FN
@@ -4774,7 +4774,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 198		NLM004	pmid		23023125			FN
 198		NLM004	target_condition		Type 2 Diabetes Mellitus			FN
 198		NLM004	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-198		NLM004	host_species		Homo sapiens			FN
+198		NLM004	host_species		Homo sapiens		NCIT:C14225	FN
 199		NLM005	subject_id		NLM005			FN
 199		NLM005	sample_id		NLM005			FN
 199		NLM005	control		Study Control			FN
@@ -4798,7 +4798,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 199		NLM005	pmid		23023125			FN
 199		NLM005	target_condition		Type 2 Diabetes Mellitus			FN
 199		NLM005	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-199		NLM005	host_species		Homo sapiens			FN
+199		NLM005	host_species		Homo sapiens		NCIT:C14225	FN
 200		NLM006	subject_id		NLM006			FN
 200		NLM006	sample_id		NLM006			FN
 200		NLM006	control		Study Control			FN
@@ -4822,7 +4822,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 200		NLM006	pmid		23023125			FN
 200		NLM006	target_condition		Type 2 Diabetes Mellitus			FN
 200		NLM006	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-200		NLM006	host_species		Homo sapiens			FN
+200		NLM006	host_species		Homo sapiens		NCIT:C14225	FN
 201		NLM007	subject_id		NLM007			FN
 201		NLM007	sample_id		NLM007			FN
 201		NLM007	control		Study Control			FN
@@ -4846,7 +4846,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 201		NLM007	pmid		23023125			FN
 201		NLM007	target_condition		Type 2 Diabetes Mellitus			FN
 201		NLM007	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-201		NLM007	host_species		Homo sapiens			FN
+201		NLM007	host_species		Homo sapiens		NCIT:C14225	FN
 202		NLM008	subject_id		NLM008			FN
 202		NLM008	sample_id		NLM008			FN
 202		NLM008	control		Study Control			FN
@@ -4870,7 +4870,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 202		NLM008	pmid		23023125			FN
 202		NLM008	target_condition		Type 2 Diabetes Mellitus			FN
 202		NLM008	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-202		NLM008	host_species		Homo sapiens			FN
+202		NLM008	host_species		Homo sapiens		NCIT:C14225	FN
 203		NLM009	subject_id		NLM009			FN
 203		NLM009	sample_id		NLM009			FN
 203		NLM009	control		Study Control			FN
@@ -4894,7 +4894,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 203		NLM009	pmid		23023125			FN
 203		NLM009	target_condition		Type 2 Diabetes Mellitus			FN
 203		NLM009	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-203		NLM009	host_species		Homo sapiens			FN
+203		NLM009	host_species		Homo sapiens		NCIT:C14225	FN
 204		NLM010	subject_id		NLM010			FN
 204		NLM010	sample_id		NLM010			FN
 204		NLM010	control		Study Control			FN
@@ -4918,7 +4918,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 204		NLM010	pmid		23023125			FN
 204		NLM010	target_condition		Type 2 Diabetes Mellitus			FN
 204		NLM010	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-204		NLM010	host_species		Homo sapiens			FN
+204		NLM010	host_species		Homo sapiens		NCIT:C14225	FN
 205		NLM015	subject_id		NLM015			FN
 205		NLM015	sample_id		NLM015			FN
 205		NLM015	control		Study Control			FN
@@ -4942,7 +4942,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 205		NLM015	pmid		23023125			FN
 205		NLM015	target_condition		Type 2 Diabetes Mellitus			FN
 205		NLM015	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-205		NLM015	host_species		Homo sapiens			FN
+205		NLM015	host_species		Homo sapiens		NCIT:C14225	FN
 206		NLM016	subject_id		NLM016			FN
 206		NLM016	sample_id		NLM016			FN
 206		NLM016	control		Study Control			FN
@@ -4966,7 +4966,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 206		NLM016	pmid		23023125			FN
 206		NLM016	target_condition		Type 2 Diabetes Mellitus			FN
 206		NLM016	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-206		NLM016	host_species		Homo sapiens			FN
+206		NLM016	host_species		Homo sapiens		NCIT:C14225	FN
 207		NLM017	subject_id		NLM017			FN
 207		NLM017	sample_id		NLM017			FN
 207		NLM017	control		Study Control			FN
@@ -4990,7 +4990,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 207		NLM017	pmid		23023125			FN
 207		NLM017	target_condition		Type 2 Diabetes Mellitus			FN
 207		NLM017	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-207		NLM017	host_species		Homo sapiens			FN
+207		NLM017	host_species		Homo sapiens		NCIT:C14225	FN
 208		NLM021	subject_id		NLM021			FN
 208		NLM021	sample_id		NLM021			FN
 208		NLM021	control		Study Control			FN
@@ -5014,7 +5014,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 208		NLM021	pmid		23023125			FN
 208		NLM021	target_condition		Type 2 Diabetes Mellitus			FN
 208		NLM021	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-208		NLM021	host_species		Homo sapiens			FN
+208		NLM021	host_species		Homo sapiens		NCIT:C14225	FN
 209		NLM022	subject_id		NLM022			FN
 209		NLM022	sample_id		NLM022			FN
 209		NLM022	control		Study Control			FN
@@ -5038,7 +5038,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 209		NLM022	pmid		23023125			FN
 209		NLM022	target_condition		Type 2 Diabetes Mellitus			FN
 209		NLM022	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-209		NLM022	host_species		Homo sapiens			FN
+209		NLM022	host_species		Homo sapiens		NCIT:C14225	FN
 210		NLM023	subject_id		NLM023			FN
 210		NLM023	sample_id		NLM023			FN
 210		NLM023	control		Study Control			FN
@@ -5062,7 +5062,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 210		NLM023	pmid		23023125			FN
 210		NLM023	target_condition		Type 2 Diabetes Mellitus			FN
 210		NLM023	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-210		NLM023	host_species		Homo sapiens			FN
+210		NLM023	host_species		Homo sapiens		NCIT:C14225	FN
 211		NLM024	subject_id		NLM024			FN
 211		NLM024	sample_id		NLM024			FN
 211		NLM024	control		Study Control			FN
@@ -5086,7 +5086,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 211		NLM024	pmid		23023125			FN
 211		NLM024	target_condition		Type 2 Diabetes Mellitus			FN
 211		NLM024	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-211		NLM024	host_species		Homo sapiens			FN
+211		NLM024	host_species		Homo sapiens		NCIT:C14225	FN
 212		NLM025	subject_id		NLM025			FN
 212		NLM025	sample_id		NLM025			FN
 212		NLM025	control		Study Control			FN
@@ -5110,7 +5110,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 212		NLM025	pmid		23023125			FN
 212		NLM025	target_condition		Type 2 Diabetes Mellitus			FN
 212		NLM025	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-212		NLM025	host_species		Homo sapiens			FN
+212		NLM025	host_species		Homo sapiens		NCIT:C14225	FN
 213		NLM026	subject_id		NLM026			FN
 213		NLM026	sample_id		NLM026			FN
 213		NLM026	control		Study Control			FN
@@ -5134,7 +5134,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 213		NLM026	pmid		23023125			FN
 213		NLM026	target_condition		Type 2 Diabetes Mellitus			FN
 213		NLM026	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-213		NLM026	host_species		Homo sapiens			FN
+213		NLM026	host_species		Homo sapiens		NCIT:C14225	FN
 214		NLM027	subject_id		NLM027			FN
 214		NLM027	sample_id		NLM027			FN
 214		NLM027	control		Study Control			FN
@@ -5158,7 +5158,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 214		NLM027	pmid		23023125			FN
 214		NLM027	target_condition		Type 2 Diabetes Mellitus			FN
 214		NLM027	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-214		NLM027	host_species		Homo sapiens			FN
+214		NLM027	host_species		Homo sapiens		NCIT:C14225	FN
 215		NLM028	subject_id		NLM028			FN
 215		NLM028	sample_id		NLM028			FN
 215		NLM028	control		Study Control			FN
@@ -5182,7 +5182,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 215		NLM028	pmid		23023125			FN
 215		NLM028	target_condition		Type 2 Diabetes Mellitus			FN
 215		NLM028	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-215		NLM028	host_species		Homo sapiens			FN
+215		NLM028	host_species		Homo sapiens		NCIT:C14225	FN
 216		NLM029	subject_id		NLM029			FN
 216		NLM029	sample_id		NLM029			FN
 216		NLM029	control		Study Control			FN
@@ -5206,7 +5206,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 216		NLM029	pmid		23023125			FN
 216		NLM029	target_condition		Type 2 Diabetes Mellitus			FN
 216		NLM029	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-216		NLM029	host_species		Homo sapiens			FN
+216		NLM029	host_species		Homo sapiens		NCIT:C14225	FN
 217		NLM031	subject_id		NLM031			FN
 217		NLM031	sample_id		NLM031			FN
 217		NLM031	control		Study Control			FN
@@ -5230,7 +5230,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 217		NLM031	pmid		23023125			FN
 217		NLM031	target_condition		Type 2 Diabetes Mellitus			FN
 217		NLM031	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-217		NLM031	host_species		Homo sapiens			FN
+217		NLM031	host_species		Homo sapiens		NCIT:C14225	FN
 218		NLM032	subject_id		NLM032			FN
 218		NLM032	sample_id		NLM032			FN
 218		NLM032	control		Study Control			FN
@@ -5254,7 +5254,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 218		NLM032	pmid		23023125			FN
 218		NLM032	target_condition		Type 2 Diabetes Mellitus			FN
 218		NLM032	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-218		NLM032	host_species		Homo sapiens			FN
+218		NLM032	host_species		Homo sapiens		NCIT:C14225	FN
 219		NOF001	subject_id		NOF001			FN
 219		NOF001	sample_id		NOF001			FN
 219		NOF001	control		Study Control			FN
@@ -5278,7 +5278,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 219		NOF001	pmid		23023125			FN
 219		NOF001	target_condition		Type 2 Diabetes Mellitus			FN
 219		NOF001	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-219		NOF001	host_species		Homo sapiens			FN
+219		NOF001	host_species		Homo sapiens		NCIT:C14225	FN
 220		NOF002	subject_id		NOF002			FN
 220		NOF002	sample_id		NOF002			FN
 220		NOF002	control		Study Control			FN
@@ -5302,7 +5302,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 220		NOF002	pmid		23023125			FN
 220		NOF002	target_condition		Type 2 Diabetes Mellitus			FN
 220		NOF002	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-220		NOF002	host_species		Homo sapiens			FN
+220		NOF002	host_species		Homo sapiens		NCIT:C14225	FN
 221		NOF004	subject_id		NOF004			FN
 221		NOF004	sample_id		NOF004			FN
 221		NOF004	control		Study Control			FN
@@ -5326,7 +5326,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 221		NOF004	pmid		23023125			FN
 221		NOF004	target_condition		Type 2 Diabetes Mellitus			FN
 221		NOF004	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-221		NOF004	host_species		Homo sapiens			FN
+221		NOF004	host_species		Homo sapiens		NCIT:C14225	FN
 222		NOF005	subject_id		NOF005			FN
 222		NOF005	sample_id		NOF005			FN
 222		NOF005	control		Study Control			FN
@@ -5350,7 +5350,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 222		NOF005	pmid		23023125			FN
 222		NOF005	target_condition		Type 2 Diabetes Mellitus			FN
 222		NOF005	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-222		NOF005	host_species		Homo sapiens			FN
+222		NOF005	host_species		Homo sapiens		NCIT:C14225	FN
 223		NOF006	subject_id		NOF006			FN
 223		NOF006	sample_id		NOF006			FN
 223		NOF006	control		Study Control			FN
@@ -5374,7 +5374,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 223		NOF006	pmid		23023125			FN
 223		NOF006	target_condition		Type 2 Diabetes Mellitus			FN
 223		NOF006	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-223		NOF006	host_species		Homo sapiens			FN
+223		NOF006	host_species		Homo sapiens		NCIT:C14225	FN
 224		NOF007	subject_id		NOF007			FN
 224		NOF007	sample_id		NOF007			FN
 224		NOF007	control		Study Control			FN
@@ -5398,7 +5398,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 224		NOF007	pmid		23023125			FN
 224		NOF007	target_condition		Type 2 Diabetes Mellitus			FN
 224		NOF007	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-224		NOF007	host_species		Homo sapiens			FN
+224		NOF007	host_species		Homo sapiens		NCIT:C14225	FN
 225		NOF008	subject_id		NOF008			FN
 225		NOF008	sample_id		NOF008			FN
 225		NOF008	control		Study Control			FN
@@ -5422,7 +5422,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 225		NOF008	pmid		23023125			FN
 225		NOF008	target_condition		Type 2 Diabetes Mellitus			FN
 225		NOF008	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-225		NOF008	host_species		Homo sapiens			FN
+225		NOF008	host_species		Homo sapiens		NCIT:C14225	FN
 226		NOF009	subject_id		NOF009			FN
 226		NOF009	sample_id		NOF009			FN
 226		NOF009	control		Study Control			FN
@@ -5446,7 +5446,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 226		NOF009	pmid		23023125			FN
 226		NOF009	target_condition		Type 2 Diabetes Mellitus			FN
 226		NOF009	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-226		NOF009	host_species		Homo sapiens			FN
+226		NOF009	host_species		Homo sapiens		NCIT:C14225	FN
 227		NOF010	subject_id		NOF010			FN
 227		NOF010	sample_id		NOF010			FN
 227		NOF010	control		Study Control			FN
@@ -5470,7 +5470,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 227		NOF010	pmid		23023125			FN
 227		NOF010	target_condition		Type 2 Diabetes Mellitus			FN
 227		NOF010	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-227		NOF010	host_species		Homo sapiens			FN
+227		NOF010	host_species		Homo sapiens		NCIT:C14225	FN
 228		NOF011	subject_id		NOF011			FN
 228		NOF011	sample_id		NOF011			FN
 228		NOF011	control		Study Control			FN
@@ -5494,7 +5494,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 228		NOF011	pmid		23023125			FN
 228		NOF011	target_condition		Type 2 Diabetes Mellitus			FN
 228		NOF011	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-228		NOF011	host_species		Homo sapiens			FN
+228		NOF011	host_species		Homo sapiens		NCIT:C14225	FN
 229		NOF012	subject_id		NOF012			FN
 229		NOF012	sample_id		NOF012			FN
 229		NOF012	control		Study Control			FN
@@ -5518,7 +5518,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 229		NOF012	pmid		23023125			FN
 229		NOF012	target_condition		Type 2 Diabetes Mellitus			FN
 229		NOF012	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-229		NOF012	host_species		Homo sapiens			FN
+229		NOF012	host_species		Homo sapiens		NCIT:C14225	FN
 230		NOF013	subject_id		NOF013			FN
 230		NOF013	sample_id		NOF013			FN
 230		NOF013	control		Study Control			FN
@@ -5542,7 +5542,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 230		NOF013	pmid		23023125			FN
 230		NOF013	target_condition		Type 2 Diabetes Mellitus			FN
 230		NOF013	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-230		NOF013	host_species		Homo sapiens			FN
+230		NOF013	host_species		Homo sapiens		NCIT:C14225	FN
 231		NOF014	subject_id		NOF014			FN
 231		NOF014	sample_id		NOF014			FN
 231		NOF014	control		Study Control			FN
@@ -5566,7 +5566,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 231		NOF014	pmid		23023125			FN
 231		NOF014	target_condition		Type 2 Diabetes Mellitus			FN
 231		NOF014	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-231		NOF014	host_species		Homo sapiens			FN
+231		NOF014	host_species		Homo sapiens		NCIT:C14225	FN
 232		NOM001	subject_id		NOM001			FN
 232		NOM001	sample_id		NOM001			FN
 232		NOM001	control		Study Control			FN
@@ -5590,7 +5590,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 232		NOM001	pmid		23023125			FN
 232		NOM001	target_condition		Type 2 Diabetes Mellitus			FN
 232		NOM001	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-232		NOM001	host_species		Homo sapiens			FN
+232		NOM001	host_species		Homo sapiens		NCIT:C14225	FN
 233		NOM002	subject_id		NOM002			FN
 233		NOM002	sample_id		NOM002			FN
 233		NOM002	control		Study Control			FN
@@ -5614,7 +5614,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 233		NOM002	pmid		23023125			FN
 233		NOM002	target_condition		Type 2 Diabetes Mellitus			FN
 233		NOM002	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-233		NOM002	host_species		Homo sapiens			FN
+233		NOM002	host_species		Homo sapiens		NCIT:C14225	FN
 234		NOM004	subject_id		NOM004			FN
 234		NOM004	sample_id		NOM004			FN
 234		NOM004	control		Study Control			FN
@@ -5638,7 +5638,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 234		NOM004	pmid		23023125			FN
 234		NOM004	target_condition		Type 2 Diabetes Mellitus			FN
 234		NOM004	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-234		NOM004	host_species		Homo sapiens			FN
+234		NOM004	host_species		Homo sapiens		NCIT:C14225	FN
 235		NOM005	subject_id		NOM005			FN
 235		NOM005	sample_id		NOM005			FN
 235		NOM005	control		Study Control			FN
@@ -5662,7 +5662,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 235		NOM005	pmid		23023125			FN
 235		NOM005	target_condition		Type 2 Diabetes Mellitus			FN
 235		NOM005	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-235		NOM005	host_species		Homo sapiens			FN
+235		NOM005	host_species		Homo sapiens		NCIT:C14225	FN
 236		NOM007	subject_id		NOM007			FN
 236		NOM007	sample_id		NOM007			FN
 236		NOM007	control		Study Control			FN
@@ -5686,7 +5686,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 236		NOM007	pmid		23023125			FN
 236		NOM007	target_condition		Type 2 Diabetes Mellitus			FN
 236		NOM007	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-236		NOM007	host_species		Homo sapiens			FN
+236		NOM007	host_species		Homo sapiens		NCIT:C14225	FN
 237		NOM008	subject_id		NOM008			FN
 237		NOM008	sample_id		NOM008			FN
 237		NOM008	control		Study Control			FN
@@ -5710,7 +5710,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 237		NOM008	pmid		23023125			FN
 237		NOM008	target_condition		Type 2 Diabetes Mellitus			FN
 237		NOM008	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-237		NOM008	host_species		Homo sapiens			FN
+237		NOM008	host_species		Homo sapiens		NCIT:C14225	FN
 238		NOM009	subject_id		NOM009			FN
 238		NOM009	sample_id		NOM009			FN
 238		NOM009	control		Study Control			FN
@@ -5734,7 +5734,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 238		NOM009	pmid		23023125			FN
 238		NOM009	target_condition		Type 2 Diabetes Mellitus			FN
 238		NOM009	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-238		NOM009	host_species		Homo sapiens			FN
+238		NOM009	host_species		Homo sapiens		NCIT:C14225	FN
 239		NOM010	subject_id		NOM010			FN
 239		NOM010	sample_id		NOM010			FN
 239		NOM010	control		Study Control			FN
@@ -5758,7 +5758,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 239		NOM010	pmid		23023125			FN
 239		NOM010	target_condition		Type 2 Diabetes Mellitus			FN
 239		NOM010	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-239		NOM010	host_species		Homo sapiens			FN
+239		NOM010	host_species		Homo sapiens		NCIT:C14225	FN
 240		NOM012	subject_id		NOM012			FN
 240		NOM012	sample_id		NOM012			FN
 240		NOM012	control		Study Control			FN
@@ -5782,7 +5782,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 240		NOM012	pmid		23023125			FN
 240		NOM012	target_condition		Type 2 Diabetes Mellitus			FN
 240		NOM012	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-240		NOM012	host_species		Homo sapiens			FN
+240		NOM012	host_species		Homo sapiens		NCIT:C14225	FN
 241		NOM013	subject_id		NOM013			FN
 241		NOM013	sample_id		NOM013			FN
 241		NOM013	control		Study Control			FN
@@ -5806,7 +5806,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 241		NOM013	pmid		23023125			FN
 241		NOM013	target_condition		Type 2 Diabetes Mellitus			FN
 241		NOM013	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-241		NOM013	host_species		Homo sapiens			FN
+241		NOM013	host_species		Homo sapiens		NCIT:C14225	FN
 242		NOM014	subject_id		NOM014			FN
 242		NOM014	sample_id		NOM014			FN
 242		NOM014	control		Study Control			FN
@@ -5830,7 +5830,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 242		NOM014	pmid		23023125			FN
 242		NOM014	target_condition		Type 2 Diabetes Mellitus			FN
 242		NOM014	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-242		NOM014	host_species		Homo sapiens			FN
+242		NOM014	host_species		Homo sapiens		NCIT:C14225	FN
 243		NOM015	subject_id		NOM015			FN
 243		NOM015	sample_id		NOM015			FN
 243		NOM015	control		Study Control			FN
@@ -5854,7 +5854,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 243		NOM015	pmid		23023125			FN
 243		NOM015	target_condition		Type 2 Diabetes Mellitus			FN
 243		NOM015	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-243		NOM015	host_species		Homo sapiens			FN
+243		NOM015	host_species		Homo sapiens		NCIT:C14225	FN
 244		NOM016	subject_id		NOM016			FN
 244		NOM016	sample_id		NOM016			FN
 244		NOM016	control		Study Control			FN
@@ -5878,7 +5878,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 244		NOM016	pmid		23023125			FN
 244		NOM016	target_condition		Type 2 Diabetes Mellitus			FN
 244		NOM016	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-244		NOM016	host_species		Homo sapiens			FN
+244		NOM016	host_species		Homo sapiens		NCIT:C14225	FN
 245		NOM017	subject_id		NOM017			FN
 245		NOM017	sample_id		NOM017			FN
 245		NOM017	control		Study Control			FN
@@ -5902,7 +5902,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 245		NOM017	pmid		23023125			FN
 245		NOM017	target_condition		Type 2 Diabetes Mellitus			FN
 245		NOM017	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-245		NOM017	host_species		Homo sapiens			FN
+245		NOM017	host_species		Homo sapiens		NCIT:C14225	FN
 246		NOM018	subject_id		NOM018			FN
 246		NOM018	sample_id		NOM018			FN
 246		NOM018	control		Study Control			FN
@@ -5926,7 +5926,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 246		NOM018	pmid		23023125			FN
 246		NOM018	target_condition		Type 2 Diabetes Mellitus			FN
 246		NOM018	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-246		NOM018	host_species		Homo sapiens			FN
+246		NOM018	host_species		Homo sapiens		NCIT:C14225	FN
 247		NOM019	subject_id		NOM019			FN
 247		NOM019	sample_id		NOM019			FN
 247		NOM019	control		Study Control			FN
@@ -5950,7 +5950,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 247		NOM019	pmid		23023125			FN
 247		NOM019	target_condition		Type 2 Diabetes Mellitus			FN
 247		NOM019	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-247		NOM019	host_species		Homo sapiens			FN
+247		NOM019	host_species		Homo sapiens		NCIT:C14225	FN
 248		NOM020	subject_id		NOM020			FN
 248		NOM020	sample_id		NOM020			FN
 248		NOM020	control		Study Control			FN
@@ -5974,7 +5974,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 248		NOM020	pmid		23023125			FN
 248		NOM020	target_condition		Type 2 Diabetes Mellitus			FN
 248		NOM020	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-248		NOM020	host_species		Homo sapiens			FN
+248		NOM020	host_species		Homo sapiens		NCIT:C14225	FN
 249		NOM022	subject_id		NOM022			FN
 249		NOM022	sample_id		NOM022			FN
 249		NOM022	control		Study Control			FN
@@ -5998,7 +5998,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 249		NOM022	pmid		23023125			FN
 249		NOM022	target_condition		Type 2 Diabetes Mellitus			FN
 249		NOM022	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-249		NOM022	host_species		Homo sapiens			FN
+249		NOM022	host_species		Homo sapiens		NCIT:C14225	FN
 250		NOM023	subject_id		NOM023			FN
 250		NOM023	sample_id		NOM023			FN
 250		NOM023	control		Study Control			FN
@@ -6022,7 +6022,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 250		NOM023	pmid		23023125			FN
 250		NOM023	target_condition		Type 2 Diabetes Mellitus			FN
 250		NOM023	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-250		NOM023	host_species		Homo sapiens			FN
+250		NOM023	host_species		Homo sapiens		NCIT:C14225	FN
 251		NOM025	subject_id		NOM025			FN
 251		NOM025	sample_id		NOM025			FN
 251		NOM025	control		Study Control			FN
@@ -6046,7 +6046,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 251		NOM025	pmid		23023125			FN
 251		NOM025	target_condition		Type 2 Diabetes Mellitus			FN
 251		NOM025	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-251		NOM025	host_species		Homo sapiens			FN
+251		NOM025	host_species		Homo sapiens		NCIT:C14225	FN
 252		NOM026	subject_id		NOM026			FN
 252		NOM026	sample_id		NOM026			FN
 252		NOM026	control		Study Control			FN
@@ -6070,7 +6070,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 252		NOM026	pmid		23023125			FN
 252		NOM026	target_condition		Type 2 Diabetes Mellitus			FN
 252		NOM026	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-252		NOM026	host_species		Homo sapiens			FN
+252		NOM026	host_species		Homo sapiens		NCIT:C14225	FN
 253		NOM027	subject_id		NOM027			FN
 253		NOM027	sample_id		NOM027			FN
 253		NOM027	control		Study Control			FN
@@ -6094,7 +6094,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 253		NOM027	pmid		23023125			FN
 253		NOM027	target_condition		Type 2 Diabetes Mellitus			FN
 253		NOM027	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-253		NOM027	host_species		Homo sapiens			FN
+253		NOM027	host_species		Homo sapiens		NCIT:C14225	FN
 254		NOM028	subject_id		NOM028			FN
 254		NOM028	sample_id		NOM028			FN
 254		NOM028	control		Study Control			FN
@@ -6118,7 +6118,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 254		NOM028	pmid		23023125			FN
 254		NOM028	target_condition		Type 2 Diabetes Mellitus			FN
 254		NOM028	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-254		NOM028	host_species		Homo sapiens			FN
+254		NOM028	host_species		Homo sapiens		NCIT:C14225	FN
 255		NOM029	subject_id		NOM029			FN
 255		NOM029	sample_id		NOM029			FN
 255		NOM029	control		Study Control			FN
@@ -6142,7 +6142,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 255		NOM029	pmid		23023125			FN
 255		NOM029	target_condition		Type 2 Diabetes Mellitus			FN
 255		NOM029	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-255		NOM029	host_species		Homo sapiens			FN
+255		NOM029	host_species		Homo sapiens		NCIT:C14225	FN
 256		T2D-001	subject_id		T2D-001			FN
 256		T2D-001	sample_id		T2D-001			FN
 256		T2D-001	control		Case			FN
@@ -6166,7 +6166,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 256		T2D-001	pmid		23023125			FN
 256		T2D-001	target_condition		Type 2 Diabetes Mellitus			FN
 256		T2D-001	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-256		T2D-001	host_species		Homo sapiens			FN
+256		T2D-001	host_species		Homo sapiens		NCIT:C14225	FN
 257		T2D-002	subject_id		T2D-002			FN
 257		T2D-002	sample_id		T2D-002			FN
 257		T2D-002	control		Case			FN
@@ -6190,7 +6190,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 257		T2D-002	pmid		23023125			FN
 257		T2D-002	target_condition		Type 2 Diabetes Mellitus			FN
 257		T2D-002	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-257		T2D-002	host_species		Homo sapiens			FN
+257		T2D-002	host_species		Homo sapiens		NCIT:C14225	FN
 258		T2D-003	subject_id		T2D-003			FN
 258		T2D-003	sample_id		T2D-003			FN
 258		T2D-003	control		Case			FN
@@ -6214,7 +6214,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 258		T2D-003	pmid		23023125			FN
 258		T2D-003	target_condition		Type 2 Diabetes Mellitus			FN
 258		T2D-003	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-258		T2D-003	host_species		Homo sapiens			FN
+258		T2D-003	host_species		Homo sapiens		NCIT:C14225	FN
 259		T2D-004	subject_id		T2D-004			FN
 259		T2D-004	sample_id		T2D-004			FN
 259		T2D-004	control		Case			FN
@@ -6238,7 +6238,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 259		T2D-004	pmid		23023125			FN
 259		T2D-004	target_condition		Type 2 Diabetes Mellitus			FN
 259		T2D-004	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-259		T2D-004	host_species		Homo sapiens			FN
+259		T2D-004	host_species		Homo sapiens		NCIT:C14225	FN
 260		T2D-005	subject_id		T2D-005			FN
 260		T2D-005	sample_id		T2D-005			FN
 260		T2D-005	control		Case			FN
@@ -6262,7 +6262,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 260		T2D-005	pmid		23023125			FN
 260		T2D-005	target_condition		Type 2 Diabetes Mellitus			FN
 260		T2D-005	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-260		T2D-005	host_species		Homo sapiens			FN
+260		T2D-005	host_species		Homo sapiens		NCIT:C14225	FN
 261		T2D-006	subject_id		T2D-006			FN
 261		T2D-006	sample_id		T2D-006			FN
 261		T2D-006	control		Case			FN
@@ -6286,7 +6286,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 261		T2D-006	pmid		23023125			FN
 261		T2D-006	target_condition		Type 2 Diabetes Mellitus			FN
 261		T2D-006	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-261		T2D-006	host_species		Homo sapiens			FN
+261		T2D-006	host_species		Homo sapiens		NCIT:C14225	FN
 262		T2D-007	subject_id		T2D-007			FN
 262		T2D-007	sample_id		T2D-007			FN
 262		T2D-007	control		Case			FN
@@ -6310,7 +6310,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 262		T2D-007	pmid		23023125			FN
 262		T2D-007	target_condition		Type 2 Diabetes Mellitus			FN
 262		T2D-007	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-262		T2D-007	host_species		Homo sapiens			FN
+262		T2D-007	host_species		Homo sapiens		NCIT:C14225	FN
 263		T2D-008	subject_id		T2D-008			FN
 263		T2D-008	sample_id		T2D-008			FN
 263		T2D-008	control		Case			FN
@@ -6334,7 +6334,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 263		T2D-008	pmid		23023125			FN
 263		T2D-008	target_condition		Type 2 Diabetes Mellitus			FN
 263		T2D-008	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-263		T2D-008	host_species		Homo sapiens			FN
+263		T2D-008	host_species		Homo sapiens		NCIT:C14225	FN
 264		T2D-009	subject_id		T2D-009			FN
 264		T2D-009	sample_id		T2D-009			FN
 264		T2D-009	control		Case			FN
@@ -6358,7 +6358,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 264		T2D-009	pmid		23023125			FN
 264		T2D-009	target_condition		Type 2 Diabetes Mellitus			FN
 264		T2D-009	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-264		T2D-009	host_species		Homo sapiens			FN
+264		T2D-009	host_species		Homo sapiens		NCIT:C14225	FN
 265		T2D-010	subject_id		T2D-010			FN
 265		T2D-010	sample_id		T2D-010			FN
 265		T2D-010	control		Case			FN
@@ -6382,7 +6382,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 265		T2D-010	pmid		23023125			FN
 265		T2D-010	target_condition		Type 2 Diabetes Mellitus			FN
 265		T2D-010	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-265		T2D-010	host_species		Homo sapiens			FN
+265		T2D-010	host_species		Homo sapiens		NCIT:C14225	FN
 266		T2D-011	subject_id		T2D-011			FN
 266		T2D-011	sample_id		T2D-011			FN
 266		T2D-011	control		Case			FN
@@ -6406,7 +6406,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 266		T2D-011	pmid		23023125			FN
 266		T2D-011	target_condition		Type 2 Diabetes Mellitus			FN
 266		T2D-011	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-266		T2D-011	host_species		Homo sapiens			FN
+266		T2D-011	host_species		Homo sapiens		NCIT:C14225	FN
 267		T2D-012	subject_id		T2D-012			FN
 267		T2D-012	sample_id		T2D-012			FN
 267		T2D-012	control		Case			FN
@@ -6430,7 +6430,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 267		T2D-012	pmid		23023125			FN
 267		T2D-012	target_condition		Type 2 Diabetes Mellitus			FN
 267		T2D-012	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-267		T2D-012	host_species		Homo sapiens			FN
+267		T2D-012	host_species		Homo sapiens		NCIT:C14225	FN
 268		T2D-013	subject_id		T2D-013			FN
 268		T2D-013	sample_id		T2D-013			FN
 268		T2D-013	control		Case			FN
@@ -6454,7 +6454,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 268		T2D-013	pmid		23023125			FN
 268		T2D-013	target_condition		Type 2 Diabetes Mellitus			FN
 268		T2D-013	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-268		T2D-013	host_species		Homo sapiens			FN
+268		T2D-013	host_species		Homo sapiens		NCIT:C14225	FN
 269		T2D-014	subject_id		T2D-014			FN
 269		T2D-014	sample_id		T2D-014			FN
 269		T2D-014	control		Case			FN
@@ -6478,7 +6478,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 269		T2D-014	pmid		23023125			FN
 269		T2D-014	target_condition		Type 2 Diabetes Mellitus			FN
 269		T2D-014	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-269		T2D-014	host_species		Homo sapiens			FN
+269		T2D-014	host_species		Homo sapiens		NCIT:C14225	FN
 270		T2D-015	subject_id		T2D-015			FN
 270		T2D-015	sample_id		T2D-015			FN
 270		T2D-015	control		Case			FN
@@ -6502,7 +6502,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 270		T2D-015	pmid		23023125			FN
 270		T2D-015	target_condition		Type 2 Diabetes Mellitus			FN
 270		T2D-015	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-270		T2D-015	host_species		Homo sapiens			FN
+270		T2D-015	host_species		Homo sapiens		NCIT:C14225	FN
 271		T2D-016	subject_id		T2D-016			FN
 271		T2D-016	sample_id		T2D-016			FN
 271		T2D-016	control		Case			FN
@@ -6526,7 +6526,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 271		T2D-016	pmid		23023125			FN
 271		T2D-016	target_condition		Type 2 Diabetes Mellitus			FN
 271		T2D-016	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-271		T2D-016	host_species		Homo sapiens			FN
+271		T2D-016	host_species		Homo sapiens		NCIT:C14225	FN
 272		T2D-017	subject_id		T2D-017			FN
 272		T2D-017	sample_id		T2D-017			FN
 272		T2D-017	control		Case			FN
@@ -6550,7 +6550,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 272		T2D-017	pmid		23023125			FN
 272		T2D-017	target_condition		Type 2 Diabetes Mellitus			FN
 272		T2D-017	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-272		T2D-017	host_species		Homo sapiens			FN
+272		T2D-017	host_species		Homo sapiens		NCIT:C14225	FN
 273		T2D-018	subject_id		T2D-018			FN
 273		T2D-018	sample_id		T2D-018			FN
 273		T2D-018	control		Case			FN
@@ -6574,7 +6574,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 273		T2D-018	pmid		23023125			FN
 273		T2D-018	target_condition		Type 2 Diabetes Mellitus			FN
 273		T2D-018	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-273		T2D-018	host_species		Homo sapiens			FN
+273		T2D-018	host_species		Homo sapiens		NCIT:C14225	FN
 274		T2D-019	subject_id		T2D-019			FN
 274		T2D-019	sample_id		T2D-019			FN
 274		T2D-019	control		Case			FN
@@ -6598,7 +6598,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 274		T2D-019	pmid		23023125			FN
 274		T2D-019	target_condition		Type 2 Diabetes Mellitus			FN
 274		T2D-019	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-274		T2D-019	host_species		Homo sapiens			FN
+274		T2D-019	host_species		Homo sapiens		NCIT:C14225	FN
 275		T2D-020	subject_id		T2D-020			FN
 275		T2D-020	sample_id		T2D-020			FN
 275		T2D-020	control		Case			FN
@@ -6622,7 +6622,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 275		T2D-020	pmid		23023125			FN
 275		T2D-020	target_condition		Type 2 Diabetes Mellitus			FN
 275		T2D-020	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-275		T2D-020	host_species		Homo sapiens			FN
+275		T2D-020	host_species		Homo sapiens		NCIT:C14225	FN
 276		T2D-021	subject_id		T2D-021			FN
 276		T2D-021	sample_id		T2D-021			FN
 276		T2D-021	control		Case			FN
@@ -6646,7 +6646,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 276		T2D-021	pmid		23023125			FN
 276		T2D-021	target_condition		Type 2 Diabetes Mellitus			FN
 276		T2D-021	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-276		T2D-021	host_species		Homo sapiens			FN
+276		T2D-021	host_species		Homo sapiens		NCIT:C14225	FN
 277		T2D-022	subject_id		T2D-022			FN
 277		T2D-022	sample_id		T2D-022			FN
 277		T2D-022	control		Case			FN
@@ -6670,7 +6670,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 277		T2D-022	pmid		23023125			FN
 277		T2D-022	target_condition		Type 2 Diabetes Mellitus			FN
 277		T2D-022	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-277		T2D-022	host_species		Homo sapiens			FN
+277		T2D-022	host_species		Homo sapiens		NCIT:C14225	FN
 278		T2D-023	subject_id		T2D-023			FN
 278		T2D-023	sample_id		T2D-023			FN
 278		T2D-023	control		Case			FN
@@ -6694,7 +6694,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 278		T2D-023	pmid		23023125			FN
 278		T2D-023	target_condition		Type 2 Diabetes Mellitus			FN
 278		T2D-023	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-278		T2D-023	host_species		Homo sapiens			FN
+278		T2D-023	host_species		Homo sapiens		NCIT:C14225	FN
 279		T2D-024	subject_id		T2D-024			FN
 279		T2D-024	sample_id		T2D-024			FN
 279		T2D-024	control		Case			FN
@@ -6718,7 +6718,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 279		T2D-024	pmid		23023125			FN
 279		T2D-024	target_condition		Type 2 Diabetes Mellitus			FN
 279		T2D-024	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-279		T2D-024	host_species		Homo sapiens			FN
+279		T2D-024	host_species		Homo sapiens		NCIT:C14225	FN
 280		T2D-025	subject_id		T2D-025			FN
 280		T2D-025	sample_id		T2D-025			FN
 280		T2D-025	control		Case			FN
@@ -6742,7 +6742,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 280		T2D-025	pmid		23023125			FN
 280		T2D-025	target_condition		Type 2 Diabetes Mellitus			FN
 280		T2D-025	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-280		T2D-025	host_species		Homo sapiens			FN
+280		T2D-025	host_species		Homo sapiens		NCIT:C14225	FN
 281		T2D-026	subject_id		T2D-026			FN
 281		T2D-026	sample_id		T2D-026			FN
 281		T2D-026	control		Case			FN
@@ -6766,7 +6766,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 281		T2D-026	pmid		23023125			FN
 281		T2D-026	target_condition		Type 2 Diabetes Mellitus			FN
 281		T2D-026	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-281		T2D-026	host_species		Homo sapiens			FN
+281		T2D-026	host_species		Homo sapiens		NCIT:C14225	FN
 282		T2D-027	subject_id		T2D-027			FN
 282		T2D-027	sample_id		T2D-027			FN
 282		T2D-027	control		Not Used			FN
@@ -6790,7 +6790,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 282		T2D-027	pmid		23023125			FN
 282		T2D-027	target_condition		Type 2 Diabetes Mellitus			FN
 282		T2D-027	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-282		T2D-027	host_species		Homo sapiens			FN
+282		T2D-027	host_species		Homo sapiens		NCIT:C14225	FN
 283		T2D-028	subject_id		T2D-028			FN
 283		T2D-028	sample_id		T2D-028			FN
 283		T2D-028	control		Case			FN
@@ -6814,7 +6814,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 283		T2D-028	pmid		23023125			FN
 283		T2D-028	target_condition		Type 2 Diabetes Mellitus			FN
 283		T2D-028	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-283		T2D-028	host_species		Homo sapiens			FN
+283		T2D-028	host_species		Homo sapiens		NCIT:C14225	FN
 284		T2D-029	subject_id		T2D-029			FN
 284		T2D-029	sample_id		T2D-029			FN
 284		T2D-029	control		Case			FN
@@ -6838,7 +6838,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 284		T2D-029	pmid		23023125			FN
 284		T2D-029	target_condition		Type 2 Diabetes Mellitus			FN
 284		T2D-029	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-284		T2D-029	host_species		Homo sapiens			FN
+284		T2D-029	host_species		Homo sapiens		NCIT:C14225	FN
 285		T2D-030	subject_id		T2D-030			FN
 285		T2D-030	sample_id		T2D-030			FN
 285		T2D-030	control		Case			FN
@@ -6862,7 +6862,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 285		T2D-030	pmid		23023125			FN
 285		T2D-030	target_condition		Type 2 Diabetes Mellitus			FN
 285		T2D-030	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-285		T2D-030	host_species		Homo sapiens			FN
+285		T2D-030	host_species		Homo sapiens		NCIT:C14225	FN
 286		T2D-031	subject_id		T2D-031			FN
 286		T2D-031	sample_id		T2D-031			FN
 286		T2D-031	control		Case			FN
@@ -6886,7 +6886,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 286		T2D-031	pmid		23023125			FN
 286		T2D-031	target_condition		Type 2 Diabetes Mellitus			FN
 286		T2D-031	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-286		T2D-031	host_species		Homo sapiens			FN
+286		T2D-031	host_species		Homo sapiens		NCIT:C14225	FN
 287		T2D-032	subject_id		T2D-032			FN
 287		T2D-032	sample_id		T2D-032			FN
 287		T2D-032	control		Not Used			FN
@@ -6910,7 +6910,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 287		T2D-032	pmid		23023125			FN
 287		T2D-032	target_condition		Type 2 Diabetes Mellitus			FN
 287		T2D-032	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-287		T2D-032	host_species		Homo sapiens			FN
+287		T2D-032	host_species		Homo sapiens		NCIT:C14225	FN
 288		T2D-033	subject_id		T2D-033			FN
 288		T2D-033	sample_id		T2D-033			FN
 288		T2D-033	control		Not Used			FN
@@ -6934,7 +6934,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 288		T2D-033	pmid		23023125			FN
 288		T2D-033	target_condition		Type 2 Diabetes Mellitus			FN
 288		T2D-033	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-288		T2D-033	host_species		Homo sapiens			FN
+288		T2D-033	host_species		Homo sapiens		NCIT:C14225	FN
 289		T2D-034	subject_id		T2D-034			FN
 289		T2D-034	sample_id		T2D-034			FN
 289		T2D-034	control		Not Used			FN
@@ -6958,7 +6958,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 289		T2D-034	pmid		23023125			FN
 289		T2D-034	target_condition		Type 2 Diabetes Mellitus			FN
 289		T2D-034	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-289		T2D-034	host_species		Homo sapiens			FN
+289		T2D-034	host_species		Homo sapiens		NCIT:C14225	FN
 290		T2D-035	subject_id		T2D-035			FN
 290		T2D-035	sample_id		T2D-035			FN
 290		T2D-035	control		Not Used			FN
@@ -6982,7 +6982,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 290		T2D-035	pmid		23023125			FN
 290		T2D-035	target_condition		Type 2 Diabetes Mellitus			FN
 290		T2D-035	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-290		T2D-035	host_species		Homo sapiens			FN
+290		T2D-035	host_species		Homo sapiens		NCIT:C14225	FN
 291		T2D-036	subject_id		T2D-036			FN
 291		T2D-036	sample_id		T2D-036			FN
 291		T2D-036	control		Case			FN
@@ -7006,7 +7006,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 291		T2D-036	pmid		23023125			FN
 291		T2D-036	target_condition		Type 2 Diabetes Mellitus			FN
 291		T2D-036	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-291		T2D-036	host_species		Homo sapiens			FN
+291		T2D-036	host_species		Homo sapiens		NCIT:C14225	FN
 292		T2D-037	subject_id		T2D-037			FN
 292		T2D-037	sample_id		T2D-037			FN
 292		T2D-037	control		Not Used			FN
@@ -7030,7 +7030,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 292		T2D-037	pmid		23023125			FN
 292		T2D-037	target_condition		Type 2 Diabetes Mellitus			FN
 292		T2D-037	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-292		T2D-037	host_species		Homo sapiens			FN
+292		T2D-037	host_species		Homo sapiens		NCIT:C14225	FN
 293		T2D-038	subject_id		T2D-038			FN
 293		T2D-038	sample_id		T2D-038			FN
 293		T2D-038	control		Not Used			FN
@@ -7054,7 +7054,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 293		T2D-038	pmid		23023125			FN
 293		T2D-038	target_condition		Type 2 Diabetes Mellitus			FN
 293		T2D-038	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-293		T2D-038	host_species		Homo sapiens			FN
+293		T2D-038	host_species		Homo sapiens		NCIT:C14225	FN
 294		T2D-039	subject_id		T2D-039			FN
 294		T2D-039	sample_id		T2D-039			FN
 294		T2D-039	control		Case			FN
@@ -7078,7 +7078,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 294		T2D-039	pmid		23023125			FN
 294		T2D-039	target_condition		Type 2 Diabetes Mellitus			FN
 294		T2D-039	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-294		T2D-039	host_species		Homo sapiens			FN
+294		T2D-039	host_species		Homo sapiens		NCIT:C14225	FN
 295		T2D-040	subject_id		T2D-040			FN
 295		T2D-040	sample_id		T2D-040			FN
 295		T2D-040	control		Case			FN
@@ -7102,7 +7102,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 295		T2D-040	pmid		23023125			FN
 295		T2D-040	target_condition		Type 2 Diabetes Mellitus			FN
 295		T2D-040	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-295		T2D-040	host_species		Homo sapiens			FN
+295		T2D-040	host_species		Homo sapiens		NCIT:C14225	FN
 296		T2D-041	subject_id		T2D-041			FN
 296		T2D-041	sample_id		T2D-041			FN
 296		T2D-041	control		Case			FN
@@ -7126,7 +7126,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 296		T2D-041	pmid		23023125			FN
 296		T2D-041	target_condition		Type 2 Diabetes Mellitus			FN
 296		T2D-041	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-296		T2D-041	host_species		Homo sapiens			FN
+296		T2D-041	host_species		Homo sapiens		NCIT:C14225	FN
 297		T2D-042	subject_id		T2D-042			FN
 297		T2D-042	sample_id		T2D-042			FN
 297		T2D-042	control		Case			FN
@@ -7150,7 +7150,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 297		T2D-042	pmid		23023125			FN
 297		T2D-042	target_condition		Type 2 Diabetes Mellitus			FN
 297		T2D-042	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-297		T2D-042	host_species		Homo sapiens			FN
+297		T2D-042	host_species		Homo sapiens		NCIT:C14225	FN
 298		T2D-043	subject_id		T2D-043			FN
 298		T2D-043	sample_id		T2D-043			FN
 298		T2D-043	control		Case			FN
@@ -7174,7 +7174,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 298		T2D-043	pmid		23023125			FN
 298		T2D-043	target_condition		Type 2 Diabetes Mellitus			FN
 298		T2D-043	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-298		T2D-043	host_species		Homo sapiens			FN
+298		T2D-043	host_species		Homo sapiens		NCIT:C14225	FN
 299		T2D-044	subject_id		T2D-044			FN
 299		T2D-044	sample_id		T2D-044			FN
 299		T2D-044	control		Case			FN
@@ -7198,7 +7198,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 299		T2D-044	pmid		23023125			FN
 299		T2D-044	target_condition		Type 2 Diabetes Mellitus			FN
 299		T2D-044	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-299		T2D-044	host_species		Homo sapiens			FN
+299		T2D-044	host_species		Homo sapiens		NCIT:C14225	FN
 300		T2D-045	subject_id		T2D-045			FN
 300		T2D-045	sample_id		T2D-045			FN
 300		T2D-045	control		Case			FN
@@ -7222,7 +7222,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 300		T2D-045	pmid		23023125			FN
 300		T2D-045	target_condition		Type 2 Diabetes Mellitus			FN
 300		T2D-045	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-300		T2D-045	host_species		Homo sapiens			FN
+300		T2D-045	host_species		Homo sapiens		NCIT:C14225	FN
 301		T2D-046	subject_id		T2D-046			FN
 301		T2D-046	sample_id		T2D-046			FN
 301		T2D-046	control		Case			FN
@@ -7246,7 +7246,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 301		T2D-046	pmid		23023125			FN
 301		T2D-046	target_condition		Type 2 Diabetes Mellitus			FN
 301		T2D-046	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-301		T2D-046	host_species		Homo sapiens			FN
+301		T2D-046	host_species		Homo sapiens		NCIT:C14225	FN
 302		T2D-047	subject_id		T2D-047			FN
 302		T2D-047	sample_id		T2D-047			FN
 302		T2D-047	control		Case			FN
@@ -7270,7 +7270,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 302		T2D-047	pmid		23023125			FN
 302		T2D-047	target_condition		Type 2 Diabetes Mellitus			FN
 302		T2D-047	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-302		T2D-047	host_species		Homo sapiens			FN
+302		T2D-047	host_species		Homo sapiens		NCIT:C14225	FN
 303		T2D-048	subject_id		T2D-048			FN
 303		T2D-048	sample_id		T2D-048			FN
 303		T2D-048	control		Case			FN
@@ -7294,7 +7294,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 303		T2D-048	pmid		23023125			FN
 303		T2D-048	target_condition		Type 2 Diabetes Mellitus			FN
 303		T2D-048	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-303		T2D-048	host_species		Homo sapiens			FN
+303		T2D-048	host_species		Homo sapiens		NCIT:C14225	FN
 304		T2D-049	subject_id		T2D-049			FN
 304		T2D-049	sample_id		T2D-049			FN
 304		T2D-049	control		Case			FN
@@ -7318,7 +7318,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 304		T2D-049	pmid		23023125			FN
 304		T2D-049	target_condition		Type 2 Diabetes Mellitus			FN
 304		T2D-049	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-304		T2D-049	host_species		Homo sapiens			FN
+304		T2D-049	host_species		Homo sapiens		NCIT:C14225	FN
 305		T2D-050	subject_id		T2D-050			FN
 305		T2D-050	sample_id		T2D-050			FN
 305		T2D-050	control		Case			FN
@@ -7342,7 +7342,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 305		T2D-050	pmid		23023125			FN
 305		T2D-050	target_condition		Type 2 Diabetes Mellitus			FN
 305		T2D-050	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-305		T2D-050	host_species		Homo sapiens			FN
+305		T2D-050	host_species		Homo sapiens		NCIT:C14225	FN
 306		T2D-051	subject_id		T2D-051			FN
 306		T2D-051	sample_id		T2D-051			FN
 306		T2D-051	control		Case			FN
@@ -7366,7 +7366,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 306		T2D-051	pmid		23023125			FN
 306		T2D-051	target_condition		Type 2 Diabetes Mellitus			FN
 306		T2D-051	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-306		T2D-051	host_species		Homo sapiens			FN
+306		T2D-051	host_species		Homo sapiens		NCIT:C14225	FN
 307		T2D-052	subject_id		T2D-052			FN
 307		T2D-052	sample_id		T2D-052			FN
 307		T2D-052	control		Case			FN
@@ -7390,7 +7390,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 307		T2D-052	pmid		23023125			FN
 307		T2D-052	target_condition		Type 2 Diabetes Mellitus			FN
 307		T2D-052	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-307		T2D-052	host_species		Homo sapiens			FN
+307		T2D-052	host_species		Homo sapiens		NCIT:C14225	FN
 308		T2D-053	subject_id		T2D-053			FN
 308		T2D-053	sample_id		T2D-053			FN
 308		T2D-053	control		Case			FN
@@ -7414,7 +7414,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 308		T2D-053	pmid		23023125			FN
 308		T2D-053	target_condition		Type 2 Diabetes Mellitus			FN
 308		T2D-053	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-308		T2D-053	host_species		Homo sapiens			FN
+308		T2D-053	host_species		Homo sapiens		NCIT:C14225	FN
 309		T2D-054	subject_id		T2D-054			FN
 309		T2D-054	sample_id		T2D-054			FN
 309		T2D-054	control		Case			FN
@@ -7438,7 +7438,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 309		T2D-054	pmid		23023125			FN
 309		T2D-054	target_condition		Type 2 Diabetes Mellitus			FN
 309		T2D-054	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-309		T2D-054	host_species		Homo sapiens			FN
+309		T2D-054	host_species		Homo sapiens		NCIT:C14225	FN
 310		T2D-055	subject_id		T2D-055			FN
 310		T2D-055	sample_id		T2D-055			FN
 310		T2D-055	control		Case			FN
@@ -7462,7 +7462,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 310		T2D-055	pmid		23023125			FN
 310		T2D-055	target_condition		Type 2 Diabetes Mellitus			FN
 310		T2D-055	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-310		T2D-055	host_species		Homo sapiens			FN
+310		T2D-055	host_species		Homo sapiens		NCIT:C14225	FN
 311		T2D-056	subject_id		T2D-056			FN
 311		T2D-056	sample_id		T2D-056			FN
 311		T2D-056	control		Case			FN
@@ -7486,7 +7486,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 311		T2D-056	pmid		23023125			FN
 311		T2D-056	target_condition		Type 2 Diabetes Mellitus			FN
 311		T2D-056	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-311		T2D-056	host_species		Homo sapiens			FN
+311		T2D-056	host_species		Homo sapiens		NCIT:C14225	FN
 312		T2D-057	subject_id		T2D-057			FN
 312		T2D-057	sample_id		T2D-057			FN
 312		T2D-057	control		Case			FN
@@ -7510,7 +7510,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 312		T2D-057	pmid		23023125			FN
 312		T2D-057	target_condition		Type 2 Diabetes Mellitus			FN
 312		T2D-057	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-312		T2D-057	host_species		Homo sapiens			FN
+312		T2D-057	host_species		Homo sapiens		NCIT:C14225	FN
 313		T2D-058	subject_id		T2D-058			FN
 313		T2D-058	sample_id		T2D-058			FN
 313		T2D-058	control		Case			FN
@@ -7534,7 +7534,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 313		T2D-058	pmid		23023125			FN
 313		T2D-058	target_condition		Type 2 Diabetes Mellitus			FN
 313		T2D-058	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-313		T2D-058	host_species		Homo sapiens			FN
+313		T2D-058	host_species		Homo sapiens		NCIT:C14225	FN
 314		T2D-059	subject_id		T2D-059			FN
 314		T2D-059	sample_id		T2D-059			FN
 314		T2D-059	control		Case			FN
@@ -7558,7 +7558,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 314		T2D-059	pmid		23023125			FN
 314		T2D-059	target_condition		Type 2 Diabetes Mellitus			FN
 314		T2D-059	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-314		T2D-059	host_species		Homo sapiens			FN
+314		T2D-059	host_species		Homo sapiens		NCIT:C14225	FN
 315		T2D-060	subject_id		T2D-060			FN
 315		T2D-060	sample_id		T2D-060			FN
 315		T2D-060	control		Case			FN
@@ -7582,7 +7582,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 315		T2D-060	pmid		23023125			FN
 315		T2D-060	target_condition		Type 2 Diabetes Mellitus			FN
 315		T2D-060	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-315		T2D-060	host_species		Homo sapiens			FN
+315		T2D-060	host_species		Homo sapiens		NCIT:C14225	FN
 316		T2D-061	subject_id		T2D-061			FN
 316		T2D-061	sample_id		T2D-061			FN
 316		T2D-061	control		Not Used			FN
@@ -7606,7 +7606,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 316		T2D-061	pmid		23023125			FN
 316		T2D-061	target_condition		Type 2 Diabetes Mellitus			FN
 316		T2D-061	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-316		T2D-061	host_species		Homo sapiens			FN
+316		T2D-061	host_species		Homo sapiens		NCIT:C14225	FN
 317		T2D-062	subject_id		T2D-062			FN
 317		T2D-062	sample_id		T2D-062			FN
 317		T2D-062	control		Case			FN
@@ -7630,7 +7630,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 317		T2D-062	pmid		23023125			FN
 317		T2D-062	target_condition		Type 2 Diabetes Mellitus			FN
 317		T2D-062	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-317		T2D-062	host_species		Homo sapiens			FN
+317		T2D-062	host_species		Homo sapiens		NCIT:C14225	FN
 318		T2D-063	subject_id		T2D-063			FN
 318		T2D-063	sample_id		T2D-063			FN
 318		T2D-063	control		Case			FN
@@ -7654,7 +7654,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 318		T2D-063	pmid		23023125			FN
 318		T2D-063	target_condition		Type 2 Diabetes Mellitus			FN
 318		T2D-063	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-318		T2D-063	host_species		Homo sapiens			FN
+318		T2D-063	host_species		Homo sapiens		NCIT:C14225	FN
 319		T2D-064	subject_id		T2D-064			FN
 319		T2D-064	sample_id		T2D-064			FN
 319		T2D-064	control		Case			FN
@@ -7678,7 +7678,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 319		T2D-064	pmid		23023125			FN
 319		T2D-064	target_condition		Type 2 Diabetes Mellitus			FN
 319		T2D-064	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-319		T2D-064	host_species		Homo sapiens			FN
+319		T2D-064	host_species		Homo sapiens		NCIT:C14225	FN
 320		T2D-065	subject_id		T2D-065			FN
 320		T2D-065	sample_id		T2D-065			FN
 320		T2D-065	control		Case			FN
@@ -7702,7 +7702,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 320		T2D-065	pmid		23023125			FN
 320		T2D-065	target_condition		Type 2 Diabetes Mellitus			FN
 320		T2D-065	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-320		T2D-065	host_species		Homo sapiens			FN
+320		T2D-065	host_species		Homo sapiens		NCIT:C14225	FN
 321		T2D-066	subject_id		T2D-066			FN
 321		T2D-066	sample_id		T2D-066			FN
 321		T2D-066	control		Case			FN
@@ -7726,7 +7726,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 321		T2D-066	pmid		23023125			FN
 321		T2D-066	target_condition		Type 2 Diabetes Mellitus			FN
 321		T2D-066	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-321		T2D-066	host_species		Homo sapiens			FN
+321		T2D-066	host_species		Homo sapiens		NCIT:C14225	FN
 322		T2D-067	subject_id		T2D-067			FN
 322		T2D-067	sample_id		T2D-067			FN
 322		T2D-067	control		Case			FN
@@ -7750,7 +7750,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 322		T2D-067	pmid		23023125			FN
 322		T2D-067	target_condition		Type 2 Diabetes Mellitus			FN
 322		T2D-067	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-322		T2D-067	host_species		Homo sapiens			FN
+322		T2D-067	host_species		Homo sapiens		NCIT:C14225	FN
 323		T2D-068	subject_id		T2D-068			FN
 323		T2D-068	sample_id		T2D-068			FN
 323		T2D-068	control		Case			FN
@@ -7774,7 +7774,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 323		T2D-068	pmid		23023125			FN
 323		T2D-068	target_condition		Type 2 Diabetes Mellitus			FN
 323		T2D-068	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-323		T2D-068	host_species		Homo sapiens			FN
+323		T2D-068	host_species		Homo sapiens		NCIT:C14225	FN
 324		T2D-069	subject_id		T2D-069			FN
 324		T2D-069	sample_id		T2D-069			FN
 324		T2D-069	control		Case			FN
@@ -7798,7 +7798,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 324		T2D-069	pmid		23023125			FN
 324		T2D-069	target_condition		Type 2 Diabetes Mellitus			FN
 324		T2D-069	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-324		T2D-069	host_species		Homo sapiens			FN
+324		T2D-069	host_species		Homo sapiens		NCIT:C14225	FN
 325		T2D-070	subject_id		T2D-070			FN
 325		T2D-070	sample_id		T2D-070			FN
 325		T2D-070	control		Case			FN
@@ -7822,7 +7822,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 325		T2D-070	pmid		23023125			FN
 325		T2D-070	target_condition		Type 2 Diabetes Mellitus			FN
 325		T2D-070	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-325		T2D-070	host_species		Homo sapiens			FN
+325		T2D-070	host_species		Homo sapiens		NCIT:C14225	FN
 326		T2D-071	subject_id		T2D-071			FN
 326		T2D-071	sample_id		T2D-071			FN
 326		T2D-071	control		Case			FN
@@ -7846,7 +7846,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 326		T2D-071	pmid		23023125			FN
 326		T2D-071	target_condition		Type 2 Diabetes Mellitus			FN
 326		T2D-071	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-326		T2D-071	host_species		Homo sapiens			FN
+326		T2D-071	host_species		Homo sapiens		NCIT:C14225	FN
 327		T2D-072	subject_id		T2D-072			FN
 327		T2D-072	sample_id		T2D-072			FN
 327		T2D-072	control		Case			FN
@@ -7870,7 +7870,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 327		T2D-072	pmid		23023125			FN
 327		T2D-072	target_condition		Type 2 Diabetes Mellitus			FN
 327		T2D-072	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-327		T2D-072	host_species		Homo sapiens			FN
+327		T2D-072	host_species		Homo sapiens		NCIT:C14225	FN
 328		T2D-073	subject_id		T2D-073			FN
 328		T2D-073	sample_id		T2D-073			FN
 328		T2D-073	control		Case			FN
@@ -7894,7 +7894,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 328		T2D-073	pmid		23023125			FN
 328		T2D-073	target_condition		Type 2 Diabetes Mellitus			FN
 328		T2D-073	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-328		T2D-073	host_species		Homo sapiens			FN
+328		T2D-073	host_species		Homo sapiens		NCIT:C14225	FN
 329		T2D-074	subject_id		T2D-074			FN
 329		T2D-074	sample_id		T2D-074			FN
 329		T2D-074	control		Case			FN
@@ -7918,7 +7918,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 329		T2D-074	pmid		23023125			FN
 329		T2D-074	target_condition		Type 2 Diabetes Mellitus			FN
 329		T2D-074	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-329		T2D-074	host_species		Homo sapiens			FN
+329		T2D-074	host_species		Homo sapiens		NCIT:C14225	FN
 330		T2D-075	subject_id		T2D-075			FN
 330		T2D-075	sample_id		T2D-075			FN
 330		T2D-075	control		Case			FN
@@ -7942,7 +7942,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 330		T2D-075	pmid		23023125			FN
 330		T2D-075	target_condition		Type 2 Diabetes Mellitus			FN
 330		T2D-075	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-330		T2D-075	host_species		Homo sapiens			FN
+330		T2D-075	host_species		Homo sapiens		NCIT:C14225	FN
 331		T2D-076	subject_id		T2D-076			FN
 331		T2D-076	sample_id		T2D-076			FN
 331		T2D-076	control		Case			FN
@@ -7966,7 +7966,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 331		T2D-076	pmid		23023125			FN
 331		T2D-076	target_condition		Type 2 Diabetes Mellitus			FN
 331		T2D-076	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-331		T2D-076	host_species		Homo sapiens			FN
+331		T2D-076	host_species		Homo sapiens		NCIT:C14225	FN
 332		T2D-077	subject_id		T2D-077			FN
 332		T2D-077	sample_id		T2D-077			FN
 332		T2D-077	control		Case			FN
@@ -7990,7 +7990,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 332		T2D-077	pmid		23023125			FN
 332		T2D-077	target_condition		Type 2 Diabetes Mellitus			FN
 332		T2D-077	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-332		T2D-077	host_species		Homo sapiens			FN
+332		T2D-077	host_species		Homo sapiens		NCIT:C14225	FN
 333		T2D-078	subject_id		T2D-078			FN
 333		T2D-078	sample_id		T2D-078			FN
 333		T2D-078	control		Case			FN
@@ -8014,7 +8014,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 333		T2D-078	pmid		23023125			FN
 333		T2D-078	target_condition		Type 2 Diabetes Mellitus			FN
 333		T2D-078	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-333		T2D-078	host_species		Homo sapiens			FN
+333		T2D-078	host_species		Homo sapiens		NCIT:C14225	FN
 334		T2D-079	subject_id		T2D-079			FN
 334		T2D-079	sample_id		T2D-079			FN
 334		T2D-079	control		Case			FN
@@ -8038,7 +8038,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 334		T2D-079	pmid		23023125			FN
 334		T2D-079	target_condition		Type 2 Diabetes Mellitus			FN
 334		T2D-079	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-334		T2D-079	host_species		Homo sapiens			FN
+334		T2D-079	host_species		Homo sapiens		NCIT:C14225	FN
 335		T2D-080	subject_id		T2D-080			FN
 335		T2D-080	sample_id		T2D-080			FN
 335		T2D-080	control		Case			FN
@@ -8062,7 +8062,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 335		T2D-080	pmid		23023125			FN
 335		T2D-080	target_condition		Type 2 Diabetes Mellitus			FN
 335		T2D-080	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-335		T2D-080	host_species		Homo sapiens			FN
+335		T2D-080	host_species		Homo sapiens		NCIT:C14225	FN
 336		T2D-081	subject_id		T2D-081			FN
 336		T2D-081	sample_id		T2D-081			FN
 336		T2D-081	control		Case			FN
@@ -8086,7 +8086,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 336		T2D-081	pmid		23023125			FN
 336		T2D-081	target_condition		Type 2 Diabetes Mellitus			FN
 336		T2D-081	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-336		T2D-081	host_species		Homo sapiens			FN
+336		T2D-081	host_species		Homo sapiens		NCIT:C14225	FN
 337		T2D-082	subject_id		T2D-082			FN
 337		T2D-082	sample_id		T2D-082			FN
 337		T2D-082	control		Case			FN
@@ -8110,7 +8110,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 337		T2D-082	pmid		23023125			FN
 337		T2D-082	target_condition		Type 2 Diabetes Mellitus			FN
 337		T2D-082	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-337		T2D-082	host_species		Homo sapiens			FN
+337		T2D-082	host_species		Homo sapiens		NCIT:C14225	FN
 338		T2D-083	subject_id		T2D-083			FN
 338		T2D-083	sample_id		T2D-083			FN
 338		T2D-083	control		Case			FN
@@ -8134,7 +8134,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 338		T2D-083	pmid		23023125			FN
 338		T2D-083	target_condition		Type 2 Diabetes Mellitus			FN
 338		T2D-083	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-338		T2D-083	host_species		Homo sapiens			FN
+338		T2D-083	host_species		Homo sapiens		NCIT:C14225	FN
 339		T2D-084	subject_id		T2D-084			FN
 339		T2D-084	sample_id		T2D-084			FN
 339		T2D-084	control		Case			FN
@@ -8158,7 +8158,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 339		T2D-084	pmid		23023125			FN
 339		T2D-084	target_condition		Type 2 Diabetes Mellitus			FN
 339		T2D-084	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-339		T2D-084	host_species		Homo sapiens			FN
+339		T2D-084	host_species		Homo sapiens		NCIT:C14225	FN
 340		T2D-085	subject_id		T2D-085			FN
 340		T2D-085	sample_id		T2D-085			FN
 340		T2D-085	control		Case			FN
@@ -8182,7 +8182,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 340		T2D-085	pmid		23023125			FN
 340		T2D-085	target_condition		Type 2 Diabetes Mellitus			FN
 340		T2D-085	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-340		T2D-085	host_species		Homo sapiens			FN
+340		T2D-085	host_species		Homo sapiens		NCIT:C14225	FN
 341		T2D-086	subject_id		T2D-086			FN
 341		T2D-086	sample_id		T2D-086			FN
 341		T2D-086	control		Case			FN
@@ -8206,7 +8206,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 341		T2D-086	pmid		23023125			FN
 341		T2D-086	target_condition		Type 2 Diabetes Mellitus			FN
 341		T2D-086	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-341		T2D-086	host_species		Homo sapiens			FN
+341		T2D-086	host_species		Homo sapiens		NCIT:C14225	FN
 342		T2D-087	subject_id		T2D-087			FN
 342		T2D-087	sample_id		T2D-087			FN
 342		T2D-087	control		Case			FN
@@ -8230,7 +8230,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 342		T2D-087	pmid		23023125			FN
 342		T2D-087	target_condition		Type 2 Diabetes Mellitus			FN
 342		T2D-087	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-342		T2D-087	host_species		Homo sapiens			FN
+342		T2D-087	host_species		Homo sapiens		NCIT:C14225	FN
 343		T2D-088	subject_id		T2D-088			FN
 343		T2D-088	sample_id		T2D-088			FN
 343		T2D-088	control		Case			FN
@@ -8254,7 +8254,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 343		T2D-088	pmid		23023125			FN
 343		T2D-088	target_condition		Type 2 Diabetes Mellitus			FN
 343		T2D-088	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-343		T2D-088	host_species		Homo sapiens			FN
+343		T2D-088	host_species		Homo sapiens		NCIT:C14225	FN
 344		T2D-089	subject_id		T2D-089			FN
 344		T2D-089	sample_id		T2D-089			FN
 344		T2D-089	control		Case			FN
@@ -8278,7 +8278,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 344		T2D-089	pmid		23023125			FN
 344		T2D-089	target_condition		Type 2 Diabetes Mellitus			FN
 344		T2D-089	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-344		T2D-089	host_species		Homo sapiens			FN
+344		T2D-089	host_species		Homo sapiens		NCIT:C14225	FN
 345		T2D-090	subject_id		T2D-090			FN
 345		T2D-090	sample_id		T2D-090			FN
 345		T2D-090	control		Case			FN
@@ -8302,7 +8302,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 345		T2D-090	pmid		23023125			FN
 345		T2D-090	target_condition		Type 2 Diabetes Mellitus			FN
 345		T2D-090	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-345		T2D-090	host_species		Homo sapiens			FN
+345		T2D-090	host_species		Homo sapiens		NCIT:C14225	FN
 346		T2D-091	subject_id		T2D-091			FN
 346		T2D-091	sample_id		T2D-091			FN
 346		T2D-091	control		Case			FN
@@ -8326,7 +8326,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 346		T2D-091	pmid		23023125			FN
 346		T2D-091	target_condition		Type 2 Diabetes Mellitus			FN
 346		T2D-091	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-346		T2D-091	host_species		Homo sapiens			FN
+346		T2D-091	host_species		Homo sapiens		NCIT:C14225	FN
 347		T2D-092	subject_id		T2D-092			FN
 347		T2D-092	sample_id		T2D-092			FN
 347		T2D-092	control		Case			FN
@@ -8350,7 +8350,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 347		T2D-092	pmid		23023125			FN
 347		T2D-092	target_condition		Type 2 Diabetes Mellitus			FN
 347		T2D-092	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-347		T2D-092	host_species		Homo sapiens			FN
+347		T2D-092	host_species		Homo sapiens		NCIT:C14225	FN
 348		T2D-093	subject_id		T2D-093			FN
 348		T2D-093	sample_id		T2D-093			FN
 348		T2D-093	control		Case			FN
@@ -8374,7 +8374,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 348		T2D-093	pmid		23023125			FN
 348		T2D-093	target_condition		Type 2 Diabetes Mellitus			FN
 348		T2D-093	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-348		T2D-093	host_species		Homo sapiens			FN
+348		T2D-093	host_species		Homo sapiens		NCIT:C14225	FN
 349		T2D-094	subject_id		T2D-094			FN
 349		T2D-094	sample_id		T2D-094			FN
 349		T2D-094	control		Case			FN
@@ -8398,7 +8398,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 349		T2D-094	pmid		23023125			FN
 349		T2D-094	target_condition		Type 2 Diabetes Mellitus			FN
 349		T2D-094	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-349		T2D-094	host_species		Homo sapiens			FN
+349		T2D-094	host_species		Homo sapiens		NCIT:C14225	FN
 350		T2D-095	subject_id		T2D-095			FN
 350		T2D-095	sample_id		T2D-095			FN
 350		T2D-095	control		Case			FN
@@ -8422,7 +8422,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 350		T2D-095	pmid		23023125			FN
 350		T2D-095	target_condition		Type 2 Diabetes Mellitus			FN
 350		T2D-095	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-350		T2D-095	host_species		Homo sapiens			FN
+350		T2D-095	host_species		Homo sapiens		NCIT:C14225	FN
 351		T2D-096	subject_id		T2D-096			FN
 351		T2D-096	sample_id		T2D-096			FN
 351		T2D-096	control		Case			FN
@@ -8446,7 +8446,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 351		T2D-096	pmid		23023125			FN
 351		T2D-096	target_condition		Type 2 Diabetes Mellitus			FN
 351		T2D-096	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-351		T2D-096	host_species		Homo sapiens			FN
+351		T2D-096	host_species		Homo sapiens		NCIT:C14225	FN
 352		T2D-097	subject_id		T2D-097			FN
 352		T2D-097	sample_id		T2D-097			FN
 352		T2D-097	control		Case			FN
@@ -8470,7 +8470,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 352		T2D-097	pmid		23023125			FN
 352		T2D-097	target_condition		Type 2 Diabetes Mellitus			FN
 352		T2D-097	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-352		T2D-097	host_species		Homo sapiens			FN
+352		T2D-097	host_species		Homo sapiens		NCIT:C14225	FN
 353		T2D-098	subject_id		T2D-098			FN
 353		T2D-098	sample_id		T2D-098			FN
 353		T2D-098	control		Case			FN
@@ -8494,7 +8494,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 353		T2D-098	pmid		23023125			FN
 353		T2D-098	target_condition		Type 2 Diabetes Mellitus			FN
 353		T2D-098	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-353		T2D-098	host_species		Homo sapiens			FN
+353		T2D-098	host_species		Homo sapiens		NCIT:C14225	FN
 354		T2D-099	subject_id		T2D-099			FN
 354		T2D-099	sample_id		T2D-099			FN
 354		T2D-099	control		Case			FN
@@ -8518,7 +8518,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 354		T2D-099	pmid		23023125			FN
 354		T2D-099	target_condition		Type 2 Diabetes Mellitus			FN
 354		T2D-099	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-354		T2D-099	host_species		Homo sapiens			FN
+354		T2D-099	host_species		Homo sapiens		NCIT:C14225	FN
 355		T2D-100	subject_id		T2D-100			FN
 355		T2D-100	sample_id		T2D-100			FN
 355		T2D-100	control		Case			FN
@@ -8542,7 +8542,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 355		T2D-100	pmid		23023125			FN
 355		T2D-100	target_condition		Type 2 Diabetes Mellitus			FN
 355		T2D-100	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-355		T2D-100	host_species		Homo sapiens			FN
+355		T2D-100	host_species		Homo sapiens		NCIT:C14225	FN
 356		T2D-101	subject_id		T2D-101			FN
 356		T2D-101	sample_id		T2D-101			FN
 356		T2D-101	control		Case			FN
@@ -8566,7 +8566,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 356		T2D-101	pmid		23023125			FN
 356		T2D-101	target_condition		Type 2 Diabetes Mellitus			FN
 356		T2D-101	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-356		T2D-101	host_species		Homo sapiens			FN
+356		T2D-101	host_species		Homo sapiens		NCIT:C14225	FN
 357		T2D-102	subject_id		T2D-102			FN
 357		T2D-102	sample_id		T2D-102			FN
 357		T2D-102	control		Case			FN
@@ -8590,7 +8590,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 357		T2D-102	pmid		23023125			FN
 357		T2D-102	target_condition		Type 2 Diabetes Mellitus			FN
 357		T2D-102	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-357		T2D-102	host_species		Homo sapiens			FN
+357		T2D-102	host_species		Homo sapiens		NCIT:C14225	FN
 358		T2D-103	subject_id		T2D-103			FN
 358		T2D-103	sample_id		T2D-103			FN
 358		T2D-103	control		Case			FN
@@ -8614,7 +8614,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 358		T2D-103	pmid		23023125			FN
 358		T2D-103	target_condition		Type 2 Diabetes Mellitus			FN
 358		T2D-103	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-358		T2D-103	host_species		Homo sapiens			FN
+358		T2D-103	host_species		Homo sapiens		NCIT:C14225	FN
 359		T2D-104	subject_id		T2D-104			FN
 359		T2D-104	sample_id		T2D-104			FN
 359		T2D-104	control		Case			FN
@@ -8638,7 +8638,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 359		T2D-104	pmid		23023125			FN
 359		T2D-104	target_condition		Type 2 Diabetes Mellitus			FN
 359		T2D-104	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-359		T2D-104	host_species		Homo sapiens			FN
+359		T2D-104	host_species		Homo sapiens		NCIT:C14225	FN
 360		T2D-105	subject_id		T2D-105			FN
 360		T2D-105	sample_id		T2D-105			FN
 360		T2D-105	control		Case			FN
@@ -8662,7 +8662,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 360		T2D-105	pmid		23023125			FN
 360		T2D-105	target_condition		Type 2 Diabetes Mellitus			FN
 360		T2D-105	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-360		T2D-105	host_species		Homo sapiens			FN
+360		T2D-105	host_species		Homo sapiens		NCIT:C14225	FN
 361		T2D-106	subject_id		T2D-106			FN
 361		T2D-106	sample_id		T2D-106			FN
 361		T2D-106	control		Case			FN
@@ -8686,7 +8686,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 361		T2D-106	pmid		23023125			FN
 361		T2D-106	target_condition		Type 2 Diabetes Mellitus			FN
 361		T2D-106	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-361		T2D-106	host_species		Homo sapiens			FN
+361		T2D-106	host_species		Homo sapiens		NCIT:C14225	FN
 362		T2D-107	subject_id		T2D-107			FN
 362		T2D-107	sample_id		T2D-107			FN
 362		T2D-107	control		Case			FN
@@ -8710,4 +8710,4 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 362		T2D-107	pmid		23023125			FN
 362		T2D-107	target_condition		Type 2 Diabetes Mellitus			FN
 362		T2D-107	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-362		T2D-107	host_species		Homo sapiens			FN
+362		T2D-107	host_species		Homo sapiens		NCIT:C14225	FN

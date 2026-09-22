@@ -22,7 +22,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 0		H1F413846	target_condition		Hypertension			FN
 0		H1F413846	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 0		H1F413846	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-0		H1F413846	host_species		Homo sapiens			FN
+0		H1F413846	host_species		Homo sapiens		NCIT:C14225	FN
 1		H1F512951	location		Tangshan			FN
 1		H1F512951	subject_id		H1F512951			FN
 1		H1F512951	sample_id		H1F512951			FN
@@ -46,7 +46,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 1		H1F512951	target_condition		Hypertension			FN
 1		H1F512951	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 1		H1F512951	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-1		H1F512951	host_species		Homo sapiens			FN
+1		H1F512951	host_species		Homo sapiens		NCIT:C14225	FN
 2		H1F513817	location		Tangshan			FN
 2		H1F513817	subject_id		H1F513817			FN
 2		H1F513817	sample_id		H1F513817			FN
@@ -70,7 +70,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 2		H1F513817	target_condition		Hypertension			FN
 2		H1F513817	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 2		H1F513817	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-2		H1F513817	host_species		Homo sapiens			FN
+2		H1F513817	host_species		Homo sapiens		NCIT:C14225	FN
 3		H1F513818	location		Tangshan			FN
 3		H1F513818	subject_id		H1F513818			FN
 3		H1F513818	sample_id		H1F513818			FN
@@ -94,7 +94,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 3		H1F513818	target_condition		Hypertension			FN
 3		H1F513818	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 3		H1F513818	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-3		H1F513818	host_species		Homo sapiens			FN
+3		H1F513818	host_species		Homo sapiens		NCIT:C14225	FN
 4		H1F613739	location		Tangshan			FN
 4		H1F613739	subject_id		H1F613739			FN
 4		H1F613739	sample_id		H1F613739			FN
@@ -118,7 +118,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 4		H1F613739	target_condition		Hypertension			FN
 4		H1F613739	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 4		H1F613739	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-4		H1F613739	host_species		Homo sapiens			FN
+4		H1F613739	host_species		Homo sapiens		NCIT:C14225	FN
 5		H1M213648	location		Tangshan			FN
 5		H1M213648	subject_id		H1M213648			FN
 5		H1M213648	sample_id		H1M213648			FN
@@ -142,7 +142,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 5		H1M213648	target_condition		Hypertension			FN
 5		H1M213648	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 5		H1M213648	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-5		H1M213648	host_species		Homo sapiens			FN
+5		H1M213648	host_species		Homo sapiens		NCIT:C14225	FN
 6		H1M313811	location		Tangshan			FN
 6		H1M313811	subject_id		H1M313811			FN
 6		H1M313811	sample_id		H1M313811			FN
@@ -166,7 +166,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 6		H1M313811	target_condition		Hypertension			FN
 6		H1M313811	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 6		H1M313811	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-6		H1M313811	host_species		Homo sapiens			FN
+6		H1M313811	host_species		Homo sapiens		NCIT:C14225	FN
 7		H1M412743	location		Tangshan			FN
 7		H1M412743	subject_id		H1M412743			FN
 7		H1M412743	sample_id		H1M412743			FN
@@ -190,7 +190,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 7		H1M412743	target_condition		Hypertension			FN
 7		H1M412743	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 7		H1M412743	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-7		H1M412743	host_species		Homo sapiens			FN
+7		H1M412743	host_species		Homo sapiens		NCIT:C14225	FN
 8		H1M412809	location		Tangshan			FN
 8		H1M412809	subject_id		H1M412809			FN
 8		H1M412809	sample_id		H1M412809			FN
@@ -214,7 +214,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 8		H1M412809	target_condition		Hypertension			FN
 8		H1M412809	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 8		H1M412809	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-8		H1M412809	host_species		Homo sapiens			FN
+8		H1M412809	host_species		Homo sapiens		NCIT:C14225	FN
 9		H1M412832	location		Tangshan			FN
 9		H1M412832	subject_id		H1M412832			FN
 9		H1M412832	sample_id		H1M412832			FN
@@ -238,7 +238,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 9		H1M412832	target_condition		Hypertension			FN
 9		H1M412832	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 9		H1M412832	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-9		H1M412832	host_species		Homo sapiens			FN
+9		H1M412832	host_species		Homo sapiens		NCIT:C14225	FN
 10		H1M412835	location		Tangshan			FN
 10		H1M412835	subject_id		H1M412835			FN
 10		H1M412835	sample_id		H1M412835			FN
@@ -262,7 +262,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 10		H1M412835	target_condition		Hypertension			FN
 10		H1M412835	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 10		H1M412835	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-10		H1M412835	host_species		Homo sapiens			FN
+10		H1M412835	host_species		Homo sapiens		NCIT:C14225	FN
 11		H1M412837	location		Tangshan			FN
 11		H1M412837	subject_id		H1M412837			FN
 11		H1M412837	sample_id		H1M412837			FN
@@ -286,7 +286,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 11		H1M412837	target_condition		Hypertension			FN
 11		H1M412837	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 11		H1M412837	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-11		H1M412837	host_species		Homo sapiens			FN
+11		H1M412837	host_species		Homo sapiens		NCIT:C14225	FN
 12		H1M412844	location		Tangshan			FN
 12		H1M412844	subject_id		H1M412844			FN
 12		H1M412844	sample_id		H1M412844			FN
@@ -310,7 +310,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 12		H1M412844	target_condition		Hypertension			FN
 12		H1M412844	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 12		H1M412844	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-12		H1M412844	host_species		Homo sapiens			FN
+12		H1M412844	host_species		Homo sapiens		NCIT:C14225	FN
 13		H1M412949	location		Tangshan			FN
 13		H1M412949	subject_id		H1M412949			FN
 13		H1M412949	sample_id		H1M412949			FN
@@ -334,7 +334,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 13		H1M412949	target_condition		Hypertension			FN
 13		H1M412949	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 13		H1M412949	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-13		H1M412949	host_species		Homo sapiens			FN
+13		H1M412949	host_species		Homo sapiens		NCIT:C14225	FN
 14		H1M413802	location		Tangshan			FN
 14		H1M413802	subject_id		H1M413802			FN
 14		H1M413802	sample_id		H1M413802			FN
@@ -358,7 +358,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 14		H1M413802	target_condition		Hypertension			FN
 14		H1M413802	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 14		H1M413802	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-14		H1M413802	host_species		Homo sapiens			FN
+14		H1M413802	host_species		Homo sapiens		NCIT:C14225	FN
 15		H1M413815	location		Tangshan			FN
 15		H1M413815	subject_id		H1M413815			FN
 15		H1M413815	sample_id		H1M413815			FN
@@ -382,7 +382,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 15		H1M413815	target_condition		Hypertension			FN
 15		H1M413815	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 15		H1M413815	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-15		H1M413815	host_species		Homo sapiens			FN
+15		H1M413815	host_species		Homo sapiens		NCIT:C14225	FN
 16		H1M413822	location		Tangshan			FN
 16		H1M413822	subject_id		H1M413822			FN
 16		H1M413822	sample_id		H1M413822			FN
@@ -406,7 +406,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 16		H1M413822	target_condition		Hypertension			FN
 16		H1M413822	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 16		H1M413822	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-16		H1M413822	host_species		Homo sapiens			FN
+16		H1M413822	host_species		Homo sapiens		NCIT:C14225	FN
 17		H1M413827	location		Tangshan			FN
 17		H1M413827	subject_id		H1M413827			FN
 17		H1M413827	sample_id		H1M413827			FN
@@ -430,7 +430,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 17		H1M413827	target_condition		Hypertension			FN
 17		H1M413827	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 17		H1M413827	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-17		H1M413827	host_species		Homo sapiens			FN
+17		H1M413827	host_species		Homo sapiens		NCIT:C14225	FN
 18		H1M414905	location		Tangshan			FN
 18		H1M414905	subject_id		H1M414905			FN
 18		H1M414905	sample_id		H1M414905			FN
@@ -454,7 +454,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 18		H1M414905	target_condition		Hypertension			FN
 18		H1M414905	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 18		H1M414905	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-18		H1M414905	host_species		Homo sapiens			FN
+18		H1M414905	host_species		Homo sapiens		NCIT:C14225	FN
 19		H1M511833	location		Tangshan			FN
 19		H1M511833	subject_id		H1M511833			FN
 19		H1M511833	sample_id		H1M511833			FN
@@ -478,7 +478,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 19		H1M511833	target_condition		Hypertension			FN
 19		H1M511833	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 19		H1M511833	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-19		H1M511833	host_species		Homo sapiens			FN
+19		H1M511833	host_species		Homo sapiens		NCIT:C14225	FN
 20		H1M511841	location		Tangshan			FN
 20		H1M511841	subject_id		H1M511841			FN
 20		H1M511841	sample_id		H1M511841			FN
@@ -502,7 +502,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 20		H1M511841	target_condition		Hypertension			FN
 20		H1M511841	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 20		H1M511841	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-20		H1M511841	host_species		Homo sapiens			FN
+20		H1M511841	host_species		Homo sapiens		NCIT:C14225	FN
 21		H1M511842	location		Tangshan			FN
 21		H1M511842	subject_id		H1M511842			FN
 21		H1M511842	sample_id		H1M511842			FN
@@ -526,7 +526,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 21		H1M511842	target_condition		Hypertension			FN
 21		H1M511842	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 21		H1M511842	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-21		H1M511842	host_species		Homo sapiens			FN
+21		H1M511842	host_species		Homo sapiens		NCIT:C14225	FN
 22		H1M512808	location		Tangshan			FN
 22		H1M512808	subject_id		H1M512808			FN
 22		H1M512808	sample_id		H1M512808			FN
@@ -550,7 +550,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 22		H1M512808	target_condition		Hypertension			FN
 22		H1M512808	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 22		H1M512808	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-22		H1M512808	host_species		Homo sapiens			FN
+22		H1M512808	host_species		Homo sapiens		NCIT:C14225	FN
 23		H1M512821	location		Tangshan			FN
 23		H1M512821	subject_id		H1M512821			FN
 23		H1M512821	sample_id		H1M512821			FN
@@ -574,7 +574,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 23		H1M512821	target_condition		Hypertension			FN
 23		H1M512821	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 23		H1M512821	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-23		H1M512821	host_species		Homo sapiens			FN
+23		H1M512821	host_species		Homo sapiens		NCIT:C14225	FN
 24		H1M512831	location		Tangshan			FN
 24		H1M512831	subject_id		H1M512831			FN
 24		H1M512831	sample_id		H1M512831			FN
@@ -598,7 +598,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 24		H1M512831	target_condition		Hypertension			FN
 24		H1M512831	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 24		H1M512831	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-24		H1M512831	host_species		Homo sapiens			FN
+24		H1M512831	host_species		Homo sapiens		NCIT:C14225	FN
 25		H1M512834	location		Tangshan			FN
 25		H1M512834	subject_id		H1M512834			FN
 25		H1M512834	sample_id		H1M512834			FN
@@ -622,7 +622,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 25		H1M512834	target_condition		Hypertension			FN
 25		H1M512834	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 25		H1M512834	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-25		H1M512834	host_species		Homo sapiens			FN
+25		H1M512834	host_species		Homo sapiens		NCIT:C14225	FN
 26		H1M512836	location		Tangshan			FN
 26		H1M512836	subject_id		H1M512836			FN
 26		H1M512836	sample_id		H1M512836			FN
@@ -646,7 +646,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 26		H1M512836	target_condition		Hypertension			FN
 26		H1M512836	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 26		H1M512836	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-26		H1M512836	host_species		Homo sapiens			FN
+26		H1M512836	host_species		Homo sapiens		NCIT:C14225	FN
 27		H1M512840	location		Tangshan			FN
 27		H1M512840	subject_id		H1M512840			FN
 27		H1M512840	sample_id		H1M512840			FN
@@ -670,7 +670,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 27		H1M512840	target_condition		Hypertension			FN
 27		H1M512840	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 27		H1M512840	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-27		H1M512840	host_species		Homo sapiens			FN
+27		H1M512840	host_species		Homo sapiens		NCIT:C14225	FN
 28		H1M512853	location		Tangshan			FN
 28		H1M512853	subject_id		H1M512853			FN
 28		H1M512853	sample_id		H1M512853			FN
@@ -694,7 +694,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 28		H1M512853	target_condition		Hypertension			FN
 28		H1M512853	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 28		H1M512853	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-28		H1M512853	host_species		Homo sapiens			FN
+28		H1M512853	host_species		Homo sapiens		NCIT:C14225	FN
 29		H1M512854	location		Tangshan			FN
 29		H1M512854	subject_id		H1M512854			FN
 29		H1M512854	sample_id		H1M512854			FN
@@ -718,7 +718,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 29		H1M512854	target_condition		Hypertension			FN
 29		H1M512854	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 29		H1M512854	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-29		H1M512854	host_species		Homo sapiens			FN
+29		H1M512854	host_species		Homo sapiens		NCIT:C14225	FN
 30		H1M512855	location		Tangshan			FN
 30		H1M512855	subject_id		H1M512855			FN
 30		H1M512855	sample_id		H1M512855			FN
@@ -742,7 +742,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 30		H1M512855	target_condition		Hypertension			FN
 30		H1M512855	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 30		H1M512855	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-30		H1M512855	host_species		Homo sapiens			FN
+30		H1M512855	host_species		Homo sapiens		NCIT:C14225	FN
 31		H1M513606	location		Tangshan			FN
 31		H1M513606	subject_id		H1M513606			FN
 31		H1M513606	sample_id		H1M513606			FN
@@ -766,7 +766,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 31		H1M513606	target_condition		Hypertension			FN
 31		H1M513606	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 31		H1M513606	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-31		H1M513606	host_species		Homo sapiens			FN
+31		H1M513606	host_species		Homo sapiens		NCIT:C14225	FN
 32		H1M513729	location		Tangshan			FN
 32		H1M513729	subject_id		H1M513729			FN
 32		H1M513729	sample_id		H1M513729			FN
@@ -790,7 +790,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 32		H1M513729	target_condition		Hypertension			FN
 32		H1M513729	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 32		H1M513729	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-32		H1M513729	host_species		Homo sapiens			FN
+32		H1M513729	host_species		Homo sapiens		NCIT:C14225	FN
 33		H1M513730	location		Tangshan			FN
 33		H1M513730	subject_id		H1M513730			FN
 33		H1M513730	sample_id		H1M513730			FN
@@ -814,7 +814,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 33		H1M513730	target_condition		Hypertension			FN
 33		H1M513730	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 33		H1M513730	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-33		H1M513730	host_species		Homo sapiens			FN
+33		H1M513730	host_species		Homo sapiens		NCIT:C14225	FN
 34		H1M513738	location		Tangshan			FN
 34		H1M513738	subject_id		H1M513738			FN
 34		H1M513738	sample_id		H1M513738			FN
@@ -838,7 +838,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 34		H1M513738	target_condition		Hypertension			FN
 34		H1M513738	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 34		H1M513738	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-34		H1M513738	host_species		Homo sapiens			FN
+34		H1M513738	host_species		Homo sapiens		NCIT:C14225	FN
 35		H1M513747	location		Tangshan			FN
 35		H1M513747	subject_id		H1M513747			FN
 35		H1M513747	sample_id		H1M513747			FN
@@ -862,7 +862,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 35		H1M513747	target_condition		Hypertension			FN
 35		H1M513747	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 35		H1M513747	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-35		H1M513747	host_species		Homo sapiens			FN
+35		H1M513747	host_species		Homo sapiens		NCIT:C14225	FN
 36		H1M513803	location		Tangshan			FN
 36		H1M513803	subject_id		H1M513803			FN
 36		H1M513803	sample_id		H1M513803			FN
@@ -886,7 +886,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 36		H1M513803	target_condition		Hypertension			FN
 36		H1M513803	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 36		H1M513803	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-36		H1M513803	host_species		Homo sapiens			FN
+36		H1M513803	host_species		Homo sapiens		NCIT:C14225	FN
 37		H1M513804	location		Tangshan			FN
 37		H1M513804	subject_id		H1M513804			FN
 37		H1M513804	sample_id		H1M513804			FN
@@ -910,7 +910,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 37		H1M513804	target_condition		Hypertension			FN
 37		H1M513804	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 37		H1M513804	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-37		H1M513804	host_species		Homo sapiens			FN
+37		H1M513804	host_species		Homo sapiens		NCIT:C14225	FN
 38		H1M513807	location		Tangshan			FN
 38		H1M513807	subject_id		H1M513807			FN
 38		H1M513807	sample_id		H1M513807			FN
@@ -934,7 +934,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 38		H1M513807	target_condition		Hypertension			FN
 38		H1M513807	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 38		H1M513807	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-38		H1M513807	host_species		Homo sapiens			FN
+38		H1M513807	host_species		Homo sapiens		NCIT:C14225	FN
 39		H1M513810	location		Tangshan			FN
 39		H1M513810	subject_id		H1M513810			FN
 39		H1M513810	sample_id		H1M513810			FN
@@ -958,7 +958,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 39		H1M513810	target_condition		Hypertension			FN
 39		H1M513810	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 39		H1M513810	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-39		H1M513810	host_species		Homo sapiens			FN
+39		H1M513810	host_species		Homo sapiens		NCIT:C14225	FN
 40		H1M513813	location		Tangshan			FN
 40		H1M513813	subject_id		H1M513813			FN
 40		H1M513813	sample_id		H1M513813			FN
@@ -982,7 +982,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 40		H1M513813	target_condition		Hypertension			FN
 40		H1M513813	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 40		H1M513813	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-40		H1M513813	host_species		Homo sapiens			FN
+40		H1M513813	host_species		Homo sapiens		NCIT:C14225	FN
 41		H1M513816	location		Tangshan			FN
 41		H1M513816	subject_id		H1M513816			FN
 41		H1M513816	sample_id		H1M513816			FN
@@ -1006,7 +1006,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 41		H1M513816	target_condition		Hypertension			FN
 41		H1M513816	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 41		H1M513816	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-41		H1M513816	host_species		Homo sapiens			FN
+41		H1M513816	host_species		Homo sapiens		NCIT:C14225	FN
 42		H1M513819	location		Tangshan			FN
 42		H1M513819	subject_id		H1M513819			FN
 42		H1M513819	sample_id		H1M513819			FN
@@ -1030,7 +1030,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 42		H1M513819	target_condition		Hypertension			FN
 42		H1M513819	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 42		H1M513819	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-42		H1M513819	host_species		Homo sapiens			FN
+42		H1M513819	host_species		Homo sapiens		NCIT:C14225	FN
 43		H1M513820	location		Tangshan			FN
 43		H1M513820	subject_id		H1M513820			FN
 43		H1M513820	sample_id		H1M513820			FN
@@ -1054,7 +1054,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 43		H1M513820	target_condition		Hypertension			FN
 43		H1M513820	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 43		H1M513820	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-43		H1M513820	host_species		Homo sapiens			FN
+43		H1M513820	host_species		Homo sapiens		NCIT:C14225	FN
 44		H1M513823	location		Tangshan			FN
 44		H1M513823	subject_id		H1M513823			FN
 44		H1M513823	sample_id		H1M513823			FN
@@ -1078,7 +1078,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 44		H1M513823	target_condition		Hypertension			FN
 44		H1M513823	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 44		H1M513823	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-44		H1M513823	host_species		Homo sapiens			FN
+44		H1M513823	host_species		Homo sapiens		NCIT:C14225	FN
 45		H1M513826	location		Tangshan			FN
 45		H1M513826	subject_id		H1M513826			FN
 45		H1M513826	sample_id		H1M513826			FN
@@ -1102,7 +1102,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 45		H1M513826	target_condition		Hypertension			FN
 45		H1M513826	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 45		H1M513826	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-45		H1M513826	host_species		Homo sapiens			FN
+45		H1M513826	host_species		Homo sapiens		NCIT:C14225	FN
 46		H1M513828	location		Tangshan			FN
 46		H1M513828	subject_id		H1M513828			FN
 46		H1M513828	sample_id		H1M513828			FN
@@ -1126,7 +1126,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 46		H1M513828	target_condition		Hypertension			FN
 46		H1M513828	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 46		H1M513828	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-46		H1M513828	host_species		Homo sapiens			FN
+46		H1M513828	host_species		Homo sapiens		NCIT:C14225	FN
 47		H1M513852	location		Tangshan			FN
 47		H1M513852	subject_id		H1M513852			FN
 47		H1M513852	sample_id		H1M513852			FN
@@ -1150,7 +1150,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 47		H1M513852	target_condition		Hypertension			FN
 47		H1M513852	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 47		H1M513852	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-47		H1M513852	host_species		Homo sapiens			FN
+47		H1M513852	host_species		Homo sapiens		NCIT:C14225	FN
 48		H1M513912	location		Tangshan			FN
 48		H1M513912	subject_id		H1M513912			FN
 48		H1M513912	sample_id		H1M513912			FN
@@ -1174,7 +1174,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 48		H1M513912	target_condition		Hypertension			FN
 48		H1M513912	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 48		H1M513912	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-48		H1M513912	host_species		Homo sapiens			FN
+48		H1M513912	host_species		Homo sapiens		NCIT:C14225	FN
 49		H1M514901	location		Tangshan			FN
 49		H1M514901	subject_id		H1M514901			FN
 49		H1M514901	sample_id		H1M514901			FN
@@ -1198,7 +1198,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 49		H1M514901	target_condition		Hypertension			FN
 49		H1M514901	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 49		H1M514901	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-49		H1M514901	host_species		Homo sapiens			FN
+49		H1M514901	host_species		Homo sapiens		NCIT:C14225	FN
 50		H1M5XX814	location		Tangshan			FN
 50		H1M5XX814	subject_id		H1M5XX814			FN
 50		H1M5XX814	sample_id		H1M5XX814			FN
@@ -1222,7 +1222,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 50		H1M5XX814	target_condition		Hypertension			FN
 50		H1M5XX814	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 50		H1M5XX814	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-50		H1M5XX814	host_species		Homo sapiens			FN
+50		H1M5XX814	host_species		Homo sapiens		NCIT:C14225	FN
 51		H1M612950	location		Tangshan			FN
 51		H1M612950	subject_id		H1M612950			FN
 51		H1M612950	sample_id		H1M612950			FN
@@ -1246,7 +1246,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 51		H1M612950	target_condition		Hypertension			FN
 51		H1M612950	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 51		H1M612950	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-51		H1M612950	host_species		Homo sapiens			FN
+51		H1M612950	host_species		Homo sapiens		NCIT:C14225	FN
 52		H1M613745	location		Tangshan			FN
 52		H1M613745	subject_id		H1M613745			FN
 52		H1M613745	sample_id		H1M613745			FN
@@ -1270,7 +1270,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 52		H1M613745	target_condition		Hypertension			FN
 52		H1M613745	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 52		H1M613745	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-52		H1M613745	host_species		Homo sapiens			FN
+52		H1M613745	host_species		Homo sapiens		NCIT:C14225	FN
 53		H1M613824	location		Tangshan			FN
 53		H1M613824	subject_id		H1M613824			FN
 53		H1M613824	sample_id		H1M613824			FN
@@ -1294,7 +1294,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 53		H1M613824	target_condition		Hypertension			FN
 53		H1M613824	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 53		H1M613824	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-53		H1M613824	host_species		Homo sapiens			FN
+53		H1M613824	host_species		Homo sapiens		NCIT:C14225	FN
 54		H1M613825	location		Tangshan			FN
 54		H1M613825	subject_id		H1M613825			FN
 54		H1M613825	sample_id		H1M613825			FN
@@ -1318,7 +1318,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 54		H1M613825	target_condition		Hypertension			FN
 54		H1M613825	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 54		H1M613825	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-54		H1M613825	host_species		Homo sapiens			FN
+54		H1M613825	host_species		Homo sapiens		NCIT:C14225	FN
 55		H2F413935	location		Tangshan			FN
 55		H2F413935	subject_id		H2F413935			FN
 55		H2F413935	sample_id		H2F413935			FN
@@ -1342,7 +1342,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 55		H2F413935	target_condition		Hypertension			FN
 55		H2F413935	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 55		H2F413935	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-55		H2F413935	host_species		Homo sapiens			FN
+55		H2F413935	host_species		Homo sapiens		NCIT:C14225	FN
 56		H2F514910	location		Tangshan			FN
 56		H2F514910	subject_id		H2F514910			FN
 56		H2F514910	sample_id		H2F514910			FN
@@ -1366,7 +1366,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 56		H2F514910	target_condition		Hypertension			FN
 56		H2F514910	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 56		H2F514910	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-56		H2F514910	host_species		Homo sapiens			FN
+56		H2F514910	host_species		Homo sapiens		NCIT:C14225	FN
 57		H2F514923	location		Tangshan			FN
 57		H2F514923	subject_id		H2F514923			FN
 57		H2F514923	sample_id		H2F514923			FN
@@ -1390,7 +1390,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 57		H2F514923	target_condition		Hypertension			FN
 57		H2F514923	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 57		H2F514923	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-57		H2F514923	host_species		Homo sapiens			FN
+57		H2F514923	host_species		Homo sapiens		NCIT:C14225	FN
 58		H2M411920	location		Tangshan			FN
 58		H2M411920	subject_id		H2M411920			FN
 58		H2M411920	sample_id		H2M411920			FN
@@ -1414,7 +1414,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 58		H2M411920	target_condition		Hypertension			FN
 58		H2M411920	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 58		H2M411920	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-58		H2M411920	host_species		Homo sapiens			FN
+58		H2M411920	host_species		Homo sapiens		NCIT:C14225	FN
 59		H2M413913	location		Tangshan			FN
 59		H2M413913	subject_id		H2M413913			FN
 59		H2M413913	sample_id		H2M413913			FN
@@ -1438,7 +1438,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 59		H2M413913	target_condition		Hypertension			FN
 59		H2M413913	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 59		H2M413913	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-59		H2M413913	host_species		Homo sapiens			FN
+59		H2M413913	host_species		Homo sapiens		NCIT:C14225	FN
 60		H2M413915	location		Tangshan			FN
 60		H2M413915	subject_id		H2M413915			FN
 60		H2M413915	sample_id		H2M413915			FN
@@ -1462,7 +1462,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 60		H2M413915	target_condition		Hypertension			FN
 60		H2M413915	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 60		H2M413915	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-60		H2M413915	host_species		Homo sapiens			FN
+60		H2M413915	host_species		Homo sapiens		NCIT:C14225	FN
 61		H2M413924	location		Tangshan			FN
 61		H2M413924	subject_id		H2M413924			FN
 61		H2M413924	sample_id		H2M413924			FN
@@ -1486,7 +1486,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 61		H2M413924	target_condition		Hypertension			FN
 61		H2M413924	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 61		H2M413924	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-61		H2M413924	host_species		Homo sapiens			FN
+61		H2M413924	host_species		Homo sapiens		NCIT:C14225	FN
 62		H2M414102	location		Tangshan			FN
 62		H2M414102	subject_id		H2M414102			FN
 62		H2M414102	sample_id		H2M414102			FN
@@ -1510,7 +1510,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 62		H2M414102	target_condition		Hypertension			FN
 62		H2M414102	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 62		H2M414102	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-62		H2M414102	host_species		Homo sapiens			FN
+62		H2M414102	host_species		Homo sapiens		NCIT:C14225	FN
 63		H2M414926	location		Tangshan			FN
 63		H2M414926	subject_id		H2M414926			FN
 63		H2M414926	sample_id		H2M414926			FN
@@ -1534,7 +1534,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 63		H2M414926	target_condition		Hypertension			FN
 63		H2M414926	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 63		H2M414926	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-63		H2M414926	host_species		Homo sapiens			FN
+63		H2M414926	host_species		Homo sapiens		NCIT:C14225	FN
 64		H2M414927	location		Tangshan			FN
 64		H2M414927	subject_id		H2M414927			FN
 64		H2M414927	sample_id		H2M414927			FN
@@ -1558,7 +1558,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 64		H2M414927	target_condition		Hypertension			FN
 64		H2M414927	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 64		H2M414927	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-64		H2M414927	host_species		Homo sapiens			FN
+64		H2M414927	host_species		Homo sapiens		NCIT:C14225	FN
 65		H2M414931	location		Tangshan			FN
 65		H2M414931	subject_id		H2M414931			FN
 65		H2M414931	sample_id		H2M414931			FN
@@ -1582,7 +1582,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 65		H2M414931	target_condition		Hypertension			FN
 65		H2M414931	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 65		H2M414931	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-65		H2M414931	host_species		Homo sapiens			FN
+65		H2M414931	host_species		Homo sapiens		NCIT:C14225	FN
 66		H2M414940	location		Tangshan			FN
 66		H2M414940	subject_id		H2M414940			FN
 66		H2M414940	sample_id		H2M414940			FN
@@ -1606,7 +1606,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 66		H2M414940	target_condition		Hypertension			FN
 66		H2M414940	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 66		H2M414940	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-66		H2M414940	host_species		Homo sapiens			FN
+66		H2M414940	host_species		Homo sapiens		NCIT:C14225	FN
 67		H2M415914	location		Tangshan			FN
 67		H2M415914	subject_id		H2M415914			FN
 67		H2M415914	sample_id		H2M415914			FN
@@ -1630,7 +1630,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 67		H2M415914	target_condition		Hypertension			FN
 67		H2M415914	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 67		H2M415914	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-67		H2M415914	host_species		Homo sapiens			FN
+67		H2M415914	host_species		Homo sapiens		NCIT:C14225	FN
 68		H2M511919	location		Tangshan			FN
 68		H2M511919	subject_id		H2M511919			FN
 68		H2M511919	sample_id		H2M511919			FN
@@ -1654,7 +1654,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 68		H2M511919	target_condition		Hypertension			FN
 68		H2M511919	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 68		H2M511919	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-68		H2M511919	host_species		Homo sapiens			FN
+68		H2M511919	host_species		Homo sapiens		NCIT:C14225	FN
 69		H2M513933	location		Tangshan			FN
 69		H2M513933	subject_id		H2M513933			FN
 69		H2M513933	sample_id		H2M513933			FN
@@ -1678,7 +1678,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 69		H2M513933	target_condition		Hypertension			FN
 69		H2M513933	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 69		H2M513933	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-69		H2M513933	host_species		Homo sapiens			FN
+69		H2M513933	host_species		Homo sapiens		NCIT:C14225	FN
 70		H2M513934	location		Tangshan			FN
 70		H2M513934	subject_id		H2M513934			FN
 70		H2M513934	sample_id		H2M513934			FN
@@ -1702,7 +1702,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 70		H2M513934	target_condition		Hypertension			FN
 70		H2M513934	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 70		H2M513934	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-70		H2M513934	host_species		Homo sapiens			FN
+70		H2M513934	host_species		Homo sapiens		NCIT:C14225	FN
 71		H2M513936	location		Tangshan			FN
 71		H2M513936	subject_id		H2M513936			FN
 71		H2M513936	sample_id		H2M513936			FN
@@ -1726,7 +1726,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 71		H2M513936	target_condition		Hypertension			FN
 71		H2M513936	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 71		H2M513936	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-71		H2M513936	host_species		Homo sapiens			FN
+71		H2M513936	host_species		Homo sapiens		NCIT:C14225	FN
 72		H2M513937	location		Tangshan			FN
 72		H2M513937	subject_id		H2M513937			FN
 72		H2M513937	sample_id		H2M513937			FN
@@ -1750,7 +1750,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 72		H2M513937	target_condition		Hypertension			FN
 72		H2M513937	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 72		H2M513937	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-72		H2M513937	host_species		Homo sapiens			FN
+72		H2M513937	host_species		Homo sapiens		NCIT:C14225	FN
 73		H2M513938	location		Tangshan			FN
 73		H2M513938	subject_id		H2M513938			FN
 73		H2M513938	sample_id		H2M513938			FN
@@ -1774,7 +1774,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 73		H2M513938	target_condition		Hypertension			FN
 73		H2M513938	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 73		H2M513938	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-73		H2M513938	host_species		Homo sapiens			FN
+73		H2M513938	host_species		Homo sapiens		NCIT:C14225	FN
 74		H2M513939	location		Tangshan			FN
 74		H2M513939	subject_id		H2M513939			FN
 74		H2M513939	sample_id		H2M513939			FN
@@ -1798,7 +1798,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 74		H2M513939	target_condition		Hypertension			FN
 74		H2M513939	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 74		H2M513939	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-74		H2M513939	host_species		Homo sapiens			FN
+74		H2M513939	host_species		Homo sapiens		NCIT:C14225	FN
 75		H2M514107	location		Tangshan			FN
 75		H2M514107	subject_id		H2M514107			FN
 75		H2M514107	sample_id		H2M514107			FN
@@ -1822,7 +1822,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 75		H2M514107	target_condition		Hypertension			FN
 75		H2M514107	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 75		H2M514107	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-75		H2M514107	host_species		Homo sapiens			FN
+75		H2M514107	host_species		Homo sapiens		NCIT:C14225	FN
 76		H2M514108	location		Tangshan			FN
 76		H2M514108	subject_id		H2M514108			FN
 76		H2M514108	sample_id		H2M514108			FN
@@ -1846,7 +1846,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 76		H2M514108	target_condition		Hypertension			FN
 76		H2M514108	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 76		H2M514108	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-76		H2M514108	host_species		Homo sapiens			FN
+76		H2M514108	host_species		Homo sapiens		NCIT:C14225	FN
 77		H2M514818	location		Tangshan			FN
 77		H2M514818	subject_id		H2M514818			FN
 77		H2M514818	sample_id		H2M514818			FN
@@ -1870,7 +1870,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 77		H2M514818	target_condition		Hypertension			FN
 77		H2M514818	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 77		H2M514818	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-77		H2M514818	host_species		Homo sapiens			FN
+77		H2M514818	host_species		Homo sapiens		NCIT:C14225	FN
 78		H2M514841	location		Tangshan			FN
 78		H2M514841	subject_id		H2M514841			FN
 78		H2M514841	sample_id		H2M514841			FN
@@ -1894,7 +1894,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 78		H2M514841	target_condition		Hypertension			FN
 78		H2M514841	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 78		H2M514841	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-78		H2M514841	host_species		Homo sapiens			FN
+78		H2M514841	host_species		Homo sapiens		NCIT:C14225	FN
 79		H2M514901	location		Tangshan			FN
 79		H2M514901	subject_id		H2M514901			FN
 79		H2M514901	sample_id		H2M514901			FN
@@ -1918,7 +1918,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 79		H2M514901	target_condition		Hypertension			FN
 79		H2M514901	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 79		H2M514901	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-79		H2M514901	host_species		Homo sapiens			FN
+79		H2M514901	host_species		Homo sapiens		NCIT:C14225	FN
 80		H2M514903	location		Tangshan			FN
 80		H2M514903	subject_id		H2M514903			FN
 80		H2M514903	sample_id		H2M514903			FN
@@ -1942,7 +1942,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 80		H2M514903	target_condition		Hypertension			FN
 80		H2M514903	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 80		H2M514903	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-80		H2M514903	host_species		Homo sapiens			FN
+80		H2M514903	host_species		Homo sapiens		NCIT:C14225	FN
 81		H2M514905	location		Tangshan			FN
 81		H2M514905	subject_id		H2M514905			FN
 81		H2M514905	sample_id		H2M514905			FN
@@ -1966,7 +1966,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 81		H2M514905	target_condition		Hypertension			FN
 81		H2M514905	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 81		H2M514905	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-81		H2M514905	host_species		Homo sapiens			FN
+81		H2M514905	host_species		Homo sapiens		NCIT:C14225	FN
 82		H2M514906	location		Tangshan			FN
 82		H2M514906	subject_id		H2M514906			FN
 82		H2M514906	sample_id		H2M514906			FN
@@ -1990,7 +1990,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 82		H2M514906	target_condition		Hypertension			FN
 82		H2M514906	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 82		H2M514906	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-82		H2M514906	host_species		Homo sapiens			FN
+82		H2M514906	host_species		Homo sapiens		NCIT:C14225	FN
 83		H2M514909	location		Tangshan			FN
 83		H2M514909	subject_id		H2M514909			FN
 83		H2M514909	sample_id		H2M514909			FN
@@ -2014,7 +2014,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 83		H2M514909	target_condition		Hypertension			FN
 83		H2M514909	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 83		H2M514909	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-83		H2M514909	host_species		Homo sapiens			FN
+83		H2M514909	host_species		Homo sapiens		NCIT:C14225	FN
 84		H2M514911	location		Tangshan			FN
 84		H2M514911	subject_id		H2M514911			FN
 84		H2M514911	sample_id		H2M514911			FN
@@ -2038,7 +2038,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 84		H2M514911	target_condition		Hypertension			FN
 84		H2M514911	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 84		H2M514911	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-84		H2M514911	host_species		Homo sapiens			FN
+84		H2M514911	host_species		Homo sapiens		NCIT:C14225	FN
 85		H2M514917	location		Tangshan			FN
 85		H2M514917	subject_id		H2M514917			FN
 85		H2M514917	sample_id		H2M514917			FN
@@ -2062,7 +2062,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 85		H2M514917	target_condition		Hypertension			FN
 85		H2M514917	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 85		H2M514917	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-85		H2M514917	host_species		Homo sapiens			FN
+85		H2M514917	host_species		Homo sapiens		NCIT:C14225	FN
 86		H2M514925	location		Tangshan			FN
 86		H2M514925	subject_id		H2M514925			FN
 86		H2M514925	sample_id		H2M514925			FN
@@ -2086,7 +2086,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 86		H2M514925	target_condition		Hypertension			FN
 86		H2M514925	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 86		H2M514925	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-86		H2M514925	host_species		Homo sapiens			FN
+86		H2M514925	host_species		Homo sapiens		NCIT:C14225	FN
 87		H2M514930	location		Tangshan			FN
 87		H2M514930	subject_id		H2M514930			FN
 87		H2M514930	sample_id		H2M514930			FN
@@ -2110,7 +2110,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 87		H2M514930	target_condition		Hypertension			FN
 87		H2M514930	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 87		H2M514930	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-87		H2M514930	host_species		Homo sapiens			FN
+87		H2M514930	host_species		Homo sapiens		NCIT:C14225	FN
 88		H2M514943	location		Tangshan			FN
 88		H2M514943	subject_id		H2M514943			FN
 88		H2M514943	sample_id		H2M514943			FN
@@ -2134,7 +2134,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 88		H2M514943	target_condition		Hypertension			FN
 88		H2M514943	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 88		H2M514943	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-88		H2M514943	host_species		Homo sapiens			FN
+88		H2M514943	host_species		Homo sapiens		NCIT:C14225	FN
 89		H2M515822	location		Tangshan			FN
 89		H2M515822	subject_id		H2M515822			FN
 89		H2M515822	sample_id		H2M515822			FN
@@ -2158,7 +2158,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 89		H2M515822	target_condition		Hypertension			FN
 89		H2M515822	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 89		H2M515822	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-89		H2M515822	host_species		Homo sapiens			FN
+89		H2M515822	host_species		Homo sapiens		NCIT:C14225	FN
 90		H2M515921	location		Tangshan			FN
 90		H2M515921	subject_id		H2M515921			FN
 90		H2M515921	sample_id		H2M515921			FN
@@ -2182,7 +2182,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 90		H2M515921	target_condition		Hypertension			FN
 90		H2M515921	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 90		H2M515921	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-90		H2M515921	host_species		Homo sapiens			FN
+90		H2M515921	host_species		Homo sapiens		NCIT:C14225	FN
 91		H2M614742	location		Tangshan			FN
 91		H2M614742	subject_id		H2M614742			FN
 91		H2M614742	sample_id		H2M614742			FN
@@ -2206,7 +2206,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 91		H2M614742	target_condition		Hypertension			FN
 91		H2M614742	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 91		H2M614742	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-91		H2M614742	host_species		Homo sapiens			FN
+91		H2M614742	host_species		Homo sapiens		NCIT:C14225	FN
 92		H2M614832	location		Tangshan			FN
 92		H2M614832	subject_id		H2M614832			FN
 92		H2M614832	sample_id		H2M614832			FN
@@ -2230,7 +2230,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 92		H2M614832	target_condition		Hypertension			FN
 92		H2M614832	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 92		H2M614832	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-92		H2M614832	host_species		Homo sapiens			FN
+92		H2M614832	host_species		Homo sapiens		NCIT:C14225	FN
 93		H2M614904	location		Tangshan			FN
 93		H2M614904	subject_id		H2M614904			FN
 93		H2M614904	sample_id		H2M614904			FN
@@ -2254,7 +2254,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 93		H2M614904	target_condition		Hypertension			FN
 93		H2M614904	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 93		H2M614904	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-93		H2M614904	host_species		Homo sapiens			FN
+93		H2M614904	host_species		Homo sapiens		NCIT:C14225	FN
 94		H2M614929	location		Tangshan			FN
 94		H2M614929	subject_id		H2M614929			FN
 94		H2M614929	sample_id		H2M614929			FN
@@ -2278,7 +2278,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 94		H2M614929	target_condition		Hypertension			FN
 94		H2M614929	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 94		H2M614929	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-94		H2M614929	host_species		Homo sapiens			FN
+94		H2M614929	host_species		Homo sapiens		NCIT:C14225	FN
 95		H2M615912	location		Tangshan			FN
 95		H2M615912	subject_id		H2M615912			FN
 95		H2M615912	sample_id		H2M615912			FN
@@ -2302,7 +2302,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 95		H2M615912	target_condition		Hypertension			FN
 95		H2M615912	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 95		H2M615912	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-95		H2M615912	host_species		Homo sapiens			FN
+95		H2M615912	host_species		Homo sapiens		NCIT:C14225	FN
 96		H2MX14816	location		Tangshan			FN
 96		H2MX14816	subject_id		H2MX14816			FN
 96		H2MX14816	sample_id		H2MX14816			FN
@@ -2326,7 +2326,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 96		H2MX14816	target_condition		Hypertension			FN
 96		H2MX14816	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 96		H2MX14816	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-96		H2MX14816	host_species		Homo sapiens			FN
+96		H2MX14816	host_species		Homo sapiens		NCIT:C14225	FN
 97		H2MX14928	location		Tangshan			FN
 97		H2MX14928	subject_id		H2MX14928			FN
 97		H2MX14928	sample_id		H2MX14928			FN
@@ -2350,7 +2350,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 97		H2MX14928	target_condition		Hypertension			FN
 97		H2MX14928	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 97		H2MX14928	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-97		H2MX14928	host_species		Homo sapiens			FN
+97		H2MX14928	host_species		Homo sapiens		NCIT:C14225	FN
 98		H3F416103	location		Tangshan			FN
 98		H3F416103	subject_id		H3F416103			FN
 98		H3F416103	sample_id		H3F416103			FN
@@ -2374,7 +2374,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 98		H3F416103	target_condition		Hypertension			FN
 98		H3F416103	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 98		H3F416103	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-98		H3F416103	host_species		Homo sapiens			FN
+98		H3F416103	host_species		Homo sapiens		NCIT:C14225	FN
 99		H3F516111	location		Tangshan			FN
 99		H3F516111	subject_id		H3F516111			FN
 99		H3F516111	sample_id		H3F516111			FN
@@ -2398,7 +2398,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 99		H3F516111	target_condition		Hypertension			FN
 99		H3F516111	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 99		H3F516111	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-99		H3F516111	host_species		Homo sapiens			FN
+99		H3F516111	host_species		Homo sapiens		NCIT:C14225	FN
 100		H3M414933	location		Tangshan			FN
 100		H3M414933	subject_id		H3M414933			FN
 100		H3M414933	sample_id		H3M414933			FN
@@ -2422,7 +2422,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 100		H3M414933	target_condition		Hypertension			FN
 100		H3M414933	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 100		H3M414933	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-100		H3M414933	host_species		Homo sapiens			FN
+100		H3M414933	host_species		Homo sapiens		NCIT:C14225	FN
 101		H3M415117	location		Tangshan			FN
 101		H3M415117	subject_id		H3M415117			FN
 101		H3M415117	sample_id		H3M415117			FN
@@ -2446,7 +2446,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 101		H3M415117	target_condition		Hypertension			FN
 101		H3M415117	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 101		H3M415117	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-101		H3M415117	host_species		Homo sapiens			FN
+101		H3M415117	host_species		Homo sapiens		NCIT:C14225	FN
 102		H3M415131	location		Tangshan			FN
 102		H3M415131	subject_id		H3M415131			FN
 102		H3M415131	sample_id		H3M415131			FN
@@ -2470,7 +2470,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 102		H3M415131	target_condition		Hypertension			FN
 102		H3M415131	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 102		H3M415131	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-102		H3M415131	host_species		Homo sapiens			FN
+102		H3M415131	host_species		Homo sapiens		NCIT:C14225	FN
 103		H3M415140	location		Tangshan			FN
 103		H3M415140	subject_id		H3M415140			FN
 103		H3M415140	sample_id		H3M415140			FN
@@ -2494,7 +2494,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 103		H3M415140	target_condition		Hypertension			FN
 103		H3M415140	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 103		H3M415140	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-103		H3M415140	host_species		Homo sapiens			FN
+103		H3M415140	host_species		Homo sapiens		NCIT:C14225	FN
 104		H3M415852	location		Tangshan			FN
 104		H3M415852	subject_id		H3M415852			FN
 104		H3M415852	sample_id		H3M415852			FN
@@ -2518,7 +2518,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 104		H3M415852	target_condition		Hypertension			FN
 104		H3M415852	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 104		H3M415852	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-104		H3M415852	host_species		Homo sapiens			FN
+104		H3M415852	host_species		Homo sapiens		NCIT:C14225	FN
 105		H3M415906	location		Tangshan			FN
 105		H3M415906	subject_id		H3M415906			FN
 105		H3M415906	sample_id		H3M415906			FN
@@ -2542,7 +2542,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 105		H3M415906	target_condition		Hypertension			FN
 105		H3M415906	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 105		H3M415906	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-105		H3M415906	host_species		Homo sapiens			FN
+105		H3M415906	host_species		Homo sapiens		NCIT:C14225	FN
 106		H3M416124	location		Tangshan			FN
 106		H3M416124	subject_id		H3M416124			FN
 106		H3M416124	sample_id		H3M416124			FN
@@ -2566,7 +2566,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 106		H3M416124	target_condition		Hypertension			FN
 106		H3M416124	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 106		H3M416124	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-106		H3M416124	host_species		Homo sapiens			FN
+106		H3M416124	host_species		Homo sapiens		NCIT:C14225	FN
 107		H3M416127	location		Tangshan			FN
 107		H3M416127	subject_id		H3M416127			FN
 107		H3M416127	sample_id		H3M416127			FN
@@ -2590,7 +2590,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 107		H3M416127	target_condition		Hypertension			FN
 107		H3M416127	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 107		H3M416127	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-107		H3M416127	host_species		Homo sapiens			FN
+107		H3M416127	host_species		Homo sapiens		NCIT:C14225	FN
 108		H3M419939	location		Tangshan			FN
 108		H3M419939	subject_id		H3M419939			FN
 108		H3M419939	sample_id		H3M419939			FN
@@ -2614,7 +2614,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 108		H3M419939	target_condition		Hypertension			FN
 108		H3M419939	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 108		H3M419939	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-108		H3M419939	host_species		Homo sapiens			FN
+108		H3M419939	host_species		Homo sapiens		NCIT:C14225	FN
 109		H3M420126	location		Tangshan			FN
 109		H3M420126	subject_id		H3M420126			FN
 109		H3M420126	sample_id		H3M420126			FN
@@ -2638,7 +2638,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 109		H3M420126	target_condition		Hypertension			FN
 109		H3M420126	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 109		H3M420126	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-109		H3M420126	host_species		Homo sapiens			FN
+109		H3M420126	host_species		Homo sapiens		NCIT:C14225	FN
 110		H3M513141	location		Tangshan			FN
 110		H3M513141	subject_id		H3M513141			FN
 110		H3M513141	sample_id		H3M513141			FN
@@ -2662,7 +2662,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 110		H3M513141	target_condition		Hypertension			FN
 110		H3M513141	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 110		H3M513141	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-110		H3M513141	host_species		Homo sapiens			FN
+110		H3M513141	host_species		Homo sapiens		NCIT:C14225	FN
 111		H3M514142	location		Tangshan			FN
 111		H3M514142	subject_id		H3M514142			FN
 111		H3M514142	sample_id		H3M514142			FN
@@ -2686,7 +2686,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 111		H3M514142	target_condition		Hypertension			FN
 111		H3M514142	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 111		H3M514142	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-111		H3M514142	host_species		Homo sapiens			FN
+111		H3M514142	host_species		Homo sapiens		NCIT:C14225	FN
 112		H3M514143	location		Tangshan			FN
 112		H3M514143	subject_id		H3M514143			FN
 112		H3M514143	sample_id		H3M514143			FN
@@ -2710,7 +2710,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 112		H3M514143	target_condition		Hypertension			FN
 112		H3M514143	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 112		H3M514143	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-112		H3M514143	host_species		Homo sapiens			FN
+112		H3M514143	host_species		Homo sapiens		NCIT:C14225	FN
 113		H3M514144	location		Tangshan			FN
 113		H3M514144	subject_id		H3M514144			FN
 113		H3M514144	sample_id		H3M514144			FN
@@ -2734,7 +2734,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 113		H3M514144	target_condition		Hypertension			FN
 113		H3M514144	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 113		H3M514144	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-113		H3M514144	host_species		Homo sapiens			FN
+113		H3M514144	host_species		Homo sapiens		NCIT:C14225	FN
 114		H3M515101	location		Tangshan			FN
 114		H3M515101	subject_id		H3M515101			FN
 114		H3M515101	sample_id		H3M515101			FN
@@ -2758,7 +2758,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 114		H3M515101	target_condition		Hypertension			FN
 114		H3M515101	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 114		H3M515101	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-114		H3M515101	host_species		Homo sapiens			FN
+114		H3M515101	host_species		Homo sapiens		NCIT:C14225	FN
 115		H3M515107	location		Tangshan			FN
 115		H3M515107	subject_id		H3M515107			FN
 115		H3M515107	sample_id		H3M515107			FN
@@ -2782,7 +2782,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 115		H3M515107	target_condition		Hypertension			FN
 115		H3M515107	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 115		H3M515107	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-115		H3M515107	host_species		Homo sapiens			FN
+115		H3M515107	host_species		Homo sapiens		NCIT:C14225	FN
 116		H3M515123	location		Tangshan			FN
 116		H3M515123	subject_id		H3M515123			FN
 116		H3M515123	sample_id		H3M515123			FN
@@ -2806,7 +2806,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 116		H3M515123	target_condition		Hypertension			FN
 116		H3M515123	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 116		H3M515123	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-116		H3M515123	host_species		Homo sapiens			FN
+116		H3M515123	host_species		Homo sapiens		NCIT:C14225	FN
 117		H3M515128	location		Tangshan			FN
 117		H3M515128	subject_id		H3M515128			FN
 117		H3M515128	sample_id		H3M515128			FN
@@ -2830,7 +2830,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 117		H3M515128	target_condition		Hypertension			FN
 117		H3M515128	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 117		H3M515128	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-117		H3M515128	host_species		Homo sapiens			FN
+117		H3M515128	host_species		Homo sapiens		NCIT:C14225	FN
 118		H3M515130	location		Tangshan			FN
 118		H3M515130	subject_id		H3M515130			FN
 118		H3M515130	sample_id		H3M515130			FN
@@ -2854,7 +2854,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 118		H3M515130	target_condition		Hypertension			FN
 118		H3M515130	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 118		H3M515130	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-118		H3M515130	host_species		Homo sapiens			FN
+118		H3M515130	host_species		Homo sapiens		NCIT:C14225	FN
 119		H3M515137	location		Tangshan			FN
 119		H3M515137	subject_id		H3M515137			FN
 119		H3M515137	sample_id		H3M515137			FN
@@ -2878,7 +2878,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 119		H3M515137	target_condition		Hypertension			FN
 119		H3M515137	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 119		H3M515137	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-119		H3M515137	host_species		Homo sapiens			FN
+119		H3M515137	host_species		Homo sapiens		NCIT:C14225	FN
 120		H3M515138	location		Tangshan			FN
 120		H3M515138	subject_id		H3M515138			FN
 120		H3M515138	sample_id		H3M515138			FN
@@ -2902,7 +2902,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 120		H3M515138	target_condition		Hypertension			FN
 120		H3M515138	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 120		H3M515138	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-120		H3M515138	host_species		Homo sapiens			FN
+120		H3M515138	host_species		Homo sapiens		NCIT:C14225	FN
 121		H3M515902	location		Tangshan			FN
 121		H3M515902	subject_id		H3M515902			FN
 121		H3M515902	sample_id		H3M515902			FN
@@ -2926,7 +2926,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 121		H3M515902	target_condition		Hypertension			FN
 121		H3M515902	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 121		H3M515902	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-121		H3M515902	host_species		Homo sapiens			FN
+121		H3M515902	host_species		Homo sapiens		NCIT:C14225	FN
 122		H3M515910	location		Tangshan			FN
 122		H3M515910	subject_id		H3M515910			FN
 122		H3M515910	sample_id		H3M515910			FN
@@ -2950,7 +2950,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 122		H3M515910	target_condition		Hypertension			FN
 122		H3M515910	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 122		H3M515910	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-122		H3M515910	host_species		Homo sapiens			FN
+122		H3M515910	host_species		Homo sapiens		NCIT:C14225	FN
 123		H3M515915	location		Tangshan			FN
 123		H3M515915	subject_id		H3M515915			FN
 123		H3M515915	sample_id		H3M515915			FN
@@ -2974,7 +2974,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 123		H3M515915	target_condition		Hypertension			FN
 123		H3M515915	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 123		H3M515915	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-123		H3M515915	host_species		Homo sapiens			FN
+123		H3M515915	host_species		Homo sapiens		NCIT:C14225	FN
 124		H3M515920	location		Tangshan			FN
 124		H3M515920	subject_id		H3M515920			FN
 124		H3M515920	sample_id		H3M515920			FN
@@ -2998,7 +2998,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 124		H3M515920	target_condition		Hypertension			FN
 124		H3M515920	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 124		H3M515920	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-124		H3M515920	host_species		Homo sapiens			FN
+124		H3M515920	host_species		Homo sapiens		NCIT:C14225	FN
 125		H3M515935	location		Tangshan			FN
 125		H3M515935	subject_id		H3M515935			FN
 125		H3M515935	sample_id		H3M515935			FN
@@ -3022,7 +3022,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 125		H3M515935	target_condition		Hypertension			FN
 125		H3M515935	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 125		H3M515935	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-125		H3M515935	host_species		Homo sapiens			FN
+125		H3M515935	host_species		Homo sapiens		NCIT:C14225	FN
 126		H3M515936	location		Tangshan			FN
 126		H3M515936	subject_id		H3M515936			FN
 126		H3M515936	sample_id		H3M515936			FN
@@ -3046,7 +3046,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 126		H3M515936	target_condition		Hypertension			FN
 126		H3M515936	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 126		H3M515936	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-126		H3M515936	host_species		Homo sapiens			FN
+126		H3M515936	host_species		Homo sapiens		NCIT:C14225	FN
 127		H3M515950	location		Tangshan			FN
 127		H3M515950	subject_id		H3M515950			FN
 127		H3M515950	sample_id		H3M515950			FN
@@ -3070,7 +3070,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 127		H3M515950	target_condition		Hypertension			FN
 127		H3M515950	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 127		H3M515950	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-127		H3M515950	host_species		Homo sapiens			FN
+127		H3M515950	host_species		Homo sapiens		NCIT:C14225	FN
 128		H3M516105	location		Tangshan			FN
 128		H3M516105	subject_id		H3M516105			FN
 128		H3M516105	sample_id		H3M516105			FN
@@ -3094,7 +3094,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 128		H3M516105	target_condition		Hypertension			FN
 128		H3M516105	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 128		H3M516105	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-128		H3M516105	host_species		Homo sapiens			FN
+128		H3M516105	host_species		Homo sapiens		NCIT:C14225	FN
 129		H3M516113	location		Tangshan			FN
 129		H3M516113	subject_id		H3M516113			FN
 129		H3M516113	sample_id		H3M516113			FN
@@ -3118,7 +3118,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 129		H3M516113	target_condition		Hypertension			FN
 129		H3M516113	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 129		H3M516113	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-129		H3M516113	host_species		Homo sapiens			FN
+129		H3M516113	host_species		Homo sapiens		NCIT:C14225	FN
 130		H3M516114	location		Tangshan			FN
 130		H3M516114	subject_id		H3M516114			FN
 130		H3M516114	sample_id		H3M516114			FN
@@ -3142,7 +3142,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 130		H3M516114	target_condition		Hypertension			FN
 130		H3M516114	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 130		H3M516114	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-130		H3M516114	host_species		Homo sapiens			FN
+130		H3M516114	host_species		Homo sapiens		NCIT:C14225	FN
 131		H3M516118	location		Tangshan			FN
 131		H3M516118	subject_id		H3M516118			FN
 131		H3M516118	sample_id		H3M516118			FN
@@ -3166,7 +3166,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 131		H3M516118	target_condition		Hypertension			FN
 131		H3M516118	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 131		H3M516118	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-131		H3M516118	host_species		Homo sapiens			FN
+131		H3M516118	host_species		Homo sapiens		NCIT:C14225	FN
 132		H3M516129	location		Tangshan			FN
 132		H3M516129	subject_id		H3M516129			FN
 132		H3M516129	sample_id		H3M516129			FN
@@ -3190,7 +3190,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 132		H3M516129	target_condition		Hypertension			FN
 132		H3M516129	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 132		H3M516129	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-132		H3M516129	host_species		Homo sapiens			FN
+132		H3M516129	host_species		Homo sapiens		NCIT:C14225	FN
 133		H3M516154	location		Tangshan			FN
 133		H3M516154	subject_id		H3M516154			FN
 133		H3M516154	sample_id		H3M516154			FN
@@ -3214,7 +3214,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 133		H3M516154	target_condition		Hypertension			FN
 133		H3M516154	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 133		H3M516154	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-133		H3M516154	host_species		Homo sapiens			FN
+133		H3M516154	host_species		Homo sapiens		NCIT:C14225	FN
 134		H3M516751	location		Tangshan			FN
 134		H3M516751	subject_id		H3M516751			FN
 134		H3M516751	sample_id		H3M516751			FN
@@ -3238,7 +3238,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 134		H3M516751	target_condition		Hypertension			FN
 134		H3M516751	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 134		H3M516751	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-134		H3M516751	host_species		Homo sapiens			FN
+134		H3M516751	host_species		Homo sapiens		NCIT:C14225	FN
 135		H3M516804	location		Tangshan			FN
 135		H3M516804	subject_id		H3M516804			FN
 135		H3M516804	sample_id		H3M516804			FN
@@ -3262,7 +3262,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 135		H3M516804	target_condition		Hypertension			FN
 135		H3M516804	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 135		H3M516804	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-135		H3M516804	host_species		Homo sapiens			FN
+135		H3M516804	host_species		Homo sapiens		NCIT:C14225	FN
 136		H3M516845	location		Tangshan			FN
 136		H3M516845	subject_id		H3M516845			FN
 136		H3M516845	sample_id		H3M516845			FN
@@ -3286,7 +3286,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 136		H3M516845	target_condition		Hypertension			FN
 136		H3M516845	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 136		H3M516845	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-136		H3M516845	host_species		Homo sapiens			FN
+136		H3M516845	host_species		Homo sapiens		NCIT:C14225	FN
 137		H3M516909	location		Tangshan			FN
 137		H3M516909	subject_id		H3M516909			FN
 137		H3M516909	sample_id		H3M516909			FN
@@ -3310,7 +3310,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 137		H3M516909	target_condition		Hypertension			FN
 137		H3M516909	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 137		H3M516909	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-137		H3M516909	host_species		Homo sapiens			FN
+137		H3M516909	host_species		Homo sapiens		NCIT:C14225	FN
 138		H3M517134	location		Tangshan			FN
 138		H3M517134	subject_id		H3M517134			FN
 138		H3M517134	sample_id		H3M517134			FN
@@ -3334,7 +3334,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 138		H3M517134	target_condition		Hypertension			FN
 138		H3M517134	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 138		H3M517134	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-138		H3M517134	host_species		Homo sapiens			FN
+138		H3M517134	host_species		Homo sapiens		NCIT:C14225	FN
 139		H3M517921	location		Tangshan			FN
 139		H3M517921	subject_id		H3M517921			FN
 139		H3M517921	sample_id		H3M517921			FN
@@ -3358,7 +3358,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 139		H3M517921	target_condition		Hypertension			FN
 139		H3M517921	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 139		H3M517921	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-139		H3M517921	host_species		Homo sapiens			FN
+139		H3M517921	host_species		Homo sapiens		NCIT:C14225	FN
 140		H3M517922	location		Tangshan			FN
 140		H3M517922	subject_id		H3M517922			FN
 140		H3M517922	sample_id		H3M517922			FN
@@ -3382,7 +3382,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 140		H3M517922	target_condition		Hypertension			FN
 140		H3M517922	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 140		H3M517922	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-140		H3M517922	host_species		Homo sapiens			FN
+140		H3M517922	host_species		Homo sapiens		NCIT:C14225	FN
 141		H3M517925	location		Tangshan			FN
 141		H3M517925	subject_id		H3M517925			FN
 141		H3M517925	sample_id		H3M517925			FN
@@ -3406,7 +3406,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 141		H3M517925	target_condition		Hypertension			FN
 141		H3M517925	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 141		H3M517925	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-141		H3M517925	host_species		Homo sapiens			FN
+141		H3M517925	host_species		Homo sapiens		NCIT:C14225	FN
 142		H3M518108	location		Tangshan			FN
 142		H3M518108	subject_id		H3M518108			FN
 142		H3M518108	sample_id		H3M518108			FN
@@ -3430,7 +3430,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 142		H3M518108	target_condition		Hypertension			FN
 142		H3M518108	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 142		H3M518108	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-142		H3M518108	host_species		Homo sapiens			FN
+142		H3M518108	host_species		Homo sapiens		NCIT:C14225	FN
 143		H3M518112	location		Tangshan			FN
 143		H3M518112	subject_id		H3M518112			FN
 143		H3M518112	sample_id		H3M518112			FN
@@ -3454,7 +3454,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 143		H3M518112	target_condition		Hypertension			FN
 143		H3M518112	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 143		H3M518112	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-143		H3M518112	host_species		Homo sapiens			FN
+143		H3M518112	host_species		Homo sapiens		NCIT:C14225	FN
 144		H3M518116	location		Tangshan			FN
 144		H3M518116	subject_id		H3M518116			FN
 144		H3M518116	sample_id		H3M518116			FN
@@ -3478,7 +3478,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 144		H3M518116	target_condition		Hypertension			FN
 144		H3M518116	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 144		H3M518116	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-144		H3M518116	host_species		Homo sapiens			FN
+144		H3M518116	host_species		Homo sapiens		NCIT:C14225	FN
 145		H3M615132	location		Tangshan			FN
 145		H3M615132	subject_id		H3M615132			FN
 145		H3M615132	sample_id		H3M615132			FN
@@ -3502,7 +3502,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 145		H3M615132	target_condition		Hypertension			FN
 145		H3M615132	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 145		H3M615132	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-145		H3M615132	host_species		Homo sapiens			FN
+145		H3M615132	host_species		Homo sapiens		NCIT:C14225	FN
 146		H3M615747	location		Tangshan			FN
 146		H3M615747	subject_id		H3M615747			FN
 146		H3M615747	sample_id		H3M615747			FN
@@ -3526,7 +3526,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 146		H3M615747	target_condition		Hypertension			FN
 146		H3M615747	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 146		H3M615747	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-146		H3M615747	host_species		Homo sapiens			FN
+146		H3M615747	host_species		Homo sapiens		NCIT:C14225	FN
 147		H3M615846	location		Tangshan			FN
 147		H3M615846	subject_id		H3M615846			FN
 147		H3M615846	sample_id		H3M615846			FN
@@ -3550,7 +3550,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 147		H3M615846	target_condition		Hypertension			FN
 147		H3M615846	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 147		H3M615846	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-147		H3M615846	host_species		Homo sapiens			FN
+147		H3M615846	host_species		Homo sapiens		NCIT:C14225	FN
 148		H3M616753	location		Tangshan			FN
 148		H3M616753	subject_id		H3M616753			FN
 148		H3M616753	sample_id		H3M616753			FN
@@ -3574,7 +3574,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 148		H3M616753	target_condition		Hypertension			FN
 148		H3M616753	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 148		H3M616753	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-148		H3M616753	host_species		Homo sapiens			FN
+148		H3M616753	host_species		Homo sapiens		NCIT:C14225	FN
 149		H3M616848	location		Tangshan			FN
 149		H3M616848	subject_id		H3M616848			FN
 149		H3M616848	sample_id		H3M616848			FN
@@ -3598,7 +3598,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 149		H3M616848	target_condition		Hypertension			FN
 149		H3M616848	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 149		H3M616848	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-149		H3M616848	host_species		Homo sapiens			FN
+149		H3M616848	host_species		Homo sapiens		NCIT:C14225	FN
 150		H3M617849	location		Tangshan			FN
 150		H3M617849	subject_id		H3M617849			FN
 150		H3M617849	sample_id		H3M617849			FN
@@ -3622,7 +3622,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 150		H3M617849	target_condition		Hypertension			FN
 150		H3M617849	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 150		H3M617849	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-150		H3M617849	host_species		Homo sapiens			FN
+150		H3M617849	host_species		Homo sapiens		NCIT:C14225	FN
 151		H3MX16919	location		Tangshan			FN
 151		H3MX16919	subject_id		H3MX16919			FN
 151		H3MX16919	sample_id		H3MX16919			FN
@@ -3646,7 +3646,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 151		H3MX16919	target_condition		Hypertension			FN
 151		H3MX16919	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 151		H3MX16919	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-151		H3MX16919	host_species		Homo sapiens			FN
+151		H3MX16919	host_species		Homo sapiens		NCIT:C14225	FN
 152		nHF409542	location		Tangshan			FN
 152		nHF409542	subject_id		nHF409542			FN
 152		nHF409542	sample_id		nHF409542			FN
@@ -3670,7 +3670,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 152		nHF409542	target_condition		Hypertension			FN
 152		nHF409542	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 152		nHF409542	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-152		nHF409542	host_species		Homo sapiens			FN
+152		nHF409542	host_species		Homo sapiens		NCIT:C14225	FN
 153		nHF411719	location		Tangshan			FN
 153		nHF411719	subject_id		nHF411719			FN
 153		nHF411719	sample_id		nHF411719			FN
@@ -3694,7 +3694,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 153		nHF411719	target_condition		Hypertension			FN
 153		nHF411719	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 153		nHF411719	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-153		nHF411719	host_species		Homo sapiens			FN
+153		nHF411719	host_species		Homo sapiens		NCIT:C14225	FN
 154		nHF411741	location		Tangshan			FN
 154		nHF411741	subject_id		nHF411741			FN
 154		nHF411741	sample_id		nHF411741			FN
@@ -3718,7 +3718,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 154		nHF411741	target_condition		Hypertension			FN
 154		nHF411741	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 154		nHF411741	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-154		nHF411741	host_species		Homo sapiens			FN
+154		nHF411741	host_species		Homo sapiens		NCIT:C14225	FN
 155		nHF511704	location		Tangshan			FN
 155		nHF511704	subject_id		nHF511704			FN
 155		nHF511704	sample_id		nHF511704			FN
@@ -3742,7 +3742,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 155		nHF511704	target_condition		Hypertension			FN
 155		nHF511704	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 155		nHF511704	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-155		nHF511704	host_species		Homo sapiens			FN
+155		nHF511704	host_species		Homo sapiens		NCIT:C14225	FN
 156		nHF512818	location		Tangshan			FN
 156		nHF512818	subject_id		nHF512818			FN
 156		nHF512818	sample_id		nHF512818			FN
@@ -3766,7 +3766,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 156		nHF512818	target_condition		Hypertension			FN
 156		nHF512818	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 156		nHF512818	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-156		nHF512818	host_species		Homo sapiens			FN
+156		nHF512818	host_species		Homo sapiens		NCIT:C14225	FN
 157		nHF512829	location		Tangshan			FN
 157		nHF512829	subject_id		nHF512829			FN
 157		nHF512829	sample_id		nHF512829			FN
@@ -3790,7 +3790,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 157		nHF512829	target_condition		Hypertension			FN
 157		nHF512829	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 157		nHF512829	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-157		nHF512829	host_species		Homo sapiens			FN
+157		nHF512829	host_species		Homo sapiens		NCIT:C14225	FN
 158		nHF611623	location		Tangshan			FN
 158		nHF611623	subject_id		nHF611623			FN
 158		nHF611623	sample_id		nHF611623			FN
@@ -3814,7 +3814,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 158		nHF611623	target_condition		Hypertension			FN
 158		nHF611623	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 158		nHF611623	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-158		nHF611623	host_species		Homo sapiens			FN
+158		nHF611623	host_species		Homo sapiens		NCIT:C14225	FN
 159		nHF611710	location		Tangshan			FN
 159		nHF611710	subject_id		nHF611710			FN
 159		nHF611710	sample_id		nHF611710			FN
@@ -3838,7 +3838,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 159		nHF611710	target_condition		Hypertension			FN
 159		nHF611710	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 159		nHF611710	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-159		nHF611710	host_species		Homo sapiens			FN
+159		nHF611710	host_species		Homo sapiens		NCIT:C14225	FN
 160		nHF612722	location		Tangshan			FN
 160		nHF612722	subject_id		nHF612722			FN
 160		nHF612722	sample_id		nHF612722			FN
@@ -3862,7 +3862,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 160		nHF612722	target_condition		Hypertension			FN
 160		nHF612722	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 160		nHF612722	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-160		nHF612722	host_species		Homo sapiens			FN
+160		nHF612722	host_species		Homo sapiens		NCIT:C14225	FN
 161		nHM410714	location		Tangshan			FN
 161		nHM410714	subject_id		nHM410714			FN
 161		nHM410714	sample_id		nHM410714			FN
@@ -3886,7 +3886,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 161		nHM410714	target_condition		Hypertension			FN
 161		nHM410714	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 161		nHM410714	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-161		nHM410714	host_species		Homo sapiens			FN
+161		nHM410714	host_species		Homo sapiens		NCIT:C14225	FN
 162		nHM410727	location		Tangshan			FN
 162		nHM410727	subject_id		nHM410727			FN
 162		nHM410727	sample_id		nHM410727			FN
@@ -3910,7 +3910,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 162		nHM410727	target_condition		Hypertension			FN
 162		nHM410727	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 162		nHM410727	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-162		nHM410727	host_species		Homo sapiens			FN
+162		nHM410727	host_species		Homo sapiens		NCIT:C14225	FN
 163		nHM410833	location		Tangshan			FN
 163		nHM410833	subject_id		nHM410833			FN
 163		nHM410833	sample_id		nHM410833			FN
@@ -3934,7 +3934,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 163		nHM410833	target_condition		Hypertension			FN
 163		nHM410833	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 163		nHM410833	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-163		nHM410833	host_species		Homo sapiens			FN
+163		nHM410833	host_species		Homo sapiens		NCIT:C14225	FN
 164		nHM411801	location		Tangshan			FN
 164		nHM411801	subject_id		nHM411801			FN
 164		nHM411801	sample_id		nHM411801			FN
@@ -3958,7 +3958,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 164		nHM411801	target_condition		Hypertension			FN
 164		nHM411801	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 164		nHM411801	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-164		nHM411801	host_species		Homo sapiens			FN
+164		nHM411801	host_species		Homo sapiens		NCIT:C14225	FN
 165		nHM412703	location		Tangshan			FN
 165		nHM412703	subject_id		nHM412703			FN
 165		nHM412703	sample_id		nHM412703			FN
@@ -3982,7 +3982,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 165		nHM412703	target_condition		Hypertension			FN
 165		nHM412703	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 165		nHM412703	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-165		nHM412703	host_species		Homo sapiens			FN
+165		nHM412703	host_species		Homo sapiens		NCIT:C14225	FN
 166		nHM412716	location		Tangshan			FN
 166		nHM412716	subject_id		nHM412716			FN
 166		nHM412716	sample_id		nHM412716			FN
@@ -4006,7 +4006,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 166		nHM412716	target_condition		Hypertension			FN
 166		nHM412716	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 166		nHM412716	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-166		nHM412716	host_species		Homo sapiens			FN
+166		nHM412716	host_species		Homo sapiens		NCIT:C14225	FN
 167		nHM412839	location		Tangshan			FN
 167		nHM412839	subject_id		nHM412839			FN
 167		nHM412839	sample_id		nHM412839			FN
@@ -4030,7 +4030,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 167		nHM412839	target_condition		Hypertension			FN
 167		nHM412839	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 167		nHM412839	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-167		nHM412839	host_species		Homo sapiens			FN
+167		nHM412839	host_species		Homo sapiens		NCIT:C14225	FN
 168		nHM412840	location		Tangshan			FN
 168		nHM412840	subject_id		nHM412840			FN
 168		nHM412840	sample_id		nHM412840			FN
@@ -4054,7 +4054,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 168		nHM412840	target_condition		Hypertension			FN
 168		nHM412840	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 168		nHM412840	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-168		nHM412840	host_species		Homo sapiens			FN
+168		nHM412840	host_species		Homo sapiens		NCIT:C14225	FN
 169		nHM412844	location		Tangshan			FN
 169		nHM412844	subject_id		nHM412844			FN
 169		nHM412844	sample_id		nHM412844			FN
@@ -4078,7 +4078,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 169		nHM412844	target_condition		Hypertension			FN
 169		nHM412844	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 169		nHM412844	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-169		nHM412844	host_species		Homo sapiens			FN
+169		nHM412844	host_species		Homo sapiens		NCIT:C14225	FN
 170		nHM510732	location		Tangshan			FN
 170		nHM510732	subject_id		nHM510732			FN
 170		nHM510732	sample_id		nHM510732			FN
@@ -4102,7 +4102,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 170		nHM510732	target_condition		Hypertension			FN
 170		nHM510732	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 170		nHM510732	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-170		nHM510732	host_species		Homo sapiens			FN
+170		nHM510732	host_species		Homo sapiens		NCIT:C14225	FN
 171		nHM510737	location		Tangshan			FN
 171		nHM510737	subject_id		nHM510737			FN
 171		nHM510737	sample_id		nHM510737			FN
@@ -4126,7 +4126,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 171		nHM510737	target_condition		Hypertension			FN
 171		nHM510737	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 171		nHM510737	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-171		nHM510737	host_species		Homo sapiens			FN
+171		nHM510737	host_species		Homo sapiens		NCIT:C14225	FN
 172		nHM510831	location		Tangshan			FN
 172		nHM510831	subject_id		nHM510831			FN
 172		nHM510831	sample_id		nHM510831			FN
@@ -4150,7 +4150,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 172		nHM510831	target_condition		Hypertension			FN
 172		nHM510831	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 172		nHM510831	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-172		nHM510831	host_species		Homo sapiens			FN
+172		nHM510831	host_species		Homo sapiens		NCIT:C14225	FN
 173		nHM511615	location		Tangshan			FN
 173		nHM511615	subject_id		nHM511615			FN
 173		nHM511615	sample_id		nHM511615			FN
@@ -4174,7 +4174,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 173		nHM511615	target_condition		Hypertension			FN
 173		nHM511615	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 173		nHM511615	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-173		nHM511615	host_species		Homo sapiens			FN
+173		nHM511615	host_species		Homo sapiens		NCIT:C14225	FN
 174		nHM511712	location		Tangshan			FN
 174		nHM511712	subject_id		nHM511712			FN
 174		nHM511712	sample_id		nHM511712			FN
@@ -4198,7 +4198,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 174		nHM511712	target_condition		Hypertension			FN
 174		nHM511712	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 174		nHM511712	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-174		nHM511712	host_species		Homo sapiens			FN
+174		nHM511712	host_species		Homo sapiens		NCIT:C14225	FN
 175		nHM511717	location		Tangshan			FN
 175		nHM511717	subject_id		nHM511717			FN
 175		nHM511717	sample_id		nHM511717			FN
@@ -4222,7 +4222,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 175		nHM511717	target_condition		Hypertension			FN
 175		nHM511717	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 175		nHM511717	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-175		nHM511717	host_species		Homo sapiens			FN
+175		nHM511717	host_species		Homo sapiens		NCIT:C14225	FN
 176		nHM511720	location		Tangshan			FN
 176		nHM511720	subject_id		nHM511720			FN
 176		nHM511720	sample_id		nHM511720			FN
@@ -4246,7 +4246,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 176		nHM511720	target_condition		Hypertension			FN
 176		nHM511720	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 176		nHM511720	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-176		nHM511720	host_species		Homo sapiens			FN
+176		nHM511720	host_species		Homo sapiens		NCIT:C14225	FN
 177		nHM511730	location		Tangshan			FN
 177		nHM511730	subject_id		nHM511730			FN
 177		nHM511730	sample_id		nHM511730			FN
@@ -4270,7 +4270,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 177		nHM511730	target_condition		Hypertension			FN
 177		nHM511730	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 177		nHM511730	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-177		nHM511730	host_species		Homo sapiens			FN
+177		nHM511730	host_species		Homo sapiens		NCIT:C14225	FN
 178		nHM511735	location		Tangshan			FN
 178		nHM511735	subject_id		nHM511735			FN
 178		nHM511735	sample_id		nHM511735			FN
@@ -4294,7 +4294,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 178		nHM511735	target_condition		Hypertension			FN
 178		nHM511735	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 178		nHM511735	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-178		nHM511735	host_species		Homo sapiens			FN
+178		nHM511735	host_species		Homo sapiens		NCIT:C14225	FN
 179		nHM511738	location		Tangshan			FN
 179		nHM511738	subject_id		nHM511738			FN
 179		nHM511738	sample_id		nHM511738			FN
@@ -4318,7 +4318,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 179		nHM511738	target_condition		Hypertension			FN
 179		nHM511738	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 179		nHM511738	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-179		nHM511738	host_species		Homo sapiens			FN
+179		nHM511738	host_species		Homo sapiens		NCIT:C14225	FN
 180		nHM511813	location		Tangshan			FN
 180		nHM511813	subject_id		nHM511813			FN
 180		nHM511813	sample_id		nHM511813			FN
@@ -4342,7 +4342,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 180		nHM511813	target_condition		Hypertension			FN
 180		nHM511813	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 180		nHM511813	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-180		nHM511813	host_species		Homo sapiens			FN
+180		nHM511813	host_species		Homo sapiens		NCIT:C14225	FN
 181		nHM511821	location		Tangshan			FN
 181		nHM511821	subject_id		nHM511821			FN
 181		nHM511821	sample_id		nHM511821			FN
@@ -4366,7 +4366,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 181		nHM511821	target_condition		Hypertension			FN
 181		nHM511821	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 181		nHM511821	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-181		nHM511821	host_species		Homo sapiens			FN
+181		nHM511821	host_species		Homo sapiens		NCIT:C14225	FN
 182		nHM511825	location		Tangshan			FN
 182		nHM511825	subject_id		nHM511825			FN
 182		nHM511825	sample_id		nHM511825			FN
@@ -4390,7 +4390,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 182		nHM511825	target_condition		Hypertension			FN
 182		nHM511825	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 182		nHM511825	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-182		nHM511825	host_species		Homo sapiens			FN
+182		nHM511825	host_species		Homo sapiens		NCIT:C14225	FN
 183		nHM512705	location		Tangshan			FN
 183		nHM512705	subject_id		nHM512705			FN
 183		nHM512705	sample_id		nHM512705			FN
@@ -4414,7 +4414,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 183		nHM512705	target_condition		Hypertension			FN
 183		nHM512705	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 183		nHM512705	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-183		nHM512705	host_species		Homo sapiens			FN
+183		nHM512705	host_species		Homo sapiens		NCIT:C14225	FN
 184		nHM512802	location		Tangshan			FN
 184		nHM512802	subject_id		nHM512802			FN
 184		nHM512802	sample_id		nHM512802			FN
@@ -4438,7 +4438,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 184		nHM512802	target_condition		Hypertension			FN
 184		nHM512802	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 184		nHM512802	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-184		nHM512802	host_species		Homo sapiens			FN
+184		nHM512802	host_species		Homo sapiens		NCIT:C14225	FN
 185		nHM512806	location		Tangshan			FN
 185		nHM512806	subject_id		nHM512806			FN
 185		nHM512806	sample_id		nHM512806			FN
@@ -4462,7 +4462,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 185		nHM512806	target_condition		Hypertension			FN
 185		nHM512806	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 185		nHM512806	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-185		nHM512806	host_species		Homo sapiens			FN
+185		nHM512806	host_species		Homo sapiens		NCIT:C14225	FN
 186		nHM512811	location		Tangshan			FN
 186		nHM512811	subject_id		nHM512811			FN
 186		nHM512811	sample_id		nHM512811			FN
@@ -4486,7 +4486,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 186		nHM512811	target_condition		Hypertension			FN
 186		nHM512811	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 186		nHM512811	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-186		nHM512811	host_species		Homo sapiens			FN
+186		nHM512811	host_species		Homo sapiens		NCIT:C14225	FN
 187		nHM512828	location		Tangshan			FN
 187		nHM512828	subject_id		nHM512828			FN
 187		nHM512828	sample_id		nHM512828			FN
@@ -4510,7 +4510,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 187		nHM512828	target_condition		Hypertension			FN
 187		nHM512828	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 187		nHM512828	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-187		nHM512828	host_species		Homo sapiens			FN
+187		nHM512828	host_species		Homo sapiens		NCIT:C14225	FN
 188		nHM512834	location		Tangshan			FN
 188		nHM512834	subject_id		nHM512834			FN
 188		nHM512834	sample_id		nHM512834			FN
@@ -4534,7 +4534,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 188		nHM512834	target_condition		Hypertension			FN
 188		nHM512834	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 188		nHM512834	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-188		nHM512834	host_species		Homo sapiens			FN
+188		nHM512834	host_species		Homo sapiens		NCIT:C14225	FN
 189		nHM611708	location		Tangshan			FN
 189		nHM611708	subject_id		nHM611708			FN
 189		nHM611708	sample_id		nHM611708			FN
@@ -4558,7 +4558,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 189		nHM611708	target_condition		Hypertension			FN
 189		nHM611708	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 189		nHM611708	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-189		nHM611708	host_species		Homo sapiens			FN
+189		nHM611708	host_species		Homo sapiens		NCIT:C14225	FN
 190		nHM612607	location		Tangshan			FN
 190		nHM612607	subject_id		nHM612607			FN
 190		nHM612607	sample_id		nHM612607			FN
@@ -4582,7 +4582,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 190		nHM612607	target_condition		Hypertension			FN
 190		nHM612607	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 190		nHM612607	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-190		nHM612607	host_species		Homo sapiens			FN
+190		nHM612607	host_species		Homo sapiens		NCIT:C14225	FN
 191		nHM612709	location		Tangshan			FN
 191		nHM612709	subject_id		nHM612709			FN
 191		nHM612709	sample_id		nHM612709			FN
@@ -4606,7 +4606,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 191		nHM612709	target_condition		Hypertension			FN
 191		nHM612709	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 191		nHM612709	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-191		nHM612709	host_species		Homo sapiens			FN
+191		nHM612709	host_species		Homo sapiens		NCIT:C14225	FN
 192		nHM612724	location		Tangshan			FN
 192		nHM612724	subject_id		nHM612724			FN
 192		nHM612724	sample_id		nHM612724			FN
@@ -4630,7 +4630,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 192		nHM612724	target_condition		Hypertension			FN
 192		nHM612724	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 192		nHM612724	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-192		nHM612724	host_species		Homo sapiens			FN
+192		nHM612724	host_species		Homo sapiens		NCIT:C14225	FN
 193		nHM612743	location		Tangshan			FN
 193		nHM612743	subject_id		nHM612743			FN
 193		nHM612743	sample_id		nHM612743			FN
@@ -4654,7 +4654,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 193		nHM612743	target_condition		Hypertension			FN
 193		nHM612743	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 193		nHM612743	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-193		nHM612743	host_species		Homo sapiens			FN
+193		nHM612743	host_species		Homo sapiens		NCIT:C14225	FN
 194		nHM612836	location		Tangshan			FN
 194		nHM612836	subject_id		nHM612836			FN
 194		nHM612836	sample_id		nHM612836			FN
@@ -4678,7 +4678,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 194		nHM612836	target_condition		Hypertension			FN
 194		nHM612836	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 194		nHM612836	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-194		nHM612836	host_species		Homo sapiens			FN
+194		nHM612836	host_species		Homo sapiens		NCIT:C14225	FN
 195		nHMX11726	location		Tangshan			FN
 195		nHMX11726	subject_id		nHMX11726			FN
 195		nHMX11726	sample_id		nHMX11726			FN
@@ -4702,4 +4702,4 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 195		nHMX11726	target_condition		Hypertension			FN
 195		nHMX11726	dna_extraction_kit		Tiangen		CMDKIT:0011	FN
 195		nHMX11726	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-195		nHMX11726	host_species		Homo sapiens			FN
+195		nHMX11726	host_species		Homo sapiens		NCIT:C14225	FN

@@ -22,7 +22,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 0		C16-20002-TZ	target_condition		Prevotella copri			FN
 0		C16-20002-TZ	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 0		C16-20002-TZ	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-0		C16-20002-TZ	host_species		Homo sapiens			FN
+0		C16-20002-TZ	host_species		Homo sapiens		NCIT:C14225	FN
 1		C16-20003-TZ	subject_id		C16-10012-TZ_F			FN
 1		C16-20003-TZ	sample_id		C16-20003-TZ			FN
 1		C16-20003-TZ	control		Study Control			FN
@@ -46,7 +46,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 1		C16-20003-TZ	target_condition		Prevotella copri			FN
 1		C16-20003-TZ	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 1		C16-20003-TZ	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-1		C16-20003-TZ	host_species		Homo sapiens			FN
+1		C16-20003-TZ	host_species		Homo sapiens		NCIT:C14225	FN
 2		C16-20005-TZ	subject_id		C16-10012-TZ_U1			FN
 2		C16-20005-TZ	sample_id		C16-20005-TZ			FN
 2		C16-20005-TZ	control		Study Control			FN
@@ -70,7 +70,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 2		C16-20005-TZ	target_condition		Prevotella copri			FN
 2		C16-20005-TZ	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 2		C16-20005-TZ	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-2		C16-20005-TZ	host_species		Homo sapiens			FN
+2		C16-20005-TZ	host_species		Homo sapiens		NCIT:C14225	FN
 3		C16-20070-TZ	subject_id		C16-10041-TZ_F			FN
 3		C16-20070-TZ	sample_id		C16-20070-TZ			FN
 3		C16-20070-TZ	control		Study Control			FN
@@ -94,7 +94,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 3		C16-20070-TZ	target_condition		Prevotella copri			FN
 3		C16-20070-TZ	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 3		C16-20070-TZ	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-3		C16-20070-TZ	host_species		Homo sapiens			FN
+3		C16-20070-TZ	host_species		Homo sapiens		NCIT:C14225	FN
 4		C16-20071-TZ	subject_id		C16-10041-TZ_M			FN
 4		C16-20071-TZ	sample_id		C16-20071-TZ			FN
 4		C16-20071-TZ	control		Study Control			FN
@@ -118,7 +118,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 4		C16-20071-TZ	target_condition		Prevotella copri			FN
 4		C16-20071-TZ	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 4		C16-20071-TZ	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-4		C16-20071-TZ	host_species		Homo sapiens			FN
+4		C16-20071-TZ	host_species		Homo sapiens		NCIT:C14225	FN
 5		C16-20072-TZ	subject_id		C16-10041-TZ_S1			FN
 5		C16-20072-TZ	sample_id		C16-20072-TZ			FN
 5		C16-20072-TZ	control		Study Control			FN
@@ -142,7 +142,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 5		C16-20072-TZ	target_condition		Prevotella copri			FN
 5		C16-20072-TZ	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 5		C16-20072-TZ	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-5		C16-20072-TZ	host_species		Homo sapiens			FN
+5		C16-20072-TZ	host_species		Homo sapiens		NCIT:C14225	FN
 6		C16-20073-TZ	subject_id		C16-10041-TZ_A1			FN
 6		C16-20073-TZ	sample_id		C16-20073-TZ			FN
 6		C16-20073-TZ	control		Study Control			FN
@@ -166,7 +166,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 6		C16-20073-TZ	target_condition		Prevotella copri			FN
 6		C16-20073-TZ	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 6		C16-20073-TZ	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-6		C16-20073-TZ	host_species		Homo sapiens			FN
+6		C16-20073-TZ	host_species		Homo sapiens		NCIT:C14225	FN
 7		C16-20117-TZ	subject_id		C16-10060-TZ_F			FN
 7		C16-20117-TZ	sample_id		C16-20117-TZ			FN
 7		C16-20117-TZ	control		Study Control			FN
@@ -190,7 +190,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 7		C16-20117-TZ	target_condition		Prevotella copri			FN
 7		C16-20117-TZ	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 7		C16-20117-TZ	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-7		C16-20117-TZ	host_species		Homo sapiens			FN
+7		C16-20117-TZ	host_species		Homo sapiens		NCIT:C14225	FN
 8		C16-20118-TZ	subject_id		C16-10060-TZ_M			FN
 8		C16-20118-TZ	sample_id		C16-20118-TZ			FN
 8		C16-20118-TZ	control		Study Control			FN
@@ -214,7 +214,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 8		C16-20118-TZ	target_condition		Prevotella copri			FN
 8		C16-20118-TZ	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 8		C16-20118-TZ	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-8		C16-20118-TZ	host_species		Homo sapiens			FN
+8		C16-20118-TZ	host_species		Homo sapiens		NCIT:C14225	FN
 9		C16-20119-TZ	subject_id		C16-10060-TZ_S1			FN
 9		C16-20119-TZ	sample_id		C16-20119-TZ			FN
 9		C16-20119-TZ	control		Study Control			FN
@@ -238,7 +238,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 9		C16-20119-TZ	target_condition		Prevotella copri			FN
 9		C16-20119-TZ	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 9		C16-20119-TZ	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-9		C16-20119-TZ	host_species		Homo sapiens			FN
+9		C16-20119-TZ	host_species		Homo sapiens		NCIT:C14225	FN
 10		C16-20123-TZ	subject_id		C16-10060-TZ_S3			FN
 10		C16-20123-TZ	sample_id		C16-20123-TZ			FN
 10		C16-20123-TZ	control		Study Control			FN
@@ -262,7 +262,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 10		C16-20123-TZ	target_condition		Prevotella copri			FN
 10		C16-20123-TZ	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 10		C16-20123-TZ	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-10		C16-20123-TZ	host_species		Homo sapiens			FN
+10		C16-20123-TZ	host_species		Homo sapiens		NCIT:C14225	FN
 11		C16-20135-TZ	subject_id		C16-10060-TZ_S2			FN
 11		C16-20135-TZ	sample_id		C16-20135-TZ			FN
 11		C16-20135-TZ	control		Study Control			FN
@@ -286,7 +286,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 11		C16-20135-TZ	target_condition		Prevotella copri			FN
 11		C16-20135-TZ	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 11		C16-20135-TZ	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-11		C16-20135-TZ	host_species		Homo sapiens			FN
+11		C16-20135-TZ	host_species		Homo sapiens		NCIT:C14225	FN
 12		C16-20152-TZ	subject_id		C16-10066-TZ_F			FN
 12		C16-20152-TZ	sample_id		C16-20152-TZ			FN
 12		C16-20152-TZ	control		Study Control			FN
@@ -310,7 +310,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 12		C16-20152-TZ	target_condition		Prevotella copri			FN
 12		C16-20152-TZ	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 12		C16-20152-TZ	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-12		C16-20152-TZ	host_species		Homo sapiens			FN
+12		C16-20152-TZ	host_species		Homo sapiens		NCIT:C14225	FN
 13		C16-20153-TZ	subject_id		C16-10066-TZ_M			FN
 13		C16-20153-TZ	sample_id		C16-20153-TZ			FN
 13		C16-20153-TZ	control		Study Control			FN
@@ -334,7 +334,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 13		C16-20153-TZ	target_condition		Prevotella copri			FN
 13		C16-20153-TZ	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 13		C16-20153-TZ	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-13		C16-20153-TZ	host_species		Homo sapiens			FN
+13		C16-20153-TZ	host_species		Homo sapiens		NCIT:C14225	FN
 14		C16-20197-TZ	subject_id		C16-10086-TZ_F			FN
 14		C16-20197-TZ	sample_id		C16-20197-TZ			FN
 14		C16-20197-TZ	control		Study Control			FN
@@ -358,7 +358,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 14		C16-20197-TZ	target_condition		Prevotella copri			FN
 14		C16-20197-TZ	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 14		C16-20197-TZ	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-14		C16-20197-TZ	host_species		Homo sapiens			FN
+14		C16-20197-TZ	host_species		Homo sapiens		NCIT:C14225	FN
 15		C16-20198-TZ	subject_id		C16-10086-TZ_M			FN
 15		C16-20198-TZ	sample_id		C16-20198-TZ			FN
 15		C16-20198-TZ	control		Study Control			FN
@@ -382,7 +382,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 15		C16-20198-TZ	target_condition		Prevotella copri			FN
 15		C16-20198-TZ	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 15		C16-20198-TZ	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-15		C16-20198-TZ	host_species		Homo sapiens			FN
+15		C16-20198-TZ	host_species		Homo sapiens		NCIT:C14225	FN
 16		C16-20211-TZ	subject_id		C16-10093-TZ_M			FN
 16		C16-20211-TZ	sample_id		C16-20211-TZ			FN
 16		C16-20211-TZ	control		Study Control			FN
@@ -406,7 +406,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 16		C16-20211-TZ	target_condition		Prevotella copri			FN
 16		C16-20211-TZ	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 16		C16-20211-TZ	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-16		C16-20211-TZ	host_species		Homo sapiens			FN
+16		C16-20211-TZ	host_species		Homo sapiens		NCIT:C14225	FN
 17		C16-20212-TZ	subject_id		C16-10093-TZ_F			FN
 17		C16-20212-TZ	sample_id		C16-20212-TZ			FN
 17		C16-20212-TZ	control		Study Control			FN
@@ -430,7 +430,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 17		C16-20212-TZ	target_condition		Prevotella copri			FN
 17		C16-20212-TZ	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 17		C16-20212-TZ	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-17		C16-20212-TZ	host_species		Homo sapiens			FN
+17		C16-20212-TZ	host_species		Homo sapiens		NCIT:C14225	FN
 18		C16-20215-TZ	subject_id		C16-10093-TZ_GM1			FN
 18		C16-20215-TZ	sample_id		C16-20215-TZ			FN
 18		C16-20215-TZ	control		Study Control			FN
@@ -454,7 +454,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 18		C16-20215-TZ	target_condition		Prevotella copri			FN
 18		C16-20215-TZ	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 18		C16-20215-TZ	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-18		C16-20215-TZ	host_species		Homo sapiens			FN
+18		C16-20215-TZ	host_species		Homo sapiens		NCIT:C14225	FN
 19		C16-20237-TZ	subject_id		C16-10110-TZ_U1			FN
 19		C16-20237-TZ	sample_id		C16-20237-TZ			FN
 19		C16-20237-TZ	control		Study Control			FN
@@ -478,7 +478,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 19		C16-20237-TZ	target_condition		Prevotella copri			FN
 19		C16-20237-TZ	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 19		C16-20237-TZ	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-19		C16-20237-TZ	host_species		Homo sapiens			FN
+19		C16-20237-TZ	host_species		Homo sapiens		NCIT:C14225	FN
 20		C16-20238-TZ	subject_id		C16-10110-TZ_GM1			FN
 20		C16-20238-TZ	sample_id		C16-20238-TZ			FN
 20		C16-20238-TZ	control		Study Control			FN
@@ -502,7 +502,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 20		C16-20238-TZ	target_condition		Prevotella copri			FN
 20		C16-20238-TZ	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 20		C16-20238-TZ	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-20		C16-20238-TZ	host_species		Homo sapiens			FN
+20		C16-20238-TZ	host_species		Homo sapiens		NCIT:C14225	FN
 21		C16-20246-TZ	subject_id		C16-10110-TZ_F			FN
 21		C16-20246-TZ	sample_id		C16-20246-TZ			FN
 21		C16-20246-TZ	control		Study Control			FN
@@ -526,7 +526,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 21		C16-20246-TZ	target_condition		Prevotella copri			FN
 21		C16-20246-TZ	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 21		C16-20246-TZ	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-21		C16-20246-TZ	host_species		Homo sapiens			FN
+21		C16-20246-TZ	host_species		Homo sapiens		NCIT:C14225	FN
 22		C16-20247-TZ	subject_id		C16-10110-TZ_C1			FN
 22		C16-20247-TZ	sample_id		C16-20247-TZ			FN
 22		C16-20247-TZ	control		Study Control			FN
@@ -550,7 +550,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 22		C16-20247-TZ	target_condition		Prevotella copri			FN
 22		C16-20247-TZ	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 22		C16-20247-TZ	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-22		C16-20247-TZ	host_species		Homo sapiens			FN
+22		C16-20247-TZ	host_species		Homo sapiens		NCIT:C14225	FN
 23		C16-20248-TZ	subject_id		C16-10110-TZ_M			FN
 23		C16-20248-TZ	sample_id		C16-20248-TZ			FN
 23		C16-20248-TZ	control		Study Control			FN
@@ -574,7 +574,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 23		C16-20248-TZ	target_condition		Prevotella copri			FN
 23		C16-20248-TZ	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 23		C16-20248-TZ	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-23		C16-20248-TZ	host_species		Homo sapiens			FN
+23		C16-20248-TZ	host_species		Homo sapiens		NCIT:C14225	FN
 24		C16-20340-TZ	subject_id		C16-10170-TZ_F			FN
 24		C16-20340-TZ	sample_id		C16-20340-TZ			FN
 24		C16-20340-TZ	control		Study Control			FN
@@ -598,7 +598,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 24		C16-20340-TZ	target_condition		Prevotella copri			FN
 24		C16-20340-TZ	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 24		C16-20340-TZ	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-24		C16-20340-TZ	host_species		Homo sapiens			FN
+24		C16-20340-TZ	host_species		Homo sapiens		NCIT:C14225	FN
 25		C16-20341-TZ	subject_id		C16-10170-TZ_S1			FN
 25		C16-20341-TZ	sample_id		C16-20341-TZ			FN
 25		C16-20341-TZ	control		Study Control			FN
@@ -622,7 +622,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 25		C16-20341-TZ	target_condition		Prevotella copri			FN
 25		C16-20341-TZ	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 25		C16-20341-TZ	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-25		C16-20341-TZ	host_species		Homo sapiens			FN
+25		C16-20341-TZ	host_species		Homo sapiens		NCIT:C14225	FN
 26		C16-20345-TZ	subject_id		C16-10171-TZ_M			FN
 26		C16-20345-TZ	sample_id		C16-20345-TZ			FN
 26		C16-20345-TZ	control		Study Control			FN
@@ -646,7 +646,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 26		C16-20345-TZ	target_condition		Prevotella copri			FN
 26		C16-20345-TZ	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 26		C16-20345-TZ	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-26		C16-20345-TZ	host_species		Homo sapiens			FN
+26		C16-20345-TZ	host_species		Homo sapiens		NCIT:C14225	FN
 27		C16-20346-TZ	subject_id		C16-10171-TZ_F			FN
 27		C16-20346-TZ	sample_id		C16-20346-TZ			FN
 27		C16-20346-TZ	control		Study Control			FN
@@ -670,7 +670,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 27		C16-20346-TZ	target_condition		Prevotella copri			FN
 27		C16-20346-TZ	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 27		C16-20346-TZ	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-27		C16-20346-TZ	host_species		Homo sapiens			FN
+27		C16-20346-TZ	host_species		Homo sapiens		NCIT:C14225	FN
 28		C16-20347-TZ	subject_id		C16-10171-TZ_U1			FN
 28		C16-20347-TZ	sample_id		C16-20347-TZ			FN
 28		C16-20347-TZ	control		Study Control			FN
@@ -694,7 +694,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 28		C16-20347-TZ	target_condition		Prevotella copri			FN
 28		C16-20347-TZ	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 28		C16-20347-TZ	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-28		C16-20347-TZ	host_species		Homo sapiens			FN
+28		C16-20347-TZ	host_species		Homo sapiens		NCIT:C14225	FN
 29		C16-20371-TZ	subject_id		C16-10177-TZ_M			FN
 29		C16-20371-TZ	sample_id		C16-20371-TZ			FN
 29		C16-20371-TZ	control		Study Control			FN
@@ -718,7 +718,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 29		C16-20371-TZ	target_condition		Prevotella copri			FN
 29		C16-20371-TZ	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 29		C16-20371-TZ	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-29		C16-20371-TZ	host_species		Homo sapiens			FN
+29		C16-20371-TZ	host_species		Homo sapiens		NCIT:C14225	FN
 30		C16-20372-TZ	subject_id		C16-10177-TZ_S2			FN
 30		C16-20372-TZ	sample_id		C16-20372-TZ			FN
 30		C16-20372-TZ	control		Study Control			FN
@@ -742,7 +742,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 30		C16-20372-TZ	target_condition		Prevotella copri			FN
 30		C16-20372-TZ	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 30		C16-20372-TZ	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-30		C16-20372-TZ	host_species		Homo sapiens			FN
+30		C16-20372-TZ	host_species		Homo sapiens		NCIT:C14225	FN
 31		C16-20373-TZ	subject_id		C16-10177-TZ_S1			FN
 31		C16-20373-TZ	sample_id		C16-20373-TZ			FN
 31		C16-20373-TZ	control		Study Control			FN
@@ -766,7 +766,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 31		C16-20373-TZ	target_condition		Prevotella copri			FN
 31		C16-20373-TZ	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 31		C16-20373-TZ	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-31		C16-20373-TZ	host_species		Homo sapiens			FN
+31		C16-20373-TZ	host_species		Homo sapiens		NCIT:C14225	FN
 32		C16-20374-TZ	subject_id		C16-10177-TZ_S3			FN
 32		C16-20374-TZ	sample_id		C16-20374-TZ			FN
 32		C16-20374-TZ	control		Study Control			FN
@@ -790,7 +790,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 32		C16-20374-TZ	target_condition		Prevotella copri			FN
 32		C16-20374-TZ	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 32		C16-20374-TZ	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-32		C16-20374-TZ	host_species		Homo sapiens			FN
+32		C16-20374-TZ	host_species		Homo sapiens		NCIT:C14225	FN
 33		C16-20415-TZ	subject_id		C16-10214-TZ_F			FN
 33		C16-20415-TZ	sample_id		C16-20415-TZ			FN
 33		C16-20415-TZ	control		Study Control			FN
@@ -814,7 +814,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 33		C16-20415-TZ	target_condition		Prevotella copri			FN
 33		C16-20415-TZ	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 33		C16-20415-TZ	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-33		C16-20415-TZ	host_species		Homo sapiens			FN
+33		C16-20415-TZ	host_species		Homo sapiens		NCIT:C14225	FN
 34		C16-20416-TZ	subject_id		C16-10214-TZ_M			FN
 34		C16-20416-TZ	sample_id		C16-20416-TZ			FN
 34		C16-20416-TZ	control		Study Control			FN
@@ -838,7 +838,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 34		C16-20416-TZ	target_condition		Prevotella copri			FN
 34		C16-20416-TZ	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 34		C16-20416-TZ	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-34		C16-20416-TZ	host_species		Homo sapiens			FN
+34		C16-20416-TZ	host_species		Homo sapiens		NCIT:C14225	FN
 35		C16-20417-TZ	subject_id		C16-10214-TZ_S1			FN
 35		C16-20417-TZ	sample_id		C16-20417-TZ			FN
 35		C16-20417-TZ	control		Study Control			FN
@@ -862,7 +862,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 35		C16-20417-TZ	target_condition		Prevotella copri			FN
 35		C16-20417-TZ	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 35		C16-20417-TZ	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-35		C16-20417-TZ	host_species		Homo sapiens			FN
+35		C16-20417-TZ	host_species		Homo sapiens		NCIT:C14225	FN
 36		C16-20437-TZ	subject_id		C16-10245-TZ_F			FN
 36		C16-20437-TZ	sample_id		C16-20437-TZ			FN
 36		C16-20437-TZ	control		Study Control			FN
@@ -886,7 +886,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 36		C16-20437-TZ	target_condition		Prevotella copri			FN
 36		C16-20437-TZ	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 36		C16-20437-TZ	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-36		C16-20437-TZ	host_species		Homo sapiens			FN
+36		C16-20437-TZ	host_species		Homo sapiens		NCIT:C14225	FN
 37		C16-20438-TZ	subject_id		C16-10245-TZ_M			FN
 37		C16-20438-TZ	sample_id		C16-20438-TZ			FN
 37		C16-20438-TZ	control		Study Control			FN
@@ -910,7 +910,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 37		C16-20438-TZ	target_condition		Prevotella copri			FN
 37		C16-20438-TZ	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 37		C16-20438-TZ	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-37		C16-20438-TZ	host_species		Homo sapiens			FN
+37		C16-20438-TZ	host_species		Homo sapiens		NCIT:C14225	FN
 38		C16-20439-TZ	subject_id		C16-10245-TZ_S2			FN
 38		C16-20439-TZ	sample_id		C16-20439-TZ			FN
 38		C16-20439-TZ	control		Study Control			FN
@@ -934,7 +934,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 38		C16-20439-TZ	target_condition		Prevotella copri			FN
 38		C16-20439-TZ	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 38		C16-20439-TZ	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-38		C16-20439-TZ	host_species		Homo sapiens			FN
+38		C16-20439-TZ	host_species		Homo sapiens		NCIT:C14225	FN
 39		C16-20440-TZ	subject_id		C16-10245-TZ_S1			FN
 39		C16-20440-TZ	sample_id		C16-20440-TZ			FN
 39		C16-20440-TZ	control		Study Control			FN
@@ -958,7 +958,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 39		C16-20440-TZ	target_condition		Prevotella copri			FN
 39		C16-20440-TZ	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 39		C16-20440-TZ	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-39		C16-20440-TZ	host_species		Homo sapiens			FN
+39		C16-20440-TZ	host_species		Homo sapiens		NCIT:C14225	FN
 40		C16-20441-TZ	subject_id		C16-10245-TZ_S3			FN
 40		C16-20441-TZ	sample_id		C16-20441-TZ			FN
 40		C16-20441-TZ	control		Study Control			FN
@@ -982,7 +982,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 40		C16-20441-TZ	target_condition		Prevotella copri			FN
 40		C16-20441-TZ	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 40		C16-20441-TZ	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-40		C16-20441-TZ	host_species		Homo sapiens			FN
+40		C16-20441-TZ	host_species		Homo sapiens		NCIT:C14225	FN
 41		C16-20470-TZ	subject_id		C16-10266-TZ_M			FN
 41		C16-20470-TZ	sample_id		C16-20470-TZ			FN
 41		C16-20470-TZ	control		Study Control			FN
@@ -1006,7 +1006,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 41		C16-20470-TZ	target_condition		Prevotella copri			FN
 41		C16-20470-TZ	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 41		C16-20470-TZ	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-41		C16-20470-TZ	host_species		Homo sapiens			FN
+41		C16-20470-TZ	host_species		Homo sapiens		NCIT:C14225	FN
 42		C16-20471-TZ	subject_id		C16-10266-TZ_F			FN
 42		C16-20471-TZ	sample_id		C16-20471-TZ			FN
 42		C16-20471-TZ	control		Study Control			FN
@@ -1030,7 +1030,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 42		C16-20471-TZ	target_condition		Prevotella copri			FN
 42		C16-20471-TZ	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 42		C16-20471-TZ	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-42		C16-20471-TZ	host_species		Homo sapiens			FN
+42		C16-20471-TZ	host_species		Homo sapiens		NCIT:C14225	FN
 43		C16-20473-TZ	subject_id		C16-10266-TZ_A1			FN
 43		C16-20473-TZ	sample_id		C16-20473-TZ			FN
 43		C16-20473-TZ	control		Study Control			FN
@@ -1054,7 +1054,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 43		C16-20473-TZ	target_condition		Prevotella copri			FN
 43		C16-20473-TZ	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 43		C16-20473-TZ	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-43		C16-20473-TZ	host_species		Homo sapiens			FN
+43		C16-20473-TZ	host_species		Homo sapiens		NCIT:C14225	FN
 44		C16-20474-TZ	subject_id		C16-10266-TZ_C1			FN
 44		C16-20474-TZ	sample_id		C16-20474-TZ			FN
 44		C16-20474-TZ	control		Study Control			FN
@@ -1078,7 +1078,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 44		C16-20474-TZ	target_condition		Prevotella copri			FN
 44		C16-20474-TZ	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 44		C16-20474-TZ	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-44		C16-20474-TZ	host_species		Homo sapiens			FN
+44		C16-20474-TZ	host_species		Homo sapiens		NCIT:C14225	FN
 45		C16-20475-TZ	subject_id		C16-10266-TZ_C2			FN
 45		C16-20475-TZ	sample_id		C16-20475-TZ			FN
 45		C16-20475-TZ	control		Study Control			FN
@@ -1102,7 +1102,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 45		C16-20475-TZ	target_condition		Prevotella copri			FN
 45		C16-20475-TZ	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 45		C16-20475-TZ	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-45		C16-20475-TZ	host_species		Homo sapiens			FN
+45		C16-20475-TZ	host_species		Homo sapiens		NCIT:C14225	FN
 46		C16-20491-TZ	subject_id		C16-10267-TZ_F			FN
 46		C16-20491-TZ	sample_id		C16-20491-TZ			FN
 46		C16-20491-TZ	control		Study Control			FN
@@ -1126,7 +1126,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 46		C16-20491-TZ	target_condition		Prevotella copri			FN
 46		C16-20491-TZ	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 46		C16-20491-TZ	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-46		C16-20491-TZ	host_species		Homo sapiens			FN
+46		C16-20491-TZ	host_species		Homo sapiens		NCIT:C14225	FN
 47		C16-20492-TZ	subject_id		C16-10267-TZ_A1			FN
 47		C16-20492-TZ	sample_id		C16-20492-TZ			FN
 47		C16-20492-TZ	control		Study Control			FN
@@ -1150,7 +1150,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 47		C16-20492-TZ	target_condition		Prevotella copri			FN
 47		C16-20492-TZ	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 47		C16-20492-TZ	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-47		C16-20492-TZ	host_species		Homo sapiens			FN
+47		C16-20492-TZ	host_species		Homo sapiens		NCIT:C14225	FN
 48		C16-20493-TZ	subject_id		C16-10267-TZ_C1			FN
 48		C16-20493-TZ	sample_id		C16-20493-TZ			FN
 48		C16-20493-TZ	control		Study Control			FN
@@ -1174,7 +1174,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 48		C16-20493-TZ	target_condition		Prevotella copri			FN
 48		C16-20493-TZ	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 48		C16-20493-TZ	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-48		C16-20493-TZ	host_species		Homo sapiens			FN
+48		C16-20493-TZ	host_species		Homo sapiens		NCIT:C14225	FN
 49		C16-20494-TZ	subject_id		C16-10267-TZ_C2			FN
 49		C16-20494-TZ	sample_id		C16-20494-TZ			FN
 49		C16-20494-TZ	control		Study Control			FN
@@ -1198,7 +1198,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 49		C16-20494-TZ	target_condition		Prevotella copri			FN
 49		C16-20494-TZ	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 49		C16-20494-TZ	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-49		C16-20494-TZ	host_species		Homo sapiens			FN
+49		C16-20494-TZ	host_species		Homo sapiens		NCIT:C14225	FN
 50		C16-20548-TZ	subject_id		C16-10309-TZ_S1			FN
 50		C16-20548-TZ	sample_id		C16-20548-TZ			FN
 50		C16-20548-TZ	control		Study Control			FN
@@ -1222,7 +1222,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 50		C16-20548-TZ	target_condition		Prevotella copri			FN
 50		C16-20548-TZ	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 50		C16-20548-TZ	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-50		C16-20548-TZ	host_species		Homo sapiens			FN
+50		C16-20548-TZ	host_species		Homo sapiens		NCIT:C14225	FN
 51		C16-20549-TZ	subject_id		C16-10309-TZ_S2			FN
 51		C16-20549-TZ	sample_id		C16-20549-TZ			FN
 51		C16-20549-TZ	control		Study Control			FN
@@ -1246,7 +1246,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 51		C16-20549-TZ	target_condition		Prevotella copri			FN
 51		C16-20549-TZ	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 51		C16-20549-TZ	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-51		C16-20549-TZ	host_species		Homo sapiens			FN
+51		C16-20549-TZ	host_species		Homo sapiens		NCIT:C14225	FN
 52		C16-20550-TZ	subject_id		C16-10309-TZ_S3			FN
 52		C16-20550-TZ	sample_id		C16-20550-TZ			FN
 52		C16-20550-TZ	control		Study Control			FN
@@ -1270,7 +1270,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 52		C16-20550-TZ	target_condition		Prevotella copri			FN
 52		C16-20550-TZ	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 52		C16-20550-TZ	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-52		C16-20550-TZ	host_species		Homo sapiens			FN
+52		C16-20550-TZ	host_species		Homo sapiens		NCIT:C14225	FN
 53		C16-20551-TZ	subject_id		C16-10309-TZ_S4			FN
 53		C16-20551-TZ	sample_id		C16-20551-TZ			FN
 53		C16-20551-TZ	control		Study Control			FN
@@ -1294,7 +1294,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 53		C16-20551-TZ	target_condition		Prevotella copri			FN
 53		C16-20551-TZ	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 53		C16-20551-TZ	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-53		C16-20551-TZ	host_species		Homo sapiens			FN
+53		C16-20551-TZ	host_species		Homo sapiens		NCIT:C14225	FN
 54		C16-20554-TZ	subject_id		C16-10321-TZ_M			FN
 54		C16-20554-TZ	sample_id		C16-20554-TZ			FN
 54		C16-20554-TZ	control		Study Control			FN
@@ -1318,7 +1318,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 54		C16-20554-TZ	target_condition		Prevotella copri			FN
 54		C16-20554-TZ	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 54		C16-20554-TZ	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-54		C16-20554-TZ	host_species		Homo sapiens			FN
+54		C16-20554-TZ	host_species		Homo sapiens		NCIT:C14225	FN
 55		C16-20557-TZ	subject_id		C16-10321-TZ_S1			FN
 55		C16-20557-TZ	sample_id		C16-20557-TZ			FN
 55		C16-20557-TZ	control		Study Control			FN
@@ -1342,7 +1342,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 55		C16-20557-TZ	target_condition		Prevotella copri			FN
 55		C16-20557-TZ	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 55		C16-20557-TZ	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-55		C16-20557-TZ	host_species		Homo sapiens			FN
+55		C16-20557-TZ	host_species		Homo sapiens		NCIT:C14225	FN
 56		C16-20558-TZ	subject_id		C16-10321-TZ_F			FN
 56		C16-20558-TZ	sample_id		C16-20558-TZ			FN
 56		C16-20558-TZ	control		Study Control			FN
@@ -1366,7 +1366,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 56		C16-20558-TZ	target_condition		Prevotella copri			FN
 56		C16-20558-TZ	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 56		C16-20558-TZ	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-56		C16-20558-TZ	host_species		Homo sapiens			FN
+56		C16-20558-TZ	host_species		Homo sapiens		NCIT:C14225	FN
 57		C16-20625-TZ	subject_id		C16-10448-TZ_M			FN
 57		C16-20625-TZ	sample_id		C16-20625-TZ			FN
 57		C16-20625-TZ	control		Study Control			FN
@@ -1390,7 +1390,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 57		C16-20625-TZ	target_condition		Prevotella copri			FN
 57		C16-20625-TZ	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 57		C16-20625-TZ	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-57		C16-20625-TZ	host_species		Homo sapiens			FN
+57		C16-20625-TZ	host_species		Homo sapiens		NCIT:C14225	FN
 58		C16-20626-TZ	subject_id		C16-10448-TZ_F			FN
 58		C16-20626-TZ	sample_id		C16-20626-TZ			FN
 58		C16-20626-TZ	control		Study Control			FN
@@ -1414,7 +1414,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 58		C16-20626-TZ	target_condition		Prevotella copri			FN
 58		C16-20626-TZ	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 58		C16-20626-TZ	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-58		C16-20626-TZ	host_species		Homo sapiens			FN
+58		C16-20626-TZ	host_species		Homo sapiens		NCIT:C14225	FN
 59		C16-20627-TZ	subject_id		C16-10448-TZ_U1			FN
 59		C16-20627-TZ	sample_id		C16-20627-TZ			FN
 59		C16-20627-TZ	control		Study Control			FN
@@ -1438,7 +1438,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 59		C16-20627-TZ	target_condition		Prevotella copri			FN
 59		C16-20627-TZ	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 59		C16-20627-TZ	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-59		C16-20627-TZ	host_species		Homo sapiens			FN
+59		C16-20627-TZ	host_species		Homo sapiens		NCIT:C14225	FN
 60		C16-20645-TZ	subject_id		C16-10463-TZ_M			FN
 60		C16-20645-TZ	sample_id		C16-20645-TZ			FN
 60		C16-20645-TZ	control		Study Control			FN
@@ -1462,7 +1462,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 60		C16-20645-TZ	target_condition		Prevotella copri			FN
 60		C16-20645-TZ	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 60		C16-20645-TZ	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-60		C16-20645-TZ	host_species		Homo sapiens			FN
+60		C16-20645-TZ	host_species		Homo sapiens		NCIT:C14225	FN
 61		C16-20646-TZ	subject_id		C16-10463-TZ_F			FN
 61		C16-20646-TZ	sample_id		C16-20646-TZ			FN
 61		C16-20646-TZ	control		Study Control			FN
@@ -1486,7 +1486,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 61		C16-20646-TZ	target_condition		Prevotella copri			FN
 61		C16-20646-TZ	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 61		C16-20646-TZ	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-61		C16-20646-TZ	host_species		Homo sapiens			FN
+61		C16-20646-TZ	host_species		Homo sapiens		NCIT:C14225	FN
 62		C16-20647-TZ	subject_id		C16-10463-TZ_S1			FN
 62		C16-20647-TZ	sample_id		C16-20647-TZ			FN
 62		C16-20647-TZ	control		Study Control			FN
@@ -1510,7 +1510,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 62		C16-20647-TZ	target_condition		Prevotella copri			FN
 62		C16-20647-TZ	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 62		C16-20647-TZ	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-62		C16-20647-TZ	host_species		Homo sapiens			FN
+62		C16-20647-TZ	host_species		Homo sapiens		NCIT:C14225	FN
 63		C16-20648-TZ	subject_id		C16-10463-TZ_S2			FN
 63		C16-20648-TZ	sample_id		C16-20648-TZ			FN
 63		C16-20648-TZ	control		Study Control			FN
@@ -1534,7 +1534,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 63		C16-20648-TZ	target_condition		Prevotella copri			FN
 63		C16-20648-TZ	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 63		C16-20648-TZ	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-63		C16-20648-TZ	host_species		Homo sapiens			FN
+63		C16-20648-TZ	host_species		Homo sapiens		NCIT:C14225	FN
 64		C16-20649-TZ	subject_id		C16-10463-TZ_S3			FN
 64		C16-20649-TZ	sample_id		C16-20649-TZ			FN
 64		C16-20649-TZ	control		Study Control			FN
@@ -1558,7 +1558,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 64		C16-20649-TZ	target_condition		Prevotella copri			FN
 64		C16-20649-TZ	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 64		C16-20649-TZ	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-64		C16-20649-TZ	host_species		Homo sapiens			FN
+64		C16-20649-TZ	host_species		Homo sapiens		NCIT:C14225	FN
 65		C16-20650-TZ	subject_id		C16-10463-TZ_S4			FN
 65		C16-20650-TZ	sample_id		C16-20650-TZ			FN
 65		C16-20650-TZ	control		Study Control			FN
@@ -1582,7 +1582,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 65		C16-20650-TZ	target_condition		Prevotella copri			FN
 65		C16-20650-TZ	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 65		C16-20650-TZ	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-65		C16-20650-TZ	host_species		Homo sapiens			FN
+65		C16-20650-TZ	host_species		Homo sapiens		NCIT:C14225	FN
 66		C16-20651-TZ	subject_id		C16-10463-TZ_U2			FN
 66		C16-20651-TZ	sample_id		C16-20651-TZ			FN
 66		C16-20651-TZ	control		Study Control			FN
@@ -1606,7 +1606,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 66		C16-20651-TZ	target_condition		Prevotella copri			FN
 66		C16-20651-TZ	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 66		C16-20651-TZ	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-66		C16-20651-TZ	host_species		Homo sapiens			FN
+66		C16-20651-TZ	host_species		Homo sapiens		NCIT:C14225	FN
 67		C16-20652-TZ	subject_id		C16-10463-TZ_U1			FN
 67		C16-20652-TZ	sample_id		C16-20652-TZ			FN
 67		C16-20652-TZ	control		Study Control			FN
@@ -1630,7 +1630,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 67		C16-20652-TZ	target_condition		Prevotella copri			FN
 67		C16-20652-TZ	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 67		C16-20652-TZ	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-67		C16-20652-TZ	host_species		Homo sapiens			FN
+67		C16-20652-TZ	host_species		Homo sapiens		NCIT:C14225	FN
 68		C16-20005-GH	subject_id		C16-10022-GH_M			FN
 68		C16-20005-GH	sample_id		C16-20005-GH			FN
 68		C16-20005-GH	control		Study Control			FN
@@ -1654,7 +1654,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 68		C16-20005-GH	target_condition		Prevotella copri			FN
 68		C16-20005-GH	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 68		C16-20005-GH	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-68		C16-20005-GH	host_species		Homo sapiens			FN
+68		C16-20005-GH	host_species		Homo sapiens		NCIT:C14225	FN
 69		C16-20006-GH	subject_id		C16-10022-GH_F			FN
 69		C16-20006-GH	sample_id		C16-20006-GH			FN
 69		C16-20006-GH	control		Study Control			FN
@@ -1678,7 +1678,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 69		C16-20006-GH	target_condition		Prevotella copri			FN
 69		C16-20006-GH	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 69		C16-20006-GH	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-69		C16-20006-GH	host_species		Homo sapiens			FN
+69		C16-20006-GH	host_species		Homo sapiens		NCIT:C14225	FN
 70		C16-20007-GH	subject_id		C16-10022-GH_S1			FN
 70		C16-20007-GH	sample_id		C16-20007-GH			FN
 70		C16-20007-GH	control		Study Control			FN
@@ -1702,7 +1702,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 70		C16-20007-GH	target_condition		Prevotella copri			FN
 70		C16-20007-GH	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 70		C16-20007-GH	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-70		C16-20007-GH	host_species		Homo sapiens			FN
+70		C16-20007-GH	host_species		Homo sapiens		NCIT:C14225	FN
 71		C16-20008-GH	subject_id		C16-10022-GH_S2			FN
 71		C16-20008-GH	sample_id		C16-20008-GH			FN
 71		C16-20008-GH	control		Study Control			FN
@@ -1726,7 +1726,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 71		C16-20008-GH	target_condition		Prevotella copri			FN
 71		C16-20008-GH	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 71		C16-20008-GH	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-71		C16-20008-GH	host_species		Homo sapiens			FN
+71		C16-20008-GH	host_species		Homo sapiens		NCIT:C14225	FN
 72		C16-20009-GH	subject_id		C16-10025-GH_M			FN
 72		C16-20009-GH	sample_id		C16-20009-GH			FN
 72		C16-20009-GH	control		Study Control			FN
@@ -1750,7 +1750,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 72		C16-20009-GH	target_condition		Prevotella copri			FN
 72		C16-20009-GH	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 72		C16-20009-GH	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-72		C16-20009-GH	host_species		Homo sapiens			FN
+72		C16-20009-GH	host_species		Homo sapiens		NCIT:C14225	FN
 73		C16-20010-GH	subject_id		C16-10025-GH_F			FN
 73		C16-20010-GH	sample_id		C16-20010-GH			FN
 73		C16-20010-GH	control		Study Control			FN
@@ -1774,7 +1774,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 73		C16-20010-GH	target_condition		Prevotella copri			FN
 73		C16-20010-GH	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 73		C16-20010-GH	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-73		C16-20010-GH	host_species		Homo sapiens			FN
+73		C16-20010-GH	host_species		Homo sapiens		NCIT:C14225	FN
 74		C16-20011-GH	subject_id		C16-10025-GH_S1			FN
 74		C16-20011-GH	sample_id		C16-20011-GH			FN
 74		C16-20011-GH	control		Study Control			FN
@@ -1798,7 +1798,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 74		C16-20011-GH	target_condition		Prevotella copri			FN
 74		C16-20011-GH	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 74		C16-20011-GH	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-74		C16-20011-GH	host_species		Homo sapiens			FN
+74		C16-20011-GH	host_species		Homo sapiens		NCIT:C14225	FN
 75		C16-20029-GH	subject_id		C16-10056-GH_M			FN
 75		C16-20029-GH	sample_id		C16-20029-GH			FN
 75		C16-20029-GH	control		Study Control			FN
@@ -1822,7 +1822,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 75		C16-20029-GH	target_condition		Prevotella copri			FN
 75		C16-20029-GH	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 75		C16-20029-GH	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-75		C16-20029-GH	host_species		Homo sapiens			FN
+75		C16-20029-GH	host_species		Homo sapiens		NCIT:C14225	FN
 76		C16-20030-GH	subject_id		C16-10056-GH_F			FN
 76		C16-20030-GH	sample_id		C16-20030-GH			FN
 76		C16-20030-GH	control		Study Control			FN
@@ -1846,7 +1846,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 76		C16-20030-GH	target_condition		Prevotella copri			FN
 76		C16-20030-GH	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 76		C16-20030-GH	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-76		C16-20030-GH	host_species		Homo sapiens			FN
+76		C16-20030-GH	host_species		Homo sapiens		NCIT:C14225	FN
 77		C16-20032-GH	subject_id		C16-10056-GH_S1			FN
 77		C16-20032-GH	sample_id		C16-20032-GH			FN
 77		C16-20032-GH	control		Study Control			FN
@@ -1870,7 +1870,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 77		C16-20032-GH	target_condition		Prevotella copri			FN
 77		C16-20032-GH	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 77		C16-20032-GH	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-77		C16-20032-GH	host_species		Homo sapiens			FN
+77		C16-20032-GH	host_species		Homo sapiens		NCIT:C14225	FN
 78		C16-20047-GH	subject_id		C16-10074-GH_F			FN
 78		C16-20047-GH	sample_id		C16-20047-GH			FN
 78		C16-20047-GH	control		Study Control			FN
@@ -1894,7 +1894,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 78		C16-20047-GH	target_condition		Prevotella copri			FN
 78		C16-20047-GH	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 78		C16-20047-GH	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-78		C16-20047-GH	host_species		Homo sapiens			FN
+78		C16-20047-GH	host_species		Homo sapiens		NCIT:C14225	FN
 79		C16-20048-GH	subject_id		C16-10074-GH_M			FN
 79		C16-20048-GH	sample_id		C16-20048-GH			FN
 79		C16-20048-GH	control		Study Control			FN
@@ -1918,7 +1918,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 79		C16-20048-GH	target_condition		Prevotella copri			FN
 79		C16-20048-GH	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 79		C16-20048-GH	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-79		C16-20048-GH	host_species		Homo sapiens			FN
+79		C16-20048-GH	host_species		Homo sapiens		NCIT:C14225	FN
 80		C16-20049-GH	subject_id		C16-10074-GH_S1			FN
 80		C16-20049-GH	sample_id		C16-20049-GH			FN
 80		C16-20049-GH	control		Study Control			FN
@@ -1942,7 +1942,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 80		C16-20049-GH	target_condition		Prevotella copri			FN
 80		C16-20049-GH	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 80		C16-20049-GH	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-80		C16-20049-GH	host_species		Homo sapiens			FN
+80		C16-20049-GH	host_species		Homo sapiens		NCIT:C14225	FN
 81		C16-20050-GH	subject_id		C16-10074-GH_S2			FN
 81		C16-20050-GH	sample_id		C16-20050-GH			FN
 81		C16-20050-GH	control		Study Control			FN
@@ -1966,7 +1966,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 81		C16-20050-GH	target_condition		Prevotella copri			FN
 81		C16-20050-GH	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 81		C16-20050-GH	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-81		C16-20050-GH	host_species		Homo sapiens			FN
+81		C16-20050-GH	host_species		Homo sapiens		NCIT:C14225	FN
 82		C16-20065-GH	subject_id		C16-10106-GH_M			FN
 82		C16-20065-GH	sample_id		C16-20065-GH			FN
 82		C16-20065-GH	control		Study Control			FN
@@ -1990,7 +1990,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 82		C16-20065-GH	target_condition		Prevotella copri			FN
 82		C16-20065-GH	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 82		C16-20065-GH	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-82		C16-20065-GH	host_species		Homo sapiens			FN
+82		C16-20065-GH	host_species		Homo sapiens		NCIT:C14225	FN
 83		C16-20066-GH	subject_id		C16-10106-GH_F			FN
 83		C16-20066-GH	sample_id		C16-20066-GH			FN
 83		C16-20066-GH	control		Study Control			FN
@@ -2014,7 +2014,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 83		C16-20066-GH	target_condition		Prevotella copri			FN
 83		C16-20066-GH	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 83		C16-20066-GH	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-83		C16-20066-GH	host_species		Homo sapiens			FN
+83		C16-20066-GH	host_species		Homo sapiens		NCIT:C14225	FN
 84		C16-20073-GH	subject_id		C16-10106-GH_S1			FN
 84		C16-20073-GH	sample_id		C16-20073-GH			FN
 84		C16-20073-GH	control		Study Control			FN
@@ -2038,7 +2038,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 84		C16-20073-GH	target_condition		Prevotella copri			FN
 84		C16-20073-GH	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 84		C16-20073-GH	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-84		C16-20073-GH	host_species		Homo sapiens			FN
+84		C16-20073-GH	host_species		Homo sapiens		NCIT:C14225	FN
 85		C16-20074-GH	subject_id		C16-10106-GH_S2			FN
 85		C16-20074-GH	sample_id		C16-20074-GH			FN
 85		C16-20074-GH	control		Study Control			FN
@@ -2062,7 +2062,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 85		C16-20074-GH	target_condition		Prevotella copri			FN
 85		C16-20074-GH	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 85		C16-20074-GH	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-85		C16-20074-GH	host_species		Homo sapiens			FN
+85		C16-20074-GH	host_species		Homo sapiens		NCIT:C14225	FN
 86		C16-20108-GH	subject_id		C16-10146-GH_M			FN
 86		C16-20108-GH	sample_id		C16-20108-GH			FN
 86		C16-20108-GH	control		Study Control			FN
@@ -2086,7 +2086,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 86		C16-20108-GH	target_condition		Prevotella copri			FN
 86		C16-20108-GH	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 86		C16-20108-GH	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-86		C16-20108-GH	host_species		Homo sapiens			FN
+86		C16-20108-GH	host_species		Homo sapiens		NCIT:C14225	FN
 87		C16-20110-GH	subject_id		C16-10146-GH_S1			FN
 87		C16-20110-GH	sample_id		C16-20110-GH			FN
 87		C16-20110-GH	control		Study Control			FN
@@ -2110,7 +2110,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 87		C16-20110-GH	target_condition		Prevotella copri			FN
 87		C16-20110-GH	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 87		C16-20110-GH	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-87		C16-20110-GH	host_species		Homo sapiens			FN
+87		C16-20110-GH	host_species		Homo sapiens		NCIT:C14225	FN
 88		C16-20111-GH	subject_id		C16-10146-GH_S2			FN
 88		C16-20111-GH	sample_id		C16-20111-GH			FN
 88		C16-20111-GH	control		Study Control			FN
@@ -2134,7 +2134,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 88		C16-20111-GH	target_condition		Prevotella copri			FN
 88		C16-20111-GH	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 88		C16-20111-GH	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-88		C16-20111-GH	host_species		Homo sapiens			FN
+88		C16-20111-GH	host_species		Homo sapiens		NCIT:C14225	FN
 89		C16-20112-GH	subject_id		C16-10146-GH_S3			FN
 89		C16-20112-GH	sample_id		C16-20112-GH			FN
 89		C16-20112-GH	control		Study Control			FN
@@ -2158,7 +2158,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 89		C16-20112-GH	target_condition		Prevotella copri			FN
 89		C16-20112-GH	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 89		C16-20112-GH	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-89		C16-20112-GH	host_species		Homo sapiens			FN
+89		C16-20112-GH	host_species		Homo sapiens		NCIT:C14225	FN
 90		C16-20113-GH	subject_id		C16-10146-GH_S4			FN
 90		C16-20113-GH	sample_id		C16-20113-GH			FN
 90		C16-20113-GH	control		Study Control			FN
@@ -2182,7 +2182,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 90		C16-20113-GH	target_condition		Prevotella copri			FN
 90		C16-20113-GH	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 90		C16-20113-GH	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-90		C16-20113-GH	host_species		Homo sapiens			FN
+90		C16-20113-GH	host_species		Homo sapiens		NCIT:C14225	FN
 91		C16-20124-GH	subject_id		C16-10151-GH_M			FN
 91		C16-20124-GH	sample_id		C16-20124-GH			FN
 91		C16-20124-GH	control		Study Control			FN
@@ -2206,7 +2206,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 91		C16-20124-GH	target_condition		Prevotella copri			FN
 91		C16-20124-GH	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 91		C16-20124-GH	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-91		C16-20124-GH	host_species		Homo sapiens			FN
+91		C16-20124-GH	host_species		Homo sapiens		NCIT:C14225	FN
 92		C16-20125-GH	subject_id		C16-10151-GH_F			FN
 92		C16-20125-GH	sample_id		C16-20125-GH			FN
 92		C16-20125-GH	control		Study Control			FN
@@ -2230,7 +2230,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 92		C16-20125-GH	target_condition		Prevotella copri			FN
 92		C16-20125-GH	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 92		C16-20125-GH	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-92		C16-20125-GH	host_species		Homo sapiens			FN
+92		C16-20125-GH	host_species		Homo sapiens		NCIT:C14225	FN
 93		C16-20126-GH	subject_id		C16-10151-GH_S1			FN
 93		C16-20126-GH	sample_id		C16-20126-GH			FN
 93		C16-20126-GH	control		Study Control			FN
@@ -2254,7 +2254,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 93		C16-20126-GH	target_condition		Prevotella copri			FN
 93		C16-20126-GH	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 93		C16-20126-GH	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-93		C16-20126-GH	host_species		Homo sapiens			FN
+93		C16-20126-GH	host_species		Homo sapiens		NCIT:C14225	FN
 94		C16-20127-GH	subject_id		C16-10151-GH_S2			FN
 94		C16-20127-GH	sample_id		C16-20127-GH			FN
 94		C16-20127-GH	control		Study Control			FN
@@ -2278,7 +2278,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 94		C16-20127-GH	target_condition		Prevotella copri			FN
 94		C16-20127-GH	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 94		C16-20127-GH	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-94		C16-20127-GH	host_species		Homo sapiens			FN
+94		C16-20127-GH	host_species		Homo sapiens		NCIT:C14225	FN
 95		C16-20138-GH	subject_id		C16-10151-GH_S3			FN
 95		C16-20138-GH	sample_id		C16-20138-GH			FN
 95		C16-20138-GH	control		Study Control			FN
@@ -2302,7 +2302,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 95		C16-20138-GH	target_condition		Prevotella copri			FN
 95		C16-20138-GH	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 95		C16-20138-GH	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-95		C16-20138-GH	host_species		Homo sapiens			FN
+95		C16-20138-GH	host_species		Homo sapiens		NCIT:C14225	FN
 96		C16-20241-GH	subject_id		C16-10312-GH_M			FN
 96		C16-20241-GH	sample_id		C16-20241-GH			FN
 96		C16-20241-GH	control		Study Control			FN
@@ -2326,7 +2326,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 96		C16-20241-GH	target_condition		Prevotella copri			FN
 96		C16-20241-GH	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 96		C16-20241-GH	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-96		C16-20241-GH	host_species		Homo sapiens			FN
+96		C16-20241-GH	host_species		Homo sapiens		NCIT:C14225	FN
 97		C16-20242-GH	subject_id		C16-10312-GH_F			FN
 97		C16-20242-GH	sample_id		C16-20242-GH			FN
 97		C16-20242-GH	control		Study Control			FN
@@ -2350,7 +2350,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 97		C16-20242-GH	target_condition		Prevotella copri			FN
 97		C16-20242-GH	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 97		C16-20242-GH	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-97		C16-20242-GH	host_species		Homo sapiens			FN
+97		C16-20242-GH	host_species		Homo sapiens		NCIT:C14225	FN
 98		C16-20243-GH	subject_id		C16-10312-GH_S1			FN
 98		C16-20243-GH	sample_id		C16-20243-GH			FN
 98		C16-20243-GH	control		Study Control			FN
@@ -2374,7 +2374,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 98		C16-20243-GH	target_condition		Prevotella copri			FN
 98		C16-20243-GH	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 98		C16-20243-GH	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-98		C16-20243-GH	host_species		Homo sapiens			FN
+98		C16-20243-GH	host_species		Homo sapiens		NCIT:C14225	FN
 99		C16-20244-GH	subject_id		C16-10312-GH_S2			FN
 99		C16-20244-GH	sample_id		C16-20244-GH			FN
 99		C16-20244-GH	control		Study Control			FN
@@ -2398,7 +2398,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 99		C16-20244-GH	target_condition		Prevotella copri			FN
 99		C16-20244-GH	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 99		C16-20244-GH	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-99		C16-20244-GH	host_species		Homo sapiens			FN
+99		C16-20244-GH	host_species		Homo sapiens		NCIT:C14225	FN
 100		C16-20245-GH	subject_id		C16-10312-GH_S3			FN
 100		C16-20245-GH	sample_id		C16-20245-GH			FN
 100		C16-20245-GH	control		Study Control			FN
@@ -2422,7 +2422,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 100		C16-20245-GH	target_condition		Prevotella copri			FN
 100		C16-20245-GH	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 100		C16-20245-GH	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-100		C16-20245-GH	host_species		Homo sapiens			FN
+100		C16-20245-GH	host_species		Homo sapiens		NCIT:C14225	FN
 101		C16-20246-GH	subject_id		C16-10312-GH_S4			FN
 101		C16-20246-GH	sample_id		C16-20246-GH			FN
 101		C16-20246-GH	control		Study Control			FN
@@ -2446,7 +2446,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 101		C16-20246-GH	target_condition		Prevotella copri			FN
 101		C16-20246-GH	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 101		C16-20246-GH	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-101		C16-20246-GH	host_species		Homo sapiens			FN
+101		C16-20246-GH	host_species		Homo sapiens		NCIT:C14225	FN
 102		C16-20247-GH	subject_id		C16-10312-GH_S5			FN
 102		C16-20247-GH	sample_id		C16-20247-GH			FN
 102		C16-20247-GH	control		Study Control			FN
@@ -2470,7 +2470,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 102		C16-20247-GH	target_condition		Prevotella copri			FN
 102		C16-20247-GH	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 102		C16-20247-GH	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-102		C16-20247-GH	host_species		Homo sapiens			FN
+102		C16-20247-GH	host_species		Homo sapiens		NCIT:C14225	FN
 103		C16-20273-GH	subject_id		C16-10328-GH_M			FN
 103		C16-20273-GH	sample_id		C16-20273-GH			FN
 103		C16-20273-GH	control		Study Control			FN
@@ -2494,7 +2494,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 103		C16-20273-GH	target_condition		Prevotella copri			FN
 103		C16-20273-GH	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 103		C16-20273-GH	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-103		C16-20273-GH	host_species		Homo sapiens			FN
+103		C16-20273-GH	host_species		Homo sapiens		NCIT:C14225	FN
 104		C16-20274-GH	subject_id		C16-10328-GH_F			FN
 104		C16-20274-GH	sample_id		C16-20274-GH			FN
 104		C16-20274-GH	control		Study Control			FN
@@ -2518,7 +2518,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 104		C16-20274-GH	target_condition		Prevotella copri			FN
 104		C16-20274-GH	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 104		C16-20274-GH	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-104		C16-20274-GH	host_species		Homo sapiens			FN
+104		C16-20274-GH	host_species		Homo sapiens		NCIT:C14225	FN
 105		C16-20275-GH	subject_id		C16-10328-GH_S1			FN
 105		C16-20275-GH	sample_id		C16-20275-GH			FN
 105		C16-20275-GH	control		Study Control			FN
@@ -2542,7 +2542,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 105		C16-20275-GH	target_condition		Prevotella copri			FN
 105		C16-20275-GH	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 105		C16-20275-GH	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-105		C16-20275-GH	host_species		Homo sapiens			FN
+105		C16-20275-GH	host_species		Homo sapiens		NCIT:C14225	FN
 106		C16-20288-GH	subject_id		C16-10332-GH_F			FN
 106		C16-20288-GH	sample_id		C16-20288-GH			FN
 106		C16-20288-GH	control		Study Control			FN
@@ -2566,7 +2566,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 106		C16-20288-GH	target_condition		Prevotella copri			FN
 106		C16-20288-GH	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 106		C16-20288-GH	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-106		C16-20288-GH	host_species		Homo sapiens			FN
+106		C16-20288-GH	host_species		Homo sapiens		NCIT:C14225	FN
 107		C16-20292-GH	subject_id		C16-10332-GH_M			FN
 107		C16-20292-GH	sample_id		C16-20292-GH			FN
 107		C16-20292-GH	control		Study Control			FN
@@ -2590,7 +2590,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 107		C16-20292-GH	target_condition		Prevotella copri			FN
 107		C16-20292-GH	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 107		C16-20292-GH	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-107		C16-20292-GH	host_species		Homo sapiens			FN
+107		C16-20292-GH	host_species		Homo sapiens		NCIT:C14225	FN
 108		C16-20362-GH	subject_id		C16-10372-GH_M			FN
 108		C16-20362-GH	sample_id		C16-20362-GH			FN
 108		C16-20362-GH	control		Study Control			FN
@@ -2614,7 +2614,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 108		C16-20362-GH	target_condition		Prevotella copri			FN
 108		C16-20362-GH	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 108		C16-20362-GH	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-108		C16-20362-GH	host_species		Homo sapiens			FN
+108		C16-20362-GH	host_species		Homo sapiens		NCIT:C14225	FN
 109		C16-20363-GH	subject_id		C16-10372-GH_F			FN
 109		C16-20363-GH	sample_id		C16-20363-GH			FN
 109		C16-20363-GH	control		Study Control			FN
@@ -2638,7 +2638,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 109		C16-20363-GH	target_condition		Prevotella copri			FN
 109		C16-20363-GH	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 109		C16-20363-GH	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-109		C16-20363-GH	host_species		Homo sapiens			FN
+109		C16-20363-GH	host_species		Homo sapiens		NCIT:C14225	FN
 110		C16-20374-GH	subject_id		C16-10389-GH_M			FN
 110		C16-20374-GH	sample_id		C16-20374-GH			FN
 110		C16-20374-GH	control		Study Control			FN
@@ -2662,7 +2662,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 110		C16-20374-GH	target_condition		Prevotella copri			FN
 110		C16-20374-GH	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 110		C16-20374-GH	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-110		C16-20374-GH	host_species		Homo sapiens			FN
+110		C16-20374-GH	host_species		Homo sapiens		NCIT:C14225	FN
 111		C16-20375-GH	subject_id		C16-10389-GH_F			FN
 111		C16-20375-GH	sample_id		C16-20375-GH			FN
 111		C16-20375-GH	control		Study Control			FN
@@ -2686,7 +2686,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 111		C16-20375-GH	target_condition		Prevotella copri			FN
 111		C16-20375-GH	dna_extraction_kit		Qiagen		CMDKIT:0007	FN
 111		C16-20375-GH	sequencing_platform		IlluminaHiSeq		CMDPLAT:0001	FN
-111		C16-20375-GH	host_species		Homo sapiens			FN
+111		C16-20375-GH	host_species		Homo sapiens		NCIT:C14225	FN
 112	CM_A01_I1_18	CM_A01_I1_18	subject_id	CM_A01_I1	CM_A01_I1			TP_correct
 112	CM_A01_I1_18	CM_A01_I1_18	sample_id	CM_A01_I1_18	CM_A01_I1_18			TP_correct
 112	CM_A01_I1_18	CM_A01_I1_18	control		Study Control			FN
@@ -2710,7 +2710,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 112	CM_A01_I1_18	CM_A01_I1_18	target_condition	Prevotella copri complex prevalence and diversity; Gut microbiome composition in Westernized vs non-Westernized populations	Prevotella copri			TP_wrong
 112	CM_A01_I1_18	CM_A01_I1_18	dna_extraction_kit	PowerSoil DNA Isolation Kit	Qiagen	CMDKIT:0002	CMDKIT:0007	TP_wrong
 112	CM_A01_I1_18	CM_A01_I1_18	sequencing_platform	Illumina HiSeq	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-112	CM_A01_I1_18	CM_A01_I1_18	host_species	Human	Homo sapiens			TP_wrong
+112	CM_A01_I1_18	CM_A01_I1_18	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 113	CM_A01_M0_18	CM_A01_M0_18	subject_id	CM_A01_M0	CM_A01_M0			TP_correct
 113	CM_A01_M0_18	CM_A01_M0_18	sample_id	CM_A01_M0_18	CM_A01_M0_18			TP_correct
 113	CM_A01_M0_18	CM_A01_M0_18	control		Study Control			FN
@@ -2734,7 +2734,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 113	CM_A01_M0_18	CM_A01_M0_18	target_condition	Prevotella copri complex prevalence and diversity; Gut microbiome composition in Westernized vs non-Westernized populations	Prevotella copri			TP_wrong
 113	CM_A01_M0_18	CM_A01_M0_18	dna_extraction_kit	PowerSoil DNA Isolation Kit	Qiagen	CMDKIT:0002	CMDKIT:0007	TP_wrong
 113	CM_A01_M0_18	CM_A01_M0_18	sequencing_platform	Illumina HiSeq	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-113	CM_A01_M0_18	CM_A01_M0_18	host_species	Human	Homo sapiens			TP_wrong
+113	CM_A01_M0_18	CM_A01_M0_18	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 114	CM_A04_I1_18	CM_A04_I1_18	subject_id	CM_A04_I1	CM_A04_I1			TP_correct
 114	CM_A04_I1_18	CM_A04_I1_18	sample_id	CM_A04_I1_18	CM_A04_I1_18			TP_correct
 114	CM_A04_I1_18	CM_A04_I1_18	control		Study Control			FN
@@ -2758,7 +2758,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 114	CM_A04_I1_18	CM_A04_I1_18	target_condition	Prevotella copri complex prevalence and diversity; Gut microbiome composition in Westernized vs non-Westernized populations	Prevotella copri			TP_wrong
 114	CM_A04_I1_18	CM_A04_I1_18	dna_extraction_kit	PowerSoil DNA Isolation Kit	Qiagen	CMDKIT:0002	CMDKIT:0007	TP_wrong
 114	CM_A04_I1_18	CM_A04_I1_18	sequencing_platform	Illumina HiSeq	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-114	CM_A04_I1_18	CM_A04_I1_18	host_species	Human	Homo sapiens			TP_wrong
+114	CM_A04_I1_18	CM_A04_I1_18	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 115	CM_A04_M0_18	CM_A04_M0_18	subject_id	CM_A04_M0	CM_A04_M0			TP_correct
 115	CM_A04_M0_18	CM_A04_M0_18	sample_id	CM_A04_M0_18	CM_A04_M0_18			TP_correct
 115	CM_A04_M0_18	CM_A04_M0_18	control		Study Control			FN
@@ -2782,7 +2782,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 115	CM_A04_M0_18	CM_A04_M0_18	target_condition	Prevotella copri complex prevalence and diversity; Gut microbiome composition in Westernized vs non-Westernized populations	Prevotella copri			TP_wrong
 115	CM_A04_M0_18	CM_A04_M0_18	dna_extraction_kit	PowerSoil DNA Isolation Kit	Qiagen	CMDKIT:0002	CMDKIT:0007	TP_wrong
 115	CM_A04_M0_18	CM_A04_M0_18	sequencing_platform	Illumina HiSeq	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-115	CM_A04_M0_18	CM_A04_M0_18	host_species	Human	Homo sapiens			TP_wrong
+115	CM_A04_M0_18	CM_A04_M0_18	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 116	CM_A06_I1_18	CM_A06_I1_18	subject_id	CM_A06_I1	CM_A06_I1			TP_correct
 116	CM_A06_I1_18	CM_A06_I1_18	sample_id	CM_A06_I1_18	CM_A06_I1_18			TP_correct
 116	CM_A06_I1_18	CM_A06_I1_18	control		Study Control			FN
@@ -2806,7 +2806,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 116	CM_A06_I1_18	CM_A06_I1_18	target_condition	Prevotella copri complex prevalence and diversity; Gut microbiome composition in Westernized vs non-Westernized populations	Prevotella copri			TP_wrong
 116	CM_A06_I1_18	CM_A06_I1_18	dna_extraction_kit	PowerSoil DNA Isolation Kit	Qiagen	CMDKIT:0002	CMDKIT:0007	TP_wrong
 116	CM_A06_I1_18	CM_A06_I1_18	sequencing_platform	Illumina HiSeq	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-116	CM_A06_I1_18	CM_A06_I1_18	host_species	Human	Homo sapiens			TP_wrong
+116	CM_A06_I1_18	CM_A06_I1_18	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 117	CM_A06_M0_18	CM_A06_M0_18	subject_id	CM_A06_M0	CM_A06_M0			TP_correct
 117	CM_A06_M0_18	CM_A06_M0_18	sample_id	CM_A06_M0_18	CM_A06_M0_18			TP_correct
 117	CM_A06_M0_18	CM_A06_M0_18	control		Study Control			FN
@@ -2830,7 +2830,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 117	CM_A06_M0_18	CM_A06_M0_18	target_condition	Prevotella copri complex prevalence and diversity; Gut microbiome composition in Westernized vs non-Westernized populations	Prevotella copri			TP_wrong
 117	CM_A06_M0_18	CM_A06_M0_18	dna_extraction_kit	PowerSoil DNA Isolation Kit	Qiagen	CMDKIT:0002	CMDKIT:0007	TP_wrong
 117	CM_A06_M0_18	CM_A06_M0_18	sequencing_platform	Illumina HiSeq	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-117	CM_A06_M0_18	CM_A06_M0_18	host_species	Human	Homo sapiens			TP_wrong
+117	CM_A06_M0_18	CM_A06_M0_18	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 118	CM_D02_I1_18	CM_D02_I1_18	subject_id	CM_D02_I1	CM_D02_I1			TP_correct
 118	CM_D02_I1_18	CM_D02_I1_18	sample_id	CM_D02_I1_18	CM_D02_I1_18			TP_correct
 118	CM_D02_I1_18	CM_D02_I1_18	control		Study Control			FN
@@ -2854,7 +2854,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 118	CM_D02_I1_18	CM_D02_I1_18	target_condition	Prevotella copri complex prevalence and diversity; Gut microbiome composition in Westernized vs non-Westernized populations	Prevotella copri			TP_wrong
 118	CM_D02_I1_18	CM_D02_I1_18	dna_extraction_kit	PowerSoil DNA Isolation Kit	Qiagen	CMDKIT:0002	CMDKIT:0007	TP_wrong
 118	CM_D02_I1_18	CM_D02_I1_18	sequencing_platform	Illumina HiSeq	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-118	CM_D02_I1_18	CM_D02_I1_18	host_species	Human	Homo sapiens			TP_wrong
+118	CM_D02_I1_18	CM_D02_I1_18	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 119	CM_D02_M0_18	CM_D02_M0_18	subject_id	CM_D02_M0	CM_D02_M0			TP_correct
 119	CM_D02_M0_18	CM_D02_M0_18	sample_id	CM_D02_M0_18	CM_D02_M0_18			TP_correct
 119	CM_D02_M0_18	CM_D02_M0_18	control		Study Control			FN
@@ -2878,7 +2878,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 119	CM_D02_M0_18	CM_D02_M0_18	target_condition	Prevotella copri complex prevalence and diversity; Gut microbiome composition in Westernized vs non-Westernized populations	Prevotella copri			TP_wrong
 119	CM_D02_M0_18	CM_D02_M0_18	dna_extraction_kit	PowerSoil DNA Isolation Kit	Qiagen	CMDKIT:0002	CMDKIT:0007	TP_wrong
 119	CM_D02_M0_18	CM_D02_M0_18	sequencing_platform	Illumina HiSeq	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-119	CM_D02_M0_18	CM_D02_M0_18	host_species	Human	Homo sapiens			TP_wrong
+119	CM_D02_M0_18	CM_D02_M0_18	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 120	CM_D03_I12_18	CM_D03_I12_18	subject_id	CM_D03_I12	CM_D03_I12			TP_correct
 120	CM_D03_I12_18	CM_D03_I12_18	sample_id	CM_D03_I12_18	CM_D03_I12_18			TP_correct
 120	CM_D03_I12_18	CM_D03_I12_18	control		Study Control			FN
@@ -2902,7 +2902,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 120	CM_D03_I12_18	CM_D03_I12_18	target_condition	Prevotella copri complex prevalence and diversity; Gut microbiome composition in Westernized vs non-Westernized populations	Prevotella copri			TP_wrong
 120	CM_D03_I12_18	CM_D03_I12_18	dna_extraction_kit	PowerSoil DNA Isolation Kit	Qiagen	CMDKIT:0002	CMDKIT:0007	TP_wrong
 120	CM_D03_I12_18	CM_D03_I12_18	sequencing_platform	Illumina HiSeq	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-120	CM_D03_I12_18	CM_D03_I12_18	host_species	Human	Homo sapiens			TP_wrong
+120	CM_D03_I12_18	CM_D03_I12_18	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 121	CM_D03_M0_18	CM_D03_M0_18	subject_id	CM_D03_M0	CM_D03_M0			TP_correct
 121	CM_D03_M0_18	CM_D03_M0_18	sample_id	CM_D03_M0_18	CM_D03_M0_18			TP_correct
 121	CM_D03_M0_18	CM_D03_M0_18	control		Study Control			FN
@@ -2926,7 +2926,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 121	CM_D03_M0_18	CM_D03_M0_18	target_condition	Prevotella copri complex prevalence and diversity; Gut microbiome composition in Westernized vs non-Westernized populations	Prevotella copri			TP_wrong
 121	CM_D03_M0_18	CM_D03_M0_18	dna_extraction_kit	PowerSoil DNA Isolation Kit	Qiagen	CMDKIT:0002	CMDKIT:0007	TP_wrong
 121	CM_D03_M0_18	CM_D03_M0_18	sequencing_platform	Illumina HiSeq	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-121	CM_D03_M0_18	CM_D03_M0_18	host_species	Human	Homo sapiens			TP_wrong
+121	CM_D03_M0_18	CM_D03_M0_18	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 122	CM_D04_I1_18	CM_D04_I1_18	subject_id	CM_D04_I1	CM_D04_I1			TP_correct
 122	CM_D04_I1_18	CM_D04_I1_18	sample_id	CM_D04_I1_18	CM_D04_I1_18			TP_correct
 122	CM_D04_I1_18	CM_D04_I1_18	control		Study Control			FN
@@ -2950,7 +2950,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 122	CM_D04_I1_18	CM_D04_I1_18	target_condition	Prevotella copri complex prevalence and diversity; Gut microbiome composition in Westernized vs non-Westernized populations	Prevotella copri			TP_wrong
 122	CM_D04_I1_18	CM_D04_I1_18	dna_extraction_kit	PowerSoil DNA Isolation Kit	Qiagen	CMDKIT:0002	CMDKIT:0007	TP_wrong
 122	CM_D04_I1_18	CM_D04_I1_18	sequencing_platform	Illumina HiSeq	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-122	CM_D04_I1_18	CM_D04_I1_18	host_species	Human	Homo sapiens			TP_wrong
+122	CM_D04_I1_18	CM_D04_I1_18	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 123	CM_D04_M0_18	CM_D04_M0_18	subject_id	CM_D04_M0	CM_D04_M0			TP_correct
 123	CM_D04_M0_18	CM_D04_M0_18	sample_id	CM_D04_M0_18	CM_D04_M0_18			TP_correct
 123	CM_D04_M0_18	CM_D04_M0_18	control		Study Control			FN
@@ -2974,7 +2974,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 123	CM_D04_M0_18	CM_D04_M0_18	target_condition	Prevotella copri complex prevalence and diversity; Gut microbiome composition in Westernized vs non-Westernized populations	Prevotella copri			TP_wrong
 123	CM_D04_M0_18	CM_D04_M0_18	dna_extraction_kit	PowerSoil DNA Isolation Kit	Qiagen	CMDKIT:0002	CMDKIT:0007	TP_wrong
 123	CM_D04_M0_18	CM_D04_M0_18	sequencing_platform	Illumina HiSeq	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-123	CM_D04_M0_18	CM_D04_M0_18	host_species	Human	Homo sapiens			TP_wrong
+123	CM_D04_M0_18	CM_D04_M0_18	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 124	CM_D05_I1_18	CM_D05_I1_18	subject_id	CM_D05_I1	CM_D05_I1			TP_correct
 124	CM_D05_I1_18	CM_D05_I1_18	sample_id	CM_D05_I1_18	CM_D05_I1_18			TP_correct
 124	CM_D05_I1_18	CM_D05_I1_18	control		Study Control			FN
@@ -2998,7 +2998,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 124	CM_D05_I1_18	CM_D05_I1_18	target_condition	Prevotella copri complex prevalence and diversity; Gut microbiome composition in Westernized vs non-Westernized populations	Prevotella copri			TP_wrong
 124	CM_D05_I1_18	CM_D05_I1_18	dna_extraction_kit	PowerSoil DNA Isolation Kit	Qiagen	CMDKIT:0002	CMDKIT:0007	TP_wrong
 124	CM_D05_I1_18	CM_D05_I1_18	sequencing_platform	Illumina HiSeq	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-124	CM_D05_I1_18	CM_D05_I1_18	host_species	Human	Homo sapiens			TP_wrong
+124	CM_D05_I1_18	CM_D05_I1_18	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 125	CM_D05_M0_18	CM_D05_M0_18	subject_id	CM_D05_M0	CM_D05_M0			TP_correct
 125	CM_D05_M0_18	CM_D05_M0_18	sample_id	CM_D05_M0_18	CM_D05_M0_18			TP_correct
 125	CM_D05_M0_18	CM_D05_M0_18	control		Study Control			FN
@@ -3022,7 +3022,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 125	CM_D05_M0_18	CM_D05_M0_18	target_condition	Prevotella copri complex prevalence and diversity; Gut microbiome composition in Westernized vs non-Westernized populations	Prevotella copri			TP_wrong
 125	CM_D05_M0_18	CM_D05_M0_18	dna_extraction_kit	PowerSoil DNA Isolation Kit	Qiagen	CMDKIT:0002	CMDKIT:0007	TP_wrong
 125	CM_D05_M0_18	CM_D05_M0_18	sequencing_platform	Illumina HiSeq	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-125	CM_D05_M0_18	CM_D05_M0_18	host_species	Human	Homo sapiens			TP_wrong
+125	CM_D05_M0_18	CM_D05_M0_18	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 126	CM_D06_I1_18	CM_D06_I1_18	subject_id	CM_D06_I1	CM_D06_I1			TP_correct
 126	CM_D06_I1_18	CM_D06_I1_18	sample_id	CM_D06_I1_18	CM_D06_I1_18			TP_correct
 126	CM_D06_I1_18	CM_D06_I1_18	control		Study Control			FN
@@ -3046,7 +3046,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 126	CM_D06_I1_18	CM_D06_I1_18	target_condition	Prevotella copri complex prevalence and diversity; Gut microbiome composition in Westernized vs non-Westernized populations	Prevotella copri			TP_wrong
 126	CM_D06_I1_18	CM_D06_I1_18	dna_extraction_kit	PowerSoil DNA Isolation Kit	Qiagen	CMDKIT:0002	CMDKIT:0007	TP_wrong
 126	CM_D06_I1_18	CM_D06_I1_18	sequencing_platform	Illumina HiSeq	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-126	CM_D06_I1_18	CM_D06_I1_18	host_species	Human	Homo sapiens			TP_wrong
+126	CM_D06_I1_18	CM_D06_I1_18	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 127	CM_D06_M0_18	CM_D06_M0_18	subject_id	CM_D06_M0	CM_D06_M0			TP_correct
 127	CM_D06_M0_18	CM_D06_M0_18	sample_id	CM_D06_M0_18	CM_D06_M0_18			TP_correct
 127	CM_D06_M0_18	CM_D06_M0_18	control		Study Control			FN
@@ -3070,7 +3070,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 127	CM_D06_M0_18	CM_D06_M0_18	target_condition	Prevotella copri complex prevalence and diversity; Gut microbiome composition in Westernized vs non-Westernized populations	Prevotella copri			TP_wrong
 127	CM_D06_M0_18	CM_D06_M0_18	dna_extraction_kit	PowerSoil DNA Isolation Kit	Qiagen	CMDKIT:0002	CMDKIT:0007	TP_wrong
 127	CM_D06_M0_18	CM_D06_M0_18	sequencing_platform	Illumina HiSeq	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-127	CM_D06_M0_18	CM_D06_M0_18	host_species	Human	Homo sapiens			TP_wrong
+127	CM_D06_M0_18	CM_D06_M0_18	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 128	CM_D07_I1_18	CM_D07_I1_18	subject_id	CM_D07_I1	CM_D07_I1			TP_correct
 128	CM_D07_I1_18	CM_D07_I1_18	sample_id	CM_D07_I1_18	CM_D07_I1_18			TP_correct
 128	CM_D07_I1_18	CM_D07_I1_18	control		Study Control			FN
@@ -3094,7 +3094,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 128	CM_D07_I1_18	CM_D07_I1_18	target_condition	Prevotella copri complex prevalence and diversity; Gut microbiome composition in Westernized vs non-Westernized populations	Prevotella copri			TP_wrong
 128	CM_D07_I1_18	CM_D07_I1_18	dna_extraction_kit	PowerSoil DNA Isolation Kit	Qiagen	CMDKIT:0002	CMDKIT:0007	TP_wrong
 128	CM_D07_I1_18	CM_D07_I1_18	sequencing_platform	Illumina HiSeq	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-128	CM_D07_I1_18	CM_D07_I1_18	host_species	Human	Homo sapiens			TP_wrong
+128	CM_D07_I1_18	CM_D07_I1_18	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 129	CM_D07_M0_18	CM_D07_M0_18	subject_id	CM_D07_M0	CM_D07_M0			TP_correct
 129	CM_D07_M0_18	CM_D07_M0_18	sample_id	CM_D07_M0_18	CM_D07_M0_18			TP_correct
 129	CM_D07_M0_18	CM_D07_M0_18	control		Study Control			FN
@@ -3118,7 +3118,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 129	CM_D07_M0_18	CM_D07_M0_18	target_condition	Prevotella copri complex prevalence and diversity; Gut microbiome composition in Westernized vs non-Westernized populations	Prevotella copri			TP_wrong
 129	CM_D07_M0_18	CM_D07_M0_18	dna_extraction_kit	PowerSoil DNA Isolation Kit	Qiagen	CMDKIT:0002	CMDKIT:0007	TP_wrong
 129	CM_D07_M0_18	CM_D07_M0_18	sequencing_platform	Illumina HiSeq	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-129	CM_D07_M0_18	CM_D07_M0_18	host_species	Human	Homo sapiens			TP_wrong
+129	CM_D07_M0_18	CM_D07_M0_18	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 130	CM_D08_I1_18	CM_D08_I1_18	subject_id	CM_D08_I1	CM_D08_I1			TP_correct
 130	CM_D08_I1_18	CM_D08_I1_18	sample_id	CM_D08_I1_18	CM_D08_I1_18			TP_correct
 130	CM_D08_I1_18	CM_D08_I1_18	control		Study Control			FN
@@ -3142,7 +3142,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 130	CM_D08_I1_18	CM_D08_I1_18	target_condition	Prevotella copri complex prevalence and diversity; Gut microbiome composition in Westernized vs non-Westernized populations	Prevotella copri			TP_wrong
 130	CM_D08_I1_18	CM_D08_I1_18	dna_extraction_kit	PowerSoil DNA Isolation Kit	Qiagen	CMDKIT:0002	CMDKIT:0007	TP_wrong
 130	CM_D08_I1_18	CM_D08_I1_18	sequencing_platform	Illumina HiSeq	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-130	CM_D08_I1_18	CM_D08_I1_18	host_species	Human	Homo sapiens			TP_wrong
+130	CM_D08_I1_18	CM_D08_I1_18	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 131	CM_D08_M0_18	CM_D08_M0_18	subject_id	CM_D08_M0	CM_D08_M0			TP_correct
 131	CM_D08_M0_18	CM_D08_M0_18	sample_id	CM_D08_M0_18	CM_D08_M0_18			TP_correct
 131	CM_D08_M0_18	CM_D08_M0_18	control		Study Control			FN
@@ -3166,7 +3166,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 131	CM_D08_M0_18	CM_D08_M0_18	target_condition	Prevotella copri complex prevalence and diversity; Gut microbiome composition in Westernized vs non-Westernized populations	Prevotella copri			TP_wrong
 131	CM_D08_M0_18	CM_D08_M0_18	dna_extraction_kit	PowerSoil DNA Isolation Kit	Qiagen	CMDKIT:0002	CMDKIT:0007	TP_wrong
 131	CM_D08_M0_18	CM_D08_M0_18	sequencing_platform	Illumina HiSeq	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-131	CM_D08_M0_18	CM_D08_M0_18	host_species	Human	Homo sapiens			TP_wrong
+131	CM_D08_M0_18	CM_D08_M0_18	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 132	CM_D09_I1_18	CM_D09_I1_18	subject_id	CM_D09_I1	CM_D09_I1			TP_correct
 132	CM_D09_I1_18	CM_D09_I1_18	sample_id	CM_D09_I1_18	CM_D09_I1_18			TP_correct
 132	CM_D09_I1_18	CM_D09_I1_18	control		Study Control			FN
@@ -3190,7 +3190,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 132	CM_D09_I1_18	CM_D09_I1_18	target_condition	Prevotella copri complex prevalence and diversity; Gut microbiome composition in Westernized vs non-Westernized populations	Prevotella copri			TP_wrong
 132	CM_D09_I1_18	CM_D09_I1_18	dna_extraction_kit	PowerSoil DNA Isolation Kit	Qiagen	CMDKIT:0002	CMDKIT:0007	TP_wrong
 132	CM_D09_I1_18	CM_D09_I1_18	sequencing_platform	Illumina HiSeq	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-132	CM_D09_I1_18	CM_D09_I1_18	host_species	Human	Homo sapiens			TP_wrong
+132	CM_D09_I1_18	CM_D09_I1_18	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 133	CM_D09_M0_18	CM_D09_M0_18	subject_id	CM_D09_M0	CM_D09_M0			TP_correct
 133	CM_D09_M0_18	CM_D09_M0_18	sample_id	CM_D09_M0_18	CM_D09_M0_18			TP_correct
 133	CM_D09_M0_18	CM_D09_M0_18	control		Study Control			FN
@@ -3214,7 +3214,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 133	CM_D09_M0_18	CM_D09_M0_18	target_condition	Prevotella copri complex prevalence and diversity; Gut microbiome composition in Westernized vs non-Westernized populations	Prevotella copri			TP_wrong
 133	CM_D09_M0_18	CM_D09_M0_18	dna_extraction_kit	PowerSoil DNA Isolation Kit	Qiagen	CMDKIT:0002	CMDKIT:0007	TP_wrong
 133	CM_D09_M0_18	CM_D09_M0_18	sequencing_platform	Illumina HiSeq	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-133	CM_D09_M0_18	CM_D09_M0_18	host_species	Human	Homo sapiens			TP_wrong
+133	CM_D09_M0_18	CM_D09_M0_18	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 134	CM_D10_I1_18	CM_D10_I1_18	subject_id	CM_D10_I1	CM_D10_I1			TP_correct
 134	CM_D10_I1_18	CM_D10_I1_18	sample_id	CM_D10_I1_18	CM_D10_I1_18			TP_correct
 134	CM_D10_I1_18	CM_D10_I1_18	control		Study Control			FN
@@ -3238,7 +3238,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 134	CM_D10_I1_18	CM_D10_I1_18	target_condition	Prevotella copri complex prevalence and diversity; Gut microbiome composition in Westernized vs non-Westernized populations	Prevotella copri			TP_wrong
 134	CM_D10_I1_18	CM_D10_I1_18	dna_extraction_kit	PowerSoil DNA Isolation Kit	Qiagen	CMDKIT:0002	CMDKIT:0007	TP_wrong
 134	CM_D10_I1_18	CM_D10_I1_18	sequencing_platform	Illumina HiSeq	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-134	CM_D10_I1_18	CM_D10_I1_18	host_species	Human	Homo sapiens			TP_wrong
+134	CM_D10_I1_18	CM_D10_I1_18	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 135	CM_D10_M0_18	CM_D10_M0_18	subject_id	CM_D10_M0	CM_D10_M0			TP_correct
 135	CM_D10_M0_18	CM_D10_M0_18	sample_id	CM_D10_M0_18	CM_D10_M0_18			TP_correct
 135	CM_D10_M0_18	CM_D10_M0_18	control		Study Control			FN
@@ -3262,7 +3262,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 135	CM_D10_M0_18	CM_D10_M0_18	target_condition	Prevotella copri complex prevalence and diversity; Gut microbiome composition in Westernized vs non-Westernized populations	Prevotella copri			TP_wrong
 135	CM_D10_M0_18	CM_D10_M0_18	dna_extraction_kit	PowerSoil DNA Isolation Kit	Qiagen	CMDKIT:0002	CMDKIT:0007	TP_wrong
 135	CM_D10_M0_18	CM_D10_M0_18	sequencing_platform	Illumina HiSeq	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-135	CM_D10_M0_18	CM_D10_M0_18	host_species	Human	Homo sapiens			TP_wrong
+135	CM_D10_M0_18	CM_D10_M0_18	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 136	CM_D11_I1_18	CM_D11_I1_18	subject_id	CM_D11_I1	CM_D11_I1			TP_correct
 136	CM_D11_I1_18	CM_D11_I1_18	sample_id	CM_D11_I1_18	CM_D11_I1_18			TP_correct
 136	CM_D11_I1_18	CM_D11_I1_18	control		Study Control			FN
@@ -3286,7 +3286,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 136	CM_D11_I1_18	CM_D11_I1_18	target_condition	Prevotella copri complex prevalence and diversity; Gut microbiome composition in Westernized vs non-Westernized populations	Prevotella copri			TP_wrong
 136	CM_D11_I1_18	CM_D11_I1_18	dna_extraction_kit	PowerSoil DNA Isolation Kit	Qiagen	CMDKIT:0002	CMDKIT:0007	TP_wrong
 136	CM_D11_I1_18	CM_D11_I1_18	sequencing_platform	Illumina HiSeq	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-136	CM_D11_I1_18	CM_D11_I1_18	host_species	Human	Homo sapiens			TP_wrong
+136	CM_D11_I1_18	CM_D11_I1_18	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 137	CM_D11_M0_18	CM_D11_M0_18	subject_id	CM_D11_M0	CM_D11_M0			TP_correct
 137	CM_D11_M0_18	CM_D11_M0_18	sample_id	CM_D11_M0_18	CM_D11_M0_18			TP_correct
 137	CM_D11_M0_18	CM_D11_M0_18	control		Study Control			FN
@@ -3310,7 +3310,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 137	CM_D11_M0_18	CM_D11_M0_18	target_condition	Prevotella copri complex prevalence and diversity; Gut microbiome composition in Westernized vs non-Westernized populations	Prevotella copri			TP_wrong
 137	CM_D11_M0_18	CM_D11_M0_18	dna_extraction_kit	PowerSoil DNA Isolation Kit	Qiagen	CMDKIT:0002	CMDKIT:0007	TP_wrong
 137	CM_D11_M0_18	CM_D11_M0_18	sequencing_platform	Illumina HiSeq	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-137	CM_D11_M0_18	CM_D11_M0_18	host_species	Human	Homo sapiens			TP_wrong
+137	CM_D11_M0_18	CM_D11_M0_18	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 138	CM_D13_I1_18	CM_D13_I1_18	subject_id	CM_D13_I1	CM_D13_I1			TP_correct
 138	CM_D13_I1_18	CM_D13_I1_18	sample_id	CM_D13_I1_18	CM_D13_I1_18			TP_correct
 138	CM_D13_I1_18	CM_D13_I1_18	control		Study Control			FN
@@ -3334,7 +3334,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 138	CM_D13_I1_18	CM_D13_I1_18	target_condition	Prevotella copri complex prevalence and diversity; Gut microbiome composition in Westernized vs non-Westernized populations	Prevotella copri			TP_wrong
 138	CM_D13_I1_18	CM_D13_I1_18	dna_extraction_kit	PowerSoil DNA Isolation Kit	Qiagen	CMDKIT:0002	CMDKIT:0007	TP_wrong
 138	CM_D13_I1_18	CM_D13_I1_18	sequencing_platform	Illumina HiSeq	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-138	CM_D13_I1_18	CM_D13_I1_18	host_species	Human	Homo sapiens			TP_wrong
+138	CM_D13_I1_18	CM_D13_I1_18	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 139	CM_D13_M0_18	CM_D13_M0_18	subject_id	CM_D13_M0	CM_D13_M0			TP_correct
 139	CM_D13_M0_18	CM_D13_M0_18	sample_id	CM_D13_M0_18	CM_D13_M0_18			TP_correct
 139	CM_D13_M0_18	CM_D13_M0_18	control		Study Control			FN
@@ -3358,7 +3358,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 139	CM_D13_M0_18	CM_D13_M0_18	target_condition	Prevotella copri complex prevalence and diversity; Gut microbiome composition in Westernized vs non-Westernized populations	Prevotella copri			TP_wrong
 139	CM_D13_M0_18	CM_D13_M0_18	dna_extraction_kit	PowerSoil DNA Isolation Kit	Qiagen	CMDKIT:0002	CMDKIT:0007	TP_wrong
 139	CM_D13_M0_18	CM_D13_M0_18	sequencing_platform	Illumina HiSeq	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-139	CM_D13_M0_18	CM_D13_M0_18	host_species	Human	Homo sapiens			TP_wrong
+139	CM_D13_M0_18	CM_D13_M0_18	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 140	CM_D15_I1_18	CM_D15_I1_18	subject_id	CM_D15_I1	CM_D15_I1			TP_correct
 140	CM_D15_I1_18	CM_D15_I1_18	sample_id	CM_D15_I1_18	CM_D15_I1_18			TP_correct
 140	CM_D15_I1_18	CM_D15_I1_18	control		Study Control			FN
@@ -3382,7 +3382,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 140	CM_D15_I1_18	CM_D15_I1_18	target_condition	Prevotella copri complex prevalence and diversity; Gut microbiome composition in Westernized vs non-Westernized populations	Prevotella copri			TP_wrong
 140	CM_D15_I1_18	CM_D15_I1_18	dna_extraction_kit	PowerSoil DNA Isolation Kit	Qiagen	CMDKIT:0002	CMDKIT:0007	TP_wrong
 140	CM_D15_I1_18	CM_D15_I1_18	sequencing_platform	Illumina HiSeq	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-140	CM_D15_I1_18	CM_D15_I1_18	host_species	Human	Homo sapiens			TP_wrong
+140	CM_D15_I1_18	CM_D15_I1_18	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 141	CM_D15_M0_18	CM_D15_M0_18	subject_id	CM_D15_M0	CM_D15_M0			TP_correct
 141	CM_D15_M0_18	CM_D15_M0_18	sample_id	CM_D15_M0_18	CM_D15_M0_18			TP_correct
 141	CM_D15_M0_18	CM_D15_M0_18	control		Study Control			FN
@@ -3406,7 +3406,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 141	CM_D15_M0_18	CM_D15_M0_18	target_condition	Prevotella copri complex prevalence and diversity; Gut microbiome composition in Westernized vs non-Westernized populations	Prevotella copri			TP_wrong
 141	CM_D15_M0_18	CM_D15_M0_18	dna_extraction_kit	PowerSoil DNA Isolation Kit	Qiagen	CMDKIT:0002	CMDKIT:0007	TP_wrong
 141	CM_D15_M0_18	CM_D15_M0_18	sequencing_platform	Illumina HiSeq	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-141	CM_D15_M0_18	CM_D15_M0_18	host_species	Human	Homo sapiens			TP_wrong
+141	CM_D15_M0_18	CM_D15_M0_18	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 142	CM_D21_I1_18	CM_D21_I1_18	subject_id	CM_D21_I1	CM_D21_I1			TP_correct
 142	CM_D21_I1_18	CM_D21_I1_18	sample_id	CM_D21_I1_18	CM_D21_I1_18			TP_correct
 142	CM_D21_I1_18	CM_D21_I1_18	control		Study Control			FN
@@ -3430,7 +3430,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 142	CM_D21_I1_18	CM_D21_I1_18	target_condition	Prevotella copri complex prevalence and diversity; Gut microbiome composition in Westernized vs non-Westernized populations	Prevotella copri			TP_wrong
 142	CM_D21_I1_18	CM_D21_I1_18	dna_extraction_kit	PowerSoil DNA Isolation Kit	Qiagen	CMDKIT:0002	CMDKIT:0007	TP_wrong
 142	CM_D21_I1_18	CM_D21_I1_18	sequencing_platform	Illumina HiSeq	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-142	CM_D21_I1_18	CM_D21_I1_18	host_species	Human	Homo sapiens			TP_wrong
+142	CM_D21_I1_18	CM_D21_I1_18	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 143	CM_D21_M0_18	CM_D21_M0_18	subject_id	CM_D21_M0	CM_D21_M0			TP_correct
 143	CM_D21_M0_18	CM_D21_M0_18	sample_id	CM_D21_M0_18	CM_D21_M0_18			TP_correct
 143	CM_D21_M0_18	CM_D21_M0_18	control		Study Control			FN
@@ -3454,7 +3454,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 143	CM_D21_M0_18	CM_D21_M0_18	target_condition	Prevotella copri complex prevalence and diversity; Gut microbiome composition in Westernized vs non-Westernized populations	Prevotella copri			TP_wrong
 143	CM_D21_M0_18	CM_D21_M0_18	dna_extraction_kit	PowerSoil DNA Isolation Kit	Qiagen	CMDKIT:0002	CMDKIT:0007	TP_wrong
 143	CM_D21_M0_18	CM_D21_M0_18	sequencing_platform	Illumina HiSeq	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-143	CM_D21_M0_18	CM_D21_M0_18	host_species	Human	Homo sapiens			TP_wrong
+143	CM_D21_M0_18	CM_D21_M0_18	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 144	CM_D21B_I12_18	CM_D21B_I12_18	subject_id	CM_D21B_I12	CM_D21B_I12			TP_correct
 144	CM_D21B_I12_18	CM_D21B_I12_18	sample_id	CM_D21B_I12_18	CM_D21B_I12_18			TP_correct
 144	CM_D21B_I12_18	CM_D21B_I12_18	control		Study Control			FN
@@ -3478,7 +3478,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 144	CM_D21B_I12_18	CM_D21B_I12_18	target_condition	Prevotella copri complex prevalence and diversity; Gut microbiome composition in Westernized vs non-Westernized populations	Prevotella copri			TP_wrong
 144	CM_D21B_I12_18	CM_D21B_I12_18	dna_extraction_kit	PowerSoil DNA Isolation Kit	Qiagen	CMDKIT:0002	CMDKIT:0007	TP_wrong
 144	CM_D21B_I12_18	CM_D21B_I12_18	sequencing_platform	Illumina HiSeq	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-144	CM_D21B_I12_18	CM_D21B_I12_18	host_species	Human	Homo sapiens			TP_wrong
+144	CM_D21B_I12_18	CM_D21B_I12_18	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 145	CM_D24_I1_18	CM_D24_I1_18	subject_id	CM_D24_I1	CM_D24_I1			TP_correct
 145	CM_D24_I1_18	CM_D24_I1_18	sample_id	CM_D24_I1_18	CM_D24_I1_18			TP_correct
 145	CM_D24_I1_18	CM_D24_I1_18	control		Study Control			FN
@@ -3502,7 +3502,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 145	CM_D24_I1_18	CM_D24_I1_18	target_condition	Prevotella copri complex prevalence and diversity; Gut microbiome composition in Westernized vs non-Westernized populations	Prevotella copri			TP_wrong
 145	CM_D24_I1_18	CM_D24_I1_18	dna_extraction_kit	PowerSoil DNA Isolation Kit	Qiagen	CMDKIT:0002	CMDKIT:0007	TP_wrong
 145	CM_D24_I1_18	CM_D24_I1_18	sequencing_platform	Illumina HiSeq	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-145	CM_D24_I1_18	CM_D24_I1_18	host_species	Human	Homo sapiens			TP_wrong
+145	CM_D24_I1_18	CM_D24_I1_18	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 146	CM_D24_M0_18	CM_D24_M0_18	subject_id	CM_D24_M0	CM_D24_M0			TP_correct
 146	CM_D24_M0_18	CM_D24_M0_18	sample_id	CM_D24_M0_18	CM_D24_M0_18			TP_correct
 146	CM_D24_M0_18	CM_D24_M0_18	control		Study Control			FN
@@ -3526,7 +3526,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 146	CM_D24_M0_18	CM_D24_M0_18	target_condition	Prevotella copri complex prevalence and diversity; Gut microbiome composition in Westernized vs non-Westernized populations	Prevotella copri			TP_wrong
 146	CM_D24_M0_18	CM_D24_M0_18	dna_extraction_kit	PowerSoil DNA Isolation Kit	Qiagen	CMDKIT:0002	CMDKIT:0007	TP_wrong
 146	CM_D24_M0_18	CM_D24_M0_18	sequencing_platform	Illumina HiSeq	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-146	CM_D24_M0_18	CM_D24_M0_18	host_species	Human	Homo sapiens			TP_wrong
+146	CM_D24_M0_18	CM_D24_M0_18	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 147	CM_D26_M0_18	CM_D26_M0_18	subject_id	CM_D26_M0	CM_D26_M0			TP_correct
 147	CM_D26_M0_18	CM_D26_M0_18	sample_id	CM_D26_M0_18	CM_D26_M0_18			TP_correct
 147	CM_D26_M0_18	CM_D26_M0_18	control		Study Control			FN
@@ -3550,7 +3550,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 147	CM_D26_M0_18	CM_D26_M0_18	target_condition	Prevotella copri complex prevalence and diversity; Gut microbiome composition in Westernized vs non-Westernized populations	Prevotella copri			TP_wrong
 147	CM_D26_M0_18	CM_D26_M0_18	dna_extraction_kit	PowerSoil DNA Isolation Kit	Qiagen	CMDKIT:0002	CMDKIT:0007	TP_wrong
 147	CM_D26_M0_18	CM_D26_M0_18	sequencing_platform	Illumina HiSeq	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-147	CM_D26_M0_18	CM_D26_M0_18	host_species	Human	Homo sapiens			TP_wrong
+147	CM_D26_M0_18	CM_D26_M0_18	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 148	CM_D26A_I13_18	CM_D26A_I13_18	subject_id	CM_D26A_I13	CM_D26A_I13			TP_correct
 148	CM_D26A_I13_18	CM_D26A_I13_18	sample_id	CM_D26A_I13_18	CM_D26A_I13_18			TP_correct
 148	CM_D26A_I13_18	CM_D26A_I13_18	control		Study Control			FN
@@ -3574,7 +3574,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 148	CM_D26A_I13_18	CM_D26A_I13_18	target_condition	Prevotella copri complex prevalence and diversity; Gut microbiome composition in Westernized vs non-Westernized populations	Prevotella copri			TP_wrong
 148	CM_D26A_I13_18	CM_D26A_I13_18	dna_extraction_kit	PowerSoil DNA Isolation Kit	Qiagen	CMDKIT:0002	CMDKIT:0007	TP_wrong
 148	CM_D26A_I13_18	CM_D26A_I13_18	sequencing_platform	Illumina HiSeq	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-148	CM_D26A_I13_18	CM_D26A_I13_18	host_species	Human	Homo sapiens			TP_wrong
+148	CM_D26A_I13_18	CM_D26A_I13_18	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 149	CM_D26AB_I1_18	CM_D26AB_I1_18	subject_id	CM_D26AB_I1	CM_D26AB_I1			TP_correct
 149	CM_D26AB_I1_18	CM_D26AB_I1_18	sample_id	CM_D26AB_I1_18	CM_D26AB_I1_18			TP_correct
 149	CM_D26AB_I1_18	CM_D26AB_I1_18	control		Study Control			FN
@@ -3598,7 +3598,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 149	CM_D26AB_I1_18	CM_D26AB_I1_18	target_condition	Prevotella copri complex prevalence and diversity; Gut microbiome composition in Westernized vs non-Westernized populations	Prevotella copri			TP_wrong
 149	CM_D26AB_I1_18	CM_D26AB_I1_18	dna_extraction_kit	PowerSoil DNA Isolation Kit	Qiagen	CMDKIT:0002	CMDKIT:0007	TP_wrong
 149	CM_D26AB_I1_18	CM_D26AB_I1_18	sequencing_platform	Illumina HiSeq	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-149	CM_D26AB_I1_18	CM_D26AB_I1_18	host_species	Human	Homo sapiens			TP_wrong
+149	CM_D26AB_I1_18	CM_D26AB_I1_18	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 150	CM_D26K_I12_18	CM_D26K_I12_18	subject_id	CM_D26K_I12	CM_D26K_I12			TP_correct
 150	CM_D26K_I12_18	CM_D26K_I12_18	sample_id	CM_D26K_I12_18	CM_D26K_I12_18			TP_correct
 150	CM_D26K_I12_18	CM_D26K_I12_18	control		Study Control			FN
@@ -3622,7 +3622,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 150	CM_D26K_I12_18	CM_D26K_I12_18	target_condition	Prevotella copri complex prevalence and diversity; Gut microbiome composition in Westernized vs non-Westernized populations	Prevotella copri			TP_wrong
 150	CM_D26K_I12_18	CM_D26K_I12_18	dna_extraction_kit	PowerSoil DNA Isolation Kit	Qiagen	CMDKIT:0002	CMDKIT:0007	TP_wrong
 150	CM_D26K_I12_18	CM_D26K_I12_18	sequencing_platform	Illumina HiSeq	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-150	CM_D26K_I12_18	CM_D26K_I12_18	host_species	Human	Homo sapiens			TP_wrong
+150	CM_D26K_I12_18	CM_D26K_I12_18	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 151	CM_D33_I1_18	CM_D33_I1_18	subject_id	CM_D33_I1	CM_D33_I1			TP_correct
 151	CM_D33_I1_18	CM_D33_I1_18	sample_id	CM_D33_I1_18	CM_D33_I1_18			TP_correct
 151	CM_D33_I1_18	CM_D33_I1_18	control		Study Control			FN
@@ -3646,7 +3646,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 151	CM_D33_I1_18	CM_D33_I1_18	target_condition	Prevotella copri complex prevalence and diversity; Gut microbiome composition in Westernized vs non-Westernized populations	Prevotella copri			TP_wrong
 151	CM_D33_I1_18	CM_D33_I1_18	dna_extraction_kit	PowerSoil DNA Isolation Kit	Qiagen	CMDKIT:0002	CMDKIT:0007	TP_wrong
 151	CM_D33_I1_18	CM_D33_I1_18	sequencing_platform	Illumina HiSeq	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-151	CM_D33_I1_18	CM_D33_I1_18	host_species	Human	Homo sapiens			TP_wrong
+151	CM_D33_I1_18	CM_D33_I1_18	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 152	CM_D33_M0_18	CM_D33_M0_18	subject_id	CM_D33_M0	CM_D33_M0			TP_correct
 152	CM_D33_M0_18	CM_D33_M0_18	sample_id	CM_D33_M0_18	CM_D33_M0_18			TP_correct
 152	CM_D33_M0_18	CM_D33_M0_18	control		Study Control			FN
@@ -3670,7 +3670,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 152	CM_D33_M0_18	CM_D33_M0_18	target_condition	Prevotella copri complex prevalence and diversity; Gut microbiome composition in Westernized vs non-Westernized populations	Prevotella copri			TP_wrong
 152	CM_D33_M0_18	CM_D33_M0_18	dna_extraction_kit	PowerSoil DNA Isolation Kit	Qiagen	CMDKIT:0002	CMDKIT:0007	TP_wrong
 152	CM_D33_M0_18	CM_D33_M0_18	sequencing_platform	Illumina HiSeq	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-152	CM_D33_M0_18	CM_D33_M0_18	host_species	Human	Homo sapiens			TP_wrong
+152	CM_D33_M0_18	CM_D33_M0_18	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 153	CM_D39_I1_18	CM_D39_I1_18	subject_id	CM_D39_I1	CM_D39_I1			TP_correct
 153	CM_D39_I1_18	CM_D39_I1_18	sample_id	CM_D39_I1_18	CM_D39_I1_18			TP_correct
 153	CM_D39_I1_18	CM_D39_I1_18	control		Study Control			FN
@@ -3694,7 +3694,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 153	CM_D39_I1_18	CM_D39_I1_18	target_condition	Prevotella copri complex prevalence and diversity; Gut microbiome composition in Westernized vs non-Westernized populations	Prevotella copri			TP_wrong
 153	CM_D39_I1_18	CM_D39_I1_18	dna_extraction_kit	PowerSoil DNA Isolation Kit	Qiagen	CMDKIT:0002	CMDKIT:0007	TP_wrong
 153	CM_D39_I1_18	CM_D39_I1_18	sequencing_platform	Illumina HiSeq	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-153	CM_D39_I1_18	CM_D39_I1_18	host_species	Human	Homo sapiens			TP_wrong
+153	CM_D39_I1_18	CM_D39_I1_18	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 154	CM_D39_M0_18	CM_D39_M0_18	subject_id	CM_D39_M0	CM_D39_M0			TP_correct
 154	CM_D39_M0_18	CM_D39_M0_18	sample_id	CM_D39_M0_18	CM_D39_M0_18			TP_correct
 154	CM_D39_M0_18	CM_D39_M0_18	control		Study Control			FN
@@ -3718,7 +3718,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 154	CM_D39_M0_18	CM_D39_M0_18	target_condition	Prevotella copri complex prevalence and diversity; Gut microbiome composition in Westernized vs non-Westernized populations	Prevotella copri			TP_wrong
 154	CM_D39_M0_18	CM_D39_M0_18	dna_extraction_kit	PowerSoil DNA Isolation Kit	Qiagen	CMDKIT:0002	CMDKIT:0007	TP_wrong
 154	CM_D39_M0_18	CM_D39_M0_18	sequencing_platform	Illumina HiSeq	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-154	CM_D39_M0_18	CM_D39_M0_18	host_species	Human	Homo sapiens			TP_wrong
+154	CM_D39_M0_18	CM_D39_M0_18	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 155	CM_D40_I1_18	CM_D40_I1_18	subject_id	CM_D40_I1	CM_D40_I1			TP_correct
 155	CM_D40_I1_18	CM_D40_I1_18	sample_id	CM_D40_I1_18	CM_D40_I1_18			TP_correct
 155	CM_D40_I1_18	CM_D40_I1_18	control		Study Control			FN
@@ -3742,7 +3742,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 155	CM_D40_I1_18	CM_D40_I1_18	target_condition	Prevotella copri complex prevalence and diversity; Gut microbiome composition in Westernized vs non-Westernized populations	Prevotella copri			TP_wrong
 155	CM_D40_I1_18	CM_D40_I1_18	dna_extraction_kit	PowerSoil DNA Isolation Kit	Qiagen	CMDKIT:0002	CMDKIT:0007	TP_wrong
 155	CM_D40_I1_18	CM_D40_I1_18	sequencing_platform	Illumina HiSeq	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-155	CM_D40_I1_18	CM_D40_I1_18	host_species	Human	Homo sapiens			TP_wrong
+155	CM_D40_I1_18	CM_D40_I1_18	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 156	CM_D40_M0_18	CM_D40_M0_18	subject_id	CM_D40_M0	CM_D40_M0			TP_correct
 156	CM_D40_M0_18	CM_D40_M0_18	sample_id	CM_D40_M0_18	CM_D40_M0_18			TP_correct
 156	CM_D40_M0_18	CM_D40_M0_18	control		Study Control			FN
@@ -3766,7 +3766,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 156	CM_D40_M0_18	CM_D40_M0_18	target_condition	Prevotella copri complex prevalence and diversity; Gut microbiome composition in Westernized vs non-Westernized populations	Prevotella copri			TP_wrong
 156	CM_D40_M0_18	CM_D40_M0_18	dna_extraction_kit	PowerSoil DNA Isolation Kit	Qiagen	CMDKIT:0002	CMDKIT:0007	TP_wrong
 156	CM_D40_M0_18	CM_D40_M0_18	sequencing_platform	Illumina HiSeq	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-156	CM_D40_M0_18	CM_D40_M0_18	host_species	Human	Homo sapiens			TP_wrong
+156	CM_D40_M0_18	CM_D40_M0_18	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 157	CM_D43_I1_18	CM_D43_I1_18	subject_id	CM_D43_I1	CM_D43_I1			TP_correct
 157	CM_D43_I1_18	CM_D43_I1_18	sample_id	CM_D43_I1_18	CM_D43_I1_18			TP_correct
 157	CM_D43_I1_18	CM_D43_I1_18	control		Study Control			FN
@@ -3790,7 +3790,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 157	CM_D43_I1_18	CM_D43_I1_18	target_condition	Prevotella copri complex prevalence and diversity; Gut microbiome composition in Westernized vs non-Westernized populations	Prevotella copri			TP_wrong
 157	CM_D43_I1_18	CM_D43_I1_18	dna_extraction_kit	PowerSoil DNA Isolation Kit	Qiagen	CMDKIT:0002	CMDKIT:0007	TP_wrong
 157	CM_D43_I1_18	CM_D43_I1_18	sequencing_platform	Illumina HiSeq	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-157	CM_D43_I1_18	CM_D43_I1_18	host_species	Human	Homo sapiens			TP_wrong
+157	CM_D43_I1_18	CM_D43_I1_18	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 158	CM_D43_M0_18	CM_D43_M0_18	subject_id	CM_D43_M0	CM_D43_M0			TP_correct
 158	CM_D43_M0_18	CM_D43_M0_18	sample_id	CM_D43_M0_18	CM_D43_M0_18			TP_correct
 158	CM_D43_M0_18	CM_D43_M0_18	control		Study Control			FN
@@ -3814,7 +3814,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 158	CM_D43_M0_18	CM_D43_M0_18	target_condition	Prevotella copri complex prevalence and diversity; Gut microbiome composition in Westernized vs non-Westernized populations	Prevotella copri			TP_wrong
 158	CM_D43_M0_18	CM_D43_M0_18	dna_extraction_kit	PowerSoil DNA Isolation Kit	Qiagen	CMDKIT:0002	CMDKIT:0007	TP_wrong
 158	CM_D43_M0_18	CM_D43_M0_18	sequencing_platform	Illumina HiSeq	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-158	CM_D43_M0_18	CM_D43_M0_18	host_species	Human	Homo sapiens			TP_wrong
+158	CM_D43_M0_18	CM_D43_M0_18	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 159	CM_D48_M0_18	CM_D48_M0_18	subject_id	CM_D48_M0	CM_D48_M0			TP_correct
 159	CM_D48_M0_18	CM_D48_M0_18	sample_id	CM_D48_M0_18	CM_D48_M0_18			TP_correct
 159	CM_D48_M0_18	CM_D48_M0_18	control		Study Control			FN
@@ -3838,7 +3838,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 159	CM_D48_M0_18	CM_D48_M0_18	target_condition	Prevotella copri complex prevalence and diversity; Gut microbiome composition in Westernized vs non-Westernized populations	Prevotella copri			TP_wrong
 159	CM_D48_M0_18	CM_D48_M0_18	dna_extraction_kit	PowerSoil DNA Isolation Kit	Qiagen	CMDKIT:0002	CMDKIT:0007	TP_wrong
 159	CM_D48_M0_18	CM_D48_M0_18	sequencing_platform	Illumina HiSeq	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-159	CM_D48_M0_18	CM_D48_M0_18	host_species	Human	Homo sapiens			TP_wrong
+159	CM_D48_M0_18	CM_D48_M0_18	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 160	CM_D50_I1_18	CM_D50_I1_18	subject_id	CM_D50_I1	CM_D50_I1			TP_correct
 160	CM_D50_I1_18	CM_D50_I1_18	sample_id	CM_D50_I1_18	CM_D50_I1_18			TP_correct
 160	CM_D50_I1_18	CM_D50_I1_18	control		Study Control			FN
@@ -3862,7 +3862,7 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 160	CM_D50_I1_18	CM_D50_I1_18	target_condition	Prevotella copri complex prevalence and diversity; Gut microbiome composition in Westernized vs non-Westernized populations	Prevotella copri			TP_wrong
 160	CM_D50_I1_18	CM_D50_I1_18	dna_extraction_kit	PowerSoil DNA Isolation Kit	Qiagen	CMDKIT:0002	CMDKIT:0007	TP_wrong
 160	CM_D50_I1_18	CM_D50_I1_18	sequencing_platform	Illumina HiSeq	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-160	CM_D50_I1_18	CM_D50_I1_18	host_species	Human	Homo sapiens			TP_wrong
+160	CM_D50_I1_18	CM_D50_I1_18	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct
 161	CM_D50_M0_18	CM_D50_M0_18	subject_id	CM_D50_M0	CM_D50_M0			TP_correct
 161	CM_D50_M0_18	CM_D50_M0_18	sample_id	CM_D50_M0_18	CM_D50_M0_18			TP_correct
 161	CM_D50_M0_18	CM_D50_M0_18	control		Study Control			FN
@@ -3886,4 +3886,4 @@ sample_idx	ext_sample_id	gold_sample_id	field	extracted	gold	extracted_harmonize
 161	CM_D50_M0_18	CM_D50_M0_18	target_condition	Prevotella copri complex prevalence and diversity; Gut microbiome composition in Westernized vs non-Westernized populations	Prevotella copri			TP_wrong
 161	CM_D50_M0_18	CM_D50_M0_18	dna_extraction_kit	PowerSoil DNA Isolation Kit	Qiagen	CMDKIT:0002	CMDKIT:0007	TP_wrong
 161	CM_D50_M0_18	CM_D50_M0_18	sequencing_platform	Illumina HiSeq	IlluminaHiSeq	CMDPLAT:0001	CMDPLAT:0001	TP_correct
-161	CM_D50_M0_18	CM_D50_M0_18	host_species	Human	Homo sapiens			TP_wrong
+161	CM_D50_M0_18	CM_D50_M0_18	host_species	Human	Homo sapiens	NCIT:C14225	NCIT:C14225	TP_correct

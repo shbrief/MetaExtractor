@@ -75,6 +75,10 @@ def corpus_csv(field: str) -> pathlib.Path | None:
         # "IlluminaHiSeq" compare as one concept (harmonize/build_custom_enum_corpora.py).
         "sequencing_platform": HERE / "sequencing_platform_corpus.csv",
         "dna_extraction_kit": HERE / "dna_extraction_kit_corpus.csv",
+        # Two NCIt concepts the schema's static.enum names, with NCIt's own synonyms as
+        # alias rows: the curated "Homo sapiens" and the schema's "Human" are one concept
+        # (harmonize/build_host_species_corpus.py).
+        "host_species": HERE / "host_species_corpus.csv",
     }.get(field)
 
 
