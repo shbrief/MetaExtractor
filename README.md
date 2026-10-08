@@ -33,6 +33,24 @@ pip install -e ".[supplementary]"
 Requires `ANTHROPIC_API_KEY` in your environment (the web app also accepts a
 key pasted into the browser).
 
+### Developing
+
+`uv.lock` pins the full development environment, which is what CI installs:
+
+```bash
+uv sync --dev          # exact locked versions
+uv run pytest          # 228 tests, ~2 s, no network and no API key needed
+uv run ruff check .
+```
+
+`pip install -e ".[dev]"` also works and resolves freely rather than from the
+lock. Tests that reach a real network service are marked `network` and
+deselected by default; run them with `pytest -m network`.
+
+The lock constrains `anthropic` to the version both frozen benchmark trees were
+produced with, so a benchmark re-run measures a code change and not an SDK
+upgrade — see the comment on `[tool.uv]` in `pyproject.toml`.
+
 ## Web app
 
 A Streamlit UI wraps the library around its three key inputs — **target study**,

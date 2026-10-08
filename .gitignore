@@ -1,4 +1,6 @@
 # Python
+# uv-managed virtualenv (uv writes its own .venv/.gitignore too; belt and braces)
+.venv/
 __pycache__/
 *.pyc
 *.egg-info/

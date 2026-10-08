@@ -23,10 +23,23 @@ app = ["streamlit>=1.32", "PyYAML>=6.0", "pypdf>=4.0", "openpyxl>=3.1", "pdfplum
 # Kept as an extra as well as a dependency group below, so the long-documented
 # `pip install -e '.[dev]'` keeps working on any pip. The group is what `uv sync
 # --dev` reads; the two lists must be edited together.
-dev = ["pytest>=8", "ruff>=0.5", "PyYAML>=6.0", "openpyxl>=3.1", "pdfplumber>=0.11", "pypdf>=4.0", "rapidfuzz>=3.6"]
+dev = ["pytest>=8", "ruff>=0.5", "PyYAML>=6.0", "openpyxl>=3.1", "pdfplumber>=0.11", "pypdf>=4.0", "rapidfuzz>=3.6", "pandas>=2.0"]
 
 [dependency-groups]
-dev = ["pytest>=8", "ruff>=0.5", "PyYAML>=6.0", "openpyxl>=3.1", "pdfplumber>=0.11", "pypdf>=4.0", "rapidfuzz>=3.6"]
+dev = ["pytest>=8", "ruff>=0.5", "PyYAML>=6.0", "openpyxl>=3.1", "pdfplumber>=0.11", "pypdf>=4.0", "rapidfuzz>=3.6", "pandas>=2.0"]
+
+[tool.uv]
+# Both frozen benchmark trees (out_v3, out_v4) and every number the manuscript
+# reports were produced with anthropic 0.104.1, recorded per attempt as
+# `anthropic_sdk` in each <study>.meta.json. A fresh resolve picks 1.12.1, a major
+# version jump.
+#
+# This constrains the *development and CI environment* only -- [project.dependencies]
+# stays permissive, so the published package still declares anthropic>=0.40.0. The
+# point is that the next benchmark re-run must differ from out_v4 by the code under
+# test and nothing else; an SDK upgrade is its own change, with its own run.
+# Lifting this pin is therefore a deliberate, separately measured step.
+constraint-dependencies = ["anthropic==0.104.1"]
 
 [project.scripts]
 metaextract = "metaextractor.cli:main"
