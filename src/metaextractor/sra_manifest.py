@@ -119,6 +119,11 @@ class ManifestResult:
     n_runs: int = 0
     warnings: list[str] = field(default_factory=list)
     source: str | None = None  # human-readable provenance, or None if nothing found
+    #: Audit trail of the project-resolution decision: which rule fired, the
+    #: scored candidates it chose between, and whether the choice was contested.
+    #: See :func:`resolve_projects`. Empty when ``explicit_project`` bypassed
+    #: resolution.
+    resolution: dict = field(default_factory=dict)
 
 
 def _default_http_get(url: str) -> bytes:
@@ -175,6 +180,7 @@ def _resolve_to_project(acc: str, http_get: HttpGet) -> list[str]:
 def resolve_projects(
     accessions: list[Accession],
     http_get: HttpGet | None = None,
+    audit: dict | None = None,
 ) -> tuple[list[str], list[str]]:
     """Pick the study's own project accession(s) from extracted accessions.
 
@@ -188,23 +194,61 @@ def resolve_projects(
 
     When several distinct projects compete with no data-availability signal to
     disambiguate, we return nothing and warn, rather than guess.
+
+    Args:
+        audit: when given, mutated in place to record **which rule decided and on
+            what evidence** -- ``rule``, the per-accession ``candidates`` with
+            their ``context_score`` and ``count``, and for rule 1 whether the
+            score tie-break was contested.
+
+            This exists because the confident branches warned about nothing: only
+            the ambiguous ones left a trace, and ``Accession.context_score`` was
+            never persisted, so there was no way to tell how often rule 1's
+            tie-break picked right. The score is a count of hand-written phrases
+            in a 250-character window, not a probability, which is exactly the
+            shape a calibrated judgment would replace -- but it has to be
+            measurable before it is worth replacing.
     """
     http_get = http_get or _default_http_get
     warnings: list[str] = []
     projects = [a for a in accessions if a.kind == "bioproject"]
+    if audit is not None:
+        audit["candidates"] = [
+            {"value": a.value, "kind": a.kind,
+             "context_score": a.context_score, "count": a.count}
+            for a in sorted(accessions,
+                            key=lambda a: (-a.context_score, -a.count, a.value))
+        ]
+        audit["n_bioprojects"] = len(_dedup([a.value for a in projects]))
 
     # 1. BioProjects in data-availability context.
     in_context = [a for a in projects if a.context_score > 0]
     if in_context:
         top = max(a.context_score for a in in_context)
         chosen = [a.value for a in in_context if a.context_score == top]
+        if audit is not None:
+            runners_up = sorted({a.context_score for a in in_context} - {top},
+                                reverse=True)
+            audit.update(
+                rule="bioproject_in_context",
+                top_score=top,
+                n_at_top=len(_dedup(chosen)),
+                # A contested tie-break is the case worth auditing: several
+                # BioProjects scored equally, or the runner-up was close.
+                contested=len(_dedup(chosen)) > 1,
+                margin=(top - runners_up[0]) if runners_up else None,
+            )
         return _dedup(chosen), warnings
 
     # 2. A single unambiguous BioProject (no context, but no competition either).
     if projects:
         distinct = _dedup([a.value for a in projects])
         if len(distinct) == 1:
+            if audit is not None:
+                audit.update(rule="single_bioproject_no_context", contested=False)
             return distinct, warnings
+        if audit is not None:
+            audit.update(rule="abstain_multiple_bioprojects", contested=True)
         warnings.append(
             f"Multiple BioProjects with no data-availability context "
             f"({', '.join(distinct[:5])}); not guessing which is the study's own."
@@ -223,6 +267,10 @@ def resolve_projects(
             if proj not in resolved:
                 resolved.append(proj)
     if resolved:
+        if audit is not None:
+            audit.update(rule="resolved_via_ena", n_resolved=len(resolved),
+                         contested=len(resolved) > 1,
+                         resolved_from=[a.value for a in resolvable[:8]])
         if len(resolved) > 1:
             warnings.append(
                 f"Data-availability accessions resolved to multiple projects "
@@ -230,6 +278,8 @@ def resolve_projects(
             )
         return resolved, warnings
 
+    if audit is not None:
+        audit.update(rule="abstain_nothing_resolvable", contested=False)
     return [], warnings
 
 
@@ -393,9 +443,12 @@ def manifest_for_paper(
 
     if explicit_project:
         projects = [explicit_project.strip()]
+        result.resolution = {"rule": "explicit_override", "contested": False}
     else:
         accs = extract_dataset_accessions(text)
-        projects, warns = resolve_projects(accs, http_get)
+        audit: dict = {}
+        projects, warns = resolve_projects(accs, http_get, audit=audit)
+        result.resolution = audit
         result.warnings.extend(warns)
         if not projects:
             return result

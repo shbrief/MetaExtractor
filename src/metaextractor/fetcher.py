@@ -72,6 +72,10 @@ class FetchedPaper:
     # else None. Warnings record ambiguous/failed resolution.
     sra_manifest_source: str | None = None
     sra_manifest_warnings: list[str] = field(default_factory=list)
+    #: Which rule chose the study's project, and the scored candidates it chose
+    #: between (see sra_manifest.resolve_projects). Recorded so the accuracy of
+    #: that choice is measurable; nothing reads it during extraction.
+    sra_manifest_resolution: dict = field(default_factory=dict)
     # One entry per retrieval rung actually attempted, in order:
     # {"rung", "returned_text", "is_body", "chars"} — an audit of which sources
     # were tried and what each yielded at fetch time.
@@ -678,6 +682,7 @@ def fetch_paper(
         mres = manifest_for_paper(paper.text, explicit_project=sra_project,
                                   biosample_attributes=include_biosample_attributes)
         paper.sra_manifest_warnings = list(mres.warnings)
+        paper.sra_manifest_resolution = dict(mres.resolution)
         if mres.table is not None:
             paper.supplementary_tables.append(mres.table)
             paper.sra_manifest_source = mres.source
@@ -720,6 +725,7 @@ def save_fetched(paper: FetchedPaper, directory) -> dict:
         "supplementary_skipped": paper.supplementary_skipped,
         "sra_manifest_source": paper.sra_manifest_source,
         "sra_manifest_warnings": paper.sra_manifest_warnings,
+        "sra_manifest_resolution": paper.sra_manifest_resolution,
         "n_tables": len(tables), "text_chars": len(paper.text),
         "text_sha256": hashlib.sha256(text_bytes).hexdigest(),
         "tables_sha256": hashlib.sha256(tables_bytes).hexdigest(),
@@ -756,6 +762,7 @@ def load_fetched(directory) -> FetchedPaper:
         supplementary_tables=[Table(**t) for t in json.loads(tables_bytes)],
         sra_manifest_source=record.get("sra_manifest_source"),
         sra_manifest_warnings=record.get("sra_manifest_warnings") or [],
+        sra_manifest_resolution=record.get("sra_manifest_resolution") or {},
         retrieval_attempts=record.get("retrieval_attempts") or [],
         doi=record.get("doi"),
     )

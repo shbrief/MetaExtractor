@@ -156,3 +156,92 @@ class TestManifestForPaper:
         renamed = apply_mapping(res.table.rows, m)
         assert renamed[0]["ncbi_accession"] == "ERR636354"
         assert renamed[0]["sequencing_platform"] == "Illumina HiSeq 2000"
+
+
+# ---------------------------------------------------------------------------
+# Project-resolution audit trail
+# ---------------------------------------------------------------------------
+
+class TestResolutionAudit:
+    """resolve_projects records which rule decided and on what evidence.
+
+    Before this, only the *ambiguous* branches warned: the confident ones left no
+    trace and Accession.context_score was never persisted, so there was no way to
+    tell how often rule 1's score tie-break picked right.
+    """
+
+    def _accs(self, *specs):
+        from metaextractor.sra_manifest import Accession
+        return [Accession(value=v, kind=k, context_score=s, count=c)
+                for v, k, s, c in specs]
+
+    def test_records_the_rule_and_the_scored_candidates(self):
+        from metaextractor.sra_manifest import resolve_projects
+        audit = {}
+        projects, _ = resolve_projects(
+            self._accs(("PRJNA1", "bioproject", 3, 1),
+                       ("PRJNA2", "bioproject", 1, 2)),
+            http_get=lambda url: b"", audit=audit)
+        assert projects == ["PRJNA1"]
+        assert audit["rule"] == "bioproject_in_context"
+        assert audit["top_score"] == 3
+        assert audit["contested"] is False
+        assert audit["margin"] == 2
+        assert audit["n_bioprojects"] == 2
+        assert [c["value"] for c in audit["candidates"]] == ["PRJNA1", "PRJNA2"]
+
+    def test_flags_a_contested_tie_break(self):
+        """Two projects at the same score: the case most likely to be wrong."""
+        from metaextractor.sra_manifest import resolve_projects
+        audit = {}
+        projects, _ = resolve_projects(
+            self._accs(("PRJNA1", "bioproject", 4, 1),
+                       ("PRJNA2", "bioproject", 4, 1)),
+            http_get=lambda url: b"", audit=audit)
+        assert sorted(projects) == ["PRJNA1", "PRJNA2"]
+        assert audit["contested"] is True
+        assert audit["n_at_top"] == 2
+        assert audit["margin"] is None
+
+    def test_records_the_single_unambiguous_rule(self):
+        from metaextractor.sra_manifest import resolve_projects
+        audit = {}
+        projects, _ = resolve_projects(
+            self._accs(("PRJNA1", "bioproject", 0, 1)),
+            http_get=lambda url: b"", audit=audit)
+        assert projects == ["PRJNA1"]
+        assert audit["rule"] == "single_bioproject_no_context"
+        assert audit["contested"] is False
+
+    def test_records_an_abstention_on_competing_bioprojects(self):
+        from metaextractor.sra_manifest import resolve_projects
+        audit = {}
+        projects, warns = resolve_projects(
+            self._accs(("PRJNA1", "bioproject", 0, 1),
+                       ("PRJNA2", "bioproject", 0, 1)),
+            http_get=lambda url: b"", audit=audit)
+        assert projects == []            # a missing manifest is safe, a wrong one is not
+        assert warns
+        assert audit["rule"] == "abstain_multiple_bioprojects"
+        assert audit["contested"] is True
+
+    def test_records_an_abstention_when_nothing_resolves(self):
+        from metaextractor.sra_manifest import resolve_projects
+        audit = {}
+        projects, _ = resolve_projects([], http_get=lambda url: b"", audit=audit)
+        assert projects == []
+        assert audit["rule"] == "abstain_nothing_resolvable"
+
+    def test_audit_is_optional_and_changes_no_decision(self):
+        from metaextractor.sra_manifest import resolve_projects
+        accs = self._accs(("PRJNA1", "bioproject", 3, 1), ("PRJNA2", "bioproject", 1, 1))
+        with_audit, _ = resolve_projects(accs, http_get=lambda u: b"", audit={})
+        without, _ = resolve_projects(accs, http_get=lambda u: b"")
+        assert with_audit == without
+
+    def test_explicit_project_records_the_override(self):
+        from metaextractor.sra_manifest import manifest_for_paper
+        res = manifest_for_paper("no accessions here",
+                                 explicit_project="PRJEB1",
+                                 http_get=lambda url: b"")
+        assert res.resolution["rule"] == "explicit_override"
