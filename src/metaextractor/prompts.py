@@ -1,4 +1,7 @@
 """System prompt — the extractor's contract. Kept stable so prompt caching hits."""
+from __future__ import annotations
+
+from metaextractor.model import TextBlock
 
 SYSTEM_PROMPT = """You are a biomedical metadata extractor. Your job is to extract values
 from a research paper according to a user-provided schema, with full
@@ -93,13 +96,14 @@ def build_user_content(
     schema_json: dict,
     paper_id: str | None,
     sample_ids: list[str] | None = None,
-) -> list[dict]:
-    """Return Anthropic-style content blocks for the user message.
+) -> list[TextBlock]:
+    """Return the content blocks for the user message.
 
-    The paper block (large, shared across batches) carries a cache_control
-    breakpoint so subsequent batches with the same paper hit the prefix
-    cache; the schema block (small, varies per batch) sits past the
-    breakpoint and is sent fresh each call.
+    The paper block (large, shared across batches) is marked ``cache=True`` so
+    subsequent batches with the same paper hit the prefix cache; the schema
+    block (small, varies per batch) sits past the breakpoint and is sent fresh
+    each call. ``metaextractor.model`` translates the markers to the provider's
+    wire shape -- see :func:`metaextractor.model._to_blocks`.
     """
     import json
 
@@ -127,6 +131,6 @@ def build_user_content(
             "extract for a given sample. Do not invent additional samples and do not omit any."
         )
     return [
-        {"type": "text", "text": paper_block_text, "cache_control": {"type": "ephemeral"}},
-        {"type": "text", "text": schema_block_text},
+        TextBlock(paper_block_text, cache=True),
+        TextBlock(schema_block_text),
     ]

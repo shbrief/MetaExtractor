@@ -19,6 +19,7 @@ from metaextractor.column_mapper import (
     join_tables,
     map_columns_with_leaf_labels,
 )
+from metaextractor.model import _to_blocks
 from metaextractor.output import ExtractionResult, TableSelection
 from metaextractor.prompts import SYSTEM_PROMPT, build_user_content
 from metaextractor.sample_rules import (
@@ -303,7 +304,12 @@ class MetaExtractor:
                         "cache_control": {"type": "ephemeral"},
                     }
                 ],
-                messages=[{"role": "user", "content": user_content}],
+                # build_user_content now returns TextBlocks; _to_blocks renders them
+                # to the provider wire shape. This conversion moves behind the Model
+                # seam in the next commit -- here it is deliberately inline so that
+                # the content-shape change is reviewable apart from the control-flow
+                # change, and the golden payload test passes with no edits at all.
+                messages=[{"role": "user", "content": _to_blocks(user_content)}],
             ) as stream:
                 response = stream.get_final_message()
 
