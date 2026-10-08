@@ -34,18 +34,18 @@ both, plus the *recoverable* cells that harmonization flips ``TP_wrong`` →
 from __future__ import annotations
 
 import csv
-import json
-from collections import Counter, defaultdict
+from collections import defaultdict
+from collections.abc import Callable, Mapping
 from dataclasses import dataclass, field
 from pathlib import Path
-from typing import Any, Callable, Literal, Mapping
+from typing import Any, Literal
+
+from metaextractor.output import ExtractionResult
 
 #: A value canonicalizer: ``(raw_value, field_name) -> canonical value``.
 #: Applied to both extracted and gold values before comparison to score the
 #: harmonized (end-to-end) pipeline. ``None`` means identity (raw extraction).
 Canonicalizer = Callable[[Any, str], Any]
-
-from metaextractor.output import ExtractionResult
 
 Decision = Literal["TN", "TP_correct", "TP_wrong", "FN", "FP"]
 
@@ -616,7 +616,8 @@ class ComparisonResult:
         if self.recoverable_count > max_recoverable:
             lines.append(f"    … +{self.recoverable_count - max_recoverable} more")
         lines += ["", "=== RAW (verbatim) ===", "", self.raw.summary(max_mismatches=max_mismatches),
-                  "", "=== HARMONIZED ===", "", self.harmonized.summary(max_mismatches=max_mismatches)]
+                  "", "=== HARMONIZED ===", "",
+                  self.harmonized.summary(max_mismatches=max_mismatches)]
         return "\n".join(lines)
 
 
@@ -701,7 +702,9 @@ def _per_sample_value(
     return study.get("value")
 
 
-def _faithfulness_checks(study_fields: Mapping[str, Any], paper_text: str | None) -> FaithfulnessReport:
+def _faithfulness_checks(
+    study_fields: Mapping[str, Any], paper_text: str | None
+) -> FaithfulnessReport:
     report = FaithfulnessReport()
     paper_lc = paper_text.lower() if paper_text else None
 
@@ -738,7 +741,8 @@ def _format_row(fm: FieldMetrics) -> str:
     return (
         f"{fm.label:<22} N={fm.n:<3} TN={fm.tn:<3} TPc={fm.tp_correct:<3} TPw={fm.tp_wrong:<3} "
         f"FN={fm.fn:<3} FP={fm.fp:<3}  "
-        f"valueP={fmt(fm.value_precision)} valueR={fmt(fm.value_recall)} valueF1={fmt(fm.value_f1)}  "
+        f"valueP={fmt(fm.value_precision)} valueR={fmt(fm.value_recall)} "
+        f"valueF1={fmt(fm.value_f1)}  "
         f"presenceP={fmt(fm.presence_precision)} presenceR={fmt(fm.presence_recall)} "
         f"valAcc={fmt(fm.value_accuracy)} totalAcc={fmt(fm.total_accuracy)}"
     )

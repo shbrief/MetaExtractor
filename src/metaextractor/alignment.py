@@ -28,8 +28,9 @@ be reported separately.
 from __future__ import annotations
 
 import re
+from collections.abc import Iterable, Mapping, Sequence
 from dataclasses import dataclass, field
-from typing import Any, Iterable, Mapping, Sequence
+from typing import Any
 
 NR_KEY_TOKENS = frozenset({"", "na", "nan", "none", "null", "not_reported", "n/a"})
 _SPLIT = re.compile(r"[;,\s]+")

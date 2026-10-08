@@ -41,7 +41,6 @@ from pydantic import BaseModel, Field, ValidationError
 
 from metaextractor.supplementary import Table
 
-
 # --------------------------------------------------------------------------- #
 # Feature-matrix detection
 # --------------------------------------------------------------------------- #
@@ -376,7 +375,8 @@ def execute_plan(table: Table, plan: TablePlan) -> Table:
     for ri in plan.header_rows:
         if ri < 0 or ri >= n_rows:
             raise PlanExecutionError(
-                f"Table {table.name!r}: header_rows={plan.header_rows} out of bounds (n_rows={n_rows})."
+                f"Table {table.name!r}: header_rows={plan.header_rows} "
+                f"out of bounds (n_rows={n_rows})."
             )
     if plan.data_starts_at >= n_rows:
         raise PlanExecutionError(

@@ -37,7 +37,7 @@ class FieldResult(BaseModel):
     notes: str | None = None
 
     @model_validator(mode="after")
-    def _location_required_for_reported_values(self) -> "FieldResult":
+    def _location_required_for_reported_values(self) -> FieldResult:
         if _is_absent(self.value):
             return self
         missing = [s for s in LOCATION_SLOTS if getattr(self, s) is None]

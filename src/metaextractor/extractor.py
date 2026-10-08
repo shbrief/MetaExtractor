@@ -28,7 +28,6 @@ from metaextractor.sample_rules import (
     normalize_age_bounds,
 )
 from metaextractor.schema import Field, Schema
-from metaextractor.supplementary import Table
 from metaextractor.table_plan import (
     PlanExecutionError,
     PlanProposalError,
@@ -187,7 +186,8 @@ class MetaExtractor:
             )
 
         sample_ids: list[str] | None = None
-        if self.sample_discovery and det_samples is None and "--- SUPPLEMENTARY FILE:" in paper_text:
+        if (self.sample_discovery and det_samples is None
+                and "--- SUPPLEMENTARY FILE:" in paper_text):
             sample_ids = self._discover_sample_ids(paper_text, paper_id)
 
         if len(schema_obj.fields) <= self.batch_size:
@@ -311,8 +311,10 @@ class MetaExtractor:
                 self.last_response_models.add(str(response.model))
             u = response.usage
             self.last_usage["input_tokens"] += getattr(u, "input_tokens", 0) or 0
-            self.last_usage["cache_creation_input_tokens"] += getattr(u, "cache_creation_input_tokens", 0) or 0
-            self.last_usage["cache_read_input_tokens"] += getattr(u, "cache_read_input_tokens", 0) or 0
+            self.last_usage["cache_creation_input_tokens"] += (
+                getattr(u, "cache_creation_input_tokens", 0) or 0)
+            self.last_usage["cache_read_input_tokens"] += (
+                getattr(u, "cache_read_input_tokens", 0) or 0)
             self.last_usage["output_tokens"] += getattr(u, "output_tokens", 0) or 0
             self.last_usage["n_calls"] += 1
             stop_reason = getattr(response, "stop_reason", None)
@@ -537,7 +539,8 @@ class MetaExtractor:
             )
         return merged, warnings, selections
 
-    def _map_columns(self, table, schema_field_names: list[str], is_manifest: bool) -> ColumnMapping:
+    def _map_columns(self, table, schema_field_names: list[str],
+                     is_manifest: bool) -> ColumnMapping:
         """Header text → schema fields with the lexical cascade (a column named by a stacked
         header path is also tried by its unique bottom label); a manifest's columns use
         the fixed ENA map (ENA read_run fields and standard INSDC attribute names)."""

@@ -26,7 +26,8 @@ def test_execute_plan_records_bottom_labels_of_stacked_headers():
            ["", "Sample ID", "Insert size (bp)"],
            ["Control", "nHF511704", "300"]]
     out = execute_plan(_raw_table(raw), TablePlan(header_rows=[0, 1], data_starts_at=2))
-    assert out.columns == ["Stage", "Data production | Sample ID", "Data production | Insert size (bp)"]
+    assert out.columns == ["Stage", "Data production | Sample ID",
+                           "Data production | Insert size (bp)"]
     assert out.leaf_labels == {"Data production | Sample ID": "Sample ID",
                                "Data production | Insert size (bp)": "Insert size (bp)"}
 
@@ -39,7 +40,8 @@ def test_single_row_header_has_no_leaf_labels():
 
 def test_unique_bottom_label_maps_when_full_path_does_not():
     cols = ["Stage", "Data production | Sample ID", "Data production | Insert size (bp)"]
-    m = map_columns_with_leaf_labels(cols, {cols[1]: "Sample ID", cols[2]: "Insert size (bp)"}, FIELDS)
+    m = map_columns_with_leaf_labels(
+        cols, {cols[1]: "Sample ID", cols[2]: "Insert size (bp)"}, FIELDS)
     assert m.mapped == {"Data production | Sample ID": "sample_id"}
     assert m.tier_used["Data production | Sample ID"] == "leaf:normalized"
     assert "Data production | Sample ID" not in m.unmapped

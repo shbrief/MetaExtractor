@@ -137,7 +137,8 @@ def _numeric_body_density(table: Table) -> float:
     return numeric / total if total else 0.0
 
 
-def _name_match(field_obj: Field, columns: list[str], col_tokens: dict[str, set[str]]) -> str | None:
+def _name_match(field_obj: Field, columns: list[str],
+                col_tokens: dict[str, set[str]]) -> str | None:
     """Best column matching a field by name, with the description as fallback vocab.
 
     Two forms, whichever is stronger: the field *name* tokens covered by the

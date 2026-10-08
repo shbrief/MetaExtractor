@@ -9,6 +9,7 @@ fix the join anchored on the first key-holding table (the 9k-row dump); now it
 anchors on the higher-relevance study table.
 """
 import pytest
+
 from metaextractor.extractor import MetaExtractor
 from metaextractor.schema import Schema
 from metaextractor.supplementary import Table

@@ -63,13 +63,15 @@ def test_ena_manifest_uses_fixed_map_without_plan():
     assert s["host_species"] == "Homo sapiens"
     assert s["body_site"] == ""          # from the empty host_body_site; never from country
     assert ex.last_table_sources["country"] == "manifest:PRJEB7369_ena_manifest.tsv:country"
-    assert ex.last_table_sources["body_site"] == "manifest:PRJEB7369_ena_manifest.tsv:host_body_site"
+    assert (ex.last_table_sources["body_site"]
+            == "manifest:PRJEB7369_ena_manifest.tsv:host_body_site")
     assert any("ENA run manifest read as is" in w for w in warnings)
 
 
 def test_figure_source_data_is_skipped_before_any_plan():
     t = _table("41564_2023_1355_MOESM4_ESM.xlsx::Source_data_for_Suppl_Figure_2b",
-               ["sample_id", "country"], [{"sample_id": f"S{i}", "country": "China"} for i in range(9)])
+               ["sample_id", "country"],
+               [{"sample_id": f"S{i}", "country": "China"} for i in range(9)])
     ex = MetaExtractor(client=_NoCallClient())
     samples, _, selections = ex._build_samples_from_tables([t], _schema())
     assert samples == []

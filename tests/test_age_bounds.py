@@ -8,7 +8,8 @@ RULES = AgeBoundRules(
     group_bounds={"Adult": (18, 65), "Elderly": (65, None), "Infant": (0, 2)},
 )
 SCHEMA = Schema(fields=[Field(name=n, description=n, type="string")
-                        for n in ("age", "age_unit", "age_years", "age_group", "age_min", "age_max")])
+                        for n in ("age", "age_unit", "age_years", "age_group",
+                                  "age_min", "age_max")])
 
 
 def _fr(value):

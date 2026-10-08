@@ -1,6 +1,6 @@
 from metaextractor.extractor import MetaExtractor, extract
-from metaextractor.schema import Field, Schema
 from metaextractor.output import ExtractionResult, FieldResult
+from metaextractor.schema import Field, Schema
 from metaextractor.writers import to_csv
 
 __all__ = [

@@ -1,5 +1,4 @@
 """Tests for metaextractor.column_mapper."""
-import pytest
 from metaextractor.column_mapper import (
     ColumnMapping,
     apply_mapping,

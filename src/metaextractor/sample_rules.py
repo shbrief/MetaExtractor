@@ -271,7 +271,7 @@ class AgeBoundRules:
     justification: str = ""
 
     @classmethod
-    def from_dict(cls, d: dict[str, Any]) -> "AgeBoundRules":
+    def from_dict(cls, d: dict[str, Any]) -> AgeBoundRules:
         kw: dict[str, Any] = {k: d[k] for k in (
             "min_field", "max_field", "age_fields", "group_field",
             "assume_years_when_unit_missing", "justification") if k in d}
@@ -282,7 +282,7 @@ class AgeBoundRules:
         return cls(**kw)
 
     @classmethod
-    def from_json(cls, path: str | Path) -> "AgeBoundRules":
+    def from_json(cls, path: str | Path) -> AgeBoundRules:
         return cls.from_dict(json.loads(Path(path).read_text(encoding="utf-8")))
 
 

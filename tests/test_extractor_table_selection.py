@@ -4,6 +4,7 @@ Both input tables fail the relevance gate (one matrix, one irrelevant), so
 the LLM ``propose_plan`` path is never reached — the client asserts if called.
 """
 import pytest
+
 from metaextractor.extractor import MetaExtractor
 from metaextractor.schema import Schema
 from metaextractor.supplementary import Table

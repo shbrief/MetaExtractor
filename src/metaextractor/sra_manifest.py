@@ -34,8 +34,8 @@ from __future__ import annotations
 import concurrent.futures as cf
 import json
 import re
+from collections.abc import Callable
 from dataclasses import dataclass, field
-from typing import Callable
 
 from metaextractor.supplementary import Table
 

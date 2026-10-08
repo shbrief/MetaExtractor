@@ -1,10 +1,9 @@
 """Tests for metaextractor.supplementary — table parsing helpers."""
 import csv
 import io
-import pytest
+
 from metaextractor import supplementary as supp
 from metaextractor.supplementary import (
-    Table,
     _csv_to_tables,
     _list_s3_files,
     _rows_to_table,

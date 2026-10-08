@@ -14,7 +14,8 @@ from metaextractor.output import ExtractionResult, FieldResult
 from metaextractor.sample_rules import fan_out_fields_to_samples
 from metaextractor.schema_loader import load_schema_file
 
-SCHEMA = Path(__file__).resolve().parents[1] / "benchmarks" / "cmd_sonnet5" / "cmd.clean.linkml.yaml"
+SCHEMA = (Path(__file__).resolve().parents[1]
+          / "benchmarks" / "cmd_sonnet5" / "cmd.clean.linkml.yaml")
 
 
 def test_scope_and_propagation_annotations():

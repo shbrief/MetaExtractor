@@ -324,7 +324,8 @@ _PMC_BODY_START = re.compile(r'<section\b[^>]*class="[^"]*\bmain-article-body\b[
 _PMC_BODY_END = re.compile(r'<section\b[^>]*class="[^"]*\bref-list\b|<footer\b')
 _PMC_DROP = re.compile(r"<(script|style|figure|table|svg|button|noscript|select|form)\b.*?</\1\s*>",
                        re.IGNORECASE | re.DOTALL)
-_PMC_BLOCK = re.compile(r"</?(?:p|h[1-6]|li|section|div|br|figcaption|caption)\b[^>]*>", re.IGNORECASE)
+_PMC_BLOCK = re.compile(
+    r"</?(?:p|h[1-6]|li|section|div|br|figcaption|caption)\b[^>]*>", re.IGNORECASE)
 _TAG = re.compile(r"<[^>]+>")
 
 

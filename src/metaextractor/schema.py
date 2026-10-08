@@ -3,7 +3,8 @@ from __future__ import annotations
 
 from typing import Any, Literal
 
-from pydantic import BaseModel, Field as PydField, field_validator
+from pydantic import BaseModel, field_validator
+from pydantic import Field as PydField
 
 FieldType = Literal["string", "number", "enum", "boolean", "list"]
 #: Whether a field describes the whole study or an individual sample. Governs
@@ -43,7 +44,7 @@ class Schema(BaseModel):
     fields: list[Field] = PydField(min_length=1)
 
     @classmethod
-    def from_dict(cls, data: dict[str, Any] | list[dict[str, Any]]) -> "Schema":
+    def from_dict(cls, data: dict[str, Any] | list[dict[str, Any]]) -> Schema:
         if isinstance(data, list):
             return cls(fields=[Field(**f) for f in data])
         if "fields" in data:
@@ -51,7 +52,8 @@ class Schema(BaseModel):
         raise ValueError("Schema dict must contain 'fields' key or be a list of fields")
 
     def to_prompt_json(self) -> dict[str, Any]:
-        # ``scope``, ``propagate_study_value``, and ``unit_of`` drive deterministic post-processing only;
-        # they are not sent to the model.
-        return {"fields": [f.model_dump(exclude_none=True, exclude={"scope", "propagate_study_value", "unit_of"})
+        # ``scope``, ``propagate_study_value``, and ``unit_of`` drive deterministic
+        # post-processing only; they are not sent to the model.
+        return {"fields": [f.model_dump(exclude_none=True,
+                                        exclude={"scope", "propagate_study_value", "unit_of"})
                            for f in self.fields]}

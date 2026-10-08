@@ -96,8 +96,10 @@ def test_table_path_fills_sample_level_fields_from_attributes():
     ex = MetaExtractor(client=NoCall())
     samples, _, _ = ex._build_samples_from_tables([res.table], schema)
     by_run = {s["ncbi_accession"]: s for s in samples}
-    assert by_run["SRR12455507"]["treatment"] == "MTX" and by_run["SRR12455516"]["treatment"] == "naive"
-    assert by_run["SRR12455507"]["sex"] == "female"          # filled BioSample sex, not empty host_sex
+    assert by_run["SRR12455507"]["treatment"] == "MTX"
+    assert by_run["SRR12455516"]["treatment"] == "naive"
+    # filled BioSample sex, not empty host_sex
+    assert by_run["SRR12455507"]["sex"] == "female"
     assert ex.last_table_sources["treatment"].endswith(":treatment")
 
 

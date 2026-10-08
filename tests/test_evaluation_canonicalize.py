@@ -9,7 +9,6 @@ cells. Sample cells may also carry a ``{value, normalized_value}`` split that
 """
 from metaextractor.evaluation import evaluate, evaluate_both
 
-
 FIELD_MAP = {"sex": "sex"}
 GOLD = [{"sample_id": "S1", "sex": "female"}]
 
