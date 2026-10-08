@@ -960,6 +960,7 @@ app = [
     { name = "streamlit" },
 ]
 dev = [
+    { name = "jsonschema" },
     { name = "openpyxl" },
     { name = "pandas", version = "2.3.3", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version < '3.11'" },
     { name = "pandas", version = "3.0.6", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.11'" },
@@ -985,6 +986,7 @@ supplementary = [
 
 [package.dev-dependencies]
 dev = [
+    { name = "jsonschema" },
     { name = "openpyxl" },
     { name = "pandas", version = "2.3.3", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version < '3.11'" },
     { name = "pandas", version = "3.0.6", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.11'" },
@@ -1000,6 +1002,7 @@ dev = [
 [package.metadata]
 requires-dist = [
     { name = "anthropic", specifier = ">=0.40.0" },
+    { name = "jsonschema", marker = "extra == 'dev'", specifier = ">=4.0" },
     { name = "openpyxl", marker = "extra == 'app'", specifier = ">=3.1" },
     { name = "openpyxl", marker = "extra == 'dev'", specifier = ">=3.1" },
     { name = "openpyxl", marker = "extra == 'supplementary'", specifier = ">=3.1" },
@@ -1024,6 +1027,7 @@ provides-extras = ["pdf", "linkml", "supplementary", "app", "dev"]
 
 [package.metadata.requires-dev]
 dev = [
+    { name = "jsonschema", specifier = ">=4.0" },
     { name = "openpyxl", specifier = ">=3.1" },
     { name = "pandas", specifier = ">=2.0" },
     { name = "pdfplumber", specifier = ">=0.11" },

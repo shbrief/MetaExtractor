@@ -1,0 +1,65 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/OmicsMLRepo/MetaExtractor/schemas/review_verdict.schema.json",
+  "title": "MetaExtractor review verdict file",
+  "description": "What one reviewer returned for one draft. Pinned to the draft by SHA-256: a verdict file is only meaningful against the exact extraction it was formed on, so `draft_sha256` must match the draft the packet was built from. Reviewer verdicts are never mixed with the held-out gold.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "draft_sha256", "mode", "reviewer", "verdicts"],
+  "properties": {
+    "schema_version": {
+      "description": "Version of this verdict format.",
+      "const": 1
+    },
+    "draft_sha256": {
+      "description": "SHA-256 of the canonical JSON of the ExtractionResult the packet was built from. `review ingest` refuses a verdict file whose pin does not match.",
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "paper_id": {
+      "description": "Identifier of the reviewed study, as recorded on the draft.",
+      "type": ["string", "null"]
+    },
+    "mode": {
+      "description": "Which kind of packet produced this. `draft` = every extracted value is a unit, no gold involved. `adjudication` = sampled scored cells judged against the source, for studies that have gold.",
+      "enum": ["draft", "adjudication"]
+    },
+    "reviewer": {
+      "description": "Who reviewed. Free-form but stable, since inter-reviewer agreement is computed across files.",
+      "type": "string",
+      "minLength": 1
+    },
+    "started_utc": { "type": ["string", "null"] },
+    "finished_utc": { "type": ["string", "null"] },
+    "notes": {
+      "description": "Anything the reviewer wants to say about the draft as a whole.",
+      "type": ["string", "null"]
+    },
+    "verdicts": {
+      "description": "One entry per unit the reviewer judged. Units left unjudged are simply absent; the report counts them as such rather than assuming agreement.",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["unit_id", "verdict"],
+        "properties": {
+          "unit_id": {
+            "description": "Stable identity of the unit, as emitted by the packet builder: `field:<name>` for a study-level value, `sample:<index>:<field>` for a sample cell, `cell:<sample_idx>:<field>` for an adjudication unit.",
+            "type": "string",
+            "minLength": 1
+          },
+          "verdict": {
+            "description": "`supported` = the source bears out the extracted value. `unsupported` = it does not. `wrong_value` = the field is right to report but the value is wrong. `cannot_determine` = the evidence available to the reviewer does not settle it (the honest answer when a value lives in a supplement that retrieval never fetched). `gold_wrong` = adjudication only: the extraction is right and the curated value is not.",
+            "enum": ["supported", "unsupported", "wrong_value", "cannot_determine", "gold_wrong"]
+          },
+          "corrected_value": {
+            "description": "What the reviewer believes the value should be, when they can say.",
+            "type": ["string", "null"]
+          },
+          "comment": { "type": ["string", "null"] },
+          "seconds_spent": { "type": ["number", "null"], "minimum": 0 }
+        }
+      }
+    }
+  }
+}
