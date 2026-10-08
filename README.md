@@ -286,6 +286,54 @@ extractor's own contract:
   `evidence_quote` is substring-matched against the paper. Anything below
   ~95% indicates a system bug, not an extraction error.
 
+## Human review
+
+Gold is imperfect, and an extraction from a study with no gold has no automatic
+score at all. `metaextract-review` turns one extraction into a single
+self-contained HTML file a reviewer can open offline, work through, and export a
+verdict from:
+
+```bash
+# build a packet (--paper enables the verbatim check on every evidence quote)
+metaextract-review packet result.json --paper paper.txt -o packet.html
+
+# validate what came back; refuses verdicts pinned to a different draft
+metaextract-review ingest verdict-*.json --draft result.json
+
+# support rate, per-field breakdown, and Cohen's kappa across reviewers
+metaextract-review report verdict-*.json --draft result.json
+```
+
+The packet has no external reference except the PubMed/PMC/DOI link a reviewer
+follows to read the source; CSS and JS are inline, and progress autosaves to
+`localStorage` keyed by the draft's digest. Two modes share one renderer:
+
+- **draft** — every reported value is a unit. No gold involved, so this is what
+  applies to studies outside a benchmark.
+- **adjudication** — `--cells cells.json` makes the units sampled scored cells
+  (`{sample_idx, field, extracted, gold, decision}`), shown against the source,
+  and adds a `gold_wrong` verdict for cells where the curated value is the wrong
+  one. This is the design in [`evaluation/extensions/PLAN.md`](evaluation/extensions/PLAN.md).
+
+Verdict files are validated against
+[`src/metaextractor/schemas/review_verdict.schema.json`](src/metaextractor/schemas/review_verdict.schema.json)
+and pinned to the draft by SHA-256 of its canonical JSON — a verdict is only
+evidence about the extraction it was formed on, so `ingest` refuses a mismatch
+rather than carrying verdicts across a re-extraction. Reviewer verdicts are never
+mixed with the gold.
+
+Two things the report does deliberately. `cannot_determine` is kept out of both
+the numerator and the denominator of the support rate and reported on its own
+line: it is the honest verdict when a value lives in a supplement that retrieval
+never fetched, and folding it either way would turn a retrieval limit into an
+accuracy claim. And κ is withheld, with a stated reason, when reviewers share too
+few units or both used a single category — that makes κ undefined, not perfect.
+
+Two asymmetries the packet shows rather than hides: sample cells carry no
+evidence quote, because that slot is study-level; and their source descriptor
+names the **column** a value came from, not the row, because provenance is
+recorded per field per run.
+
 ## Design properties and limits
 
 - The system prompt instructs the model not to use outside knowledge and to
