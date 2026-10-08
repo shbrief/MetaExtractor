@@ -218,9 +218,9 @@ def test_extract_request_structure(extract_request):
         ],
         "messages": [
             {"role": "user", "content": [
-                {"type": "text", "text": _sha(extract_request["messages"][0]["content"][0]["text"]),
+                {"type": "text", "text": PAPER_BLOCK_SHA256,
                  "cache_control": {"type": "ephemeral"}},
-                {"type": "text", "text": _sha(extract_request["messages"][0]["content"][1]["text"])},
+                {"type": "text", "text": SCHEMA_BLOCK_SHA256},
             ]},
         ],
     }
