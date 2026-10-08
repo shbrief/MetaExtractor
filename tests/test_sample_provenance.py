@@ -1,46 +1,27 @@
 """extract() records a source for every sample cell and applies scoped fan-out."""
-import json
-from types import SimpleNamespace
-
 from metaextractor.extractor import MetaExtractor
+from metaextractor.model import (
+    STAGE_FIELDS,
+    STAGE_SAMPLE_DISCOVERY,
+    STAGE_TABLE_PLAN,
+    MockModel,
+    ModelCallError,
+)
 from metaextractor.sample_rules import AgeBoundRules
 from metaextractor.schema import Field, Schema
 from metaextractor.supplementary import Table
 
 
-class _FakeStream:
-    def __init__(self, payload):
-        self._msg = SimpleNamespace(
-            model="claude-test-returned",
-            content=[SimpleNamespace(type="text", text=json.dumps(payload))],
-            usage=SimpleNamespace(input_tokens=1, output_tokens=1,
-                                  cache_creation_input_tokens=0, cache_read_input_tokens=0),
-        )
+def _llm(payload) -> MockModel:
+    """Answers the extraction stages with ``payload``; fails the plan call.
 
-    def __enter__(self):
-        return self
-
-    def __exit__(self, *a):
-        return False
-
-    def get_final_message(self):
-        return self._msg
-
-
-class _FakeClient:
-    def __init__(self, payload):
-        self.payload = payload
-        outer = self
-
-        class messages:
-            @staticmethod
-            def stream(**kwargs):
-                return _FakeStream(outer.payload)
-
-            @staticmethod
-            def create(**kwargs):
-                raise RuntimeError("plan call disabled in this test")
-        self.messages = messages
+    The plan failure is deliberate and is the fallback path, not a prohibition.
+    """
+    return MockModel(
+        responses={STAGE_FIELDS: payload, STAGE_SAMPLE_DISCOVERY: payload},
+        raises={STAGE_TABLE_PLAN: ModelCallError("plan call disabled in this test")},
+        response_model="claude-test-returned",
+    )
 
 
 def _fr(value):
@@ -73,7 +54,7 @@ def test_table_path_provenance_fanout_and_age_rules():
                    "age": _fr("45 ± 10")},
         "samples": [],
     }
-    ex = MetaExtractor(client=_FakeClient(payload), age_rules=AgeBoundRules())
+    ex = MetaExtractor(llm=_llm(payload), age_rules=AgeBoundRules())
     r = ex.extract("paper text", SCHEMA, paper_id="1", tables=[_table()])
     assert len(r.samples) == 4 and len(r.sample_provenance) == 4
     s1, p1 = r.samples[0], r.sample_provenance[0]
@@ -96,7 +77,7 @@ def test_llm_sample_rows_are_attributed_to_the_model():
         "fields": {"sequencing_platform": _fr("Illumina")},
         "samples": [{"sample_id": "a", "disease": "RA"}, {"sample_id": "b", "disease": ""}],
     }
-    r = MetaExtractor(client=_FakeClient(payload), sample_discovery=False).extract(
+    r = MetaExtractor(llm=_llm(payload), sample_discovery=False).extract(
         "paper text", SCHEMA, paper_id="1")
     assert r.sample_provenance[0] == {"sample_id": "llm_sample", "disease": "llm_sample",
                                       "sequencing_platform": "study_fanout"}

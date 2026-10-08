@@ -7,6 +7,7 @@ per-sample treatment ("MTX" at day 30 / "no" at day 0) is in the BioSample attri
 import json
 
 from metaextractor.extractor import MetaExtractor
+from metaextractor.model import MockModel
 from metaextractor.schema import Schema
 from metaextractor.sra_manifest import (
     EBI_BIOSAMPLE,
@@ -86,20 +87,17 @@ def test_attributes_disabled_leaves_manifest_unchanged():
 def test_table_path_fills_sample_level_fields_from_attributes():
     res = manifest_for_paper("x", explicit_project="PRJNA656577", http_get=fake_get)
 
-    class NoCall:
-        class messages:
-            def create(*a, **k):
-                raise AssertionError("no model call")
-
+    llm = MockModel()
     schema = Schema.from_dict([{"name": n, "description": n, "type": "string"} for n in
                                ("ncbi_accession", "treatment", "sex", "country", "subject_id")])
-    ex = MetaExtractor(client=NoCall())
+    ex = MetaExtractor(llm=llm)
     samples, _, _ = ex._build_samples_from_tables([res.table], schema)
     by_run = {s["ncbi_accession"]: s for s in samples}
     assert by_run["SRR12455507"]["treatment"] == "MTX"
     assert by_run["SRR12455516"]["treatment"] == "naive"
     # filled BioSample sex, not empty host_sex
     assert by_run["SRR12455507"]["sex"] == "female"
+    llm.assert_not_called()   # the fixed ENA map needs no plan call
     assert ex.last_table_sources["treatment"].endswith(":treatment")
 
 

@@ -6,15 +6,9 @@ the LLM ``propose_plan`` path is never reached — the client asserts if called.
 import pytest
 
 from metaextractor.extractor import MetaExtractor
+from metaextractor.model import MockModel
 from metaextractor.schema import Schema
 from metaextractor.supplementary import Table
-
-
-class _NoCallClient:
-    class messages:
-        @staticmethod
-        def create(*args, **kwargs):
-            raise AssertionError("LLM must not be called when no table passes the gate")
 
 
 def _table(name: str, raw_rows: list[list[str]]) -> Table:
@@ -45,10 +39,12 @@ def test_selection_provenance_recorded_offline():
         ["mean read depth", "3.1e7"],
     ])
 
-    ex = MetaExtractor(client=_NoCallClient())
+    llm = MockModel()
+    ex = MetaExtractor(llm=llm)
     samples, warnings, selections = ex._build_samples_from_tables([matrix, junk], _schema())
 
     assert samples == []
+    llm.assert_not_called()   # no table passed the gate, so no plan was requested
     by_name = {s.name: s for s in selections}
     assert set(by_name) == {"taxa.tsv", "summary.csv"}
     assert all(not s.selected for s in selections)

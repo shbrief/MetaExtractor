@@ -11,16 +11,19 @@ anchors on the higher-relevance study table.
 import pytest
 
 from metaextractor.extractor import MetaExtractor
+from metaextractor.model import STAGE_TABLE_PLAN, MockModel, ModelCallError
 from metaextractor.schema import Schema
 from metaextractor.supplementary import Table
 
 
-class _NoCallClient:
-    """Forces the propose_plan LLM path to fail -> deterministic row-0 fallback."""
-    class messages:
-        @staticmethod
-        def create(*args, **kwargs):
-            raise RuntimeError("no LLM in this test")
+def _failing_plan_llm() -> MockModel:
+    """A model whose plan call fails, so the deterministic row-0 parse is used.
+
+    The intent is *failure*, not prohibition: propose_plan catches a model error
+    and falls back, and this test exercises that fallback. Contrast the
+    assert_not_called() tests, which require that no call happen at all.
+    """
+    return MockModel(raises={STAGE_TABLE_PLAN: ModelCallError("no LLM in this test")})
 
 
 def _table(name: str, raw_rows: list[list[str]]) -> Table:
@@ -62,7 +65,7 @@ def test_join_anchors_on_most_relevant_table():
          ["S5", "male", "feces"]],  # 5 rows
     )
 
-    ex = MetaExtractor(client=_NoCallClient())
+    ex = MetaExtractor(llm=_failing_plan_llm())
     # Pass the big dump FIRST — pre-fix that made it the join primary (25 rows).
     samples, warnings, selections = ex._build_samples_from_tables(
         [public_dump, study_meta], _schema()

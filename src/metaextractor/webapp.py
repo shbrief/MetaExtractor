@@ -227,12 +227,12 @@ def main() -> None:
         return
 
     # Fail fast on a bad key with a clear message, before the (slow) fetch and
-    # any billable extraction call. models.list() spends no tokens.
-    from anthropic import Anthropic, AuthenticationError
+    # any billable extraction call. check_credentials() spends no tokens.
+    from metaextractor.model import AnthropicModel, CredentialError
 
     try:
-        Anthropic(api_key=api_key).models.list(limit=1)
-    except AuthenticationError:
+        AnthropicModel.check_credentials(api_key)
+    except CredentialError:
         st.error(
             f"The Anthropic API rejected this key (401). Resolved key: "
             f"{key_fingerprint(api_key)}. Check that this matches a working "

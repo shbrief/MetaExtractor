@@ -22,6 +22,7 @@ from metaextractor.fetcher import (
     load_fetched,
     save_fetched,
 )
+from metaextractor.model import AnthropicModel
 from metaextractor.sample_rules import AgeBoundRules
 from metaextractor.schema import Schema
 from metaextractor.writers import to_csv
@@ -323,11 +324,9 @@ def _write_run_meta(args, extractor, result, fetched, paper_text, tables, cost, 
     from metaextractor import __version__
     from metaextractor.extractor import PRICING_AS_OF
 
-    try:
-        import anthropic
-        sdk_version = anthropic.__version__
-    except (ImportError, AttributeError):
-        sdk_version = None
+    # Reported under the same "anthropic_sdk" run-meta key: it really is the
+    # Anthropic SDK version, and the benchmark ledger reads that key.
+    sdk_version = AnthropicModel.sdk_version()
     meta = {
         "started_utc": started_utc,
         "finished_utc": _utc_now(),

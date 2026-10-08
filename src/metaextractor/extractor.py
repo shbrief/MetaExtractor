@@ -8,7 +8,6 @@ from __future__ import annotations
 
 import json
 import os
-from typing import Any
 
 from pydantic import ValidationError
 
@@ -134,20 +133,21 @@ class MetaExtractor:
         min_table_relevance: float = DEFAULT_MIN_TABLE_RELEVANCE,
         age_rules: AgeBoundRules | None = None,
         max_tokens_ceiling: int = DEFAULT_MAX_TOKENS_CEILING,
-        client: Any = None,
     ):
         """Args:
-            llm: the model to call. Defaults to :class:`AnthropicModel` built from
-                ``model`` and ``api_key``.
-            client: a raw Anthropic SDK client, wrapped in an
-                :class:`AnthropicModel`. Retained so the remaining SDK-level test
-                doubles keep working while they are converted; prefer ``llm``.
+            llm: the model to call — any :class:`~metaextractor.model.Model`.
+                Defaults to an :class:`~metaextractor.model.AnthropicModel` built
+                from ``model`` and ``api_key``. Pass
+                :class:`~metaextractor.model.MockModel` for offline tests; to see
+                the exact request, pass ``AnthropicModel(model, client=...)`` with
+                a recording SDK client.
+            model: model id used to build the default backend. Ignored when
+                ``llm`` is given, since a backend knows its own id.
         """
         if llm is None:
             llm = AnthropicModel(
                 model,
                 api_key=api_key or os.environ.get("ANTHROPIC_API_KEY"),
-                client=client,
             )
         self.llm = llm
         #: Always the model the backend actually calls. Deriving it from the
@@ -704,8 +704,14 @@ def extract(
     model: str = DEFAULT_MODEL,
     api_key: str | None = None,
     age_rules: AgeBoundRules | None = None,
+    llm: Model | None = None,
 ) -> ExtractionResult:
-    """Convenience one-shot wrapper."""
-    return MetaExtractor(model=model, api_key=api_key, age_rules=age_rules).extract(
+    """Convenience one-shot wrapper.
+
+    ``llm`` takes any :class:`~metaextractor.model.Model`; without it a default
+    Anthropic backend is built from ``model`` and ``api_key``.
+    """
+    return MetaExtractor(llm=llm, model=model, api_key=api_key,
+                         age_rules=age_rules).extract(
         paper_text=paper_text, schema=schema, paper_id=paper_id, tables=tables
     )

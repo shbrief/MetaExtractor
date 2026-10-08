@@ -6,12 +6,12 @@ attempt 1, which failed validation with ``"section": null`` on five fields whose
 """
 import json
 from pathlib import Path
-from types import SimpleNamespace
 
 import pytest
 from pydantic import ValidationError
 
 from metaextractor.extractor import MetaExtractor
+from metaextractor.model import STAGE_FIELDS, MockModel
 from metaextractor.output import ExtractionResult, FieldResult
 from metaextractor.schema import Field, Schema
 
@@ -52,25 +52,10 @@ def test_reported_value_still_requires_location(slot):
 
 def test_extractor_accepts_failing_response_end_to_end():
     text = FIXTURE.read_text()
-    msg = SimpleNamespace(
-        model="claude-haiku-4-5", stop_reason="end_turn",
-        content=[SimpleNamespace(type="text", text=text)],
-        usage=SimpleNamespace(input_tokens=1, output_tokens=1,
-                              cache_creation_input_tokens=0, cache_read_input_tokens=0))
-
-    class _Stream:
-        def __enter__(self):
-            return self
-
-        def __exit__(self, *a):
-            return False
-
-        def get_final_message(self):
-            return msg
-
-    client = SimpleNamespace(messages=SimpleNamespace(stream=lambda **kw: _Stream()))
+    llm = MockModel(responses={STAGE_FIELDS: text}, model_id="m",
+                    response_model="claude-haiku-4-5")
     schema = Schema(fields=[Field(name=n, description="d", type="string")
                             for n in json.loads(text)["fields"]])
-    result = MetaExtractor(client=client, model="m").extract("Methods text.", schema,
-                                                             paper_id="26259788")
+    result = MetaExtractor(llm=llm).extract("Methods text.", schema,
+                                            paper_id="26259788")
     assert NULL_SECTION_FIELDS <= set(result.fields)
