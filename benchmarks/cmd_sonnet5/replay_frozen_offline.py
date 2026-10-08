@@ -31,6 +31,18 @@ Usage::
 
 Exit status is non-zero if any study's sample count or provenance mix differs
 from the frozen run, so it is usable as a pre-merge check.
+
+Which tree to replay
+--------------------
+
+Replay ``out_v4``: it is the tree produced closest to current code. A mismatch
+there is a real signal.
+
+``out_v3`` is at tag ``bench-v3``, *before* the revision-v4 fixes to the table
+path and to fan-out (figure-source and feature-table rejection, scope-aware
+fan-out, stacked-header leaf mapping), so replaying it with current code differs
+by design -- FanY_2023 gives 85 against its frozen 319, and it does so both
+before and after the model seam. That is those fixes working, not a regression.
 """
 from __future__ import annotations
 
@@ -115,7 +127,9 @@ def replay(tree: Path, model_dir: str, study: str, schema, rules) -> dict:
 
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__.splitlines()[0])
-    ap.add_argument("--out", default="out_v4", help="run tree (default out_v4)")
+    ap.add_argument("--out", default="out_v4",
+                    help="run tree (default out_v4, the one produced closest to "
+                         "current code; see the note on older trees below)")
     ap.add_argument("--model-dir", default="sonnet_r1",
                     help="which repeat inside the tree to replay (default sonnet_r1)")
     ap.add_argument("--studies", nargs="+", default=None)
@@ -163,11 +177,24 @@ def main() -> int:
           f"frozen run's sample count and provenance mix exactly"
           + (f"; {len(skipped)} skipped" if skipped else ""))
     if mismatched:
-        print("\nMISMATCHED -- the deterministic path changed for:")
+        print("\nMISMATCHED -- the deterministic path differs for:")
         for r in mismatched:
-            print(f"  {r['study']}: {r['samples']} vs {r['frozen_samples']} samples")
-        print("\nThis is what a behaviour-preserving refactor must not do. Bisect "
-              "before running the paid benchmark.")
+            how = ("samples" if r["samples"] != r["frozen_samples"]
+                   else "provenance mix")
+            print(f"  {r['study']}: {r['samples']} vs {r['frozen_samples']} "
+                  f"samples ({how} differs)")
+        print()
+        print("Before reading this as a regression, check which tree you replayed.")
+        print("A mismatch is EXPECTED against a tree whose code predates a")
+        print("deliberate change to the table path or to fan-out -- out_v3 is at tag")
+        print("bench-v3, before the revision-v4 fixes (figure-source and feature")
+        print("table rejection, scope-aware fan-out, stacked-header leaf mapping),")
+        print("so replaying it with current code differs by design. For example")
+        print("FanY_2023 gives 85 against out_v3's frozen 319, both before and after")
+        print("the model seam.")
+        print()
+        print("A mismatch against out_v4 -- the tree produced closest to current")
+        print("code -- is the real signal. Bisect that before the paid benchmark.")
         return 1
     print("\nNote: this says nothing about model behaviour, cache hit rates or "
           "scores. Those need `run_frozen.py run`.")
