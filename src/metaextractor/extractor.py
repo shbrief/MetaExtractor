@@ -8,8 +8,8 @@ from __future__ import annotations
 
 import json
 import os
+from typing import Any
 
-from anthropic import Anthropic
 from pydantic import ValidationError
 
 from metaextractor.column_mapper import (
@@ -19,7 +19,13 @@ from metaextractor.column_mapper import (
     join_tables,
     map_columns_with_leaf_labels,
 )
-from metaextractor.model import _to_blocks
+from metaextractor.model import (
+    AnthropicModel,
+    Message,
+    Model,
+    TextBlock,
+    complete_with_retry,
+)
 from metaextractor.output import ExtractionResult, TableSelection
 from metaextractor.prompts import SYSTEM_PROMPT, build_user_content
 from metaextractor.sample_rules import (
@@ -119,7 +125,7 @@ def _extract_json_blob(raw: str) -> str:
 class MetaExtractor:
     def __init__(
         self,
-        client: Anthropic | None = None,
+        llm: Model | None = None,
         model: str = DEFAULT_MODEL,
         max_tokens: int = DEFAULT_MAX_TOKENS,
         batch_size: int = DEFAULT_BATCH_SIZE,
@@ -128,9 +134,26 @@ class MetaExtractor:
         min_table_relevance: float = DEFAULT_MIN_TABLE_RELEVANCE,
         age_rules: AgeBoundRules | None = None,
         max_tokens_ceiling: int = DEFAULT_MAX_TOKENS_CEILING,
+        client: Any = None,
     ):
-        self.client = client or Anthropic(api_key=api_key or os.environ.get("ANTHROPIC_API_KEY"))
-        self.model = model
+        """Args:
+            llm: the model to call. Defaults to :class:`AnthropicModel` built from
+                ``model`` and ``api_key``.
+            client: a raw Anthropic SDK client, wrapped in an
+                :class:`AnthropicModel`. Retained so the remaining SDK-level test
+                doubles keep working while they are converted; prefer ``llm``.
+        """
+        if llm is None:
+            llm = AnthropicModel(
+                model,
+                api_key=api_key or os.environ.get("ANTHROPIC_API_KEY"),
+                client=client,
+            )
+        self.llm = llm
+        #: Always the model the backend actually calls. Deriving it from the
+        #: backend rather than keeping the ``model`` argument makes
+        #: "priced as Sonnet while calling Haiku" unrepresentable.
+        self.model = llm.model_id
         self.max_tokens = max_tokens
         self.max_tokens_ceiling = max(max_tokens, max_tokens_ceiling)
         #: One record per API call of the last extract() call, including calls whose
@@ -292,52 +315,37 @@ class MetaExtractor:
             paper_text, schema_obj.to_prompt_json(), paper_id, sample_ids=sample_ids
         )
 
-        budget = self.max_tokens
-        while True:
-            with self.client.messages.stream(
-                model=self.model,
-                max_tokens=budget,
-                system=[
-                    {
-                        "type": "text",
-                        "text": SYSTEM_PROMPT,
-                        "cache_control": {"type": "ephemeral"},
-                    }
-                ],
-                # build_user_content now returns TextBlocks; _to_blocks renders them
-                # to the provider wire shape. This conversion moves behind the Model
-                # seam in the next commit -- here it is deliberately inline so that
-                # the content-shape change is reviewable apart from the control-flow
-                # change, and the golden payload test passes with no edits at all.
-                messages=[{"role": "user", "content": _to_blocks(user_content)}],
-            ) as stream:
-                response = stream.get_final_message()
-
-            if getattr(response, "model", None):
-                self.last_response_models.add(str(response.model))
-            u = response.usage
-            self.last_usage["input_tokens"] += getattr(u, "input_tokens", 0) or 0
-            self.last_usage["cache_creation_input_tokens"] += (
-                getattr(u, "cache_creation_input_tokens", 0) or 0)
-            self.last_usage["cache_read_input_tokens"] += (
-                getattr(u, "cache_read_input_tokens", 0) or 0)
-            self.last_usage["output_tokens"] += getattr(u, "output_tokens", 0) or 0
-            self.last_usage["n_calls"] += 1
-            stop_reason = getattr(response, "stop_reason", None)
-            self.last_calls.append({
+        def record(resp, budget: int) -> dict:
+            return {
                 "purpose": purpose, "n_fields": len(schema_obj.fields),
                 "first_field": schema_obj.fields[0].name if schema_obj.fields else None,
-                "max_tokens": budget, "stop_reason": stop_reason,
-                "output_tokens": getattr(u, "output_tokens", None),
-            })
-            # A response cut off at the output budget is re-requested with a larger
-            # budget; parsing a truncated JSON document can only fail.
-            if stop_reason == "max_tokens" and budget < self.max_tokens_ceiling:
-                budget = min(budget * 2, self.max_tokens_ceiling)
-                continue
-            break
+                "max_tokens": budget, "stop_reason": resp.stop_reason,
+                "output_tokens": resp.usage["output_tokens"],
+            }
 
-        raw = "".join(block.text for block in response.content if block.type == "text").strip()
+        run = complete_with_retry(
+            self.llm,
+            stage=purpose,
+            system=[TextBlock(SYSTEM_PROMPT, cache=True)],
+            messages=[Message.user(user_content)],
+            max_tokens=self.max_tokens,
+            max_tokens_ceiling=self.max_tokens_ceiling,
+            usage=self.last_usage,
+            calls=self.last_calls,
+            call_record=record,
+            label=schema_obj.fields[0].name if schema_obj.fields else None,
+        )
+        for attempt in run.attempts:
+            if attempt.model:
+                self.last_response_models.add(attempt.model)
+        response, budget = run.final, run.budget
+        stop_reason = response.stop_reason
+
+        # The retry *mechanism* is shared; what exhausting the ceiling means is
+        # this caller's policy. _discover_sample_ids relies on the raise
+        # happening here: it catches ExtractionError to disable discovery
+        # silently rather than failing the run.
+        raw = response.text
         if stop_reason == "max_tokens":
             raise ExtractionError(
                 f"Model response truncated at max_tokens={budget} (the configured ceiling) "
@@ -558,7 +566,7 @@ class MetaExtractor:
         """Ask the model for a structure plan and execute it; on failure, the
         default row-0-header parse (``t`` itself)."""
         try:
-            plan, usage = propose_plan(self.client, self.model, t, calls=self.last_calls)
+            plan, usage = propose_plan(self.llm, t, calls=self.last_calls)
             _accumulate_usage(self.last_usage, usage)
             transformed = execute_plan(t, plan)
             warnings.append(

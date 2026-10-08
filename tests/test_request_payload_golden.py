@@ -1,10 +1,13 @@
 """The exact request this library puts on the wire, pinned.
 
-Written **before** the Model-seam refactor and intended to survive it unchanged.
-If the seam is built correctly, the only edit this file should ever need is the
-one line that constructs the extractor; every assertion below must keep holding
-byte for byte. That is the whole point: a refactor validated by a test that was
-adjusted to fit it has been validated by nothing.
+Written **before** the Model-seam refactor and survived it with no assertion
+changed. The seam moved four lines in this file, all of them constructing the
+model under test — ``client=rec`` became ``llm=AnthropicModel("m", client=rec)``,
+and ``propose_plan(rec, "m", table)`` lost its model-name positional. Every
+assertion below held byte for byte across that change. That is the point: a
+refactor validated by a test adjusted to fit it has been validated by nothing,
+so if a future change here touches an assertion rather than a construction, the
+wire moved and that needs explaining rather than accommodating.
 
 Four layers, strongest first:
 
@@ -38,6 +41,7 @@ from types import SimpleNamespace
 import pytest
 
 from metaextractor.extractor import MetaExtractor
+from metaextractor.model import AnthropicModel
 from metaextractor.prompts import SYSTEM_PROMPT
 from metaextractor.schema import Schema
 from metaextractor.supplementary import Table
@@ -148,7 +152,7 @@ class _Recorder:
 def extract_request() -> dict:
     """The kwargs a single field extraction puts on the wire."""
     rec = _Recorder(_RESULT_JSON)
-    MetaExtractor(client=rec, model="m", max_tokens=16384,
+    MetaExtractor(llm=AnthropicModel("m", client=rec), max_tokens=16384,
                   sample_discovery=False).extract(PAPER, SCHEMA, paper_id="PMID:1")
     return rec.only("stream")
 
@@ -159,7 +163,7 @@ def plan_request() -> dict:
     rec = _Recorder(_PLAN_JSON)
     raw = [["Table S1. Donors", "", ""], ["ID", "Age", "Site"], ["s1", "30", "stool"]]
     table = Table(name="t.xlsx", source="local", columns=[], rows=[], raw_rows=raw)
-    propose_plan(rec, "m", table)
+    propose_plan(AnthropicModel("m", client=rec), table)
     return rec.only("create")
 
 
@@ -186,15 +190,16 @@ def test_plan_sends_only_four_keywords(plan_request):
 
 def test_field_extraction_uses_streaming():
     rec = _Recorder(_RESULT_JSON)
-    MetaExtractor(client=rec, model="m", sample_discovery=False).extract(PAPER, SCHEMA)
+    MetaExtractor(llm=AnthropicModel("m", client=rec),
+                  sample_discovery=False).extract(PAPER, SCHEMA)
     assert [m for m, _ in rec.calls] == ["stream"]
 
 
 def test_table_plan_uses_create_not_streaming():
     rec = _Recorder(_PLAN_JSON)
     raw = [["Title", ""], ["ID", "Age"], ["s1", "30"]]
-    propose_plan(rec, "m", Table(name="t.xlsx", source="local", columns=[], rows=[],
-                                 raw_rows=raw))
+    propose_plan(AnthropicModel("m", client=rec),
+                 Table(name="t.xlsx", source="local", columns=[], rows=[], raw_rows=raw))
     assert [m for m, _ in rec.calls] == ["create"]
 
 
