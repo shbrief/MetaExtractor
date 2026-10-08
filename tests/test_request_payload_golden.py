@@ -284,3 +284,46 @@ def test_system_prompt_digest_is_pinned():
     """
     assert _sha(SYSTEM_PROMPT) == SYSTEM_PROMPT_SHA256, (
         f"SYSTEM_PROMPT digest is now {_sha(SYSTEM_PROMPT)}")
+
+
+# ---------------------------------------------------------------------------
+# Batching: the property that makes the cache pay for itself
+# ---------------------------------------------------------------------------
+
+def test_batched_schema_resends_an_identical_paper_prefix():
+    """Across batches, everything up to the cache breakpoint must be identical.
+
+    This is the cache's whole economic basis and it is not visible in a
+    single-call test: the benchmark's schema has 71 fields and batches at 30, so
+    the paper block is sent three times and must hit the prefix cache twice. If a
+    refactor made the paper block vary per batch — by reordering, re-rendering, or
+    folding the schema in before the breakpoint — every batch would pay full
+    input price and only the aggregate cache_read_input_tokens in a real run
+    would reveal it.
+    """
+    rec = _Recorder(_RESULT_JSON)
+    many = Schema.from_dict({"fields": [
+        {"name": f"f{i}", "description": f"field {i}", "type": "string"}
+        for i in range(7)
+    ]})
+    MetaExtractor(llm=AnthropicModel("m", client=rec), batch_size=3,
+                  sample_discovery=False).extract(PAPER, many, paper_id="PMID:1")
+
+    requests = [kw for m, kw in rec.calls if m == "stream"]
+    assert len(requests) == 3, "7 fields at batch_size 3 should be three calls"
+
+    systems = {json.dumps(kw["system"], sort_keys=True) for kw in requests}
+    assert len(systems) == 1, "the system prompt must be byte-identical across batches"
+
+    papers = {kw["messages"][0]["content"][0]["text"] for kw in requests}
+    assert len(papers) == 1, "the cached paper block must be byte-identical across batches"
+
+    schemas = {kw["messages"][0]["content"][1]["text"] for kw in requests}
+    assert len(schemas) == 3, (
+        "the schema block must differ per batch — if it did not, the batches would "
+        "be asking for the same fields"
+    )
+
+    for kw in requests:
+        content = kw["messages"][0]["content"]
+        assert [("cache_control" in b) for b in content] == [True, False]

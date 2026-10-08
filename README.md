@@ -140,6 +140,29 @@ for sample in result.samples:
     print(sample["sample_id"], sample["body_site"], sample["dna_extraction_kit"])
 ```
 
+### Choosing or faking the model
+
+Every model call goes through one seam, `metaextractor.model.Model`, so the
+backend is a constructor argument:
+
+```python
+from metaextractor.model import AnthropicModel, MockModel
+
+MetaExtractor(llm=AnthropicModel("claude-haiku-4-5", api_key=key))
+
+# Offline, deterministic, no key: responses are keyed by stage, and a callable
+# spec sees the request (which is how a reply can vary with the token budget).
+llm = MockModel(responses={"fields": {"granularity": "study_level", "fields": {...}}})
+MetaExtractor(llm=llm).extract(paper, schema)
+llm.budgets()            # max_tokens per call — the retry sequence, as observed
+llm.assert_not_called("table_plan")
+```
+
+`MetaExtractor(llm=...)` derives its model id from the backend, so the id used
+for pricing can no longer disagree with the one actually called. Anthropic
+remains the only real backend and the runtime dependencies are unchanged; the
+seam exists for testability and for the cheap-judgment layer to share.
+
 ## Schema formats
 
 The `--schema` argument accepts three formats; the loader auto-detects:

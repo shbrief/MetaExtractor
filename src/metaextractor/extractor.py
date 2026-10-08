@@ -1,4 +1,9 @@
-"""Core extractor: wraps the Anthropic SDK call with prompt caching + JSON parsing.
+"""Core extractor: schema in, structured records out.
+
+Every model call goes through :mod:`metaextractor.model`, so the backend is a
+constructor argument (``MetaExtractor(llm=...)``) rather than something this
+module builds for itself. That is what makes an offline test a
+:class:`~metaextractor.model.MockModel` and nothing else.
 
 Schemas with more than ``batch_size`` fields are transparently split into
 batches and merged. Each batch reuses the cached system prompt and paper

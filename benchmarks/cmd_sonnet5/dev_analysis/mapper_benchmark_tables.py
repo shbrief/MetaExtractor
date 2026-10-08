@@ -2,6 +2,12 @@
 was removed from MetaExtractor afterwards (SchemaMapper now runs in MetaHarmonizer on the
 saved extraction table). Run it from a checkout of commit ``bc3b00b``.
 
+It is also pre-Model-seam: it passes ``client=`` and a ``column_mapper=`` kwarg that
+MetaExtractor no longer accepts, and its SDK-shaped doubles predate
+``metaextractor.model.MockModel``. ``PlanReplay``'s per-table routing, which scraped the
+table name out of the prompt text, is what ``MockModel(by_label=...)`` now does properly.
+Kept as a record of the analysis, not as runnable code.
+
 Final scored tables (samples x schema attributes) for each column mapper, development studies.
 
 For every mapper -- ``lexical`` (lexical cascade), ``sm_stage1`` (SchemaMapper name
