@@ -20,6 +20,12 @@ pdf = ["pypdf>=4.0"]
 linkml = ["PyYAML>=6.0"]
 supplementary = ["openpyxl>=3.1", "pdfplumber>=0.11", "pypdf>=4.0"]
 app = ["streamlit>=1.32", "PyYAML>=6.0", "pypdf>=4.0", "openpyxl>=3.1", "pdfplumber>=0.11"]
+# Kept as an extra as well as a dependency group below, so the long-documented
+# `pip install -e '.[dev]'` keeps working on any pip. The group is what `uv sync
+# --dev` reads; the two lists must be edited together.
+dev = ["pytest>=8", "ruff>=0.5", "PyYAML>=6.0", "openpyxl>=3.1", "pdfplumber>=0.11", "pypdf>=4.0", "rapidfuzz>=3.6"]
+
+[dependency-groups]
 dev = ["pytest>=8", "ruff>=0.5", "PyYAML>=6.0", "openpyxl>=3.1", "pdfplumber>=0.11", "pypdf>=4.0", "rapidfuzz>=3.6"]
 
 [project.scripts]
@@ -31,3 +37,40 @@ where = ["src"]
 
 [tool.setuptools.package-data]
 metaextractor = ["py.typed", "schemas/*.json", "schemas/*.yaml", "schemas/*.yml"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = [
+    "network: tests that reach a real network service (deselected by default)",
+]
+# The suite is otherwise hermetic: every HTTP path is monkeypatched at a module-level
+# _http_get choke point and every model call goes through an injected double, so the
+# default selection needs no network and no ANTHROPIC_API_KEY.
+addopts = "-m 'not network'"
+
+[tool.ruff]
+line-length = 100
+src = ["src", "tests"]
+# Lint the library and its tests. `benchmarks/` holds one-off research scripts whose
+# terse style (semicolon statements, late imports, generated trees) is deliberate and
+# whose outputs are frozen run artifacts; linting them would be churn, not signal.
+extend-exclude = ["benchmarks", "examples", "tools", "figures"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "UP", "B"]
+ignore = [
+    "B008",  # function call in argument default — argparse/pydantic idiom here
+    "E741",  # ambiguous variable name — used in a few local comprehensions
+    # zip(..., strict=) — deciding per call site whether a length mismatch is a bug
+    # or expected is a real review, not a lint fix. Tracked as a follow-up; adding
+    # strict=True blind would turn silent truncation into a new exception path.
+    "B905",
+]
+
+[tool.ruff.lint.per-file-ignores]
+# argparse help strings are long by nature and wrapping them hurts readability more
+# than the overrun does.
+"src/metaextractor/cli.py" = ["E501"]
+# Holds verbatim PMC article HTML as fixture data, where a line break is content:
+# rewrapping it would change what the parser under test is handed.
+"tests/test_fetcher_pdf.py" = ["E501"]

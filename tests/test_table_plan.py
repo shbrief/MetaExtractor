@@ -1,5 +1,6 @@
 """Tests for metaextractor.table_plan — is_feature_matrix and execute_plan."""
 import pytest
+
 from metaextractor.supplementary import Table
 from metaextractor.table_plan import (
     Melt,
@@ -72,7 +73,8 @@ class TestIsFeatureMatrix:
         assert not is_feature_matrix(_table("small", raw))
 
     def test_single_column_returns_false(self):
-        raw = [["feature"]] + [[f"k__Bacteria|p__X|c__Y|o__Z|f__W|g__G|t__sp{i}"] for i in range(10)]
+        raw = ([["feature"]]
+               + [[f"k__Bacteria|p__X|c__Y|o__Z|f__W|g__G|t__sp{i}"] for i in range(10)])
         assert not is_feature_matrix(_table("single_col", raw))
 
 
@@ -221,9 +223,18 @@ class TestProposePlanFallback:
     """Verify the exception-handling contract: any failure in propose_plan
     raises PlanProposalError so _build_samples_from_tables can fall back."""
 
+    @pytest.mark.network
     def test_missing_api_key_raises_plan_proposal_error(self):
-        from metaextractor.table_plan import propose_plan
+        """Marked ``network``: this issues a real POST to api.anthropic.com.
+
+        It passes with or without connectivity, because a 401 and a transport
+        failure both become PlanProposalError — which is exactly why it is a weak
+        test, and why it is deselected by default rather than silently adding
+        latency to every run. Phase B replaces it with an injected model double.
+        """
         from anthropic import Anthropic
+
+        from metaextractor.table_plan import propose_plan
 
         # Build a client with a deliberately invalid API key so auth fails.
         client = Anthropic(api_key="sk-invalid-key-for-testing")
