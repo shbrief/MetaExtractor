@@ -1,0 +1,14 @@
+query,ref_match,stage,match1,match1_score,match1_code
+MO BIO Laboratories,Not Found,1.0,Not Found,1.0,
+MP Biomedicals,Not Found,1.0,Not Found,1.0,
+Norgen Biotek,Not Found,1.0,Not Found,1.0,
+PowerSoil DNA Isolation Kit,Not Found,1.0,Not Found,1.0,
+PowerSoil DNA isolation kit,Not Found,1.0,Not Found,1.0,
+TIANGEN,Not Found,1.0,Not Found,1.0,
+FastDNA SPIN Kit,Not Found,2.0,PowerSoil DNA Isolation Kit,0.6860,CMDKIT:0002
+FastDNA® SPIN Kit (MP Biomedicals),Not Found,2.0,PowerSoil DNA Isolation Kit,0.6892,CMDKIT:0002
+MOBIO Power Soil Kit,Not Found,2.0,powersoildnaisolationkit,0.6255,CMDKIT:0002
+MoBio Powersoil DNA extraction kit,Not Found,2.0,PowerSoil DNA Isolation Kit,0.8482,CMDKIT:0002
+NucleoSpin soil mini kit,Not Found,2.0,PSP Spin Stool DNA Plus Kit,0.7340,CMDKIT:0001
+NucleoSpin soil mini kit (MACHEREY-NAGEL),Not Found,2.0,PSP Spin Stool DNA Plus Kit,0.7023,CMDKIT:0001
+TIANGEN kit,Not Found,2.0,TIANGEN,0.6285,CMDKIT:0011

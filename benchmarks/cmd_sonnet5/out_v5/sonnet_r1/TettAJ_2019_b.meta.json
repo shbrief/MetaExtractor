@@ -1,0 +1,359 @@
+{
+  "started_utc": "2026-10-09T00:09:23+00:00",
+  "finished_utc": "2026-10-09T00:13:12+00:00",
+  "paper_id": "31607556",
+  "status": "ok",
+  "error": null,
+  "request": {
+    "model_requested": "claude-sonnet-5",
+    "models_returned": [
+      "claude-sonnet-5"
+    ],
+    "max_tokens": 16384,
+    "max_tokens_ceiling": 64000,
+    "batch_size": 30,
+    "sample_discovery": true,
+    "min_table_relevance": 0.15,
+    "sampling_and_thinking": "not set (API defaults: no temperature/top_p/top_k/thinking/effort parameters sent)",
+    "age_rules": "/Users/sehyunoh/OmicsMLRepo/MetaExtractor/benchmarks/cmd_sonnet5/age_rules_cmd.json"
+  },
+  "usage": {
+    "input_tokens": 25329,
+    "cache_creation_input_tokens": 76354,
+    "cache_read_input_tokens": 157244,
+    "output_tokens": 25542,
+    "n_calls": 12
+  },
+  "calls": [
+    {
+      "purpose": "table_plan",
+      "table": "mmc2.xlsx::BMI",
+      "max_tokens": 2048,
+      "stop_reason": "end_turn",
+      "output_tokens": 382,
+      "plan": {
+        "header_rows": [
+          0,
+          1
+        ],
+        "header_merge_sep": " | ",
+        "data_starts_at": 2,
+        "melt": null,
+        "drop_rows": [],
+        "notes": "Two-row header (Prevalence super-header over clade columns) merged; each row is a Dataset/BMI-category summary, not split by sample type, so no melt needed."
+      }
+    },
+    {
+      "purpose": "table_plan",
+      "table": "mmc2.xlsx::AGE",
+      "max_tokens": 2048,
+      "stop_reason": "end_turn",
+      "output_tokens": 556,
+      "plan": {
+        "header_rows": [
+          0,
+          1
+        ],
+        "header_merge_sep": " | ",
+        "data_starts_at": 2,
+        "melt": null,
+        "drop_rows": [],
+        "notes": "Two-row header (blank super-header + 'Prevalence' spanning c3-c7) merges with row1 leaf names; each data row is one Dataset/AGE-group summary, Dataset cells blank-fill for repeated dataset as in source."
+      }
+    },
+    {
+      "purpose": "table_plan",
+      "table": "mmc3.xlsx::Prevalence_by_country",
+      "max_tokens": 2048,
+      "stop_reason": "end_turn",
+      "output_tokens": 89,
+      "plan": {
+        "header_rows": [
+          1
+        ],
+        "header_merge_sep": " | ",
+        "data_starts_at": 2,
+        "melt": null,
+        "drop_rows": [],
+        "notes": "Each row is one dataset/country sample; row0 is a super-header label, row1 is the actual header."
+      }
+    },
+    {
+      "purpose": "table_plan",
+      "table": "mmc4.xlsx::CAZy_table",
+      "max_tokens": 2048,
+      "stop_reason": "end_turn",
+      "output_tokens": 1612,
+      "plan": {
+        "header_rows": [
+          0
+        ],
+        "header_merge_sep": " | ",
+        "data_starts_at": 1,
+        "melt": {
+          "category_label": "Clade",
+          "groups": [
+            {
+              "value_label": "Percentage",
+              "sources": {
+                "Clade_A": 1,
+                "Clade_B": 2,
+                "Clade_C": 3,
+                "Clade_D": 4
+              }
+            }
+          ],
+          "skip_missing_categories": true
+        },
+        "drop_rows": [],
+        "notes": "Rows are CAZy families; Clade_A-D columns hold per-clade abundance values that should be melted into Clade (sample) rows while c0 (family) and c5 (description) remain as passthrough columns."
+      }
+    },
+    {
+      "purpose": "table_plan",
+      "table": "mmc4.xlsx::CAZy_plant_carb_degradation",
+      "max_tokens": 2048,
+      "stop_reason": "end_turn",
+      "output_tokens": 1768,
+      "plan": {
+        "header_rows": [
+          0
+        ],
+        "header_merge_sep": " | ",
+        "data_starts_at": 1,
+        "melt": {
+          "category_label": "Clade",
+          "groups": [
+            {
+              "value_label": "Clade A",
+              "sources": {
+                "Clade A": 2
+              }
+            },
+            {
+              "value_label": "Clade B",
+              "sources": {
+                "Clade B": 3
+              }
+            },
+            {
+              "value_label": "Clade C",
+              "sources": {
+                "Clade C": 4
+              }
+            },
+            {
+              "value_label": "Clade D",
+              "sources": {
+                "Clade D": 5
+              }
+            }
+          ],
+          "skip_missing_categories": true
+        },
+        "drop_rows": [],
+        "notes": "c0 is a merged enzyme-class label spanning multiple rows (blank for continuation); c1 gives CAZy family, c2-c5 hold per-clade completeness percentages that are melted into Clade category/value pairs, c6 keeps its Annotation text unchanged."
+      }
+    },
+    {
+      "purpose": "table_plan",
+      "table": "mmc5.xlsx::Ancient_metagenomic_samples",
+      "max_tokens": 2048,
+      "stop_reason": "end_turn",
+      "output_tokens": 86,
+      "plan": {
+        "header_rows": [
+          1
+        ],
+        "header_merge_sep": " | ",
+        "data_starts_at": 2,
+        "melt": null,
+        "drop_rows": [
+          0
+        ],
+        "notes": "Row0 is a title; row1 is the flat header; rows2-6 are one sample per row."
+      }
+    },
+    {
+      "purpose": "table_plan",
+      "table": "mmc5.xlsx::Ancient_read_mapping",
+      "max_tokens": 2048,
+      "stop_reason": "end_turn",
+      "output_tokens": 734,
+      "plan": {
+        "header_rows": [
+          1
+        ],
+        "header_merge_sep": " | ",
+        "data_starts_at": 2,
+        "melt": null,
+        "drop_rows": [
+          3,
+          5
+        ],
+        "notes": "Row 0 is a title caption, row 1 is the flat header; rows 3 and 5 are secondary sequencing-run entries (no Eurac ID) for samples 2179/2180 and are dropped to keep one row per biological sample."
+      }
+    },
+    {
+      "purpose": "table_plan",
+      "table": "mmc7.pdf::p16_t4",
+      "max_tokens": 2048,
+      "stop_reason": "end_turn",
+      "output_tokens": 85,
+      "plan": {
+        "header_rows": [],
+        "header_merge_sep": " | ",
+        "data_starts_at": 0,
+        "melt": null,
+        "drop_rows": [],
+        "notes": "No header row present; each row describes a distinct dataset/resource, not a biological sample grid."
+      }
+    },
+    {
+      "purpose": "table_plan",
+      "table": "mmc7.pdf::p17_t1",
+      "max_tokens": 2048,
+      "stop_reason": "end_turn",
+      "output_tokens": 114,
+      "plan": {
+        "header_rows": [],
+        "header_merge_sep": " | ",
+        "data_starts_at": 0,
+        "melt": null,
+        "drop_rows": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "notes": "Table lists software tool citations/links, not biological samples; no header or sample rows present."
+      }
+    },
+    {
+      "purpose": "fields",
+      "n_fields": 30,
+      "first_field": "location",
+      "max_tokens": 16384,
+      "stop_reason": "end_turn",
+      "output_tokens": 10512
+    },
+    {
+      "purpose": "fields",
+      "n_fields": 30,
+      "first_field": "disease_details",
+      "max_tokens": 16384,
+      "stop_reason": "end_turn",
+      "output_tokens": 5343
+    },
+    {
+      "purpose": "fields",
+      "n_fields": 11,
+      "first_field": "tumor_size_residual_measurement",
+      "max_tokens": 16384,
+      "stop_reason": "end_turn",
+      "output_tokens": 4261
+    }
+  ],
+  "cost_estimate": {
+    "input_usd": 0.050658,
+    "output_usd": 0.25542,
+    "cache_read_usd": 0.031448800000000006,
+    "cache_write_usd": 0.190885,
+    "total_usd": 0.5284118,
+    "pricing_as_of": "2026-06-24"
+  },
+  "retrieval": {
+    "frozen_retrieval": "/Users/sehyunoh/OmicsMLRepo/MetaExtractor/benchmarks/cmd_sonnet5/out_v5/_fetch/TettAJ_2019_b",
+    "source": "pmc_fulltext",
+    "has_body": true,
+    "pmid": "31607556",
+    "pmcid": "6854460",
+    "doi": null,
+    "attempts": [
+      {
+        "rung": "pmc_fulltext",
+        "returned_text": true,
+        "is_body": true,
+        "chars": 70348
+      }
+    ],
+    "supplementary_included": [
+      "mmc1.pdf",
+      "mmc2.xlsx",
+      "mmc3.xlsx",
+      "mmc4.xlsx",
+      "mmc5.xlsx",
+      "mmc6.xlsx",
+      "mmc7.pdf"
+    ],
+    "supplementary_skipped": [
+      [
+        "fx1.gif",
+        "europepmc: ValueError: image-only (.gif)"
+      ],
+      [
+        "fx1.jpg",
+        "europepmc: ValueError: image-only (.jpg)"
+      ],
+      [
+        "gr1.gif",
+        "europepmc: ValueError: image-only (.gif)"
+      ],
+      [
+        "gr1.jpg",
+        "europepmc: ValueError: image-only (.jpg)"
+      ],
+      [
+        "gr2.gif",
+        "europepmc: ValueError: image-only (.gif)"
+      ],
+      [
+        "gr2.jpg",
+        "europepmc: ValueError: image-only (.jpg)"
+      ],
+      [
+        "gr3.gif",
+        "europepmc: ValueError: image-only (.gif)"
+      ],
+      [
+        "gr3.jpg",
+        "europepmc: ValueError: image-only (.jpg)"
+      ],
+      [
+        "gr4.gif",
+        "europepmc: ValueError: image-only (.gif)"
+      ],
+      [
+        "gr4.jpg",
+        "europepmc: ValueError: image-only (.jpg)"
+      ],
+      [
+        "gr5.gif",
+        "europepmc: ValueError: image-only (.gif)"
+      ],
+      [
+        "gr5.jpg",
+        "europepmc: ValueError: image-only (.jpg)"
+      ]
+    ],
+    "sra_manifest_source": "ena:PRJNA504891+PRJNA529124+PRJNA529400+PRJEB31971 (171 runs)",
+    "sra_manifest_warnings": [],
+    "sra_manifest_resolution": {}
+  },
+  "local_supplementary": [],
+  "paper_text_sha256": "62de06ec9cc5f3ed597201219cb59ae137fe6acb0a6a0e3ec2eb4d09d3a32d57",
+  "paper_text_chars": 168028,
+  "n_tables": 23,
+  "output": {
+    "granularity": "sample_level",
+    "n_samples": 50,
+    "n_fields": 71,
+    "n_warnings": 101
+  },
+  "versions": {
+    "metaextractor": "0.1.0",
+    "anthropic_sdk": "0.104.1",
+    "python": "3.13.5"
+  }
+}

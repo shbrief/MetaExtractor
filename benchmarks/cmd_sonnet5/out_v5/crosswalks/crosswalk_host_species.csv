@@ -1,0 +1,6 @@
+query,ref_match,stage,match1,match1_score,match1_code
+Homo sapiens,Not Found,1.0,Not Found,1.0,
+Human,Not Found,1.0,Not Found,1.0,
+Mouse,Not Found,1.0,Not Found,1.0,
+human,Not Found,1.0,Not Found,1.0,
+mouse,Not Found,1.0,Not Found,1.0,

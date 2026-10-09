@@ -1,0 +1,3873 @@
+{
+  "tree": "/Users/sehyunoh/OmicsMLRepo/MetaExtractor/benchmarks/cmd_sonnet5/out_v5",
+  "models": {
+    "sonnet": {
+      "runs": [
+        "sonnet_r1",
+        "sonnet_r2",
+        "sonnet_r3"
+      ],
+      "headline": {
+        "end_to_end": {
+          "precision": [
+            0.7239240015509888,
+            0.6970882225119513,
+            0.7467216185837392
+          ],
+          "recall": [
+            0.09936136242682278,
+            0.08536455561468867,
+            0.1060670569451836
+          ],
+          "f1": [
+            0.1747391080537227,
+            0.15210279266037646,
+            0.18574956894543082
+          ],
+          "tp_correct": [
+            1867,
+            1604,
+            1993
+          ],
+          "tp_wrong": [
+            697,
+            676,
+            712
+          ],
+          "fp": [
+            0,
+            0,
+            0
+          ],
+          "fn": [
+            16211,
+            16121,
+            16489
+          ]
+        },
+        "conditional": {
+          "precision": [
+            0.7239240015509888,
+            0.6970882225119513,
+            0.7467216185837392
+          ],
+          "recall": [
+            0.3173011556764106,
+            0.2726036709721278,
+            0.3387151597552685
+          ],
+          "f1": [
+            0.4412146992792154,
+            0.39193646915088576,
+            0.46603530924821696
+          ],
+          "tp_correct": [
+            1867,
+            1604,
+            1993
+          ],
+          "tp_wrong": [
+            697,
+            676,
+            712
+          ],
+          "fp": [
+            0,
+            0,
+            0
+          ],
+          "fn": [
+            3305,
+            3215,
+            3583
+          ]
+        },
+        "end_to_end_successful_only": {
+          "precision": [
+            0.7239240015509888,
+            0.6970882225119513,
+            0.7467216185837392
+          ],
+          "recall": [
+            0.09936136242682278,
+            0.08536455561468867,
+            0.1060670569451836
+          ],
+          "f1": [
+            0.1747391080537227,
+            0.15210279266037646,
+            0.18574956894543082
+          ],
+          "tp_correct": [
+            1867,
+            1604,
+            1993
+          ],
+          "tp_wrong": [
+            697,
+            676,
+            712
+          ],
+          "fp": [
+            0,
+            0,
+            0
+          ],
+          "fn": [
+            16211,
+            16121,
+            16489
+          ]
+        }
+      },
+      "per_run": {
+        "end_to_end": {
+          "sonnet_r1": {
+            "precision": 0.7239240015509888,
+            "recall": 0.09936136242682278,
+            "f1": 0.1747391080537227,
+            "tn": 1435,
+            "tp_correct": 1867,
+            "tp_wrong": 712,
+            "fn": 16211,
+            "fp": 0
+          },
+          "sonnet_r2": {
+            "precision": 0.7467216185837392,
+            "recall": 0.1060670569451836,
+            "f1": 0.18574956894543082,
+            "tn": 1435,
+            "tp_correct": 1993,
+            "tp_wrong": 676,
+            "fn": 16121,
+            "fp": 0
+          },
+          "sonnet_r3": {
+            "precision": 0.6970882225119513,
+            "recall": 0.08536455561468867,
+            "f1": 0.15210279266037646,
+            "tn": 1435,
+            "tp_correct": 1604,
+            "tp_wrong": 697,
+            "fn": 16489,
+            "fp": 0
+          }
+        },
+        "conditional": {
+          "sonnet_r1": {
+            "precision": 0.7239240015509888,
+            "recall": 0.3173011556764106,
+            "f1": 0.4412146992792154,
+            "tn": 437,
+            "tp_correct": 1867,
+            "tp_wrong": 712,
+            "fn": 3305,
+            "fp": 0
+          },
+          "sonnet_r2": {
+            "precision": 0.7467216185837392,
+            "recall": 0.3387151597552685,
+            "f1": 0.46603530924821696,
+            "tn": 437,
+            "tp_correct": 1993,
+            "tp_wrong": 676,
+            "fn": 3215,
+            "fp": 0
+          },
+          "sonnet_r3": {
+            "precision": 0.6970882225119513,
+            "recall": 0.2726036709721278,
+            "f1": 0.39193646915088576,
+            "tn": 437,
+            "tp_correct": 1604,
+            "tp_wrong": 697,
+            "fn": 3583,
+            "fp": 0
+          }
+        },
+        "end_to_end_successful_only": {
+          "sonnet_r1": {
+            "precision": 0.7239240015509888,
+            "recall": 0.09936136242682278,
+            "f1": 0.1747391080537227,
+            "tn": 1435,
+            "tp_correct": 1867,
+            "tp_wrong": 712,
+            "fn": 16211,
+            "fp": 0
+          },
+          "sonnet_r2": {
+            "precision": 0.7467216185837392,
+            "recall": 0.1060670569451836,
+            "f1": 0.18574956894543082,
+            "tn": 1435,
+            "tp_correct": 1993,
+            "tp_wrong": 676,
+            "fn": 16121,
+            "fp": 0
+          },
+          "sonnet_r3": {
+            "precision": 0.6970882225119513,
+            "recall": 0.08536455561468867,
+            "f1": 0.15210279266037646,
+            "tn": 1435,
+            "tp_correct": 1604,
+            "tp_wrong": 697,
+            "fn": 16489,
+            "fp": 0
+          }
+        }
+      },
+      "per_study": {
+        "Bengtsson-PalmeJ_2015": {
+          "n_gold": 70,
+          "runs": {
+            "sonnet_r1": {
+              "n_extracted": 70,
+              "granularity": "sample_level",
+              "extraction_failed": false,
+              "alignment": {
+                "key_used": "ncbi_accession",
+                "n_gold": 70,
+                "n_ext": 70,
+                "matched": 70,
+                "unmatched_gold": 0,
+                "pooled_gold": 0,
+                "ambiguous_gold": 0,
+                "duplicate_ext_records": 0,
+                "unmatched_ext_with_key": 0,
+                "unmatched_ext_without_key": 0,
+                "ext_in_conflict": 0,
+                "candidate_matches": {
+                  "ncbi_accession": 70,
+                  "sample_id": 70,
+                  "subject_id": 0
+                }
+              },
+              "end_to_end": {
+                "tn": 0,
+                "tp_correct": 350,
+                "tp_wrong": 70,
+                "fn": 770,
+                "fp": 0
+              },
+              "conditional": {
+                "tn": 0,
+                "tp_correct": 350,
+                "tp_wrong": 70,
+                "fn": 770,
+                "fp": 0
+              },
+              "extra_records": 0
+            },
+            "sonnet_r2": {
+              "n_extracted": 70,
+              "granularity": "sample_level",
+              "extraction_failed": false,
+              "alignment": {
+                "key_used": "ncbi_accession",
+                "n_gold": 70,
+                "n_ext": 70,
+                "matched": 70,
+                "unmatched_gold": 0,
+                "pooled_gold": 0,
+                "ambiguous_gold": 0,
+                "duplicate_ext_records": 0,
+                "unmatched_ext_with_key": 0,
+                "unmatched_ext_without_key": 0,
+                "ext_in_conflict": 0,
+                "candidate_matches": {
+                  "ncbi_accession": 70,
+                  "sample_id": 70,
+                  "subject_id": 0
+                }
+              },
+              "end_to_end": {
+                "tn": 0,
+                "tp_correct": 350,
+                "tp_wrong": 70,
+                "fn": 770,
+                "fp": 0
+              },
+              "conditional": {
+                "tn": 0,
+                "tp_correct": 350,
+                "tp_wrong": 70,
+                "fn": 770,
+                "fp": 0
+              },
+              "extra_records": 0
+            },
+            "sonnet_r3": {
+              "n_extracted": 70,
+              "granularity": "sample_level",
+              "extraction_failed": false,
+              "alignment": {
+                "key_used": "ncbi_accession",
+                "n_gold": 70,
+                "n_ext": 70,
+                "matched": 70,
+                "unmatched_gold": 0,
+                "pooled_gold": 0,
+                "ambiguous_gold": 0,
+                "duplicate_ext_records": 0,
+                "unmatched_ext_with_key": 0,
+                "unmatched_ext_without_key": 0,
+                "ext_in_conflict": 0,
+                "candidate_matches": {
+                  "ncbi_accession": 70,
+                  "sample_id": 70,
+                  "subject_id": 0
+                }
+              },
+              "end_to_end": {
+                "tn": 0,
+                "tp_correct": 140,
+                "tp_wrong": 70,
+                "fn": 980,
+                "fp": 0
+              },
+              "conditional": {
+                "tn": 0,
+                "tp_correct": 140,
+                "tp_wrong": 70,
+                "fn": 980,
+                "fp": 0
+              },
+              "extra_records": 0
+            }
+          }
+        },
+        "TettAJ_2019_b": {
+          "n_gold": 162,
+          "runs": {
+            "sonnet_r1": {
+              "n_extracted": 50,
+              "granularity": "sample_level",
+              "extraction_failed": false,
+              "alignment": {
+                "key_used": "sample_id",
+                "n_gold": 162,
+                "n_ext": 50,
+                "matched": 50,
+                "unmatched_gold": 112,
+                "pooled_gold": 0,
+                "ambiguous_gold": 0,
+                "duplicate_ext_records": 0,
+                "unmatched_ext_with_key": 0,
+                "unmatched_ext_without_key": 0,
+                "ext_in_conflict": 0,
+                "candidate_matches": {
+                  "ncbi_accession": 0,
+                  "sample_id": 50,
+                  "subject_id": 50
+                }
+              },
+              "end_to_end": {
+                "tn": 118,
+                "tp_correct": 180,
+                "tp_wrong": 267,
+                "fn": 2189,
+                "fp": 0
+              },
+              "conditional": {
+                "tn": 3,
+                "tp_correct": 180,
+                "tp_wrong": 267,
+                "fn": 400,
+                "fp": 0
+              },
+              "extra_records": 0
+            },
+            "sonnet_r2": {
+              "n_extracted": 50,
+              "granularity": "sample_level",
+              "extraction_failed": false,
+              "alignment": {
+                "key_used": "sample_id",
+                "n_gold": 162,
+                "n_ext": 50,
+                "matched": 50,
+                "unmatched_gold": 112,
+                "pooled_gold": 0,
+                "ambiguous_gold": 0,
+                "duplicate_ext_records": 0,
+                "unmatched_ext_with_key": 0,
+                "unmatched_ext_without_key": 0,
+                "ext_in_conflict": 0,
+                "candidate_matches": {
+                  "ncbi_accession": 0,
+                  "sample_id": 50,
+                  "subject_id": 50
+                }
+              },
+              "end_to_end": {
+                "tn": 118,
+                "tp_correct": 180,
+                "tp_wrong": 217,
+                "fn": 2239,
+                "fp": 0
+              },
+              "conditional": {
+                "tn": 3,
+                "tp_correct": 180,
+                "tp_wrong": 217,
+                "fn": 450,
+                "fp": 0
+              },
+              "extra_records": 0
+            },
+            "sonnet_r3": {
+              "n_extracted": 50,
+              "granularity": "sample_level",
+              "extraction_failed": false,
+              "alignment": {
+                "key_used": "sample_id",
+                "n_gold": 162,
+                "n_ext": 50,
+                "matched": 50,
+                "unmatched_gold": 112,
+                "pooled_gold": 0,
+                "ambiguous_gold": 0,
+                "duplicate_ext_records": 0,
+                "unmatched_ext_with_key": 0,
+                "unmatched_ext_without_key": 0,
+                "ext_in_conflict": 0,
+                "candidate_matches": {
+                  "ncbi_accession": 0,
+                  "sample_id": 50,
+                  "subject_id": 50
+                }
+              },
+              "end_to_end": {
+                "tn": 118,
+                "tp_correct": 180,
+                "tp_wrong": 267,
+                "fn": 2189,
+                "fp": 0
+              },
+              "conditional": {
+                "tn": 3,
+                "tp_correct": 180,
+                "tp_wrong": 267,
+                "fn": 400,
+                "fp": 0
+              },
+              "extra_records": 0
+            }
+          }
+        },
+        "LiJ_2017": {
+          "n_gold": 196,
+          "runs": {
+            "sonnet_r1": {
+              "n_extracted": 6,
+              "granularity": "sample_level",
+              "extraction_failed": false,
+              "alignment": {
+                "key_used": null,
+                "n_gold": 196,
+                "n_ext": 6,
+                "matched": 0,
+                "unmatched_gold": 196,
+                "pooled_gold": 0,
+                "ambiguous_gold": 0,
+                "duplicate_ext_records": 0,
+                "unmatched_ext_with_key": 6,
+                "unmatched_ext_without_key": 0,
+                "ext_in_conflict": 0,
+                "candidate_matches": {
+                  "ncbi_accession": 0,
+                  "sample_id": 0,
+                  "subject_id": 0
+                }
+              },
+              "end_to_end": {
+                "tn": 588,
+                "tp_correct": 0,
+                "tp_wrong": 0,
+                "fn": 2744,
+                "fp": 0
+              },
+              "conditional": {
+                "tn": 0,
+                "tp_correct": 0,
+                "tp_wrong": 0,
+                "fn": 0,
+                "fp": 0
+              },
+              "extra_records": 6
+            },
+            "sonnet_r2": {
+              "n_extracted": 6,
+              "granularity": "sample_level",
+              "extraction_failed": false,
+              "alignment": {
+                "key_used": null,
+                "n_gold": 196,
+                "n_ext": 6,
+                "matched": 0,
+                "unmatched_gold": 196,
+                "pooled_gold": 0,
+                "ambiguous_gold": 0,
+                "duplicate_ext_records": 0,
+                "unmatched_ext_with_key": 6,
+                "unmatched_ext_without_key": 0,
+                "ext_in_conflict": 0,
+                "candidate_matches": {
+                  "ncbi_accession": 0,
+                  "sample_id": 0,
+                  "subject_id": 0
+                }
+              },
+              "end_to_end": {
+                "tn": 588,
+                "tp_correct": 0,
+                "tp_wrong": 0,
+                "fn": 2744,
+                "fp": 0
+              },
+              "conditional": {
+                "tn": 0,
+                "tp_correct": 0,
+                "tp_wrong": 0,
+                "fn": 0,
+                "fp": 0
+              },
+              "extra_records": 6
+            },
+            "sonnet_r3": {
+              "n_extracted": 6,
+              "granularity": "sample_level",
+              "extraction_failed": false,
+              "alignment": {
+                "key_used": null,
+                "n_gold": 196,
+                "n_ext": 6,
+                "matched": 0,
+                "unmatched_gold": 196,
+                "pooled_gold": 0,
+                "ambiguous_gold": 0,
+                "duplicate_ext_records": 0,
+                "unmatched_ext_with_key": 6,
+                "unmatched_ext_without_key": 0,
+                "ext_in_conflict": 0,
+                "candidate_matches": {
+                  "ncbi_accession": 0,
+                  "sample_id": 0,
+                  "subject_id": 0
+                }
+              },
+              "end_to_end": {
+                "tn": 588,
+                "tp_correct": 0,
+                "tp_wrong": 0,
+                "fn": 2744,
+                "fp": 0
+              },
+              "conditional": {
+                "tn": 0,
+                "tp_correct": 0,
+                "tp_wrong": 0,
+                "fn": 0,
+                "fp": 0
+              },
+              "extra_records": 6
+            }
+          }
+        },
+        "NayakRR_2021": {
+          "n_gold": 34,
+          "runs": {
+            "sonnet_r1": {
+              "n_extracted": 434,
+              "granularity": "sample_level",
+              "extraction_failed": false,
+              "alignment": {
+                "key_used": "ncbi_accession",
+                "n_gold": 34,
+                "n_ext": 434,
+                "matched": 34,
+                "unmatched_gold": 0,
+                "pooled_gold": 0,
+                "ambiguous_gold": 0,
+                "duplicate_ext_records": 0,
+                "unmatched_ext_with_key": 400,
+                "unmatched_ext_without_key": 0,
+                "ext_in_conflict": 0,
+                "candidate_matches": {
+                  "ncbi_accession": 34,
+                  "sample_id": 4,
+                  "subject_id": 0
+                }
+              },
+              "end_to_end": {
+                "tn": 0,
+                "tp_correct": 102,
+                "tp_wrong": 68,
+                "fn": 204,
+                "fp": 0
+              },
+              "conditional": {
+                "tn": 0,
+                "tp_correct": 102,
+                "tp_wrong": 68,
+                "fn": 204,
+                "fp": 0
+              },
+              "extra_records": 400
+            },
+            "sonnet_r2": {
+              "n_extracted": 434,
+              "granularity": "sample_level",
+              "extraction_failed": false,
+              "alignment": {
+                "key_used": "ncbi_accession",
+                "n_gold": 34,
+                "n_ext": 434,
+                "matched": 34,
+                "unmatched_gold": 0,
+                "pooled_gold": 0,
+                "ambiguous_gold": 0,
+                "duplicate_ext_records": 0,
+                "unmatched_ext_with_key": 400,
+                "unmatched_ext_without_key": 0,
+                "ext_in_conflict": 0,
+                "candidate_matches": {
+                  "ncbi_accession": 34,
+                  "sample_id": 4,
+                  "subject_id": 0
+                }
+              },
+              "end_to_end": {
+                "tn": 0,
+                "tp_correct": 136,
+                "tp_wrong": 68,
+                "fn": 170,
+                "fp": 0
+              },
+              "conditional": {
+                "tn": 0,
+                "tp_correct": 136,
+                "tp_wrong": 68,
+                "fn": 170,
+                "fp": 0
+              },
+              "extra_records": 400
+            },
+            "sonnet_r3": {
+              "n_extracted": 434,
+              "granularity": "sample_level",
+              "extraction_failed": false,
+              "alignment": {
+                "key_used": "ncbi_accession",
+                "n_gold": 34,
+                "n_ext": 434,
+                "matched": 34,
+                "unmatched_gold": 0,
+                "pooled_gold": 0,
+                "ambiguous_gold": 0,
+                "duplicate_ext_records": 0,
+                "unmatched_ext_with_key": 400,
+                "unmatched_ext_without_key": 0,
+                "ext_in_conflict": 0,
+                "candidate_matches": {
+                  "ncbi_accession": 34,
+                  "sample_id": 4,
+                  "subject_id": 0
+                }
+              },
+              "end_to_end": {
+                "tn": 0,
+                "tp_correct": 34,
+                "tp_wrong": 68,
+                "fn": 272,
+                "fp": 0
+              },
+              "conditional": {
+                "tn": 0,
+                "tp_correct": 34,
+                "tp_wrong": 68,
+                "fn": 272,
+                "fp": 0
+              },
+              "extra_records": 400
+            }
+          }
+        },
+        "PasolliE_2019": {
+          "n_gold": 112,
+          "runs": {
+            "sonnet_r1": {
+              "n_extracted": 112,
+              "granularity": "sample_level",
+              "extraction_failed": false,
+              "alignment": {
+                "key_used": "sample_id",
+                "n_gold": 112,
+                "n_ext": 112,
+                "matched": 112,
+                "unmatched_gold": 0,
+                "pooled_gold": 0,
+                "ambiguous_gold": 0,
+                "duplicate_ext_records": 0,
+                "unmatched_ext_with_key": 0,
+                "unmatched_ext_without_key": 0,
+                "ext_in_conflict": 0,
+                "candidate_matches": {
+                  "ncbi_accession": 0,
+                  "sample_id": 112,
+                  "subject_id": 0
+                }
+              },
+              "end_to_end": {
+                "tn": 336,
+                "tp_correct": 1008,
+                "tp_wrong": 224,
+                "fn": 1008,
+                "fp": 0
+              },
+              "conditional": {
+                "tn": 336,
+                "tp_correct": 1008,
+                "tp_wrong": 224,
+                "fn": 1008,
+                "fp": 0
+              },
+              "extra_records": 0
+            },
+            "sonnet_r2": {
+              "n_extracted": 112,
+              "granularity": "sample_level",
+              "extraction_failed": false,
+              "alignment": {
+                "key_used": "sample_id",
+                "n_gold": 112,
+                "n_ext": 112,
+                "matched": 112,
+                "unmatched_gold": 0,
+                "pooled_gold": 0,
+                "ambiguous_gold": 0,
+                "duplicate_ext_records": 0,
+                "unmatched_ext_with_key": 0,
+                "unmatched_ext_without_key": 0,
+                "ext_in_conflict": 0,
+                "candidate_matches": {
+                  "ncbi_accession": 0,
+                  "sample_id": 112,
+                  "subject_id": 0
+                }
+              },
+              "end_to_end": {
+                "tn": 336,
+                "tp_correct": 1008,
+                "tp_wrong": 224,
+                "fn": 1008,
+                "fp": 0
+              },
+              "conditional": {
+                "tn": 336,
+                "tp_correct": 1008,
+                "tp_wrong": 224,
+                "fn": 1008,
+                "fp": 0
+              },
+              "extra_records": 0
+            },
+            "sonnet_r3": {
+              "n_extracted": 112,
+              "granularity": "sample_level",
+              "extraction_failed": false,
+              "alignment": {
+                "key_used": "sample_id",
+                "n_gold": 112,
+                "n_ext": 112,
+                "matched": 112,
+                "unmatched_gold": 0,
+                "pooled_gold": 0,
+                "ambiguous_gold": 0,
+                "duplicate_ext_records": 0,
+                "unmatched_ext_with_key": 0,
+                "unmatched_ext_without_key": 0,
+                "ext_in_conflict": 0,
+                "candidate_matches": {
+                  "ncbi_accession": 0,
+                  "sample_id": 112,
+                  "subject_id": 0
+                }
+              },
+              "end_to_end": {
+                "tn": 336,
+                "tp_correct": 1008,
+                "tp_wrong": 224,
+                "fn": 1008,
+                "fp": 0
+              },
+              "conditional": {
+                "tn": 336,
+                "tp_correct": 1008,
+                "tp_wrong": 224,
+                "fn": 1008,
+                "fp": 0
+              },
+              "extra_records": 0
+            }
+          }
+        },
+        "Heitz-BuschartA_2016": {
+          "n_gold": 53,
+          "runs": {
+            "sonnet_r1": {
+              "n_extracted": 221,
+              "granularity": "sample_level",
+              "extraction_failed": false,
+              "alignment": {
+                "key_used": "ncbi_accession",
+                "n_gold": 53,
+                "n_ext": 221,
+                "matched": 53,
+                "unmatched_gold": 0,
+                "pooled_gold": 0,
+                "ambiguous_gold": 0,
+                "duplicate_ext_records": 0,
+                "unmatched_ext_with_key": 168,
+                "unmatched_ext_without_key": 0,
+                "ext_in_conflict": 0,
+                "candidate_matches": {
+                  "ncbi_accession": 53,
+                  "sample_id": 17,
+                  "subject_id": 0
+                }
+              },
+              "end_to_end": {
+                "tn": 68,
+                "tp_correct": 212,
+                "tp_wrong": 53,
+                "fn": 833,
+                "fp": 0
+              },
+              "conditional": {
+                "tn": 68,
+                "tp_correct": 212,
+                "tp_wrong": 53,
+                "fn": 833,
+                "fp": 0
+              },
+              "extra_records": 168
+            },
+            "sonnet_r2": {
+              "n_extracted": 221,
+              "granularity": "sample_level",
+              "extraction_failed": false,
+              "alignment": {
+                "key_used": "ncbi_accession",
+                "n_gold": 53,
+                "n_ext": 221,
+                "matched": 53,
+                "unmatched_gold": 0,
+                "pooled_gold": 0,
+                "ambiguous_gold": 0,
+                "duplicate_ext_records": 0,
+                "unmatched_ext_with_key": 168,
+                "unmatched_ext_without_key": 0,
+                "ext_in_conflict": 0,
+                "candidate_matches": {
+                  "ncbi_accession": 53,
+                  "sample_id": 17,
+                  "subject_id": 0
+                }
+              },
+              "end_to_end": {
+                "tn": 68,
+                "tp_correct": 289,
+                "tp_wrong": 82,
+                "fn": 727,
+                "fp": 0
+              },
+              "conditional": {
+                "tn": 68,
+                "tp_correct": 289,
+                "tp_wrong": 82,
+                "fn": 727,
+                "fp": 0
+              },
+              "extra_records": 168
+            },
+            "sonnet_r3": {
+              "n_extracted": 221,
+              "granularity": "sample_level",
+              "extraction_failed": false,
+              "alignment": {
+                "key_used": "ncbi_accession",
+                "n_gold": 53,
+                "n_ext": 221,
+                "matched": 53,
+                "unmatched_gold": 0,
+                "pooled_gold": 0,
+                "ambiguous_gold": 0,
+                "duplicate_ext_records": 0,
+                "unmatched_ext_with_key": 168,
+                "unmatched_ext_without_key": 0,
+                "ext_in_conflict": 0,
+                "candidate_matches": {
+                  "ncbi_accession": 53,
+                  "sample_id": 17,
+                  "subject_id": 0
+                }
+              },
+              "end_to_end": {
+                "tn": 68,
+                "tp_correct": 212,
+                "tp_wrong": 53,
+                "fn": 833,
+                "fp": 0
+              },
+              "conditional": {
+                "tn": 68,
+                "tp_correct": 212,
+                "tp_wrong": 53,
+                "fn": 833,
+                "fp": 0
+              },
+              "extra_records": 168
+            }
+          }
+        },
+        "FanY_2023": {
+          "n_gold": 147,
+          "runs": {
+            "sonnet_r1": {
+              "n_extracted": 100,
+              "granularity": "sample_level",
+              "extraction_failed": false,
+              "alignment": {
+                "key_used": null,
+                "n_gold": 147,
+                "n_ext": 100,
+                "matched": 0,
+                "unmatched_gold": 147,
+                "pooled_gold": 0,
+                "ambiguous_gold": 0,
+                "duplicate_ext_records": 0,
+                "unmatched_ext_with_key": 100,
+                "unmatched_ext_without_key": 0,
+                "ext_in_conflict": 0,
+                "candidate_matches": {
+                  "ncbi_accession": 0,
+                  "sample_id": 0,
+                  "subject_id": 0
+                }
+              },
+              "end_to_end": {
+                "tn": 0,
+                "tp_correct": 0,
+                "tp_wrong": 0,
+                "fn": 1617,
+                "fp": 0
+              },
+              "conditional": {
+                "tn": 0,
+                "tp_correct": 0,
+                "tp_wrong": 0,
+                "fn": 0,
+                "fp": 0
+              },
+              "extra_records": 100
+            },
+            "sonnet_r2": {
+              "n_extracted": 100,
+              "granularity": "sample_level",
+              "extraction_failed": false,
+              "alignment": {
+                "key_used": null,
+                "n_gold": 147,
+                "n_ext": 100,
+                "matched": 0,
+                "unmatched_gold": 147,
+                "pooled_gold": 0,
+                "ambiguous_gold": 0,
+                "duplicate_ext_records": 0,
+                "unmatched_ext_with_key": 100,
+                "unmatched_ext_without_key": 0,
+                "ext_in_conflict": 0,
+                "candidate_matches": {
+                  "ncbi_accession": 0,
+                  "sample_id": 0,
+                  "subject_id": 0
+                }
+              },
+              "end_to_end": {
+                "tn": 0,
+                "tp_correct": 0,
+                "tp_wrong": 0,
+                "fn": 1617,
+                "fp": 0
+              },
+              "conditional": {
+                "tn": 0,
+                "tp_correct": 0,
+                "tp_wrong": 0,
+                "fn": 0,
+                "fp": 0
+              },
+              "extra_records": 100
+            },
+            "sonnet_r3": {
+              "n_extracted": 100,
+              "granularity": "sample_level",
+              "extraction_failed": false,
+              "alignment": {
+                "key_used": null,
+                "n_gold": 147,
+                "n_ext": 100,
+                "matched": 0,
+                "unmatched_gold": 147,
+                "pooled_gold": 0,
+                "ambiguous_gold": 0,
+                "duplicate_ext_records": 0,
+                "unmatched_ext_with_key": 100,
+                "unmatched_ext_without_key": 0,
+                "ext_in_conflict": 0,
+                "candidate_matches": {
+                  "ncbi_accession": 0,
+                  "sample_id": 0,
+                  "subject_id": 0
+                }
+              },
+              "end_to_end": {
+                "tn": 0,
+                "tp_correct": 0,
+                "tp_wrong": 0,
+                "fn": 1617,
+                "fp": 0
+              },
+              "conditional": {
+                "tn": 0,
+                "tp_correct": 0,
+                "tp_wrong": 0,
+                "fn": 0,
+                "fp": 0
+              },
+              "extra_records": 100
+            }
+          }
+        },
+        "QinJ_2012": {
+          "n_gold": 363,
+          "runs": {
+            "sonnet_r1": {
+              "n_extracted": 0,
+              "granularity": "study_level",
+              "extraction_failed": false,
+              "alignment": {
+                "key_used": null,
+                "n_gold": 363,
+                "n_ext": 0,
+                "matched": 0,
+                "unmatched_gold": 363,
+                "pooled_gold": 0,
+                "ambiguous_gold": 0,
+                "duplicate_ext_records": 0,
+                "unmatched_ext_with_key": 0,
+                "unmatched_ext_without_key": 0,
+                "ext_in_conflict": 0,
+                "candidate_matches": {
+                  "ncbi_accession": 0,
+                  "sample_id": 0,
+                  "subject_id": 0
+                }
+              },
+              "end_to_end": {
+                "tn": 130,
+                "tp_correct": 0,
+                "tp_wrong": 0,
+                "fn": 6041,
+                "fp": 0
+              },
+              "conditional": {
+                "tn": 0,
+                "tp_correct": 0,
+                "tp_wrong": 0,
+                "fn": 0,
+                "fp": 0
+              },
+              "extra_records": 0
+            },
+            "sonnet_r2": {
+              "n_extracted": 0,
+              "granularity": "study_level",
+              "extraction_failed": false,
+              "alignment": {
+                "key_used": null,
+                "n_gold": 363,
+                "n_ext": 0,
+                "matched": 0,
+                "unmatched_gold": 363,
+                "pooled_gold": 0,
+                "ambiguous_gold": 0,
+                "duplicate_ext_records": 0,
+                "unmatched_ext_with_key": 0,
+                "unmatched_ext_without_key": 0,
+                "ext_in_conflict": 0,
+                "candidate_matches": {
+                  "ncbi_accession": 0,
+                  "sample_id": 0,
+                  "subject_id": 0
+                }
+              },
+              "end_to_end": {
+                "tn": 130,
+                "tp_correct": 0,
+                "tp_wrong": 0,
+                "fn": 6041,
+                "fp": 0
+              },
+              "conditional": {
+                "tn": 0,
+                "tp_correct": 0,
+                "tp_wrong": 0,
+                "fn": 0,
+                "fp": 0
+              },
+              "extra_records": 0
+            },
+            "sonnet_r3": {
+              "n_extracted": 0,
+              "granularity": "study_level",
+              "extraction_failed": false,
+              "alignment": {
+                "key_used": null,
+                "n_gold": 363,
+                "n_ext": 0,
+                "matched": 0,
+                "unmatched_gold": 363,
+                "pooled_gold": 0,
+                "ambiguous_gold": 0,
+                "duplicate_ext_records": 0,
+                "unmatched_ext_with_key": 0,
+                "unmatched_ext_without_key": 0,
+                "ext_in_conflict": 0,
+                "candidate_matches": {
+                  "ncbi_accession": 0,
+                  "sample_id": 0,
+                  "subject_id": 0
+                }
+              },
+              "end_to_end": {
+                "tn": 130,
+                "tp_correct": 0,
+                "tp_wrong": 0,
+                "fn": 6041,
+                "fp": 0
+              },
+              "conditional": {
+                "tn": 0,
+                "tp_correct": 0,
+                "tp_wrong": 0,
+                "fn": 0,
+                "fp": 0
+              },
+              "extra_records": 0
+            }
+          }
+        },
+        "ContevilleLC_2019": {
+          "n_gold": 15,
+          "runs": {
+            "sonnet_r1": {
+              "n_extracted": 15,
+              "granularity": "sample_level",
+              "extraction_failed": false,
+              "alignment": {
+                "key_used": "ncbi_accession",
+                "n_gold": 15,
+                "n_ext": 15,
+                "matched": 15,
+                "unmatched_gold": 0,
+                "pooled_gold": 0,
+                "ambiguous_gold": 0,
+                "duplicate_ext_records": 0,
+                "unmatched_ext_with_key": 0,
+                "unmatched_ext_without_key": 0,
+                "ext_in_conflict": 0,
+                "candidate_matches": {
+                  "ncbi_accession": 15,
+                  "sample_id": 15,
+                  "subject_id": 0
+                }
+              },
+              "end_to_end": {
+                "tn": 30,
+                "tp_correct": 15,
+                "tp_wrong": 30,
+                "fn": 90,
+                "fp": 0
+              },
+              "conditional": {
+                "tn": 30,
+                "tp_correct": 15,
+                "tp_wrong": 30,
+                "fn": 90,
+                "fp": 0
+              },
+              "extra_records": 0
+            },
+            "sonnet_r2": {
+              "n_extracted": 15,
+              "granularity": "sample_level",
+              "extraction_failed": false,
+              "alignment": {
+                "key_used": "ncbi_accession",
+                "n_gold": 15,
+                "n_ext": 15,
+                "matched": 15,
+                "unmatched_gold": 0,
+                "pooled_gold": 0,
+                "ambiguous_gold": 0,
+                "duplicate_ext_records": 0,
+                "unmatched_ext_with_key": 0,
+                "unmatched_ext_without_key": 0,
+                "ext_in_conflict": 0,
+                "candidate_matches": {
+                  "ncbi_accession": 15,
+                  "sample_id": 15,
+                  "subject_id": 0
+                }
+              },
+              "end_to_end": {
+                "tn": 30,
+                "tp_correct": 30,
+                "tp_wrong": 15,
+                "fn": 90,
+                "fp": 0
+              },
+              "conditional": {
+                "tn": 30,
+                "tp_correct": 30,
+                "tp_wrong": 15,
+                "fn": 90,
+                "fp": 0
+              },
+              "extra_records": 0
+            },
+            "sonnet_r3": {
+              "n_extracted": 15,
+              "granularity": "sample_level",
+              "extraction_failed": false,
+              "alignment": {
+                "key_used": "ncbi_accession",
+                "n_gold": 15,
+                "n_ext": 15,
+                "matched": 15,
+                "unmatched_gold": 0,
+                "pooled_gold": 0,
+                "ambiguous_gold": 0,
+                "duplicate_ext_records": 0,
+                "unmatched_ext_with_key": 0,
+                "unmatched_ext_without_key": 0,
+                "ext_in_conflict": 0,
+                "candidate_matches": {
+                  "ncbi_accession": 15,
+                  "sample_id": 15,
+                  "subject_id": 0
+                }
+              },
+              "end_to_end": {
+                "tn": 30,
+                "tp_correct": 30,
+                "tp_wrong": 15,
+                "fn": 90,
+                "fp": 0
+              },
+              "conditional": {
+                "tn": 30,
+                "tp_correct": 30,
+                "tp_wrong": 15,
+                "fn": 90,
+                "fp": 0
+              },
+              "extra_records": 0
+            }
+          }
+        },
+        "LiSS_2016": {
+          "n_gold": 55,
+          "runs": {
+            "sonnet_r1": {
+              "n_extracted": 0,
+              "granularity": "study_level",
+              "extraction_failed": false,
+              "alignment": {
+                "key_used": null,
+                "n_gold": 55,
+                "n_ext": 0,
+                "matched": 0,
+                "unmatched_gold": 55,
+                "pooled_gold": 0,
+                "ambiguous_gold": 0,
+                "duplicate_ext_records": 0,
+                "unmatched_ext_with_key": 0,
+                "unmatched_ext_without_key": 0,
+                "ext_in_conflict": 0,
+                "candidate_matches": {
+                  "ncbi_accession": 0,
+                  "sample_id": 0,
+                  "subject_id": 0
+                }
+              },
+              "end_to_end": {
+                "tn": 165,
+                "tp_correct": 0,
+                "tp_wrong": 0,
+                "fn": 715,
+                "fp": 0
+              },
+              "conditional": {
+                "tn": 0,
+                "tp_correct": 0,
+                "tp_wrong": 0,
+                "fn": 0,
+                "fp": 0
+              },
+              "extra_records": 0
+            },
+            "sonnet_r2": {
+              "n_extracted": 0,
+              "granularity": "study_level",
+              "extraction_failed": false,
+              "alignment": {
+                "key_used": null,
+                "n_gold": 55,
+                "n_ext": 0,
+                "matched": 0,
+                "unmatched_gold": 55,
+                "pooled_gold": 0,
+                "ambiguous_gold": 0,
+                "duplicate_ext_records": 0,
+                "unmatched_ext_with_key": 0,
+                "unmatched_ext_without_key": 0,
+                "ext_in_conflict": 0,
+                "candidate_matches": {
+                  "ncbi_accession": 0,
+                  "sample_id": 0,
+                  "subject_id": 0
+                }
+              },
+              "end_to_end": {
+                "tn": 165,
+                "tp_correct": 0,
+                "tp_wrong": 0,
+                "fn": 715,
+                "fp": 0
+              },
+              "conditional": {
+                "tn": 0,
+                "tp_correct": 0,
+                "tp_wrong": 0,
+                "fn": 0,
+                "fp": 0
+              },
+              "extra_records": 0
+            },
+            "sonnet_r3": {
+              "n_extracted": 0,
+              "granularity": "study_level",
+              "extraction_failed": false,
+              "alignment": {
+                "key_used": null,
+                "n_gold": 55,
+                "n_ext": 0,
+                "matched": 0,
+                "unmatched_gold": 55,
+                "pooled_gold": 0,
+                "ambiguous_gold": 0,
+                "duplicate_ext_records": 0,
+                "unmatched_ext_with_key": 0,
+                "unmatched_ext_without_key": 0,
+                "ext_in_conflict": 0,
+                "candidate_matches": {
+                  "ncbi_accession": 0,
+                  "sample_id": 0,
+                  "subject_id": 0
+                }
+              },
+              "end_to_end": {
+                "tn": 165,
+                "tp_correct": 0,
+                "tp_wrong": 0,
+                "fn": 715,
+                "fp": 0
+              },
+              "conditional": {
+                "tn": 0,
+                "tp_correct": 0,
+                "tp_wrong": 0,
+                "fn": 0,
+                "fp": 0
+              },
+              "extra_records": 0
+            }
+          }
+        }
+      },
+      "failed_extractions": [],
+      "harmonized_fields": [
+        "body_site",
+        "disease",
+        "dna_extraction_kit",
+        "host_species",
+        "sequencing_platform",
+        "treatment"
+      ],
+      "per_field": {
+        "body_site": {
+          "end_to_end": {
+            "precision": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "recall": [
+              0.17895608947804473,
+              0.0927920463960232,
+              0.22286661143330572
+            ],
+            "f1": [
+              0.303583977512298,
+              0.16982562547384383,
+              0.36449864498644985
+            ],
+            "tp_correct": [
+              216,
+              112,
+              269
+            ],
+            "tp_wrong": [
+              0,
+              0,
+              0
+            ],
+            "fp": [
+              0,
+              0,
+              0
+            ],
+            "fn": [
+              991,
+              938,
+              1095
+            ]
+          },
+          "conditional": {
+            "precision": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "recall": [
+              0.6467065868263473,
+              0.33532934131736525,
+              0.8053892215568862
+            ],
+            "f1": [
+              0.7854545454545454,
+              0.5022421524663677,
+              0.8922056384742952
+            ],
+            "tp_correct": [
+              216,
+              112,
+              269
+            ],
+            "tp_wrong": [
+              0,
+              0,
+              0
+            ],
+            "fp": [
+              0,
+              0,
+              0
+            ],
+            "fn": [
+              118,
+              65,
+              222
+            ]
+          }
+        },
+        "disease": {
+          "end_to_end": {
+            "precision": [
+              1.0,
+              0.8835341365461847,
+              1.0
+            ],
+            "recall": [
+              0.13421706710853357,
+              0.13421706710853357,
+              0.18227009113504558
+            ],
+            "f1": [
+              0.2366691015339664,
+              0.2366691015339664,
+              0.30219780219780223
+            ],
+            "tp_correct": [
+              162,
+              162,
+              220
+            ],
+            "tp_wrong": [
+              0,
+              0,
+              29
+            ],
+            "fp": [
+              0,
+              0,
+              0
+            ],
+            "fn": [
+              1045,
+              958,
+              1045
+            ]
+          },
+          "conditional": {
+            "precision": [
+              1.0,
+              0.8835341365461847,
+              1.0
+            ],
+            "recall": [
+              0.48502994011976047,
+              0.48502994011976047,
+              0.6586826347305389
+            ],
+            "f1": [
+              0.6532258064516129,
+              0.6532258064516129,
+              0.7547169811320754
+            ],
+            "tp_correct": [
+              162,
+              162,
+              220
+            ],
+            "tp_wrong": [
+              0,
+              0,
+              29
+            ],
+            "fp": [
+              0,
+              0,
+              0
+            ],
+            "fn": [
+              172,
+              85,
+              172
+            ]
+          }
+        },
+        "dna_extraction_kit": {
+          "end_to_end": {
+            "precision": [
+              0.25757575757575757,
+              0.20075757575757575,
+              0.25757575757575757
+            ],
+            "recall": [
+              0.1059190031152648,
+              0.08255451713395638,
+              0.1059190031152648
+            ],
+            "f1": [
+              0.15011037527593818,
+              0.11699779249448121,
+              0.15011037527593818
+            ],
+            "tp_correct": [
+              68,
+              53,
+              68
+            ],
+            "tp_wrong": [
+              196,
+              196,
+              211
+            ],
+            "fp": [
+              0,
+              0,
+              0
+            ],
+            "fn": [
+              378,
+              378,
+              378
+            ]
+          },
+          "conditional": {
+            "precision": [
+              0.25757575757575757,
+              0.20075757575757575,
+              0.25757575757575757
+            ],
+            "recall": [
+              0.20359281437125748,
+              0.15868263473053892,
+              0.20359281437125748
+            ],
+            "f1": [
+              0.22742474916387959,
+              0.177257525083612,
+              0.22742474916387959
+            ],
+            "tp_correct": [
+              68,
+              53,
+              68
+            ],
+            "tp_wrong": [
+              196,
+              196,
+              211
+            ],
+            "fp": [
+              0,
+              0,
+              0
+            ],
+            "fn": [
+              70,
+              70,
+              70
+            ]
+          }
+        },
+        "host_species": {
+          "end_to_end": {
+            "precision": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "recall": [
+              0.2767191383595692,
+              0.2767191383595692,
+              0.2767191383595692
+            ],
+            "f1": [
+              0.43348475016223237,
+              0.43348475016223237,
+              0.43348475016223237
+            ],
+            "tp_correct": [
+              334,
+              334,
+              334
+            ],
+            "tp_wrong": [
+              0,
+              0,
+              0
+            ],
+            "fp": [
+              0,
+              0,
+              0
+            ],
+            "fn": [
+              873,
+              873,
+              873
+            ]
+          },
+          "conditional": {
+            "precision": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "recall": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "f1": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "tp_correct": [
+              334,
+              334,
+              334
+            ],
+            "tp_wrong": [
+              0,
+              0,
+              0
+            ],
+            "fp": [
+              0,
+              0,
+              0
+            ],
+            "fn": [
+              0,
+              0,
+              0
+            ]
+          }
+        },
+        "sequencing_platform": {
+          "end_to_end": {
+            "precision": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "recall": [
+              0.2767191383595692,
+              0.2767191383595692,
+              0.2767191383595692
+            ],
+            "f1": [
+              0.43348475016223237,
+              0.43348475016223237,
+              0.43348475016223237
+            ],
+            "tp_correct": [
+              334,
+              334,
+              334
+            ],
+            "tp_wrong": [
+              0,
+              0,
+              0
+            ],
+            "fp": [
+              0,
+              0,
+              0
+            ],
+            "fn": [
+              873,
+              873,
+              873
+            ]
+          },
+          "conditional": {
+            "precision": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "recall": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "f1": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "tp_correct": [
+              334,
+              334,
+              334
+            ],
+            "tp_wrong": [
+              0,
+              0,
+              0
+            ],
+            "fp": [
+              0,
+              0,
+              0
+            ],
+            "fn": [
+              0,
+              0,
+              0
+            ]
+          }
+        },
+        "treatment": {
+          "end_to_end": {
+            "precision": null,
+            "recall": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "f1": null,
+            "tp_correct": [
+              0,
+              0,
+              0
+            ],
+            "tp_wrong": [
+              0,
+              0,
+              0
+            ],
+            "fp": [
+              0,
+              0,
+              0
+            ],
+            "fn": [
+              445,
+              445,
+              445
+            ]
+          },
+          "conditional": {
+            "precision": null,
+            "recall": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "f1": null,
+            "tp_correct": [
+              0,
+              0,
+              0
+            ],
+            "tp_wrong": [
+              0,
+              0,
+              0
+            ],
+            "fp": [
+              0,
+              0,
+              0
+            ],
+            "fn": [
+              65,
+              65,
+              65
+            ]
+          }
+        }
+      },
+      "unqueried_terms": [],
+      "age_by_source": {
+        "age_min:other": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 2550,
+          "fp": 0,
+          "precision": null,
+          "recall": 0.0,
+          "f1": null
+        },
+        "age_max:other": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 2550,
+          "fp": 0,
+          "precision": null,
+          "recall": 0.0,
+          "f1": null
+        },
+        "age_min:age_rule": {
+          "tn": 0,
+          "tp_correct": 414,
+          "tp_wrong": 69,
+          "fn": 0,
+          "fp": 0,
+          "precision": 0.8571428571428571,
+          "recall": 0.8571428571428571,
+          "f1": 0.8571428571428571
+        },
+        "age_max:age_rule": {
+          "tn": 0,
+          "tp_correct": 414,
+          "tp_wrong": 69,
+          "fn": 0,
+          "fp": 0,
+          "precision": 0.8571428571428571,
+          "recall": 0.8571428571428571,
+          "f1": 0.8571428571428571
+        }
+      },
+      "fp_source_check": {}
+    },
+    "haiku": {
+      "runs": [
+        "haiku_r1",
+        "haiku_r2",
+        "haiku_r3"
+      ],
+      "headline": {
+        "end_to_end": {
+          "precision": [
+            0.6855322338830585,
+            0.6566596194503171,
+            0.7041267501842299
+          ],
+          "recall": [
+            0.09733901011176158,
+            0.08265034592868548,
+            0.1017030335284726
+          ],
+          "f1": [
+            0.1704725510299189,
+            0.14682108248640985,
+            0.177734375
+          ],
+          "tp_correct": [
+            1829,
+            1553,
+            1911
+          ],
+          "tp_wrong": [
+            812,
+            803,
+            839
+          ],
+          "fp": [
+            0,
+            0,
+            0
+          ],
+          "fn": [
+            16122,
+            16076,
+            16425
+          ]
+        },
+        "conditional": {
+          "precision": [
+            0.6855322338830585,
+            0.6566596194503171,
+            0.7041267501842299
+          ],
+          "recall": [
+            0.31084296397008837,
+            0.2675740868366644,
+            0.32700205338809035
+          ],
+          "f1": [
+            0.42773620205799817,
+            0.38021789692740854,
+            0.44659967282075247
+          ],
+          "tp_correct": [
+            1829,
+            1553,
+            1911
+          ],
+          "tp_wrong": [
+            812,
+            803,
+            839
+          ],
+          "fp": [
+            0,
+            0,
+            0
+          ],
+          "fn": [
+            3216,
+            3130,
+            3439
+          ]
+        },
+        "end_to_end_successful_only": {
+          "precision": [
+            0.6855322338830585,
+            0.6566596194503171,
+            0.7041267501842299
+          ],
+          "recall": [
+            0.09733901011176158,
+            0.08265034592868548,
+            0.1017030335284726
+          ],
+          "f1": [
+            0.1704725510299189,
+            0.14682108248640985,
+            0.177734375
+          ],
+          "tp_correct": [
+            1829,
+            1553,
+            1911
+          ],
+          "tp_wrong": [
+            812,
+            803,
+            839
+          ],
+          "fp": [
+            0,
+            0,
+            0
+          ],
+          "fn": [
+            16122,
+            16076,
+            16425
+          ]
+        }
+      },
+      "per_run": {
+        "end_to_end": {
+          "haiku_r1": {
+            "precision": 0.6855322338830585,
+            "recall": 0.09733901011176158,
+            "f1": 0.1704725510299189,
+            "tn": 1435,
+            "tp_correct": 1829,
+            "tp_wrong": 839,
+            "fn": 16122,
+            "fp": 0
+          },
+          "haiku_r2": {
+            "precision": 0.6566596194503171,
+            "recall": 0.08265034592868548,
+            "f1": 0.14682108248640985,
+            "tn": 1435,
+            "tp_correct": 1553,
+            "tp_wrong": 812,
+            "fn": 16425,
+            "fp": 0
+          },
+          "haiku_r3": {
+            "precision": 0.7041267501842299,
+            "recall": 0.1017030335284726,
+            "f1": 0.177734375,
+            "tn": 1435,
+            "tp_correct": 1911,
+            "tp_wrong": 803,
+            "fn": 16076,
+            "fp": 0
+          }
+        },
+        "conditional": {
+          "haiku_r1": {
+            "precision": 0.6855322338830585,
+            "recall": 0.31084296397008837,
+            "f1": 0.42773620205799817,
+            "tn": 437,
+            "tp_correct": 1829,
+            "tp_wrong": 839,
+            "fn": 3216,
+            "fp": 0
+          },
+          "haiku_r2": {
+            "precision": 0.6566596194503171,
+            "recall": 0.2675740868366644,
+            "f1": 0.38021789692740854,
+            "tn": 425,
+            "tp_correct": 1553,
+            "tp_wrong": 812,
+            "fn": 3439,
+            "fp": 0
+          },
+          "haiku_r3": {
+            "precision": 0.7041267501842299,
+            "recall": 0.32700205338809035,
+            "f1": 0.44659967282075247,
+            "tn": 431,
+            "tp_correct": 1911,
+            "tp_wrong": 803,
+            "fn": 3130,
+            "fp": 0
+          }
+        },
+        "end_to_end_successful_only": {
+          "haiku_r1": {
+            "precision": 0.6855322338830585,
+            "recall": 0.09733901011176158,
+            "f1": 0.1704725510299189,
+            "tn": 1435,
+            "tp_correct": 1829,
+            "tp_wrong": 839,
+            "fn": 16122,
+            "fp": 0
+          },
+          "haiku_r2": {
+            "precision": 0.6566596194503171,
+            "recall": 0.08265034592868548,
+            "f1": 0.14682108248640985,
+            "tn": 1435,
+            "tp_correct": 1553,
+            "tp_wrong": 812,
+            "fn": 16425,
+            "fp": 0
+          },
+          "haiku_r3": {
+            "precision": 0.7041267501842299,
+            "recall": 0.1017030335284726,
+            "f1": 0.177734375,
+            "tn": 1435,
+            "tp_correct": 1911,
+            "tp_wrong": 803,
+            "fn": 16076,
+            "fp": 0
+          }
+        }
+      },
+      "per_study": {
+        "Bengtsson-PalmeJ_2015": {
+          "n_gold": 70,
+          "runs": {
+            "haiku_r1": {
+              "n_extracted": 70,
+              "granularity": "sample_level",
+              "extraction_failed": false,
+              "alignment": {
+                "key_used": "ncbi_accession",
+                "n_gold": 70,
+                "n_ext": 70,
+                "matched": 70,
+                "unmatched_gold": 0,
+                "pooled_gold": 0,
+                "ambiguous_gold": 0,
+                "duplicate_ext_records": 0,
+                "unmatched_ext_with_key": 0,
+                "unmatched_ext_without_key": 0,
+                "ext_in_conflict": 0,
+                "candidate_matches": {
+                  "ncbi_accession": 70,
+                  "sample_id": 70,
+                  "subject_id": 0
+                }
+              },
+              "end_to_end": {
+                "tn": 0,
+                "tp_correct": 350,
+                "tp_wrong": 70,
+                "fn": 770,
+                "fp": 0
+              },
+              "conditional": {
+                "tn": 0,
+                "tp_correct": 350,
+                "tp_wrong": 70,
+                "fn": 770,
+                "fp": 0
+              },
+              "extra_records": 0
+            },
+            "haiku_r2": {
+              "n_extracted": 70,
+              "granularity": "sample_level",
+              "extraction_failed": false,
+              "alignment": {
+                "key_used": "ncbi_accession",
+                "n_gold": 70,
+                "n_ext": 70,
+                "matched": 70,
+                "unmatched_gold": 0,
+                "pooled_gold": 0,
+                "ambiguous_gold": 0,
+                "duplicate_ext_records": 0,
+                "unmatched_ext_with_key": 0,
+                "unmatched_ext_without_key": 0,
+                "ext_in_conflict": 0,
+                "candidate_matches": {
+                  "ncbi_accession": 70,
+                  "sample_id": 70,
+                  "subject_id": 0
+                }
+              },
+              "end_to_end": {
+                "tn": 0,
+                "tp_correct": 140,
+                "tp_wrong": 70,
+                "fn": 980,
+                "fp": 0
+              },
+              "conditional": {
+                "tn": 0,
+                "tp_correct": 140,
+                "tp_wrong": 70,
+                "fn": 980,
+                "fp": 0
+              },
+              "extra_records": 0
+            },
+            "haiku_r3": {
+              "n_extracted": 70,
+              "granularity": "sample_level",
+              "extraction_failed": false,
+              "alignment": {
+                "key_used": "ncbi_accession",
+                "n_gold": 70,
+                "n_ext": 70,
+                "matched": 70,
+                "unmatched_gold": 0,
+                "pooled_gold": 0,
+                "ambiguous_gold": 0,
+                "duplicate_ext_records": 0,
+                "unmatched_ext_with_key": 0,
+                "unmatched_ext_without_key": 0,
+                "ext_in_conflict": 0,
+                "candidate_matches": {
+                  "ncbi_accession": 70,
+                  "sample_id": 70,
+                  "subject_id": 0
+                }
+              },
+              "end_to_end": {
+                "tn": 0,
+                "tp_correct": 420,
+                "tp_wrong": 70,
+                "fn": 700,
+                "fp": 0
+              },
+              "conditional": {
+                "tn": 0,
+                "tp_correct": 420,
+                "tp_wrong": 70,
+                "fn": 700,
+                "fp": 0
+              },
+              "extra_records": 0
+            }
+          }
+        },
+        "TettAJ_2019_b": {
+          "n_gold": 162,
+          "runs": {
+            "haiku_r1": {
+              "n_extracted": 50,
+              "granularity": "sample_level",
+              "extraction_failed": false,
+              "alignment": {
+                "key_used": "sample_id",
+                "n_gold": 162,
+                "n_ext": 50,
+                "matched": 50,
+                "unmatched_gold": 112,
+                "pooled_gold": 0,
+                "ambiguous_gold": 0,
+                "duplicate_ext_records": 0,
+                "unmatched_ext_with_key": 0,
+                "unmatched_ext_without_key": 0,
+                "ext_in_conflict": 0,
+                "candidate_matches": {
+                  "ncbi_accession": 0,
+                  "sample_id": 50,
+                  "subject_id": 50
+                }
+              },
+              "end_to_end": {
+                "tn": 118,
+                "tp_correct": 180,
+                "tp_wrong": 267,
+                "fn": 2189,
+                "fp": 0
+              },
+              "conditional": {
+                "tn": 3,
+                "tp_correct": 180,
+                "tp_wrong": 267,
+                "fn": 400,
+                "fp": 0
+              },
+              "extra_records": 0
+            },
+            "haiku_r2": {
+              "n_extracted": 50,
+              "granularity": "sample_level",
+              "extraction_failed": false,
+              "alignment": {
+                "key_used": "sample_id",
+                "n_gold": 162,
+                "n_ext": 50,
+                "matched": 50,
+                "unmatched_gold": 112,
+                "pooled_gold": 0,
+                "ambiguous_gold": 0,
+                "duplicate_ext_records": 0,
+                "unmatched_ext_with_key": 0,
+                "unmatched_ext_without_key": 0,
+                "ext_in_conflict": 0,
+                "candidate_matches": {
+                  "ncbi_accession": 0,
+                  "sample_id": 50,
+                  "subject_id": 50
+                }
+              },
+              "end_to_end": {
+                "tn": 118,
+                "tp_correct": 180,
+                "tp_wrong": 267,
+                "fn": 2189,
+                "fp": 0
+              },
+              "conditional": {
+                "tn": 3,
+                "tp_correct": 180,
+                "tp_wrong": 267,
+                "fn": 400,
+                "fp": 0
+              },
+              "extra_records": 0
+            },
+            "haiku_r3": {
+              "n_extracted": 50,
+              "granularity": "sample_level",
+              "extraction_failed": false,
+              "alignment": {
+                "key_used": "sample_id",
+                "n_gold": 162,
+                "n_ext": 50,
+                "matched": 50,
+                "unmatched_gold": 112,
+                "pooled_gold": 0,
+                "ambiguous_gold": 0,
+                "duplicate_ext_records": 0,
+                "unmatched_ext_with_key": 0,
+                "unmatched_ext_without_key": 0,
+                "ext_in_conflict": 0,
+                "candidate_matches": {
+                  "ncbi_accession": 0,
+                  "sample_id": 50,
+                  "subject_id": 50
+                }
+              },
+              "end_to_end": {
+                "tn": 118,
+                "tp_correct": 180,
+                "tp_wrong": 267,
+                "fn": 2189,
+                "fp": 0
+              },
+              "conditional": {
+                "tn": 3,
+                "tp_correct": 180,
+                "tp_wrong": 267,
+                "fn": 400,
+                "fp": 0
+              },
+              "extra_records": 0
+            }
+          }
+        },
+        "LiJ_2017": {
+          "n_gold": 196,
+          "runs": {
+            "haiku_r1": {
+              "n_extracted": 6,
+              "granularity": "sample_level",
+              "extraction_failed": false,
+              "alignment": {
+                "key_used": null,
+                "n_gold": 196,
+                "n_ext": 6,
+                "matched": 0,
+                "unmatched_gold": 196,
+                "pooled_gold": 0,
+                "ambiguous_gold": 0,
+                "duplicate_ext_records": 0,
+                "unmatched_ext_with_key": 6,
+                "unmatched_ext_without_key": 0,
+                "ext_in_conflict": 0,
+                "candidate_matches": {
+                  "ncbi_accession": 0,
+                  "sample_id": 0,
+                  "subject_id": 0
+                }
+              },
+              "end_to_end": {
+                "tn": 588,
+                "tp_correct": 0,
+                "tp_wrong": 0,
+                "fn": 2744,
+                "fp": 0
+              },
+              "conditional": {
+                "tn": 0,
+                "tp_correct": 0,
+                "tp_wrong": 0,
+                "fn": 0,
+                "fp": 0
+              },
+              "extra_records": 6
+            },
+            "haiku_r2": {
+              "n_extracted": 6,
+              "granularity": "sample_level",
+              "extraction_failed": false,
+              "alignment": {
+                "key_used": null,
+                "n_gold": 196,
+                "n_ext": 6,
+                "matched": 0,
+                "unmatched_gold": 196,
+                "pooled_gold": 0,
+                "ambiguous_gold": 0,
+                "duplicate_ext_records": 0,
+                "unmatched_ext_with_key": 6,
+                "unmatched_ext_without_key": 0,
+                "ext_in_conflict": 0,
+                "candidate_matches": {
+                  "ncbi_accession": 0,
+                  "sample_id": 0,
+                  "subject_id": 0
+                }
+              },
+              "end_to_end": {
+                "tn": 588,
+                "tp_correct": 0,
+                "tp_wrong": 0,
+                "fn": 2744,
+                "fp": 0
+              },
+              "conditional": {
+                "tn": 0,
+                "tp_correct": 0,
+                "tp_wrong": 0,
+                "fn": 0,
+                "fp": 0
+              },
+              "extra_records": 6
+            },
+            "haiku_r3": {
+              "n_extracted": 6,
+              "granularity": "sample_level",
+              "extraction_failed": false,
+              "alignment": {
+                "key_used": null,
+                "n_gold": 196,
+                "n_ext": 6,
+                "matched": 0,
+                "unmatched_gold": 196,
+                "pooled_gold": 0,
+                "ambiguous_gold": 0,
+                "duplicate_ext_records": 0,
+                "unmatched_ext_with_key": 6,
+                "unmatched_ext_without_key": 0,
+                "ext_in_conflict": 0,
+                "candidate_matches": {
+                  "ncbi_accession": 0,
+                  "sample_id": 0,
+                  "subject_id": 0
+                }
+              },
+              "end_to_end": {
+                "tn": 588,
+                "tp_correct": 0,
+                "tp_wrong": 0,
+                "fn": 2744,
+                "fp": 0
+              },
+              "conditional": {
+                "tn": 0,
+                "tp_correct": 0,
+                "tp_wrong": 0,
+                "fn": 0,
+                "fp": 0
+              },
+              "extra_records": 6
+            }
+          }
+        },
+        "NayakRR_2021": {
+          "n_gold": 34,
+          "runs": {
+            "haiku_r1": {
+              "n_extracted": 434,
+              "granularity": "sample_level",
+              "extraction_failed": false,
+              "alignment": {
+                "key_used": "ncbi_accession",
+                "n_gold": 34,
+                "n_ext": 434,
+                "matched": 34,
+                "unmatched_gold": 0,
+                "pooled_gold": 0,
+                "ambiguous_gold": 0,
+                "duplicate_ext_records": 0,
+                "unmatched_ext_with_key": 400,
+                "unmatched_ext_without_key": 0,
+                "ext_in_conflict": 0,
+                "candidate_matches": {
+                  "ncbi_accession": 34,
+                  "sample_id": 4,
+                  "subject_id": 0
+                }
+              },
+              "end_to_end": {
+                "tn": 0,
+                "tp_correct": 34,
+                "tp_wrong": 68,
+                "fn": 272,
+                "fp": 0
+              },
+              "conditional": {
+                "tn": 0,
+                "tp_correct": 34,
+                "tp_wrong": 68,
+                "fn": 272,
+                "fp": 0
+              },
+              "extra_records": 400
+            },
+            "haiku_r2": {
+              "n_extracted": 434,
+              "granularity": "sample_level",
+              "extraction_failed": false,
+              "alignment": {
+                "key_used": "ncbi_accession",
+                "n_gold": 34,
+                "n_ext": 434,
+                "matched": 34,
+                "unmatched_gold": 0,
+                "pooled_gold": 0,
+                "ambiguous_gold": 0,
+                "duplicate_ext_records": 0,
+                "unmatched_ext_with_key": 400,
+                "unmatched_ext_without_key": 0,
+                "ext_in_conflict": 0,
+                "candidate_matches": {
+                  "ncbi_accession": 34,
+                  "sample_id": 4,
+                  "subject_id": 0
+                }
+              },
+              "end_to_end": {
+                "tn": 0,
+                "tp_correct": 34,
+                "tp_wrong": 68,
+                "fn": 272,
+                "fp": 0
+              },
+              "conditional": {
+                "tn": 0,
+                "tp_correct": 34,
+                "tp_wrong": 68,
+                "fn": 272,
+                "fp": 0
+              },
+              "extra_records": 400
+            },
+            "haiku_r3": {
+              "n_extracted": 434,
+              "granularity": "sample_level",
+              "extraction_failed": false,
+              "alignment": {
+                "key_used": "ncbi_accession",
+                "n_gold": 34,
+                "n_ext": 434,
+                "matched": 34,
+                "unmatched_gold": 0,
+                "pooled_gold": 0,
+                "ambiguous_gold": 0,
+                "duplicate_ext_records": 0,
+                "unmatched_ext_with_key": 400,
+                "unmatched_ext_without_key": 0,
+                "ext_in_conflict": 0,
+                "candidate_matches": {
+                  "ncbi_accession": 34,
+                  "sample_id": 4,
+                  "subject_id": 0
+                }
+              },
+              "end_to_end": {
+                "tn": 0,
+                "tp_correct": 34,
+                "tp_wrong": 68,
+                "fn": 272,
+                "fp": 0
+              },
+              "conditional": {
+                "tn": 0,
+                "tp_correct": 34,
+                "tp_wrong": 68,
+                "fn": 272,
+                "fp": 0
+              },
+              "extra_records": 400
+            }
+          }
+        },
+        "PasolliE_2019": {
+          "n_gold": 112,
+          "runs": {
+            "haiku_r1": {
+              "n_extracted": 112,
+              "granularity": "sample_level",
+              "extraction_failed": false,
+              "alignment": {
+                "key_used": "sample_id",
+                "n_gold": 112,
+                "n_ext": 112,
+                "matched": 112,
+                "unmatched_gold": 0,
+                "pooled_gold": 0,
+                "ambiguous_gold": 0,
+                "duplicate_ext_records": 0,
+                "unmatched_ext_with_key": 0,
+                "unmatched_ext_without_key": 0,
+                "ext_in_conflict": 0,
+                "candidate_matches": {
+                  "ncbi_accession": 0,
+                  "sample_id": 112,
+                  "subject_id": 0
+                }
+              },
+              "end_to_end": {
+                "tn": 336,
+                "tp_correct": 1008,
+                "tp_wrong": 336,
+                "fn": 896,
+                "fp": 0
+              },
+              "conditional": {
+                "tn": 336,
+                "tp_correct": 1008,
+                "tp_wrong": 336,
+                "fn": 896,
+                "fp": 0
+              },
+              "extra_records": 0
+            },
+            "haiku_r2": {
+              "n_extracted": 108,
+              "granularity": "sample_level",
+              "extraction_failed": false,
+              "alignment": {
+                "key_used": "sample_id",
+                "n_gold": 112,
+                "n_ext": 108,
+                "matched": 108,
+                "unmatched_gold": 4,
+                "pooled_gold": 0,
+                "ambiguous_gold": 0,
+                "duplicate_ext_records": 0,
+                "unmatched_ext_with_key": 0,
+                "unmatched_ext_without_key": 0,
+                "ext_in_conflict": 0,
+                "candidate_matches": {
+                  "ncbi_accession": 0,
+                  "sample_id": 108,
+                  "subject_id": 0
+                }
+              },
+              "end_to_end": {
+                "tn": 336,
+                "tp_correct": 972,
+                "tp_wrong": 324,
+                "fn": 944,
+                "fp": 0
+              },
+              "conditional": {
+                "tn": 324,
+                "tp_correct": 972,
+                "tp_wrong": 324,
+                "fn": 864,
+                "fp": 0
+              },
+              "extra_records": 0
+            },
+            "haiku_r3": {
+              "n_extracted": 110,
+              "granularity": "sample_level",
+              "extraction_failed": false,
+              "alignment": {
+                "key_used": "sample_id",
+                "n_gold": 112,
+                "n_ext": 110,
+                "matched": 110,
+                "unmatched_gold": 2,
+                "pooled_gold": 0,
+                "ambiguous_gold": 0,
+                "duplicate_ext_records": 0,
+                "unmatched_ext_with_key": 0,
+                "unmatched_ext_without_key": 0,
+                "ext_in_conflict": 0,
+                "candidate_matches": {
+                  "ncbi_accession": 0,
+                  "sample_id": 110,
+                  "subject_id": 0
+                }
+              },
+              "end_to_end": {
+                "tn": 336,
+                "tp_correct": 990,
+                "tp_wrong": 330,
+                "fn": 920,
+                "fp": 0
+              },
+              "conditional": {
+                "tn": 330,
+                "tp_correct": 990,
+                "tp_wrong": 330,
+                "fn": 880,
+                "fp": 0
+              },
+              "extra_records": 0
+            }
+          }
+        },
+        "Heitz-BuschartA_2016": {
+          "n_gold": 53,
+          "runs": {
+            "haiku_r1": {
+              "n_extracted": 221,
+              "granularity": "sample_level",
+              "extraction_failed": false,
+              "alignment": {
+                "key_used": "ncbi_accession",
+                "n_gold": 53,
+                "n_ext": 221,
+                "matched": 53,
+                "unmatched_gold": 0,
+                "pooled_gold": 0,
+                "ambiguous_gold": 0,
+                "duplicate_ext_records": 0,
+                "unmatched_ext_with_key": 168,
+                "unmatched_ext_without_key": 0,
+                "ext_in_conflict": 0,
+                "candidate_matches": {
+                  "ncbi_accession": 53,
+                  "sample_id": 17,
+                  "subject_id": 0
+                }
+              },
+              "end_to_end": {
+                "tn": 68,
+                "tp_correct": 212,
+                "tp_wrong": 53,
+                "fn": 833,
+                "fp": 0
+              },
+              "conditional": {
+                "tn": 68,
+                "tp_correct": 212,
+                "tp_wrong": 53,
+                "fn": 833,
+                "fp": 0
+              },
+              "extra_records": 168
+            },
+            "haiku_r2": {
+              "n_extracted": 221,
+              "granularity": "sample_level",
+              "extraction_failed": false,
+              "alignment": {
+                "key_used": "ncbi_accession",
+                "n_gold": 53,
+                "n_ext": 221,
+                "matched": 53,
+                "unmatched_gold": 0,
+                "pooled_gold": 0,
+                "ambiguous_gold": 0,
+                "duplicate_ext_records": 0,
+                "unmatched_ext_with_key": 168,
+                "unmatched_ext_without_key": 0,
+                "ext_in_conflict": 0,
+                "candidate_matches": {
+                  "ncbi_accession": 53,
+                  "sample_id": 17,
+                  "subject_id": 0
+                }
+              },
+              "end_to_end": {
+                "tn": 68,
+                "tp_correct": 212,
+                "tp_wrong": 53,
+                "fn": 833,
+                "fp": 0
+              },
+              "conditional": {
+                "tn": 68,
+                "tp_correct": 212,
+                "tp_wrong": 53,
+                "fn": 833,
+                "fp": 0
+              },
+              "extra_records": 168
+            },
+            "haiku_r3": {
+              "n_extracted": 221,
+              "granularity": "sample_level",
+              "extraction_failed": false,
+              "alignment": {
+                "key_used": "ncbi_accession",
+                "n_gold": 53,
+                "n_ext": 221,
+                "matched": 53,
+                "unmatched_gold": 0,
+                "pooled_gold": 0,
+                "ambiguous_gold": 0,
+                "duplicate_ext_records": 0,
+                "unmatched_ext_with_key": 168,
+                "unmatched_ext_without_key": 0,
+                "ext_in_conflict": 0,
+                "candidate_matches": {
+                  "ncbi_accession": 53,
+                  "sample_id": 17,
+                  "subject_id": 0
+                }
+              },
+              "end_to_end": {
+                "tn": 68,
+                "tp_correct": 212,
+                "tp_wrong": 53,
+                "fn": 833,
+                "fp": 0
+              },
+              "conditional": {
+                "tn": 68,
+                "tp_correct": 212,
+                "tp_wrong": 53,
+                "fn": 833,
+                "fp": 0
+              },
+              "extra_records": 168
+            }
+          }
+        },
+        "FanY_2023": {
+          "n_gold": 147,
+          "runs": {
+            "haiku_r1": {
+              "n_extracted": 510,
+              "granularity": "sample_level",
+              "extraction_failed": false,
+              "alignment": {
+                "key_used": null,
+                "n_gold": 147,
+                "n_ext": 510,
+                "matched": 0,
+                "unmatched_gold": 147,
+                "pooled_gold": 0,
+                "ambiguous_gold": 0,
+                "duplicate_ext_records": 0,
+                "unmatched_ext_with_key": 0,
+                "unmatched_ext_without_key": 510,
+                "ext_in_conflict": 0,
+                "candidate_matches": {
+                  "ncbi_accession": 0,
+                  "sample_id": 0,
+                  "subject_id": 0
+                }
+              },
+              "end_to_end": {
+                "tn": 0,
+                "tp_correct": 0,
+                "tp_wrong": 0,
+                "fn": 1617,
+                "fp": 0
+              },
+              "conditional": {
+                "tn": 0,
+                "tp_correct": 0,
+                "tp_wrong": 0,
+                "fn": 0,
+                "fp": 0
+              },
+              "extra_records": 510
+            },
+            "haiku_r2": {
+              "n_extracted": 510,
+              "granularity": "sample_level",
+              "extraction_failed": false,
+              "alignment": {
+                "key_used": null,
+                "n_gold": 147,
+                "n_ext": 510,
+                "matched": 0,
+                "unmatched_gold": 147,
+                "pooled_gold": 0,
+                "ambiguous_gold": 0,
+                "duplicate_ext_records": 0,
+                "unmatched_ext_with_key": 0,
+                "unmatched_ext_without_key": 510,
+                "ext_in_conflict": 0,
+                "candidate_matches": {
+                  "ncbi_accession": 0,
+                  "sample_id": 0,
+                  "subject_id": 0
+                }
+              },
+              "end_to_end": {
+                "tn": 0,
+                "tp_correct": 0,
+                "tp_wrong": 0,
+                "fn": 1617,
+                "fp": 0
+              },
+              "conditional": {
+                "tn": 0,
+                "tp_correct": 0,
+                "tp_wrong": 0,
+                "fn": 0,
+                "fp": 0
+              },
+              "extra_records": 510
+            },
+            "haiku_r3": {
+              "n_extracted": 510,
+              "granularity": "sample_level",
+              "extraction_failed": false,
+              "alignment": {
+                "key_used": null,
+                "n_gold": 147,
+                "n_ext": 510,
+                "matched": 0,
+                "unmatched_gold": 147,
+                "pooled_gold": 0,
+                "ambiguous_gold": 0,
+                "duplicate_ext_records": 0,
+                "unmatched_ext_with_key": 0,
+                "unmatched_ext_without_key": 510,
+                "ext_in_conflict": 0,
+                "candidate_matches": {
+                  "ncbi_accession": 0,
+                  "sample_id": 0,
+                  "subject_id": 0
+                }
+              },
+              "end_to_end": {
+                "tn": 0,
+                "tp_correct": 0,
+                "tp_wrong": 0,
+                "fn": 1617,
+                "fp": 0
+              },
+              "conditional": {
+                "tn": 0,
+                "tp_correct": 0,
+                "tp_wrong": 0,
+                "fn": 0,
+                "fp": 0
+              },
+              "extra_records": 510
+            }
+          }
+        },
+        "QinJ_2012": {
+          "n_gold": 363,
+          "runs": {
+            "haiku_r1": {
+              "n_extracted": 0,
+              "granularity": "study_level",
+              "extraction_failed": false,
+              "alignment": {
+                "key_used": null,
+                "n_gold": 363,
+                "n_ext": 0,
+                "matched": 0,
+                "unmatched_gold": 363,
+                "pooled_gold": 0,
+                "ambiguous_gold": 0,
+                "duplicate_ext_records": 0,
+                "unmatched_ext_with_key": 0,
+                "unmatched_ext_without_key": 0,
+                "ext_in_conflict": 0,
+                "candidate_matches": {
+                  "ncbi_accession": 0,
+                  "sample_id": 0,
+                  "subject_id": 0
+                }
+              },
+              "end_to_end": {
+                "tn": 130,
+                "tp_correct": 0,
+                "tp_wrong": 0,
+                "fn": 6041,
+                "fp": 0
+              },
+              "conditional": {
+                "tn": 0,
+                "tp_correct": 0,
+                "tp_wrong": 0,
+                "fn": 0,
+                "fp": 0
+              },
+              "extra_records": 0
+            },
+            "haiku_r2": {
+              "n_extracted": 0,
+              "granularity": "sample_level",
+              "extraction_failed": false,
+              "alignment": {
+                "key_used": null,
+                "n_gold": 363,
+                "n_ext": 0,
+                "matched": 0,
+                "unmatched_gold": 363,
+                "pooled_gold": 0,
+                "ambiguous_gold": 0,
+                "duplicate_ext_records": 0,
+                "unmatched_ext_with_key": 0,
+                "unmatched_ext_without_key": 0,
+                "ext_in_conflict": 0,
+                "candidate_matches": {
+                  "ncbi_accession": 0,
+                  "sample_id": 0,
+                  "subject_id": 0
+                }
+              },
+              "end_to_end": {
+                "tn": 130,
+                "tp_correct": 0,
+                "tp_wrong": 0,
+                "fn": 6041,
+                "fp": 0
+              },
+              "conditional": {
+                "tn": 0,
+                "tp_correct": 0,
+                "tp_wrong": 0,
+                "fn": 0,
+                "fp": 0
+              },
+              "extra_records": 0
+            },
+            "haiku_r3": {
+              "n_extracted": 0,
+              "granularity": "study_level",
+              "extraction_failed": false,
+              "alignment": {
+                "key_used": null,
+                "n_gold": 363,
+                "n_ext": 0,
+                "matched": 0,
+                "unmatched_gold": 363,
+                "pooled_gold": 0,
+                "ambiguous_gold": 0,
+                "duplicate_ext_records": 0,
+                "unmatched_ext_with_key": 0,
+                "unmatched_ext_without_key": 0,
+                "ext_in_conflict": 0,
+                "candidate_matches": {
+                  "ncbi_accession": 0,
+                  "sample_id": 0,
+                  "subject_id": 0
+                }
+              },
+              "end_to_end": {
+                "tn": 130,
+                "tp_correct": 0,
+                "tp_wrong": 0,
+                "fn": 6041,
+                "fp": 0
+              },
+              "conditional": {
+                "tn": 0,
+                "tp_correct": 0,
+                "tp_wrong": 0,
+                "fn": 0,
+                "fp": 0
+              },
+              "extra_records": 0
+            }
+          }
+        },
+        "ContevilleLC_2019": {
+          "n_gold": 15,
+          "runs": {
+            "haiku_r1": {
+              "n_extracted": 15,
+              "granularity": "sample_level",
+              "extraction_failed": false,
+              "alignment": {
+                "key_used": "ncbi_accession",
+                "n_gold": 15,
+                "n_ext": 15,
+                "matched": 15,
+                "unmatched_gold": 0,
+                "pooled_gold": 0,
+                "ambiguous_gold": 0,
+                "duplicate_ext_records": 0,
+                "unmatched_ext_with_key": 0,
+                "unmatched_ext_without_key": 0,
+                "ext_in_conflict": 0,
+                "candidate_matches": {
+                  "ncbi_accession": 15,
+                  "sample_id": 15,
+                  "subject_id": 0
+                }
+              },
+              "end_to_end": {
+                "tn": 30,
+                "tp_correct": 45,
+                "tp_wrong": 45,
+                "fn": 45,
+                "fp": 0
+              },
+              "conditional": {
+                "tn": 30,
+                "tp_correct": 45,
+                "tp_wrong": 45,
+                "fn": 45,
+                "fp": 0
+              },
+              "extra_records": 0
+            },
+            "haiku_r2": {
+              "n_extracted": 15,
+              "granularity": "sample_level",
+              "extraction_failed": false,
+              "alignment": {
+                "key_used": "ncbi_accession",
+                "n_gold": 15,
+                "n_ext": 15,
+                "matched": 15,
+                "unmatched_gold": 0,
+                "pooled_gold": 0,
+                "ambiguous_gold": 0,
+                "duplicate_ext_records": 0,
+                "unmatched_ext_with_key": 0,
+                "unmatched_ext_without_key": 0,
+                "ext_in_conflict": 0,
+                "candidate_matches": {
+                  "ncbi_accession": 15,
+                  "sample_id": 15,
+                  "subject_id": 0
+                }
+              },
+              "end_to_end": {
+                "tn": 30,
+                "tp_correct": 15,
+                "tp_wrong": 30,
+                "fn": 90,
+                "fp": 0
+              },
+              "conditional": {
+                "tn": 30,
+                "tp_correct": 15,
+                "tp_wrong": 30,
+                "fn": 90,
+                "fp": 0
+              },
+              "extra_records": 0
+            },
+            "haiku_r3": {
+              "n_extracted": 15,
+              "granularity": "sample_level",
+              "extraction_failed": false,
+              "alignment": {
+                "key_used": "ncbi_accession",
+                "n_gold": 15,
+                "n_ext": 15,
+                "matched": 15,
+                "unmatched_gold": 0,
+                "pooled_gold": 0,
+                "ambiguous_gold": 0,
+                "duplicate_ext_records": 0,
+                "unmatched_ext_with_key": 0,
+                "unmatched_ext_without_key": 0,
+                "ext_in_conflict": 0,
+                "candidate_matches": {
+                  "ncbi_accession": 15,
+                  "sample_id": 15,
+                  "subject_id": 0
+                }
+              },
+              "end_to_end": {
+                "tn": 30,
+                "tp_correct": 75,
+                "tp_wrong": 15,
+                "fn": 45,
+                "fp": 0
+              },
+              "conditional": {
+                "tn": 30,
+                "tp_correct": 75,
+                "tp_wrong": 15,
+                "fn": 45,
+                "fp": 0
+              },
+              "extra_records": 0
+            }
+          }
+        },
+        "LiSS_2016": {
+          "n_gold": 55,
+          "runs": {
+            "haiku_r1": {
+              "n_extracted": 0,
+              "granularity": "study_level",
+              "extraction_failed": false,
+              "alignment": {
+                "key_used": null,
+                "n_gold": 55,
+                "n_ext": 0,
+                "matched": 0,
+                "unmatched_gold": 55,
+                "pooled_gold": 0,
+                "ambiguous_gold": 0,
+                "duplicate_ext_records": 0,
+                "unmatched_ext_with_key": 0,
+                "unmatched_ext_without_key": 0,
+                "ext_in_conflict": 0,
+                "candidate_matches": {
+                  "ncbi_accession": 0,
+                  "sample_id": 0,
+                  "subject_id": 0
+                }
+              },
+              "end_to_end": {
+                "tn": 165,
+                "tp_correct": 0,
+                "tp_wrong": 0,
+                "fn": 715,
+                "fp": 0
+              },
+              "conditional": {
+                "tn": 0,
+                "tp_correct": 0,
+                "tp_wrong": 0,
+                "fn": 0,
+                "fp": 0
+              },
+              "extra_records": 0
+            },
+            "haiku_r2": {
+              "n_extracted": 0,
+              "granularity": "study_level",
+              "extraction_failed": false,
+              "alignment": {
+                "key_used": null,
+                "n_gold": 55,
+                "n_ext": 0,
+                "matched": 0,
+                "unmatched_gold": 55,
+                "pooled_gold": 0,
+                "ambiguous_gold": 0,
+                "duplicate_ext_records": 0,
+                "unmatched_ext_with_key": 0,
+                "unmatched_ext_without_key": 0,
+                "ext_in_conflict": 0,
+                "candidate_matches": {
+                  "ncbi_accession": 0,
+                  "sample_id": 0,
+                  "subject_id": 0
+                }
+              },
+              "end_to_end": {
+                "tn": 165,
+                "tp_correct": 0,
+                "tp_wrong": 0,
+                "fn": 715,
+                "fp": 0
+              },
+              "conditional": {
+                "tn": 0,
+                "tp_correct": 0,
+                "tp_wrong": 0,
+                "fn": 0,
+                "fp": 0
+              },
+              "extra_records": 0
+            },
+            "haiku_r3": {
+              "n_extracted": 0,
+              "granularity": "study_level",
+              "extraction_failed": false,
+              "alignment": {
+                "key_used": null,
+                "n_gold": 55,
+                "n_ext": 0,
+                "matched": 0,
+                "unmatched_gold": 55,
+                "pooled_gold": 0,
+                "ambiguous_gold": 0,
+                "duplicate_ext_records": 0,
+                "unmatched_ext_with_key": 0,
+                "unmatched_ext_without_key": 0,
+                "ext_in_conflict": 0,
+                "candidate_matches": {
+                  "ncbi_accession": 0,
+                  "sample_id": 0,
+                  "subject_id": 0
+                }
+              },
+              "end_to_end": {
+                "tn": 165,
+                "tp_correct": 0,
+                "tp_wrong": 0,
+                "fn": 715,
+                "fp": 0
+              },
+              "conditional": {
+                "tn": 0,
+                "tp_correct": 0,
+                "tp_wrong": 0,
+                "fn": 0,
+                "fp": 0
+              },
+              "extra_records": 0
+            }
+          }
+        }
+      },
+      "failed_extractions": [],
+      "harmonized_fields": [
+        "body_site",
+        "disease",
+        "dna_extraction_kit",
+        "host_species",
+        "sequencing_platform",
+        "treatment"
+      ],
+      "per_field": {
+        "body_site": {
+          "end_to_end": {
+            "precision": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "recall": [
+              0.1615575807787904,
+              0.08947804473902236,
+              0.1632145816072908
+            ],
+            "f1": [
+              0.27817403708987165,
+              0.16425855513307983,
+              0.28062678062678065
+            ],
+            "tp_correct": [
+              195,
+              108,
+              197
+            ],
+            "tp_wrong": [
+              0,
+              0,
+              0
+            ],
+            "fp": [
+              0,
+              0,
+              0
+            ],
+            "fn": [
+              1012,
+              1010,
+              1099
+            ]
+          },
+          "conditional": {
+            "precision": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "recall": [
+              0.5873493975903614,
+              0.32727272727272727,
+              0.5898203592814372
+            ],
+            "f1": [
+              0.7400379506641366,
+              0.4931506849315069,
+              0.7419962335216573
+            ],
+            "tp_correct": [
+              195,
+              108,
+              197
+            ],
+            "tp_wrong": [
+              0,
+              0,
+              0
+            ],
+            "fp": [
+              0,
+              0,
+              0
+            ],
+            "fn": [
+              137,
+              137,
+              222
+            ]
+          }
+        },
+        "disease": {
+          "end_to_end": {
+            "precision": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "recall": [
+              0.13421706710853357,
+              0.1309030654515327,
+              0.20298260149130073
+            ],
+            "f1": [
+              0.2366691015339664,
+              0.2315018315018315,
+              0.337465564738292
+            ],
+            "tp_correct": [
+              162,
+              158,
+              245
+            ],
+            "tp_wrong": [
+              0,
+              0,
+              0
+            ],
+            "fp": [
+              0,
+              0,
+              0
+            ],
+            "fn": [
+              1045,
+              962,
+              1049
+            ]
+          },
+          "conditional": {
+            "precision": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "recall": [
+              0.48502994011976047,
+              0.47878787878787876,
+              0.7379518072289156
+            ],
+            "f1": [
+              0.6532258064516129,
+              0.6475409836065573,
+              0.8492201039861352
+            ],
+            "tp_correct": [
+              162,
+              158,
+              245
+            ],
+            "tp_wrong": [
+              0,
+              0,
+              0
+            ],
+            "fp": [
+              0,
+              0,
+              0
+            ],
+            "fn": [
+              172,
+              87,
+              172
+            ]
+          }
+        },
+        "dna_extraction_kit": {
+          "end_to_end": {
+            "precision": [
+              0.0,
+              0.0,
+              0.05725190839694656
+            ],
+            "recall": [
+              0.0,
+              0.0,
+              0.02336448598130841
+            ],
+            "f1": [
+              0.0331858407079646,
+              0.0331858407079646,
+              0.0331858407079646
+            ],
+            "tp_correct": [
+              0,
+              0,
+              15
+            ],
+            "tp_wrong": [
+              260,
+              247,
+              264
+            ],
+            "fp": [
+              0,
+              0,
+              0
+            ],
+            "fn": [
+              380,
+              378,
+              382
+            ]
+          },
+          "conditional": {
+            "precision": [
+              0.0,
+              0.0,
+              0.05725190839694656
+            ],
+            "recall": [
+              0.0,
+              0.0,
+              0.045180722891566265
+            ],
+            "f1": [
+              0.05050505050505051,
+              0.05050505050505051,
+              0.05050505050505051
+            ],
+            "tp_correct": [
+              0,
+              0,
+              15
+            ],
+            "tp_wrong": [
+              260,
+              247,
+              264
+            ],
+            "fp": [
+              0,
+              0,
+              0
+            ],
+            "fn": [
+              70,
+              70,
+              70
+            ]
+          }
+        },
+        "host_species": {
+          "end_to_end": {
+            "precision": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "recall": [
+              0.2750621375310688,
+              0.27340513670256833,
+              0.2767191383595692
+            ],
+            "f1": [
+              0.4314489928525016,
+              0.42940793754066364,
+              0.43348475016223237
+            ],
+            "tp_correct": [
+              332,
+              330,
+              334
+            ],
+            "tp_wrong": [
+              0,
+              0,
+              0
+            ],
+            "fp": [
+              0,
+              0,
+              0
+            ],
+            "fn": [
+              875,
+              873,
+              877
+            ]
+          },
+          "conditional": {
+            "precision": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "recall": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "f1": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "tp_correct": [
+              332,
+              330,
+              334
+            ],
+            "tp_wrong": [
+              0,
+              0,
+              0
+            ],
+            "fp": [
+              0,
+              0,
+              0
+            ],
+            "fn": [
+              0,
+              0,
+              0
+            ]
+          }
+        },
+        "sequencing_platform": {
+          "end_to_end": {
+            "precision": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "recall": [
+              0.2750621375310688,
+              0.27340513670256833,
+              0.2767191383595692
+            ],
+            "f1": [
+              0.4314489928525016,
+              0.42940793754066364,
+              0.43348475016223237
+            ],
+            "tp_correct": [
+              332,
+              330,
+              334
+            ],
+            "tp_wrong": [
+              0,
+              0,
+              0
+            ],
+            "fp": [
+              0,
+              0,
+              0
+            ],
+            "fn": [
+              875,
+              873,
+              877
+            ]
+          },
+          "conditional": {
+            "precision": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "recall": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "f1": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "tp_correct": [
+              332,
+              330,
+              334
+            ],
+            "tp_wrong": [
+              0,
+              0,
+              0
+            ],
+            "fp": [
+              0,
+              0,
+              0
+            ],
+            "fn": [
+              0,
+              0,
+              0
+            ]
+          }
+        },
+        "treatment": {
+          "end_to_end": {
+            "precision": null,
+            "recall": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "f1": null,
+            "tp_correct": [
+              0,
+              0,
+              0
+            ],
+            "tp_wrong": [
+              0,
+              0,
+              0
+            ],
+            "fp": [
+              0,
+              0,
+              0
+            ],
+            "fn": [
+              445,
+              445,
+              445
+            ]
+          },
+          "conditional": {
+            "precision": null,
+            "recall": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "f1": null,
+            "tp_correct": [
+              0,
+              0,
+              0
+            ],
+            "tp_wrong": [
+              0,
+              0,
+              0
+            ],
+            "fp": [
+              0,
+              0,
+              0
+            ],
+            "fn": [
+              65,
+              65,
+              65
+            ]
+          }
+        }
+      },
+      "unqueried_terms": [],
+      "age_by_source": {
+        "age_min:other": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 2556,
+          "fp": 0,
+          "precision": null,
+          "recall": 0.0,
+          "f1": null
+        },
+        "age_max:other": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 2556,
+          "fp": 0,
+          "precision": null,
+          "recall": 0.0,
+          "f1": null
+        },
+        "age_min:age_rule": {
+          "tn": 0,
+          "tp_correct": 408,
+          "tp_wrong": 69,
+          "fn": 0,
+          "fp": 0,
+          "precision": 0.8553459119496856,
+          "recall": 0.8553459119496856,
+          "f1": 0.8553459119496856
+        },
+        "age_max:age_rule": {
+          "tn": 0,
+          "tp_correct": 408,
+          "tp_wrong": 69,
+          "fn": 0,
+          "fp": 0,
+          "precision": 0.8553459119496856,
+          "recall": 0.8553459119496856,
+          "f1": 0.8553459119496856
+        }
+      },
+      "fp_source_check": {}
+    }
+  },
+  "paired_f1_difference": {
+    "a": "sonnet",
+    "b": "haiku",
+    "point": 0.005861960838874525,
+    "ci95": [
+      -0.006658031324244529,
+      0.02404006011538312
+    ],
+    "B": 2000,
+    "n_studies": 10,
+    "seed": 0
+  },
+  "ledger": {
+    "cost_all_attempts": {
+      "haiku": {
+        "attempts": 31,
+        "attempts_without_meta": 1,
+        "calls": 228,
+        "usd": 3.1303510999999995,
+        "usd_failed_attempts": 0.0
+      },
+      "sonnet": {
+        "attempts": 32,
+        "attempts_without_meta": 2,
+        "calls": 261,
+        "usd": 12.913023000000003,
+        "usd_failed_attempts": 0.0
+      }
+    },
+    "tasks": 60,
+    "attempts": 63,
+    "failed_attempts": 3,
+    "initial_failures": 3,
+    "initial_failures_detail": [
+      {
+        "task": "sonnet/3/TettAJ_2019_b",
+        "status": "fail_rc1",
+        "error_tail": "ges,\n                        max_tokens=budget, label=label)\n  File \"/Users/sehyunoh/OmicsMLRepo/MetaExtractor/src/metaextractor/model.py\", line 307, in complete\n    raise ModelCallError(f\"{type(e).__name__}: {e}\") from e\nmetaextractor.model.ModelCallError: ReadTimeout: The read operation timed out\n"
+      },
+      {
+        "task": "sonnet/2/FanY_2023",
+        "status": "fail_rc1",
+        "error_tail": "ges,\n                        max_tokens=budget, label=label)\n  File \"/Users/sehyunoh/OmicsMLRepo/MetaExtractor/src/metaextractor/model.py\", line 307, in complete\n    raise ModelCallError(f\"{type(e).__name__}: {e}\") from e\nmetaextractor.model.ModelCallError: ReadTimeout: The read operation timed out\n"
+      },
+      {
+        "task": "haiku/3/TettAJ_2019_b",
+        "status": "fail_rc1",
+        "error_tail": "ges,\n                        max_tokens=budget, label=label)\n  File \"/Users/sehyunoh/OmicsMLRepo/MetaExtractor/src/metaextractor/model.py\", line 307, in complete\n    raise ModelCallError(f\"{type(e).__name__}: {e}\") from e\nmetaextractor.model.ModelCallError: ReadTimeout: The read operation timed out\n"
+      }
+    ],
+    "final_successes": 60,
+    "started": "2026-10-09T00:09:22+00:00",
+    "ended": "2026-10-09T01:32:23+00:00",
+    "commits": [
+      "097d8a1b9185a7efb305f61ba42d4ff59693d13a"
+    ],
+    "dirty_any": false
+  }
+}

@@ -1,0 +1,5 @@
+query,ref_match,stage,match1,match1_score,match1_code
+feces,Not Found,1.0,Not Found,1.0,
+Stool,Not Found,2.5,feces,1.0000,UBERON:0001988
+gut microbial DNA,Not Found,2.5,feces,0.6119,UBERON:0001988
+stool samples,Not Found,2.5,feces,0.8970,UBERON:0001988

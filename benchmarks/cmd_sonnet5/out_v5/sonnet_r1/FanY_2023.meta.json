@@ -1,0 +1,736 @@
+{
+  "started_utc": "2026-10-09T00:17:52+00:00",
+  "finished_utc": "2026-10-09T00:26:57+00:00",
+  "paper_id": "37069399",
+  "status": "ok",
+  "error": null,
+  "request": {
+    "model_requested": "claude-sonnet-5",
+    "models_returned": [
+      "claude-sonnet-5"
+    ],
+    "max_tokens": 16384,
+    "max_tokens_ceiling": 64000,
+    "batch_size": 30,
+    "sample_discovery": true,
+    "min_table_relevance": 0.15,
+    "sampling_and_thinking": "not set (API defaults: no temperature/top_p/top_k/thinking/effort parameters sent)",
+    "age_rules": "/Users/sehyunoh/OmicsMLRepo/MetaExtractor/benchmarks/cmd_sonnet5/age_rules_cmd.json"
+  },
+  "usage": {
+    "input_tokens": 53478,
+    "cache_creation_input_tokens": 32032,
+    "cache_read_input_tokens": 68600,
+    "output_tokens": 50796,
+    "n_calls": 28
+  },
+  "calls": [
+    {
+      "purpose": "table_plan",
+      "table": "41564_2023_1355_MOESM3_ESM.xlsx::Legends",
+      "max_tokens": 2048,
+      "stop_reason": "end_turn",
+      "output_tokens": 89,
+      "plan": {
+        "header_rows": [
+          0
+        ],
+        "header_merge_sep": " | ",
+        "data_starts_at": 1,
+        "melt": null,
+        "drop_rows": [],
+        "notes": "This is a legend/table-of-contents sheet, not sample data; single column of descriptive text rows."
+      }
+    },
+    {
+      "purpose": "table_plan",
+      "table": "41564_2023_1355_MOESM3_ESM.xlsx::Supplementary Table 1",
+      "max_tokens": 2048,
+      "stop_reason": "end_turn",
+      "output_tokens": 913,
+      "plan": {
+        "header_rows": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "header_merge_sep": " | ",
+        "data_starts_at": 5,
+        "melt": null,
+        "drop_rows": [
+          0
+        ],
+        "notes": "Row 0 is a title caption; rows 1-4 form a stacked header (group, n, subtype, p-value labels) over clinical variables listed as rows, not individual samples, so no melt applies."
+      }
+    },
+    {
+      "purpose": "table_plan",
+      "table": "41564_2023_1355_MOESM3_ESM.xlsx::Supplementary Table 2",
+      "max_tokens": 2048,
+      "stop_reason": "end_turn",
+      "output_tokens": 76,
+      "plan": {
+        "header_rows": [
+          1
+        ],
+        "header_merge_sep": " | ",
+        "data_starts_at": 2,
+        "melt": null,
+        "drop_rows": [
+          0
+        ],
+        "notes": "Flat header row with one participant per row; title row dropped."
+      }
+    },
+    {
+      "purpose": "table_plan",
+      "table": "41564_2023_1355_MOESM3_ESM.xlsx::Supplementary Table 4",
+      "max_tokens": 2048,
+      "stop_reason": "end_turn",
+      "output_tokens": 109,
+      "plan": {
+        "header_rows": [
+          1
+        ],
+        "header_merge_sep": " | ",
+        "data_starts_at": 2,
+        "melt": null,
+        "drop_rows": [
+          0
+        ],
+        "notes": "Row0 is title; row1 is flat header; rows2-5 are data, each a distinct association test, not separate samples."
+      }
+    },
+    {
+      "purpose": "table_plan",
+      "table": "41564_2023_1355_MOESM3_ESM.xlsx::Supplementary Table 5",
+      "max_tokens": 2048,
+      "stop_reason": "end_turn",
+      "output_tokens": 97,
+      "plan": {
+        "header_rows": [
+          1
+        ],
+        "header_merge_sep": " | ",
+        "data_starts_at": 2,
+        "melt": null,
+        "drop_rows": [
+          0
+        ],
+        "notes": "This is a feature-level differential analysis table (GMMs), not sample-level; each row is a metabolic module, no melting needed."
+      }
+    },
+    {
+      "purpose": "table_plan",
+      "table": "41564_2023_1355_MOESM3_ESM.xlsx::Supplementary Table 6",
+      "max_tokens": 2048,
+      "stop_reason": "end_turn",
+      "output_tokens": 137,
+      "plan": {
+        "header_rows": [
+          1
+        ],
+        "header_merge_sep": " | ",
+        "data_starts_at": 2,
+        "melt": null,
+        "drop_rows": [
+          0
+        ],
+        "notes": "Row 0 is a title, row 1 is the flat header; each subsequent row is one gene record with no sample-type columns to melt."
+      }
+    },
+    {
+      "purpose": "table_plan",
+      "table": "41564_2023_1355_MOESM3_ESM.xlsx::Supplementary Table 7",
+      "max_tokens": 2048,
+      "stop_reason": "end_turn",
+      "output_tokens": 99,
+      "plan": {
+        "header_rows": [
+          1
+        ],
+        "header_merge_sep": " | ",
+        "data_starts_at": 2,
+        "melt": null,
+        "drop_rows": [
+          18
+        ],
+        "notes": "Flat header row with mediation analysis results per Treatment-Mediator-Outcome triplet; last row is a footnote/legend."
+      }
+    },
+    {
+      "purpose": "table_plan",
+      "table": "41564_2023_1355_MOESM3_ESM.xlsx::Supplementary Table 8",
+      "max_tokens": 2048,
+      "stop_reason": "end_turn",
+      "output_tokens": 92,
+      "plan": {
+        "header_rows": [
+          1
+        ],
+        "header_merge_sep": " | ",
+        "data_starts_at": 2,
+        "melt": null,
+        "drop_rows": [],
+        "notes": "Each row lists one transcript/target with its forward and reverse primer sequences; no sample-type dimension to melt."
+      }
+    },
+    {
+      "purpose": "table_plan",
+      "table": "41564_2023_1355_MOESM10_ESM.xlsx::6b",
+      "max_tokens": 2048,
+      "stop_reason": "max_tokens",
+      "output_tokens": 2048
+    },
+    {
+      "purpose": "table_plan",
+      "table": "41564_2023_1355_MOESM10_ESM.xlsx::6b",
+      "max_tokens": 4096,
+      "stop_reason": "end_turn",
+      "output_tokens": 3142,
+      "plan": {
+        "header_rows": [
+          0
+        ],
+        "header_merge_sep": " | ",
+        "data_starts_at": 1,
+        "melt": null,
+        "drop_rows": [],
+        "notes": "Rows are genes; c1-c10 are individual HC-T replicate samples and c11-c20 are individual AN-T replicate samples (expression values), but no per-sample identifiers exist in the header beyond the repeated group label, so columns cannot be melted into distinct sample rows without inventing labels."
+      }
+    },
+    {
+      "purpose": "table_plan",
+      "table": "41564_2023_1355_MOESM10_ESM.xlsx::6c",
+      "max_tokens": 2048,
+      "stop_reason": "max_tokens",
+      "output_tokens": 2048
+    },
+    {
+      "purpose": "table_plan",
+      "table": "41564_2023_1355_MOESM10_ESM.xlsx::6c",
+      "max_tokens": 4096,
+      "stop_reason": "end_turn",
+      "output_tokens": 3090,
+      "plan": {
+        "header_rows": [
+          0
+        ],
+        "header_merge_sep": " | ",
+        "data_starts_at": 1,
+        "melt": null,
+        "drop_rows": [],
+        "notes": "Table is transposed (genes as rows c0, individual replicate samples as columns c1-c20) grouped under two merged headers HC-T (c1-c10) and AN-T (c11-c20); since each column is already a distinct sample with no further categorical split needing collapse, no melt is applied."
+      }
+    },
+    {
+      "purpose": "table_plan",
+      "table": "41564_2023_1355_MOESM10_ESM.xlsx::6e",
+      "max_tokens": 2048,
+      "stop_reason": "max_tokens",
+      "output_tokens": 2048
+    },
+    {
+      "purpose": "table_plan",
+      "table": "41564_2023_1355_MOESM10_ESM.xlsx::6e",
+      "max_tokens": 4096,
+      "stop_reason": "end_turn",
+      "output_tokens": 3971,
+      "plan": {
+        "header_rows": [
+          0
+        ],
+        "data_starts_at": 1,
+        "melt": {
+          "category_label": "Donor",
+          "groups": [
+            {
+              "value_label": "Relative_abundance",
+              "sources": {
+                "HC_Donor_1": 1
+              }
+            },
+            {
+              "value_label": "Relative_abundance",
+              "sources": {
+                "HC_Donor_2": 2
+              }
+            },
+            {
+              "value_label": "Relative_abundance",
+              "sources": {
+                "HC_Donor_3": 3
+              }
+            },
+            {
+              "value_label": "Relative_abundance",
+              "sources": {
+                "AN_Donor_1": 4
+              }
+            },
+            {
+              "value_label": "Relative_abundance",
+              "sources": {
+                "AN_Donor_2": 5
+              }
+            },
+            {
+              "value_label": "Relative_abundance",
+              "sources": {
+                "AN_Donor_3": 6
+              }
+            }
+          ],
+          "skip_missing_categories": true
+        },
+        "drop_rows": [],
+        "notes": "Left block (c0-c6) is an ASV-by-donor abundance matrix; donor identity (HC/AN_Donor_1-3) is spread across columns c1-c6 and is melted into a Donor category so each output row is one ASV measured in one donor sample. Columns c7-c12 form a separate, unrelated ranking table (ASV_ID, CliffDelta_Recipients, Color, ASV_annotation) with no sample dimension and are left as pass-through columns, unaffected by melting."
+      }
+    },
+    {
+      "purpose": "table_plan",
+      "table": "41564_2023_1355_MOESM11_ESM.xlsx::2h and 2i",
+      "max_tokens": 2048,
+      "stop_reason": "end_turn",
+      "output_tokens": 938,
+      "plan": {
+        "header_rows": [
+          1
+        ],
+        "header_merge_sep": " | ",
+        "data_starts_at": 2,
+        "melt": null,
+        "drop_rows": [
+          10,
+          11
+        ],
+        "notes": "Two stacked sub-tables (2h, 2i) share identical column structure; title and repeated header rows (0,10,11) are dropped, leaving Group/Enterotype/Fraction rows as individual samples."
+      }
+    },
+    {
+      "purpose": "table_plan",
+      "table": "41564_2023_1355_MOESM12_ESM.xlsx",
+      "max_tokens": 2048,
+      "stop_reason": "end_turn",
+      "output_tokens": 97,
+      "plan": {
+        "header_rows": [
+          0
+        ],
+        "header_merge_sep": " | ",
+        "data_starts_at": 1,
+        "melt": null,
+        "drop_rows": [],
+        "notes": "Each row is a taxon with correlation values across psychometric scales; not sample-level data, no horizontal sample-type split to melt"
+      }
+    },
+    {
+      "purpose": "table_plan",
+      "table": "41564_2023_1355_MOESM16_ESM.xlsx::8d and 8e",
+      "max_tokens": 2048,
+      "stop_reason": "end_turn",
+      "output_tokens": 109,
+      "plan": {
+        "header_rows": [
+          0
+        ],
+        "header_merge_sep": " | ",
+        "data_starts_at": 1,
+        "melt": null,
+        "drop_rows": [
+          18
+        ],
+        "notes": "Flat header; each row is a mediation analysis result (Treatment-Mediator-Outcome triplet), not a sample; footnote row 18 dropped."
+      }
+    },
+    {
+      "purpose": "table_plan",
+      "table": "41564_2023_1355_MOESM17_ESM.xlsx::10b",
+      "max_tokens": 2048,
+      "stop_reason": "max_tokens",
+      "output_tokens": 2048
+    },
+    {
+      "purpose": "table_plan",
+      "table": "41564_2023_1355_MOESM17_ESM.xlsx::10b",
+      "max_tokens": 4096,
+      "stop_reason": "end_turn",
+      "output_tokens": 2829,
+      "plan": {
+        "header_rows": [
+          0,
+          1
+        ],
+        "header_merge_sep": " | ",
+        "data_starts_at": 2,
+        "melt": {
+          "category_label": "Subject",
+          "groups": [
+            {
+              "value_label": "Value",
+              "sources": {
+                "HC_T_1": 1,
+                "HC_T_2": 2,
+                "HC_T_3": 3,
+                "HC_T_4": 4,
+                "HC_T_5": 5,
+                "HC_T_6": 6,
+                "HC_T_7": 7,
+                "HC_T_8": 8,
+                "HC_T_9": 9,
+                "HC_T_10": 10,
+                "AN_T_1": 12,
+                "AN_T_2": 13,
+                "AN_T_3": 14,
+                "AN_T_4": 15,
+                "AN_T_5": 16,
+                "AN_T_6": 17,
+                "AN_T_7": 18,
+                "AN_T_8": 19,
+                "AN_T_9": 20,
+                "AN_T_10": 21
+              }
+            }
+          ],
+          "skip_missing_categories": true
+        },
+        "drop_rows": [],
+        "notes": "Each row is a Day; subject IDs (HC_T_*, AN_T_*) under Batch super-headers are spread across columns, so melt them into one Subject/Value pair per sample; column 11 is an empty spacer and excluded from sources."
+      }
+    },
+    {
+      "purpose": "table_plan",
+      "table": "41564_2023_1355_MOESM17_ESM.xlsx::10c",
+      "max_tokens": 2048,
+      "stop_reason": "end_turn",
+      "output_tokens": 437,
+      "plan": {
+        "header_rows": [
+          0
+        ],
+        "header_merge_sep": " | ",
+        "data_starts_at": 1,
+        "melt": null,
+        "drop_rows": [],
+        "notes": "Each row is a metabolite with associated fold-change/p-value statistics; no sample-type dimension is split across columns, so no melting is needed."
+      }
+    },
+    {
+      "purpose": "table_plan",
+      "table": "41564_2023_1355_MOESM17_ESM.xlsx::10d",
+      "max_tokens": 2048,
+      "stop_reason": "end_turn",
+      "output_tokens": 1012,
+      "plan": {
+        "header_rows": [
+          0
+        ],
+        "header_merge_sep": " | ",
+        "data_starts_at": 1,
+        "melt": null,
+        "drop_rows": [
+          14,
+          15
+        ],
+        "notes": "Flat header with ASV-by-gene correlation matrix; rows 14-15 are an interleaved section label and repeated header for a second (adjusted p-value) block and are dropped, leaving ASV rows as data."
+      }
+    },
+    {
+      "purpose": "table_plan",
+      "table": "41564_2023_1355_MOESM5_ESM.xlsx::1d",
+      "max_tokens": 2048,
+      "stop_reason": "end_turn",
+      "output_tokens": 122,
+      "plan": {
+        "header_rows": [
+          0
+        ],
+        "header_merge_sep": " | ",
+        "data_starts_at": 1,
+        "melt": null,
+        "drop_rows": [],
+        "notes": "Each row is one msp (microbial species) with correlation values across multiple EDI subscales plus summary stats; no sample-type dimension to melt."
+      }
+    },
+    {
+      "purpose": "table_plan",
+      "table": "41564_2023_1355_MOESM6_ESM.xlsx::2d",
+      "max_tokens": 2048,
+      "stop_reason": "end_turn",
+      "output_tokens": 534,
+      "plan": {
+        "header_rows": [
+          1
+        ],
+        "header_merge_sep": " | ",
+        "data_starts_at": 2,
+        "melt": null,
+        "drop_rows": [
+          0,
+          6
+        ],
+        "notes": "Two stacked sub-tables share identical Group/Value/Correlation columns; row0 and row6 are title/header duplicates, not data."
+      }
+    },
+    {
+      "purpose": "table_plan",
+      "table": "41564_2023_1355_MOESM8_ESM.xlsx::4d",
+      "max_tokens": 2048,
+      "stop_reason": "end_turn",
+      "output_tokens": 109,
+      "plan": {
+        "header_rows": [
+          0
+        ],
+        "header_merge_sep": " | ",
+        "data_starts_at": 1,
+        "melt": null,
+        "drop_rows": [],
+        "notes": "Each row is one sample (c0) with species abundance counts in remaining columns; no horizontal sample-type split to melt."
+      }
+    },
+    {
+      "purpose": "table_plan",
+      "table": "41564_2023_1355_MOESM9_ESM.xlsx::5c and 5d",
+      "max_tokens": 2048,
+      "stop_reason": "end_turn",
+      "output_tokens": 122,
+      "plan": {
+        "header_rows": [
+          0
+        ],
+        "header_merge_sep": " | ",
+        "data_starts_at": 1,
+        "melt": null,
+        "drop_rows": [
+          14
+        ],
+        "notes": "Each row is one mediation analysis result (Treatment-Mediator-Outcome triplet); row 14 is a footnote legend, not data."
+      }
+    },
+    {
+      "purpose": "fields",
+      "n_fields": 30,
+      "first_field": "location",
+      "max_tokens": 16384,
+      "stop_reason": "end_turn",
+      "output_tokens": 11336
+    },
+    {
+      "purpose": "fields",
+      "n_fields": 30,
+      "first_field": "disease_details",
+      "max_tokens": 16384,
+      "stop_reason": "end_turn",
+      "output_tokens": 9386
+    },
+    {
+      "purpose": "fields",
+      "n_fields": 11,
+      "first_field": "tumor_size_residual_measurement",
+      "max_tokens": 16384,
+      "stop_reason": "end_turn",
+      "output_tokens": 3758
+    }
+  ],
+  "cost_estimate": {
+    "input_usd": 0.106956,
+    "output_usd": 0.50796,
+    "cache_read_usd": 0.01372,
+    "cache_write_usd": 0.08008,
+    "total_usd": 0.708716,
+    "pricing_as_of": "2026-06-24"
+  },
+  "retrieval": {
+    "frozen_retrieval": "/Users/sehyunoh/OmicsMLRepo/MetaExtractor/benchmarks/cmd_sonnet5/out_v5/_fetch/FanY_2023",
+    "source": "pmc_fulltext",
+    "has_body": true,
+    "pmid": "37069399",
+    "pmcid": "10159860",
+    "doi": null,
+    "attempts": [
+      {
+        "rung": "pmc_fulltext",
+        "returned_text": true,
+        "is_body": true,
+        "chars": 67289
+      }
+    ],
+    "supplementary_included": [
+      "41564_2023_1355_MOESM1_ESM.pdf",
+      "41564_2023_1355_MOESM2_ESM.pdf",
+      "41564_2023_1355_MOESM3_ESM.xlsx",
+      "41564_2023_1355_MOESM4_ESM.xlsx",
+      "41564_2023_1355_MOESM10_ESM.xlsx",
+      "41564_2023_1355_MOESM11_ESM.xlsx",
+      "41564_2023_1355_MOESM12_ESM.xlsx",
+      "41564_2023_1355_MOESM13_ESM.xlsx",
+      "41564_2023_1355_MOESM14_ESM.xlsx",
+      "41564_2023_1355_MOESM15_ESM.xlsx",
+      "41564_2023_1355_MOESM16_ESM.xlsx",
+      "41564_2023_1355_MOESM17_ESM.xlsx",
+      "41564_2023_1355_MOESM5_ESM.xlsx",
+      "41564_2023_1355_MOESM6_ESM.xlsx",
+      "41564_2023_1355_MOESM7_ESM.xlsx",
+      "41564_2023_1355_MOESM8_ESM.xlsx",
+      "41564_2023_1355_MOESM9_ESM.xlsx"
+    ],
+    "supplementary_skipped": [
+      [
+        "41564_2023_1355_Article_Equa.gif",
+        "europepmc: ValueError: image-only (.gif)"
+      ],
+      [
+        "41564_2023_1355_Article_Equb.gif",
+        "europepmc: ValueError: image-only (.gif)"
+      ],
+      [
+        "41564_2023_1355_Fig10_ESM.gif",
+        "europepmc: ValueError: image-only (.gif)"
+      ],
+      [
+        "41564_2023_1355_Fig10_ESM.jpg",
+        "europepmc: ValueError: image-only (.jpg)"
+      ],
+      [
+        "41564_2023_1355_Fig11_ESM.gif",
+        "europepmc: ValueError: image-only (.gif)"
+      ],
+      [
+        "41564_2023_1355_Fig11_ESM.jpg",
+        "europepmc: ValueError: image-only (.jpg)"
+      ],
+      [
+        "41564_2023_1355_Fig12_ESM.gif",
+        "europepmc: ValueError: image-only (.gif)"
+      ],
+      [
+        "41564_2023_1355_Fig12_ESM.jpg",
+        "europepmc: ValueError: image-only (.jpg)"
+      ],
+      [
+        "41564_2023_1355_Fig13_ESM.gif",
+        "europepmc: ValueError: image-only (.gif)"
+      ],
+      [
+        "41564_2023_1355_Fig13_ESM.jpg",
+        "europepmc: ValueError: image-only (.jpg)"
+      ],
+      [
+        "41564_2023_1355_Fig14_ESM.gif",
+        "europepmc: ValueError: image-only (.gif)"
+      ],
+      [
+        "41564_2023_1355_Fig14_ESM.jpg",
+        "europepmc: ValueError: image-only (.jpg)"
+      ],
+      [
+        "41564_2023_1355_Fig15_ESM.gif",
+        "europepmc: ValueError: image-only (.gif)"
+      ],
+      [
+        "41564_2023_1355_Fig15_ESM.jpg",
+        "europepmc: ValueError: image-only (.jpg)"
+      ],
+      [
+        "41564_2023_1355_Fig16_ESM.gif",
+        "europepmc: ValueError: image-only (.gif)"
+      ],
+      [
+        "41564_2023_1355_Fig16_ESM.jpg",
+        "europepmc: ValueError: image-only (.jpg)"
+      ],
+      [
+        "41564_2023_1355_Fig1_HTML.gif",
+        "europepmc: ValueError: image-only (.gif)"
+      ],
+      [
+        "41564_2023_1355_Fig1_HTML.jpg",
+        "europepmc: ValueError: image-only (.jpg)"
+      ],
+      [
+        "41564_2023_1355_Fig2_HTML.gif",
+        "europepmc: ValueError: image-only (.gif)"
+      ],
+      [
+        "41564_2023_1355_Fig2_HTML.jpg",
+        "europepmc: ValueError: image-only (.jpg)"
+      ],
+      [
+        "41564_2023_1355_Fig3_HTML.gif",
+        "europepmc: ValueError: image-only (.gif)"
+      ],
+      [
+        "41564_2023_1355_Fig3_HTML.jpg",
+        "europepmc: ValueError: image-only (.jpg)"
+      ],
+      [
+        "41564_2023_1355_Fig4_HTML.gif",
+        "europepmc: ValueError: image-only (.gif)"
+      ],
+      [
+        "41564_2023_1355_Fig4_HTML.jpg",
+        "europepmc: ValueError: image-only (.jpg)"
+      ],
+      [
+        "41564_2023_1355_Fig5_HTML.gif",
+        "europepmc: ValueError: image-only (.gif)"
+      ],
+      [
+        "41564_2023_1355_Fig5_HTML.jpg",
+        "europepmc: ValueError: image-only (.jpg)"
+      ],
+      [
+        "41564_2023_1355_Fig6_HTML.gif",
+        "europepmc: ValueError: image-only (.gif)"
+      ],
+      [
+        "41564_2023_1355_Fig6_HTML.jpg",
+        "europepmc: ValueError: image-only (.jpg)"
+      ],
+      [
+        "41564_2023_1355_Fig7_ESM.gif",
+        "europepmc: ValueError: image-only (.gif)"
+      ],
+      [
+        "41564_2023_1355_Fig7_ESM.jpg",
+        "europepmc: ValueError: image-only (.jpg)"
+      ],
+      [
+        "41564_2023_1355_Fig8_ESM.gif",
+        "europepmc: ValueError: image-only (.gif)"
+      ],
+      [
+        "41564_2023_1355_Fig8_ESM.jpg",
+        "europepmc: ValueError: image-only (.jpg)"
+      ],
+      [
+        "41564_2023_1355_Fig9_ESM.gif",
+        "europepmc: ValueError: image-only (.gif)"
+      ],
+      [
+        "41564_2023_1355_Fig9_ESM.jpg",
+        "europepmc: ValueError: image-only (.jpg)"
+      ]
+    ],
+    "sra_manifest_source": null,
+    "sra_manifest_warnings": [],
+    "sra_manifest_resolution": {}
+  },
+  "local_supplementary": [],
+  "paper_text_sha256": "a71f20e756f8a8ab744ec785873176da5831e7ea0db3490cea84468debc4ba79",
+  "paper_text_chars": 86389,
+  "n_tables": 56,
+  "output": {
+    "granularity": "sample_level",
+    "n_samples": 100,
+    "n_fields": 71,
+    "n_warnings": 209
+  },
+  "versions": {
+    "metaextractor": "0.1.0",
+    "anthropic_sdk": "0.104.1",
+    "python": "3.13.5"
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "source": "pmc_fulltext",
+  "has_body": true,
+  "pmid": "33440172",
+  "pmcid": "7954989",
+  "doi": null,
+  "retrieval_attempts": [
+    {
+      "rung": "pmc_fulltext",
+      "returned_text": true,
+      "is_body": true,
+      "chars": 81711
+    }
+  ],
+  "supplementary_included": [],
+  "supplementary_skipped": [
+    [
+      "NIHMS1655935-supplement-1.pdf",
+      "s3: HTTPError: HTTP Error 404: Not Found"
+    ],
+    [
+      "NIHMS1655935-supplement-3.xlsx",
+      "s3: HTTPError: HTTP Error 404: Not Found"
+    ],
+    [
+      "NIHMS1655935-supplement-4.xlsx",
+      "s3: HTTPError: HTTP Error 404: Not Found"
+    ],
+    [
+      "NIHMS1655935-supplement-5.xlsx",
+      "s3: HTTPError: HTTP Error 404: Not Found"
+    ],
+    [
+      "NIHMS1655935-supplement-6.xlsx",
+      "s3: HTTPError: HTTP Error 404: Not Found"
+    ],
+    [
+      "NIHMS1655935-supplement-7.xlsx",
+      "s3: HTTPError: HTTP Error 404: Not Found"
+    ],
+    [
+      "NIHMS1655935-supplement-8.xlsx",
+      "s3: HTTPError: HTTP Error 404: Not Found"
+    ],
+    [
+      "NIHMS1655935-supplement-9.xlsx",
+      "s3: HTTPError: HTTP Error 404: Not Found"
+    ],
+    [
+      "(europepmc zip)",
+      "response was not a valid ZIP"
+    ]
+  ],
+  "sra_manifest_source": "ena:PRJNA656577 (434 runs)",
+  "sra_manifest_warnings": [],
+  "n_tables": 1,
+  "text_chars": 81711,
+  "text_sha256": "f4a547463775ffc055c01e3462cb5fa38c691205a7c25b68b016f4aa8dfa5371",
+  "tables_sha256": "00616e02eb8429374cd9aa6c84ae4fa8cc16e8680676e1e220ba1662bc2356a2"
+}

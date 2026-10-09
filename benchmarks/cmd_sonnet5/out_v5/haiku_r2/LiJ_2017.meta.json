@@ -1,0 +1,489 @@
+{
+  "started_utc": "2026-10-09T00:26:07+00:00",
+  "finished_utc": "2026-10-09T00:27:56+00:00",
+  "paper_id": "28143587",
+  "status": "ok",
+  "error": null,
+  "request": {
+    "model_requested": "claude-haiku-4-5",
+    "models_returned": [
+      "claude-haiku-4-5-20251001"
+    ],
+    "max_tokens": 16384,
+    "max_tokens_ceiling": 64000,
+    "batch_size": 30,
+    "sample_discovery": true,
+    "min_table_relevance": 0.15,
+    "sampling_and_thinking": "not set (API defaults: no temperature/top_p/top_k/thinking/effort parameters sent)",
+    "age_rules": "/Users/sehyunoh/OmicsMLRepo/MetaExtractor/benchmarks/cmd_sonnet5/age_rules_cmd.json"
+  },
+  "usage": {
+    "input_tokens": 29132,
+    "cache_creation_input_tokens": 17472,
+    "cache_read_input_tokens": 34944,
+    "output_tokens": 10600,
+    "n_calls": 13
+  },
+  "calls": [
+    {
+      "purpose": "table_plan",
+      "table": "40168_2016_222_MOESM2_ESM.xlsx::Table S2",
+      "max_tokens": 2048,
+      "stop_reason": "end_turn",
+      "output_tokens": 137,
+      "plan": {
+        "header_rows": [
+          0,
+          1
+        ],
+        "header_merge_sep": " | ",
+        "data_starts_at": 2,
+        "melt": null,
+        "drop_rows": [],
+        "notes": "Two-level header with super-headers (Stage, Data production, Single-sample assembly, Gene prediction, Mapping to reference set, Shannon Index, Enterotypes) stacked above leaf column names. Each row represents one biological sample identified by Sample ID in c1. No melting required as samples are already in rows."
+      }
+    },
+    {
+      "purpose": "table_plan",
+      "table": "40168_2016_222_MOESM2_ESM.xlsx::Table S6",
+      "max_tokens": 2048,
+      "stop_reason": "end_turn",
+      "output_tokens": 132,
+      "plan": {
+        "header_rows": [
+          0
+        ],
+        "header_merge_sep": " | ",
+        "data_starts_at": 1,
+        "melt": null,
+        "drop_rows": [
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "notes": "Each row is one biological sample identified by Sample ID. Rows 7-12 contain a legend for abbreviations and should be dropped. Columns 19-22 are empty or contain metadata labels unrelated to individual samples."
+      }
+    },
+    {
+      "purpose": "table_plan",
+      "table": "40168_2016_222_MOESM2_ESM.xlsx::Table S11",
+      "max_tokens": 2048,
+      "stop_reason": "end_turn",
+      "output_tokens": 116,
+      "plan": {
+        "header_rows": [
+          0
+        ],
+        "header_merge_sep": " | ",
+        "data_starts_at": 1,
+        "melt": null,
+        "drop_rows": [],
+        "notes": "Flat single-row header with one sample per row (each CAG ID represents one biological/taxonomic sample). Columns c7-c9 contain legend/footnote information that should be retained as part of the table structure."
+      }
+    },
+    {
+      "purpose": "table_plan",
+      "table": "40168_2016_222_MOESM2_ESM.xlsx::Table S12",
+      "max_tokens": 2048,
+      "stop_reason": "end_turn",
+      "output_tokens": 391,
+      "plan": {
+        "header_rows": [
+          0,
+          1
+        ],
+        "header_merge_sep": " | ",
+        "data_starts_at": 2,
+        "melt": {
+          "category_label": "Comparison Group",
+          "groups": [
+            {
+              "value_label": "Control-enriched (Control--VS--pHTN)",
+              "sources": {
+                "CAG ID": 1,
+                "Index": 2
+              }
+            },
+            {
+              "value_label": "Control-enriched (Control--VS--HTN)",
+              "sources": {
+                "CAG ID": 5,
+                "Index": 6
+              }
+            },
+            {
+              "value_label": "pHTN-enriched (Control--VS--Preypertension)",
+              "sources": {
+                "CAG ID": 9,
+                "Index": 10
+              }
+            },
+            {
+              "value_label": "HTN-enriched (Control--VS--HTN)",
+              "sources": {
+                "CAG ID": 13,
+                "Index": 14
+              }
+            }
+          ],
+          "skip_missing_categories": true
+        },
+        "drop_rows": [],
+        "notes": "Four comparison groups spread horizontally; each row represents one CAG pair association. Melt to normalize so each row is one comparison result with its group category."
+      }
+    },
+    {
+      "purpose": "table_plan",
+      "table": "40168_2016_222_MOESM2_ESM.xlsx::Table S13",
+      "max_tokens": 2048,
+      "stop_reason": "end_turn",
+      "output_tokens": 271,
+      "plan": {
+        "header_rows": [
+          0
+        ],
+        "header_merge_sep": " | ",
+        "data_starts_at": 1,
+        "melt": {
+          "category_label": "Sample Type",
+          "groups": [
+            {
+              "value_label": "Control",
+              "sources": {
+                "Control": 2
+              }
+            },
+            {
+              "value_label": "pHTN",
+              "sources": {
+                "pHTN": 4
+              }
+            },
+            {
+              "value_label": "HTN",
+              "sources": {
+                "HTN": 6
+              }
+            }
+          ],
+          "skip_missing_categories": true
+        },
+        "drop_rows": [],
+        "notes": "Three sample groups (Control, pHTN, HTN) spread horizontally; each has AVG and SD columns. Melt to convert each group into separate rows with value_label and associated statistics."
+      }
+    },
+    {
+      "purpose": "table_plan",
+      "table": "40168_2016_222_MOESM2_ESM.xlsx::Table S14",
+      "max_tokens": 2048,
+      "stop_reason": "end_turn",
+      "output_tokens": 266,
+      "plan": {
+        "header_rows": [
+          0
+        ],
+        "header_merge_sep": " | ",
+        "data_starts_at": 1,
+        "melt": {
+          "category_label": "Group",
+          "groups": [
+            {
+              "value_label": "Control",
+              "sources": {
+                "AVG": 1,
+                "SD": 2
+              }
+            },
+            {
+              "value_label": "pHTN",
+              "sources": {
+                "AVG": 3,
+                "SD": 4
+              }
+            },
+            {
+              "value_label": "HTN",
+              "sources": {
+                "AVG": 5,
+                "SD": 6
+              }
+            }
+          ],
+          "skip_missing_categories": true
+        },
+        "drop_rows": [],
+        "notes": "Table contains three biological groups (Control, pHTN, HTN) with paired AVG and SD columns spread horizontally. Melting transforms each KO ID + group combination into one sample row."
+      }
+    },
+    {
+      "purpose": "table_plan",
+      "table": "40168_2016_222_MOESM2_ESM.xlsx::Table S15",
+      "max_tokens": 2048,
+      "stop_reason": "end_turn",
+      "output_tokens": 258,
+      "plan": {
+        "header_rows": [
+          0
+        ],
+        "header_merge_sep": " | ",
+        "data_starts_at": 1,
+        "melt": {
+          "category_label": "Group",
+          "groups": [
+            {
+              "value_label": "Control",
+              "sources": {
+                "AVG": 1,
+                "SD": 2
+              }
+            },
+            {
+              "value_label": "pHTN",
+              "sources": {
+                "AVG": 3,
+                "SD": 4
+              }
+            },
+            {
+              "value_label": "HTN",
+              "sources": {
+                "AVG": 5,
+                "SD": 6
+              }
+            }
+          ],
+          "skip_missing_categories": false
+        },
+        "drop_rows": [],
+        "notes": "Three sample groups (Control, pHTN, HTN) spread horizontally; each CAZy family is one biological unit with statistics and comparisons across groups."
+      }
+    },
+    {
+      "purpose": "table_plan",
+      "table": "40168_2016_222_MOESM2_ESM.xlsx::Table S16",
+      "max_tokens": 2048,
+      "stop_reason": "end_turn",
+      "output_tokens": 261,
+      "plan": {
+        "header_rows": [
+          0,
+          1
+        ],
+        "header_merge_sep": " | ",
+        "data_starts_at": 2,
+        "melt": {
+          "category_label": "peak intensities",
+          "groups": [
+            {
+              "value_label": "control",
+              "sources": {
+                "control": 5
+              }
+            },
+            {
+              "value_label": "pHTN",
+              "sources": {
+                "pHTN": 6
+              }
+            },
+            {
+              "value_label": "HTN",
+              "sources": {
+                "HTN": 7
+              }
+            }
+          ],
+          "skip_missing_categories": false
+        },
+        "drop_rows": [],
+        "notes": "Three sample groups (control, pHTN, HTN) spread horizontally across columns 5\u20137 under 'peak intensities' super-header; melting converts each row into three samples, one per group. Columns 8\u201312 (comparisons and VIP scores) remain as attributes for each melted sample."
+      }
+    },
+    {
+      "purpose": "table_plan",
+      "table": "40168_2016_222_MOESM2_ESM.xlsx::Table S18",
+      "max_tokens": 2048,
+      "stop_reason": "end_turn",
+      "output_tokens": 118,
+      "plan": {
+        "header_rows": [
+          0,
+          1
+        ],
+        "header_merge_sep": " | ",
+        "data_starts_at": 2,
+        "melt": null,
+        "drop_rows": [],
+        "notes": "Two-row header with stage category in c0 (rows 0\u20131) and data production metrics (c1\u2013c4) plus Shannon Index (c5). Each row represents one sample identified by Stage and Sample ID."
+      }
+    },
+    {
+      "purpose": "table_plan",
+      "table": "40168_2016_222_MOESM2_ESM.xlsx::Table S19",
+      "max_tokens": 2048,
+      "stop_reason": "end_turn",
+      "output_tokens": 561,
+      "plan": {
+        "header_rows": [
+          0
+        ],
+        "header_merge_sep": " | ",
+        "data_starts_at": 1,
+        "melt": {
+          "category_label": "Sample Type",
+          "groups": [
+            {
+              "value_label": "H1_human",
+              "sources": {
+                "H1_human": 1
+              }
+            },
+            {
+              "value_label": "H1_mice1",
+              "sources": {
+                "H1_mice1": 2
+              }
+            },
+            {
+              "value_label": "H1_mice2",
+              "sources": {
+                "H1_mice2": 3
+              }
+            },
+            {
+              "value_label": "H1_mice3",
+              "sources": {
+                "H1_mice3": 4
+              }
+            },
+            {
+              "value_label": "H2_human",
+              "sources": {
+                "H2_human": 5
+              }
+            },
+            {
+              "value_label": "H2_mice.1",
+              "sources": {
+                "H2_mice.1": 6
+              }
+            },
+            {
+              "value_label": "H2_mice.2",
+              "sources": {
+                "H2_mice.2": 7
+              }
+            },
+            {
+              "value_label": "H2_mice.3",
+              "sources": {
+                "H2_mice.3": 8
+              }
+            },
+            {
+              "value_label": "C_human",
+              "sources": {
+                "C_human": 9
+              }
+            },
+            {
+              "value_label": "C_mice.1",
+              "sources": {
+                "C_mice.1": 10
+              }
+            },
+            {
+              "value_label": "C_mice.2",
+              "sources": {
+                "C_mice.2": 11
+              }
+            },
+            {
+              "value_label": "C_mice.3",
+              "sources": {
+                "C_mice.3": 12
+              }
+            }
+          ],
+          "skip_missing_categories": true
+        },
+        "drop_rows": [],
+        "notes": "Each row is a genus; columns c1-c12 contain abundance values for 12 different samples (human and mice replicates from three groups); melt spreads samples horizontally into individual rows."
+      }
+    },
+    {
+      "purpose": "fields",
+      "n_fields": 30,
+      "first_field": "location",
+      "max_tokens": 16384,
+      "stop_reason": "end_turn",
+      "output_tokens": 1413
+    },
+    {
+      "purpose": "fields",
+      "n_fields": 30,
+      "first_field": "disease_details",
+      "max_tokens": 16384,
+      "stop_reason": "end_turn",
+      "output_tokens": 4935
+    },
+    {
+      "purpose": "fields",
+      "n_fields": 11,
+      "first_field": "tumor_size_residual_measurement",
+      "max_tokens": 16384,
+      "stop_reason": "end_turn",
+      "output_tokens": 1741
+    }
+  ],
+  "cost_estimate": {
+    "input_usd": 0.029132,
+    "output_usd": 0.053,
+    "cache_read_usd": 0.0034944,
+    "cache_write_usd": 0.02184,
+    "total_usd": 0.10746639999999999,
+    "pricing_as_of": "2026-06-24"
+  },
+  "retrieval": {
+    "frozen_retrieval": "/Users/sehyunoh/OmicsMLRepo/MetaExtractor/benchmarks/cmd_sonnet5/out_v5/_fetch/LiJ_2017",
+    "source": "pmc_fulltext",
+    "has_body": true,
+    "pmid": "28143587",
+    "pmcid": "5286796",
+    "doi": null,
+    "attempts": [
+      {
+        "rung": "pmc_fulltext",
+        "returned_text": true,
+        "is_body": true,
+        "chars": 64808
+      }
+    ],
+    "supplementary_included": [
+      "40168_2016_222_MOESM2_ESM.xlsx",
+      "40168_2016_222_MOESM7_ESM.xlsx"
+    ],
+    "supplementary_skipped": [],
+    "sra_manifest_source": null,
+    "sra_manifest_warnings": [],
+    "sra_manifest_resolution": {}
+  },
+  "local_supplementary": [],
+  "paper_text_sha256": "d4d7962b0e2ee1a8a56e18c26f5742e9310e02031943d511a547acd44c5467b0",
+  "paper_text_chars": 64808,
+  "n_tables": 18,
+  "output": {
+    "granularity": "sample_level",
+    "n_samples": 6,
+    "n_fields": 41,
+    "n_warnings": 87
+  },
+  "versions": {
+    "metaextractor": "0.1.0",
+    "anthropic_sdk": "0.104.1",
+    "python": "3.13.5"
+  }
+}

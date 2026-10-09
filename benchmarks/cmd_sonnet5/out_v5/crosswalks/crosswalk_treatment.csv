@@ -1,0 +1,37 @@
+query,ref_match,stage,match1,match1_score,match1_code
+Leucovorin,Not Found,1.0,Not Found,1.0,
+Methotrexate,Not Found,1.0,Not Found,1.0,
+aspirin,Not Found,1.0,Not Found,1.0,
+metformin,Not Found,1.0,Not Found,1.0,
+metoprolol,Not Found,1.0,Not Found,1.0,
+nifedipine,Not Found,1.0,Not Found,1.0,
+proguanil,Not Found,1.0,Not Found,1.0,
+Antimalarial chemoprophylaxis,Not Found,2.5,Antimalarial Agent,0.8215,NCIT:C271
+Antimalarial chemoprophylaxis (mefloquine,Not Found,2.5,Mefloquine,0.7339,NCIT:C61827
+Antipsychotics,Not Found,2.0,Antipsychotic Agent,0.9517,NCIT:C29710
+Benzodiazepines,Not Found,2.0,Benzodiazepine,1.0000,NCIT:C1012
+Birth control pills,Not Found,2.5,Oral Contraceptive Preparation,0.8755,NCIT:C29640
+Cognitive behavioural therapeutic treatment,Not Found,2.5,Cytembena,0.5843,NCIT:C1360
+Cognitive behavioural therapy,Not Found,2.5,Cytembena,0.5729,NCIT:C1360
+Dextran sodium sulfate,Not Found,2.5,Dextran 70,0.7695,NCIT:C87482
+Excluded: statins,Not Found,2.5,HMG-CoA Reductase Inhibitor,0.7086,NCIT:C1655
+Fecal microbiota transplantation,Not Found,2.5,Fecal Microbiota Transplantation Capsule,0.8082,NCIT:C168520
+Fecal microbiota transplantation (FMT),Not Found,2.5,Fecal Microbiota Transplantation Capsule,0.7828,NCIT:C168520
+Fecal microbiota transplantation (mouse experiment),Not Found,2.5,Fecal Microbiota Transplantation Capsule,0.7723,NCIT:C168520
+Folic Acid,Not Found,2.5,Folic Acid Derivative,0.8160,NCIT:C2078
+Folic acid,Not Found,2.5,Folic Acid Derivative,0.8160,NCIT:C2078
+Insulin replacement therapy,Not Found,2.5,Therapeutic Insulin,0.7572,NCIT:C581
+No antibiotics within 6 months prior to fecal sampling,Not Found,2.5,6-Aminonicotinamide,0.6091,NCIT:C38127
+None (antibiotics excluded),Not Found,2.5,Antibiotic,0.6279,NCIT:C258
+Not treated (antihypertensive-naive),Not Found,2.5,Antihypertensive Agent,0.6105,NCIT:C270
+Selective Serotonin Re-uptake Inhibitors,Not Found,2.0,Selective Serotonin Reuptake Inhibitor,0.9076,NCIT:C94725
+Selective serotonin re-uptake inhibitors,Not Found,2.0,Selective Serotonin Reuptake Inhibitor,0.9076,NCIT:C94725
+Selective serotonin re-uptake inhibitors (SSRI),Not Found,2.0,Selective Serotonin Reuptake Inhibitor,0.9298,NCIT:C94725
+Selective serotonin reuptake inhibitors,Not Found,2.0,Selective Serotonin Reuptake Inhibitor,1.0000,NCIT:C94725
+antimalarial chemoprophylaxis,Not Found,2.5,Antimalarial Agent,0.8215,NCIT:C271
+antipsychotics,Not Found,2.0,Antipsychotic Agent,0.9517,NCIT:C29710
+atovaquone),Not Found,2.0,Atovaquone,0.9854,NCIT:C28838
+benzodiazepines,Not Found,2.0,Benzodiazepine,1.0000,NCIT:C1012
+insulin,Not Found,2.0,Therapeutic Insulin,0.9147,NCIT:C581
+insulin replacement therapy,Not Found,2.5,Therapeutic Insulin,0.7572,NCIT:C581
+selective serotonin re-uptake inhibitors,Not Found,2.0,Selective Serotonin Reuptake Inhibitor,0.9076,NCIT:C94725

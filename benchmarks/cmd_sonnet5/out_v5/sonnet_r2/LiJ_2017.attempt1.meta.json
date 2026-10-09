@@ -1,0 +1,414 @@
+{
+  "started_utc": "2026-10-09T00:25:31+00:00",
+  "finished_utc": "2026-10-09T00:32:27+00:00",
+  "paper_id": "28143587",
+  "status": "ok",
+  "error": null,
+  "request": {
+    "model_requested": "claude-sonnet-5",
+    "models_returned": [
+      "claude-sonnet-5"
+    ],
+    "max_tokens": 16384,
+    "max_tokens_ceiling": 64000,
+    "batch_size": 30,
+    "sample_discovery": true,
+    "min_table_relevance": 0.15,
+    "sampling_and_thinking": "not set (API defaults: no temperature/top_p/top_k/thinking/effort parameters sent)",
+    "age_rules": "/Users/sehyunoh/OmicsMLRepo/MetaExtractor/benchmarks/cmd_sonnet5/age_rules_cmd.json"
+  },
+  "usage": {
+    "input_tokens": 43037,
+    "cache_creation_input_tokens": 23289,
+    "cache_read_input_tokens": 51114,
+    "output_tokens": 41393,
+    "n_calls": 15
+  },
+  "calls": [
+    {
+      "purpose": "table_plan",
+      "table": "40168_2016_222_MOESM2_ESM.xlsx::Table S2",
+      "max_tokens": 2048,
+      "stop_reason": "end_turn",
+      "output_tokens": 124,
+      "plan": {
+        "header_rows": [
+          0,
+          1
+        ],
+        "header_merge_sep": " | ",
+        "data_starts_at": 2,
+        "melt": null,
+        "drop_rows": [],
+        "notes": "Two-row header (stage super-headers + leaf names) merged; each subsequent row is one sample (c0 is a group label column, not a header)."
+      }
+    },
+    {
+      "purpose": "table_plan",
+      "table": "40168_2016_222_MOESM2_ESM.xlsx::Table S6",
+      "max_tokens": 2048,
+      "stop_reason": "end_turn",
+      "output_tokens": 139,
+      "plan": {
+        "header_rows": [
+          0
+        ],
+        "header_merge_sep": " | ",
+        "data_starts_at": 1,
+        "melt": null,
+        "drop_rows": [
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "notes": "Each data row is one sample; columns c20-c22 contain an unrelated footnote glossary, dropped as extraneous rows beyond row 6."
+      }
+    },
+    {
+      "purpose": "table_plan",
+      "table": "40168_2016_222_MOESM2_ESM.xlsx::Table S11",
+      "max_tokens": 2048,
+      "stop_reason": "end_turn",
+      "output_tokens": 133,
+      "plan": {
+        "header_rows": [
+          0
+        ],
+        "header_merge_sep": " | ",
+        "data_starts_at": 1,
+        "melt": null,
+        "drop_rows": [],
+        "notes": "Flat table of CAG taxonomy assignments; columns c8-c9 contain footnote legend text unrelated to data and are left as-is per structure-only rule, each row is one CAG entity"
+      }
+    },
+    {
+      "purpose": "table_plan",
+      "table": "40168_2016_222_MOESM2_ESM.xlsx::Table S12",
+      "max_tokens": 2048,
+      "stop_reason": "end_turn",
+      "output_tokens": 1825,
+      "plan": {
+        "header_rows": [
+          0,
+          1
+        ],
+        "header_merge_sep": " | ",
+        "data_starts_at": 2,
+        "melt": null,
+        "drop_rows": [],
+        "notes": "Table holds four side-by-side blocks of CAG-pair correlations (each block = 2 CAG-ID columns + Index/correlation column) under different enrichment comparisons; rows are CAG pairs not samples, and each block spans multiple columns so horizontal melting into a single category/value pair is not structurally possible\u2014columns are kept as-is with merged 2-row header."
+      }
+    },
+    {
+      "purpose": "table_plan",
+      "table": "40168_2016_222_MOESM2_ESM.xlsx::Table S13",
+      "max_tokens": 2048,
+      "stop_reason": "end_turn",
+      "output_tokens": 1258,
+      "plan": {
+        "header_rows": [
+          0
+        ],
+        "header_merge_sep": " | ",
+        "data_starts_at": 1,
+        "melt": null,
+        "drop_rows": [],
+        "notes": "Each row is a functional module/pathway with aggregated AVG/SD statistics across three pre-defined groups (Control, pHTN, HTN); these are group-level summary stats, not individual samples, so no melt applies. Columns c12-c14 contain an embedded legend/key table rather than additional sample data."
+      }
+    },
+    {
+      "purpose": "table_plan",
+      "table": "40168_2016_222_MOESM2_ESM.xlsx::Table S14",
+      "max_tokens": 2048,
+      "stop_reason": "end_turn",
+      "output_tokens": 1697,
+      "plan": {
+        "header_rows": [
+          0
+        ],
+        "header_merge_sep": " | ",
+        "data_starts_at": 1,
+        "melt": {
+          "category_label": "Group",
+          "groups": [
+            {
+              "value_label": "AVG",
+              "sources": {
+                "Control": 1,
+                "pHTN": 3,
+                "HTN": 5
+              }
+            },
+            {
+              "value_label": "SD",
+              "sources": {
+                "Control": 2,
+                "pHTN": 4,
+                "HTN": 6
+              }
+            }
+          ],
+          "skip_missing_categories": true
+        },
+        "drop_rows": [],
+        "notes": "Each row is a KO feature with paired AVG/SD statistics for three sample groups (Control, pHTN, HTN) spread across columns 1-6; melted on group category while retaining all annotation columns (DiffNum, DiffPairs, Name, etc.) unchanged; extra unlabeled columns 15-17 contain an embedded legend unrelated to sample data and are left untouched."
+      }
+    },
+    {
+      "purpose": "table_plan",
+      "table": "40168_2016_222_MOESM2_ESM.xlsx::Table S15",
+      "max_tokens": 2048,
+      "stop_reason": "end_turn",
+      "output_tokens": 1645,
+      "plan": {
+        "header_rows": [
+          0
+        ],
+        "header_merge_sep": " | ",
+        "data_starts_at": 1,
+        "melt": {
+          "category_label": "Group",
+          "groups": [
+            {
+              "value_label": "AVG",
+              "sources": {
+                "Control": 1,
+                "pHTN": 3,
+                "HTN": 5
+              }
+            },
+            {
+              "value_label": "SD",
+              "sources": {
+                "Control": 2,
+                "pHTN": 4,
+                "HTN": 6
+              }
+            }
+          ],
+          "skip_missing_categories": true
+        },
+        "drop_rows": [],
+        "notes": "Each row is a CAZy family with AVG/SD abundance given separately for Control, pHTN, and HTN groups; these group-specific AVG/SD columns are melted into Group/AVG/SD rows while other per-family stats (DiffNum, DiffPairs, Pairs-P/Q-values) and the stray legend columns (c12,c13) pass through unchanged."
+      }
+    },
+    {
+      "purpose": "table_plan",
+      "table": "40168_2016_222_MOESM2_ESM.xlsx::Table S16",
+      "max_tokens": 2048,
+      "stop_reason": "end_turn",
+      "output_tokens": 755,
+      "plan": {
+        "header_rows": [
+          0,
+          1
+        ],
+        "header_merge_sep": " | ",
+        "data_starts_at": 2,
+        "melt": null,
+        "drop_rows": [],
+        "notes": "Two-row stacked header (group labels over control/pHTN/HTN intensities and p value/VIP stats); each data row is one metabolite feature, not a per-sample record, so no melt is applied."
+      }
+    },
+    {
+      "purpose": "table_plan",
+      "table": "40168_2016_222_MOESM2_ESM.xlsx::Table S18",
+      "max_tokens": 2048,
+      "stop_reason": "end_turn",
+      "output_tokens": 122,
+      "plan": {
+        "header_rows": [
+          0,
+          1
+        ],
+        "header_merge_sep": " | ",
+        "data_starts_at": 2,
+        "melt": null,
+        "drop_rows": [],
+        "notes": "Each row is one sample; c0 (Stage) is a group label that is blank on subsequent rows but still describes that row's sample, so no melt is needed."
+      }
+    },
+    {
+      "purpose": "table_plan",
+      "table": "40168_2016_222_MOESM2_ESM.xlsx::Table S19",
+      "max_tokens": 2048,
+      "stop_reason": "max_tokens",
+      "output_tokens": 2048
+    },
+    {
+      "purpose": "table_plan",
+      "table": "40168_2016_222_MOESM2_ESM.xlsx::Table S19",
+      "max_tokens": 4096,
+      "stop_reason": "max_tokens",
+      "output_tokens": 4096
+    },
+    {
+      "purpose": "table_plan",
+      "table": "40168_2016_222_MOESM2_ESM.xlsx::Table S19",
+      "max_tokens": 8192,
+      "stop_reason": "end_turn",
+      "output_tokens": 4396,
+      "plan": {
+        "header_rows": [
+          0
+        ],
+        "header_merge_sep": " | ",
+        "data_starts_at": 1,
+        "melt": {
+          "category_label": "Sample",
+          "groups": [
+            {
+              "value_label": "Relative abundance",
+              "sources": {
+                "H1_human": 1
+              }
+            },
+            {
+              "value_label": "Relative abundance",
+              "sources": {
+                "H1_mice1": 2
+              }
+            },
+            {
+              "value_label": "Relative abundance",
+              "sources": {
+                "H1_mice2": 3
+              }
+            },
+            {
+              "value_label": "Relative abundance",
+              "sources": {
+                "H1_mice3": 4
+              }
+            },
+            {
+              "value_label": "Relative abundance",
+              "sources": {
+                "H2_human": 5
+              }
+            },
+            {
+              "value_label": "Relative abundance",
+              "sources": {
+                "H2_mice.1": 6
+              }
+            },
+            {
+              "value_label": "Relative abundance",
+              "sources": {
+                "H2_mice.2": 7
+              }
+            },
+            {
+              "value_label": "Relative abundance",
+              "sources": {
+                "H2_mice.3": 8
+              }
+            },
+            {
+              "value_label": "Relative abundance",
+              "sources": {
+                "C_human": 9
+              }
+            },
+            {
+              "value_label": "Relative abundance",
+              "sources": {
+                "C_mice.1": 10
+              }
+            },
+            {
+              "value_label": "Relative abundance",
+              "sources": {
+                "C_mice.2": 11
+              }
+            },
+            {
+              "value_label": "Relative abundance",
+              "sources": {
+                "C_mice.3": 12
+              }
+            }
+          ],
+          "skip_missing_categories": true
+        },
+        "drop_rows": [],
+        "notes": "Each row lists a genus's relative abundance across 12 sample columns (donor/recipient groups H1, H2, C with human and mice replicates); melting these columns yields one row per biological sample per genus, keeping Genera and Tax_detail as identifiers."
+      }
+    },
+    {
+      "purpose": "fields",
+      "n_fields": 30,
+      "first_field": "location",
+      "max_tokens": 16384,
+      "stop_reason": "end_turn",
+      "output_tokens": 7220
+    },
+    {
+      "purpose": "fields",
+      "n_fields": 30,
+      "first_field": "disease_details",
+      "max_tokens": 16384,
+      "stop_reason": "end_turn",
+      "output_tokens": 10561
+    },
+    {
+      "purpose": "fields",
+      "n_fields": 11,
+      "first_field": "tumor_size_residual_measurement",
+      "max_tokens": 16384,
+      "stop_reason": "end_turn",
+      "output_tokens": 5374
+    }
+  ],
+  "cost_estimate": {
+    "input_usd": 0.086074,
+    "output_usd": 0.41393,
+    "cache_read_usd": 0.0102228,
+    "cache_write_usd": 0.0582225,
+    "total_usd": 0.5684492999999999,
+    "pricing_as_of": "2026-06-24"
+  },
+  "retrieval": {
+    "frozen_retrieval": "/Users/sehyunoh/OmicsMLRepo/MetaExtractor/benchmarks/cmd_sonnet5/out_v5/_fetch/LiJ_2017",
+    "source": "pmc_fulltext",
+    "has_body": true,
+    "pmid": "28143587",
+    "pmcid": "5286796",
+    "doi": null,
+    "attempts": [
+      {
+        "rung": "pmc_fulltext",
+        "returned_text": true,
+        "is_body": true,
+        "chars": 64808
+      }
+    ],
+    "supplementary_included": [
+      "40168_2016_222_MOESM2_ESM.xlsx",
+      "40168_2016_222_MOESM7_ESM.xlsx"
+    ],
+    "supplementary_skipped": [],
+    "sra_manifest_source": null,
+    "sra_manifest_warnings": [],
+    "sra_manifest_resolution": {}
+  },
+  "local_supplementary": [],
+  "paper_text_sha256": "d4d7962b0e2ee1a8a56e18c26f5742e9310e02031943d511a547acd44c5467b0",
+  "paper_text_chars": 64808,
+  "n_tables": 18,
+  "output": {
+    "granularity": "sample_level",
+    "n_samples": 6,
+    "n_fields": 71,
+    "n_warnings": 81
+  },
+  "versions": {
+    "metaextractor": "0.1.0",
+    "anthropic_sdk": "0.104.1",
+    "python": "3.13.5"
+  }
+}

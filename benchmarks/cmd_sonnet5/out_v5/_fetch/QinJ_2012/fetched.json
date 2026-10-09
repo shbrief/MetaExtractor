@@ -1,0 +1,47 @@
+{
+  "source": "pubmed_abstract",
+  "has_body": false,
+  "pmid": "23023125",
+  "pmcid": null,
+  "doi": "10.1038/nature11450",
+  "retrieval_attempts": [
+    {
+      "rung": "pmid_to_pmcid",
+      "returned_text": false,
+      "is_body": false,
+      "chars": 0
+    },
+    {
+      "rung": "pubmed_abstract",
+      "returned_text": true,
+      "is_body": false,
+      "chars": 1254
+    },
+    {
+      "rung": "europepmc_fulltext_by_doi",
+      "returned_text": false,
+      "is_body": false,
+      "chars": 0
+    },
+    {
+      "rung": "europepmc_pdf",
+      "returned_text": false,
+      "is_body": false,
+      "chars": 0
+    },
+    {
+      "rung": "unpaywall_pdf",
+      "returned_text": false,
+      "is_body": false,
+      "chars": 0
+    }
+  ],
+  "supplementary_included": null,
+  "supplementary_skipped": null,
+  "sra_manifest_source": null,
+  "sra_manifest_warnings": [],
+  "n_tables": 0,
+  "text_chars": 1254,
+  "text_sha256": "57fc928826c11cae577ce120780bcc3520ed795250feab5e2cb1fa9ef16ebe1b",
+  "tables_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+}

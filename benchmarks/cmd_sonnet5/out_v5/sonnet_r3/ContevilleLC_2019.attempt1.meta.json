@@ -1,0 +1,158 @@
+{
+  "started_utc": "2026-10-09T01:22:30+00:00",
+  "finished_utc": "2026-10-09T01:24:54+00:00",
+  "paper_id": "31417531",
+  "status": "ok",
+  "error": null,
+  "request": {
+    "model_requested": "claude-sonnet-5",
+    "models_returned": [
+      "claude-sonnet-5"
+    ],
+    "max_tokens": 16384,
+    "max_tokens_ceiling": 64000,
+    "batch_size": 30,
+    "sample_discovery": true,
+    "min_table_relevance": 0.15,
+    "sampling_and_thinking": "not set (API defaults: no temperature/top_p/top_k/thinking/effort parameters sent)",
+    "age_rules": "/Users/sehyunoh/OmicsMLRepo/MetaExtractor/benchmarks/cmd_sonnet5/age_rules_cmd.json"
+  },
+  "usage": {
+    "input_tokens": 9105,
+    "cache_creation_input_tokens": 11435,
+    "cache_read_input_tokens": 27406,
+    "output_tokens": 18028,
+    "n_calls": 3
+  },
+  "calls": [
+    {
+      "purpose": "fields",
+      "n_fields": 30,
+      "first_field": "location",
+      "max_tokens": 16384,
+      "stop_reason": "end_turn",
+      "output_tokens": 10595
+    },
+    {
+      "purpose": "fields",
+      "n_fields": 30,
+      "first_field": "disease_details",
+      "max_tokens": 16384,
+      "stop_reason": "end_turn",
+      "output_tokens": 4458
+    },
+    {
+      "purpose": "fields",
+      "n_fields": 11,
+      "first_field": "tumor_size_residual_measurement",
+      "max_tokens": 16384,
+      "stop_reason": "end_turn",
+      "output_tokens": 2975
+    }
+  ],
+  "cost_estimate": {
+    "input_usd": 0.01821,
+    "output_usd": 0.18028,
+    "cache_read_usd": 0.0054812,
+    "cache_write_usd": 0.0285875,
+    "total_usd": 0.23255869999999998,
+    "pricing_as_of": "2026-06-24"
+  },
+  "retrieval": {
+    "frozen_retrieval": "/Users/sehyunoh/OmicsMLRepo/MetaExtractor/benchmarks/cmd_sonnet5/out_v5/_fetch/ContevilleLC_2019",
+    "source": "pmc_fulltext",
+    "has_body": true,
+    "pmid": "31417531",
+    "pmcid": "6682603",
+    "doi": null,
+    "attempts": [
+      {
+        "rung": "pmc_fulltext",
+        "returned_text": true,
+        "is_body": true,
+        "chars": 31579
+      }
+    ],
+    "supplementary_included": [],
+    "supplementary_skipped": [
+      [
+        "Image_1.TIFF",
+        "image-only (.tiff)"
+      ],
+      [
+        "Image_2.TIFF",
+        "image-only (.tiff)"
+      ],
+      [
+        "Image_3.TIFF",
+        "image-only (.tiff)"
+      ],
+      [
+        "Table_1.XLS",
+        "s3: ValueError: unsupported extension (.xls)"
+      ],
+      [
+        "Table_2.XLS",
+        "s3: ValueError: unsupported extension (.xls)"
+      ],
+      [
+        "Table_1.XLS",
+        "europepmc: ValueError: unsupported extension (.xls)"
+      ],
+      [
+        "Table_2.XLS",
+        "europepmc: ValueError: unsupported extension (.xls)"
+      ],
+      [
+        "fmicb-10-01743-g001.gif",
+        "europepmc: ValueError: image-only (.gif)"
+      ],
+      [
+        "fmicb-10-01743-g001.jpg",
+        "europepmc: ValueError: image-only (.jpg)"
+      ],
+      [
+        "fmicb-10-01743-g002.gif",
+        "europepmc: ValueError: image-only (.gif)"
+      ],
+      [
+        "fmicb-10-01743-g002.jpg",
+        "europepmc: ValueError: image-only (.jpg)"
+      ],
+      [
+        "fmicb-10-01743-g003.gif",
+        "europepmc: ValueError: image-only (.gif)"
+      ],
+      [
+        "fmicb-10-01743-g003.jpg",
+        "europepmc: ValueError: image-only (.jpg)"
+      ],
+      [
+        "fmicb-10-01743-g004.gif",
+        "europepmc: ValueError: image-only (.gif)"
+      ],
+      [
+        "fmicb-10-01743-g004.jpg",
+        "europepmc: ValueError: image-only (.jpg)"
+      ]
+    ],
+    "sra_manifest_source": "ena:PRJNA527208 (15 runs)",
+    "sra_manifest_warnings": [],
+    "sra_manifest_resolution": {}
+  },
+  "local_supplementary": [],
+  "paper_text_sha256": "530684888e0290bd06c62f97b1dc1118f847d7823c11f8ec19101d74761c264e",
+  "paper_text_chars": 31579,
+  "n_tables": 1,
+  "output": {
+    "granularity": "sample_level",
+    "n_samples": 15,
+    "n_fields": 71,
+    "n_warnings": 19
+  },
+  "versions": {
+    "metaextractor": "0.1.0",
+    "anthropic_sdk": "0.104.1",
+    "python": "3.13.5"
+  }
+}

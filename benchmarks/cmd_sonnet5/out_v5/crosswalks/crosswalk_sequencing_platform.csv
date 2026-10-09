@@ -1,0 +1,19 @@
+query,ref_match,stage,match1,match1_score,match1_code
+Illumina HiSeq,Not Found,1.0,Not Found,1.0,
+Illumina MiSeq,Not Found,1.0,Not Found,1.0,
+Ion Torrent Proton,Not Found,1.0,Not Found,1.0,
+HiSeq ® 2500 sequencer,Not Found,2.0,Illumina HiSeq,0.8554,CMDPLAT:0001
+HiSeq2000,Not Found,2.0,Illumina HiSeq,0.9071,CMDPLAT:0001
+HiSeq2000 system (Illumina),Not Found,2.0,Illumina HiSeq,0.8960,CMDPLAT:0001
+HiSeq2500,Not Found,2.0,Illumina HiSeq,0.8307,CMDPLAT:0001
+HiSeq® 2500,Not Found,2.0,Illumina HiSeq,0.8808,CMDPLAT:0001
+HiSeq® 2500 sequencer,Not Found,2.0,Illumina HiSeq,0.8686,CMDPLAT:0001
+Illumina,Not Found,2.0,illuminahiseq,0.8366,CMDPLAT:0001
+Illumina HiSeq 2000,Not Found,2.0,Illumina HiSeq,0.8853,CMDPLAT:0001
+Illumina HiSeq 2500,Not Found,2.0,Illumina HiSeq,0.8638,CMDPLAT:0001
+Illumina HiSeq 4000,Not Found,2.0,Illumina HiSeq,0.8564,CMDPLAT:0001
+Illumina HiSeq2500,Not Found,2.0,Illumina HiSeq,0.8164,CMDPLAT:0001
+Illumina NovaSeq 6000,Not Found,2.0,Illumina NovaSeq,0.8609,CMDPLAT:0004
+Ion Proton Sequencer,Not Found,2.0,Illumina NextSeq,0.6588,CMDPLAT:0003
+MiSeq Illumina platform,Not Found,2.0,Illumina MiSeq,0.9717,CMDPLAT:0002
+NextSeq 500,Not Found,2.0,Illumina NextSeq,0.6674,CMDPLAT:0003

@@ -1,0 +1,6674 @@
+{
+  "align_key": "ncbi_accession,sample_id,subject_id",
+  "crosswalks": "/Users/sehyunoh/OmicsMLRepo/MetaExtractor/benchmarks/cmd_sonnet5/out_v5/crosswalks",
+  "harmonized_fields": [
+    "body_site",
+    "disease",
+    "dna_extraction_kit",
+    "host_species",
+    "sequencing_platform",
+    "treatment"
+  ],
+  "min_score": 0.0,
+  "below_threshold": {},
+  "per_study": [
+    {
+      "study": "Bengtsson-PalmeJ_2015",
+      "pmid": "26259788",
+      "n_gold": 70,
+      "n_extracted": 70,
+      "extraction_failed": false,
+      "granularity": "sample_level",
+      "alignment": {
+        "key_used": "ncbi_accession",
+        "n_gold": 70,
+        "n_ext": 70,
+        "matched": 70,
+        "unmatched_gold": 0,
+        "pooled_gold": 0,
+        "ambiguous_gold": 0,
+        "duplicate_ext_records": 0,
+        "unmatched_ext_with_key": 0,
+        "unmatched_ext_without_key": 0,
+        "ext_in_conflict": 0,
+        "candidate_matches": {
+          "ncbi_accession": 70,
+          "sample_id": 70,
+          "subject_id": 0
+        }
+      },
+      "end_to_end": {
+        "content": {
+          "tn": 0,
+          "tp_correct": 350,
+          "tp_wrong": 70,
+          "fn": 770,
+          "fp": 0
+        },
+        "meta": {
+          "tn": 0,
+          "tp_correct": 280,
+          "tp_wrong": 70,
+          "fn": 210,
+          "fp": 0
+        }
+      },
+      "conditional": {
+        "content": {
+          "tn": 0,
+          "tp_correct": 350,
+          "tp_wrong": 70,
+          "fn": 770,
+          "fp": 0
+        },
+        "meta": {
+          "tn": 0,
+          "tp_correct": 280,
+          "tp_wrong": 70,
+          "fn": 210,
+          "fp": 0
+        }
+      },
+      "fields_end_to_end": {
+        "subject_id": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 70,
+          "fp": 0
+        },
+        "sample_id": {
+          "tn": 0,
+          "tp_correct": 70,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "control": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 70,
+          "fp": 0
+        },
+        "country": {
+          "tn": 0,
+          "tp_correct": 70,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "body_site": {
+          "tn": 0,
+          "tp_correct": 70,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "days_from_first_collection": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 70,
+          "fp": 0
+        },
+        "westernized": {
+          "tn": 0,
+          "tp_correct": 70,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "ncbi_accession": {
+          "tn": 0,
+          "tp_correct": 70,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "age": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 70,
+          "fp": 0
+        },
+        "age_group": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 70,
+          "fp": 0
+        },
+        "age_unit": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 70,
+          "fp": 0
+        },
+        "sex": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 70,
+          "fp": 0
+        },
+        "age_min": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 70,
+          "fp": 0
+        },
+        "age_max": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 70,
+          "fp": 0
+        },
+        "age_years": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 70,
+          "fp": 0
+        },
+        "antibiotics_current_use": {
+          "tn": 0,
+          "tp_correct": 70,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "disease": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 70,
+          "fp": 0
+        },
+        "uncurated_metadata": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 70,
+          "fp": 0
+        },
+        "study_name": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 70,
+          "fn": 0,
+          "fp": 0
+        },
+        "curator": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 70,
+          "fp": 0
+        },
+        "pmid": {
+          "tn": 0,
+          "tp_correct": 70,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "target_condition": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 70,
+          "fn": 0,
+          "fp": 0
+        },
+        "dna_extraction_kit": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 70,
+          "fp": 0
+        },
+        "sequencing_platform": {
+          "tn": 0,
+          "tp_correct": 70,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "host_species": {
+          "tn": 0,
+          "tp_correct": 70,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        }
+      },
+      "fields_conditional": {
+        "subject_id": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 70,
+          "fp": 0
+        },
+        "sample_id": {
+          "tn": 0,
+          "tp_correct": 70,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "control": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 70,
+          "fp": 0
+        },
+        "country": {
+          "tn": 0,
+          "tp_correct": 70,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "body_site": {
+          "tn": 0,
+          "tp_correct": 70,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "days_from_first_collection": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 70,
+          "fp": 0
+        },
+        "westernized": {
+          "tn": 0,
+          "tp_correct": 70,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "ncbi_accession": {
+          "tn": 0,
+          "tp_correct": 70,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "age": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 70,
+          "fp": 0
+        },
+        "age_group": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 70,
+          "fp": 0
+        },
+        "age_unit": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 70,
+          "fp": 0
+        },
+        "sex": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 70,
+          "fp": 0
+        },
+        "age_min": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 70,
+          "fp": 0
+        },
+        "age_max": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 70,
+          "fp": 0
+        },
+        "age_years": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 70,
+          "fp": 0
+        },
+        "antibiotics_current_use": {
+          "tn": 0,
+          "tp_correct": 70,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "disease": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 70,
+          "fp": 0
+        },
+        "uncurated_metadata": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 70,
+          "fp": 0
+        },
+        "study_name": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 70,
+          "fn": 0,
+          "fp": 0
+        },
+        "curator": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 70,
+          "fp": 0
+        },
+        "pmid": {
+          "tn": 0,
+          "tp_correct": 70,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "target_condition": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 70,
+          "fn": 0,
+          "fp": 0
+        },
+        "dna_extraction_kit": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 70,
+          "fp": 0
+        },
+        "sequencing_platform": {
+          "tn": 0,
+          "tp_correct": 70,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "host_species": {
+          "tn": 0,
+          "tp_correct": 70,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        }
+      },
+      "harmonized_fields": [
+        "body_site",
+        "disease",
+        "dna_extraction_kit",
+        "host_species",
+        "sequencing_platform"
+      ],
+      "harmonization": {
+        "body_site": {
+          "reported_cells": 70,
+          "gold_curated_id": 70,
+          "extracted_unmapped": 0,
+          "unqueried_terms": []
+        },
+        "disease": {
+          "reported_cells": 0,
+          "gold_curated_id": 0,
+          "extracted_unmapped": 0,
+          "unqueried_terms": []
+        },
+        "dna_extraction_kit": {
+          "reported_cells": 0,
+          "gold_curated_id": 0,
+          "extracted_unmapped": 0,
+          "unqueried_terms": []
+        },
+        "host_species": {
+          "reported_cells": 70,
+          "gold_curated_id": 0,
+          "extracted_unmapped": 0,
+          "unqueried_terms": []
+        },
+        "sequencing_platform": {
+          "reported_cells": 70,
+          "gold_curated_id": 0,
+          "extracted_unmapped": 0,
+          "unqueried_terms": []
+        }
+      },
+      "by_source_end_to_end": {
+        "subject_id": {
+          "unrecorded": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 70,
+            "fp": 0
+          }
+        },
+        "sample_id": {
+          "manifest": {
+            "tn": 0,
+            "tp_correct": 70,
+            "tp_wrong": 0,
+            "fn": 0,
+            "fp": 0
+          }
+        },
+        "control": {
+          "unrecorded": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 70,
+            "fp": 0
+          }
+        },
+        "country": {
+          "manifest": {
+            "tn": 0,
+            "tp_correct": 70,
+            "tp_wrong": 0,
+            "fn": 0,
+            "fp": 0
+          }
+        },
+        "body_site": {
+          "study_fanout": {
+            "tn": 0,
+            "tp_correct": 70,
+            "tp_wrong": 0,
+            "fn": 0,
+            "fp": 0
+          }
+        },
+        "days_from_first_collection": {
+          "unrecorded": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 70,
+            "fp": 0
+          }
+        },
+        "westernized": {
+          "study_fanout": {
+            "tn": 0,
+            "tp_correct": 70,
+            "tp_wrong": 0,
+            "fn": 0,
+            "fp": 0
+          }
+        },
+        "ncbi_accession": {
+          "manifest": {
+            "tn": 0,
+            "tp_correct": 70,
+            "tp_wrong": 0,
+            "fn": 0,
+            "fp": 0
+          }
+        },
+        "age": {
+          "unrecorded": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 70,
+            "fp": 0
+          }
+        },
+        "age_group": {
+          "unrecorded": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 70,
+            "fp": 0
+          }
+        },
+        "age_unit": {
+          "unrecorded": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 70,
+            "fp": 0
+          }
+        },
+        "sex": {
+          "unrecorded": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 70,
+            "fp": 0
+          }
+        },
+        "age_min": {
+          "unrecorded": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 70,
+            "fp": 0
+          }
+        },
+        "age_max": {
+          "unrecorded": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 70,
+            "fp": 0
+          }
+        },
+        "age_years": {
+          "unrecorded": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 70,
+            "fp": 0
+          }
+        },
+        "antibiotics_current_use": {
+          "study_fanout": {
+            "tn": 0,
+            "tp_correct": 70,
+            "tp_wrong": 0,
+            "fn": 0,
+            "fp": 0
+          }
+        },
+        "disease": {
+          "unrecorded": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 70,
+            "fp": 0
+          }
+        },
+        "uncurated_metadata": {
+          "unrecorded": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 70,
+            "fp": 0
+          }
+        },
+        "study_name": {
+          "study_fanout": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 70,
+            "fn": 0,
+            "fp": 0
+          }
+        },
+        "curator": {
+          "unrecorded": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 70,
+            "fp": 0
+          }
+        },
+        "pmid": {
+          "study_fanout": {
+            "tn": 0,
+            "tp_correct": 70,
+            "tp_wrong": 0,
+            "fn": 0,
+            "fp": 0
+          }
+        },
+        "target_condition": {
+          "study_fanout": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 70,
+            "fn": 0,
+            "fp": 0
+          }
+        },
+        "dna_extraction_kit": {
+          "unrecorded": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 70,
+            "fp": 0
+          }
+        },
+        "sequencing_platform": {
+          "manifest": {
+            "tn": 0,
+            "tp_correct": 70,
+            "tp_wrong": 0,
+            "fn": 0,
+            "fp": 0
+          }
+        },
+        "host_species": {
+          "study_fanout": {
+            "tn": 0,
+            "tp_correct": 70,
+            "tp_wrong": 0,
+            "fn": 0,
+            "fp": 0
+          }
+        }
+      },
+      "fp_source_check": {},
+      "faithfulness": {
+        "contract_violations": 1,
+        "evidence_checked": 22,
+        "evidence_matched": 15,
+        "paper_text_available": true
+      },
+      "n_content_fields": 17
+    },
+    {
+      "study": "TettAJ_2019_b",
+      "pmid": "31607556",
+      "n_gold": 162,
+      "n_extracted": 50,
+      "extraction_failed": false,
+      "granularity": "sample_level",
+      "alignment": {
+        "key_used": "sample_id",
+        "n_gold": 162,
+        "n_ext": 50,
+        "matched": 50,
+        "unmatched_gold": 112,
+        "pooled_gold": 0,
+        "ambiguous_gold": 0,
+        "duplicate_ext_records": 0,
+        "unmatched_ext_with_key": 0,
+        "unmatched_ext_without_key": 0,
+        "ext_in_conflict": 0,
+        "candidate_matches": {
+          "ncbi_accession": 0,
+          "sample_id": 50,
+          "subject_id": 50
+        }
+      },
+      "end_to_end": {
+        "content": {
+          "tn": 118,
+          "tp_correct": 180,
+          "tp_wrong": 267,
+          "fn": 2189,
+          "fp": 0
+        },
+        "meta": {
+          "tn": 0,
+          "tp_correct": 200,
+          "tp_wrong": 50,
+          "fn": 884,
+          "fp": 0
+        }
+      },
+      "conditional": {
+        "content": {
+          "tn": 3,
+          "tp_correct": 180,
+          "tp_wrong": 267,
+          "fn": 400,
+          "fp": 0
+        },
+        "meta": {
+          "tn": 0,
+          "tp_correct": 200,
+          "tp_wrong": 50,
+          "fn": 100,
+          "fp": 0
+        }
+      },
+      "fields_end_to_end": {
+        "subject_id": {
+          "tn": 0,
+          "tp_correct": 50,
+          "tp_wrong": 0,
+          "fn": 112,
+          "fp": 0
+        },
+        "sample_id": {
+          "tn": 0,
+          "tp_correct": 50,
+          "tp_wrong": 0,
+          "fn": 112,
+          "fp": 0
+        },
+        "control": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 162,
+          "fp": 0
+        },
+        "country": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 50,
+          "fn": 112,
+          "fp": 0
+        },
+        "body_site": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 162,
+          "fp": 0
+        },
+        "westernized": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 162,
+          "fp": 0
+        },
+        "ncbi_accession": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 162,
+          "fp": 0
+        },
+        "age": {
+          "tn": 2,
+          "tp_correct": 28,
+          "tp_wrong": 21,
+          "fn": 111,
+          "fp": 0
+        },
+        "age_group": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 162,
+          "fp": 0
+        },
+        "age_unit": {
+          "tn": 2,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 160,
+          "fp": 0
+        },
+        "family": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 50,
+          "fn": 112,
+          "fp": 0
+        },
+        "family_role": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 162,
+          "fp": 0
+        },
+        "sex": {
+          "tn": 112,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 50,
+          "fp": 0
+        },
+        "age_min": {
+          "tn": 0,
+          "tp_correct": 26,
+          "tp_wrong": 23,
+          "fn": 113,
+          "fp": 0
+        },
+        "age_max": {
+          "tn": 0,
+          "tp_correct": 26,
+          "tp_wrong": 23,
+          "fn": 113,
+          "fp": 0
+        },
+        "age_years": {
+          "tn": 2,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 160,
+          "fp": 0
+        },
+        "disease": {
+          "tn": 0,
+          "tp_correct": 50,
+          "tp_wrong": 0,
+          "fn": 112,
+          "fp": 0
+        },
+        "study_name": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 50,
+          "fn": 112,
+          "fp": 0
+        },
+        "curator": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 162,
+          "fp": 0
+        },
+        "pmid": {
+          "tn": 0,
+          "tp_correct": 50,
+          "tp_wrong": 0,
+          "fn": 112,
+          "fp": 0
+        },
+        "target_condition": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 50,
+          "fn": 112,
+          "fp": 0
+        },
+        "dna_extraction_kit": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 50,
+          "fn": 112,
+          "fp": 0
+        },
+        "sequencing_platform": {
+          "tn": 0,
+          "tp_correct": 50,
+          "tp_wrong": 0,
+          "fn": 112,
+          "fp": 0
+        },
+        "host_species": {
+          "tn": 0,
+          "tp_correct": 50,
+          "tp_wrong": 0,
+          "fn": 112,
+          "fp": 0
+        }
+      },
+      "fields_conditional": {
+        "subject_id": {
+          "tn": 0,
+          "tp_correct": 50,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "sample_id": {
+          "tn": 0,
+          "tp_correct": 50,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "control": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 50,
+          "fp": 0
+        },
+        "country": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 50,
+          "fn": 0,
+          "fp": 0
+        },
+        "body_site": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 50,
+          "fp": 0
+        },
+        "westernized": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 50,
+          "fp": 0
+        },
+        "ncbi_accession": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 50,
+          "fp": 0
+        },
+        "age": {
+          "tn": 1,
+          "tp_correct": 28,
+          "tp_wrong": 21,
+          "fn": 0,
+          "fp": 0
+        },
+        "age_group": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 50,
+          "fp": 0
+        },
+        "age_unit": {
+          "tn": 1,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 49,
+          "fp": 0
+        },
+        "family": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 50,
+          "fn": 0,
+          "fp": 0
+        },
+        "family_role": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 50,
+          "fp": 0
+        },
+        "sex": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 50,
+          "fp": 0
+        },
+        "age_min": {
+          "tn": 0,
+          "tp_correct": 26,
+          "tp_wrong": 23,
+          "fn": 1,
+          "fp": 0
+        },
+        "age_max": {
+          "tn": 0,
+          "tp_correct": 26,
+          "tp_wrong": 23,
+          "fn": 1,
+          "fp": 0
+        },
+        "age_years": {
+          "tn": 1,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 49,
+          "fp": 0
+        },
+        "disease": {
+          "tn": 0,
+          "tp_correct": 50,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "study_name": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 50,
+          "fn": 0,
+          "fp": 0
+        },
+        "curator": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 50,
+          "fp": 0
+        },
+        "pmid": {
+          "tn": 0,
+          "tp_correct": 50,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "target_condition": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 50,
+          "fn": 0,
+          "fp": 0
+        },
+        "dna_extraction_kit": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 50,
+          "fn": 0,
+          "fp": 0
+        },
+        "sequencing_platform": {
+          "tn": 0,
+          "tp_correct": 50,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "host_species": {
+          "tn": 0,
+          "tp_correct": 50,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        }
+      },
+      "harmonized_fields": [
+        "body_site",
+        "disease",
+        "dna_extraction_kit",
+        "host_species",
+        "sequencing_platform"
+      ],
+      "harmonization": {
+        "body_site": {
+          "reported_cells": 0,
+          "gold_curated_id": 0,
+          "extracted_unmapped": 0,
+          "unqueried_terms": []
+        },
+        "disease": {
+          "reported_cells": 50,
+          "gold_curated_id": 50,
+          "extracted_unmapped": 0,
+          "unqueried_terms": []
+        },
+        "dna_extraction_kit": {
+          "reported_cells": 50,
+          "gold_curated_id": 0,
+          "extracted_unmapped": 0,
+          "unqueried_terms": []
+        },
+        "host_species": {
+          "reported_cells": 50,
+          "gold_curated_id": 0,
+          "extracted_unmapped": 0,
+          "unqueried_terms": []
+        },
+        "sequencing_platform": {
+          "reported_cells": 50,
+          "gold_curated_id": 0,
+          "extracted_unmapped": 0,
+          "unqueried_terms": []
+        }
+      },
+      "by_source_end_to_end": {
+        "subject_id": {
+          "no_record": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 112,
+            "fp": 0
+          },
+          "table": {
+            "tn": 0,
+            "tp_correct": 50,
+            "tp_wrong": 0,
+            "fn": 0,
+            "fp": 0
+          }
+        },
+        "sample_id": {
+          "no_record": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 112,
+            "fp": 0
+          },
+          "table": {
+            "tn": 0,
+            "tp_correct": 50,
+            "tp_wrong": 0,
+            "fn": 0,
+            "fp": 0
+          }
+        },
+        "control": {
+          "no_record": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 112,
+            "fp": 0
+          },
+          "unrecorded": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 50,
+            "fp": 0
+          }
+        },
+        "country": {
+          "no_record": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 112,
+            "fp": 0
+          },
+          "table": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 50,
+            "fn": 0,
+            "fp": 0
+          }
+        },
+        "body_site": {
+          "no_record": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 112,
+            "fp": 0
+          },
+          "unrecorded": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 50,
+            "fp": 0
+          }
+        },
+        "westernized": {
+          "no_record": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 112,
+            "fp": 0
+          },
+          "unrecorded": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 50,
+            "fp": 0
+          }
+        },
+        "ncbi_accession": {
+          "no_record": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 112,
+            "fp": 0
+          },
+          "unrecorded": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 50,
+            "fp": 0
+          }
+        },
+        "age": {
+          "no_record": {
+            "tn": 1,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 111,
+            "fp": 0
+          },
+          "table": {
+            "tn": 1,
+            "tp_correct": 28,
+            "tp_wrong": 21,
+            "fn": 0,
+            "fp": 0
+          }
+        },
+        "age_group": {
+          "no_record": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 112,
+            "fp": 0
+          },
+          "unrecorded": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 50,
+            "fp": 0
+          }
+        },
+        "age_unit": {
+          "no_record": {
+            "tn": 1,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 111,
+            "fp": 0
+          },
+          "unrecorded": {
+            "tn": 1,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 49,
+            "fp": 0
+          }
+        },
+        "family": {
+          "no_record": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 112,
+            "fp": 0
+          },
+          "table": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 50,
+            "fn": 0,
+            "fp": 0
+          }
+        },
+        "family_role": {
+          "no_record": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 112,
+            "fp": 0
+          },
+          "unrecorded": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 50,
+            "fp": 0
+          }
+        },
+        "sex": {
+          "no_record": {
+            "tn": 112,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 0,
+            "fp": 0
+          },
+          "unrecorded": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 50,
+            "fp": 0
+          }
+        },
+        "age_min": {
+          "no_record": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 112,
+            "fp": 0
+          },
+          "age_rule": {
+            "tn": 0,
+            "tp_correct": 26,
+            "tp_wrong": 23,
+            "fn": 0,
+            "fp": 0
+          },
+          "unrecorded": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 1,
+            "fp": 0
+          }
+        },
+        "age_max": {
+          "no_record": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 112,
+            "fp": 0
+          },
+          "age_rule": {
+            "tn": 0,
+            "tp_correct": 26,
+            "tp_wrong": 23,
+            "fn": 0,
+            "fp": 0
+          },
+          "unrecorded": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 1,
+            "fp": 0
+          }
+        },
+        "age_years": {
+          "no_record": {
+            "tn": 1,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 111,
+            "fp": 0
+          },
+          "unrecorded": {
+            "tn": 1,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 49,
+            "fp": 0
+          }
+        },
+        "disease": {
+          "no_record": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 112,
+            "fp": 0
+          },
+          "table": {
+            "tn": 0,
+            "tp_correct": 50,
+            "tp_wrong": 0,
+            "fn": 0,
+            "fp": 0
+          }
+        },
+        "study_name": {
+          "no_record": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 112,
+            "fp": 0
+          },
+          "study_fanout": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 50,
+            "fn": 0,
+            "fp": 0
+          }
+        },
+        "curator": {
+          "no_record": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 112,
+            "fp": 0
+          },
+          "unrecorded": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 50,
+            "fp": 0
+          }
+        },
+        "pmid": {
+          "no_record": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 112,
+            "fp": 0
+          },
+          "study_fanout": {
+            "tn": 0,
+            "tp_correct": 50,
+            "tp_wrong": 0,
+            "fn": 0,
+            "fp": 0
+          }
+        },
+        "target_condition": {
+          "no_record": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 112,
+            "fp": 0
+          },
+          "study_fanout": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 50,
+            "fn": 0,
+            "fp": 0
+          }
+        },
+        "dna_extraction_kit": {
+          "no_record": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 112,
+            "fp": 0
+          },
+          "study_fanout": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 50,
+            "fn": 0,
+            "fp": 0
+          }
+        },
+        "sequencing_platform": {
+          "no_record": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 112,
+            "fp": 0
+          },
+          "study_fanout": {
+            "tn": 0,
+            "tp_correct": 50,
+            "tp_wrong": 0,
+            "fn": 0,
+            "fp": 0
+          }
+        },
+        "host_species": {
+          "no_record": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 112,
+            "fp": 0
+          },
+          "study_fanout": {
+            "tn": 0,
+            "tp_correct": 50,
+            "tp_wrong": 0,
+            "fn": 0,
+            "fp": 0
+          }
+        }
+      },
+      "fp_source_check": {},
+      "faithfulness": {
+        "contract_violations": 0,
+        "evidence_checked": 7,
+        "evidence_matched": 5,
+        "paper_text_available": true
+      },
+      "n_content_fields": 17
+    },
+    {
+      "study": "LiJ_2017",
+      "pmid": "28143587",
+      "n_gold": 196,
+      "n_extracted": 6,
+      "extraction_failed": false,
+      "granularity": "sample_level",
+      "alignment": {
+        "key_used": null,
+        "n_gold": 196,
+        "n_ext": 6,
+        "matched": 0,
+        "unmatched_gold": 196,
+        "pooled_gold": 0,
+        "ambiguous_gold": 0,
+        "duplicate_ext_records": 0,
+        "unmatched_ext_with_key": 6,
+        "unmatched_ext_without_key": 0,
+        "ext_in_conflict": 0,
+        "candidate_matches": {
+          "ncbi_accession": 0,
+          "sample_id": 0,
+          "subject_id": 0
+        }
+      },
+      "end_to_end": {
+        "content": {
+          "tn": 588,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 2744,
+          "fp": 0
+        },
+        "meta": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 1372,
+          "fp": 0
+        }
+      },
+      "conditional": {
+        "content": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "meta": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        }
+      },
+      "fields_end_to_end": {
+        "location": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 196,
+          "fp": 0
+        },
+        "subject_id": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 196,
+          "fp": 0
+        },
+        "sample_id": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 196,
+          "fp": 0
+        },
+        "control": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 196,
+          "fp": 0
+        },
+        "country": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 196,
+          "fp": 0
+        },
+        "body_site": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 196,
+          "fp": 0
+        },
+        "westernized": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 196,
+          "fp": 0
+        },
+        "ncbi_accession": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 196,
+          "fp": 0
+        },
+        "age_group": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 196,
+          "fp": 0
+        },
+        "age_min": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 196,
+          "fp": 0
+        },
+        "age_max": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 196,
+          "fp": 0
+        },
+        "antibiotics_current_use": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 196,
+          "fp": 0
+        },
+        "disease": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 196,
+          "fp": 0
+        },
+        "smoker": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 196,
+          "fp": 0
+        },
+        "biomarker_name": {
+          "tn": 196,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "biomarker_unit": {
+          "tn": 196,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "biomarker_value": {
+          "tn": 196,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "study_name": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 196,
+          "fp": 0
+        },
+        "curator": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 196,
+          "fp": 0
+        },
+        "pmid": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 196,
+          "fp": 0
+        },
+        "target_condition": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 196,
+          "fp": 0
+        },
+        "dna_extraction_kit": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 196,
+          "fp": 0
+        },
+        "sequencing_platform": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 196,
+          "fp": 0
+        },
+        "host_species": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 196,
+          "fp": 0
+        }
+      },
+      "fields_conditional": {
+        "location": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "subject_id": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "sample_id": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "control": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "country": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "body_site": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "westernized": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "ncbi_accession": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "age_group": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "age_min": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "age_max": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "antibiotics_current_use": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "disease": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "smoker": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "biomarker_name": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "biomarker_unit": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "biomarker_value": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "study_name": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "curator": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "pmid": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "target_condition": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "dna_extraction_kit": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "sequencing_platform": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "host_species": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        }
+      },
+      "harmonized_fields": [
+        "body_site",
+        "disease",
+        "dna_extraction_kit",
+        "host_species",
+        "sequencing_platform"
+      ],
+      "harmonization": {
+        "body_site": {
+          "reported_cells": 0,
+          "gold_curated_id": 0,
+          "extracted_unmapped": 0,
+          "unqueried_terms": []
+        },
+        "disease": {
+          "reported_cells": 0,
+          "gold_curated_id": 0,
+          "extracted_unmapped": 0,
+          "unqueried_terms": []
+        },
+        "dna_extraction_kit": {
+          "reported_cells": 0,
+          "gold_curated_id": 0,
+          "extracted_unmapped": 0,
+          "unqueried_terms": []
+        },
+        "host_species": {
+          "reported_cells": 0,
+          "gold_curated_id": 0,
+          "extracted_unmapped": 0,
+          "unqueried_terms": []
+        },
+        "sequencing_platform": {
+          "reported_cells": 0,
+          "gold_curated_id": 0,
+          "extracted_unmapped": 0,
+          "unqueried_terms": []
+        }
+      },
+      "by_source_end_to_end": {
+        "location": {
+          "no_record": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 196,
+            "fp": 0
+          }
+        },
+        "subject_id": {
+          "no_record": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 196,
+            "fp": 0
+          }
+        },
+        "sample_id": {
+          "no_record": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 196,
+            "fp": 0
+          }
+        },
+        "control": {
+          "no_record": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 196,
+            "fp": 0
+          }
+        },
+        "country": {
+          "no_record": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 196,
+            "fp": 0
+          }
+        },
+        "body_site": {
+          "no_record": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 196,
+            "fp": 0
+          }
+        },
+        "westernized": {
+          "no_record": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 196,
+            "fp": 0
+          }
+        },
+        "ncbi_accession": {
+          "no_record": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 196,
+            "fp": 0
+          }
+        },
+        "age_group": {
+          "no_record": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 196,
+            "fp": 0
+          }
+        },
+        "age_min": {
+          "no_record": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 196,
+            "fp": 0
+          }
+        },
+        "age_max": {
+          "no_record": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 196,
+            "fp": 0
+          }
+        },
+        "antibiotics_current_use": {
+          "no_record": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 196,
+            "fp": 0
+          }
+        },
+        "disease": {
+          "no_record": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 196,
+            "fp": 0
+          }
+        },
+        "smoker": {
+          "no_record": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 196,
+            "fp": 0
+          }
+        },
+        "biomarker_name": {
+          "no_record": {
+            "tn": 196,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 0,
+            "fp": 0
+          }
+        },
+        "biomarker_unit": {
+          "no_record": {
+            "tn": 196,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 0,
+            "fp": 0
+          }
+        },
+        "biomarker_value": {
+          "no_record": {
+            "tn": 196,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 0,
+            "fp": 0
+          }
+        },
+        "study_name": {
+          "no_record": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 196,
+            "fp": 0
+          }
+        },
+        "curator": {
+          "no_record": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 196,
+            "fp": 0
+          }
+        },
+        "pmid": {
+          "no_record": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 196,
+            "fp": 0
+          }
+        },
+        "target_condition": {
+          "no_record": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 196,
+            "fp": 0
+          }
+        },
+        "dna_extraction_kit": {
+          "no_record": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 196,
+            "fp": 0
+          }
+        },
+        "sequencing_platform": {
+          "no_record": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 196,
+            "fp": 0
+          }
+        },
+        "host_species": {
+          "no_record": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 196,
+            "fp": 0
+          }
+        }
+      },
+      "fp_source_check": {},
+      "faithfulness": {
+        "contract_violations": 1,
+        "evidence_checked": 18,
+        "evidence_matched": 6,
+        "paper_text_available": true
+      },
+      "n_content_fields": 17
+    },
+    {
+      "study": "NayakRR_2021",
+      "pmid": "33440172",
+      "n_gold": 34,
+      "n_extracted": 434,
+      "extraction_failed": false,
+      "granularity": "sample_level",
+      "alignment": {
+        "key_used": "ncbi_accession",
+        "n_gold": 34,
+        "n_ext": 434,
+        "matched": 34,
+        "unmatched_gold": 0,
+        "pooled_gold": 0,
+        "ambiguous_gold": 0,
+        "duplicate_ext_records": 0,
+        "unmatched_ext_with_key": 400,
+        "unmatched_ext_without_key": 0,
+        "ext_in_conflict": 0,
+        "candidate_matches": {
+          "ncbi_accession": 34,
+          "sample_id": 4,
+          "subject_id": 0
+        }
+      },
+      "end_to_end": {
+        "content": {
+          "tn": 0,
+          "tp_correct": 34,
+          "tp_wrong": 68,
+          "fn": 272,
+          "fp": 0
+        },
+        "meta": {
+          "tn": 0,
+          "tp_correct": 136,
+          "tp_wrong": 0,
+          "fn": 102,
+          "fp": 0
+        }
+      },
+      "conditional": {
+        "content": {
+          "tn": 0,
+          "tp_correct": 34,
+          "tp_wrong": 68,
+          "fn": 272,
+          "fp": 0
+        },
+        "meta": {
+          "tn": 0,
+          "tp_correct": 136,
+          "tp_wrong": 0,
+          "fn": 102,
+          "fp": 0
+        }
+      },
+      "fields_end_to_end": {
+        "subject_id": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 34,
+          "fp": 0
+        },
+        "sample_id": {
+          "tn": 0,
+          "tp_correct": 34,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "country": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 34,
+          "fn": 0,
+          "fp": 0
+        },
+        "body_site": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 34,
+          "fp": 0
+        },
+        "days_from_first_collection": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 34,
+          "fp": 0
+        },
+        "ncbi_accession": {
+          "tn": 0,
+          "tp_correct": 34,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "age": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 34,
+          "fp": 0
+        },
+        "age_group": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 34,
+          "fp": 0
+        },
+        "sex": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 34,
+          "fp": 0
+        },
+        "antibiotics_current_use": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 34,
+          "fp": 0
+        },
+        "disease": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 34,
+          "fp": 0
+        },
+        "treatment": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 34,
+          "fp": 0
+        },
+        "study_name": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 34,
+          "fp": 0
+        },
+        "curator": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 34,
+          "fp": 0
+        },
+        "pmid": {
+          "tn": 0,
+          "tp_correct": 34,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "dna_extraction_kit": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 34,
+          "fn": 0,
+          "fp": 0
+        },
+        "sequencing_platform": {
+          "tn": 0,
+          "tp_correct": 34,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "host_species": {
+          "tn": 0,
+          "tp_correct": 34,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        }
+      },
+      "fields_conditional": {
+        "subject_id": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 34,
+          "fp": 0
+        },
+        "sample_id": {
+          "tn": 0,
+          "tp_correct": 34,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "country": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 34,
+          "fn": 0,
+          "fp": 0
+        },
+        "body_site": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 34,
+          "fp": 0
+        },
+        "days_from_first_collection": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 34,
+          "fp": 0
+        },
+        "ncbi_accession": {
+          "tn": 0,
+          "tp_correct": 34,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "age": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 34,
+          "fp": 0
+        },
+        "age_group": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 34,
+          "fp": 0
+        },
+        "sex": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 34,
+          "fp": 0
+        },
+        "antibiotics_current_use": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 34,
+          "fp": 0
+        },
+        "disease": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 34,
+          "fp": 0
+        },
+        "treatment": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 34,
+          "fp": 0
+        },
+        "study_name": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 34,
+          "fp": 0
+        },
+        "curator": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 34,
+          "fp": 0
+        },
+        "pmid": {
+          "tn": 0,
+          "tp_correct": 34,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "dna_extraction_kit": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 34,
+          "fn": 0,
+          "fp": 0
+        },
+        "sequencing_platform": {
+          "tn": 0,
+          "tp_correct": 34,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "host_species": {
+          "tn": 0,
+          "tp_correct": 34,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        }
+      },
+      "harmonized_fields": [
+        "body_site",
+        "disease",
+        "dna_extraction_kit",
+        "host_species",
+        "sequencing_platform",
+        "treatment"
+      ],
+      "harmonization": {
+        "body_site": {
+          "reported_cells": 0,
+          "gold_curated_id": 0,
+          "extracted_unmapped": 0,
+          "unqueried_terms": []
+        },
+        "disease": {
+          "reported_cells": 0,
+          "gold_curated_id": 0,
+          "extracted_unmapped": 0,
+          "unqueried_terms": []
+        },
+        "dna_extraction_kit": {
+          "reported_cells": 34,
+          "gold_curated_id": 0,
+          "extracted_unmapped": 0,
+          "unqueried_terms": []
+        },
+        "host_species": {
+          "reported_cells": 34,
+          "gold_curated_id": 0,
+          "extracted_unmapped": 0,
+          "unqueried_terms": []
+        },
+        "sequencing_platform": {
+          "reported_cells": 34,
+          "gold_curated_id": 0,
+          "extracted_unmapped": 0,
+          "unqueried_terms": []
+        },
+        "treatment": {
+          "reported_cells": 0,
+          "gold_curated_id": 0,
+          "extracted_unmapped": 0,
+          "unqueried_terms": []
+        }
+      },
+      "by_source_end_to_end": {
+        "subject_id": {
+          "unrecorded": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 34,
+            "fp": 0
+          }
+        },
+        "sample_id": {
+          "manifest": {
+            "tn": 0,
+            "tp_correct": 34,
+            "tp_wrong": 0,
+            "fn": 0,
+            "fp": 0
+          }
+        },
+        "country": {
+          "manifest": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 34,
+            "fn": 0,
+            "fp": 0
+          }
+        },
+        "body_site": {
+          "unrecorded": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 34,
+            "fp": 0
+          }
+        },
+        "days_from_first_collection": {
+          "unrecorded": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 34,
+            "fp": 0
+          }
+        },
+        "ncbi_accession": {
+          "manifest": {
+            "tn": 0,
+            "tp_correct": 34,
+            "tp_wrong": 0,
+            "fn": 0,
+            "fp": 0
+          }
+        },
+        "age": {
+          "unrecorded": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 34,
+            "fp": 0
+          }
+        },
+        "age_group": {
+          "unrecorded": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 34,
+            "fp": 0
+          }
+        },
+        "sex": {
+          "unrecorded": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 34,
+            "fp": 0
+          }
+        },
+        "antibiotics_current_use": {
+          "unrecorded": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 34,
+            "fp": 0
+          }
+        },
+        "disease": {
+          "unrecorded": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 34,
+            "fp": 0
+          }
+        },
+        "treatment": {
+          "unrecorded": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 34,
+            "fp": 0
+          }
+        },
+        "study_name": {
+          "unrecorded": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 34,
+            "fp": 0
+          }
+        },
+        "curator": {
+          "unrecorded": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 34,
+            "fp": 0
+          }
+        },
+        "pmid": {
+          "study_fanout": {
+            "tn": 0,
+            "tp_correct": 34,
+            "tp_wrong": 0,
+            "fn": 0,
+            "fp": 0
+          }
+        },
+        "dna_extraction_kit": {
+          "study_fanout": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 34,
+            "fn": 0,
+            "fp": 0
+          }
+        },
+        "sequencing_platform": {
+          "manifest": {
+            "tn": 0,
+            "tp_correct": 34,
+            "tp_wrong": 0,
+            "fn": 0,
+            "fp": 0
+          }
+        },
+        "host_species": {
+          "manifest": {
+            "tn": 0,
+            "tp_correct": 34,
+            "tp_wrong": 0,
+            "fn": 0,
+            "fp": 0
+          }
+        }
+      },
+      "fp_source_check": {},
+      "faithfulness": {
+        "contract_violations": 1,
+        "evidence_checked": 16,
+        "evidence_matched": 6,
+        "paper_text_available": true
+      },
+      "n_content_fields": 11
+    },
+    {
+      "study": "PasolliE_2019",
+      "pmid": "30661755",
+      "n_gold": 112,
+      "n_extracted": 112,
+      "extraction_failed": false,
+      "granularity": "sample_level",
+      "alignment": {
+        "key_used": "sample_id",
+        "n_gold": 112,
+        "n_ext": 112,
+        "matched": 112,
+        "unmatched_gold": 0,
+        "pooled_gold": 0,
+        "ambiguous_gold": 0,
+        "duplicate_ext_records": 0,
+        "unmatched_ext_with_key": 0,
+        "unmatched_ext_without_key": 0,
+        "ext_in_conflict": 0,
+        "candidate_matches": {
+          "ncbi_accession": 0,
+          "sample_id": 112,
+          "subject_id": 0
+        }
+      },
+      "end_to_end": {
+        "content": {
+          "tn": 336,
+          "tp_correct": 1008,
+          "tp_wrong": 336,
+          "fn": 896,
+          "fp": 0
+        },
+        "meta": {
+          "tn": 0,
+          "tp_correct": 336,
+          "tp_wrong": 112,
+          "fn": 336,
+          "fp": 0
+        }
+      },
+      "conditional": {
+        "content": {
+          "tn": 336,
+          "tp_correct": 1008,
+          "tp_wrong": 336,
+          "fn": 896,
+          "fp": 0
+        },
+        "meta": {
+          "tn": 0,
+          "tp_correct": 336,
+          "tp_wrong": 112,
+          "fn": 336,
+          "fp": 0
+        }
+      },
+      "fields_end_to_end": {
+        "subject_id": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 112,
+          "fp": 0
+        },
+        "sample_id": {
+          "tn": 0,
+          "tp_correct": 112,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "control": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 112,
+          "fp": 0
+        },
+        "country": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 112,
+          "fn": 0,
+          "fp": 0
+        },
+        "body_site": {
+          "tn": 0,
+          "tp_correct": 112,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "westernized": {
+          "tn": 0,
+          "tp_correct": 112,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "ncbi_accession": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 112,
+          "fp": 0
+        },
+        "age": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 112,
+          "fp": 0
+        },
+        "age_group": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 112,
+          "fp": 0
+        },
+        "age_unit": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 112,
+          "fp": 0
+        },
+        "ancestry": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 112,
+          "fp": 0
+        },
+        "ancestry_details": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 112,
+          "fp": 0
+        },
+        "family": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 112,
+          "fp": 0
+        },
+        "sex": {
+          "tn": 0,
+          "tp_correct": 112,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "age_min": {
+          "tn": 0,
+          "tp_correct": 112,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "age_max": {
+          "tn": 0,
+          "tp_correct": 112,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "age_years": {
+          "tn": 0,
+          "tp_correct": 112,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "antibiotics_current_use": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 112,
+          "fp": 0
+        },
+        "bmi": {
+          "tn": 0,
+          "tp_correct": 112,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "disease": {
+          "tn": 0,
+          "tp_correct": 112,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "biomarker_name": {
+          "tn": 112,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "biomarker_unit": {
+          "tn": 112,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "biomarker_value": {
+          "tn": 112,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "study_name": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 112,
+          "fn": 0,
+          "fp": 0
+        },
+        "curator": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 112,
+          "fp": 0
+        },
+        "pmid": {
+          "tn": 0,
+          "tp_correct": 112,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "target_condition": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 112,
+          "fn": 0,
+          "fp": 0
+        },
+        "dna_extraction_kit": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 112,
+          "fn": 0,
+          "fp": 0
+        },
+        "sequencing_platform": {
+          "tn": 0,
+          "tp_correct": 112,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "host_species": {
+          "tn": 0,
+          "tp_correct": 112,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        }
+      },
+      "fields_conditional": {
+        "subject_id": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 112,
+          "fp": 0
+        },
+        "sample_id": {
+          "tn": 0,
+          "tp_correct": 112,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "control": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 112,
+          "fp": 0
+        },
+        "country": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 112,
+          "fn": 0,
+          "fp": 0
+        },
+        "body_site": {
+          "tn": 0,
+          "tp_correct": 112,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "westernized": {
+          "tn": 0,
+          "tp_correct": 112,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "ncbi_accession": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 112,
+          "fp": 0
+        },
+        "age": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 112,
+          "fp": 0
+        },
+        "age_group": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 112,
+          "fp": 0
+        },
+        "age_unit": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 112,
+          "fp": 0
+        },
+        "ancestry": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 112,
+          "fp": 0
+        },
+        "ancestry_details": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 112,
+          "fp": 0
+        },
+        "family": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 112,
+          "fp": 0
+        },
+        "sex": {
+          "tn": 0,
+          "tp_correct": 112,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "age_min": {
+          "tn": 0,
+          "tp_correct": 112,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "age_max": {
+          "tn": 0,
+          "tp_correct": 112,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "age_years": {
+          "tn": 0,
+          "tp_correct": 112,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "antibiotics_current_use": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 112,
+          "fp": 0
+        },
+        "bmi": {
+          "tn": 0,
+          "tp_correct": 112,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "disease": {
+          "tn": 0,
+          "tp_correct": 112,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "biomarker_name": {
+          "tn": 112,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "biomarker_unit": {
+          "tn": 112,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "biomarker_value": {
+          "tn": 112,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "study_name": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 112,
+          "fn": 0,
+          "fp": 0
+        },
+        "curator": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 112,
+          "fp": 0
+        },
+        "pmid": {
+          "tn": 0,
+          "tp_correct": 112,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "target_condition": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 112,
+          "fn": 0,
+          "fp": 0
+        },
+        "dna_extraction_kit": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 112,
+          "fn": 0,
+          "fp": 0
+        },
+        "sequencing_platform": {
+          "tn": 0,
+          "tp_correct": 112,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "host_species": {
+          "tn": 0,
+          "tp_correct": 112,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        }
+      },
+      "harmonized_fields": [
+        "body_site",
+        "disease",
+        "dna_extraction_kit",
+        "host_species",
+        "sequencing_platform"
+      ],
+      "harmonization": {
+        "body_site": {
+          "reported_cells": 112,
+          "gold_curated_id": 112,
+          "extracted_unmapped": 0,
+          "unqueried_terms": []
+        },
+        "disease": {
+          "reported_cells": 112,
+          "gold_curated_id": 112,
+          "extracted_unmapped": 0,
+          "unqueried_terms": []
+        },
+        "dna_extraction_kit": {
+          "reported_cells": 112,
+          "gold_curated_id": 0,
+          "extracted_unmapped": 0,
+          "unqueried_terms": []
+        },
+        "host_species": {
+          "reported_cells": 112,
+          "gold_curated_id": 0,
+          "extracted_unmapped": 0,
+          "unqueried_terms": []
+        },
+        "sequencing_platform": {
+          "reported_cells": 112,
+          "gold_curated_id": 0,
+          "extracted_unmapped": 0,
+          "unqueried_terms": []
+        }
+      },
+      "by_source_end_to_end": {
+        "subject_id": {
+          "unrecorded": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 112,
+            "fp": 0
+          }
+        },
+        "sample_id": {
+          "table": {
+            "tn": 0,
+            "tp_correct": 112,
+            "tp_wrong": 0,
+            "fn": 0,
+            "fp": 0
+          }
+        },
+        "control": {
+          "unrecorded": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 112,
+            "fp": 0
+          }
+        },
+        "country": {
+          "table": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 112,
+            "fn": 0,
+            "fp": 0
+          }
+        },
+        "body_site": {
+          "table": {
+            "tn": 0,
+            "tp_correct": 112,
+            "tp_wrong": 0,
+            "fn": 0,
+            "fp": 0
+          }
+        },
+        "westernized": {
+          "table": {
+            "tn": 0,
+            "tp_correct": 112,
+            "tp_wrong": 0,
+            "fn": 0,
+            "fp": 0
+          }
+        },
+        "ncbi_accession": {
+          "unrecorded": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 112,
+            "fp": 0
+          }
+        },
+        "age": {
+          "unrecorded": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 112,
+            "fp": 0
+          }
+        },
+        "age_group": {
+          "unrecorded": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 112,
+            "fp": 0
+          }
+        },
+        "age_unit": {
+          "unrecorded": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 112,
+            "fp": 0
+          }
+        },
+        "ancestry": {
+          "unrecorded": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 112,
+            "fp": 0
+          }
+        },
+        "ancestry_details": {
+          "unrecorded": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 112,
+            "fp": 0
+          }
+        },
+        "family": {
+          "unrecorded": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 112,
+            "fp": 0
+          }
+        },
+        "sex": {
+          "table": {
+            "tn": 0,
+            "tp_correct": 112,
+            "tp_wrong": 0,
+            "fn": 0,
+            "fp": 0
+          }
+        },
+        "age_min": {
+          "age_rule": {
+            "tn": 0,
+            "tp_correct": 112,
+            "tp_wrong": 0,
+            "fn": 0,
+            "fp": 0
+          }
+        },
+        "age_max": {
+          "age_rule": {
+            "tn": 0,
+            "tp_correct": 112,
+            "tp_wrong": 0,
+            "fn": 0,
+            "fp": 0
+          }
+        },
+        "age_years": {
+          "table": {
+            "tn": 0,
+            "tp_correct": 112,
+            "tp_wrong": 0,
+            "fn": 0,
+            "fp": 0
+          }
+        },
+        "antibiotics_current_use": {
+          "unrecorded": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 112,
+            "fp": 0
+          }
+        },
+        "bmi": {
+          "table": {
+            "tn": 0,
+            "tp_correct": 112,
+            "tp_wrong": 0,
+            "fn": 0,
+            "fp": 0
+          }
+        },
+        "disease": {
+          "table": {
+            "tn": 0,
+            "tp_correct": 112,
+            "tp_wrong": 0,
+            "fn": 0,
+            "fp": 0
+          }
+        },
+        "biomarker_name": {
+          "unrecorded": {
+            "tn": 112,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 0,
+            "fp": 0
+          }
+        },
+        "biomarker_unit": {
+          "unrecorded": {
+            "tn": 112,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 0,
+            "fp": 0
+          }
+        },
+        "biomarker_value": {
+          "unrecorded": {
+            "tn": 112,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 0,
+            "fp": 0
+          }
+        },
+        "study_name": {
+          "table": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 112,
+            "fn": 0,
+            "fp": 0
+          }
+        },
+        "curator": {
+          "unrecorded": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 112,
+            "fp": 0
+          }
+        },
+        "pmid": {
+          "study_fanout": {
+            "tn": 0,
+            "tp_correct": 112,
+            "tp_wrong": 0,
+            "fn": 0,
+            "fp": 0
+          }
+        },
+        "target_condition": {
+          "study_fanout": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 112,
+            "fn": 0,
+            "fp": 0
+          }
+        },
+        "dna_extraction_kit": {
+          "study_fanout": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 112,
+            "fn": 0,
+            "fp": 0
+          }
+        },
+        "sequencing_platform": {
+          "study_fanout": {
+            "tn": 0,
+            "tp_correct": 112,
+            "tp_wrong": 0,
+            "fn": 0,
+            "fp": 0
+          }
+        },
+        "host_species": {
+          "study_fanout": {
+            "tn": 0,
+            "tp_correct": 112,
+            "tp_wrong": 0,
+            "fn": 0,
+            "fp": 0
+          }
+        }
+      },
+      "fp_source_check": {},
+      "faithfulness": {
+        "contract_violations": 1,
+        "evidence_checked": 6,
+        "evidence_matched": 4,
+        "paper_text_available": true
+      },
+      "n_content_fields": 23
+    },
+    {
+      "study": "Heitz-BuschartA_2016",
+      "pmid": "27723761",
+      "n_gold": 53,
+      "n_extracted": 221,
+      "extraction_failed": false,
+      "granularity": "sample_level",
+      "alignment": {
+        "key_used": "ncbi_accession",
+        "n_gold": 53,
+        "n_ext": 221,
+        "matched": 53,
+        "unmatched_gold": 0,
+        "pooled_gold": 0,
+        "ambiguous_gold": 0,
+        "duplicate_ext_records": 0,
+        "unmatched_ext_with_key": 168,
+        "unmatched_ext_without_key": 0,
+        "ext_in_conflict": 0,
+        "candidate_matches": {
+          "ncbi_accession": 53,
+          "sample_id": 17,
+          "subject_id": 0
+        }
+      },
+      "end_to_end": {
+        "content": {
+          "tn": 68,
+          "tp_correct": 212,
+          "tp_wrong": 53,
+          "fn": 833,
+          "fp": 0
+        },
+        "meta": {
+          "tn": 0,
+          "tp_correct": 212,
+          "tp_wrong": 53,
+          "fn": 106,
+          "fp": 0
+        }
+      },
+      "conditional": {
+        "content": {
+          "tn": 68,
+          "tp_correct": 212,
+          "tp_wrong": 53,
+          "fn": 833,
+          "fp": 0
+        },
+        "meta": {
+          "tn": 0,
+          "tp_correct": 212,
+          "tp_wrong": 53,
+          "fn": 106,
+          "fp": 0
+        }
+      },
+      "fields_end_to_end": {
+        "subject_id": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 53,
+          "fp": 0
+        },
+        "sample_id": {
+          "tn": 0,
+          "tp_correct": 53,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "control": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 53,
+          "fp": 0
+        },
+        "country": {
+          "tn": 0,
+          "tp_correct": 53,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "body_site": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 53,
+          "fp": 0
+        },
+        "days_from_first_collection": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 53,
+          "fp": 0
+        },
+        "westernized": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 53,
+          "fp": 0
+        },
+        "ncbi_accession": {
+          "tn": 0,
+          "tp_correct": 53,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "age": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 53,
+          "fp": 0
+        },
+        "age_group": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 53,
+          "fp": 0
+        },
+        "age_unit": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 53,
+          "fp": 0
+        },
+        "sex": {
+          "tn": 0,
+          "tp_correct": 53,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "age_min": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 53,
+          "fp": 0
+        },
+        "age_max": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 53,
+          "fp": 0
+        },
+        "age_years": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 53,
+          "fp": 0
+        },
+        "antibiotics_current_use": {
+          "tn": 31,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 22,
+          "fp": 0
+        },
+        "bmi": {
+          "tn": 6,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 47,
+          "fp": 0
+        },
+        "disease": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 53,
+          "fp": 0
+        },
+        "treatment": {
+          "tn": 22,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 31,
+          "fp": 0
+        },
+        "biomarker_name": {
+          "tn": 3,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 50,
+          "fp": 0
+        },
+        "biomarker_unit": {
+          "tn": 3,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 50,
+          "fp": 0
+        },
+        "biomarker_value": {
+          "tn": 3,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 50,
+          "fp": 0
+        },
+        "study_name": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 53,
+          "fn": 0,
+          "fp": 0
+        },
+        "curator": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 53,
+          "fp": 0
+        },
+        "pmid": {
+          "tn": 0,
+          "tp_correct": 53,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "target_condition": {
+          "tn": 0,
+          "tp_correct": 53,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "dna_extraction_kit": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 53,
+          "fn": 0,
+          "fp": 0
+        },
+        "sequencing_platform": {
+          "tn": 0,
+          "tp_correct": 53,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "host_species": {
+          "tn": 0,
+          "tp_correct": 53,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        }
+      },
+      "fields_conditional": {
+        "subject_id": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 53,
+          "fp": 0
+        },
+        "sample_id": {
+          "tn": 0,
+          "tp_correct": 53,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "control": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 53,
+          "fp": 0
+        },
+        "country": {
+          "tn": 0,
+          "tp_correct": 53,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "body_site": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 53,
+          "fp": 0
+        },
+        "days_from_first_collection": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 53,
+          "fp": 0
+        },
+        "westernized": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 53,
+          "fp": 0
+        },
+        "ncbi_accession": {
+          "tn": 0,
+          "tp_correct": 53,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "age": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 53,
+          "fp": 0
+        },
+        "age_group": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 53,
+          "fp": 0
+        },
+        "age_unit": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 53,
+          "fp": 0
+        },
+        "sex": {
+          "tn": 0,
+          "tp_correct": 53,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "age_min": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 53,
+          "fp": 0
+        },
+        "age_max": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 53,
+          "fp": 0
+        },
+        "age_years": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 53,
+          "fp": 0
+        },
+        "antibiotics_current_use": {
+          "tn": 31,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 22,
+          "fp": 0
+        },
+        "bmi": {
+          "tn": 6,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 47,
+          "fp": 0
+        },
+        "disease": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 53,
+          "fp": 0
+        },
+        "treatment": {
+          "tn": 22,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 31,
+          "fp": 0
+        },
+        "biomarker_name": {
+          "tn": 3,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 50,
+          "fp": 0
+        },
+        "biomarker_unit": {
+          "tn": 3,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 50,
+          "fp": 0
+        },
+        "biomarker_value": {
+          "tn": 3,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 50,
+          "fp": 0
+        },
+        "study_name": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 53,
+          "fn": 0,
+          "fp": 0
+        },
+        "curator": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 53,
+          "fp": 0
+        },
+        "pmid": {
+          "tn": 0,
+          "tp_correct": 53,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "target_condition": {
+          "tn": 0,
+          "tp_correct": 53,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "dna_extraction_kit": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 53,
+          "fn": 0,
+          "fp": 0
+        },
+        "sequencing_platform": {
+          "tn": 0,
+          "tp_correct": 53,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "host_species": {
+          "tn": 0,
+          "tp_correct": 53,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        }
+      },
+      "harmonized_fields": [
+        "body_site",
+        "disease",
+        "dna_extraction_kit",
+        "host_species",
+        "sequencing_platform",
+        "treatment"
+      ],
+      "harmonization": {
+        "body_site": {
+          "reported_cells": 0,
+          "gold_curated_id": 0,
+          "extracted_unmapped": 0,
+          "unqueried_terms": []
+        },
+        "disease": {
+          "reported_cells": 0,
+          "gold_curated_id": 0,
+          "extracted_unmapped": 0,
+          "unqueried_terms": []
+        },
+        "dna_extraction_kit": {
+          "reported_cells": 53,
+          "gold_curated_id": 0,
+          "extracted_unmapped": 0,
+          "unqueried_terms": []
+        },
+        "host_species": {
+          "reported_cells": 53,
+          "gold_curated_id": 0,
+          "extracted_unmapped": 0,
+          "unqueried_terms": []
+        },
+        "sequencing_platform": {
+          "reported_cells": 53,
+          "gold_curated_id": 0,
+          "extracted_unmapped": 0,
+          "unqueried_terms": []
+        },
+        "treatment": {
+          "reported_cells": 0,
+          "gold_curated_id": 0,
+          "extracted_unmapped": 0,
+          "unqueried_terms": []
+        }
+      },
+      "by_source_end_to_end": {
+        "subject_id": {
+          "unrecorded": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 53,
+            "fp": 0
+          }
+        },
+        "sample_id": {
+          "manifest": {
+            "tn": 0,
+            "tp_correct": 53,
+            "tp_wrong": 0,
+            "fn": 0,
+            "fp": 0
+          }
+        },
+        "control": {
+          "unrecorded": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 53,
+            "fp": 0
+          }
+        },
+        "country": {
+          "manifest": {
+            "tn": 0,
+            "tp_correct": 53,
+            "tp_wrong": 0,
+            "fn": 0,
+            "fp": 0
+          }
+        },
+        "body_site": {
+          "unrecorded": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 53,
+            "fp": 0
+          }
+        },
+        "days_from_first_collection": {
+          "unrecorded": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 53,
+            "fp": 0
+          }
+        },
+        "westernized": {
+          "unrecorded": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 53,
+            "fp": 0
+          }
+        },
+        "ncbi_accession": {
+          "manifest": {
+            "tn": 0,
+            "tp_correct": 53,
+            "tp_wrong": 0,
+            "fn": 0,
+            "fp": 0
+          }
+        },
+        "age": {
+          "unrecorded": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 53,
+            "fp": 0
+          }
+        },
+        "age_group": {
+          "unrecorded": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 53,
+            "fp": 0
+          }
+        },
+        "age_unit": {
+          "unrecorded": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 53,
+            "fp": 0
+          }
+        },
+        "sex": {
+          "manifest": {
+            "tn": 0,
+            "tp_correct": 53,
+            "tp_wrong": 0,
+            "fn": 0,
+            "fp": 0
+          }
+        },
+        "age_min": {
+          "unrecorded": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 53,
+            "fp": 0
+          }
+        },
+        "age_max": {
+          "unrecorded": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 53,
+            "fp": 0
+          }
+        },
+        "age_years": {
+          "unrecorded": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 53,
+            "fp": 0
+          }
+        },
+        "antibiotics_current_use": {
+          "unrecorded": {
+            "tn": 31,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 22,
+            "fp": 0
+          }
+        },
+        "bmi": {
+          "unrecorded": {
+            "tn": 6,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 47,
+            "fp": 0
+          }
+        },
+        "disease": {
+          "unrecorded": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 53,
+            "fp": 0
+          }
+        },
+        "treatment": {
+          "unrecorded": {
+            "tn": 22,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 31,
+            "fp": 0
+          }
+        },
+        "biomarker_name": {
+          "unrecorded": {
+            "tn": 3,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 50,
+            "fp": 0
+          }
+        },
+        "biomarker_unit": {
+          "unrecorded": {
+            "tn": 3,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 50,
+            "fp": 0
+          }
+        },
+        "biomarker_value": {
+          "unrecorded": {
+            "tn": 3,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 50,
+            "fp": 0
+          }
+        },
+        "study_name": {
+          "study_fanout": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 53,
+            "fn": 0,
+            "fp": 0
+          }
+        },
+        "curator": {
+          "unrecorded": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 53,
+            "fp": 0
+          }
+        },
+        "pmid": {
+          "study_fanout": {
+            "tn": 0,
+            "tp_correct": 53,
+            "tp_wrong": 0,
+            "fn": 0,
+            "fp": 0
+          }
+        },
+        "target_condition": {
+          "study_fanout": {
+            "tn": 0,
+            "tp_correct": 53,
+            "tp_wrong": 0,
+            "fn": 0,
+            "fp": 0
+          }
+        },
+        "dna_extraction_kit": {
+          "study_fanout": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 53,
+            "fn": 0,
+            "fp": 0
+          }
+        },
+        "sequencing_platform": {
+          "manifest": {
+            "tn": 0,
+            "tp_correct": 53,
+            "tp_wrong": 0,
+            "fn": 0,
+            "fp": 0
+          }
+        },
+        "host_species": {
+          "manifest": {
+            "tn": 0,
+            "tp_correct": 53,
+            "tp_wrong": 0,
+            "fn": 0,
+            "fp": 0
+          }
+        }
+      },
+      "fp_source_check": {},
+      "faithfulness": {
+        "contract_violations": 0,
+        "evidence_checked": 11,
+        "evidence_matched": 2,
+        "paper_text_available": true
+      },
+      "n_content_fields": 22
+    },
+    {
+      "study": "FanY_2023",
+      "pmid": "37069399",
+      "n_gold": 147,
+      "n_extracted": 510,
+      "extraction_failed": false,
+      "granularity": "sample_level",
+      "alignment": {
+        "key_used": null,
+        "n_gold": 147,
+        "n_ext": 510,
+        "matched": 0,
+        "unmatched_gold": 147,
+        "pooled_gold": 0,
+        "ambiguous_gold": 0,
+        "duplicate_ext_records": 0,
+        "unmatched_ext_with_key": 0,
+        "unmatched_ext_without_key": 510,
+        "ext_in_conflict": 0,
+        "candidate_matches": {
+          "ncbi_accession": 0,
+          "sample_id": 0,
+          "subject_id": 0
+        }
+      },
+      "end_to_end": {
+        "content": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 1617,
+          "fp": 0
+        },
+        "meta": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 1029,
+          "fp": 0
+        }
+      },
+      "conditional": {
+        "content": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "meta": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        }
+      },
+      "fields_end_to_end": {
+        "subject_id": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 147,
+          "fp": 0
+        },
+        "sample_id": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 147,
+          "fp": 0
+        },
+        "country": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 147,
+          "fp": 0
+        },
+        "body_site": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 147,
+          "fp": 0
+        },
+        "ncbi_accession": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 147,
+          "fp": 0
+        },
+        "age": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 147,
+          "fp": 0
+        },
+        "age_group": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 147,
+          "fp": 0
+        },
+        "sex": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 147,
+          "fp": 0
+        },
+        "antibiotics_current_use": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 147,
+          "fp": 0
+        },
+        "bmi": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 147,
+          "fp": 0
+        },
+        "disease": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 147,
+          "fp": 0
+        },
+        "smoker": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 147,
+          "fp": 0
+        },
+        "treatment": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 147,
+          "fp": 0
+        },
+        "study_name": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 147,
+          "fp": 0
+        },
+        "curator": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 147,
+          "fp": 0
+        },
+        "pmid": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 147,
+          "fp": 0
+        },
+        "sequencing_platform": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 147,
+          "fp": 0
+        },
+        "host_species": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 147,
+          "fp": 0
+        }
+      },
+      "fields_conditional": {
+        "subject_id": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "sample_id": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "country": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "body_site": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "ncbi_accession": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "age": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "age_group": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "sex": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "antibiotics_current_use": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "bmi": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "disease": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "smoker": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "treatment": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "study_name": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "curator": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "pmid": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "sequencing_platform": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "host_species": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        }
+      },
+      "harmonized_fields": [
+        "body_site",
+        "disease",
+        "host_species",
+        "sequencing_platform",
+        "treatment"
+      ],
+      "harmonization": {
+        "body_site": {
+          "reported_cells": 0,
+          "gold_curated_id": 0,
+          "extracted_unmapped": 0,
+          "unqueried_terms": []
+        },
+        "disease": {
+          "reported_cells": 0,
+          "gold_curated_id": 0,
+          "extracted_unmapped": 0,
+          "unqueried_terms": []
+        },
+        "host_species": {
+          "reported_cells": 0,
+          "gold_curated_id": 0,
+          "extracted_unmapped": 0,
+          "unqueried_terms": []
+        },
+        "sequencing_platform": {
+          "reported_cells": 0,
+          "gold_curated_id": 0,
+          "extracted_unmapped": 0,
+          "unqueried_terms": []
+        },
+        "treatment": {
+          "reported_cells": 0,
+          "gold_curated_id": 0,
+          "extracted_unmapped": 0,
+          "unqueried_terms": []
+        }
+      },
+      "by_source_end_to_end": {
+        "subject_id": {
+          "no_record": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 147,
+            "fp": 0
+          }
+        },
+        "sample_id": {
+          "no_record": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 147,
+            "fp": 0
+          }
+        },
+        "country": {
+          "no_record": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 147,
+            "fp": 0
+          }
+        },
+        "body_site": {
+          "no_record": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 147,
+            "fp": 0
+          }
+        },
+        "ncbi_accession": {
+          "no_record": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 147,
+            "fp": 0
+          }
+        },
+        "age": {
+          "no_record": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 147,
+            "fp": 0
+          }
+        },
+        "age_group": {
+          "no_record": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 147,
+            "fp": 0
+          }
+        },
+        "sex": {
+          "no_record": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 147,
+            "fp": 0
+          }
+        },
+        "antibiotics_current_use": {
+          "no_record": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 147,
+            "fp": 0
+          }
+        },
+        "bmi": {
+          "no_record": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 147,
+            "fp": 0
+          }
+        },
+        "disease": {
+          "no_record": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 147,
+            "fp": 0
+          }
+        },
+        "smoker": {
+          "no_record": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 147,
+            "fp": 0
+          }
+        },
+        "treatment": {
+          "no_record": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 147,
+            "fp": 0
+          }
+        },
+        "study_name": {
+          "no_record": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 147,
+            "fp": 0
+          }
+        },
+        "curator": {
+          "no_record": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 147,
+            "fp": 0
+          }
+        },
+        "pmid": {
+          "no_record": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 147,
+            "fp": 0
+          }
+        },
+        "sequencing_platform": {
+          "no_record": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 147,
+            "fp": 0
+          }
+        },
+        "host_species": {
+          "no_record": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 147,
+            "fp": 0
+          }
+        }
+      },
+      "fp_source_check": {},
+      "faithfulness": {
+        "contract_violations": 1,
+        "evidence_checked": 18,
+        "evidence_matched": 7,
+        "paper_text_available": true
+      },
+      "n_content_fields": 11
+    },
+    {
+      "study": "QinJ_2012",
+      "pmid": "23023125",
+      "n_gold": 363,
+      "n_extracted": 0,
+      "extraction_failed": false,
+      "granularity": "study_level",
+      "alignment": {
+        "key_used": null,
+        "n_gold": 363,
+        "n_ext": 0,
+        "matched": 0,
+        "unmatched_gold": 363,
+        "pooled_gold": 0,
+        "ambiguous_gold": 0,
+        "duplicate_ext_records": 0,
+        "unmatched_ext_with_key": 0,
+        "unmatched_ext_without_key": 0,
+        "ext_in_conflict": 0,
+        "candidate_matches": {
+          "ncbi_accession": 0,
+          "sample_id": 0,
+          "subject_id": 0
+        }
+      },
+      "end_to_end": {
+        "content": {
+          "tn": 130,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 6041,
+          "fp": 0
+        },
+        "meta": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 2541,
+          "fp": 0
+        }
+      },
+      "conditional": {
+        "content": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "meta": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        }
+      },
+      "fields_end_to_end": {
+        "subject_id": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 363,
+          "fp": 0
+        },
+        "sample_id": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 363,
+          "fp": 0
+        },
+        "control": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 363,
+          "fp": 0
+        },
+        "country": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 363,
+          "fp": 0
+        },
+        "body_site": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 363,
+          "fp": 0
+        },
+        "westernized": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 363,
+          "fp": 0
+        },
+        "ncbi_accession": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 363,
+          "fp": 0
+        },
+        "age_group": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 363,
+          "fp": 0
+        },
+        "sex": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 363,
+          "fp": 0
+        },
+        "age_min": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 363,
+          "fp": 0
+        },
+        "age_max": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 363,
+          "fp": 0
+        },
+        "antibiotics_current_use": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 363,
+          "fp": 0
+        },
+        "bmi": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 363,
+          "fp": 0
+        },
+        "disease": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 363,
+          "fp": 0
+        },
+        "treatment": {
+          "tn": 130,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 233,
+          "fp": 0
+        },
+        "biomarker_name": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 363,
+          "fp": 0
+        },
+        "biomarker_unit": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 363,
+          "fp": 0
+        },
+        "biomarker_value": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 363,
+          "fp": 0
+        },
+        "study_name": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 363,
+          "fp": 0
+        },
+        "curator": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 363,
+          "fp": 0
+        },
+        "pmid": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 363,
+          "fp": 0
+        },
+        "target_condition": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 363,
+          "fp": 0
+        },
+        "sequencing_platform": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 363,
+          "fp": 0
+        },
+        "host_species": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 363,
+          "fp": 0
+        }
+      },
+      "fields_conditional": {
+        "subject_id": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "sample_id": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "control": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "country": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "body_site": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "westernized": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "ncbi_accession": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "age_group": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "sex": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "age_min": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "age_max": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "antibiotics_current_use": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "bmi": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "disease": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "treatment": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "biomarker_name": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "biomarker_unit": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "biomarker_value": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "study_name": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "curator": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "pmid": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "target_condition": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "sequencing_platform": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "host_species": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        }
+      },
+      "harmonized_fields": [
+        "body_site",
+        "disease",
+        "host_species",
+        "sequencing_platform",
+        "treatment"
+      ],
+      "harmonization": {
+        "body_site": {
+          "reported_cells": 0,
+          "gold_curated_id": 0,
+          "extracted_unmapped": 0,
+          "unqueried_terms": []
+        },
+        "disease": {
+          "reported_cells": 0,
+          "gold_curated_id": 0,
+          "extracted_unmapped": 0,
+          "unqueried_terms": []
+        },
+        "host_species": {
+          "reported_cells": 0,
+          "gold_curated_id": 0,
+          "extracted_unmapped": 0,
+          "unqueried_terms": []
+        },
+        "sequencing_platform": {
+          "reported_cells": 0,
+          "gold_curated_id": 0,
+          "extracted_unmapped": 0,
+          "unqueried_terms": []
+        },
+        "treatment": {
+          "reported_cells": 0,
+          "gold_curated_id": 0,
+          "extracted_unmapped": 0,
+          "unqueried_terms": []
+        }
+      },
+      "by_source_end_to_end": {
+        "subject_id": {
+          "no_record": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 363,
+            "fp": 0
+          }
+        },
+        "sample_id": {
+          "no_record": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 363,
+            "fp": 0
+          }
+        },
+        "control": {
+          "no_record": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 363,
+            "fp": 0
+          }
+        },
+        "country": {
+          "no_record": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 363,
+            "fp": 0
+          }
+        },
+        "body_site": {
+          "no_record": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 363,
+            "fp": 0
+          }
+        },
+        "westernized": {
+          "no_record": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 363,
+            "fp": 0
+          }
+        },
+        "ncbi_accession": {
+          "no_record": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 363,
+            "fp": 0
+          }
+        },
+        "age_group": {
+          "no_record": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 363,
+            "fp": 0
+          }
+        },
+        "sex": {
+          "no_record": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 363,
+            "fp": 0
+          }
+        },
+        "age_min": {
+          "no_record": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 363,
+            "fp": 0
+          }
+        },
+        "age_max": {
+          "no_record": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 363,
+            "fp": 0
+          }
+        },
+        "antibiotics_current_use": {
+          "no_record": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 363,
+            "fp": 0
+          }
+        },
+        "bmi": {
+          "no_record": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 363,
+            "fp": 0
+          }
+        },
+        "disease": {
+          "no_record": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 363,
+            "fp": 0
+          }
+        },
+        "treatment": {
+          "no_record": {
+            "tn": 130,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 233,
+            "fp": 0
+          }
+        },
+        "biomarker_name": {
+          "no_record": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 363,
+            "fp": 0
+          }
+        },
+        "biomarker_unit": {
+          "no_record": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 363,
+            "fp": 0
+          }
+        },
+        "biomarker_value": {
+          "no_record": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 363,
+            "fp": 0
+          }
+        },
+        "study_name": {
+          "no_record": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 363,
+            "fp": 0
+          }
+        },
+        "curator": {
+          "no_record": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 363,
+            "fp": 0
+          }
+        },
+        "pmid": {
+          "no_record": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 363,
+            "fp": 0
+          }
+        },
+        "target_condition": {
+          "no_record": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 363,
+            "fp": 0
+          }
+        },
+        "sequencing_platform": {
+          "no_record": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 363,
+            "fp": 0
+          }
+        },
+        "host_species": {
+          "no_record": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 363,
+            "fp": 0
+          }
+        }
+      },
+      "fp_source_check": {},
+      "faithfulness": {
+        "contract_violations": 1,
+        "evidence_checked": 6,
+        "evidence_matched": 6,
+        "paper_text_available": true
+      },
+      "n_content_fields": 17
+    },
+    {
+      "study": "ContevilleLC_2019",
+      "pmid": "31417531",
+      "n_gold": 15,
+      "n_extracted": 15,
+      "extraction_failed": false,
+      "granularity": "sample_level",
+      "alignment": {
+        "key_used": "ncbi_accession",
+        "n_gold": 15,
+        "n_ext": 15,
+        "matched": 15,
+        "unmatched_gold": 0,
+        "pooled_gold": 0,
+        "ambiguous_gold": 0,
+        "duplicate_ext_records": 0,
+        "unmatched_ext_with_key": 0,
+        "unmatched_ext_without_key": 0,
+        "ext_in_conflict": 0,
+        "candidate_matches": {
+          "ncbi_accession": 15,
+          "sample_id": 15,
+          "subject_id": 0
+        }
+      },
+      "end_to_end": {
+        "content": {
+          "tn": 30,
+          "tp_correct": 45,
+          "tp_wrong": 45,
+          "fn": 45,
+          "fp": 0
+        },
+        "meta": {
+          "tn": 0,
+          "tp_correct": 60,
+          "tp_wrong": 15,
+          "fn": 30,
+          "fp": 0
+        }
+      },
+      "conditional": {
+        "content": {
+          "tn": 30,
+          "tp_correct": 45,
+          "tp_wrong": 45,
+          "fn": 45,
+          "fp": 0
+        },
+        "meta": {
+          "tn": 0,
+          "tp_correct": 60,
+          "tp_wrong": 15,
+          "fn": 30,
+          "fp": 0
+        }
+      },
+      "fields_end_to_end": {
+        "location": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 15,
+          "fn": 0,
+          "fp": 0
+        },
+        "subject_id": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 15,
+          "fp": 0
+        },
+        "sample_id": {
+          "tn": 0,
+          "tp_correct": 15,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "country": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 15,
+          "fn": 0,
+          "fp": 0
+        },
+        "body_site": {
+          "tn": 0,
+          "tp_correct": 15,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "lifestyle": {
+          "tn": 0,
+          "tp_correct": 15,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "ncbi_accession": {
+          "tn": 0,
+          "tp_correct": 15,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "age": {
+          "tn": 15,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "age_group": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 15,
+          "fp": 0
+        },
+        "sex": {
+          "tn": 15,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "antibiotics_current_use": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 15,
+          "fp": 0
+        },
+        "disease": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 15,
+          "fp": 0
+        },
+        "study_name": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 15,
+          "fn": 0,
+          "fp": 0
+        },
+        "curator": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 15,
+          "fp": 0
+        },
+        "pmid": {
+          "tn": 0,
+          "tp_correct": 15,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "dna_extraction_kit": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 15,
+          "fn": 0,
+          "fp": 0
+        },
+        "sequencing_platform": {
+          "tn": 0,
+          "tp_correct": 15,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "host_species": {
+          "tn": 0,
+          "tp_correct": 15,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        }
+      },
+      "fields_conditional": {
+        "location": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 15,
+          "fn": 0,
+          "fp": 0
+        },
+        "subject_id": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 15,
+          "fp": 0
+        },
+        "sample_id": {
+          "tn": 0,
+          "tp_correct": 15,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "country": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 15,
+          "fn": 0,
+          "fp": 0
+        },
+        "body_site": {
+          "tn": 0,
+          "tp_correct": 15,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "lifestyle": {
+          "tn": 0,
+          "tp_correct": 15,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "ncbi_accession": {
+          "tn": 0,
+          "tp_correct": 15,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "age": {
+          "tn": 15,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "age_group": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 15,
+          "fp": 0
+        },
+        "sex": {
+          "tn": 15,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "antibiotics_current_use": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 15,
+          "fp": 0
+        },
+        "disease": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 15,
+          "fp": 0
+        },
+        "study_name": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 15,
+          "fn": 0,
+          "fp": 0
+        },
+        "curator": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 15,
+          "fp": 0
+        },
+        "pmid": {
+          "tn": 0,
+          "tp_correct": 15,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "dna_extraction_kit": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 15,
+          "fn": 0,
+          "fp": 0
+        },
+        "sequencing_platform": {
+          "tn": 0,
+          "tp_correct": 15,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "host_species": {
+          "tn": 0,
+          "tp_correct": 15,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        }
+      },
+      "harmonized_fields": [
+        "body_site",
+        "disease",
+        "dna_extraction_kit",
+        "host_species",
+        "sequencing_platform"
+      ],
+      "harmonization": {
+        "body_site": {
+          "reported_cells": 15,
+          "gold_curated_id": 0,
+          "extracted_unmapped": 0,
+          "unqueried_terms": []
+        },
+        "disease": {
+          "reported_cells": 0,
+          "gold_curated_id": 0,
+          "extracted_unmapped": 0,
+          "unqueried_terms": []
+        },
+        "dna_extraction_kit": {
+          "reported_cells": 15,
+          "gold_curated_id": 0,
+          "extracted_unmapped": 0,
+          "unqueried_terms": []
+        },
+        "host_species": {
+          "reported_cells": 15,
+          "gold_curated_id": 0,
+          "extracted_unmapped": 0,
+          "unqueried_terms": []
+        },
+        "sequencing_platform": {
+          "reported_cells": 15,
+          "gold_curated_id": 0,
+          "extracted_unmapped": 0,
+          "unqueried_terms": []
+        }
+      },
+      "by_source_end_to_end": {
+        "location": {
+          "study_fanout": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 15,
+            "fn": 0,
+            "fp": 0
+          }
+        },
+        "subject_id": {
+          "unrecorded": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 15,
+            "fp": 0
+          }
+        },
+        "sample_id": {
+          "manifest": {
+            "tn": 0,
+            "tp_correct": 15,
+            "tp_wrong": 0,
+            "fn": 0,
+            "fp": 0
+          }
+        },
+        "country": {
+          "manifest": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 15,
+            "fn": 0,
+            "fp": 0
+          }
+        },
+        "body_site": {
+          "study_fanout": {
+            "tn": 0,
+            "tp_correct": 15,
+            "tp_wrong": 0,
+            "fn": 0,
+            "fp": 0
+          }
+        },
+        "lifestyle": {
+          "study_fanout": {
+            "tn": 0,
+            "tp_correct": 15,
+            "tp_wrong": 0,
+            "fn": 0,
+            "fp": 0
+          }
+        },
+        "ncbi_accession": {
+          "manifest": {
+            "tn": 0,
+            "tp_correct": 15,
+            "tp_wrong": 0,
+            "fn": 0,
+            "fp": 0
+          }
+        },
+        "age": {
+          "unrecorded": {
+            "tn": 15,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 0,
+            "fp": 0
+          }
+        },
+        "age_group": {
+          "unrecorded": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 15,
+            "fp": 0
+          }
+        },
+        "sex": {
+          "unrecorded": {
+            "tn": 15,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 0,
+            "fp": 0
+          }
+        },
+        "antibiotics_current_use": {
+          "unrecorded": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 15,
+            "fp": 0
+          }
+        },
+        "disease": {
+          "unrecorded": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 15,
+            "fp": 0
+          }
+        },
+        "study_name": {
+          "study_fanout": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 15,
+            "fn": 0,
+            "fp": 0
+          }
+        },
+        "curator": {
+          "unrecorded": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 15,
+            "fp": 0
+          }
+        },
+        "pmid": {
+          "study_fanout": {
+            "tn": 0,
+            "tp_correct": 15,
+            "tp_wrong": 0,
+            "fn": 0,
+            "fp": 0
+          }
+        },
+        "dna_extraction_kit": {
+          "study_fanout": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 15,
+            "fn": 0,
+            "fp": 0
+          }
+        },
+        "sequencing_platform": {
+          "manifest": {
+            "tn": 0,
+            "tp_correct": 15,
+            "tp_wrong": 0,
+            "fn": 0,
+            "fp": 0
+          }
+        },
+        "host_species": {
+          "manifest": {
+            "tn": 0,
+            "tp_correct": 15,
+            "tp_wrong": 0,
+            "fn": 0,
+            "fp": 0
+          }
+        }
+      },
+      "fp_source_check": {},
+      "faithfulness": {
+        "contract_violations": 1,
+        "evidence_checked": 14,
+        "evidence_matched": 10,
+        "paper_text_available": true
+      },
+      "n_content_fields": 11
+    },
+    {
+      "study": "LiSS_2016",
+      "pmid": "27126044",
+      "n_gold": 55,
+      "n_extracted": 0,
+      "extraction_failed": false,
+      "granularity": "study_level",
+      "alignment": {
+        "key_used": null,
+        "n_gold": 55,
+        "n_ext": 0,
+        "matched": 0,
+        "unmatched_gold": 55,
+        "pooled_gold": 0,
+        "ambiguous_gold": 0,
+        "duplicate_ext_records": 0,
+        "unmatched_ext_with_key": 0,
+        "unmatched_ext_without_key": 0,
+        "ext_in_conflict": 0,
+        "candidate_matches": {
+          "ncbi_accession": 0,
+          "sample_id": 0,
+          "subject_id": 0
+        }
+      },
+      "end_to_end": {
+        "content": {
+          "tn": 165,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 715,
+          "fp": 0
+        },
+        "meta": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 385,
+          "fp": 0
+        }
+      },
+      "conditional": {
+        "content": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "meta": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        }
+      },
+      "fields_end_to_end": {
+        "subject_id": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 55,
+          "fp": 0
+        },
+        "sample_id": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 55,
+          "fp": 0
+        },
+        "control": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 55,
+          "fp": 0
+        },
+        "country": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 55,
+          "fp": 0
+        },
+        "body_site": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 55,
+          "fp": 0
+        },
+        "days_from_first_collection": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 55,
+          "fp": 0
+        },
+        "westernized": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 55,
+          "fp": 0
+        },
+        "ncbi_accession": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 55,
+          "fp": 0
+        },
+        "age_group": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 55,
+          "fp": 0
+        },
+        "sex": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 55,
+          "fp": 0
+        },
+        "age_min": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 55,
+          "fp": 0
+        },
+        "age_max": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 55,
+          "fp": 0
+        },
+        "antibiotics_current_use": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 55,
+          "fp": 0
+        },
+        "disease": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 55,
+          "fp": 0
+        },
+        "biomarker_name": {
+          "tn": 55,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "biomarker_unit": {
+          "tn": 55,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "biomarker_value": {
+          "tn": 55,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "study_name": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 55,
+          "fp": 0
+        },
+        "curator": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 55,
+          "fp": 0
+        },
+        "pmid": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 55,
+          "fp": 0
+        },
+        "target_condition": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 55,
+          "fp": 0
+        },
+        "sequencing_platform": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 55,
+          "fp": 0
+        },
+        "host_species": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 55,
+          "fp": 0
+        }
+      },
+      "fields_conditional": {
+        "subject_id": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "sample_id": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "control": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "country": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "body_site": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "days_from_first_collection": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "westernized": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "ncbi_accession": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "age_group": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "sex": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "age_min": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "age_max": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "antibiotics_current_use": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "disease": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "biomarker_name": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "biomarker_unit": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "biomarker_value": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "study_name": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "curator": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "pmid": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "target_condition": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "sequencing_platform": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        },
+        "host_species": {
+          "tn": 0,
+          "tp_correct": 0,
+          "tp_wrong": 0,
+          "fn": 0,
+          "fp": 0
+        }
+      },
+      "harmonized_fields": [
+        "body_site",
+        "disease",
+        "host_species",
+        "sequencing_platform"
+      ],
+      "harmonization": {
+        "body_site": {
+          "reported_cells": 0,
+          "gold_curated_id": 0,
+          "extracted_unmapped": 0,
+          "unqueried_terms": []
+        },
+        "disease": {
+          "reported_cells": 0,
+          "gold_curated_id": 0,
+          "extracted_unmapped": 0,
+          "unqueried_terms": []
+        },
+        "host_species": {
+          "reported_cells": 0,
+          "gold_curated_id": 0,
+          "extracted_unmapped": 0,
+          "unqueried_terms": []
+        },
+        "sequencing_platform": {
+          "reported_cells": 0,
+          "gold_curated_id": 0,
+          "extracted_unmapped": 0,
+          "unqueried_terms": []
+        }
+      },
+      "by_source_end_to_end": {
+        "subject_id": {
+          "no_record": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 55,
+            "fp": 0
+          }
+        },
+        "sample_id": {
+          "no_record": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 55,
+            "fp": 0
+          }
+        },
+        "control": {
+          "no_record": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 55,
+            "fp": 0
+          }
+        },
+        "country": {
+          "no_record": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 55,
+            "fp": 0
+          }
+        },
+        "body_site": {
+          "no_record": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 55,
+            "fp": 0
+          }
+        },
+        "days_from_first_collection": {
+          "no_record": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 55,
+            "fp": 0
+          }
+        },
+        "westernized": {
+          "no_record": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 55,
+            "fp": 0
+          }
+        },
+        "ncbi_accession": {
+          "no_record": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 55,
+            "fp": 0
+          }
+        },
+        "age_group": {
+          "no_record": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 55,
+            "fp": 0
+          }
+        },
+        "sex": {
+          "no_record": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 55,
+            "fp": 0
+          }
+        },
+        "age_min": {
+          "no_record": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 55,
+            "fp": 0
+          }
+        },
+        "age_max": {
+          "no_record": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 55,
+            "fp": 0
+          }
+        },
+        "antibiotics_current_use": {
+          "no_record": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 55,
+            "fp": 0
+          }
+        },
+        "disease": {
+          "no_record": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 55,
+            "fp": 0
+          }
+        },
+        "biomarker_name": {
+          "no_record": {
+            "tn": 55,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 0,
+            "fp": 0
+          }
+        },
+        "biomarker_unit": {
+          "no_record": {
+            "tn": 55,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 0,
+            "fp": 0
+          }
+        },
+        "biomarker_value": {
+          "no_record": {
+            "tn": 55,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 0,
+            "fp": 0
+          }
+        },
+        "study_name": {
+          "no_record": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 55,
+            "fp": 0
+          }
+        },
+        "curator": {
+          "no_record": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 55,
+            "fp": 0
+          }
+        },
+        "pmid": {
+          "no_record": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 55,
+            "fp": 0
+          }
+        },
+        "target_condition": {
+          "no_record": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 55,
+            "fp": 0
+          }
+        },
+        "sequencing_platform": {
+          "no_record": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 55,
+            "fp": 0
+          }
+        },
+        "host_species": {
+          "no_record": {
+            "tn": 0,
+            "tp_correct": 0,
+            "tp_wrong": 0,
+            "fn": 55,
+            "fp": 0
+          }
+        }
+      },
+      "fp_source_check": {},
+      "faithfulness": {
+        "contract_violations": 1,
+        "evidence_checked": 14,
+        "evidence_matched": 11,
+        "paper_text_available": true
+      },
+      "n_content_fields": 16
+    }
+  ]
+}

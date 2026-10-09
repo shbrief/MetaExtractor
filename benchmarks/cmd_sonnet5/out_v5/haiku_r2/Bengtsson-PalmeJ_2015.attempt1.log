@@ -1,0 +1,15 @@
+cmd: /Users/sehyunoh/OmicsMLRepo/MetaExtractor/.venv/bin/python -m metaextractor.cli --paper-id 26259788 --schema /Users/sehyunoh/OmicsMLRepo/MetaExtractor/benchmarks/cmd_sonnet5/cmd.clean.linkml.yaml --model claude-haiku-4-5 --age-rules /Users/sehyunoh/OmicsMLRepo/MetaExtractor/benchmarks/cmd_sonnet5/age_rules_cmd.json --fetch-cache /Users/sehyunoh/OmicsMLRepo/MetaExtractor/benchmarks/cmd_sonnet5/out_v5/_fetch/Bengtsson-PalmeJ_2015 --require-fetch-cache --out /Users/sehyunoh/OmicsMLRepo/MetaExtractor/benchmarks/cmd_sonnet5/out_v5/haiku_r2/Bengtsson-PalmeJ_2015.json --csv /Users/sehyunoh/OmicsMLRepo/MetaExtractor/benchmarks/cmd_sonnet5/out_v5/haiku_r2/Bengtsson-PalmeJ_2015.csv --csv-provenance --save-text /Users/sehyunoh/OmicsMLRepo/MetaExtractor/benchmarks/cmd_sonnet5/out_v5/haiku_r2/Bengtsson-PalmeJ_2015.text.txt --run-meta /Users/sehyunoh/OmicsMLRepo/MetaExtractor/benchmarks/cmd_sonnet5/out_v5/haiku_r2/Bengtsson-PalmeJ_2015.meta.json --api-key file:~/OmicsMLRepo/MetaHarmonizerEval/vignettes/keys/llm_baseline
+status: ok
+returncode: 0
+elapsed_s: 54.2
+--- stderr ---
+[loaded frozen retrieval pmc_html for 26259788]
+[supplementary tables parsed: 1 (deterministic path; LLM will not see them)]
+[SRA/ENA run manifest: ena:PRJEB7369 (70 runs) (deterministic path)]
+[supplementary skipped: (europepmc zip) — response was not a valid ZIP]
+[table selection: 1 kept / 1 scored (gate=0.15)]
+[  PRJEB7369_ena_manifest.tsv: kept (score=0.47) — key-like column 'run_accession']
+[wrote CSV: /Users/sehyunoh/OmicsMLRepo/MetaExtractor/benchmarks/cmd_sonnet5/out_v5/haiku_r2/Bengtsson-PalmeJ_2015.csv]
+[usage: 3 call(s); input=7,321, cache_write=7,999, cache_read=15,998, output=7,007]
+[cost: $0.0540 (input $0.0073 + cache_w $0.0100 + cache_r $0.0016 + output $0.0350)]
+
